@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<config>
+	<id>1</id>
+	<type>1010001</type>
+	<msg>中毒</msg>
+	<desc>中毒1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>1</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>2</id>
+	<type>1010001</type>
+	<msg>中毒</msg>
+	<desc>中毒1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>2</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>3</id>
+	<type>1010101</type>
+	<msg>灼烧</msg>
+	<desc>灼烧1级</desc>
+	<reward>10002</reward>
+	<mutex>4</mutex>
+	<target>1</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>4</id>
+	<type>1010201</type>
+	<msg>流血</msg>
+	<desc>流血1级</desc>
+	<reward>10002</reward>
+	<mutex>3</mutex>
+	<target>1</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>5</id>
+	<type>1020001</type>
+	<msg>霸体</msg>
+	<desc>霸体1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>1</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>6</id>
+	<type>1010101</type>
+	<msg>灼烧</msg>
+	<desc>灼烧1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>2</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>7</id>
+	<type>1010201</type>
+	<msg>流血</msg>
+	<desc>流血1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>2</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>8</id>
+	<type>1020001</type>
+	<msg>霸体</msg>
+	<desc>霸体1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>2</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>9</id>
+	<type>1010001</type>
+	<msg>中毒</msg>
+	<desc>中毒1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>1</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>10</id>
+	<type>1010001</type>
+	<msg>中毒</msg>
+	<desc>中毒1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>2</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>11</id>
+	<type>1010101</type>
+	<msg>灼烧</msg>
+	<desc>灼烧1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>1</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>12</id>
+	<type>1010201</type>
+	<msg>流血</msg>
+	<desc>流血1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>1</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>13</id>
+	<type>1020001</type>
+	<msg>霸体</msg>
+	<desc>霸体1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>1</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>14</id>
+	<type>1010101</type>
+	<msg>灼烧</msg>
+	<desc>灼烧1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>2</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>15</id>
+	<type>1010201</type>
+	<msg>流血</msg>
+	<desc>流血1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>2</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+<config>
+	<id>16</id>
+	<type>1020001</type>
+	<msg>霸体</msg>
+	<desc>霸体1级</desc>
+	<reward>10002</reward>
+	<mutex></mutex>
+	<target>2</target>
+	<lev>0</lev>
+	<ratio>50</ratio>
+</config>
+</root>

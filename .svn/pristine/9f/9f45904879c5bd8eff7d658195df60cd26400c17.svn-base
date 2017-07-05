@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1001</id>
+	<name>精绝遗迹</name>
+	<icon>1007</icon>
+	<modelID>20305</modelID>
+	<modelSize>[-210,210,210]</modelSize>
+	<modelRotate>[1, 213, 0]</modelRotate>
+	<modelPos>[258, -241, -336]</modelPos>
+	<shopType>1</shopType>
+	<campType>1</campType>
+	<camp>盗墓</camp>
+	<describe>某人劫掠了他的家园和子民,守灵将军在墓道徘徊了数年,发誓要将自己打造成残忍的复仇工具。他造访了所有墓道中的亡灵,一个个战胜他们直至没有人再敢挑战他。通过这样,他精通了亡灵战斗的方式并将他的戾气转化为一种力量。执刀于手而集怒于心,那个将他所知的生活摧毁的人,如今变成了他永恒的复仇任务。</describe>
+	<lev>1</lev>
+	<exp>100</exp>
+</config>
+<config>
+	<id>2001</id>
+	<name>陵墓守护者</name>
+	<icon>1002</icon>
+	<modelID>20303</modelID>
+	<modelSize>[-250,250,250]</modelSize>
+	<modelRotate>[1, 253, 0]</modelRotate>
+	<modelPos>[278, -227, -300]</modelPos>
+	<shopType>2</shopType>
+	<campType>2</campType>
+	<camp>盗墓对立</camp>
+	<describe>某人劫掠了他的家园和子民,守灵将军在墓道徘徊了数年,发誓要将自己打造成残忍的复仇工具。他造访了所有墓道中的亡灵,一个个战胜他们直至没有人再敢挑战他。通过这样,他精通了亡灵战斗的方式并将他的戾气转化为一种力量。执刀于手而集怒于心,那个将他所知的生活摧毁的人,如今变成了他永恒的复仇任务。</describe>
+	<lev>1</lev>
+	<exp>100</exp>
+</config>
+<config>
+	<id>3001</id>
+	<name>奥利西斯</name>
+	<icon>1001</icon>
+	<modelID>20105</modelID>
+	<modelSize>[-300,300,300]</modelSize>
+	<modelRotate>[1, 248, 0]</modelRotate>
+	<modelPos>[278, -268, -300]</modelPos>
+	<shopType>3</shopType>
+	<campType>3</campType>
+	<camp>埃及</camp>
+	<describe>被称作战争女祭司的克利奥帕特拉九世是一位有着无限荣耀的祭司。凭借着永不退缩的勇气和永无止境的野心,她获得了惊人的名望和财富。在面对她的神秘遗产的启示后,克利奥帕特拉九世必须权衡是继续走自己的路去追逐欲望还是接受一个更伟大传承所带来的责任。</describe>
+	<lev>1</lev>
+	<exp>300</exp>
+</config>
+<config>
+	<id>4001</id>
+	<name>阿努比斯</name>
+	<icon>1005</icon>
+	<modelID>20102</modelID>
+	<modelSize>[-300,300,300]</modelSize>
+	<modelRotate>[1, 248, 0]</modelRotate>
+	<modelPos>[278, -268, -300]</modelPos>
+	<shopType>4</shopType>
+	<campType>4</campType>
+	<camp>埃及对立</camp>
+	<describe>熔岩是所有创造物的精华,这里的居民都是特别的组成部分,这个地方对称,完全稳定,因此极其美丽。在这里居住的熔岩生物都清楚自己的身份,并全力履行自己的责任。他们像群居生物或蜂巢那样工作和生活。德索丘总是努力付出自己的全部潜能,作为整体的一部分。他是一个杰出的生物,履行着维持族人完美秩序构想的任务。</describe>
+	<lev>1</lev>
+	<exp>400</exp>
+</config>
+<config>
+	<id>5001</id>
+	<name>兜率宫</name>
+	<icon>1004</icon>
+	<modelID>20203</modelID>
+	<modelSize>[-250,250,250]</modelSize>
+	<modelRotate>[1, 248, 0]</modelRotate>
+	<modelPos>[278, -320, -300]</modelPos>
+	<shopType>5</shopType>
+	<campType>5</campType>
+	<camp>仙侠</camp>
+	<describe>无畏无赖的凶猛亡灵,列克身上的光环可谓数不胜数。很多亡灵都说,列克参与了有史以来墓道所挑起的每一场征战,“获得”了墓道中的每一份头衔,而且从来没有却步于任何一次战斗。虽然传闻总是不可全信,但至少有一件事毋庸置疑:只要列克骑着胆小的光呛鱼冲进战场,他的战斗便是为了保住所拥有的一切……或是抢走他想要的一切。</describe>
+	<lev>1</lev>
+	<exp>200</exp>
+</config>
+<config>
+	<id>6001</id>
+	<name>丢雷魔云窟</name>
+	<icon>1000</icon>
+	<modelID>20302</modelID>
+	<modelSize>[-200,200,200]</modelSize>
+	<modelRotate>[1, 203, 0]</modelRotate>
+	<modelPos>[280, -230, -300]</modelPos>
+	<shopType>6</shopType>
+	<campType>6</campType>
+	<camp>仙侠对立</camp>
+	<describe>玩球的</describe>
+	<lev>1</lev>
+	<exp>100</exp>
+</config>
+<config>
+	<id>7001</id>
+	<name>真新镇</name>
+	<icon>1006</icon>
+	<modelID>20106</modelID>
+	<modelSize>[-300,300,300]</modelSize>
+	<modelRotate>[1, 216, 0]</modelRotate>
+	<modelPos>[278, -230, -300]</modelPos>
+	<shopType>7</shopType>
+	<campType>7</campType>
+	<camp>精灵</camp>
+	<describe>玩剑的</describe>
+	<lev>1</lev>
+	<exp>200</exp>
+</config>
+<config>
+	<id>8001</id>
+	<name>精灵掠夺者</name>
+	<icon>1003</icon>
+	<modelID>20201</modelID>
+	<modelSize>[-350,350,350]</modelSize>
+	<modelRotate>[1, 248, 0]</modelRotate>
+	<modelPos>[278, -268, -300]</modelPos>
+	<shopType>8</shopType>
+	<campType>8</campType>
+	<camp>精灵对立</camp>
+	<describe>玩脚的</describe>
+	<lev>1</lev>
+	<exp>300</exp>
+</config>
+</root>

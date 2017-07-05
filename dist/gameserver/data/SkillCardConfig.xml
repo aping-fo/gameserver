@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<config>
+	<id>1010101</id>
+	<name>眩晕卡等级D</name>
+	<goodsid>50101</goodsid>
+	<lv>1</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1010102</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1010102</id>
+	<name>眩晕卡等级D</name>
+	<goodsid>50101</goodsid>
+	<lv>2</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1010103</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>110</decompose>
+</config>
+<config>
+	<id>1010103</id>
+	<name>眩晕卡等级D</name>
+	<goodsid>50101</goodsid>
+	<lv>3</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard>0</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1010201</id>
+	<name>眩晕卡等级C</name>
+	<goodsid>50102</goodsid>
+	<lv>1</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1010202</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1010202</id>
+	<name>眩晕卡等级C</name>
+	<goodsid>50102</goodsid>
+	<lv>2</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1010203</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1010203</id>
+	<name>眩晕卡等级C</name>
+	<goodsid>50102</goodsid>
+	<lv>3</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard>0</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>410</decompose>
+</config>
+<config>
+	<id>1010301</id>
+	<name>眩晕卡等级B</name>
+	<goodsid>50103</goodsid>
+	<lv>1</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1010302</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1010302</id>
+	<name>眩晕卡等级B</name>
+	<goodsid>50103</goodsid>
+	<lv>2</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1010303</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>310</decompose>
+</config>
+<config>
+	<id>1010303</id>
+	<name>眩晕卡等级B</name>
+	<goodsid>50103</goodsid>
+	<lv>3</lv>
+	<type>1</type>
+	<desc>一定概率导致受击者眩晕</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard>0</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>610</decompose>
+</config>
+<config>
+	<id>1020101</id>
+	<name>冰冻卡等级D</name>
+	<goodsid>50201</goodsid>
+	<lv>1</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1020102</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1020102</id>
+	<name>冰冻卡等级D</name>
+	<goodsid>50201</goodsid>
+	<lv>2</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1020103</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>110</decompose>
+</config>
+<config>
+	<id>1020103</id>
+	<name>冰冻卡等级D</name>
+	<goodsid>50201</goodsid>
+	<lv>3</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard>0</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1020201</id>
+	<name>冰冻卡等级C</name>
+	<goodsid>50202</goodsid>
+	<lv>1</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1020202</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1020202</id>
+	<name>冰冻卡等级C</name>
+	<goodsid>50202</goodsid>
+	<lv>2</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1020203</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1020203</id>
+	<name>冰冻卡等级C</name>
+	<goodsid>50202</goodsid>
+	<lv>3</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard></nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>410</decompose>
+</config>
+<config>
+	<id>1020301</id>
+	<name>冰冻卡等级D</name>
+	<goodsid>50203</goodsid>
+	<lv>1</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1020302</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1020302</id>
+	<name>冰冻卡等级D</name>
+	<goodsid>50203</goodsid>
+	<lv>2</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1020303</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>310</decompose>
+</config>
+<config>
+	<id>1020303</id>
+	<name>冰冻卡等级D</name>
+	<goodsid>50203</goodsid>
+	<lv>3</lv>
+	<type>2</type>
+	<desc>一定概率导致受击者冰冻</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard></nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>610</decompose>
+</config>
+<config>
+	<id>1030101</id>
+	<name>石化卡等级D</name>
+	<goodsid>50301</goodsid>
+	<lv>1</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1030102</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1030102</id>
+	<name>石化卡等级D</name>
+	<goodsid>50301</goodsid>
+	<lv>2</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1030103</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>110</decompose>
+</config>
+<config>
+	<id>1030103</id>
+	<name>石化卡等级D</name>
+	<goodsid>50301</goodsid>
+	<lv>3</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard>0</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1030201</id>
+	<name>石化卡等级C</name>
+	<goodsid>50302</goodsid>
+	<lv>1</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1030202</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1030202</id>
+	<name>石化卡等级C</name>
+	<goodsid>50302</goodsid>
+	<lv>2</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1030203</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1030203</id>
+	<name>石化卡等级C</name>
+	<goodsid>50302</goodsid>
+	<lv>3</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard></nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>410</decompose>
+</config>
+<config>
+	<id>1030301</id>
+	<name>石化卡等级B</name>
+	<goodsid>50303</goodsid>
+	<lv>1</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.5,4.0]</param>
+	<nextCard>1030302</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1030302</id>
+	<name>石化卡等级B</name>
+	<goodsid>50303</goodsid>
+	<lv>2</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.6,5.0]</param>
+	<nextCard>1030303</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>310</decompose>
+</config>
+<config>
+	<id>1030303</id>
+	<name>石化卡等级B</name>
+	<goodsid>50303</goodsid>
+	<lv>3</lv>
+	<type>3</type>
+	<desc>一定概率导致受击者石化</desc>
+	<param>[0.7,6.0]</param>
+	<nextCard></nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>610</decompose>
+</config>
+<config>
+	<id>1040101</id>
+	<name>中毒卡等级D</name>
+	<goodsid>50401</goodsid>
+	<lv>1</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard>1040102</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1040102</id>
+	<name>中毒卡等级D</name>
+	<goodsid>50401</goodsid>
+	<lv>2</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard>1040103</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>110</decompose>
+</config>
+<config>
+	<id>1040103</id>
+	<name>中毒卡等级D</name>
+	<goodsid>50401</goodsid>
+	<lv>3</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard>0</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1040201</id>
+	<name>中毒卡等级C</name>
+	<goodsid>50402</goodsid>
+	<lv>1</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard>1040202</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1040202</id>
+	<name>中毒卡等级C</name>
+	<goodsid>50402</goodsid>
+	<lv>2</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard>1040203</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1040203</id>
+	<name>中毒卡等级C</name>
+	<goodsid>50402</goodsid>
+	<lv>3</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard></nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>410</decompose>
+</config>
+<config>
+	<id>1040301</id>
+	<name>中毒卡等级B</name>
+	<goodsid>50403</goodsid>
+	<lv>1</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard>1040302</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1040302</id>
+	<name>中毒卡等级B</name>
+	<goodsid>50403</goodsid>
+	<lv>2</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard>1040303</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>310</decompose>
+</config>
+<config>
+	<id>1040303</id>
+	<name>中毒卡等级B</name>
+	<goodsid>50403</goodsid>
+	<lv>3</lv>
+	<type>4</type>
+	<desc>一定概率导致受击者中毒</desc>
+	<param>[0.9,1010001]</param>
+	<nextCard></nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>610</decompose>
+</config>
+<config>
+	<id>1050101</id>
+	<name>灼烧卡等级D</name>
+	<goodsid>50501</goodsid>
+	<lv>1</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard>1050102</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1050102</id>
+	<name>灼烧卡等级D</name>
+	<goodsid>50501</goodsid>
+	<lv>2</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard>1050103</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>110</decompose>
+</config>
+<config>
+	<id>1050103</id>
+	<name>灼烧卡等级D</name>
+	<goodsid>50501</goodsid>
+	<lv>3</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard>0</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1050201</id>
+	<name>灼烧卡等级C</name>
+	<goodsid>50502</goodsid>
+	<lv>1</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard>1050202</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1050202</id>
+	<name>灼烧卡等级C</name>
+	<goodsid>50502</goodsid>
+	<lv>2</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard>1050203</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1050203</id>
+	<name>灼烧卡等级C</name>
+	<goodsid>50502</goodsid>
+	<lv>3</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard></nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>410</decompose>
+</config>
+<config>
+	<id>1050301</id>
+	<name>灼烧卡等级B</name>
+	<goodsid>50503</goodsid>
+	<lv>1</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard>1050302</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1050302</id>
+	<name>灼烧卡等级B</name>
+	<goodsid>50503</goodsid>
+	<lv>2</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard>1050303</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>310</decompose>
+</config>
+<config>
+	<id>1050303</id>
+	<name>灼烧卡等级B</name>
+	<goodsid>50503</goodsid>
+	<lv>3</lv>
+	<type>5</type>
+	<desc>一定概率导致受击者灼烧</desc>
+	<param>[0.9,1010101]</param>
+	<nextCard></nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>610</decompose>
+</config>
+<config>
+	<id>1060101</id>
+	<name>流血卡等级D</name>
+	<goodsid>50601</goodsid>
+	<lv>1</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard>1060102</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1060102</id>
+	<name>流血卡等级D</name>
+	<goodsid>50601</goodsid>
+	<lv>2</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard>1060103</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>110</decompose>
+</config>
+<config>
+	<id>1060103</id>
+	<name>流血卡等级D</name>
+	<goodsid>50601</goodsid>
+	<lv>3</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard>0</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1060201</id>
+	<name>流血卡等级C</name>
+	<goodsid>50602</goodsid>
+	<lv>1</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard>1060202</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1060202</id>
+	<name>流血卡等级C</name>
+	<goodsid>50602</goodsid>
+	<lv>2</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard>1060203</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1060203</id>
+	<name>流血卡等级C</name>
+	<goodsid>50602</goodsid>
+	<lv>3</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard></nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>410</decompose>
+</config>
+<config>
+	<id>1060301</id>
+	<name>流血卡等级B</name>
+	<goodsid>50603</goodsid>
+	<lv>1</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard>1060302</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1060302</id>
+	<name>流血卡等级B</name>
+	<goodsid>50603</goodsid>
+	<lv>2</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard>1060303</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>310</decompose>
+</config>
+<config>
+	<id>1060303</id>
+	<name>流血卡等级B</name>
+	<goodsid>50603</goodsid>
+	<lv>3</lv>
+	<type>6</type>
+	<desc>一定概率导致受击者流血</desc>
+	<param>[0.9,1010201]</param>
+	<nextCard></nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>610</decompose>
+</config>
+<config>
+	<id>1080101</id>
+	<name>主属性增益卡D</name>
+	<goodsid>50801</goodsid>
+	<lv>1</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard>1080102</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1080102</id>
+	<name>主属性增益卡D</name>
+	<goodsid>50801</goodsid>
+	<lv>2</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard>1080103</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>110</decompose>
+</config>
+<config>
+	<id>1080103</id>
+	<name>主属性增益卡D</name>
+	<goodsid>50801</goodsid>
+	<lv>3</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard>0</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1080201</id>
+	<name>主属性增益卡C</name>
+	<goodsid>50802</goodsid>
+	<lv>1</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard>1080202</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1080202</id>
+	<name>主属性增益卡C</name>
+	<goodsid>50802</goodsid>
+	<lv>2</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard>1080203</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1080203</id>
+	<name>主属性增益卡C</name>
+	<goodsid>50802</goodsid>
+	<lv>3</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard></nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>410</decompose>
+</config>
+<config>
+	<id>1080301</id>
+	<name>主属性增益卡B</name>
+	<goodsid>50803</goodsid>
+	<lv>1</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard>1080302</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1080302</id>
+	<name>主属性增益卡B</name>
+	<goodsid>50803</goodsid>
+	<lv>2</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard>1080303</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>310</decompose>
+</config>
+<config>
+	<id>1080303</id>
+	<name>主属性增益卡B</name>
+	<goodsid>50803</goodsid>
+	<lv>3</lv>
+	<type>8</type>
+	<desc>一定几率提高自身威力</desc>
+	<param>[0.9,1040001]</param>
+	<nextCard></nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>610</decompose>
+</config>
+<config>
+	<id>1100101</id>
+	<name>减CD卡等级D</name>
+	<goodsid>51001</goodsid>
+	<lv>1</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard>1100102</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1100102</id>
+	<name>减CD卡等级D</name>
+	<goodsid>51001</goodsid>
+	<lv>2</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard>1100103</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>110</decompose>
+</config>
+<config>
+	<id>1100103</id>
+	<name>减CD卡等级D</name>
+	<goodsid>51001</goodsid>
+	<lv>3</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard>0</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1100201</id>
+	<name>减CD卡等级C</name>
+	<goodsid>51002</goodsid>
+	<lv>1</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard>1100102</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1100202</id>
+	<name>减CD卡等级C</name>
+	<goodsid>51002</goodsid>
+	<lv>2</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard>1100203</nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>210</decompose>
+</config>
+<config>
+	<id>1100203</id>
+	<name>减CD卡等级C</name>
+	<goodsid>51002</goodsid>
+	<lv>3</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard></nextCard>
+	<exp>200</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>410</decompose>
+</config>
+<config>
+	<id>1100301</id>
+	<name>减CD卡等级B</name>
+	<goodsid>51003</goodsid>
+	<lv>1</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard>1100302</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1100302</id>
+	<name>减CD卡等级B</name>
+	<goodsid>51003</goodsid>
+	<lv>2</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard>1100303</nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>310</decompose>
+</config>
+<config>
+	<id>1100303</id>
+	<name>减CD卡等级B</name>
+	<goodsid>51003</goodsid>
+	<lv>3</lv>
+	<type>10</type>
+	<desc>减少该技能冷却时间</desc>
+	<param>[0.9,-0.5]</param>
+	<nextCard></nextCard>
+	<exp>300</exp>
+	<icon></icon>
+	<quality>3</quality>
+	<decompose>610</decompose>
+</config>
+<config>
+	<id>1120101</id>
+	<name>伤害浮动卡D</name>
+	<goodsid>51201</goodsid>
+	<lv>1</lv>
+	<type>12</type>
+	<desc>造成的伤害随机浮动</desc>
+	<param>[0.9,1050001]</param>
+	<nextCard></nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1090101</id>
+	<name>霸体卡D</name>
+	<goodsid>50901</goodsid>
+	<lv>1</lv>
+	<type>9</type>
+	<desc>获得霸体效果</desc>
+	<param>[0.9,1020001]</param>
+	<nextCard></nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>1140101</id>
+	<name>吸血卡D</name>
+	<goodsid>51401</goodsid>
+	<lv>1</lv>
+	<type>14</type>
+	<desc>吸取生命值</desc>
+	<param>[0.9,1160001]</param>
+	<nextCard></nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>2080101</id>
+	<name>反伤卡</name>
+	<goodsid>51501</goodsid>
+	<lv>1</lv>
+	<type>8</type>
+	<desc>获得反伤效果</desc>
+	<param>[0.9,1140001]</param>
+	<nextCard></nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>3080101</id>
+	<name>回复卡</name>
+	<goodsid>51601</goodsid>
+	<lv>1</lv>
+	<type>8</type>
+	<desc>获得回复效果</desc>
+	<param>[0.9,1060001]</param>
+	<nextCard></nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>1</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>3090101</id>
+	<name>测试合成卡</name>
+	<goodsid>51701</goodsid>
+	<lv>1</lv>
+	<type>99</type>
+	<desc>获得回复效果</desc>
+	<param>[0.9,1060001]</param>
+	<nextCard>1100301</nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+<config>
+	<id>3100101</id>
+	<name>测试合成卡</name>
+	<goodsid>51801</goodsid>
+	<lv>1</lv>
+	<type>99</type>
+	<desc>获得回复效果</desc>
+	<param>[0.9,1060001]</param>
+	<nextCard></nextCard>
+	<exp>100</exp>
+	<icon></icon>
+	<quality>2</quality>
+	<decompose>10</decompose>
+</config>
+</root>

@@ -1,0 +1,699 @@
+package com.game.module.task;
+
+import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.game.data.GoodsConfig;
+import com.game.data.Response;
+import com.game.data.SkillCardConfig;
+import com.game.data.SkillConfig;
+import com.game.data.TaskConfig;
+import com.game.event.Dispose;
+import com.game.module.gang.GMember;
+import com.game.module.gang.Gang;
+import com.game.module.gang.GangService;
+import com.game.module.goods.Goods;
+import com.game.module.goods.GoodsEntry;
+import com.game.module.goods.GoodsService;
+import com.game.module.log.LogConsume;
+import com.game.module.player.Jewel;
+import com.game.module.player.Player;
+import com.game.module.player.PlayerData;
+import com.game.module.player.PlayerService;
+import com.game.module.skill.SkillCard;
+import com.game.params.Int2Param;
+import com.game.params.IntParam;
+import com.game.params.ListParam;
+import com.game.params.task.STaskVo;
+import com.game.params.task.TaskListInfo;
+import com.game.util.CommonUtil;
+import com.game.util.CompressUtil;
+import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
+import com.game.util.RandomUtil;
+import com.server.SessionManager;
+import com.server.util.GameData;
+import com.server.util.ServerLogger;
+
+@Service
+public class TaskService implements Dispose {
+
+	@Autowired
+	private TaskDao taskDao;
+	@Autowired
+	private PlayerService playerService;
+	@Autowired
+	private GoodsService goodsService;
+	@Autowired
+	private GangService gangService;
+
+	private Map<Integer, PlayerTask> tasks = new ConcurrentHashMap<Integer, PlayerTask>();
+
+	@Override
+	public void removeCache(int playerId) {
+		tasks.remove(playerId);
+	}
+
+	// 获取任务配置
+	public TaskConfig getConfig(int taskId) {
+		return GameData.getConfig(TaskConfig.class, taskId);
+	}
+
+	// 获取玩家任务
+	public PlayerTask getPlayerTask(int playerId) {
+		PlayerTask playerTasks = tasks.get(playerId);
+		// 获取玩家任务
+		if (playerTasks != null) {
+			return playerTasks;
+		}
+		byte[] dbData = taskDao.select(playerId);
+		if (dbData != null) {
+			dbData = CompressUtil.decompressBytes(dbData);
+			playerTasks = JsonUtils.string2Object(
+					new String(dbData, Charset.forName("utf-8")),
+					PlayerTask.class);
+			if (playerTasks == null) {
+				ServerLogger.warn("Err Player Task:", playerId, dbData.length);
+				playerTasks = new PlayerTask();
+			}
+			List<Integer> errId = new ArrayList<Integer>();
+			for (int id : playerTasks.getTasks().keySet()) {
+				if (ConfigData.getConfig(TaskConfig.class, id) == null) {
+					ServerLogger.warn("FindErrTaskId:", id, playerId);
+					errId.add(id);
+				}
+			}
+			for (int id : errId) {
+				playerTasks.getTasks().remove(id);
+			}
+		} else {
+			playerTasks = new PlayerTask();
+		}
+		tasks.put(playerId, playerTasks);
+		return playerTasks;
+	}
+
+	// 获取当前的所有任务
+	public TaskListInfo getCurTasks(int playerId) {
+		TaskListInfo result = new TaskListInfo();
+		result.task = new ArrayList<STaskVo>();
+		Player player = playerService.getPlayer(playerId);
+		PlayerTask playerTask = getPlayerTask(playerId);
+		List<Task> tasks = new ArrayList<>(playerTask.getTasks().values());
+		if(player.getGangId() > 0){
+			Gang gang = gangService.getGang(player.getGangId());
+			tasks.addAll(gang.getTasks().values());
+		}
+		for (Task task : tasks) {
+			TaskConfig config = getConfig(task.getTaskId());
+			if (task.getState() == Task.STATE_INIT
+					|| (task.getState() == Task.STATE_SUBMITED && config.nextTaskId != 0))
+				continue;
+			STaskVo vo = new STaskVo();
+			vo.id = task.getTaskId();
+			vo.state = task.getState();
+			vo.count = task.getCount();
+			result.task.add(vo);
+		}
+		result.myJoint = new ArrayList<Int2Param>();
+		for (Map.Entry<Integer, Integer> entry : playerTask.getMyJointTasks()
+				.entrySet()) {
+			Int2Param param = new Int2Param();
+			param.param1 = entry.getKey();
+			param.param2 = entry.getValue();
+			result.myJoint.add(param);
+		}
+		result.jointedCount = playerTask.getJointedCount();
+		JointTask curJointed = playerTask.getCurrJointedTask();
+		if (curJointed != null) {
+			result.currJointedId = curJointed.getTaskId();
+			result.currJointedPartner = curJointed.getParnterId();
+
+			STaskVo vo = new STaskVo();
+			vo.id = curJointed.getTaskId();
+			vo.state = curJointed.getState();
+			vo.count = curJointed.getCount();
+			vo.isJoint = true;
+			result.task.add(vo);
+
+		}
+
+		result.jointedList = new ArrayList<Int2Param>();
+		for (String str : playerTask.getJointedTasks()) {
+			String[] ss = str.split("_");
+			Int2Param param = new Int2Param();
+			param.param1 = Integer.parseInt(ss[0]);
+			param.param2 = Integer.parseInt(ss[1]);
+			result.jointedList.add(param);
+		}
+		result.liveness = playerTask.getLiveness();
+		if (!playerTask.getLiveBox().isEmpty()) {
+			result.livebox = new ArrayList<IntParam>();
+			for (int id : playerTask.getLiveBox()) {
+				IntParam param = new IntParam();
+				param.param = id;
+				result.livebox.add(param);
+			}
+		}
+		return result;
+	}
+
+	// 初始化任务系统
+	public void initTask(int playerId) {
+		PlayerTask task = new PlayerTask();
+		tasks.put(playerId, task);
+		for (int id : ConfigData.globalParam().firstTask) {
+			addNewTask(playerId, id, false);
+		}
+		updateDailyTasks(playerId);
+		updateWeeklyTasks(playerId);
+		updateJointTasks(playerId);
+		taskDao.insert(playerId);
+	}
+
+	public Task addNewTask(int playerId, int taskId) {
+		return addNewTask(playerId, taskId, true);
+	}
+
+	public Task addNewTask(int playerId, int taskId, boolean refresh) {
+		Player player = playerService.getPlayer(playerId);
+		TaskConfig taskCfg = getConfig(taskId);
+		Task task = new Task(taskId,
+				player.getLev() >= taskCfg.level ? Task.STATE_ACCEPTED
+						: Task.STATE_INIT);
+		getPlayerTask(playerId).getTasks().put(taskId, task);
+		if (refresh) {
+			updateTaskToClient(playerId, task);
+		}
+		return task;
+	}
+
+	// 检查任务是否完成
+	public boolean checkFinished(Task task) {
+		TaskConfig config = getConfig(task.getTaskId());
+		int[] targets = config.finishParam;
+
+		if (task.getState() == Task.STATE_FINISHED || targets == null) {
+			return true;
+		}
+		int count = targets[targets.length - 1];
+		if (task.getCount() >= count) {
+			task.setState(Task.STATE_FINISHED);
+			return true;
+		}
+		return false;
+	}
+
+	/**
+	 * 完成任务接口
+	 * 
+	 * @param playerId
+	 * @param type
+	 * @param params
+	 */
+	public void doTask(int playerId, int type, int... params) {
+		try{
+			Player player = playerService.getPlayer(playerId);
+			if (player.getAccName().equals(PlayerService.ROBOT)) {
+				return;
+			}
+			PlayerData data = playerService.getPlayerData(playerId);
+
+			PlayerTask playerTask = getPlayerTask(playerId);
+			List<Task> tasks = new ArrayList<>(playerTask.getTasks().values());
+			if (playerTask.getCurrJointedTask() != null) {
+				tasks.add(playerTask.getCurrJointedTask());
+			}
+			Gang gang = null;
+			if(player.getGangId() > 0){
+				gang = gangService.getGang(player.getGangId());
+				tasks.addAll(gang.getTasks().values());
+			}
+			for (Task task : tasks) {
+				
+				int oldState = task.getState();
+
+				if (oldState == Task.STATE_INIT || oldState == Task.STATE_SUBMITED) {
+					continue;
+				}
+				TaskConfig config = getConfig(task.getTaskId());
+
+				if (config == null) {
+					ServerLogger.warn("ErrorTaskId:", task.getTaskId());
+					continue;
+				}
+				if (config.finishType != type) {
+					continue;
+				}
+
+				if (player.getLev() < config.level) {
+					continue;
+				}
+
+				int[] targets = config.finishParam;
+				// 无任务目标的
+				if (targets == null) {
+					continue;
+				}
+
+				int count = targets.length;
+
+				int oldCount = task.getCount();
+
+				if (config.finishType == Task.FINISH_WEAR) {
+					int request = targets[0];
+					int curCount = 0;
+					Collection<Goods> goods = goodsService.getPlayerBag(playerId)
+							.getAllGoods().values();
+					for (Goods g : goods) {
+						if (!g.isInBag()) {
+							GoodsConfig goodsCfg = ConfigData.getConfig(
+									GoodsConfig.class, g.getGoodsId());
+							if (!CommonUtil.contain(
+									ConfigData.globalParam().equipTypes,
+									goodsCfg.type)) {
+								continue;
+							}
+							if (goodsCfg.color >= request) {
+								curCount++;
+							}
+						}
+					}
+					task.setCount(curCount);
+				} else if (config.finishType == Task.FINISH_STONE) {
+					if (count == 1) {
+						task.alterCount(params[params.length - 1]);
+					} else {
+						int reqLev = targets[0];
+						int reqPos = targets[1];
+						if(params[0] < reqLev || (reqPos > 0 && reqPos != params[1])){
+							continue;
+						}
+						int curCount = 0;
+						if (reqPos > 0) {
+							Jewel jewel = data.getJewels().get(reqPos);
+							if (jewel != null && jewel.getLev() >= reqLev) {
+								curCount++;
+							}
+						} else {
+							for (Jewel jewel : data.getJewels().values()) {
+								System.out.println(jewel.getLev());
+								if (jewel.getLev() >= reqLev) {
+									curCount++;
+								}
+							}
+						}
+						task.setCount(curCount);
+					}
+				} else if (config.finishType == Task.FINISH_STRONG) {
+					if (count == 1) {
+						task.alterCount(params[params.length - 1]);
+					} else {
+						int reqLev = targets[0];
+						int reqPos = targets[1];
+						if(params[0] < reqLev || (reqPos > 0 && reqPos != params[1])){
+							continue;
+						}
+						Map<Integer, Integer> strengths = playerService
+								.getPlayerData(playerId).getStrengths();
+						int curCount = 0;
+						if (reqPos == 0) {
+							for (int str : strengths.values()) {
+								if (str >= reqLev) {
+									curCount++;
+								}
+							}
+						} else if (strengths.getOrDefault(reqPos, 0) >= reqLev) {
+							curCount = 1;
+						}
+						task.setCount(curCount);
+					}
+				}else if(config.finishType == Task.FINISH_STAR){
+					if (count == 1) {
+						task.alterCount(params[params.length - 1]);
+					} else {
+						int request = targets[0];
+						if(params[0] < request){
+							continue;
+						}
+						Collection<Goods> goods = goodsService.getPlayerBag(playerId)
+								.getAllGoods().values();
+						int curCount = 0;
+						for (Goods g : goods) {
+							if (!g.isInBag()) {
+								GoodsConfig goodsCfg = ConfigData.getConfig(
+										GoodsConfig.class, g.getGoodsId());
+								if (!CommonUtil.contain(
+										ConfigData.globalParam().equipTypes,
+										goodsCfg.type)) {
+									continue;
+								}
+								if (goodsCfg.color >= request) {
+									curCount++;
+								}
+							}
+						}
+						task.setCount(curCount);
+					}
+				}else if(config.finishType == Task.FINISH_SKILL){
+					List<Integer> skills = data.getCurSkills();
+					List<Integer> curCards = data.getCurCards();
+					int curCount = 0;
+					int reqLev = targets[0];
+					int reqCLev = targets[1];
+					for(int i = 0; i < 4; i++){
+						int skillId = skills.get(i);
+						if(skillId == 0){
+							continue;
+						}
+						SkillConfig skillCfg = GameData.getConfig(SkillConfig.class, skillId);
+						if(skillCfg.lev < reqLev){
+							continue;
+						}
+						if(reqCLev > 0){						
+							SkillCard skillCard = data.getSkillCards().get(curCards.get(i));
+							if(skillCard == null){
+								continue;
+							}
+							SkillCardConfig cardCfg = GameData.getConfig(SkillCardConfig.class, skillCard.getCardId());
+							if(cardCfg.lv < reqCLev){
+								continue;
+							}
+						}
+						curCount++;
+					}
+					task.setCount(curCount);
+				}else if(config.finishType == Task.FINISH_CARD_UPGRADE || config.finishType == Task.FINISH_CARD_COMPOSE){					
+					if(count == 1){
+						task.alterCount(params[params.length - 1]);
+					}else{
+						int request = targets[0];
+						if(params[0] < request){
+							continue;
+						}
+						int curCount = 0;
+						Collection<SkillCard> skillCards = data.getSkillCards().values();
+						for(SkillCard card : skillCards){
+							SkillCardConfig cardCfg = GameData.getConfig(SkillCardConfig.class, card.getCardId());
+							int cur = config.finishType == Task.FINISH_CARD_UPGRADE ? cardCfg.lv : cardCfg.quality;
+							if(cur >= request){
+								curCount++;
+							}
+						}
+						task.alterCount(curCount);
+					}
+				}else {
+					if (params.length != count) {
+						continue;
+					}
+					int i = count - 2;
+					for (; i >= 0; i--) {
+						if (targets[i] != 0 && targets[i] != params[i]) {
+							break;
+						}
+					}
+					if (i >= 0) {
+						continue;
+					}
+					task.alterCount(params[count - 1]);
+				}
+
+				checkFinished(task); 
+
+				if (task.getCount() != oldCount || task.getState() != oldState) {
+					if(config.taskType == Task.TYPE_GANG){
+						GMember gMember = gang.getMembers().get(playerId);
+						gMember.alterTaskContribution(1);
+						if(task.getState() == Task.STATE_FINISHED){					
+							gangService.sendTaskReward(player.getGangId(), config);
+							task.setState(Task.STATE_SUBMITED);
+						}
+					}
+					// 发送到前端
+					updateTaskToClient(playerId, task);
+					if (config.taskType == Task.TYPE_JOINT) {
+						// 邀请任务
+						checkJointTask(playerId, task);
+					}
+				}
+			}
+		}catch(Exception ex){			
+			String paramStr = "";
+			for(int i : params){
+				paramStr += " " + i;
+			}
+			ServerLogger.err(ex, "doTask error,type=" + type + ",params=" + paramStr);
+		}
+		
+	}
+
+	private void checkJointTask(int playerId, Task task) {
+		int taskId = task.getTaskId();
+		PlayerTask playerTask = getPlayerTask(playerId);
+		if (JointTask.class.isInstance(task)) {
+			JointTask jointedTask = playerTask.getCurrJointedTask();
+			Task _task = getPlayerTask(jointedTask.getParnterId()).getTasks()
+					.get(taskId);
+			_task.setCount(task.getCount());
+			_task.setState(task.getState());
+			updateTaskToClient(jointedTask.getParnterId(), _task);
+		}
+
+		Integer partnerId = playerTask.getMyJointTasks().get(taskId);
+		if (partnerId != null && partnerId > 0) {
+			Task _task = getPlayerTask(partnerId).getCurrJointedTask();
+			_task.setCount(task.getCount());
+			_task.setState(task.getState());
+			if(SessionManager.getInstance().isActive(partnerId)){				
+				updateTaskToClient(partnerId, _task);
+			}else{
+				updateTask(partnerId);
+			}
+		}
+	}
+
+	// 加任务奖励
+	public boolean addTaskReward(int playerId, int taskId) {
+		TaskConfig config = getConfig(taskId);
+
+		Player player = playerService.getPlayer(playerId);
+		int lev = (player.getLev() / 10) * 10;
+		if (lev == 0) {
+			lev = 1;
+		}
+
+		int[][] rewards = config.rewards;
+		List<GoodsEntry> goods = new ArrayList<GoodsEntry>();
+		for (int i = 0; i < rewards.length; i++) {
+			int[] reward = rewards[i];
+			int id = reward[0];
+			int count = reward[1];
+
+			goods.add(new GoodsEntry(id, count));
+		}
+
+		goodsService
+				.addRewards(playerId, goods, LogConsume.TASK_REWARD, taskId);
+		return true;
+	}
+
+	// 更新人物到前端
+	public void updateTaskToClient(int playerId, Task task) {
+		// 发送到前端
+		ListParam<STaskVo> tasks = new ListParam<STaskVo>();
+		tasks.params = new ArrayList<STaskVo>();
+		STaskVo vo = new STaskVo();
+		vo.count = task.getCount();
+		vo.state = task.getState();
+		vo.id = task.getTaskId();
+		vo.isJoint = task == getPlayerTask(playerId).getCurrJointedTask();
+		tasks.params.add(vo);
+
+		SessionManager.getInstance().sendMsg(TaskExtension.TASK_UPDATE, tasks,
+				playerId);
+	}
+
+	// 更新数据库
+	public void updateTask(int playerId) {
+		PlayerTask data = tasks.get(playerId);
+		if (data == null) {
+			return;
+		}
+		String str = JsonUtils.object2String(data);
+
+		byte[] dbData = str.getBytes(Charset.forName("utf-8"));
+		taskDao.update(playerId, CompressUtil.compressBytes(dbData));
+	}
+
+	// 人物升级时检查是否完成
+	public void checkTaskWhenLevUp(int playerId) {
+		Collection<Task> tasks = getPlayerTask(playerId).getTasks().values();
+		int lev = playerService.getPlayer(playerId).getLev();
+		for (Task task : tasks) {
+			if (task.getState() != Task.STATE_INIT) {
+				continue;
+			}
+			TaskConfig config = getConfig(task.getTaskId());
+			if (lev >= config.level) {
+				task.setState(Task.STATE_ACCEPTED);
+				// 发送到前端
+				updateTaskToClient(playerId, task);
+			}
+		}
+	}
+
+	public void dailyReset(int playerId) {
+		PlayerTask playerTask = getPlayerTask(playerId);
+		if (playerTask == null) {
+			return;
+		}
+		updateDailyTasks(playerId);
+		updateJointTasks(playerId);
+		playerTask.setLiveness(0);
+		playerTask.getLiveBox().clear();
+		SessionManager.getInstance().sendMsg(TaskExtension.TASK_LIST_INFO,
+				getCurTasks(playerId), playerId);
+	}
+
+	public void updateDailyTasks(int playerId) {
+		updateTasks(playerId, ConfigData.getDailyTasks());
+	}
+
+	public void updateWeeklyTasks(int playerId) {
+		updateTasks(playerId, ConfigData.getWeeklyTasks());
+	}
+
+	private void updateTasks(int playerId, List<Integer> tasks) {
+		ListParam<STaskVo> newTasks = new ListParam<STaskVo>();
+		newTasks.params = new ArrayList<STaskVo>();
+
+		Map<Integer, Task> playerTasks = getPlayerTask(playerId).getTasks();
+		for (int taskId : tasks) {
+			Task task = playerTasks.get(taskId);
+			if (task == null) {
+				task = addNewTask(playerId, taskId, false);
+			} else {
+				task.setCount(0);
+				if(task.getState() != Task.STATE_INIT){					
+					task.setState(Task.STATE_ACCEPTED);
+				}
+			}
+			playerTasks.put(taskId, task);
+
+			STaskVo vo = new STaskVo();
+			vo.id = task.getTaskId();
+			vo.count = task.getCount();
+			vo.state = task.getState();
+			newTasks.params.add(vo);
+		}
+	}
+
+	public void updateJointTasks(int playerId) {
+		Player player = playerService.getPlayer(playerId);
+		PlayerTask playerTask = getPlayerTask(playerId);
+		playerTask.getJointedTasks().clear();
+		playerTask.setJointedCount(0);
+		playerTask.setCurrJointedTask(null);
+		Map<Integer, Integer> myJointTasks = playerTask.getMyJointTasks();
+		myJointTasks.clear();
+		List<Integer> jointTasks = new ArrayList<>(ConfigData.getJointTasks());
+		int size = jointTasks.size();
+		Set<Integer> finishTypes = new HashSet<Integer>(3);
+		while (myJointTasks.size() < 3) {
+			Integer taskId = jointTasks.get(RandomUtil.randInt(size));
+			TaskConfig cfg = getConfig(taskId);
+			jointTasks.remove(taskId);
+			size--;
+			if(player.getLev() < cfg.level){
+				continue;
+			}
+			if (finishTypes.contains(cfg.finishType)) {
+				continue;
+			}
+			finishTypes.add(cfg.finishType);
+			myJointTasks.putIfAbsent(taskId, 0);
+		}
+	}
+
+	public int inviteJointTask(int playerId, int taskId, int partnerId) {
+		PlayerTask playerTask = getPlayerTask(playerId);
+		Map<Integer, Integer> myJointTasks = playerTask.getMyJointTasks();
+		if (!myJointTasks.containsKey(taskId) || myJointTasks.get(taskId) > 0) {
+			return Response.ERR_PARAM;
+		}
+		TaskConfig taskCfg = getConfig(taskId);
+		Player partner = playerService.getPlayer(partnerId);
+		if(partner.getLev() < taskCfg.level){
+			return Response.PARTNER_NO_LEV;
+		}
+		PlayerTask playerTask2 = getPlayerTask(partnerId);
+		if (playerTask2.getCurrJointedTask() != null) {
+			return Response.TASK_JOINTED;
+		}
+		if (playerTask2.getJointedCount() >= 3) {
+			return Response.TASK_NO_NOINT;
+		}
+		playerTask2.getJointedTasks().add(0,
+				String.format("%d_%d", taskId, playerId));
+		return Response.SUCCESS;
+	}
+
+	public int refuseJoint(int playerId, int taskId, int partnerId) {
+		PlayerTask playerTask = getPlayerTask(playerId);
+		playerTask.getJointedTasks().remove(
+				String.format("%d_%d", taskId, partnerId));
+
+		return Response.SUCCESS;
+	}
+
+	public int acceptJoint(int playerId, int taskId, int partnerId) {
+		PlayerTask playerTask = getPlayerTask(playerId);
+		if(playerTask.getJointedCount() >= 3){
+			return Response.NO_TODAY_TIMES;
+		}
+		List<String> jointedTasks = playerTask.getJointedTasks();
+		String key = String.format("%d_%d", taskId, partnerId);
+		if (!jointedTasks.contains(key)) {
+			return Response.ERR_PARAM;
+		}
+		JointTask myCurrJointedTask = playerTask.getCurrJointedTask();
+		if (myCurrJointedTask != null) {
+			return Response.TASK_JOINTED;
+		}
+		PlayerTask playerTask2 = getPlayerTask(partnerId);
+		Map<Integer, Integer> myJointTasks2 = playerTask2.getMyJointTasks();
+		if (!myJointTasks2.containsKey(taskId)) {
+			return Response.ERR_PARAM;
+		}
+		if (myJointTasks2.get(taskId) > 0) {
+			// 已经有人接了
+			return Response.TASK_PERFORMING;
+		}
+		jointedTasks.remove(key);
+		myCurrJointedTask = new JointTask(taskId, partnerId);
+		playerTask.setCurrJointedTask(myCurrJointedTask);
+
+		myJointTasks2.put(taskId, playerId);
+		addNewTask(partnerId, taskId);
+		//通知对方
+		if(SessionManager.getInstance().isActive(partnerId)){				
+			Int2Param notify = new Int2Param();
+			notify.param1 = taskId;
+			notify.param2 = playerId;
+			SessionManager.getInstance().sendMsg(TaskExtension.ACCEPTED_JOINT, notify, partnerId);
+		}else{
+			updateTask(partnerId);
+		}
+		
+		return Response.SUCCESS;
+	}
+}

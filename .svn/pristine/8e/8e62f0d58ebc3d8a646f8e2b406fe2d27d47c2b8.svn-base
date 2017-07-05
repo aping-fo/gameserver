@@ -1,0 +1,117 @@
+package com.game.module.player;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+public class PlayerCurrency {
+
+	protected final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+	protected final ReentrantReadWriteLock.ReadLock readLock = lock.readLock();
+	protected final ReentrantReadWriteLock.WriteLock writeLock = lock.writeLock();
+	
+	private Map<Integer, Long> currencies = new ConcurrentHashMap<Integer, Long>();
+	
+	public PlayerCurrency(){
+		
+	}
+	
+	public boolean verify(int type, long offset){
+		long value = get(type);
+		return value + offset >= 0;
+	}
+	
+	public long get(int type){
+		if(!tryRead()){
+			throw new RuntimeException("get read lock fail");
+		}
+		try{
+			return currencies.getOrDefault(type, 0L);
+		}finally{
+			unRead();
+		}
+	}
+	
+	public Map<Integer, Long> getCurrencies() {
+		return currencies;
+	}
+
+	public void setCurrencies(Map<Integer, Long> currencies) {
+		this.currencies = currencies;
+	}
+	
+	public boolean add(int type, long offset){
+		if(!tryWrite()){
+			throw new RuntimeException("get write lock fail");
+		}
+		if(offset <= 0){
+			return false;
+		}
+		try{			
+			Long value = currencies.get(type);
+			if(value == null){
+				value = offset;
+			}else{
+				value += offset;
+			}
+			currencies.put(type, value);
+			return true;
+		}finally{
+			unWrite();
+		}
+	}
+	
+	public boolean dec(int type, long offset){
+		if(offset <= 0){
+			return false;
+		}
+		if(!tryWrite()){
+			throw new RuntimeException("get write lock fail");
+		}
+		try{
+			long value = get(type);
+			if(value < offset){
+				return false;
+			}
+			currencies.put(type, value - offset);
+			return true;
+		}finally{
+			unWrite();
+		}
+	}
+	
+	public boolean tryRead(){
+		if(readLock.tryLock()){
+			return true;
+		}
+		boolean lock = false;
+		try{
+			lock = readLock.tryLock(10, TimeUnit.SECONDS);
+		}catch(InterruptedException ex){
+			Thread.currentThread().interrupt();
+		}
+		return lock;
+	}
+	
+	public void unRead(){
+		readLock.unlock();
+	}
+	
+	public boolean tryWrite(){
+		if(writeLock.tryLock()){
+			return true;
+		}
+		boolean lock = false;
+		try{
+			lock = writeLock.tryLock(10, TimeUnit.SECONDS);
+		}catch(InterruptedException ex){
+			Thread.currentThread().interrupt();
+		}
+		return lock;
+	}
+	
+	public void unWrite(){
+		writeLock.unlock();
+	}
+}

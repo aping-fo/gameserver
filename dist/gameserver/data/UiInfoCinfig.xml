@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<config>
+	<id>101</id>
+	<desc>竞技场界面</desc>
+	<WindowName>ArenaView</WindowName>
+	<WindowPath>Assets/UI/View/ArenaView/ArenaView.prefab</WindowPath>
+	<LuaClass>ArenaView</LuaClass>
+	<OffsetLeft>0</OffsetLeft>
+	<OffsetRight>0</OffsetRight>
+	<OffsetTop>0</OffsetTop>
+	<OffsetBottom>0</OffsetBottom>
+	<IsExclusion>1</IsExclusion>
+	<ShowType>-1</ShowType>
+	<SceneType>-1</SceneType>
+</config>
+<config>
+	<id>102</id>
+	<desc>竞技场战斗界面</desc>
+	<WindowName>ArenaBattleView</WindowName>
+	<WindowPath>Assets/UI/View/ArenabattleView/ArenabattleView.prefab</WindowPath>
+	<LuaClass>ArenaBattleView</LuaClass>
+	<OffsetLeft>0</OffsetLeft>
+	<OffsetRight>0</OffsetRight>
+	<OffsetTop>0</OffsetTop>
+	<OffsetBottom>0</OffsetBottom>
+	<IsExclusion>0</IsExclusion>
+	<ShowType>-1</ShowType>
+	<SceneType>-1</SceneType>
+</config>
+<config>
+	<id>103</id>
+	<desc>底框</desc>
+	<WindowName>FullView</WindowName>
+	<WindowPath>Assets/UI/View/FullView/FullView.prefab</WindowPath>
+	<LuaClass>FullView</LuaClass>
+	<OffsetLeft>0</OffsetLeft>
+	<OffsetRight>0</OffsetRight>
+	<OffsetTop>0</OffsetTop>
+	<OffsetBottom>0</OffsetBottom>
+	<IsExclusion>0</IsExclusion>
+	<ShowType>-1</ShowType>
+	<SceneType>-1</SceneType>
+</config>
+<config>
+	<id>104</id>
+	<desc>公会</desc>
+	<WindowName>GuildView</WindowName>
+	<WindowPath>Assets/UI/View/GuildView/GuildView.prefab</WindowPath>
+	<LuaClass>GuildView</LuaClass>
+	<OffsetLeft>0</OffsetLeft>
+	<OffsetRight>0</OffsetRight>
+	<OffsetTop>0</OffsetTop>
+	<OffsetBottom>0</OffsetBottom>
+	<IsExclusion>1</IsExclusion>
+	<ShowType>-1</ShowType>
+	<SceneType>-1</SceneType>
+</config>
+</root>

@@ -1,0 +1,128 @@
+package com.game.data;
+/**
+ * 错误码(工具生成，勿手动修改)
+ */
+public class Response {
+	//系统
+	public static final int SUCCESS=0;//成功
+	public static final int NO_DIAMOND=1;//钻石不足
+	public static final int NO_COIN=2;//金币不足
+	public static final int BAG_FULL=3;//背包已满
+	public static final int SYS_ERR=4;//系统错误
+	public static final int NO_ENERGY=5;//体力不足
+	public static final int ERR_PARAM=6;//参数错误,非法请求
+	public static final int NO_VIP=7;//VIP等级不足
+	public static final int BAN_LOGIN=8;//角色处于封禁中,请 联系客服
+	public static final int BAN_CHAT=9;//您的账号处于禁言中
+	public static final int NO_LEV=10;//等级不足
+	public static final int SYS_NUM_ERR=11;//系统检测到异常行为1，即将断开连接，请联系客服
+	public static final int SYS_KEY_ERR=12;//系统检测到异常行为2，即将断开连接，请联系客服
+	public static final int SYS_HEART_ERR=13;//系统检测到异常行为3，即将断开连接，请联系客服
+	public static final int NO_CONTRIBUTE=14;//帮贡不足
+	public static final int NO_TODAY_TIMES=18;//今天次数已经用完
+	public static final int NO_ACTIVE_VAL=19;//活跃值不足
+	public static final int NO_OPEN=20;//游戏处于维护中，请稍后再登陆
+	public static final int LOW_VERSION=22;//版本太低，请到所在应用商城下载最新版本
+	public static final int CLOSE_REG=23;//本服已经关闭注册新角色，请前往新服
+	public static final int NO_MATERIAL=24;//材料不足
+	public static final int EXCEED_LEV=26;//不能超过角色等级
+	public static final int SOLD_OUT=27;//已经售罄
+	public static final int SYS=99;//系统
+	public static final int WELCOME_MAIL_TITLE=100;//欢迎您来到《封神之刃》
+	public static final int WELCOME_MAIL_CONTENT=101;//尊敬的玩家，感谢您对游戏的支持！有问题可以随时联系我们
+	//角色系统
+	public static final int SAME_NAME=1001;//该名字已被使用
+	public static final int NO_USER=1002;//不存在的角色
+	public static final int TOO_MANY_CON=1003;//在线用户太多，请稍后再试
+	public static final int TOO_MANY_ROLE=1004;//角色数量超过上限
+	public static final int BUY_ENERGY_EXCEED=1005;//今日购买体力次数已达上限，升级vip可增加次数
+	public static final int ERR_NAME=1006;//名字包含非法字符
+	//装备
+	public static final int MAX_STAR=1201;//星级已满
+	public static final int MAX_STRENGTH=1202;//强化等级已满
+	public static final int MAX_LEV=1203;//已经是最高级了
+	public static final int STRENGTH_FAIL=1204;//强化失败，等级保持不变
+	//任务系统
+	public static final int TASK_NOT_FINISHED=1301;//任务尚未完成
+	public static final int TASK_JOINTED=1302;//对方已接取协助任务
+	public static final int TASK_PERFORMING=1303;//该邀请已被其他玩家抢先接取
+	public static final int TASK_NO_NOINT=1304;//对方已完成3个协助任务，不能再邀请
+	public static final int TASK_INVALID=1305;//合作任务已失效
+	//邮件
+	public static final int NO_MAIL=1401;//邮件不存在
+	public static final int FULL_BAG_TITLE=1402;//您的背包已满
+	public static final int FULL_BAG_CONTENT=1403;//您的背包已满，请尽快清理背包
+	public static final int ERR_GOODS_TYPE=1404;//物品类型错误
+	public static final int NO_VOCATION=1405;//职业不符合
+	public static final int COPY_NO_PRE=1406;//前置关卡未完成
+	//好友
+	public static final int MY_MAX_FRIENDS=1501;//好友数量已达上限
+	public static final int HE_MAX_FRIENDS=1502;//对方好友已满
+	public static final int NO_FRIEND_INFO=1503;//没有找到该玩家信息
+	public static final int IN_BLACK_LIST=1504;//你已被对方拉黑
+	public static final int IS_FRIEND=1505;//对方已是你的好友
+	public static final int NO_ADD_YOURSELF=1506;//不可以添加自己为好友
+	public static final int ERR_GOODS_COUNT=1601;//物品数量不足
+	public static final int SHOP_HAS_REFRESH=1701;//商城已经刷新了，请重试
+	//公会
+	public static final int GANG_APPLY_MAX=2501;//今日申请公会次数已达上限
+	public static final int HAS_GANG=2502;//您已经加入公会
+	public static final int GANG_APPLY_LIMIT=2503;//您的战力和等级不足，请试试其他公会吧。
+	public static final int GANG_NO_PRIVILEGE=2504;//您的权限不足
+	public static final int APPLY_OUTDATED=2505;//申请已失效
+	public static final int GANG_FULL=2506;//公会成员已满
+	public static final int JOIN_GANG=2507;//%s加入公会
+	public static final int JOIN_SUCESS_TITLE=2508;//申请公会成功
+	public static final int JOIN_SUCESS_CONTENT=2509;//您已成功加入-%s,去和大家打个招呼吧！
+	public static final int EXIT_GANG=2510;//%s离开公会
+	public static final int KICK_GANG=2511;//您已经被请出%s
+	public static final int TRANSFER_OWNER=2512;//不能转让给盟主本人
+	public static final int NEW_OWNER=2513;//%s万人拥护，众望所归，成为公会新盟主
+	public static final int BE_NEW_OWNER=2514;//恭喜您成为盟主
+	public static final int SET_POS_OWNER=2515;//不能对盟主进行该操作
+	public static final int DISSOVLE_MORE_ONE=2517;//您只能解散单人的公会。或选择转让给其他玩家
+	public static final int SB_BE_VICE=2518;//%s成为公会副盟主
+	public static final int YOU_BE_VICE=2519;//恭喜您成为副盟主
+	public static final int VICE_MAX=2520;//公会副盟主人数已满
+	public static final int GANG_DONATE=2521;//%s捐赠%d金币
+	public static final int GANG_SAME_NAME=2522;//您所创建公会名称已存在，请再次尝试。
+	public static final int TRANSFER_VICE=2523;//转让给公会副盟主
+	public static final int MAIN_BUILD_LESS=2524;//请先升级主建筑
+	public static final int OTHER_BUILD_LESS=2525;//您还有其他建筑未升级
+	public static final int BUILD_FULL=2526;//您的建筑已满级
+	public static final int GANG_COIN_LESS=2527;//公会资金不足，无法使用该使用该功能
+	public static final int DEC_MAIN_TAIN=2528;//扣除公会维护资金%d金币
+	public static final int UPGRADE_MAIN=2529;//主建筑升到%d级
+	public static final int TRANSFORM_GANG_COMPENSATE_TITLE=2530;//转让公会补偿邮件标题
+	public static final int TRANSFORM_GANG_COMPENSATE_CONTENT=2531;//转让公会补偿邮件内容
+	public static final int GANG_HAS_APPLY=2550;//您已经提交申请，请等待结果
+	public static final int GANG_APPLY_MEMBER_MAX=2551;//该公会申请人数已满，请稍后再试
+	public static final int GANG_TRANSFER_TITLE=2552;//帮主转让通知
+	public static final int GANG_TRANSFER_CONTENT=2553;//%s已经成为新一任的帮主,带领大家踏上征途！
+	public static final int QUIT_GANG_LAST=2554;//退出公会12小时内无法加入新公会，请稍后再试
+	public static final int HAS_TAKE_REWARD=2555;//已经领取过奖励了
+	public static final int NO_CURRENCY=2556;//货币不足，无法使用该功能
+	public static final int GANG_TASK_TITLE=2561;//完成公会任务
+	public static final int GANG_TASK_CONTENT=2562;//完成公会任务[{0}]
+	public static final int NO_TRAVERSING_ENERGY=2563;//穿越仪能量不足
+	//时装
+	public static final int DUPLICATE_FASHION_TITLE=3701;//重复时装补偿
+	public static final int DUPLICATE_FASHION_CONTENT=3702;//尊敬的玩家，由于你已经拥有时装：%s 了，不能重复获得，现在补充对应的钻石给你！
+	public static final int GANG_DUPLICATE_GTROOM=3703;//公会练功房已开启,不能重复开启
+	public static final int NO_GANG_ASSET=3704;//公会资金不足
+	public static final int NO_GANG_TRAINING=3705;//公会练功房暂时未开启
+	public static final int GANG_TRAINING_TITLE=3706;//公会练功房奖励标题
+	public static final int GANG_TRAINING_CONTENT=3707;//公会练功房奖励内容
+	public static final int GANG_DUPLICATE_TRAINING=3708;//你已经开始练功,不能重复开始
+	public static final int NO_GANG_TRAINING_REWARD=3709;//有效时长已用完,将不再获得收益
+	//组队
+	public static final int NO_ALL_READY=3802;//当前有队员未准备，无法进入副本
+	public static final int MEMBER_NO_ENERGY=3803;//{0}的不符合进入要求，无法进入。
+	public static final int TEAM_FULL=3805;//当前队伍已满，无法加入队伍。
+	public static final int NO_TEAM=3806;//当前队伍不存在，无法加入队伍。
+	public static final int TEAM_RUNNING_NO_JOIN=3807;//当前队伍已在副本中,无法加入队伍
+	public static final int TEAM_RUNNING_NO_DISSOLVE=3808;//当前队伍已在副本中,无法解散队伍
+	public static final int TEAM_RUNNING_NO_LEAVE=3809;//当前队伍已在副本中,无法离开队伍
+	public static final int TEAM_NO_READY=3810;//还有队员未准备好
+
+}

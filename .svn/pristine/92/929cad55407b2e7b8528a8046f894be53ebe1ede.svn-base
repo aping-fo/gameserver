@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>10000</id>
+	<baseData>1000</baseData>
+	<growRatio>0.1</growRatio>
+	<hp>1</hp>
+	<attackRatio>1</attackRatio>
+	<defenseRatio>1</defenseRatio>
+	<critRatio>1</critRatio>
+	<symptomRatio>1</symptomRatio>
+	<sectionLayer>5</sectionLayer>
+	<scetionRatio>0.1</scetionRatio>
+	<sectionMultiple>1</sectionMultiple>
+	<monster>2</monster>
+	<boss>1</boss>
+	<resetTimeclearTime>1</resetTimeclearTime>
+	<clearTime>30</clearTime>
+	<clearCoin>102:20</clearCoin>
+	<commCopyId>200101</commCopyId>
+	<bossCopyId>200102</bossCopyId>
+</config>
+</root>

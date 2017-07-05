@@ -1,0 +1,20 @@
+package com.game.params.team;
+
+import com.game.params.*;
+
+//创建队伍数据(工具自动生成，请勿手动修改！）
+public class CreateTeamVO implements IProtocol {
+	public String name;//名称
+	public int copyId;//副本id
+
+
+	public void decode(BufferBuilder bb) {
+		this.name = bb.getString();
+		this.copyId = bb.getInt();
+	}
+
+	public void encode(BufferBuilder bb) {
+		bb.putString(this.name);
+		bb.putInt(this.copyId);
+	}
+}

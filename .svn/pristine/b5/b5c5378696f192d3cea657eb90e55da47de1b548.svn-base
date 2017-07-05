@@ -1,0 +1,46 @@
+package com.game.event;
+
+import com.game.module.gang.GangService;
+import com.game.module.log.LoggerService;
+import com.game.module.rank.RankService;
+import com.game.util.BeanManager;
+import com.game.util.Context;
+import com.game.util.DelayUpdater;
+import com.game.util.ServerTimer;
+import com.server.SessionManager;
+import com.server.codec.LogicHandler;
+import com.server.syncdb.SyncDbService;
+import com.server.util.ServerLogger;
+
+public class ShutdownHandler extends Thread {
+
+	@Override
+	public void run() {
+		LogicHandler.CLOSED = true;
+
+		ServerLogger.warn("begin to shutdown server...");
+		// 关闭所有的链接
+		SessionManager.getInstance().dispose();
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+		}
+		SyncDbService.getInstance().stop(200);
+		DelayUpdater.stop();
+		// 一系列销毁操作
+		StartHandler.dispose();
+		DisposeHandler.dispose();
+		BeanManager.getBean(LoggerService.class).dispose();
+		BeanManager.getBean(ServerTimer.class).dispose();
+		BeanManager.getBean(GangService.class).update();
+		// 关闭相关的service
+		BeanManager.getBean(ServerTimer.class).saveData();
+		BeanManager.getBean(RankService.class).shutdown();
+		Context.getThreadService().shutdown();
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+		}
+		ServerLogger.warn("shutdown server over...");
+	}
+}

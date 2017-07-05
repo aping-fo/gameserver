@@ -1,0 +1,157 @@
+package com.game;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Properties;
+
+import com.game.util.TimeUtil;
+import com.server.util.Profile;
+import com.server.validate.AntiCheatService;
+import com.server.validate.MixSupportor;
+
+public class SysConfig {
+
+    public static int port;// 端口号
+    public static int serverId;// 服务端id
+    public static int gmPort;// 后台服务端口
+    public static int subLineCap;// 每个分线多少人
+    public static int subLineCount;// 每个场景的分线人数
+    public static String startUpDate;// 服务器开服时间 yyyy-MM-dd HH:mm:ss
+
+    private static Date openDate;// 开服时间Date
+    private static int openDays;// 开服时长
+
+    public volatile static boolean gm;// 是否启用gm
+
+    public static int serverThread;// ThreadService的线程数量
+    public static int timerThread; // 系统定时器线程
+    public static int loggerThread;// 日志记录线程
+    public static String logpath;// 日志根目录
+    public static int loggerBatchCount;// 批量插入日志量
+    public static int disposeThread;// 清除缓存线程
+    public static int delayDispose;// 下线多少秒清除缓存
+    public static int scheduledThread;// 定时器线程
+    public static boolean mangerService;// 后台管理service
+    public static int maxCon;// 最大连接数
+
+    public static String platform;// 平台名称
+    public static String statlogpath;// 统计日志目录
+    public static boolean debug;// 是否debug版本
+    public static String dataPath;// data的目录
+
+    public static boolean reg;// 开放注册
+    public static boolean checkVersion;// 检查版本
+
+    public static String mixIp;// 跨服IP
+    public static int mixPort;// 跨服端口
+    public static int cacheCount;//缓存的数量
+
+    public static void init() throws Exception {
+        Properties properties = new Properties();
+        try (FileInputStream fis = new FileInputStream(new File("config/sys.properties"))) {
+            properties.load(fis);
+            if (System.getProperty("port") != null) {
+                port = Integer.parseInt(System.getProperty("port"));
+            } else {
+                port = Integer.parseInt(properties.getProperty("port"));
+            }
+            if (System.getProperty("serverId") != null) {
+                serverId = Integer.parseInt(System.getProperty("serverId"));
+            } else {
+                serverId = Integer.parseInt(properties.getProperty("serverId"));
+            }
+            subLineCap = Integer.parseInt(properties.getProperty("subLineCap"));
+            subLineCount = Integer.parseInt(properties.getProperty("subLineCount"));
+            gm = Boolean.valueOf(properties.getProperty("gm"));
+
+            serverThread = Integer.parseInt(properties.getProperty("serverThread"));
+            timerThread = Integer.parseInt(properties.getProperty("timerThread"));
+            disposeThread = Integer
+                    .parseInt(properties.getProperty("disposeThread"));
+            delayDispose = Integer.parseInt(properties.getProperty("delayDispose"));
+            loggerThread = Integer.parseInt(properties.getProperty("loggerThread"));
+            loggerBatchCount = Integer.parseInt(properties
+                    .getProperty("loggerBatchCount"));
+            scheduledThread = Integer.parseInt(properties
+                    .getProperty("scheduledThread"));
+
+            logpath = properties.getProperty("logpath");
+            System.setProperty("logpath", logpath);
+            dataPath = properties.getProperty("dataPath");
+            System.setProperty("dataPath", dataPath);
+
+            startUpDate = properties.getProperty("startUpDate");
+
+
+            mangerService = Boolean
+                    .parseBoolean(properties.getProperty("mangerService"));
+            maxCon = Integer.parseInt(properties.getProperty("maxCon"));
+
+            gmPort = Integer.parseInt(properties.getProperty("gmport"));
+            platform = properties.getProperty("platform");
+            statlogpath = properties.getProperty("statlogpath");
+
+            debug = Boolean.parseBoolean(properties.getProperty("debug"));
+
+            reg = Boolean.parseBoolean(properties.getProperty("reg"));
+            checkVersion = Boolean.parseBoolean(properties.getProperty("checkVersion"));
+
+            cacheCount = Integer.parseInt(properties.getProperty("cacheCount"));
+
+            Profile.setOpen(Boolean.parseBoolean(properties.getProperty("profile")));
+
+            AntiCheatService.getInstance().setSafeCmd(properties.getProperty("safeMod"));
+            AntiCheatService.getInstance().setNoSerialNumCmd(properties.getProperty("noSerialNum"));
+            AntiCheatService.getInstance().setValidate(Boolean.valueOf(properties.getProperty("validate")));
+
+
+            SimpleDateFormat dataFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            openDate = dataFormat.parse(startUpDate);
+
+            updateOpenDays();
+        }
+
+        try (FileInputStream fis = new FileInputStream(new File("config/mix.properties"))) {
+            // 加载跨服设置
+            properties = new Properties();
+            properties.load(fis);
+
+            mixIp = properties.getProperty("mixIp");
+            mixPort = Integer.parseInt(properties.getProperty("mixPort"));
+
+            MixSupportor.setIncludeSection(properties.getProperty("includeSection"));
+            MixSupportor.setExcludeCmd(properties.getProperty("excludeCmd"));
+            MixSupportor.setShiftSwitch(Boolean.parseBoolean(properties.getProperty("open")));
+        }
+    }
+
+    // 开服多少天
+    public static int getOpenDays() {
+        return openDays;
+    }
+
+    public static void updateOpenDays() {
+        Calendar open = Calendar.getInstance();
+        open.setTime(openDate);
+        open.set(Calendar.HOUR_OF_DAY, 0);
+        open.set(Calendar.MINUTE, 0);
+        open.set(Calendar.SECOND, 0);
+
+        Calendar now = Calendar.getInstance();
+        now.set(Calendar.HOUR_OF_DAY, 0);
+        now.set(Calendar.MINUTE, 0);
+        now.set(Calendar.SECOND, 0);
+
+        long diff = (now.getTimeInMillis() - open.getTimeInMillis()) / 1000;
+        openDays = (int) (diff / (TimeUtil.ONE_HOUR * 24 / 1000)) + 1;
+
+    }
+
+    public static boolean isJapan() {
+        return platform.contains("japan");
+    }
+
+}

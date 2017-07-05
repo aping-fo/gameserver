@@ -1,0 +1,385 @@
+package com.game.module.gm;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.game.data.CopyConfig;
+import com.game.module.admin.MessageService;
+import com.game.module.attach.arena.ArenaExtension;
+import com.game.module.attach.lottery.LotteryExtension;
+import com.game.module.attach.training.TrainingExtension;
+import com.game.module.chat.ChatExtension;
+import com.game.module.copy.Copy;
+import com.game.module.copy.CopyExtension;
+import com.game.module.copy.CopyInstance;
+import com.game.module.copy.CopyService;
+import com.game.module.daily.DailyService;
+import com.game.module.fashion.FashionService;
+import com.game.module.friend.FriendService;
+import com.game.module.gang.GangExtension;
+import com.game.module.gang.GangService;
+import com.game.module.goods.EquipService;
+import com.game.module.goods.GoodsEntry;
+import com.game.module.goods.GoodsService;
+import com.game.module.log.LogConsume;
+import com.game.module.mail.MailService;
+import com.game.module.player.PlayerData;
+import com.game.module.player.PlayerService;
+import com.game.module.serial.SerialDataService;
+import com.game.module.skill.SkillService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskExtension;
+import com.game.module.task.TaskService;
+import com.game.module.traversing.TraversingExtension;
+import com.game.module.vip.VipService;
+import com.game.params.Int2Param;
+import com.game.params.IntParam;
+import com.game.params.ListParam;
+import com.game.params.String2Param;
+import com.game.params.chat.ChatVo;
+import com.game.params.copy.CopyInfo;
+import com.game.params.copy.CopyResult;
+import com.game.params.task.TaskListInfo;
+import com.game.util.ConfigData;
+import com.server.SessionManager;
+import com.server.util.ServerLogger;
+
+@Service
+public class GmService {
+
+	@Autowired
+	private PlayerService playerService;
+	@Autowired
+	private TaskService taskService;
+	@Autowired
+	private GoodsService goodsService;
+	@Autowired
+	private MessageService messageService;
+	@Autowired
+	private MailService mailService;
+	@Autowired
+	private EquipService equipService;
+	@Autowired
+	private SkillService skillService;
+	@Autowired
+	private DailyService dailyService;
+	@Autowired
+	private CopyService copyService;
+	@Autowired
+	private VipService vipService;
+	@Autowired
+	private GangService gangService;
+	@Autowired
+	private FriendService friendService;
+	@Autowired
+	private ArenaExtension arenaExtension;
+	@Autowired
+	private SerialDataService serialDataService;
+	@Autowired
+	private TrainingExtension trainingExtension;
+	@Autowired
+	private TraversingExtension traversingExtension;
+	@Autowired
+	private FashionService fashionService;
+
+	public void handle(int playerId, String gm) {
+		try {
+			String[] params = gm.substring(1).split(" ");
+			String methodName = params[0].replace("_", "").toLowerCase();
+			Method[] methods = this.getClass().getMethods();
+			boolean find = false;
+			for (Method method : methods) {
+				if (method.getName().toLowerCase().equals(methodName)) {
+					find = true;
+					String[] funParams = null;
+					if (params.length > 1) {
+						funParams = Arrays.copyOfRange(params, 1, params.length);
+					}
+					method.invoke(this, playerId, funParams);
+					sendResult(playerId, true);
+					break;
+				}
+			}
+			if (!find) {
+				sendResult(playerId, false);
+			}
+		} catch (Exception e) {
+			ServerLogger.err(e, String.format("handle gm err by:%d ,param:%s", playerId, gm));
+			sendResult(playerId, false);
+		}
+	}
+
+	public void sendResult(int playerId, boolean ok) {
+		ChatVo vo = new ChatVo();
+		vo.channel = ChatExtension.WORLD;
+		vo.content = ok ? "GM Success!Please Login Again." : "GM Error,Check again!";
+		vo.sender = "GM";
+
+		ListParam<ChatVo> chats = new ListParam<ChatVo>();
+		chats.params = new ArrayList<ChatVo>();
+		chats.params.add(vo);
+		SessionManager.getInstance().sendMsg(ChatExtension.CHAT, chats, playerId);
+	}
+
+	public void sendMsg(int playerId, String msg) {
+		ChatVo vo = new ChatVo();
+		vo.channel = ChatExtension.WORLD;
+		vo.content = msg;
+		vo.sender = "GM";
+
+		ListParam<ChatVo> chats = new ListParam<ChatVo>();
+		chats.params = new ArrayList<ChatVo>();
+		chats.params.add(vo);
+		SessionManager.getInstance().sendMsg(ChatExtension.CHAT, chats, playerId);
+	}
+
+	// 加经验
+	public void addExp(int playerId, String... params) {
+		int exp = Integer.valueOf(params[0]);
+		playerService.addExp(playerId, exp, LogConsume.GM);
+	}
+
+	// 完成任务
+	public void doTask(int playerId, String... param) {
+		int type = Integer.valueOf(param[0]);
+		int[] params = new int[param.length - 1];
+		for (int i = 0; i < params.length; i++) {
+			params[i] = Integer.valueOf(param[i + 1]);
+		}
+		taskService.doTask(playerId, type, params);
+	}
+
+	// 设置任务
+	public void setTask(int playerId, String... param) {
+		int id = Integer.valueOf(param[0]);
+		int count = Integer.valueOf(param[1]);
+		Task task = taskService.getPlayerTask(playerId).getTasks().get(id);
+		task.setCount(count);
+		taskService.checkFinished(task);
+		taskService.updateTaskToClient(playerId, task);
+	}
+
+	// 加任何物品
+	public void addGoods(int playerId, String... param) {
+		int id = Integer.valueOf(param[0]);
+		int count = Integer.valueOf(param[1]);
+		List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
+		rewards.add(new GoodsEntry(id, count));
+		goodsService.addRewards(playerId, rewards, LogConsume.GM);
+	}
+
+	// 发送系统消息
+	public void sendSysMsg(int playerId, String... msg) {
+		messageService.sendSysMsg(MessageService.SYS, msg[0]);
+	}
+
+	// 发送系统邮件
+	public void sendSysMail(int playerId, String... param) {
+		List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
+		String[] item = param[0].split(";");
+		for (String reward : item) {
+			String[] info = reward.split(":");
+			rewards.add(new GoodsEntry(Integer.valueOf(info[0]), Integer.valueOf(info[1])));
+		}
+		mailService.sendSysMail("gm mail", "gm mail", rewards, playerId, LogConsume.GM);
+	}
+	
+	//变强
+	public void strong(int playerId,String... param){
+		PlayerData data = playerService.getPlayerData(playerId);
+		for (Object o : ConfigData.getConfigs(CopyConfig.class)) {
+			CopyConfig cfg = (CopyConfig) o;
+			if (cfg.type == CopyInstance.TYPE_COMMON) {
+				Copy copy = new Copy();
+				copy.setState(3);
+				data.getCopys().put(cfg.id, copy);
+			}
+		}
+		CopyInfo info = copyService.getCopyInfo(playerId);
+		SessionManager.getInstance().sendMsg(CopyExtension.CMD_REFRESH, info, playerId);
+		playerService.addExp(playerId, 100000, LogConsume.GM);
+	}
+	
+	//重置每日数据
+	public void resetDaily(int playerId,String... params){
+		PlayerData data = playerService.getPlayerData(playerId);
+		dailyService.resetDailyData(data);
+		dailyService.refreshDailyVo(playerId);
+	}
+
+	// 重启更新服务器
+	public void restart(int playerId, String... params) {
+		Runtime rt = Runtime.getRuntime();
+		try {
+			String os = System.getProperty("os.name");
+			if (os.toLowerCase().contains("win")) {
+				String[] stopCmd = new String[] { "cmd.exe", "/C", "start restart.bat" };
+				rt.exec(stopCmd);
+			} else {
+				String[] stopCmd = new String[] { "/bin/sh", "-c", "nohup ./restart.sh > myout.file 2>&1 &" };
+				Runtime.getRuntime().exec(stopCmd);
+			}
+		} catch (IOException e) {
+			ServerLogger.err(e, "restart err!");
+		}
+	}
+	
+	public void addFashion(int playerId,String...params){
+		fashionService.addFashion(playerId, Integer.valueOf(params[0]), 0);
+	}
+	
+	public void arena(int playerId, String... params){
+		if(params[0].equals("getInfo")){
+			arenaExtension.getInfo(playerId, null);
+		}else if(params[0].equals("getOpponent")){
+			IntParam param = new IntParam();
+			param.param = Integer.parseInt(params[1]);
+			arenaExtension.getOpponentList(playerId, param);
+		}else if(params[0].equals("challenge")){
+			IntParam param = new IntParam();
+			param.param = Integer.parseInt(params[1]);
+			arenaExtension.challenge(playerId, param);
+		}else if(params[0].equals("result")){
+			IntParam param = new IntParam();
+			param.param = Integer.parseInt(params[1]);
+			arenaExtension.takeResult(playerId, param);
+		}
+	}
+	
+	public void experience(int playerId, String... params){
+		if(params[0].equals("getInfo")){
+			trainingExtension.getInfo(playerId, null);
+		}else if(params[0].equals("challenge")){
+			IntParam param = new IntParam();
+			param.param = Integer.parseInt(params[1]);
+			trainingExtension.challenge(playerId, param);
+		}else if(params[0].equals("win")){
+			Int2Param param = new Int2Param();
+			param.param1 = Integer.parseInt(params[1]);
+			param.param2 = Integer.parseInt(params[2]);
+			trainingExtension.challengeWin(playerId, param);
+		}else if(params[0].equals("reward")){
+			IntParam param = new IntParam();
+			param.param = Integer.parseInt(params[1]);
+			trainingExtension.takeReward(playerId, param);
+		}
+	}
+	
+	public void skill(int playerId, String ...params){
+		List<Integer> ids = new ArrayList<Integer>();
+		for(String p : params){
+			ids.add(Integer.parseInt(p));
+		}
+		skillService.composeCard(playerId, ids);
+	}
+	
+	@Autowired
+	private GangExtension gangExtension;
+	public void gang(int playerId, String ...params){
+		if(params[0].equals("create")){
+			String2Param param = new String2Param();
+			param.param1 = params[1];
+			param.param2 = params[2];
+			gangExtension.create(playerId, param);
+		}else if(params[0].equals("myGang")){
+			System.out.println(gangExtension.getMyGang(playerId, null).basicInfo.id);
+		}else if(params[0].equals("apply")){
+			IntParam param = new IntParam();
+			param.param = Integer.parseInt(params[1]);
+			gangExtension.apply(playerId, param);
+		}else if(params[0].equals("list")){
+			IntParam param = new IntParam();
+			param.param = Integer.parseInt(params[1]);
+			gangExtension.getGangList(playerId, param);
+		}else if(params[0].equals("training1")){
+			gangExtension.getTrainingInfo(playerId, null);
+		}else if(params[0].equals("training2")){
+			gangExtension.launchTraining(playerId, toIntParam(params[1]));
+		}else if(params[0].equals("training3")){
+			gangExtension.closeTraining(playerId, null);
+		}else if(params[0].equals("training4")){
+			gangExtension.startTraining(playerId, null);
+		}else if(params[0].equals("training5")){
+			gangExtension.takeTrainingReward(playerId, null);
+		}
+	}
+	
+	@Autowired
+	private TaskExtension taskExtension;
+	public void task(int playerId, String ...params){
+		String cmd = params[0];
+		if(cmd.equals("get")){
+			TaskListInfo listInfo = taskExtension.getTask(playerId, null);
+			System.out.println("自已的合作任务");
+			for(Int2Param pa : listInfo.myJoint){
+				System.out.println(String.format("id:%d,partner:%d", pa.param1, pa.param2));
+			}
+			System.out.println("被邀请的合作任务");
+			System.out.println(String.format("id:%d,partner:%d", listInfo.currJointedId, listInfo.currJointedPartner));
+			System.out.println("邀请任务列表");
+			for(Int2Param pa : listInfo.jointedList){
+				System.out.println(String.format("id:%d,partner:%d", pa.param1, pa.param2));
+			}
+		}else if(cmd.equals("submit")){
+			Int2Param param = new Int2Param();
+			param.param1 = Integer.parseInt(params[1]);
+			param.param2 = Integer.parseInt(params[1]);
+			taskExtension.submit(playerId, param);
+		}else if(cmd.equals("invite")){
+			taskExtension.inviteJoint(playerId, toInt2Param(params[1], params[2]));
+		}else if(cmd.equals("accept")){
+			taskExtension.acceptJoint(playerId, toInt2Param(params[1], params[2]));
+		}
+	}
+	
+	@Autowired
+	private CopyExtension copyExtension;
+	public void trsing(int playerId, String ...params){
+		String cmd = params[0];
+		if(cmd.equals("info")){
+			traversingExtension.getInfo(playerId, null);
+		}else if(cmd.equals("chellenge")){
+			traversingExtension.singleChellenge(playerId, toIntParam(params[1]));
+		}else if(cmd.equals("reward")){
+			copyExtension.getRewards(playerId, new CopyResult());
+		}
+	}
+	
+	@Autowired
+	private LotteryExtension lotteryLogic;
+	public void lottery(int playerId, String ...params){
+		String cmd = params[0];
+		if(cmd.equals("get")){
+			lotteryLogic.getInfo(playerId, null);
+		}else if(cmd.equals("take")){
+			lotteryLogic.takeReward(playerId, toInt2Param(params[1], params[2]));
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	IntParam toIntParam(String param1){
+		IntParam param = new IntParam();
+		param.param = Integer.parseInt(param1);
+		return param;
+	}
+	
+	
+	Int2Param toInt2Param(String param1, String param2){
+		Int2Param param = new Int2Param();
+		param.param1 = Integer.parseInt(param1);
+		param.param2 = Integer.parseInt(param2);
+		return param;
+	}
+}

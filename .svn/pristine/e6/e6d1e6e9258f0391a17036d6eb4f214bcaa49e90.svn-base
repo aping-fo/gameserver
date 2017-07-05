@@ -1,0 +1,1823 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>10011</id>
+	<type>1</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>10021</id>
+	<type>4</type>
+	<sceneSubType>41</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[4.5,0,0.5]</defaultPos>
+</config>
+<config>
+	<id>10022</id>
+	<type>4</type>
+	<sceneSubType>41</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>11031</id>
+	<type>4</type>
+	<sceneSubType>43</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>11011</id>
+	<type>2</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>20011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>20021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>20031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>20041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>20042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>20051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>20061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>20062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>20071</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>20081</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>20091</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>3999011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3999021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3999031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3999041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3999051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1001063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1002063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1003063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[1,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[-1,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[-1,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[-1,0,1]</defaultPos>
+</config>
+<config>
+	<id>1004063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1005063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1006063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1007063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1008063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1009063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1010063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1011063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1012063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1013063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1014063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1015063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016011</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016012</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016021</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016022</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016031</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016032</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016033</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016041</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016042</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016051</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016052</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016061</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016062</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>1016063</id>
+	<type>3</type>
+	<sceneSubType></sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>2001011</id>
+	<type>3</type>
+	<sceneSubType>35</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>2001021</id>
+	<type>3</type>
+	<sceneSubType>35</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3001001</id>
+	<type>3</type>
+	<sceneSubType>31</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3001002</id>
+	<type>3</type>
+	<sceneSubType>31</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3001003</id>
+	<type>3</type>
+	<sceneSubType>31</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3001011</id>
+	<type>3</type>
+	<sceneSubType>36</sceneSubType>
+	<ignoreIputEvent>1</ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3001020</id>
+	<type>3</type>
+	<sceneSubType>32</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3001021</id>
+	<type>3</type>
+	<sceneSubType>32</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3001022</id>
+	<type>3</type>
+	<sceneSubType>32</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+<config>
+	<id>3020111</id>
+	<type>3</type>
+	<sceneSubType>37</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[3.7,0,2.3]</defaultPos>
+</config>
+<config>
+	<id>3020112</id>
+	<type>3</type>
+	<sceneSubType>37</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[3.7,0,2.4]</defaultPos>
+</config>
+<config>
+	<id>3020113</id>
+	<type>3</type>
+	<sceneSubType>37</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[3.7,0,2.5]</defaultPos>
+</config>
+<config>
+	<id>3020114</id>
+	<type>3</type>
+	<sceneSubType>37</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[3.7,0,2.6]</defaultPos>
+</config>
+<config>
+	<id>6001011</id>
+	<type>4</type>
+	<sceneSubType>42</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[-3.421,0,1.579]</defaultPos>
+</config>
+<config>
+	<id>8001101</id>
+	<type>4</type>
+	<sceneSubType>43</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+</config>
+</root>

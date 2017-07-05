@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<config>
+	<id>10000</id>
+	<group>10000</group>
+	<title>1000</title>
+	<content>你获得XX活动的第{0}名</content>
+	<rank>[1,10]</rank>
+	<reward>102:100;103:100</reward>
+	<desc>1</desc>
+</config>
+<config>
+	<id>10001</id>
+	<group>10000</group>
+	<title>1001</title>
+	<content>1.1</content>
+	<rank>[11,30]</rank>
+	<reward>102:100;103:101</reward>
+	<desc>2</desc>
+</config>
+<config>
+	<id>10002</id>
+	<group>10000</group>
+	<title>1002</title>
+	<content>2.1</content>
+	<rank>[31,50]</rank>
+	<reward>102:100;103:102</reward>
+	<desc>3</desc>
+</config>
+<config>
+	<id>10020</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[1,1]</rank>
+	<reward>111:280</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10021</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[2,5]</rank>
+	<reward>111:220</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10022</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[6,10]</rank>
+	<reward>111:200</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10023</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[11,20]</rank>
+	<reward>111:160</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10024</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[21,50]</rank>
+	<reward>111:140</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10025</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[51,100]</rank>
+	<reward>111:120</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10026</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[101,200]</rank>
+	<reward>111:100</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10027</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[201,500]</rank>
+	<reward>111:80</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10028</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[501,1000]</rank>
+	<reward>111:60</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10029</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[1001,2000]</rank>
+	<reward>111:40</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10030</id>
+	<group>10001</group>
+	<title>竞技场每日奖励</title>
+	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
+	<rank>[2001,99999]</rank>
+	<reward>111:30</reward>
+	<desc></desc>
+</config>
+</root>

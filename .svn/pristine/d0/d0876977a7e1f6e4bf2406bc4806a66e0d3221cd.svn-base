@@ -1,0 +1,71 @@
+package com.game.module.team;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.game.module.player.Player;
+import com.game.module.player.PlayerService;
+import com.game.params.IntParam;
+import com.game.params.ListParam;
+import com.game.params.team.MyTeamVO;
+import com.game.params.team.TeamVO;
+import com.server.anotation.Command;
+import com.server.anotation.Extension;
+
+@Extension
+public class TeamExtension {
+
+	@Autowired
+	private TeamService teamService;
+	@Autowired
+	private PlayerService playerService;
+	
+	@Command(3402)
+	public Object getTeamList(int playerId, IntParam param){
+		ListParam<TeamVO> result = new ListParam<TeamVO>();
+		int type = param.param;
+		List<Team> teams = teamService.getAllTeam();
+		result.params = new ArrayList<TeamVO>();
+		for(Team team : teams){
+			if(team.getType() != type){
+				continue;
+			}
+			TeamVO vo = new TeamVO();
+			vo.name = team.getName();
+			vo.copyId = team.getCopyIns().getCopyId();
+			vo.member = team.getMembers().size();
+			vo.leader = teamService.wrapMember(team.getMembers().get(team.getLeader()));
+			result.params.add(vo);
+		}
+		return result;
+	}
+	
+	public static final int MY_TEAM_INFO = 3403;
+	@Command(3403)
+	public Object getMyTeam(int playerId, Object param){
+		Player player = playerService.getPlayer(playerId);
+		int teamId = player.getTeamId();
+		if(teamId == 0){
+			return new MyTeamVO();
+		}
+		Team team = teamService.getTeam(teamId);
+		return teamService.wrapTeam(team);
+	}
+	
+	@Command(3404)
+	public Object setOpen(int playerId, IntParam param){
+		Player player = playerService.getPlayer(playerId);
+		Team team = teamService.getTeam(player.getTeamId());
+		team.setOpen(param.param > 0);
+		return param;
+	}
+	
+	@Command(3405)
+	public Object setLeader(int playerId, IntParam param){
+	
+		
+		return param;
+	}
+}

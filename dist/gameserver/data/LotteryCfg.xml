@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<config>
+	<id>10000</id>
+	<singleId>10004</singleId>
+	<multiId>10003</multiId>
+	<singlePrice>[125,1]</singlePrice>
+	<multiPrice>[125,10]</multiPrice>
+	<limit>999</limit>
+	<freePeriod>0</freePeriod>
+	<freeLimit>0</freeLimit>
+	<vipLimit></vipLimit>
+</config>
+<config>
+	<id>10001</id>
+	<singleId>10006</singleId>
+	<multiId>10005</multiId>
+	<singlePrice>[102,100]</singlePrice>
+	<multiPrice>[102,900]</multiPrice>
+	<limit>999</limit>
+	<freePeriod>24</freePeriod>
+	<freeLimit>1</freeLimit>
+	<vipLimit></vipLimit>
+</config>
+<config>
+	<id>10002</id>
+	<singleId>10008</singleId>
+	<multiId>10007</multiId>
+	<singlePrice>[102,200]</singlePrice>
+	<multiPrice>[102,1800]</multiPrice>
+	<limit>999</limit>
+	<freePeriod>48</freePeriod>
+	<freeLimit>1</freeLimit>
+	<vipLimit>3</vipLimit>
+</config>
+</root>

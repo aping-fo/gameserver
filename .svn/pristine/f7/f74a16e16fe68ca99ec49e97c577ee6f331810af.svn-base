@@ -1,0 +1,81 @@
+package com.game.module.log;
+
+/**
+ *  消耗品类型定义
+ */
+public enum LogConsume {
+	
+	CHARGE(1001,"充值"),
+	GM(1002,"GM"),
+	TASK_REWARD(1003,"任务奖励"),
+	VIP_BAG_COST(1004,"vip礼包购买"),
+	VIP_BAG(1005,"vip礼包奖励"),
+	VIP_DAILY_REWARD(1006,"vip每日奖励"),
+	VIP_MONTH_CARD(1007,"vip月卡奖励"),
+	VIP_FUN(1008,"vip基金"),
+	USE_TOOL(1009,"使用物品获得奖励"),
+	CREATE_GANG(1010,"创建帮派开销"),
+	GANG_DONATE(1011,"帮派捐赠"),
+	COPY_ENERGY(1012,"副本体力"),
+	COPY_REWARD(1013,"副本奖励"),
+	REVIVE(1014,"复活消耗"),
+	RESET_COPY(1015,"重置副本"),
+	THREE_STAR(1016,"三星奖励"),
+	DECOMPOSE_DEC(1017,"分解装备扣除"),
+	DECOMPOSE_ADD(1018,"分解装备获得"),
+	UP_STAR_COST(1019,"升星消耗"),
+	STRENGTH_COST(1020,"强化消耗"),
+	JEWEL_UP_COST(1021,"升级宝石消耗"),
+	CLEAR_LOCK(1022,"洗练锁定消耗"),
+	CLEAR_COST(1023,"洗练消耗"),
+	SKILL_UPGRADE(1024,"升级技能"),
+	COMPOSE_ARTIFACT_COST(1025,"合成神器部件消耗"),
+	COMPOSE_ARTIFACT(1026,"合成神器部件"),
+	SHOP_BUY_COST(1027,"商城购买消耗"),
+	SHOP_BUY_ADD(1028,"商城购买"),
+	SHOP_REFRESH_COST(1029,"商城刷新"),
+	ENDLESS_CLEAR(1030, "无尽漩涡立即结束扫荡"),
+	ENDLESS_RANK_REWARD(1031, "无尽漩涡排行榜奖励"),
+	ARENA_REWARD(1032, "竞技场奖励"),
+	BUY_TREASURE_TIME(1033, "购买金币副本次数"),
+	QUICK_TREASURE(1034, "快速完成金币副本"),
+	SWEEP_COPY(1035, "副本扫荡"),
+	BUY_ARENA_CHALLENGE(1036, "购买AI竞技场挑战次数"),
+	ARENA_RANK_REWARD(1037, "AI竞技场排名奖励"),
+	EXPRIENCE_REWARD(1038, "英雄试练奖励"),
+	GANG_RENAME(1039, "重命名公会"),
+	GANG_BROCAST(1040, "公会广播"),
+	BUY_EXPRIENCE_TIME(1041, "购买经验副本次数"),
+	QUICK_EXPRIENCE(1042, "快速完成经验副本"),
+	STRENGTH_COST_BACK(1043,"强化返还"),
+	TASK_LIVENESS_REWARD(1044, "任务活跃奖奖励"),
+	TRAVERSING_COPY(1045, "特性副本"),
+	ACTIVE_FASHION(1046,"激活时装"),
+	GANG_TRAINING_REWARD(1047,"公会练功房奖励"),
+	LOTTERY_REQUEST(1048,"抽奖材料"),
+	LOTTERY_REWARD(1049,"抽奖奖励"),
+	SIGN_REWARD(1050,"签到奖励"),
+	;
+	public int actionId;// id
+	public String desc;
+
+	private LogConsume(int actionId, String desc) {
+		this.actionId = actionId;
+		this.desc = desc;
+	}
+	
+	public static LogConsume getLog(int actionId){
+		for(LogConsume log:LogConsume.values()){
+			if(log.actionId==actionId){
+				return log;
+			}
+		}
+		return null;
+	}
+	
+	public static void main(String[] args){
+		for(LogConsume log:LogConsume.values()){
+			System.out.println(String.format("insert into paid_items values('%d','%s','0','%s');",log.actionId, log.toString(), log.desc));
+		}
+	}
+}

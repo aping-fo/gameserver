@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<config>
+	<id>0</id>
+	<tips>成功</tips>
+</config>
+<config>
+	<id>1</id>
+	<tips>钻石不足</tips>
+</config>
+<config>
+	<id>2</id>
+	<tips>金币不足</tips>
+</config>
+<config>
+	<id>3</id>
+	<tips>背包已满</tips>
+</config>
+<config>
+	<id>4</id>
+	<tips>系统错误</tips>
+</config>
+<config>
+	<id>5</id>
+	<tips>体力不足</tips>
+</config>
+<config>
+	<id>6</id>
+	<tips>参数错误,非法请求</tips>
+</config>
+<config>
+	<id>7</id>
+	<tips>VIP等级不足</tips>
+</config>
+<config>
+	<id>8</id>
+	<tips>角色处于封禁中,请 联系客服</tips>
+</config>
+<config>
+	<id>9</id>
+	<tips>您的账号处于禁言中</tips>
+</config>
+<config>
+	<id>10</id>
+	<tips>等级不足</tips>
+</config>
+<config>
+	<id>11</id>
+	<tips>系统检测到异常行为1,即将断开连接,请联系客服</tips>
+</config>
+<config>
+	<id>12</id>
+	<tips>系统检测到异常行为2,即将断开连接,请联系客服</tips>
+</config>
+<config>
+	<id>13</id>
+	<tips>系统检测到异常行为3,即将断开连接,请联系客服</tips>
+</config>
+<config>
+	<id>14</id>
+	<tips>帮贡不足</tips>
+</config>
+<config>
+	<id>18</id>
+	<tips>今天次数已经用完</tips>
+</config>
+<config>
+	<id>19</id>
+	<tips>活跃值不足</tips>
+</config>
+<config>
+	<id>20</id>
+	<tips>游戏处于维护中,请稍后再登陆</tips>
+</config>
+<config>
+	<id>22</id>
+	<tips>版本太低,请到所在应用商城下载最新版本</tips>
+</config>
+<config>
+	<id>23</id>
+	<tips>本服已经关闭注册新角色,请前往新服</tips>
+</config>
+<config>
+	<id>24</id>
+	<tips>材料不足</tips>
+</config>
+<config>
+	<id>26</id>
+	<tips>不能超过角色等级</tips>
+</config>
+<config>
+	<id>27</id>
+	<tips>已经售罄</tips>
+</config>
+<config>
+	<id>99</id>
+	<tips>系统</tips>
+</config>
+<config>
+	<id>100</id>
+	<tips>欢迎您来到《封神之刃》</tips>
+</config>
+<config>
+	<id>101</id>
+	<tips>尊敬的玩家,感谢您对游戏的支持！有问题可以随时联系我们</tips>
+</config>
+<config>
+	<id>1001</id>
+	<tips>该名字已被使用</tips>
+</config>
+<config>
+	<id>1002</id>
+	<tips>不存在的角色</tips>
+</config>
+<config>
+	<id>1003</id>
+	<tips>在线用户太多,请稍后再试</tips>
+</config>
+<config>
+	<id>1004</id>
+	<tips>角色数量超过上限</tips>
+</config>
+<config>
+	<id>1005</id>
+	<tips>今日购买体力次数已达上限,升级vip可增加次数</tips>
+</config>
+<config>
+	<id>1006</id>
+	<tips>名字包含非法字符</tips>
+</config>
+<config>
+	<id>1201</id>
+	<tips>星级已满</tips>
+</config>
+<config>
+	<id>1202</id>
+	<tips>强化等级已满</tips>
+</config>
+<config>
+	<id>1203</id>
+	<tips>已经是最高级了</tips>
+</config>
+<config>
+	<id>1204</id>
+	<tips>强化失败,等级保持不变</tips>
+</config>
+<config>
+	<id>1301</id>
+	<tips>任务尚未完成</tips>
+</config>
+<config>
+	<id>1302</id>
+	<tips>对方已接取协助任务</tips>
+</config>
+<config>
+	<id>1303</id>
+	<tips>该邀请已被其他玩家抢先接取</tips>
+</config>
+<config>
+	<id>1304</id>
+	<tips>对方已完成3个协助任务,不能再邀请</tips>
+</config>
+<config>
+	<id>1305</id>
+	<tips>合作任务已失效</tips>
+</config>
+<config>
+	<id>1401</id>
+	<tips>邮件不存在</tips>
+</config>
+<config>
+	<id>1402</id>
+	<tips>您的背包已满</tips>
+</config>
+<config>
+	<id>1403</id>
+	<tips>您的背包已满,请尽快清理背包</tips>
+</config>
+<config>
+	<id>1404</id>
+	<tips>物品类型错误</tips>
+</config>
+<config>
+	<id>1405</id>
+	<tips>职业不符合</tips>
+</config>
+<config>
+	<id>1406</id>
+	<tips>前置关卡未完成</tips>
+</config>
+<config>
+	<id>1501</id>
+	<tips>好友数量已达上限</tips>
+</config>
+<config>
+	<id>1502</id>
+	<tips>对方好友已满</tips>
+</config>
+<config>
+	<id>1503</id>
+	<tips>没有找到该玩家信息</tips>
+</config>
+<config>
+	<id>1504</id>
+	<tips>你已被对方拉黑</tips>
+</config>
+<config>
+	<id>1505</id>
+	<tips>对方已是你的好友</tips>
+</config>
+<config>
+	<id>1506</id>
+	<tips>不可以添加自己为好友</tips>
+</config>
+<config>
+	<id>1601</id>
+	<tips>物品数量不足</tips>
+</config>
+<config>
+	<id>1701</id>
+	<tips>商城已经刷新了,请重试</tips>
+</config>
+<config>
+	<id>2501</id>
+	<tips>今日申请公会次数已达上限</tips>
+</config>
+<config>
+	<id>2502</id>
+	<tips>您已经加入公会</tips>
+</config>
+<config>
+	<id>2503</id>
+	<tips>您的战力和等级不足,请试试其他公会吧。</tips>
+</config>
+<config>
+	<id>2504</id>
+	<tips>您的权限不足</tips>
+</config>
+<config>
+	<id>2505</id>
+	<tips>申请已失效</tips>
+</config>
+<config>
+	<id>2506</id>
+	<tips>公会成员已满</tips>
+</config>
+<config>
+	<id>2507</id>
+	<tips>%s加入公会</tips>
+</config>
+<config>
+	<id>2508</id>
+	<tips>申请公会成功</tips>
+</config>
+<config>
+	<id>2509</id>
+	<tips>您已成功加入-%s,去和大家打个招呼吧！</tips>
+</config>
+<config>
+	<id>2510</id>
+	<tips>%s离开公会</tips>
+</config>
+<config>
+	<id>2511</id>
+	<tips>您已经被请出%s</tips>
+</config>
+<config>
+	<id>2512</id>
+	<tips>不能转让给盟主本人</tips>
+</config>
+<config>
+	<id>2513</id>
+	<tips>%s万人拥护,众望所归,成为公会新盟主</tips>
+</config>
+<config>
+	<id>2514</id>
+	<tips>恭喜您成为盟主</tips>
+</config>
+<config>
+	<id>2515</id>
+	<tips>不能对盟主进行该操作</tips>
+</config>
+<config>
+	<id>2517</id>
+	<tips>您只能解散单人的公会。或选择转让给其他玩家</tips>
+</config>
+<config>
+	<id>2518</id>
+	<tips>%s成为公会副盟主</tips>
+</config>
+<config>
+	<id>2519</id>
+	<tips>恭喜您成为副盟主</tips>
+</config>
+<config>
+	<id>2520</id>
+	<tips>公会副盟主人数已满</tips>
+</config>
+<config>
+	<id>2521</id>
+	<tips>%s捐赠%d金币</tips>
+</config>
+<config>
+	<id>2522</id>
+	<tips>您所创建公会名称已存在,请再次尝试。</tips>
+</config>
+<config>
+	<id>2523</id>
+	<tips>转让给公会副盟主</tips>
+</config>
+<config>
+	<id>2524</id>
+	<tips>请先升级主建筑</tips>
+</config>
+<config>
+	<id>2525</id>
+	<tips>您还有其他建筑未升级</tips>
+</config>
+<config>
+	<id>2526</id>
+	<tips>您的建筑已满级</tips>
+</config>
+<config>
+	<id>2527</id>
+	<tips>公会资金不足,无法使用该使用该功能</tips>
+</config>
+<config>
+	<id>2528</id>
+	<tips>扣除公会维护资金%d金币</tips>
+</config>
+<config>
+	<id>2529</id>
+	<tips>主建筑升到%d级</tips>
+</config>
+<config>
+	<id>2530</id>
+	<tips>转让公会补偿邮件标题</tips>
+</config>
+<config>
+	<id>2531</id>
+	<tips>转让公会补偿邮件内容</tips>
+</config>
+<config>
+	<id>2550</id>
+	<tips>您已经提交申请,请等待结果</tips>
+</config>
+<config>
+	<id>2551</id>
+	<tips>该公会申请人数已满,请稍后再试</tips>
+</config>
+<config>
+	<id>2552</id>
+	<tips>帮主转让通知</tips>
+</config>
+<config>
+	<id>2553</id>
+	<tips>%s已经成为新一任的帮主,带领大家踏上征途！</tips>
+</config>
+<config>
+	<id>2554</id>
+	<tips>退出公会12小时内无法加入新公会,请稍后再试</tips>
+</config>
+<config>
+	<id>2555</id>
+	<tips>已经领取过奖励了</tips>
+</config>
+<config>
+	<id>2556</id>
+	<tips>货币不足,无法使用该功能</tips>
+</config>
+<config>
+	<id>2561</id>
+	<tips>完成公会任务</tips>
+</config>
+<config>
+	<id>2562</id>
+	<tips>完成公会任务[{0}]</tips>
+</config>
+<config>
+	<id>2563</id>
+	<tips>穿越仪能量不足</tips>
+</config>
+<config>
+	<id>3701</id>
+	<tips>重复时装补偿</tips>
+</config>
+<config>
+	<id>3702</id>
+	<tips>尊敬的玩家,由于你已经拥有时装:%s 了,不能重复获得,现在补充对应的钻石给你！</tips>
+</config>
+<config>
+	<id>3703</id>
+	<tips>公会练功房已开启,不能重复开启</tips>
+</config>
+<config>
+	<id>3704</id>
+	<tips>公会资金不足</tips>
+</config>
+<config>
+	<id>3705</id>
+	<tips>公会练功房暂时未开启</tips>
+</config>
+<config>
+	<id>3706</id>
+	<tips>公会练功房奖励标题</tips>
+</config>
+<config>
+	<id>3707</id>
+	<tips>公会练功房奖励内容</tips>
+</config>
+<config>
+	<id>3708</id>
+	<tips>你已经开始练功,不能重复开始</tips>
+</config>
+<config>
+	<id>3709</id>
+	<tips>有效时长已用完,将不再获得收益</tips>
+</config>
+<config>
+	<id>3802</id>
+	<tips>当前有队员未准备,无法进入副本</tips>
+</config>
+<config>
+	<id>3803</id>
+	<tips>{0}的不符合进入要求,无法进入。</tips>
+</config>
+<config>
+	<id>3805</id>
+	<tips>当前队伍已满,无法加入队伍。</tips>
+</config>
+<config>
+	<id>3806</id>
+	<tips>当前队伍不存在,无法加入队伍。</tips>
+</config>
+<config>
+	<id>3807</id>
+	<tips>当前队伍已在副本中,无法加入队伍</tips>
+</config>
+<config>
+	<id>3808</id>
+	<tips>当前队伍已在副本中,无法解散队伍</tips>
+</config>
+<config>
+	<id>3809</id>
+	<tips>当前队伍已在副本中,无法离开队伍</tips>
+</config>
+<config>
+	<id>3810</id>
+	<tips>还有队员未准备好</tips>
+</config>
+</root>

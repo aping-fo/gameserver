@@ -1,0 +1,219 @@
+package com.game.module.fashion;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map.Entry;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.game.data.FashionCfg;
+import com.game.data.Response;
+import com.game.module.goods.Goods;
+import com.game.module.goods.GoodsEntry;
+import com.game.module.goods.GoodsService;
+import com.game.module.log.LogConsume;
+import com.game.module.mail.MailService;
+import com.game.module.player.Player;
+import com.game.module.player.PlayerCalculator;
+import com.game.module.player.PlayerData;
+import com.game.module.player.PlayerService;
+import com.game.params.FashionInfo;
+import com.game.params.Long2Param;
+import com.game.util.ConfigData;
+import com.game.util.TimeUtil;
+import com.server.SessionManager;
+
+/**
+ * 时装管理类
+ */
+@Service
+public class FashionService {
+
+	// 时装部位类型
+	public static final int TYPE_HEAD = 1;
+	public static final int TYPE_CLOTH = 2;
+	public static final int TYPE_WEAPON = 3;
+	// 时装获得类型
+	public static final int GET_VIP = 1;
+	public static final int GET_REPUTATION = 2;
+	public static final int GET_ACHIEVE = 3;
+
+	@Autowired
+	private PlayerService playerService;
+	@Autowired
+	private MailService mailService;
+	@Autowired
+	private GoodsService goodsServices;
+	@Autowired
+	private PlayerCalculator calculator;
+
+	// 获得时装接口
+	public void addFashion(int playerId, int fashionId, int limitTime) {
+		// 检查职业
+		FashionCfg cfg = ConfigData.getConfig(FashionCfg.class, fashionId);
+		Player player = playerService.getPlayer(playerId);
+		if (player.getVocation() != cfg.vocation) {
+			return;
+		}
+		// 是否已经有了，补偿
+		PlayerData data = playerService.getPlayerData(playerId);
+		if (data.getFashions().contains(fashionId)) {
+			// 发邮件
+			List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
+			rewards.add(new GoodsEntry(Goods.DIAMOND, cfg.duplicateReturn));
+			String title = mailService.getCode(Response.DUPLICATE_FASHION_TITLE);
+			String content = mailService.getCode(Response.DUPLICATE_FASHION_CONTENT);
+			mailService.sendSysMail(title, content, rewards, playerId, LogConsume.GM);
+			return;
+		}
+
+		data.getFashions().add(fashionId);
+		if (limitTime > 0) {
+			long endTime = System.currentTimeMillis() + limitTime * TimeUtil.ONE_SECOND;
+			data.getTempFashions().put(fashionId, endTime);
+		}
+		calculator.calculate(player);
+		// 推送前端
+		SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
+	}
+
+	// 获取时装信息
+	public FashionInfo getFashionInfo(int playerId) {
+
+		FashionInfo info = new FashionInfo();
+		info.fashions = new ArrayList<Integer>();
+		info.tempFashions = new ArrayList<Long2Param>();
+
+		PlayerData data = playerService.getPlayerData(playerId);
+		for (int id : data.getFashions()) {
+			info.fashions.add(id);
+		}
+		for (Entry<Integer, Long> temp : data.getTempFashions().entrySet()) {
+			Long2Param tempFashion = new Long2Param();
+			tempFashion.param1 = temp.getKey();
+			tempFashion.param2 = temp.getValue();
+			info.tempFashions.add(tempFashion);
+		}
+		Player player = playerService.getPlayer(playerId);
+		info.cloth = player.getFashionId();
+		info.weapon = player.getWeaponId();
+		info.head = data.getCurHead();
+
+		return info;
+	}
+
+	// 激活时装
+	public int active(int playerId, int fashionId) {
+		FashionCfg cfg = ConfigData.getConfig(FashionCfg.class, fashionId);
+		// 判断职业
+		Player player = playerService.getPlayer(playerId);
+		PlayerData data = playerService.getPlayerData(playerId);
+		if (player.getVocation() != cfg.vocation) {
+			return Response.NO_VOCATION;
+		}
+		// 已经拥有了
+		if (data.getFashions().contains(fashionId) && !data.getTempFashions().containsKey(fashionId)) {
+			return Response.ERR_PARAM;
+		}
+		// 判断条件
+		if (cfg.limitType > 0) {
+			if (cfg.limitType == GET_VIP) {
+				if (player.getVip() < cfg.limitParams[0]) {
+					return Response.NO_VIP;
+				}
+			} else {
+				throw new RuntimeException("未实现的时装获取条件类型!");
+			}
+		}
+		// 扣除消耗
+		List<GoodsEntry> costs = Arrays.asList(new GoodsEntry(cfg.price[0], cfg.price[1]));
+		int costResult = goodsServices.decConsume(playerId, costs, LogConsume.ACTIVE_FASHION, fashionId);
+		if (costResult != Response.SUCCESS) {
+			return costResult;
+		}
+		// 更新数据
+		data.getTempFashions().remove(fashionId);
+		if (data.getFashions().contains(fashionId)) {
+			data.getFashions().add(fashionId);
+		}
+
+		// 推送前端
+		SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
+		return Response.SUCCESS;
+	}
+
+	// 替换时装
+	public int replace(int playerId, int type, int fashionId) {
+		PlayerData data = playerService.getPlayerData(playerId);
+		Player player = playerService.getPlayer(playerId);
+		// 是否拥有
+		if (fashionId > 0) {
+			if (!data.getFashions().contains(fashionId)) {
+				return Response.ERR_PARAM;
+			}
+			// 检查参数
+			FashionCfg cfg = ConfigData.getConfig(FashionCfg.class, fashionId);
+			if (cfg.type != type) {
+				return Response.ERR_PARAM;
+			}
+		}
+		// 更新数据
+		if (fashionId == 0) {
+			if (type == TYPE_CLOTH) {
+				player.setFashionId(ConfigData.globalParam().fashionId[player.getVocation() - 1]);
+			} else if (type == TYPE_WEAPON) {
+				player.setWeaponId(ConfigData.globalParam().weaponId[player.getVocation() - 1]);
+			} else if (type == TYPE_HEAD) {
+				data.setCurHead(ConfigData.globalParam().headId[player.getVocation() - 1]);
+			}
+		} else {
+			if (type == TYPE_CLOTH) {
+				player.setFashionId(fashionId);
+			} else if (type == TYPE_WEAPON) {
+				player.setWeaponId(fashionId);
+			} else if (type == TYPE_HEAD) {
+				data.setCurHead(fashionId);
+			}
+		}
+		return Response.SUCCESS;
+	}
+
+	// 检测时装是否过期了
+	public void removeTmpFashions(int playerId, boolean needNotify) {
+		PlayerData data = playerService.getPlayerData(playerId);
+		if (data.getTempFashions().isEmpty()) {
+			return;
+		}
+		// 检测
+		Player player = playerService.getPlayer(playerId);
+		List<Integer> dels = new ArrayList<Integer>();
+		long now = System.currentTimeMillis();
+		for (Entry<Integer, Long> t : data.getTempFashions().entrySet()) {
+			if (t.getValue() < now) {
+				dels.add(t.getKey());
+			}
+		}
+		for (Integer id : dels) {
+			data.getTempFashions().remove(id);
+			data.getFashions().remove(id);
+
+			FashionCfg cfg = ConfigData.getConfig(FashionCfg.class, id);
+			if (cfg.type == TYPE_CLOTH) {
+				player.setFashionId(ConfigData.globalParam().fashionId[player.getVocation() - 1]);
+			} else if (cfg.type == TYPE_WEAPON) {
+				player.setWeaponId(ConfigData.globalParam().weaponId[player.getVocation() - 1]);
+			} else if (cfg.type == TYPE_HEAD) {
+				data.setCurHead(ConfigData.globalParam().headId[player.getVocation() - 1]);
+			}
+		}
+		if(!dels.isEmpty()){
+			calculator.calculate(player);
+		}
+		if (!dels.isEmpty() && needNotify) {
+			// 推送前端
+			SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
+		}
+	}
+}

@@ -1,0 +1,30 @@
+package com.game.params.lottery;
+
+import com.game.params.BufferBuilder;
+import com.game.params.IProtocol;
+
+//抽奖信息(工具自动生成，请勿手动修改！）
+public class LotteryVO implements IProtocol {
+	public int id;//抽奖id
+	public int count;//当天已抽奖次数
+	public int curCount;//当前已抽奖次数
+	public long lastFree;//上次免费抽奖时间
+	public int freeCount;//今天免费抽奖次数
+
+
+	public void decode(BufferBuilder bb) {
+		this.id = bb.getInt();
+		this.count = bb.getInt();
+		this.curCount = bb.getInt();
+		this.lastFree = bb.getLong();
+		this.freeCount = bb.getInt();
+	}
+
+	public void encode(BufferBuilder bb) {
+		bb.putInt(this.id);
+		bb.putInt(this.count);
+		bb.putInt(this.curCount);
+		bb.putLong(this.lastFree);
+		bb.putInt(this.freeCount);
+	}
+}

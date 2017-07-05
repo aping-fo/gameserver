@@ -1,0 +1,23 @@
+package com.game.params.rank;
+
+import com.game.params.*;
+
+//AI竞技场榜单元素(工具自动生成，请勿手动修改！）
+public class AIArenaRankVO implements IProtocol {
+	public String name;//玩家名称
+	public int vocation;//职业
+	public String gang;//公会
+
+
+	public void decode(BufferBuilder bb) {
+		this.name = bb.getString();
+		this.vocation = bb.getInt();
+		this.gang = bb.getString();
+	}
+
+	public void encode(BufferBuilder bb) {
+		bb.putString(this.name);
+		bb.putInt(this.vocation);
+		bb.putString(this.gang);
+	}
+}

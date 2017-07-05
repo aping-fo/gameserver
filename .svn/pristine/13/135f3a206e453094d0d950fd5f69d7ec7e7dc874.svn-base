@@ -1,0 +1,91 @@
+package com.game.module.team;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.game.data.Response;
+import com.game.event.InitHandler;
+import com.game.module.copy.CopyInstance;
+import com.game.module.player.Player;
+import com.game.module.player.PlayerService;
+import com.game.params.team.MyTeamVO;
+import com.game.params.team.TeamMemberVO;
+
+@Service
+public class TeamService implements InitHandler {
+
+	public static int MAX_MEMBER = 3;
+	
+	@Autowired
+	private PlayerService playerService;
+	
+	
+	private volatile int maxTeamId = 1000;
+	private Map<Integer, Team> teams = new ConcurrentHashMap<Integer, Team>();
+	
+	@Override
+	public void handleInit() {
+
+	}
+	
+	public Team getTeam(int teamId){
+		return teams.get(teamId);
+	}
+	
+	public List<Team> getAllTeam(){
+		return new ArrayList<Team>(teams.values());
+	}
+	
+	public Team createTeam(int playerId, String name, CopyInstance copyIns){
+		int teamId = maxTeamId++;
+		Team team = new Team(teamId, Team.TYPE_TRAVERSING, name, playerId);
+		team.setCopyIns(copyIns);
+		team.addMember(new TMember(playerId));
+		teams.put(teamId, team);
+		Player player = playerService.getPlayer(playerId);
+		player.setTeamId(teamId);
+		return team;
+	}
+	
+	public int joinTeam(int playerId, int teamId){
+		Team team = getTeam(teamId);
+		if(team == null){
+			return Response.NO_TEAM;
+		}
+		if(team.isRunning()){
+			return Response.TEAM_RUNNING;
+		}
+		if(team.getMembers().size() >= 3){
+			return Response.TEAM_FULL;
+		}
+		TMember member = new TMember(playerId);
+		team.addMember(member);
+		Player player = playerService.getPlayer(playerId);
+		player.setTeamId(teamId);
+		return Response.SUCCESS;
+	}
+	
+	
+	public MyTeamVO wrapTeam(Team team){
+		MyTeamVO vo = new MyTeamVO();
+		vo.leader = team.getLeader();
+		vo.member = new ArrayList<TeamMemberVO>();
+		for(TMember member : team.getMembers().values()){
+			vo.member.add(wrapMember(member));
+		}
+		return vo;
+	}
+	
+	public TeamMemberVO wrapMember(TMember member){
+		TeamMemberVO vo = new TeamMemberVO();
+		vo.ready = member.isReady();
+		vo.memberId = member.getPlayerId();
+		return vo;
+	}
+
+}

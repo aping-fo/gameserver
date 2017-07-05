@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] %d{MM-dd HH:mm:ss}  %m%n" />
+		</layout>
+	</appender>
+
+	<appender name="infoFile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${logpath}/debug/debug.log" />
+		<param name="Encoding" value="UTF-8"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] %d{MM-dd HH:mm:ss}  %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMax" value="INFO" />
+			<param name="LevelMin" value="DEBUG" />
+		</filter>
+	</appender>
+
+	<appender name="errFile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${logpath}/err/err.log" />
+		<param name="Encoding" value="UTF-8"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="[%-5p] %d{MM-dd HH:mm:ss}  %m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMax" value="FATAL" />
+			<param name="LevelMin" value="WARN" />
+		</filter>
+	</appender>
+
+	<appender name="profile" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${logpath}/profile/profile" />
+		<param name="DatePattern" value="'_'yyyy-MM-dd'.log'"/>
+		<param name="Encoding" value="UTF-8"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMax" value="FATAL" />
+			<param name="LevelMin" value="DEBUG" />
+		</filter>
+	</appender>
+
+	<appender name="statLog" class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="File" value="${logpath}/stat/log_player" />
+		<param name="DatePattern" value="'_'yyyy-MM-dd'.log'"/>
+		<param name="Encoding" value="UTF-8"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+			<param name="LevelMax" value="FATAL" />
+			<param name="LevelMin" value="DEBUG" />
+		</filter>
+	</appender>
+	
+	<logger name="profile">
+		<level value="DEBUG" />
+		<appender-ref ref="profile" />
+	</logger>
+	
+	<logger name="statLog">
+		<level value="DEBUG" />
+		<appender-ref ref="statLog" />
+	</logger>
+
+	<root>
+		<!-- 暂时开最低级的 -->
+		<level value="info" />
+		<appender-ref ref="stdout" />
+		<appender-ref ref="infoFile" />
+		<appender-ref ref="errFile" />
+	</root>
+
+</log4j:configuration>

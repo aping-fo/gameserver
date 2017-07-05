@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>101</id>
+	<type>1</type>
+	<lev>1</lev>
+	<levRequest>0</levRequest>
+	<memberCount>2</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>102</id>
+	<type>1</type>
+	<lev>2</lev>
+	<levRequest>1000</levRequest>
+	<memberCount>3</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>103</id>
+	<type>1</type>
+	<lev>3</lev>
+	<levRequest>2000</levRequest>
+	<memberCount>28</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>104</id>
+	<type>1</type>
+	<lev>4</lev>
+	<levRequest>3000</levRequest>
+	<memberCount>32</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>105</id>
+	<type>1</type>
+	<lev>5</lev>
+	<levRequest>4000</levRequest>
+	<memberCount>36</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>106</id>
+	<type>1</type>
+	<lev>6</lev>
+	<levRequest>5000</levRequest>
+	<memberCount>40</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>107</id>
+	<type>1</type>
+	<lev>7</lev>
+	<levRequest>6000</levRequest>
+	<memberCount>44</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>108</id>
+	<type>1</type>
+	<lev>8</lev>
+	<levRequest>7000</levRequest>
+	<memberCount>46</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>109</id>
+	<type>1</type>
+	<lev>9</lev>
+	<levRequest>8000</levRequest>
+	<memberCount>48</memberCount>
+	<viceCount>2</viceCount>
+</config>
+<config>
+	<id>110</id>
+	<type>1</type>
+	<lev>10</lev>
+	<levRequest>9000</levRequest>
+	<memberCount>50</memberCount>
+	<viceCount>2</viceCount>
+</config>
+</root>

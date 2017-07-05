@@ -1,0 +1,2043 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>11000</id>
+	<group>1</group>
+	<taskType>1</taskType>
+	<taskName>合作-金币消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[103,500]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11001</id>
+	<group>2</group>
+	<taskType>1</taskType>
+	<taskName>合作-金币消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[103,50000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11002</id>
+	<group>3</group>
+	<taskType>1</taskType>
+	<taskName>合作-金币消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[103,500000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11003</id>
+	<group>4</group>
+	<taskType>1</taskType>
+	<taskName>合作-击杀怪物</taskName>
+	<level>1</level>
+	<finishType>2</finishType>
+	<finishParam>[0,0,20]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11004</id>
+	<group>5</group>
+	<taskType>1</taskType>
+	<taskName>合作-击杀boss</taskName>
+	<level>1</level>
+	<finishType>2</finishType>
+	<finishParam>[3,0,3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11005</id>
+	<group>6</group>
+	<taskType>1</taskType>
+	<taskName>合作-击杀守陵将军</taskName>
+	<level>1</level>
+	<finishType>2</finishType>
+	<finishParam>[0,110013,10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11006</id>
+	<group>7</group>
+	<taskType>1</taskType>
+	<taskName>合作-消耗钻石</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[102,100]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11007</id>
+	<group>8</group>
+	<taskType>1</taskType>
+	<taskName>合作-累积金币</taskName>
+	<level>1</level>
+	<finishType>10</finishType>
+	<finishParam>[103,1000000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11008</id>
+	<group>9</group>
+	<taskType>1</taskType>
+	<taskName>合作-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[0,1,3]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11009</id>
+	<group>10</group>
+	<taskType>1</taskType>
+	<taskName>合作-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[0,1,5]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11010</id>
+	<group>11</group>
+	<taskType>1</taskType>
+	<taskName>合作-强化装备</taskName>
+	<level>10</level>
+	<finishType>4</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11011</id>
+	<group>12</group>
+	<taskType>1</taskType>
+	<taskName>合作-强化装备</taskName>
+	<level>10</level>
+	<finishType>4</finishType>
+	<finishParam>[4]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11012</id>
+	<group>13</group>
+	<taskType>1</taskType>
+	<taskName>合作-分解装备</taskName>
+	<level>10</level>
+	<finishType>5</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11013</id>
+	<group>14</group>
+	<taskType>1</taskType>
+	<taskName>合作-分解装备</taskName>
+	<level>10</level>
+	<finishType>5</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11014</id>
+	<group>15</group>
+	<taskType>1</taskType>
+	<taskName>合作-合成卡牌</taskName>
+	<level>10</level>
+	<finishType>14</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11015</id>
+	<group>16</group>
+	<taskType>1</taskType>
+	<taskName>合作-合成卡牌</taskName>
+	<level>10</level>
+	<finishType>14</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11016</id>
+	<group>17</group>
+	<taskType>1</taskType>
+	<taskName>合作-装备升星</taskName>
+	<level>10</level>
+	<finishType>12</finishType>
+	<finishParam>[0,5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11017</id>
+	<group>18</group>
+	<taskType>1</taskType>
+	<taskName>合作-装备升星</taskName>
+	<level>10</level>
+	<finishType>12</finishType>
+	<finishParam>[0,10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11018</id>
+	<group>19</group>
+	<taskType>1</taskType>
+	<taskName>合作-装备洗练</taskName>
+	<level>10</level>
+	<finishType>13</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11019</id>
+	<group>20</group>
+	<taskType>1</taskType>
+	<taskName>合作-装备洗练</taskName>
+	<level>10</level>
+	<finishType>13</finishType>
+	<finishParam>[8]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11020</id>
+	<group>21</group>
+	<taskType>1</taskType>
+	<taskName>合作-参加竞技场</taskName>
+	<level>10</level>
+	<finishType>15</finishType>
+	<finishParam>[1,3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11021</id>
+	<group>22</group>
+	<taskType>1</taskType>
+	<taskName>合作-参加竞技场</taskName>
+	<level>10</level>
+	<finishType>15</finishType>
+	<finishParam>[1,5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11022</id>
+	<group>23</group>
+	<taskType>1</taskType>
+	<taskName>合作-参加排位赛</taskName>
+	<level>10</level>
+	<finishType>15</finishType>
+	<finishParam>[2,3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11023</id>
+	<group>24</group>
+	<taskType>1</taskType>
+	<taskName>合作-参加排位赛</taskName>
+	<level>10</level>
+	<finishType>15</finishType>
+	<finishParam>[2,5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11024</id>
+	<group>25</group>
+	<taskType>1</taskType>
+	<taskName>合作-卡片升级</taskName>
+	<level>10</level>
+	<finishType>8</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>11025</id>
+	<group>26</group>
+	<taskType>1</taskType>
+	<taskName>合作-卡片升级</taskName>
+	<level>10</level>
+	<finishType>8</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12000</id>
+	<group>27</group>
+	<taskType>2</taskType>
+	<taskName>每日-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[0,1,3]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>20</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12001</id>
+	<group>28</group>
+	<taskType>2</taskType>
+	<taskName>每日-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[0,1,5]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>20</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12002</id>
+	<group>29</group>
+	<taskType>2</taskType>
+	<taskName>每日-金币消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[103,500]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>20</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12003</id>
+	<group>30</group>
+	<taskType>2</taskType>
+	<taskName>每日-购买体力</taskName>
+	<level>1</level>
+	<finishType>11</finishType>
+	<finishParam>[1]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>20</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12004</id>
+	<group>31</group>
+	<taskType>2</taskType>
+	<taskName>每日-钻石消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[102,10]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>20</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12005</id>
+	<group>32</group>
+	<taskType>2</taskType>
+	<taskName>每日-强化装备</taskName>
+	<level>10</level>
+	<finishType>4</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12006</id>
+	<group>33</group>
+	<taskType>2</taskType>
+	<taskName>每日-分解装备</taskName>
+	<level>20</level>
+	<finishType>5</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12007</id>
+	<group>34</group>
+	<taskType>2</taskType>
+	<taskName>每日-合成卡牌</taskName>
+	<level>20</level>
+	<finishType>14</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12008</id>
+	<group>35</group>
+	<taskType>2</taskType>
+	<taskName>每日-装备升星</taskName>
+	<level>1</level>
+	<finishType>12</finishType>
+	<finishParam>[0,3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12009</id>
+	<group>36</group>
+	<taskType>2</taskType>
+	<taskName>每日-装备洗练</taskName>
+	<level>1</level>
+	<finishType>13</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12010</id>
+	<group>37</group>
+	<taskType>2</taskType>
+	<taskName>每日-参加竞技场</taskName>
+	<level>1</level>
+	<finishType>15</finishType>
+	<finishParam>[1,3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12011</id>
+	<group>38</group>
+	<taskType>2</taskType>
+	<taskName>每日-参加排位赛</taskName>
+	<level>1</level>
+	<finishType>15</finishType>
+	<finishParam>[2,3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>12012</id>
+	<group>39</group>
+	<taskType>2</taskType>
+	<taskName>每日-卡片升级</taskName>
+	<level>1</level>
+	<finishType>8</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13000</id>
+	<group>40</group>
+	<taskType>3</taskType>
+	<taskName>挑战-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[0,1,10]</finishParam>
+	<rewards>[[102,50],[103,500],[101,5000],[50101,1],[107,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13001</id>
+	<group>41</group>
+	<taskType>3</taskType>
+	<taskName>挑战-击杀怪物</taskName>
+	<level>1</level>
+	<finishType>2</finishType>
+	<finishParam>[0,0,100]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13002</id>
+	<group>42</group>
+	<taskType>3</taskType>
+	<taskName>挑战-强化装备</taskName>
+	<level>10</level>
+	<finishType>4</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13003</id>
+	<group>43</group>
+	<taskType>3</taskType>
+	<taskName>挑战-分解装备</taskName>
+	<level>10</level>
+	<finishType>5</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13004</id>
+	<group>44</group>
+	<taskType>3</taskType>
+	<taskName>挑战-合成卡牌</taskName>
+	<level>10</level>
+	<finishType>14</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13005</id>
+	<group>45</group>
+	<taskType>3</taskType>
+	<taskName>挑战-装备升星</taskName>
+	<level>10</level>
+	<finishType>12</finishType>
+	<finishParam>[0,10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13006</id>
+	<group>46</group>
+	<taskType>3</taskType>
+	<taskName>挑战-装备洗练</taskName>
+	<level>1</level>
+	<finishType>13</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13007</id>
+	<group>47</group>
+	<taskType>3</taskType>
+	<taskName>挑战-参加竞技场</taskName>
+	<level>1</level>
+	<finishType>15</finishType>
+	<finishParam>[1,8]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13008</id>
+	<group>48</group>
+	<taskType>3</taskType>
+	<taskName>挑战-参加排位赛</taskName>
+	<level>1</level>
+	<finishType>15</finishType>
+	<finishParam>[2,8]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>13009</id>
+	<group>49</group>
+	<taskType>3</taskType>
+	<taskName>挑战-卡片升级</taskName>
+	<level>1</level>
+	<finishType>8</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14000</id>
+	<group>50</group>
+	<taskType>4</taskType>
+	<taskName>支线-金币消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[103,500]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14001</nextTaskId>
+</config>
+<config>
+	<id>14001</id>
+	<group>50</group>
+	<taskType>4</taskType>
+	<taskName>支线-金币消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[103,50000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14002</nextTaskId>
+</config>
+<config>
+	<id>14002</id>
+	<group>50</group>
+	<taskType>4</taskType>
+	<taskName>支线-金币消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[103,500000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14003</id>
+	<group>53</group>
+	<taskType>4</taskType>
+	<taskName>支线-金币累积</taskName>
+	<level>2</level>
+	<finishType>10</finishType>
+	<finishParam>[103,500000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14004</nextTaskId>
+</config>
+<config>
+	<id>14004</id>
+	<group>53</group>
+	<taskType>4</taskType>
+	<taskName>支线-金币累积</taskName>
+	<level>2</level>
+	<finishType>10</finishType>
+	<finishParam>[103,2000000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14005</nextTaskId>
+</config>
+<config>
+	<id>14005</id>
+	<group>53</group>
+	<taskType>4</taskType>
+	<taskName>支线-金币累积</taskName>
+	<level>2</level>
+	<finishType>10</finishType>
+	<finishParam>[103,10000000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14006</id>
+	<group>56</group>
+	<taskType>4</taskType>
+	<taskName>支线-击杀怪物</taskName>
+	<level>3</level>
+	<finishType>2</finishType>
+	<finishParam>[0,0,10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14007</nextTaskId>
+</config>
+<config>
+	<id>14007</id>
+	<group>56</group>
+	<taskType>4</taskType>
+	<taskName>支线-击杀怪物</taskName>
+	<level>3</level>
+	<finishType>2</finishType>
+	<finishParam>[0,0,20]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14008</nextTaskId>
+</config>
+<config>
+	<id>14008</id>
+	<group>56</group>
+	<taskType>4</taskType>
+	<taskName>支线-击杀怪物</taskName>
+	<level>3</level>
+	<finishType>2</finishType>
+	<finishParam>[0,0,50]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14009</id>
+	<group>59</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>4</level>
+	<finishType>4</finishType>
+	<finishParam>[1]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14010</nextTaskId>
+</config>
+<config>
+	<id>14010</id>
+	<group>59</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>4</level>
+	<finishType>4</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14011</nextTaskId>
+</config>
+<config>
+	<id>14011</id>
+	<group>59</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>4</level>
+	<finishType>4</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14012</id>
+	<group>62</group>
+	<taskType>4</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[100101,1,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14013</nextTaskId>
+</config>
+<config>
+	<id>14013</id>
+	<group>63</group>
+	<taskType>4</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>2</level>
+	<finishType>1</finishType>
+	<finishParam>[100102,1,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14014</nextTaskId>
+</config>
+<config>
+	<id>14014</id>
+	<group>64</group>
+	<taskType>4</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>3</level>
+	<finishType>1</finishType>
+	<finishParam>[100103,1,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14015</nextTaskId>
+</config>
+<config>
+	<id>14015</id>
+	<group>65</group>
+	<taskType>4</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>4</level>
+	<finishType>1</finishType>
+	<finishParam>[100104,1,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14016</nextTaskId>
+</config>
+<config>
+	<id>14016</id>
+	<group>66</group>
+	<taskType>4</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>5</level>
+	<finishType>1</finishType>
+	<finishParam>[100105,1,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14017</nextTaskId>
+</config>
+<config>
+	<id>14017</id>
+	<group>67</group>
+	<taskType>4</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>6</level>
+	<finishType>1</finishType>
+	<finishParam>[100106,1,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14018</id>
+	<group>68</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备获得</taskName>
+	<level>6</level>
+	<finishType>3</finishType>
+	<finishParam>[3,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14019</nextTaskId>
+</config>
+<config>
+	<id>14019</id>
+	<group>69</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备获得</taskName>
+	<level>6</level>
+	<finishType>3</finishType>
+	<finishParam>[4,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14020</nextTaskId>
+</config>
+<config>
+	<id>14020</id>
+	<group>69</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备获得</taskName>
+	<level>6</level>
+	<finishType>3</finishType>
+	<finishParam>[4,2]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14021</nextTaskId>
+</config>
+<config>
+	<id>14021</id>
+	<group>71</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备获得</taskName>
+	<level>6</level>
+	<finishType>3</finishType>
+	<finishParam>[5,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14022</nextTaskId>
+</config>
+<config>
+	<id>14022</id>
+	<group>71</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备获得</taskName>
+	<level>6</level>
+	<finishType>3</finishType>
+	<finishParam>[5,2]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14023</id>
+	<group>73</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备分解</taskName>
+	<level>6</level>
+	<finishType>5</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14024</nextTaskId>
+</config>
+<config>
+	<id>14024</id>
+	<group>73</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备分解</taskName>
+	<level>6</level>
+	<finishType>5</finishType>
+	<finishParam>[8]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14025</nextTaskId>
+</config>
+<config>
+	<id>14025</id>
+	<group>73</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备分解</taskName>
+	<level>6</level>
+	<finishType>5</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14026</nextTaskId>
+</config>
+<config>
+	<id>14026</id>
+	<group>73</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备分解</taskName>
+	<level>6</level>
+	<finishType>5</finishType>
+	<finishParam>[15]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14027</id>
+	<group>77</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[2,201,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14028</nextTaskId>
+</config>
+<config>
+	<id>14028</id>
+	<group>78</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[3,201,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14029</nextTaskId>
+</config>
+<config>
+	<id>14029</id>
+	<group>79</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[5,201,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14030</id>
+	<group>80</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[2,202,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14031</nextTaskId>
+</config>
+<config>
+	<id>14031</id>
+	<group>81</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[3,202,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14032</nextTaskId>
+</config>
+<config>
+	<id>14032</id>
+	<group>82</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[5,202,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14033</id>
+	<group>83</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[2,203,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14034</nextTaskId>
+</config>
+<config>
+	<id>14034</id>
+	<group>84</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[3,203,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14035</nextTaskId>
+</config>
+<config>
+	<id>14035</id>
+	<group>85</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[5,203,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14036</id>
+	<group>86</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[2,204,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14037</nextTaskId>
+</config>
+<config>
+	<id>14037</id>
+	<group>87</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[3,204,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14038</nextTaskId>
+</config>
+<config>
+	<id>14038</id>
+	<group>88</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[5,204,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14039</id>
+	<group>89</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[2,205,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14040</nextTaskId>
+</config>
+<config>
+	<id>14040</id>
+	<group>90</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[3,205,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14041</nextTaskId>
+</config>
+<config>
+	<id>14041</id>
+	<group>91</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[5,205,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14042</id>
+	<group>92</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[2,206,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14043</nextTaskId>
+</config>
+<config>
+	<id>14043</id>
+	<group>93</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[3,206,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14044</nextTaskId>
+</config>
+<config>
+	<id>14044</id>
+	<group>94</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[5,206,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14045</id>
+	<group>95</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[10,0,6]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14046</nextTaskId>
+</config>
+<config>
+	<id>14046</id>
+	<group>96</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[3,0,6]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14047</nextTaskId>
+</config>
+<config>
+	<id>14047</id>
+	<group>97</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备强化</taskName>
+	<level>6</level>
+	<finishType>4</finishType>
+	<finishParam>[5,0,6]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14048</id>
+	<group>98</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14049</nextTaskId>
+</config>
+<config>
+	<id>14049</id>
+	<group>99</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14050</nextTaskId>
+</config>
+<config>
+	<id>14050</id>
+	<group>100</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[15]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14051</id>
+	<group>101</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[5,201,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14052</nextTaskId>
+</config>
+<config>
+	<id>14052</id>
+	<group>101</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[10,201,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14053</nextTaskId>
+</config>
+<config>
+	<id>14053</id>
+	<group>101</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[15,201,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14054</id>
+	<group>104</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[5,202,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14055</nextTaskId>
+</config>
+<config>
+	<id>14055</id>
+	<group>105</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[10,202,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14056</nextTaskId>
+</config>
+<config>
+	<id>14056</id>
+	<group>106</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[15,202,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14057</id>
+	<group>107</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[5,203,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14058</nextTaskId>
+</config>
+<config>
+	<id>14058</id>
+	<group>108</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[10,203,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14059</nextTaskId>
+</config>
+<config>
+	<id>14059</id>
+	<group>109</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[15,203,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14060</id>
+	<group>110</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[5,204,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14061</nextTaskId>
+</config>
+<config>
+	<id>14061</id>
+	<group>111</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[10,204,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14062</nextTaskId>
+</config>
+<config>
+	<id>14062</id>
+	<group>112</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[15,204,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14063</id>
+	<group>113</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[5,205,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14064</nextTaskId>
+</config>
+<config>
+	<id>14064</id>
+	<group>114</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[10,205,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14065</nextTaskId>
+</config>
+<config>
+	<id>14065</id>
+	<group>115</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[15,205,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14066</id>
+	<group>116</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[5,206,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14067</nextTaskId>
+</config>
+<config>
+	<id>14067</id>
+	<group>117</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[10,206,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14068</nextTaskId>
+</config>
+<config>
+	<id>14068</id>
+	<group>118</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[15,206,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14069</id>
+	<group>119</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[15,0,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14070</nextTaskId>
+</config>
+<config>
+	<id>14070</id>
+	<group>120</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[30,0,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14071</nextTaskId>
+</config>
+<config>
+	<id>14071</id>
+	<group>121</group>
+	<taskType>4</taskType>
+	<taskName>支线-宝石进阶</taskName>
+	<level>6</level>
+	<finishType>6</finishType>
+	<finishParam>[45,0,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14072</id>
+	<group>122</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能升级</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[2,0,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14073</nextTaskId>
+</config>
+<config>
+	<id>14073</id>
+	<group>123</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能升级</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[5,0,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14074</nextTaskId>
+</config>
+<config>
+	<id>14074</id>
+	<group>124</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能升级</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[10,0,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14075</id>
+	<group>125</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能升级</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[2,0,4]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14076</nextTaskId>
+</config>
+<config>
+	<id>14076</id>
+	<group>126</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能升级</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[5,0,4]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14077</nextTaskId>
+</config>
+<config>
+	<id>14077</id>
+	<group>125</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能升级</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[2,0,4]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14078</id>
+	<group>128</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能卡牌镶嵌</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[0,1,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14079</nextTaskId>
+</config>
+<config>
+	<id>14079</id>
+	<group>129</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能卡牌镶嵌</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[0,2,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14080</nextTaskId>
+</config>
+<config>
+	<id>14080</id>
+	<group>129</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能卡牌镶嵌</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[0,3,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14081</nextTaskId>
+</config>
+<config>
+	<id>14081</id>
+	<group>131</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能卡牌镶嵌</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[0,4,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14082</nextTaskId>
+</config>
+<config>
+	<id>14082</id>
+	<group>132</group>
+	<taskType>4</taskType>
+	<taskName>支线-技能卡牌镶嵌</taskName>
+	<level>7</level>
+	<finishType>7</finishType>
+	<finishParam>[0,5,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14083</id>
+	<group>133</group>
+	<taskType>4</taskType>
+	<taskName>支线-卡片升级</taskName>
+	<level>7</level>
+	<finishType>8</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14084</nextTaskId>
+</config>
+<config>
+	<id>14084</id>
+	<group>133</group>
+	<taskType>4</taskType>
+	<taskName>支线-卡片升级</taskName>
+	<level>7</level>
+	<finishType>8</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14085</nextTaskId>
+</config>
+<config>
+	<id>14085</id>
+	<group>133</group>
+	<taskType>4</taskType>
+	<taskName>支线-卡片升级</taskName>
+	<level>7</level>
+	<finishType>8</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14086</id>
+	<group>136</group>
+	<taskType>4</taskType>
+	<taskName>支线-卡片升级</taskName>
+	<level>7</level>
+	<finishType>8</finishType>
+	<finishParam>[2,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14087</nextTaskId>
+</config>
+<config>
+	<id>14087</id>
+	<group>136</group>
+	<taskType>4</taskType>
+	<taskName>支线-卡片升级</taskName>
+	<level>7</level>
+	<finishType>8</finishType>
+	<finishParam>[2,2]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14088</nextTaskId>
+</config>
+<config>
+	<id>14088</id>
+	<group>136</group>
+	<taskType>4</taskType>
+	<taskName>支线-卡片升级</taskName>
+	<level>7</level>
+	<finishType>8</finishType>
+	<finishParam>[2,3]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14089</nextTaskId>
+</config>
+<config>
+	<id>14089</id>
+	<group>136</group>
+	<taskType>4</taskType>
+	<taskName>支线-卡片升级</taskName>
+	<level>7</level>
+	<finishType>8</finishType>
+	<finishParam>[2,4]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14090</id>
+	<group>140</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备升星</taskName>
+	<level>7</level>
+	<finishType>5</finishType>
+	<finishParam>[0,2]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14091</nextTaskId>
+</config>
+<config>
+	<id>14091</id>
+	<group>140</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备升星</taskName>
+	<level>7</level>
+	<finishType>5</finishType>
+	<finishParam>[0,3]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14092</id>
+	<group>142</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备洗练</taskName>
+	<level>7</level>
+	<finishType>13</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14093</nextTaskId>
+</config>
+<config>
+	<id>14093</id>
+	<group>142</group>
+	<taskType>4</taskType>
+	<taskName>支线-装备洗练</taskName>
+	<level>7</level>
+	<finishType>13</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14094</id>
+	<group>144</group>
+	<taskType>4</taskType>
+	<taskName>支线-参加竞技场</taskName>
+	<level>7</level>
+	<finishType>15</finishType>
+	<finishParam>[1,8]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14095</nextTaskId>
+</config>
+<config>
+	<id>14095</id>
+	<group>144</group>
+	<taskType>4</taskType>
+	<taskName>支线-参加竞技场</taskName>
+	<level>7</level>
+	<finishType>15</finishType>
+	<finishParam>[1,10]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14096</id>
+	<group>146</group>
+	<taskType>4</taskType>
+	<taskName>支线-参加排位赛</taskName>
+	<level>7</level>
+	<finishType>15</finishType>
+	<finishParam>[2,8]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14097</nextTaskId>
+</config>
+<config>
+	<id>14097</id>
+	<group>146</group>
+	<taskType>4</taskType>
+	<taskName>支线-参加排位赛</taskName>
+	<level>7</level>
+	<finishType>15</finishType>
+	<finishParam>[2,10]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14098</id>
+	<group>148</group>
+	<taskType>4</taskType>
+	<taskName>支线-合成卡牌</taskName>
+	<level>7</level>
+	<finishType>14</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14099</nextTaskId>
+</config>
+<config>
+	<id>14099</id>
+	<group>148</group>
+	<taskType>4</taskType>
+	<taskName>支线-合成卡牌</taskName>
+	<level>7</level>
+	<finishType>14</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14100</id>
+	<group>150</group>
+	<taskType>4</taskType>
+	<taskName>支线-合成卡牌</taskName>
+	<level>7</level>
+	<finishType>14</finishType>
+	<finishParam>[2,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14101</nextTaskId>
+</config>
+<config>
+	<id>14101</id>
+	<group>151</group>
+	<taskType>4</taskType>
+	<taskName>支线-合成卡牌</taskName>
+	<level>7</level>
+	<finishType>14</finishType>
+	<finishParam>[3,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14102</nextTaskId>
+</config>
+<config>
+	<id>14102</id>
+	<group>152</group>
+	<taskType>4</taskType>
+	<taskName>支线-合成卡牌</taskName>
+	<level>7</level>
+	<finishType>14</finishType>
+	<finishParam>[4,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14103</nextTaskId>
+</config>
+<config>
+	<id>14103</id>
+	<group>153</group>
+	<taskType>4</taskType>
+	<taskName>支线-合成卡牌</taskName>
+	<level>7</level>
+	<finishType>14</finishType>
+	<finishParam>[5,1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14104</id>
+	<group>154</group>
+	<taskType>4</taskType>
+	<taskName>支线-神器解密</taskName>
+	<level>7</level>
+	<finishType>16</finishType>
+	<finishParam>[1]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14105</nextTaskId>
+</config>
+<config>
+	<id>14105</id>
+	<group>154</group>
+	<taskType>4</taskType>
+	<taskName>支线-神器解密</taskName>
+	<level>7</level>
+	<finishType>16</finishType>
+	<finishParam>[2]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId>14106</nextTaskId>
+</config>
+<config>
+	<id>14106</id>
+	<group>154</group>
+	<taskType>4</taskType>
+	<taskName>支线-神器解密</taskName>
+	<level>7</level>
+	<finishType>16</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,500],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>14107</id>
+	<group>170</group>
+	<taskType>4</taskType>
+	<taskName>合作-击杀守陵将军</taskName>
+	<level>1</level>
+	<finishType>2</finishType>
+	<finishParam>[0,110013,10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15001</id>
+	<group>157</group>
+	<taskType>5</taskType>
+	<taskName>公会-金币消耗</taskName>
+	<level>1</level>
+	<finishType>9</finishType>
+	<finishParam>[103,500]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15002</id>
+	<group>158</group>
+	<taskType>5</taskType>
+	<taskName>公会-击杀怪物</taskName>
+	<level>1</level>
+	<finishType>2</finishType>
+	<finishParam>[0,0,100]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15003</id>
+	<group>159</group>
+	<taskType>5</taskType>
+	<taskName>公会-累积金币</taskName>
+	<level>1</level>
+	<finishType>10</finishType>
+	<finishParam>[103,1000000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15004</id>
+	<group>160</group>
+	<taskType>5</taskType>
+	<taskName>公会-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[0,1,5]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15005</id>
+	<group>161</group>
+	<taskType>5</taskType>
+	<taskName>公会-强化装备</taskName>
+	<level>1</level>
+	<finishType>4</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15006</id>
+	<group>162</group>
+	<taskType>5</taskType>
+	<taskName>公会-分解装备</taskName>
+	<level>1</level>
+	<finishType>5</finishType>
+	<finishParam>[10]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15007</id>
+	<group>163</group>
+	<taskType>5</taskType>
+	<taskName>公会-合成卡牌</taskName>
+	<level>1</level>
+	<finishType>14</finishType>
+	<finishParam>[3]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15008</id>
+	<group>164</group>
+	<taskType>5</taskType>
+	<taskName>公会-购买体力</taskName>
+	<level>1</level>
+	<finishType>11</finishType>
+	<finishParam>[1]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15009</id>
+	<group>165</group>
+	<taskType>5</taskType>
+	<taskName>公会-累积金币</taskName>
+	<level>1</level>
+	<finishType>10</finishType>
+	<finishParam>[103,10000]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15010</id>
+	<group>166</group>
+	<taskType>5</taskType>
+	<taskName>公会-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[0,1,10]</finishParam>
+	<rewards>[[102,50],[103,500]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15011</id>
+	<group>167</group>
+	<taskType>5</taskType>
+	<taskName>公会-强化装备</taskName>
+	<level>1</level>
+	<finishType>4</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15012</id>
+	<group>168</group>
+	<taskType>5</taskType>
+	<taskName>公会-分解装备</taskName>
+	<level>1</level>
+	<finishType>5</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+<config>
+	<id>15013</id>
+	<group>169</group>
+	<taskType>5</taskType>
+	<taskName>公会-合成卡牌</taskName>
+	<level>1</level>
+	<finishType>14</finishType>
+	<finishParam>[5]</finishParam>
+	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+</config>
+</root>

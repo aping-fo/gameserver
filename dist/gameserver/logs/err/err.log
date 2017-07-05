@@ -1,0 +1,12 @@
+[ERROR] 06-28 11:32:47  com.game.Start.init(null:-1): start server err!
+java.lang.NullPointerException
+	at com.server.util.GameData.getConfig(GameData.java:38)
+	at com.game.util.ConfigData.init(Unknown Source)
+	at com.game.Start.init(Unknown Source)
+	at com.game.Start.main(Unknown Source)
+[ERROR] 06-28 11:32:54  com.game.Start.init(null:-1): start server err!
+java.lang.NullPointerException
+	at com.server.util.GameData.getConfig(GameData.java:38)
+	at com.game.util.ConfigData.init(Unknown Source)
+	at com.game.Start.init(Unknown Source)
+	at com.game.Start.main(Unknown Source)

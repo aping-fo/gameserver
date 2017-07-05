@@ -1,0 +1,28 @@
+package com.game.data;
+
+/**
+* s时装表.xlsx(自动生成，请勿编辑！)
+*/
+public class FashionCfg {
+	public int id;//key
+	public String desc;//描述
+	public String name;//时装名称
+	public int vocation;//职业
+	public String icon;//时装图标
+	public int type;//时装类型
+	public String bindPos;//挂载位置
+	public String modelName;//主模型名字
+	public String model2Name;//辅模型名字
+	public String path;//主模型路径
+	public String path2;//辅模型路径
+	public int attack;//威力
+	public int defense;//坚韧
+	public int symptom;//体力
+	public int crit;//精准
+	public int fu;//异常
+	public int limitType;//获得条件
+	public int[] limitParams;//条件参数
+	public int[] price;//消耗的货币
+	public int duplicateReturn;//重复返还钻石
+	public int order;//排序id
+}

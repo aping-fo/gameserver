@@ -1,0 +1,70 @@
+package com.game.params.gang;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.game.params.BufferBuilder;
+import com.game.params.IProtocol;
+
+//我的公会信息(工具自动生成，请勿手动修改！）
+public class MyGangInfo implements IProtocol {
+	public GangInfo basicInfo;//基本信息
+	public int asset;//公会资金
+	public int totalAsset;//公会总资金
+	public boolean autoJoin;//是否自动加入
+	public int myPosition;//我的职位(1盟主2副盟主0成员)
+	public int rank;//公会排名
+	public List<GangBuild> builds;//公会建筑
+
+
+	public void decode(BufferBuilder bb) {
+		
+        if(bb.getNullFlag())
+            this.basicInfo = null;
+        else
+        {
+            this.basicInfo = new GangInfo();
+            this.basicInfo.decode(bb);
+        }
+		this.asset = bb.getInt();
+		this.totalAsset = bb.getInt();
+		this.autoJoin = bb.getBoolean();
+		this.myPosition = bb.getInt();
+		this.rank = bb.getInt();
+		
+        if (bb.getNullFlag())
+            this.builds = null;
+        else {
+            int length = bb.getInt();
+            this.builds = new ArrayList<GangBuild>();
+            for (int i = 0; i < length; i++)
+            {
+                //如果元素不够先创建一个，Java泛型创建对象，性能？
+                boolean isNull = bb.getNullFlag();
+
+                //如果不是null就解析
+                if(isNull)
+                {
+                    this.builds.add(null);
+                }
+                else
+                {
+                    GangBuild instance = new GangBuild();
+                    instance.decode(bb);
+                    this.builds.add(instance);
+                }
+
+            }
+        }
+	}
+
+	public void encode(BufferBuilder bb) {
+		bb.putProtocolVo(this.basicInfo);
+		bb.putInt(this.asset);
+		bb.putInt(this.totalAsset);
+		bb.putBoolean(this.autoJoin);
+		bb.putInt(this.myPosition);
+		bb.putInt(this.rank);
+		bb.putProtocolVoList(this.builds);
+	}
+}

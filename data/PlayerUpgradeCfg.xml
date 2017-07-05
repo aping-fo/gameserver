@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root>
+<config>
+	<id>1</id>
+	<lev>1</lev>
+	<exp>200</exp>
+	<hp>1000</hp>
+	<attack>30</attack>
+	<defense>100</defense>
+	<symptom>20</symptom>
+	<crit>30</crit>
+	<fu>10</fu>
+</config>
+<config>
+	<id>2</id>
+	<lev>2</lev>
+	<exp>300</exp>
+	<hp>1100</hp>
+	<attack>40</attack>
+	<defense>110</defense>
+	<symptom>30</symptom>
+	<crit>40</crit>
+	<fu>20</fu>
+</config>
+<config>
+	<id>3</id>
+	<lev>3</lev>
+	<exp>400</exp>
+	<hp>1200</hp>
+	<attack>50</attack>
+	<defense>120</defense>
+	<symptom>40</symptom>
+	<crit>50</crit>
+	<fu>30</fu>
+</config>
+<config>
+	<id>4</id>
+	<lev>4</lev>
+	<exp>500</exp>
+	<hp>1300</hp>
+	<attack>60</attack>
+	<defense>130</defense>
+	<symptom>50</symptom>
+	<crit>60</crit>
+	<fu>40</fu>
+</config>
+<config>
+	<id>5</id>
+	<lev>5</lev>
+	<exp>600</exp>
+	<hp>1400</hp>
+	<attack>70</attack>
+	<defense>140</defense>
+	<symptom>60</symptom>
+	<crit>70</crit>
+	<fu>50</fu>
+</config>
+<config>
+	<id>6</id>
+	<lev>6</lev>
+	<exp>700</exp>
+	<hp>1500</hp>
+	<attack>80</attack>
+	<defense>150</defense>
+	<symptom>70</symptom>
+	<crit>80</crit>
+	<fu>60</fu>
+</config>
+<config>
+	<id>7</id>
+	<lev>7</lev>
+	<exp>800</exp>
+	<hp>1600</hp>
+	<attack>90</attack>
+	<defense>160</defense>
+	<symptom>80</symptom>
+	<crit>90</crit>
+	<fu>70</fu>
+</config>
+<config>
+	<id>8</id>
+	<lev>8</lev>
+	<exp>900</exp>
+	<hp>1700</hp>
+	<attack>100</attack>
+	<defense>170</defense>
+	<symptom>90</symptom>
+	<crit>100</crit>
+	<fu>80</fu>
+</config>
+<config>
+	<id>9</id>
+	<lev>9</lev>
+	<exp>1000</exp>
+	<hp>1800</hp>
+	<attack>110</attack>
+	<defense>180</defense>
+	<symptom>100</symptom>
+	<crit>110</crit>
+	<fu>90</fu>
+</config>
+<config>
+	<id>10</id>
+	<lev>10</lev>
+	<exp>1100</exp>
+	<hp>1900</hp>
+	<attack>120</attack>
+	<defense>190</defense>
+	<symptom>110</symptom>
+	<crit>120</crit>
+	<fu>100</fu>
+</config>
+<config>
+	<id>11</id>
+	<lev>11</lev>
+	<exp>1200</exp>
+	<hp>2000</hp>
+	<attack>130</attack>
+	<defense>200</defense>
+	<symptom>120</symptom>
+	<crit>130</crit>
+	<fu>110</fu>
+</config>
+<config>
+	<id>12</id>
+	<lev>12</lev>
+	<exp>1300</exp>
+	<hp>2100</hp>
+	<attack>140</attack>
+	<defense>210</defense>
+	<symptom>130</symptom>
+	<crit>140</crit>
+	<fu>120</fu>
+</config>
+<config>
+	<id>13</id>
+	<lev>13</lev>
+	<exp>1420</exp>
+	<hp>2200</hp>
+	<attack>150</attack>
+	<defense>220</defense>
+	<symptom>140</symptom>
+	<crit>150</crit>
+	<fu>130</fu>
+</config>
+<config>
+	<id>14</id>
+	<lev>14</lev>
+	<exp>1720</exp>
+	<hp>2300</hp>
+	<attack>160</attack>
+	<defense>230</defense>
+	<symptom>150</symptom>
+	<crit>160</crit>
+	<fu>140</fu>
+</config>
+<config>
+	<id>15</id>
+	<lev>15</lev>
+	<exp>2060</exp>
+	<hp>2400</hp>
+	<attack>170</attack>
+	<defense>240</defense>
+	<symptom>160</symptom>
+	<crit>170</crit>
+	<fu>150</fu>
+</config>
+<config>
+	<id>16</id>
+	<lev>16</lev>
+	<exp>2450</exp>
+	<hp>2500</hp>
+	<attack>180</attack>
+	<defense>250</defense>
+	<symptom>170</symptom>
+	<crit>180</crit>
+	<fu>160</fu>
+</config>
+<config>
+	<id>17</id>
+	<lev>17</lev>
+	<exp>2890</exp>
+	<hp>2600</hp>
+	<attack>190</attack>
+	<defense>260</defense>
+	<symptom>180</symptom>
+	<crit>190</crit>
+	<fu>170</fu>
+</config>
+<config>
+	<id>18</id>
+	<lev>18</lev>
+	<exp>3370</exp>
+	<hp>2700</hp>
+	<attack>200</attack>
+	<defense>270</defense>
+	<symptom>190</symptom>
+	<crit>200</crit>
+	<fu>180</fu>
+</config>
+<config>
+	<id>19</id>
+	<lev>19</lev>
+	<exp>3910</exp>
+	<hp>2800</hp>
+	<attack>210</attack>
+	<defense>280</defense>
+	<symptom>200</symptom>
+	<crit>210</crit>
+	<fu>190</fu>
+</config>
+<config>
+	<id>20</id>
+	<lev>20</lev>
+	<exp>4490</exp>
+	<hp>2900</hp>
+	<attack>220</attack>
+	<defense>290</defense>
+	<symptom>210</symptom>
+	<crit>220</crit>
+	<fu>200</fu>
+</config>
+<config>
+	<id>21</id>
+	<lev>21</lev>
+	<exp>5140</exp>
+	<hp>3000</hp>
+	<attack>230</attack>
+	<defense>300</defense>
+	<symptom>220</symptom>
+	<crit>230</crit>
+	<fu>210</fu>
+</config>
+<config>
+	<id>22</id>
+	<lev>22</lev>
+	<exp>5840</exp>
+	<hp>3100</hp>
+	<attack>240</attack>
+	<defense>310</defense>
+	<symptom>230</symptom>
+	<crit>240</crit>
+	<fu>220</fu>
+</config>
+<config>
+	<id>23</id>
+	<lev>23</lev>
+	<exp>6600</exp>
+	<hp>3200</hp>
+	<attack>250</attack>
+	<defense>320</defense>
+	<symptom>240</symptom>
+	<crit>250</crit>
+	<fu>230</fu>
+</config>
+<config>
+	<id>24</id>
+	<lev>24</lev>
+	<exp>7420</exp>
+	<hp>3300</hp>
+	<attack>260</attack>
+	<defense>330</defense>
+	<symptom>250</symptom>
+	<crit>260</crit>
+	<fu>240</fu>
+</config>
+<config>
+	<id>25</id>
+	<lev>25</lev>
+	<exp>8310</exp>
+	<hp>3400</hp>
+	<attack>270</attack>
+	<defense>340</defense>
+	<symptom>260</symptom>
+	<crit>270</crit>
+	<fu>250</fu>
+</config>
+<config>
+	<id>26</id>
+	<lev>26</lev>
+	<exp>9260</exp>
+	<hp>3500</hp>
+	<attack>280</attack>
+	<defense>350</defense>
+	<symptom>270</symptom>
+	<crit>280</crit>
+	<fu>260</fu>
+</config>
+<config>
+	<id>27</id>
+	<lev>27</lev>
+	<exp>10280</exp>
+	<hp>3600</hp>
+	<attack>290</attack>
+	<defense>360</defense>
+	<symptom>280</symptom>
+	<crit>290</crit>
+	<fu>270</fu>
+</config>
+<config>
+	<id>28</id>
+	<lev>28</lev>
+	<exp>11370</exp>
+	<hp>3700</hp>
+	<attack>300</attack>
+	<defense>370</defense>
+	<symptom>290</symptom>
+	<crit>300</crit>
+	<fu>280</fu>
+</config>
+<config>
+	<id>29</id>
+	<lev>29</lev>
+	<exp>12540</exp>
+	<hp>3800</hp>
+	<attack>310</attack>
+	<defense>380</defense>
+	<symptom>300</symptom>
+	<crit>310</crit>
+	<fu>290</fu>
+</config>
+<config>
+	<id>30</id>
+	<lev>30</lev>
+	<exp>13780</exp>
+	<hp>3900</hp>
+	<attack>320</attack>
+	<defense>390</defense>
+	<symptom>310</symptom>
+	<crit>320</crit>
+	<fu>300</fu>
+</config>
+<config>
+	<id>31</id>
+	<lev>31</lev>
+	<exp>15000</exp>
+	<hp>4000</hp>
+	<attack>330</attack>
+	<defense>400</defense>
+	<symptom>320</symptom>
+	<crit>330</crit>
+	<fu>310</fu>
+</config>
+<config>
+	<id>32</id>
+	<lev>32</lev>
+	<exp>16500</exp>
+	<hp>4100</hp>
+	<attack>340</attack>
+	<defense>410</defense>
+	<symptom>330</symptom>
+	<crit>340</crit>
+	<fu>320</fu>
+</config>
+<config>
+	<id>33</id>
+	<lev>33</lev>
+	<exp>18000</exp>
+	<hp>4200</hp>
+	<attack>350</attack>
+	<defense>420</defense>
+	<symptom>340</symptom>
+	<crit>350</crit>
+	<fu>330</fu>
+</config>
+<config>
+	<id>34</id>
+	<lev>34</lev>
+	<exp>19500</exp>
+	<hp>4300</hp>
+	<attack>360</attack>
+	<defense>430</defense>
+	<symptom>350</symptom>
+	<crit>360</crit>
+	<fu>340</fu>
+</config>
+<config>
+	<id>35</id>
+	<lev>35</lev>
+	<exp>21000</exp>
+	<hp>4400</hp>
+	<attack>370</attack>
+	<defense>440</defense>
+	<symptom>360</symptom>
+	<crit>370</crit>
+	<fu>350</fu>
+</config>
+<config>
+	<id>36</id>
+	<lev>36</lev>
+	<exp>22500</exp>
+	<hp>4500</hp>
+	<attack>380</attack>
+	<defense>450</defense>
+	<symptom>370</symptom>
+	<crit>380</crit>
+	<fu>360</fu>
+</config>
+<config>
+	<id>37</id>
+	<lev>37</lev>
+	<exp>24000</exp>
+	<hp>4600</hp>
+	<attack>390</attack>
+	<defense>460</defense>
+	<symptom>380</symptom>
+	<crit>390</crit>
+	<fu>370</fu>
+</config>
+<config>
+	<id>38</id>
+	<lev>38</lev>
+	<exp>25500</exp>
+	<hp>4700</hp>
+	<attack>400</attack>
+	<defense>470</defense>
+	<symptom>390</symptom>
+	<crit>400</crit>
+	<fu>380</fu>
+</config>
+<config>
+	<id>39</id>
+	<lev>39</lev>
+	<exp>27000</exp>
+	<hp>4800</hp>
+	<attack>410</attack>
+	<defense>480</defense>
+	<symptom>400</symptom>
+	<crit>410</crit>
+	<fu>390</fu>
+</config>
+<config>
+	<id>40</id>
+	<lev>40</lev>
+	<exp>30000</exp>
+	<hp>4900</hp>
+	<attack>420</attack>
+	<defense>490</defense>
+	<symptom>410</symptom>
+	<crit>420</crit>
+	<fu>400</fu>
+</config>
+<config>
+	<id>41</id>
+	<lev>41</lev>
+	<exp>35000</exp>
+	<hp>5000</hp>
+	<attack>430</attack>
+	<defense>500</defense>
+	<symptom>420</symptom>
+	<crit>430</crit>
+	<fu>410</fu>
+</config>
+<config>
+	<id>42</id>
+	<lev>42</lev>
+	<exp>40000</exp>
+	<hp>5100</hp>
+	<attack>440</attack>
+	<defense>510</defense>
+	<symptom>430</symptom>
+	<crit>440</crit>
+	<fu>420</fu>
+</config>
+<config>
+	<id>43</id>
+	<lev>43</lev>
+	<exp>45000</exp>
+	<hp>5200</hp>
+	<attack>450</attack>
+	<defense>520</defense>
+	<symptom>440</symptom>
+	<crit>450</crit>
+	<fu>430</fu>
+</config>
+<config>
+	<id>44</id>
+	<lev>44</lev>
+	<exp>50000</exp>
+	<hp>5300</hp>
+	<attack>460</attack>
+	<defense>530</defense>
+	<symptom>450</symptom>
+	<crit>460</crit>
+	<fu>440</fu>
+</config>
+<config>
+	<id>45</id>
+	<lev>45</lev>
+	<exp>55000</exp>
+	<hp>5400</hp>
+	<attack>470</attack>
+	<defense>540</defense>
+	<symptom>460</symptom>
+	<crit>470</crit>
+	<fu>450</fu>
+</config>
+<config>
+	<id>46</id>
+	<lev>46</lev>
+	<exp>60000</exp>
+	<hp>5500</hp>
+	<attack>480</attack>
+	<defense>550</defense>
+	<symptom>470</symptom>
+	<crit>480</crit>
+	<fu>460</fu>
+</config>
+<config>
+	<id>47</id>
+	<lev>47</lev>
+	<exp>65000</exp>
+	<hp>5600</hp>
+	<attack>490</attack>
+	<defense>560</defense>
+	<symptom>480</symptom>
+	<crit>490</crit>
+	<fu>470</fu>
+</config>
+<config>
+	<id>48</id>
+	<lev>48</lev>
+	<exp>70000</exp>
+	<hp>5700</hp>
+	<attack>500</attack>
+	<defense>570</defense>
+	<symptom>490</symptom>
+	<crit>500</crit>
+	<fu>480</fu>
+</config>
+<config>
+	<id>49</id>
+	<lev>49</lev>
+	<exp>75000</exp>
+	<hp>5800</hp>
+	<attack>510</attack>
+	<defense>580</defense>
+	<symptom>500</symptom>
+	<crit>510</crit>
+	<fu>490</fu>
+</config>
+<config>
+	<id>50</id>
+	<lev>50</lev>
+	<exp>80000</exp>
+	<hp>5900</hp>
+	<attack>520</attack>
+	<defense>590</defense>
+	<symptom>510</symptom>
+	<crit>520</crit>
+	<fu>500</fu>
+</config>
+<config>
+	<id>51</id>
+	<lev>51</lev>
+	<exp>90000</exp>
+	<hp>6000</hp>
+	<attack>530</attack>
+	<defense>600</defense>
+	<symptom>520</symptom>
+	<crit>530</crit>
+	<fu>510</fu>
+</config>
+<config>
+	<id>52</id>
+	<lev>52</lev>
+	<exp>100000</exp>
+	<hp>6100</hp>
+	<attack>540</attack>
+	<defense>610</defense>
+	<symptom>530</symptom>
+	<crit>540</crit>
+	<fu>520</fu>
+</config>
+<config>
+	<id>53</id>
+	<lev>53</lev>
+	<exp>110000</exp>
+	<hp>6200</hp>
+	<attack>550</attack>
+	<defense>620</defense>
+	<symptom>540</symptom>
+	<crit>550</crit>
+	<fu>530</fu>
+</config>
+<config>
+	<id>54</id>
+	<lev>54</lev>
+	<exp>120000</exp>
+	<hp>6300</hp>
+	<attack>560</attack>
+	<defense>630</defense>
+	<symptom>550</symptom>
+	<crit>560</crit>
+	<fu>540</fu>
+</config>
+<config>
+	<id>55</id>
+	<lev>55</lev>
+	<exp>130000</exp>
+	<hp>6400</hp>
+	<attack>570</attack>
+	<defense>640</defense>
+	<symptom>560</symptom>
+	<crit>570</crit>
+	<fu>550</fu>
+</config>
+<config>
+	<id>56</id>
+	<lev>56</lev>
+	<exp>150000</exp>
+	<hp>6500</hp>
+	<attack>580</attack>
+	<defense>650</defense>
+	<symptom>570</symptom>
+	<crit>580</crit>
+	<fu>560</fu>
+</config>
+<config>
+	<id>57</id>
+	<lev>57</lev>
+	<exp>170000</exp>
+	<hp>6600</hp>
+	<attack>590</attack>
+	<defense>660</defense>
+	<symptom>580</symptom>
+	<crit>590</crit>
+	<fu>570</fu>
+</config>
+<config>
+	<id>58</id>
+	<lev>58</lev>
+	<exp>190000</exp>
+	<hp>6700</hp>
+	<attack>600</attack>
+	<defense>670</defense>
+	<symptom>590</symptom>
+	<crit>600</crit>
+	<fu>580</fu>
+</config>
+<config>
+	<id>59</id>
+	<lev>59</lev>
+	<exp>210000</exp>
+	<hp>6800</hp>
+	<attack>610</attack>
+	<defense>680</defense>
+	<symptom>600</symptom>
+	<crit>610</crit>
+	<fu>590</fu>
+</config>
+<config>
+	<id>60</id>
+	<lev>60</lev>
+	<exp>240000</exp>
+	<hp>6900</hp>
+	<attack>620</attack>
+	<defense>690</defense>
+	<symptom>610</symptom>
+	<crit>620</crit>
+	<fu>600</fu>
+</config>
+<config>
+	<id>61</id>
+	<lev>61</lev>
+	<exp>270000</exp>
+	<hp>7000</hp>
+	<attack>630</attack>
+	<defense>700</defense>
+	<symptom>620</symptom>
+	<crit>630</crit>
+	<fu>610</fu>
+</config>
+<config>
+	<id>62</id>
+	<lev>62</lev>
+	<exp>310000</exp>
+	<hp>7100</hp>
+	<attack>640</attack>
+	<defense>710</defense>
+	<symptom>630</symptom>
+	<crit>640</crit>
+	<fu>620</fu>
+</config>
+<config>
+	<id>63</id>
+	<lev>63</lev>
+	<exp>350000</exp>
+	<hp>7200</hp>
+	<attack>650</attack>
+	<defense>720</defense>
+	<symptom>640</symptom>
+	<crit>650</crit>
+	<fu>630</fu>
+</config>
+<config>
+	<id>64</id>
+	<lev>64</lev>
+	<exp>400000</exp>
+	<hp>7300</hp>
+	<attack>660</attack>
+	<defense>730</defense>
+	<symptom>650</symptom>
+	<crit>660</crit>
+	<fu>640</fu>
+</config>
+<config>
+	<id>65</id>
+	<lev>65</lev>
+	<exp>450000</exp>
+	<hp>7400</hp>
+	<attack>670</attack>
+	<defense>740</defense>
+	<symptom>660</symptom>
+	<crit>670</crit>
+	<fu>650</fu>
+</config>
+<config>
+	<id>66</id>
+	<lev>66</lev>
+	<exp>500000</exp>
+	<hp>7500</hp>
+	<attack>680</attack>
+	<defense>750</defense>
+	<symptom>670</symptom>
+	<crit>680</crit>
+	<fu>660</fu>
+</config>
+<config>
+	<id>67</id>
+	<lev>67</lev>
+	<exp>600000</exp>
+	<hp>7600</hp>
+	<attack>690</attack>
+	<defense>760</defense>
+	<symptom>680</symptom>
+	<crit>690</crit>
+	<fu>670</fu>
+</config>
+<config>
+	<id>68</id>
+	<lev>68</lev>
+	<exp>700000</exp>
+	<hp>7700</hp>
+	<attack>700</attack>
+	<defense>770</defense>
+	<symptom>690</symptom>
+	<crit>700</crit>
+	<fu>680</fu>
+</config>
+<config>
+	<id>69</id>
+	<lev>69</lev>
+	<exp>800000</exp>
+	<hp>7800</hp>
+	<attack>710</attack>
+	<defense>780</defense>
+	<symptom>700</symptom>
+	<crit>710</crit>
+	<fu>690</fu>
+</config>
+<config>
+	<id>70</id>
+	<lev>70</lev>
+	<exp>1000000</exp>
+	<hp>7900</hp>
+	<attack>720</attack>
+	<defense>790</defense>
+	<symptom>710</symptom>
+	<crit>720</crit>
+	<fu>700</fu>
+</config>
+<config>
+	<id>71</id>
+	<lev>71</lev>
+	<exp>1300000</exp>
+	<hp>8000</hp>
+	<attack>730</attack>
+	<defense>800</defense>
+	<symptom>720</symptom>
+	<crit>730</crit>
+	<fu>710</fu>
+</config>
+<config>
+	<id>72</id>
+	<lev>72</lev>
+	<exp>1800000</exp>
+	<hp>8100</hp>
+	<attack>740</attack>
+	<defense>810</defense>
+	<symptom>730</symptom>
+	<crit>740</crit>
+	<fu>720</fu>
+</config>
+<config>
+	<id>73</id>
+	<lev>73</lev>
+	<exp>2300000</exp>
+	<hp>8200</hp>
+	<attack>750</attack>
+	<defense>820</defense>
+	<symptom>740</symptom>
+	<crit>750</crit>
+	<fu>730</fu>
+</config>
+<config>
+	<id>74</id>
+	<lev>74</lev>
+	<exp>3000000</exp>
+	<hp>8300</hp>
+	<attack>760</attack>
+	<defense>830</defense>
+	<symptom>750</symptom>
+	<crit>760</crit>
+	<fu>740</fu>
+</config>
+<config>
+	<id>75</id>
+	<lev>75</lev>
+	<exp>99999999</exp>
+	<hp>8400</hp>
+	<attack>770</attack>
+	<defense>840</defense>
+	<symptom>760</symptom>
+	<crit>770</crit>
+	<fu>750</fu>
+</config>
+</root>

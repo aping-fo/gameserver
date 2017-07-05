@@ -1,0 +1,104 @@
+package com.game.module.attach.lottery;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.game.data.LotteryCfg;
+import com.game.data.Response;
+import com.game.module.RandomReward.RandomRewardService;
+import com.game.module.goods.GoodsEntry;
+import com.game.module.goods.GoodsService;
+import com.game.module.log.LogConsume;
+import com.game.params.Int2Param;
+import com.game.params.ListParam;
+import com.game.params.Reward;
+import com.game.params.lottery.LotteryVO;
+import com.game.util.TimeUtil;
+import com.server.anotation.Command;
+import com.server.anotation.Extension;
+import com.server.util.GameData;
+
+@Extension
+public class LotteryExtension {
+
+	@Autowired
+	private LotteryLogic lotteryLogic;
+	@Autowired
+	private GoodsService goodsService;
+	@Autowired
+	private RandomRewardService rewardService;
+	
+	@Command(2601)
+	private Object getInfo(int playerId, Object param){
+		ListParam<LotteryVO> result = new ListParam<LotteryVO>();
+		LotteryAttach attach = lotteryLogic.getAttach(playerId);
+		Map<Integer, LotteryVO> map = attach.getRecords();
+		if(!map.isEmpty()){
+			result.params = new ArrayList<>(map.values());
+		}
+		return result;
+	}
+	
+	@Command(2602)
+	private Object takeReward(int playerId, Int2Param param){
+		ListParam<Reward> rewards = new ListParam<Reward>();
+		LotteryCfg cfg = GameData.getConfig(LotteryCfg.class, param.param1);
+		if(cfg == null){
+			rewards.code = Response.ERR_PARAM;
+			return rewards;
+		}
+		LotteryAttach attach = lotteryLogic.getAttach(playerId);
+		Map<Integer, LotteryVO> map = attach.getRecords();
+		LotteryVO record = map.get(cfg.id);
+		if(record == null){
+			record = new LotteryVO();
+			map.put(cfg.id, record);
+		}
+		int time = param.param2 == 1 ? 1 : 10;;
+		if(record.count + time > cfg.limit){
+			rewards.code = Response.NO_TODAY_TIMES;
+			return rewards;
+		}
+		if(time == 1 && cfg.freeLimit > record.freeCount && System.currentTimeMillis() - record.lastFree >= cfg.freePeriod * TimeUtil.ONE_HOUR){
+			record.freeCount++;
+			record.lastFree = System.currentTimeMillis();
+		}else{
+			List<GoodsEntry> req = null;
+			if(time == 1){
+				req = Arrays.asList(new GoodsEntry(cfg.singlePrice[0], cfg.singlePrice[1]));
+			}else{
+				req = Arrays.asList(new GoodsEntry(cfg.multiPrice[0], cfg.multiPrice[1]));
+			}
+			rewards.code = goodsService.decConsume(playerId, req, LogConsume.LOTTERY_REQUEST, cfg.id, time);
+			if(rewards.code > 0){
+				return rewards;
+			}
+		}
+		if(record.curCount /10 < (record.curCount + time) / 10){
+			if(time == 1){
+				rewards.params = rewardService.getRewards(playerId, cfg.multiId, 1, LogConsume.LOTTERY_REWARD);	
+			}else{
+				int n = 10 - record.curCount % 10 - 1;
+				if(n > 0){
+					rewards.params = rewardService.getRewards(playerId, cfg.singleId, n, LogConsume.LOTTERY_REWARD);
+				}else{
+					rewards.params = new ArrayList<Reward>();
+				}
+				rewards.params.addAll(rewardService.getRewards(playerId, cfg.multiId, 1, LogConsume.LOTTERY_REWARD));
+				int m = 10 - n - 1;
+				if(m > 0){
+					rewards.params = rewardService.getRewards(playerId, cfg.singleId, m, LogConsume.LOTTERY_REWARD);
+				}
+			}
+		}else{
+			rewards.params = rewardService.getRewards(playerId, cfg.singleId, 1, LogConsume.LOTTERY_REWARD);			
+		}
+		record.count += time;
+		record.curCount += time;
+		return rewards;
+	}
+}

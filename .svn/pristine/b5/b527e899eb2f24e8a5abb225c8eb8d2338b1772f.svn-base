@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>110001</id>
+	<name>战士技能1</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>110002</nextId>
+	<skillId>1</skillId>
+</config>
+<config>
+	<id>110002</id>
+	<name>战士技能1</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>2</skillId>
+</config>
+<config>
+	<id>110101</id>
+	<name>战士技能2</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>110102</nextId>
+	<skillId>3</skillId>
+</config>
+<config>
+	<id>110102</id>
+	<name>战士技能2</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>4</skillId>
+</config>
+<config>
+	<id>110201</id>
+	<name>战士技能3</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>110202</nextId>
+	<skillId>5</skillId>
+</config>
+<config>
+	<id>110202</id>
+	<name>战士技能3</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>6</skillId>
+</config>
+<config>
+	<id>110401</id>
+	<name>战士技能4</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>110402</nextId>
+	<skillId>7</skillId>
+</config>
+<config>
+	<id>110402</id>
+	<name>战士技能4</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>8</skillId>
+</config>
+<config>
+	<id>110501</id>
+	<name>战士技能5</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>110502</nextId>
+	<skillId>7</skillId>
+</config>
+<config>
+	<id>110502</id>
+	<name>战士技能5</name>
+	<icon>101</icon>
+	<vocation>1</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>8</skillId>
+</config>
+<config>
+	<id>201001</id>
+	<name>刺客技能1</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>201002</nextId>
+	<skillId>9</skillId>
+</config>
+<config>
+	<id>201002</id>
+	<name>刺客技能1</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>10</skillId>
+</config>
+<config>
+	<id>202001</id>
+	<name>刺客技能2</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>202002</nextId>
+	<skillId>11</skillId>
+</config>
+<config>
+	<id>202002</id>
+	<name>刺客技能2</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>12</skillId>
+</config>
+<config>
+	<id>203001</id>
+	<name>刺客技能3</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>203002</nextId>
+	<skillId>13</skillId>
+</config>
+<config>
+	<id>203002</id>
+	<name>刺客技能3</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>14</skillId>
+</config>
+<config>
+	<id>204001</id>
+	<name>刺客技能4</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>204002</nextId>
+	<skillId>15</skillId>
+</config>
+<config>
+	<id>204002</id>
+	<name>刺客技能4</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>16</skillId>
+</config>
+<config>
+	<id>301001</id>
+	<name>法师技能1</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>301002</nextId>
+	<skillId>17</skillId>
+</config>
+<config>
+	<id>301002</id>
+	<name>法师技能1</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>18</skillId>
+</config>
+<config>
+	<id>302001</id>
+	<name>法师技能2</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>302002</nextId>
+	<skillId>19</skillId>
+</config>
+<config>
+	<id>302002</id>
+	<name>法师技能2</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>20</skillId>
+</config>
+<config>
+	<id>303001</id>
+	<name>法师技能3</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>303002</nextId>
+	<skillId>21</skillId>
+</config>
+<config>
+	<id>303002</id>
+	<name>法师技能3</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>22</skillId>
+</config>
+<config>
+	<id>304001</id>
+	<name>法师技能4</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>304002</nextId>
+	<skillId>23</skillId>
+</config>
+<config>
+	<id>304002</id>
+	<name>法师技能4</name>
+	<icon>101</icon>
+	<vocation>2</vocation>
+	<lev>2</lev>
+	<desc>打死你</desc>
+	<coin>100</coin>
+	<nextId>0</nextId>
+	<skillId>24</skillId>
+</config>
+</root>
