@@ -44,9 +44,10 @@ public class TeamService implements InitHandler {
 	@Autowired
 	private CopyService copyService;
 
-	private volatile int maxTeamId = 1000;
+	private AtomicInteger maxTeamId = new AtomicInteger(1000);
 	private Map<Integer, Team> teams = new ConcurrentHashMap<Integer, Team>();
 
+	private ReentrantLock lock = new ReentrantLock();
 	@Override
 	public void handleInit() {
 
@@ -90,7 +91,7 @@ public class TeamService implements InitHandler {
 	}
 
 	public Team createTeam(int playerId, int type, String name, int copyId) {
-		int teamId = maxTeamId++;
+		int teamId = maxTeamId.getAndIncrement();
 		Team team = new Team(teamId, type, name, playerId);
 		team.setCopyId(copyId);
 		;
@@ -101,7 +102,7 @@ public class TeamService implements InitHandler {
 		return team;
 	}
 
-	public int joinTeam(int playerId, int teamId) {
+	public synchronized int joinTeam(int playerId, int teamId) {
 		Team team = getTeam(teamId);
 		if (team == null) {
 			return Response.NO_TEAM;
