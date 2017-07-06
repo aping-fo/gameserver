@@ -19,6 +19,7 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerDao;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.scene.SceneService;
 import com.game.params.ListParam;
 import com.game.params.chat.ChatVo;
 import com.game.util.ConfigData;
@@ -50,6 +51,8 @@ public class ChatExtension {
 	private MessageService messageService;
 	@Autowired
 	private ChatService chatService;
+	@Autowired
+	private SceneService sceneService;
 	
 	private Map<Integer, Long> talkTime = new ConcurrentHashMap<Integer, Long>();
 
@@ -99,46 +102,48 @@ public class ChatExtension {
 			talkTime.put(playerId, now);
 			messageService.addChatVo(vo);
 		//私聊
-		}else if(vo.channel==PRIVATE){
-			int receiveId = vo.receiveId;
-			PlayerData receiverData = playerService.getPlayerData(receiveId);
+		}else{ 
 			ListParam<ChatVo> result = new ListParam<ChatVo>();
-			if(receiverData.getBlack().contains(playerId)){
-				/*result.code = Response.IN_BLACK_LIST;
-				return result;*/
-				return null;
-			}
 			result.params = new ArrayList<ChatVo>();
-			if(!SessionManager.getInstance().isActive(receiveId)){		
-				if(!receiverData.getFriends().containsKey(playerId) && sender.getLev() < ConfigData.globalParam().personChatLev){
+			result.params.add(vo);
+			if(vo.channel==PRIVATE){
+				int receiveId = vo.receiveId;
+				PlayerData receiverData = playerService.getPlayerData(receiveId);
+				if(receiverData.getBlack().contains(playerId)){
 					return null;
 				}
-				vo.time = System.currentTimeMillis();
-				chatService.addOffChat(receiveId, vo);
-			}else{
-				result.params.add(vo);
-				SessionManager.getInstance().sendMsg(CHAT, result, receiveId);				
-			}
-			LinkedHashMap<Integer, Boolean> tmp = receiverData.getRecentContacters();
-			if(tmp.get(playerId) == null){
-				tmp.put(playerId, true);
-			}
-			PlayerData senderData = playerService.getPlayerData(playerId);
-			tmp = senderData.getRecentContacters();
-			if(tmp.get(receiveId) == null){
-				tmp.put(receiveId, true);
-			}
-			
-		//帮派
-		}else if(vo.channel==GANG){
-			int gangId = sender.getGangId();
-			if(gangId>0){
-				Gang gang = gangService.getGang(gangId);
-				ListParam<ChatVo> result = new ListParam<ChatVo>();
-				result.params = new ArrayList<ChatVo>();
-				result.params.add(vo);
-				for(int memberId:gang.getMembers().keySet()){
-					SessionManager.getInstance().sendMsg(CHAT, result, memberId);
+				if(!SessionManager.getInstance().isActive(receiveId)){		
+					if(!receiverData.getFriends().containsKey(playerId) && sender.getLev() < ConfigData.globalParam().personChatLev){
+						return null;
+					}
+					vo.time = System.currentTimeMillis();
+					chatService.addOffChat(receiveId, vo);
+				}else{
+					SessionManager.getInstance().sendMsg(CHAT, result, receiveId);				
+				}
+				LinkedHashMap<Integer, Boolean> tmp = receiverData.getRecentContacters();
+				if(tmp.get(playerId) == null){
+					tmp.put(playerId, true);
+				}
+				PlayerData senderData = playerService.getPlayerData(playerId);
+				tmp = senderData.getRecentContacters();
+				if(tmp.get(receiveId) == null){
+					tmp.put(receiveId, true);
+				}
+				
+			//帮派
+			}else if(vo.channel==GANG){
+				int gangId = sender.getGangId();
+				if(gangId>0){
+					Gang gang = gangService.getGang(gangId);
+					
+					for(int memberId:gang.getMembers().keySet()){
+						SessionManager.getInstance().sendMsg(CHAT, result, memberId);
+					}
+				}
+			}else if(vo.channel == TEAM){
+				if(sender.getTeamId() > 0){
+					sceneService.brocastToSceneCurLine(sender, CHAT, result);
 				}
 			}
 		}

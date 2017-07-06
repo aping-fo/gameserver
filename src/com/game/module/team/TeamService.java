@@ -103,6 +103,10 @@ public class TeamService implements InitHandler {
 	}
 
 	public synchronized int joinTeam(int playerId, int teamId) {
+		Player player = playerService.getPlayer(playerId);
+		if(player.getTeamId() > 0){
+			return Response.IN_TEAMING;
+		}
 		Team team = getTeam(teamId);
 		if (team == null) {
 			return Response.NO_TEAM;
@@ -125,7 +129,7 @@ public class TeamService implements InitHandler {
 				return Response.NO_TRAVERSING_ENERGY;
 			}
 		} else {
-			Player player = playerService.getPlayer(playerId);
+			
 			CopyConfig copyCfg = GameData.getConfig(CopyConfig.class,
 					team.getCopyId());
 			// 检查等级
@@ -151,7 +155,6 @@ public class TeamService implements InitHandler {
 		}
 		TMember member = new TMember(playerId);
 		team.addMember(member);
-		Player player = playerService.getPlayer(playerId);
 		player.setTeamId(teamId);
 		return Response.SUCCESS;
 	}

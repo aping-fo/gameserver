@@ -132,5 +132,6 @@ public class Response {
 	//签到
 	public static final int SIGN_HAS_DONE=3811;//已经签到过
 	public static final int TEAM_NO_EXIT=3812;//组队中不能进入其它战斗!
+	public static final int IN_TEAMING=3813;//你已在队伍中,不能再加入别的队伍
 
 }
