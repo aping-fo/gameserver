@@ -410,7 +410,7 @@ public class PlayerService implements InitHandler {
 			actionType = LogConsume.GM;
 		}
 
-		Context.getLoggerService().logDiamond(playerId, add, actionType.actionId, true, params);
+		Context.getLoggerService().logDiamond(playerId, add, actionType.getActionId(), true, params);
 		taskService.doTask(playerId, Task.FINISH_CURRENCY, Goods.DIAMOND, add);
 		return true;
 	}
@@ -433,7 +433,7 @@ public class PlayerService implements InitHandler {
 		if (actionType == null) {
 			actionType = LogConsume.GM;
 		}
-		Context.getLoggerService().logDiamond(playerId, dec, actionType.actionId, false, params);
+		Context.getLoggerService().logDiamond(playerId, dec, actionType.getActionId(), false, params);
 		taskService.doTask(playerId, Task.FINISH_CONSUME, Goods.DIAMOND, dec);
 		return true;
 	}

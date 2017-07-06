@@ -57,8 +57,16 @@ public enum LogConsume {
 	SIGN_REWARD(1050,"签到奖励"),
 	WORLD_BOSS_REWARD(1051,"世界BOSS奖励"),
 	;
-	public int actionId;// id
-	public String desc;
+	private int actionId;// id
+	private String desc;
+
+	public int getActionId() {
+		return actionId;
+	}
+
+	public String getDesc() {
+		return desc;
+	}
 
 	private LogConsume(int actionId, String desc) {
 		this.actionId = actionId;
