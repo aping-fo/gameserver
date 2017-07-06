@@ -8,7 +8,6 @@ import java.util.concurrent.ThreadLocalRandom;
  * 随机工具类
  */
 public class RandomUtil {
-	private static Random rand = new Random();
 	private static final int GAUSSIAN_PARAM = 4;// 正太分布的参数，越大就越精确
 
 
