@@ -39,10 +39,7 @@ public class StringUtil {
 	public static int[] str2arr(String str, String split) {
 		try {
 			String[] items = str.split(split);
-			int[] result = new int[items.length];
-			for (int i = 0; i < items.length; i++) {
-				result[i] = Integer.valueOf(items[i].trim());
-			}
+			int[] result = int[] result = Arrays.stream(items).mapToInt(Integer::parseInt).toArray();
 			return result;
 		} catch (Exception e) {
 			return null;
@@ -57,15 +54,12 @@ public class StringUtil {
 	 * @return
 	 */
 	public static List<Integer> str2list(String str, String split) {
-		List<Integer> result = new ArrayList<Integer>();
 		try {
 			String[] items = str.split(split);
-			for (String item : items) {
-				result.add(Integer.valueOf(item));
-			}
+			List<Integer> result = List<Integer> result = Arrays.stream(items).map(Integer::parseInt).collect(Collectors.toList());
 			return result;
 		} catch (Exception e) {
-			return result;
+			return Collections.emptyList();
 		}
 	}
 
@@ -77,15 +71,12 @@ public class StringUtil {
 	 * @return
 	 */
 	public static List<String> str2list2(String str, String split) {
-		List<String> result = new ArrayList<String>();
 		try {
 			String[] items = str.split(split);
-			for (String item : items) {
-				result.add(item);
-			}
+			List<String> result = Arrays.stream(items).collect(Collectors.toList());
 			return result;
 		} catch (Exception e) {
-			return result;
+			return Collections.emptyList();
 		}
 	}
 
