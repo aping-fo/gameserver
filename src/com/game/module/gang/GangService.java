@@ -96,7 +96,7 @@ public class GangService implements InitHandler {
 	private Map<String, Integer> gangNames = new ConcurrentHashMap<String, Integer>();
 	private List<Gang> orderGangs = null;
 
-	private static volatile int maxGangId = 0;
+	private static int maxGangId = 0;
 	private Map<Integer, int[]> donateCfg;
 
 	@Override
