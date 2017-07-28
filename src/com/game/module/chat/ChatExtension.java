@@ -112,10 +112,10 @@ public class ChatExtension {
 				if(receiverData.getBlack().contains(playerId)){
 					return null;
 				}
+				if(!receiverData.getFriends().containsKey(playerId) && sender.getLev() < ConfigData.globalParam().personChatLev){
+					return null;
+				}
 				if(!SessionManager.getInstance().isActive(receiveId)){		
-					if(!receiverData.getFriends().containsKey(playerId) && sender.getLev() < ConfigData.globalParam().personChatLev){
-						return null;
-					}
 					vo.time = System.currentTimeMillis();
 					chatService.addOffChat(receiveId, vo);
 				}else{

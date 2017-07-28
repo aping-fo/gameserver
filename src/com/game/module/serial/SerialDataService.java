@@ -11,6 +11,10 @@ import com.game.event.ServiceDispose;
 import com.game.util.CompressUtil;
 import com.game.util.JsonUtils;
 
+/**
+ * 如何保证数据库不宕机?数据都保存成功?
+ * 为何只在停服的时候存一下
+ */
 @Service
 public class SerialDataService implements InitHandler,ServiceDispose {
 

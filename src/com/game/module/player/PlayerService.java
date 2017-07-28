@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.game.SysConfig;
-import com.game.data.ErrCode;
 import com.game.data.GlobalConfig;
 import com.game.data.PlayerUpgradeCfg;
 import com.game.data.Response;
@@ -257,7 +256,7 @@ public class PlayerService implements InitHandler {
 				int[] equips = ConfigData.globalParam().initEquips[player.getVocation()-1];
 				if (equips != null) {
 					for (int equipId : equips) {
-						Goods equip = goodsService.addNewGoods(playerId, equipId, 1, Goods.EQUIP);
+						Goods equip = PlayerService.this.goodsService.addNewGoods(playerId, equipId, 1, Goods.EQUIP);
 						goodsService.addGoods(playerId,equip);
 					}
 					
@@ -271,14 +270,17 @@ public class PlayerService implements InitHandler {
 				if (newbieMailReward != null) {
 					for (int i = 0; i < newbieMailReward.length; i++) {
 						newbieRewards.add(new GoodsEntry(newbieMailReward[i][0], newbieMailReward[i][1]));
+//						Goods equip = PlayerService.this.goodsService.addNewGoods(playerId, newbieMailReward[i][0], newbieMailReward[i][1], Goods.EQUIP);
+//						goodsService.addGoods(playerId,equip);
 					}
 				}
 				Context.getTimerService().scheduleDelay(new Runnable() {
 					@Override
 					public void run() {
-						String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
+						goodsService.addRewards(playerId, newbieRewards, LogConsume.GM);
+						/*String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
 						String mailContent = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_CONTENT).tips;
-						mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);
+						mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);*/
 					}
 				}, 5, TimeUnit.SECONDS);
 
@@ -311,7 +313,7 @@ public class PlayerService implements InitHandler {
 		if(!dailyService.isSameWeek(data.getWeeklyTime())){
 			dailyService.resetWeeklyData(data);
 		}
-		fashionService.removeTmpFashions(playerId, true);
+		fashionService.checkRemoveTimeoutFashions(playerId, true);
 		// 刷新体力
 		refreshEnergy(player);
 		//更新货币
@@ -410,7 +412,7 @@ public class PlayerService implements InitHandler {
 			actionType = LogConsume.GM;
 		}
 
-		Context.getLoggerService().logDiamond(playerId, add, actionType.getActionId(), true, params);
+		Context.getLoggerService().logDiamond(playerId, add, actionType.actionId, true, params);
 		taskService.doTask(playerId, Task.FINISH_CURRENCY, Goods.DIAMOND, add);
 		return true;
 	}
@@ -433,7 +435,7 @@ public class PlayerService implements InitHandler {
 		if (actionType == null) {
 			actionType = LogConsume.GM;
 		}
-		Context.getLoggerService().logDiamond(playerId, dec, actionType.getActionId(), false, params);
+		Context.getLoggerService().logDiamond(playerId, dec, actionType.actionId, false, params);
 		taskService.doTask(playerId, Task.FINISH_CONSUME, Goods.DIAMOND, dec);
 		return true;
 	}
@@ -664,7 +666,7 @@ public class PlayerService implements InitHandler {
 				public void run() {
 					refreshEnergy(player);
 					refreshTraversingEnergy(player);
-					fashionService.removeTmpFashions(playerId, true);
+					fashionService.checkRemoveTimeoutFashions(playerId, true);
 				}
 			});
 		}

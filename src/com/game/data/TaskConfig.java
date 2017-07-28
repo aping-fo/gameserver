@@ -14,4 +14,5 @@ public class TaskConfig {
 	public int[][] rewards;//奖励
 	public int liveness;//活跃度奖励
 	public int nextTaskId;//后续任务id
+	public int[] functionType;//功能类型
 }

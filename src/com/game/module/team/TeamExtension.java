@@ -6,8 +6,11 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.game.data.CopyConfig;
 import com.game.data.Response;
 import com.game.module.copy.CopyExtension;
+import com.game.module.copy.CopyInstance;
+import com.game.module.copy.CopyService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
@@ -17,6 +20,7 @@ import com.game.params.ListParam;
 import com.game.params.copy.SEnterCopy;
 import com.game.params.team.MyTeamVO;
 import com.game.params.team.TeamVO;
+import com.game.util.ConfigData;
 import com.server.SessionManager;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
@@ -36,6 +40,8 @@ public class TeamExtension {
 	private SceneService sceneService;
 	@Autowired
 	private CopyExtension copyExtension;
+	@Autowired
+	private CopyService copyService;
 	
 	@Command(3402)
 	public Object getTeamList(int playerId, IntParam param){
@@ -44,7 +50,7 @@ public class TeamExtension {
 		List<Team> teams = teamService.getAllTeam();
 		result.params = new ArrayList<TeamVO>();
 		for(Team team : teams){
-			if(team.getType() != type || !team.isOpen()){
+			if(team.getType() != type || !team.isOpen() || team.isRunning()){
 				continue;
 			}
 			TeamVO vo = new TeamVO();
@@ -113,10 +119,6 @@ public class TeamExtension {
 			result.param = Response.ERR_PARAM;
 			return result;
 		}
-		if(team.isRunning()){
-			result.param = Response.TEAM_RUNNING_NO_DISSOLVE;
-			return result;
-		}
 		Int2Param msg = new Int2Param();
 		msg.param2 = REASON_DISSOLVE;
 		sceneService.brocastToSceneCurLine(player, LEAVE, msg, SessionManager.getInstance().getChannel(playerId));
@@ -161,10 +163,6 @@ public class TeamExtension {
 		}
 		if(team.getLeader() == playerId){
 			return dissolve(playerId, param);
-		}
-		if(team.isRunning()){
-			result.param1 = Response.TEAM_RUNNING_NO_LEAVE;
-			return result;
 		}
 		Int2Param msg = new Int2Param();
 		msg.param2 = REASON_SELF;
@@ -213,22 +211,30 @@ public class TeamExtension {
 				return result;
 			}
 		}
-		
+		CopyConfig copyConfig = ConfigData.getConfig(CopyConfig.class, team.getCopyId());
 		IntParam intParam = new IntParam();
 		intParam.param = team.getCopyId();
 		SEnterCopy result = (SEnterCopy)copyExtension.enter(playerId, intParam);
 		if(result.code > 0){
 			SessionManager.getInstance().sendMsg(CopyExtension.ENTER_COPY, result, playerId);
 		}else{	
+			team.setRunning(true);
 			int copyInstanceId = player.getCopyId();
+			CopyInstance copyIns = copyService.getCopyInstance(copyInstanceId);
+			if(copyConfig.type == CopyInstance.TYPE_TRAVERSING){				
+				copyIns.setTraverseMap(playerService.getPlayerData(playerId).getTraverseMaps().get(team.getMapId()));
+			}
 			for(Map.Entry<Integer, TMember> entry : team.getMembers().entrySet()){
 				int id = entry.getKey();
 				TMember member = entry.getValue();
 				Player otherPlayer = playerService.getPlayer(id);
 				member.setCurHp(otherPlayer.getHp());
 				otherPlayer.setCopyId(copyInstanceId);
+				if(id != playerId){
+					copyIns.getMembers().getAndIncrement();
+				}
+				SessionManager.getInstance().sendMsg(CopyExtension.ENTER_COPY, result, id);
 			}
-			sceneService.brocastToSceneCurLine(player, CopyExtension.ENTER_COPY, result, null);
 		}
 		return null;
 	}

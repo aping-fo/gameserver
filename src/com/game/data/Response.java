@@ -45,7 +45,7 @@ public class Response {
 	public static final int MAX_STAR=1201;//星级已满
 	public static final int MAX_STRENGTH=1202;//强化等级已满
 	public static final int MAX_LEV=1203;//已经是最高级了
-	public static final int STRENGTH_FAIL=1204;//强化失败，等级保持不变
+	public static final int STRENGTH_FAIL=1204;//强化失败，返还50%材料
 	//任务系统
 	public static final int TASK_NOT_FINISHED=1301;//任务尚未完成
 	public static final int TASK_JOINTED=1302;//对方已接取协助任务
@@ -112,12 +112,13 @@ public class Response {
 	public static final int NO_TRAVERSING_ENERGY=2563;//穿越仪能量不足
 	//时装
 	public static final int DUPLICATE_FASHION_TITLE=3701;//重复时装补偿
+	public static final int FASHION_TIME_OUT=3710;//时装已经过期
 	public static final int DUPLICATE_FASHION_CONTENT=3702;//尊敬的玩家，由于你已经拥有时装：%s 了，不能重复获得，现在补充对应的钻石给你！
 	public static final int GANG_DUPLICATE_GTROOM=3703;//公会练功房已开启,不能重复开启
 	public static final int NO_GANG_ASSET=3704;//公会资金不足
-	public static final int NO_GANG_TRAINING=3705;//公会练功房暂时未开启
-	public static final int GANG_TRAINING_TITLE=3706;//公会练功房奖励标题
-	public static final int GANG_TRAINING_CONTENT=3707;//公会练功房奖励内容
+	public static final int NO_GANG_TRAINING=3705;//宴会暂时未开启
+	public static final int GANG_TRAINING_TITLE=3706;//宴会奖励标题
+	public static final int GANG_TRAINING_CONTENT=3707;//宴会奖励内容
 	public static final int GANG_DUPLICATE_TRAINING=3708;//你已经开始练功,不能重复开始
 	public static final int NO_GANG_TRAINING_REWARD=3709;//有效时长已用完,将不再获得收益
 	//组队
@@ -130,8 +131,21 @@ public class Response {
 	public static final int TEAM_RUNNING_NO_LEAVE=3809;//当前队伍已在副本中,无法离开队伍
 	public static final int TEAM_NO_READY=3810;//还有队员未准备好
 	//签到
-	public static final int SIGN_HAS_DONE=3811;//已经签到过
-	public static final int TEAM_NO_EXIT=3812;//组队中不能进入其它战斗!
-	public static final int IN_TEAMING=3813;//你已在队伍中,不能再加入别的队伍
+	public static final int SIGN_HAS_DONE=3851;//已经签到过
+	public static final int TEAM_NO_EXIT=3852;//组队中不能进入其它战斗!
+	public static final int IN_TEAMING=3853;//你已在队伍中,不能再加入别的队伍
+	//世界BOSS
+	public static final int WORLD_BOSS_END=3901;//活动已结束
+	public static final int WORLD_BOSS_KILLED=3902;//挑战的BOSS已经死亡
+	public static final int ARTIFACT_SAME_PART=3903;//激活相同部件,返还50%材料
+	public static final int WORLD_BOSS_LAST_BEAT_TITLE=3904;//最后一击奖励
+	public static final int WORLD_BOSS_LAST_BEAT_CONTENT=3905;//最后一击奖励
+	public static final int WORLD_BOSS_BEAT_TITLE=3906;//排名奖励
+	public static final int WORLD_BOSS_BEAT_CONTENT=3907;//排名奖励
+	public static final int WORLD_BOSS_KILL_TITLE=3908;//击杀奖励
+	public static final int WORLD_BOSS_KILL_CONTENT=3909;//击杀奖励
+	public static final int WORLD_BOSS_NOT_BUY_TIMES=3910;//购买次数已满
+	public static final int ARENA_NO_CHELLENGE=4001;//挑战次数不足
+	public static final int ARENA_NO_BUY=4002;//今天购买次数已用完
 
 }

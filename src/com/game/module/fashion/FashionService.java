@@ -32,13 +32,9 @@ import java.util.List;
 public class FashionService {
 
     // 时装部位类型
-    public static final int TYPE_HEAD = 1;
-    public static final int TYPE_CLOTH = 2;
-    public static final int TYPE_WEAPON = 3;
-    // 时装获得类型
-    public static final int GET_VIP = 1;
-    public static final int GET_REPUTATION = 2;
-    public static final int GET_ACHIEVE = 3;
+    private static final int TYPE_HEAD = 1;
+    private static final int TYPE_CLOTH = 2;
+    private static final int TYPE_WEAPON = 3;
 
     @Autowired
     private PlayerService playerService;
@@ -59,7 +55,7 @@ public class FashionService {
         }
         // 是否已经有了，补偿
         PlayerData data = playerService.getPlayerData(playerId);
-        if (data.getFashions().contains(fashionId)) {
+        if (data.getFashionMap().containsKey(fashionId)) {
             // 发邮件
             List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
             rewards.add(new GoodsEntry(Goods.DIAMOND, cfg.duplicateReturn));
@@ -70,10 +66,8 @@ public class FashionService {
         }
 
         data.getFashions().add(fashionId);
-        if (limitTime > 0) {
-            long endTime = System.currentTimeMillis() + limitTime * TimeUtil.ONE_SECOND;
-            data.getTempFashions().put(fashionId, endTime);
-        }
+        data.getFashionMap().put(fashionId, new Fashion(fashionId, System.currentTimeMillis(), cfg.timeLimit));
+
         calculator.calculate(player);
         // 推送前端
         SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
@@ -81,6 +75,7 @@ public class FashionService {
 
     // 获取时装信息
     public FashionInfo getFashionInfo(int playerId) {
+        checkRemoveTimeoutFashions(playerId, false);
         FashionInfo info = new FashionInfo();
         info.fashions = new ArrayList<>();
 
@@ -115,15 +110,10 @@ public class FashionService {
             return Response.ERR_PARAM;
         }
         // 判断条件
-        if (cfg.limitType > 0) {
-            if (cfg.limitType == GET_VIP) {
-                if (player.getVip() < cfg.limitParams[0]) {
-                    return Response.NO_VIP;
-                }
-            } else {
-                throw new RuntimeException("未实现的时装获取条件类型!");
-            }
+        if (player.getVip() < cfg.limitParams[0]) {
+            return Response.NO_VIP;
         }
+
         // 扣除消耗
         List<GoodsEntry> costs = Arrays.asList(new GoodsEntry(cfg.price[0], cfg.price[1]));
         int costResult = goodsServices.decConsume(playerId, costs, LogConsume.ACTIVE_FASHION, fashionId);
@@ -133,26 +123,26 @@ public class FashionService {
         data.getFashionMap().put(fashionId, new Fashion(fashionId, System.currentTimeMillis(), cfg.timeLimit));
         // 推送前端
         SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
+        calculator.calculate(player);
         return Response.SUCCESS;
     }
 
     /**
-     *
      * @param playerId
      * @param fashionId
      * @return
      */
     public int updateToForever(int playerId, int fashionId) {
         FashionCfg cfg = ConfigData.getConfig(FashionCfg.class, fashionId);
-        if(cfg == null) {
-            ServerLogger.warn("fashion dont exist,fashionId = {}",fashionId);
+        if (cfg == null) {
+            ServerLogger.warn("fashion dont exist,fashionId = {}", fashionId);
             return Response.ERR_PARAM;
         }
 
         PlayerData data = playerService.getPlayerData(playerId);
         Fashion fashion = data.getFashionMap().get(fashionId);
-        if(fashion == null) {
-            ServerLogger.warn("fashion dont exist,fashionId = {}",fashionId);
+        if (fashion == null) {
+            ServerLogger.warn("fashion dont exist,fashionId = {}", fashionId);
             return Response.ERR_PARAM;
         }
 
@@ -176,10 +166,16 @@ public class FashionService {
         resp.type = type;
         resp.fashionId = fashionId;
         resp.errCode = Response.SUCCESS;
+
         // 是否拥有
         if (fashionId > 0) {
-            if (!data.getFashionMap().containsKey(fashionId)) {
+            Fashion fashion = data.getFashionMap().get(fashionId);
+            if (fashion == null) {
                 resp.errCode = Response.ERR_PARAM;
+                return resp;
+            }
+            if (fashion.getPeriod() != 0 && System.currentTimeMillis() >= fashion.getCreateTime() + fashion.getPeriod() * 1000) {
+                resp.errCode = Response.FASHION_TIME_OUT;
                 return resp;
             }
             // 检查参数
@@ -207,32 +203,33 @@ public class FashionService {
                 data.setCurHead(fashionId);
             }
         }
+        calculator.calculate(player);
         return resp;
     }
 
-    // 检测时装是否过期了
-    public void removeTmpFashions(int playerId, boolean needNotify) {
+    /**
+     * 检测并移除过期时装
+     * @param playerId
+     * @param needNotify
+     */
+    public void checkRemoveTimeoutFashions(int playerId, boolean needNotify) {
         PlayerData data = playerService.getPlayerData(playerId);
-/*        if (data.getTempFashions().isEmpty()) {
-            return;
-        }*/
         // 检测
         Player player = playerService.getPlayer(playerId);
-        List<Integer> dels = new ArrayList<Integer>();
+        List<Integer> dels = new ArrayList<>();
         long now = System.currentTimeMillis();
+        if(data == null) {
+            return;
+        }
         for (Fashion fashion : data.getFashionMap().values()) {
             if (fashion.getPeriod() != 0 && now >= fashion.getCreateTime() + fashion.getPeriod() * 1000) {
                 dels.add(fashion.getId());
             }
         }
-        /*for (Entry<Integer, Long> t : data.getTempFashions().entrySet()) {
-            if (t.getValue() < now) {
-                dels.add(t.getKey());
-            }
-        }*/
         for (Integer id : dels) {
             data.getTempFashions().remove(id);
             data.getFashions().remove(id);
+            data.getFashionMap().remove(id);
 
             FashionCfg cfg = ConfigData.getConfig(FashionCfg.class, id);
             if (cfg.type == TYPE_CLOTH) {

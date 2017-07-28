@@ -7,10 +7,10 @@ public class PlayerUpgradeCfg {
 	public int id;//key
 	public int lev;//等级
 	public int exp;//经验
-	public int hp;//hp
-	public int attack;//攻击
-	public int defense;//防守
-	public int symptom;//症状
+	public int hp;//生命
+	public int attack;//威力
+	public int defense;//防御
+	public int symptom;//异常
 	public int crit;//暴击
-	public int fu;//符能
+	public int fu;//抗性
 }

@@ -8,12 +8,13 @@ public class Scene {
 	public static final int CITY = 1;//主城
 	public static final int COPY = 3;//单人副本
 	public static final int MULTI = 4;//多人场景
+
 	
-	
-	
-	
+	public static final int MULTI_CITY = 41;//多人场景
 	public static final int MULTI_GANG = 42;//公会场景
 	public static final int MULTI_TEAM = 43;//组队场景
+	public static final int MULTI_PVE = 44;//组队PVE场景
+	public static final int WORLD_BOSSS_PVE = 45;//世界BOSS PVE场景
 
 	private int id;// 场景ID
 	// ---其他数据
@@ -42,10 +43,14 @@ public class Scene {
 	public void setSubLine(SubLine subLine) {
 		this.subLine = subLine;
 	}
-	
+
 	public int getNewSubLine() {
-		int type = GameData.getConfig(SceneConfig.class, id).type;
-		return subLine.genSunLine(type);
+		SceneConfig config = GameData.getConfig(SceneConfig.class, id);
+		if(config.type == Scene.MULTI && (config.sceneSubType != Scene.MULTI_CITY
+			&& config.sceneSubType != Scene.WORLD_BOSSS_PVE)){
+			return 1;
+		}
+		return subLine.genSunLine(config.type);
 	}
 
 }

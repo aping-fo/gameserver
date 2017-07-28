@@ -132,7 +132,7 @@ public class RankingList<T extends IRankCA> {
 					putEntity(playerId, entity);
 				}else{					
 					T last = entities.lastKey();
-					if(entity.compareTo(last) > 0){
+					if(entity.compareTo(last) <= 0){
 						putEntity(playerId, entity);
 						RankEntity rEntity = entities.remove(last);
 						keys.remove(rEntity.getPlayerId());

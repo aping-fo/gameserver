@@ -25,18 +25,24 @@ public class SubLine {
 	}
 
 	// 生成一个可用的分线
+
+	/**
+	 * 这个地方估计还的改成type来获取，不然这里是有问题的
+	 * @param type
+	 * @return
+	 */
 	public int genSunLine(int type) {
 		int subLine = 0;
 		int max = SysConfig.subLineCap;
 
-		for (int i = 1; i < subLineUsers.length(); i++) {
+		for (int i = 2; i < subLineUsers.length(); i++) {
 			if (subLineUsers.get(i) < max) {
 				subLine = i;
 				break;
 			}
 		}
 		if (subLine == 0) {// 全满了，随机一个分线
-			subLine = RandomUtil.randInt(SysConfig.subLineCount) + 1;
+			subLine = RandomUtil.randInt(SysConfig.subLineCount - 1) + 2;
 		}
 		return subLine;
 	}

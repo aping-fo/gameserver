@@ -15,6 +15,7 @@ public class DailyVo implements IProtocol {
 	public List<Integer> fundsTake;//已经领取的基金等级
 	public short loginDays;//登录天数
 	public List<Int2Param> dailys;//每日次数相关，前端要找个地方定义id
+	public int signFlag;//签到标识
 
 
 	public void decode(BufferBuilder bb) {
@@ -52,6 +53,7 @@ public class DailyVo implements IProtocol {
 
             }
         }
+		this.signFlag = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -65,5 +67,6 @@ public class DailyVo implements IProtocol {
 		bb.putIntList(this.fundsTake);
 		bb.putShort(this.loginDays);
 		bb.putProtocolVoList(this.dailys);
+		bb.putInt(this.signFlag);
 	}
 }

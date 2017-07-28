@@ -3,10 +3,14 @@ package com.game.module.worldboss;
 /**
  * Created by lucky on 2017/7/4.
  */
-public class HurtRecord {
+public class HurtRecord implements Comparable<HurtRecord>{
     private int playerId;
     private String name;
     private int hurt;
+    private int rank;
+
+    private int curHurt;
+    private int curBossId;
 
     public HurtRecord() {
     }
@@ -15,6 +19,30 @@ public class HurtRecord {
         this.playerId = playerId;
         this.name = name;
         this.hurt = 0;
+    }
+
+    public int getCurHurt() {
+        return curHurt;
+    }
+
+    public void setCurHurt(int curHurt) {
+        this.curHurt = curHurt;
+    }
+
+    public int getCurBossId() {
+        return curBossId;
+    }
+
+    public void setCurBossId(int curBossId) {
+        this.curBossId = curBossId;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
     }
 
     public int getHurt() {
@@ -39,5 +67,17 @@ public class HurtRecord {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int compareTo(HurtRecord o) {
+        if(o.playerId == playerId) {
+            return 0;
+        }
+
+        if(o.hurt == hurt) {
+            return o.playerId - playerId;
+        }
+        return o.hurt - hurt;
     }
 }

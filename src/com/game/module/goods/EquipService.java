@@ -24,6 +24,7 @@ import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.params.GainGoodNotify;
 import com.game.params.goods.AttrItem;
 import com.game.params.goods.EquipInfo;
 import com.game.params.goods.SGoodsVo;
@@ -118,13 +119,17 @@ public class EquipService {
 	}
 	
 	//分解
-	public int decompose(int playerId,Collection<Long> ids){
+	public Object decompose(int playerId,Collection<Long> ids){
 		//计算总的获得
-		int equipMaterials = 0;
+		int goodsId = 0;
+		int count = 0;
 		for(long id:ids){
+			int equipMaterials = 0;
 			Goods goods = goodsService.getGoods(playerId, id);
 			GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
-			equipMaterials+=cfg.decompose[0][1];
+			goodsId = cfg.decompose[0][0];
+			equipMaterials +=cfg.decompose[0][1];
+			
 			//升星返还
 			if(goods.getStar()>0){
 				EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type*100000+cfg.level*100+goods.getStar());
@@ -132,13 +137,18 @@ public class EquipService {
 					equipMaterials+=nextCfg.decompose;
 				}
 			}
+			count+=equipMaterials;
 			//扣除物品
 			goodsService.decSpecGoods(goods, goods.getStackNum(), LogConsume.DECOMPOSE_DEC);
+			goodsService.addRewrad(playerId, cfg.decompose[0][0], equipMaterials, LogConsume.DECOMPOSE_DEC);
 		}
+		GainGoodNotify notify = new GainGoodNotify();
 		//加奖励
-		playerService.addCurrency(playerId, Goods.EQUIP_TOOL, equipMaterials, LogConsume.DECOMPOSE_ADD);
+		//playerService.addCurrency(playerId, Goods.EQUIP_TOOL, equipMaterials, LogConsume.DECOMPOSE_ADD);
 		taskService.doTask(playerId, Task.FINISH_DECOMPOSE, 1);
-		return Response.SUCCESS;
+		notify.id = goodsId;
+		notify.count = count;
+		return notify;
 	}
 	
 	//升星
@@ -236,7 +246,7 @@ public class EquipService {
 			playerService.addCoin(playerId, nextCfg.costCoin>>1, LogConsume.STRENGTH_COST, type);
 			result = Response.STRENGTH_FAIL;
 		}
-		goodsService.addGoodsToBag(playerId, goods, LogConsume.STRENGTH_COST, type);
+		goodsService.decConsume(playerId, goods, LogConsume.STRENGTH_COST, type);
 		taskService.doTask(playerId, Task.FINISH_STRONG, success?next:curStrength, type, 1);
 		return result;
 	}
@@ -378,15 +388,7 @@ public class EquipService {
 	public EquipInfo getEquip(int playerId){
 		//更新一下宝石的数据
 		PlayerData data = playerService.getPlayerData(playerId);
-		for(int type:ConfigData.globalParam().equipTypes){
-
-			Jewel jewel = data.getJewels().get(type);
-			if(jewel==null){
-				jewel = new Jewel();
-				 data.getJewels().put(type, jewel);
-			}
-		}
-		
+		playerCalculator.initJewel(playerId);
 		EquipInfo equip = new  EquipInfo();
 		
 		equip.strengths = new ArrayList<AttrItem>();
@@ -404,7 +406,8 @@ public class EquipService {
 			jewel.lev = j.getValue().getLev();
 			equip.jewels.add(jewel);
 		}
-		
+
+
 		return equip;
 	}
 	

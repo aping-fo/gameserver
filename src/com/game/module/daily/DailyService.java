@@ -212,6 +212,7 @@ public class DailyService implements InitHandler {
 		vo.fundOpen = data.getFundActive();
 		vo.fundsTake = data.getFunds();
 		vo.vipBag = new ArrayList<Integer>(data.getVipReward().keySet());
+		vo.signFlag = data.getSignFlag();
 		return vo;
 	}
 

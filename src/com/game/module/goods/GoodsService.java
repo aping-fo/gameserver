@@ -896,6 +896,52 @@ public class GoodsService {
 		}
 		addRewards(playerId, items, type, params);
 	}
-	
-	
-}
+
+	/**
+	 * 道具出售
+	 * @param playerId
+	 * @param id
+	 * @param count
+	 * @return
+	 */
+	public int sell(int playerId,int id,int count) {
+		Goods goods = getGoods(playerId, id);
+		if (goods == null || count <= 0) {
+			return Response.ERR_PARAM;
+		}
+		if (goods.getStackNum() < count) {
+			return Response.ERR_GOODS_COUNT;
+		}
+		GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
+		int sellMoney = cfg.sellPrice * count;
+
+		decGoodsFromBagById(playerId,id,count,LogConsume.SHOP_BUY_ADD);
+		addRewrad(playerId,Goods.COIN,sellMoney,LogConsume.SHOP_BUY_ADD);
+		return Response.SUCCESS;
+	}
+
+	public boolean decGoodsFromBagById(int playerId, int id, int count, LogConsume log, Object... params) {
+		Goods goods = getGoods(playerId, id);
+		if (count <= 0 || goods == null || goods.getStackNum() < count) {
+			return false;
+		}
+		PlayerBag bag = getPlayerBag(playerId);
+		List<SGoodsVo> goodsUpdate = new ArrayList<>();
+		synchronized (bag) {
+			int decCount = Math.min(goods.getStackNum(), count);
+			goods.setStackNum(goods.getStackNum() - decCount);
+			goodsUpdate.add(toVO(goods));
+			if (goods.getStackNum() == 0) {// 删除
+				removeGoods(playerId, goods);
+			}
+			playerGoods.put(playerId, bag);
+			// 更新到前端
+			refreshGoodsToClient(playerId, goodsUpdate);
+		}
+		// 记录日志
+		Player player = playerService.getPlayer(playerId);
+		Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false,
+				count, log, goods.getGoodsId(), Goods.GOOODS, params);
+		return true;
+	}
+ }

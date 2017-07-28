@@ -13,8 +13,13 @@ public class GlobalConfig {
 	public int[] playerDefaultProperty;//人物初始属性
 	public int[][] playerDefaultSkill;//人物初始技能
 	public int defaultVocation;//选择人物职业
-	public int reducePercentParam;//减伤比参数
-	public int critParam;//暴击几率参数
+	public int reducePercentParamA;//减伤比参数A
+	public float reducePercentParamB;//减伤比参数B
+	public float critFactor;//暴击倍率
+	public float critParamA;//暴击几率参数A
+	public float critParamB;//暴击几率参数B
+	public float resistanceParamA;//抗性减伤参数A
+	public float resistanceParamB;//抗性减伤参数B
 	public int symptomParam;//症状参数
 	public int worldChatLevel;//世界频道聊天开放等级
 	public int[] equipTypes;//装备类型
@@ -95,9 +100,14 @@ public class GlobalConfig {
 	public int[] restoreTraversingEnergy;//穿越仪能量恢复
 	public int[] copyBackgroundIds;//副本背景图资源
 	public Map<Integer,Integer> noCurrencyTips;//货币不足提示语
-	public Map<Integer,int[]> worldBossReward;//世界Boss排名奖励
+	public int[][] worldBossReward;//世界Boss排名奖励
+	public int[][] worldBossRewardRank;//世界Boss排名区间
 	public Map<Integer,int[]> worldBossLastFightReward;//世界Boss最后一击奖励
 	public Map<Integer,int[]> worldBossKillReward;//世界Boss击杀奖励
-	public int worldBossHurtReward;//世界Boss伤害兑换奖励
-	public Map<Integer,Integer> worldBossOpenTime;//世界Boss活动时间
+	public int[] worldBossCost;//世界Boss购买消耗
+	public int[] worldBossBuyAttackCost;//世界Boss攻击力购买消耗
+	public int[] worldBossCopy;//世界Boss副本ID-BOSSID
+	public int[] worldBossHurtReward;//世界Boss伤害兑换奖励
+	public int[] worldBossOpenTime;//世界Boss活动时间
+	public Map<Integer,Integer> teamLimit;//队伍人数上限
 }

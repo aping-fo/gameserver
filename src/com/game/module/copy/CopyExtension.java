@@ -88,6 +88,7 @@ public class CopyExtension {
 		returnResult.code = result;
 
 		if (instance != null) {
+			instance.getMembers().getAndIncrement();
 			CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, instance.getPassId());
 			returnResult.sceneId = cfg.scenes[0];// 第一个场景id
 			returnResult.copyId = instance.getCopyId();
@@ -133,6 +134,7 @@ public class CopyExtension {
 	// 刷新副本
 	public static final int CMD_GETINFO = 1901;
 	public static final int CMD_REFRESH = 1906;
+	public static final int CMD_REVIVI = 1907;
 
 	// 复活
 	@Command(1907)

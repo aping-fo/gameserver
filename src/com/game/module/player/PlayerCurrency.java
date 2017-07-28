@@ -42,11 +42,11 @@ public class PlayerCurrency {
 	}
 	
 	public boolean add(int type, long offset){
-		if(!tryWrite()){
-			throw new RuntimeException("get write lock fail");
-		}
 		if(offset <= 0){
 			return false;
+		}
+		if(!tryWrite()){
+			throw new RuntimeException("get write lock fail");
 		}
 		try{			
 			Long value = currencies.get(type);

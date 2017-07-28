@@ -10,6 +10,7 @@ public class CopyConfig {
 	public String chapterName;//章节名称
 	public int group;//关卡序号
 	public String name;//名称
+	public int nameType;//关卡名字显示类型
 	public String desc;//关卡描述
 	public int preId;//前置副本
 	public int[] scenes;//关卡场景id

@@ -13,6 +13,7 @@ public class Goods {
 	public static int CONTRIBUTE = 104;//帮贡
 	public static int ENERGY = 107;	// 体力
 	public static int EQUIP_TOOL = 108;//装备分解材料
+	
 	public static int SPECIAL_MAP = 109;//特性副本地图
 	public static int VIP_EXP = 120;//vip经验值
 	public static int SKILL_CARD = 121;//技能卡

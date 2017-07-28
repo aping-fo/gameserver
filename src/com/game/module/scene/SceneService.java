@@ -16,9 +16,11 @@ import com.game.data.SceneConfig;
 import com.game.event.InitHandler;
 import com.game.module.copy.CopyInstance;
 import com.game.module.copy.CopyService;
+import com.game.module.gang.GangService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.team.TeamService;
+import com.game.module.worldboss.WorldBossService;
 import com.game.params.IProtocol;
 import com.game.params.Int2Param;
 import com.game.params.scene.MoveStart;
@@ -27,6 +29,7 @@ import com.game.params.scene.SMonsterVo;
 import com.game.params.scene.SSceneInfo;
 import com.game.params.scene.SScenePlayerVo;
 import com.game.params.scene.SkillHurtVO;
+import com.game.params.scene.StopSkillVO;
 import com.game.params.scene.UseSkillVO;
 import com.game.util.ConfigData;
 import com.server.SessionManager;
@@ -42,7 +45,11 @@ public class SceneService implements InitHandler {
 	private CopyService copyService;
 	@Autowired
 	private TeamService teamService;
-
+	@Autowired
+	private WorldBossService worldBossService;
+	@Autowired
+	private GangService gangService;
+	
 	private Map<Integer, Scene> scenes = new ConcurrentHashMap<Integer, Scene>();
 	
 	private Map<String, Integer> useSkills = new ConcurrentHashMap<String, Integer>();
@@ -62,7 +69,7 @@ public class SceneService implements InitHandler {
 		return scenes.get(sceneId);
 	}
 
-	// 获得场景group key
+	// 获得场景group key,感觉会把人份到不同组
 	public String getGroupKey(Player player) {
 		int sceneId = player.getSceneId();
 		int subLine = player.getSubLine();
@@ -71,7 +78,7 @@ public class SceneService implements InitHandler {
 		if (cfg.sceneSubType == Scene.MULTI_GANG) {
 			return String.format("%d_%d_%d", sceneId, player.getGangId(),
 					player.getSubLine());
-		} else if (cfg.sceneSubType == Scene.MULTI_TEAM) {
+		} else if (cfg.sceneSubType == Scene.MULTI_TEAM || cfg.sceneSubType == Scene.MULTI_PVE) {
 			return String.format("%d_%d_%d", sceneId, player.getTeamId(),
 					player.getSubLine());
 		} else {
@@ -124,7 +131,12 @@ public class SceneService implements InitHandler {
 
 		lastScene.exitSubLine(player.getSubLine());
 		player.setSubLine(0);
-		
+
+		//退出世界boss场景
+		SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, sceneId);
+		if(lastCfg.sceneSubType == Scene.WORLD_BOSSS_PVE) {
+			worldBossService.removePlayer(player.getPlayerId());
+		}
 		ServerLogger.info("...exit", playerId, player.getSceneId());
 	}
 
@@ -136,15 +148,15 @@ public class SceneService implements InitHandler {
 			return;
 		}
 
-		SceneConfig cfg = GameData.getConfig(SceneConfig.class, curScene);
-		if (cfg.type == Scene.CITY) {
+		SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, curScene);
+		if (lastCfg.type == Scene.CITY || lastCfg.sceneSubType == Scene.MULTI_CITY || lastCfg.sceneSubType == Scene.MULTI_GANG) {
 			player.setLastSceneId(curScene);
 			player.setLastPos(new float[] { player.getX(), player.getY(),
 					player.getZ() });
 
 		}
-		cfg = GameData.getConfig(SceneConfig.class, sceneId);
-		if (cfg.type == Scene.CITY) {
+		SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
+		if (cfg.type == Scene.CITY || cfg.sceneSubType == Scene.MULTI_CITY || cfg.sceneSubType == Scene.MULTI_GANG) {
 			// 清除副本实例
 			teamService.quit(player.getPlayerId());
 			copyService.removeCopy(player.getPlayerId());
@@ -166,8 +178,7 @@ public class SceneService implements InitHandler {
 		SessionManager.getInstance().addToGroup(key, channel);
 
 		// 广播消息
-		brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player),
-				channel);
+		brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player), channel);
 	}
 
 	// 转成vo
@@ -185,12 +196,13 @@ public class SceneService implements InitHandler {
 		vo.vMoveDir = player.getvMoveDir();
 		vo.fashionId = player.getFashionId();
 		vo.weapon = player.getWeaponId();
-
 		vo.fight = player.getFight();
 		vo.title = player.getTitle();
-
 		vo.head = playerService.getPlayerData(player.getPlayerId())
 				.getCurHead();
+		if(player.getGangId() > 0){
+			vo.gang = gangService.getGang(player.getGangId()).getName();
+		}
 		return vo;
 	}
 
@@ -236,7 +248,9 @@ public class SceneService implements InitHandler {
 	public SSceneInfo genMonster(SceneConfig cfg, Player player) {
 		SSceneInfo sceneInfo = new SSceneInfo();
 		List<SMonsterVo> monsters = new ArrayList<SMonsterVo>();
-		if (cfg.type == Scene.COPY) {// 普通副本
+		if (cfg.type == Scene.COPY
+				|| (cfg.type == Scene.MULTI &&
+				(cfg.sceneSubType == Scene.MULTI_PVE || cfg.sceneSubType == Scene.WORLD_BOSSS_PVE))) {// 普通副本，多人PVE
 			int copyInstance = player.getCopyId();
 			CopyInstance copy = copyService.getCopyInstance(copyInstance);
 			monsters.addAll(copy.getMonsters().get(cfg.id).values());
@@ -263,6 +277,7 @@ public class SceneService implements InitHandler {
 		player.sethMoveDir(vo.hMoveDir);
 		player.setX(vo.x);
 		player.setZ(vo.z);
+		vo.playerId = playerId;
 		Channel me = SessionManager.getInstance().getChannel(playerId);
 		brocastToSceneCurLine(player, SceneExtension.WALK_SCENE, vo, me);
 	}
@@ -274,6 +289,7 @@ public class SceneService implements InitHandler {
 		player.sethMoveDir(0);
 		player.setX(vo.x);
 		player.setZ(vo.z);
+		vo.playerId = playerId;
 		Channel me = SessionManager.getInstance().getChannel(playerId);
 		brocastToSceneCurLine(player, SceneExtension.STOP_WALK_SCENE, vo, me);
 	}
@@ -281,27 +297,48 @@ public class SceneService implements InitHandler {
 	public void handlerUseSkill(int playerId, UseSkillVO skillVO){
 		if(!SysConfig.debug){
 			//非调试状态下需要检验伤害,CD
-			
-			useSkills.put(String.format("%d_%d", skillVO.attackId, skillVO.skillId), skillVO.type);
 		}
+		if(skillVO.type == 0)
+			skillVO.attackId = playerId;
+		useSkills.put(String.format("%d_%d", skillVO.attackId, skillVO.skillId), skillVO.type);
+		//ServerLogger.warn("handler skill" + String.format("%d_%d", skillVO.attackId, skillVO.skillId));
 		Player player = playerService.getPlayer(playerId);
 		brocastToSceneCurLine(player, SceneExtension.USE_SKILL, skillVO);
+	}
+
+	/**
+	 * 停止使用技能
+	 * @param playerId
+	 * @param skillVO
+	 */
+	public void handlerStopSkill(int playerId, StopSkillVO skillVO){
+		Player player = playerService.getPlayer(playerId);
+		if(skillVO.type == 0)
+			skillVO.attackId = playerId;
+		brocastToSceneCurLine(player, SceneExtension.SKILL_STOP, skillVO,SessionManager.getInstance().getChannel(player.getPlayerId()));
 	}
 
 	// 玩家技能处理
 	public void handleSkillHurt(int playerId, SkillHurtVO hurtVO) {
 		Player player = playerService.getPlayer(playerId);
 		Integer type = useSkills.get(String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
-		if(type == null){
-			ServerLogger.warn("handler skill hurt,there is no use skill record!");
-			return;
+		if (type == null) {
+			ServerLogger.warn("handler skill hurt,there is no use skill record!" + String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
+			//return;
 		}
-		if(!SysConfig.debug){
+		if (!SysConfig.debug) {
 			//非调试状态下需要检验伤害
-			
 		}
-		if(player.getTeamId() > 0){
+
+		//SceneConfig cfg = GameData.getConfig(SceneConfig.class, player.getSceneId());
+		brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
+		if (player.getTeamId() > 0) {
 			teamService.handleSkillHurt(player, hurtVO);
+		}else {
+			if(hurtVO.attackType == 0) {
+				hurtVO.attackId = playerId;
+			}
+			worldBossService.handleSkillHurt(player,hurtVO);
 		}
 	}
 }

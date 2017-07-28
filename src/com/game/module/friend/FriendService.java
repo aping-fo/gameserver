@@ -147,7 +147,7 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 		}*/
 	}
 
-	// 同意 //TODO 暂时有线程安全问题
+	// 同意
 	public Int2Param approve(int playerId, List<Integer> friendIds) {
 		Int2Param result = new Int2Param();
 		boolean one = friendIds.size() == 1;
@@ -174,30 +174,31 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 			}
 			// 清除请求
 			serialDataService.getData().getFriendRequests().get(playerId).remove(id);
-			if(data.getFriends().containsKey(id)){
-				if (one) {					
-					result.param1 = Response.IS_FRIEND;
-				}
-				continue;
+			if(!data.getFriends().containsKey(id)){
+				// 加入好友(双方)
+				data.getFriends().put(id, true);
+				// 移除黑名单
+				Integer black = id;
+				data.getBlack().remove(black);
 			}
-			// 加入好友(双方)
-			data.getFriends().put(id, true);
+			
 			// 对方
 			PlayerData friend = playerService.getPlayerData(id);
-			friend.getFriends().put(playerId, true);
-			friend.getBlack().remove(playerId);
-			playerService.updatePlayerData(id);
-			// 移除黑名单
-			Integer black = id;
-			data.getBlack().remove(black);
+			if(!friend.getFriends().containsKey(playerId)){				
+				friend.getFriends().put(playerId, true);
+				friend.getBlack().remove(playerId);
+				playerService.updatePlayerData(id);
+				// 通知对方
+				SessionManager.getInstance().sendMsg(FriendExtension.AGREE_REQUEST, getVo(playerId), id);
+			}
+			
 
 			result.param2++;
 			// 更新对方的请求列表
 			if (serialDataService.getData().getFriendSendRequests().get(id) != null) {
 				serialDataService.getData().getFriendSendRequests().get(id).remove(playerId);
 			}
-			// 通知对方
-			SessionManager.getInstance().sendMsg(FriendExtension.AGREE_REQUEST, getVo(playerId), id);
+			
 		}
 		return result;
 	}

@@ -10,14 +10,38 @@ public class WorldBoss {
      */
     private int id;
     /**
-     * 当前血量
+     * 当前血量，当前少于等于0，表示死亡
      */
     private int hp;
 
+    private int curHp;
     /**
-     * BOSS难度等级
+     * BOSS 索引,难度等级
      */
+    private int index;
+
     private int level;
+
+    /**
+     * 副本id
+     */
+    private int copyId;
+
+    public int getCopyId() {
+        return copyId;
+    }
+
+    public void setCopyId(int copyId) {
+        this.copyId = copyId;
+    }
+
+    public int getCurHp() {
+        return curHp;
+    }
+
+    public void setCurHp(int curHp) {
+        this.curHp = curHp;
+    }
 
     public int getId() {
         return id;
@@ -41,5 +65,23 @@ public class WorldBoss {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public static WorldBoss newInstance(int bossId, int index, int hp, int copyId) {
+        WorldBoss worldBoss = new WorldBoss();
+        worldBoss.curHp = hp;
+        worldBoss.hp = hp;
+        worldBoss.id = bossId;
+        worldBoss.index = index;
+        worldBoss.copyId = copyId;
+        return worldBoss;
     }
 }

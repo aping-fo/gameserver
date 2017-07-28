@@ -172,7 +172,7 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 			rewards = config.arenaWinReward;
 			
 			int meRank = me.getRank();
-			if(meRank > opponent.getRank()){
+			if(meRank > opponent.getRank()){ //交换排名,此处会不会有线程安全问题,造成同名?
 				me.setRank(opponent.getRank());
 				opponent.setRank(meRank);
 				getRankList().put(me.getRank(), me);

@@ -150,7 +150,7 @@ public class ArenaExtension {
 		}
 		
 		if(attach.getChallenge() <= 0){
-			vo.code = Response.NO_TODAY_TIMES;
+			vo.code = Response.ARENA_NO_CHELLENGE;
 			return vo;
 		}
 		
@@ -164,7 +164,7 @@ public class ArenaExtension {
 			vo.code = Response.ERR_PARAM;
 		}
 		attach.alterChallenge(-1);
-		attach.setOpponent(opponent.getUniqueId());
+		attach.setOpponent(opponent.getUniqueId()); //可以同一个挑战者
 		attach.commitSync();
 		Player player = playerService.getPlayer(opponent.getPlayerId());
 		PlayerData playerData = playerService.getPlayerData(opponent.getPlayerId());
@@ -194,7 +194,7 @@ public class ArenaExtension {
 		IntParam result = new IntParam();
 		int count = attach.getBuyCount();
 		if(count >= vip.arenaChallenge){
-			result.param = Response.NO_TODAY_TIMES;
+			result.param = Response.ARENA_NO_BUY;
 			return result;
 		}
 		count++;

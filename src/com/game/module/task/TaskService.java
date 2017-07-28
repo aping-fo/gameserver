@@ -33,6 +33,7 @@ import com.game.module.skill.SkillCard;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
+import com.game.params.task.SJointTaskVo;
 import com.game.params.task.STaskVo;
 import com.game.params.task.TaskListInfo;
 import com.game.util.CommonUtil;
@@ -124,19 +125,37 @@ public class TaskService implements Dispose {
 			vo.count = task.getCount();
 			result.task.add(vo);
 		}
-		result.myJoint = new ArrayList<Int2Param>();
+		result.myJoint = new ArrayList<SJointTaskVo>();
 		for (Map.Entry<Integer, Integer> entry : playerTask.getMyJointTasks()
 				.entrySet()) {
-			Int2Param param = new Int2Param();
-			param.param1 = entry.getKey();
-			param.param2 = entry.getValue();
+			SJointTaskVo param = new SJointTaskVo();
+			param.id = entry.getKey();
+			int parnterId = entry.getValue();
+			param.playerId = parnterId;
+			if(parnterId > 0){
+				Player parnter = playerService.getPlayer(parnterId);
+				param.name = parnter.getName();
+				param.lev = parnter.getLev();
+				param.vocation = parnter.getVocation();
+				param.online = SessionManager.getInstance().isActive(parnterId);
+			}
 			result.myJoint.add(param);
 		}
 		result.jointedCount = playerTask.getJointedCount();
 		JointTask curJointed = playerTask.getCurrJointedTask();
 		if (curJointed != null) {
-			result.currJointedId = curJointed.getTaskId();
-			result.currJointedPartner = curJointed.getParnterId();
+			SJointTaskVo currJointedPartner = new SJointTaskVo();
+			currJointedPartner.id = curJointed.getTaskId();
+			int parnterId = curJointed.getParnterId();
+			currJointedPartner.playerId = parnterId;
+			if(parnterId > 0){
+				Player parnter = playerService.getPlayer(parnterId);
+				currJointedPartner.name = parnter.getName();
+				currJointedPartner.lev = parnter.getLev();
+				currJointedPartner.vocation = parnter.getVocation();
+				currJointedPartner.online = SessionManager.getInstance().isActive(parnterId);
+			}
+			result.currJointedPartner = currJointedPartner;
 
 			STaskVo vo = new STaskVo();
 			vo.id = curJointed.getTaskId();
@@ -147,12 +166,20 @@ public class TaskService implements Dispose {
 
 		}
 
-		result.jointedList = new ArrayList<Int2Param>();
+		result.jointedList = new ArrayList<SJointTaskVo>();
 		for (String str : playerTask.getJointedTasks()) {
 			String[] ss = str.split("_");
-			Int2Param param = new Int2Param();
-			param.param1 = Integer.parseInt(ss[0]);
-			param.param2 = Integer.parseInt(ss[1]);
+			SJointTaskVo param = new SJointTaskVo();
+			param.id = Integer.parseInt(ss[0]);
+			int parnterId = Integer.parseInt(ss[1]);
+			param.playerId = parnterId;
+			if(parnterId > 0){
+				Player parnter = playerService.getPlayer(parnterId);
+				param.name = parnter.getName();
+				param.lev = parnter.getLev();
+				param.vocation = parnter.getVocation();
+				param.online = SessionManager.getInstance().isActive(parnterId);
+			}
 			result.jointedList.add(param);
 		}
 		result.liveness = playerTask.getLiveness();
@@ -306,7 +333,6 @@ public class TaskService implements Dispose {
 							}
 						} else {
 							for (Jewel jewel : data.getJewels().values()) {
-								System.out.println(jewel.getLev());
 								if (jewel.getLev() >= reqLev) {
 									curCount++;
 								}
@@ -646,8 +672,11 @@ public class TaskService implements Dispose {
 		String key = String.format("%d_%d", taskId, playerId);
 		List<String> jointedTasks = playerTask2.getJointedTasks();
 		jointedTasks.remove(key);
-		jointedTasks.add(0,
-				key);
+		jointedTasks.add(0,key);
+		if(SessionManager.getInstance().isActive(partnerId)){
+			SessionManager.getInstance().sendMsg(TaskExtension.TASK_LIST_INFO,
+					getCurTasks(partnerId), partnerId);
+		}
 		return Response.SUCCESS;
 	}
 

@@ -56,8 +56,10 @@ public class MessageService implements InitHandler{
 	public String sendSysMsg(int id,Object...params){
 		SysNotice notice = ConfigData.getConfig(SysNotice.class, id);
 		StringParam param = new StringParam();
-		param.param = MessageFormat.format(notice.msg, params);
-		SessionManager.getInstance().sendMsgToAll(ChatExtension.SYS_NOTICE, param);
+		if(notice != null) {
+			param.param = MessageFormat.format(notice.msg, params);
+			SessionManager.getInstance().sendMsgToAll(ChatExtension.SYS_NOTICE, param);
+		}
 		return param.param;
 	}
 

@@ -68,9 +68,7 @@ public class BagExtension {
 	//分解
 	@Command(1207)
 	public Object decopose(int playerId,LongList ids){
-		IntParam result = new IntParam();
-		result.param = equipService.decompose(playerId, ids.lList);
-		return result;
+		return equipService.decompose(playerId, ids.lList);
 	}
 	
 	//升星
@@ -110,6 +108,14 @@ public class BagExtension {
 	public Object replace(int playerId,LongParam id){
 		IntParam result = new IntParam();
 		result.param = equipService.replace(playerId, id.param);
+		return result;
+	}
+
+	//出售
+	@Command(1213)
+	public Object sell(int playerId,Int2Param param){
+		IntParam result = new IntParam();
+		result.param = goodsService.sell(playerId, param.param1,param.param2);
 		return result;
 	}
 }

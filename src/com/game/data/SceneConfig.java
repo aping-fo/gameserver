@@ -9,4 +9,5 @@ public class SceneConfig {
 	public int sceneSubType;//场景子类型
 	public int ignoreIputEvent;//是否忽略输入事件
 	public float[] defaultPos;//出生点位置
+	public int isSceneFading;//是否判断遮挡半透
 }

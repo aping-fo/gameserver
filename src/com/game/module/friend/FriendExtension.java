@@ -111,4 +111,10 @@ public class FriendExtension {
 	public static final int STATE_CHANGE = 1614;
 	
 	public static final int BE_BACKLIST = 1615;
+	
+	// 查找好友
+	@Command(1616)
+	public Object find(int playerId,IntParam name){
+		return friendService.getVo(name.param);
+	}
 }

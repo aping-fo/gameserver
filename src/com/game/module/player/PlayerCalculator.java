@@ -4,16 +4,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.game.data.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.game.data.ArtifactCfg;
-import com.game.data.EquipJewelCfg;
-import com.game.data.EquipStarCfg;
-import com.game.data.EquipStrengthCfg;
-import com.game.data.FashionCollectCfg;
-import com.game.data.GoodsConfig;
-import com.game.data.PlayerUpgradeCfg;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsService;
 import com.game.module.goods.PlayerBag;
@@ -53,7 +47,22 @@ public class PlayerCalculator {
 		player.setSymptom(attr.symptom);
 		player.setFu(attr.symptom);
 		player.setCrit(attr.crit);
+
+		//初始化宝石
+		initJewel(player.getPlayerId());
 	}
+
+	public void initJewel(int playerId) {
+		PlayerData data = playerService.getPlayerData(playerId);
+		for(int type:ConfigData.globalParam().equipTypes){
+			Jewel jewel = data.getJewels().get(type);
+			if(jewel==null){
+				jewel = new Jewel();
+				data.getJewels().put(type, jewel);
+			}
+		}
+	}
+
 
 	// 计算属性加成
 	public void updateAttr(Player player) {
@@ -128,36 +137,54 @@ public class PlayerCalculator {
 		for(Entry<Integer, Jewel> entry:data.getJewels().entrySet()){
 			Jewel jewel = entry.getValue();
 			int type = entry.getKey();
-			if(jewel.getLev()==0){
-					continue;
-				}
-				int id = type*1000+jewel.getLev();
-				EquipJewelCfg cfg = ConfigData.getConfig(EquipJewelCfg.class, id);
-				if(cfg == null){
-					continue;
-				}
-				player.addAttack(cfg.attack);
-				player.addCrit(cfg.crit);
-				player.addDefense(cfg.defense);
-				player.addFu(cfg.fu);
-				player.addHp(cfg.hp);
-				player.addSymptom(cfg.symptom);
+			/*if(jewel.getLev()==0){
+				continue;
+			}*/
+			int id = type*1000+jewel.getLev();
+			EquipJewelCfg cfg = ConfigData.getConfig(EquipJewelCfg.class, id);
+			if(cfg == null){
+				continue;
 			}
+			player.addAttack(cfg.attack);
+			player.addCrit(cfg.crit);
+			player.addDefense(cfg.defense);
+			player.addFu(cfg.fu);
+			player.addHp(cfg.hp);
+			player.addSymptom(cfg.symptom);
+		}
 	}
 	
 	//加时装战力，非百分比的部分
 	private void AddFashion(PlayerAddition player){
 		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		int count = data.getFashions().size();
+		Player p = (Player) player;
+		int count = data.getFashionMap().size();
 		FashionCollectCfg cfg = ConfigData.getConfig(FashionCollectCfg.class, count);
 		if(cfg==null){
 			return;
 		}
-		player.addAttack(cfg.attack);
-		player.addCrit(cfg.crit);
-		player.addDefense(cfg.defense);
-		player.addFu(cfg.fu);
-		player.addSymptom(cfg.symptom);
+		player.addAttack(cfg.srvAttack);
+		player.addCrit(cfg.srvCrit);
+		player.addDefense(cfg.srvDefense);
+		player.addFu(cfg.srvFu);
+		player.addSymptom(cfg.srvSymptom);
+		player.addHp(cfg.srvHp);
+
+		addFashionAttr(player,p.getFashionId());
+		addFashionAttr(player,p.getWeaponId());
+		addFashionAttr(player,data.getCurHead());
+	}
+
+	private void addFashionAttr(PlayerAddition player,int id) {
+		FashionCfg fashionCfg = ConfigData.getConfig(FashionCfg.class, id);
+		if(fashionCfg==null){
+			return;
+		}
+		player.addAttack(fashionCfg.attack);
+		player.addCrit(fashionCfg.crit);
+		player.addDefense(fashionCfg.defense);
+		player.addFu(fashionCfg.fu);
+		player.addSymptom(fashionCfg.symptom);
 	}
 	
 	//处理神器
@@ -203,13 +230,14 @@ public class PlayerCalculator {
 		}
 		//时装的百分比
 		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		FashionCollectCfg collect = ConfigData.getConfig(FashionCollectCfg.class, data.getFashions().size());
+		FashionCollectCfg collect = ConfigData.getConfig(FashionCollectCfg.class, data.getFashionMap().size());
 		if(collect!=null){
-			addPercentAttr(percentAttrs, Goods.ATK, collect.attackPercent);
-			addPercentAttr(percentAttrs, Goods.DEF, collect.defensePercent);
-			addPercentAttr(percentAttrs, Goods.CRIT, collect.critPercent);
-			addPercentAttr(percentAttrs, Goods.SYMPTOM, collect.symptomPercent);
-			addPercentAttr(percentAttrs, Goods.FU, collect.fuPercent);
+			addPercentAttr(percentAttrs, Goods.ATK, collect.srvattackPercent);
+			addPercentAttr(percentAttrs, Goods.DEF, collect.srvDefensePercent);
+			addPercentAttr(percentAttrs, Goods.CRIT, collect.srvCritPercent);
+			addPercentAttr(percentAttrs, Goods.SYMPTOM, collect.srvSymptomPercent);
+			addPercentAttr(percentAttrs, Goods.FU, collect.srvFuPercent);
+			addPercentAttr(percentAttrs, Goods.HP, collect.srvHpPercent);
 		}
 		
 		for(Entry<Integer, Integer> attr:percentAttrs.entrySet()){

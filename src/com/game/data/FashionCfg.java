@@ -16,10 +16,11 @@ public class FashionCfg {
 	public String path;//主模型路径
 	public String path2;//辅模型路径
 	public int attack;//威力
-	public int defense;//坚韧
-	public int symptom;//体力
-	public int crit;//精准
-	public int fu;//异常
+	public int defense;//防御
+	public int hp;//生命
+	public int crit;//暴击
+	public int symptom;//异常
+	public int fu;//抗性
 	public int limitType;//获得条件
 	public int[] limitParams;//条件参数
 	public int[] price;//消耗的货币
@@ -27,4 +28,5 @@ public class FashionCfg {
 	public int[] costPrice;//升级消耗的货币
 	public int duplicateReturn;//重复返还钻石
 	public int order;//排序id
+	public int[] effectId;//特效
 }

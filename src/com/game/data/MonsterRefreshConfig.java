@@ -10,12 +10,10 @@ public class MonsterRefreshConfig {
 	public int group;//小关卡数
 	public int wave;//批次
 	public int monsterId;//怪物id
-	public String name;//怪物名称
 	public float[] beginPoint;//起始坐标
 	public float[] targetPoint;//目标坐标
 	public boolean hideBlood;//是否隐藏血条
 	public boolean hideShadow;//是否隐藏阴影
-	public int AI;//AI的索引ID
 	public boolean containAI;//是否带有简单AI
 	public String animation;//出场动画
 	public int appearType;//出场方式

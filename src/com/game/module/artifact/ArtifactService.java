@@ -1,6 +1,7 @@
 package com.game.module.artifact;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,21 +45,24 @@ public class ArtifactService {
 		PlayerData data = playerService.getPlayerData(playerId);
 		int[] components = data.getArtifacts().get(cfg.id);
 		int count = cfg.clip[1];
-		boolean isSuccess = components != null && components[rateIndex] == 1;
-		if(isSuccess){
-			//随机到的该位置已经激活，则只扣除50%的材料
-			count >>= 1;
-		}
-		//扣除碎片
-		if(!goodsService.decGoodsFromBag(playerId, cfg.clip[0], count, LogConsume.COMPOSE_ARTIFACT_COST, id, isSuccess)){
+		if(goodsService.checkHasEnough(playerId, Arrays.asList(new GoodsEntry(cfg.clip[0], count))) > 0){
 			return Response.NO_MATERIAL;
 		}
-		int componentId = cfg.decompose[1][rateIndex];
-		goodsService.addGoodsToBag(playerId, componentId, 1, LogConsume.COMPOSE_ARTIFACT, id);
-		//检测是否足够激活
-		checkActive(playerId);
+		boolean isSame = components != null && components[rateIndex] == 1;
 		taskService.doTask(playerId, Task.FINISH_ARTIFACT, 1);
-		return Response.SUCCESS;
+		if(isSame){
+			//随机到的该位置已经激活，则只扣除50%的材料
+			goodsService.decGoodsFromBag(playerId, cfg.clip[0], count>>1, LogConsume.COMPOSE_ARTIFACT_COST, id, isSame);
+			return Response.ARTIFACT_SAME_PART;
+		}else{			
+			//扣除碎片
+			goodsService.decGoodsFromBag(playerId, cfg.clip[0], count, LogConsume.COMPOSE_ARTIFACT_COST, id, isSame);
+			int componentId = cfg.decompose[1][rateIndex];
+			goodsService.addGoodsToBag(playerId, componentId, 1, LogConsume.COMPOSE_ARTIFACT, id);
+			//检测是否足够激活
+			checkActive(playerId);
+			return Response.SUCCESS;
+		}
 	}
 	
 	//分解掉多余的部件

@@ -21,7 +21,6 @@ public class FashionExtension {
 	//获取信息
 	@Command(4701)
 	public Object getInfo(int playerId,Object param){
-		fashionService.removeTmpFashions(playerId, false);
 		return fashionService.getFashionInfo(playerId);
 	}
 	
@@ -39,7 +38,7 @@ public class FashionExtension {
 		return fashionService.replace(playerId, id.param1, id.param2);
 	}
 
-	//替换时装
+	//购买为永久时装
 	@Command(4704)
 	public Object updateToForever(int playerId,IntParam id){
 		return fashionService.updateToForever(playerId, id.param);

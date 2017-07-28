@@ -126,7 +126,7 @@ public class LoggerService  implements InitHandler {
 					ServerLogger.err(e, "log db err");
 				}
 			}
-		}, 1, 60, TimeUnit.SECONDS);
+		}, 1, 1, TimeUnit.SECONDS);
 		
 	}
 
@@ -259,7 +259,8 @@ public class LoggerService  implements InitHandler {
 		if(log==null){
 			return;
 		}
-		Object p[] = new Object[]{playerId,lev,vipLev,add?ADD:DEC,count,goodsType,goodsId,log.getActionId(),System.currentTimeMillis(),0,0,0,0};
+
+		Object p[] = new Object[]{playerId,lev,vipLev,add?ADD:DEC,count,goodsType,goodsId,log.actionId,System.currentTimeMillis(),0,0,0,0};
 		if(params!=null&&params.length>0){
 			int len = params.length;
 			if(params.length>4){

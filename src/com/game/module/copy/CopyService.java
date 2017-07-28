@@ -44,6 +44,8 @@ import com.game.module.serial.SerialDataService;
 import com.game.module.shop.ShopService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.module.team.Team;
+import com.game.module.team.TeamService;
 import com.game.module.traversing.TraversingService;
 import com.game.params.CopyReward;
 import com.game.params.DropReward;
@@ -92,6 +94,8 @@ public class CopyService {
 	private ShopService shopService;
 	@Autowired
 	private TraversingService traversingService;
+	@Autowired
+	private TeamService teamService;
 
 	private AtomicInteger uniId = new AtomicInteger(100);
 	private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<Integer, CopyInstance>();
@@ -221,17 +225,30 @@ public class CopyService {
 
 	// 获取奖励
 	public CopyResult getRewards(int playerId, int copyId, CopyResult result) {
+		Player player = playerService.getPlayer(playerId);
 		int star = result.star;
 		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
 		// 扣除体力
-		if(cfg.needEnergy>0){
-			playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId);
+		if (cfg.needEnergy > 0) {
+			if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
+				playerService.decCurrency(playerId, Goods.TRAVERSING_ENERGY, cfg.needEnergy, LogConsume.TRAVERSING_COPY, cfg.id);
+			}else{
+				playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId);
+			}
+		}
+		if(cfg.type == CopyInstance.TYPE_TRAVERSING){
+			Team team = teamService.getTeam(player.getTeamId());
+			int leaderId = team.getLeader();
+			if(playerId == leaderId){
+				traversingService.remvoeMap(playerId, team.getMapId());
+			}
 		}
 
 		// 掉落
 		CopyInstance copy = instances.get(playerService.getPlayer(playerId).getCopyId());
 		List<GoodsEntry> items = calculateCopyReward(playerId, copyId, star);
 
+		result.rewards = new ArrayList<Reward>();
 		// 构造奖励
 		if(cfg.type == CopyInstance.TYPE_ENDLESS){
 			EndlessAttach attach = endlessLogic.getAttach(playerId);
@@ -249,7 +266,6 @@ public class CopyService {
 			}
 		}
 		goodsService.addRewards(playerId, items, LogConsume.COPY_REWARD, copyId);
-		result.rewards = new ArrayList<Reward>();
 		for (GoodsEntry g : items) {
 			Reward reward = new Reward();
 			reward.id = g.id;
@@ -385,6 +401,10 @@ public class CopyService {
 			experienceLogic.updateCopy(playerId, result);
 		}
 		Copy copy = playerData.getCopys().get(copyId);
+		if (copy == null) {//组队时,普通队员没有copy对象
+			copy = new Copy();
+			playerData.getCopys().putIfAbsent(copyId, copy);
+		}
 		if (copy.getState() < result.star) {
 			copy.setState(result.star);
 		}
@@ -497,8 +517,11 @@ public class CopyService {
 		Player player = playerService.getPlayer(playerId);
 
 		if (player.getCopyId() > 0) {
-			instances.remove(player.getCopyId());
 			player.setCopyId(0);
+			CopyInstance copyIns = instances.get(playerId);
+			if(copyIns != null && copyIns.getMembers().decrementAndGet() == 0){				
+				instances.remove(player.getCopyId());
+			}
 		}
 	}
 

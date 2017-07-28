@@ -20,10 +20,10 @@ public class GoodsConfig {
 	public int[][] contents;//使用后获得物品
 	public int hp;//生命
 	public int attack;//威力
-	public int defense;//坚韧
-	public int symptom;//症状
-	public int crit;//精准
-	public int fu;//符能
+	public int defense;//防御
+	public int symptom;//异常
+	public int crit;//暴击
+	public int fu;//抗性
 	public int[] param1;//参数1
 	public int[][] param2;//参数2
 	public int rare;//稀缺

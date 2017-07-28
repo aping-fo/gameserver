@@ -17,7 +17,7 @@ public class SignExtension {
     private SignService signService;
 
     @Command(4801)
-    public Object sign(int playerId){
+    public Object sign(int playerId,Object param){
         Int2Param result = signService.sign(playerId);
         return result;
     }

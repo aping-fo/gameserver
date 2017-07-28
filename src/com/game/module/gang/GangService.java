@@ -65,7 +65,6 @@ import com.game.util.TimeUtil;
 import com.server.SessionManager;
 import com.server.util.GameData;
 
-//TODO 暂时有线程安全问题
 @Service
 public class GangService implements InitHandler {
 
@@ -96,7 +95,7 @@ public class GangService implements InitHandler {
 	private Map<String, Integer> gangNames = new ConcurrentHashMap<String, Integer>();
 	private List<Gang> orderGangs = null;
 
-	private static int maxGangId = 0;
+	private static volatile int maxGangId = 0;
 	private Map<Integer, int[]> donateCfg;
 
 	@Override
@@ -165,8 +164,8 @@ public class GangService implements InitHandler {
 			types.add(cfg.finishType);
 			gTasks.put(id, new Task(id, Task.STATE_ACCEPTED));
 		}
-		
-		while(gTasks.size() < 8){
+		int tmp = 0;
+		while(gTasks.size() < 8 && tmp++ < 50){//防止策划数据太少进入死循环
 			int index = RandomUtil.randInt(size);
 			int id = allGangTasks.get(index);
 			if(gTasks.containsKey(id)){
@@ -694,6 +693,7 @@ public class GangService implements InitHandler {
 		player.setGangId(0);
 		gangDao.del(gangId);
 		orderGangs.remove(gang);
+		sort(false);
 		calculator.calculate(player);
 
 //		SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
@@ -1234,12 +1234,12 @@ public class GangService implements InitHandler {
 				if(member.getStartTraining() == 0){
 					continue;
 				}
+				member.setTrainingTime(0);
+				member.setStartTraining(0L);
 				int[][] rewards = BeanManager.getBean(GangService.class).calculateReward(member, room, plus);
 				if(rewards == null){
 					continue;
 				}
-				member.setTrainingTime(0);
-				member.setStartTraining(0L);
 				BeanManager.getBean(MailService.class).sendSysMailRewards(title, content, rewards, member.getPlayerId(), LogConsume.GANG_TRAINING_REWARD);
 			}
 			gang.setUpdated(true);

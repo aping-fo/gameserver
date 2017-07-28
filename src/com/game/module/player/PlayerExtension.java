@@ -1,5 +1,6 @@
 package com.game.module.player;
 
+import com.game.module.fashion.FashionService;
 import io.netty.channel.Channel;
 import io.netty.util.AttributeKey;
 
@@ -51,7 +52,9 @@ public class PlayerExtension {
 	private LoginHandler loginHandler;
 	@Autowired
 	private GangService gangService;
-	
+	@Autowired
+	private FashionService fashionService;
+
 	private static final AttributeKey<String> CHANNEL = AttributeKey.valueOf("channel");
 
 	@UnLogin
@@ -65,6 +68,8 @@ public class PlayerExtension {
 		vo.params = new ArrayList<SRoleVo>(roleList.size());
 		
 		for(Player player:roleList){
+			fashionService.checkRemoveTimeoutFashions(player.getPlayerId(),false);
+
 			SRoleVo role = new SRoleVo();
 			role.attack = player.getAttack();
 			role.playerId = player.getPlayerId();

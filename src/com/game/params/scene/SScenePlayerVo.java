@@ -21,6 +21,7 @@ public class SScenePlayerVo implements IProtocol {
 	public int vip;//vip
 	public int title;//称号
 	public int head;//头部
+	public String gang;//公会
 
 
 	public void decode(BufferBuilder bb) {
@@ -41,6 +42,7 @@ public class SScenePlayerVo implements IProtocol {
 		this.vip = bb.getInt();
 		this.title = bb.getInt();
 		this.head = bb.getInt();
+		this.gang = bb.getString();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -61,5 +63,6 @@ public class SScenePlayerVo implements IProtocol {
 		bb.putInt(this.vip);
 		bb.putInt(this.title);
 		bb.putInt(this.head);
+		bb.putString(this.gang);
 	}
 }

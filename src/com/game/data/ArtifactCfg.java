@@ -12,10 +12,10 @@ public class ArtifactCfg {
 	public int[][] components;//部位
 	public int[][] decompose;//解密
 	public String[] partIcon;//神器部位Icon
-	public float[][] partsPos;//神器部位位置
 	public String desc;//描述
 	public int model;//模型
 	public float[] modelSize;//模型放大比例
 	public float[] modelRotate;//模型旋转值
 	public float[] modelPos;//模型位置
+	public String icon;//图标
 }

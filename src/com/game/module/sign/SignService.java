@@ -38,7 +38,7 @@ public class SignService {
             return ret;
         }
 
-        if (data.getSign() == SIGN_TOTAL_DAY) { //why?
+        if (data.getSign() >= SIGN_TOTAL_DAY) { //why?
             data.setSign(1);
         } else {
             data.setSign(data.getSign() + 1);
@@ -56,6 +56,7 @@ public class SignService {
                 rewards.put(e.getKey(), e.getValue() * 2);
             }
         }
+        data.setSignFlag(SIGN_DONE);
         // 奖励
         goodsService.addRewards(playerId, rewards, LogConsume.SIGN_REWARD, data.getSign());
         ret.param1 = Response.SUCCESS;
@@ -66,7 +67,7 @@ public class SignService {
     public void dailyReset(int playerId) {
         PlayerData data = playerService.getPlayerData(playerId);
         data.setSignFlag(0);
-        if(data.getSign() >= SIGN_TOTAL_DAY) {
+        if (data.getSign() >= SIGN_TOTAL_DAY) {
             data.setSign(0);
         }
     }

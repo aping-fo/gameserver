@@ -30,7 +30,10 @@ public class MailService {
 
 	public static final int ENDLESS_RANK = 10000;//无尽漩涡排行榜奖励邮件
 	public static final int ARENA_RANK = 10001;//AI竞技场
-	
+	public static final int WORLD_BOSS_RANK = 10002;//世界BOSS伤害排名奖励
+	public static final int WORLD_BOSS_KILL = 10003;//世界BOSS击杀奖励
+	public static final int WORLD_BOSS_LAST_BEAT = 10004;//世界BOSS最后一击奖励
+
 	@Autowired
 	private MailDao mailDao;
 	@Autowired

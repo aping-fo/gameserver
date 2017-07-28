@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import com.game.params.scene.SMonsterVo;
 
@@ -17,7 +18,8 @@ public class CopyInstance {
 	public static final int TYPE_TREASURE = 3;
 	public static final int TYPE_EXPERIENCE = 7;
 	public static final int TYPE_TRAVERSING = 8;
-	
+	public static final int TYPE_WORLD_BOSS = 9;
+
 	public static final int EASY = 1;
 	public static final int HARD = 2;
 	
@@ -36,6 +38,7 @@ public class CopyInstance {
 	private List<GoodsNotice> specGoods;
 	
 	private TraverseMap traverseMap;//特性副本地图ID
+	private AtomicInteger members = new AtomicInteger();
 
 	public CopyInstance() {
 		createTime = System.currentTimeMillis();
@@ -124,5 +127,9 @@ public class CopyInstance {
 	
 	public void setOver(boolean over){
 		this.over = over;
+	}
+	
+	public AtomicInteger getMembers(){
+		return members;
 	}
 }

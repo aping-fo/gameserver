@@ -51,7 +51,6 @@ import com.game.params.String2Param;
 import com.game.params.chat.ChatVo;
 import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
-import com.game.params.task.TaskListInfo;
 import com.game.util.ConfigData;
 import com.game.util.TimeUtil;
 import com.server.SessionManager;
@@ -358,17 +357,7 @@ public class GmService {
 	public void task(int playerId, String ...params){
 		String cmd = params[0];
 		if(cmd.equals("get")){
-			TaskListInfo listInfo = taskExtension.getTask(playerId, null);
-			System.out.println("自已的合作任务");
-			for(Int2Param pa : listInfo.myJoint){
-				System.out.println(String.format("id:%d,partner:%d", pa.param1, pa.param2));
-			}
-			System.out.println("被邀请的合作任务");
-			System.out.println(String.format("id:%d,partner:%d", listInfo.currJointedId, listInfo.currJointedPartner));
-			System.out.println("邀请任务列表");
-			for(Int2Param pa : listInfo.jointedList){
-				System.out.println(String.format("id:%d,partner:%d", pa.param1, pa.param2));
-			}
+			
 		}else if(cmd.equals("submit")){
 			Int2Param param = new Int2Param();
 			param.param1 = Integer.parseInt(params[1]);

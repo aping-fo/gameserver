@@ -243,7 +243,7 @@ public class ManagerService implements InitHandler{
 		String sysSender = ConfigData.getConfig(ErrCode.class, Response.SYS).tips;
 		final List<Object[]> params = new ArrayList<Object[]>();
 		for (int playerId : ids) {
-			params.add(new Object[]{0,sysSender,playerId,title,content,rewards,rewards!=null&&!rewards.isEmpty()?1:0,LogConsume.GM.getActionId()});
+			params.add(new Object[]{0,sysSender,playerId,title,content,rewards,rewards!=null&&!rewards.isEmpty()?1:0,LogConsume.GM.actionId});
 		}
 		mailService.sendBatchMail(params);
 	}

@@ -56,17 +56,12 @@ public enum LogConsume {
 	LOTTERY_REWARD(1049,"抽奖奖励"),
 	SIGN_REWARD(1050,"签到奖励"),
 	WORLD_BOSS_REWARD(1051,"世界BOSS奖励"),
+	WORLD_BOSS_BUY(1052,"世界BOSS购买"),
+	WORLD_BOSS_KILL(1053,"世界BOSS击杀奖励"),
+	WORLD_BOSS_LAST_BEAT(1054,"世界BOSS最后一击奖励"),
 	;
-	private int actionId;// id
-	private String desc;
-
-	public int getActionId() {
-		return actionId;
-	}
-
-	public String getDesc() {
-		return desc;
-	}
+	public int actionId;// id
+	public String desc;
 
 	private LogConsume(int actionId, String desc) {
 		this.actionId = actionId;

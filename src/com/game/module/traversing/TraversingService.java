@@ -3,6 +3,7 @@ package com.game.module.traversing;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,6 @@ import com.game.data.GoodsConfig;
 import com.game.event.InitHandler;
 import com.game.module.RandomReward.RandomRewardService;
 import com.game.module.copy.TraverseMap;
-import com.game.module.goods.Goods;
 import com.game.module.log.LogConsume;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -47,6 +47,14 @@ public class TraversingService implements InitHandler {
 			data.getTraverseMaps().put(map.getMapId(), map);
 		}
 		data.setMaxTraverseId(maxId);
+	}
+	
+	public void remvoeMap(int playerId, int mapId){
+		Map<Integer, TraverseMap> maps = playerService.getPlayerData(playerId).getTraverseMaps();
+		if(maps.remove(mapId) == null){
+			ServerLogger.warn("remove player traverse map fail, playerid=" + playerId + ", mapId" + mapId);
+		}
+		
 	}
 	
 	public TraverseMap createMap(GoodsConfig config){
@@ -90,10 +98,6 @@ public class TraversingService implements InitHandler {
 		PlayerData data = playerService.getPlayerData(leaderId);
 		if(!data.getTraverseMaps().containsValue(map)){
 			return null;
-		}
-		GoodsConfig goodsCfg = GameData.getConfig(GoodsConfig.class, map.getGoodsCfgId());
-		if(goodsCfg.param1[1] > 0){
-			playerService.decCurrency(playerId, Goods.TRAVERSING_ENERGY, goodsCfg.param1[1], LogConsume.TRAVERSING_COPY, goodsCfg.id);
 		}
 		int[] affixs = map.getAffixs();
 		List<Reward> result = null;

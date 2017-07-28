@@ -1,5 +1,7 @@
 package com.game.module.scene;
 
+import com.game.params.scene.*;
+
 import io.netty.channel.Channel;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,14 +11,10 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.params.Long2Param;
 import com.game.params.LongParam;
-import com.game.params.scene.CEnterScene;
-import com.game.params.scene.MoveStart;
-import com.game.params.scene.MoveStop;
-import com.game.params.scene.SkillHurtVO;
-import com.game.params.scene.UseSkillVO;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
 import com.server.anotation.UnLogin;
+import com.server.util.ServerLogger;
 
 @Extension
 public class SceneExtension {
@@ -32,7 +30,6 @@ public class SceneExtension {
 	public Object changeScene(int playerId, CEnterScene param) {
 		int sceneId = param.sceneId;
 		Player player = playerService.getPlayer(playerId);
-	
 		sceneService.exitScene(player);
 		sceneService.enterScene(player, sceneId, param.x,param.z);
 
@@ -75,16 +72,17 @@ public class SceneExtension {
 	}
 
 	// 中途退出场景
-		@Command(1109)
-		public Object exit(int playerId, Object param) {
-			Player player = playerService.getPlayer(playerId);
-			CEnterScene scene = new CEnterScene();
-			scene.sceneId = player.getLastSceneId();
-			scene.x = player.getLastPos()[0];
-			scene.z = player.getLastPos()[2];
+	@Command(1109)
+	public Object exit(int playerId, Object param) {
+		Player player = playerService.getPlayer(playerId);
+		CEnterScene scene = new CEnterScene();
+		scene.sceneId = player.getLastSceneId();
+		ServerLogger.debug("exit and return to scene:" + scene.sceneId);
+		scene.x = player.getLastPos()[0];
+		scene.z = player.getLastPos()[2];
 
-			return scene;
-		}
+		return scene;
+	}
 		
 	public static final int USE_SKILL = 1110;
 	@Command(1110)
@@ -92,9 +90,16 @@ public class SceneExtension {
 		sceneService.handlerUseSkill(playerId, param);
 		return null;
 	}
-	
-	public static final int SKILL_HURT = 1111;
+
+	public static final int SKILL_STOP = 1111;
 	@Command(1111)
+	public Object skillStop(int playerId, StopSkillVO param){
+		sceneService.handlerStopSkill(playerId, param);
+		return null;
+	}
+
+	public static final int SKILL_HURT = 1112;
+	@Command(1112)
 	public Object skillHurt(int playerId, SkillHurtVO param){
 		sceneService.handleSkillHurt(playerId, param);
 		return null;
