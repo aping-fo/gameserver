@@ -1,7 +1,6 @@
 package com.game.params.copy;
 
-import com.game.params.BufferBuilder;
-import com.game.params.IProtocol;
+import com.game.params.*;
 
 //进入副本返回(工具自动生成，请勿手动修改！）
 public class SEnterCopy implements IProtocol {

@@ -5,17 +5,17 @@ import java.util.Date;
 
 public class Player implements PlayerAddition{
 	
-	public static int EXP = 1;	// 经验
-	public static int DIAMOND = 2;	// 钻石
-	public static int COIN = 3;	// 金币
-	public static int CONTRIBUTE = 4;//帮贡
-	public static int ENERGY = 5;	// 体力
-	public static int EQUIP_TOOL = 6;//装备分解材料
-	public static int VIP_EXP = 7;//vip经验值
-	public static int VIP_LEV = 8;//vip等级
-	public static int LEV = 9;//等级
-	public static int LIVENESS = 10;//活跃度
-	public static int TRAVERSING_ENERGY = 11;//穿越仪能量
+	public final static int EXP = 1;	// 经验
+	public final static int DIAMOND = 2;	// 钻石
+	public final static int COIN = 3;	// 金币
+	public final static int CONTRIBUTE = 4;//帮贡
+	public final static int ENERGY = 5;	// 体力
+	public final static int EQUIP_TOOL = 6;//装备分解材料
+	public final static int VIP_EXP = 7;//vip经验值
+	public final static int VIP_LEV = 8;//vip等级
+	public final static int LEV = 9;//等级
+	public final static int LIVENESS = 10;//活跃度
+	public final static int TRAVERSING_ENERGY = 11;//穿越仪能量
 
 	private int playerId;
 	private String name;

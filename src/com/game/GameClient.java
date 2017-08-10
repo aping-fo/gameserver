@@ -1,16 +1,16 @@
 package com.game;
 
-import java.io.InputStream;
-import java.net.Socket;
-
-import org.apache.log4j.xml.DOMConfigurator;
-
 import com.game.params.IntParam;
 import com.game.params.LongParam;
+import com.game.params.StringParam;
 import com.game.params.mail.MailVo;
 import com.game.params.player.CRegVo;
 import com.game.params.scene.CEnterScene;
 import com.server.util.Util;
+import org.apache.log4j.xml.DOMConfigurator;
+
+import java.net.Socket;
+import java.util.concurrent.atomic.LongAdder;
 
 /**
  * 模拟发包工具
@@ -21,8 +21,21 @@ public class GameClient {
 		SysConfig.init();
 
 		DOMConfigurator.configure("config/log4j.xml");
-		GameClient client = new GameClient("192.168.7.102", "testa");
-		client.start();
+		//GameClient client = new GameClient("192.168.6.237", "testa");
+		//client.start();159982679 159990708 159973763
+		String host;
+		int port;
+		if(args.length >= 3) {
+			host = args[0];
+			port = Integer.parseInt(args[1]);
+		}else {
+			host = "192.168.6.237";
+			port = 10010;
+		}
+		System.out.println(System.currentTimeMillis());
+		for(int i = 0;i<50;i++) {
+			new Robot("苹果-114" + i).start(host,port);
+		}
 	}
 
 	private Socket socket;
@@ -36,13 +49,12 @@ public class GameClient {
 		this.host = host;
 	}
 
-	public void start() {
+	/*public void start() {
 		try {
 
-			this.socket = new Socket(host, 10002);
+			this.socket = new Socket(host, 10010);
 
 			new Thread(new Runnable() {
-
 				@Override
 				public void run() {
 					try {
@@ -77,29 +89,34 @@ public class GameClient {
 					}
 				}
 			}).start();
-			;
+
 
 			CRegVo vo = new CRegVo();
-			vo.accName = "testk54";
-			vo.name = "hahak35";
+			vo.accName = "robot-5";
+			vo.name = "robot-5";
 			vo.sex = 1;
 			vo.vocation = 1;
+			getRoleList(vo);
 			Util.sendSocketData(socket, 1002, vo,0,0);
 
-			sleep(100l);
+			//sleep(100l);
 
 			// testFriend();
 			// testCopy();
 			// testBag();
 			//testMail();
 			//testTask();
-			Thread.sleep(100000);
-
+			//Thread.sleep(100000);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
+	public void getRoleList(CRegVo vo) {
+		StringParam param = new StringParam();
+		param.param = vo.accName;
+		Util.sendSocketData(socket, 1001, param,0,0);
+	}
 	public void testCopy() {
 		Util.sendSocketData(socket, 1901, new IntParam(),0,0);
 		// 进入副本

@@ -54,10 +54,13 @@ public class EquipService {
 		Player player = playerService.getPlayer(playerId);
 		PlayerBag bag = goodsService.getPlayerBag(playerId);
 		Goods goods = goodsService.getGoods(playerId, id);
+		if(goods == null) {
+			return Response.ERR_GOODS_TYPE;
+		}
 		GoodsConfig config = goodsService.getGoodsConfig(goods.getGoodsId());
 		// 类型不符
 		int[] canWear = ConfigData.globalParam().equipTypes;
-		if (goods == null || !CommonUtil.contain(canWear, config.type)) {
+		if (!CommonUtil.contain(canWear, config.type)) {
 			return Response.ERR_GOODS_TYPE;
 		}
 		if (config.vocation > 0 && player.getVocation() != config.vocation) {

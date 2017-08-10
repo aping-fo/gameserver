@@ -74,8 +74,7 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 						.get(playerId);
 		if(myRequests == null){
 			myRequests = new ConcurrentHashMap<Integer, Boolean>();
-			serialDataService.getData().getFriendSendRequests()
-			.put(playerId,myRequests);
+			serialDataService.getData().getFriendSendRequests().put(playerId,myRequests);
 		}
 		for (int id : friendIds) {
 			if(id == playerId){
@@ -85,7 +84,7 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 			ConcurrentHashMap<Integer, Boolean> requests = serialDataService.getData().getFriendRequests().get(id);
 			if (requests == null) {
 				requests = new ConcurrentHashMap<Integer, Boolean>();
-				serialDataService.getData().getFriendRequests().putIfAbsent(id, requests);
+				serialDataService.getData().getFriendRequests().put(id, requests);
 			}
 			if(requests.containsKey(id)){
 				continue;
@@ -415,9 +414,9 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 	private void stateChange(int playerId, int code){
 		PlayerData data = playerService.getPlayerData(playerId);
 
-		FriendInfo info = new FriendInfo();
-		info.friends = new ArrayList<FriendVo>(data.getFriends().size());
-		info.recent = new ArrayList<FriendVo>(data.getRecentContacters().size());
+//		FriendInfo info = new FriendInfo();
+//		info.friends = new ArrayList<FriendVo>(data.getFriends().size());
+//		info.recent = new ArrayList<FriendVo>(data.getRecentContacters().size());
 
 		Int2Param state = new Int2Param();
 		state.param1 = playerId;

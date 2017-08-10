@@ -1,7 +1,7 @@
 package com.game.params;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
 
 //副本扫荡奖励(工具自动生成，请勿手动修改！）
 public class CopyReward implements IProtocol {

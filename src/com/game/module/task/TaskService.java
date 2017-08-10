@@ -291,7 +291,7 @@ public class TaskService implements Dispose {
 				if (targets == null) {
 					continue;
 				}
-
+				
 				int count = targets.length;
 
 				int oldCount = task.getCount();
@@ -543,7 +543,23 @@ public class TaskService implements Dispose {
 		vo.id = task.getTaskId();
 		vo.isJoint = task == getPlayerTask(playerId).getCurrJointedTask();
 		tasks.params.add(vo);
-
+		SessionManager.getInstance().sendMsg(TaskExtension.TASK_UPDATE, tasks,
+				playerId);
+	}
+	
+	// 更新人物到前端
+	public void updateTaskToClient(int playerId, List<Task> updateList) {
+		if(updateList.isEmpty()) return;
+		ListParam<STaskVo> tasks = new ListParam<STaskVo>();
+		tasks.params = new ArrayList<STaskVo>();
+		for(Task task : updateList){			
+			STaskVo vo = new STaskVo();
+			vo.count = task.getCount();
+			vo.state = task.getState();
+			vo.id = task.getTaskId();
+			vo.isJoint = task == getPlayerTask(playerId).getCurrJointedTask();
+			tasks.params.add(vo);
+		}
 		SessionManager.getInstance().sendMsg(TaskExtension.TASK_UPDATE, tasks,
 				playerId);
 	}
@@ -564,6 +580,7 @@ public class TaskService implements Dispose {
 	public void checkTaskWhenLevUp(int playerId) {
 		Collection<Task> tasks = getPlayerTask(playerId).getTasks().values();
 		int lev = playerService.getPlayer(playerId).getLev();
+		List<Task> updateList = new ArrayList<>();
 		for (Task task : tasks) {
 			if (task.getState() != Task.STATE_INIT) {
 				continue;
@@ -572,9 +589,10 @@ public class TaskService implements Dispose {
 			if (lev >= config.level) {
 				task.setState(Task.STATE_ACCEPTED);
 				// 发送到前端
-				updateTaskToClient(playerId, task);
+				updateList.add(task);
 			}
 		}
+		updateTaskToClient(playerId, updateList);
 	}
 
 	public void dailyReset(int playerId) {

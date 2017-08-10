@@ -49,6 +49,7 @@ public class ManagerHandler extends ChannelInboundHandlerAdapter {
 			url = URLDecoder.decode(request.getUri(), "UTF-8");
 		} catch (UnsupportedEncodingException e) {
 			ServerLogger.err(e, "http url decode err!");
+			return;
 		}
 		if (url.equals("/favicon.ico")) {
 			HttpResponse res = new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.NOT_FOUND);

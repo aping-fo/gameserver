@@ -102,9 +102,9 @@ public class ManagerService implements InitHandler{
 	 * 充值
 	 */
 	public String handle_pay(Map<String, String> params) {
-		int playerId = Integer.valueOf(params.get("userid"));
-		int chargeCount = Integer.valueOf(params.get("charge"));
-		int id = Integer.valueOf(params.get("type"));
+		int playerId = Integer.parseInt(params.get("userid"));
+		int chargeCount = Integer.parseInt(params.get("charge"));
+		int id = Integer.parseInt(params.get("type"));
 //		String orderId = params.get("order");
 		//重新计算chargeId
 		if(id==0){
@@ -169,7 +169,7 @@ public class ManagerService implements InitHandler{
 		}
 		List<Integer> playerIds = new ArrayList<Integer>(list.size());
 		for(Map<String,Object> result:list){
-			int playerId =  Integer.valueOf(String.valueOf(result.get("playerId")));
+			int playerId =  Integer.parseInt(String.valueOf(result.get("playerId")));
 			playerIds.add(playerId);
 		}
 		//发邮件
@@ -181,10 +181,10 @@ public class ManagerService implements InitHandler{
 	 * 封禁
 	 */
 	public String handle_ban(Map<String,String> params){
-		int ban = Integer.valueOf(params.get("ban"));
-		int playerId = Integer.valueOf(params.get("id"));
-		int type = Integer.valueOf(params.get("type"));
-		int time = Integer.valueOf(params.get("hour"));
+		int ban = Integer.parseInt(params.get("ban"));
+		int playerId = Integer.parseInt(params.get("id"));
+		int type = Integer.parseInt(params.get("type"));
+		int time = Integer.parseInt(params.get("hour"));
 		if(type==BAN_LOGIN){//登陆
 			if(ban==0){//解封
 				removeBan(BAN_LOGIN, playerId);
@@ -211,7 +211,7 @@ public class ManagerService implements InitHandler{
 			if(playerId == null){
 				Player p = null;
 				try{
-					p = playerService.getPlayer(Integer.valueOf(name));
+					p = playerService.getPlayer(Integer.parseInt(name));
 				}catch(Exception ex){
 					
 				}

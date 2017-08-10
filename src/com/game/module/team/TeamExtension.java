@@ -28,9 +28,9 @@ import com.server.anotation.Extension;
 @Extension
 public class TeamExtension {
 
-	public static int REASON_SELF = 0;
-	public static int REASON_KICK = 1;
-	public static int REASON_DISSOLVE = 2;
+	public final static int REASON_SELF = 0;
+	public final static int REASON_KICK = 1;
+	public final static int REASON_DISSOLVE = 2;
 	
 	@Autowired
 	private TeamService teamService;
@@ -164,8 +164,6 @@ public class TeamExtension {
 		if(team.getLeader() == playerId){
 			return dissolve(playerId, param);
 		}
-		Int2Param msg = new Int2Param();
-		msg.param2 = REASON_SELF;
 		sceneService.exitScene(player);
 		teamService.kick(team, playerId);
 		return result;

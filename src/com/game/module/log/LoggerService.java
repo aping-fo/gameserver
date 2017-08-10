@@ -259,7 +259,6 @@ public class LoggerService  implements InitHandler {
 		if(log==null){
 			return;
 		}
-
 		Object p[] = new Object[]{playerId,lev,vipLev,add?ADD:DEC,count,goodsType,goodsId,log.actionId,System.currentTimeMillis(),0,0,0,0};
 		if(params!=null&&params.length>0){
 			int len = params.length;

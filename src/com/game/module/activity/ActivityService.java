@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Supplier;
 
 import org.springframework.stereotype.Service;
 
@@ -38,8 +39,14 @@ public class ActivityService implements InitHandler {
 	public static final int DAILY_UPDATE_HOUR = 5;
 	public static final int DAILY_BEGIN = 0;
 
-	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy/MM/dd HH:mm");
+	//private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy/MM/dd HH:mm");
 
+	public static final ThreadLocal<SimpleDateFormat> DATE_FORMAT = ThreadLocal.withInitial(new Supplier<SimpleDateFormat>() {
+		@Override
+		public SimpleDateFormat get() {
+			return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		}
+	});
 	// {活动类型,id}
 	public static final Map<Integer, Integer> CUR_ACTIVITY = new ConcurrentHashMap<Integer, Integer>();
 
@@ -146,12 +153,12 @@ public class ActivityService implements InitHandler {
 			// 按照开服时间的
 			else if (activity.TimeType == OPEN_OPEN_SERVER) {
 				// 开始
-				int begin = Integer.valueOf(activity.StartTime) + 1;
+				int begin = Integer.parseInt(activity.StartTime) + 1;
 				if (hour == DAILY_BEGIN && openDay == begin) {
 					handleActivity(activity.beginHandler,activity);
 				}
 				// 结束
-				int end = Integer.valueOf(activity.EndTime) + 1;
+				int end = Integer.parseInt(activity.EndTime) + 1;
 				if (hour == DAILY_BEGIN && openDay == end) {
 					handleActivity(activity.endHandler,activity);
 				}
@@ -194,7 +201,7 @@ public class ActivityService implements InitHandler {
 
 	public static Calendar parse(String time) {
 		try {
-			Date d = DATE_FORMAT.parse(time);
+			Date d = DATE_FORMAT.get().parse(time);
 			Calendar c = Calendar.getInstance();
 			c.setTime(d);
 			return c;

@@ -60,7 +60,10 @@ public class DefaultLogoutHandler implements LogoutHandler{
 
 			Player player = playerService.getPlayer(playerId);
 			player.setLastLogoutTime(new Date());
-						
+			
+			//清除副本实例
+			copyService.removeCopy(playerId);
+			
 			// 退出场景
 			sceneService.exitScene(player);
 			teamService.quit(playerId);
@@ -73,8 +76,7 @@ public class DefaultLogoutHandler implements LogoutHandler{
 				player.setY(pos[1]);
 				player.setZ(pos[2]);
 			}
-			//清除副本实例
-			copyService.removeCopy(playerId);
+			
 			
 			// 保证以下的代码在最后
 			// 清除session

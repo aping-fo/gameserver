@@ -110,7 +110,7 @@ public class FashionService {
             return Response.ERR_PARAM;
         }
         // 判断条件
-        if (player.getVip() < cfg.limitParams[0]) {
+        if (cfg.limitType == 1 && player.getVip() < cfg.limitParams[0]) {
             return Response.NO_VIP;
         }
 

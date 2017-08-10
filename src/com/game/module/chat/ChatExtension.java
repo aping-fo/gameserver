@@ -64,10 +64,13 @@ public class ChatExtension {
 		}
 		
 		String content = vo.content;
-		if(content==null&&vo.recordUrl==null){
+		if(content == null) {
 			return null;
 		}
-		if(content!=null&&content.length()>300){
+//		if(vo.recordUrl==null){
+//			return null;
+//		}
+		if(content.length()>300){
 			return null;
 		}
 		//处理GM
@@ -109,7 +112,7 @@ public class ChatExtension {
 			if(vo.channel==PRIVATE){
 				int receiveId = vo.receiveId;
 				PlayerData receiverData = playerService.getPlayerData(receiveId);
-				if(receiverData.getBlack().contains(playerId)){
+				if(receiverData.getBlack().containsKey(playerId)){
 					return null;
 				}
 				if(!receiverData.getFriends().containsKey(playerId) && sender.getLev() < ConfigData.globalParam().personChatLev){

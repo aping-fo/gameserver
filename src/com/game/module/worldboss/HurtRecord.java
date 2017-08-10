@@ -3,7 +3,7 @@ package com.game.module.worldboss;
 /**
  * Created by lucky on 2017/7/4.
  */
-public class HurtRecord implements Comparable<HurtRecord>{
+public class HurtRecord {
     private int playerId;
     private String name;
     private int hurt;
@@ -67,17 +67,5 @@ public class HurtRecord implements Comparable<HurtRecord>{
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    @Override
-    public int compareTo(HurtRecord o) {
-        if(o.playerId == playerId) {
-            return 0;
-        }
-
-        if(o.hurt == hurt) {
-            return o.playerId - playerId;
-        }
-        return o.hurt - hurt;
     }
 }

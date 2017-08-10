@@ -1,5 +1,6 @@
 package com.game.module.scene;
 
+import com.game.params.scene.*;
 import io.netty.channel.Channel;
 
 import java.util.ArrayList;
@@ -23,14 +24,6 @@ import com.game.module.team.TeamService;
 import com.game.module.worldboss.WorldBossService;
 import com.game.params.IProtocol;
 import com.game.params.Int2Param;
-import com.game.params.scene.MoveStart;
-import com.game.params.scene.MoveStop;
-import com.game.params.scene.SMonsterVo;
-import com.game.params.scene.SSceneInfo;
-import com.game.params.scene.SScenePlayerVo;
-import com.game.params.scene.SkillHurtVO;
-import com.game.params.scene.StopSkillVO;
-import com.game.params.scene.UseSkillVO;
 import com.game.util.ConfigData;
 import com.server.SessionManager;
 import com.server.util.GameData;
@@ -119,6 +112,12 @@ public class SceneService implements InitHandler {
 		Scene lastScene = getScene(sceneId);
 		String key = getGroupKey(player);
 
+		//退出世界boss场景
+		SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, sceneId);
+		if(lastCfg.sceneSubType == Scene.WORLD_BOSSS_PVE) {
+			worldBossService.removePlayer(player.getPlayerId());
+		}
+
 		SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
 
 		Int2Param param = new Int2Param();
@@ -132,11 +131,7 @@ public class SceneService implements InitHandler {
 		lastScene.exitSubLine(player.getSubLine());
 		player.setSubLine(0);
 
-		//退出世界boss场景
-		SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, sceneId);
-		if(lastCfg.sceneSubType == Scene.WORLD_BOSSS_PVE) {
-			worldBossService.removePlayer(player.getPlayerId());
-		}
+
 		ServerLogger.info("...exit", playerId, player.getSceneId());
 	}
 
@@ -177,6 +172,9 @@ public class SceneService implements InitHandler {
 				player.getPlayerId());
 		SessionManager.getInstance().addToGroup(key, channel);
 
+		if(cfg.sceneSubType == Scene.WORLD_BOSSS_PVE) {
+			worldBossService.addPlayer(player.getPlayerId());
+		}
 		// 广播消息
 		brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player), channel);
 	}
@@ -229,7 +227,7 @@ public class SceneService implements InitHandler {
 		Collection<Channel> channels = SessionManager.getInstance()
 				.getGroupChannels(key);
 
-		List<Integer> ids = new ArrayList<Integer>(10);
+		//List<Integer> ids = new ArrayList<Integer>(10);
 		for (Channel channel : channels) {
 			int playerId = SessionManager.getInstance().getPlayerId(channel);
 			if (playerId == 0 || playerId == player.getPlayerId()) {
@@ -238,7 +236,7 @@ public class SceneService implements InitHandler {
 			Player p = playerService.getPlayer(playerId);
 
 			sceneInfo.players.add(toVo(p));
-			ids.add(playerId);
+			//ids.add(playerId);
 		}
 
 		return sceneInfo;
@@ -277,7 +275,6 @@ public class SceneService implements InitHandler {
 		player.sethMoveDir(vo.hMoveDir);
 		player.setX(vo.x);
 		player.setZ(vo.z);
-		vo.playerId = playerId;
 		Channel me = SessionManager.getInstance().getChannel(playerId);
 		brocastToSceneCurLine(player, SceneExtension.WALK_SCENE, vo, me);
 	}
@@ -285,23 +282,44 @@ public class SceneService implements InitHandler {
 	// 场景停止移动
 	public void stop(int playerId, MoveStop vo) {
 		Player player = playerService.getPlayer(playerId);
-		player.setvMoveDir(0);
-		player.sethMoveDir(0);
-		player.setX(vo.x);
-		player.setZ(vo.z);
-		vo.playerId = playerId;
+		if(vo.type == 0) {
+			player.setvMoveDir(0);
+			player.sethMoveDir(0);
+			player.setX(vo.x);
+			player.setZ(vo.z);
+		}
 		Channel me = SessionManager.getInstance().getChannel(playerId);
 		brocastToSceneCurLine(player, SceneExtension.STOP_WALK_SCENE, vo, me);
 	}
-	
+
+	// 怪物移动
+	public void npcMove(int playerId, NpcMoveStart vo) {
+		Player player = playerService.getPlayer(playerId);
+		Channel me = SessionManager.getInstance().getChannel(playerId);
+		brocastToSceneCurLine(player, SceneExtension.NPC_MOVE, vo, me);
+	}
+
+
+	// 怪物方向
+	public void monsterDir(int playerId, Int2Param vo) {
+		Player player = playerService.getPlayer(playerId);
+		Channel me = SessionManager.getInstance().getChannel(playerId);
+		brocastToSceneCurLine(player, SceneExtension.NPC_DIR, vo, me);
+	}
+
+	// 怪物方向
+	public void changeState(int playerId, ChangeFSMState vo) {
+		Player player = playerService.getPlayer(playerId);
+		Channel me = SessionManager.getInstance().getChannel(playerId);
+		brocastToSceneCurLine(player, SceneExtension.NPC_STATE, vo, me);
+	}
+
 	public void handlerUseSkill(int playerId, UseSkillVO skillVO){
 		if(!SysConfig.debug){
 			//非调试状态下需要检验伤害,CD
 		}
-		if(skillVO.type == 0)
-			skillVO.attackId = playerId;
 		useSkills.put(String.format("%d_%d", skillVO.attackId, skillVO.skillId), skillVO.type);
-		//ServerLogger.warn("handler skill" + String.format("%d_%d", skillVO.attackId, skillVO.skillId));
+		ServerLogger.warn("handler skill" + String.format("%d_%d", skillVO.attackId, skillVO.skillId));
 		Player player = playerService.getPlayer(playerId);
 		brocastToSceneCurLine(player, SceneExtension.USE_SKILL, skillVO);
 	}
@@ -331,13 +349,10 @@ public class SceneService implements InitHandler {
 		}
 
 		//SceneConfig cfg = GameData.getConfig(SceneConfig.class, player.getSceneId());
-		brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
+		//brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
 		if (player.getTeamId() > 0) {
 			teamService.handleSkillHurt(player, hurtVO);
 		}else {
-			if(hurtVO.attackType == 0) {
-				hurtVO.attackId = playerId;
-			}
 			worldBossService.handleSkillHurt(player,hurtVO);
 		}
 	}

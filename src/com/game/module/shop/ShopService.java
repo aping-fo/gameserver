@@ -16,6 +16,7 @@ import com.game.data.GoodsConfig;
 import com.game.data.Response;
 import com.game.data.ShopCfg;
 import com.game.data.VIPConfig;
+import com.game.module.copy.CopyInstance;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -73,7 +74,7 @@ public class ShopService {
 		ConcurrentHashMap<Integer, List<Integer>> refreshes = serial.getData().getPlayerRefreshShops().get(type);
 		if (refreshes == null) {
 			refreshes = new ConcurrentHashMap<Integer, List<Integer>>();
-			serial.getData().getPlayerRefreshShops().put(type, refreshes); 
+			refreshes = serial.getData().getPlayerRefreshShops().putIfAbsent(type, refreshes);
 		}
 		List<Integer> myRefreshes = refreshes.get(playerId);
 		if (myRefreshes == null) {
@@ -123,8 +124,12 @@ public class ShopService {
 				int index = RandomUtil.getRandomIndex(rates);
 				// 过滤职业
 				ShopCfg cfg = ConfigData.getConfig(ShopCfg.class, ids.get(index));
+				if(cfg == null) {
+					ServerLogger.warn("ErrRefreshId：" + ids.get(index));
+					continue;
+				}
 				GoodsConfig gCfg = ConfigData.getConfig(GoodsConfig.class, cfg.goodsId);
-				if (cfg == null || gCfg == null) {
+				if (gCfg == null) {
 					ServerLogger.warn("ErrRefreshId：" + cfg.id);
 					continue;
 				}
@@ -290,7 +295,8 @@ public class ShopService {
 		Player player = playerService.getPlayer(playerId);
 		PlayerData data = playerService.getPlayerData(playerId);
 		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
-		if(cfg.needEnergy == 0){
+		
+		if(cfg.type == CopyInstance.TYPE_TRAVERSING || cfg.needEnergy == 0){
 			return false;
 		}
 		data.setPower4Mystery(data.getPower4Mystery() + cfg.needEnergy);

@@ -11,10 +11,6 @@ import com.game.event.ServiceDispose;
 import com.game.util.CompressUtil;
 import com.game.util.JsonUtils;
 
-/**
- * 如何保证数据库不宕机?数据都保存成功?
- * 为何只在停服的时候存一下
- */
 @Service
 public class SerialDataService implements InitHandler,ServiceDispose {
 
@@ -68,7 +64,7 @@ public class SerialDataService implements InitHandler,ServiceDispose {
 		return data2;
 	}
 	
-	//最小的神将排名
+	//最小的神将排名 TODO 没初始化
 	public int getMinGeneralRank(){
 		return minGRank.get();
 	}

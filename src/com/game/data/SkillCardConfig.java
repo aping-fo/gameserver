@@ -17,4 +17,5 @@ public class SkillCardConfig {
 	public String icon;//图标
 	public int quality;//品质
 	public int decompose;//分解获得经验
+	public int CardType;//技能卡类型
 }

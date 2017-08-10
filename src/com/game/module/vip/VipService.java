@@ -2,7 +2,9 @@ package com.game.module.vip;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
+import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -193,5 +195,44 @@ public class VipService {
 		result.param1 = realCount;
 		result.param2 = count + charge.add;
 		SessionManager.getInstance().sendMsg(VipExtension.CHARGE, result, playerId);
+	}
+
+	/**
+	 * 领取vip礼包
+	 * @param playerId
+	 * @param vipLevel
+	 * @return
+	 */
+	public IntParam getVipGift(int playerId,int vipLevel) {
+		PlayerData data = playerService.getPlayerData(playerId);
+		Player player = playerService.getPlayer(playerId);
+
+		IntParam param = new IntParam();
+		if(player.getVip() < vipLevel) {
+			param.param = Response.NO_VIP;
+			return param;
+		}
+
+		if(data.getVipGifts().contains(vipLevel)) {
+			param.param = Response.HAS_TAKE_REWARD;
+			return param;
+		}
+
+		data.getVipGifts().add(vipLevel);
+
+		List<GoodsEntry> goods = new ArrayList<>();
+		VIPConfig config = ConfigData.getConfig(VIPConfig.class,vipLevel);
+		if(config == null) {
+			param.param = Response.ERR_PARAM;
+			ServerLogger.warn("vip gift config not found, viplevel =" + vipLevel);
+			return param;
+		}
+		for (Map.Entry<Integer,Integer> s : config.vipGift.entrySet()) {
+			goods.add(new GoodsEntry(s.getKey(), s.getValue()));
+		}
+
+		goodsService.addRewards(playerId, goods, LogConsume.TASK_REWARD, vipLevel);
+		param.param = Response.SUCCESS;
+		return param;
 	}
 }

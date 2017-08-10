@@ -162,9 +162,10 @@ public class ArenaExtension {
 		ArenaPlayer opponent = logic.getArenaPlayerByUniqueId(param.param);
 		if(opponent == null){
 			vo.code = Response.ERR_PARAM;
+			return vo;
 		}
 		attach.alterChallenge(-1);
-		attach.setOpponent(opponent.getUniqueId()); //可以同一个挑战者
+		attach.setOpponent(opponent.getUniqueId());
 		attach.commitSync();
 		Player player = playerService.getPlayer(opponent.getPlayerId());
 		PlayerData playerData = playerService.getPlayerData(opponent.getPlayerId());

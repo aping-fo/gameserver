@@ -25,12 +25,6 @@ public class SubLine {
 	}
 
 	// 生成一个可用的分线
-
-	/**
-	 * 这个地方估计还的改成type来获取，不然这里是有问题的
-	 * @param type
-	 * @return
-	 */
 	public int genSunLine(int type) {
 		int subLine = 0;
 		int max = SysConfig.subLineCap;

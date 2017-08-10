@@ -274,6 +274,7 @@ public class PlayerCalculator {
 		case Goods.SYMPTOM:
 			player.addSymptom((int) (player.getSymptom() * valuePercent * 0.01));
 			break;
+		default:
 		}
 	}
 	
@@ -297,6 +298,7 @@ public class PlayerCalculator {
 		case Goods.SYMPTOM:
 			player.addSymptom(value);
 			break;
+		default:
 		}
 	}
 

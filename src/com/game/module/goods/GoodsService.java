@@ -788,10 +788,10 @@ public class GoodsService {
 		Player player = playerService.getPlayer(playerId);
 
 		List<SGoodsVo> goodsUpdate = new ArrayList<SGoodsVo>();
-		final List<Long> ids = new ArrayList<Long>();
+		//final List<Long> ids = new ArrayList<Long>();
 		for (Goods g : gs) {
 			removeGoods(playerId, g);
-			ids.add(g.getId());
+			//ids.add(g.getId());
 			g.setStackNum(0);
 			goodsUpdate.add(toVO(g));
 			Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(),
@@ -926,7 +926,7 @@ public class GoodsService {
 			return false;
 		}
 		PlayerBag bag = getPlayerBag(playerId);
-		List<SGoodsVo> goodsUpdate = new ArrayList<>();
+		List<SGoodsVo> goodsUpdate = new ArrayList<SGoodsVo>();
 		synchronized (bag) {
 			int decCount = Math.min(goods.getStackNum(), count);
 			goods.setStackNum(goods.getStackNum() - decCount);
@@ -941,7 +941,7 @@ public class GoodsService {
 		// 记录日志
 		Player player = playerService.getPlayer(playerId);
 		Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false,
-				count, log, goods.getGoodsId(), Goods.GOOODS, params);
+				count, log, goods.getGoodsId(),Goods.GOOODS,params);
 		return true;
 	}
  }

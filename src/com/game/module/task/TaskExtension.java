@@ -1,5 +1,8 @@
 package com.game.module.task;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.Response;
@@ -52,20 +55,22 @@ public class TaskExtension {
 		TaskConfig taskCfg = taskService.getConfig(taskId); // 奖励物品
 		goodsService.addRewards(playerId, taskCfg.rewards,
 				LogConsume.TASK_REWARD, taskId);
-
+		
 		if(taskCfg.taskType == Task.TYPE_TASK){
 			if(taskCfg.nextTaskId > 0){
+				List<Task> updateList = new ArrayList<>();
 				TaskConfig newTaskCfg = GameData.getConfig(TaskConfig.class, taskCfg.nextTaskId);
 				if(newTaskCfg != null){
 					Task newTask = taskService.addNewTask(playerId, taskCfg.nextTaskId, false);
 					if(taskCfg.group == newTaskCfg.group){						
 						newTask.setCount(task.getCount());
 						taskService.checkFinished(newTask);
-						taskService.updateTaskToClient(playerId, task);
+						updateList.add(newTask);
 					}else{
 						taskService.doTask(playerId, taskCfg.finishType, taskCfg.finishParam);
 					}
 				}
+				taskService.updateTaskToClient(playerId, updateList);
 			}
 		}else if (taskCfg.taskType == Task.TYPE_JOINT) {
 			JointTask myJointedTask = playerTask.getCurrJointedTask();

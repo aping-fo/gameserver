@@ -99,6 +99,7 @@ public class GlobalConfig {
 	public Map<Integer,int[][]> taskLivenessReward;//活跃度奖励
 	public int[] restoreTraversingEnergy;//穿越仪能量恢复
 	public int[] copyBackgroundIds;//副本背景图资源
+	public Map<Integer,Integer> copyBackgroundEffects;//副本背景特效
 	public Map<Integer,Integer> noCurrencyTips;//货币不足提示语
 	public int[][] worldBossReward;//世界Boss排名奖励
 	public int[][] worldBossRewardRank;//世界Boss排名区间

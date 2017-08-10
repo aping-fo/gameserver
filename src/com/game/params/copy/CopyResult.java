@@ -1,11 +1,8 @@
 package com.game.params.copy;
 
-import com.game.params.BufferBuilder;
-import com.game.params.IProtocol;
-import com.game.params.Reward;
-
-import java.util.ArrayList;
 import java.util.List;
+import java.util.ArrayList;
+import com.game.params.*;
 
 //副本通关结果(工具自动生成，请勿手动修改！）
 public class CopyResult implements IProtocol {

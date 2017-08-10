@@ -34,7 +34,10 @@ public class TrainingExtension {
 		vo.hp = attach.getHp();
 		vo.treasureBox = new ArrayList<Integer>(attach.getTreasureBox());
 		List<TrainOpponentVO> list = new ArrayList<TrainOpponentVO>();
-		for(int id : attach.getOpponents()){
+		List<Integer> ids = attach.getOpponents();
+		for(int i = ids.size() - 1; i >= 0; i--){
+			int id = ids.get(i);
+			if(id == playerId) continue;
 			TrainOpponent opponent = logic.getOpponent(id);
 			TrainOpponentVO opp = new TrainOpponentVO();
 			opp.playerId = opponent.getPlayerId();
@@ -50,6 +53,7 @@ public class TrainingExtension {
 			opp.curCards = opponent.getCurCards();
 			opp.curSkills = opponent.getCurSkills();
 			list.add(opp);
+			if(list.size() >= 10) break;
 		}
 		vo.opponents = list;
 		return vo;

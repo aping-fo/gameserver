@@ -7,28 +7,28 @@ import com.game.params.goods.AttrItem;
 
 public class Goods {
 	
-	public static int EXP = 101;	// 经验
-	public static int DIAMOND = 102;	// 钻石
-	public static int COIN = 103;	// 金币
-	public static int CONTRIBUTE = 104;//帮贡
-	public static int ENERGY = 107;	// 体力
-	public static int EQUIP_TOOL = 108;//装备分解材料
+	public final static int EXP = 101;	// 经验
+	public final static int DIAMOND = 102;	// 钻石
+	public final static int COIN = 103;	// 金币
+	public final static int CONTRIBUTE = 104;//帮贡
+	public final static int ENERGY = 107;	// 体力
+	public final static int EQUIP_TOOL = 108;//装备分解材料
 	
-	public static int SPECIAL_MAP = 109;//特性副本地图
-	public static int VIP_EXP = 120;//vip经验值
-	public static int SKILL_CARD = 121;//技能卡
-	public static int FAME = 122;//声望值
-	public static int EXPERIENCE_HP = 123;//英雄试练HP
-	public static int TRAVERSING_ENERGY = 124;//穿越仪能量
+	public final static int SPECIAL_MAP = 109;//特性副本地图
+	public final static int VIP_EXP = 120;//vip经验值
+	public final static int SKILL_CARD = 121;//技能卡
+	public final static int FAME = 122;//声望值
+	public final static int EXPERIENCE_HP = 123;//英雄试练HP
+	public final static int TRAVERSING_ENERGY = 124;//穿越仪能量
 	
-	public static int ARTIFACT_COMPONENT = 401;//神器部件
-	public static int FASHION = 501;//时装道具
+	public final static int ARTIFACT_COMPONENT = 401;//神器部件
+	public final static int FASHION = 501;//时装道具
 	
-	public static int CURRENCY = 104;//通用货币类型
+	public final static int CURRENCY = 104;//通用货币类型
 
 	
-	public static int GOOODS = 20;	// 物品
-	public static int BOTTLE = 503;//药瓶
+	public final static int GOOODS = 20;	// 物品
+	public final static int BOTTLE = 503;//药瓶
 
 	public static final int EQUIP = 1;
 	public static final int BAG = 0;

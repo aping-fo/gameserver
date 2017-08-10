@@ -91,7 +91,8 @@ public class PlayerData {
 	private long lastQuitGang;
 	
 	private PlayerCurrency currency = new PlayerCurrency();
-	
+	//VIP礼包领取记录
+	private List<Integer> vipGifts = new ArrayList<>();
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
@@ -469,5 +470,13 @@ public class PlayerData {
 
 	public void setSignFlag(int signFlag) {
 		this.signFlag = signFlag;
+	}
+
+	public List<Integer> getVipGifts() {
+		return vipGifts;
+	}
+
+	public void setVipGifts(List<Integer> vipGifts) {
+		this.vipGifts = vipGifts;
 	}
 }

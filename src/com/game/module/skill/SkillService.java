@@ -67,7 +67,6 @@ public class SkillService {
 		PlayerData data = playerService.getPlayerData(playerId);
 		int index = data.getSkills().indexOf(skillId);
 		data.getSkills().set(index, cfg.nextId);
-		
 		index = data.getCurSkills().indexOf(skillId);
 		if(index>=0){
 			data.getCurSkills().set(index, cfg.nextId);
@@ -203,6 +202,7 @@ public class SkillService {
 		}
 		//检查升级
 		 cfg = ConfigData.getConfig(SkillCardConfig.class, newCard.getCardId());
+		 newCard.setExp(newCard.getExp() - cfg.decompose);
 		 while(newCard.getExp()>=cfg.exp){
 			 newCard.setLev(newCard.getLev()+1);
 			 newCard.setExp(newCard.getExp()-cfg.exp);

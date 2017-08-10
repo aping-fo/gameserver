@@ -18,4 +18,5 @@ public class ArtifactCfg {
 	public float[] modelRotate;//模型旋转值
 	public float[] modelPos;//模型位置
 	public String icon;//图标
+	public String imgTitle;//名称图片字
 }

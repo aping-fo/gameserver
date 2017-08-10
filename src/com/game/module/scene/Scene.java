@@ -8,7 +8,8 @@ public class Scene {
 	public static final int CITY = 1;//主城
 	public static final int COPY = 3;//单人副本
 	public static final int MULTI = 4;//多人场景
-
+	
+	
 	
 	public static final int MULTI_CITY = 41;//多人场景
 	public static final int MULTI_GANG = 42;//公会场景
@@ -43,11 +44,10 @@ public class Scene {
 	public void setSubLine(SubLine subLine) {
 		this.subLine = subLine;
 	}
-
+	
 	public int getNewSubLine() {
 		SceneConfig config = GameData.getConfig(SceneConfig.class, id);
-		if(config.type == Scene.MULTI && (config.sceneSubType != Scene.MULTI_CITY
-			&& config.sceneSubType != Scene.WORLD_BOSSS_PVE)){
+		if(config.type == Scene.MULTI && config.sceneSubType != Scene.MULTI_CITY){
 			return 1;
 		}
 		return subLine.genSunLine(config.type);

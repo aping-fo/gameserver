@@ -66,7 +66,10 @@ public class DailyService implements InitHandler {
 
 	@Override
 	public void handleInit() {
-
+		resetFiveClock();
+	}
+	
+	public void resetFiveClock(){
 		Calendar five = Calendar.getInstance();
 		
 		five.set(Calendar.HOUR_OF_DAY, 5);
@@ -83,7 +86,7 @@ public class DailyService implements InitHandler {
 		if(five.getTimeInMillis() > System.currentTimeMillis()){
 			five.add(Calendar.DATE, -7);
 		}
-		MONDAY_FIVE_CLOCK = five.getTimeInMillis();
+		MONDAY_FIVE_CLOCK = five.getTimeInMillis();		
 	}
 	
 	// 获得今天已经做了多少次
@@ -116,8 +119,6 @@ public class DailyService implements InitHandler {
 
 	// 重置
 	public void reset() {
-		// 重置时间
-		handleInit();
 		for (int id:SessionManager.getInstance().getAllSessions().keySet()) {
 			PlayerData data = playerService.getPlayerData(id);
 			resetWeeklyData(data);

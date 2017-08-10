@@ -112,9 +112,6 @@ public class trainingLogic extends AttachLogic<TrainAttach>{
 	}
 	
 	private void setOpponent(TrainAttach attach){
-		if(sectionOpponents.isEmpty()){
-			resetOpponent();
-		}
 		int myFight = playerService.getPlayer(attach.getPlayerId()).getFight();
 		attach.setHp(100);//刚开始百分百满血
 		int[] section = ConfigData.globalParam().experienceFightSection;

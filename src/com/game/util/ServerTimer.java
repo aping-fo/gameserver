@@ -48,8 +48,9 @@ public class ServerTimer implements InitHandler {
 		// 凌晨0点执行
 		timers.add(new TimerObject("0 0 * * * *", "serverTimer", "updateTimeStr"));
 		// 凌晨5点执行 每日数据重置
-		timers.add(new TimerObject("0 5 * * * *", "dailyService", "reset"));
+		timers.add(new TimerObject("0 5 * * * *", "dailyService", "resetFiveClock"));
 		timers.add(new TimerObject("0 5 * * * *", "trainingLogic", "resetOpponent"));
+		timers.add(new TimerObject("0 5 * * * *", "dailyService", "reset"));
 		
 		// 凌晨5点执行 每周数据重置
 		timers.add(new TimerObject("0 5 * * 2 *", "dailyService", "resetWeekly"));

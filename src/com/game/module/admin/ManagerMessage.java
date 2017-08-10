@@ -3,6 +3,7 @@ package com.game.module.admin;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.nio.charset.Charset;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Component;
 import com.game.event.InitHandler;
 import com.server.util.MyTheadFactory;
 import com.server.util.ServerLogger;
+import sun.nio.cs.StandardCharsets;
 
 @Component
 public class ManagerMessage implements InitHandler {

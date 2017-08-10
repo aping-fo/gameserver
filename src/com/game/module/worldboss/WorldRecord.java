@@ -29,6 +29,8 @@ public class WorldRecord {
     private Map<Integer, Integer> buyTimes = new ConcurrentHashMap<>();
     private long startTime; //开始时间
     private int day;
+    private int openHour;
+    private int endHour;
     //发奖标记
     private int rewardFlag;
     //击杀最后一个BOSS 玩家
@@ -40,6 +42,22 @@ public class WorldRecord {
 
     @JsonIgnore
     private AtomicBoolean bUpdate = new AtomicBoolean(false);
+
+    public int getOpenHour() {
+        return openHour;
+    }
+
+    public void setOpenHour(int openHour) {
+        this.openHour = openHour;
+    }
+
+    public int getEndHour() {
+        return endHour;
+    }
+
+    public void setEndHour(int endHour) {
+        this.endHour = endHour;
+    }
 
     public AtomicBoolean getbUpdate() {
         return bUpdate;

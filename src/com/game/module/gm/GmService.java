@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.game.module.worldboss.WorldBossService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,8 @@ import com.game.data.CopyConfig;
 import com.game.data.GangTrainingCfg;
 import com.game.module.admin.MessageService;
 import com.game.module.attach.arena.ArenaExtension;
+import com.game.module.attach.endless.EndlessAttach;
+import com.game.module.attach.endless.EndlessLogic;
 import com.game.module.attach.lottery.LotteryExtension;
 import com.game.module.attach.training.TrainingExtension;
 import com.game.module.chat.ChatExtension;
@@ -94,6 +97,8 @@ public class GmService {
 	private TraversingExtension traversingExtension;
 	@Autowired
 	private FashionService fashionService;
+	@Autowired
+	private WorldBossService worldBossService;
 
 	public void handle(int playerId, String gm) {
 		try {
@@ -334,11 +339,12 @@ public class GmService {
 			}
 			member.alterTrainingTime(hour);
 			int[][] rewards = Arrays.copyOfRange(cfg.reward,0,cfg.reward.length);
-			for(int[] reward : rewards){
-				reward[1] = (int)(reward[1] * plus * hour);
-			}
-			member.setStartTraining(0L);
 			if(rewards != null){
+				for(int[] reward : rewards){
+					reward[1] = (int)(reward[1] * plus * hour);
+				}
+				member.setStartTraining(0L);
+
 				result.params = new ArrayList<Reward>();
 				goodsService.addRewards(playerId, rewards, LogConsume.GANG_TRAINING_REWARD, room.getId(), member.getTrainingTime() - hour);
 				for(int[] reward : rewards){
@@ -394,6 +400,17 @@ public class GmService {
 		}
 	}
 	
+	@Autowired
+	private EndlessLogic endlessLogic;
+	public void endless(int playerId, String ...params){
+		int layer = Integer.parseInt(params[0]);
+		EndlessAttach attack = endlessLogic.getAttach(playerId);
+		attack.setChallenge(1);
+		attack.setCurrLayer(layer);
+		attack.setMaxLayer(layer);
+		attack.commitSync();
+	}
+	
 	
 	
 	
@@ -413,5 +430,9 @@ public class GmService {
 		param.param1 = Integer.parseInt(param1);
 		param.param2 = Integer.parseInt(param2);
 		return param;
+	}
+
+	public void openWorld(int playerId,String ... params) {
+		worldBossService.gmReset();
 	}
 }

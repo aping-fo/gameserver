@@ -39,7 +39,10 @@ public class StringUtil {
 	public static int[] str2arr(String str, String split) {
 		try {
 			String[] items = str.split(split);
-			int[] result = int[] result = Arrays.stream(items).mapToInt(Integer::parseInt).toArray();
+			int[] result = new int[items.length];
+			for (int i = 0; i < items.length; i++) {
+				result[i] = Integer.parseInt(items[i].trim());
+			}
 			return result;
 		} catch (Exception e) {
 			return null;
@@ -54,12 +57,15 @@ public class StringUtil {
 	 * @return
 	 */
 	public static List<Integer> str2list(String str, String split) {
+		List<Integer> result = new ArrayList<Integer>();
 		try {
 			String[] items = str.split(split);
-			List<Integer> result = List<Integer> result = Arrays.stream(items).map(Integer::parseInt).collect(Collectors.toList());
+			for (String item : items) {
+				result.add(Integer.parseInt(item));
+			}
 			return result;
 		} catch (Exception e) {
-			return Collections.emptyList();
+			return result;
 		}
 	}
 
@@ -71,12 +77,15 @@ public class StringUtil {
 	 * @return
 	 */
 	public static List<String> str2list2(String str, String split) {
+		List<String> result = new ArrayList<String>();
 		try {
 			String[] items = str.split(split);
-			List<String> result = Arrays.stream(items).collect(Collectors.toList());
+			for (String item : items) {
+				result.add(item);
+			}
 			return result;
 		} catch (Exception e) {
-			return Collections.emptyList();
+			return result;
 		}
 	}
 
@@ -97,8 +106,8 @@ public class StringUtil {
 		String[] arr = str.split(oneSplit);
 		for (String item : arr) {
 			String[] data = item.split(twoSplit);
-			int id = Integer.valueOf(data[0]);
-			int count = Integer.valueOf(data[1]);
+			int id = Integer.parseInt(data[0]);
+			int count = Integer.parseInt(data[1]);
 			Integer curCount = result.get(id);
 			if(curCount==null){
 				curCount = 0;

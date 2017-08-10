@@ -20,4 +20,6 @@ public class VIPConfig {
 	public int buyTreasureCopy;//金币副本可购买次数
 	public int buyExtremeEvasionCopy;//经验副本可购买次数
 	public int traveringEnergy;//穿越仪能量上限
+	public Map<Integer,Integer> vipGift;//礼包
+	public int giftPrice;//礼包原价钱
 }

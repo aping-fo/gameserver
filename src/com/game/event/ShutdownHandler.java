@@ -3,6 +3,7 @@ package com.game.event;
 import com.game.module.gang.GangService;
 import com.game.module.log.LoggerService;
 import com.game.module.rank.RankService;
+import com.game.module.worldboss.WorldBossService;
 import com.game.util.BeanManager;
 import com.game.util.Context;
 import com.game.util.DelayUpdater;
@@ -36,6 +37,7 @@ public class ShutdownHandler extends Thread {
 		// 关闭相关的service
 		BeanManager.getBean(ServerTimer.class).saveData();
 		BeanManager.getBean(RankService.class).shutdown();
+		BeanManager.getBean(WorldBossService.class).shutdown();
 		Context.getThreadService().shutdown();
 		try {
 			Thread.sleep(2000);

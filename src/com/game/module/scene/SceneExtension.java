@@ -1,5 +1,6 @@
 package com.game.module.scene;
 
+import com.game.params.Int2Param;
 import com.game.params.scene.*;
 
 import io.netty.channel.Channel;
@@ -42,6 +43,9 @@ public class SceneExtension {
 	public static final int ENTER_SCENE = 1103;
 	// 玩家移动
 	public static final int WALK_SCENE = 1107;
+	public static final int NPC_MOVE = 1113;
+	public static final int NPC_DIR = 4912;
+	public static final int NPC_STATE = 4913;
 	// 其他玩家移动
 	public static final int STOP_WALK_SCENE = 1108;
 
@@ -104,5 +108,22 @@ public class SceneExtension {
 		sceneService.handleSkillHurt(playerId, param);
 		return null;
 	}
-	
+
+	@Command(1113)
+	public Object npcMove(int playerId,NpcMoveStart vo) {
+		sceneService.npcMove(playerId,vo);
+		return null;
+	}
+
+	@Command(4912)
+	public Object npcDir(int playerId,Int2Param vo) {
+		sceneService.monsterDir(playerId,vo);
+		return null;
+	}
+
+	@Command(4913)
+	public Object changeState(int playerId,ChangeFSMState vo) {
+		sceneService.changeState(playerId,vo);
+		return null;
+	}
 }

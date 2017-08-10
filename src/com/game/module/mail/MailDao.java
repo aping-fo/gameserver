@@ -11,13 +11,13 @@ public interface MailDao {
 	
 	public static final String BATCH_INSERT_MAIL = "insert into mail(senderId,senderName,receiveId,title,content,sendTime,state,rewards,hasReward,type) values(?,?,?,?,?,now(),0,?,?,?)";
 	
-	@SQL("select * from mail where receiveId = :playerId and state <>2 order by id desc limit 30")
+	@SQL("select * from mail where receiveId = :playerId and state <>2 and sendTime> DATE_ADD(CURDATE(), INTERVAL -7 DAY) order by id desc limit 30")
 	public List<Mail> selectMails(@SQLParam("playerId")int playerId);
 	
 	@SQL("update mail set state = :state where id=:id and receiveId=:playerId")
 	public int setState(@SQLParam("id")long id,@SQLParam("playerId")int playerId,@SQLParam("state")int state);
 	
-	@SQL("select * from mail where id = :id and receiveId = :playerId")
+	@SQL("select * from mail where id = :id and receiveId = :playerId and sendTime > DATE_ADD(CURDATE(), INTERVAL -7 DAY)")
 	public Mail selectMail(@SQLParam("id")long id,@SQLParam("playerId")int playerId);
 	
 	@SQL("insert into mail(senderId,senderName,receiveId,title,content,sendTime,state,rewards,hasReward,type) values(:m.senderId,:m.senderName,:m.receiveId,:m.title,:m.content,now(),:m.state,:m.rewards,:m.hasReward,:m.type)")
@@ -32,7 +32,7 @@ public interface MailDao {
 	@SQL("delete from mail where state = 2 or sendTime< DATE_ADD(CURDATE(), INTERVAL -7 DAY)")
 	public void delUnvalid();
 	
-	@SQL("update mail set hasReward=0,state=1 where id = :id")
+	@SQL("update mail set hasReward=0,state=2 where id = :id")
 	public void updateReward(@SQLParam("id")long id);
 	
 	@SQL("select count(*) from mail where receiveId = :playerId and state =0")
