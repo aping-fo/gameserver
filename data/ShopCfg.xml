@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
 	<shopType>1</shopType>
@@ -213,6 +213,195 @@
 <config>
 	<id>11</id>
 	<shopType>1</shopType>
+	<name>强化材料</name>
+	<goodsId>109</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>11</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>12</id>
+	<shopType>1</shopType>
+	<name>装备升级材料</name>
+	<goodsId>108</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>12</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>13</id>
+	<shopType>1</shopType>
+	<name>强化券</name>
+	<goodsId>302001</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>13</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>14</id>
+	<shopType>1</shopType>
+	<name>宝石升级道具</name>
+	<goodsId>303001</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>14</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>15</id>
+	<shopType>1</shopType>
+	<name>宝石升级道具</name>
+	<goodsId>304001</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>15</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>16</id>
+	<shopType>1</shopType>
+	<name>宝石升级道具</name>
+	<goodsId>305001</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>16</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>17</id>
+	<shopType>1</shopType>
+	<name>宝石升级道具</name>
+	<goodsId>306001</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>17</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>18</id>
+	<shopType>1</shopType>
+	<name>宝石升级道具</name>
+	<goodsId>307001</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>18</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>19</id>
+	<shopType>1</shopType>
+	<name>宝石升级道具</name>
+	<goodsId>308001</goodsId>
+	<count>100</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>99</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>10</moneyCount>
+	<specIcon></specIcon>
+	<order>19</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+</config>
+<config>
+	<id>20</id>
+	<shopType>1</shopType>
 	<name>道具商品11</name>
 	<goodsId>201010011</goodsId>
 	<count>6</count>
@@ -225,14 +414,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>1</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>12</id>
+	<id>21</id>
 	<shopType>1</shopType>
 	<name>道具商品12</name>
 	<goodsId>202010011</goodsId>
@@ -246,14 +435,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>2</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>13</id>
+	<id>22</id>
 	<shopType>1</shopType>
 	<name>道具商品13</name>
 	<goodsId>203010011</goodsId>
@@ -267,14 +456,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>3</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>14</id>
+	<id>23</id>
 	<shopType>1</shopType>
 	<name>道具商品14</name>
 	<goodsId>204010011</goodsId>
@@ -288,14 +477,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>4</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>15</id>
+	<id>24</id>
 	<shopType>1</shopType>
 	<name>道具商品15</name>
 	<goodsId>205010011</goodsId>
@@ -309,14 +498,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>5</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>16</id>
+	<id>25</id>
 	<shopType>1</shopType>
 	<name>道具商品16</name>
 	<goodsId>206010011</goodsId>
@@ -330,14 +519,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>6</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>17</id>
+	<id>26</id>
 	<shopType>1</shopType>
 	<name>道具商品17</name>
 	<goodsId>50602</goodsId>
@@ -351,14 +540,14 @@
 	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>7</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>18</id>
+	<id>27</id>
 	<shopType>1</shopType>
 	<name>道具商品18</name>
 	<goodsId>50603</goodsId>
@@ -372,14 +561,14 @@
 	<moneyCount>10000</moneyCount>
 	<specIcon></specIcon>
 	<order>8</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>19</id>
+	<id>28</id>
 	<shopType>1</shopType>
 	<name>道具商品19</name>
 	<goodsId>50801</goodsId>
@@ -390,17 +579,17 @@
 	<limitCount>999</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>103</moneyType>
-	<moneyCount>100000</moneyCount>
+	<moneyCount>10000</moneyCount>
 	<specIcon></specIcon>
 	<order>9</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>20</id>
+	<id>29</id>
 	<shopType>1</shopType>
 	<name>道具商品20</name>
 	<goodsId>50802</goodsId>
@@ -411,17 +600,38 @@
 	<limitCount>999</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>103</moneyType>
-	<moneyCount>1000000</moneyCount>
+	<moneyCount>10000</moneyCount>
 	<specIcon></specIcon>
 	<order>10</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>21</id>
+	<id>30</id>
+	<shopType>1</shopType>
+	<name>补给卷</name>
+	<goodsId>125</goodsId>
+	<count>1</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>0</limitType>
+	<limitCount>999</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>103</moneyType>
+	<moneyCount>1000</moneyCount>
+	<specIcon></specIcon>
+	<order>11</order>
+	<refreshRate>10</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>1</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>31</id>
 	<shopType>1</shopType>
 	<name>VIP商品11</name>
 	<goodsId>50803</goodsId>
@@ -435,14 +645,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>1</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>22</id>
+	<id>32</id>
 	<shopType>1</shopType>
 	<name>VIP商品12</name>
 	<goodsId>51001</goodsId>
@@ -456,14 +666,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>2</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>23</id>
+	<id>33</id>
 	<shopType>1</shopType>
 	<name>VIP商品13</name>
 	<goodsId>51002</goodsId>
@@ -477,14 +687,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>3</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>24</id>
+	<id>34</id>
 	<shopType>1</shopType>
 	<name>VIP商品14</name>
 	<goodsId>51003</goodsId>
@@ -498,14 +708,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>4</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>25</id>
+	<id>35</id>
 	<shopType>1</shopType>
 	<name>VIP商品15</name>
 	<goodsId>201010011</goodsId>
@@ -519,14 +729,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>5</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>26</id>
+	<id>36</id>
 	<shopType>1</shopType>
 	<name>VIP商品16</name>
 	<goodsId>202010011</goodsId>
@@ -540,14 +750,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>6</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>27</id>
+	<id>37</id>
 	<shopType>1</shopType>
 	<name>VIP商品17</name>
 	<goodsId>203010011</goodsId>
@@ -561,14 +771,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>7</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>28</id>
+	<id>38</id>
 	<shopType>1</shopType>
 	<name>VIP商品18</name>
 	<goodsId>204010011</goodsId>
@@ -582,14 +792,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>8</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>29</id>
+	<id>39</id>
 	<shopType>1</shopType>
 	<name>VIP商品19</name>
 	<goodsId>205010011</goodsId>
@@ -603,14 +813,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>9</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>30</id>
+	<id>40</id>
 	<shopType>1</shopType>
 	<name>VIP商品20</name>
 	<goodsId>206010011</goodsId>
@@ -624,14 +834,14 @@
 	<moneyCount>19</moneyCount>
 	<specIcon></specIcon>
 	<order>10</order>
-	<refreshRate></refreshRate>
+	<refreshRate>10</refreshRate>
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>3</tabLayoutType>
 </config>
 <config>
-	<id>31</id>
+	<id>41</id>
 	<shopType>2</shopType>
 	<name>神秘物品1</name>
 	<goodsId>50102</goodsId>
@@ -652,7 +862,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>32</id>
+	<id>42</id>
 	<shopType>2</shopType>
 	<name>神秘物品2</name>
 	<goodsId>50103</goodsId>
@@ -673,7 +883,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>33</id>
+	<id>43</id>
 	<shopType>2</shopType>
 	<name>神秘物品3</name>
 	<goodsId>50201</goodsId>
@@ -694,7 +904,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>34</id>
+	<id>44</id>
 	<shopType>2</shopType>
 	<name>神秘物品4</name>
 	<goodsId>50202</goodsId>
@@ -715,7 +925,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>35</id>
+	<id>45</id>
 	<shopType>2</shopType>
 	<name>神秘物品5</name>
 	<goodsId>50203</goodsId>
@@ -736,7 +946,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>36</id>
+	<id>46</id>
 	<shopType>2</shopType>
 	<name>神秘物品6</name>
 	<goodsId>50301</goodsId>
@@ -757,7 +967,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>37</id>
+	<id>47</id>
 	<shopType>2</shopType>
 	<name>神秘物品7</name>
 	<goodsId>50302</goodsId>
@@ -778,7 +988,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>38</id>
+	<id>48</id>
 	<shopType>2</shopType>
 	<name>神秘物品8</name>
 	<goodsId>50303</goodsId>
@@ -799,7 +1009,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>39</id>
+	<id>49</id>
 	<shopType>2</shopType>
 	<name>神秘物品9</name>
 	<goodsId>50401</goodsId>
@@ -820,7 +1030,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>40</id>
+	<id>50</id>
 	<shopType>2</shopType>
 	<name>神秘物品10</name>
 	<goodsId>50402</goodsId>
@@ -841,7 +1051,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>41</id>
+	<id>51</id>
 	<shopType>2</shopType>
 	<name>神秘物品11</name>
 	<goodsId>50403</goodsId>
@@ -862,7 +1072,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>42</id>
+	<id>52</id>
 	<shopType>2</shopType>
 	<name>神秘物品12</name>
 	<goodsId>50501</goodsId>
@@ -883,7 +1093,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>43</id>
+	<id>53</id>
 	<shopType>2</shopType>
 	<name>神秘物品13</name>
 	<goodsId>50502</goodsId>
@@ -904,7 +1114,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>44</id>
+	<id>54</id>
 	<shopType>2</shopType>
 	<name>神秘物品14</name>
 	<goodsId>50503</goodsId>
@@ -925,7 +1135,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>45</id>
+	<id>55</id>
 	<shopType>2</shopType>
 	<name>神秘物品15</name>
 	<goodsId>50601</goodsId>
@@ -946,7 +1156,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>46</id>
+	<id>56</id>
 	<shopType>2</shopType>
 	<name>神秘物品16</name>
 	<goodsId>50602</goodsId>
@@ -967,7 +1177,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>47</id>
+	<id>57</id>
 	<shopType>2</shopType>
 	<name>神秘物品17</name>
 	<goodsId>50603</goodsId>
@@ -988,7 +1198,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>48</id>
+	<id>58</id>
 	<shopType>2</shopType>
 	<name>神秘物品18</name>
 	<goodsId>50801</goodsId>
@@ -1009,7 +1219,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>49</id>
+	<id>59</id>
 	<shopType>2</shopType>
 	<name>神秘物品19</name>
 	<goodsId>50802</goodsId>
@@ -1030,7 +1240,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>50</id>
+	<id>60</id>
 	<shopType>2</shopType>
 	<name>神秘物品20</name>
 	<goodsId>50803</goodsId>
@@ -1051,7 +1261,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>51</id>
+	<id>61</id>
 	<shopType>3</shopType>
 	<name>漩涡物品1</name>
 	<goodsId>50102</goodsId>
@@ -1072,7 +1282,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>52</id>
+	<id>62</id>
 	<shopType>3</shopType>
 	<name>漩涡物品2</name>
 	<goodsId>50103</goodsId>
@@ -1093,7 +1303,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>53</id>
+	<id>63</id>
 	<shopType>3</shopType>
 	<name>漩涡物品3</name>
 	<goodsId>50201</goodsId>
@@ -1114,7 +1324,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>54</id>
+	<id>64</id>
 	<shopType>3</shopType>
 	<name>漩涡物品4</name>
 	<goodsId>50202</goodsId>
@@ -1135,7 +1345,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>55</id>
+	<id>65</id>
 	<shopType>3</shopType>
 	<name>漩涡物品5</name>
 	<goodsId>50203</goodsId>
@@ -1156,7 +1366,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>56</id>
+	<id>66</id>
 	<shopType>3</shopType>
 	<name>漩涡物品6</name>
 	<goodsId>50301</goodsId>
@@ -1177,7 +1387,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>57</id>
+	<id>67</id>
 	<shopType>3</shopType>
 	<name>漩涡物品7</name>
 	<goodsId>50302</goodsId>
@@ -1198,7 +1408,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>58</id>
+	<id>68</id>
 	<shopType>3</shopType>
 	<name>漩涡物品8</name>
 	<goodsId>50303</goodsId>
@@ -1219,7 +1429,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>59</id>
+	<id>69</id>
 	<shopType>3</shopType>
 	<name>漩涡物品9</name>
 	<goodsId>50401</goodsId>
@@ -1240,7 +1450,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>60</id>
+	<id>70</id>
 	<shopType>3</shopType>
 	<name>漩涡物品10</name>
 	<goodsId>50402</goodsId>
@@ -1261,7 +1471,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>61</id>
+	<id>71</id>
 	<shopType>3</shopType>
 	<name>漩涡物品11</name>
 	<goodsId>50403</goodsId>
@@ -1282,7 +1492,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>62</id>
+	<id>72</id>
 	<shopType>3</shopType>
 	<name>漩涡物品12</name>
 	<goodsId>50501</goodsId>
@@ -1303,7 +1513,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>63</id>
+	<id>73</id>
 	<shopType>3</shopType>
 	<name>漩涡物品13</name>
 	<goodsId>50502</goodsId>
@@ -1324,7 +1534,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>64</id>
+	<id>74</id>
 	<shopType>3</shopType>
 	<name>漩涡物品14</name>
 	<goodsId>50503</goodsId>
@@ -1345,7 +1555,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>65</id>
+	<id>75</id>
 	<shopType>3</shopType>
 	<name>漩涡物品15</name>
 	<goodsId>50601</goodsId>
@@ -1366,7 +1576,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>66</id>
+	<id>76</id>
 	<shopType>3</shopType>
 	<name>漩涡物品16</name>
 	<goodsId>50602</goodsId>
@@ -1387,7 +1597,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>67</id>
+	<id>77</id>
 	<shopType>3</shopType>
 	<name>漩涡物品17</name>
 	<goodsId>50603</goodsId>
@@ -1408,7 +1618,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>68</id>
+	<id>78</id>
 	<shopType>3</shopType>
 	<name>漩涡物品18</name>
 	<goodsId>50801</goodsId>
@@ -1429,7 +1639,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>69</id>
+	<id>79</id>
 	<shopType>3</shopType>
 	<name>漩涡物品19</name>
 	<goodsId>50802</goodsId>
@@ -1450,7 +1660,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>70</id>
+	<id>80</id>
 	<shopType>3</shopType>
 	<name>漩涡物品20</name>
 	<goodsId>50803</goodsId>
@@ -1471,7 +1681,7 @@
 	<tabLayoutType>4</tabLayoutType>
 </config>
 <config>
-	<id>71</id>
+	<id>81</id>
 	<shopType>4</shopType>
 	<name>公会商品11</name>
 	<goodsId>50402</goodsId>
@@ -1492,7 +1702,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>72</id>
+	<id>82</id>
 	<shopType>4</shopType>
 	<name>公会商品12</name>
 	<goodsId>50403</goodsId>
@@ -1513,7 +1723,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>73</id>
+	<id>83</id>
 	<shopType>4</shopType>
 	<name>公会商品13</name>
 	<goodsId>50501</goodsId>
@@ -1534,7 +1744,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>74</id>
+	<id>84</id>
 	<shopType>4</shopType>
 	<name>公会商品14</name>
 	<goodsId>50502</goodsId>
@@ -1555,7 +1765,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>75</id>
+	<id>85</id>
 	<shopType>4</shopType>
 	<name>公会商品15</name>
 	<goodsId>50503</goodsId>
@@ -1576,7 +1786,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>76</id>
+	<id>86</id>
 	<shopType>4</shopType>
 	<name>公会商品16</name>
 	<goodsId>50601</goodsId>
@@ -1597,7 +1807,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>77</id>
+	<id>87</id>
 	<shopType>4</shopType>
 	<name>公会商品17</name>
 	<goodsId>50602</goodsId>
@@ -1618,7 +1828,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>78</id>
+	<id>88</id>
 	<shopType>4</shopType>
 	<name>公会商品18</name>
 	<goodsId>50603</goodsId>
@@ -1639,7 +1849,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>79</id>
+	<id>89</id>
 	<shopType>4</shopType>
 	<name>公会商品19</name>
 	<goodsId>50801</goodsId>
@@ -1660,7 +1870,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>80</id>
+	<id>90</id>
 	<shopType>4</shopType>
 	<name>公会商品20</name>
 	<goodsId>50802</goodsId>
@@ -1681,7 +1891,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>81</id>
+	<id>91</id>
 	<shopType>5</shopType>
 	<name>试炼商品1</name>
 	<goodsId>50402</goodsId>
@@ -1702,7 +1912,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>82</id>
+	<id>92</id>
 	<shopType>5</shopType>
 	<name>试炼商品2</name>
 	<goodsId>50403</goodsId>
@@ -1723,7 +1933,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>83</id>
+	<id>93</id>
 	<shopType>5</shopType>
 	<name>试炼商品3</name>
 	<goodsId>50501</goodsId>
@@ -1744,7 +1954,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>84</id>
+	<id>94</id>
 	<shopType>5</shopType>
 	<name>试炼商品4</name>
 	<goodsId>50502</goodsId>
@@ -1765,7 +1975,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>85</id>
+	<id>95</id>
 	<shopType>5</shopType>
 	<name>试炼商品5</name>
 	<goodsId>50503</goodsId>
@@ -1786,7 +1996,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>86</id>
+	<id>96</id>
 	<shopType>5</shopType>
 	<name>试炼商品6</name>
 	<goodsId>50601</goodsId>
@@ -1807,7 +2017,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>87</id>
+	<id>97</id>
 	<shopType>5</shopType>
 	<name>试炼商品7</name>
 	<goodsId>50602</goodsId>
@@ -1828,7 +2038,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>88</id>
+	<id>98</id>
 	<shopType>5</shopType>
 	<name>试炼商品8</name>
 	<goodsId>50603</goodsId>
@@ -1849,7 +2059,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>89</id>
+	<id>99</id>
 	<shopType>5</shopType>
 	<name>试炼商品9</name>
 	<goodsId>50801</goodsId>
@@ -1870,7 +2080,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>90</id>
+	<id>100</id>
 	<shopType>5</shopType>
 	<name>试炼商品10</name>
 	<goodsId>50802</goodsId>
@@ -1891,7 +2101,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>91</id>
+	<id>101</id>
 	<shopType>6</shopType>
 	<name>竞技商品1</name>
 	<goodsId>50402</goodsId>
@@ -1912,7 +2122,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>92</id>
+	<id>102</id>
 	<shopType>6</shopType>
 	<name>竞技商品2</name>
 	<goodsId>50403</goodsId>
@@ -1933,7 +2143,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>93</id>
+	<id>103</id>
 	<shopType>6</shopType>
 	<name>竞技商品3</name>
 	<goodsId>50501</goodsId>
@@ -1954,7 +2164,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>94</id>
+	<id>104</id>
 	<shopType>6</shopType>
 	<name>竞技商品4</name>
 	<goodsId>50502</goodsId>
@@ -1975,7 +2185,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>95</id>
+	<id>105</id>
 	<shopType>6</shopType>
 	<name>竞技商品5</name>
 	<goodsId>50503</goodsId>
@@ -1996,7 +2206,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>96</id>
+	<id>106</id>
 	<shopType>6</shopType>
 	<name>竞技商品6</name>
 	<goodsId>50601</goodsId>
@@ -2017,7 +2227,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>97</id>
+	<id>107</id>
 	<shopType>6</shopType>
 	<name>竞技商品7</name>
 	<goodsId>50602</goodsId>
@@ -2038,7 +2248,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>98</id>
+	<id>108</id>
 	<shopType>6</shopType>
 	<name>竞技商品8</name>
 	<goodsId>50603</goodsId>
@@ -2059,7 +2269,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>99</id>
+	<id>109</id>
 	<shopType>6</shopType>
 	<name>竞技商品9</name>
 	<goodsId>50801</goodsId>
@@ -2080,7 +2290,7 @@
 	<tabLayoutType>2</tabLayoutType>
 </config>
 <config>
-	<id>100</id>
+	<id>110</id>
 	<shopType>6</shopType>
 	<name>竞技商品10</name>
 	<goodsId>50802</goodsId>

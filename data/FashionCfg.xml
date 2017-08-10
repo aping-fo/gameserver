@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>111011</id>
 	<desc>战士默认头部</desc>
@@ -12,18 +12,20 @@
 	<model2Name></model2Name>
 	<path>Assets/Actor/Role/11101/11101_head.prefab</path>
 	<path2></path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>1</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111012</id>
@@ -37,18 +39,20 @@
 	<model2Name></model2Name>
 	<path>Assets/Actor/Role/11101/11101_body.prefab</path>
 	<path2></path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>2</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111013</id>
@@ -62,18 +66,20 @@
 	<model2Name></model2Name>
 	<path>Assets/Actor/Role/11101/11101_equip.prefab</path>
 	<path2></path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>3</order>
+	<effectId>1110011</effectId>
 </config>
 <config>
 	<id>111021</id>
@@ -89,16 +95,18 @@
 	<path2></path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>4</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111022</id>
@@ -114,16 +122,18 @@
 	<path2></path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>5</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111023</id>
@@ -139,16 +149,18 @@
 	<path2></path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>6</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111031</id>
@@ -164,16 +176,18 @@
 	<path2></path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>7</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111032</id>
@@ -189,16 +203,18 @@
 	<path2></path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>8</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111033</id>
@@ -214,16 +230,18 @@
 	<path2></path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>9</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111041</id>
@@ -239,8 +257,9 @@
 	<path2></path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -249,6 +268,7 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>10</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111042</id>
@@ -264,8 +284,9 @@
 	<path2></path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -274,6 +295,7 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>11</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>111043</id>
@@ -289,8 +311,9 @@
 	<path2></path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -299,6 +322,7 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>12</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121011</id>
@@ -312,18 +336,20 @@
 	<model2Name></model2Name>
 	<path>Assets/Actor/Role/12101/12101_head.prefab</path>
 	<path2></path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>13</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121012</id>
@@ -337,18 +363,20 @@
 	<model2Name></model2Name>
 	<path>Assets/Actor/Role/12101/12101_body.prefab</path>
 	<path2></path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>14</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121013</id>
@@ -362,18 +390,20 @@
 	<model2Name>weapon02.prefab</model2Name>
 	<path>Assets/Actor/Role/12101/12101_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12101/12101_weapon02.prefab</path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>15</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121021</id>
@@ -389,16 +419,18 @@
 	<path2></path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>16</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121022</id>
@@ -414,16 +446,18 @@
 	<path2></path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>17</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121023</id>
@@ -439,16 +473,18 @@
 	<path2>Assets/Actor/Role/12102/12102_weapon02.prefab</path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>18</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121031</id>
@@ -464,16 +500,18 @@
 	<path2></path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>19</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121032</id>
@@ -489,16 +527,18 @@
 	<path2></path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>20</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121033</id>
@@ -514,16 +554,18 @@
 	<path2>Assets/Actor/Role/12103/12103_weapon02.prefab</path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>21</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121041</id>
@@ -539,8 +581,9 @@
 	<path2></path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -549,6 +592,7 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>22</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121042</id>
@@ -564,8 +608,9 @@
 	<path2></path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -574,6 +619,7 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>23</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>121043</id>
@@ -589,8 +635,9 @@
 	<path2>Assets/Actor/Role/12104/12104_weapon02.prefab</path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -599,6 +646,7 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>24</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131011</id>
@@ -612,18 +660,20 @@
 	<model2Name></model2Name>
 	<path>Assets/Actor/Role/13101/13101_head.prefab</path>
 	<path2></path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>25</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131012</id>
@@ -637,18 +687,20 @@
 	<model2Name></model2Name>
 	<path>Assets/Actor/Role/13101/13101_body.prefab</path>
 	<path2></path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>26</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131013</id>
@@ -662,18 +714,20 @@
 	<model2Name></model2Name>
 	<path>Assets/Actor/Role/13101/13101_equip.prefab</path>
 	<path2></path2>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>100</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>27</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131021</id>
@@ -689,16 +743,18 @@
 	<path2></path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>28</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131022</id>
@@ -714,16 +770,18 @@
 	<path2></path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>29</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131023</id>
@@ -739,16 +797,18 @@
 	<path2></path2>
 	<attack>101</attack>
 	<defense>101</defense>
-	<symptom>101</symptom>
+	<hp>101</hp>
 	<crit>101</crit>
+	<symptom>101</symptom>
 	<fu>101</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>30</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131031</id>
@@ -764,16 +824,18 @@
 	<path2></path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>31</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131032</id>
@@ -789,16 +851,18 @@
 	<path2></path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>32</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131033</id>
@@ -814,16 +878,18 @@
 	<path2></path2>
 	<attack>102</attack>
 	<defense>102</defense>
-	<symptom>102</symptom>
+	<hp>102</hp>
 	<crit>102</crit>
+	<symptom>102</symptom>
 	<fu>102</fu>
-	<limitType>1</limitType>
-	<limitParams>[2]</limitParams>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>33</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131041</id>
@@ -839,8 +905,9 @@
 	<path2></path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -849,6 +916,7 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>34</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131042</id>
@@ -864,8 +932,9 @@
 	<path2></path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -874,6 +943,7 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>35</order>
+	<effectId></effectId>
 </config>
 <config>
 	<id>131043</id>
@@ -889,8 +959,9 @@
 	<path2></path2>
 	<attack>103</attack>
 	<defense>103</defense>
-	<symptom>103</symptom>
+	<hp>103</hp>
 	<crit>103</crit>
+	<symptom>103</symptom>
 	<fu>103</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
@@ -899,5 +970,6 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>36</order>
+	<effectId></effectId>
 </config>
 </root>

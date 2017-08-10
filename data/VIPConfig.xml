@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>0</id>
 	<charge>0</charge>
@@ -17,6 +17,8 @@
 	<buyTreasureCopy>0</buyTreasureCopy>
 	<buyExtremeEvasionCopy>0</buyExtremeEvasionCopy>
 	<traveringEnergy>100</traveringEnergy>
+	<vipGift>1:2</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>1</id>
@@ -35,6 +37,8 @@
 	<buyTreasureCopy>1</buyTreasureCopy>
 	<buyExtremeEvasionCopy>1</buyExtremeEvasionCopy>
 	<traveringEnergy>110</traveringEnergy>
+	<vipGift>1:3</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>2</id>
@@ -53,6 +57,8 @@
 	<buyTreasureCopy>1</buyTreasureCopy>
 	<buyExtremeEvasionCopy>1</buyExtremeEvasionCopy>
 	<traveringEnergy>120</traveringEnergy>
+	<vipGift>1:4</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>3</id>
@@ -71,6 +77,8 @@
 	<buyTreasureCopy>1</buyTreasureCopy>
 	<buyExtremeEvasionCopy>1</buyExtremeEvasionCopy>
 	<traveringEnergy>130</traveringEnergy>
+	<vipGift>1:5</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>4</id>
@@ -89,6 +97,8 @@
 	<buyTreasureCopy>2</buyTreasureCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>140</traveringEnergy>
+	<vipGift>1:6</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>5</id>
@@ -107,6 +117,8 @@
 	<buyTreasureCopy>2</buyTreasureCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>150</traveringEnergy>
+	<vipGift>1:7</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>6</id>
@@ -125,6 +137,8 @@
 	<buyTreasureCopy>2</buyTreasureCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>160</traveringEnergy>
+	<vipGift>1:8</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>7</id>
@@ -143,6 +157,8 @@
 	<buyTreasureCopy>2</buyTreasureCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>170</traveringEnergy>
+	<vipGift>1:9</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>8</id>
@@ -161,6 +177,8 @@
 	<buyTreasureCopy>2</buyTreasureCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>180</traveringEnergy>
+	<vipGift>1:10</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>9</id>
@@ -179,6 +197,8 @@
 	<buyTreasureCopy>2</buyTreasureCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>190</traveringEnergy>
+	<vipGift>1:11</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>10</id>
@@ -197,6 +217,8 @@
 	<buyTreasureCopy>3</buyTreasureCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>200</traveringEnergy>
+	<vipGift>1:12</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>11</id>
@@ -215,6 +237,8 @@
 	<buyTreasureCopy>3</buyTreasureCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>210</traveringEnergy>
+	<vipGift>1:13</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>12</id>
@@ -233,6 +257,8 @@
 	<buyTreasureCopy>3</buyTreasureCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>220</traveringEnergy>
+	<vipGift>1:14</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>13</id>
@@ -251,6 +277,8 @@
 	<buyTreasureCopy>3</buyTreasureCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>230</traveringEnergy>
+	<vipGift>1:15</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>14</id>
@@ -269,6 +297,8 @@
 	<buyTreasureCopy>3</buyTreasureCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>240</traveringEnergy>
+	<vipGift>1:16</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 <config>
 	<id>15</id>
@@ -287,5 +317,7 @@
 	<buyTreasureCopy>3</buyTreasureCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>250</traveringEnergy>
+	<vipGift>1:17</vipGift>
+	<giftPrice>100</giftPrice>
 </config>
 </root>

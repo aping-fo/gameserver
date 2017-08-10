@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>11000</id>
 	<group>1</group>
@@ -8,9 +8,10 @@
 	<level>1</level>
 	<finishType>9</finishType>
 	<finishParam>[103,500]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>11003</id>
@@ -20,9 +21,10 @@
 	<level>1</level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,20]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>11004</id>
@@ -32,9 +34,10 @@
 	<level>1</level>
 	<finishType>2</finishType>
 	<finishParam>[3,0,3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>11008</id>
@@ -47,6 +50,7 @@
 	<rewards>[[102,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12000</id>
@@ -59,6 +63,7 @@
 	<rewards>[[102,50],[103,500]]</rewards>
 	<liveness>20</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12001</id>
@@ -71,6 +76,7 @@
 	<rewards>[[102,50],[103,500]]</rewards>
 	<liveness>20</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12002</id>
@@ -80,21 +86,10 @@
 	<level>1</level>
 	<finishType>9</finishType>
 	<finishParam>[103,500]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>20</liveness>
 	<nextTaskId></nextTaskId>
-</config>
-<config>
-	<id>12003</id>
-	<group>30</group>
-	<taskType>2</taskType>
-	<taskName>每日-购买体力</taskName>
-	<level>1</level>
-	<finishType>11</finishType>
-	<finishParam>[1]</finishParam>
-	<rewards>[[102,50],[103,500]]</rewards>
-	<liveness>20</liveness>
-	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12004</id>
@@ -107,6 +102,7 @@
 	<rewards>[[102,50],[103,500]]</rewards>
 	<liveness>20</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12005</id>
@@ -116,9 +112,10 @@
 	<level>10</level>
 	<finishType>4</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12006</id>
@@ -128,9 +125,10 @@
 	<level>20</level>
 	<finishType>5</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12007</id>
@@ -140,9 +138,10 @@
 	<level>20</level>
 	<finishType>14</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12008</id>
@@ -152,9 +151,10 @@
 	<level>1</level>
 	<finishType>12</finishType>
 	<finishParam>[0,3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12009</id>
@@ -164,9 +164,10 @@
 	<level>1</level>
 	<finishType>13</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12010</id>
@@ -176,21 +177,10 @@
 	<level>1</level>
 	<finishType>15</finishType>
 	<finishParam>[1,3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
-</config>
-<config>
-	<id>12011</id>
-	<group>38</group>
-	<taskType>2</taskType>
-	<taskName>每日-参加排位赛</taskName>
-	<level>1</level>
-	<finishType>15</finishType>
-	<finishParam>[2,3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
-	<liveness>10</liveness>
-	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12012</id>
@@ -200,9 +190,10 @@
 	<level>1</level>
 	<finishType>8</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>12013</id>
@@ -212,9 +203,10 @@
 	<level>1</level>
 	<finishType>17</finishType>
 	<finishParam>[0,3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType>[1,104]</functionType>
 </config>
 <config>
 	<id>12014</id>
@@ -224,9 +216,10 @@
 	<level>1</level>
 	<finishType>17</finishType>
 	<finishParam>[1,3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType>[1,104]</functionType>
 </config>
 <config>
 	<id>12015</id>
@@ -236,9 +229,10 @@
 	<level>1</level>
 	<finishType>17</finishType>
 	<finishParam>[2,3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType>[1,104]</functionType>
 </config>
 <config>
 	<id>12016</id>
@@ -248,9 +242,10 @@
 	<level>1</level>
 	<finishType>17</finishType>
 	<finishParam>[3,3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType>[1,104]</functionType>
 </config>
 <config>
 	<id>13000</id>
@@ -260,9 +255,10 @@
 	<level>1</level>
 	<finishType>1</finishType>
 	<finishParam>[0,1,0,10]</finishParam>
-	<rewards>[[102,50],[103,500],[101,5000],[50101,1],[107,50]]</rewards>
+	<rewards>[[102,50],[103,500],[101,50],[50101,1],[107,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>13001</id>
@@ -272,9 +268,10 @@
 	<level>1</level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,100]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>13002</id>
@@ -284,9 +281,10 @@
 	<level>10</level>
 	<finishType>4</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>13003</id>
@@ -296,9 +294,10 @@
 	<level>10</level>
 	<finishType>5</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>13004</id>
@@ -308,9 +307,10 @@
 	<level>10</level>
 	<finishType>14</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>13005</id>
@@ -320,9 +320,10 @@
 	<level>10</level>
 	<finishType>12</finishType>
 	<finishParam>[0,10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>13006</id>
@@ -332,9 +333,10 @@
 	<level>1</level>
 	<finishType>13</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>13007</id>
@@ -344,21 +346,10 @@
 	<level>1</level>
 	<finishType>15</finishType>
 	<finishParam>[1,8]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-</config>
-<config>
-	<id>13008</id>
-	<group>48</group>
-	<taskType>3</taskType>
-	<taskName>挑战-参加排位赛</taskName>
-	<level>1</level>
-	<finishType>15</finishType>
-	<finishParam>[2,8]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
-	<liveness>0</liveness>
-	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>13009</id>
@@ -368,9 +359,10 @@
 	<level>1</level>
 	<finishType>8</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14000</id>
@@ -380,9 +372,10 @@
 	<level>1</level>
 	<finishType>9</finishType>
 	<finishParam>[103,500]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14001</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14001</id>
@@ -392,9 +385,10 @@
 	<level>1</level>
 	<finishType>9</finishType>
 	<finishParam>[103,50000]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14002</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14002</id>
@@ -404,9 +398,10 @@
 	<level>1</level>
 	<finishType>9</finishType>
 	<finishParam>[103,500000]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14003</id>
@@ -416,9 +411,10 @@
 	<level>2</level>
 	<finishType>10</finishType>
 	<finishParam>[103,500000]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14004</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14004</id>
@@ -428,9 +424,10 @@
 	<level>2</level>
 	<finishType>10</finishType>
 	<finishParam>[103,2000000]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14005</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14005</id>
@@ -440,9 +437,10 @@
 	<level>2</level>
 	<finishType>10</finishType>
 	<finishParam>[103,10000000]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14006</id>
@@ -452,9 +450,10 @@
 	<level>3</level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14007</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14007</id>
@@ -464,9 +463,10 @@
 	<level>3</level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,20]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14008</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14008</id>
@@ -476,9 +476,10 @@
 	<level>3</level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,50]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14009</id>
@@ -488,9 +489,10 @@
 	<level>4</level>
 	<finishType>4</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14010</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14010</id>
@@ -500,9 +502,10 @@
 	<level>4</level>
 	<finishType>4</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14011</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14011</id>
@@ -512,9 +515,10 @@
 	<level>4</level>
 	<finishType>4</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14012</id>
@@ -523,10 +527,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
-	<finishParam>[100101,1,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110101,1,0,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14013</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14013</id>
@@ -535,10 +540,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>2</level>
 	<finishType>1</finishType>
-	<finishParam>[100102,1,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110102,1,0,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14014</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14014</id>
@@ -547,10 +553,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>3</level>
 	<finishType>1</finishType>
-	<finishParam>[100103,1,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110103,1,0,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14015</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14015</id>
@@ -559,10 +566,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>4</level>
 	<finishType>1</finishType>
-	<finishParam>[100104,1,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110104,1,0,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14016</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14016</id>
@@ -571,10 +579,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>5</level>
 	<finishType>1</finishType>
-	<finishParam>[100105,1,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110105,1,0,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14017</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14017</id>
@@ -583,1078 +592,1168 @@
 	<taskName>支线-通关副本</taskName>
 	<level>6</level>
 	<finishType>1</finishType>
-	<finishParam>[100106,1,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110106,1,0,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14018</id>
 	<group>68</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备获得</taskName>
-	<level>6</level>
+	<level>10</level>
 	<finishType>3</finishType>
 	<finishParam>[3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14019</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14019</id>
 	<group>69</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备获得</taskName>
-	<level>6</level>
+	<level>10</level>
 	<finishType>3</finishType>
 	<finishParam>[4,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14020</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14020</id>
 	<group>69</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备获得</taskName>
-	<level>6</level>
+	<level>10</level>
 	<finishType>3</finishType>
 	<finishParam>[4,2]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14021</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14021</id>
 	<group>71</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备获得</taskName>
-	<level>6</level>
+	<level>10</level>
 	<finishType>3</finishType>
 	<finishParam>[5,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14022</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14022</id>
 	<group>71</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备获得</taskName>
-	<level>6</level>
+	<level>10</level>
 	<finishType>3</finishType>
 	<finishParam>[5,2]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14023</id>
 	<group>73</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备分解</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>5</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14024</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14024</id>
 	<group>73</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备分解</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>5</finishType>
 	<finishParam>[8]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14025</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14025</id>
 	<group>73</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备分解</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>5</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14026</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14026</id>
 	<group>73</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备分解</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>5</finishType>
 	<finishParam>[15]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14027</id>
 	<group>77</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[2,201,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14028</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14028</id>
 	<group>78</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[3,201,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14029</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14029</id>
 	<group>79</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[5,201,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14030</id>
 	<group>80</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[2,202,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14031</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14031</id>
 	<group>81</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[3,202,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14032</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14032</id>
 	<group>82</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[5,202,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14033</id>
 	<group>83</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[2,203,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14034</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14034</id>
 	<group>84</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[3,203,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14035</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14035</id>
 	<group>85</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[5,203,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14036</id>
 	<group>86</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[2,204,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14037</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14037</id>
 	<group>87</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[3,204,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14038</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14038</id>
 	<group>88</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[5,204,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14039</id>
 	<group>89</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[2,205,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14040</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14040</id>
 	<group>90</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[3,205,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14041</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14041</id>
 	<group>91</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[5,205,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14042</id>
 	<group>92</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[2,206,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14043</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14043</id>
 	<group>93</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[3,206,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14044</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14044</id>
 	<group>94</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[5,206,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14045</id>
 	<group>95</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[10,0,6]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14046</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14046</id>
 	<group>96</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[3,0,6]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14047</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14047</id>
 	<group>97</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备强化</taskName>
-	<level>6</level>
+	<level>20</level>
 	<finishType>4</finishType>
 	<finishParam>[5,0,6]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14048</id>
 	<group>98</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14049</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14049</id>
 	<group>99</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14050</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14050</id>
 	<group>100</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[15]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14051</id>
 	<group>101</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[5,201,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14052</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14052</id>
 	<group>102</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[10,201,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14053</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14053</id>
 	<group>103</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[15,201,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14054</id>
 	<group>104</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[5,202,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14055</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14055</id>
 	<group>105</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[10,202,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14056</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14056</id>
 	<group>106</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[15,202,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14057</id>
 	<group>107</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[5,203,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14058</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14058</id>
 	<group>108</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[10,203,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14059</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14059</id>
 	<group>109</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[15,203,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14060</id>
 	<group>110</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[5,204,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14061</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14061</id>
 	<group>111</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[10,204,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14062</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14062</id>
 	<group>112</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[15,204,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14063</id>
 	<group>113</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[5,205,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14064</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14064</id>
 	<group>114</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[10,205,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14065</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14065</id>
 	<group>115</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[15,205,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14066</id>
 	<group>116</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[5,206,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14067</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14067</id>
 	<group>117</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[10,206,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14068</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14068</id>
 	<group>118</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[15,206,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14069</id>
 	<group>119</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[15,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14070</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14070</id>
 	<group>120</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[30,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14071</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14071</id>
 	<group>121</group>
 	<taskType>4</taskType>
 	<taskName>支线-宝石进阶</taskName>
-	<level>6</level>
+	<level>30</level>
 	<finishType>6</finishType>
 	<finishParam>[45,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14072</id>
 	<group>122</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能升级</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[2,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14073</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14073</id>
 	<group>123</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能升级</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[5,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14074</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14074</id>
 	<group>124</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能升级</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[10,0,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14075</id>
 	<group>125</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能升级</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[2,0,4]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14076</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14076</id>
 	<group>126</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能升级</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[5,0,4]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14077</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14077</id>
 	<group>125</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能升级</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[2,0,4]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14078</id>
 	<group>128</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[0,1,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14079</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14079</id>
 	<group>129</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[0,2,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14080</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14080</id>
 	<group>130</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[0,3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14081</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14081</id>
 	<group>131</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[0,4,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14082</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14082</id>
 	<group>132</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
-	<level>7</level>
+	<level>40</level>
 	<finishType>7</finishType>
 	<finishParam>[0,5,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14083</id>
 	<group>133</group>
 	<taskType>4</taskType>
 	<taskName>支线-卡片升级</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>8</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14084</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14084</id>
 	<group>133</group>
 	<taskType>4</taskType>
 	<taskName>支线-卡片升级</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>8</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14085</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14085</id>
 	<group>133</group>
 	<taskType>4</taskType>
 	<taskName>支线-卡片升级</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>8</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14086</id>
 	<group>136</group>
 	<taskType>4</taskType>
 	<taskName>支线-卡片升级</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>8</finishType>
 	<finishParam>[2,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14087</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14087</id>
 	<group>136</group>
 	<taskType>4</taskType>
 	<taskName>支线-卡片升级</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>8</finishType>
 	<finishParam>[2,2]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14088</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14088</id>
 	<group>136</group>
 	<taskType>4</taskType>
 	<taskName>支线-卡片升级</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>8</finishType>
 	<finishParam>[2,3]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14089</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14089</id>
 	<group>136</group>
 	<taskType>4</taskType>
 	<taskName>支线-卡片升级</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>8</finishType>
 	<finishParam>[2,4]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14090</id>
 	<group>140</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备升星</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>5</finishType>
 	<finishParam>[0,2]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14091</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14091</id>
 	<group>140</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备升星</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>5</finishType>
 	<finishParam>[0,3]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14092</id>
 	<group>142</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备洗练</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>13</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14093</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14093</id>
 	<group>142</group>
 	<taskType>4</taskType>
 	<taskName>支线-装备洗练</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>13</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14094</id>
 	<group>144</group>
 	<taskType>4</taskType>
 	<taskName>支线-参加竞技场</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>15</finishType>
 	<finishParam>[1,8]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14095</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14095</id>
 	<group>144</group>
 	<taskType>4</taskType>
 	<taskName>支线-参加竞技场</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>15</finishType>
 	<finishParam>[1,10]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14096</id>
 	<group>146</group>
 	<taskType>4</taskType>
 	<taskName>支线-参加排位赛</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>15</finishType>
 	<finishParam>[2,8]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14097</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14097</id>
 	<group>146</group>
 	<taskType>4</taskType>
 	<taskName>支线-参加排位赛</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>15</finishType>
 	<finishParam>[2,10]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14098</id>
 	<group>148</group>
 	<taskType>4</taskType>
 	<taskName>支线-合成卡牌</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>14</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14099</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14099</id>
 	<group>148</group>
 	<taskType>4</taskType>
 	<taskName>支线-合成卡牌</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>14</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14100</id>
 	<group>150</group>
 	<taskType>4</taskType>
 	<taskName>支线-获得卡牌</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>14</finishType>
 	<finishParam>[2,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14101</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14101</id>
 	<group>151</group>
 	<taskType>4</taskType>
 	<taskName>支线-获得卡牌</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>14</finishType>
 	<finishParam>[3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14102</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14102</id>
 	<group>152</group>
 	<taskType>4</taskType>
 	<taskName>支线-获得卡牌</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>14</finishType>
 	<finishParam>[4,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14103</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14103</id>
 	<group>153</group>
 	<taskType>4</taskType>
 	<taskName>支线-获得卡牌</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>14</finishType>
 	<finishParam>[5,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14104</id>
 	<group>154</group>
 	<taskType>4</taskType>
 	<taskName>支线-神器解密</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>16</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14105</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14105</id>
 	<group>154</group>
 	<taskType>4</taskType>
 	<taskName>支线-神器解密</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>16</finishType>
 	<finishParam>[2]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14106</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14106</id>
 	<group>154</group>
 	<taskType>4</taskType>
 	<taskName>支线-神器解密</taskName>
-	<level>7</level>
+	<level>50</level>
 	<finishType>16</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14107</id>
@@ -1663,10 +1762,11 @@
 	<taskName>支线-击杀守陵将军</taskName>
 	<level>1</level>
 	<finishType>2</finishType>
-	<finishParam>[0,110013,10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<finishParam>[0,10111,10]</finishParam>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14108</id>
@@ -1675,10 +1775,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
-	<finishParam>[100101,1,3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110101,1,3,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14109</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14109</id>
@@ -1687,10 +1788,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
-	<finishParam>[100102,1,3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110102,1,3,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14110</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14110</id>
@@ -1699,10 +1801,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
-	<finishParam>[100103,1,3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110103,1,3,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14111</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14111</id>
@@ -1711,10 +1814,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
-	<finishParam>[100104,1,3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110104,1,3,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14112</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14112</id>
@@ -1723,10 +1827,11 @@
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
-	<finishParam>[100105,1,3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110105,1,3,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14113</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14113</id>
@@ -1735,82 +1840,89 @@
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
-	<finishParam>[100106,1,3,1]</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<finishParam>[110106,1,3,1]</finishParam>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14114</id>
 	<group>177</group>
 	<taskType>4</taskType>
 	<taskName>支线-无尽漩涡</taskName>
-	<level>1</level>
+	<level>60</level>
 	<finishType>18</finishType>
 	<finishParam>3</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14115</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14115</id>
 	<group>178</group>
 	<taskType>4</taskType>
 	<taskName>支线-无尽漩涡</taskName>
-	<level>1</level>
+	<level>60</level>
 	<finishType>18</finishType>
 	<finishParam>4</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14116</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14116</id>
 	<group>179</group>
 	<taskType>4</taskType>
 	<taskName>支线-无尽漩涡</taskName>
-	<level>1</level>
+	<level>60</level>
 	<finishType>18</finishType>
 	<finishParam>5</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14117</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14117</id>
 	<group>180</group>
 	<taskType>4</taskType>
 	<taskName>支线-无尽漩涡</taskName>
-	<level>1</level>
+	<level>60</level>
 	<finishType>18</finishType>
 	<finishParam>8</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14118</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14118</id>
 	<group>181</group>
 	<taskType>4</taskType>
 	<taskName>支线-无尽漩涡</taskName>
-	<level>1</level>
+	<level>60</level>
 	<finishType>18</finishType>
 	<finishParam>10</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14119</nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>14119</id>
 	<group>182</group>
 	<taskType>4</taskType>
 	<taskName>支线-无尽漩涡</taskName>
-	<level>1</level>
+	<level>60</level>
 	<finishType>18</finishType>
 	<finishParam>15</finishParam>
-	<rewards>[[101,500],[103,500]]</rewards>
+	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15001</id>
@@ -1820,9 +1932,10 @@
 	<level>1</level>
 	<finishType>9</finishType>
 	<finishParam>[103,500]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15002</id>
@@ -1832,9 +1945,10 @@
 	<level>1</level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,100]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15003</id>
@@ -1844,9 +1958,10 @@
 	<level>1</level>
 	<finishType>10</finishType>
 	<finishParam>[103,1000000]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15004</id>
@@ -1859,6 +1974,7 @@
 	<rewards>[[102,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15005</id>
@@ -1868,9 +1984,10 @@
 	<level>1</level>
 	<finishType>4</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15006</id>
@@ -1880,9 +1997,10 @@
 	<level>1</level>
 	<finishType>5</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15007</id>
@@ -1892,21 +2010,10 @@
 	<level>1</level>
 	<finishType>14</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-</config>
-<config>
-	<id>15008</id>
-	<group>164</group>
-	<taskType>5</taskType>
-	<taskName>公会-购买体力</taskName>
-	<level>1</level>
-	<finishType>11</finishType>
-	<finishParam>[1]</finishParam>
-	<rewards>[[102,50],[103,500]]</rewards>
-	<liveness>0</liveness>
-	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15009</id>
@@ -1916,9 +2023,10 @@
 	<level>1</level>
 	<finishType>10</finishType>
 	<finishParam>[103,10000]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15010</id>
@@ -1931,6 +2039,7 @@
 	<rewards>[[102,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15011</id>
@@ -1940,9 +2049,10 @@
 	<level>1</level>
 	<finishType>4</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15012</id>
@@ -1952,9 +2062,10 @@
 	<level>1</level>
 	<finishType>5</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 <config>
 	<id>15013</id>
@@ -1964,8 +2075,22 @@
 	<level>1</level>
 	<finishType>14</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[101,5000],[102,50],[103,50]]</rewards>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
+	<functionType></functionType>
+</config>
+<config>
+	<id>15014</id>
+	<group>170</group>
+	<taskType>5</taskType>
+	<taskName>公会-公会捐献</taskName>
+	<level>1</level>
+	<finishType>17</finishType>
+	<finishParam>[3,3]</finishParam>
+	<rewards>[[101,50],[102,50],[103,50]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType></functionType>
 </config>
 </root>

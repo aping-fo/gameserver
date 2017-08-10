@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
 	<type>0</type>
@@ -8,6 +8,21 @@
 <config>
 	<id>2</id>
 	<type>0</type>
-	<msg>{0}</msg>
+	<msg>世界BOSS活动将于{0}分钟后开启,参与活动可获得大量奖励！</msg>
+</config>
+<config>
+	<id>3</id>
+	<type>0</type>
+	<msg>世界BOSS活动已经开启,玩家请前往击杀</msg>
+</config>
+<config>
+	<id>4</id>
+	<type>0</type>
+	<msg>世界BOSS活动已经结束,敬请期待下一次活动！</msg>
+</config>
+<config>
+	<id>5</id>
+	<type>0</type>
+	<msg>玩家{0}奋力一击,杀死{1}！</msg>
 </config>
 </root>

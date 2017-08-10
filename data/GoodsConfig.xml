@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>101</id>
 	<atlas>Goods</atlas>
@@ -371,8 +371,8 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[800101,20]</param1>
-	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8]]</param2>
+	<param1>[800111]</param1>
+	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8,9]]</param2>
 	<rare></rare>
 </config>
 <config>
@@ -396,8 +396,8 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[800101,20]</param1>
-	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8]]</param2>
+	<param1>[800112]</param1>
+	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8,9]]</param2>
 	<rare></rare>
 </config>
 <config>
@@ -421,8 +421,8 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[800101,20]</param1>
-	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8]]</param2>
+	<param1>[800113]</param1>
+	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8,9]]</param2>
 	<rare></rare>
 </config>
 <config>
@@ -446,8 +446,8 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[800101,20]</param1>
-	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8]]</param2>
+	<param1>[800114]</param1>
+	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8,9]]</param2>
 	<rare></rare>
 </config>
 <config>
@@ -471,8 +471,8 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[800101,20]</param1>
-	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8]]</param2>
+	<param1>[800114]</param1>
+	<param2>[[1,1,1,1,1,1,1,1],[1,2,3,4,5,6,7,8,9]]</param2>
 	<rare></rare>
 </config>
 <config>
@@ -736,15 +736,15 @@
 	<type>201</type>
 	<level>1</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -761,15 +761,15 @@
 	<type>202</type>
 	<level>1</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -786,15 +786,15 @@
 	<type>203</type>
 	<level>1</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -811,15 +811,15 @@
 	<type>204</type>
 	<level>1</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -836,15 +836,15 @@
 	<type>205</type>
 	<level>1</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -861,15 +861,15 @@
 	<type>206</type>
 	<level>1</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -886,15 +886,15 @@
 	<type>201</type>
 	<level>1</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -911,15 +911,15 @@
 	<type>202</type>
 	<level>1</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -936,15 +936,15 @@
 	<type>203</type>
 	<level>1</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -961,15 +961,15 @@
 	<type>204</type>
 	<level>1</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -986,15 +986,15 @@
 	<type>205</type>
 	<level>1</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -1011,15 +1011,15 @@
 	<type>206</type>
 	<level>1</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -1036,15 +1036,15 @@
 	<type>201</type>
 	<level>1</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -1061,15 +1061,15 @@
 	<type>202</type>
 	<level>1</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -1086,15 +1086,15 @@
 	<type>203</type>
 	<level>1</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -1111,15 +1111,15 @@
 	<type>204</type>
 	<level>1</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -1136,15 +1136,15 @@
 	<type>205</type>
 	<level>1</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>1</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
 	<fu>1</fu>
 	<param1></param1>
 	<param2></param2>
@@ -1161,16 +1161,91 @@
 	<type>206</type>
 	<level>1</level>
 	<vocation>3</vocation>
+	<color>1</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>1</hp>
+	<attack>1</attack>
+	<defense>1</defense>
+	<symptom>1</symptom>
+	<crit>1</crit>
+	<fu>1</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>20201666</id>
+	<atlas>Equip</atlas>
+	<name>战士测试武器</name>
+	<decompose>[[108,100]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>201</type>
+	<level>1</level>
+	<vocation>1</vocation>
 	<color>5</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
-	<hp>100</hp>
-	<attack>100</attack>
-	<defense>100</defense>
-	<symptom>100</symptom>
-	<crit>100</crit>
-	<fu>1</fu>
+	<hp>1000000</hp>
+	<attack>10000</attack>
+	<defense>100000</defense>
+	<symptom>10000</symptom>
+	<crit>10000</crit>
+	<fu>10000</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>20202666</id>
+	<atlas>Equip</atlas>
+	<name>法师测试武器</name>
+	<decompose>[[108,100]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>201</type>
+	<level>1</level>
+	<vocation>2</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>1000000</hp>
+	<attack>10000</attack>
+	<defense>100000</defense>
+	<symptom>10000</symptom>
+	<crit>10000</crit>
+	<fu>10000</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>20203666</id>
+	<atlas>Equip</atlas>
+	<name>刺客测试武器</name>
+	<decompose>[[108,100]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>201</type>
+	<level>1</level>
+	<vocation>3</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>1000000</hp>
+	<attack>10000</attack>
+	<defense>100000</defense>
+	<symptom>10000</symptom>
+	<crit>10000</crit>
+	<fu>10000</fu>
 	<param1></param1>
 	<param2></param2>
 	<rare></rare>
@@ -1203,8 +1278,8 @@
 <config>
 	<id>4011001</id>
 	<atlas>Artifacticon</atlas>
-	<name>神器1部件1</name>
-	<decompose>[[400001,10]]</decompose>
+	<name>摸金符部件1</name>
+	<decompose>[[400001,50]]</decompose>
 	<copys></copys>
 	<buyPrice>0</buyPrice>
 	<sellPrice>0</sellPrice>
@@ -1228,8 +1303,8 @@
 <config>
 	<id>4011002</id>
 	<atlas>Artifacticon</atlas>
-	<name>神器1部件2</name>
-	<decompose>[[400001,11]]</decompose>
+	<name>摸金符部件2</name>
+	<decompose>[[400001,50]]</decompose>
 	<copys></copys>
 	<buyPrice>0</buyPrice>
 	<sellPrice>0</sellPrice>
@@ -1253,8 +1328,8 @@
 <config>
 	<id>4011003</id>
 	<atlas>Artifacticon</atlas>
-	<name>神器1部件3</name>
-	<decompose>[[400001,12]]</decompose>
+	<name>摸金符部件3</name>
+	<decompose>[[400001,50]]</decompose>
 	<copys></copys>
 	<buyPrice>0</buyPrice>
 	<sellPrice>0</sellPrice>
@@ -1278,8 +1353,8 @@
 <config>
 	<id>4011004</id>
 	<atlas>Artifacticon</atlas>
-	<name>神器1部件4</name>
-	<decompose>[[400001,13]]</decompose>
+	<name>摸金符部件4</name>
+	<decompose>[[400001,50]]</decompose>
 	<copys></copys>
 	<buyPrice>0</buyPrice>
 	<sellPrice>0</sellPrice>
@@ -1303,8 +1378,8 @@
 <config>
 	<id>4011005</id>
 	<atlas>Artifacticon</atlas>
-	<name>神器1部件5</name>
-	<decompose>[[400001,14]]</decompose>
+	<name>摸金符部件5</name>
+	<decompose>[[400001,50]]</decompose>
 	<copys></copys>
 	<buyPrice>0</buyPrice>
 	<sellPrice>0</sellPrice>
@@ -1328,8 +1403,533 @@
 <config>
 	<id>4011006</id>
 	<atlas>Artifacticon</atlas>
-	<name>神器1部件6</name>
-	<decompose>[[400001,15]]</decompose>
+	<name>摸金符部件6</name>
+	<decompose>[[400001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>500001</id>
+	<atlas>Goods</atlas>
+	<name>神器碎片</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>400</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>5011001</id>
+	<atlas>Artifacticon</atlas>
+	<name>蝎王戒部件1</name>
+	<decompose>[[500001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>5011002</id>
+	<atlas>Artifacticon</atlas>
+	<name>蝎王戒部件2</name>
+	<decompose>[[500001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>5011003</id>
+	<atlas>Artifacticon</atlas>
+	<name>蝎王戒部件3</name>
+	<decompose>[[500001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>5011004</id>
+	<atlas>Artifacticon</atlas>
+	<name>蝎王戒部件4</name>
+	<decompose>[[500001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>5011005</id>
+	<atlas>Artifacticon</atlas>
+	<name>蝎王戒部件5</name>
+	<decompose>[[500001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>5011006</id>
+	<atlas>Artifacticon</atlas>
+	<name>蝎王戒部件6</name>
+	<decompose>[[500001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>600001</id>
+	<atlas>Goods</atlas>
+	<name>神器碎片</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>400</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>6011001</id>
+	<atlas>Artifacticon</atlas>
+	<name>月牙石部件1</name>
+	<decompose>[[600001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>6011002</id>
+	<atlas>Artifacticon</atlas>
+	<name>月牙石部件2</name>
+	<decompose>[[600001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>6011003</id>
+	<atlas>Artifacticon</atlas>
+	<name>月牙石部件3</name>
+	<decompose>[[600001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>6011004</id>
+	<atlas>Artifacticon</atlas>
+	<name>月牙石部件4</name>
+	<decompose>[[600001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>6011005</id>
+	<atlas>Artifacticon</atlas>
+	<name>月牙石部件5</name>
+	<decompose>[[600001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>6011006</id>
+	<atlas>Artifacticon</atlas>
+	<name>月牙石部件6</name>
+	<decompose>[[600001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>700001</id>
+	<atlas>Goods</atlas>
+	<name>神器碎片</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>400</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>7011001</id>
+	<atlas>Artifacticon</atlas>
+	<name>镇魂灯部件1</name>
+	<decompose>[[700001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>7011002</id>
+	<atlas>Artifacticon</atlas>
+	<name>镇魂灯部件2</name>
+	<decompose>[[700001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>7011003</id>
+	<atlas>Artifacticon</atlas>
+	<name>镇魂灯部件3</name>
+	<decompose>[[700001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>7011004</id>
+	<atlas>Artifacticon</atlas>
+	<name>镇魂灯部件4</name>
+	<decompose>[[700001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>7011005</id>
+	<atlas>Artifacticon</atlas>
+	<name>镇魂灯部件5</name>
+	<decompose>[[700001,50]]</decompose>
+	<copys></copys>
+	<buyPrice>0</buyPrice>
+	<sellPrice>0</sellPrice>
+	<type>401</type>
+	<level>1</level>
+	<vocation>0</vocation>
+	<color>5</color>
+	<maxStack>999999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>7011006</id>
+	<atlas>Artifacticon</atlas>
+	<name>镇魂灯部件6</name>
+	<decompose>[[700001,50]]</decompose>
 	<copys></copys>
 	<buyPrice>0</buyPrice>
 	<sellPrice>0</sellPrice>
@@ -1409,7 +2009,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>2</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>2</color>
 	<maxStack>1</maxStack>
@@ -1434,7 +2034,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>3</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>3</color>
 	<maxStack>1</maxStack>
@@ -1447,6 +2047,56 @@
 	<crit></crit>
 	<fu></fu>
 	<param1>[1010301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50104</id>
+	<atlas>Skillcard</atlas>
+	<name>眩晕卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1010401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50105</id>
+	<atlas>Skillcard</atlas>
+	<name>眩晕卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1010501]</param1>
 	<param2></param2>
 	<rare>1</rare>
 </config>
@@ -1484,7 +2134,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>2</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>2</color>
 	<maxStack>1</maxStack>
@@ -1503,13 +2153,13 @@
 <config>
 	<id>50203</id>
 	<atlas>Skillcard</atlas>
-	<name>冰冻卡等级D</name>
+	<name>冰冻卡等级B</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>3</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>3</color>
 	<maxStack>1</maxStack>
@@ -1524,6 +2174,56 @@
 	<param1>[1020301]</param1>
 	<param2></param2>
 	<rare></rare>
+</config>
+<config>
+	<id>50204</id>
+	<atlas>Skillcard</atlas>
+	<name>冰冻卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1020401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50205</id>
+	<atlas>Skillcard</atlas>
+	<name>冰冻卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1020501]</param1>
+	<param2></param2>
+	<rare>1</rare>
 </config>
 <config>
 	<id>50301</id>
@@ -1559,7 +2259,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>2</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>2</color>
 	<maxStack>1</maxStack>
@@ -1584,7 +2284,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>3</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>3</color>
 	<maxStack>1</maxStack>
@@ -1599,6 +2299,56 @@
 	<param1>[1030301]</param1>
 	<param2></param2>
 	<rare></rare>
+</config>
+<config>
+	<id>50304</id>
+	<atlas>Skillcard</atlas>
+	<name>石化卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1030401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50305</id>
+	<atlas>Skillcard</atlas>
+	<name>石化卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1030501]</param1>
+	<param2></param2>
+	<rare>1</rare>
 </config>
 <config>
 	<id>50401</id>
@@ -1634,7 +2384,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>2</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>2</color>
 	<maxStack>1</maxStack>
@@ -1659,7 +2409,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>3</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>3</color>
 	<maxStack>1</maxStack>
@@ -1674,6 +2424,56 @@
 	<param1>[1040301]</param1>
 	<param2></param2>
 	<rare></rare>
+</config>
+<config>
+	<id>50404</id>
+	<atlas>Skillcard</atlas>
+	<name>中毒卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1040401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50405</id>
+	<atlas>Skillcard</atlas>
+	<name>中毒卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1040501]</param1>
+	<param2></param2>
+	<rare>1</rare>
 </config>
 <config>
 	<id>50501</id>
@@ -1709,7 +2509,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>2</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>2</color>
 	<maxStack>1</maxStack>
@@ -1734,7 +2534,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>3</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>3</color>
 	<maxStack>1</maxStack>
@@ -1749,6 +2549,56 @@
 	<param1>[1050301]</param1>
 	<param2></param2>
 	<rare></rare>
+</config>
+<config>
+	<id>50504</id>
+	<atlas>Skillcard</atlas>
+	<name>灼烧卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1050401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50505</id>
+	<atlas>Skillcard</atlas>
+	<name>灼烧卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1050501]</param1>
+	<param2></param2>
+	<rare>1</rare>
 </config>
 <config>
 	<id>50601</id>
@@ -1784,7 +2634,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>2</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>2</color>
 	<maxStack>1</maxStack>
@@ -1809,7 +2659,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>3</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>3</color>
 	<maxStack>1</maxStack>
@@ -1826,9 +2676,59 @@
 	<rare></rare>
 </config>
 <config>
+	<id>50604</id>
+	<atlas>Skillcard</atlas>
+	<name>流血卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1060401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50605</id>
+	<atlas>Skillcard</atlas>
+	<name>流血卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1060501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
 	<id>50801</id>
 	<atlas>Skillcard</atlas>
-	<name>主属性增益卡D</name>
+	<name>威力增益卡D</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
@@ -1853,13 +2753,13 @@
 <config>
 	<id>50802</id>
 	<atlas>Skillcard</atlas>
-	<name>主属性增益卡C</name>
+	<name>威力增益卡C</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>2</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>2</color>
 	<maxStack>1</maxStack>
@@ -1878,13 +2778,13 @@
 <config>
 	<id>50803</id>
 	<atlas>Skillcard</atlas>
-	<name>主属性增益卡B</name>
+	<name>威力增益卡B</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>3</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>3</color>
 	<maxStack>1</maxStack>
@@ -1899,6 +2799,681 @@
 	<param1>[1080301]</param1>
 	<param2></param2>
 	<rare></rare>
+</config>
+<config>
+	<id>50804</id>
+	<atlas>Skillcard</atlas>
+	<name>威力增益卡A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1080401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50805</id>
+	<atlas>Skillcard</atlas>
+	<name>威力增益卡S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1080501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50811</id>
+	<atlas>Skillcard</atlas>
+	<name>防御增益卡D</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1081101]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50812</id>
+	<atlas>Skillcard</atlas>
+	<name>防御增益卡C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1081201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50813</id>
+	<atlas>Skillcard</atlas>
+	<name>防御增益卡B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1081301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50814</id>
+	<atlas>Skillcard</atlas>
+	<name>防御增益卡A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1081401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50815</id>
+	<atlas>Skillcard</atlas>
+	<name>防御增益卡S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1081501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50821</id>
+	<atlas>Skillcard</atlas>
+	<name>生命增益卡D</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1082101]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50822</id>
+	<atlas>Skillcard</atlas>
+	<name>生命增益卡C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1082201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50823</id>
+	<atlas>Skillcard</atlas>
+	<name>生命增益卡B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1082301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50824</id>
+	<atlas>Skillcard</atlas>
+	<name>生命增益卡A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1082401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50825</id>
+	<atlas>Skillcard</atlas>
+	<name>生命增益卡S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1082501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50831</id>
+	<atlas>Skillcard</atlas>
+	<name>暴击增益卡D</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1083101]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50832</id>
+	<atlas>Skillcard</atlas>
+	<name>暴击增益卡C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1083201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50833</id>
+	<atlas>Skillcard</atlas>
+	<name>暴击增益卡B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1083301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50834</id>
+	<atlas>Skillcard</atlas>
+	<name>暴击增益卡A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1083401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50835</id>
+	<atlas>Skillcard</atlas>
+	<name>暴击增益卡S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1083501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50841</id>
+	<atlas>Skillcard</atlas>
+	<name>异常增益卡D</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1084101]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50842</id>
+	<atlas>Skillcard</atlas>
+	<name>异常增益卡C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1084201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50843</id>
+	<atlas>Skillcard</atlas>
+	<name>异常增益卡B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1084301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50844</id>
+	<atlas>Skillcard</atlas>
+	<name>异常增益卡A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1084401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50845</id>
+	<atlas>Skillcard</atlas>
+	<name>异常增益卡S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1084501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50851</id>
+	<atlas>Skillcard</atlas>
+	<name>暴伤增益卡D</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1085101]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50852</id>
+	<atlas>Skillcard</atlas>
+	<name>暴伤增益卡C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1085201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50853</id>
+	<atlas>Skillcard</atlas>
+	<name>暴伤增益卡B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1085301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50854</id>
+	<atlas>Skillcard</atlas>
+	<name>暴伤增益卡A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1085401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50855</id>
+	<atlas>Skillcard</atlas>
+	<name>暴伤增益卡S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1085501]</param1>
+	<param2></param2>
+	<rare>1</rare>
 </config>
 <config>
 	<id>51001</id>
@@ -1934,7 +3509,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>2</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>2</color>
 	<maxStack>1</maxStack>
@@ -1959,7 +3534,7 @@
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>121</type>
-	<level>3</level>
+	<level>1</level>
 	<vocation></vocation>
 	<color>3</color>
 	<maxStack>1</maxStack>
@@ -1976,9 +3551,59 @@
 	<rare></rare>
 </config>
 <config>
+	<id>51004</id>
+	<atlas>Skillcard</atlas>
+	<name>减CD卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1100401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51005</id>
+	<atlas>Skillcard</atlas>
+	<name>减CD卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1100501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
 	<id>51201</id>
 	<atlas>Skillcard</atlas>
-	<name>浮动卡等级D</name>
+	<name>伤害浮动等级D</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
@@ -1999,6 +3624,106 @@
 	<param1>[1120101]</param1>
 	<param2></param2>
 	<rare></rare>
+</config>
+<config>
+	<id>51202</id>
+	<atlas>Skillcard</atlas>
+	<name>伤害浮动等级C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1120201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51203</id>
+	<atlas>Skillcard</atlas>
+	<name>伤害浮动等级B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1120301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51204</id>
+	<atlas>Skillcard</atlas>
+	<name>伤害浮动等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1120401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51205</id>
+	<atlas>Skillcard</atlas>
+	<name>伤害浮动等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1120501]</param1>
+	<param2></param2>
+	<rare>1</rare>
 </config>
 <config>
 	<id>50901</id>
@@ -2026,7 +3751,107 @@
 	<rare></rare>
 </config>
 <config>
-	<id>51401</id>
+	<id>50902</id>
+	<atlas>Skillcard</atlas>
+	<name>霸体卡等级C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1090201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50903</id>
+	<atlas>Skillcard</atlas>
+	<name>霸体卡等级B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1090301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50904</id>
+	<atlas>Skillcard</atlas>
+	<name>霸体卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1090401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50905</id>
+	<atlas>Skillcard</atlas>
+	<name>霸体卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1090501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51301</id>
 	<atlas>Skillcard</atlas>
 	<name>吸血卡等级D</name>
 	<decompose></decompose>
@@ -2046,12 +3871,112 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[1140101]</param1>
+	<param1>[1130101]</param1>
 	<param2></param2>
 	<rare></rare>
 </config>
 <config>
-	<id>51501</id>
+	<id>51302</id>
+	<atlas>Skillcard</atlas>
+	<name>吸血卡等级C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1130201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51303</id>
+	<atlas>Skillcard</atlas>
+	<name>吸血卡等级B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1130301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51304</id>
+	<atlas>Skillcard</atlas>
+	<name>吸血卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1130401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51305</id>
+	<atlas>Skillcard</atlas>
+	<name>吸血卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1130501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51701</id>
 	<atlas>Skillcard</atlas>
 	<name>反伤卡等级D</name>
 	<decompose></decompose>
@@ -2071,14 +3996,114 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[2080101]</param1>
+	<param1>[1170101]</param1>
 	<param2></param2>
 	<rare></rare>
 </config>
 <config>
-	<id>51601</id>
+	<id>51702</id>
 	<atlas>Skillcard</atlas>
-	<name>回复卡等级D</name>
+	<name>反伤卡等级C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1170201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51703</id>
+	<atlas>Skillcard</atlas>
+	<name>反伤卡等级B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1170301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51704</id>
+	<atlas>Skillcard</atlas>
+	<name>反伤卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1170401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51705</id>
+	<atlas>Skillcard</atlas>
+	<name>反伤卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1170501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50881</id>
+	<atlas>Skillcard</atlas>
+	<name>治疗卡等级D</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
@@ -2096,14 +4121,14 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[3080101]</param1>
+	<param1>[1088101]</param1>
 	<param2></param2>
 	<rare></rare>
 </config>
 <config>
-	<id>51701</id>
+	<id>50882</id>
 	<atlas>Skillcard</atlas>
-	<name>合成卡</name>
+	<name>治疗卡等级C</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
@@ -2121,14 +4146,114 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[3090101]</param1>
+	<param1>[1088201]</param1>
 	<param2></param2>
 	<rare></rare>
 </config>
 <config>
-	<id>51801</id>
+	<id>50883</id>
 	<atlas>Skillcard</atlas>
-	<name>合成卡</name>
+	<name>治疗卡等级B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1088301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>50884</id>
+	<atlas>Skillcard</atlas>
+	<name>治疗卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1088401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>50885</id>
+	<atlas>Skillcard</atlas>
+	<name>治疗卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1088501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51901</id>
+	<atlas>Skillcard</atlas>
+	<name>破甲卡等级D</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1190101]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51902</id>
+	<atlas>Skillcard</atlas>
+	<name>破甲卡等级C</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
@@ -2146,9 +4271,234 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[3100101]</param1>
+	<param1>[1190201]</param1>
 	<param2></param2>
 	<rare></rare>
+</config>
+<config>
+	<id>51903</id>
+	<atlas>Skillcard</atlas>
+	<name>破甲卡等级B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1190301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51904</id>
+	<atlas>Skillcard</atlas>
+	<name>破甲卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1190401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51905</id>
+	<atlas>Skillcard</atlas>
+	<name>破甲卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1190501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51601</id>
+	<atlas>Skillcard</atlas>
+	<name>重伤卡等级D</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1160101]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51602</id>
+	<atlas>Skillcard</atlas>
+	<name>重伤卡等级C</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>2</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1160201]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51603</id>
+	<atlas>Skillcard</atlas>
+	<name>重伤卡等级B</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>3</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1160301]</param1>
+	<param2></param2>
+	<rare></rare>
+</config>
+<config>
+	<id>51604</id>
+	<atlas>Skillcard</atlas>
+	<name>重伤卡等级A</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>4</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1160401]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>51605</id>
+	<atlas>Skillcard</atlas>
+	<name>重伤卡等级S</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[1160501]</param1>
+	<param2></param2>
+	<rare>1</rare>
+</config>
+<config>
+	<id>59901</id>
+	<atlas>Skillcard</atlas>
+	<name>经验卡</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>121</type>
+	<level>1</level>
+	<vocation></vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[2200501]</param1>
+	<param2></param2>
+	<rare>1</rare>
 </config>
 <config>
 	<id>60001</id>

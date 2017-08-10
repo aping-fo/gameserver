@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>0</id>
 	<tips>成功</tips>
@@ -158,7 +158,7 @@
 </config>
 <config>
 	<id>1204</id>
-	<tips>强化失败,等级保持不变</tips>
+	<tips>强化失败,返还50%材料</tips>
 </config>
 <config>
 	<id>1301</id>
@@ -405,6 +405,10 @@
 	<tips>重复时装补偿</tips>
 </config>
 <config>
+	<id>3710</id>
+	<tips>时装已经过期</tips>
+</config>
+<config>
 	<id>3702</id>
 	<tips>尊敬的玩家,由于你已经拥有时装:%s 了,不能重复获得,现在补充对应的钻石给你！</tips>
 </config>
@@ -418,15 +422,15 @@
 </config>
 <config>
 	<id>3705</id>
-	<tips>公会练功房暂时未开启</tips>
+	<tips>宴会暂时未开启</tips>
 </config>
 <config>
 	<id>3706</id>
-	<tips>公会练功房奖励标题</tips>
+	<tips>宴会奖励标题</tips>
 </config>
 <config>
 	<id>3707</id>
-	<tips>公会练功房奖励内容</tips>
+	<tips>宴会奖励内容</tips>
 </config>
 <config>
 	<id>3708</id>
@@ -469,15 +473,63 @@
 	<tips>还有队员未准备好</tips>
 </config>
 <config>
-	<id>3811</id>
+	<id>3851</id>
 	<tips>已经签到过</tips>
 </config>
 <config>
-	<id>3812</id>
+	<id>3852</id>
 	<tips>组队中不能进入其它战斗!</tips>
 </config>
 <config>
-	<id>3813</id>
+	<id>3853</id>
 	<tips>你已在队伍中,不能再加入别的队伍</tips>
+</config>
+<config>
+	<id>3901</id>
+	<tips>活动已结束</tips>
+</config>
+<config>
+	<id>3902</id>
+	<tips>挑战的BOSS已经死亡</tips>
+</config>
+<config>
+	<id>3903</id>
+	<tips>激活相同部件,返还50%材料</tips>
+</config>
+<config>
+	<id>3904</id>
+	<tips>最后一击奖励</tips>
+</config>
+<config>
+	<id>3905</id>
+	<tips>最后一击奖励</tips>
+</config>
+<config>
+	<id>3906</id>
+	<tips>排名奖励</tips>
+</config>
+<config>
+	<id>3907</id>
+	<tips>排名奖励</tips>
+</config>
+<config>
+	<id>3908</id>
+	<tips>击杀奖励</tips>
+</config>
+<config>
+	<id>3909</id>
+	<tips>击杀奖励</tips>
+</config>
+<config>
+	<id>3910</id>
+	<tips>购买次数已满</tips>
+</config>
+<config>
+	<id>4001</id>
+	<tips>挑战次数不足</tips>
+</config>
+<config>
+	<id>4002</id>
+	<tips>今天购买次数已用完</tips>
 </config>
 </root>

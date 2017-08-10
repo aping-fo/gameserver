@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>201000</id>
 	<type>201</type>
@@ -18,7 +18,7 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>1</lev>
-	<exp>101</exp>
+	<exp>120</exp>
 	<hp></hp>
 	<attack>10</attack>
 	<defense></defense>
@@ -31,7 +31,7 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>2</lev>
-	<exp>102</exp>
+	<exp>140</exp>
 	<hp></hp>
 	<attack>10</attack>
 	<defense></defense>
@@ -44,7 +44,7 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>3</lev>
-	<exp>103</exp>
+	<exp>160</exp>
 	<hp></hp>
 	<attack>10</attack>
 	<defense></defense>
@@ -57,7 +57,7 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>4</lev>
-	<exp>104</exp>
+	<exp>180</exp>
 	<hp></hp>
 	<attack>10</attack>
 	<defense></defense>
@@ -70,7 +70,7 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>5</lev>
-	<exp>105</exp>
+	<exp>200</exp>
 	<hp></hp>
 	<attack>10</attack>
 	<defense></defense>
@@ -83,7 +83,7 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>6</lev>
-	<exp>106</exp>
+	<exp>250</exp>
 	<hp></hp>
 	<attack>20</attack>
 	<defense></defense>
@@ -96,7 +96,7 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>7</lev>
-	<exp>107</exp>
+	<exp>300</exp>
 	<hp></hp>
 	<attack>20</attack>
 	<defense></defense>
@@ -109,7 +109,7 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>8</lev>
-	<exp>108</exp>
+	<exp>350</exp>
 	<hp></hp>
 	<attack>20</attack>
 	<defense></defense>
@@ -122,7 +122,7 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>9</lev>
-	<exp>109</exp>
+	<exp>400</exp>
 	<hp></hp>
 	<attack>20</attack>
 	<defense></defense>
@@ -135,7 +135,7 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>10</lev>
-	<exp>110</exp>
+	<exp>450</exp>
 	<hp></hp>
 	<attack>20</attack>
 	<defense></defense>
@@ -148,7 +148,7 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>11</lev>
-	<exp>111</exp>
+	<exp>500</exp>
 	<hp></hp>
 	<attack>20</attack>
 	<defense></defense>
@@ -161,7 +161,7 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>12</lev>
-	<exp>112</exp>
+	<exp>600</exp>
 	<hp></hp>
 	<attack>30</attack>
 	<defense></defense>
@@ -174,7 +174,7 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>13</lev>
-	<exp>113</exp>
+	<exp>700</exp>
 	<hp></hp>
 	<attack>30</attack>
 	<defense></defense>
@@ -187,7 +187,7 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>14</lev>
-	<exp>114</exp>
+	<exp>800</exp>
 	<hp></hp>
 	<attack>30</attack>
 	<defense></defense>
@@ -200,7 +200,7 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>15</lev>
-	<exp>115</exp>
+	<exp>900</exp>
 	<hp></hp>
 	<attack>30</attack>
 	<defense></defense>
@@ -213,7 +213,7 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>16</lev>
-	<exp>116</exp>
+	<exp>1000</exp>
 	<hp></hp>
 	<attack>30</attack>
 	<defense></defense>
@@ -226,7 +226,7 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>17</lev>
-	<exp>117</exp>
+	<exp>1100</exp>
 	<hp></hp>
 	<attack>30</attack>
 	<defense></defense>
@@ -239,7 +239,7 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>18</lev>
-	<exp>118</exp>
+	<exp>1300</exp>
 	<hp></hp>
 	<attack>40</attack>
 	<defense></defense>
@@ -252,7 +252,7 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>19</lev>
-	<exp>119</exp>
+	<exp>1500</exp>
 	<hp></hp>
 	<attack>40</attack>
 	<defense></defense>
@@ -265,7 +265,7 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>20</lev>
-	<exp>120</exp>
+	<exp>1700</exp>
 	<hp></hp>
 	<attack>40</attack>
 	<defense></defense>
@@ -278,7 +278,7 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>21</lev>
-	<exp>121</exp>
+	<exp>1900</exp>
 	<hp></hp>
 	<attack>40</attack>
 	<defense></defense>
@@ -291,7 +291,7 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>22</lev>
-	<exp>122</exp>
+	<exp>2100</exp>
 	<hp></hp>
 	<attack>40</attack>
 	<defense></defense>
@@ -304,7 +304,7 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>23</lev>
-	<exp>123</exp>
+	<exp>2300</exp>
 	<hp></hp>
 	<attack>40</attack>
 	<defense></defense>
@@ -317,7 +317,7 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>24</lev>
-	<exp>124</exp>
+	<exp>2600</exp>
 	<hp></hp>
 	<attack>50</attack>
 	<defense></defense>
@@ -330,7 +330,7 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>25</lev>
-	<exp>125</exp>
+	<exp>2900</exp>
 	<hp></hp>
 	<attack>50</attack>
 	<defense></defense>
@@ -343,7 +343,7 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>26</lev>
-	<exp>126</exp>
+	<exp>3200</exp>
 	<hp></hp>
 	<attack>50</attack>
 	<defense></defense>
@@ -356,7 +356,7 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>27</lev>
-	<exp>127</exp>
+	<exp>3500</exp>
 	<hp></hp>
 	<attack>50</attack>
 	<defense></defense>
@@ -369,7 +369,7 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>28</lev>
-	<exp>128</exp>
+	<exp>3800</exp>
 	<hp></hp>
 	<attack>50</attack>
 	<defense></defense>
@@ -382,7 +382,7 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>29</lev>
-	<exp>129</exp>
+	<exp>4100</exp>
 	<hp></hp>
 	<attack>50</attack>
 	<defense></defense>
@@ -395,7 +395,7 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>30</lev>
-	<exp>130</exp>
+	<exp>4500</exp>
 	<hp></hp>
 	<attack>60</attack>
 	<defense></defense>
@@ -408,7 +408,7 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>31</lev>
-	<exp>131</exp>
+	<exp>4900</exp>
 	<hp></hp>
 	<attack>60</attack>
 	<defense></defense>
@@ -421,7 +421,7 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>32</lev>
-	<exp>132</exp>
+	<exp>5300</exp>
 	<hp></hp>
 	<attack>60</attack>
 	<defense></defense>
@@ -434,7 +434,7 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>33</lev>
-	<exp>133</exp>
+	<exp>5700</exp>
 	<hp></hp>
 	<attack>60</attack>
 	<defense></defense>
@@ -447,7 +447,7 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>34</lev>
-	<exp>134</exp>
+	<exp>6100</exp>
 	<hp></hp>
 	<attack>60</attack>
 	<defense></defense>
@@ -460,7 +460,7 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>35</lev>
-	<exp>135</exp>
+	<exp>6500</exp>
 	<hp></hp>
 	<attack>60</attack>
 	<defense></defense>
@@ -473,7 +473,7 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>36</lev>
-	<exp>136</exp>
+	<exp>7000</exp>
 	<hp></hp>
 	<attack>70</attack>
 	<defense></defense>
@@ -486,7 +486,7 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>37</lev>
-	<exp>137</exp>
+	<exp>7500</exp>
 	<hp></hp>
 	<attack>70</attack>
 	<defense></defense>
@@ -499,7 +499,7 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>38</lev>
-	<exp>138</exp>
+	<exp>8000</exp>
 	<hp></hp>
 	<attack>70</attack>
 	<defense></defense>
@@ -512,7 +512,7 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>39</lev>
-	<exp>139</exp>
+	<exp>8500</exp>
 	<hp></hp>
 	<attack>70</attack>
 	<defense></defense>
@@ -525,7 +525,7 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>40</lev>
-	<exp>140</exp>
+	<exp>9000</exp>
 	<hp></hp>
 	<attack>70</attack>
 	<defense></defense>
@@ -538,7 +538,7 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>41</lev>
-	<exp>141</exp>
+	<exp>9500</exp>
 	<hp></hp>
 	<attack>70</attack>
 	<defense></defense>
@@ -551,7 +551,7 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>42</lev>
-	<exp>142</exp>
+	<exp>10500</exp>
 	<hp></hp>
 	<attack>80</attack>
 	<defense></defense>
@@ -564,7 +564,7 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>43</lev>
-	<exp>143</exp>
+	<exp>11500</exp>
 	<hp></hp>
 	<attack>80</attack>
 	<defense></defense>
@@ -577,7 +577,7 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>44</lev>
-	<exp>144</exp>
+	<exp>12500</exp>
 	<hp></hp>
 	<attack>80</attack>
 	<defense></defense>
@@ -590,7 +590,7 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>45</lev>
-	<exp>145</exp>
+	<exp>13500</exp>
 	<hp></hp>
 	<attack>80</attack>
 	<defense></defense>
@@ -603,7 +603,7 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>46</lev>
-	<exp>146</exp>
+	<exp>14500</exp>
 	<hp></hp>
 	<attack>80</attack>
 	<defense></defense>
@@ -616,7 +616,7 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>47</lev>
-	<exp>147</exp>
+	<exp>15500</exp>
 	<hp></hp>
 	<attack>80</attack>
 	<defense></defense>
@@ -629,7 +629,7 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>48</lev>
-	<exp>148</exp>
+	<exp>17000</exp>
 	<hp></hp>
 	<attack>90</attack>
 	<defense></defense>
@@ -642,7 +642,7 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>49</lev>
-	<exp>149</exp>
+	<exp>18500</exp>
 	<hp></hp>
 	<attack>90</attack>
 	<defense></defense>
@@ -655,7 +655,7 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>50</lev>
-	<exp>150</exp>
+	<exp>20000</exp>
 	<hp></hp>
 	<attack>90</attack>
 	<defense></defense>
@@ -668,7 +668,7 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>51</lev>
-	<exp>151</exp>
+	<exp>21500</exp>
 	<hp></hp>
 	<attack>90</attack>
 	<defense></defense>
@@ -681,7 +681,7 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>52</lev>
-	<exp>152</exp>
+	<exp>23000</exp>
 	<hp></hp>
 	<attack>90</attack>
 	<defense></defense>
@@ -694,7 +694,7 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>53</lev>
-	<exp>153</exp>
+	<exp>24500</exp>
 	<hp></hp>
 	<attack>90</attack>
 	<defense></defense>
@@ -720,7 +720,7 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>1</lev>
-	<exp>101</exp>
+	<exp>120</exp>
 	<hp>10</hp>
 	<attack></attack>
 	<defense></defense>
@@ -733,7 +733,7 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>2</lev>
-	<exp>102</exp>
+	<exp>140</exp>
 	<hp>10</hp>
 	<attack></attack>
 	<defense></defense>
@@ -746,7 +746,7 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>3</lev>
-	<exp>103</exp>
+	<exp>160</exp>
 	<hp>10</hp>
 	<attack></attack>
 	<defense></defense>
@@ -759,7 +759,7 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>4</lev>
-	<exp>104</exp>
+	<exp>180</exp>
 	<hp>10</hp>
 	<attack></attack>
 	<defense></defense>
@@ -772,7 +772,7 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>5</lev>
-	<exp>105</exp>
+	<exp>200</exp>
 	<hp>10</hp>
 	<attack></attack>
 	<defense></defense>
@@ -785,7 +785,7 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>6</lev>
-	<exp>106</exp>
+	<exp>250</exp>
 	<hp>20</hp>
 	<attack></attack>
 	<defense></defense>
@@ -798,7 +798,7 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>7</lev>
-	<exp>107</exp>
+	<exp>300</exp>
 	<hp>20</hp>
 	<attack></attack>
 	<defense></defense>
@@ -811,7 +811,7 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>8</lev>
-	<exp>108</exp>
+	<exp>350</exp>
 	<hp>20</hp>
 	<attack></attack>
 	<defense></defense>
@@ -824,7 +824,7 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>9</lev>
-	<exp>109</exp>
+	<exp>400</exp>
 	<hp>20</hp>
 	<attack></attack>
 	<defense></defense>
@@ -837,7 +837,7 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>10</lev>
-	<exp>110</exp>
+	<exp>450</exp>
 	<hp>20</hp>
 	<attack></attack>
 	<defense></defense>
@@ -850,7 +850,7 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>11</lev>
-	<exp>111</exp>
+	<exp>500</exp>
 	<hp>20</hp>
 	<attack></attack>
 	<defense></defense>
@@ -863,7 +863,7 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>12</lev>
-	<exp>112</exp>
+	<exp>600</exp>
 	<hp>30</hp>
 	<attack></attack>
 	<defense></defense>
@@ -876,7 +876,7 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>13</lev>
-	<exp>113</exp>
+	<exp>700</exp>
 	<hp>30</hp>
 	<attack></attack>
 	<defense></defense>
@@ -889,7 +889,7 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>14</lev>
-	<exp>114</exp>
+	<exp>800</exp>
 	<hp>30</hp>
 	<attack></attack>
 	<defense></defense>
@@ -902,7 +902,7 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>15</lev>
-	<exp>115</exp>
+	<exp>900</exp>
 	<hp>30</hp>
 	<attack></attack>
 	<defense></defense>
@@ -915,7 +915,7 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>16</lev>
-	<exp>116</exp>
+	<exp>1000</exp>
 	<hp>30</hp>
 	<attack></attack>
 	<defense></defense>
@@ -928,7 +928,7 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>17</lev>
-	<exp>117</exp>
+	<exp>1100</exp>
 	<hp>30</hp>
 	<attack></attack>
 	<defense></defense>
@@ -941,7 +941,7 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>18</lev>
-	<exp>118</exp>
+	<exp>1300</exp>
 	<hp>40</hp>
 	<attack></attack>
 	<defense></defense>
@@ -954,7 +954,7 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>19</lev>
-	<exp>119</exp>
+	<exp>1500</exp>
 	<hp>40</hp>
 	<attack></attack>
 	<defense></defense>
@@ -967,7 +967,7 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>20</lev>
-	<exp>120</exp>
+	<exp>1700</exp>
 	<hp>40</hp>
 	<attack></attack>
 	<defense></defense>
@@ -980,7 +980,7 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>21</lev>
-	<exp>121</exp>
+	<exp>1900</exp>
 	<hp>40</hp>
 	<attack></attack>
 	<defense></defense>
@@ -993,7 +993,7 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>22</lev>
-	<exp>122</exp>
+	<exp>2100</exp>
 	<hp>40</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1006,7 +1006,7 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>23</lev>
-	<exp>123</exp>
+	<exp>2300</exp>
 	<hp>40</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1019,7 +1019,7 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>24</lev>
-	<exp>124</exp>
+	<exp>2600</exp>
 	<hp>50</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1032,7 +1032,7 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>25</lev>
-	<exp>125</exp>
+	<exp>2900</exp>
 	<hp>50</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1045,7 +1045,7 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>26</lev>
-	<exp>126</exp>
+	<exp>3200</exp>
 	<hp>50</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1058,7 +1058,7 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>27</lev>
-	<exp>127</exp>
+	<exp>3500</exp>
 	<hp>50</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1071,7 +1071,7 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>28</lev>
-	<exp>128</exp>
+	<exp>3800</exp>
 	<hp>50</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1084,7 +1084,7 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>29</lev>
-	<exp>129</exp>
+	<exp>4100</exp>
 	<hp>50</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1097,7 +1097,7 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>30</lev>
-	<exp>130</exp>
+	<exp>4500</exp>
 	<hp>60</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1110,7 +1110,7 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>31</lev>
-	<exp>131</exp>
+	<exp>4900</exp>
 	<hp>60</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1123,7 +1123,7 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>32</lev>
-	<exp>132</exp>
+	<exp>5300</exp>
 	<hp>60</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1136,7 +1136,7 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>33</lev>
-	<exp>133</exp>
+	<exp>5700</exp>
 	<hp>60</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1149,7 +1149,7 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>34</lev>
-	<exp>134</exp>
+	<exp>6100</exp>
 	<hp>60</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1162,7 +1162,7 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>35</lev>
-	<exp>135</exp>
+	<exp>6500</exp>
 	<hp>60</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1175,7 +1175,7 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>36</lev>
-	<exp>136</exp>
+	<exp>7000</exp>
 	<hp>70</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1188,7 +1188,7 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>37</lev>
-	<exp>137</exp>
+	<exp>7500</exp>
 	<hp>70</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1201,7 +1201,7 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>38</lev>
-	<exp>138</exp>
+	<exp>8000</exp>
 	<hp>70</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1214,7 +1214,7 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>39</lev>
-	<exp>139</exp>
+	<exp>8500</exp>
 	<hp>70</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1227,7 +1227,7 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>40</lev>
-	<exp>140</exp>
+	<exp>9000</exp>
 	<hp>70</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1240,7 +1240,7 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>41</lev>
-	<exp>141</exp>
+	<exp>9500</exp>
 	<hp>70</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1253,7 +1253,7 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>42</lev>
-	<exp>142</exp>
+	<exp>10500</exp>
 	<hp>80</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1266,7 +1266,7 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>43</lev>
-	<exp>143</exp>
+	<exp>11500</exp>
 	<hp>80</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1279,7 +1279,7 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>44</lev>
-	<exp>144</exp>
+	<exp>12500</exp>
 	<hp>80</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1292,7 +1292,7 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>45</lev>
-	<exp>145</exp>
+	<exp>13500</exp>
 	<hp>80</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1305,7 +1305,7 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>46</lev>
-	<exp>146</exp>
+	<exp>14500</exp>
 	<hp>80</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1318,7 +1318,7 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>47</lev>
-	<exp>147</exp>
+	<exp>15500</exp>
 	<hp>80</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1331,7 +1331,7 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>48</lev>
-	<exp>148</exp>
+	<exp>17000</exp>
 	<hp>90</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1344,7 +1344,7 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>49</lev>
-	<exp>149</exp>
+	<exp>18500</exp>
 	<hp>90</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1357,7 +1357,7 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>50</lev>
-	<exp>150</exp>
+	<exp>20000</exp>
 	<hp>90</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1370,7 +1370,7 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>51</lev>
-	<exp>151</exp>
+	<exp>21500</exp>
 	<hp>90</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1383,7 +1383,7 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>52</lev>
-	<exp>152</exp>
+	<exp>23000</exp>
 	<hp>90</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1396,7 +1396,7 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>53</lev>
-	<exp>153</exp>
+	<exp>24500</exp>
 	<hp>90</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1422,7 +1422,7 @@
 	<type>203</type>
 	<icon>4000000</icon>
 	<lev>1</lev>
-	<exp>101</exp>
+	<exp>120</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>10</defense>
@@ -1435,7 +1435,7 @@
 	<type>203</type>
 	<icon>4000000</icon>
 	<lev>2</lev>
-	<exp>102</exp>
+	<exp>140</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>10</defense>
@@ -1448,7 +1448,7 @@
 	<type>203</type>
 	<icon>4000000</icon>
 	<lev>3</lev>
-	<exp>103</exp>
+	<exp>160</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>10</defense>
@@ -1461,7 +1461,7 @@
 	<type>203</type>
 	<icon>4000000</icon>
 	<lev>4</lev>
-	<exp>104</exp>
+	<exp>180</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>10</defense>
@@ -1474,7 +1474,7 @@
 	<type>203</type>
 	<icon>4000000</icon>
 	<lev>5</lev>
-	<exp>105</exp>
+	<exp>200</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>10</defense>
@@ -1487,7 +1487,7 @@
 	<type>203</type>
 	<icon>4000001</icon>
 	<lev>6</lev>
-	<exp>106</exp>
+	<exp>250</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>20</defense>
@@ -1500,7 +1500,7 @@
 	<type>203</type>
 	<icon>4000001</icon>
 	<lev>7</lev>
-	<exp>107</exp>
+	<exp>300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>20</defense>
@@ -1513,7 +1513,7 @@
 	<type>203</type>
 	<icon>4000001</icon>
 	<lev>8</lev>
-	<exp>108</exp>
+	<exp>350</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>20</defense>
@@ -1526,7 +1526,7 @@
 	<type>203</type>
 	<icon>4000001</icon>
 	<lev>9</lev>
-	<exp>109</exp>
+	<exp>400</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>20</defense>
@@ -1539,7 +1539,7 @@
 	<type>203</type>
 	<icon>4000001</icon>
 	<lev>10</lev>
-	<exp>110</exp>
+	<exp>450</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>20</defense>
@@ -1552,7 +1552,7 @@
 	<type>203</type>
 	<icon>4000001</icon>
 	<lev>11</lev>
-	<exp>111</exp>
+	<exp>500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>20</defense>
@@ -1565,7 +1565,7 @@
 	<type>203</type>
 	<icon>4000002</icon>
 	<lev>12</lev>
-	<exp>112</exp>
+	<exp>600</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>30</defense>
@@ -1578,7 +1578,7 @@
 	<type>203</type>
 	<icon>4000002</icon>
 	<lev>13</lev>
-	<exp>113</exp>
+	<exp>700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>30</defense>
@@ -1591,7 +1591,7 @@
 	<type>203</type>
 	<icon>4000002</icon>
 	<lev>14</lev>
-	<exp>114</exp>
+	<exp>800</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>30</defense>
@@ -1604,7 +1604,7 @@
 	<type>203</type>
 	<icon>4000002</icon>
 	<lev>15</lev>
-	<exp>115</exp>
+	<exp>900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>30</defense>
@@ -1617,7 +1617,7 @@
 	<type>203</type>
 	<icon>4000002</icon>
 	<lev>16</lev>
-	<exp>116</exp>
+	<exp>1000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>30</defense>
@@ -1630,7 +1630,7 @@
 	<type>203</type>
 	<icon>4000002</icon>
 	<lev>17</lev>
-	<exp>117</exp>
+	<exp>1100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>30</defense>
@@ -1643,7 +1643,7 @@
 	<type>203</type>
 	<icon>4000003</icon>
 	<lev>18</lev>
-	<exp>118</exp>
+	<exp>1300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>40</defense>
@@ -1656,7 +1656,7 @@
 	<type>203</type>
 	<icon>4000003</icon>
 	<lev>19</lev>
-	<exp>119</exp>
+	<exp>1500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>40</defense>
@@ -1669,7 +1669,7 @@
 	<type>203</type>
 	<icon>4000003</icon>
 	<lev>20</lev>
-	<exp>120</exp>
+	<exp>1700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>40</defense>
@@ -1682,7 +1682,7 @@
 	<type>203</type>
 	<icon>4000003</icon>
 	<lev>21</lev>
-	<exp>121</exp>
+	<exp>1900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>40</defense>
@@ -1695,7 +1695,7 @@
 	<type>203</type>
 	<icon>4000003</icon>
 	<lev>22</lev>
-	<exp>122</exp>
+	<exp>2100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>40</defense>
@@ -1708,7 +1708,7 @@
 	<type>203</type>
 	<icon>4000003</icon>
 	<lev>23</lev>
-	<exp>123</exp>
+	<exp>2300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>40</defense>
@@ -1721,7 +1721,7 @@
 	<type>203</type>
 	<icon>4000004</icon>
 	<lev>24</lev>
-	<exp>124</exp>
+	<exp>2600</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>50</defense>
@@ -1734,7 +1734,7 @@
 	<type>203</type>
 	<icon>4000004</icon>
 	<lev>25</lev>
-	<exp>125</exp>
+	<exp>2900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>50</defense>
@@ -1747,7 +1747,7 @@
 	<type>203</type>
 	<icon>4000004</icon>
 	<lev>26</lev>
-	<exp>126</exp>
+	<exp>3200</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>50</defense>
@@ -1760,7 +1760,7 @@
 	<type>203</type>
 	<icon>4000004</icon>
 	<lev>27</lev>
-	<exp>127</exp>
+	<exp>3500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>50</defense>
@@ -1773,7 +1773,7 @@
 	<type>203</type>
 	<icon>4000004</icon>
 	<lev>28</lev>
-	<exp>128</exp>
+	<exp>3800</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>50</defense>
@@ -1786,7 +1786,7 @@
 	<type>203</type>
 	<icon>4000004</icon>
 	<lev>29</lev>
-	<exp>129</exp>
+	<exp>4100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>50</defense>
@@ -1799,7 +1799,7 @@
 	<type>203</type>
 	<icon>4000005</icon>
 	<lev>30</lev>
-	<exp>130</exp>
+	<exp>4500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>60</defense>
@@ -1812,7 +1812,7 @@
 	<type>203</type>
 	<icon>4000005</icon>
 	<lev>31</lev>
-	<exp>131</exp>
+	<exp>4900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>60</defense>
@@ -1825,7 +1825,7 @@
 	<type>203</type>
 	<icon>4000005</icon>
 	<lev>32</lev>
-	<exp>132</exp>
+	<exp>5300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>60</defense>
@@ -1838,7 +1838,7 @@
 	<type>203</type>
 	<icon>4000005</icon>
 	<lev>33</lev>
-	<exp>133</exp>
+	<exp>5700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>60</defense>
@@ -1851,7 +1851,7 @@
 	<type>203</type>
 	<icon>4000005</icon>
 	<lev>34</lev>
-	<exp>134</exp>
+	<exp>6100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>60</defense>
@@ -1864,7 +1864,7 @@
 	<type>203</type>
 	<icon>4000005</icon>
 	<lev>35</lev>
-	<exp>135</exp>
+	<exp>6500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>60</defense>
@@ -1877,7 +1877,7 @@
 	<type>203</type>
 	<icon>4000006</icon>
 	<lev>36</lev>
-	<exp>136</exp>
+	<exp>7000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>70</defense>
@@ -1890,7 +1890,7 @@
 	<type>203</type>
 	<icon>4000006</icon>
 	<lev>37</lev>
-	<exp>137</exp>
+	<exp>7500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>70</defense>
@@ -1903,7 +1903,7 @@
 	<type>203</type>
 	<icon>4000006</icon>
 	<lev>38</lev>
-	<exp>138</exp>
+	<exp>8000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>70</defense>
@@ -1916,7 +1916,7 @@
 	<type>203</type>
 	<icon>4000006</icon>
 	<lev>39</lev>
-	<exp>139</exp>
+	<exp>8500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>70</defense>
@@ -1929,7 +1929,7 @@
 	<type>203</type>
 	<icon>4000006</icon>
 	<lev>40</lev>
-	<exp>140</exp>
+	<exp>9000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>70</defense>
@@ -1942,7 +1942,7 @@
 	<type>203</type>
 	<icon>4000006</icon>
 	<lev>41</lev>
-	<exp>141</exp>
+	<exp>9500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>70</defense>
@@ -1955,7 +1955,7 @@
 	<type>203</type>
 	<icon>4000007</icon>
 	<lev>42</lev>
-	<exp>142</exp>
+	<exp>10500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>80</defense>
@@ -1968,7 +1968,7 @@
 	<type>203</type>
 	<icon>4000007</icon>
 	<lev>43</lev>
-	<exp>143</exp>
+	<exp>11500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>80</defense>
@@ -1981,7 +1981,7 @@
 	<type>203</type>
 	<icon>4000007</icon>
 	<lev>44</lev>
-	<exp>144</exp>
+	<exp>12500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>80</defense>
@@ -1994,7 +1994,7 @@
 	<type>203</type>
 	<icon>4000007</icon>
 	<lev>45</lev>
-	<exp>145</exp>
+	<exp>13500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>80</defense>
@@ -2007,7 +2007,7 @@
 	<type>203</type>
 	<icon>4000007</icon>
 	<lev>46</lev>
-	<exp>146</exp>
+	<exp>14500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>80</defense>
@@ -2020,7 +2020,7 @@
 	<type>203</type>
 	<icon>4000007</icon>
 	<lev>47</lev>
-	<exp>147</exp>
+	<exp>15500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>80</defense>
@@ -2033,7 +2033,7 @@
 	<type>203</type>
 	<icon>4000008</icon>
 	<lev>48</lev>
-	<exp>148</exp>
+	<exp>17000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>90</defense>
@@ -2046,7 +2046,7 @@
 	<type>203</type>
 	<icon>4000008</icon>
 	<lev>49</lev>
-	<exp>149</exp>
+	<exp>18500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>90</defense>
@@ -2059,7 +2059,7 @@
 	<type>203</type>
 	<icon>4000008</icon>
 	<lev>50</lev>
-	<exp>150</exp>
+	<exp>20000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>90</defense>
@@ -2072,7 +2072,7 @@
 	<type>203</type>
 	<icon>4000008</icon>
 	<lev>51</lev>
-	<exp>151</exp>
+	<exp>21500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>90</defense>
@@ -2085,7 +2085,7 @@
 	<type>203</type>
 	<icon>4000008</icon>
 	<lev>52</lev>
-	<exp>152</exp>
+	<exp>23000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>90</defense>
@@ -2098,7 +2098,7 @@
 	<type>203</type>
 	<icon>4000008</icon>
 	<lev>53</lev>
-	<exp>153</exp>
+	<exp>24500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense>90</defense>
@@ -2124,7 +2124,7 @@
 	<type>204</type>
 	<icon>5000000</icon>
 	<lev>1</lev>
-	<exp>101</exp>
+	<exp>120</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2137,7 +2137,7 @@
 	<type>204</type>
 	<icon>5000000</icon>
 	<lev>2</lev>
-	<exp>102</exp>
+	<exp>140</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2150,7 +2150,7 @@
 	<type>204</type>
 	<icon>5000000</icon>
 	<lev>3</lev>
-	<exp>103</exp>
+	<exp>160</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2163,7 +2163,7 @@
 	<type>204</type>
 	<icon>5000000</icon>
 	<lev>4</lev>
-	<exp>104</exp>
+	<exp>180</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2176,7 +2176,7 @@
 	<type>204</type>
 	<icon>5000000</icon>
 	<lev>5</lev>
-	<exp>105</exp>
+	<exp>200</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2189,7 +2189,7 @@
 	<type>204</type>
 	<icon>5000001</icon>
 	<lev>6</lev>
-	<exp>106</exp>
+	<exp>250</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2202,7 +2202,7 @@
 	<type>204</type>
 	<icon>5000001</icon>
 	<lev>7</lev>
-	<exp>107</exp>
+	<exp>300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2215,7 +2215,7 @@
 	<type>204</type>
 	<icon>5000001</icon>
 	<lev>8</lev>
-	<exp>108</exp>
+	<exp>350</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2228,7 +2228,7 @@
 	<type>204</type>
 	<icon>5000001</icon>
 	<lev>9</lev>
-	<exp>109</exp>
+	<exp>400</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2241,7 +2241,7 @@
 	<type>204</type>
 	<icon>5000001</icon>
 	<lev>10</lev>
-	<exp>110</exp>
+	<exp>450</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2254,7 +2254,7 @@
 	<type>204</type>
 	<icon>5000001</icon>
 	<lev>11</lev>
-	<exp>111</exp>
+	<exp>500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2267,7 +2267,7 @@
 	<type>204</type>
 	<icon>5000002</icon>
 	<lev>12</lev>
-	<exp>112</exp>
+	<exp>600</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2280,7 +2280,7 @@
 	<type>204</type>
 	<icon>5000002</icon>
 	<lev>13</lev>
-	<exp>113</exp>
+	<exp>700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2293,7 +2293,7 @@
 	<type>204</type>
 	<icon>5000002</icon>
 	<lev>14</lev>
-	<exp>114</exp>
+	<exp>800</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2306,7 +2306,7 @@
 	<type>204</type>
 	<icon>5000002</icon>
 	<lev>15</lev>
-	<exp>115</exp>
+	<exp>900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2319,7 +2319,7 @@
 	<type>204</type>
 	<icon>5000002</icon>
 	<lev>16</lev>
-	<exp>116</exp>
+	<exp>1000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2332,7 +2332,7 @@
 	<type>204</type>
 	<icon>5000002</icon>
 	<lev>17</lev>
-	<exp>117</exp>
+	<exp>1100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2345,7 +2345,7 @@
 	<type>204</type>
 	<icon>5000003</icon>
 	<lev>18</lev>
-	<exp>118</exp>
+	<exp>1300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2358,7 +2358,7 @@
 	<type>204</type>
 	<icon>5000003</icon>
 	<lev>19</lev>
-	<exp>119</exp>
+	<exp>1500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2371,7 +2371,7 @@
 	<type>204</type>
 	<icon>5000003</icon>
 	<lev>20</lev>
-	<exp>120</exp>
+	<exp>1700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2384,7 +2384,7 @@
 	<type>204</type>
 	<icon>5000003</icon>
 	<lev>21</lev>
-	<exp>121</exp>
+	<exp>1900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2397,7 +2397,7 @@
 	<type>204</type>
 	<icon>5000003</icon>
 	<lev>22</lev>
-	<exp>122</exp>
+	<exp>2100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2410,7 +2410,7 @@
 	<type>204</type>
 	<icon>5000003</icon>
 	<lev>23</lev>
-	<exp>123</exp>
+	<exp>2300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2423,7 +2423,7 @@
 	<type>204</type>
 	<icon>5000004</icon>
 	<lev>24</lev>
-	<exp>124</exp>
+	<exp>2600</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2436,7 +2436,7 @@
 	<type>204</type>
 	<icon>5000004</icon>
 	<lev>25</lev>
-	<exp>125</exp>
+	<exp>2900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2449,7 +2449,7 @@
 	<type>204</type>
 	<icon>5000004</icon>
 	<lev>26</lev>
-	<exp>126</exp>
+	<exp>3200</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2462,7 +2462,7 @@
 	<type>204</type>
 	<icon>5000004</icon>
 	<lev>27</lev>
-	<exp>127</exp>
+	<exp>3500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2475,7 +2475,7 @@
 	<type>204</type>
 	<icon>5000004</icon>
 	<lev>28</lev>
-	<exp>128</exp>
+	<exp>3800</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2488,7 +2488,7 @@
 	<type>204</type>
 	<icon>5000004</icon>
 	<lev>29</lev>
-	<exp>129</exp>
+	<exp>4100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2501,7 +2501,7 @@
 	<type>204</type>
 	<icon>5000005</icon>
 	<lev>30</lev>
-	<exp>130</exp>
+	<exp>4500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2514,7 +2514,7 @@
 	<type>204</type>
 	<icon>5000005</icon>
 	<lev>31</lev>
-	<exp>131</exp>
+	<exp>4900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2527,7 +2527,7 @@
 	<type>204</type>
 	<icon>5000005</icon>
 	<lev>32</lev>
-	<exp>132</exp>
+	<exp>5300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2540,7 +2540,7 @@
 	<type>204</type>
 	<icon>5000005</icon>
 	<lev>33</lev>
-	<exp>133</exp>
+	<exp>5700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2553,7 +2553,7 @@
 	<type>204</type>
 	<icon>5000005</icon>
 	<lev>34</lev>
-	<exp>134</exp>
+	<exp>6100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2566,7 +2566,7 @@
 	<type>204</type>
 	<icon>5000005</icon>
 	<lev>35</lev>
-	<exp>135</exp>
+	<exp>6500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2579,7 +2579,7 @@
 	<type>204</type>
 	<icon>5000006</icon>
 	<lev>36</lev>
-	<exp>136</exp>
+	<exp>7000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2592,7 +2592,7 @@
 	<type>204</type>
 	<icon>5000006</icon>
 	<lev>37</lev>
-	<exp>137</exp>
+	<exp>7500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2605,7 +2605,7 @@
 	<type>204</type>
 	<icon>5000006</icon>
 	<lev>38</lev>
-	<exp>138</exp>
+	<exp>8000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2618,7 +2618,7 @@
 	<type>204</type>
 	<icon>5000006</icon>
 	<lev>39</lev>
-	<exp>139</exp>
+	<exp>8500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2631,7 +2631,7 @@
 	<type>204</type>
 	<icon>5000006</icon>
 	<lev>40</lev>
-	<exp>140</exp>
+	<exp>9000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2644,7 +2644,7 @@
 	<type>204</type>
 	<icon>5000006</icon>
 	<lev>41</lev>
-	<exp>141</exp>
+	<exp>9500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2657,7 +2657,7 @@
 	<type>204</type>
 	<icon>5000007</icon>
 	<lev>42</lev>
-	<exp>142</exp>
+	<exp>10500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2670,7 +2670,7 @@
 	<type>204</type>
 	<icon>5000007</icon>
 	<lev>43</lev>
-	<exp>143</exp>
+	<exp>11500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2683,7 +2683,7 @@
 	<type>204</type>
 	<icon>5000007</icon>
 	<lev>44</lev>
-	<exp>144</exp>
+	<exp>12500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2696,7 +2696,7 @@
 	<type>204</type>
 	<icon>5000007</icon>
 	<lev>45</lev>
-	<exp>145</exp>
+	<exp>13500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2709,7 +2709,7 @@
 	<type>204</type>
 	<icon>5000007</icon>
 	<lev>46</lev>
-	<exp>146</exp>
+	<exp>14500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2722,7 +2722,7 @@
 	<type>204</type>
 	<icon>5000007</icon>
 	<lev>47</lev>
-	<exp>147</exp>
+	<exp>15500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2735,7 +2735,7 @@
 	<type>204</type>
 	<icon>5000008</icon>
 	<lev>48</lev>
-	<exp>148</exp>
+	<exp>17000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2748,7 +2748,7 @@
 	<type>204</type>
 	<icon>5000008</icon>
 	<lev>49</lev>
-	<exp>149</exp>
+	<exp>18500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2761,7 +2761,7 @@
 	<type>204</type>
 	<icon>5000008</icon>
 	<lev>50</lev>
-	<exp>150</exp>
+	<exp>20000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2774,7 +2774,7 @@
 	<type>204</type>
 	<icon>5000008</icon>
 	<lev>51</lev>
-	<exp>151</exp>
+	<exp>21500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2787,7 +2787,7 @@
 	<type>204</type>
 	<icon>5000008</icon>
 	<lev>52</lev>
-	<exp>152</exp>
+	<exp>23000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2800,7 +2800,7 @@
 	<type>204</type>
 	<icon>5000008</icon>
 	<lev>53</lev>
-	<exp>153</exp>
+	<exp>24500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2826,7 +2826,7 @@
 	<type>205</type>
 	<icon>6000000</icon>
 	<lev>1</lev>
-	<exp>101</exp>
+	<exp>120</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2839,7 +2839,7 @@
 	<type>205</type>
 	<icon>6000000</icon>
 	<lev>2</lev>
-	<exp>102</exp>
+	<exp>140</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2852,7 +2852,7 @@
 	<type>205</type>
 	<icon>6000000</icon>
 	<lev>3</lev>
-	<exp>103</exp>
+	<exp>160</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2865,7 +2865,7 @@
 	<type>205</type>
 	<icon>6000000</icon>
 	<lev>4</lev>
-	<exp>104</exp>
+	<exp>180</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2878,7 +2878,7 @@
 	<type>205</type>
 	<icon>6000000</icon>
 	<lev>5</lev>
-	<exp>105</exp>
+	<exp>200</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2891,7 +2891,7 @@
 	<type>205</type>
 	<icon>6000001</icon>
 	<lev>6</lev>
-	<exp>106</exp>
+	<exp>250</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2904,7 +2904,7 @@
 	<type>205</type>
 	<icon>6000001</icon>
 	<lev>7</lev>
-	<exp>107</exp>
+	<exp>300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2917,7 +2917,7 @@
 	<type>205</type>
 	<icon>6000001</icon>
 	<lev>8</lev>
-	<exp>108</exp>
+	<exp>350</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2930,7 +2930,7 @@
 	<type>205</type>
 	<icon>6000001</icon>
 	<lev>9</lev>
-	<exp>109</exp>
+	<exp>400</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2943,7 +2943,7 @@
 	<type>205</type>
 	<icon>6000001</icon>
 	<lev>10</lev>
-	<exp>110</exp>
+	<exp>450</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2956,7 +2956,7 @@
 	<type>205</type>
 	<icon>6000001</icon>
 	<lev>11</lev>
-	<exp>111</exp>
+	<exp>500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2969,7 +2969,7 @@
 	<type>205</type>
 	<icon>6000002</icon>
 	<lev>12</lev>
-	<exp>112</exp>
+	<exp>600</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2982,7 +2982,7 @@
 	<type>205</type>
 	<icon>6000002</icon>
 	<lev>13</lev>
-	<exp>113</exp>
+	<exp>700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -2995,7 +2995,7 @@
 	<type>205</type>
 	<icon>6000002</icon>
 	<lev>14</lev>
-	<exp>114</exp>
+	<exp>800</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3008,7 +3008,7 @@
 	<type>205</type>
 	<icon>6000002</icon>
 	<lev>15</lev>
-	<exp>115</exp>
+	<exp>900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3021,7 +3021,7 @@
 	<type>205</type>
 	<icon>6000002</icon>
 	<lev>16</lev>
-	<exp>116</exp>
+	<exp>1000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3034,7 +3034,7 @@
 	<type>205</type>
 	<icon>6000002</icon>
 	<lev>17</lev>
-	<exp>117</exp>
+	<exp>1100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3047,7 +3047,7 @@
 	<type>205</type>
 	<icon>6000003</icon>
 	<lev>18</lev>
-	<exp>118</exp>
+	<exp>1300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3060,7 +3060,7 @@
 	<type>205</type>
 	<icon>6000003</icon>
 	<lev>19</lev>
-	<exp>119</exp>
+	<exp>1500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3073,7 +3073,7 @@
 	<type>205</type>
 	<icon>6000003</icon>
 	<lev>20</lev>
-	<exp>120</exp>
+	<exp>1700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3086,7 +3086,7 @@
 	<type>205</type>
 	<icon>6000003</icon>
 	<lev>21</lev>
-	<exp>121</exp>
+	<exp>1900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3099,7 +3099,7 @@
 	<type>205</type>
 	<icon>6000003</icon>
 	<lev>22</lev>
-	<exp>122</exp>
+	<exp>2100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3112,7 +3112,7 @@
 	<type>205</type>
 	<icon>6000003</icon>
 	<lev>23</lev>
-	<exp>123</exp>
+	<exp>2300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3125,7 +3125,7 @@
 	<type>205</type>
 	<icon>6000004</icon>
 	<lev>24</lev>
-	<exp>124</exp>
+	<exp>2600</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3138,7 +3138,7 @@
 	<type>205</type>
 	<icon>6000004</icon>
 	<lev>25</lev>
-	<exp>125</exp>
+	<exp>2900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3151,7 +3151,7 @@
 	<type>205</type>
 	<icon>6000004</icon>
 	<lev>26</lev>
-	<exp>126</exp>
+	<exp>3200</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3164,7 +3164,7 @@
 	<type>205</type>
 	<icon>6000004</icon>
 	<lev>27</lev>
-	<exp>127</exp>
+	<exp>3500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3177,7 +3177,7 @@
 	<type>205</type>
 	<icon>6000004</icon>
 	<lev>28</lev>
-	<exp>128</exp>
+	<exp>3800</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3190,7 +3190,7 @@
 	<type>205</type>
 	<icon>6000004</icon>
 	<lev>29</lev>
-	<exp>129</exp>
+	<exp>4100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3203,7 +3203,7 @@
 	<type>205</type>
 	<icon>6000005</icon>
 	<lev>30</lev>
-	<exp>130</exp>
+	<exp>4500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3216,7 +3216,7 @@
 	<type>205</type>
 	<icon>6000005</icon>
 	<lev>31</lev>
-	<exp>131</exp>
+	<exp>4900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3229,7 +3229,7 @@
 	<type>205</type>
 	<icon>6000005</icon>
 	<lev>32</lev>
-	<exp>132</exp>
+	<exp>5300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3242,7 +3242,7 @@
 	<type>205</type>
 	<icon>6000005</icon>
 	<lev>33</lev>
-	<exp>133</exp>
+	<exp>5700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3255,7 +3255,7 @@
 	<type>205</type>
 	<icon>6000005</icon>
 	<lev>34</lev>
-	<exp>134</exp>
+	<exp>6100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3268,7 +3268,7 @@
 	<type>205</type>
 	<icon>6000005</icon>
 	<lev>35</lev>
-	<exp>135</exp>
+	<exp>6500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3281,7 +3281,7 @@
 	<type>205</type>
 	<icon>6000006</icon>
 	<lev>36</lev>
-	<exp>136</exp>
+	<exp>7000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3294,7 +3294,7 @@
 	<type>205</type>
 	<icon>6000006</icon>
 	<lev>37</lev>
-	<exp>137</exp>
+	<exp>7500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3307,7 +3307,7 @@
 	<type>205</type>
 	<icon>6000006</icon>
 	<lev>38</lev>
-	<exp>138</exp>
+	<exp>8000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3320,7 +3320,7 @@
 	<type>205</type>
 	<icon>6000006</icon>
 	<lev>39</lev>
-	<exp>139</exp>
+	<exp>8500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3333,7 +3333,7 @@
 	<type>205</type>
 	<icon>6000006</icon>
 	<lev>40</lev>
-	<exp>140</exp>
+	<exp>9000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3346,7 +3346,7 @@
 	<type>205</type>
 	<icon>6000006</icon>
 	<lev>41</lev>
-	<exp>141</exp>
+	<exp>9500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3359,7 +3359,7 @@
 	<type>205</type>
 	<icon>6000007</icon>
 	<lev>42</lev>
-	<exp>142</exp>
+	<exp>10500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3372,7 +3372,7 @@
 	<type>205</type>
 	<icon>6000007</icon>
 	<lev>43</lev>
-	<exp>143</exp>
+	<exp>11500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3385,7 +3385,7 @@
 	<type>205</type>
 	<icon>6000007</icon>
 	<lev>44</lev>
-	<exp>144</exp>
+	<exp>12500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3398,7 +3398,7 @@
 	<type>205</type>
 	<icon>6000007</icon>
 	<lev>45</lev>
-	<exp>145</exp>
+	<exp>13500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3411,7 +3411,7 @@
 	<type>205</type>
 	<icon>6000007</icon>
 	<lev>46</lev>
-	<exp>146</exp>
+	<exp>14500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3424,7 +3424,7 @@
 	<type>205</type>
 	<icon>6000007</icon>
 	<lev>47</lev>
-	<exp>147</exp>
+	<exp>15500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3437,7 +3437,7 @@
 	<type>205</type>
 	<icon>6000008</icon>
 	<lev>48</lev>
-	<exp>148</exp>
+	<exp>17000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3450,7 +3450,7 @@
 	<type>205</type>
 	<icon>6000008</icon>
 	<lev>49</lev>
-	<exp>149</exp>
+	<exp>18500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3463,7 +3463,7 @@
 	<type>205</type>
 	<icon>6000008</icon>
 	<lev>50</lev>
-	<exp>150</exp>
+	<exp>20000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3476,7 +3476,7 @@
 	<type>205</type>
 	<icon>6000008</icon>
 	<lev>51</lev>
-	<exp>151</exp>
+	<exp>21500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3489,7 +3489,7 @@
 	<type>205</type>
 	<icon>6000008</icon>
 	<lev>52</lev>
-	<exp>152</exp>
+	<exp>23000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3502,7 +3502,7 @@
 	<type>205</type>
 	<icon>6000008</icon>
 	<lev>53</lev>
-	<exp>153</exp>
+	<exp>24500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3528,7 +3528,7 @@
 	<type>206</type>
 	<icon>7000000</icon>
 	<lev>1</lev>
-	<exp>101</exp>
+	<exp>120</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3541,7 +3541,7 @@
 	<type>206</type>
 	<icon>7000000</icon>
 	<lev>2</lev>
-	<exp>102</exp>
+	<exp>140</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3554,7 +3554,7 @@
 	<type>206</type>
 	<icon>7000000</icon>
 	<lev>3</lev>
-	<exp>103</exp>
+	<exp>160</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3567,7 +3567,7 @@
 	<type>206</type>
 	<icon>7000000</icon>
 	<lev>4</lev>
-	<exp>104</exp>
+	<exp>180</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3580,7 +3580,7 @@
 	<type>206</type>
 	<icon>7000000</icon>
 	<lev>5</lev>
-	<exp>105</exp>
+	<exp>200</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3593,7 +3593,7 @@
 	<type>206</type>
 	<icon>7000001</icon>
 	<lev>6</lev>
-	<exp>106</exp>
+	<exp>250</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3606,7 +3606,7 @@
 	<type>206</type>
 	<icon>7000001</icon>
 	<lev>7</lev>
-	<exp>107</exp>
+	<exp>300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3619,7 +3619,7 @@
 	<type>206</type>
 	<icon>7000001</icon>
 	<lev>8</lev>
-	<exp>108</exp>
+	<exp>350</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3632,7 +3632,7 @@
 	<type>206</type>
 	<icon>7000001</icon>
 	<lev>9</lev>
-	<exp>109</exp>
+	<exp>400</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3645,7 +3645,7 @@
 	<type>206</type>
 	<icon>7000001</icon>
 	<lev>10</lev>
-	<exp>110</exp>
+	<exp>450</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3658,7 +3658,7 @@
 	<type>206</type>
 	<icon>7000001</icon>
 	<lev>11</lev>
-	<exp>111</exp>
+	<exp>500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3671,7 +3671,7 @@
 	<type>206</type>
 	<icon>7000002</icon>
 	<lev>12</lev>
-	<exp>112</exp>
+	<exp>600</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3684,7 +3684,7 @@
 	<type>206</type>
 	<icon>7000002</icon>
 	<lev>13</lev>
-	<exp>113</exp>
+	<exp>700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3697,7 +3697,7 @@
 	<type>206</type>
 	<icon>7000002</icon>
 	<lev>14</lev>
-	<exp>114</exp>
+	<exp>800</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3710,7 +3710,7 @@
 	<type>206</type>
 	<icon>7000002</icon>
 	<lev>15</lev>
-	<exp>115</exp>
+	<exp>900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3723,7 +3723,7 @@
 	<type>206</type>
 	<icon>7000002</icon>
 	<lev>16</lev>
-	<exp>116</exp>
+	<exp>1000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3736,7 +3736,7 @@
 	<type>206</type>
 	<icon>7000002</icon>
 	<lev>17</lev>
-	<exp>117</exp>
+	<exp>1100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3749,7 +3749,7 @@
 	<type>206</type>
 	<icon>7000003</icon>
 	<lev>18</lev>
-	<exp>118</exp>
+	<exp>1300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3762,7 +3762,7 @@
 	<type>206</type>
 	<icon>7000003</icon>
 	<lev>19</lev>
-	<exp>119</exp>
+	<exp>1500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3775,7 +3775,7 @@
 	<type>206</type>
 	<icon>7000003</icon>
 	<lev>20</lev>
-	<exp>120</exp>
+	<exp>1700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3788,7 +3788,7 @@
 	<type>206</type>
 	<icon>7000003</icon>
 	<lev>21</lev>
-	<exp>121</exp>
+	<exp>1900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3801,7 +3801,7 @@
 	<type>206</type>
 	<icon>7000003</icon>
 	<lev>22</lev>
-	<exp>122</exp>
+	<exp>2100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3814,7 +3814,7 @@
 	<type>206</type>
 	<icon>7000003</icon>
 	<lev>23</lev>
-	<exp>123</exp>
+	<exp>2300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3827,7 +3827,7 @@
 	<type>206</type>
 	<icon>7000004</icon>
 	<lev>24</lev>
-	<exp>124</exp>
+	<exp>2600</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3840,7 +3840,7 @@
 	<type>206</type>
 	<icon>7000004</icon>
 	<lev>25</lev>
-	<exp>125</exp>
+	<exp>2900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3853,7 +3853,7 @@
 	<type>206</type>
 	<icon>7000004</icon>
 	<lev>26</lev>
-	<exp>126</exp>
+	<exp>3200</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3866,7 +3866,7 @@
 	<type>206</type>
 	<icon>7000004</icon>
 	<lev>27</lev>
-	<exp>127</exp>
+	<exp>3500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3879,7 +3879,7 @@
 	<type>206</type>
 	<icon>7000004</icon>
 	<lev>28</lev>
-	<exp>128</exp>
+	<exp>3800</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3892,7 +3892,7 @@
 	<type>206</type>
 	<icon>7000004</icon>
 	<lev>29</lev>
-	<exp>129</exp>
+	<exp>4100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3905,7 +3905,7 @@
 	<type>206</type>
 	<icon>7000005</icon>
 	<lev>30</lev>
-	<exp>130</exp>
+	<exp>4500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3918,7 +3918,7 @@
 	<type>206</type>
 	<icon>7000005</icon>
 	<lev>31</lev>
-	<exp>131</exp>
+	<exp>4900</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3931,7 +3931,7 @@
 	<type>206</type>
 	<icon>7000005</icon>
 	<lev>32</lev>
-	<exp>132</exp>
+	<exp>5300</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3944,7 +3944,7 @@
 	<type>206</type>
 	<icon>7000005</icon>
 	<lev>33</lev>
-	<exp>133</exp>
+	<exp>5700</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3957,7 +3957,7 @@
 	<type>206</type>
 	<icon>7000005</icon>
 	<lev>34</lev>
-	<exp>134</exp>
+	<exp>6100</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3970,7 +3970,7 @@
 	<type>206</type>
 	<icon>7000005</icon>
 	<lev>35</lev>
-	<exp>135</exp>
+	<exp>6500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3983,7 +3983,7 @@
 	<type>206</type>
 	<icon>7000006</icon>
 	<lev>36</lev>
-	<exp>136</exp>
+	<exp>7000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -3996,7 +3996,7 @@
 	<type>206</type>
 	<icon>7000006</icon>
 	<lev>37</lev>
-	<exp>137</exp>
+	<exp>7500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4009,7 +4009,7 @@
 	<type>206</type>
 	<icon>7000006</icon>
 	<lev>38</lev>
-	<exp>138</exp>
+	<exp>8000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4022,7 +4022,7 @@
 	<type>206</type>
 	<icon>7000006</icon>
 	<lev>39</lev>
-	<exp>139</exp>
+	<exp>8500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4035,7 +4035,7 @@
 	<type>206</type>
 	<icon>7000006</icon>
 	<lev>40</lev>
-	<exp>140</exp>
+	<exp>9000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4048,7 +4048,7 @@
 	<type>206</type>
 	<icon>7000006</icon>
 	<lev>41</lev>
-	<exp>141</exp>
+	<exp>9500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4061,7 +4061,7 @@
 	<type>206</type>
 	<icon>7000007</icon>
 	<lev>42</lev>
-	<exp>142</exp>
+	<exp>10500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4074,7 +4074,7 @@
 	<type>206</type>
 	<icon>7000007</icon>
 	<lev>43</lev>
-	<exp>143</exp>
+	<exp>11500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4087,7 +4087,7 @@
 	<type>206</type>
 	<icon>7000007</icon>
 	<lev>44</lev>
-	<exp>144</exp>
+	<exp>12500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4100,7 +4100,7 @@
 	<type>206</type>
 	<icon>7000007</icon>
 	<lev>45</lev>
-	<exp>145</exp>
+	<exp>13500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4113,7 +4113,7 @@
 	<type>206</type>
 	<icon>7000007</icon>
 	<lev>46</lev>
-	<exp>146</exp>
+	<exp>14500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4126,7 +4126,7 @@
 	<type>206</type>
 	<icon>7000007</icon>
 	<lev>47</lev>
-	<exp>147</exp>
+	<exp>15500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4139,7 +4139,7 @@
 	<type>206</type>
 	<icon>7000008</icon>
 	<lev>48</lev>
-	<exp>148</exp>
+	<exp>17000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4152,7 +4152,7 @@
 	<type>206</type>
 	<icon>7000008</icon>
 	<lev>49</lev>
-	<exp>149</exp>
+	<exp>18500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4165,7 +4165,7 @@
 	<type>206</type>
 	<icon>7000008</icon>
 	<lev>50</lev>
-	<exp>150</exp>
+	<exp>20000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4178,7 +4178,7 @@
 	<type>206</type>
 	<icon>7000008</icon>
 	<lev>51</lev>
-	<exp>151</exp>
+	<exp>21500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4191,7 +4191,7 @@
 	<type>206</type>
 	<icon>7000008</icon>
 	<lev>52</lev>
-	<exp>152</exp>
+	<exp>23000</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -4204,7 +4204,7 @@
 	<type>206</type>
 	<icon>7000008</icon>
 	<lev>53</lev>
-	<exp>153</exp>
+	<exp>24500</exp>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>

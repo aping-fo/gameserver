@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>10000</id>
 	<group>10000</group>
@@ -13,7 +13,7 @@
 	<id>10001</id>
 	<group>10000</group>
 	<title>1001</title>
-	<content>1.1</content>
+	<content>1.1000000000000001</content>
 	<rank>[11,30]</rank>
 	<reward>102:100;103:101</reward>
 	<desc>2</desc>
@@ -124,6 +124,69 @@
 	<content>恭喜你获得竞技场的第{0}名,请查收奖励</content>
 	<rank>[2001,99999]</rank>
 	<reward>111:30</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10031</id>
+	<group>10002</group>
+	<title>世界BOSS奖励</title>
+	<content>恭喜你获得世界BOSS伤害排名的第{0}名,请查收奖励</content>
+	<rank>[1,1]</rank>
+	<reward>111:31</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10032</id>
+	<group>10002</group>
+	<title>世界BOSS奖励</title>
+	<content>恭喜你获得世界BOSS伤害排名的第{1}名,请查收奖励</content>
+	<rank>[2,5]</rank>
+	<reward>111:32</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10033</id>
+	<group>10002</group>
+	<title>世界BOSS奖励</title>
+	<content>恭喜你获得世界BOSS伤害排名的第{2}名,请查收奖励</content>
+	<rank>[6,10]</rank>
+	<reward>111:33</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10034</id>
+	<group>10002</group>
+	<title>世界BOSS奖励</title>
+	<content>恭喜你获得世界BOSS伤害排名的第{3}名,请查收奖励</content>
+	<rank>[11,20]</rank>
+	<reward>111:34</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10035</id>
+	<group>10002</group>
+	<title>世界BOSS奖励</title>
+	<content>恭喜你获得世界BOSS伤害排名的第{4}名,请查收奖励</content>
+	<rank>[21,50]</rank>
+	<reward>111:35</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10036</id>
+	<group>10002</group>
+	<title>世界BOSS奖励</title>
+	<content>恭喜你获得世界BOSS伤害排名的第{5}名,请查收奖励</content>
+	<rank>[51,100]</rank>
+	<reward>111:36</reward>
+	<desc></desc>
+</config>
+<config>
+	<id>10037</id>
+	<group>10003</group>
+	<title>世界BOSS击杀奖励</title>
+	<content>世界BOSS击杀奖励</content>
+	<rank>[1,1]</rank>
+	<reward>111:36</reward>
 	<desc></desc>
 </config>
 </root>

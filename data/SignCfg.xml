@@ -1,99 +1,183 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
-	<doubleFlag>0</doubleFlag>
-	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<doubleFlag>1</doubleFlag>
+	<vipLevel>1</vipLevel>
+	<rewards>4011001:1</rewards>
 </config>
 <config>
 	<id>2</id>
-	<doubleFlag>0</doubleFlag>
-	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<doubleFlag>1</doubleFlag>
+	<vipLevel>1</vipLevel>
+	<rewards>50101:1</rewards>
 </config>
 <config>
 	<id>3</id>
-	<doubleFlag>0</doubleFlag>
-	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<doubleFlag>1</doubleFlag>
+	<vipLevel>1</vipLevel>
+	<rewards>201010011:1</rewards>
 </config>
 <config>
 	<id>4</id>
-	<doubleFlag>0</doubleFlag>
-	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<doubleFlag>1</doubleFlag>
+	<vipLevel>2</vipLevel>
+	<rewards>125:1</rewards>
 </config>
 <config>
 	<id>5</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>303001:10</rewards>
 </config>
 <config>
 	<id>6</id>
-	<doubleFlag>0</doubleFlag>
-	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<doubleFlag>1</doubleFlag>
+	<vipLevel>1</vipLevel>
+	<rewards>102:100</rewards>
 </config>
 <config>
 	<id>7</id>
-	<doubleFlag>0</doubleFlag>
-	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<doubleFlag>1</doubleFlag>
+	<vipLevel>2</vipLevel>
+	<rewards>103:100</rewards>
 </config>
 <config>
 	<id>8</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>302002:10</rewards>
 </config>
 <config>
 	<id>9</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>302001:5</rewards>
 </config>
 <config>
 	<id>10</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>303001:10</rewards>
 </config>
 <config>
 	<id>11</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>102:100</rewards>
 </config>
 <config>
 	<id>12</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>103:100</rewards>
 </config>
 <config>
 	<id>13</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>302002:10</rewards>
 </config>
 <config>
 	<id>14</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>302001:5</rewards>
 </config>
 <config>
 	<id>15</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards></rewards>
+	<rewards>303001:10</rewards>
 </config>
 <config>
 	<id>16</id>
 	<doubleFlag>0</doubleFlag>
 	<vipLevel>0</vipLevel>
-	<rewards>10:600;20:600;25:500;30:500;35:500;40:400;45:400;50:400;55:300;60:300;</rewards>
+	<rewards>102:100</rewards>
+</config>
+<config>
+	<id>17</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>103:100</rewards>
+</config>
+<config>
+	<id>18</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>302002:10</rewards>
+</config>
+<config>
+	<id>19</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>302001:5</rewards>
+</config>
+<config>
+	<id>20</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>303001:10</rewards>
+</config>
+<config>
+	<id>21</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>102:100</rewards>
+</config>
+<config>
+	<id>22</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>103:100</rewards>
+</config>
+<config>
+	<id>23</id>
+	<doubleFlag>1</doubleFlag>
+	<vipLevel>1</vipLevel>
+	<rewards>302002:10</rewards>
+</config>
+<config>
+	<id>24</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>302001:5</rewards>
+</config>
+<config>
+	<id>25</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>303001:10</rewards>
+</config>
+<config>
+	<id>26</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>102:100</rewards>
+</config>
+<config>
+	<id>27</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>103:100</rewards>
+</config>
+<config>
+	<id>28</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>302002:10</rewards>
+</config>
+<config>
+	<id>29</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>302001:5</rewards>
+</config>
+<config>
+	<id>30</id>
+	<doubleFlag>0</doubleFlag>
+	<vipLevel>0</vipLevel>
+	<rewards>303001:10</rewards>
 </config>
 </root>

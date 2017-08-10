@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
 	<quality>1</quality>
@@ -67,13 +67,121 @@
 	<id>8</id>
 	<quality>1</quality>
 	<type>2</type>
-	<skillCardId>1100101</skillCardId>
+	<skillCardId>1081101</skillCardId>
 	<rate>100</rate>
 	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>9</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1082101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>10</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1083101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>11</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1084101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>12</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1085101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>13</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1100101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>14</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1120101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>15</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1090101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>16</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1130101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>17</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1170101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>18</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1088101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>19</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1190101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>20</id>
+	<quality>1</quality>
+	<type>2</type>
+	<skillCardId>1160101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>21</id>
 	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1010101</skillCardId>
@@ -82,7 +190,7 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>10</id>
+	<id>22</id>
 	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1020101</skillCardId>
@@ -91,7 +199,7 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>11</id>
+	<id>23</id>
 	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1030101</skillCardId>
@@ -100,7 +208,7 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>12</id>
+	<id>24</id>
 	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1040101</skillCardId>
@@ -109,7 +217,7 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>13</id>
+	<id>25</id>
 	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1050101</skillCardId>
@@ -118,7 +226,7 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>14</id>
+	<id>26</id>
 	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1060101</skillCardId>
@@ -127,7 +235,7 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>15</id>
+	<id>27</id>
 	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1080101</skillCardId>
@@ -136,7 +244,52 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>16</id>
+	<id>28</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1081101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>29</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1082101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>30</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1083101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>31</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1084101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>32</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1085101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>33</id>
 	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1100101</skillCardId>
@@ -145,170 +298,89 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>17</id>
-	<quality>1</quality>
-	<type>3</type>
-	<skillCardId>1010201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>18</id>
-	<quality>1</quality>
-	<type>3</type>
-	<skillCardId>1020201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>19</id>
-	<quality>1</quality>
-	<type>3</type>
-	<skillCardId>1030201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>20</id>
-	<quality>1</quality>
-	<type>3</type>
-	<skillCardId>1040201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>21</id>
-	<quality>1</quality>
-	<type>3</type>
-	<skillCardId>1050201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>22</id>
-	<quality>1</quality>
-	<type>3</type>
-	<skillCardId>1060201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>23</id>
-	<quality>1</quality>
-	<type>3</type>
-	<skillCardId>1080201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>24</id>
-	<quality>1</quality>
-	<type>3</type>
-	<skillCardId>1100201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>25</id>
-	<quality>2</quality>
-	<type>2</type>
-	<skillCardId>1010201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>26</id>
-	<quality>2</quality>
-	<type>2</type>
-	<skillCardId>1020201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>27</id>
-	<quality>2</quality>
-	<type>2</type>
-	<skillCardId>1030201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>28</id>
-	<quality>2</quality>
-	<type>2</type>
-	<skillCardId>1040201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>29</id>
-	<quality>2</quality>
-	<type>2</type>
-	<skillCardId>1050201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>30</id>
-	<quality>2</quality>
-	<type>2</type>
-	<skillCardId>1060201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>31</id>
-	<quality>2</quality>
-	<type>2</type>
-	<skillCardId>1080201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>32</id>
-	<quality>2</quality>
-	<type>2</type>
-	<skillCardId>1100201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>33</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1010201</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
 	<id>34</id>
-	<quality>2</quality>
+	<quality>1</quality>
 	<type>3</type>
-	<skillCardId>1020201</skillCardId>
+	<skillCardId>1120101</skillCardId>
 	<rate>100</rate>
 	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>35</id>
-	<quality>2</quality>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1090101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>36</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1130101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>37</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1170101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>38</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1088101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>39</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1190101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>40</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1160101</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>41</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1010201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>42</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1020201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>43</id>
+	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1030201</skillCardId>
 	<rate>100</rate>
@@ -316,8 +388,8 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>36</id>
-	<quality>2</quality>
+	<id>44</id>
+	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1040201</skillCardId>
 	<rate>100</rate>
@@ -325,8 +397,8 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>37</id>
-	<quality>2</quality>
+	<id>45</id>
+	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1050201</skillCardId>
 	<rate>100</rate>
@@ -334,8 +406,8 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>38</id>
-	<quality>2</quality>
+	<id>46</id>
+	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1060201</skillCardId>
 	<rate>100</rate>
@@ -343,8 +415,8 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>39</id>
-	<quality>2</quality>
+	<id>47</id>
+	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1080201</skillCardId>
 	<rate>100</rate>
@@ -352,8 +424,53 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>40</id>
-	<quality>2</quality>
+	<id>48</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1081201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>49</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1082201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>50</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1083201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>51</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1084201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>52</id>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1085201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>53</id>
+	<quality>1</quality>
 	<type>3</type>
 	<skillCardId>1100201</skillCardId>
 	<rate>100</rate>
@@ -361,145 +478,28 @@
 	<vipAdd>0</vipAdd>
 </config>
 <config>
-	<id>41</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1010301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>42</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1020301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>43</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1030301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>44</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1040301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>45</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1050301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>46</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1060301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>47</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1080301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>48</id>
-	<quality>2</quality>
-	<type>3</type>
-	<skillCardId>1100301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>49</id>
-	<quality>3</quality>
-	<type>2</type>
-	<skillCardId>1010301</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>50</id>
-	<quality>3</quality>
-	<type>2</type>
-	<skillCardId>1020301</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>51</id>
-	<quality>3</quality>
-	<type>2</type>
-	<skillCardId>1030301</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>52</id>
-	<quality>3</quality>
-	<type>2</type>
-	<skillCardId>1040301</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
-	<id>53</id>
-	<quality>3</quality>
-	<type>2</type>
-	<skillCardId>1050301</skillCardId>
-	<rate>100</rate>
-	<incRate>0</incRate>
-	<vipAdd>0</vipAdd>
-</config>
-<config>
 	<id>54</id>
-	<quality>3</quality>
-	<type>2</type>
-	<skillCardId>1060301</skillCardId>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1120201</skillCardId>
 	<rate>100</rate>
 	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>55</id>
-	<quality>3</quality>
-	<type>2</type>
-	<skillCardId>1080301</skillCardId>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1090201</skillCardId>
 	<rate>100</rate>
 	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>56</id>
-	<quality>3</quality>
-	<type>2</type>
-	<skillCardId>1100301</skillCardId>
+	<quality>1</quality>
+	<type>3</type>
+	<skillCardId>1130201</skillCardId>
 	<rate>100</rate>
 	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
@@ -507,145 +507,1837 @@
 <config>
 	<id>57</id>
 	<quality>1</quality>
-	<type>4</type>
-	<skillCardId>1010201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>3</type>
+	<skillCardId>1170201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>58</id>
 	<quality>1</quality>
-	<type>4</type>
-	<skillCardId>1020201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>3</type>
+	<skillCardId>1088201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>59</id>
 	<quality>1</quality>
-	<type>4</type>
-	<skillCardId>1030201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>3</type>
+	<skillCardId>1190201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>60</id>
 	<quality>1</quality>
-	<type>4</type>
-	<skillCardId>1040201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>3</type>
+	<skillCardId>1160201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>61</id>
-	<quality>1</quality>
-	<type>4</type>
-	<skillCardId>1050201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1010201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>62</id>
-	<quality>1</quality>
-	<type>4</type>
-	<skillCardId>1060201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1020201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>63</id>
-	<quality>1</quality>
-	<type>4</type>
-	<skillCardId>1080201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1030201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>64</id>
-	<quality>1</quality>
-	<type>4</type>
-	<skillCardId>1100201</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1040201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>65</id>
 	<quality>2</quality>
-	<type>4</type>
-	<skillCardId>1010301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>2</type>
+	<skillCardId>1050201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>66</id>
 	<quality>2</quality>
-	<type>4</type>
-	<skillCardId>1020301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>2</type>
+	<skillCardId>1060201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>67</id>
 	<quality>2</quality>
-	<type>4</type>
-	<skillCardId>1030301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>2</type>
+	<skillCardId>1080201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>68</id>
 	<quality>2</quality>
-	<type>4</type>
-	<skillCardId>1040301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>2</type>
+	<skillCardId>1081201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>69</id>
 	<quality>2</quality>
-	<type>4</type>
-	<skillCardId>1050301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>2</type>
+	<skillCardId>1082201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>70</id>
 	<quality>2</quality>
-	<type>4</type>
-	<skillCardId>1060301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>2</type>
+	<skillCardId>1083201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>71</id>
 	<quality>2</quality>
-	<type>4</type>
-	<skillCardId>1080301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<type>2</type>
+	<skillCardId>1084201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 <config>
 	<id>72</id>
 	<quality>2</quality>
-	<type>4</type>
+	<type>2</type>
+	<skillCardId>1085201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>73</id>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1100201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>74</id>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1120201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>75</id>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1090201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>76</id>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1130201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>77</id>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1170201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>78</id>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1088201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>79</id>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1190201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>80</id>
+	<quality>2</quality>
+	<type>2</type>
+	<skillCardId>1160201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>81</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1010201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>82</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1020201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>83</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1030201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>84</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1040201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>85</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1050201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>86</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1060201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>87</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1080201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>88</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1081201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>89</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1082201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>90</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1083201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>91</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1084201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>92</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1085201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>93</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1100201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>94</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1120201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>95</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1090201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>96</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1130201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>97</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1170201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>98</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1088201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>99</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1190201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>100</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1160201</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>101</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1010301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>102</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1020301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>103</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1030301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>104</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1040301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>105</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1050301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>106</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1060301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>107</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1080301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>108</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1081301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>109</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1082301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>110</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1083301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>111</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1084301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>112</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1085301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>113</id>
+	<quality>2</quality>
+	<type>3</type>
 	<skillCardId>1100301</skillCardId>
-	<rate>150</rate>
-	<incRate>20</incRate>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>114</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1120301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>115</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1090301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>116</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1130301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>117</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1170301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>118</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1088301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>119</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1190301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>120</id>
+	<quality>2</quality>
+	<type>3</type>
+	<skillCardId>1160301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>121</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1010301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>122</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1020301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>123</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1030301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>124</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1040301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>125</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1050301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>126</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1060301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>127</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1080301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>128</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1081301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>129</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1082301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>130</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1083301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>131</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1084301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>132</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1085301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>133</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1100301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>134</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1120301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>135</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1090301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>136</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1130301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>137</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1170301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>138</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1088301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>139</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1190301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>140</id>
+	<quality>3</quality>
+	<type>2</type>
+	<skillCardId>1160301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>141</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1010301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>142</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1020301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>143</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1030301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>144</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1040301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>145</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1050301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>146</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1060301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>147</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1080301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>148</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1081301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>149</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1082301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>150</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1083301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>151</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1084301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>152</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1085301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>153</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1100301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>154</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1120301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>155</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1090301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>156</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1130301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>157</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1170301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>158</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1088301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>159</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1190301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>160</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1160301</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>161</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1010401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>162</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1020401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>163</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1030401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>164</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1040401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>165</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1050401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>166</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1060401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>167</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1080401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>168</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1081401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>169</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1082401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>170</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1083401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>171</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1084401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>172</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1085401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>173</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1100401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>174</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1120401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>175</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1090401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>176</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1130401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>177</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1170401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>178</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1088401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>179</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1190401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>180</id>
+	<quality>3</quality>
+	<type>3</type>
+	<skillCardId>1160401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>181</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1010401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>182</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1020401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>183</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1030401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>184</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1040401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>185</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1050401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>186</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1060401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>187</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1080401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>188</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1081401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>189</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1082401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>190</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1083401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>191</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1084401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>192</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1085401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>193</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1100401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>194</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1120401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>195</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1090401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>196</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1130401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>197</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1170401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>198</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1088401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>199</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1190401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>200</id>
+	<quality>4</quality>
+	<type>2</type>
+	<skillCardId>1160401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>201</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1010401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>202</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1020401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>203</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1030401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>204</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1040401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>205</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1050401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>206</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1060401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>207</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1080401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>208</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1081401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>209</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1082401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>210</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1083401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>211</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1084401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>212</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1085401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>213</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1100401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>214</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1120401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>215</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1090401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>216</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1130401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>217</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1170401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>218</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1088401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>219</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1190401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>220</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1160401</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>221</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1010501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>222</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1020501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>223</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1030501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>224</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1040501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>225</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1050501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>226</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1060501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>227</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1080501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>228</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1081501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>229</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1082501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>230</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1083501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>231</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1084501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>232</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1085501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>233</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1100501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>234</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1120501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>235</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1090501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>236</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1130501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>237</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1170501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>238</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1088501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>239</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1190501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>240</id>
+	<quality>4</quality>
+	<type>3</type>
+	<skillCardId>1160501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>241</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1010501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>242</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1020501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>243</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1030501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>244</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1040501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>245</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1050501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>246</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1060501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>247</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1080501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>248</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1081501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>249</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1082501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>250</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1083501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>251</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1084501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>252</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1085501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>253</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1100501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>254</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1120501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>255</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1090501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>256</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1130501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>257</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1170501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>258</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1088501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>259</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1190501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
+	<vipAdd>0</vipAdd>
+</config>
+<config>
+	<id>260</id>
+	<quality>5</quality>
+	<type>2</type>
+	<skillCardId>1160501</skillCardId>
+	<rate>100</rate>
+	<incRate>0</incRate>
 	<vipAdd>0</vipAdd>
 </config>
 </root>

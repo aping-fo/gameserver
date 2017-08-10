@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<root>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>101</id>
 	<type>1</type>
 	<lev>1</lev>
 	<levRequest>0</levRequest>
-	<memberCount>2</memberCount>
+	<memberCount>20</memberCount>
 	<viceCount>2</viceCount>
 </config>
 <config>
@@ -13,7 +13,7 @@
 	<type>1</type>
 	<lev>2</lev>
 	<levRequest>1000</levRequest>
-	<memberCount>3</memberCount>
+	<memberCount>24</memberCount>
 	<viceCount>2</viceCount>
 </config>
 <config>
