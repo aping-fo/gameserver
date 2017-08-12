@@ -392,7 +392,7 @@ public class TaskService implements Dispose {
 					}
 				}else if(config.finishType == Task.FINISH_SKILL){
 					List<Integer> skills = data.getCurSkills();
-					List<Integer> curCards = data.getCurCards();
+					List<Integer> curCards = data.getCurrCard();
 					int curCount = 0;
 					int reqLev = targets[0];
 					int reqCLev = targets[1];

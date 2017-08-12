@@ -38,6 +38,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 世界BOSS
+ * 重置类活动
  */
 @Service
 public class WorldBossService implements InitHandler {
@@ -69,10 +70,6 @@ public class WorldBossService implements InitHandler {
     private WorldBossDao worldBossDao;
 
     private int maxId = 0;
-    //广播标记
-    private boolean tenMinFlag;
-    private boolean fiveMinFlag;
-    private boolean beginFlag;
     /**
      * 数据记录
      */
@@ -248,9 +245,10 @@ public class WorldBossService implements InitHandler {
         cleanupHurt(hr, bossId);
         hr.setCurHurt(hr.getCurHurt() + realHurt);
 
-        Int2Param ret = new Int2Param();
-        ret.param1 = hurt;
-        ret.param2 = boss.getCurHp() < 0 ? 0 : boss.getCurHp();
+        MonsterHurtVO ret = new MonsterHurtVO();
+        ret.monsterId = bossId;
+        ret.curHp = boss.getCurHp() < 0 ? 0 : boss.getCurHp();
+        ret.hurt = hurt;
         broadcast(CMD_MONSTER_INFO, ret);
 
 
@@ -298,6 +296,7 @@ public class WorldBossService implements InitHandler {
                 continue;
             }
 
+            //当前时间大于结束时间，则当前活动已结束
             if (hour > endHour) {
                 continue;
             }
@@ -316,30 +315,32 @@ public class WorldBossService implements InitHandler {
 
         if (openHour - hour == 1) { //先不考虑0点
             if (60 - min <= 10) {//10分钟公告
-                if (!tenMinFlag) {
+                if (!worldRecord.isbTenMin()) {
                     messageService.sendSysMsg(2, 10);
-                    tenMinFlag = true;
+                    worldRecord.setbTenMin(true);
                 }
             } else if (60 - min <= 5) {
-                if (!fiveMinFlag) {
+                if (!worldRecord.isbFiveMin()) {
                     messageService.sendSysMsg(2, 5);
-                    fiveMinFlag = true;
+                    worldRecord.setbFiveMin(true);
                 }
             }
         } else if (hour >= openHour && hour < endHour) { //活动中
-            if (!beginFlag) {
+            if (!worldRecord.isbStart()) {
                 messageService.sendSysMsg(3);
-                beginFlag = true;
+                worldRecord.setbStart(true);
             }
 
-            if (worldRecord.getOpenHour() == openHour
-                    && worldRecord.getEndHour() == endHour) { //在活动范围内
+            if (worldRecord.getDay() == c.get(Calendar.DAY_OF_YEAR) &&
+                    worldRecord.getOpenHour() == openHour &&
+                    worldRecord.getEndHour() == endHour) { //已经有该活动数据了
                 return;
             } else { //新开一活动
                 worldRecord = new WorldRecord();
                 worldRecord.setId(getNextId());
                 worldRecord.setOpenHour(openHour);
                 worldRecord.setEndHour(endHour);
+                worldRecord.setDay(c.get(Calendar.DAY_OF_YEAR));
                 worldRecord.setStartTime(System.currentTimeMillis());
 
                 ServerLogger.info("open new world boss activity...");
@@ -381,15 +382,12 @@ public class WorldBossService implements InitHandler {
     private void sendAward() {
         try {
             awardLock.lock();
-            if (worldRecord.getRewardFlag() == 1) {
+            if (worldRecord.isbAward()) {
                 return;
             }
             //活动结束，清理相关数据
             players.clear();
-            tenMinFlag = false;
-            fiveMinFlag = false;
-            beginFlag = false;
-            worldRecord.setRewardFlag(1);
+            worldRecord.setbAward(true);
             messageService.sendSysMsg(4);
             multiService.clearGroup(Scene.WORLD_BOSSS_PVE);
             //排序
@@ -456,6 +454,7 @@ public class WorldBossService implements InitHandler {
                             reward.id = nArr[n];
                             rewardCli.rankReward.add(reward);
                         }
+                        break;
                     }
                 }
                 //伤害兑换金币
@@ -739,6 +738,9 @@ public class WorldBossService implements InitHandler {
                 return;
             }
         }
+        else{ //自动复活时间判断
+            //TODO 加验证
+        }
         param.param1 = Response.SUCCESS;
         param.param2 = playerId;
 
@@ -751,7 +753,6 @@ public class WorldBossService implements InitHandler {
 
     public void gmReset() {
         gmOpen = true;
-        worldRecord.setOpenHour(1);
         worldRecord.getKillMap().clear();
         for (WorldBoss worldBoss : worldRecord.getWorldBossMap().values()) {
             worldBoss.setCurHp(worldBoss.getHp());

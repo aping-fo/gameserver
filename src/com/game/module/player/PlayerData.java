@@ -1,9 +1,15 @@
 package com.game.module.player;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.game.module.copy.Copy;
 import com.game.module.copy.TraverseMap;
 import com.game.module.fashion.Fashion;
@@ -59,7 +65,8 @@ public class PlayerData {
 	
 	private List<Integer> skills=new ArrayList<Integer>();// 开通的技能
 	private List<Integer> curSkills = new ArrayList<Integer>(4);// 当前技能
-	private List<Integer> curCards = new ArrayList<Integer>(4);//当前技能卡id（自增长）
+	private int curCardId = 0;//当前技能卡组ID
+	private List<List<Integer>> skillCardSets = new ArrayList<List<Integer>>();//技能卡组列表
 	private int maxSkillCardId=1;//技能卡id
 	private ConcurrentHashMap<Integer,SkillCard> skillCards = new ConcurrentHashMap<Integer, SkillCard>();//技能卡
 	
@@ -333,15 +340,33 @@ public class PlayerData {
 		this.skillCards = skillCards;
 	}
 
-	public List<Integer> getCurCards() {
-		while(curCards.size()<4){
-			curCards.add(0);
-		}
-		return curCards;
+	public int getCurCardId() {
+		return curCardId;
 	}
 
-	public void setCurCards(List<Integer> curCards) {
-		this.curCards = curCards;
+	public void setCurCardId(int curCardId) {
+		this.curCardId = curCardId;
+	}
+
+	public List<List<Integer>> getSkillCardSets() {
+		if(skillCardSets.isEmpty()){
+			List<Integer> first = Arrays.asList(0,0,0,0);
+			skillCardSets = Arrays.asList(first);
+		} 
+		return skillCardSets;
+	}
+	
+	@JsonIgnore
+	public List<Integer> getCurrCard(){
+		List<Integer> set = getSkillCardSets().get(curCardId);
+		if(set == null)
+			set = skillCardSets.get(0);
+		return set;
+	}
+	
+
+	public void setSkillCardSets(List<List<Integer>> skillCardSets) {
+		this.skillCardSets = skillCardSets;
 	}
 
 	public ConcurrentHashMap<Integer, Integer> getSkillCardTimes() {

@@ -383,8 +383,8 @@ public class PlayerService implements InitHandler {
 		vo.symptom = player.getSymptom();
 		
 		vo.curSkills = new ArrayList<Integer>(data.getCurSkills());
-		vo.curCards = new ArrayList<Integer>(data.getCurCards().size());
-		for(int card:data.getCurCards()){
+		vo.curCards = new ArrayList<Integer>(data.getCurrCard().size());
+		for(int card:data.getCurrCard()){
 			if(card==0){
 				vo.curCards.add(0);
 			}else{

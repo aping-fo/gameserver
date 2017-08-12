@@ -29,19 +29,59 @@ public class WorldRecord {
     private Map<Integer, Integer> buyTimes = new ConcurrentHashMap<>();
     private long startTime; //开始时间
     private int day;
+    //本次活动开始时间
     private int openHour;
+    //本次活动结束时间
     private int endHour;
-    //发奖标记
-    private int rewardFlag;
     //击杀最后一个BOSS 玩家
     private int lastKillPlayerId;
     //最后一个boss杀死时间
     private long lastKillTime;
     //最后BOSS ID
     private int lastBossId;
+    //10分钟广播标记
+    private boolean bTenMin;
+    //5分钟
+    private boolean bFiveMin;
+    //开始
+    private boolean bStart;
+    //是否领奖
+    private boolean bAward;
 
     @JsonIgnore
     private AtomicBoolean bUpdate = new AtomicBoolean(false);
+
+    public boolean isbAward() {
+        return bAward;
+    }
+
+    public void setbAward(boolean bAward) {
+        this.bAward = bAward;
+    }
+
+    public boolean isbTenMin() {
+        return bTenMin;
+    }
+
+    public void setbTenMin(boolean bTenMin) {
+        this.bTenMin = bTenMin;
+    }
+
+    public boolean isbFiveMin() {
+        return bFiveMin;
+    }
+
+    public void setbFiveMin(boolean bFiveMin) {
+        this.bFiveMin = bFiveMin;
+    }
+
+    public boolean isbStart() {
+        return bStart;
+    }
+
+    public void setbStart(boolean bStart) {
+        this.bStart = bStart;
+    }
 
     public int getOpenHour() {
         return openHour;
@@ -121,14 +161,6 @@ public class WorldRecord {
 
     public void setWorldBossMap(Map<Integer, WorldBoss> worldBossMap) {
         this.worldBossMap = worldBossMap;
-    }
-
-    public int getRewardFlag() {
-        return rewardFlag;
-    }
-
-    public void setRewardFlag(int rewardFlag) {
-        this.rewardFlag = rewardFlag;
     }
 
     public int getDay() {

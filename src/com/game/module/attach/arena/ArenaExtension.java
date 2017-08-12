@@ -176,7 +176,7 @@ public class ArenaExtension {
 		vo.symptom = player.getSymptom();
 		vo.fu = player.getFu();
 		vo.hp = player.getHp();
-		vo.curCards = playerData.getCurCards();
+		vo.curCards = playerData.getCurrCard();
 		vo.curSkills = playerData.getCurSkills();
 		return vo;
 	}

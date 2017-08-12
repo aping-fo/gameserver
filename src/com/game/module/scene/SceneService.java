@@ -319,7 +319,7 @@ public class SceneService implements InitHandler {
 			//非调试状态下需要检验伤害,CD
 		}
 		useSkills.put(String.format("%d_%d", skillVO.attackId, skillVO.skillId), skillVO.type);
-		ServerLogger.warn("handler skill" + String.format("%d_%d", skillVO.attackId, skillVO.skillId));
+		//ServerLogger.warn("handler skill" + String.format("%d_%d", skillVO.attackId, skillVO.skillId));
 		Player player = playerService.getPlayer(playerId);
 		brocastToSceneCurLine(player, SceneExtension.USE_SKILL, skillVO);
 	}
@@ -331,8 +331,6 @@ public class SceneService implements InitHandler {
 	 */
 	public void handlerStopSkill(int playerId, StopSkillVO skillVO){
 		Player player = playerService.getPlayer(playerId);
-		if(skillVO.type == 0)
-			skillVO.attackId = playerId;
 		brocastToSceneCurLine(player, SceneExtension.SKILL_STOP, skillVO,SessionManager.getInstance().getChannel(player.getPlayerId()));
 	}
 
@@ -341,7 +339,7 @@ public class SceneService implements InitHandler {
 		Player player = playerService.getPlayer(playerId);
 		Integer type = useSkills.get(String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
 		if (type == null) {
-			ServerLogger.warn("handler skill hurt,there is no use skill record!" + String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
+			//ServerLogger.warn("handler skill hurt,there is no use skill record!" + String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
 			//return;
 		}
 		if (!SysConfig.debug) {

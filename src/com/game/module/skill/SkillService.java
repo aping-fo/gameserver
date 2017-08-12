@@ -16,6 +16,7 @@ import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.params.skill.SkillCardGroupInfo;
 import com.game.params.skill.SkillCardVo;
 import com.game.params.skill.SkillInfo;
 import com.game.util.ConfigData;
@@ -37,7 +38,9 @@ public class SkillService {
 	public SkillInfo getInfo(int playerId){
 		SkillInfo info = new SkillInfo();
 		PlayerData data = playerService.getPlayerData(playerId);
-		info.curCards = new ArrayList<Integer>(data.getCurCards());
+		info.cardGroupInfo = new SkillCardGroupInfo();
+		info.cardGroupInfo.curGroupId = data.getCurCardId();
+		info.cardGroupInfo.curCards = new ArrayList<Integer>(data.getCurrCard());
 		info.curSkills = new ArrayList<Integer>(data.getCurSkills());
 		info.skills = new ArrayList<Integer>(data.getSkills());
 		info.skillCards = new ArrayList<SkillCardVo>(data.getSkillCards().size());
@@ -231,15 +234,17 @@ public class SkillService {
 			if(cfg.type == SkillCard.SPECIAL){
 				return Response.ERR_PARAM;
 			}
-			int oldIndex = data.getCurCards().indexOf(id);
+			int oldIndex = data.getCurrCard().indexOf(id);
 			if(oldIndex>=0){
-				data.getCurCards().set(oldIndex, 0);
+				data.getCurrCard().set(oldIndex, 0);
 			}
 		}
-		data.getCurCards().set(index, id);
+		data.getCurrCard().set(index, id);
 		updateSkill2Client(playerId);
 		playerService.refreshPlayerToClient(playerId);
 		taskService.doTask(playerId, Task.FINISH_SKILL);
 		return Response.SUCCESS;
 	}
+	
+	
 }

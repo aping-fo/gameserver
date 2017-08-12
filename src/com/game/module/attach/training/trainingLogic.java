@@ -84,7 +84,7 @@ public class trainingLogic extends AttachLogic<TrainAttach>{
 				opponent.setWeaponId(player.getWeaponId());
 				PlayerData playerData = playerService.getPlayerData(id);
 				//if(playerData == null) continue;
-				opponent.setCurCards(playerData.getCurCards());
+				opponent.setCurCards(playerData.getCurrCard());
 				opponent.setCurSkills(playerData.getCurSkills());
 				
 				
