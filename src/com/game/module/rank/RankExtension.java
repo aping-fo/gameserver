@@ -146,6 +146,7 @@ public class RankExtension {
 			if(player.getGangId() > 0){
 				vo.gang = gangService.getGang(player.getGangId()).getName();
 			}
+			vo.fightingValue = player.getFight();
 			list.add(vo);
 		}
 		result.params = list;

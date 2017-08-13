@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.game.SysConfig;
+import com.game.data.ErrCode;
 import com.game.data.GlobalConfig;
 import com.game.data.PlayerUpgradeCfg;
 import com.game.data.Response;
@@ -270,19 +271,17 @@ public class PlayerService implements InitHandler {
 				if (newbieMailReward != null) {
 					for (int i = 0; i < newbieMailReward.length; i++) {
 						newbieRewards.add(new GoodsEntry(newbieMailReward[i][0], newbieMailReward[i][1]));
-//						Goods equip = PlayerService.this.goodsService.addNewGoods(playerId, newbieMailReward[i][0], newbieMailReward[i][1], Goods.EQUIP);
-//						goodsService.addGoods(playerId,equip);
 					}
 				}
 				Context.getTimerService().scheduleDelay(new Runnable() {
 					@Override
 					public void run() {
 						goodsService.addRewards(playerId, newbieRewards, LogConsume.GM);
-						/*String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
+						String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
 						String mailContent = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_CONTENT).tips;
-						mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);*/
+						mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);
 					}
-				}, 5, TimeUnit.SECONDS);
+				}, 10, TimeUnit.SECONDS);
 
 			}
 		});

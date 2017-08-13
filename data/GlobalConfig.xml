@@ -73,7 +73,7 @@
 	<friendLevDel>10</friendLevDel>
 	<cameraFixedX>35.619999999999997</cameraFixedX>
 	<cameraDistH>10.5</cameraDistH>
-	<cameraDistV>7.5228068629625753</cameraDistV>
+	<cameraDistV>7.5228068629625797</cameraDistV>
 	<cameraFixedYaw>38.729999999999997</cameraFixedYaw>
 	<buyTreasurePrice>102:10</buyTreasurePrice>
 	<treasureDelTime>30</treasureDelTime>
@@ -106,7 +106,9 @@
 	<worldBossBuyAttackCost>[102,10]</worldBossBuyAttackCost>
 	<worldBossCopy>[800101,80010101,800102,80010102,800103,80010103]</worldBossCopy>
 	<worldBossHurtReward>[102,10]</worldBossHurtReward>
-	<worldBossOpenTime>[1,23]</worldBossOpenTime>
+	<worldBossOpenTime>[1,11,12,23]</worldBossOpenTime>
 	<teamLimit>1:2</teamLimit>
+	<skillCardGroupOpenVip>[0,1,3,5,7,9]</skillCardGroupOpenVip>
+	<rewardRate>[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]</rewardRate>
 </config>
 </root>

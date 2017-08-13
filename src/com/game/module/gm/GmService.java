@@ -194,10 +194,13 @@ public class GmService {
 	// 发送系统邮件
 	public void sendSysMail(int playerId, String... param) {
 		List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
-		String[] item = param[0].split(";");
-		for (String reward : item) {
-			String[] info = reward.split(":");
-			rewards.add(new GoodsEntry(Integer.valueOf(info[0]), Integer.valueOf(info[1])));
+		if(param != null)
+		{			
+			String[] item = param[0].split(";");
+			for (String reward : item) {
+				String[] info = reward.split(":");
+				rewards.add(new GoodsEntry(Integer.valueOf(info[0]), Integer.valueOf(info[1])));
+			}
 		}
 		mailService.sendSysMail("gm mail", "gm mail", rewards, playerId, LogConsume.GM);
 	}

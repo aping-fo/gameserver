@@ -108,14 +108,14 @@ public class MailService {
 	public void sendSysMail(String title, String content, List<GoodsEntry> rewards, final int receiverId,LogConsume log) {
 		StringBuilder rewardStr = new StringBuilder();
 		if(rewards!=null){
-		for (int i = 0; i < rewards.size(); i++) {
-			GoodsEntry item = rewards.get(i);
-			
-			rewardStr.append(item.id).append(":").append(item.count);
-			if (i != rewards.size() - 1) {
-				rewardStr.append(";");
+			for (int i = 0; i < rewards.size(); i++) {
+				GoodsEntry item = rewards.get(i);
+				
+				rewardStr.append(item.id).append(":").append(item.count);
+				if (i != rewards.size() - 1) {
+					rewardStr.append(";");
+				}
 			}
-		}
 		}
 		sendSysMailInner(title, content, rewardStr.toString(), receiverId, log);
 	}

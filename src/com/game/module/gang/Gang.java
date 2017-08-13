@@ -9,6 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
 import com.game.util.BeanManager;
@@ -255,7 +256,11 @@ public class Gang {
 	public void refreshFight(){
 		int fight = 0;
 		for (int playerId : members.keySet()) {
-			fight += BeanManager.getBean(PlayerService.class).getPlayer(playerId).getFight();
+			Player player = BeanManager.getBean(PlayerService.class).getPlayer(playerId);
+			if(player != null)
+			{
+				fight += player.getFight();
+			}
 		}
 		setTotalFight(fight);
 	}

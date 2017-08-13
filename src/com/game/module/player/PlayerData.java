@@ -351,7 +351,7 @@ public class PlayerData {
 	public List<List<Integer>> getSkillCardSets() {
 		if(skillCardSets.isEmpty()){
 			List<Integer> first = Arrays.asList(0,0,0,0);
-			skillCardSets = Arrays.asList(first);
+			skillCardSets.add(first);
 		} 
 		return skillCardSets;
 	}

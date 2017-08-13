@@ -111,4 +111,6 @@ public class GlobalConfig {
 	public int[] worldBossHurtReward;//世界Boss伤害兑换奖励
 	public int[] worldBossOpenTime;//世界Boss活动时间
 	public Map<Integer,Integer> teamLimit;//队伍人数上限
+	public int[] skillCardGroupOpenVip;//技能卡卡组开启的VIP等级
+	public int[][] rewardRate;//抽奖界面预览出现率
 }

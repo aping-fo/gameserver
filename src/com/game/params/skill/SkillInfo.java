@@ -9,7 +9,7 @@ public class SkillInfo implements IProtocol {
 	public List<Integer> skills;//所有技能id
 	public List<Integer> curSkills;//当前使用的技能id
 	public List<SkillCardVo> skillCards;//技能卡
-	public List<Integer> curCards;//当前装载的技能卡id(是自增长id）
+	public SkillCardGroupInfo cardGroupInfo;//技能卡组信息
 
 
 	public void decode(BufferBuilder bb) {
@@ -40,13 +40,20 @@ public class SkillInfo implements IProtocol {
 
             }
         }
-		this.curCards = bb.getIntList();
+		
+        if(bb.getNullFlag())
+            this.cardGroupInfo = null;
+        else
+        {
+            this.cardGroupInfo = new SkillCardGroupInfo();
+            this.cardGroupInfo.decode(bb);
+        }
 	}
 
 	public void encode(BufferBuilder bb) {
 		bb.putIntList(this.skills);
 		bb.putIntList(this.curSkills);
 		bb.putProtocolVoList(this.skillCards);
-		bb.putIntList(this.curCards);
+		bb.putProtocolVo(this.cardGroupInfo);
 	}
 }

@@ -285,6 +285,7 @@ public class GangService implements InitHandler {
 		vo.name = gang.getName();
 		vo.notice = gang.getNotice();
 		Player player = playerService.getPlayer(gang.getOwnerId());
+		
 		vo.owner = player.getName();
 		vo.ownerLev = player.getLev();
 		vo.ownerVocation = player.getVocation();

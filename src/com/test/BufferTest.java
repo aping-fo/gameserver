@@ -5,6 +5,7 @@ import com.game.params.BufferBuilder;
 public class BufferTest {
 
 	public static void main(String[] args) {
+		System.out.println("ssssssssssssss");
 		for(int j = 0; j < 10; j++){
 			new Thread(new Runnable() {
 				

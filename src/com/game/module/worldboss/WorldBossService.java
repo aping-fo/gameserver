@@ -14,7 +14,6 @@ import com.game.module.multi.MultiService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.Scene;
-import com.game.module.scene.SceneExtension;
 import com.game.module.scene.SceneService;
 import com.game.params.*;
 import com.game.params.scene.SkillHurtVO;
@@ -73,7 +72,7 @@ public class WorldBossService implements InitHandler {
     /**
      * 数据记录
      */
-    private WorldRecord worldRecord = new WorldRecord();
+    private WorldRecord worldBossData = new WorldRecord();
 
     ExecutorService executors = Executors.newSingleThreadExecutor();
     /**
@@ -108,9 +107,9 @@ public class WorldBossService implements InitHandler {
         } else {
             byte[] data = worldBossDao.selectWorldBossRecords(curMaxId);
             if (data != null) {
-                worldRecord = JsonUtils.string2Object(
+                worldBossData = JsonUtils.string2Object(
                         new String(CompressUtil.decompressBytes(data), Charset.forName("utf-8")), WorldRecord.class);
-                List<HurtRecord> list = new ArrayList<>(worldRecord.getHurtMap().values());
+                List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
                 Collections.sort(list, SORT);
                 int n = list.size() > size ? size : list.size();
                 for (int i = 0; i < n; i++) {
@@ -118,8 +117,8 @@ public class WorldBossService implements InitHandler {
                 }
             }
         }
-        if (worldRecord == null) {
-            worldRecord = new WorldRecord();
+        if (worldBossData == null) {
+            worldBossData = new WorldRecord();
         }
 
         try {
@@ -149,9 +148,9 @@ public class WorldBossService implements InitHandler {
             @Override
             public void run() {
                 try {
-                    if (worldRecord.getbUpdate().get()) {
+                    if (worldBossData.getbUpdate().get()) {
                         saveData();
-                        worldRecord.setbUpdate(false);
+                        worldBossData.setbUpdate(false);
                     }
                 } catch (Exception e) {
                     ServerLogger.err(e, "保存数据异常");
@@ -186,7 +185,7 @@ public class WorldBossService implements InitHandler {
             int endHour = timeArr[i + 1];
             if (openHour <= hour && endHour > hour) {
                 //活动开启中，查看所有boss是否死亡
-                ret = !worldRecord.checkAllDead();
+                ret = !worldBossData.checkAllDead();
             }
         }
         return ret;
@@ -194,7 +193,7 @@ public class WorldBossService implements InitHandler {
 
     private void hurtRank() {
         //排序
-        List<HurtRecord> list = new ArrayList<>(worldRecord.getHurtMap().values());
+        List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
         Collections.sort(list, SORT);
 
         for (int i = 0; i < list.size(); i++) {
@@ -212,17 +211,17 @@ public class WorldBossService implements InitHandler {
      * @param hurt
      */
     private synchronized void onBossHurt(int playerId, int hurt, int bossId) {
-        WorldBoss boss = worldRecord.getWorldBossMap().get(bossId);
+        WorldBoss boss = worldBossData.getWorldBossMap().get(bossId);
         if (boss == null || boss.getCurHp() <= 0) {
             ServerLogger.warn("world boss can not found bossId", bossId);
             return;
         }
 
         Player player = playerService.getPlayer(playerId);
-        HurtRecord hr = worldRecord.getHurtMap().get(playerId);
+        HurtRecord hr = worldBossData.getHurtMap().get(playerId);
         if (hr == null) {
             hr = new HurtRecord(playerId, player.getName());
-            worldRecord.getHurtMap().put(playerId, hr);
+            worldBossData.getHurtMap().put(playerId, hr);
         }
 
         int realHurt = hurt > boss.getCurHp() ? boss.getCurHp() : hurt;
@@ -236,7 +235,7 @@ public class WorldBossService implements InitHandler {
             if (treeMap.size() > size) {
                 treeMap.pollLastEntry();
             }
-            worldRecord.setbUpdate(true);
+            worldBossData.setbUpdate(true);
         } finally {
             lock.unlock();
         }
@@ -253,26 +252,26 @@ public class WorldBossService implements InitHandler {
 
 
         if (boss.getCurHp() <= 0) { //死亡
-            worldRecord.getKillMap().put(bossId, playerId);
+            worldBossData.getKillMap().put(bossId, playerId);
             //boss死亡，广播
             Int2Param param = new Int2Param();
             param.param1 = playerId;
             param.param2 = bossId;
             broadcast(WorldBossExtension.BOSS_DEAD, param);
 
-            worldRecord.getKillMap().put(bossId, playerId);
+            worldBossData.getKillMap().put(bossId, playerId);
             MonsterRefreshConfig conf = ConfigData.getConfig(MonsterRefreshConfig.class, bossId);
             MonsterConfig conf1 = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
             messageService.sendSysMsg(5, player.getName(), conf1.name);
             hurtRank();
-            if (worldRecord.checkAllDead()) {
+            if (worldBossData.checkAllDead()) {
                 sendAward();
             }
 
             //最后一个boss击杀
-            if (bossId == worldRecord.getLastBossId()) {
-                worldRecord.setLastKillPlayerId(playerId);
-                worldRecord.setLastKillTime(System.currentTimeMillis());
+            if (bossId == worldBossData.getLastBossId()) {
+                worldBossData.setLastKillPlayerId(playerId);
+                worldBossData.setLastKillTime(System.currentTimeMillis());
             }
             return;
         }
@@ -315,33 +314,33 @@ public class WorldBossService implements InitHandler {
 
         if (openHour - hour == 1) { //先不考虑0点
             if (60 - min <= 10) {//10分钟公告
-                if (!worldRecord.isbTenMin()) {
+                if (!worldBossData.isbTenMin()) {
                     messageService.sendSysMsg(2, 10);
-                    worldRecord.setbTenMin(true);
+                    worldBossData.setbTenMin(true);
                 }
             } else if (60 - min <= 5) {
-                if (!worldRecord.isbFiveMin()) {
+                if (!worldBossData.isbFiveMin()) {
                     messageService.sendSysMsg(2, 5);
-                    worldRecord.setbFiveMin(true);
+                    worldBossData.setbFiveMin(true);
                 }
             }
         } else if (hour >= openHour && hour < endHour) { //活动中
-            if (!worldRecord.isbStart()) {
+            if (!worldBossData.isbStart()) {
                 messageService.sendSysMsg(3);
-                worldRecord.setbStart(true);
+                worldBossData.setbStart(true);
             }
 
-            if (worldRecord.getDay() == c.get(Calendar.DAY_OF_YEAR) &&
-                    worldRecord.getOpenHour() == openHour &&
-                    worldRecord.getEndHour() == endHour) { //已经有该活动数据了
+            if (worldBossData.getDay() == c.get(Calendar.DAY_OF_YEAR) &&
+                    worldBossData.getOpenHour() == openHour &&
+                    worldBossData.getEndHour() == endHour) { //已经有该活动数据了
                 return;
             } else { //新开一活动
-                worldRecord = new WorldRecord();
-                worldRecord.setId(getNextId());
-                worldRecord.setOpenHour(openHour);
-                worldRecord.setEndHour(endHour);
-                worldRecord.setDay(c.get(Calendar.DAY_OF_YEAR));
-                worldRecord.setStartTime(System.currentTimeMillis());
+                worldBossData = new WorldRecord();
+                worldBossData.setId(getNextId());
+                worldBossData.setOpenHour(openHour);
+                worldBossData.setEndHour(endHour);
+                worldBossData.setDay(c.get(Calendar.DAY_OF_YEAR));
+                worldBossData.setStartTime(System.currentTimeMillis());
 
                 ServerLogger.info("open new world boss activity...");
 
@@ -354,10 +353,10 @@ public class WorldBossService implements InitHandler {
                     MonsterRefreshConfig refreshConfig = ConfigData.getConfig(MonsterRefreshConfig.class, bossId);
                     MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class, refreshConfig.monsterId);
                     WorldBoss boss = WorldBoss.newInstance(bossId, index++, monsterConfig.hp, copyId);
-                    worldRecord.getWorldBossMap().put(bossId, boss);
+                    worldBossData.getWorldBossMap().put(bossId, boss);
 
                     if (i == len - 2) { //记录最后一个boss
-                        worldRecord.setLastBossId(bossId);
+                        worldBossData.setLastBossId(bossId);
                     }
                 }
                 try {
@@ -369,7 +368,7 @@ public class WorldBossService implements InitHandler {
                 saveData();
             }
         } else if (hour >= endHour) { //结束,发奖励
-            if (hour != worldRecord.getEndHour()) {
+            if (hour != worldBossData.getEndHour()) {
                 return;
             }
             sendAward();
@@ -382,16 +381,16 @@ public class WorldBossService implements InitHandler {
     private void sendAward() {
         try {
             awardLock.lock();
-            if (worldRecord.isbAward()) {
+            if (worldBossData.isbAward()) {
                 return;
             }
             //活动结束，清理相关数据
             players.clear();
-            worldRecord.setbAward(true);
+            worldBossData.setbAward(true);
             messageService.sendSysMsg(4);
             multiService.clearGroup(Scene.WORLD_BOSSS_PVE);
             //排序
-            List<HurtRecord> list = new ArrayList<>(worldRecord.getHurtMap().values());
+            List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
             Collections.sort(list, SORT);
 
             List<GoodsEntry> killRewards = new ArrayList<>(); //击杀BOSS奖励
@@ -400,7 +399,7 @@ public class WorldBossService implements InitHandler {
             Map<Integer, int[]> killReward = ConfigData.globalParam().worldBossKillReward;
 
             Map<Integer, List<GoodsEntry>> beatRewardMap = new HashMap<>();
-            for (Map.Entry<Integer, Integer> s : worldRecord.getKillMap().entrySet()) {
+            for (Map.Entry<Integer, Integer> s : worldBossData.getKillMap().entrySet()) {
                 List<GoodsEntry> lastBeatRewards = beatRewardMap.get(s.getValue()); //最后一击奖励列表
                 if (lastBeatRewards == null) {
                     lastBeatRewards = new ArrayList<>();
@@ -487,9 +486,9 @@ public class WorldBossService implements InitHandler {
     }
 
     private void saveData() {
-        String str = JsonUtils.object2String(worldRecord);
+        String str = JsonUtils.object2String(worldBossData);
         byte[] dbData = str.getBytes(Charset.forName("utf-8"));
-        worldBossDao.updateWorldRecord(worldRecord.getId(), CompressUtil.compressBytes(dbData));
+        worldBossDao.updateWorldRecord(worldBossData.getId(), CompressUtil.compressBytes(dbData));
     }
 
     public void shutdown() {
@@ -564,12 +563,26 @@ public class WorldBossService implements InitHandler {
         WorldBossChallentVO vo = new WorldBossChallentVO();
         if (!gmOpen && !checkOpen()) {
             vo.code = Response.WORLD_BOSS_END;
-            ServerLogger.warn("time out,world boss info ==>" + JsonUtils.object2String(worldRecord));
+            ServerLogger.warn("time out,world boss info ==>" + "open time = " + worldBossData.getOpenHour() + ",end time = " + worldBossData.getEndHour());
             return vo;
         }
 
         WorldBoss worldBoss = null;
-        for (WorldBoss boss : worldRecord.getWorldBossMap().values()) {
+        if(index != 1) {
+            for (WorldBoss boss : worldBossData.getWorldBossMap().values()) {
+                //检查前置BOSS有没有被杀
+                if(boss.getIndex() == index - 1) {
+                    if(boss.getCurHp() > 0) {
+                        vo.code = Response.ERR_PARAM;
+                        ServerLogger.warn("pre-boss has been alive.  index = " + index);
+                        return vo;
+                    }
+                    break;
+                }
+            }
+        }
+
+        for (WorldBoss boss : worldBossData.getWorldBossMap().values()) {
             if (boss.getIndex() == index) {
                 worldBoss = boss;
                 break;
@@ -578,7 +591,7 @@ public class WorldBossService implements InitHandler {
         if (worldBoss == null) {
             vo.code = Response.WORLD_BOSS_END;
             ServerLogger.warn("world boss is null.... index = " + index);
-            ServerLogger.warn("world boss is null..,world boss info ==>" + JsonUtils.object2String(worldRecord));
+            ServerLogger.warn("world boss is null..,world boss info ==>" + JsonUtils.object2String(worldBossData));
             return vo;
         }
         if (worldBoss.getCurHp() <= 0) {
@@ -586,18 +599,18 @@ public class WorldBossService implements InitHandler {
             return vo;
         }
 
-        Integer times = worldRecord.getBuyTimes().get(playerId);
+        Integer times = worldBossData.getBuyTimes().get(playerId);
         if (times == null) {
             times = 0;
         }
 
-        HurtRecord hr = worldRecord.getHurtMap().get(playerId);
+        HurtRecord hr = worldBossData.getHurtMap().get(playerId);
         cleanupHurt(hr, worldBoss.getId());
 
         //addPlayer(playerId);
         vo.attackBuyCount = times;
         vo.copyId = worldBoss.getCopyId();
-        Long deadTime = worldRecord.getPlayerDeadTime().get(playerId);
+        Long deadTime = worldBossData.getPlayerDeadTime().get(playerId);
         if (deadTime == null) {
             deadTime = 0L;
         }
@@ -619,11 +632,11 @@ public class WorldBossService implements InitHandler {
      */
     public Object getWorldBossInfo(int playerId) {
         WorldBossVO vo = new WorldBossVO();
-        vo.startTime = worldRecord.getOpenHour();
-        vo.killCount = worldRecord.getKillMap().size();
-        vo.bossKilledTime = (int) (worldRecord.getLastKillTime() / 1000);
-        if (worldRecord.getLastKillPlayerId() != 0) {
-            Player p = playerService.getPlayer(worldRecord.getLastKillPlayerId());
+        vo.startTime = worldBossData.getOpenHour();
+        vo.killCount = worldBossData.getKillMap().size();
+        vo.bossKilledTime = (int) (worldBossData.getLastKillTime() / 1000);
+        if (worldBossData.getLastKillPlayerId() != 0) {
+            Player p = playerService.getPlayer(worldBossData.getLastKillPlayerId());
             if (p != null) {
                 vo.playerName = p.getName();
             }
@@ -640,7 +653,7 @@ public class WorldBossService implements InitHandler {
     public Int2Param buyAttack(int playerId, int count) {
         Int2Param param = new Int2Param();
         param.param1 = Response.SUCCESS;
-        Integer times = worldRecord.getBuyTimes().get(playerId);
+        Integer times = worldBossData.getBuyTimes().get(playerId);
         if (times == null) {
             times = 0;
         }
@@ -659,7 +672,7 @@ public class WorldBossService implements InitHandler {
 
         times += count;
         param.param2 = times;
-        worldRecord.getBuyTimes().put(playerId, times);
+        worldBossData.getBuyTimes().put(playerId, times);
         return param;
     }
 
@@ -675,7 +688,7 @@ public class WorldBossService implements InitHandler {
             vo1.nickName = hr.getName();
             vo.rankList.add(vo1);
         }
-        HurtRecord hr = worldRecord.getHurtMap().get(playerId);
+        HurtRecord hr = worldBossData.getHurtMap().get(playerId);
         if (hr != null) {
             vo.selfRank = hr.getRank();
             vo.hurt = hr.getCurHurt();
@@ -717,7 +730,7 @@ public class WorldBossService implements InitHandler {
      * @param bossId
      */
     public void revive(int playerId, int type, int bossId) {
-        WorldBoss worldBoss = worldRecord.getWorldBossMap().get(bossId);
+        WorldBoss worldBoss = worldBossData.getWorldBossMap().get(bossId);
         Int2Param param = new Int2Param();
         if (worldBoss.getCurHp() <= 0) {
             param.param1 = Response.WORLD_BOSS_KILLED;
@@ -753,12 +766,12 @@ public class WorldBossService implements InitHandler {
 
     public void gmReset() {
         gmOpen = true;
-        worldRecord.getKillMap().clear();
-        for (WorldBoss worldBoss : worldRecord.getWorldBossMap().values()) {
+        worldBossData.getKillMap().clear();
+        for (WorldBoss worldBoss : worldBossData.getWorldBossMap().values()) {
             worldBoss.setCurHp(worldBoss.getHp());
         }
-        worldRecord.setLastKillTime(0);
-        worldRecord.setLastKillPlayerId(0);
+        worldBossData.setLastKillTime(0);
+        worldBossData.setLastKillPlayerId(0);
         treeMap.clear();
         ServerLogger.warn("gm reset world boss activity .........");
     }

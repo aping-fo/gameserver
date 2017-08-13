@@ -314,7 +314,7 @@
 	<attackRange>[3,1]</attackRange>
 	<isRegular>1</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<strickenInteruptPriority>2750</strickenInteruptPriority>
 	<hitFactor>30</hitFactor>
 	<attackCount>4</attackCount>
 	<cd>0</cd>
@@ -20814,7 +20814,7 @@
 	<attackRange>[3,1]</attackRange>
 	<isRegular>1</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<strickenInteruptPriority>2750</strickenInteruptPriority>
 	<hitFactor>30</hitFactor>
 	<attackCount>1</attackCount>
 	<cd>0</cd>
@@ -41214,7 +41214,7 @@
 	<attackRange>[3,1]</attackRange>
 	<isRegular>1</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<strickenInteruptPriority>2750</strickenInteruptPriority>
 	<hitFactor>40</hitFactor>
 	<attackCount>3</attackCount>
 	<cd>1</cd>
@@ -61517,7 +61517,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>4</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -61539,11 +61539,11 @@
 	<skillOnGround>2010100111</skillOnGround>
 	<strickenGiddy>2010100111</strickenGiddy>
 	<strickenFallback>2010100111</strickenFallback>
-	<attackInAir>2010100211</attackInAir>
-	<skillInAir>2010100112</skillInAir>
-	<strickenFly>2010100112</strickenFly>
-	<strickenShotdown>2010100112</strickenShotdown>
-	<lyingDown>2010100113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -61564,10 +61564,10 @@
 	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -61867,7 +61867,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -61889,11 +61889,11 @@
 	<skillOnGround>2010200111</skillOnGround>
 	<strickenGiddy>2010200111</strickenGiddy>
 	<strickenFallback>2010200111</strickenFallback>
-	<attackInAir>2010200211</attackInAir>
-	<skillInAir>2010200112</skillInAir>
-	<strickenFly>2010200112</strickenFly>
-	<strickenShotdown>2010200112</strickenShotdown>
-	<lyingDown>2010200113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -61917,7 +61917,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>800</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -62217,7 +62217,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -62239,11 +62239,11 @@
 	<skillOnGround>2010500111</skillOnGround>
 	<strickenGiddy>2010500111</strickenGiddy>
 	<strickenFallback>2010500111</strickenFallback>
-	<attackInAir>2010200214</attackInAir>
-	<skillInAir>2010500112</skillInAir>
-	<strickenFly>2010500112</strickenFly>
-	<strickenShotdown>2010500112</strickenShotdown>
-	<lyingDown>2010500113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -62264,10 +62264,10 @@
 	<attackRange>[2,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -62567,7 +62567,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -62589,11 +62589,11 @@
 	<skillOnGround>2010600111</skillOnGround>
 	<strickenGiddy>2010600111</strickenGiddy>
 	<strickenFallback>2010600111</strickenFallback>
-	<attackInAir>2010500214</attackInAir>
-	<skillInAir>2010600112</skillInAir>
-	<strickenFly>2010600112</strickenFly>
-	<strickenShotdown>2010600112</strickenShotdown>
-	<lyingDown>2010600113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -62614,10 +62614,10 @@
 	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -62917,7 +62917,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -62939,11 +62939,11 @@
 	<skillOnGround>2010700111</skillOnGround>
 	<strickenGiddy>2010700111</strickenGiddy>
 	<strickenFallback>2010700111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2010700112</skillInAir>
-	<strickenFly>2010700112</strickenFly>
-	<strickenShotdown>2010700112</strickenShotdown>
-	<lyingDown>2010700113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -62964,10 +62964,10 @@
 	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>800</hitFactor>
 	<attackCount>5</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -63267,7 +63267,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>1</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -63289,11 +63289,11 @@
 	<skillOnGround>2010800111</skillOnGround>
 	<strickenGiddy>2010800111</strickenGiddy>
 	<strickenFallback>2010800111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2010800112</skillInAir>
-	<strickenFly>2010800112</strickenFly>
-	<strickenShotdown>2010800112</strickenShotdown>
-	<lyingDown>2010800113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -63309,15 +63309,15 @@
 	<desc></desc>
 	<logicDataFile>20108.dsl</logicDataFile>
 	<logicId>20108002</logicId>
-	<attachedBuff>2104</attachedBuff>
+	<attachedBuff>20108002</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange>[7,3]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>0</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -63617,7 +63617,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -63639,11 +63639,11 @@
 	<skillOnGround>2010900111</skillOnGround>
 	<strickenGiddy>2010900111</strickenGiddy>
 	<strickenFallback>2010900111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2010900112</skillInAir>
-	<strickenFly>2010900112</strickenFly>
-	<strickenShotdown>2010900112</strickenShotdown>
-	<lyingDown>2010900113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -63664,10 +63664,10 @@
 	<attackRange>[8,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -63967,7 +63967,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -63989,11 +63989,11 @@
 	<skillOnGround>2011000111</skillOnGround>
 	<strickenGiddy>2011000111</strickenGiddy>
 	<strickenFallback>2011000111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2011000112</skillInAir>
-	<strickenFly>2011000112</strickenFly>
-	<strickenShotdown>2011000112</strickenShotdown>
-	<lyingDown>2011000113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -64014,10 +64014,10 @@
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -64317,7 +64317,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>6</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>1</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -64339,11 +64339,11 @@
 	<skillOnGround>2011100111</skillOnGround>
 	<strickenGiddy>2011100111</strickenGiddy>
 	<strickenFallback>2011100111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2011100112</skillInAir>
-	<strickenFly>2011100112</strickenFly>
-	<strickenShotdown>2011100112</strickenShotdown>
-	<lyingDown>2011100113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -64364,10 +64364,10 @@
 	<attackRange>[4.5,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>4</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>1</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -64667,7 +64667,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -64689,11 +64689,11 @@
 	<skillOnGround>2011200111</skillOnGround>
 	<strickenGiddy>2011200111</strickenGiddy>
 	<strickenFallback>2011200111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2011200112</skillInAir>
-	<strickenFly>2011200112</strickenFly>
-	<strickenShotdown>2011200112</strickenShotdown>
-	<lyingDown>2011200113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -64714,10 +64714,10 @@
 	<attackRange>[8,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -65017,7 +65017,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -65039,11 +65039,11 @@
 	<skillOnGround>2011300111</skillOnGround>
 	<strickenGiddy>2011300111</strickenGiddy>
 	<strickenFallback>2011300111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2011300112</skillInAir>
-	<strickenFly>2011300112</strickenFly>
-	<strickenShotdown>2011300112</strickenShotdown>
-	<lyingDown>2011300113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -65064,10 +65064,10 @@
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>4</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -65367,7 +65367,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -65389,11 +65389,11 @@
 	<skillOnGround>2011400111</skillOnGround>
 	<strickenGiddy>2011400111</strickenGiddy>
 	<strickenFallback>2011400111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2011400112</skillInAir>
-	<strickenFly>2011400112</strickenFly>
-	<strickenShotdown>2011400112</strickenShotdown>
-	<lyingDown>2011400113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -65414,10 +65414,10 @@
 	<attackRange>[6,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -65717,7 +65717,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -65739,11 +65739,11 @@
 	<skillOnGround>2011500111</skillOnGround>
 	<strickenGiddy>2011500111</strickenGiddy>
 	<strickenFallback>2011500111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2011500112</skillInAir>
-	<strickenFly>2011500112</strickenFly>
-	<strickenShotdown>2011500112</strickenShotdown>
-	<lyingDown>2011500113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -65764,10 +65764,10 @@
 	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -66067,7 +66067,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -66089,11 +66089,11 @@
 	<skillOnGround>2011600111</skillOnGround>
 	<strickenGiddy>2011600111</strickenGiddy>
 	<strickenFallback>2011600111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2011600112</skillInAir>
-	<strickenFly>2011600112</strickenFly>
-	<strickenShotdown>2011600112</strickenShotdown>
-	<lyingDown>2011600113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -66114,10 +66114,10 @@
 	<attackRange>[3,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>4</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -66417,7 +66417,7 @@
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>5</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -66439,11 +66439,11 @@
 	<skillOnGround>2011700111</skillOnGround>
 	<strickenGiddy>2011700111</strickenGiddy>
 	<strickenFallback>2011700111</strickenFallback>
-	<attackInAir>2010600213</attackInAir>
-	<skillInAir>2011700112</skillInAir>
-	<strickenFly>2011700112</strickenFly>
-	<strickenShotdown>2011700112</strickenShotdown>
-	<lyingDown>2011700113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -66464,10 +66464,10 @@
 	<attackRange>[7,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>8</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -66761,20 +66761,20 @@
 	<logicId>20201001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[5,1]</attackRange>
+	<attackRange>[3,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
 	<nextSkillId>0</nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill1</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[202010011]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -66789,11 +66789,11 @@
 	<skillOnGround>2020100111</skillOnGround>
 	<strickenGiddy>2020100111</strickenGiddy>
 	<strickenFallback>2020100111</strickenFallback>
-	<attackInAir>2020100211</attackInAir>
-	<skillInAir>2020100112</skillInAir>
-	<strickenFly>2020100112</strickenFly>
-	<strickenShotdown>2020100112</strickenShotdown>
-	<lyingDown>2020100113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -66817,7 +66817,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -66867,7 +66867,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -67164,10 +67164,10 @@
 	<attackRange>[1.6,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -67189,11 +67189,11 @@
 	<skillOnGround>2020200111</skillOnGround>
 	<strickenGiddy>2020200111</strickenGiddy>
 	<strickenFallback>2020200111</strickenFallback>
-	<attackInAir>2020100211</attackInAir>
-	<skillInAir>2020200112</skillInAir>
-	<strickenFly>2020200112</strickenFly>
-	<strickenShotdown>2020200112</strickenShotdown>
-	<lyingDown>2020200113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -67217,7 +67217,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>7</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -67267,7 +67267,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -67564,10 +67564,10 @@
 	<attackRange>[3,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -67589,11 +67589,11 @@
 	<skillOnGround>2020300111</skillOnGround>
 	<strickenGiddy>2020300111</strickenGiddy>
 	<strickenFallback>2020300111</strickenFallback>
-	<attackInAir>2020300112</attackInAir>
-	<skillInAir>2020300112</skillInAir>
-	<strickenFly>2020300112</strickenFly>
-	<strickenShotdown>2020300112</strickenShotdown>
-	<lyingDown>2020300113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -67617,7 +67617,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -67667,7 +67667,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>4</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>10</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -67964,10 +67964,10 @@
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>4</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -67989,11 +67989,11 @@
 	<skillOnGround>2020400111</skillOnGround>
 	<strickenGiddy>2020400111</strickenGiddy>
 	<strickenFallback>2020400111</strickenFallback>
-	<attackInAir>2020400211</attackInAir>
-	<skillInAir>2020400112</skillInAir>
-	<strickenFly>2020400112</strickenFly>
-	<strickenShotdown>2020400112</strickenShotdown>
-	<lyingDown>2020400113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -68017,7 +68017,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -68067,7 +68067,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -68364,10 +68364,10 @@
 	<attackRange>[3.5,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -68389,11 +68389,11 @@
 	<skillOnGround>2020500111</skillOnGround>
 	<strickenGiddy>2020500111</strickenGiddy>
 	<strickenFallback>2020500111</strickenFallback>
-	<attackInAir>2020400211</attackInAir>
-	<skillInAir>2020500112</skillInAir>
-	<strickenFly>2020500112</strickenFly>
-	<strickenShotdown>2020500112</strickenShotdown>
-	<lyingDown>2020500113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -68417,7 +68417,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>1</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -68467,7 +68467,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>4</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -68764,10 +68764,10 @@
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>1</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -68789,11 +68789,11 @@
 	<skillOnGround>2030200111</skillOnGround>
 	<strickenGiddy>2030200111</strickenGiddy>
 	<strickenFallback>2030200111</strickenFallback>
-	<attackInAir>2030200112</attackInAir>
-	<skillInAir>2030200112</skillInAir>
-	<strickenFly>2030200112</strickenFly>
-	<strickenShotdown>2030200112</strickenShotdown>
-	<lyingDown>2030200113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -68817,7 +68817,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -68867,7 +68867,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>2</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -69164,10 +69164,10 @@
 	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2500</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -69189,11 +69189,11 @@
 	<skillOnGround>2030300111</skillOnGround>
 	<strickenGiddy>2030300111</strickenGiddy>
 	<strickenFallback>2030300111</strickenFallback>
-	<attackInAir>2030300112</attackInAir>
-	<skillInAir>2030300112</skillInAir>
-	<strickenFly>2030300112</strickenFly>
-	<strickenShotdown>2030300112</strickenShotdown>
-	<lyingDown>2030300113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -69217,7 +69217,7 @@
 	<strickenInteruptPriority>2500</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -69267,7 +69267,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>1</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -69764,10 +69764,10 @@
 	<attackRange>[6,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -69789,11 +69789,11 @@
 	<skillOnGround>2030400111</skillOnGround>
 	<strickenGiddy>2030400111</strickenGiddy>
 	<strickenFallback>2030400111</strickenFallback>
-	<attackInAir>2030500112</attackInAir>
-	<skillInAir>2030400112</skillInAir>
-	<strickenFly>2030400112</strickenFly>
-	<strickenShotdown>2030400112</strickenShotdown>
-	<lyingDown>2030400113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -69817,7 +69817,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>13</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -69867,7 +69867,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>6</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -70164,10 +70164,10 @@
 	<attackRange>[7,2]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -70189,11 +70189,11 @@
 	<skillOnGround>2030500111</skillOnGround>
 	<strickenGiddy>2030500111</strickenGiddy>
 	<strickenFallback>2030500111</strickenFallback>
-	<attackInAir>2030500112</attackInAir>
-	<skillInAir>2030500112</skillInAir>
-	<strickenFly>2030500112</strickenFly>
-	<strickenShotdown>2030500112</strickenShotdown>
-	<lyingDown>2030500113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -70217,7 +70217,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -70564,10 +70564,10 @@
 	<attackRange>[3,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>5</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -70589,11 +70589,11 @@
 	<skillOnGround>2030600111</skillOnGround>
 	<strickenGiddy>2030600111</strickenGiddy>
 	<strickenFallback>2030600111</strickenFallback>
-	<attackInAir>2030500112</attackInAir>
-	<skillInAir>2030600112</skillInAir>
-	<strickenFly>2030600112</strickenFly>
-	<strickenShotdown>2030600112</strickenShotdown>
-	<lyingDown>2030600113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -70617,7 +70617,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>5</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -70667,7 +70667,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>6</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -70964,10 +70964,10 @@
 	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>2000</strickenInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>4</cd>
+	<cd>0</cd>
 	<offsetRefer>1</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -70989,11 +70989,11 @@
 	<skillOnGround>2030700111</skillOnGround>
 	<strickenGiddy>2030700111</strickenGiddy>
 	<strickenFallback>2030700111</strickenFallback>
-	<attackInAir>2030500112</attackInAir>
-	<skillInAir>2030700112</skillInAir>
-	<strickenFly>2030700112</strickenFly>
-	<strickenShotdown>2030700112</strickenShotdown>
-	<lyingDown>2030700113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -71017,7 +71017,7 @@
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>6</cd>
+	<cd>5</cd>
 	<offsetRefer>1</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -71067,7 +71067,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>3</attackCount>
-	<cd>12</cd>
+	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -71389,11 +71389,11 @@
 	<skillOnGround>2090100111</skillOnGround>
 	<strickenGiddy>2090100111</strickenGiddy>
 	<strickenFallback>2090100111</strickenFallback>
-	<attackInAir>2090100112</attackInAir>
-	<skillInAir>2090100112</skillInAir>
-	<strickenFly>2090100112</strickenFly>
-	<strickenShotdown>2090100112</strickenShotdown>
-	<lyingDown>2090100113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -71989,11 +71989,11 @@
 	<skillOnGround>2090300111</skillOnGround>
 	<strickenGiddy>2090300111</strickenGiddy>
 	<strickenFallback>2090300111</strickenFallback>
-	<attackInAir>2090300112</attackInAir>
-	<skillInAir>2090300112</skillInAir>
-	<strickenFly>2090300112</strickenFly>
-	<strickenShotdown>2090300112</strickenShotdown>
-	<lyingDown>2090300113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -72339,11 +72339,11 @@
 	<skillOnGround>2090400111</skillOnGround>
 	<strickenGiddy>2090400111</strickenGiddy>
 	<strickenFallback>2090400111</strickenFallback>
-	<attackInAir>2090400112</attackInAir>
-	<skillInAir>2090400112</skillInAir>
-	<strickenFly>2090400112</strickenFly>
-	<strickenShotdown>2090400112</strickenShotdown>
-	<lyingDown>2090400113</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>
@@ -72389,11 +72389,11 @@
 	<skillOnGround>2090400211</skillOnGround>
 	<strickenGiddy>2090400211</strickenGiddy>
 	<strickenFallback>2090400211</strickenFallback>
-	<attackInAir>2090400112</attackInAir>
-	<skillInAir>2090400212</skillInAir>
-	<strickenFly>2090400212</strickenFly>
-	<strickenShotdown>2090400212</strickenShotdown>
-	<lyingDown>2090400213</lyingDown>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<coin></coin>
 	<nextId>0</nextId>
 	<setPainting></setPainting>

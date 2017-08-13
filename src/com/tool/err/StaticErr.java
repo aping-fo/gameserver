@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class StaticErr {
 
 	private static Map<String, Integer> errs = new ConcurrentHashMap<String, Integer>();
-	private static final String filePath = "E:\\s1_log\\logs\\err\\err.log.2016-05-12";
+	private static final String filePath = "F:\\projects\\server\\logs\\err\\err.log.2017-06-27";
 	
 	public static void main(String[] args) throws Exception {
 		

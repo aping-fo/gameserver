@@ -841,6 +841,27 @@
 	<extraEffectParam></extraEffectParam>
 </config>
 <config>
+	<id>20108002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>黑暗狗头专用减伤</name>
+	<description>增益A</description>
+	<duration>5</duration>
+	<takeEffectParam>[1,1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2018</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
 	<id>20201011</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
@@ -944,6 +965,636 @@
 	<conflictType></conflictType>
 	<addEfectIndex></addEfectIndex>
 	<extraEffectParam>[[10000],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
+	<id>2110101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第一章怪物特性</name>
+	<description>中毒1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第二章怪物特性</name>
+	<description>中毒2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110301</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>2</buffSubType>
+	<name>普通本第三章怪物特性</name>
+	<description>流血1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2014</icon>
+	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110401</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>2</buffSubType>
+	<name>普通本第四章怪物特性</name>
+	<description>流血2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2014</icon>
+	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第五章怪物特性</name>
+	<description>中毒1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110601</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第六章怪物特性</name>
+	<description>中毒2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110901</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>1</buffSubType>
+	<name>普通本第九章怪物特性</name>
+	<description>灼烧1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2015</icon>
+	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>1</buffSubType>
+	<name>普通本第十章怪物特性</name>
+	<description>灼烧2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2015</icon>
+	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111301</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>14</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十三章怪物特性</name>
+	<description>反伤1级</description>
+	<duration>5</duration>
+	<takeEffectParam>[0.01]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2030</icon>
+	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111401</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>14</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十四章怪物特性</name>
+	<description>反伤2级</description>
+	<duration>5</duration>
+	<takeEffectParam>[0.03]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2030</icon>
+	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第一章怪物特性</name>
+	<description>中毒1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第二章怪物特性</name>
+	<description>中毒2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120301</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>2</buffSubType>
+	<name>困难本第三章怪物特性</name>
+	<description>流血1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2014</icon>
+	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120401</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>2</buffSubType>
+	<name>困难本第四章怪物特性</name>
+	<description>流血2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2014</icon>
+	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第五章怪物特性</name>
+	<description>中毒1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120601</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第六章怪物特性</name>
+	<description>中毒2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120901</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>1</buffSubType>
+	<name>困难本第九章怪物特性</name>
+	<description>灼烧1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2015</icon>
+	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>1</buffSubType>
+	<name>困难本第十章怪物特性</name>
+	<description>灼烧2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2015</icon>
+	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121301</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>14</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第十三章怪物特性</name>
+	<description>反伤1级</description>
+	<duration>5</duration>
+	<takeEffectParam>[0.01]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2030</icon>
+	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121401</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>14</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第十四章怪物特性</name>
+	<description>反伤2级</description>
+	<duration>5</duration>
+	<takeEffectParam>[0.03]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2030</icon>
+	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第一章怪物特性</name>
+	<description>中毒1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第二章怪物特性</name>
+	<description>中毒2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130301</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>2</buffSubType>
+	<name>噩梦本第三章怪物特性</name>
+	<description>流血1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2014</icon>
+	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130401</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>2</buffSubType>
+	<name>噩梦本第四章怪物特性</name>
+	<description>流血2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2014</icon>
+	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第五章怪物特性</name>
+	<description>中毒1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130601</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第六章怪物特性</name>
+	<description>中毒2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130901</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>1</buffSubType>
+	<name>噩梦本第九章怪物特性</name>
+	<description>灼烧1级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2015</icon>
+	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>1</buffSubType>
+	<name>噩梦本第十章怪物特性</name>
+	<description>灼烧2级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2015</icon>
+	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131301</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>14</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第十三章怪物特性</name>
+	<description>反伤1级</description>
+	<duration>5</duration>
+	<takeEffectParam>[0.01]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2030</icon>
+	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131401</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>14</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第十四章怪物特性</name>
+	<description>反伤2级</description>
+	<duration>5</duration>
+	<takeEffectParam>[0.03]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2030</icon>
+	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
 </config>
 <config>
 	<id>1040101</id>
