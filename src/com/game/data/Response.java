@@ -32,7 +32,7 @@ public class Response {
 	public static final int NO_TRAINING_COIN=30;//试炼币不足
 	public static final int NO_LOTTERY_TICKET=31;//补给卷不足
 	public static final int SYS=99;//系统
-	public static final int WELCOME_MAIL_TITLE=100;//欢迎您来到《封神之刃》
+	public static final int WELCOME_MAIL_TITLE=100;//欢迎您来到《我守护的世界》
 	public static final int WELCOME_MAIL_CONTENT=101;//尊敬的玩家，感谢您对游戏的支持！有问题可以随时联系我们
 	//角色系统
 	public static final int SAME_NAME=1001;//该名字已被使用

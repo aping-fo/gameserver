@@ -276,7 +276,7 @@ public class PlayerService implements InitHandler {
 				Context.getTimerService().scheduleDelay(new Runnable() {
 					@Override
 					public void run() {
-						goodsService.addRewards(playerId, newbieRewards, LogConsume.GM);
+						//goodsService.addRewards(playerId, newbieRewards, LogConsume.GM);
 						String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
 						String mailContent = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_CONTENT).tips;
 						mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);
@@ -315,6 +315,8 @@ public class PlayerService implements InitHandler {
 		fashionService.checkRemoveTimeoutFashions(playerId, true);
 		// 刷新体力
 		refreshEnergy(player);
+		//刷新活力
+		refreshTraversingEnergy(player);
 		//更新货币
 		updateCurrencyToClient(playerId);
 		nameCaches.putIfAbsent(player.getName(), player.getPlayerId());
@@ -387,7 +389,10 @@ public class PlayerService implements InitHandler {
 			if(card==0){
 				vo.curCards.add(0);
 			}else{
-				vo.curCards.add(data.getSkillCards().get(card).getCardId());
+				SkillCard skillCard = data.getSkillCards().get(card);
+				if(skillCard != null) {
+					vo.curCards.add(skillCard.getCardId());
+				}
 			}
 		}
 		return vo;

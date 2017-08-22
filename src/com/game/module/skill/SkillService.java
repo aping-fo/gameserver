@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map.Entry;
 
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -69,6 +70,10 @@ public class SkillService {
 		//设置id
 		PlayerData data = playerService.getPlayerData(playerId);
 		int index = data.getSkills().indexOf(skillId);
+		if(index == -1) {
+			ServerLogger.warn("skill not found ,skillId ==>" + skillId);
+			return Response.ERR_PARAM;
+		}
 		data.getSkills().set(index, cfg.nextId);
 		index = data.getCurSkills().indexOf(skillId);
 		if(index>=0){

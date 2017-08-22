@@ -59,6 +59,7 @@ public enum LogConsume {
 	WORLD_BOSS_BUY(1052,"世界BOSS购买"),
 	WORLD_BOSS_KILL(1053,"世界BOSS击杀奖励"),
 	WORLD_BOSS_LAST_BEAT(1054,"世界BOSS最后一击奖励"),
+	WORLD_HORN(1055,"喇叭"),
 	;
 	public int actionId;// id
 	public String desc;

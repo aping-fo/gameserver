@@ -103,6 +103,9 @@ public class ArtifactService {
 				if(components==null){
 					components = new int[6];
 					components = data.getArtifacts().putIfAbsent(cfg.id, components);
+					if(components == null) {
+						components = data.getArtifacts().get(cfg.id);
+					}
 				}
 			}
 		}

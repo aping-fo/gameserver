@@ -2,7 +2,7 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
-	<attack>1000</attack>
+	<attack>1920</attack>
 	<defense>0</defense>
 	<hp>0</hp>
 	<crit>0</crit>
@@ -14,7 +14,7 @@
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
+	<srvAttack>1920</srvAttack>
 	<srvDefense>0</srvDefense>
 	<srvSymptom>0</srvSymptom>
 	<srvHp>0</srvHp>
@@ -30,7 +30,7 @@
 <config>
 	<id>2</id>
 	<attack>0</attack>
-	<defense>1000</defense>
+	<defense>80</defense>
 	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
@@ -41,8 +41,8 @@
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
+	<srvAttack>1920</srvAttack>
+	<srvDefense>80</srvDefense>
 	<srvSymptom>0</srvSymptom>
 	<srvHp>0</srvHp>
 	<srvCrit>0</srvCrit>
@@ -58,7 +58,7 @@
 	<id>3</id>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>1000</hp>
+	<hp>60</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -68,9 +68,9 @@
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
+	<srvAttack>1920</srvAttack>
+	<srvDefense>80</srvDefense>
+	<srvSymptom>60</srvSymptom>
 	<srvHp>0</srvHp>
 	<srvCrit>0</srvCrit>
 	<srvFu>0</srvFu>
@@ -86,7 +86,7 @@
 	<attack>0</attack>
 	<defense>0</defense>
 	<hp>0</hp>
-	<crit>1000</crit>
+	<crit>30</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
 	<attackPercent>0</attackPercent>
@@ -95,10 +95,10 @@
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
+	<srvAttack>1920</srvAttack>
+	<srvDefense>80</srvDefense>
+	<srvSymptom>60</srvSymptom>
+	<srvHp>30</srvHp>
 	<srvCrit>0</srvCrit>
 	<srvFu>0</srvFu>
 	<srvattackPercent>0</srvattackPercent>
@@ -114,7 +114,7 @@
 	<defense>0</defense>
 	<hp>0</hp>
 	<crit>0</crit>
-	<symptom>1000</symptom>
+	<symptom>30</symptom>
 	<fu>0</fu>
 	<attackPercent>0</attackPercent>
 	<defensePercent>0</defensePercent>
@@ -122,11 +122,11 @@
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
-	<srvCrit>1000</srvCrit>
+	<srvAttack>1920</srvAttack>
+	<srvDefense>80</srvDefense>
+	<srvSymptom>60</srvSymptom>
+	<srvHp>30</srvHp>
+	<srvCrit>30</srvCrit>
 	<srvFu>0</srvFu>
 	<srvattackPercent>0</srvattackPercent>
 	<srvDefensePercent>0</srvDefensePercent>
@@ -142,19 +142,19 @@
 	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
-	<fu>1000</fu>
+	<fu>50</fu>
 	<attackPercent>0</attackPercent>
 	<defensePercent>0</defensePercent>
 	<hpPercent>0</hpPercent>
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
-	<srvCrit>1000</srvCrit>
-	<srvFu>1000</srvFu>
+	<srvAttack>1920</srvAttack>
+	<srvDefense>80</srvDefense>
+	<srvSymptom>60</srvSymptom>
+	<srvHp>30</srvHp>
+	<srvCrit>30</srvCrit>
+	<srvFu>50</srvFu>
 	<srvattackPercent>0</srvattackPercent>
 	<srvDefensePercent>0</srvDefensePercent>
 	<srvHpPercent>0</srvHpPercent>
@@ -164,25 +164,25 @@
 </config>
 <config>
 	<id>7</id>
-	<attack>0</attack>
+	<attack>1920</attack>
 	<defense>0</defense>
 	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
-	<attackPercent>100</attackPercent>
+	<attackPercent>0</attackPercent>
 	<defensePercent>0</defensePercent>
 	<hpPercent>0</hpPercent>
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
-	<srvCrit>1000</srvCrit>
-	<srvFu>1000</srvFu>
-	<srvattackPercent>100</srvattackPercent>
+	<srvAttack>3840</srvAttack>
+	<srvDefense>80</srvDefense>
+	<srvSymptom>60</srvSymptom>
+	<srvHp>30</srvHp>
+	<srvCrit>30</srvCrit>
+	<srvFu>50</srvFu>
+	<srvattackPercent>0</srvattackPercent>
 	<srvDefensePercent>0</srvDefensePercent>
 	<srvHpPercent>0</srvHpPercent>
 	<srvCritPercent>0</srvCritPercent>
@@ -192,25 +192,25 @@
 <config>
 	<id>8</id>
 	<attack>0</attack>
-	<defense>0</defense>
+	<defense>80</defense>
 	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
 	<attackPercent>0</attackPercent>
-	<defensePercent>100</defensePercent>
+	<defensePercent>0</defensePercent>
 	<hpPercent>0</hpPercent>
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
-	<srvCrit>1000</srvCrit>
-	<srvFu>1000</srvFu>
-	<srvattackPercent>100</srvattackPercent>
-	<srvDefensePercent>100</srvDefensePercent>
+	<srvAttack>3840</srvAttack>
+	<srvDefense>160</srvDefense>
+	<srvSymptom>60</srvSymptom>
+	<srvHp>30</srvHp>
+	<srvCrit>30</srvCrit>
+	<srvFu>50</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
 	<srvHpPercent>0</srvHpPercent>
 	<srvCritPercent>0</srvCritPercent>
 	<srvSymptomPercent>0</srvSymptomPercent>
@@ -220,25 +220,25 @@
 	<id>9</id>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
+	<hp>60</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
 	<attackPercent>0</attackPercent>
 	<defensePercent>0</defensePercent>
-	<hpPercent>100</hpPercent>
+	<hpPercent>0</hpPercent>
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
-	<srvCrit>1000</srvCrit>
-	<srvFu>1000</srvFu>
-	<srvattackPercent>100</srvattackPercent>
-	<srvDefensePercent>100</srvDefensePercent>
-	<srvHpPercent>100</srvHpPercent>
+	<srvAttack>3840</srvAttack>
+	<srvDefense>160</srvDefense>
+	<srvSymptom>120</srvSymptom>
+	<srvHp>30</srvHp>
+	<srvCrit>30</srvCrit>
+	<srvFu>50</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
 	<srvCritPercent>0</srvCritPercent>
 	<srvSymptomPercent>0</srvSymptomPercent>
 	<srvFuPercent>0</srvFuPercent>
@@ -248,25 +248,25 @@
 	<attack>0</attack>
 	<defense>0</defense>
 	<hp>0</hp>
-	<crit>0</crit>
+	<crit>30</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
 	<attackPercent>0</attackPercent>
 	<defensePercent>0</defensePercent>
 	<hpPercent>0</hpPercent>
-	<critPercent>100</critPercent>
+	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
-	<srvCrit>1000</srvCrit>
-	<srvFu>1000</srvFu>
-	<srvattackPercent>100</srvattackPercent>
-	<srvDefensePercent>100</srvDefensePercent>
-	<srvHpPercent>100</srvHpPercent>
-	<srvCritPercent>100</srvCritPercent>
+	<srvAttack>3840</srvAttack>
+	<srvDefense>160</srvDefense>
+	<srvSymptom>120</srvSymptom>
+	<srvHp>60</srvHp>
+	<srvCrit>30</srvCrit>
+	<srvFu>50</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
 	<srvSymptomPercent>0</srvSymptomPercent>
 	<srvFuPercent>0</srvFuPercent>
 </config>
@@ -276,30 +276,57 @@
 	<defense>0</defense>
 	<hp>0</hp>
 	<crit>0</crit>
-	<symptom>0</symptom>
+	<symptom>30</symptom>
 	<fu>0</fu>
 	<attackPercent>0</attackPercent>
 	<defensePercent>0</defensePercent>
 	<hpPercent>0</hpPercent>
 	<critPercent>0</critPercent>
-	<symptomPercent>100</symptomPercent>
+	<symptomPercent>0</symptomPercent>
 	<fuPercent>0</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
-	<srvCrit>1000</srvCrit>
-	<srvFu>1000</srvFu>
-	<srvattackPercent>100</srvattackPercent>
-	<srvDefensePercent>100</srvDefensePercent>
-	<srvHpPercent>100</srvHpPercent>
-	<srvCritPercent>100</srvCritPercent>
-	<srvSymptomPercent>100</srvSymptomPercent>
+	<srvAttack>3840</srvAttack>
+	<srvDefense>160</srvDefense>
+	<srvSymptom>120</srvSymptom>
+	<srvHp>60</srvHp>
+	<srvCrit>60</srvCrit>
+	<srvFu>50</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
 	<srvFuPercent>0</srvFuPercent>
 </config>
 <config>
 	<id>12</id>
 	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>3840</srvAttack>
+	<srvDefense>160</srvDefense>
+	<srvSymptom>120</srvSymptom>
+	<srvHp>60</srvHp>
+	<srvCrit>60</srvCrit>
+	<srvFu>100</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>13</id>
+	<attack>1920</attack>
 	<defense>0</defense>
 	<hp>0</hp>
 	<crit>0</crit>
@@ -310,18 +337,1287 @@
 	<hpPercent>0</hpPercent>
 	<critPercent>0</critPercent>
 	<symptomPercent>0</symptomPercent>
-	<fuPercent>100</fuPercent>
-	<srvAttack>1000</srvAttack>
-	<srvDefense>1000</srvDefense>
-	<srvSymptom>1000</srvSymptom>
-	<srvHp>1000</srvHp>
-	<srvCrit>1000</srvCrit>
-	<srvFu>1000</srvFu>
-	<srvattackPercent>100</srvattackPercent>
-	<srvDefensePercent>100</srvDefensePercent>
-	<srvHpPercent>100</srvHpPercent>
-	<srvCritPercent>100</srvCritPercent>
-	<srvSymptomPercent>100</srvSymptomPercent>
-	<srvFuPercent>100</srvFuPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>5760</srvAttack>
+	<srvDefense>160</srvDefense>
+	<srvSymptom>120</srvSymptom>
+	<srvHp>60</srvHp>
+	<srvCrit>60</srvCrit>
+	<srvFu>100</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>14</id>
+	<attack>0</attack>
+	<defense>80</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>5760</srvAttack>
+	<srvDefense>240</srvDefense>
+	<srvSymptom>120</srvSymptom>
+	<srvHp>60</srvHp>
+	<srvCrit>60</srvCrit>
+	<srvFu>100</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>15</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>60</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>5760</srvAttack>
+	<srvDefense>240</srvDefense>
+	<srvSymptom>180</srvSymptom>
+	<srvHp>60</srvHp>
+	<srvCrit>60</srvCrit>
+	<srvFu>100</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>16</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>30</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>5760</srvAttack>
+	<srvDefense>240</srvDefense>
+	<srvSymptom>180</srvSymptom>
+	<srvHp>90</srvHp>
+	<srvCrit>60</srvCrit>
+	<srvFu>100</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>17</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>5760</srvAttack>
+	<srvDefense>240</srvDefense>
+	<srvSymptom>180</srvSymptom>
+	<srvHp>90</srvHp>
+	<srvCrit>90</srvCrit>
+	<srvFu>100</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>18</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>5760</srvAttack>
+	<srvDefense>240</srvDefense>
+	<srvSymptom>180</srvSymptom>
+	<srvHp>90</srvHp>
+	<srvCrit>90</srvCrit>
+	<srvFu>150</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>19</id>
+	<attack>1920</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>7680</srvAttack>
+	<srvDefense>240</srvDefense>
+	<srvSymptom>180</srvSymptom>
+	<srvHp>90</srvHp>
+	<srvCrit>90</srvCrit>
+	<srvFu>150</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>20</id>
+	<attack>0</attack>
+	<defense>80</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>7680</srvAttack>
+	<srvDefense>320</srvDefense>
+	<srvSymptom>180</srvSymptom>
+	<srvHp>90</srvHp>
+	<srvCrit>90</srvCrit>
+	<srvFu>150</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>21</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>60</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>7680</srvAttack>
+	<srvDefense>320</srvDefense>
+	<srvSymptom>240</srvSymptom>
+	<srvHp>90</srvHp>
+	<srvCrit>90</srvCrit>
+	<srvFu>150</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>22</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>30</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>7680</srvAttack>
+	<srvDefense>320</srvDefense>
+	<srvSymptom>240</srvSymptom>
+	<srvHp>120</srvHp>
+	<srvCrit>90</srvCrit>
+	<srvFu>150</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>23</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>7680</srvAttack>
+	<srvDefense>320</srvDefense>
+	<srvSymptom>240</srvSymptom>
+	<srvHp>120</srvHp>
+	<srvCrit>120</srvCrit>
+	<srvFu>150</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>24</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>7680</srvAttack>
+	<srvDefense>320</srvDefense>
+	<srvSymptom>240</srvSymptom>
+	<srvHp>120</srvHp>
+	<srvCrit>120</srvCrit>
+	<srvFu>200</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>25</id>
+	<attack>1920</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>9600</srvAttack>
+	<srvDefense>320</srvDefense>
+	<srvSymptom>240</srvSymptom>
+	<srvHp>120</srvHp>
+	<srvCrit>120</srvCrit>
+	<srvFu>200</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>26</id>
+	<attack>0</attack>
+	<defense>80</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>9600</srvAttack>
+	<srvDefense>400</srvDefense>
+	<srvSymptom>240</srvSymptom>
+	<srvHp>120</srvHp>
+	<srvCrit>120</srvCrit>
+	<srvFu>200</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>27</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>60</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>9600</srvAttack>
+	<srvDefense>400</srvDefense>
+	<srvSymptom>300</srvSymptom>
+	<srvHp>120</srvHp>
+	<srvCrit>120</srvCrit>
+	<srvFu>200</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>28</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>30</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>9600</srvAttack>
+	<srvDefense>400</srvDefense>
+	<srvSymptom>300</srvSymptom>
+	<srvHp>150</srvHp>
+	<srvCrit>120</srvCrit>
+	<srvFu>200</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>29</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>9600</srvAttack>
+	<srvDefense>400</srvDefense>
+	<srvSymptom>300</srvSymptom>
+	<srvHp>150</srvHp>
+	<srvCrit>150</srvCrit>
+	<srvFu>200</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>30</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>9600</srvAttack>
+	<srvDefense>400</srvDefense>
+	<srvSymptom>300</srvSymptom>
+	<srvHp>150</srvHp>
+	<srvCrit>150</srvCrit>
+	<srvFu>250</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>31</id>
+	<attack>1920</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>11520</srvAttack>
+	<srvDefense>400</srvDefense>
+	<srvSymptom>300</srvSymptom>
+	<srvHp>150</srvHp>
+	<srvCrit>150</srvCrit>
+	<srvFu>250</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>32</id>
+	<attack>0</attack>
+	<defense>80</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>11520</srvAttack>
+	<srvDefense>480</srvDefense>
+	<srvSymptom>300</srvSymptom>
+	<srvHp>150</srvHp>
+	<srvCrit>150</srvCrit>
+	<srvFu>250</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>33</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>60</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>11520</srvAttack>
+	<srvDefense>480</srvDefense>
+	<srvSymptom>360</srvSymptom>
+	<srvHp>150</srvHp>
+	<srvCrit>150</srvCrit>
+	<srvFu>250</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>34</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>30</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>11520</srvAttack>
+	<srvDefense>480</srvDefense>
+	<srvSymptom>360</srvSymptom>
+	<srvHp>180</srvHp>
+	<srvCrit>150</srvCrit>
+	<srvFu>250</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>35</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>11520</srvAttack>
+	<srvDefense>480</srvDefense>
+	<srvSymptom>360</srvSymptom>
+	<srvHp>180</srvHp>
+	<srvCrit>180</srvCrit>
+	<srvFu>250</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>36</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>11520</srvAttack>
+	<srvDefense>480</srvDefense>
+	<srvSymptom>360</srvSymptom>
+	<srvHp>180</srvHp>
+	<srvCrit>180</srvCrit>
+	<srvFu>300</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>37</id>
+	<attack>1920</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>13440</srvAttack>
+	<srvDefense>480</srvDefense>
+	<srvSymptom>360</srvSymptom>
+	<srvHp>180</srvHp>
+	<srvCrit>180</srvCrit>
+	<srvFu>300</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>38</id>
+	<attack>0</attack>
+	<defense>80</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>13440</srvAttack>
+	<srvDefense>560</srvDefense>
+	<srvSymptom>360</srvSymptom>
+	<srvHp>180</srvHp>
+	<srvCrit>180</srvCrit>
+	<srvFu>300</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>39</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>60</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>13440</srvAttack>
+	<srvDefense>560</srvDefense>
+	<srvSymptom>420</srvSymptom>
+	<srvHp>180</srvHp>
+	<srvCrit>180</srvCrit>
+	<srvFu>300</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>40</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>30</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>13440</srvAttack>
+	<srvDefense>560</srvDefense>
+	<srvSymptom>420</srvSymptom>
+	<srvHp>210</srvHp>
+	<srvCrit>180</srvCrit>
+	<srvFu>300</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>41</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>13440</srvAttack>
+	<srvDefense>560</srvDefense>
+	<srvSymptom>420</srvSymptom>
+	<srvHp>210</srvHp>
+	<srvCrit>210</srvCrit>
+	<srvFu>300</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>42</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>13440</srvAttack>
+	<srvDefense>560</srvDefense>
+	<srvSymptom>420</srvSymptom>
+	<srvHp>210</srvHp>
+	<srvCrit>210</srvCrit>
+	<srvFu>350</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>43</id>
+	<attack>1920</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>15360</srvAttack>
+	<srvDefense>560</srvDefense>
+	<srvSymptom>420</srvSymptom>
+	<srvHp>210</srvHp>
+	<srvCrit>210</srvCrit>
+	<srvFu>350</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>44</id>
+	<attack>0</attack>
+	<defense>80</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>15360</srvAttack>
+	<srvDefense>640</srvDefense>
+	<srvSymptom>420</srvSymptom>
+	<srvHp>210</srvHp>
+	<srvCrit>210</srvCrit>
+	<srvFu>350</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>45</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>60</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>15360</srvAttack>
+	<srvDefense>640</srvDefense>
+	<srvSymptom>480</srvSymptom>
+	<srvHp>210</srvHp>
+	<srvCrit>210</srvCrit>
+	<srvFu>350</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>46</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>30</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>15360</srvAttack>
+	<srvDefense>640</srvDefense>
+	<srvSymptom>480</srvSymptom>
+	<srvHp>240</srvHp>
+	<srvCrit>210</srvCrit>
+	<srvFu>350</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>47</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>15360</srvAttack>
+	<srvDefense>640</srvDefense>
+	<srvSymptom>480</srvSymptom>
+	<srvHp>240</srvHp>
+	<srvCrit>240</srvCrit>
+	<srvFu>350</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>48</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>15360</srvAttack>
+	<srvDefense>640</srvDefense>
+	<srvSymptom>480</srvSymptom>
+	<srvHp>240</srvHp>
+	<srvCrit>240</srvCrit>
+	<srvFu>400</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>49</id>
+	<attack>1920</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>17280</srvAttack>
+	<srvDefense>640</srvDefense>
+	<srvSymptom>480</srvSymptom>
+	<srvHp>240</srvHp>
+	<srvCrit>240</srvCrit>
+	<srvFu>400</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>50</id>
+	<attack>0</attack>
+	<defense>80</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>17280</srvAttack>
+	<srvDefense>720</srvDefense>
+	<srvSymptom>480</srvSymptom>
+	<srvHp>240</srvHp>
+	<srvCrit>240</srvCrit>
+	<srvFu>400</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>51</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>60</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>17280</srvAttack>
+	<srvDefense>720</srvDefense>
+	<srvSymptom>540</srvSymptom>
+	<srvHp>240</srvHp>
+	<srvCrit>240</srvCrit>
+	<srvFu>400</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>52</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>30</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>17280</srvAttack>
+	<srvDefense>720</srvDefense>
+	<srvSymptom>540</srvSymptom>
+	<srvHp>270</srvHp>
+	<srvCrit>240</srvCrit>
+	<srvFu>400</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>53</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>17280</srvAttack>
+	<srvDefense>720</srvDefense>
+	<srvSymptom>540</srvSymptom>
+	<srvHp>270</srvHp>
+	<srvCrit>270</srvCrit>
+	<srvFu>400</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>54</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>17280</srvAttack>
+	<srvDefense>720</srvDefense>
+	<srvSymptom>540</srvSymptom>
+	<srvHp>270</srvHp>
+	<srvCrit>270</srvCrit>
+	<srvFu>450</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>55</id>
+	<attack>1920</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>19200</srvAttack>
+	<srvDefense>720</srvDefense>
+	<srvSymptom>540</srvSymptom>
+	<srvHp>270</srvHp>
+	<srvCrit>270</srvCrit>
+	<srvFu>450</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>56</id>
+	<attack>0</attack>
+	<defense>80</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>19200</srvAttack>
+	<srvDefense>800</srvDefense>
+	<srvSymptom>540</srvSymptom>
+	<srvHp>270</srvHp>
+	<srvCrit>270</srvCrit>
+	<srvFu>450</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>57</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>60</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>19200</srvAttack>
+	<srvDefense>800</srvDefense>
+	<srvSymptom>600</srvSymptom>
+	<srvHp>270</srvHp>
+	<srvCrit>270</srvCrit>
+	<srvFu>450</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>58</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>30</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>19200</srvAttack>
+	<srvDefense>800</srvDefense>
+	<srvSymptom>600</srvSymptom>
+	<srvHp>300</srvHp>
+	<srvCrit>270</srvCrit>
+	<srvFu>450</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>59</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>19200</srvAttack>
+	<srvDefense>800</srvDefense>
+	<srvSymptom>600</srvSymptom>
+	<srvHp>300</srvHp>
+	<srvCrit>300</srvCrit>
+	<srvFu>450</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
+</config>
+<config>
+	<id>60</id>
+	<attack>0</attack>
+	<defense>0</defense>
+	<hp>0</hp>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>50</fu>
+	<attackPercent>0</attackPercent>
+	<defensePercent>0</defensePercent>
+	<hpPercent>0</hpPercent>
+	<critPercent>0</critPercent>
+	<symptomPercent>0</symptomPercent>
+	<fuPercent>0</fuPercent>
+	<srvAttack>19200</srvAttack>
+	<srvDefense>800</srvDefense>
+	<srvSymptom>600</srvSymptom>
+	<srvHp>300</srvHp>
+	<srvCrit>300</srvCrit>
+	<srvFu>500</srvFu>
+	<srvattackPercent>0</srvattackPercent>
+	<srvDefensePercent>0</srvDefensePercent>
+	<srvHpPercent>0</srvHpPercent>
+	<srvCritPercent>0</srvCritPercent>
+	<srvSymptomPercent>0</srvSymptomPercent>
+	<srvFuPercent>0</srvFuPercent>
 </config>
 </root>

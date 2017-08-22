@@ -15,8 +15,13 @@ public class WorldBossExtension {
     private WorldBossService worldBossService;
 
     @Command(4902)
-    public Object getWorldBossHurt(int playerId, Object param) {
-        return worldBossService.getWorldBossHurtList(playerId);
+    public Object getRealTimeHurt(int playerId, Object param) {
+        return worldBossService.getRealTimeHurtList(playerId);
+    }
+
+    @Command(4914)
+    public Object getHistoryHurt(int playerId, Object param) {
+        return worldBossService.getHistoryHurtList(playerId);
     }
 
     @Command(4901)

@@ -13,6 +13,8 @@ public class FashionCfg {
 	public String bindPos;//挂载位置
 	public String modelName;//主模型名字
 	public String model2Name;//辅模型名字
+	public int effectId;//特效
+	public int effect2Id;//副手武器特效
 	public String path;//主模型路径
 	public String path2;//辅模型路径
 	public int attack;//威力
@@ -28,5 +30,4 @@ public class FashionCfg {
 	public int[] costPrice;//升级消耗的货币
 	public int duplicateReturn;//重复返还钻石
 	public int order;//排序id
-	public int[] effectId;//特效
 }

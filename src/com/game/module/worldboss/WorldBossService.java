@@ -196,10 +196,29 @@ public class WorldBossService implements InitHandler {
         List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
         Collections.sort(list, SORT);
 
+        worldBossData.getTop10().clear();
+        worldBossData.getRankMap().clear();
+
+        int size = 0;
         for (int i = 0; i < list.size(); i++) {
             HurtRecord hr = list.get(i);
             int rank = i + 1;
             hr.setRank(rank); //设置当前排名
+
+            //缓存所有人排名
+            HurtRecord selfRank = new HurtRecord();
+            selfRank.setCurHurt(hr.getCurHurt());
+            selfRank.setRank(rank);
+            worldBossData.getRankMap().put(hr.getPlayerId(),selfRank);
+
+            if(size < 10) { //缓存前10名
+                HurtRecord top10Hr = new HurtRecord(hr.getPlayerId(),hr.getName());
+                top10Hr.setCurHurt(hr.getCurHurt());
+                top10Hr.setHurt(hr.getHurt());
+                top10Hr.setRank(hr.getRank());
+
+                worldBossData.getTop10().add(top10Hr);
+            }
         }
     }
 
@@ -477,7 +496,7 @@ public class WorldBossService implements InitHandler {
                 }
 
                 //推送结算奖励
-                SessionManager.getInstance().sendMsg(CMD_REWARD, rewardCli, hr.getPlayerId());
+                //SessionManager.getInstance().sendMsg(CMD_REWARD, rewardCli, hr.getPlayerId());
             }
             saveData();
         } finally {
@@ -677,9 +696,9 @@ public class WorldBossService implements InitHandler {
     }
 
     /**
-     * 获取历史伤害排名
+     * 获取实时伤害排名
      */
-    public Object getWorldBossHurtList(int playerId) {
+    public Object getRealTimeHurtList(int playerId) {
         WorldBossHurtRankVO vo = new WorldBossHurtRankVO();
         vo.rankList = new ArrayList<>();
         for (HurtRecord hr : treeMap.values()) {
@@ -689,6 +708,26 @@ public class WorldBossService implements InitHandler {
             vo.rankList.add(vo1);
         }
         HurtRecord hr = worldBossData.getHurtMap().get(playerId);
+        if (hr != null) {
+            vo.selfRank = hr.getRank();
+            vo.hurt = hr.getCurHurt();
+        }
+        return vo;
+    }
+
+    /**
+     * 获取历史伤害排名
+     */
+    public Object getHistoryHurtList(int playerId) {
+        WorldBossHurtRankVO vo = new WorldBossHurtRankVO();
+        vo.rankList = new ArrayList<>();
+        for (HurtRecord hr : worldBossData.getTop10()) {
+            WorldBossHurtVO vo1 = new WorldBossHurtVO();
+            vo1.hurt = hr.getHurt();
+            vo1.nickName = hr.getName();
+            vo.rankList.add(vo1);
+        }
+        HurtRecord hr = worldBossData.getRankMap().get(playerId);
         if (hr != null) {
             vo.selfRank = hr.getRank();
             vo.hurt = hr.getCurHurt();
@@ -767,6 +806,9 @@ public class WorldBossService implements InitHandler {
     public void gmReset() {
         gmOpen = true;
         worldBossData.getKillMap().clear();
+        worldBossData.getTop10().clear();
+        worldBossData.getRankMap().clear();
+
         for (WorldBoss worldBoss : worldBossData.getWorldBossMap().values()) {
             worldBoss.setCurHp(worldBoss.getHp());
         }

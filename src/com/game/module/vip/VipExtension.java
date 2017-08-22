@@ -80,7 +80,13 @@ public class VipExtension {
 		result.param = vipService.takeFund(playerId, lev.param);
 		return result;
 	}
-	
+
+	//领取VIP礼包
+	@Command(2209)
+	public Object getVipGift(int playerId,IntParam lev){
+		return vipService.getVipGift(playerId, lev.param);
+	}
+
 	//凌晨更新
 	public static final int UPDATE_ZERO_CLOCK = 2208;
 }

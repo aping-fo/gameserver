@@ -5,6 +5,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.goods.GoodsService;
+import com.game.module.log.LogConsume;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.SysConfig;
@@ -34,7 +36,8 @@ public class ChatExtension {
 	public static final int PRIVATE = 2;
 	public static final int GANG = 3;
 	public static final int TEAM =5;
-	
+	public static final int WORLD_HORN =6; //喇叭
+
 	@Autowired
 	private GmService gmService;
 	@Autowired
@@ -53,7 +56,9 @@ public class ChatExtension {
 	private ChatService chatService;
 	@Autowired
 	private SceneService sceneService;
-	
+	@Autowired
+	private GoodsService goodsService;
+	private static final int HORN_ID = 1;
 	private Map<Integer, Long> talkTime = new ConcurrentHashMap<Integer, Long>();
 
 	@Command(1501)
@@ -147,6 +152,12 @@ public class ChatExtension {
 			}else if(vo.channel == TEAM){
 				if(sender.getTeamId() > 0){
 					sceneService.brocastToSceneCurLine(sender, CHAT, result);
+				}
+			}
+			else if(vo.channel == WORLD_HORN) { //世界喇叭
+				boolean ret = goodsService.decGoodsFromBag(playerId,HORN_ID,1, LogConsume.WORLD_HORN,HORN_ID);
+				if(!ret) {
+					//TODO 发送错误码
 				}
 			}
 		}

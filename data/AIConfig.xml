@@ -128,7 +128,7 @@
 </config>
 <config>
 	<id>20109001</id>
-	<url>Assets/Data/Designer/20002101.prefab</url>
+	<url>Assets/Data/Designer/20002001.prefab</url>
 	<skills>[20109001,20109002]</skills>
 	<AlertThreshold>[10,10,3,3]</AlertThreshold>
 	<BattleThreshold>[3,3,2,2]</BattleThreshold>
@@ -190,36 +190,43 @@
 	<BattleThreshold>[4.5,4.5,2,2]</BattleThreshold>
 </config>
 <config>
+	<id>20118001</id>
+	<url>Assets/Data/Designer/20002001.prefab</url>
+	<skills>[20118001,20118002]</skills>
+	<AlertThreshold>[10,10,3,3]</AlertThreshold>
+	<BattleThreshold>[3,3,2,2]</BattleThreshold>
+</config>
+<config>
 	<id>20201001</id>
-	<url>Assets/Data/Designer/20001001.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20201001,20201002,20201003]</skills>
 	<AlertThreshold>[16,16,3,3]</AlertThreshold>
 	<BattleThreshold>[4.5,4.5,2,2]</BattleThreshold>
 </config>
 <config>
 	<id>20202001</id>
-	<url>Assets/Data/Designer/20001001.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20202001,20202002,20202003]</skills>
 	<AlertThreshold>[11,3,3,3]</AlertThreshold>
 	<BattleThreshold>[5,2,2,2]</BattleThreshold>
 </config>
 <config>
 	<id>20203001</id>
-	<url>Assets/Data/Designer/20001001.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20203001,20203002,20203003]</skills>
 	<AlertThreshold>[9,4,3,3]</AlertThreshold>
 	<BattleThreshold>[6,2,2,2]</BattleThreshold>
 </config>
 <config>
 	<id>20204001</id>
-	<url>Assets/Data/Designer/20001001.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20204001,20204002,20204003]</skills>
 	<AlertThreshold>[13,4,3,3]</AlertThreshold>
 	<BattleThreshold>[6,2,2,2]</BattleThreshold>
 </config>
 <config>
 	<id>20205001</id>
-	<url>Assets/Data/Designer/20001301.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20205001,20205002,20205003]</skills>
 	<AlertThreshold>[13,4,3,3]</AlertThreshold>
 	<BattleThreshold>[6,2,2,2]</BattleThreshold>
@@ -233,21 +240,21 @@
 </config>
 <config>
 	<id>20303001</id>
-	<url>Assets/Data/Designer/20303001.prefab</url>
-	<skills>[20303001,20303002,20303003,20303091,20303092,20303093,20303094]</skills>
+	<url>Assets/Data/Designer/20301001.prefab</url>
+	<skills>[20303001,20303002,20303003]</skills>
 	<AlertThreshold>[13,4,3,3]</AlertThreshold>
 	<BattleThreshold>[6,2,2,2]</BattleThreshold>
 </config>
 <config>
 	<id>20304001</id>
-	<url>Assets/Data/Designer/20304001.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20304001,20304002,20304003]</skills>
 	<AlertThreshold>[12,4,3,3]</AlertThreshold>
 	<BattleThreshold>[6,2,2,2]</BattleThreshold>
 </config>
 <config>
 	<id>20305001</id>
-	<url>Assets/Data/Designer/20305001.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20305001,20305002,20305003]</skills>
 	<AlertThreshold>[18,4,3,3]</AlertThreshold>
 	<BattleThreshold>[6,2,2,2]</BattleThreshold>
@@ -268,14 +275,14 @@
 </config>
 <config>
 	<id>20308001</id>
-	<url>Assets/Data/Designer/20308001.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20308001,20308002,20308003]</skills>
 	<AlertThreshold>[8,4,3,3]</AlertThreshold>
 	<BattleThreshold>[7,2,2,2]</BattleThreshold>
 </config>
 <config>
 	<id>20309001</id>
-	<url>Assets/Data/Designer/20309001.prefab</url>
+	<url>Assets/Data/Designer/20301001.prefab</url>
 	<skills>[20309001,20309002,20309003]</skills>
 	<AlertThreshold>[8,4,3,3]</AlertThreshold>
 	<BattleThreshold>[7,2,2,2]</BattleThreshold>

@@ -23,8 +23,8 @@ public interface MailDao {
 	@SQL("insert into mail(senderId,senderName,receiveId,title,content,sendTime,state,rewards,hasReward,type) values(:m.senderId,:m.senderName,:m.receiveId,:m.title,:m.content,now(),:m.state,:m.rewards,:m.hasReward,:m.type)")
 	public void insert(@SQLParam("m")Mail mail);
 	
-	@SQL("update mail set state=:state where receiveId = :playerId and hasReward=0")
-	public int delAll(@SQLParam("state")int state,@SQLParam("playerId")int playerId);
+	@SQL("update mail set state=:state where receiveId = :playerId and hasReward=0 and state=1")
+	public int delAll(@SQLParam("state")int state, @SQLParam("playerId")int playerId);
 	
 	@SQL("update mail set hasReward=0,state=1 where receiveId = :playerId and hasReward=1 ")
 	public void takenAllRewards(@SQLParam("playerId")int playerId);

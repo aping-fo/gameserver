@@ -64,6 +64,27 @@
 	<extraEffectParam>[[400],[3],[229,12,43,255,255,255],[10]]</extraEffectParam>
 </config>
 <config>
+	<id>1203</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>2</buffType>
+	<buffSubType>0</buffSubType>
+	<name>连击保护</name>
+	<description>霸体1级</description>
+	<duration>1.5</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2023</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam>[[500],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
 	<id>1301</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
@@ -973,9 +994,9 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>普通本第一章怪物特性</name>
-	<description>中毒1级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
@@ -994,9 +1015,9 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>普通本第二章怪物特性</name>
-	<description>中毒2级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
@@ -1015,12 +1036,33 @@
 	<buffType>1</buffType>
 	<buffSubType>2</buffSubType>
 	<name>普通本第三章怪物特性</name>
-	<description>流血1级</description>
+	<description>流血</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
 	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110302</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第三章怪物特性</name>
+	<description>威力</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1036,12 +1078,33 @@
 	<buffType>1</buffType>
 	<buffSubType>2</buffSubType>
 	<name>普通本第四章怪物特性</name>
-	<description>流血2级</description>
+	<description>流血</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
 	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110402</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第四章怪物特性</name>
+	<description>威力</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1057,12 +1120,33 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>普通本第五章怪物特性</name>
-	<description>中毒1级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110502</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第五章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1078,12 +1162,75 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>普通本第六章怪物特性</name>
-	<description>中毒2级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110602</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第六章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110701</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第七章怪物特性</name>
+	<description>暴击</description>
+	<duration>6</duration>
+	<takeEffectParam>[3,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110801</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第八章怪物特性</name>
+	<description>暴击</description>
+	<duration>6</duration>
+	<takeEffectParam>[3,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1099,12 +1246,33 @@
 	<buffType>1</buffType>
 	<buffSubType>1</buffSubType>
 	<name>普通本第九章怪物特性</name>
-	<description>灼烧1级</description>
+	<description>灼烧</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110902</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第九章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1120,13 +1288,76 @@
 	<buffType>1</buffType>
 	<buffSubType>1</buffSubType>
 	<name>普通本第十章怪物特性</name>
-	<description>灼烧2级</description>
+	<description>灼烧</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7000010</attachEffect>
 	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十一章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,4.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十二章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,4.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -1141,13 +1372,34 @@
 	<buffType>14</buffType>
 	<buffSubType></buffSubType>
 	<name>普通本第十三章怪物特性</name>
-	<description>反伤1级</description>
-	<duration>5</duration>
-	<takeEffectParam>[0.01]</takeEffectParam>
+	<description>反伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2030</icon>
 	<attachEffect>7000019</attachEffect>
 	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111302</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十三章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,4.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -1162,12 +1414,75 @@
 	<buffType>14</buffType>
 	<buffSubType></buffSubType>
 	<name>普通本第十四章怪物特性</name>
-	<description>反伤2级</description>
-	<duration>5</duration>
-	<takeEffectParam>[0.03]</takeEffectParam>
+	<description>反伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2030</icon>
 	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111402</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十四章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,4.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十五章怪物特性</name>
+	<description>防御</description>
+	<duration>6</duration>
+	<takeEffectParam>[1,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111601</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十六章怪物特性</name>
+	<description>防御</description>
+	<duration>6</duration>
+	<takeEffectParam>[1,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1183,9 +1498,9 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>困难本第一章怪物特性</name>
-	<description>中毒1级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
@@ -1204,9 +1519,9 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>困难本第二章怪物特性</name>
-	<description>中毒2级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
@@ -1225,12 +1540,33 @@
 	<buffType>1</buffType>
 	<buffSubType>2</buffSubType>
 	<name>困难本第三章怪物特性</name>
-	<description>流血1级</description>
+	<description>流血</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
 	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120302</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第三章怪物特性</name>
+	<description>威力</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1246,12 +1582,33 @@
 	<buffType>1</buffType>
 	<buffSubType>2</buffSubType>
 	<name>困难本第四章怪物特性</name>
-	<description>流血2级</description>
+	<description>流血</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
 	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120402</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第四章怪物特性</name>
+	<description>威力</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1267,12 +1624,33 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>困难本第五章怪物特性</name>
-	<description>中毒1级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120502</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第五章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1288,12 +1666,75 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>困难本第六章怪物特性</name>
-	<description>中毒2级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120602</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第六章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120701</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第七章怪物特性</name>
+	<description>暴击</description>
+	<duration>6</duration>
+	<takeEffectParam>[3,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120801</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第八章怪物特性</name>
+	<description>暴击</description>
+	<duration>6</duration>
+	<takeEffectParam>[3,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1309,12 +1750,33 @@
 	<buffType>1</buffType>
 	<buffSubType>1</buffSubType>
 	<name>困难本第九章怪物特性</name>
-	<description>灼烧1级</description>
+	<description>灼烧</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120902</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第九章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1330,13 +1792,76 @@
 	<buffType>1</buffType>
 	<buffSubType>1</buffSubType>
 	<name>困难本第十章怪物特性</name>
-	<description>灼烧2级</description>
+	<description>灼烧</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7000010</attachEffect>
 	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第十章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十一章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,12]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十二章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,12]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -1351,13 +1876,34 @@
 	<buffType>14</buffType>
 	<buffSubType></buffSubType>
 	<name>困难本第十三章怪物特性</name>
-	<description>反伤1级</description>
-	<duration>5</duration>
-	<takeEffectParam>[0.01]</takeEffectParam>
+	<description>反伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2030</icon>
 	<attachEffect>7000019</attachEffect>
 	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121302</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第十三章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,12]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -1372,12 +1918,75 @@
 	<buffType>14</buffType>
 	<buffSubType></buffSubType>
 	<name>困难本第十四章怪物特性</name>
-	<description>反伤2级</description>
-	<duration>5</duration>
-	<takeEffectParam>[0.03]</takeEffectParam>
+	<description>反伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2030</icon>
 	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121402</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第十四章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,12]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第十五章怪物特性</name>
+	<description>防御</description>
+	<duration>6</duration>
+	<takeEffectParam>[1,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121601</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>困难本第十六章怪物特性</name>
+	<description>防御</description>
+	<duration>6</duration>
+	<takeEffectParam>[1,0.4]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1393,9 +2002,9 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>噩梦本第一章怪物特性</name>
-	<description>中毒1级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
@@ -1414,9 +2023,9 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>噩梦本第二章怪物特性</name>
-	<description>中毒2级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
@@ -1435,12 +2044,33 @@
 	<buffType>1</buffType>
 	<buffSubType>2</buffSubType>
 	<name>噩梦本第三章怪物特性</name>
-	<description>流血1级</description>
+	<description>流血</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
 	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130302</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第三章怪物特性</name>
+	<description>威力</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.65]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1456,12 +2086,33 @@
 	<buffType>1</buffType>
 	<buffSubType>2</buffSubType>
 	<name>噩梦本第四章怪物特性</name>
-	<description>流血2级</description>
+	<description>流血</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
 	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130402</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第四章怪物特性</name>
+	<description>威力</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.65]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1477,12 +2128,33 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>噩梦本第五章怪物特性</name>
-	<description>中毒1级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130502</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第五章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.65]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1498,12 +2170,75 @@
 	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>噩梦本第六章怪物特性</name>
-	<description>中毒2级</description>
+	<description>中毒</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7000009</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130602</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第六章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.65]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130701</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第七章怪物特性</name>
+	<description>暴击</description>
+	<duration>6</duration>
+	<takeEffectParam>[3,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130801</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第八章怪物特性</name>
+	<description>暴击</description>
+	<duration>6</duration>
+	<takeEffectParam>[3,0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1519,12 +2254,33 @@
 	<buffType>1</buffType>
 	<buffSubType>1</buffSubType>
 	<name>噩梦本第九章怪物特性</name>
-	<description>灼烧1级</description>
+	<description>灼烧</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130902</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第九章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.65]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1540,13 +2296,76 @@
 	<buffType>1</buffType>
 	<buffSubType>1</buffSubType>
 	<name>噩梦本第十章怪物特性</name>
-	<description>灼烧2级</description>
+	<description>灼烧</description>
 	<duration>8</duration>
-	<takeEffectParam>[1,8,0.1]</takeEffectParam>
+	<takeEffectParam>[1,8,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7000010</attachEffect>
 	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第十章怪物特性</name>
+	<description>异常</description>
+	<duration>6</duration>
+	<takeEffectParam>[4,0.65]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十一章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,19.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>普通本第十二章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,19.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -1561,13 +2380,34 @@
 	<buffType>14</buffType>
 	<buffSubType></buffSubType>
 	<name>噩梦本第十三章怪物特性</name>
-	<description>反伤1级</description>
-	<duration>5</duration>
-	<takeEffectParam>[0.01]</takeEffectParam>
+	<description>反伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2030</icon>
 	<attachEffect>7000019</attachEffect>
 	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131302</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第十三章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,19.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -1582,12 +2422,75 @@
 	<buffType>14</buffType>
 	<buffSubType></buffSubType>
 	<name>噩梦本第十四章怪物特性</name>
-	<description>反伤2级</description>
-	<duration>5</duration>
-	<takeEffectParam>[0.03]</takeEffectParam>
+	<description>反伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2030</icon>
 	<attachEffect>7000019</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131402</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>6</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第十四章怪物特性</name>
+	<description>治疗</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,300,19.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2027</icon>
+	<attachEffect>7000018</attachEffect>
+	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第十五章怪物特性</name>
+	<description>防御</description>
+	<duration>6</duration>
+	<takeEffectParam>[1,0.65]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131601</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>噩梦本第十六章怪物特性</name>
+	<description>防御</description>
+	<duration>6</duration>
+	<takeEffectParam>[1,0.65]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -80338,6 +81241,5256 @@
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7000022</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>1</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270102</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>2</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270103</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>3</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270104</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>4</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270105</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>5</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270106</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>6</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270107</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>7</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270108</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>8</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270109</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>9</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270110</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>10</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270111</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>11</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270112</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>12</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270113</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>13</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270114</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>14</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270115</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>15</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270116</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>16</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270117</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>17</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270118</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>18</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270119</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>19</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270120</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>20</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270121</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>21</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270122</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>22</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270123</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>23</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270124</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>24</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270125</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>25</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270126</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>26</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270127</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>27</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270128</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>28</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270129</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>29</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270130</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>30</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270131</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>31</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270132</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>32</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270133</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>33</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270134</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>34</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270135</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>35</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270136</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>36</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270137</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>37</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270138</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>38</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270139</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>39</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270140</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>40</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270141</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>41</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270142</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>42</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270143</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>43</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270144</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>44</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270145</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>45</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270146</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>46</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270147</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>47</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270148</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>48</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270149</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>49</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270150</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌D级</name>
+	<description>受击伤害因子100%</description>
+	<duration>50</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>51</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270202</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>52</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270203</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>53</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270204</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>54</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270205</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>55</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270206</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>56</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270207</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>57</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270208</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>58</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270209</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>59</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270210</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>60</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270211</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>61</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270212</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>62</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270213</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>63</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270214</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>64</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270215</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>65</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270216</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>66</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270217</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>67</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270218</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>68</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270219</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>69</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270220</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>70</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270221</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>71</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270222</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>72</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270223</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>73</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270224</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>74</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270225</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>75</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270226</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>76</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270227</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>77</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270228</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>78</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270229</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>79</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270230</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>80</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270231</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>81</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270232</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>82</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270233</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>83</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270234</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>84</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270235</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>85</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270236</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>86</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270237</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>87</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270238</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>88</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270239</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>89</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270240</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>90</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270241</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>91</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270242</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>92</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270243</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>93</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270244</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>94</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270245</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>95</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270246</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>96</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270247</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>97</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270248</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>98</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270249</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>99</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270250</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌C级</name>
+	<description>受击伤害因子100%</description>
+	<duration>100</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270301</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>101</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270302</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>102</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270303</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>103</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270304</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>104</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270305</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>105</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270306</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>106</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270307</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>107</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270308</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>108</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270309</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>109</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270310</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>110</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270311</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>111</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270312</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>112</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270313</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>113</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270314</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>114</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270315</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>115</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270316</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>116</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270317</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>117</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270318</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>118</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270319</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>119</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270320</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>120</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270321</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>121</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270322</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>122</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270323</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>123</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270324</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>124</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270325</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>125</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270326</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>126</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270327</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>127</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270328</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>128</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270329</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>129</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270330</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>130</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270331</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>131</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270332</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>132</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270333</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>133</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270334</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>134</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270335</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>135</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270336</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>136</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270337</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>137</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270338</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>138</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270339</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>139</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270340</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>140</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270341</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>141</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270342</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>142</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270343</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>143</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270344</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>144</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270345</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>145</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270346</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>146</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270347</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>147</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270348</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>148</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270349</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>149</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270350</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌B级</name>
+	<description>受击伤害因子100%</description>
+	<duration>150</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270401</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>151</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270402</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>152</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270403</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>153</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270404</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>154</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270405</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>155</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270406</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>156</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270407</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>157</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270408</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>158</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270409</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>159</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270410</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>160</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270411</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>161</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270412</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>162</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270413</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>163</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270414</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>164</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270415</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>165</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270416</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>166</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270417</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>167</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270418</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>168</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270419</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>169</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270420</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>170</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270421</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>171</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270422</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>172</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270423</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>173</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270424</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>174</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270425</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>175</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270426</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>176</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270427</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>177</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270428</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>178</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270429</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>179</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270430</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>180</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270431</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>181</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270432</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>182</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270433</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>183</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270434</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>184</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270435</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>185</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270436</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>186</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270437</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>187</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270438</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>188</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270439</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>189</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270440</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>190</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270441</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>191</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270442</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>192</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270443</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>193</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270444</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>194</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270445</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>195</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270446</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>196</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270447</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>197</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270448</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>198</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270449</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>199</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270450</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌A级</name>
+	<description>受击伤害因子100%</description>
+	<duration>200</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>201</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270502</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>202</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270503</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>203</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270504</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>204</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270505</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>205</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270506</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>206</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270507</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>207</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270508</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>208</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270509</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>209</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270510</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>210</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270511</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>211</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270512</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>212</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270513</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>213</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270514</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>214</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270515</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>215</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270516</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>216</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270517</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>217</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270518</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>218</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270519</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>219</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270520</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>220</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270521</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>221</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270522</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>222</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270523</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>223</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270524</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>224</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270525</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>225</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270526</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>226</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270527</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>227</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270528</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>228</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270529</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>229</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270530</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>230</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270531</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>231</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270532</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>232</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270533</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>233</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270534</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>234</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270535</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>235</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270536</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>236</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270537</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>237</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270538</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>238</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270539</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>239</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270540</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>240</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270541</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>241</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270542</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>242</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270543</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>243</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270544</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>244</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270545</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>245</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270546</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>246</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270547</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>247</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270548</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>248</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270549</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>249</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1270550</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>无敌S级</name>
+	<description>受击伤害因子100%</description>
+	<duration>250</duration>
+	<takeEffectParam>[-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
