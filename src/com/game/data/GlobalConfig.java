@@ -113,4 +113,6 @@ public class GlobalConfig {
 	public Map<Integer,Integer> teamLimit;//队伍人数上限
 	public int[] skillCardGroupOpenVip;//技能卡卡组开启的VIP等级
 	public int[][] rewardRate;//抽奖界面预览出现率
+	public Map<Integer,float[][]> mainCityPlayerInfo;//主城角色的位置,朝向,大小
+	public float[] mainCityCameraInfo;//主城相机朝向(上下左右)
 }

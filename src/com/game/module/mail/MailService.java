@@ -49,17 +49,17 @@ public class MailService {
 
 	// 领取奖励
 	public SMailReward getReward(int playerId, long id) {
-		Player player = playerService.getPlayer(playerId);
+		//Player player = playerService.getPlayer(playerId);
 		
 		SMailReward result = new SMailReward();
-		Mail mail = null;
-		synchronized (player) {
-			mail= mailDao.selectMail(id, playerId);
-			if (mail.getHasReward() == 0 || mail.getRewardsMap().isEmpty()) {
-				result.code = Response.ERR_PARAM;
-				return result;
-			}
+//		Mail mail = null; 这里不需要同步，本来就算线程安全的
+//		synchronized (player) {
+		Mail mail= mailDao.selectMail(id, playerId);
+		if (mail.getHasReward() == 0 || mail.getRewardsMap().isEmpty()) {
+			result.code = Response.ERR_PARAM;
+			return result;
 		}
+//		}
 		
 		List<GoodsEntry> rewards = new ArrayList<GoodsEntry>(mail.getRewardsMap().size());
 		for (Entry<Integer, Integer> reward : mail.getRewardsMap().entrySet()) {

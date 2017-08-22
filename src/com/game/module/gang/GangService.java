@@ -1050,7 +1050,7 @@ public class GangService implements InitHandler {
 				return respCode;
 			}
 		}
-		gang.alterAsset(cfg.assetConsume);
+		gang.alterAsset(-cfg.assetConsume);
 		GTRoom room = new GTRoom(roomId);
 		gang.setGtRoom(room);
 		CloseTask task = new CloseTask(gang);
@@ -1103,7 +1103,7 @@ public class GangService implements InitHandler {
 		}
 		GangTrainingCfg cfg = GameData.getConfig(GangTrainingCfg.class, room.getId());
 		float plus = Math.min(room.getMax() * cfg.rewardPlus[1], cfg.rewardPlus[0]);
-		int hour = member.getTrainingTime();
+		int hour = (int)member.getTrainingTime();
 		int[][] rewards = calculateReward(member, room, plus);
 		member.setStartTraining(0L);
 		if(rewards != null){
@@ -1167,16 +1167,18 @@ public class GangService implements InitHandler {
 	
 	public int[][] calculateReward(GMember member, GTRoom room, float plus){
 		GangTrainingCfg cfg = GameData.getConfig(GangTrainingCfg.class, room.getId());
-		int hour = (int)((System.currentTimeMillis() - member.getStartTraining()) / TimeUtil.ONE_HOUR);
+		float hourf = ((System.currentTimeMillis() - member.getStartTraining()) / TimeUtil.ONE_HOUR);
+		float hour = (int)hourf;
 		if(hour < 1){
+			member.alterTrainingTime(hourf);
 			return null;
 		}
 		int max = (int)(cfg.maxTime - (member.getStartTraining() - room.getCreateTime())/TimeUtil.ONE_MIN/60);
 		if(hour > max){
 			hour = max;
 		}
-		if(hour + member.getTrainingTime() > cfg.validTime){
-			hour = cfg.validTime - member.getTrainingTime();
+		if(hour + (int)member.getTrainingTime() > cfg.validTime){
+			hour = cfg.validTime - (int)member.getTrainingTime();
 		}
 		member.alterTrainingTime(hour);
 		int[][] rewards = Arrays.copyOfRange(cfg.reward,0,cfg.reward.length);
@@ -1232,16 +1234,14 @@ public class GangService implements InitHandler {
 			String content = ConfigData.getConfig(ErrCode.class,
 					Response.GANG_TRAINING_CONTENT).tips;
 			for(GMember member : gang.getMembers().values()){
-				if(member.getStartTraining() == 0){
-					continue;
+				if(member.getStartTraining() != 0){
+					int[][] rewards = BeanManager.getBean(GangService.class).calculateReward(member, room, plus);
+					if(rewards != null){
+						BeanManager.getBean(MailService.class).sendSysMailRewards(title, content, rewards, member.getPlayerId(), LogConsume.GANG_TRAINING_REWARD);
+					}
 				}
 				member.setTrainingTime(0);
 				member.setStartTraining(0L);
-				int[][] rewards = BeanManager.getBean(GangService.class).calculateReward(member, room, plus);
-				if(rewards == null){
-					continue;
-				}
-				BeanManager.getBean(MailService.class).sendSysMailRewards(title, content, rewards, member.getPlayerId(), LogConsume.GANG_TRAINING_REWARD);
 			}
 			gang.setUpdated(true);
 		}

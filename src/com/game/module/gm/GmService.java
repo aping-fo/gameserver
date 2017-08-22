@@ -337,8 +337,8 @@ public class GmService {
 			if(hour > max){
 				hour = max;
 			}
-			if(hour + member.getTrainingTime() > cfg.validTime){
-				hour = cfg.validTime - member.getTrainingTime();
+			if(hour + (int)member.getTrainingTime() > cfg.validTime){
+				hour = cfg.validTime - (int)member.getTrainingTime();
 			}
 			member.alterTrainingTime(hour);
 			int[][] rewards = Arrays.copyOfRange(cfg.reward,0,cfg.reward.length);

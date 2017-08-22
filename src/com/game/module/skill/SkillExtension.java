@@ -72,8 +72,8 @@ public class SkillExtension {
 			param.param = cardgroup.size() - 1;
 		}else{
 			cards = cardgroup.get(param.param);
-			data.setCurCardId(param.param);
 		}
+		data.setCurCardId(param.param);
 		SkillCardGroupInfo info = new SkillCardGroupInfo();
 		info.curGroupId = param.param;
 		info.curCards = cards;

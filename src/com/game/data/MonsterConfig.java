@@ -33,6 +33,7 @@ public class MonsterConfig {
 	public int[] flyAction;//击飞
 	public int[] downAction;//击落
 	public int[] getupAction;//起身
-	public int[] buffList;//buff列表
+	public int[] bornBuff;//出生buff列表
+	public Map<Integer,Integer> skillBuff;//技能附带buff
 	public float[] hudOffset;//hud偏移值
 }

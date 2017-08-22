@@ -2,6 +2,9 @@ package com.game.module.worldboss;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -48,8 +51,27 @@ public class WorldRecord {
     //是否领奖
     private boolean bAward;
 
+    private List<HurtRecord> top10 = new ArrayList<>();
+    private Map<Integer,HurtRecord> rankMap = new ConcurrentHashMap<>();
+
     @JsonIgnore
     private AtomicBoolean bUpdate = new AtomicBoolean(false);
+
+    public List<HurtRecord> getTop10() {
+        return top10;
+    }
+
+    public Map<Integer, HurtRecord> getRankMap() {
+        return rankMap;
+    }
+
+    public void setRankMap(Map<Integer, HurtRecord> rankMap) {
+        this.rankMap = rankMap;
+    }
+
+    public void setTop10(List<HurtRecord> top10) {
+        this.top10 = top10;
+    }
 
     public boolean isbAward() {
         return bAward;

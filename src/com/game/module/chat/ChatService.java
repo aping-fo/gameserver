@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.goods.GoodsService;
+import com.game.module.log.LogConsume;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.game.event.InitHandler;
@@ -12,6 +15,8 @@ import com.game.params.chat.ChatVo;
 
 @Service
 public class ChatService implements InitHandler {
+
+
 
 	private Map<Integer, List<ChatVo>> offlineChats = new ConcurrentHashMap<Integer, List<ChatVo>>();
 	
@@ -33,5 +38,4 @@ public class ChatService implements InitHandler {
 	public List<ChatVo> getOffChat(int playerId){
 		return offlineChats.get(playerId);
 	}
- 
 }

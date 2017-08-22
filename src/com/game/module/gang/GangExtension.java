@@ -231,7 +231,7 @@ public class GangExtension {
 			vo.id = room.getId();
 			vo.max = room.getMax();
 			GMember member = gang.getMembers().get(playerId);
-			vo.trainingTime = member.getTrainingTime();
+			vo.trainingTime = (int)member.getTrainingTime();
 			vo.createTime = room.getCreateTime();
 			vo.startTime = member.getStartTraining();
 		}

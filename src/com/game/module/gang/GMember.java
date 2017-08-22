@@ -16,7 +16,7 @@ public class GMember {
 	private int contribute7;// 最近7天的总贡献
 	private Map<Integer, Integer> donationRecord = new ConcurrentHashMap<Integer, Integer>();// 捐献次数记录
 	private int taskContribution;
-	private int trainingTime;//总的练功时间(单位小时)
+	private float trainingTime;//总的练功时间(单位小时)
 	private long startTraining;//开始练功的时间
 	
 	public GMember() {
@@ -79,15 +79,15 @@ public class GMember {
 		this.taskContribution += value;
 	}
 
-	public int getTrainingTime() {
+	public float getTrainingTime() {
 		return trainingTime;
 	}
 
-	public void setTrainingTime(int trainingTime) {
+	public void setTrainingTime(float trainingTime) {
 		this.trainingTime = trainingTime;
 	}
 	
-	public void alterTrainingTime(int value){
+	public void alterTrainingTime(float value){
 		this.trainingTime += value;
 	}
 

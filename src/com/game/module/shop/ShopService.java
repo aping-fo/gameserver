@@ -46,7 +46,7 @@ public class ShopService {
 	public static final int TRAINING = 5;
 	public static final int AI_ARENA = 6;
 	
-	public static final int[] SHOP_TYPES = { COMMON, ENDLESS, GANG, TRAINING, AI_ARENA };
+	private static final int[] SHOP_TYPES = { COMMON, ENDLESS, GANG, TRAINING, AI_ARENA };
 	public static final int LIMIT_DAILY = 1;
 	public static final int LIMIT_REFRESH = 2;
 
@@ -73,8 +73,11 @@ public class ShopService {
 		// 刷新商品
 		ConcurrentHashMap<Integer, List<Integer>> refreshes = serial.getData().getPlayerRefreshShops().get(type);
 		if (refreshes == null) {
-			refreshes = new ConcurrentHashMap<Integer, List<Integer>>();
+			refreshes = new ConcurrentHashMap<>();
 			refreshes = serial.getData().getPlayerRefreshShops().putIfAbsent(type, refreshes);
+			if(refreshes == null) {
+				refreshes = serial.getData().getPlayerRefreshShops().get(type);
+			}
 		}
 		List<Integer> myRefreshes = refreshes.get(playerId);
 		if (myRefreshes == null) {

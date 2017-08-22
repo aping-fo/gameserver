@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map.Entry;
 
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -69,6 +70,10 @@ public class SkillService {
 		//设置id
 		PlayerData data = playerService.getPlayerData(playerId);
 		int index = data.getSkills().indexOf(skillId);
+		if(index == -1) {
+			ServerLogger.warn("skill not found ,skillId ==>" + skillId);
+			return Response.ERR_PARAM;
+		}
 		data.getSkills().set(index, cfg.nextId);
 		index = data.getCurSkills().indexOf(skillId);
 		if(index>=0){
@@ -117,6 +122,13 @@ public class SkillService {
 			}
 			//扣除
 			data.getSkillCards().remove(ids.get(i));
+			for(List<Integer> group : data.getSkillCardSets()){
+				for(int j = 0; j < 4; j++){
+					if(group.get(j) == ids.get(i)){
+						group.set(j, 0);
+					}
+				}
+			}
 			if(full){
 				break;
 			}
@@ -199,6 +211,13 @@ public class SkillService {
 		for(int delId:ids){
 			//扣除
 			SkillCard del = data.getSkillCards().remove(delId);
+			for(List<Integer> group : data.getSkillCardSets()){
+				for(int i = 0; i < 4; i++){
+					if(group.get(i) == delId){
+						group.set(i, 0);
+					}
+				}
+			}
 			SkillCardConfig delCfg = ConfigData.getConfig(SkillCardConfig.class, del.getCardId());
 			//增加经验
 			newCard.setExp(newCard.getExp()+del.getExp()+delCfg.decompose);
