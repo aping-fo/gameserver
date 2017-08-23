@@ -18,10 +18,7 @@ import com.game.module.scene.SceneService;
 import com.game.params.*;
 import com.game.params.scene.SkillHurtVO;
 import com.game.params.worldboss.*;
-import com.game.util.CompressUtil;
-import com.game.util.ConfigData;
-import com.game.util.JsonUtils;
-import com.game.util.TimerService;
+import com.game.util.*;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import io.netty.util.internal.ConcurrentSet;
@@ -92,7 +89,7 @@ public class WorldBossService implements InitHandler {
     });
 
     private ReentrantLock lock = new ReentrantLock();
-    private ReentrantLock idLock = new ReentrantLock();
+    private ReentrantLock wbLock = new ReentrantLock();
     private ReentrantLock awardLock = new ReentrantLock();
 
     //所有参加世界BOSS玩家
@@ -122,10 +119,10 @@ public class WorldBossService implements InitHandler {
         }
 
         try {
-            idLock.lock();
+            wbLock.lock();
             maxId = (curMaxId / 1000);
         } finally {
-            idLock.unlock();
+            wbLock.unlock();
         }
 
         checkActivity();
@@ -161,11 +158,11 @@ public class WorldBossService implements InitHandler {
 
     private int getNextId() {
         try {
-            idLock.lock();
+            wbLock.lock();
             maxId++;
             return maxId * 1000 + SysConfig.serverId;
         } finally {
-            idLock.unlock();
+            wbLock.unlock();
         }
     }
 
@@ -191,34 +188,41 @@ public class WorldBossService implements InitHandler {
         return ret;
     }
 
-    private void hurtRank() {
-        //排序
-        List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
-        Collections.sort(list, SORT);
+    private List<HurtRecord> hurtRank() {
+        try {
+            wbLock.lock();
+            //排序
+            List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
+            Collections.sort(list, SORT);
 
-        worldBossData.getTop10().clear();
-        worldBossData.getRankMap().clear();
+            List<HurtRecord> top10List = new ArrayList<>();
+            Map<Integer, HurtRecord> rankMap = new HashMap<>();
 
-        int size = 0;
-        for (int i = 0; i < list.size(); i++) {
-            HurtRecord hr = list.get(i);
-            int rank = i + 1;
-            hr.setRank(rank); //设置当前排名
+            for (int i = 0; i < list.size(); i++) {
+                HurtRecord hr = list.get(i);
+                int rank = i + 1;
+                hr.setRank(rank); //设置当前排名
 
-            //缓存所有人排名
-            HurtRecord selfRank = new HurtRecord();
-            selfRank.setCurHurt(hr.getCurHurt());
-            selfRank.setRank(rank);
-            worldBossData.getRankMap().put(hr.getPlayerId(),selfRank);
+                //缓存所有人排名
+                HurtRecord selfRank = new HurtRecord();
+                selfRank.setCurHurt(hr.getCurHurt());
+                selfRank.setRank(rank);
+                rankMap.put(hr.getPlayerId(), selfRank);
 
-            if(size < 10) { //缓存前10名
-                HurtRecord top10Hr = new HurtRecord(hr.getPlayerId(),hr.getName());
-                top10Hr.setCurHurt(hr.getCurHurt());
-                top10Hr.setHurt(hr.getHurt());
-                top10Hr.setRank(hr.getRank());
+                if (rank <= 10) { //缓存前10名
+                    HurtRecord top10Hr = new HurtRecord(hr.getPlayerId(), hr.getName());
+                    top10Hr.setCurHurt(hr.getCurHurt());
+                    top10Hr.setHurt(hr.getHurt());
+                    top10Hr.setRank(hr.getRank());
 
-                worldBossData.getTop10().add(top10Hr);
+                    top10List.add(top10Hr);
+                }
             }
+            worldBossData.setTop10(top10List);
+            worldBossData.setRankMap(rankMap);
+            return list;
+        } finally {
+            wbLock.unlock();
         }
     }
 
@@ -282,7 +286,18 @@ public class WorldBossService implements InitHandler {
             MonsterRefreshConfig conf = ConfigData.getConfig(MonsterRefreshConfig.class, bossId);
             MonsterConfig conf1 = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
             messageService.sendSysMsg(5, player.getName(), conf1.name);
-            hurtRank();
+            //排序
+            Context.getThreadService().execute(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        hurtRank();
+                    } catch (Exception e) {
+                        ServerLogger.err(e, "handle hurt rank err!");
+                    }
+                }
+            });
+
             if (worldBossData.checkAllDead()) {
                 sendAward();
             }
@@ -409,8 +424,8 @@ public class WorldBossService implements InitHandler {
             messageService.sendSysMsg(4);
             multiService.clearGroup(Scene.WORLD_BOSSS_PVE);
             //排序
-            List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
-            Collections.sort(list, SORT);
+            //List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
+            //Collections.sort(list, SORT);
 
             List<GoodsEntry> killRewards = new ArrayList<>(); //击杀BOSS奖励
             //最后一击奖励
@@ -451,6 +466,7 @@ public class WorldBossService implements InitHandler {
             rewardCli.hurtReward = new ArrayList<>();
             rewardCli.rankReward = new ArrayList<>();
 
+            List<HurtRecord> list = hurtRank();
             //排名奖励
             for (int i = 0; i < list.size(); i++) {
                 HurtRecord hr = list.get(i);
@@ -487,6 +503,7 @@ public class WorldBossService implements InitHandler {
 
                 String killTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_TITLE).tips;
                 String killContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_CONTENT).tips;
+
                 String beatTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_TITLE).tips;
                 String beatContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_CONTENT).tips;
 
@@ -587,11 +604,11 @@ public class WorldBossService implements InitHandler {
         }
 
         WorldBoss worldBoss = null;
-        if(index != 1) {
+        if (index != 1) {
             for (WorldBoss boss : worldBossData.getWorldBossMap().values()) {
                 //检查前置BOSS有没有被杀
-                if(boss.getIndex() == index - 1) {
-                    if(boss.getCurHp() > 0) {
+                if (boss.getIndex() == index - 1) {
+                    if (boss.getCurHp() > 0) {
                         vo.code = Response.ERR_PARAM;
                         ServerLogger.warn("pre-boss has been alive.  index = " + index);
                         return vo;
@@ -699,14 +716,10 @@ public class WorldBossService implements InitHandler {
      * 获取实时伤害排名
      */
     public Object getRealTimeHurtList(int playerId) {
-        WorldBossHurtRankVO vo = new WorldBossHurtRankVO();
-        vo.rankList = new ArrayList<>();
-        for (HurtRecord hr : treeMap.values()) {
-            WorldBossHurtVO vo1 = new WorldBossHurtVO();
-            vo1.hurt = hr.getHurt();
-            vo1.nickName = hr.getName();
-            vo.rankList.add(vo1);
-        }
+        List<HurtRecord> listTmp = new ArrayList<>(treeMap.values());
+        WorldBossHurtRankVO vo = toRankProto(listTmp);
+        listTmp.clear();
+        listTmp = null;
         HurtRecord hr = worldBossData.getHurtMap().get(playerId);
         if (hr != null) {
             vo.selfRank = hr.getRank();
@@ -715,19 +728,26 @@ public class WorldBossService implements InitHandler {
         return vo;
     }
 
+    private WorldBossHurtRankVO toRankProto(List<HurtRecord> list) {
+        WorldBossHurtRankVO cli = new WorldBossHurtRankVO();
+        cli.rankList = new ArrayList<>();
+        for (HurtRecord hr : list) {
+            WorldBossHurtVO vo = new WorldBossHurtVO();
+            vo.hurt = hr.getHurt();
+            vo.nickName = hr.getName();
+            cli.rankList.add(vo);
+        }
+        return cli;
+    }
+
     /**
      * 获取历史伤害排名
      */
     public Object getHistoryHurtList(int playerId) {
-        WorldBossHurtRankVO vo = new WorldBossHurtRankVO();
-        vo.rankList = new ArrayList<>();
-        for (HurtRecord hr : worldBossData.getTop10()) {
-            WorldBossHurtVO vo1 = new WorldBossHurtVO();
-            vo1.hurt = hr.getHurt();
-            vo1.nickName = hr.getName();
-            vo.rankList.add(vo1);
-        }
-        HurtRecord hr = worldBossData.getRankMap().get(playerId);
+        List<HurtRecord> list = worldBossData.getTop10();
+        WorldBossHurtRankVO vo = toRankProto(list);
+        Map<Integer, HurtRecord> rankMap = worldBossData.getRankMap();
+        HurtRecord hr = rankMap.get(playerId);
         if (hr != null) {
             vo.selfRank = hr.getRank();
             vo.hurt = hr.getCurHurt();
@@ -789,8 +809,7 @@ public class WorldBossService implements InitHandler {
                 SessionManager.getInstance().sendMsg(4907, param, playerId);
                 return;
             }
-        }
-        else{ //自动复活时间判断
+        } else { //自动复活时间判断
             //TODO 加验证
         }
         param.param1 = Response.SUCCESS;
