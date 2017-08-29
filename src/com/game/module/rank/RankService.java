@@ -87,7 +87,7 @@ public class RankService implements InitHandler {
 			fightingList.putAll(fightingEntities);
 		}
 		
-		//等级
+		//等级???? 为啥这里排过了，下面还要treemap去排序,有点搞不懂了
 		players = dao.selectLevelRanking();
 		RankingList<LevelRankEntity> levelList = getRankingList(TYPE_LEVEL);
 		synchronized (fightingList) {

@@ -823,10 +823,15 @@ public class WorldBossService implements InitHandler {
     }
 
     public void gmReset() {
+        if(gmOpen && !worldBossData.checkAllDead()) {
+            //已经开过了
+            return;
+        }
         gmOpen = true;
         worldBossData.getKillMap().clear();
         worldBossData.getTop10().clear();
         worldBossData.getRankMap().clear();
+        worldBossData.getHurtMap().clear();
 
         for (WorldBoss worldBoss : worldBossData.getWorldBossMap().values()) {
             worldBoss.setCurHp(worldBoss.getHp());

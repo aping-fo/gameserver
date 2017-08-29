@@ -87,6 +87,12 @@ public class VipExtension {
 		return vipService.getVipGift(playerId, lev.param);
 	}
 
+	//领取VIP礼包记录
+	@Command(2210)
+	public Object getVipGiftResultList(int playerId,Object param){
+		return vipService.getVipGiftResultList(playerId);
+	}
+
 	//凌晨更新
 	public static final int UPDATE_ZERO_CLOCK = 2208;
 }

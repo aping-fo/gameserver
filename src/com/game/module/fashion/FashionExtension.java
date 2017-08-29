@@ -41,6 +41,8 @@ public class FashionExtension {
 	//购买为永久时装
 	@Command(4704)
 	public Object updateToForever(int playerId,IntParam id){
-		return fashionService.updateToForever(playerId, id.param);
+		IntParam intParam = new IntParam();
+		intParam.param = fashionService.updateToForever(playerId, id.param);
+		return intParam;
 	}
 }
