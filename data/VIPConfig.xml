@@ -5,19 +5,20 @@
 	<charge>0</charge>
 	<price>10</price>
 	<returnValue>100</returnValue>
-	<rewards>[[103,20000],[30650060,10],[30300010,20]]</rewards>
+	<rewards>[[103,20000],[102,5]]</rewards>
 	<dailyRewards></dailyRewards>
 	<buyEnergy>1</buyEnergy>
 	<buyCoin>5</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>5</mysteryProperty>
 	<addBuy>0</addBuy>
 	<arenaChallenge>1</arenaChallenge>
 	<buyTreasureCopy>0</buyTreasureCopy>
+	<buyLeadawayCopy>0</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>0</buyExtremeEvasionCopy>
 	<traveringEnergy>100</traveringEnergy>
-	<vipGift>1:2</vipGift>
+	<vipGift>103:2</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -25,19 +26,20 @@
 	<charge>60</charge>
 	<price>20</price>
 	<returnValue>200</returnValue>
-	<rewards>[[103,50000],[50240010,2],[50240281,10],[30420020,10]]</rewards>
+	<rewards>[[103,50000],[102,10],[109,10]]</rewards>
 	<dailyRewards>[[50230001,1],[50610010,1],[30420020,1]]</dailyRewards>
 	<buyEnergy>1</buyEnergy>
 	<buyCoin>10</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:3;2:3;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>6</mysteryProperty>
 	<addBuy>1</addBuy>
 	<arenaChallenge>2</arenaChallenge>
 	<buyTreasureCopy>1</buyTreasureCopy>
+	<buyLeadawayCopy>1</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>1</buyExtremeEvasionCopy>
 	<traveringEnergy>110</traveringEnergy>
-	<vipGift>1:3</vipGift>
+	<vipGift>103:3</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -45,19 +47,20 @@
 	<charge>300</charge>
 	<price>30</price>
 	<returnValue>600</returnValue>
-	<rewards>[[103,100000],[50600030,4],[50240010,2]]</rewards>
+	<rewards>[[103,100000],[102,20],[302001,10]]</rewards>
 	<dailyRewards>[[50230001,2],[50610010,2],[30420020,2]]</dailyRewards>
 	<buyEnergy>2</buyEnergy>
 	<buyCoin>15</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:3;2:3;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>7</mysteryProperty>
 	<addBuy>2</addBuy>
 	<arenaChallenge>3</arenaChallenge>
 	<buyTreasureCopy>1</buyTreasureCopy>
+	<buyLeadawayCopy>1</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>1</buyExtremeEvasionCopy>
 	<traveringEnergy>120</traveringEnergy>
-	<vipGift>1:4</vipGift>
+	<vipGift>103:4</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -65,19 +68,20 @@
 	<charge>600</charge>
 	<price>170</price>
 	<returnValue>1500</returnValue>
-	<rewards>[[103,200000],[31130123,50],[118,500],[30300020,20]]</rewards>
+	<rewards>[[103,200000],[102,30],[302002,30]]</rewards>
 	<dailyRewards>[[50230001,3],[50610010,3],[30420020,3]]</dailyRewards>
 	<buyEnergy>3</buyEnergy>
 	<buyCoin>20</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:3;2:3;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>8</mysteryProperty>
 	<addBuy>3</addBuy>
 	<arenaChallenge>4</arenaChallenge>
 	<buyTreasureCopy>1</buyTreasureCopy>
+	<buyLeadawayCopy>1</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>1</buyExtremeEvasionCopy>
 	<traveringEnergy>130</traveringEnergy>
-	<vipGift>1:5</vipGift>
+	<vipGift>103:5</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -85,19 +89,20 @@
 	<charge>1200</charge>
 	<price>200</price>
 	<returnValue>2500</returnValue>
-	<rewards>[[103,300000],[50600040,10],[118,1000]]</rewards>
+	<rewards>[[103,300000],[102,50],[108,100]]</rewards>
 	<dailyRewards>[[50230001,4],[50610010,4],[30420020,4]]</dailyRewards>
 	<buyEnergy>4</buyEnergy>
 	<buyCoin>25</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:4;2:4;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>9</mysteryProperty>
 	<addBuy>4</addBuy>
 	<arenaChallenge>5</arenaChallenge>
 	<buyTreasureCopy>2</buyTreasureCopy>
+	<buyLeadawayCopy>2</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>140</traveringEnergy>
-	<vipGift>1:6</vipGift>
+	<vipGift>103:6</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -105,19 +110,20 @@
 	<charge>3000</charge>
 	<price>500</price>
 	<returnValue>3888</returnValue>
-	<rewards>[[103,500000],[31130123,70],[30650060,200],[50240010,5]]</rewards>
+	<rewards>[[103,500000],[102,75],[108,200]]</rewards>
 	<dailyRewards>[[50230001,5],[50610010,5],[30420020,5]]</dailyRewards>
 	<buyEnergy>5</buyEnergy>
 	<buyCoin>30</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:4;2:4;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>10</mysteryProperty>
 	<addBuy>5</addBuy>
 	<arenaChallenge>6</arenaChallenge>
 	<buyTreasureCopy>2</buyTreasureCopy>
+	<buyLeadawayCopy>2</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>150</traveringEnergy>
-	<vipGift>1:7</vipGift>
+	<vipGift>103:7</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -125,19 +131,20 @@
 	<charge>5000</charge>
 	<price>600</price>
 	<returnValue>4500</returnValue>
-	<rewards>[[103,500000],[60104104,30],[60104204,30],[60104306,30],[30300030,10],[50600040,5]]</rewards>
+	<rewards>[[103,500000],[102,100],[303001,20],[304001,20],[305001,20]]</rewards>
 	<dailyRewards>[[50230001,6],[50610010,6],[30420020,6]]</dailyRewards>
 	<buyEnergy>5</buyEnergy>
 	<buyCoin>35</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:4;2:4;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>11</mysteryProperty>
 	<addBuy>6</addBuy>
 	<arenaChallenge>7</arenaChallenge>
 	<buyTreasureCopy>2</buyTreasureCopy>
+	<buyLeadawayCopy>2</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>160</traveringEnergy>
-	<vipGift>1:8</vipGift>
+	<vipGift>103:8</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -145,19 +152,20 @@
 	<charge>8000</charge>
 	<price>800</price>
 	<returnValue>5888</returnValue>
-	<rewards>[[103,500000],[31130123,100],[118,2000],[30420030,40]]</rewards>
+	<rewards>[[103,500000],[102,150],[306001,20],[307001,20],[308001,20]]</rewards>
 	<dailyRewards>[[50230001,7],[50610010,7],[30420020,7]]</dailyRewards>
 	<buyEnergy>6</buyEnergy>
 	<buyCoin>40</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:4;2:4;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>12</mysteryProperty>
 	<addBuy>7</addBuy>
 	<arenaChallenge>8</arenaChallenge>
 	<buyTreasureCopy>2</buyTreasureCopy>
+	<buyLeadawayCopy>2</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>170</traveringEnergy>
-	<vipGift>1:9</vipGift>
+	<vipGift>103:9</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -165,19 +173,20 @@
 	<charge>12000</charge>
 	<price>1200</price>
 	<returnValue>6888</returnValue>
-	<rewards>[[103,600000],[60101105,30],[60101204,30],[60101307,30],[30300030,30],[50600050,5]]</rewards>
+	<rewards>[[103,600000],[102,200],[109,50],[302001,30]]</rewards>
 	<dailyRewards>[[50230001,8],[50610010,8],[30420020,8]]</dailyRewards>
 	<buyEnergy>6</buyEnergy>
 	<buyCoin>45</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:4;2:4;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>13</mysteryProperty>
 	<addBuy>8</addBuy>
 	<arenaChallenge>9</arenaChallenge>
 	<buyTreasureCopy>2</buyTreasureCopy>
+	<buyLeadawayCopy>2</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>180</traveringEnergy>
-	<vipGift>1:10</vipGift>
+	<vipGift>103:10</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -185,19 +194,20 @@
 	<charge>20000</charge>
 	<price>1500</price>
 	<returnValue>8000</returnValue>
-	<rewards>[[103,800000],[31130123,130],[30650060,800],[30420030,60]]</rewards>
+	<rewards>[[103,800000],[102,250],[108,500]]</rewards>
 	<dailyRewards>[[50230001,9],[50610010,9],[30420020,9]]</dailyRewards>
 	<buyEnergy>7</buyEnergy>
 	<buyCoin>50</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:4;2:4;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>14</mysteryProperty>
 	<addBuy>9</addBuy>
 	<arenaChallenge>10</arenaChallenge>
 	<buyTreasureCopy>2</buyTreasureCopy>
+	<buyLeadawayCopy>2</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>2</buyExtremeEvasionCopy>
 	<traveringEnergy>190</traveringEnergy>
-	<vipGift>1:11</vipGift>
+	<vipGift>103:11</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -205,19 +215,20 @@
 	<charge>40000</charge>
 	<price>2000</price>
 	<returnValue>20000</returnValue>
-	<rewards>[[103,1000000],[60104114,30],[60104209,30],[60104313,30],[50600060,5],[118,3000]]</rewards>
+	<rewards>[[103,1000000],[102,300],[303001,80],[304001,80],[305001,80]]</rewards>
 	<dailyRewards>[[50230001,10],[50610010,10],[30420020,10]]</dailyRewards>
 	<buyEnergy>7</buyEnergy>
 	<buyCoin>55</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:5;2:5;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>15</mysteryProperty>
 	<addBuy>10</addBuy>
 	<arenaChallenge>11</arenaChallenge>
 	<buyTreasureCopy>3</buyTreasureCopy>
+	<buyLeadawayCopy>3</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>200</traveringEnergy>
-	<vipGift>1:12</vipGift>
+	<vipGift>103:12</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -225,19 +236,20 @@
 	<charge>60000</charge>
 	<price>3000</price>
 	<returnValue>30000</returnValue>
-	<rewards>[[103,1000000],[31130129,30],[50250501,1],[30420030,100]]</rewards>
+	<rewards>[[103,1000000],[102,400],[306001,80],[307001,80],[308001,80]]</rewards>
 	<dailyRewards>[[50230001,11],[50610010,11],[30420020,11]]</dailyRewards>
 	<buyEnergy>8</buyEnergy>
 	<buyCoin>60</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:5;2:5;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>16</mysteryProperty>
 	<addBuy>11</addBuy>
 	<arenaChallenge>12</arenaChallenge>
 	<buyTreasureCopy>3</buyTreasureCopy>
+	<buyLeadawayCopy>3</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>210</traveringEnergy>
-	<vipGift>1:13</vipGift>
+	<vipGift>103:13</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -245,19 +257,20 @@
 	<charge>80000</charge>
 	<price>4000</price>
 	<returnValue>40000</returnValue>
-	<rewards>[[103,1200000],[60101114,30],[60101209,30],[60101313,30],[30300040,5],[30650060,800]]</rewards>
+	<rewards>[[103,1200000],[102,500],[109,100],[302001,50]]</rewards>
 	<dailyRewards>[[50230001,12],[50610010,12],[30420020,12]]</dailyRewards>
 	<buyEnergy>8</buyEnergy>
 	<buyCoin>65</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:5;2:5;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>17</mysteryProperty>
 	<addBuy>12</addBuy>
 	<arenaChallenge>13</arenaChallenge>
 	<buyTreasureCopy>3</buyTreasureCopy>
+	<buyLeadawayCopy>3</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>220</traveringEnergy>
-	<vipGift>1:14</vipGift>
+	<vipGift>103:14</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -265,19 +278,20 @@
 	<charge>100000</charge>
 	<price>5000</price>
 	<returnValue>60000</returnValue>
-	<rewards>[[103,1500000],[31130129,120],[30300040,15],[118,4000]]</rewards>
+	<rewards>[[103,1500000],[102,700],[108,100]]</rewards>
 	<dailyRewards>[[50230001,13],[50610010,13],[30420020,13]]</dailyRewards>
 	<buyEnergy>9</buyEnergy>
 	<buyCoin>70</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:5;2:5;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>18</mysteryProperty>
 	<addBuy>13</addBuy>
 	<arenaChallenge>14</arenaChallenge>
 	<buyTreasureCopy>3</buyTreasureCopy>
+	<buyLeadawayCopy>3</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>230</traveringEnergy>
-	<vipGift>1:15</vipGift>
+	<vipGift>103:15</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -285,19 +299,20 @@
 	<charge>120000</charge>
 	<price>6000</price>
 	<returnValue>80000</returnValue>
-	<rewards>[[103,1800000],[31130129,100],[50600060,5],[118,5000]]</rewards>
+	<rewards>[[103,1800000],[102,1000],[303001,150],[304001,150],[305001,150]]</rewards>
 	<dailyRewards>[[50230001,14],[50610010,14],[30420020,14]]</dailyRewards>
 	<buyEnergy>9</buyEnergy>
 	<buyCoin>75</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:5;2:5;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>19</mysteryProperty>
 	<addBuy>14</addBuy>
 	<arenaChallenge>15</arenaChallenge>
 	<buyTreasureCopy>3</buyTreasureCopy>
+	<buyLeadawayCopy>3</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>240</traveringEnergy>
-	<vipGift>1:16</vipGift>
+	<vipGift>103:16</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 <config>
@@ -305,19 +320,20 @@
 	<charge>150000</charge>
 	<price>7000</price>
 	<returnValue>100000</returnValue>
-	<rewards>[[103,2000000],[31130129,130],[30300040,10],[50600070,2]]</rewards>
+	<rewards>[[103,2000000],[102,1500],[306001,150],[307001,150],[308001,150]]</rewards>
 	<dailyRewards>[[50230001,15],[50610010,15],[30420020,15]]</dailyRewards>
 	<buyEnergy>10</buyEnergy>
 	<buyCoin>80</buyCoin>
 	<resetCopy></resetCopy>
-	<shopRefreshTimes>1:5;2:5;3:2;4:2;5:2;6:2</shopRefreshTimes>
+	<shopRefreshTimes>1:2;2:2;3:2;4:2;5:2;6:2;7:2;8:2;9:2;10:2;11:2;12:2;13:2;14:2</shopRefreshTimes>
 	<mysteryProperty>20</mysteryProperty>
 	<addBuy>15</addBuy>
 	<arenaChallenge>16</arenaChallenge>
 	<buyTreasureCopy>3</buyTreasureCopy>
+	<buyLeadawayCopy>3</buyLeadawayCopy>
 	<buyExtremeEvasionCopy>3</buyExtremeEvasionCopy>
 	<traveringEnergy>250</traveringEnergy>
-	<vipGift>1:17</vipGift>
+	<vipGift>103:17</vipGift>
 	<giftPrice>100</giftPrice>
 </config>
 </root>

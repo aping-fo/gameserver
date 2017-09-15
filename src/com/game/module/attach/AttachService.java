@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.attach.leadaway.LeadAwayLogic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
@@ -38,6 +39,8 @@ public class AttachService implements InitHandler {
 		register(BeanManager.getBean(EndlessLogic.class));
 		//金币副本
 		register(BeanManager.getBean(TreasureLogic.class));
+		//顺手牵羊副本
+		register(BeanManager.getBean(LeadAwayLogic.class));
 		//经验副本
 		register(BeanManager.getBean(ExperienceLogic.class));
 		//AI竞技场

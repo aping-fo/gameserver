@@ -60,6 +60,10 @@ public enum LogConsume {
 	WORLD_BOSS_KILL(1053,"世界BOSS击杀奖励"),
 	WORLD_BOSS_LAST_BEAT(1054,"世界BOSS最后一击奖励"),
 	WORLD_HORN(1055,"喇叭"),
+	SQ_UP(1056,"神器升阶"),
+	QUICK_LEADAWAY(1057, "快速完成顺手牵羊副本"),
+	BUY_LEADAWAY_TIME(1058, "购买顺手牵羊副本次数"),
+	LADDER_AWARD(1059, "排位赛奖励"),
 	;
 	public int actionId;// id
 	public String desc;

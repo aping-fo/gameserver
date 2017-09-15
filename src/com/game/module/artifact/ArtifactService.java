@@ -3,7 +3,13 @@ package com.game.module.artifact;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
+import com.game.data.ArtifactLevelUpCfg;
+import com.game.params.ArtifactLevelUpVO;
+import com.game.params.Int2Param;
+import com.game.params.IntParam;
+import com.game.params.ListParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -109,20 +115,30 @@ public class ArtifactService {
 				}
 			}
 		}
+
 		//每一个神器检测部位所需的数量是否足够,设为1
 		boolean update = false;
 		for(Object o:ConfigData.getConfigs(ArtifactCfg.class)){
 			ArtifactCfg cfg = (ArtifactCfg)o;
 			int[] components = data.getArtifacts().get(cfg.id);
+			int num = 0;
 			for(int i=0;i<components.length;i++){
 				int component = components[i];
 				if(component == 1){
+					num += 1;
 					continue;
 				}
 				int[] need = cfg.components[i];
 				if(goodsService.getGoodsCount(playerId, need[0])>=need[1]){
 					update = true;
+					num += 1;
 					components[i] = 1;
+				}
+			}
+			if(num == components.length) {
+				Integer lv = data.getArtifactsLevelUp().get(cfg.id);
+				if(lv == null || lv < 1) {
+					data.getArtifactsLevelUp().put(cfg.id,1);
 				}
 			}
 		}
@@ -130,5 +146,74 @@ public class ArtifactService {
 		if(update){
 			playerCalculator.calculate(playerId);
 		}
+	}
+
+	/**
+	 * 神器升阶
+	 *
+	 * @param playerId
+	 * @param sid
+	 * @return
+	 */
+	public ArtifactLevelUpVO levelUp(int playerId, int sid) {
+		ArtifactLevelUpVO param = new ArtifactLevelUpVO();
+		PlayerData data = playerService.getPlayerData(playerId);
+		Integer level = data.getArtifactsLevelUp().get(sid);
+		if (level == null) {
+			level = 1;
+		}
+
+		int maxLevel = ConfigData.getArtifactMaxLevel().get(sid);
+		if (level >= maxLevel) {
+			param.code = Response.MAX_LEV;
+			return param;
+		}
+
+		ArtifactLevelUpCfg conf = ConfigData.getArtifactLevelUpCfgs().get(sid + "_" + 1);
+		int consume = 0;
+		int itemId = conf.consume[0];
+		int totalCount = goodsService.getGoodsCount(playerId, itemId);
+		int upTimes = 0;
+		for (int i = level + 1; i <= maxLevel; i++) {
+			conf = ConfigData.getArtifactLevelUpCfgs().get(sid + "_" + i);
+			int needCount = conf.consume[1];
+			if (needCount > totalCount) {
+				break;
+			}
+			upTimes += 1;
+			totalCount -= needCount;
+			consume += needCount;
+		}
+		param.code = Response.SUCCESS;
+		List<GoodsEntry> dec = new ArrayList<>();
+		GoodsEntry ge = new GoodsEntry(itemId,consume);
+		dec.add(ge);
+		goodsService.decConsume(playerId, dec, LogConsume.SQ_UP, sid);
+		if (upTimes > 0) {
+			data.getArtifactsLevelUp().put(sid, level + upTimes);
+			playerCalculator.calculate(playerId);
+		}
+		param.id = sid;
+		param.level = level + upTimes;
+		return param;
+	}
+
+	/**
+	 * 获取神器等阶信息
+	 * @param playerId
+	 * @return
+	 */
+	public ListParam<Int2Param> artifactList(int playerId) {
+		ListParam<Int2Param> result = new ListParam<>();
+		result.code = Response.SUCCESS;
+		result.params = new ArrayList<>();
+		PlayerData data = playerService.getPlayerData(playerId);
+		for(Map.Entry<Integer,Integer> s : data.getArtifactsLevelUp().entrySet()) {
+			Int2Param param = new Int2Param();
+			param.param1 = s.getKey();
+			param.param2 = s.getValue();
+			result.params.add(param);
+		}
+		return result;
 	}
 }

@@ -17,8 +17,9 @@ public class VIPConfig {
 	public int mysteryProperty;//神秘商店出现概率加成百分值
 	public int addBuy;//加购倍数
 	public int arenaChallenge;//竞技场挑战次数购买
-	public int buyTreasureCopy;//金币副本可购买次数
-	public int buyExtremeEvasionCopy;//经验副本可购买次数
+	public int buyTreasureCopy;//扭曲失控（金币）副本可购买次数
+	public int buyLeadawayCopy;//顺手牵羊副本可购买次数
+	public int buyExtremeEvasionCopy;//虚无空间（经验）副本可购买次数
 	public int traveringEnergy;//穿越仪能量上限
 	public Map<Integer,Integer> vipGift;//礼包
 	public int giftPrice;//礼包原价钱

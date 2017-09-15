@@ -5,6 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import com.game.data.GoodsConfig;
+import com.game.module.admin.MessageConsts;
+import com.game.module.admin.MessageService;
+import com.game.module.goods.Goods;
+import com.game.util.ConfigData;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.LotteryCfg;
@@ -40,7 +45,8 @@ public class LotteryExtension {
 	private PlayerService playerService;
 	@Autowired
 	private TaskService taskService;
-	
+	@Autowired
+	private MessageService messageService;
 	@Command(2601)
 	public Object getInfo(int playerId, Object param){
 		ListParam<LotteryVO> result = new ListParam<LotteryVO>();
@@ -73,7 +79,7 @@ public class LotteryExtension {
 			record.id = cfg.id;
 			map.put(cfg.id, record);
 		}
-		int time = param.param2 == 1 ? 1 : 10;;
+		int time = param.param2 == 1 ? 1 : 10;
 		if(record.count + time > cfg.limit){
 			result.code = Response.NO_TODAY_TIMES;
 			return result;
@@ -112,6 +118,13 @@ public class LotteryExtension {
 			}
 		}else{
 			result.rewards = rewardService.getRewards(playerId, cfg.singleId, 1, LogConsume.LOTTERY_REWARD);			
+		}
+
+		for(Reward reward : result.rewards) {
+			GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class,reward.id);
+			if(conf.type == Goods.SKILL_CARD && (conf.color == Goods.QUALITY_VIOLET || conf.color == Goods.QUALITY_ORANGE)) { //消息广播
+				messageService.sendSysMsg(MessageConsts.MSG_LOTTERY,player.getName(),conf.name);
+			}
 		}
 		record.count += time;
 		record.curCount += time;

@@ -17,6 +17,14 @@
 	<isSceneFading>0</isSceneFading>
 </config>
 <config>
+	<id>10013</id>
+	<type>4</type>
+	<sceneSubType>40</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[10,0,1]</defaultPos>
+	<isSceneFading>1</isSceneFading>
+</config>
+<config>
 	<id>10021</id>
 	<type>4</type>
 	<sceneSubType>41</sceneSubType>
@@ -36,6 +44,14 @@
 	<id>11031</id>
 	<type>4</type>
 	<sceneSubType>43</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+	<isSceneFading>1</isSceneFading>
+</config>
+<config>
+	<id>11032</id>
+	<type>4</type>
+	<sceneSubType>50</sceneSubType>
 	<ignoreIputEvent></ignoreIputEvent>
 	<defaultPos>[0,0,1]</defaultPos>
 	<isSceneFading>1</isSceneFading>
@@ -161,7 +177,7 @@
 	<isSceneFading>1</isSceneFading>
 </config>
 <config>
-	<id>3999011</id>
+	<id>20131</id>
 	<type>3</type>
 	<sceneSubType></sceneSubType>
 	<ignoreIputEvent></ignoreIputEvent>
@@ -169,31 +185,7 @@
 	<isSceneFading>1</isSceneFading>
 </config>
 <config>
-	<id>3999021</id>
-	<type>3</type>
-	<sceneSubType></sceneSubType>
-	<ignoreIputEvent></ignoreIputEvent>
-	<defaultPos>[-3,0,1]</defaultPos>
-	<isSceneFading>1</isSceneFading>
-</config>
-<config>
-	<id>3999031</id>
-	<type>3</type>
-	<sceneSubType></sceneSubType>
-	<ignoreIputEvent></ignoreIputEvent>
-	<defaultPos>[-3,0,1]</defaultPos>
-	<isSceneFading>1</isSceneFading>
-</config>
-<config>
-	<id>3999041</id>
-	<type>3</type>
-	<sceneSubType></sceneSubType>
-	<ignoreIputEvent></ignoreIputEvent>
-	<defaultPos>[-3,0,1]</defaultPos>
-	<isSceneFading>1</isSceneFading>
-</config>
-<config>
-	<id>3999051</id>
+	<id>20141</id>
 	<type>3</type>
 	<sceneSubType></sceneSubType>
 	<ignoreIputEvent></ignoreIputEvent>
@@ -5726,6 +5718,54 @@
 	<sceneSubType>44</sceneSubType>
 	<ignoreIputEvent></ignoreIputEvent>
 	<defaultPos>[0,0,1]</defaultPos>
+	<isSceneFading>1</isSceneFading>
+</config>
+<config>
+	<id>9001111</id>
+	<type>4</type>
+	<sceneSubType>51</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+	<isSceneFading>1</isSceneFading>
+</config>
+<config>
+	<id>9001112</id>
+	<type>4</type>
+	<sceneSubType>51</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+	<isSceneFading>1</isSceneFading>
+</config>
+<config>
+	<id>9001113</id>
+	<type>4</type>
+	<sceneSubType>51</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+	<isSceneFading>1</isSceneFading>
+</config>
+<config>
+	<id>9001114</id>
+	<type>4</type>
+	<sceneSubType>51</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[0,0,1]</defaultPos>
+	<isSceneFading>1</isSceneFading>
+</config>
+<config>
+	<id>3030000</id>
+	<type>3</type>
+	<sceneSubType>47</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[3.7,0,2.6]</defaultPos>
+	<isSceneFading>1</isSceneFading>
+</config>
+<config>
+	<id>3040000</id>
+	<type>3</type>
+	<sceneSubType>48</sceneSubType>
+	<ignoreIputEvent></ignoreIputEvent>
+	<defaultPos>[3.7,0,2.6]</defaultPos>
 	<isSceneFading>1</isSceneFading>
 </config>
 </root>

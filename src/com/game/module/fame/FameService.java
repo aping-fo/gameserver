@@ -3,6 +3,8 @@ package com.game.module.fame;
 import java.util.ArrayList;
 import java.util.Map.Entry;
 
+import com.game.params.FameListVO;
+import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,16 +27,18 @@ public class FameService {
 	private PlayerService playerService;
 
 	// 获取声望数据
-	public ListParam<FameVo> getInfo(int playerId) {
+	public FameListVO getInfo(int playerId) {
 		PlayerData data = playerService.getPlayerData(playerId);
-		ListParam<FameVo> info = new ListParam<FameVo>();
-		info.params = new ArrayList<FameVo>(data.getFames().size());
+		FameListVO info = new FameListVO();
+		info.camp = data.getActivityCamp();
+		info.fames = new ArrayList<>(data.getFames().size());
 		for (Entry<Integer, Upgrade> fame : data.getFames().entrySet()) {
 			FameVo vo = new FameVo();
 			vo.camp = fame.getKey();
 			vo.lev = fame.getValue().getLev();
-			vo.exp = fame.getValue().getExp();
-			info.params.add(vo);
+			vo.totalExp = fame.getValue().getCurExp(); //总声望
+			vo.exp = fame.getValue().getExp(); //当前声望
+			info.fames.add(vo);
 		}
 		return info;
 	}
@@ -50,6 +54,9 @@ public class FameService {
 			return;
 		}
 		PlayerData data = playerService.getPlayerData(playerId);
+		if(data.getActivityCamp() != 0) { //代表
+			camp = data.getActivityCamp();
+		}
 		Upgrade fameData = data.getFames().get(camp);
 		if (fameData == null) {
 			fameData = new Upgrade();
@@ -57,6 +64,8 @@ public class FameService {
 			data.getFames().put(camp, fameData);
 		}
 		fameData.setExp(fameData.getExp()+fame);
+		fameData.setCurExp(fameData.getCurExp() + fame);
+
 		while (true) {
 			FameConfig cfg = ConfigData.getConfig(FameConfig.class, camp * 1000 + fameData.getLev());
 			if (cfg.exp > fameData.getExp()) {
@@ -68,8 +77,22 @@ public class FameService {
 				break;
 			}
 			fameData.setLev(fameData.getLev() + 1);
-			fameData.setExp(cfg.exp - fameData.getExp());
+			fameData.setExp(fameData.getExp() - cfg.exp);
 		}
 		refresh(playerId);
+	}
+
+	/**
+	 * 激活代表阵营
+	 * @param playerId
+	 * @param camp
+	 * @return
+	 */
+	public IntParam activityAcmp(int playerId,int camp) {
+		PlayerData data = playerService.getPlayerData(playerId);
+		data.setActivityCamp(camp);
+		IntParam param = new IntParam();
+		param.param = camp;
+		return param;
 	}
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<level>20</level>
+	<name>天空之城</name>
+	<icon>100002_2</icon>
+	<atlas>Skillcard</atlas>
+	<stageCount>3</stageCount>
+	<stage1Copy>[1000101,1000102]</stage1Copy>
+	<stage1Mission>[[2,1000101,3],[3,1000102,3]]</stage1Mission>
+	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
+	<stage2Copy>[1000103,1000104]</stage2Copy>
+	<stage2Mission>[[2,1000103,3],[3,1000104,3]]</stage2Mission>
+	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
+	<stage3Copy>[1000105,1000106]</stage3Copy>
+	<stage3Mission>[[2,1000105,3],[3,1000106,3]]</stage3Mission>
+	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
+</config>
+<config>
+	<id>2</id>
+	<level>30</level>
+	<name>地底之城</name>
+	<icon>100001_2</icon>
+	<atlas>Skillcard</atlas>
+	<stageCount>3</stageCount>
+	<stage1Copy>[1000101,1000102]</stage1Copy>
+	<stage1Mission>[[2,1000101,3],[3,1000102,3]]</stage1Mission>
+	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
+	<stage2Copy>[1000103,1000104]</stage2Copy>
+	<stage2Mission>[[2,1000103,3],[3,1000104,3]]</stage2Mission>
+	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
+	<stage3Copy>[1000105,1000106]</stage3Copy>
+	<stage3Mission>[[2,1000105,3],[3,1000106,3]]</stage3Mission>
+	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
+</config>
+<config>
+	<id>3</id>
+	<level>40</level>
+	<name>地底深渊</name>
+	<icon>100008_2</icon>
+	<atlas>Skillcard</atlas>
+	<stageCount>3</stageCount>
+	<stage1Copy>[1000101,1000102]</stage1Copy>
+	<stage1Mission>[[2,1000101,3],[3,1000102,3]]</stage1Mission>
+	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
+	<stage2Copy>[1000103,1000104]</stage2Copy>
+	<stage2Mission>[[2,1000103,3],[3,1000104,3]]</stage2Mission>
+	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
+	<stage3Copy>[1000105,1000106]</stage3Copy>
+	<stage3Mission>[[2,1000105,3],[3,1000106,3]]</stage3Mission>
+	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
+</config>
+</root>

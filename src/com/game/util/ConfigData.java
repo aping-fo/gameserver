@@ -1,5 +1,9 @@
 package com.game.util;
 
+import com.game.data.*;
+import com.google.common.collect.Range;
+import com.google.common.collect.RangeMap;
+import com.google.common.collect.TreeRangeMap;
 import io.netty.util.internal.ConcurrentSet;
 
 import java.util.ArrayList;
@@ -12,15 +16,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.game.data.ChargeConfig;
-import com.game.data.CopyConfig;
-import com.game.data.GlobalConfig;
-import com.game.data.GoodsConfig;
-import com.game.data.MonsterRefreshConfig;
-import com.game.data.RewardMailCfg;
-import com.game.data.ShopCfg;
-import com.game.data.SkillCardComposeCfg;
-import com.game.data.TaskConfig;
 import com.game.module.copy.CopyInstance;
 import com.game.module.shop.ShopService;
 import com.game.module.task.Task;
@@ -51,6 +46,8 @@ public class ConfigData {
 	private static Map<String, List<Integer>> skillCardRates = new ConcurrentHashMap<>();
 	private static Map<String, List<Integer>> skillCardIds = new ConcurrentHashMap<>();
 
+	private static Map<String,ArtifactLevelUpCfg> artifactLevelUpCfgs = new ConcurrentHashMap<>();
+	private static Map<Integer,Integer> artifactMaxLevel = new ConcurrentHashMap<>();
 	public static List<Integer> getSkillCardIds(int type, int quality) {
 		return skillCardIds.get(String.format("%d_%d", type, quality));
 	}
@@ -66,6 +63,11 @@ public class ConfigData {
 	public static Set<Integer> copy4Mystery = new ConcurrentSet<Integer>();
 
 	public static Map<Integer, List<RewardMailCfg>> rewardMails = new ConcurrentHashMap<Integer, List<RewardMailCfg>>();
+
+	//活动玩法-顺手牵羊道具
+	//public static Map<Integer,Map<Integer,Integer>> leadawayAwardsMap = new HashMap<>();
+	public static Map<Integer,RangeMap<Integer,Integer>> leadawayAwardsMap = new HashMap<>();
+	public static Map<Integer,Integer> leadawayAwardsWeight = new HashMap<>();
 
 	// 获取充值配置
 	public static List<ChargeConfig> getCharges() {
@@ -96,6 +98,14 @@ public class ConfigData {
 	
 	public static List<Integer> getGangTasks() {
 		return tasks.get(Task.TYPE_GANG);
+	}
+
+	public static Map<String, ArtifactLevelUpCfg> getArtifactLevelUpCfgs() {
+		return artifactLevelUpCfgs;
+	}
+
+	public static Map<Integer, Integer> getArtifactMaxLevel() {
+		return artifactMaxLevel;
 	}
 
 	// 全局配置表
@@ -251,6 +261,39 @@ public class ConfigData {
 			}
 			list.add(cfg);
 		}
-	}
 
+		Map<String,ArtifactLevelUpCfg> artifactLevelUpCfgsTmp = new ConcurrentHashMap<>();
+		Map<Integer,Integer> artifactMaxLevelTmp = new ConcurrentHashMap<>();
+		for (Object obj : GameData.getConfigs(ArtifactLevelUpCfg.class)) {
+			ArtifactLevelUpCfg cfg = (ArtifactLevelUpCfg) obj;
+			artifactLevelUpCfgsTmp.put(cfg.sid + "_" + cfg.level,cfg);
+			artifactMaxLevelTmp.put(cfg.sid,cfg.level);
+		}
+		artifactLevelUpCfgs = artifactLevelUpCfgsTmp;
+		artifactMaxLevel = artifactMaxLevelTmp;
+
+		for (Object obj : GameData.getConfigs(CopyConfig.class)) {
+			CopyConfig cfg = (CopyConfig) obj;
+			int sumWeight = 0;
+			if (cfg.type == 11) {
+				for (Object obj1 : GameData.getConfigs(MonsterRefreshConfig.class)) {
+					MonsterRefreshConfig conf = (MonsterRefreshConfig) obj1;
+					if (cfg.id == conf.copyId) {
+						RangeMap leadawayAwards = leadawayAwardsMap.get(conf.copyId);
+						if (leadawayAwards == null) {
+							leadawayAwards = TreeRangeMap.create();
+							leadawayAwardsMap.put(conf.copyId, leadawayAwards);
+						}
+
+						MonsterConfig monsterConfig = getConfig(MonsterConfig.class, conf.monsterId);
+						int itemId = monsterConfig.leadawayParam[0];
+						int weight = monsterConfig.leadawayParam[1];
+						leadawayAwards.put(Range.closed(sumWeight, sumWeight + weight), itemId);
+						sumWeight = sumWeight + weight;
+						leadawayAwardsWeight.put(conf.copyId, sumWeight);
+					}
+				}
+			}
+		}
+	}
 }

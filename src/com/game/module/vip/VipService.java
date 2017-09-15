@@ -229,8 +229,10 @@ public class VipService {
             ServerLogger.warn("vip gift config not found, viplevel =" + vipLevel);
             return param;
         }
-        for (Map.Entry<Integer, Integer> s : config.vipGift.entrySet()) {
-            goods.add(new GoodsEntry(s.getKey(), s.getValue()));
+
+        for (int i = 0; i < config.rewards.length; i++) {
+            int[] item = config.rewards[i];
+            goods.add(new GoodsEntry(item[0], item[1]));
         }
 
         goodsService.addRewards(playerId, goods, LogConsume.TASK_REWARD, vipLevel);

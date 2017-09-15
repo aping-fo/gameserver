@@ -67,10 +67,10 @@
 	<id>1203</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType>0</buffSubType>
 	<name>连击保护</name>
-	<description>霸体1级</description>
+	<description>血量保护1级</description>
 	<duration>1.5</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -83,6 +83,111 @@
 	<conflictType></conflictType>
 	<addEfectIndex></addEfectIndex>
 	<extraEffectParam>[[500],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
+	<id>1204</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>20</buffType>
+	<buffSubType>0</buffSubType>
+	<name>测试眩晕</name>
+	<description>测试眩晕</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.3,3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1205</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>21</buffType>
+	<buffSubType>0</buffSubType>
+	<name>测试冰冻</name>
+	<description>测试冰冻</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.3,3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1206</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>22</buffType>
+	<buffSubType>0</buffSubType>
+	<name>测试石化</name>
+	<description>测试石化</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.3,3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1207</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>23</buffType>
+	<buffSubType>0</buffSubType>
+	<name>测试中毒</name>
+	<description>测试中毒</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.3,2110101]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>1208</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>25</buffType>
+	<buffSubType>0</buffSubType>
+	<name>控制保护</name>
+	<description>控制保护1级</description>
+	<duration>1.5</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2023</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
 </config>
 <config>
 	<id>1301</id>
@@ -360,13 +465,13 @@
 <config>
 	<id>800601</id>
 	<buffConflict>0</buffConflict>
-	<buffTick>1</buffTick>
+	<buffTick>2</buffTick>
 	<buffType>7</buffType>
 	<buffSubType></buffSubType>
 	<name>特性副本回血1级</name>
 	<description>回血</description>
 	<duration>0</duration>
-	<takeEffectParam>[1,20,1]</takeEffectParam>
+	<takeEffectParam>[1,999,1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2027</icon>
 	<attachEffect>7000018</attachEffect>
@@ -1184,7 +1289,7 @@
 	<buffSubType></buffSubType>
 	<name>普通本第六章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -1205,11 +1310,32 @@
 	<buffSubType></buffSubType>
 	<name>普通本第七章怪物特性</name>
 	<description>暴击</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[3,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110702</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>20</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第七章怪物特性</name>
+	<description>眩晕</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.25,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1226,11 +1352,32 @@
 	<buffSubType></buffSubType>
 	<name>普通本第八章怪物特性</name>
 	<description>暴击</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[3,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2110802</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>20</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第八章怪物特性</name>
+	<description>眩晕</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.25,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1268,7 +1415,7 @@
 	<buffSubType></buffSubType>
 	<name>普通本第九章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -1310,7 +1457,7 @@
 	<buffSubType></buffSubType>
 	<name>普通本第十章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -1345,6 +1492,27 @@
 	<extraEffectParam></extraEffectParam>
 </config>
 <config>
+	<id>2111102</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>22</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第十一章怪物特性</name>
+	<description>石化</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.25,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
 	<id>2111201</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
@@ -1358,6 +1526,27 @@
 	<icon>2027</icon>
 	<attachEffect>7000018</attachEffect>
 	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111202</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>22</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第十二章怪物特性</name>
+	<description>石化</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.25,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -1457,11 +1646,32 @@
 	<buffSubType></buffSubType>
 	<name>普通本第十五章怪物特性</name>
 	<description>防御</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[1,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111502</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>21</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第十五章怪物特性</name>
+	<description>冰冻</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.25,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1478,11 +1688,32 @@
 	<buffSubType></buffSubType>
 	<name>普通本第十六章怪物特性</name>
 	<description>防御</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[1,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2111602</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>21</buffType>
+	<buffSubType>0</buffSubType>
+	<name>普通本第十六章怪物特性</name>
+	<description>冰冻</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.25,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1688,7 +1919,7 @@
 	<buffSubType></buffSubType>
 	<name>困难本第六章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -1709,11 +1940,32 @@
 	<buffSubType></buffSubType>
 	<name>困难本第七章怪物特性</name>
 	<description>暴击</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[3,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120702</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>20</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第七章怪物特性</name>
+	<description>眩晕</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.5,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1730,11 +1982,32 @@
 	<buffSubType></buffSubType>
 	<name>困难本第八章怪物特性</name>
 	<description>暴击</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[3,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2120802</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>20</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第八章怪物特性</name>
+	<description>眩晕</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.5,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1772,7 +2045,7 @@
 	<buffSubType></buffSubType>
 	<name>困难本第九章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -1814,7 +2087,7 @@
 	<buffSubType></buffSubType>
 	<name>困难本第十章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -1833,7 +2106,7 @@
 	<buffTick>2</buffTick>
 	<buffType>6</buffType>
 	<buffSubType></buffSubType>
-	<name>普通本第十一章怪物特性</name>
+	<name>困难本第十一章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
 	<takeEffectParam>[1,300,12]</takeEffectParam>
@@ -1849,12 +2122,33 @@
 	<extraEffectParam></extraEffectParam>
 </config>
 <config>
+	<id>2121102</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>22</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第十一章怪物特性</name>
+	<description>石化</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.5,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
 	<id>2121201</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
 	<buffType>6</buffType>
 	<buffSubType></buffSubType>
-	<name>普通本第十二章怪物特性</name>
+	<name>困难本第十二章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
 	<takeEffectParam>[1,300,12]</takeEffectParam>
@@ -1862,6 +2156,27 @@
 	<icon>2027</icon>
 	<attachEffect>7000018</attachEffect>
 	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121202</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>22</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第十二章怪物特性</name>
+	<description>石化</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.5,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -1961,11 +2276,32 @@
 	<buffSubType></buffSubType>
 	<name>困难本第十五章怪物特性</name>
 	<description>防御</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[1,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121502</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>21</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第十五章怪物特性</name>
+	<description>冰冻</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.5,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -1982,11 +2318,32 @@
 	<buffSubType></buffSubType>
 	<name>困难本第十六章怪物特性</name>
 	<description>防御</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[1,0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2121602</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>21</buffType>
+	<buffSubType>0</buffSubType>
+	<name>困难本第十六章怪物特性</name>
+	<description>冰冻</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.5,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -2192,7 +2549,7 @@
 	<buffSubType></buffSubType>
 	<name>噩梦本第六章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -2213,11 +2570,32 @@
 	<buffSubType></buffSubType>
 	<name>噩梦本第七章怪物特性</name>
 	<description>暴击</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[3,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130702</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>20</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第七章怪物特性</name>
+	<description>眩晕</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.75,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -2234,11 +2612,32 @@
 	<buffSubType></buffSubType>
 	<name>噩梦本第八章怪物特性</name>
 	<description>暴击</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[3,0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2130802</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>20</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第八章怪物特性</name>
+	<description>眩晕</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.75,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -2276,7 +2675,7 @@
 	<buffSubType></buffSubType>
 	<name>噩梦本第九章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -2318,7 +2717,7 @@
 	<buffSubType></buffSubType>
 	<name>噩梦本第十章怪物特性</name>
 	<description>异常</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[4,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
@@ -2337,7 +2736,7 @@
 	<buffTick>2</buffTick>
 	<buffType>6</buffType>
 	<buffSubType></buffSubType>
-	<name>普通本第十一章怪物特性</name>
+	<name>噩梦本第十一章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
 	<takeEffectParam>[1,300,19.5]</takeEffectParam>
@@ -2353,12 +2752,33 @@
 	<extraEffectParam></extraEffectParam>
 </config>
 <config>
+	<id>2131102</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>22</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第十一章怪物特性</name>
+	<description>石化</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.75,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
 	<id>2131201</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
 	<buffType>6</buffType>
 	<buffSubType></buffSubType>
-	<name>普通本第十二章怪物特性</name>
+	<name>噩梦本第十二章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
 	<takeEffectParam>[1,300,19.5]</takeEffectParam>
@@ -2366,6 +2786,27 @@
 	<icon>2027</icon>
 	<attachEffect>7000018</attachEffect>
 	<overlayType>2</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131202</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>22</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第十二章怪物特性</name>
+	<description>石化</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.75,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -2465,11 +2906,32 @@
 	<buffSubType></buffSubType>
 	<name>噩梦本第十五章怪物特性</name>
 	<description>防御</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[1,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131502</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>21</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第十五章怪物特性</name>
+	<description>冰冻</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.75,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
@@ -2486,11 +2948,32 @@
 	<buffSubType></buffSubType>
 	<name>噩梦本第十六章怪物特性</name>
 	<description>防御</description>
-	<duration>6</duration>
+	<duration>0</duration>
 	<takeEffectParam>[1,0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2131602</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>21</buffType>
+	<buffSubType>0</buffSubType>
+	<name>噩梦本第十六章怪物特性</name>
+	<description>冰冻</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.75,1.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>

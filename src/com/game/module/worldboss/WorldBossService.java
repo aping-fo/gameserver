@@ -3,7 +3,10 @@ package com.game.module.worldboss;
 import com.game.SysConfig;
 import com.game.data.*;
 import com.game.event.InitHandler;
+import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
+import com.game.module.chat.ChatExtension;
+import com.game.module.chat.ChatService;
 import com.game.module.copy.CopyExtension;
 import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
@@ -206,6 +209,7 @@ public class WorldBossService implements InitHandler {
                 //缓存所有人排名
                 HurtRecord selfRank = new HurtRecord();
                 selfRank.setCurHurt(hr.getCurHurt());
+                selfRank.setHurt(hr.getHurt());
                 selfRank.setRank(rank);
                 rankMap.put(hr.getPlayerId(), selfRank);
 
@@ -282,10 +286,9 @@ public class WorldBossService implements InitHandler {
             param.param2 = bossId;
             broadcast(WorldBossExtension.BOSS_DEAD, param);
 
-            worldBossData.getKillMap().put(bossId, playerId);
             MonsterRefreshConfig conf = ConfigData.getConfig(MonsterRefreshConfig.class, bossId);
             MonsterConfig conf1 = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
-            messageService.sendSysMsg(5, player.getName(), conf1.name);
+            messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_DIE,player.getName(), conf1.name);
             //排序
             Context.getThreadService().execute(new Runnable() {
                 @Override
@@ -347,21 +350,16 @@ public class WorldBossService implements InitHandler {
         int min = c.get(Calendar.MINUTE);
 
         if (openHour - hour == 1) { //先不考虑0点
-            if (60 - min <= 10) {//10分钟公告
-                if (!worldBossData.isbTenMin()) {
-                    messageService.sendSysMsg(2, 10);
-                    worldBossData.setbTenMin(true);
-                }
-            } else if (60 - min <= 5) {
-                if (!worldBossData.isbFiveMin()) {
-                    messageService.sendSysMsg(2, 5);
-                    worldBossData.setbFiveMin(true);
-                }
+            if (60 - min == 10) {//10分钟公告
+                messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_PRE,10);
+            }
+            if (60 - min == 5) { //5分钟公告
+                messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_PRE, 5);
             }
         } else if (hour >= openHour && hour < endHour) { //活动中
             if (!worldBossData.isbStart()) {
-                messageService.sendSysMsg(3);
                 worldBossData.setbStart(true);
+                messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_START);
             }
 
             if (worldBossData.getDay() == c.get(Calendar.DAY_OF_YEAR) &&
@@ -421,8 +419,8 @@ public class WorldBossService implements InitHandler {
             //活动结束，清理相关数据
             players.clear();
             worldBossData.setbAward(true);
-            messageService.sendSysMsg(4);
-            multiService.clearGroup(Scene.WORLD_BOSSS_PVE);
+            messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_END);
+            multiService.clearGroup(Scene.WORLD_BOSS_PVE);
             //排序
             //List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
             //Collections.sort(list, SORT);
@@ -454,6 +452,7 @@ public class WorldBossService implements InitHandler {
             }
             String lastTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_LAST_BEAT_TITLE).tips;
             String lastContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_LAST_BEAT_CONTENT).tips;
+            //最后一击奖励邮件
             for (Map.Entry<Integer, List<GoodsEntry>> s3 : beatRewardMap.entrySet()) {
                 mailService.sendSysMail(lastTitle, lastContent, s3.getValue(), s3.getKey(), LogConsume.WORLD_BOSS_LAST_BEAT);
             }
@@ -504,12 +503,14 @@ public class WorldBossService implements InitHandler {
                 String killTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_TITLE).tips;
                 String killContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_CONTENT).tips;
 
-                String beatTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_TITLE).tips;
-                String beatContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_CONTENT).tips;
+                String rankTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_RANK_TITLE).tips;
+                String rankContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_RANK_CONTENT).tips;
 
-                mailService.sendSysMail(killTitle, killContent, rewards, hr.getPlayerId(), LogConsume.WORLD_BOSS_REWARD);
+                //发送排名奖励邮件
+                mailService.sendSysMail(rankTitle, rankContent, rewards, hr.getPlayerId(), LogConsume.WORLD_BOSS_REWARD);
                 if (!killRewards.isEmpty()) {
-                    mailService.sendSysMail(beatTitle, beatContent, killRewards, hr.getPlayerId(), LogConsume.WORLD_BOSS_KILL);
+                    //发送击杀奖励邮件
+                    mailService.sendSysMail(killTitle, killContent, killRewards, hr.getPlayerId(), LogConsume.WORLD_BOSS_KILL);
                 }
 
                 //推送结算奖励
@@ -670,7 +671,9 @@ public class WorldBossService implements InitHandler {
         WorldBossVO vo = new WorldBossVO();
         vo.startTime = worldBossData.getOpenHour();
         vo.killCount = worldBossData.getKillMap().size();
-        vo.bossKilledTime = (int) (worldBossData.getLastKillTime() / 1000);
+        if (worldBossData.getLastKillTime() > 0) {
+            vo.bossKilledTime = (int) ((worldBossData.getLastKillTime() - worldBossData.getStartTime()) / 1000);
+        }
         if (worldBossData.getLastKillPlayerId() != 0) {
             Player p = playerService.getPlayer(worldBossData.getLastKillPlayerId());
             if (p != null) {
@@ -750,7 +753,7 @@ public class WorldBossService implements InitHandler {
         HurtRecord hr = rankMap.get(playerId);
         if (hr != null) {
             vo.selfRank = hr.getRank();
-            vo.hurt = hr.getCurHurt();
+            vo.hurt = hr.getHurt();
         }
         return vo;
     }
@@ -823,7 +826,7 @@ public class WorldBossService implements InitHandler {
     }
 
     public void gmReset() {
-        if(gmOpen && !worldBossData.checkAllDead()) {
+        if (gmOpen && !worldBossData.checkAllDead()) {
             //已经开过了
             return;
         }

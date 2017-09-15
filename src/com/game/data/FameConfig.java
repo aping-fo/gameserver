@@ -17,4 +17,8 @@ public class FameConfig {
 	public String describe;//描述
 	public int lev;//等级
 	public int exp;//经验
+	public int[] chapterId;//对应副本章节
+	public String bgRes;//背景资源
+	public String nameImg;//名字图片
+	public int expId;//经验物品
 }

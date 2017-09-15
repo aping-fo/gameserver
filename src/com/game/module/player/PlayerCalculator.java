@@ -185,6 +185,7 @@ public class PlayerCalculator {
 		player.addDefense(fashionCfg.defense);
 		player.addFu(fashionCfg.fu);
 		player.addSymptom(fashionCfg.symptom);
+		player.addHp(fashionCfg.hp);
 	}
 	
 	//处理神器
@@ -208,6 +209,13 @@ public class PlayerCalculator {
 			ArtifactCfg cfg = ConfigData.getConfig(ArtifactCfg.class, id);
 			for(int i=0;i<activeCount;i++){
 				addAttrValue(player, cfg.attrs[i][0], cfg.attrs[i][1]);
+			}
+		}
+
+		for(Entry<Integer,Integer> s : data.getArtifactsLevelUp().entrySet()) {
+			ArtifactLevelUpCfg conf = ConfigData.getArtifactLevelUpCfgs().get(s.getKey() + "_" + s.getValue());
+			for(int[] attr : conf.attrs){
+				addAttrValue(player, attr[0], attr[1]);
 			}
 		}
 	}

@@ -403,7 +403,7 @@
 	<id>20</id>
 	<shopType>1</shopType>
 	<name>道具商品11</name>
-	<goodsId>201010011</goodsId>
+	<goodsId>20111001</goodsId>
 	<count>6</count>
 	<tab>2</tab>
 	<vip>0</vip>
@@ -424,7 +424,7 @@
 	<id>21</id>
 	<shopType>1</shopType>
 	<name>道具商品12</name>
-	<goodsId>202010011</goodsId>
+	<goodsId>20211001</goodsId>
 	<count>1</count>
 	<tab>2</tab>
 	<vip>0</vip>
@@ -445,7 +445,7 @@
 	<id>22</id>
 	<shopType>1</shopType>
 	<name>道具商品13</name>
-	<goodsId>203010011</goodsId>
+	<goodsId>20311001</goodsId>
 	<count>5</count>
 	<tab>2</tab>
 	<vip>0</vip>
@@ -466,7 +466,7 @@
 	<id>23</id>
 	<shopType>1</shopType>
 	<name>道具商品14</name>
-	<goodsId>204010011</goodsId>
+	<goodsId>20411001</goodsId>
 	<count>1</count>
 	<tab>2</tab>
 	<vip>0</vip>
@@ -487,7 +487,7 @@
 	<id>24</id>
 	<shopType>1</shopType>
 	<name>道具商品15</name>
-	<goodsId>205010011</goodsId>
+	<goodsId>20511001</goodsId>
 	<count>7</count>
 	<tab>2</tab>
 	<vip>0</vip>
@@ -508,7 +508,7 @@
 	<id>25</id>
 	<shopType>1</shopType>
 	<name>道具商品16</name>
-	<goodsId>206010011</goodsId>
+	<goodsId>20611001</goodsId>
 	<count>1</count>
 	<tab>2</tab>
 	<vip>0</vip>
@@ -718,7 +718,7 @@
 	<id>35</id>
 	<shopType>1</shopType>
 	<name>VIP商品15</name>
-	<goodsId>201010011</goodsId>
+	<goodsId>20111001</goodsId>
 	<count>1</count>
 	<tab>3</tab>
 	<vip>5</vip>
@@ -739,7 +739,7 @@
 	<id>36</id>
 	<shopType>1</shopType>
 	<name>VIP商品16</name>
-	<goodsId>202010011</goodsId>
+	<goodsId>20211001</goodsId>
 	<count>1</count>
 	<tab>3</tab>
 	<vip>6</vip>
@@ -760,7 +760,7 @@
 	<id>37</id>
 	<shopType>1</shopType>
 	<name>VIP商品17</name>
-	<goodsId>203010011</goodsId>
+	<goodsId>20311001</goodsId>
 	<count>1</count>
 	<tab>3</tab>
 	<vip>7</vip>
@@ -781,7 +781,7 @@
 	<id>38</id>
 	<shopType>1</shopType>
 	<name>VIP商品18</name>
-	<goodsId>204010011</goodsId>
+	<goodsId>20411001</goodsId>
 	<count>1</count>
 	<tab>3</tab>
 	<vip>8</vip>
@@ -802,7 +802,7 @@
 	<id>39</id>
 	<shopType>1</shopType>
 	<name>VIP商品19</name>
-	<goodsId>205010011</goodsId>
+	<goodsId>20511001</goodsId>
 	<count>1</count>
 	<tab>3</tab>
 	<vip>9</vip>
@@ -823,7 +823,7 @@
 	<id>40</id>
 	<shopType>1</shopType>
 	<name>VIP商品20</name>
-	<goodsId>206010011</goodsId>
+	<goodsId>20611001</goodsId>
 	<count>1</count>
 	<tab>3</tab>
 	<vip>10</vip>
@@ -2308,6 +2308,1014 @@
 	<refreshAdd></refreshAdd>
 	<isFixed></isFixed>
 	<isCanAddBuy>1</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>111</id>
+	<shopType>7</shopType>
+	<name>道具商品11</name>
+	<goodsId>20111001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>131</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>112</id>
+	<shopType>7</shopType>
+	<name>道具商品12</name>
+	<goodsId>20211001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>131</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>113</id>
+	<shopType>7</shopType>
+	<name>道具商品13</name>
+	<goodsId>20311001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>131</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>114</id>
+	<shopType>7</shopType>
+	<name>道具商品14</name>
+	<goodsId>20411001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>131</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>115</id>
+	<shopType>7</shopType>
+	<name>道具商品15</name>
+	<goodsId>20511001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>131</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>116</id>
+	<shopType>7</shopType>
+	<name>道具商品16</name>
+	<goodsId>20611001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>131</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>117</id>
+	<shopType>8</shopType>
+	<name>道具商品11</name>
+	<goodsId>20111001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>132</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>118</id>
+	<shopType>8</shopType>
+	<name>道具商品12</name>
+	<goodsId>20211001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>132</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>119</id>
+	<shopType>8</shopType>
+	<name>道具商品13</name>
+	<goodsId>20311001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>132</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>120</id>
+	<shopType>8</shopType>
+	<name>道具商品14</name>
+	<goodsId>20411001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>132</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>121</id>
+	<shopType>8</shopType>
+	<name>道具商品15</name>
+	<goodsId>20511001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>132</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>122</id>
+	<shopType>8</shopType>
+	<name>道具商品16</name>
+	<goodsId>20611001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>132</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>123</id>
+	<shopType>9</shopType>
+	<name>道具商品11</name>
+	<goodsId>20111001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>124</id>
+	<shopType>9</shopType>
+	<name>道具商品12</name>
+	<goodsId>20211001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>125</id>
+	<shopType>9</shopType>
+	<name>道具商品13</name>
+	<goodsId>20311001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>126</id>
+	<shopType>9</shopType>
+	<name>道具商品14</name>
+	<goodsId>20411001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>127</id>
+	<shopType>9</shopType>
+	<name>道具商品15</name>
+	<goodsId>20511001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>128</id>
+	<shopType>9</shopType>
+	<name>道具商品16</name>
+	<goodsId>20611001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>129</id>
+	<shopType>10</shopType>
+	<name>道具商品11</name>
+	<goodsId>20111001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>130</id>
+	<shopType>10</shopType>
+	<name>道具商品12</name>
+	<goodsId>20211001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>131</id>
+	<shopType>10</shopType>
+	<name>道具商品13</name>
+	<goodsId>20311001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>132</id>
+	<shopType>10</shopType>
+	<name>道具商品14</name>
+	<goodsId>20411001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>133</id>
+	<shopType>10</shopType>
+	<name>道具商品15</name>
+	<goodsId>20511001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>134</id>
+	<shopType>10</shopType>
+	<name>道具商品16</name>
+	<goodsId>20611001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>135</id>
+	<shopType>11</shopType>
+	<name>道具商品11</name>
+	<goodsId>20111001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>135</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>136</id>
+	<shopType>11</shopType>
+	<name>道具商品12</name>
+	<goodsId>20211001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>135</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>137</id>
+	<shopType>11</shopType>
+	<name>道具商品13</name>
+	<goodsId>20311001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>135</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>138</id>
+	<shopType>11</shopType>
+	<name>道具商品14</name>
+	<goodsId>20411001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>135</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>139</id>
+	<shopType>11</shopType>
+	<name>道具商品15</name>
+	<goodsId>20511001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>135</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>140</id>
+	<shopType>11</shopType>
+	<name>道具商品16</name>
+	<goodsId>20611001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>135</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>141</id>
+	<shopType>12</shopType>
+	<name>道具商品11</name>
+	<goodsId>20111001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>136</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>142</id>
+	<shopType>12</shopType>
+	<name>道具商品12</name>
+	<goodsId>20211001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>136</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>143</id>
+	<shopType>12</shopType>
+	<name>道具商品13</name>
+	<goodsId>20311001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>136</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>144</id>
+	<shopType>12</shopType>
+	<name>道具商品14</name>
+	<goodsId>20411001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>136</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>145</id>
+	<shopType>12</shopType>
+	<name>道具商品15</name>
+	<goodsId>20511001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>136</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>146</id>
+	<shopType>12</shopType>
+	<name>道具商品16</name>
+	<goodsId>20611001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>136</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>147</id>
+	<shopType>13</shopType>
+	<name>道具商品11</name>
+	<goodsId>20111001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>137</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>148</id>
+	<shopType>13</shopType>
+	<name>道具商品12</name>
+	<goodsId>20211001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>137</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>149</id>
+	<shopType>13</shopType>
+	<name>道具商品13</name>
+	<goodsId>20311001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>137</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>150</id>
+	<shopType>13</shopType>
+	<name>道具商品14</name>
+	<goodsId>20411001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>137</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>151</id>
+	<shopType>13</shopType>
+	<name>道具商品15</name>
+	<goodsId>20511001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>137</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>152</id>
+	<shopType>13</shopType>
+	<name>道具商品16</name>
+	<goodsId>20611001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>137</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>153</id>
+	<shopType>14</shopType>
+	<name>道具商品11</name>
+	<goodsId>20111001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>138</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>154</id>
+	<shopType>14</shopType>
+	<name>道具商品12</name>
+	<goodsId>20211001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>138</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>155</id>
+	<shopType>14</shopType>
+	<name>道具商品13</name>
+	<goodsId>20311001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>138</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>156</id>
+	<shopType>14</shopType>
+	<name>道具商品14</name>
+	<goodsId>20411001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>138</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>157</id>
+	<shopType>14</shopType>
+	<name>道具商品15</name>
+	<goodsId>20511001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>138</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>2</tabLayoutType>
+</config>
+<config>
+	<id>158</id>
+	<shopType>14</shopType>
+	<name>道具商品16</name>
+	<goodsId>20611001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>138</moneyType>
+	<moneyCount>122</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>1</refreshRate>
+	<refreshAdd></refreshAdd>
+	<isFixed></isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>2</tabLayoutType>
 </config>
 </root>

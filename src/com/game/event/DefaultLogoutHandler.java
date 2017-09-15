@@ -1,6 +1,7 @@
 package com.game.event;
 import java.util.Date;
 
+import com.game.module.ladder.LadderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -40,6 +41,8 @@ public class DefaultLogoutHandler implements LogoutHandler{
 	private ArenaLogic arenaLogic;
 	@Autowired
 	private TeamService teamService;
+	@Autowired
+	private LadderService ladderService;
 	
 	public void handleLogout(final int playerId) {
 		Context.getThreadService().execute(new Runnable() {
@@ -85,7 +88,8 @@ public class DefaultLogoutHandler implements LogoutHandler{
 			taskService.updateTask(playerId);
 			goodsService.updateBag(playerId);
 			arenaLogic.quit(playerId);
-			
+
+			ladderService.onLogout(playerId);
 			SessionManager.getInstance().removeSession(playerId);
 			AntiCheatService.getInstance().clear(playerId);
 

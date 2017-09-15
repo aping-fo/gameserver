@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.player.Upgrade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -103,15 +104,15 @@ public class GoodsService {
 	}
 	
 	//更新数据库
-		public void updateBag(int playerId){
-			PlayerBag data = playerGoods.get(playerId);
-			if(data==null){
-				return;
-			}
-			String str = JsonUtils.object2String(data);
-			byte[] dbData = str.getBytes(Charset.forName("utf-8"));
-			goodsDao.update(playerId, CompressUtil.compressBytes(dbData));
+	public void updateBag(int playerId){
+		PlayerBag data = playerGoods.get(playerId);
+		if(data==null){
+			return;
 		}
+		String str = JsonUtils.object2String(data);
+		byte[] dbData = str.getBytes(Charset.forName("utf-8"));
+		goodsDao.update(playerId, CompressUtil.compressBytes(dbData));
+	}
 	
 	//获得物品
 	public Goods getGoods(int playerId,long id){
@@ -147,7 +148,7 @@ public class GoodsService {
 	// 检查物品是否足够扣除
 	public int checkHasEnough(int playerId, List<GoodsEntry> goodsList) {
 		Player player = playerService.getPlayer(playerId);
-		
+		PlayerData data = playerService.getPlayerData(playerId);
 		for (GoodsEntry item : goodsList) {
 			int goodsId = item.id;
 			int count = item.count;
@@ -167,6 +168,11 @@ public class GoodsService {
 			} else if(cfg.type == Goods.CURRENCY){
 				if(!playerService.verifyCurrency(playerId, goodsId, count)){
 					return ConfigData.globalParam().noCurrencyTips.get(cfg.id);
+				}
+			} else if(cfg.type == Goods.FAME) {
+				Upgrade upgrade = data.getFames().get(cfg.param1[0]);
+				if(upgrade == null || upgrade.getCurExp() < count) {
+					return Response.NO_FAME;
 				}
 			}
 			else if (goodsId > 10000) {
@@ -221,13 +227,28 @@ public class GoodsService {
 				playerService.decEnergy(playerId, count, log, params);
 			} else if(config.type == Goods.CURRENCY){
 				playerService.decCurrency(playerId, goodsId, count, log, params);
-			}else if (goodsId > 10000) {
+			}else if(config.type == Goods.FAME) {
+				decFame(playerId,config.param1[0],count);
+			} else if (goodsId > 10000) {
 				decGoodsFromBag(playerId, goodsId, count, log, params);
 			}else{
 				throw new RuntimeException("ErrGoodsId:"+goodsId);
 			}
 		}
 		return Response.SUCCESS;
+	}
+
+	/**
+	 * 扣除声望
+	 * @param playerId
+	 * @param camp
+	 * @param count
+	 */
+	private void decFame(int playerId,int camp,int count) {
+		PlayerData data = playerService.getPlayerData(playerId);
+		Upgrade upgrade = data.getFames().get(camp);
+		upgrade.setCurExp(upgrade.getCurExp() - count);
+		fameService.refresh(playerId);
 	}
 
 	public int decConsume(int playerId, int[][] goodsList, LogConsume log, Object... params) {
@@ -262,9 +283,9 @@ public class GoodsService {
 				return false;
 			}
 			// 验证职业
-			if (config.vocation > 0 && player.getVocation() != config.vocation) {
+			/*if (config.vocation > 0 && player.getVocation() != config.vocation) {
 				return false;
-			}
+			}*/
 
 			if (!checkCanAdd(playerId, goodsId, count)) {
 				return false;
@@ -624,8 +645,6 @@ public class GoodsService {
 			if(goods.type==Goods.SKILL_CARD){
 				playerService.addSkillCard(playerId, goods.param1[0], count);
 				taskService.doTask(playerId, Task.FINISH_CARD_COMPOSE, goods.color, 0);
-			}else if(goods.type==Goods.FAME){//声望卡
-				fameService.addFame(playerId, goods.param1[0],count );
 			}else if(goods.type == Goods.SPECIAL_MAP){
 				traversingService.addMap(playerId, goods, count);
 			}else if(goods.type == Goods.FASHION){
@@ -647,7 +666,9 @@ public class GoodsService {
 				playerService.addVipExp(playerId, count);
 			} else if (id == Goods.EXPERIENCE_HP) {// 英雄试练HP
 				trainingLogic.addHP(playerId, count);
-			} 
+			} else if(goods.type==Goods.FAME){//声望卡
+				fameService.addFame(playerId, goods.param1[0],count );
+			}
 			else if(goods.type == Goods.CURRENCY){
 				playerService.addCurrency(playerId, id, count, type, params);
 			}

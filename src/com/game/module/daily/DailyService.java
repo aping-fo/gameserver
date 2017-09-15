@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Map.Entry;
 
+import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.sign.SignService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -60,6 +61,8 @@ public class DailyService implements InitHandler {
 	private LotteryLogic lotteryLogic;
 	@Autowired
 	private SignService signService;
+	@Autowired
+	private LeadAwayLogic leadAwayLogic;
 
 	public static long FIVE_CLOCK = 0;
 	public static long MONDAY_FIVE_CLOCK = 0;
@@ -175,12 +178,14 @@ public class DailyService implements InitHandler {
 		data.setDailyTime(FIVE_CLOCK);
 		shopService.dailyReset(playerId);
 		signService.dailyReset(playerId);
-
+		data.setGroupTimes(1);
+		data.setLadderTimes(1);
 		// 更新每日任务
 		taskService.dailyReset(playerId);
 		data.setLoginDays(data.getLoginDays()+1);
 		endlessLogic.dailyReset(playerId);
 		treasureLogic.dailyReset(playerId);
+		leadAwayLogic.dailyReset(playerId);
 		experienceLogic.dailyReset(playerId);
 		arenaLogic.dailyReset(playerId);
 		trainingLogic.dailyReset(playerId);

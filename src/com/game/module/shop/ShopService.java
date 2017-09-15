@@ -7,15 +7,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.data.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.game.data.CopyConfig;
-import com.game.data.GlobalConfig;
-import com.game.data.GoodsConfig;
-import com.game.data.Response;
-import com.game.data.ShopCfg;
-import com.game.data.VIPConfig;
 import com.game.module.copy.CopyInstance;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
@@ -45,8 +40,16 @@ public class ShopService {
 	public static final int GANG = 4;
 	public static final int TRAINING = 5;
 	public static final int AI_ARENA = 6;
-	
-	private static final int[] SHOP_TYPES = { COMMON, ENDLESS, GANG, TRAINING, AI_ARENA };
+	public static final int FAME_7 = 7;
+	public static final int FAME_8 = 8;
+	public static final int FAME_9 = 9;
+	public static final int FAME_10 = 10;
+	public static final int FAME_11 = 11;
+	public static final int FAME_12 = 12;
+	public static final int FAME_13 = 13;
+	public static final int FAME_14 = 14;
+
+	private static final int[] SHOP_TYPES = { COMMON, ENDLESS, GANG, TRAINING, AI_ARENA ,FAME_7,FAME_8,FAME_9,FAME_10,FAME_11,FAME_12,FAME_13,FAME_14};
 	public static final int LIMIT_DAILY = 1;
 	public static final int LIMIT_REFRESH = 2;
 
@@ -240,7 +243,8 @@ public class ShopService {
 			return Response.NO_TODAY_TIMES;
 		}
 		// 验证价格
-		int[] prices = ConfigData.globalParam().shopRefreshPrice.get(type);
+		ShopTypeCfg conf = ConfigData.getConfig(ShopTypeCfg.class,type);
+		int[] prices = conf.refreshPrice;
 		int priceIndex = Math.min(count + 1, prices.length - 1);//第一位为货币类型
 		int price = prices[priceIndex];
 		if(price>0){

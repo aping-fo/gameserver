@@ -31,6 +31,7 @@ public class Response {
 	public static final int NO_MEDAL_COIN=29;//勋章不足
 	public static final int NO_TRAINING_COIN=30;//试炼币不足
 	public static final int NO_LOTTERY_TICKET=31;//补给卷不足
+	public static final int NO_FAME=32;//声望不足
 	public static final int SYS=99;//系统
 	public static final int WELCOME_MAIL_TITLE=100;//欢迎您来到《我守护的世界》
 	public static final int WELCOME_MAIL_CONTENT=101;//尊敬的玩家，感谢您对游戏的支持！有问题可以随时联系我们
@@ -140,12 +141,35 @@ public class Response {
 	public static final int ARTIFACT_SAME_PART=3903;//激活相同部件,返还50%材料
 	public static final int WORLD_BOSS_LAST_BEAT_TITLE=3904;//最后一击奖励
 	public static final int WORLD_BOSS_LAST_BEAT_CONTENT=3905;//最后一击奖励
-	public static final int WORLD_BOSS_BEAT_TITLE=3906;//排名奖励
-	public static final int WORLD_BOSS_BEAT_CONTENT=3907;//排名奖励
+	public static final int WORLD_BOSS_RANK_TITLE=3906;//排名奖励
+	public static final int WORLD_BOSS_RANK_CONTENT=3907;//排名奖励
 	public static final int WORLD_BOSS_KILL_TITLE=3908;//击杀奖励
 	public static final int WORLD_BOSS_KILL_CONTENT=3909;//击杀奖励
 	public static final int WORLD_BOSS_NOT_BUY_TIMES=3910;//购买次数已满
 	public static final int ARENA_NO_CHELLENGE=4001;//挑战次数不足
 	public static final int ARENA_NO_BUY=4002;//今天购买次数已用完
+	//团队副本
+	public static final int TEAM_NO_LEVEL=4101;//当前等级未达到{0}级，无法进入星陨秘境！
+	public static final int TEAM_PEOPLE_REACHED=4102;//当前团队人数已满，无法加入。
+	public static final int TEAM_NO_OPEN=4103;//当前团队已关闭招收权限，无法加入。
+	public static final int TEAM_NULL=4104;//当前团队已解散，无法执行该操作。
+	public static final int TEAM_TIME_OVER=4105;//当前活动已关闭，无法执行该操作。
+	public static final int TEAM_NO_NUM=4106;//你已参加过活动，请明日再来。
+	public static final int TEAM_TURE=4107;//你已拥有一个团队，无法加入新的团队。
+	public static final int TEAM_NO_LEVEL_QI=4108;//未达到该秘境的等级要求，无法选择该秘境。
+	public static final int TEAM_NO_OK=4109;//当前小队有队员未准备，无法进入副本.
+	public static final int TEAM_NO_NUM_FALSE=4110;//{0}XXX（玩家名字，有多个则显示多个。）的进入次数不足，无法进入副本。’
+	public static final int TEAM_NO_REVISE=4111;//当前小队人数已满，无法调整到该队伍。
+	public static final int TEAM_ACCOMPLISH=4112;//当前副本已经通关，无法进入该副本。
+	public static final int TEAM_LEVEL_NO_OPEN=4113;//当前副本所属的阶段未开启，无法进入该副本。
+	public static final int TEAM_LEVEL_TIPS=4114;//需要通过当前阶段，才可进入下一阶段。
+	public static final int TEME_RBAC=4115;//只有小队队长才能进行该项操作。
+	public static final int TEAM_FIGHT=4116;//副本中，无法进行该操作
+	public static final int GROUP_NO_EXIT=4117;//团队不存在
+	public static final int GROUP_FULL=4118;//队伍已满
+	public static final int GROUP_LIMIT=4119;//没有该操作权限
+	//排位赛
+	public static final int LADDER_MAIL_TITLE=4120;//排位赛奖励
+	public static final int LADDER_MAIL_CONTENT=4121;//亲爱的玩家您在上赛季段位[%s]特此奖励
 
 }

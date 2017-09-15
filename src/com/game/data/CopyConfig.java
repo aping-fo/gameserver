@@ -17,6 +17,7 @@ public class CopyConfig {
 	public int type;//副本类型
 	public int difficulty;//难度
 	public int passType;//通关类型
+	public int camp;//阵营ID
 	public String groupName;//阵营
 	public int timeLimit;//时间限制
 	public int needEnergy;//需要体力

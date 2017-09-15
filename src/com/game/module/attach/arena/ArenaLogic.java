@@ -7,6 +7,8 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.module.admin.MessageConsts;
+import com.game.module.admin.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -52,7 +54,8 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 	private MailService mailService;
 	@Autowired
 	private TaskService taskService;
-	
+	@Autowired
+	private MessageService messageService;
 	
 	private SerialData serialData;
 	private ConcurrentHashMap<Integer, ArenaPlayer> ranks;
@@ -173,12 +176,18 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 			
 			int meRank = me.getRank();
 			if(meRank > opponent.getRank()){ //交换排名,此处会不会有线程安全问题,造成同名?
+				int oldOppo = opponent.getRank();
 				me.setRank(opponent.getRank());
 				opponent.setRank(meRank);
 				getRankList().put(me.getRank(), me);
 				getRankList().put(opponent.getRank(), opponent);
 				sendReport(playerId, ARENA_UPGRADE, oppPlayer.getName(), me.getRank());
 				sendReport(opponent.getPlayerId(), ARENA_DOWNGRADE, player.getName(), opponent.getRank());
+
+				if(oldOppo == 1) {
+					//广播竞技场第一名消息
+					messageService.sendSysMsg(MessageConsts.MSG_AREA,player.getName(),oppPlayer.getName());
+				}
 			}else{
 				sendReport(playerId, ARENA_WIN, oppPlayer.getName(), 0);
 			}

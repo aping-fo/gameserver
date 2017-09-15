@@ -29,7 +29,6 @@ public class PlayerLogin4Chat implements ILogin {
 				msgService.sendSysMsg(1, "欢迎进行超时空旅馆");
 				msgService.sendSysMsg(1, "欢迎进行超时空旅馆");
 			}
-			
 		}, 10, TimeUnit.SECONDS);
 		
 	}

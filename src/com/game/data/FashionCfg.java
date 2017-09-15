@@ -15,11 +15,12 @@ public class FashionCfg {
 	public String model2Name;//辅模型名字
 	public int effectId;//特效
 	public int effect2Id;//副手武器特效
+	public String outlineColor;//描边颜色
 	public String path;//主模型路径
 	public String path2;//辅模型路径
+	public int hp;//生命
 	public int attack;//威力
 	public int defense;//防御
-	public int hp;//生命
 	public int crit;//暴击
 	public int symptom;//异常
 	public int fu;//抗性

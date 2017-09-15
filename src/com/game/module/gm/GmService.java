@@ -2,11 +2,16 @@ package com.game.module.gm;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import com.game.module.fame.FameService;
+import com.game.module.player.Upgrade;
+import com.game.module.shop.ShopService;
 import com.game.module.worldboss.WorldBossService;
+import com.game.params.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -46,11 +51,6 @@ import com.game.module.task.TaskExtension;
 import com.game.module.task.TaskService;
 import com.game.module.traversing.TraversingExtension;
 import com.game.module.vip.VipService;
-import com.game.params.Int2Param;
-import com.game.params.IntParam;
-import com.game.params.ListParam;
-import com.game.params.Reward;
-import com.game.params.String2Param;
 import com.game.params.chat.ChatVo;
 import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
@@ -139,16 +139,17 @@ public class GmService {
 		SessionManager.getInstance().sendMsg(ChatExtension.CHAT, chats, playerId);
 	}
 
-	public void sendMsg(int playerId, String msg) {
+	public void sendMsg(int playerId, String ... msg) {
 		ChatVo vo = new ChatVo();
 		vo.channel = ChatExtension.WORLD;
-		vo.content = msg;
+		vo.content = msg[0];
 		vo.sender = "GM";
+		vo.broadcast = true;
 
 		ListParam<ChatVo> chats = new ListParam<ChatVo>();
 		chats.params = new ArrayList<ChatVo>();
 		chats.params.add(vo);
-		SessionManager.getInstance().sendMsg(ChatExtension.CHAT, chats, playerId);
+		SessionManager.getInstance().sendMsgToAll(ChatExtension.CHAT, chats);
 	}
 
 	// 加经验
@@ -437,5 +438,33 @@ public class GmService {
 
 	public void openWorld(int playerId,String ... params) {
 		worldBossService.gmReset();
+	}
+
+	@Autowired
+	private FameService fameService;
+	public void addCampExp(int playerId,String ... params) {
+		int camp = Integer.valueOf(params[0]);
+		int exp = Integer.valueOf(params[1]);
+		fameService.addFame(playerId,camp,exp);
+	}
+
+	@Autowired
+	private ShopService shopService;
+	public void buy(int playerId,String ... params) {
+		int id = Integer.valueOf(params[0]);
+		shopService.buy(playerId,id,1);
+	}
+
+
+	public void send(int playerId,String ... params) {
+		StringParam param = new StringParam();
+		param.param = params[0];
+		SessionManager.getInstance().sendMsgToAll(ChatExtension.SYS_NOTICE, param);
+	}
+
+	public void sendNotice(int playerId,String ... params) {
+		StringParam param = new StringParam();
+		param.param = params[0];
+		SessionManager.getInstance().sendMsgToAll(ChatExtension.SYS_NOTICE, param);
 	}
 }

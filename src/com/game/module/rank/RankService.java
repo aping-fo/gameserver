@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.ladder.LadderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,7 +30,9 @@ public class RankService implements InitHandler {
 	
 	@Autowired
 	private RankingDao dao;
-	
+	@Autowired
+	private LadderService ladderService;
+
 	private final Map<Integer, RankingList<? extends IRankCA>> rankings = new ConcurrentHashMap<Integer, RankingList<? extends IRankCA>>();
 	
 	@Override
@@ -98,5 +101,7 @@ public class RankService implements InitHandler {
 			}
 			levelList.putAll(levelEntities);
 		}
+
+		ladderService.ladderSort();
 	}
 }

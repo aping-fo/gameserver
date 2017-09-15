@@ -1,5 +1,6 @@
 package com.game.module.fame;
 
+import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.server.anotation.Command;
@@ -18,5 +19,10 @@ public class FameExtension {
 	@Command(3501)
 	public Object getInfo(int playerId,Object param){
 		return service.getInfo(playerId);
+	}
+
+	@Command(3502)
+	public Object activityCamp(int playerId,IntParam param){
+		return service.activityAcmp(playerId,param.param);
 	}
 }

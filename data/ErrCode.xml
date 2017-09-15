@@ -109,6 +109,10 @@
 	<tips>补给卷不足</tips>
 </config>
 <config>
+	<id>32</id>
+	<tips>声望不足</tips>
+</config>
+<config>
 	<id>99</id>
 	<tips>系统</tips>
 </config>
@@ -531,5 +535,89 @@
 <config>
 	<id>4002</id>
 	<tips>今天购买次数已用完</tips>
+</config>
+<config>
+	<id>4101</id>
+	<tips>当前等级未达到{0}级,无法进入星陨秘境！</tips>
+</config>
+<config>
+	<id>4102</id>
+	<tips>当前团队人数已满,无法加入。</tips>
+</config>
+<config>
+	<id>4103</id>
+	<tips>当前团队已关闭招收权限,无法加入。</tips>
+</config>
+<config>
+	<id>4104</id>
+	<tips>当前团队已解散,无法执行该操作。</tips>
+</config>
+<config>
+	<id>4105</id>
+	<tips>当前活动已关闭,无法执行该操作。</tips>
+</config>
+<config>
+	<id>4106</id>
+	<tips>你已参加过活动,请明日再来。</tips>
+</config>
+<config>
+	<id>4107</id>
+	<tips>你已拥有一个团队,无法加入新的团队。</tips>
+</config>
+<config>
+	<id>4108</id>
+	<tips>未达到该秘境的等级要求,无法选择该秘境。</tips>
+</config>
+<config>
+	<id>4109</id>
+	<tips>当前小队有队员未准备,无法进入副本.</tips>
+</config>
+<config>
+	<id>4110</id>
+	<tips>{0}XXX（玩家名字,有多个则显示多个。）的进入次数不足,无法进入副本。’</tips>
+</config>
+<config>
+	<id>4111</id>
+	<tips>当前小队人数已满,无法调整到该队伍。</tips>
+</config>
+<config>
+	<id>4112</id>
+	<tips>当前副本已经通关,无法进入该副本。</tips>
+</config>
+<config>
+	<id>4113</id>
+	<tips>当前副本所属的阶段未开启,无法进入该副本。</tips>
+</config>
+<config>
+	<id>4114</id>
+	<tips>需要通过当前阶段,才可进入下一阶段。</tips>
+</config>
+<config>
+	<id>4115</id>
+	<tips>只有小队队长才能进行该项操作。</tips>
+</config>
+<config>
+	<id>4116</id>
+	<tips>副本中,无法进行该操作</tips>
+</config>
+<config>
+	<id>4117</id>
+	<tips>团队不存在</tips>
+</config>
+<config>
+	<id>4118</id>
+	<tips>队伍已满</tips>
+</config>
+<config>
+	<id>4119</id>
+	<tips>没有该操作权限</tips>
+</config>
+<config>
+	<id>4120</id>
+	<tips>排位赛奖励</tips>
+</config>
+<config>
+	<id>4121</id>
+	<tips>亲爱的玩家您在上赛季段位[%s]特此奖励</tips>
 </config>
 </root>

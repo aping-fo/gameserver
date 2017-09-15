@@ -72,7 +72,9 @@ public class ServerTimer implements InitHandler {
 		timers.add(new TimerObject("0 5 * * * *", "endlessLogic", "sendReward"));
 		timers.add(new TimerObject("0 5 * * * *", "arenaLogic", "sendRankReward"));
 		timers.add(new TimerObject("0 * * * * *", "rankService", "sort"));
-		
+
+		// 凌晨0检测
+		timers.add(new TimerObject("0 0 * * 1 *", "ladderService", "weeklyAward"));
 		
 		updateTimeStr();
 	}

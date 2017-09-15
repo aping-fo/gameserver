@@ -6,8 +6,8 @@ package com.game.data;
 public class EquipStarCfg {
 	public int id;//key
 	public int type;//装备类型
-	public int lev;//等级
 	public int star;//星级
+	public int lev;//等级
 	public int cost;//消耗材料
 	public int decompose;//分解返回
 	public int hp;//生命

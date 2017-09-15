@@ -71,7 +71,36 @@ public class Player implements PlayerAddition{
 	private long lastSaveTime;
 	private int copyId;
 	private int teamId;
-	
+
+
+	private int groupId;
+	private int groupTeamId;
+	private int roomId;
+
+	public int getRoomId() {
+		return roomId;
+	}
+
+	public void setRoomId(int roomId) {
+		this.roomId = roomId;
+	}
+
+	public int getGroupId() {
+		return groupId;
+	}
+
+	public void setGroupId(int groupId) {
+		this.groupId = groupId;
+	}
+
+	public int getGroupTeamId() {
+		return groupTeamId;
+	}
+
+	public void setGroupTeamId(int groupTeamId) {
+		this.groupTeamId = groupTeamId;
+	}
+
 	private boolean refresh;//临时变量，设置这个值为true时，更新属性不同步到前端
 
 	public int getPlayerId() {

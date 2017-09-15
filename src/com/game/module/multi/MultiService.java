@@ -86,12 +86,18 @@ public class MultiService implements InitHandler {
         Map<String, MultiGroup> multiMap = mulitSceneMap.get(conf.sceneSubType);
         if (multiMap == null) {
             multiMap = new ConcurrentHashMap<>();
-            mulitSceneMap.put(conf.sceneSubType, multiMap);
+            multiMap = mulitSceneMap.putIfAbsent(conf.sceneSubType, multiMap);
+            if(multiMap == null) { //deal with multi thread
+                multiMap = mulitSceneMap.get(conf.sceneSubType);
+            }
         }
         MultiGroup group = multiMap.get(key);
         if (group == null) {
             group = new MultiGroup();
-            multiMap.put(key, group);
+            group = multiMap.putIfAbsent(key, group);
+            if(group == null) {
+                group = multiMap.get(key);
+            }
         }
         int oldId = group.getHostId();
         int masterId = group.addPlayer(playerId);

@@ -28,4 +28,14 @@ public class ArtifactExtension {
 		result.param = service.decompose(playerId, id.param);
 		return result;
 	}
+
+	@Command(3603)
+	public Object levelUp(int playerId,IntParam id){
+		return service.levelUp(playerId, id.param);
+	}
+
+	@Command(3604)
+	public Object artifactList(int playerId,Object param){
+		return service.artifactList(playerId);
+	}
 }

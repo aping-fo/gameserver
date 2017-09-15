@@ -16,6 +16,7 @@ public class ChatVo implements IProtocol {
 	public String senderGang;//发送者仙盟
 	public int fight;//战斗力
 	public long time;//发送时间
+	public boolean broadcast;//是否公告
 
 
 	public void decode(BufferBuilder bb) {
@@ -31,6 +32,7 @@ public class ChatVo implements IProtocol {
 		this.senderGang = bb.getString();
 		this.fight = bb.getInt();
 		this.time = bb.getLong();
+		this.broadcast = bb.getBoolean();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -46,5 +48,6 @@ public class ChatVo implements IProtocol {
 		bb.putString(this.senderGang);
 		bb.putInt(this.fight);
 		bb.putLong(this.time);
+		bb.putBoolean(this.broadcast);
 	}
 }

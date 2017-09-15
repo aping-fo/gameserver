@@ -77496,4 +77496,52 @@
 	<bornBuff></bornBuff>
 	<runEffect></runEffect>
 </config>
+<config>
+	<id>17002001</id>
+	<copyId>303010</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>171000</monsterId>
+	<beginPoint>[5,0,0]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>17003001</id>
+	<copyId>304010</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>172000</monsterId>
+	<beginPoint>[5,0,0]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
 </root>

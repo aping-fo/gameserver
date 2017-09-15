@@ -115,4 +115,27 @@ public class GlobalConfig {
 	public int[][] rewardRate;//抽奖界面预览出现率
 	public Map<Integer,float[][]> mainCityPlayerInfo;//主城角色的位置,朝向,大小
 	public float[] mainCityCameraInfo;//主城相机朝向(上下左右)
+	public float[] attackMinThreshold;//远程技能最小攻击范围
+	public float[] attackSafeThreshold;//远程技能安全攻击范围
+	public float fameAddRate;//声望代表加成百分比
+	public float MultiHitMaxInterval;//连击最大间隔时长
+	public float BeHitMaxInterval;//受击叠加伤害间隔时长
+	public Map<Integer,Integer> quickLeadawayCopy;//顺手牵羊快速完成价格
+	public int[] groupCopyOpenTime;//团队副本活动时间
+	public int[] groupRewardRate;//团队副本奖励加成
+	public int groupTimes;//团队副本活动次数
+	public Map<Integer,Integer> buyLeadawayPrice;//顺手牵羊次数购买价格
+	public int LeadawayChallengeCount;//顺手牵羊每日挑战次数
+	public float[] CatchGoldRefreshGoldInterval;//接金币副本刷金币间隔
+	public int[] CatchGoldRefreshGoldCount;//接金币副本每次刷金币个数
+	public Map<Integer,Integer> catchGoldPrice;//接金币次数购买价格
+	public int catchGoldChallengeCount;//接金币每日挑战次数
+	public int PkProtect;//段位保护
+	public float PkAdd;//额外增加或减少的积分比
+	public float PkDec;//额外减少的积分比
+	public int PKBattleTime;//战斗时间
+	public int PKTimeLimit;//赛季时间类型
+	public int[] PKTime;//开放时间段
+	public String PKBeginDate;//开放日期
+	public String PKEndDate;//结束日期
 }

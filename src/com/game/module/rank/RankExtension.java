@@ -3,6 +3,8 @@ package com.game.module.rank;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.game.module.ladder.LadderService;
+import com.game.params.rank.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.module.attach.arena.ArenaLogic;
@@ -15,12 +17,6 @@ import com.game.module.rank.vo.FightingRankEntity;
 import com.game.module.rank.vo.LevelRankEntity;
 import com.game.params.IProtocol;
 import com.game.params.ListParam;
-import com.game.params.rank.AIArenaRankVO;
-import com.game.params.rank.EndlessRankVO;
-import com.game.params.rank.FameRankVO;
-import com.game.params.rank.FightingRankVO;
-import com.game.params.rank.LevelRankVO;
-import com.game.params.rank.PKArenaRankVO;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
 
@@ -35,7 +31,8 @@ public class RankExtension {
 	private GangService gangService;
 	@Autowired
 	private ArenaLogic arenaLogic;
-	
+	@Autowired
+	private LadderService ladderService;
 	// 战力
 	private IParser<FightingRankVO> fightingParser = new IParser<FightingRankVO>() {		
 		@Override
@@ -179,5 +176,11 @@ public class RankExtension {
 			result.params.add(parser.parse(entity));
 		}
 		return result;
+	}
+
+	// 排位赛
+	@Command(3707)
+	public ListParam<LadderRankVO> getLadderRankList(int playerId, Object param) {
+		return ladderService.getLadderRank();
 	}
 }

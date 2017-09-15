@@ -193,6 +193,8 @@ public class PlayerService implements InitHandler {
 		int headId = globalParam.headId[player.getVocation() - 1];
 		playerData.setCurHead(headId);
 		playerData.getFashions().add(headId);
+		playerData.setGroupTimes(ConfigData.globalParam().groupTimes);
+		playerData.setLadderTimes(1);
 		//初始化技能
 		int[] skills = globalParam.playerDefaultSkill[player.getVocation()-1];
 		for(int skill:skills){
@@ -699,8 +701,8 @@ public class PlayerService implements InitHandler {
 			}
 			long now = System.currentTimeMillis();
 			long passTime = now - player.getEnergyTime();
-			if (passTime >= 30 * TimeUtil.ONE_MIN) {
-				int count = (int) (passTime / (30 * TimeUtil.ONE_MIN));
+			if (passTime >= 5 * TimeUtil.ONE_MIN) {
+				int count = (int) (passTime / (5 * TimeUtil.ONE_MIN));
 				int newEnergy = player.getEnergy() + count * ConfigData.globalParam().restoreEnergy;
 				if (newEnergy > maxEnergy) {
 					newEnergy = maxEnergy;

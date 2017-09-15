@@ -7,6 +7,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import com.game.module.attach.arena.ArenaPlayer;
 import com.game.module.attach.training.TrainOpponent;
 import com.game.module.copy.CopyRank;
+import com.game.module.ladder.Ladder;
+
 /**
  * 全局的序列化数据  
  */
@@ -26,7 +28,9 @@ public class SerialData {
 	
 	// 玩家刷出的商品数据<商店类型,<玩家id,[商品id]>
 	private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>> playerRefreshShops = new ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>>();
-	
+	//排位赛
+	private Map<Integer, Ladder> ladderMap = new ConcurrentHashMap<>();
+
 	//公会重置时间
 	private long gangDailyReset = 0L;
 	
@@ -130,5 +134,12 @@ public class SerialData {
 	public void setSectionOpponents(Map<Integer, List<Integer>> sectionOpponents) {
 		this.sectionOpponents = sectionOpponents;
 	}
-	
+
+	public Map<Integer, Ladder> getLadderMap() {
+		return ladderMap;
+	}
+
+	public void setLadderMap(Map<Integer, Ladder> ladderMap) {
+		this.ladderMap = ladderMap;
+	}
 }

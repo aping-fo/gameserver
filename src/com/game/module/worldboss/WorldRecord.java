@@ -87,6 +87,7 @@ public class WorldRecord {
 
     public void setbTenMin(boolean bTenMin) {
         this.bTenMin = bTenMin;
+        setbUpdate(true);
     }
 
     public boolean isbFiveMin() {
@@ -95,6 +96,7 @@ public class WorldRecord {
 
     public void setbFiveMin(boolean bFiveMin) {
         this.bFiveMin = bFiveMin;
+        setbUpdate(true);
     }
 
     public boolean isbStart() {

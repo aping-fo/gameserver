@@ -8,6 +8,8 @@ import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.module.attach.catchgold.CatchGoldLogic;
+import com.game.module.attach.leadaway.LeadAwayLogic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -96,6 +98,10 @@ public class CopyService {
 	private TraversingService traversingService;
 	@Autowired
 	private TeamService teamService;
+	@Autowired
+	private LeadAwayLogic leadAwayLogic;
+	@Autowired
+	private CatchGoldLogic catchGoldLogic;
 
 	private AtomicInteger uniId = new AtomicInteger(100);
 	private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<Integer, CopyInstance>();
@@ -211,6 +217,8 @@ public class CopyService {
 			if(System.currentTimeMillis() - experienceAttach.getLastChallengeTime() < ConfigData.globalParam().extremeEvasionDelTime){
 				return Response.ERR_PARAM;
 			}
+		} else if(cfg.type == CopyInstance.TYPE_LEADAWAY) {
+
 		}
 
 		int passId = cfg.id;
@@ -248,6 +256,13 @@ public class CopyService {
 		CopyInstance copy = instances.get(playerService.getPlayer(playerId).getCopyId());
 		List<GoodsEntry> items = calculateCopyReward(playerId, copyId, star);
 
+		if(cfg.type == CopyInstance.TYPE_LEADAWAY
+				|| cfg.type == CopyInstance.TYPE_GOLD) { //顺手牵羊,金币，奖励
+			for(Reward reward : result.rewards){
+				items.add(new GoodsEntry(reward.id,reward.count));
+			}
+		}
+
 		result.rewards = new ArrayList<Reward>();
 		// 构造奖励
 		if(cfg.type == CopyInstance.TYPE_ENDLESS){
@@ -265,6 +280,7 @@ public class CopyService {
 				result.rewards.addAll(affixReward);
 			}
 		}
+
 		goodsService.addRewards(playerId, items, LogConsume.COPY_REWARD, copyId);
 		for (GoodsEntry g : items) {
 			Reward reward = new Reward();
@@ -272,12 +288,13 @@ public class CopyService {
 			reward.count = g.count;
 			result.rewards.add(reward);
 		}
+
 		// 特殊物品公告
 		String myName = playerService.getPlayer(playerId).getName();
 		for (GoodsNotice g : copy.getSpecReward()) {
 			messageService.sendSysMsg(g.getNoticeId(), myName, g.getGoodsName());
 		}
-		
+
 		if(cfg.type==CopyInstance.TYPE_COMMON){
 			CopyRank rank = updateCopyRank(playerId, copyId, result.time);
 			result.passTime = rank.getPassTime();
@@ -290,6 +307,13 @@ public class CopyService {
 		Player player = playerService.getPlayer(playerId);
 		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
 		Map<Integer, Integer> totalRewards = new HashMap<Integer, Integer>();
+		// 构造奖励
+		List<GoodsEntry> items = new ArrayList<GoodsEntry>();
+
+		if(cfg.type == CopyInstance.TYPE_LEADAWAY ||
+				cfg.type == CopyInstance.TYPE_GOLD) {
+			return items;
+		}
 		// 副本奖励
 		if (cfg.rewards != null) {
 			for (int i = 0; i < cfg.rewards.length; i++) {
@@ -315,11 +339,11 @@ public class CopyService {
 			int id = cfg.randomRewards[index][0];
 			int count = cfg.randomRewards[index][1];
 			int vocation = ConfigData.getConfig(GoodsConfig.class, id).vocation;
-			if (vocation == 0 || vocation == player.getVocation()) {
-				if (id > 0 && count > 0) {
-					addItem(totalRewards, id, count);
-				}
+			//if (vocation == 0 || vocation == player.getVocation()) { //去掉职业限制
+			if (id > 0 && count > 0) {
+				addItem(totalRewards, id, count);
 			}
+			//}
 		}
 		// 3星奖励
 		if(cfg.starRewards!=null){
@@ -337,8 +361,7 @@ public class CopyService {
 				}
 			}
 		}
-		// 构造奖励
-		List<GoodsEntry> items = new ArrayList<GoodsEntry>();
+
 		for (Entry<Integer, Integer> item : totalRewards.entrySet()) {
 			items.add(new GoodsEntry(item.getKey(), item.getValue()));
 		}
@@ -355,6 +378,19 @@ public class CopyService {
 						continue;
 					}
 					items.add(new GoodsEntry(item[0], item[1]));
+				}
+			}
+		}
+
+		//声望加成
+		PlayerData data = playerService.getPlayerData(playerId);
+		boolean bCamp = (cfg.camp != 0 && cfg.camp == data.getActivityCamp());
+		if (bCamp) { //代表阵营==当前阵营，加成
+			float rate = ConfigData.globalParam().fameAddRate;
+			for (GoodsEntry g : items) {
+				GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class, g.id);
+				if (conf.type == Goods.FAME) {
+					g.count = Math.round((1 + rate) * g.count);
 				}
 			}
 		}
@@ -399,6 +435,10 @@ public class CopyService {
 			treasureLogic.updateCopy(playerId, result);
 		}else if(cfg.type == CopyInstance.TYPE_EXPERIENCE){
 			experienceLogic.updateCopy(playerId, result);
+		}else if(cfg.type == CopyInstance.TYPE_LEADAWAY) {
+			leadAwayLogic.updateCopy(playerId,result);
+		}else if(cfg.type == CopyInstance.TYPE_GOLD) {
+			catchGoldLogic.updateCopy(playerId,result);
 		}
 		Copy copy = playerData.getCopys().get(copyId);
 		if (copy == null) {//组队时,普通队员没有copy对象
@@ -722,10 +762,12 @@ public class CopyService {
 		CopyConfig cfg = GameData.getConfig(CopyConfig.class, copyId);
 		if(copy != null){
 			star = copy.getState();
-		}else if(cfg.type != CopyInstance.TYPE_TREASURE && cfg.type != CopyInstance.TYPE_EXPERIENCE){
+		}else if(cfg.type != CopyInstance.TYPE_TREASURE && cfg.type != CopyInstance.TYPE_EXPERIENCE
+				&& cfg.type != CopyInstance.TYPE_LEADAWAY){
 			return null;
 		}
 		List<GoodsEntry> copyRewards = calculateCopyReward(playerId, copyId, star);
+
 		goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
 		
 		List<Reward> rewards= new ArrayList<Reward>(copyRewards.size());

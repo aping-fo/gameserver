@@ -36,6 +36,7 @@ public class AttachType {
 	public static final byte EXPERIENCE = 21;//经验副本
 	
 	public static final byte LOTTERY = 22;//抽奖
-	
+	public static final byte LEADAWAY = 23;//牵羊
+
 	
 }

@@ -3,6 +3,7 @@ package com.game.module.serial;
 import java.nio.charset.Charset;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.module.ladder.LadderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,8 @@ public class SerialDataService implements InitHandler,ServiceDispose {
 
 	@Autowired
 	private SerialDataDao dao;
-	
+	@Autowired
+	private LadderService ladderService;
 	private SerialData data;
 	private SerialData2 data2;//第二部分数据
 	
@@ -42,6 +44,8 @@ public class SerialDataService implements InitHandler,ServiceDispose {
 		}else{
 			data2 = new SerialData2();
 		}
+
+		ladderService.ladderSort();
 	}
 	
 	public SerialData getData(){

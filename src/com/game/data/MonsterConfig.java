@@ -28,6 +28,8 @@ public class MonsterConfig {
 	public boolean hasDeadSkill;//是否拥有死亡技能
 	public int deadRocketID;//死亡技能导弹ID
 	public int duelCameraAnimID;//死亡镜头动画ID
+	public float[] hurtProtectParam;//血量保护参数
+	public float[] controlProtectParam;//控制保护参数
 	public int[] skillId;//技能列表
 	public int[] behitAction;//受击
 	public int[] flyAction;//击飞
@@ -36,4 +38,5 @@ public class MonsterConfig {
 	public int[] bornBuff;//出生buff列表
 	public Map<Integer,Integer> skillBuff;//技能附带buff
 	public float[] hudOffset;//hud偏移值
+	public int[] leadawayParam;//娃娃机专用参数
 }

@@ -41,7 +41,7 @@
 	<headId>[111011,121011,131011]</headId>
 	<fashionId>[111012,121012,131012]</fashionId>
 	<weaponId>[111013,121013,131013]</weaponId>
-	<initEquips>[[201010011,202010011,203010011,204010011,205010011,206010011],[201020011,202020011,203020011,204020011,205020011,206020011],[201030011,202030011,203030011,204030011,205030011,206030011]]</initEquips>
+	<initEquips>[[20111001,20211001,20311001,20411001,20511001,20611001],[20121001,20221001,20321001,20421001,20521001,20621001],[20131001,20231001,20331001,20431001,20531001,20631001]]</initEquips>
 	<newbieMailReward>[[107,1000],[103,100000],[109101,2],[109201,2],[109301,2],[109401,2],[109501,2],[124,100],[50105,1],[50205,1],[50305,1],[50405,1],[50505,1],[50605,1],[50805,1],[50815,1],[50825,1],[50835,1],[50845,1],[50855,1],[51005,1],[51205,1],[50905,1],[51305,1],[51705,1],[50885,1],[51905,1],[51605,1],[400001,2000],[500001,2000],[600001,2000],[700001,2000]]</newbieMailReward>
 	<restoreEnergy>6</restoreEnergy>
 	<strengthTicket>302001</strengthTicket>
@@ -106,11 +106,34 @@
 	<worldBossBuyAttackCost>[102,10]</worldBossBuyAttackCost>
 	<worldBossCopy>[800101,80010101,800102,80010102,800103,80010103]</worldBossCopy>
 	<worldBossHurtReward>[102,10]</worldBossHurtReward>
-	<worldBossOpenTime>[1,11,12,23]</worldBossOpenTime>
+	<worldBossOpenTime>[9,10,11,12,13,14]</worldBossOpenTime>
 	<teamLimit>1:2</teamLimit>
 	<skillCardGroupOpenVip>[0,1,3,5,7,9]</skillCardGroupOpenVip>
 	<rewardRate>[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]</rewardRate>
 	<mainCityPlayerInfo>1:[[5.3,3.55,-12.5],[0,205,0],[1.12,1.12,1.12]];2:[[5.3,3.55,-12.5],[0,147,0],[1.12,1.12,1.12]];3:[[5.3,3.55,-12.5],[0,170,0],[1.12,1.12,1.12]]</mainCityPlayerInfo>
 	<mainCityCameraInfo>[-0.01,0.06,-0.2,0.11]</mainCityCameraInfo>
+	<attackMinThreshold>[3.6,3.6,2,2]</attackMinThreshold>
+	<attackSafeThreshold>[8,8,2,2]</attackSafeThreshold>
+	<fameAddRate>0.2</fameAddRate>
+	<MultiHitMaxInterval>4</MultiHitMaxInterval>
+	<BeHitMaxInterval>1</BeHitMaxInterval>
+	<quickLeadawayCopy>102:10</quickLeadawayCopy>
+	<groupCopyOpenTime>[9,10,11,12,13,14]</groupCopyOpenTime>
+	<groupRewardRate>[300,40,600,30,900,20,1200,10]</groupRewardRate>
+	<groupTimes>2</groupTimes>
+	<buyLeadawayPrice>102:10</buyLeadawayPrice>
+	<LeadawayChallengeCount>2</LeadawayChallengeCount>
+	<CatchGoldRefreshGoldInterval>[2,4]</CatchGoldRefreshGoldInterval>
+	<CatchGoldRefreshGoldCount>[10,20]</CatchGoldRefreshGoldCount>
+	<catchGoldPrice>102:10</catchGoldPrice>
+	<catchGoldChallengeCount>2</catchGoldChallengeCount>
+	<PkProtect>2</PkProtect>
+	<PkAdd>0.5</PkAdd>
+	<PkDec>0.6</PkDec>
+	<PKBattleTime>90</PKBattleTime>
+	<PKTimeLimit>1</PKTimeLimit>
+	<PKTime>[21,23]</PKTime>
+	<PKBeginDate>2017-09-13</PKBeginDate>
+	<PKEndDate>2017-10-13</PKEndDate>
 </config>
 </root>

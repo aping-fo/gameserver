@@ -3,1345 +3,3697 @@
 <config>
 	<id>20100101</id>
 	<type>201</type>
-	<lev>1</lev>
 	<star>1</star>
+	<lev>1</lev>
 	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20100102</id>
-	<type>201</type>
-	<lev>1</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20100103</id>
-	<type>201</type>
-	<lev>1</lev>
-	<star>3</star>
-	<cost>300</cost>
 	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20100104</id>
-	<type>201</type>
-	<lev>1</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<hp>0</hp>
+	<attack>14</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>3</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20101001</id>
 	<type>201</type>
-	<lev>10</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20101002</id>
-	<type>201</type>
 	<lev>10</lev>
-	<star>2</star>
 	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20101003</id>
-	<type>201</type>
-	<lev>10</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20101004</id>
-	<type>201</type>
-	<lev>10</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>26</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>6</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20102001</id>
 	<type>201</type>
-	<lev>20</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20102002</id>
-	<type>201</type>
 	<lev>20</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20102003</id>
-	<type>201</type>
-	<lev>20</lev>
-	<star>3</star>
 	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20102004</id>
-	<type>201</type>
-	<lev>20</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>38</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>9</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20103001</id>
 	<type>201</type>
-	<lev>30</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20103002</id>
-	<type>201</type>
 	<lev>30</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20103003</id>
-	<type>201</type>
-	<lev>30</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20103004</id>
-	<type>201</type>
-	<lev>30</lev>
-	<star>4</star>
 	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>51</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>12</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20104001</id>
+	<type>201</type>
+	<star>1</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>63</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>15</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20105001</id>
+	<type>201</type>
+	<star>1</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>75</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>17</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20106001</id>
+	<type>201</type>
+	<star>1</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>87</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>20</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20107001</id>
+	<type>201</type>
+	<star>1</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>100</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>23</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20108001</id>
+	<type>201</type>
+	<star>1</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>112</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>26</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20109001</id>
+	<type>201</type>
+	<star>1</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>124</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>29</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20110001</id>
+	<type>201</type>
+	<star>1</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>137</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>32</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20200101</id>
 	<type>202</type>
-	<lev>1</lev>
 	<star>1</star>
+	<lev>1</lev>
 	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20200102</id>
-	<type>202</type>
-	<lev>1</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20200103</id>
-	<type>202</type>
-	<lev>1</lev>
-	<star>3</star>
-	<cost>300</cost>
 	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20200104</id>
-	<type>202</type>
-	<lev>1</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<hp>335</hp>
+	<attack>0</attack>
+	<defense>4</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20201001</id>
 	<type>202</type>
-	<lev>10</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20201002</id>
-	<type>202</type>
 	<lev>10</lev>
-	<star>2</star>
 	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20201003</id>
-	<type>202</type>
-	<lev>10</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20201004</id>
-	<type>202</type>
-	<lev>10</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>200</decompose>
+	<hp>636</hp>
+	<attack>0</attack>
+	<defense>8</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20202001</id>
 	<type>202</type>
-	<lev>20</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20202002</id>
-	<type>202</type>
 	<lev>20</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20202003</id>
-	<type>202</type>
-	<lev>20</lev>
-	<star>3</star>
 	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20202004</id>
-	<type>202</type>
-	<lev>20</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>300</decompose>
+	<hp>937</hp>
+	<attack>0</attack>
+	<defense>12</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20203001</id>
 	<type>202</type>
-	<lev>30</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20203002</id>
-	<type>202</type>
 	<lev>30</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20203003</id>
-	<type>202</type>
-	<lev>30</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20203004</id>
-	<type>202</type>
-	<lev>30</lev>
-	<star>4</star>
 	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>400</decompose>
+	<hp>1238</hp>
+	<attack>0</attack>
+	<defense>15</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20204001</id>
+	<type>202</type>
+	<star>1</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>1540</hp>
+	<attack>0</attack>
+	<defense>19</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20205001</id>
+	<type>202</type>
+	<star>1</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>1841</hp>
+	<attack>0</attack>
+	<defense>23</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20206001</id>
+	<type>202</type>
+	<star>1</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>2142</hp>
+	<attack>0</attack>
+	<defense>27</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20207001</id>
+	<type>202</type>
+	<star>1</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>2443</hp>
+	<attack>0</attack>
+	<defense>31</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20208001</id>
+	<type>202</type>
+	<star>1</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>2745</hp>
+	<attack>0</attack>
+	<defense>34</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20209001</id>
+	<type>202</type>
+	<star>1</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>3046</hp>
+	<attack>0</attack>
+	<defense>38</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20210001</id>
+	<type>202</type>
+	<star>1</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>3347</hp>
+	<attack>0</attack>
+	<defense>42</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20300101</id>
 	<type>203</type>
-	<lev>1</lev>
 	<star>1</star>
+	<lev>1</lev>
 	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20300102</id>
-	<type>203</type>
-	<lev>1</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20300103</id>
-	<type>203</type>
-	<lev>1</lev>
-	<star>3</star>
-	<cost>300</cost>
 	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20300104</id>
-	<type>203</type>
-	<lev>1</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<hp>143</hp>
+	<attack>0</attack>
+	<defense>10</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20301001</id>
 	<type>203</type>
-	<lev>10</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20301002</id>
-	<type>203</type>
 	<lev>10</lev>
-	<star>2</star>
 	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20301003</id>
-	<type>203</type>
-	<lev>10</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20301004</id>
-	<type>203</type>
-	<lev>10</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>200</decompose>
+	<hp>273</hp>
+	<attack>0</attack>
+	<defense>19</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20302001</id>
 	<type>203</type>
-	<lev>20</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20302002</id>
-	<type>203</type>
 	<lev>20</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20302003</id>
-	<type>203</type>
-	<lev>20</lev>
-	<star>3</star>
 	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20302004</id>
-	<type>203</type>
-	<lev>20</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>300</decompose>
+	<hp>402</hp>
+	<attack>0</attack>
+	<defense>27</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20303001</id>
 	<type>203</type>
-	<lev>30</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20303002</id>
-	<type>203</type>
 	<lev>30</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20303003</id>
-	<type>203</type>
-	<lev>30</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20303004</id>
-	<type>203</type>
-	<lev>30</lev>
-	<star>4</star>
 	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>400</decompose>
+	<hp>531</hp>
+	<attack>0</attack>
+	<defense>36</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20304001</id>
+	<type>203</type>
+	<star>1</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>660</hp>
+	<attack>0</attack>
+	<defense>45</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20305001</id>
+	<type>203</type>
+	<star>1</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>789</hp>
+	<attack>0</attack>
+	<defense>54</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20306001</id>
+	<type>203</type>
+	<star>1</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>918</hp>
+	<attack>0</attack>
+	<defense>63</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20307001</id>
+	<type>203</type>
+	<star>1</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>1047</hp>
+	<attack>0</attack>
+	<defense>71</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20308001</id>
+	<type>203</type>
+	<star>1</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>1176</hp>
+	<attack>0</attack>
+	<defense>80</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20309001</id>
+	<type>203</type>
+	<star>1</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>1305</hp>
+	<attack>0</attack>
+	<defense>89</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20310001</id>
+	<type>203</type>
+	<star>1</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>1434</hp>
+	<attack>0</attack>
+	<defense>98</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20400101</id>
 	<type>204</type>
-	<lev>1</lev>
 	<star>1</star>
+	<lev>1</lev>
 	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20400102</id>
-	<type>204</type>
-	<lev>1</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20400103</id>
-	<type>204</type>
-	<lev>1</lev>
-	<star>3</star>
-	<cost>300</cost>
 	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20400104</id>
-	<type>204</type>
-	<lev>1</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<hp>0</hp>
+	<attack>6</attack>
+	<defense>0</defense>
+	<symptom>4</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20401001</id>
 	<type>204</type>
-	<lev>10</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20401002</id>
-	<type>204</type>
 	<lev>10</lev>
-	<star>2</star>
 	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20401003</id>
-	<type>204</type>
-	<lev>10</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20401004</id>
-	<type>204</type>
-	<lev>10</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>11</attack>
+	<defense>0</defense>
+	<symptom>7</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20402001</id>
 	<type>204</type>
-	<lev>20</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20402002</id>
-	<type>204</type>
 	<lev>20</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20402003</id>
-	<type>204</type>
-	<lev>20</lev>
-	<star>3</star>
 	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20402004</id>
-	<type>204</type>
-	<lev>20</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>16</attack>
+	<defense>0</defense>
+	<symptom>10</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20403001</id>
 	<type>204</type>
-	<lev>30</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20403002</id>
-	<type>204</type>
 	<lev>30</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20403003</id>
-	<type>204</type>
-	<lev>30</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20403004</id>
-	<type>204</type>
-	<lev>30</lev>
-	<star>4</star>
 	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>22</attack>
+	<defense>0</defense>
+	<symptom>13</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20404001</id>
+	<type>204</type>
+	<star>1</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>27</attack>
+	<defense>0</defense>
+	<symptom>17</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20405001</id>
+	<type>204</type>
+	<star>1</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>32</attack>
+	<defense>0</defense>
+	<symptom>20</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20406001</id>
+	<type>204</type>
+	<star>1</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>37</attack>
+	<defense>0</defense>
+	<symptom>23</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20407001</id>
+	<type>204</type>
+	<star>1</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>43</attack>
+	<defense>0</defense>
+	<symptom>26</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20408001</id>
+	<type>204</type>
+	<star>1</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>48</attack>
+	<defense>0</defense>
+	<symptom>30</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20409001</id>
+	<type>204</type>
+	<star>1</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>53</attack>
+	<defense>0</defense>
+	<symptom>33</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20410001</id>
+	<type>204</type>
+	<star>1</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>59</attack>
+	<defense>0</defense>
+	<symptom>36</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
 </config>
 <config>
 	<id>20500101</id>
 	<type>205</type>
-	<lev>1</lev>
 	<star>1</star>
+	<lev>1</lev>
 	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20500102</id>
-	<type>205</type>
-	<lev>1</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20500103</id>
-	<type>205</type>
-	<lev>1</lev>
-	<star>3</star>
-	<cost>300</cost>
 	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20500104</id>
-	<type>205</type>
-	<lev>1</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>7</crit>
+	<fu>3</fu>
 </config>
 <config>
 	<id>20501001</id>
 	<type>205</type>
-	<lev>10</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20501002</id>
-	<type>205</type>
 	<lev>10</lev>
-	<star>2</star>
 	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20501003</id>
-	<type>205</type>
-	<lev>10</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20501004</id>
-	<type>205</type>
-	<lev>10</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>14</crit>
+	<fu>6</fu>
 </config>
 <config>
 	<id>20502001</id>
 	<type>205</type>
-	<lev>20</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20502002</id>
-	<type>205</type>
 	<lev>20</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20502003</id>
-	<type>205</type>
-	<lev>20</lev>
-	<star>3</star>
 	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20502004</id>
-	<type>205</type>
-	<lev>20</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>21</crit>
+	<fu>9</fu>
 </config>
 <config>
 	<id>20503001</id>
 	<type>205</type>
-	<lev>30</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20503002</id>
-	<type>205</type>
 	<lev>30</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20503003</id>
-	<type>205</type>
-	<lev>30</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20503004</id>
-	<type>205</type>
-	<lev>30</lev>
-	<star>4</star>
 	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>27</crit>
+	<fu>12</fu>
+</config>
+<config>
+	<id>20504001</id>
+	<type>205</type>
+	<star>1</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>34</crit>
+	<fu>15</fu>
+</config>
+<config>
+	<id>20505001</id>
+	<type>205</type>
+	<star>1</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>41</crit>
+	<fu>17</fu>
+</config>
+<config>
+	<id>20506001</id>
+	<type>205</type>
+	<star>1</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>47</crit>
+	<fu>20</fu>
+</config>
+<config>
+	<id>20507001</id>
+	<type>205</type>
+	<star>1</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>54</crit>
+	<fu>23</fu>
+</config>
+<config>
+	<id>20508001</id>
+	<type>205</type>
+	<star>1</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>61</crit>
+	<fu>26</fu>
+</config>
+<config>
+	<id>20509001</id>
+	<type>205</type>
+	<star>1</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>67</crit>
+	<fu>29</fu>
+</config>
+<config>
+	<id>20510001</id>
+	<type>205</type>
+	<star>1</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>74</crit>
+	<fu>32</fu>
 </config>
 <config>
 	<id>20600101</id>
 	<type>206</type>
-	<lev>1</lev>
 	<star>1</star>
+	<lev>1</lev>
 	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20600102</id>
-	<type>206</type>
-	<lev>1</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20600103</id>
-	<type>206</type>
-	<lev>1</lev>
-	<star>3</star>
-	<cost>300</cost>
 	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20600104</id>
-	<type>206</type>
-	<lev>1</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>2</symptom>
+	<crit>0</crit>
+	<fu>7</fu>
 </config>
 <config>
 	<id>20601001</id>
 	<type>206</type>
-	<lev>10</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20601002</id>
-	<type>206</type>
 	<lev>10</lev>
-	<star>2</star>
 	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20601003</id>
-	<type>206</type>
-	<lev>10</lev>
-	<star>3</star>
-	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20601004</id>
-	<type>206</type>
-	<lev>10</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>3</symptom>
+	<crit>0</crit>
+	<fu>14</fu>
 </config>
 <config>
 	<id>20602001</id>
 	<type>206</type>
-	<lev>20</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
-	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20602002</id>
-	<type>206</type>
 	<lev>20</lev>
-	<star>2</star>
-	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
-	<defense>20</defense>
-	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20602003</id>
-	<type>206</type>
-	<lev>20</lev>
-	<star>3</star>
 	<cost>300</cost>
-	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
-</config>
-<config>
-	<id>20602004</id>
-	<type>206</type>
-	<lev>20</lev>
-	<star>4</star>
-	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>4</symptom>
+	<crit>0</crit>
+	<fu>21</fu>
 </config>
 <config>
 	<id>20603001</id>
 	<type>206</type>
-	<lev>30</lev>
 	<star>1</star>
-	<cost>100</cost>
-	<decompose>80</decompose>
-	<hp>100</hp>
-	<attack>10</attack>
-	<defense>10</defense>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>6</symptom>
+	<crit>0</crit>
+	<fu>27</fu>
+</config>
+<config>
+	<id>20604001</id>
+	<type>206</type>
+	<star>1</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>7</symptom>
+	<crit>0</crit>
+	<fu>34</fu>
+</config>
+<config>
+	<id>20605001</id>
+	<type>206</type>
+	<star>1</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>9</symptom>
+	<crit>0</crit>
+	<fu>41</fu>
+</config>
+<config>
+	<id>20606001</id>
+	<type>206</type>
+	<star>1</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
 	<symptom>10</symptom>
-	<crit>10</crit>
-	<fu></fu>
+	<crit>0</crit>
+	<fu>47</fu>
+</config>
+<config>
+	<id>20607001</id>
+	<type>206</type>
+	<star>1</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>11</symptom>
+	<crit>0</crit>
+	<fu>54</fu>
+</config>
+<config>
+	<id>20608001</id>
+	<type>206</type>
+	<star>1</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>13</symptom>
+	<crit>0</crit>
+	<fu>61</fu>
+</config>
+<config>
+	<id>20609001</id>
+	<type>206</type>
+	<star>1</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>14</symptom>
+	<crit>0</crit>
+	<fu>67</fu>
+</config>
+<config>
+	<id>20610001</id>
+	<type>206</type>
+	<star>1</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>15</symptom>
+	<crit>0</crit>
+	<fu>74</fu>
+</config>
+<config>
+	<id>20100102</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>20</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>5</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20101002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>39</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>9</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20102002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>57</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>13</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20103002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>76</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>18</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20104002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>94</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>22</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20105002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>113</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>26</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20106002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>131</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>30</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20107002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>150</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>35</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20108002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>168</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>39</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20109002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>187</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>43</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20110002</id>
+	<type>201</type>
+	<star>2</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>205</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>48</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20200102</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>502</hp>
+	<attack>0</attack>
+	<defense>6</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20201002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>954</hp>
+	<attack>0</attack>
+	<defense>12</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20202002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>1406</hp>
+	<attack>0</attack>
+	<defense>18</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20203002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>1858</hp>
+	<attack>0</attack>
+	<defense>23</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20204002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>2310</hp>
+	<attack>0</attack>
+	<defense>29</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20205002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>2761</hp>
+	<attack>0</attack>
+	<defense>35</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20206002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>3213</hp>
+	<attack>0</attack>
+	<defense>40</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20207002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>3665</hp>
+	<attack>0</attack>
+	<defense>46</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20208002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>4117</hp>
+	<attack>0</attack>
+	<defense>52</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20209002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>4569</hp>
+	<attack>0</attack>
+	<defense>57</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20210002</id>
+	<type>202</type>
+	<star>2</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>5021</hp>
+	<attack>0</attack>
+	<defense>63</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20300102</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>215</hp>
+	<attack>0</attack>
+	<defense>15</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20301002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>409</hp>
+	<attack>0</attack>
+	<defense>28</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20302002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>602</hp>
+	<attack>0</attack>
+	<defense>41</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20303002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>796</hp>
+	<attack>0</attack>
+	<defense>54</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20304002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>990</hp>
+	<attack>0</attack>
+	<defense>67</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20305002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>1183</hp>
+	<attack>0</attack>
+	<defense>81</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20306002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>1377</hp>
+	<attack>0</attack>
+	<defense>94</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20307002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>1571</hp>
+	<attack>0</attack>
+	<defense>107</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20308002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>1764</hp>
+	<attack>0</attack>
+	<defense>120</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20309002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>1958</hp>
+	<attack>0</attack>
+	<defense>133</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20310002</id>
+	<type>203</type>
+	<star>2</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>2152</hp>
+	<attack>0</attack>
+	<defense>147</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20400102</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>9</attack>
+	<defense>0</defense>
+	<symptom>5</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20401002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>17</attack>
+	<defense>0</defense>
+	<symptom>10</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20402002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>25</attack>
+	<defense>0</defense>
+	<symptom>15</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20403002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>33</attack>
+	<defense>0</defense>
+	<symptom>20</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20404002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>40</attack>
+	<defense>0</defense>
+	<symptom>25</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20405002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>48</attack>
+	<defense>0</defense>
+	<symptom>30</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20406002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>56</attack>
+	<defense>0</defense>
+	<symptom>35</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20407002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>64</attack>
+	<defense>0</defense>
+	<symptom>40</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20408002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>72</attack>
+	<defense>0</defense>
+	<symptom>44</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20409002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>80</attack>
+	<defense>0</defense>
+	<symptom>49</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20410002</id>
+	<type>204</type>
+	<star>2</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>88</attack>
+	<defense>0</defense>
+	<symptom>54</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20500102</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>11</crit>
+	<fu>5</fu>
+</config>
+<config>
+	<id>20501002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>21</crit>
+	<fu>9</fu>
+</config>
+<config>
+	<id>20502002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>31</crit>
+	<fu>13</fu>
+</config>
+<config>
+	<id>20503002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>41</crit>
+	<fu>18</fu>
+</config>
+<config>
+	<id>20504002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>51</crit>
+	<fu>22</fu>
+</config>
+<config>
+	<id>20505002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>61</crit>
+	<fu>26</fu>
+</config>
+<config>
+	<id>20506002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>71</crit>
+	<fu>30</fu>
+</config>
+<config>
+	<id>20507002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>81</crit>
+	<fu>35</fu>
+</config>
+<config>
+	<id>20508002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>91</crit>
+	<fu>39</fu>
+</config>
+<config>
+	<id>20509002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>101</crit>
+	<fu>43</fu>
+</config>
+<config>
+	<id>20510002</id>
+	<type>205</type>
+	<star>2</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>111</crit>
+	<fu>48</fu>
+</config>
+<config>
+	<id>20600102</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>2</symptom>
+	<crit>0</crit>
+	<fu>11</fu>
+</config>
+<config>
+	<id>20601002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>4</symptom>
+	<crit>0</crit>
+	<fu>21</fu>
+</config>
+<config>
+	<id>20602002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>7</symptom>
+	<crit>0</crit>
+	<fu>31</fu>
 </config>
 <config>
 	<id>20603002</id>
 	<type>206</type>
-	<lev>30</lev>
 	<star>2</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>9</symptom>
+	<crit>0</crit>
+	<fu>41</fu>
+</config>
+<config>
+	<id>20604002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>11</symptom>
+	<crit>0</crit>
+	<fu>51</fu>
+</config>
+<config>
+	<id>20605002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>13</symptom>
+	<crit>0</crit>
+	<fu>61</fu>
+</config>
+<config>
+	<id>20606002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>15</symptom>
+	<crit>0</crit>
+	<fu>71</fu>
+</config>
+<config>
+	<id>20607002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>17</symptom>
+	<crit>0</crit>
+	<fu>81</fu>
+</config>
+<config>
+	<id>20608002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>19</symptom>
+	<crit>0</crit>
+	<fu>91</fu>
+</config>
+<config>
+	<id>20609002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>21</symptom>
+	<crit>0</crit>
+	<fu>101</fu>
+</config>
+<config>
+	<id>20610002</id>
+	<type>206</type>
+	<star>2</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>23</symptom>
+	<crit>0</crit>
+	<fu>111</fu>
+</config>
+<config>
+	<id>20100103</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>27</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>6</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20101003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>10</lev>
 	<cost>200</cost>
-	<decompose>90</decompose>
-	<hp>200</hp>
-	<attack>20</attack>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>52</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>12</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20102003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>77</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>18</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20103003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>101</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>23</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20104003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>126</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>29</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20105003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>150</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>35</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20106003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>175</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>41</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20107003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>199</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>46</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20108003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>224</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>52</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20109003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>249</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>58</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20110003</id>
+	<type>201</type>
+	<star>3</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>273</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>63</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20200103</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>669</hp>
+	<attack>0</attack>
+	<defense>8</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20201003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>1272</hp>
+	<attack>0</attack>
+	<defense>16</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20202003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>1874</hp>
+	<attack>0</attack>
+	<defense>23</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20203003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>2477</hp>
+	<attack>0</attack>
+	<defense>31</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20204003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>3079</hp>
+	<attack>0</attack>
+	<defense>39</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20205003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>3682</hp>
+	<attack>0</attack>
+	<defense>46</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20206003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>4284</hp>
+	<attack>0</attack>
+	<defense>54</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20207003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>4887</hp>
+	<attack>0</attack>
+	<defense>61</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20208003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>5489</hp>
+	<attack>0</attack>
+	<defense>69</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20209003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>6092</hp>
+	<attack>0</attack>
+	<defense>76</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20210003</id>
+	<type>202</type>
+	<star>3</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>6694</hp>
+	<attack>0</attack>
+	<defense>84</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20300103</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>287</hp>
+	<attack>0</attack>
 	<defense>20</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20301003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>545</hp>
+	<attack>0</attack>
+	<defense>37</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20302003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>803</hp>
+	<attack>0</attack>
+	<defense>55</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20303003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>1062</hp>
+	<attack>0</attack>
+	<defense>72</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20304003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>1320</hp>
+	<attack>0</attack>
+	<defense>90</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20305003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>1578</hp>
+	<attack>0</attack>
+	<defense>107</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20306003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>1836</hp>
+	<attack>0</attack>
+	<defense>125</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20307003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>2094</hp>
+	<attack>0</attack>
+	<defense>143</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20308003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>2353</hp>
+	<attack>0</attack>
+	<defense>160</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20309003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>2611</hp>
+	<attack>0</attack>
+	<defense>178</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20310003</id>
+	<type>203</type>
+	<star>3</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>2869</hp>
+	<attack>0</attack>
+	<defense>195</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20400103</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>12</attack>
+	<defense>0</defense>
+	<symptom>7</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20401003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>22</attack>
+	<defense>0</defense>
+	<symptom>14</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20402003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>33</attack>
+	<defense>0</defense>
 	<symptom>20</symptom>
-	<crit>20</crit>
-	<fu></fu>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20403003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>43</attack>
+	<defense>0</defense>
+	<symptom>27</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20404003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>54</attack>
+	<defense>0</defense>
+	<symptom>33</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20405003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>64</attack>
+	<defense>0</defense>
+	<symptom>40</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20406003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>75</attack>
+	<defense>0</defense>
+	<symptom>46</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20407003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>85</attack>
+	<defense>0</defense>
+	<symptom>53</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20408003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>96</attack>
+	<defense>0</defense>
+	<symptom>59</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20409003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>107</attack>
+	<defense>0</defense>
+	<symptom>66</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20410003</id>
+	<type>204</type>
+	<star>3</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>117</attack>
+	<defense>0</defense>
+	<symptom>72</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20500103</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>15</crit>
+	<fu>6</fu>
+</config>
+<config>
+	<id>20501003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>28</crit>
+	<fu>12</fu>
+</config>
+<config>
+	<id>20502003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>41</crit>
+	<fu>18</fu>
+</config>
+<config>
+	<id>20503003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>55</crit>
+	<fu>23</fu>
+</config>
+<config>
+	<id>20504003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>68</crit>
+	<fu>29</fu>
+</config>
+<config>
+	<id>20505003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>81</crit>
+	<fu>35</fu>
+</config>
+<config>
+	<id>20506003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>95</crit>
+	<fu>41</fu>
+</config>
+<config>
+	<id>20507003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>108</crit>
+	<fu>46</fu>
+</config>
+<config>
+	<id>20508003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>121</crit>
+	<fu>52</fu>
+</config>
+<config>
+	<id>20509003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>135</crit>
+	<fu>58</fu>
+</config>
+<config>
+	<id>20510003</id>
+	<type>205</type>
+	<star>3</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>148</crit>
+	<fu>63</fu>
+</config>
+<config>
+	<id>20600103</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>3</symptom>
+	<crit>0</crit>
+	<fu>15</fu>
+</config>
+<config>
+	<id>20601003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>6</symptom>
+	<crit>0</crit>
+	<fu>28</fu>
+</config>
+<config>
+	<id>20602003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>9</symptom>
+	<crit>0</crit>
+	<fu>41</fu>
 </config>
 <config>
 	<id>20603003</id>
 	<type>206</type>
-	<lev>30</lev>
 	<star>3</star>
-	<cost>300</cost>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>11</symptom>
+	<crit>0</crit>
+	<fu>55</fu>
+</config>
+<config>
+	<id>20604003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>14</symptom>
+	<crit>0</crit>
+	<fu>68</fu>
+</config>
+<config>
+	<id>20605003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>17</symptom>
+	<crit>0</crit>
+	<fu>81</fu>
+</config>
+<config>
+	<id>20606003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>20</symptom>
+	<crit>0</crit>
+	<fu>95</fu>
+</config>
+<config>
+	<id>20607003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>23</symptom>
+	<crit>0</crit>
+	<fu>108</fu>
+</config>
+<config>
+	<id>20608003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>25</symptom>
+	<crit>0</crit>
+	<fu>121</fu>
+</config>
+<config>
+	<id>20609003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>28</symptom>
+	<crit>0</crit>
+	<fu>135</fu>
+</config>
+<config>
+	<id>20610003</id>
+	<type>206</type>
+	<star>3</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>31</symptom>
+	<crit>0</crit>
+	<fu>148</fu>
+</config>
+<config>
+	<id>20100104</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>1</lev>
+	<cost>100</cost>
 	<decompose>100</decompose>
-	<hp>300</hp>
-	<attack>30</attack>
-	<defense>30</defense>
-	<symptom>30</symptom>
-	<crit>30</crit>
-	<fu></fu>
+	<hp>0</hp>
+	<attack>34</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>8</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20101004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>65</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>15</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20102004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>96</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>22</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20103004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>126</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>29</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20104004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>157</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>36</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20105004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>188</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>44</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20106004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>219</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>51</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20107004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>249</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>58</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20108004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>280</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>65</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20109004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>311</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>72</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20110004</id>
+	<type>201</type>
+	<star>4</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>342</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>79</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20200104</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>837</hp>
+	<attack>0</attack>
+	<defense>10</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20201004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>1590</hp>
+	<attack>0</attack>
+	<defense>20</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20202004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>2343</hp>
+	<attack>0</attack>
+	<defense>29</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20203004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>3096</hp>
+	<attack>0</attack>
+	<defense>39</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20204004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>3849</hp>
+	<attack>0</attack>
+	<defense>48</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20205004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>4602</hp>
+	<attack>0</attack>
+	<defense>58</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20206004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>5355</hp>
+	<attack>0</attack>
+	<defense>67</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20207004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>6108</hp>
+	<attack>0</attack>
+	<defense>76</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20208004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>6862</hp>
+	<attack>0</attack>
+	<defense>86</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20209004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>7615</hp>
+	<attack>0</attack>
+	<defense>95</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20210004</id>
+	<type>202</type>
+	<star>4</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>8368</hp>
+	<attack>0</attack>
+	<defense>105</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20300104</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>359</hp>
+	<attack>0</attack>
+	<defense>24</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20301004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>681</hp>
+	<attack>0</attack>
+	<defense>46</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20302004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>1004</hp>
+	<attack>0</attack>
+	<defense>68</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20303004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>1327</hp>
+	<attack>0</attack>
+	<defense>90</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20304004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>1650</hp>
+	<attack>0</attack>
+	<defense>112</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20305004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>1972</hp>
+	<attack>0</attack>
+	<defense>134</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20306004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>2295</hp>
+	<attack>0</attack>
+	<defense>156</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20307004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>2618</hp>
+	<attack>0</attack>
+	<defense>178</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20308004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>2941</hp>
+	<attack>0</attack>
+	<defense>200</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20309004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>3263</hp>
+	<attack>0</attack>
+	<defense>222</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20310004</id>
+	<type>203</type>
+	<star>4</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>3586</hp>
+	<attack>0</attack>
+	<defense>244</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20400104</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>15</attack>
+	<defense>0</defense>
+	<symptom>9</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20401004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>28</attack>
+	<defense>0</defense>
+	<symptom>17</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20402004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>41</attack>
+	<defense>0</defense>
+	<symptom>25</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20403004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>54</attack>
+	<defense>0</defense>
+	<symptom>33</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20404004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>67</attack>
+	<defense>0</defense>
+	<symptom>42</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20405004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>81</attack>
+	<defense>0</defense>
+	<symptom>50</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20406004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>94</attack>
+	<defense>0</defense>
+	<symptom>58</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20407004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>107</attack>
+	<defense>0</defense>
+	<symptom>66</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20408004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>120</attack>
+	<defense>0</defense>
+	<symptom>74</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20409004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>133</attack>
+	<defense>0</defense>
+	<symptom>82</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20410004</id>
+	<type>204</type>
+	<star>4</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>146</attack>
+	<defense>0</defense>
+	<symptom>90</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>20500104</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>18</crit>
+	<fu>8</fu>
+</config>
+<config>
+	<id>20501004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>35</crit>
+	<fu>15</fu>
+</config>
+<config>
+	<id>20502004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>52</crit>
+	<fu>22</fu>
+</config>
+<config>
+	<id>20503004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>30</lev>
+	<cost>400</cost>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>68</crit>
+	<fu>29</fu>
+</config>
+<config>
+	<id>20504004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>85</crit>
+	<fu>36</fu>
+</config>
+<config>
+	<id>20505004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>102</crit>
+	<fu>44</fu>
+</config>
+<config>
+	<id>20506004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>118</crit>
+	<fu>51</fu>
+</config>
+<config>
+	<id>20507004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>135</crit>
+	<fu>58</fu>
+</config>
+<config>
+	<id>20508004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>152</crit>
+	<fu>65</fu>
+</config>
+<config>
+	<id>20509004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>168</crit>
+	<fu>72</fu>
+</config>
+<config>
+	<id>20510004</id>
+	<type>205</type>
+	<star>4</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>185</crit>
+	<fu>79</fu>
+</config>
+<config>
+	<id>20600104</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>1</lev>
+	<cost>100</cost>
+	<decompose>100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>4</symptom>
+	<crit>0</crit>
+	<fu>18</fu>
+</config>
+<config>
+	<id>20601004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>10</lev>
+	<cost>200</cost>
+	<decompose>200</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>7</symptom>
+	<crit>0</crit>
+	<fu>35</fu>
+</config>
+<config>
+	<id>20602004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>20</lev>
+	<cost>300</cost>
+	<decompose>300</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>11</symptom>
+	<crit>0</crit>
+	<fu>52</fu>
 </config>
 <config>
 	<id>20603004</id>
 	<type>206</type>
-	<lev>30</lev>
 	<star>4</star>
+	<lev>30</lev>
 	<cost>400</cost>
-	<decompose>110</decompose>
-	<hp>400</hp>
-	<attack>40</attack>
-	<defense>40</defense>
-	<symptom>40</symptom>
-	<crit>40</crit>
-	<fu></fu>
+	<decompose>400</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>14</symptom>
+	<crit>0</crit>
+	<fu>68</fu>
+</config>
+<config>
+	<id>20604004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>40</lev>
+	<cost>500</cost>
+	<decompose>500</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>18</symptom>
+	<crit>0</crit>
+	<fu>85</fu>
+</config>
+<config>
+	<id>20605004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>50</lev>
+	<cost>600</cost>
+	<decompose>600</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>21</symptom>
+	<crit>0</crit>
+	<fu>102</fu>
+</config>
+<config>
+	<id>20606004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>60</lev>
+	<cost>700</cost>
+	<decompose>700</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>25</symptom>
+	<crit>0</crit>
+	<fu>118</fu>
+</config>
+<config>
+	<id>20607004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>70</lev>
+	<cost>800</cost>
+	<decompose>800</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>28</symptom>
+	<crit>0</crit>
+	<fu>135</fu>
+</config>
+<config>
+	<id>20608004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>80</lev>
+	<cost>900</cost>
+	<decompose>900</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>32</symptom>
+	<crit>0</crit>
+	<fu>152</fu>
+</config>
+<config>
+	<id>20609004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>90</lev>
+	<cost>1000</cost>
+	<decompose>1000</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>35</symptom>
+	<crit>0</crit>
+	<fu>168</fu>
+</config>
+<config>
+	<id>20610004</id>
+	<type>206</type>
+	<star>4</star>
+	<lev>100</lev>
+	<cost>1100</cost>
+	<decompose>1100</decompose>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>39</symptom>
+	<crit>0</crit>
+	<fu>185</fu>
 </config>
 </root>

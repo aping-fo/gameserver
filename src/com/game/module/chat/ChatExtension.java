@@ -5,6 +5,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,8 +36,8 @@ public class ChatExtension {
 	public static final int WORLD = 1;
 	public static final int PRIVATE = 2;
 	public static final int GANG = 3;
+	public static final int SYS = 4;
 	public static final int TEAM =5;
-	public static final int WORLD_HORN =6; //喇叭
 
 	@Autowired
 	private GmService gmService;
@@ -58,7 +59,7 @@ public class ChatExtension {
 	private SceneService sceneService;
 	@Autowired
 	private GoodsService goodsService;
-	private static final int HORN_ID = 1;
+
 	private Map<Integer, Long> talkTime = new ConcurrentHashMap<Integer, Long>();
 
 	@Command(1501)
@@ -101,6 +102,12 @@ public class ChatExtension {
 		if(vo.channel==WORLD){
 			if(sender.getLev()<ConfigData.globalParam().worldChatLevel){
 				return null;
+			}
+			if(vo.broadcast) {
+				boolean ret = goodsService.decGoodsFromBag(playerId, Goods.HORN_ID,1, LogConsume.WORLD_HORN,Goods.HORN_ID);
+				if(!ret) {
+					return null;
+				}
 			}
 			Long lastTime = talkTime.get(playerId);
 			long now = System.currentTimeMillis();
@@ -152,12 +159,6 @@ public class ChatExtension {
 			}else if(vo.channel == TEAM){
 				if(sender.getTeamId() > 0){
 					sceneService.brocastToSceneCurLine(sender, CHAT, result);
-				}
-			}
-			else if(vo.channel == WORLD_HORN) { //世界喇叭
-				boolean ret = goodsService.decGoodsFromBag(playerId,HORN_ID,1, LogConsume.WORLD_HORN,HORN_ID);
-				if(!ret) {
-					//TODO 发送错误码
 				}
 			}
 		}

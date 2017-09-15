@@ -75,10 +75,11 @@ public class PlayerData {
 
 	//声望
 	private ConcurrentHashMap<Integer, Upgrade> fames = new ConcurrentHashMap<Integer, Upgrade>();
-	
+	private int activityCamp = 0; //声望激活阵营代表
 	//神器
 	private ConcurrentHashMap<Integer, int[]> artifacts = new ConcurrentHashMap<Integer, int[]>();
-	
+	//神器升阶
+	private Map<Integer,Integer> artifactsLevelUp = new ConcurrentHashMap<>();
 	//地图ID
 	private int maxTraverseId = 0;
 	//副本地图
@@ -100,11 +101,31 @@ public class PlayerData {
 	private PlayerCurrency currency = new PlayerCurrency();
 	//VIP礼包领取记录
 	private List<Integer> vipGifts = new ArrayList<>();
+
+	////////团队副本
+	private int groupTimes; //团队副本次数
+	private int ladderTimes; //排位赛次数
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
 	}
-	
+
+	public int getLadderTimes() {
+		return ladderTimes;
+	}
+
+	public void setLadderTimes(int ladderTimes) {
+		this.ladderTimes = ladderTimes;
+	}
+
+	public int getGroupTimes() {
+		return groupTimes;
+	}
+
+	public void setGroupTimes(int groupTimes) {
+		this.groupTimes = groupTimes;
+	}
+
 	public int getPlayerId() {
 		return playerId;
 	}
@@ -503,5 +524,21 @@ public class PlayerData {
 
 	public void setVipGifts(List<Integer> vipGifts) {
 		this.vipGifts = vipGifts;
+	}
+
+	public Map<Integer, Integer> getArtifactsLevelUp() {
+		return artifactsLevelUp;
+	}
+
+	public void setArtifactsLevelUp(Map<Integer, Integer> artifactsLevelUp) {
+		this.artifactsLevelUp = artifactsLevelUp;
+	}
+
+	public int getActivityCamp() {
+		return activityCamp;
+	}
+
+	public void setActivityCamp(int activityCamp) {
+		this.activityCamp = activityCamp;
 	}
 }

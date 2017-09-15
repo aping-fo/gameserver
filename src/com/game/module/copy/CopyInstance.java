@@ -18,7 +18,10 @@ public class CopyInstance {
 	public static final int TYPE_TREASURE = 3;
 	public static final int TYPE_EXPERIENCE = 7;
 	public static final int TYPE_TRAVERSING = 8;
-	public static final int TYPE_WORLD_BOSS = 9;
+	public static final int TYPE_WORLD_BOSS = 9; //世界BOSS玩法
+	public static final int TYPE_GROUP = 10; //团队副本玩法
+	public static final int TYPE_LEADAWAY = 11; //顺手牵羊玩法
+	public static final int TYPE_GOLD = 12; //金币玩法
 
 	public static final int EASY = 1;
 	public static final int HARD = 2;

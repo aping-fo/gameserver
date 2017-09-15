@@ -1,5 +1,9 @@
 package com.game.module.copy;
 
+import com.game.module.attach.catchgold.CatchGoldLogic;
+import com.game.module.attach.leadaway.LeadAwayAttach;
+import com.game.module.attach.leadaway.LeadAwayLogic;
+import com.game.params.copy.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.CopyConfig;
@@ -23,10 +27,6 @@ import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.Reward;
-import com.game.params.copy.CopyResult;
-import com.game.params.copy.ExperienceInfo;
-import com.game.params.copy.SEnterCopy;
-import com.game.params.copy.TreasureInfo;
 import com.game.params.scene.CMonster;
 import com.game.util.ConfigData;
 import com.server.anotation.Command;
@@ -56,7 +56,10 @@ public class CopyExtension {
 	private ExperienceLogic experienceLogic;
 	@Autowired
 	private TeamService teamService;
-
+	@Autowired
+	private LeadAwayLogic leadAwayLogic;
+	@Autowired
+	private CatchGoldLogic catchGoldLogic;
 	// 获取副本信息
 	@Command(1901)
 	public Object getInfo(int playerId, Object param) {
@@ -249,4 +252,54 @@ public class CopyExtension {
 	
 	//副本失败,一般用于组队副本
 	public static final int COPY_FAIL = 1999;//
+
+	//扫荡娃娃机副本
+	@Command(1921)
+	public CopyReward sweepLeadaway(int playerId, Int2Param param){
+		return leadAwayLogic.sweep(playerId, param.param1,param.param2);
+	}
+
+	//购买娃娃机副本挑战次数
+	@Command(1922)
+	public IntParam buyLeadawayChallenge(int playerId, Object param){
+		IntParam result = new IntParam();
+		result.param = leadAwayLogic.buyChallengeTime(playerId);
+		return result;
+	}
+
+	//获取哇哇机副本信息
+	@Command(1923)
+	public LeadawayVO getLeadawayInfo(int playerId, Object param){
+		LeadawayVO info = new LeadawayVO();
+		LeadAwayAttach attach = leadAwayLogic.getAttach(playerId);
+		info.challenge = attach.getChallenge();
+		info.buyTime = attach.getBuyTime();
+		info.lastChallengeTime = attach.getLastChallengeTime();
+		return info;
+	}
+
+	//扫荡金币机副本
+	@Command(1924)
+	public CopyReward sweepCatchGold(int playerId, Int2Param param){
+		return catchGoldLogic.sweep(playerId, param.param1,param.param2);
+	}
+
+	//购买金币副本挑战次数
+	@Command(1925)
+	public IntParam buyCatchGoldChallenge(int playerId, Object param){
+		IntParam result = new IntParam();
+		result.param = catchGoldLogic.buyChallengeTime(playerId);
+		return result;
+	}
+
+	//获取金币副本信息
+	@Command(1926)
+	public CatchGoldVO getCatchGoldInfo(int playerId, Object param){
+		CatchGoldVO info = new CatchGoldVO();
+		LeadAwayAttach attach = leadAwayLogic.getAttach(playerId);
+		info.challenge = attach.getChallenge();
+		info.buyTime = attach.getBuyTime();
+		info.lastChallengeTime = attach.getLastChallengeTime();
+		return info;
+	}
 }

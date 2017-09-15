@@ -12,11 +12,12 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#373B4C</outlineColor>
 	<path>Assets/Actor/Role/11101/11101_head.prefab</path>
 	<path2></path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -40,11 +41,12 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#521313</outlineColor>
 	<path>Assets/Actor/Role/11101/11101_body.prefab</path>
 	<path2></path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -68,11 +70,12 @@
 	<model2Name></model2Name>
 	<effectId>1110013</effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#42373d</outlineColor>
 	<path>Assets/Actor/Role/11101/11101_equip.prefab</path>
 	<path2></path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -96,14 +99,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#5F4610</outlineColor>
 	<path>Assets/Actor/Role/11102/11102_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -124,14 +128,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#523011</outlineColor>
 	<path>Assets/Actor/Role/11102/11102_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -152,14 +157,15 @@
 	<model2Name></model2Name>
 	<effectId>1110023</effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#353041</outlineColor>
 	<path>Assets/Actor/Role/11102/11102_equip.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -180,14 +186,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#2C292B</outlineColor>
 	<path>Assets/Actor/Role/11103/11103_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -208,14 +215,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#152229</outlineColor>
 	<path>Assets/Actor/Role/11103/11103_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -236,14 +244,15 @@
 	<model2Name></model2Name>
 	<effectId>1110033</effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#413F45</outlineColor>
 	<path>Assets/Actor/Role/11103/11103_equip.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -264,14 +273,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#583016</outlineColor>
 	<path>Assets/Actor/Role/11104/11104_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
@@ -292,14 +302,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#431F12</outlineColor>
 	<path>Assets/Actor/Role/11104/11104_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
@@ -320,14 +331,15 @@
 	<model2Name></model2Name>
 	<effectId>1110043</effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#341E0D</outlineColor>
 	<path>Assets/Actor/Role/11104/11104_equip.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
@@ -348,11 +360,12 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#7F5A38</outlineColor>
 	<path>Assets/Actor/Role/12101/12101_head.prefab</path>
 	<path2></path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -376,11 +389,12 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#424358</outlineColor>
 	<path>Assets/Actor/Role/12101/12101_body.prefab</path>
 	<path2></path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -404,11 +418,12 @@
 	<model2Name>weapon02.prefab</model2Name>
 	<effectId>1210013</effectId>
 	<effect2Id>1210014</effect2Id>
+	<outlineColor>#494B5B</outlineColor>
 	<path>Assets/Actor/Role/12101/12101_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12101/12101_weapon02.prefab</path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -432,14 +447,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#816A4E</outlineColor>
 	<path>Assets/Actor/Role/12102/12102_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -460,14 +476,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#293561</outlineColor>
 	<path>Assets/Actor/Role/12102/12102_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -488,14 +505,15 @@
 	<model2Name>weapon02.prefab</model2Name>
 	<effectId>1210023</effectId>
 	<effect2Id>1210024</effect2Id>
+	<outlineColor>#382C32</outlineColor>
 	<path>Assets/Actor/Role/12102/12102_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12102/12102_weapon02.prefab</path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -516,14 +534,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#836148</outlineColor>
 	<path>Assets/Actor/Role/12103/12103_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -544,14 +563,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#30303D</outlineColor>
 	<path>Assets/Actor/Role/12103/12103_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -572,14 +592,15 @@
 	<model2Name>weapon02.prefab</model2Name>
 	<effectId>1210033</effectId>
 	<effect2Id>1210034</effect2Id>
+	<outlineColor>#413139</outlineColor>
 	<path>Assets/Actor/Role/12103/12103_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12103/12103_weapon02.prefab</path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -600,14 +621,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#433127</outlineColor>
 	<path>Assets/Actor/Role/12104/12104_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
@@ -628,14 +650,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#5B3226</outlineColor>
 	<path>Assets/Actor/Role/12104/12104_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
@@ -656,14 +679,15 @@
 	<model2Name>weapon02.prefab</model2Name>
 	<effectId>1210043</effectId>
 	<effect2Id>1210044</effect2Id>
+	<outlineColor>#271F3A</outlineColor>
 	<path>Assets/Actor/Role/12104/12104_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12104/12104_weapon02.prefab</path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
@@ -684,11 +708,12 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#584B42</outlineColor>
 	<path>Assets/Actor/Role/13101/13101_head.prefab</path>
 	<path2></path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -712,11 +737,12 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#2E324A</outlineColor>
 	<path>Assets/Actor/Role/13101/13101_body.prefab</path>
 	<path2></path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -740,11 +766,12 @@
 	<model2Name></model2Name>
 	<effectId>1310013</effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#1F1D1E</outlineColor>
 	<path>Assets/Actor/Role/13101/13101_equip.prefab</path>
 	<path2></path2>
+	<hp>0</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<hp>0</hp>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
@@ -768,14 +795,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#383128</outlineColor>
 	<path>Assets/Actor/Role/13102/13102_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -796,14 +824,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#492F0F</outlineColor>
 	<path>Assets/Actor/Role/13102/13102_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -824,14 +853,15 @@
 	<model2Name></model2Name>
 	<effectId>1310023</effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#2D3438</outlineColor>
 	<path>Assets/Actor/Role/13102/13102_equip.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1195</hp>
+	<attack>50</attack>
+	<defense>35</defense>
+	<crit>13</crit>
+	<symptom>13</symptom>
+	<fu>28</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -852,14 +882,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#492214</outlineColor>
 	<path>Assets/Actor/Role/13103/13103_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -880,14 +911,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#563232</outlineColor>
 	<path>Assets/Actor/Role/13103/13103_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -908,14 +940,15 @@
 	<model2Name></model2Name>
 	<effectId>1310033</effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#472A2C</outlineColor>
 	<path>Assets/Actor/Role/13103/13103_equip.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
 	<limitType>0</limitType>
 	<limitParams></limitParams>
 	<price>[102,100]</price>
@@ -936,14 +969,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#502718</outlineColor>
 	<path>Assets/Actor/Role/13104/13104_head.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
@@ -964,14 +998,15 @@
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#542D22</outlineColor>
 	<path>Assets/Actor/Role/13104/13104_body.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
@@ -992,14 +1027,15 @@
 	<model2Name></model2Name>
 	<effectId>1310043</effectId>
 	<effect2Id></effect2Id>
+	<outlineColor>#472313</outlineColor>
 	<path>Assets/Actor/Role/13104/13104_equip.prefab</path>
 	<path2></path2>
-	<attack>4780</attack>
-	<defense>200</defense>
-	<hp>140</hp>
-	<crit>50</crit>
-	<symptom>50</symptom>
-	<fu>110</fu>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
 	<limitType>1</limitType>
 	<limitParams>[3]</limitParams>
 	<price>[102,100]</price>
