@@ -24,6 +24,7 @@ public class MonsterConfig {
 	public float logicBaseSpeed;//基础逻辑速度
 	public int[] dropGoods;//掉落包
 	public boolean banStrickenFly;//能否被击飞
+	public int lyingDownBuffId;//倒地后触发保护buff id
 	public boolean forbitCameraShake;//攻击目标是否禁用镜头震动
 	public boolean hasDeadSkill;//是否拥有死亡技能
 	public int deadRocketID;//死亡技能导弹ID
@@ -31,6 +32,7 @@ public class MonsterConfig {
 	public float[] hurtProtectParam;//血量保护参数
 	public float[] controlProtectParam;//控制保护参数
 	public int[] skillId;//技能列表
+	public int[] skillIdEx;//技能连招列表
 	public int[] behitAction;//受击
 	public int[] flyAction;//击飞
 	public int[] downAction;//击落

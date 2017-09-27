@@ -87,5 +87,23 @@ public class GroupExtension {
         return groupService.getSelfGroupInfo(playerId);
     }
 
+    @Command(5015)
+    public Object startChallenge(int playerId, IntParam param) {
+        return groupService.startChallenge(playerId,param.param);
+    }
 
+    @Command(5016)
+    public Object getGroupInfo(int playerId, Object param) {
+        return groupService.getGroupInfo(playerId);
+    }
+
+    @Command(5017)
+    public Object stageEnter(int playerId, Object param) {
+        return groupService.stageEnter(playerId);
+    }
+
+    @Command(5018)
+    public Object getGroupStageInfo(int playerId, Object param) {
+        return groupService.getGroupStageInfo(playerId);
+    }
 }

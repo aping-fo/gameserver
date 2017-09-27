@@ -151,56 +151,6 @@
 	<duleCameraAnimId></duleCameraAnimId>
 </config>
 <config>
-	<id>11100000</id>
-	<name>战士普通攻击</name>
-	<icon></icon>
-	<vocation>1</vocation>
-	<lev>1</lev>
-	<desc>战士普通攻击</desc>
-	<logicDataFile>11101.dsl</logicDataFile>
-	<logicId>11100000</logicId>
-	<attachedBuff></attachedBuff>
-	<givedBuff></givedBuff>
-	<attackRange>[3,1]</attackRange>
-	<isRegular>1</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
-	<strickenInteruptPriority>20</strickenInteruptPriority>
-	<hitFactor>20</hitFactor>
-	<attackCount>1</attackCount>
-	<cd>0</cd>
-	<offsetRefer>0</offsetRefer>
-	<followSpeed>0</followSpeed>
-	<successiveAttackProb>1</successiveAttackProb>
-	<nextSkillId></nextSkillId>
-	<parentSkillId></parentSkillId>
-	<actionId>attack</actionId>
-	<actionEffectId>[111000001]</actionEffectId>
-	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
-	<enableMoving></enableMoving>
-	<forbidSwing></forbidSwing>
-	<audioEffectId></audioEffectId>
-	<isUltimateSkill></isUltimateSkill>
-	<isCrackSkill></isCrackSkill>
-	<isGravityField></isGravityField>
-	<waiting>1110000011</waiting>
-	<running>1110000011</running>
-	<attack>1110000011</attack>
-	<skillOnGround>1110000011</skillOnGround>
-	<strickenGiddy>1110000011</strickenGiddy>
-	<strickenFallback>1110000011</strickenFallback>
-	<attackInAir>1110000310</attackInAir>
-	<skillInAir>1110000012</skillInAir>
-	<strickenFly>1110000012</strickenFly>
-	<strickenShotdown>1110000012</strickenShotdown>
-	<lyingDown>1110000013</lyingDown>
-	<coin></coin>
-	<nextId></nextId>
-	<setPainting></setPainting>
-	<duelBossEffect></duelBossEffect>
-	<duleCameraAnimId></duleCameraAnimId>
-</config>
-<config>
 	<id>11100001</id>
 	<name>战士普通攻击1</name>
 	<icon></icon>
@@ -661,7 +611,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -711,7 +661,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -761,7 +711,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -811,7 +761,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -861,7 +811,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -911,7 +861,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -961,7 +911,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1011,7 +961,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1061,7 +1011,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1111,7 +1061,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1161,7 +1111,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1211,7 +1161,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1261,7 +1211,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1311,7 +1261,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1361,7 +1311,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1411,7 +1361,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1461,7 +1411,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1511,7 +1461,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1561,7 +1511,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1611,7 +1561,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1661,7 +1611,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1711,7 +1661,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1761,7 +1711,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1811,7 +1761,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1861,7 +1811,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1911,7 +1861,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -1961,7 +1911,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2011,7 +1961,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2061,7 +2011,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2111,7 +2061,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2161,7 +2111,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2211,7 +2161,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2261,7 +2211,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2311,7 +2261,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2361,7 +2311,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2411,7 +2361,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2461,7 +2411,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2511,7 +2461,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2561,7 +2511,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2611,7 +2561,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2661,7 +2611,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2711,7 +2661,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2761,7 +2711,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2811,7 +2761,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2861,7 +2811,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2911,7 +2861,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -2961,7 +2911,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3011,7 +2961,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3061,7 +3011,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3111,7 +3061,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3161,7 +3111,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3211,7 +3161,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3261,7 +3211,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3311,7 +3261,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3361,7 +3311,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3411,7 +3361,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3461,7 +3411,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3511,7 +3461,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3561,7 +3511,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3611,7 +3561,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3661,7 +3611,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3711,7 +3661,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3761,7 +3711,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3811,7 +3761,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3861,7 +3811,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3911,7 +3861,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -3961,7 +3911,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4011,7 +3961,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4061,7 +4011,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4111,7 +4061,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4161,7 +4111,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4211,7 +4161,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4261,7 +4211,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4311,7 +4261,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4361,7 +4311,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4411,7 +4361,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4461,7 +4411,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4511,7 +4461,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4561,7 +4511,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4611,7 +4561,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4661,7 +4611,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4711,7 +4661,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4761,7 +4711,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4811,7 +4761,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4861,7 +4811,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4911,7 +4861,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -4961,7 +4911,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5011,7 +4961,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5061,7 +5011,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5111,7 +5061,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5161,7 +5111,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5211,7 +5161,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5261,7 +5211,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5311,7 +5261,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5361,7 +5311,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5411,7 +5361,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5461,7 +5411,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5511,7 +5461,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5561,7 +5511,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -5611,7 +5561,7 @@
 	<logicId>11101001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[3.5,1]</attackRange>
+	<attackRange>[4,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
@@ -15663,7 +15613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>110</hitFactor>
 	<attackCount>7</attackCount>
@@ -15713,7 +15663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>110</hitFactor>
 	<attackCount>7</attackCount>
@@ -15763,7 +15713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>7</attackCount>
@@ -15813,7 +15763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>7</attackCount>
@@ -15863,7 +15813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>7</attackCount>
@@ -15913,7 +15863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>7</attackCount>
@@ -15963,7 +15913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>7</attackCount>
@@ -16013,7 +15963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>7</attackCount>
@@ -16063,7 +16013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>113</hitFactor>
 	<attackCount>7</attackCount>
@@ -16113,7 +16063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>113</hitFactor>
 	<attackCount>7</attackCount>
@@ -16163,7 +16113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>7</attackCount>
@@ -16213,7 +16163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>7</attackCount>
@@ -16263,7 +16213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>7</attackCount>
@@ -16313,7 +16263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>7</attackCount>
@@ -16363,7 +16313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>7</attackCount>
@@ -16413,7 +16363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>7</attackCount>
@@ -16463,7 +16413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>7</attackCount>
@@ -16513,7 +16463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>7</attackCount>
@@ -16563,7 +16513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>7</attackCount>
@@ -16613,7 +16563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>7</attackCount>
@@ -16663,7 +16613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>7</attackCount>
@@ -16713,7 +16663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>7</attackCount>
@@ -16763,7 +16713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>7</attackCount>
@@ -16813,7 +16763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>7</attackCount>
@@ -16863,7 +16813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>7</attackCount>
@@ -16913,7 +16863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>7</attackCount>
@@ -16963,7 +16913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>7</attackCount>
@@ -17013,7 +16963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>7</attackCount>
@@ -17063,7 +17013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>120</hitFactor>
 	<attackCount>7</attackCount>
@@ -17113,7 +17063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>120</hitFactor>
 	<attackCount>7</attackCount>
@@ -17163,7 +17113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>7</attackCount>
@@ -17213,7 +17163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>7</attackCount>
@@ -17263,7 +17213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>7</attackCount>
@@ -17313,7 +17263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>7</attackCount>
@@ -17363,7 +17313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>7</attackCount>
@@ -17413,7 +17363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>7</attackCount>
@@ -17463,7 +17413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>7</attackCount>
@@ -17513,7 +17463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>7</attackCount>
@@ -17563,7 +17513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>7</attackCount>
@@ -17613,7 +17563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>7</attackCount>
@@ -17663,7 +17613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>7</attackCount>
@@ -17713,7 +17663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>7</attackCount>
@@ -17763,7 +17713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>7</attackCount>
@@ -17813,7 +17763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>7</attackCount>
@@ -17863,7 +17813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>7</attackCount>
@@ -17913,7 +17863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>7</attackCount>
@@ -17963,7 +17913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>7</attackCount>
@@ -18013,7 +17963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>7</attackCount>
@@ -18063,7 +18013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>127</hitFactor>
 	<attackCount>7</attackCount>
@@ -18113,7 +18063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>127</hitFactor>
 	<attackCount>7</attackCount>
@@ -18163,7 +18113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>7</attackCount>
@@ -18213,7 +18163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>7</attackCount>
@@ -18263,7 +18213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>7</attackCount>
@@ -18313,7 +18263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>7</attackCount>
@@ -18363,7 +18313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>7</attackCount>
@@ -18413,7 +18363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>7</attackCount>
@@ -18463,7 +18413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>7</attackCount>
@@ -18513,7 +18463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>7</attackCount>
@@ -18563,7 +18513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>7</attackCount>
@@ -18613,7 +18563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>7</attackCount>
@@ -18663,7 +18613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>7</attackCount>
@@ -18713,7 +18663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>7</attackCount>
@@ -18763,7 +18713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>7</attackCount>
@@ -18813,7 +18763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>7</attackCount>
@@ -18863,7 +18813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>7</attackCount>
@@ -18913,7 +18863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>7</attackCount>
@@ -18963,7 +18913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>7</attackCount>
@@ -19013,7 +18963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>7</attackCount>
@@ -19063,7 +19013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>134</hitFactor>
 	<attackCount>7</attackCount>
@@ -19113,7 +19063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>134</hitFactor>
 	<attackCount>7</attackCount>
@@ -19163,7 +19113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>7</attackCount>
@@ -19213,7 +19163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>7</attackCount>
@@ -19263,7 +19213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>7</attackCount>
@@ -19313,7 +19263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>7</attackCount>
@@ -19363,7 +19313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>7</attackCount>
@@ -19413,7 +19363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>7</attackCount>
@@ -19463,7 +19413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>7</attackCount>
@@ -19513,7 +19463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>7</attackCount>
@@ -19563,7 +19513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>7</attackCount>
@@ -19613,7 +19563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>7</attackCount>
@@ -19663,7 +19613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>7</attackCount>
@@ -19713,7 +19663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>7</attackCount>
@@ -19763,7 +19713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>7</attackCount>
@@ -19813,7 +19763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>7</attackCount>
@@ -19863,7 +19813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>7</attackCount>
@@ -19913,7 +19863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>7</attackCount>
@@ -19963,7 +19913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>7</attackCount>
@@ -20013,7 +19963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>7</attackCount>
@@ -20063,7 +20013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>141</hitFactor>
 	<attackCount>7</attackCount>
@@ -20113,7 +20063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>141</hitFactor>
 	<attackCount>7</attackCount>
@@ -20163,7 +20113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>7</attackCount>
@@ -20213,7 +20163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>7</attackCount>
@@ -20263,7 +20213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>7</attackCount>
@@ -20313,7 +20263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>7</attackCount>
@@ -20363,7 +20313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>7</attackCount>
@@ -20413,7 +20363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>7</attackCount>
@@ -20463,7 +20413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>7</attackCount>
@@ -20513,7 +20463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>7</attackCount>
@@ -20563,7 +20513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>7</attackCount>
@@ -20613,7 +20563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>145</hitFactor>
 	<attackCount>7</attackCount>
@@ -36113,7 +36063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>110</hitFactor>
 	<attackCount>6</attackCount>
@@ -36163,7 +36113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>110</hitFactor>
 	<attackCount>6</attackCount>
@@ -36213,7 +36163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>6</attackCount>
@@ -36263,7 +36213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>6</attackCount>
@@ -36313,7 +36263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>6</attackCount>
@@ -36363,7 +36313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>6</attackCount>
@@ -36413,7 +36363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>6</attackCount>
@@ -36463,7 +36413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>6</attackCount>
@@ -36513,7 +36463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>113</hitFactor>
 	<attackCount>6</attackCount>
@@ -36563,7 +36513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>113</hitFactor>
 	<attackCount>6</attackCount>
@@ -36613,7 +36563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>6</attackCount>
@@ -36663,7 +36613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>6</attackCount>
@@ -36713,7 +36663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>6</attackCount>
@@ -36763,7 +36713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>6</attackCount>
@@ -36813,7 +36763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>6</attackCount>
@@ -36863,7 +36813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>6</attackCount>
@@ -36913,7 +36863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>6</attackCount>
@@ -36963,7 +36913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>6</attackCount>
@@ -37013,7 +36963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>6</attackCount>
@@ -37063,7 +37013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>6</attackCount>
@@ -37113,7 +37063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>6</attackCount>
@@ -37163,7 +37113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>6</attackCount>
@@ -37213,7 +37163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>6</attackCount>
@@ -37263,7 +37213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>6</attackCount>
@@ -37313,7 +37263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>6</attackCount>
@@ -37363,7 +37313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>6</attackCount>
@@ -37413,7 +37363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>6</attackCount>
@@ -37463,7 +37413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>6</attackCount>
@@ -37513,7 +37463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>120</hitFactor>
 	<attackCount>6</attackCount>
@@ -37563,7 +37513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>120</hitFactor>
 	<attackCount>6</attackCount>
@@ -37613,7 +37563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>6</attackCount>
@@ -37663,7 +37613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>6</attackCount>
@@ -37713,7 +37663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>6</attackCount>
@@ -37763,7 +37713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>6</attackCount>
@@ -37813,7 +37763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>6</attackCount>
@@ -37863,7 +37813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>6</attackCount>
@@ -37913,7 +37863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>6</attackCount>
@@ -37963,7 +37913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>6</attackCount>
@@ -38013,7 +37963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>6</attackCount>
@@ -38063,7 +38013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>6</attackCount>
@@ -38113,7 +38063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>6</attackCount>
@@ -38163,7 +38113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>6</attackCount>
@@ -38213,7 +38163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>6</attackCount>
@@ -38263,7 +38213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>6</attackCount>
@@ -38313,7 +38263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>6</attackCount>
@@ -38363,7 +38313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>6</attackCount>
@@ -38413,7 +38363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>6</attackCount>
@@ -38463,7 +38413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>6</attackCount>
@@ -38513,7 +38463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>127</hitFactor>
 	<attackCount>6</attackCount>
@@ -38563,7 +38513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[1000,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>127</hitFactor>
 	<attackCount>6</attackCount>
@@ -38613,7 +38563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>6</attackCount>
@@ -38663,7 +38613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>6</attackCount>
@@ -38713,7 +38663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>6</attackCount>
@@ -38763,7 +38713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>6</attackCount>
@@ -38813,7 +38763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>6</attackCount>
@@ -38863,7 +38813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>6</attackCount>
@@ -38913,7 +38863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>6</attackCount>
@@ -38963,7 +38913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>6</attackCount>
@@ -39013,7 +38963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>6</attackCount>
@@ -39063,7 +39013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>6</attackCount>
@@ -39113,7 +39063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>6</attackCount>
@@ -39163,7 +39113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>6</attackCount>
@@ -39213,7 +39163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>6</attackCount>
@@ -39263,7 +39213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>6</attackCount>
@@ -39313,7 +39263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>6</attackCount>
@@ -39363,7 +39313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>6</attackCount>
@@ -39413,7 +39363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>6</attackCount>
@@ -39463,7 +39413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>6</attackCount>
@@ -39513,7 +39463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>134</hitFactor>
 	<attackCount>6</attackCount>
@@ -39563,7 +39513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>134</hitFactor>
 	<attackCount>6</attackCount>
@@ -39613,7 +39563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>6</attackCount>
@@ -39663,7 +39613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>6</attackCount>
@@ -39713,7 +39663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>6</attackCount>
@@ -39763,7 +39713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>6</attackCount>
@@ -39813,7 +39763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>6</attackCount>
@@ -39863,7 +39813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>6</attackCount>
@@ -39913,7 +39863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>6</attackCount>
@@ -39963,7 +39913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>6</attackCount>
@@ -40013,7 +39963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>6</attackCount>
@@ -40063,7 +40013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>6</attackCount>
@@ -40113,7 +40063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>6</attackCount>
@@ -40163,7 +40113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>6</attackCount>
@@ -40213,7 +40163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>6</attackCount>
@@ -40263,7 +40213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>6</attackCount>
@@ -40313,7 +40263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>6</attackCount>
@@ -40363,7 +40313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>6</attackCount>
@@ -40413,7 +40363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>6</attackCount>
@@ -40463,7 +40413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>6</attackCount>
@@ -40513,7 +40463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>141</hitFactor>
 	<attackCount>6</attackCount>
@@ -40563,7 +40513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>141</hitFactor>
 	<attackCount>6</attackCount>
@@ -40613,7 +40563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>6</attackCount>
@@ -40663,7 +40613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>6</attackCount>
@@ -40713,7 +40663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>6</attackCount>
@@ -40763,7 +40713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>6</attackCount>
@@ -40813,7 +40763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>6</attackCount>
@@ -40863,7 +40813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>6</attackCount>
@@ -40913,7 +40863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>6</attackCount>
@@ -40963,7 +40913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>6</attackCount>
@@ -41013,7 +40963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>6</attackCount>
@@ -41063,7 +41013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[1000,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>145</hitFactor>
 	<attackCount>6</attackCount>
@@ -56513,7 +56463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>110</hitFactor>
 	<attackCount>14</attackCount>
@@ -56563,7 +56513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>110</hitFactor>
 	<attackCount>14</attackCount>
@@ -56613,7 +56563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>14</attackCount>
@@ -56663,7 +56613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>14</attackCount>
@@ -56713,7 +56663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>111</hitFactor>
 	<attackCount>14</attackCount>
@@ -56763,7 +56713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>14</attackCount>
@@ -56813,7 +56763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>14</attackCount>
@@ -56863,7 +56813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>112</hitFactor>
 	<attackCount>14</attackCount>
@@ -56913,7 +56863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>113</hitFactor>
 	<attackCount>14</attackCount>
@@ -56963,7 +56913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>113</hitFactor>
 	<attackCount>14</attackCount>
@@ -57013,7 +56963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>14</attackCount>
@@ -57063,7 +57013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>14</attackCount>
@@ -57113,7 +57063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>114</hitFactor>
 	<attackCount>14</attackCount>
@@ -57163,7 +57113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>14</attackCount>
@@ -57213,7 +57163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>14</attackCount>
@@ -57263,7 +57213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>115</hitFactor>
 	<attackCount>14</attackCount>
@@ -57313,7 +57263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>14</attackCount>
@@ -57363,7 +57313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>14</attackCount>
@@ -57413,7 +57363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>116</hitFactor>
 	<attackCount>14</attackCount>
@@ -57463,7 +57413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>14</attackCount>
@@ -57513,7 +57463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>14</attackCount>
@@ -57563,7 +57513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>117</hitFactor>
 	<attackCount>14</attackCount>
@@ -57613,7 +57563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>14</attackCount>
@@ -57663,7 +57613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>14</attackCount>
@@ -57713,7 +57663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>118</hitFactor>
 	<attackCount>14</attackCount>
@@ -57763,7 +57713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>14</attackCount>
@@ -57813,7 +57763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>14</attackCount>
@@ -57863,7 +57813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>119</hitFactor>
 	<attackCount>14</attackCount>
@@ -57913,7 +57863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>120</hitFactor>
 	<attackCount>14</attackCount>
@@ -57963,7 +57913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>120</hitFactor>
 	<attackCount>14</attackCount>
@@ -58013,7 +57963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>14</attackCount>
@@ -58063,7 +58013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>14</attackCount>
@@ -58113,7 +58063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>121</hitFactor>
 	<attackCount>14</attackCount>
@@ -58163,7 +58113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>14</attackCount>
@@ -58213,7 +58163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>14</attackCount>
@@ -58263,7 +58213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>122</hitFactor>
 	<attackCount>14</attackCount>
@@ -58313,7 +58263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>14</attackCount>
@@ -58363,7 +58313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>14</attackCount>
@@ -58413,7 +58363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>123</hitFactor>
 	<attackCount>14</attackCount>
@@ -58463,7 +58413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>14</attackCount>
@@ -58513,7 +58463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>14</attackCount>
@@ -58563,7 +58513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>124</hitFactor>
 	<attackCount>14</attackCount>
@@ -58613,7 +58563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>14</attackCount>
@@ -58663,7 +58613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>14</attackCount>
@@ -58713,7 +58663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>125</hitFactor>
 	<attackCount>14</attackCount>
@@ -58763,7 +58713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>14</attackCount>
@@ -58813,7 +58763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>14</attackCount>
@@ -58863,7 +58813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>126</hitFactor>
 	<attackCount>14</attackCount>
@@ -58913,7 +58863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>127</hitFactor>
 	<attackCount>14</attackCount>
@@ -58963,7 +58913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>127</hitFactor>
 	<attackCount>14</attackCount>
@@ -59013,7 +58963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>14</attackCount>
@@ -59063,7 +59013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>14</attackCount>
@@ -59113,7 +59063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>128</hitFactor>
 	<attackCount>14</attackCount>
@@ -59163,7 +59113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>14</attackCount>
@@ -59213,7 +59163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>14</attackCount>
@@ -59263,7 +59213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>129</hitFactor>
 	<attackCount>14</attackCount>
@@ -59313,7 +59263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>14</attackCount>
@@ -59363,7 +59313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>14</attackCount>
@@ -59413,7 +59363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>130</hitFactor>
 	<attackCount>14</attackCount>
@@ -59463,7 +59413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>14</attackCount>
@@ -59513,7 +59463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>14</attackCount>
@@ -59563,7 +59513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>131</hitFactor>
 	<attackCount>14</attackCount>
@@ -59613,7 +59563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>14</attackCount>
@@ -59663,7 +59613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>14</attackCount>
@@ -59713,7 +59663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>132</hitFactor>
 	<attackCount>14</attackCount>
@@ -59763,7 +59713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>14</attackCount>
@@ -59813,7 +59763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>14</attackCount>
@@ -59863,7 +59813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>133</hitFactor>
 	<attackCount>14</attackCount>
@@ -59913,7 +59863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>134</hitFactor>
 	<attackCount>14</attackCount>
@@ -59963,7 +59913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>134</hitFactor>
 	<attackCount>14</attackCount>
@@ -60013,7 +59963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>14</attackCount>
@@ -60063,7 +60013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>14</attackCount>
@@ -60113,7 +60063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>135</hitFactor>
 	<attackCount>14</attackCount>
@@ -60163,7 +60113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>14</attackCount>
@@ -60213,7 +60163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>14</attackCount>
@@ -60263,7 +60213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>136</hitFactor>
 	<attackCount>14</attackCount>
@@ -60313,7 +60263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>14</attackCount>
@@ -60363,7 +60313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>14</attackCount>
@@ -60413,7 +60363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>137</hitFactor>
 	<attackCount>14</attackCount>
@@ -60463,7 +60413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>14</attackCount>
@@ -60513,7 +60463,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>14</attackCount>
@@ -60563,7 +60513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>138</hitFactor>
 	<attackCount>14</attackCount>
@@ -60613,7 +60563,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>14</attackCount>
@@ -60663,7 +60613,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>14</attackCount>
@@ -60713,7 +60663,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>139</hitFactor>
 	<attackCount>14</attackCount>
@@ -60763,7 +60713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>14</attackCount>
@@ -60813,7 +60763,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>14</attackCount>
@@ -60863,7 +60813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>140</hitFactor>
 	<attackCount>14</attackCount>
@@ -60913,7 +60863,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>141</hitFactor>
 	<attackCount>14</attackCount>
@@ -60963,7 +60913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>141</hitFactor>
 	<attackCount>14</attackCount>
@@ -61013,7 +60963,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>14</attackCount>
@@ -61063,7 +61013,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>14</attackCount>
@@ -61113,7 +61063,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>142</hitFactor>
 	<attackCount>14</attackCount>
@@ -61163,7 +61113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>14</attackCount>
@@ -61213,7 +61163,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>14</attackCount>
@@ -61263,7 +61213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>143</hitFactor>
 	<attackCount>14</attackCount>
@@ -61313,7 +61263,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>14</attackCount>
@@ -61363,7 +61313,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>14</attackCount>
@@ -61413,7 +61363,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>144</hitFactor>
 	<attackCount>14</attackCount>
@@ -61463,7 +61413,7 @@
 	<givedBuff></givedBuff>
 	<attackRange>[5,1]</attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>2</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>145</hitFactor>
 	<attackCount>14</attackCount>
@@ -67451,6 +67401,356 @@
 	<duleCameraAnimId></duleCameraAnimId>
 </config>
 <config>
+	<id>20121001</id>
+	<name>粉红粉红普通攻击1</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20121.dsl</logicDataFile>
+	<logicId>20121001</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[6,1]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<hitFactor>80</hitFactor>
+	<attackCount>2</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2012100111</waiting>
+	<running>2012100111</running>
+	<attack>2012100111</attack>
+	<skillOnGround>2012100111</skillOnGround>
+	<strickenGiddy>2012100111</strickenGiddy>
+	<strickenFallback>2012100111</strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20121002</id>
+	<name>粉红粉红普通攻击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20121.dsl</logicDataFile>
+	<logicId>20121002</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[8,1]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>5</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2012100211</waiting>
+	<running>2012100211</running>
+	<attack>2012100211</attack>
+	<skillOnGround>2012100211</skillOnGround>
+	<strickenGiddy>2012100211</strickenGiddy>
+	<strickenFallback>2012100211</strickenFallback>
+	<attackInAir>2012100212</attackInAir>
+	<skillInAir>2012100212</skillInAir>
+	<strickenFly>2012100212</strickenFly>
+	<strickenShotdown>2012100212</strickenShotdown>
+	<lyingDown>2012100213</lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20121101</id>
+	<name>粉红粉红受击1</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20121.dsl</logicDataFile>
+	<logicId>20121101</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20121102</id>
+	<name>粉红粉红受击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20121.dsl</logicDataFile>
+	<logicId>20121102</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20121201</id>
+	<name>粉红粉红受击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20121.dsl</logicDataFile>
+	<logicId>20121201</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>fly</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20121202</id>
+	<name>粉红粉红击落</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20121.dsl</logicDataFile>
+	<logicId>20121202</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>down</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20121301</id>
+	<name>粉红粉红起身</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20121.dsl</logicDataFile>
+	<logicId>20121301</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>getup</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
 	<id>20201001</id>
 	<name>钓鱼老头技能1</name>
 	<icon></icon>
@@ -72474,7 +72774,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill1</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[203090011,203090012]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -72524,7 +72824,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill2</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[203090021,203090022]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -72574,7 +72874,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill3</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[203090031,203090032]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -74858,7 +75158,7 @@
 	<lev></lev>
 	<desc></desc>
 	<logicDataFile>50000.dsl</logicDataFile>
-	<logicId>50000001</logicId>
+	<logicId>5000001</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange>[80,80]</attackRange>
@@ -74902,13 +75202,13 @@
 </config>
 <config>
 	<id>5000002</id>
-	<name>掉金币攻击2</name>
+	<name>撒打金币攻击2</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
 	<desc></desc>
 	<logicDataFile>50000.dsl</logicDataFile>
-	<logicId>50000001</logicId>
+	<logicId>5000002</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange>[80,80]</attackRange>
@@ -74952,13 +75252,13 @@
 </config>
 <config>
 	<id>5000003</id>
-	<name>掉金币攻击3</name>
+	<name>掉金币攻击1</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
 	<desc></desc>
 	<logicDataFile>50000.dsl</logicDataFile>
-	<logicId>50000001</logicId>
+	<logicId>5000003</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange>[80,80]</attackRange>
@@ -75002,13 +75302,13 @@
 </config>
 <config>
 	<id>5000004</id>
-	<name>掉金币攻击4</name>
+	<name>撒打金币攻击2</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
 	<desc></desc>
 	<logicDataFile>50000.dsl</logicDataFile>
-	<logicId>50000001</logicId>
+	<logicId>5000004</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange>[80,80]</attackRange>
@@ -75052,13 +75352,13 @@
 </config>
 <config>
 	<id>5000005</id>
-	<name>掉金币攻击5</name>
+	<name>掉金币攻击1</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
 	<desc></desc>
 	<logicDataFile>50000.dsl</logicDataFile>
-	<logicId>50000001</logicId>
+	<logicId>5000005</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange>[80,80]</attackRange>
@@ -75089,6 +75389,206 @@
 	<skillOnGround>500000511</skillOnGround>
 	<strickenGiddy>500000511</strickenGiddy>
 	<strickenFallback>500000511</strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>5000006</id>
+	<name>撒打金币攻击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>50000.dsl</logicDataFile>
+	<logicId>5000006</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[80,80]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>3000</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>1</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection>2</attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>500000611</waiting>
+	<running>500000611</running>
+	<attack>500000611</attack>
+	<skillOnGround>500000611</skillOnGround>
+	<strickenGiddy>500000611</strickenGiddy>
+	<strickenFallback>500000611</strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>5000010</id>
+	<name>金币角色受击</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>50000.dsl</logicDataFile>
+	<logicId>5000010</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>500001011</waiting>
+	<running>500001011</running>
+	<attack>500001011</attack>
+	<skillOnGround>500001011</skillOnGround>
+	<strickenGiddy>500001011</strickenGiddy>
+	<strickenFallback>500001011</strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>4000001</id>
+	<name>娃娃机玩家攻击</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc>娃娃机玩家攻击</desc>
+	<logicDataFile>40000.dsl</logicDataFile>
+	<logicId>4000001</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[80,80]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>3000</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>1</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>4000002</id>
+	<name>娃娃机怪物击飞</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc>娃娃机怪物击飞</desc>
+	<logicDataFile>40000.dsl</logicDataFile>
+	<logicId>4000002</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>fly</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
 	<attackInAir></attackInAir>
 	<skillInAir></skillInAir>
 	<strickenFly></strickenFly>

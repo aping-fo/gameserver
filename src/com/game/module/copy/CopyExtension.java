@@ -1,5 +1,6 @@
 package com.game.module.copy;
 
+import com.game.module.attach.catchgold.CatchGoldAttach;
 import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.leadaway.LeadAwayAttach;
 import com.game.module.attach.leadaway.LeadAwayLogic;
@@ -296,7 +297,7 @@ public class CopyExtension {
 	@Command(1926)
 	public CatchGoldVO getCatchGoldInfo(int playerId, Object param){
 		CatchGoldVO info = new CatchGoldVO();
-		LeadAwayAttach attach = leadAwayLogic.getAttach(playerId);
+		CatchGoldAttach attach = catchGoldLogic.getAttach(playerId);
 		info.challenge = attach.getChallenge();
 		info.buyTime = attach.getBuyTime();
 		info.lastChallengeTime = attach.getLastChallengeTime();

@@ -1,9 +1,9 @@
 package com.game.module.group;
 
 import com.game.data.Response;
+import com.game.params.Int2Param;
+import com.game.params.group.GroupStageVO;
 import com.game.params.group.GroupVO;
-import com.google.common.collect.HashBasedTable;
-import com.google.common.collect.Table;
 
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
@@ -22,15 +22,26 @@ public class Group {
     private Map<Integer, GroupTeam> teamMap = new LinkedHashMap<>(); //组队列表
 
     public volatile int stage = 1; //第几阶段
+    public long stageBeginTime;
+    public final int beginStageId;
     public final int groupCopyId;
-    private Map<Integer, Map<Integer, GroupTask>> tasks = new HashMap<>();
 
-    public Group(int id, int leader, int level, int groupCopyId) {
+    //private Map<Integer, GroupStage> stageMap = new HashMap<>();
+    public final Map<Integer, Map<Integer, GroupTask>> tasks = new HashMap<>();
+    //当前正在战斗的副本
+    public final Map<Integer, Integer> fightCopy = new HashMap<>();
+    //当前已经通过的副本
+    public final List<Integer> passCopy = new ArrayList<>();
+    //已经领去奖励阶段
+    public final Set<Integer> awardStage = new HashSet<>();
+
+    public Group(int id, int leader, int level, int groupCopyId, int beginStageId) {
         this.id = id;
         this.leader = leader;
         this.level = level;
-        this.openFlag = true;
+        this.openFlag = false;
         this.groupCopyId = groupCopyId;
+        this.beginStageId = beginStageId;
 
         for (int i = 1; i <= 6; i++) {
             GroupTeam team = new GroupTeam(i);
@@ -38,12 +49,8 @@ public class Group {
         }
     }
 
-    public Map<Integer, Map<Integer, GroupTask>> getTasks() {
-        return tasks;
-    }
-
-    public void setTasks(Map<Integer, Map<Integer, GroupTask>> tasks) {
-        this.tasks = tasks;
+    public void addTask(int step, Map<Integer, GroupTask> map) {
+        tasks.put(step, map);
     }
 
     public boolean isOpenFlag() {
@@ -149,6 +156,9 @@ public class Group {
             if (groupTeam == null) {
                 return Response.TEAM_NO_EXIT;
             }
+            if (groupTeam.isbFight()) {
+                return Response.TEAM_FIGHT;
+            }
             return groupTeam.changeLeader(leander);
         } finally {
             lock.unlock();
@@ -183,6 +193,7 @@ public class Group {
                 return Response.GROUP_FULL;
             }
             GroupTeamMember member = fromTeam.remove(targetId);
+            member.setReadyFlag(false);
             toTeam.addMember(member);
             return Response.SUCCESS;
         } finally {
@@ -204,12 +215,12 @@ public class Group {
         }
     }
 
-    public int addTeamMember(int playerId, int hp) {
+    public int addTeamMember(int playerId, int hp, int vocation, int fight, int lev, String name) {
         try {
             lock.lock();
             for (Map.Entry<Integer, GroupTeam> s : teamMap.entrySet()) {
-                if (!s.getValue().isFull()) {
-                    s.getValue().addMember(new GroupTeamMember(playerId, hp));
+                if (!s.getValue().isFull() && !s.getValue().isbFight()) { //没满又不在战斗的
+                    s.getValue().addMember(new GroupTeamMember(playerId, hp, vocation, fight, lev, name));
                     return s.getKey();
                 }
             }
@@ -235,17 +246,13 @@ public class Group {
         vo.leaderId = leader;
         vo.level = level;
         vo.teams = new ArrayList<>();
-        vo.tasks = new ArrayList<>();
         vo.stage = stage;
+        vo.groupCopyId = groupCopyId;
+        vo.openFlag = openFlag;
         try {
             lock.lock();
             for (GroupTeam team : teamMap.values()) {
                 vo.teams.add(team.toProto());
-            }
-
-            Map<Integer, GroupTask> map = tasks.get(stage);
-            for (GroupTask task : map.values()) {
-                vo.tasks.add(task.toProto());
             }
             return vo;
         } finally {
@@ -253,20 +260,59 @@ public class Group {
         }
     }
 
+    public GroupStageVO toStageCopyProto() {
+        GroupStageVO vo = new GroupStageVO();
+        vo.fightCopy = new ArrayList<>();
+        vo.passCopy = new ArrayList<>();
+        vo.tasks = new ArrayList<>();
+
+        Map<Integer, GroupTask> map = tasks.get(stage);
+        for (GroupTask task : map.values()) {
+            vo.tasks.add(task.toProto());
+        }
+
+        for (Map.Entry<Integer, Integer> s : fightCopy.entrySet()) {
+            Int2Param param = new Int2Param();
+            param.param1 = s.getKey();
+            param.param2 = s.getValue();
+            vo.fightCopy.add(param);
+        }
+
+        for (int copyId : passCopy) {
+            vo.passCopy.add(copyId);
+        }
+        return vo;
+    }
+
     /**
      * 完成条件
      *
      * @param stage
      * @param target
-     * @param count
+     * @param param
      * @return
      */
-    public void completeTask(int stage, int target, int count) {
+    public void completeTask(int stage, int type, int target, int param) {
         try {
             lock.lock();
-            GroupTask task = tasks.get(stage).get(target);
-            int value = task.getValue() + count > task.getCount() ? task.getCount() : task.getValue() + count;
-            task.setValue(value);
+            Map<Integer, GroupTask> map = tasks.get(stage);
+            for (GroupTask task : map.values()) {
+                if (task.getType() == type && task.getTarget() == target) {
+                    if (task != null) {
+                        int n = 0;
+                        if (type == GroupTaskType.PASS_COUNT) {
+                            n = 1;
+                        } else if (type == GroupTaskType.PASS_TIME) {
+                            if (param > task.getParam()) {
+                                continue;
+                            }
+                            n = 1;
+                        }
+                        int value = task.getValue() + n > task.getCount() ? task.getCount() : task.getValue() + n;
+                        task.setValue(value);
+                    }
+                }
+            }
         } finally {
             lock.unlock();
         }
@@ -282,6 +328,35 @@ public class Group {
                 }
             }
             return true;
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public void addCopyState(int teamId, int copyId) {
+        try {
+            lock.lock();
+            fightCopy.put(teamId, copyId);
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public void removeCopyState(int teamId) {
+        try {
+            lock.lock();
+            fightCopy.remove(teamId);
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public void addPassCopy(int copyId) {
+        try {
+            lock.lock();
+            if (!passCopy.contains(copyId)) {
+                passCopy.add(copyId);
+            }
         } finally {
             lock.unlock();
         }

@@ -11,6 +11,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.ladder.LadderService;
 import com.game.module.player.Upgrade;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -66,7 +67,8 @@ public class GoodsService {
 	private FashionService fashionService;
 	@Autowired
 	private TaskService taskService;
-	
+	@Autowired
+	private LadderService ladderService;
 	private Map<Integer, PlayerBag> playerGoods = new ConcurrentHashMap<Integer, PlayerBag>();
 
 	// 获取玩家的所有物品集合
@@ -172,6 +174,10 @@ public class GoodsService {
 			} else if(cfg.type == Goods.FAME) {
 				Upgrade upgrade = data.getFames().get(cfg.param1[0]);
 				if(upgrade == null || upgrade.getCurExp() < count) {
+					return Response.ERR_PARAM;
+				}
+			}else if(cfg.type == Goods.HONOR_POINT) {
+				if(data.getHonorPoint() < count) {
 					return Response.NO_FAME;
 				}
 			}
@@ -229,6 +235,8 @@ public class GoodsService {
 				playerService.decCurrency(playerId, goodsId, count, log, params);
 			}else if(config.type == Goods.FAME) {
 				decFame(playerId,config.param1[0],count);
+			}else if(config.type == Goods.HONOR_POINT) {
+				ladderService.decHonor(playerId,count);
 			} else if (goodsId > 10000) {
 				decGoodsFromBag(playerId, goodsId, count, log, params);
 			}else{
@@ -671,6 +679,8 @@ public class GoodsService {
 			}
 			else if(goods.type == Goods.CURRENCY){
 				playerService.addCurrency(playerId, id, count, type, params);
+			} else if(goods.type == Goods.HONOR_POINT){
+				ladderService.addHonor(playerId, count);
 			}
 		}
 	}

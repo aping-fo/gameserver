@@ -171,5 +171,6 @@ public class Response {
 	//排位赛
 	public static final int LADDER_MAIL_TITLE=4120;//排位赛奖励
 	public static final int LADDER_MAIL_CONTENT=4121;//亲爱的玩家您在上赛季段位[%s]特此奖励
+	public static final int LADDER_NO_HONOR=4122;//荣誉点不够
 
 }

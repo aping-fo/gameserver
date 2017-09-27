@@ -9,11 +9,19 @@ public class GroupTeamMember {
     private int playerId;
     private boolean readyFlag;
     private int hp;
+    private int vocation;
+    private int fight;
+    private int lev;
+    private String name;
     private boolean costTimesFlag;
 
-    public GroupTeamMember(int playerId, int hp) {
+    public GroupTeamMember(int playerId, int hp, int vocation, int fight, int lev, String name) {
         this.playerId = playerId;
         this.hp = hp;
+        this.vocation = vocation;
+        this.fight = fight;
+        this.lev = lev;
+        this.name = name;
         this.costTimesFlag = false;
     }
 
@@ -53,6 +61,10 @@ public class GroupTeamMember {
         GroupTeamMemberVO vo = new GroupTeamMemberVO();
         vo.playerId = playerId;
         vo.readyFlag = readyFlag;
+        vo.name = name;
+        vo.fight = fight;
+        vo.vocation = vocation;
+        vo.lev = lev;
         return vo;
     }
 }

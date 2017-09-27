@@ -79,7 +79,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[140,106]</openId>
+	<openId>[137]</openId>
 </config>
 <config>
 	<id>104</id>
@@ -242,6 +242,33 @@
 	<rare></rare>
 	<tipsType>2</tipsType>
 	<openId>[101]</openId>
+</config>
+<config>
+	<id>112</id>
+	<atlas>Goods</atlas>
+	<name>荣誉点</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice></buyPrice>
+	<sellPrice></sellPrice>
+	<type>125</type>
+	<level></level>
+	<vocation>0</vocation>
+	<color>4</color>
+	<maxStack></maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+	<tipsType>2</tipsType>
+	<openId></openId>
 </config>
 <config>
 	<id>120</id>
@@ -507,7 +534,7 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[5]</param1>
+	<param1>[7]</param1>
 	<param2></param2>
 	<rare></rare>
 	<tipsType></tipsType>
@@ -534,7 +561,7 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[6]</param1>
+	<param1>[8]</param1>
 	<param2></param2>
 	<rare></rare>
 	<tipsType></tipsType>
@@ -561,7 +588,7 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[7]</param1>
+	<param1>[5]</param1>
 	<param2></param2>
 	<rare></rare>
 	<tipsType></tipsType>
@@ -588,7 +615,7 @@
 	<symptom></symptom>
 	<crit></crit>
 	<fu></fu>
-	<param1>[8]</param1>
+	<param1>[6]</param1>
 	<param2></param2>
 	<rare></rare>
 	<tipsType></tipsType>
@@ -874,7 +901,7 @@
 	<sellPrice>100</sellPrice>
 	<type>303</type>
 	<level>1</level>
-	<vocation>0</vocation>
+	<vocation></vocation>
 	<color>3</color>
 	<maxStack>9999</maxStack>
 	<contentsRates></contentsRates>
@@ -1056,7 +1083,7 @@
 <config>
 	<id>20202666</id>
 	<atlas>Equip</atlas>
-	<name>法师测试武器</name>
+	<name>战士测试武器</name>
 	<decompose>[[108,100]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
@@ -27848,7 +27875,7 @@
 	<type>400</type>
 	<level>1</level>
 	<vocation>0</vocation>
-	<color>5</color>
+	<color>4</color>
 	<maxStack>999999</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -27862,7 +27889,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId></openId>
+	<openId>[139]</openId>
 </config>
 <config>
 	<id>4011001</id>
@@ -28037,7 +28064,7 @@
 	<type>400</type>
 	<level>1</level>
 	<vocation>0</vocation>
-	<color>5</color>
+	<color>4</color>
 	<maxStack>999999</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -28051,7 +28078,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId></openId>
+	<openId>[139]</openId>
 </config>
 <config>
 	<id>5011001</id>
@@ -28226,7 +28253,7 @@
 	<type>400</type>
 	<level>1</level>
 	<vocation>0</vocation>
-	<color>5</color>
+	<color>4</color>
 	<maxStack>999999</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -28240,7 +28267,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId></openId>
+	<openId>[139]</openId>
 </config>
 <config>
 	<id>6011001</id>
@@ -28415,7 +28442,7 @@
 	<type>400</type>
 	<level>1</level>
 	<vocation>0</vocation>
-	<color>5</color>
+	<color>4</color>
 	<maxStack>999999</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -28429,7 +28456,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId></openId>
+	<openId>[139]</openId>
 </config>
 <config>
 	<id>7011001</id>

@@ -1,6 +1,7 @@
 package com.game.module.player;
 
 import com.game.module.fashion.FashionService;
+import com.game.params.Int2Param;
 import io.netty.channel.Channel;
 import io.netty.util.AttributeKey;
 
@@ -241,5 +242,31 @@ public class PlayerExtension {
 	@Command(1007)
 	public Object getOtherPlayer(int playerId, IntParam param){
 		return playerService.toSLoginVo(param.param);
+	}
+
+	@Command(1008)
+	public Object openModule(int playerId, IntParam param){
+		PlayerData playerData = playerService.getPlayerData(playerId);
+		if(!playerData.getModules().contains(param.param)) {
+			playerData.getModules().add(param.param);
+		}
+		Int2Param int2Param = new Int2Param();
+		int2Param.param1 = Response.SUCCESS;
+		int2Param.param2 = param.param;
+
+		return int2Param;
+	}
+
+	@Command(1009)
+	public Object getModules(int playerId,Object param){
+		PlayerData playerData = playerService.getPlayerData(playerId);
+		ListParam<IntParam> ret = new ListParam<>();
+		ret.params = new ArrayList<>();
+		for(int moduleId : playerData.getModules()) {
+			IntParam p = new IntParam();
+			p.param = moduleId;
+			ret.params.add(p);
+		}
+		return ret;
 	}
 }

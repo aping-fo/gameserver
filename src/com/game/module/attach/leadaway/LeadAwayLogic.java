@@ -1,6 +1,7 @@
 package com.game.module.attach.leadaway;
 
 import com.game.data.CopyConfig;
+import com.game.data.DropGoods;
 import com.game.data.Response;
 import com.game.data.VIPConfig;
 import com.game.module.attach.AttachLogic;
@@ -8,6 +9,7 @@ import com.game.module.attach.AttachType;
 import com.game.module.attach.treasure.TreasureAttach;
 import com.game.module.copy.CopyInstance;
 import com.game.module.copy.CopyService;
+import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
@@ -77,7 +79,7 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
         return Response.SUCCESS;
     }
 
-    public CopyReward sweep(int playerId, int copyId,int difficulty) {
+    public CopyReward sweep(int playerId, int copyId, int difficulty) {
         CopyReward result = new CopyReward();
         result.reward = new ArrayList<>();
         CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
@@ -122,21 +124,31 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
         //随机奖励
         RewardList list = new RewardList();
         list.rewards = new ArrayList<>();
-        int weight = ConfigData.leadawayAwardsWeight.get(copyId);
-        RangeMap<Integer,Integer> map = ConfigData.leadawayAwardsMap.get(copyId);
-        for(int i = 0;i < 30;i++) {
-            int random = RandomUtil.randInt(weight);
-            int itemId = map.get(random);
+        //int weight = ConfigData.leadawayAwardsWeight.get(copyId);
+        List<GoodsEntry> copyRewards = new ArrayList<>();
+        //RangeMap<Integer, Integer> map = ConfigData.leadawayAwardsMap.get(copyId);
+        int dropId = ConfigData.leadawayAwardsDrop.get(copyId);
+        DropGoods dropGoods = ConfigData.getConfig(DropGoods.class, dropId);
+        int weight = 0;
+        for (int n : dropGoods.rate) {
+            weight += n;
+        }
+
+        for (int i = 0; i < 30; i++) {
+            int index = RandomUtil.randInt(weight);
+            int[] award = dropGoods.rewards[index];
+
             Reward reward = new Reward();
-            reward.count = 1;
-            reward.id = itemId;
+            reward.id = award[0];
+            reward.count = award[1];
             list.rewards.add(reward);
+
+            copyRewards.add(new GoodsEntry(award[0], award[1]));
         }
         result.reward.add(list);
-
         attach.alterChallenge(-1);
         attach.commitSync();
-
+        goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
         return result;
     }
 

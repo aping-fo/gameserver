@@ -312,6 +312,9 @@ public class GangService implements InitHandler {
 		vo.totalAsset = myGang.getTotalAsset();
 		vo.rank = myGang.getRank();
 		GMember my = myGang.getMembers().get(playerId);
+		if(my == null) {
+			return vo;
+		}
 		vo.myPosition = my.getPosition();
 
 		// 帮派建筑

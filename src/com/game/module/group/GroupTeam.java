@@ -6,6 +6,7 @@ import com.game.params.group.GroupTeamVO;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by lucky on 2017/9/4.
@@ -17,6 +18,7 @@ public class GroupTeam {
     private boolean bFight; //是否在战斗中
     private final Map<Integer, GroupTeamMember> members;
 
+    public AtomicInteger fightSize = new AtomicInteger(0);
 
     public GroupTeam(int id) {
         this.id = id;
@@ -52,16 +54,16 @@ public class GroupTeam {
         return members.size();
     }
 
-    public void decHp(int playerId,int hp) {
+    public void decHp(int playerId, int hp) {
         GroupTeamMember member = members.get(playerId);
         member.setHp(member.getHp() - hp);
     }
 
     public boolean checkDeath() {
         for (GroupTeamMember member : members.values()) {
-           if(member.getHp() > 0) {
-               return false;
-           }
+            if (member.getHp() > 0) {
+                return false;
+            }
         }
         return true;
     }
@@ -75,6 +77,7 @@ public class GroupTeam {
         GroupTeamMember member = members.get(playerId);
         member.setCostTimesFlag(true);
     }
+
     /**
      * 更换队长
      *
@@ -84,6 +87,12 @@ public class GroupTeam {
     public int changeLeader(int leader) {
         if (bFight) {
             return Response.TEAM_FIGHT;
+        }
+        if (this.leader != leader) {
+            GroupTeamMember member = members.get(this.leader);
+            if (member != null) {
+                member.setReadyFlag(false);
+            }
         }
         GroupTeamMember member = members.get(leader);
         if (member != null) {

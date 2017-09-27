@@ -104,18 +104,29 @@ public class PlayerData {
 
 	////////团队副本
 	private int groupTimes; //团队副本次数
-	private int ladderTimes; //排位赛次数
+	//排位荣誉点
+	private int honorPoint;
+
+	private List<Integer> modules =new ArrayList<>();// 开通的模块
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
 	}
 
-	public int getLadderTimes() {
-		return ladderTimes;
+	public List<Integer> getModules() {
+		return modules;
 	}
 
-	public void setLadderTimes(int ladderTimes) {
-		this.ladderTimes = ladderTimes;
+	public void setModules(List<Integer> modules) {
+		this.modules = modules;
+	}
+
+	public int getHonorPoint() {
+		return honorPoint;
+	}
+
+	public void setHonorPoint(int honorPoint) {
+		this.honorPoint = honorPoint;
 	}
 
 	public int getGroupTimes() {

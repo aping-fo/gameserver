@@ -20,6 +20,7 @@ public class VIPConfig {
 	public int buyTreasureCopy;//扭曲失控（金币）副本可购买次数
 	public int buyLeadawayCopy;//顺手牵羊副本可购买次数
 	public int buyExtremeEvasionCopy;//虚无空间（经验）副本可购买次数
+	public int buyGoldCopy;//金币副本可购买次数
 	public int traveringEnergy;//穿越仪能量上限
 	public Map<Integer,Integer> vipGift;//礼包
 	public int giftPrice;//礼包原价钱

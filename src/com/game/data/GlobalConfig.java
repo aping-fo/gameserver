@@ -120,22 +120,32 @@ public class GlobalConfig {
 	public float fameAddRate;//声望代表加成百分比
 	public float MultiHitMaxInterval;//连击最大间隔时长
 	public float BeHitMaxInterval;//受击叠加伤害间隔时长
-	public Map<Integer,Integer> quickLeadawayCopy;//顺手牵羊快速完成价格
 	public int[] groupCopyOpenTime;//团队副本活动时间
 	public int[] groupRewardRate;//团队副本奖励加成
 	public int groupTimes;//团队副本活动次数
+	public int LeadawayCopyDelTime;//顺手牵羊挑战时间间隔（秒）
+	public Map<Integer,Integer> quickLeadawayCopy;//顺手牵羊快速完成价格
 	public Map<Integer,Integer> buyLeadawayPrice;//顺手牵羊次数购买价格
 	public int LeadawayChallengeCount;//顺手牵羊每日挑战次数
-	public float[] CatchGoldRefreshGoldInterval;//接金币副本刷金币间隔
-	public int[] CatchGoldRefreshGoldCount;//接金币副本每次刷金币个数
+	public float[] LeadawayGoldAppearTime;//顺手牵羊出现金币频率
+	public int LeadawayGoldCount;//顺手牵羊金币个数
+	public float[] LeadawayPlayerPosition;//顺手牵羊角色位置
+	public float[] LeadawayPlayerScale;//顺手牵羊角色缩放
+	public float[] LeadawayPlayerRotate;//顺手牵羊角色旋转
+	public int CatchGoldDelTime;//接金币挑战时间间隔（秒）
+	public Map<Integer,Integer> quickCatchGoldCopy;//接金币快速完成价格
 	public Map<Integer,Integer> catchGoldPrice;//接金币次数购买价格
 	public int catchGoldChallengeCount;//接金币每日挑战次数
 	public int PkProtect;//段位保护
 	public float PkAdd;//额外增加或减少的积分比
 	public float PkDec;//额外减少的积分比
 	public int PKBattleTime;//战斗时间
+	public int PKRecordSize;//战报缓存数量
 	public int PKTimeLimit;//赛季时间类型
 	public int[] PKTime;//开放时间段
 	public String PKBeginDate;//开放日期
 	public String PKEndDate;//结束日期
+	public int[] robotFight;//机器人战斗力
+	public int[] QualifyingRankReward;//排位赛段位奖励
+	public int QualifyingMatchingPredictTime;//排位赛匹配预计时间(秒)
 }

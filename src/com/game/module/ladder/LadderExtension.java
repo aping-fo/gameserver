@@ -26,4 +26,15 @@ public class LadderExtension {
     public Object cancelMatching(int playerId, Object param) {
         return ladderService.cancelMatching(playerId);
     }
+
+    @Command(6008)
+    public Object loadingOver(int playerId, Object param) {
+        ladderService.loadingOver(playerId);
+        return null;
+    }
+
+    @Command(6009)
+    public Object getRecords(int playerId, Object param) {
+        return ladderService.getRecords(playerId);
+    }
 }

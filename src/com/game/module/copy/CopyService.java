@@ -1,33 +1,14 @@
 package com.game.module.copy;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import com.game.module.attach.catchgold.CatchGoldLogic;
-import com.game.module.attach.leadaway.LeadAwayLogic;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.game.SysConfig;
-import com.game.data.CopyConfig;
-import com.game.data.DropGoods;
-import com.game.data.EndlessCfg;
-import com.game.data.GoodsConfig;
-import com.game.data.MonsterConfig;
-import com.game.data.MonsterRefreshConfig;
-import com.game.data.Response;
-import com.game.data.ThreeStarRewardCfg;
-import com.game.data.VIPConfig;
+import com.game.data.*;
 import com.game.module.admin.MessageService;
+import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.endless.EndlessAttach;
 import com.game.module.attach.endless.EndlessLogic;
 import com.game.module.attach.experience.ExperienceAttach;
 import com.game.module.attach.experience.ExperienceLogic;
+import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.attach.treasure.TreasureAttach;
 import com.game.module.attach.treasure.TreasureLogic;
 import com.game.module.daily.DailyService;
@@ -36,6 +17,7 @@ import com.game.module.gang.GangService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
+import com.game.module.group.GroupService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerDao;
@@ -64,6 +46,16 @@ import com.game.util.TimeUtil;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
 public class CopyService {
@@ -102,6 +94,8 @@ public class CopyService {
 	private LeadAwayLogic leadAwayLogic;
 	@Autowired
 	private CatchGoldLogic catchGoldLogic;
+	@Autowired
+	private GroupService groupService;
 
 	private AtomicInteger uniId = new AtomicInteger(100);
 	private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<Integer, CopyInstance>();
@@ -219,6 +213,8 @@ public class CopyService {
 			}
 		} else if(cfg.type == CopyInstance.TYPE_LEADAWAY) {
 
+		} else if(cfg.type == CopyInstance.TYPE_GROUP) {
+
 		}
 
 		int passId = cfg.id;
@@ -235,6 +231,7 @@ public class CopyService {
 	public CopyResult getRewards(int playerId, int copyId, CopyResult result) {
 		Player player = playerService.getPlayer(playerId);
 		int star = result.star;
+		result.victory = true;
 		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
 		// 扣除体力
 		if (cfg.needEnergy > 0) {
@@ -504,43 +501,58 @@ public class CopyService {
 		instance.setPassId(passId);
 
 		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, passId);
-
-		for (int i = 0; i < cfg.scenes.length; i++) {
-			int sceneId = cfg.scenes[i];
-			Map<Integer, SMonsterVo> monsters = new ConcurrentHashMap<Integer, SMonsterVo>();
-			Map<Integer, MonsterRefreshConfig> _monsters = null;
-			if(cfg.type == CopyInstance.TYPE_ENDLESS){
-				_monsters = endlessLogic.getSceneMonster(playerId, copyId, i + 1);
-			}else {
-				_monsters = ConfigData.getSceneMonster(passId, i + 1);
-				
-			}
-			if(_monsters == null){
-				throw new RuntimeException(String.format("can not found the monster, copyid=%d,group=%d", copyId, i + 1));
-			}
-			for (MonsterRefreshConfig m : _monsters.values()) {
-				int monsterId = m.monsterId;
-				MonsterConfig monsterCfg = ConfigData.getConfig(MonsterConfig.class, monsterId);
-				SMonsterVo vo = new SMonsterVo();
-				if (monsterCfg == null) {
-					ServerLogger.warn("Err MonsterRefresh:" + m.id);
-				}
+		if(cfg.type != CopyInstance.TYPE_LADDER) {
+			for (int i = 0; i < cfg.scenes.length; i++) {
+				int sceneId = cfg.scenes[i];
+				Map<Integer, SMonsterVo> monsters = new ConcurrentHashMap<Integer, SMonsterVo>();
+				Map<Integer, MonsterRefreshConfig> _monsters = null;
 				if(cfg.type == CopyInstance.TYPE_ENDLESS){
-					EndlessCfg eCfg = endlessLogic.getConfig();
-					EndlessAttach attach = endlessLogic.getAttach(playerId);
-					vo.curHp = vo.hp = (int)(attach.getCurrLayer() * eCfg.growRatio * eCfg.baseData * eCfg.hp * (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.scetionRatio);
-				}else{					
-					vo.curHp = vo.hp = monsterCfg.hp;
+					_monsters = endlessLogic.getSceneMonster(playerId, copyId, i + 1);
+				}else {
+					_monsters = ConfigData.getSceneMonster(passId, i + 1);
+
 				}
-				vo.monsterId = monsterId;
-				vo.id = m.id;
-				vo.wave = m.wave;
-				monsters.put(vo.id, vo);
+				if(_monsters == null){
+					throw new RuntimeException(String.format("can not found the monster, copyid=%d,group=%d", copyId, i + 1));
+				}
+				for (MonsterRefreshConfig m : _monsters.values()) {
+					int monsterId = m.monsterId;
+					MonsterConfig monsterCfg = ConfigData.getConfig(MonsterConfig.class, monsterId);
+					SMonsterVo vo = new SMonsterVo();
+					if (monsterCfg == null) {
+						ServerLogger.warn("Err MonsterRefresh:" + m.id);
+					}
+					if(cfg.type == CopyInstance.TYPE_ENDLESS){
+						EndlessCfg eCfg = endlessLogic.getConfig();
+						EndlessAttach attach = endlessLogic.getAttach(playerId);
+						int fight = (int)(attach.getCurrLayer() * eCfg.growRatio * eCfg.baseData * eCfg.hp * (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.scetionRatio);
+						vo.curHp = vo.hp = Math.round(fight * 47.53f);
+						vo.attack = Math.round(fight * 0.627f);
+						vo.crit = Math.round(fight * 0.19f);
+						vo.defense = Math.round(fight * 0.33f);
+						vo.symptom = Math.round(fight * 0.05f);
+						vo.fu = Math.round(fight * 0.19f);
+						//vo.curHp = vo.hp = (int)(attach.getCurrLayer() * eCfg.growRatio * eCfg.baseData * eCfg.hp * (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.scetionRatio);
+					}else{
+						vo.curHp = vo.hp = monsterCfg.hp;
+						vo.attack = monsterCfg.physicAttack;
+						vo.crit = monsterCfg.crit;
+						vo.defense = monsterCfg.physicDefense;
+						vo.symptom = monsterCfg.symptom;
+					}
+					vo.monsterId = monsterId;
+					vo.id = m.id;
+					vo.wave = m.wave;
+					monsters.put(vo.id, vo);
+				}
+				instance.getMonsters().put(sceneId, monsters);
 			}
-			instance.getMonsters().put(sceneId, monsters);
 		}
 		int instanceId = uniId.incrementAndGet();
-
+		if(cfg.type == CopyInstance.TYPE_GROUP) {
+			instanceId = groupService.onEnterBattle(playerId,copyId);
+			ServerLogger.warn("------------" + instanceId);
+		}
 		Player player = playerService.getPlayer(playerId);
 		player.setCopyId(instanceId);
 		instances.put(instanceId, instance);

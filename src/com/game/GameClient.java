@@ -7,10 +7,8 @@ import com.game.params.mail.MailVo;
 import com.game.params.player.CRegVo;
 import com.game.params.scene.CEnterScene;
 import com.server.util.Util;
-import org.apache.log4j.xml.DOMConfigurator;
 
 import java.net.Socket;
-import java.util.concurrent.atomic.LongAdder;
 
 /**
  * 模拟发包工具
@@ -18,7 +16,7 @@ import java.util.concurrent.atomic.LongAdder;
 public class GameClient {
 
 	public static void main(String[] args) throws Exception {
-		SysConfig.init();
+		/*SysConfig.init();
 
 		DOMConfigurator.configure("config/log4j.xml");
 		//GameClient client = new GameClient("192.168.6.237", "testa");
@@ -35,7 +33,7 @@ public class GameClient {
 		System.out.println(System.currentTimeMillis());
 		for(int i = 0;i<50;i++) {
 			new Robot("苹果-114" + i).start(host,port);
-		}
+		}*/
 	}
 
 	private Socket socket;

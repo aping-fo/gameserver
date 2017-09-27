@@ -12,6 +12,7 @@ import com.game.module.player.Upgrade;
 import com.game.module.shop.ShopService;
 import com.game.module.worldboss.WorldBossService;
 import com.game.params.*;
+import com.game.params.ladder.TrainingResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -187,6 +188,15 @@ public class GmService {
 		goodsService.addRewards(playerId, rewards, LogConsume.GM);
 	}
 
+	// 加任何物品
+	public void decGoods(int playerId, String... param) {
+		int id = Integer.valueOf(param[0]);
+		int count = Integer.valueOf(param[1]);
+		List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
+		rewards.add(new GoodsEntry(id, count));
+		goodsService.decConsume(playerId, rewards, LogConsume.GM);
+	}
+
 	// 发送系统消息
 	public void sendSysMsg(int playerId, String... msg) {
 		messageService.sendSysMsg(MessageService.SYS, msg[0]);
@@ -274,11 +284,12 @@ public class GmService {
 		}else if(params[0].equals("challenge")){
 			IntParam param = new IntParam();
 			param.param = Integer.parseInt(params[1]);
-			trainingExtension.challenge(playerId, param);
+			//trainingExtension.challenge(playerId, param);
 		}else if(params[0].equals("win")){
-			Int2Param param = new Int2Param();
-			param.param1 = Integer.parseInt(params[1]);
-			param.param2 = Integer.parseInt(params[2]);
+			TrainingResultVO param = new TrainingResultVO();
+			param.index = Integer.parseInt(params[1]);
+			param.hp = Integer.parseInt(params[2]);
+			param.victory = true;
 			trainingExtension.challengeWin(playerId, param);
 		}else if(params[0].equals("reward")){
 			IntParam param = new IntParam();

@@ -70,11 +70,11 @@ public class TeamService implements InitHandler {
 		if (player.getTeamId() > 0) {
 			Team team = teams.get(player.getTeamId());
 			if (team.getLeader() == playerId) {
-				dissolve(team);
 				Int2Param msg = new Int2Param();
 				msg.param2 = TeamExtension.REASON_DISSOLVE;
 				sceneService.brocastToSceneCurLine(player, TeamExtension.LEAVE,
 						msg, SessionManager.getInstance().getChannel(playerId));
+				dissolve(team);
 			} else {
 				kick(team, playerId);
 			}

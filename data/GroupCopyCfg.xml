@@ -7,14 +7,17 @@
 	<icon>100002_2</icon>
 	<atlas>Skillcard</atlas>
 	<stageCount>3</stageCount>
-	<stage1Copy>[1000101,1000102]</stage1Copy>
-	<stage1Mission>[[2,1000101,3],[3,1000102,3]]</stage1Mission>
+	<stage1Name>第一阶:凡人试炼</stage1Name>
+	<stage1Copy>[1000111,1000112]</stage1Copy>
+	<stage1Mission>[[2,1000111,1],[3,1000112,1,120]]</stage1Mission>
 	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
-	<stage2Copy>[1000103,1000104]</stage2Copy>
-	<stage2Mission>[[2,1000103,3],[3,1000104,3]]</stage2Mission>
+	<stage2Name>第二阶:凡人历练</stage2Name>
+	<stage2Copy>[1000113,1000114]</stage2Copy>
+	<stage2Mission>[[2,1000113,1],[3,1000114,1,120]]</stage2Mission>
 	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
-	<stage3Copy>[1000105,1000106]</stage3Copy>
-	<stage3Mission>[[2,1000105,3],[3,1000106,3]]</stage3Mission>
+	<stage3Name>第三阶:凡人修仙</stage3Name>
+	<stage3Copy>[1000115]</stage3Copy>
+	<stage3Mission>[[2,1000115,1]]</stage3Mission>
 	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
 </config>
 <config>
@@ -24,14 +27,17 @@
 	<icon>100001_2</icon>
 	<atlas>Skillcard</atlas>
 	<stageCount>3</stageCount>
-	<stage1Copy>[1000101,1000102]</stage1Copy>
-	<stage1Mission>[[2,1000101,3],[3,1000102,3]]</stage1Mission>
+	<stage1Name>第一阶:英雄试炼</stage1Name>
+	<stage1Copy>[1000111,1000112]</stage1Copy>
+	<stage1Mission>[[2,1000111,2],[3,1000112,2,120]]</stage1Mission>
 	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
-	<stage2Copy>[1000103,1000104]</stage2Copy>
-	<stage2Mission>[[2,1000103,3],[3,1000104,3]]</stage2Mission>
+	<stage2Name>第二阶:英雄历练</stage2Name>
+	<stage2Copy>[1000113,1000114]</stage2Copy>
+	<stage2Mission>[[2,1000113,2],[3,1000114,2,120]]</stage2Mission>
 	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
-	<stage3Copy>[1000105,1000106]</stage3Copy>
-	<stage3Mission>[[2,1000105,3],[3,1000106,3]]</stage3Mission>
+	<stage3Name>第三阶:英雄修仙</stage3Name>
+	<stage3Copy>[1000115]</stage3Copy>
+	<stage3Mission>[[2,1000115,2]]</stage3Mission>
 	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
 </config>
 <config>
@@ -41,14 +47,17 @@
 	<icon>100008_2</icon>
 	<atlas>Skillcard</atlas>
 	<stageCount>3</stageCount>
-	<stage1Copy>[1000101,1000102]</stage1Copy>
-	<stage1Mission>[[2,1000101,3],[3,1000102,3]]</stage1Mission>
+	<stage1Name>第一阶:大神试炼</stage1Name>
+	<stage1Copy>[1000111,1000112]</stage1Copy>
+	<stage1Mission>[[2,1000111,3],[3,1000112,3,120]]</stage1Mission>
 	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
-	<stage2Copy>[1000103,1000104]</stage2Copy>
-	<stage2Mission>[[2,1000103,3],[3,1000104,3]]</stage2Mission>
+	<stage2Name>第二阶:大神历练</stage2Name>
+	<stage2Copy>[1000113,1000114]</stage2Copy>
+	<stage2Mission>[[2,1000113,3],[3,1000114,3,120]]</stage2Mission>
 	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
-	<stage3Copy>[1000105,1000106]</stage3Copy>
-	<stage3Mission>[[2,1000105,3],[3,1000106,3]]</stage3Mission>
+	<stage3Name>第三阶:大神修仙</stage3Name>
+	<stage3Copy>[1000115]</stage3Copy>
+	<stage3Mission>[[2,1000115,3]]</stage3Mission>
 	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
 </config>
 </root>

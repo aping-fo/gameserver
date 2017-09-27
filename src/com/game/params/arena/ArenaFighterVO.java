@@ -13,8 +13,11 @@ public class ArenaFighterVO implements IProtocol {
 	public int symptom;//症状
 	public int fu;//符能
 	public int hp;//血量
+	public int lv;//等级
 	public List<Integer> curSkills;//当前装载的技能[技能id,技能id,技能id,技能id]技能id为0表示该位置没有技能
 	public List<Integer> curCards;//当前装载的技能卡[技能卡配置表id,技能id,技能id,技能id]技能id为0表示该位置没有技能卡
+	public String name;//玩家名称
+	public int vocation;//职业
 
 
 	public void decode(BufferBuilder bb) {
@@ -26,8 +29,11 @@ public class ArenaFighterVO implements IProtocol {
 		this.symptom = bb.getInt();
 		this.fu = bb.getInt();
 		this.hp = bb.getInt();
+		this.lv = bb.getInt();
 		this.curSkills = bb.getIntList();
 		this.curCards = bb.getIntList();
+		this.name = bb.getString();
+		this.vocation = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -39,7 +45,10 @@ public class ArenaFighterVO implements IProtocol {
 		bb.putInt(this.symptom);
 		bb.putInt(this.fu);
 		bb.putInt(this.hp);
+		bb.putInt(this.lv);
 		bb.putIntList(this.curSkills);
 		bb.putIntList(this.curCards);
+		bb.putString(this.name);
+		bb.putInt(this.vocation);
 	}
 }

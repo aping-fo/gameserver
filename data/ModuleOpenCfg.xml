@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1321</id>
+	<uID>132</uID>
+	<name>背包</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1251</id>
+	<uID>125</uID>
+	<name>签到</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>9901</id>
+	<uID>990</uID>
+	<name>活动</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1401</id>
+	<uID>140</uID>
+	<name>充值</name>
+	<type>2</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1402</id>
+	<uID></uID>
+	<name>VIP</name>
+	<type>2</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1006</id>
+	<uID></uID>
+	<name>金币购买</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1007</id>
+	<uID></uID>
+	<name>体力购买</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1451</id>
+	<uID>145</uID>
+	<name>装备</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>2</param>
+</config>
+<config>
+	<id>1452</id>
+	<uID>145</uID>
+	<name>升级</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>3</param>
+</config>
+<config>
+	<id>1453</id>
+	<uID>145</uID>
+	<name>洗练</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>4</param>
+</config>
+<config>
+	<id>1454</id>
+	<uID>145</uID>
+	<name>强化</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>5</param>
+</config>
+<config>
+	<id>1455</id>
+	<uID>145</uID>
+	<name>宝石</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>6</param>
+</config>
+<config>
+	<id>1491</id>
+	<uID>149</uID>
+	<name>时装</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>5</param>
+</config>
+<config>
+	<id>1281</id>
+	<uID>128</uID>
+	<name>技能</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>3</param>
+</config>
+<config>
+	<id>1015</id>
+	<uID></uID>
+	<name>技能卡槽</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>3</param>
+</config>
+<config>
+	<id>1291</id>
+	<uID>129</uID>
+	<name>卡包</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>3</param>
+</config>
+<config>
+	<id>1241</id>
+	<uID>124</uID>
+	<name>神器</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>4</param>
+</config>
+<config>
+	<id>1511</id>
+	<uID>151</uID>
+	<name>阵营</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>5</param>
+</config>
+<config>
+	<id>1170</id>
+	<uID>117</uID>
+	<name>排行榜</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>6</param>
+</config>
+<config>
+	<id>1171</id>
+	<uID>117</uID>
+	<name>战力排行榜</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>6</param>
+</config>
+<config>
+	<id>1172</id>
+	<uID>117</uID>
+	<name>等级排行榜</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>6</param>
+</config>
+<config>
+	<id>1173</id>
+	<uID>117</uID>
+	<name>竞技场排行榜</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>6</param>
+</config>
+<config>
+	<id>1174</id>
+	<uID>117</uID>
+	<name>无尽漩涡排行榜</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>6</param>
+</config>
+<config>
+	<id>1175</id>
+	<uID>117</uID>
+	<name>公会排行榜</name>
+	<type>2</type>
+	<openType>2</openType>
+	<param>6</param>
+</config>
+<config>
+	<id>1331</id>
+	<uID>133</uID>
+	<name>好友</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1411</id>
+	<uID>141</uID>
+	<name>聊天</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1221</id>
+	<uID>122</uID>
+	<name>抽奖</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>7</param>
+</config>
+<config>
+	<id>1121</id>
+	<uID>112</uID>
+	<name>商城</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+</config>
+<config>
+	<id>1081</id>
+	<uID>108</uID>
+	<name>任务</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>8</param>
+</config>
+<config>
+	<id>1371</id>
+	<uID>137</uID>
+	<name>资源副本</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>9</param>
+</config>
+<config>
+	<id>1361</id>
+	<uID>136</uID>
+	<name>世界BOSS</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>5</param>
+</config>
+<config>
+	<id>1211</id>
+	<uID>121</uID>
+	<name>时空漩涡</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>10</param>
+</config>
+<config>
+	<id>1011</id>
+	<uID>101</uID>
+	<name>竞技场</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>11</param>
+</config>
+<config>
+	<id>1041</id>
+	<uID>104</uID>
+	<name>公会</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>13</param>
+</config>
+<config>
+	<id>1035</id>
+	<uID></uID>
+	<name>多人场景</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>12</param>
+</config>
+<config>
+	<id>1131</id>
+	<uID>113</uID>
+	<name>时空仪</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>15</param>
+</config>
+<config>
+	<id>1571</id>
+	<uID>157</uID>
+	<name>团队副本</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>20</param>
+</config>
+<config>
+	<id>1001</id>
+	<uID>100</uID>
+	<name>宠物</name>
+	<type>1</type>
+	<openType>2</openType>
+	<param>100</param>
+</config>
+</root>

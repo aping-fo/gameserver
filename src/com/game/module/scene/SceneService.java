@@ -1,5 +1,6 @@
 package com.game.module.scene;
 
+import com.game.module.group.GroupService;
 import com.game.module.ladder.LadderService;
 import com.game.module.multi.MultiService;
 import com.game.params.scene.*;
@@ -48,9 +49,10 @@ public class SceneService implements InitHandler {
 	private MultiService multiService;
 	@Autowired
 	private LadderService ladderService;
-
+	@Autowired
+	private GroupService groupService;
 	private Map<Integer, Scene> scenes = new ConcurrentHashMap<Integer, Scene>();
-	
+
 	private Map<String, Integer> useSkills = new ConcurrentHashMap<String, Integer>();
 
 	@Override
@@ -81,10 +83,13 @@ public class SceneService implements InitHandler {
 			return String.format("%d_%d_%d", sceneId, player.getTeamId(),
 					player.getSubLine());
 		} else if(cfg.sceneSubType == Scene.MULTI_GROUP_ROOM) { //团队副本房间，不需要subline
-			return String.format("%d_%d", sceneId, player.getGangId());
+			return String.format("%d_%d", sceneId, player.getGroupId());
 		}else if(cfg.sceneSubType == Scene.MULTI_GROUP) { //团队副本，不需要subline
-			return String.format("%d_%d", sceneId, player.getGroupTeamId());
+			return String.format("%d_%d_%d", sceneId, player.getGroupId(),player.getGroupTeamId());
+		} else if(cfg.sceneSubType == Scene.MULTI_LADDER) {
+			return String.format("%d_%d", sceneId, player.getRoomId());
 		}
+
 		else {
 			return String.format("%d_%d", sceneId, subLine);
 		}
@@ -127,11 +132,22 @@ public class SceneService implements InitHandler {
 		SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, sceneId);
 		if(lastCfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
 			worldBossService.removePlayer(player.getPlayerId());
-		}
-		else if(lastCfg.sceneSubType == Scene.MULTI_PVE
+		}  else if(lastCfg.sceneSubType == Scene.MULTI_PVE
 				|| lastCfg.sceneSubType == Scene.MULTI_GROUP) { // 其他多人本 PVE，
 			multiService.onExit(player.getPlayerId());
 		}
+
+		if(lastCfg.sceneSubType == Scene.MULTI_GROUP) {
+            groupService.onExitBattle(playerId);
+        } else if(lastCfg.sceneSubType == Scene.MULTI_LADDER) {
+			ladderService.onLogout(playerId);
+		}
+
+		/*if(lastCfg.sceneSubType == Scene.MULTI_GROUP
+				|| lastCfg.sceneSubType == Scene.MULTI_GROUP_ROOM) {
+			//清理下数据
+			groupService.memberExit(playerId);
+		}*/
 
 		SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
 
@@ -149,6 +165,8 @@ public class SceneService implements InitHandler {
 
 		ServerLogger.info("...exit", playerId, player.getSceneId());
 	}
+
+
 
 	// 进入场景
 	public void enterScene(Player player, int sceneId, float x, float z) {
@@ -172,7 +190,8 @@ public class SceneService implements InitHandler {
 		}
 		SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
 		if (cfg.type == Scene.CITY || cfg.sceneSubType == Scene.MULTI_CITY
-				|| cfg.sceneSubType == Scene.MULTI_GANG || cfg.sceneSubType == Scene.MULTI_MAIN_CITY) {
+				|| cfg.sceneSubType == Scene.MULTI_GANG || cfg.sceneSubType == Scene.MULTI_MAIN_CITY
+				|| cfg.sceneSubType == Scene.MULTI_GROUP_ROOM) {
 			// 清除副本实例
 			teamService.quit(player.getPlayerId());
 			copyService.removeCopy(player.getPlayerId());
@@ -193,10 +212,11 @@ public class SceneService implements InitHandler {
 				player.getPlayerId());
 		SessionManager.getInstance().addToGroup(key, channel);
 
-		if(cfg.sceneSubType == Scene.WORLD_BOSS_PVE
-				|| cfg.sceneSubType ==Scene.MULTI_GROUP) {
+		if(cfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
 			worldBossService.addPlayer(player.getPlayerId());
-		}
+		} else if( cfg.sceneSubType ==Scene.MULTI_GROUP) {
+            multiService.onEnter(player.getPlayerId());
+        }
 		/*else if(lastCfg.sceneSubType == Scene.MULTI_PVE) { //TODO 其他多人本TVE
 			multiService.onEnter(player.getPlayerId());
 		}*/
@@ -221,8 +241,8 @@ public class SceneService implements InitHandler {
 		vo.weapon = player.getWeaponId();
 		vo.fight = player.getFight();
 		vo.title = player.getTitle();
-		vo.head = playerService.getPlayerData(player.getPlayerId())
-				.getCurHead();
+		vo.roomTeam = player.roomTeamId;
+		vo.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
 		if(player.getGangId() > 0){
 			vo.gang = gangService.getGang(player.getGangId()).getName();
 		}
@@ -273,7 +293,8 @@ public class SceneService implements InitHandler {
 		List<SMonsterVo> monsters = new ArrayList<SMonsterVo>();
 		if (cfg.type == Scene.COPY
 				|| (cfg.type == Scene.MULTI &&
-				(cfg.sceneSubType == Scene.MULTI_PVE || cfg.sceneSubType == Scene.WORLD_BOSS_PVE))) {// 普通副本，多人PVE
+				(cfg.sceneSubType == Scene.MULTI_PVE || cfg.sceneSubType == Scene.WORLD_BOSS_PVE
+                || cfg.sceneSubType == Scene.MULTI_GROUP))) {// 普通副本，多人PVE
 			int copyInstance = player.getCopyId();
 			CopyInstance copy = copyService.getCopyInstance(copyInstance);
 			monsters.addAll(copy.getMonsters().get(cfg.id).values());
@@ -372,14 +393,20 @@ public class SceneService implements InitHandler {
 		}
 
 		SceneConfig cfg = GameData.getConfig(SceneConfig.class, player.getSceneId());
-		if(cfg.sceneSubType == 10) {
-
+		if(cfg.sceneSubType == Scene.MULTI_GROUP) {
+			groupService.handleSkillHurt(player,hurtVO);
+		} else if(cfg.sceneSubType == Scene.WORLD_BOSS_PVE){
+            worldBossService.handleSkillHurt(player,hurtVO);
+        } else if(cfg.sceneSubType == Scene.MULTI_LADDER) {
+			ladderService.handleSkillHurt(player,hurtVO);
 		}
-		//brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
+
+
 		if (player.getTeamId() > 0) {
 			teamService.handleSkillHurt(player, hurtVO);
 		} else {
-			worldBossService.handleSkillHurt(player,hurtVO);
+			//worldBossService.handleSkillHurt(player,hurtVO);
+			brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
 		}
 	}
 }

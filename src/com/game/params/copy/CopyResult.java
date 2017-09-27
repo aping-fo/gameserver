@@ -18,6 +18,7 @@ public class CopyResult implements IProtocol {
 	public int hitCount;//受击
 	public int score;//得分
 	public boolean showMystery;//是否触发了神秘商店
+	public boolean victory;//是否胜利
 
 
 	public void decode(BufferBuilder bb) {
@@ -57,6 +58,7 @@ public class CopyResult implements IProtocol {
 		this.hitCount = bb.getInt();
 		this.score = bb.getInt();
 		this.showMystery = bb.getBoolean();
+		this.victory = bb.getBoolean();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -72,5 +74,6 @@ public class CopyResult implements IProtocol {
 		bb.putInt(this.hitCount);
 		bb.putInt(this.score);
 		bb.putBoolean(this.showMystery);
+		bb.putBoolean(this.victory);
 	}
 }

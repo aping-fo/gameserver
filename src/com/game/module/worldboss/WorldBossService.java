@@ -275,6 +275,7 @@ public class WorldBossService implements InitHandler {
         ret.monsterId = bossId;
         ret.curHp = boss.getCurHp() < 0 ? 0 : boss.getCurHp();
         ret.hurt = hurt;
+        ret.type = 1;
         broadcast(CMD_MONSTER_INFO, ret);
 
 

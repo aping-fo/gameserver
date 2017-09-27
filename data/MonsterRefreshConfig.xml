@@ -77497,13 +77497,181 @@
 	<runEffect></runEffect>
 </config>
 <config>
+	<id>80010115</id>
+	<copyId>800115</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[2.15,0,0.6]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>80010116</id>
+	<copyId>800116</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[9.04,0,-0.15]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>80010117</id>
+	<copyId>800117</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[3.05,0,0.5]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>80010118</id>
+	<copyId>800118</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[4.8,0,0.41]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
 	<id>17002001</id>
 	<copyId>303010</copyId>
 	<difficulty>1</difficulty>
 	<group>1</group>
 	<wave>1</wave>
-	<monsterId>171000</monsterId>
-	<beginPoint>[5,0,0]</beginPoint>
+	<monsterId>40001</monsterId>
+	<beginPoint>[7.5,0,-1]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>17002002</id>
+	<copyId>303011</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>40002</monsterId>
+	<beginPoint>[7.5,0,-1]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>17002003</id>
+	<copyId>303012</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>40003</monsterId>
+	<beginPoint>[7.5,0,-1]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>17002004</id>
+	<copyId>303013</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>40004</monsterId>
+	<beginPoint>[7.5,0,-1]</beginPoint>
 	<targetPoint></targetPoint>
 	<hideBlood>1</hideBlood>
 	<hideShadow>1</hideShadow>
@@ -77526,11 +77694,251 @@
 	<difficulty>1</difficulty>
 	<group>1</group>
 	<wave>1</wave>
-	<monsterId>172000</monsterId>
+	<monsterId>50001</monsterId>
 	<beginPoint>[5,0,0]</beginPoint>
 	<targetPoint></targetPoint>
 	<hideBlood>1</hideBlood>
 	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>17003002</id>
+	<copyId>304010</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>50001</monsterId>
+	<beginPoint>[3,0,0]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>17003003</id>
+	<copyId>304010</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>50001</monsterId>
+	<beginPoint>[2,0,0]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>17003004</id>
+	<copyId>304010</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>50001</monsterId>
+	<beginPoint>[1,0,0]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>17003005</id>
+	<copyId>304010</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>50001</monsterId>
+	<beginPoint>[-3,0,0]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow>1</hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>1000010111</id>
+	<copyId>1000111</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[2.15,0,0.6]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>1000010112</id>
+	<copyId>1000112</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[2.15,0,0.6]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>1000010113</id>
+	<copyId>1000113</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[4.8,0,0.41]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>1000010114</id>
+	<copyId>1000114</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[4.8,0,0.41]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>1000010115</id>
+	<copyId>1000115</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[2.15,0,0.6]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
+	<containAI>0</containAI>
+	<animation></animation>
+	<appearType>0</appearType>
+	<param></param>
+	<showUpEffect></showUpEffect>
+	<showUpSound></showUpSound>
+	<showUpDirectionType>0</showUpDirectionType>
+	<showUpDirection></showUpDirection>
+	<showUpSkill></showUpSkill>
+	<stayWaiting></stayWaiting>
+	<bornBuff></bornBuff>
+	<runEffect></runEffect>
+</config>
+<config>
+	<id>1000010116</id>
+	<copyId>1000116</copyId>
+	<difficulty>1</difficulty>
+	<group>1</group>
+	<wave>1</wave>
+	<monsterId>800001</monsterId>
+	<beginPoint>[4.8,0,0.41]</beginPoint>
+	<targetPoint></targetPoint>
+	<hideBlood>1</hideBlood>
+	<hideShadow></hideShadow>
 	<containAI>0</containAI>
 	<animation></animation>
 	<appearType>0</appearType>

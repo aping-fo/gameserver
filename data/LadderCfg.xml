@@ -8,6 +8,7 @@
 	<decScore>10</decScore>
 	<PkReward>[102,10]</PkReward>
 	<FinalReward>[102,100]</FinalReward>
+	<grading>11</grading>
 </config>
 <config>
 	<id>2</id>
@@ -17,6 +18,7 @@
 	<decScore>15</decScore>
 	<PkReward>[102,15]</PkReward>
 	<FinalReward>[102,150]</FinalReward>
+	<grading>12</grading>
 </config>
 <config>
 	<id>3</id>
@@ -26,6 +28,7 @@
 	<decScore>20</decScore>
 	<PkReward>[102,20]</PkReward>
 	<FinalReward>[102,200]</FinalReward>
+	<grading>13</grading>
 </config>
 <config>
 	<id>4</id>
@@ -35,6 +38,7 @@
 	<decScore>25</decScore>
 	<PkReward>[102,25]</PkReward>
 	<FinalReward>[102,250]</FinalReward>
+	<grading>21</grading>
 </config>
 <config>
 	<id>5</id>
@@ -44,6 +48,7 @@
 	<decScore>30</decScore>
 	<PkReward>[102,30]</PkReward>
 	<FinalReward>[102,300]</FinalReward>
+	<grading>22</grading>
 </config>
 <config>
 	<id>6</id>
@@ -53,6 +58,7 @@
 	<decScore>40</decScore>
 	<PkReward>[102,40]</PkReward>
 	<FinalReward>[102,400]</FinalReward>
+	<grading>23</grading>
 </config>
 <config>
 	<id>7</id>
@@ -62,6 +68,7 @@
 	<decScore>50</decScore>
 	<PkReward>[102,50]</PkReward>
 	<FinalReward>[102,500]</FinalReward>
+	<grading>31</grading>
 </config>
 <config>
 	<id>8</id>
@@ -71,6 +78,7 @@
 	<decScore>60</decScore>
 	<PkReward>[102,60]</PkReward>
 	<FinalReward>[102,600]</FinalReward>
+	<grading>32</grading>
 </config>
 <config>
 	<id>9</id>
@@ -80,6 +88,7 @@
 	<decScore>70</decScore>
 	<PkReward>[102,70]</PkReward>
 	<FinalReward>[102,700]</FinalReward>
+	<grading>33</grading>
 </config>
 <config>
 	<id>10</id>
@@ -89,6 +98,7 @@
 	<decScore>80</decScore>
 	<PkReward>[102,80]</PkReward>
 	<FinalReward>[102,800]</FinalReward>
+	<grading>41</grading>
 </config>
 <config>
 	<id>11</id>
@@ -98,6 +108,7 @@
 	<decScore>90</decScore>
 	<PkReward>[102,90]</PkReward>
 	<FinalReward>[102,900]</FinalReward>
+	<grading>42</grading>
 </config>
 <config>
 	<id>12</id>
@@ -107,6 +118,7 @@
 	<decScore>100</decScore>
 	<PkReward>[102,100]</PkReward>
 	<FinalReward>[102,1000]</FinalReward>
+	<grading>43</grading>
 </config>
 <config>
 	<id>13</id>
@@ -116,6 +128,7 @@
 	<decScore>110</decScore>
 	<PkReward>[102,110]</PkReward>
 	<FinalReward>[102,1100]</FinalReward>
+	<grading>51</grading>
 </config>
 <config>
 	<id>14</id>
@@ -125,6 +138,7 @@
 	<decScore>120</decScore>
 	<PkReward>[102,120]</PkReward>
 	<FinalReward>[102,1200]</FinalReward>
+	<grading>52</grading>
 </config>
 <config>
 	<id>15</id>
@@ -134,14 +148,16 @@
 	<decScore>130</decScore>
 	<PkReward>[102,130]</PkReward>
 	<FinalReward>[102,1300]</FinalReward>
+	<grading>53</grading>
 </config>
 <config>
 	<id>16</id>
 	<name>最强王者</name>
-	<score>1600</score>
+	<score>0</score>
 	<addScore>150</addScore>
 	<decScore>150</decScore>
 	<PkReward>[102,130]</PkReward>
 	<FinalReward>[102,1500]</FinalReward>
+	<grading>60</grading>
 </config>
 </root>

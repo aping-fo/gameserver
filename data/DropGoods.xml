@@ -21,4 +21,11 @@
 	<rate>[1,1]</rate>
 	<goodsId></goodsId>
 </config>
+<config>
+	<id>1001</id>
+	<type>1</type>
+	<rewards>[[108,1],[109,1],[302001,1],[302002,1]]</rewards>
+	<rate>[1,1,1,1]</rate>
+	<goodsId></goodsId>
+</config>
 </root>

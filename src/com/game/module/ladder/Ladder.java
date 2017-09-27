@@ -1,8 +1,11 @@
 package com.game.module.ladder;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by lucky on 2017/9/13.
- *
+ * <p>
  * 排位赛对象
  */
 public class Ladder {
@@ -14,6 +17,33 @@ public class Ladder {
     private int winTimes; //胜利总次数
     private long lastTime;
     private int continuityWinTimes; //连续胜利
+    private int maxContinuityWinTimes; //连续胜利
+    private int fightTimes; //挑战次数
+    private List<LadderRecord> records = new ArrayList<>(); //对战记录
+
+    public List<LadderRecord> getRecords() {
+        return records;
+    }
+
+    public void setRecords(List<LadderRecord> records) {
+        this.records = records;
+    }
+
+    public int getMaxContinuityWinTimes() {
+        return maxContinuityWinTimes;
+    }
+
+    public void setMaxContinuityWinTimes(int maxContinuityWinTimes) {
+        this.maxContinuityWinTimes = maxContinuityWinTimes;
+    }
+
+    public int getFightTimes() {
+        return fightTimes;
+    }
+
+    public void setFightTimes(int fightTimes) {
+        this.fightTimes = fightTimes;
+    }
 
     public int getPlayerId() {
         return playerId;

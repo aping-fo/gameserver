@@ -41,4 +41,7 @@ public class CopyConfig {
 	public int isIgnoreSkillClick;//是否屏蔽技能点击
 	public int isClearMonsterWhenOver;//结束是否清理怪物
 	public int trickTask;//触发任务
+	public int[] copySettlementLayout;//副本结算界面布局
+	public int[] settlementVictoryType;//胜利通用结算方式
+	public int settlementFailType;//失败通用结算方式
 }

@@ -10,11 +10,20 @@ public class GroupTask {
     private int count;
     private int target;
     private int value;
-
-    public GroupTask(int type, int count,int target) {
+    private int param;
+    public GroupTask(int type, int count,int target,int param) {
         this.type = type;
         this.count = count;
         this.target = target;
+        this.param = param;
+    }
+
+    public int getParam() {
+        return param;
+    }
+
+    public void setParam(int param) {
+        this.param = param;
     }
 
     public int getValue() {
@@ -53,6 +62,7 @@ public class GroupTask {
         GroupTaskVO vo = new GroupTaskVO();
         vo.count = value;
         vo.id = type;
+        vo.copyId = target;
         return vo;
     }
 }

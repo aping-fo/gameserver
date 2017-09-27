@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
-	<id>201000</id>
-	<type>201</type>
-	<icon>2000000</icon>
-	<lev>0</lev>
-	<exp>100</exp>
-	<hp>0</hp>
-	<attack>10</attack>
-	<defense>0</defense>
-	<symptom>0</symptom>
-	<crit>0</crit>
-	<fu>0</fu>
-</config>
-<config>
 	<id>201001</id>
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>1</lev>
-	<exp>120</exp>
+	<exp>100</exp>
 	<hp>0</hp>
-	<attack>20</attack>
+	<attack>10</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -31,9 +18,9 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>2</lev>
-	<exp>140</exp>
+	<exp>120</exp>
 	<hp>0</hp>
-	<attack>29</attack>
+	<attack>20</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -44,9 +31,9 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>3</lev>
-	<exp>160</exp>
+	<exp>140</exp>
 	<hp>0</hp>
-	<attack>39</attack>
+	<attack>29</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -57,9 +44,9 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>4</lev>
-	<exp>180</exp>
+	<exp>160</exp>
 	<hp>0</hp>
-	<attack>49</attack>
+	<attack>39</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -70,9 +57,9 @@
 	<type>201</type>
 	<icon>2000000</icon>
 	<lev>5</lev>
-	<exp>200</exp>
+	<exp>180</exp>
 	<hp>0</hp>
-	<attack>59</attack>
+	<attack>49</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -81,11 +68,11 @@
 <config>
 	<id>201006</id>
 	<type>201</type>
-	<icon>2000001</icon>
+	<icon>2000000</icon>
 	<lev>6</lev>
-	<exp>220</exp>
+	<exp>200</exp>
 	<hp>0</hp>
-	<attack>68</attack>
+	<attack>59</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -96,9 +83,9 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>7</lev>
-	<exp>240</exp>
+	<exp>220</exp>
 	<hp>0</hp>
-	<attack>78</attack>
+	<attack>68</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -109,9 +96,9 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>8</lev>
-	<exp>260</exp>
+	<exp>240</exp>
 	<hp>0</hp>
-	<attack>88</attack>
+	<attack>78</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -122,9 +109,9 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>9</lev>
-	<exp>280</exp>
+	<exp>260</exp>
 	<hp>0</hp>
-	<attack>98</attack>
+	<attack>88</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -135,9 +122,9 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>10</lev>
-	<exp>300</exp>
+	<exp>280</exp>
 	<hp>0</hp>
-	<attack>107</attack>
+	<attack>98</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -148,9 +135,9 @@
 	<type>201</type>
 	<icon>2000001</icon>
 	<lev>11</lev>
-	<exp>320</exp>
+	<exp>300</exp>
 	<hp>0</hp>
-	<attack>117</attack>
+	<attack>107</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -159,11 +146,11 @@
 <config>
 	<id>201012</id>
 	<type>201</type>
-	<icon>2000002</icon>
+	<icon>2000001</icon>
 	<lev>12</lev>
-	<exp>340</exp>
+	<exp>320</exp>
 	<hp>0</hp>
-	<attack>127</attack>
+	<attack>117</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -174,9 +161,9 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>13</lev>
-	<exp>360</exp>
+	<exp>340</exp>
 	<hp>0</hp>
-	<attack>137</attack>
+	<attack>127</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -187,9 +174,9 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>14</lev>
-	<exp>380</exp>
+	<exp>360</exp>
 	<hp>0</hp>
-	<attack>146</attack>
+	<attack>137</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -200,9 +187,9 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>15</lev>
-	<exp>400</exp>
+	<exp>380</exp>
 	<hp>0</hp>
-	<attack>156</attack>
+	<attack>146</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -213,9 +200,9 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>16</lev>
-	<exp>420</exp>
+	<exp>400</exp>
 	<hp>0</hp>
-	<attack>166</attack>
+	<attack>156</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -226,9 +213,9 @@
 	<type>201</type>
 	<icon>2000002</icon>
 	<lev>17</lev>
-	<exp>440</exp>
+	<exp>420</exp>
 	<hp>0</hp>
-	<attack>176</attack>
+	<attack>166</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -237,11 +224,11 @@
 <config>
 	<id>201018</id>
 	<type>201</type>
-	<icon>2000003</icon>
+	<icon>2000002</icon>
 	<lev>18</lev>
-	<exp>460</exp>
+	<exp>440</exp>
 	<hp>0</hp>
-	<attack>185</attack>
+	<attack>176</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -252,9 +239,9 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>19</lev>
-	<exp>480</exp>
+	<exp>460</exp>
 	<hp>0</hp>
-	<attack>195</attack>
+	<attack>185</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -265,9 +252,9 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>20</lev>
-	<exp>500</exp>
+	<exp>480</exp>
 	<hp>0</hp>
-	<attack>205</attack>
+	<attack>195</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -278,9 +265,9 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>21</lev>
-	<exp>520</exp>
+	<exp>500</exp>
 	<hp>0</hp>
-	<attack>215</attack>
+	<attack>205</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -291,9 +278,9 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>22</lev>
-	<exp>540</exp>
+	<exp>520</exp>
 	<hp>0</hp>
-	<attack>224</attack>
+	<attack>215</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -304,9 +291,9 @@
 	<type>201</type>
 	<icon>2000003</icon>
 	<lev>23</lev>
-	<exp>560</exp>
+	<exp>540</exp>
 	<hp>0</hp>
-	<attack>234</attack>
+	<attack>224</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -315,11 +302,11 @@
 <config>
 	<id>201024</id>
 	<type>201</type>
-	<icon>2000004</icon>
+	<icon>2000003</icon>
 	<lev>24</lev>
-	<exp>580</exp>
+	<exp>560</exp>
 	<hp>0</hp>
-	<attack>244</attack>
+	<attack>234</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -330,9 +317,9 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>25</lev>
-	<exp>600</exp>
+	<exp>580</exp>
 	<hp>0</hp>
-	<attack>254</attack>
+	<attack>244</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -343,9 +330,9 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>26</lev>
-	<exp>620</exp>
+	<exp>600</exp>
 	<hp>0</hp>
-	<attack>264</attack>
+	<attack>254</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -356,9 +343,9 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>27</lev>
-	<exp>640</exp>
+	<exp>620</exp>
 	<hp>0</hp>
-	<attack>273</attack>
+	<attack>264</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -369,9 +356,9 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>28</lev>
-	<exp>660</exp>
+	<exp>640</exp>
 	<hp>0</hp>
-	<attack>283</attack>
+	<attack>273</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -382,9 +369,9 @@
 	<type>201</type>
 	<icon>2000004</icon>
 	<lev>29</lev>
-	<exp>680</exp>
+	<exp>660</exp>
 	<hp>0</hp>
-	<attack>293</attack>
+	<attack>283</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -393,11 +380,11 @@
 <config>
 	<id>201030</id>
 	<type>201</type>
-	<icon>2000005</icon>
+	<icon>2000004</icon>
 	<lev>30</lev>
-	<exp>700</exp>
+	<exp>680</exp>
 	<hp>0</hp>
-	<attack>303</attack>
+	<attack>293</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -408,9 +395,9 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>31</lev>
-	<exp>720</exp>
+	<exp>700</exp>
 	<hp>0</hp>
-	<attack>312</attack>
+	<attack>303</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -421,9 +408,9 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>32</lev>
-	<exp>740</exp>
+	<exp>720</exp>
 	<hp>0</hp>
-	<attack>322</attack>
+	<attack>312</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -434,9 +421,9 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>33</lev>
-	<exp>760</exp>
+	<exp>740</exp>
 	<hp>0</hp>
-	<attack>332</attack>
+	<attack>322</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -447,9 +434,9 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>34</lev>
-	<exp>780</exp>
+	<exp>760</exp>
 	<hp>0</hp>
-	<attack>342</attack>
+	<attack>332</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -460,9 +447,9 @@
 	<type>201</type>
 	<icon>2000005</icon>
 	<lev>35</lev>
-	<exp>800</exp>
+	<exp>780</exp>
 	<hp>0</hp>
-	<attack>351</attack>
+	<attack>342</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -471,11 +458,11 @@
 <config>
 	<id>201036</id>
 	<type>201</type>
-	<icon>2000006</icon>
+	<icon>2000005</icon>
 	<lev>36</lev>
-	<exp>820</exp>
+	<exp>800</exp>
 	<hp>0</hp>
-	<attack>361</attack>
+	<attack>351</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -486,9 +473,9 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>37</lev>
-	<exp>840</exp>
+	<exp>820</exp>
 	<hp>0</hp>
-	<attack>371</attack>
+	<attack>361</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -499,9 +486,9 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>38</lev>
-	<exp>860</exp>
+	<exp>840</exp>
 	<hp>0</hp>
-	<attack>381</attack>
+	<attack>371</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -512,9 +499,9 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>39</lev>
-	<exp>880</exp>
+	<exp>860</exp>
 	<hp>0</hp>
-	<attack>390</attack>
+	<attack>381</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -525,9 +512,9 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>40</lev>
-	<exp>900</exp>
+	<exp>880</exp>
 	<hp>0</hp>
-	<attack>400</attack>
+	<attack>390</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -538,9 +525,9 @@
 	<type>201</type>
 	<icon>2000006</icon>
 	<lev>41</lev>
-	<exp>920</exp>
+	<exp>900</exp>
 	<hp>0</hp>
-	<attack>410</attack>
+	<attack>400</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -549,11 +536,11 @@
 <config>
 	<id>201042</id>
 	<type>201</type>
-	<icon>2000007</icon>
+	<icon>2000006</icon>
 	<lev>42</lev>
-	<exp>940</exp>
+	<exp>920</exp>
 	<hp>0</hp>
-	<attack>420</attack>
+	<attack>410</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -564,9 +551,9 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>43</lev>
-	<exp>960</exp>
+	<exp>940</exp>
 	<hp>0</hp>
-	<attack>429</attack>
+	<attack>420</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -577,9 +564,9 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>44</lev>
-	<exp>980</exp>
+	<exp>960</exp>
 	<hp>0</hp>
-	<attack>439</attack>
+	<attack>429</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -590,9 +577,9 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>45</lev>
-	<exp>1000</exp>
+	<exp>980</exp>
 	<hp>0</hp>
-	<attack>449</attack>
+	<attack>439</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -603,9 +590,9 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>46</lev>
-	<exp>1020</exp>
+	<exp>1000</exp>
 	<hp>0</hp>
-	<attack>459</attack>
+	<attack>449</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -616,9 +603,9 @@
 	<type>201</type>
 	<icon>2000007</icon>
 	<lev>47</lev>
-	<exp>1040</exp>
+	<exp>1020</exp>
 	<hp>0</hp>
-	<attack>468</attack>
+	<attack>459</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -627,11 +614,11 @@
 <config>
 	<id>201048</id>
 	<type>201</type>
-	<icon>2000008</icon>
+	<icon>2000007</icon>
 	<lev>48</lev>
-	<exp>1060</exp>
+	<exp>1040</exp>
 	<hp>0</hp>
-	<attack>478</attack>
+	<attack>468</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -642,9 +629,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>49</lev>
-	<exp>1080</exp>
+	<exp>1060</exp>
 	<hp>0</hp>
-	<attack>488</attack>
+	<attack>478</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -655,9 +642,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>50</lev>
-	<exp>1100</exp>
+	<exp>1080</exp>
 	<hp>0</hp>
-	<attack>498</attack>
+	<attack>488</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -668,9 +655,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>51</lev>
-	<exp>1120</exp>
+	<exp>1100</exp>
 	<hp>0</hp>
-	<attack>508</attack>
+	<attack>498</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -681,9 +668,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>52</lev>
-	<exp>1140</exp>
+	<exp>1120</exp>
 	<hp>0</hp>
-	<attack>517</attack>
+	<attack>508</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -694,9 +681,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>53</lev>
-	<exp>1160</exp>
+	<exp>1140</exp>
 	<hp>0</hp>
-	<attack>527</attack>
+	<attack>517</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -707,9 +694,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>54</lev>
-	<exp>1180</exp>
+	<exp>1160</exp>
 	<hp>0</hp>
-	<attack>537</attack>
+	<attack>527</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -720,9 +707,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>55</lev>
-	<exp>1200</exp>
+	<exp>1180</exp>
 	<hp>0</hp>
-	<attack>547</attack>
+	<attack>537</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -733,9 +720,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>56</lev>
-	<exp>1220</exp>
+	<exp>1200</exp>
 	<hp>0</hp>
-	<attack>556</attack>
+	<attack>547</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -746,9 +733,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>57</lev>
-	<exp>1240</exp>
+	<exp>1220</exp>
 	<hp>0</hp>
-	<attack>566</attack>
+	<attack>556</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -759,9 +746,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>58</lev>
-	<exp>1260</exp>
+	<exp>1240</exp>
 	<hp>0</hp>
-	<attack>576</attack>
+	<attack>566</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -772,9 +759,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>59</lev>
-	<exp>1280</exp>
+	<exp>1260</exp>
 	<hp>0</hp>
-	<attack>586</attack>
+	<attack>576</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -785,9 +772,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>60</lev>
-	<exp>1300</exp>
+	<exp>1280</exp>
 	<hp>0</hp>
-	<attack>595</attack>
+	<attack>586</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -798,9 +785,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>61</lev>
-	<exp>1320</exp>
+	<exp>1300</exp>
 	<hp>0</hp>
-	<attack>605</attack>
+	<attack>595</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -811,9 +798,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>62</lev>
-	<exp>1340</exp>
+	<exp>1320</exp>
 	<hp>0</hp>
-	<attack>615</attack>
+	<attack>605</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -824,9 +811,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>63</lev>
-	<exp>1360</exp>
+	<exp>1340</exp>
 	<hp>0</hp>
-	<attack>625</attack>
+	<attack>615</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -837,9 +824,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>64</lev>
-	<exp>1380</exp>
+	<exp>1360</exp>
 	<hp>0</hp>
-	<attack>634</attack>
+	<attack>625</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -850,9 +837,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>65</lev>
-	<exp>1400</exp>
+	<exp>1380</exp>
 	<hp>0</hp>
-	<attack>644</attack>
+	<attack>634</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -863,9 +850,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>66</lev>
-	<exp>1420</exp>
+	<exp>1400</exp>
 	<hp>0</hp>
-	<attack>654</attack>
+	<attack>644</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -876,9 +863,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>67</lev>
-	<exp>1440</exp>
+	<exp>1420</exp>
 	<hp>0</hp>
-	<attack>664</attack>
+	<attack>654</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -889,9 +876,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>68</lev>
-	<exp>1460</exp>
+	<exp>1440</exp>
 	<hp>0</hp>
-	<attack>673</attack>
+	<attack>664</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -902,9 +889,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>69</lev>
-	<exp>1480</exp>
+	<exp>1460</exp>
 	<hp>0</hp>
-	<attack>683</attack>
+	<attack>673</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -915,9 +902,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>70</lev>
-	<exp>1500</exp>
+	<exp>1480</exp>
 	<hp>0</hp>
-	<attack>693</attack>
+	<attack>683</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -928,9 +915,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>71</lev>
-	<exp>1520</exp>
+	<exp>1500</exp>
 	<hp>0</hp>
-	<attack>703</attack>
+	<attack>693</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -941,9 +928,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>72</lev>
-	<exp>1540</exp>
+	<exp>1520</exp>
 	<hp>0</hp>
-	<attack>712</attack>
+	<attack>703</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -954,9 +941,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>73</lev>
-	<exp>1560</exp>
+	<exp>1540</exp>
 	<hp>0</hp>
-	<attack>722</attack>
+	<attack>712</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -967,9 +954,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>74</lev>
-	<exp>1580</exp>
+	<exp>1560</exp>
 	<hp>0</hp>
-	<attack>732</attack>
+	<attack>722</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -980,9 +967,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>75</lev>
-	<exp>1600</exp>
+	<exp>1580</exp>
 	<hp>0</hp>
-	<attack>742</attack>
+	<attack>732</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -993,9 +980,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>76</lev>
-	<exp>1620</exp>
+	<exp>1600</exp>
 	<hp>0</hp>
-	<attack>752</attack>
+	<attack>742</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1006,9 +993,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>77</lev>
-	<exp>1640</exp>
+	<exp>1620</exp>
 	<hp>0</hp>
-	<attack>761</attack>
+	<attack>752</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1019,9 +1006,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>78</lev>
-	<exp>1660</exp>
+	<exp>1640</exp>
 	<hp>0</hp>
-	<attack>771</attack>
+	<attack>761</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1032,9 +1019,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>79</lev>
-	<exp>1680</exp>
+	<exp>1660</exp>
 	<hp>0</hp>
-	<attack>781</attack>
+	<attack>771</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1045,9 +1032,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>80</lev>
-	<exp>1700</exp>
+	<exp>1680</exp>
 	<hp>0</hp>
-	<attack>791</attack>
+	<attack>781</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1058,9 +1045,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>81</lev>
-	<exp>1720</exp>
+	<exp>1700</exp>
 	<hp>0</hp>
-	<attack>800</attack>
+	<attack>791</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1071,9 +1058,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>82</lev>
-	<exp>1740</exp>
+	<exp>1720</exp>
 	<hp>0</hp>
-	<attack>810</attack>
+	<attack>800</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1084,9 +1071,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>83</lev>
-	<exp>1760</exp>
+	<exp>1740</exp>
 	<hp>0</hp>
-	<attack>820</attack>
+	<attack>810</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1097,9 +1084,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>84</lev>
-	<exp>1780</exp>
+	<exp>1760</exp>
 	<hp>0</hp>
-	<attack>830</attack>
+	<attack>820</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1110,9 +1097,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>85</lev>
-	<exp>1800</exp>
+	<exp>1780</exp>
 	<hp>0</hp>
-	<attack>839</attack>
+	<attack>830</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1123,9 +1110,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>86</lev>
-	<exp>1820</exp>
+	<exp>1800</exp>
 	<hp>0</hp>
-	<attack>849</attack>
+	<attack>839</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1136,9 +1123,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>87</lev>
-	<exp>1840</exp>
+	<exp>1820</exp>
 	<hp>0</hp>
-	<attack>859</attack>
+	<attack>849</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1149,9 +1136,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>88</lev>
-	<exp>1860</exp>
+	<exp>1840</exp>
 	<hp>0</hp>
-	<attack>869</attack>
+	<attack>859</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1162,9 +1149,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>89</lev>
-	<exp>1880</exp>
+	<exp>1860</exp>
 	<hp>0</hp>
-	<attack>878</attack>
+	<attack>869</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1175,9 +1162,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>90</lev>
-	<exp>1900</exp>
+	<exp>1880</exp>
 	<hp>0</hp>
-	<attack>888</attack>
+	<attack>878</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1188,9 +1175,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>91</lev>
-	<exp>1920</exp>
+	<exp>1900</exp>
 	<hp>0</hp>
-	<attack>898</attack>
+	<attack>888</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1201,9 +1188,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>92</lev>
-	<exp>1940</exp>
+	<exp>1920</exp>
 	<hp>0</hp>
-	<attack>908</attack>
+	<attack>898</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1214,9 +1201,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>93</lev>
-	<exp>1960</exp>
+	<exp>1940</exp>
 	<hp>0</hp>
-	<attack>917</attack>
+	<attack>908</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1227,9 +1214,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>94</lev>
-	<exp>1980</exp>
+	<exp>1960</exp>
 	<hp>0</hp>
-	<attack>927</attack>
+	<attack>917</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1240,9 +1227,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>95</lev>
-	<exp>2000</exp>
+	<exp>1980</exp>
 	<hp>0</hp>
-	<attack>937</attack>
+	<attack>927</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1253,9 +1240,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>96</lev>
-	<exp>2020</exp>
+	<exp>2000</exp>
 	<hp>0</hp>
-	<attack>947</attack>
+	<attack>937</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1266,9 +1253,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>97</lev>
-	<exp>2040</exp>
+	<exp>2020</exp>
 	<hp>0</hp>
-	<attack>956</attack>
+	<attack>947</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1279,9 +1266,9 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>98</lev>
-	<exp>2060</exp>
+	<exp>2040</exp>
 	<hp>0</hp>
-	<attack>966</attack>
+	<attack>956</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1292,22 +1279,22 @@
 	<type>201</type>
 	<icon>2000008</icon>
 	<lev>99</lev>
-	<exp>2080</exp>
+	<exp>2060</exp>
 	<hp>0</hp>
-	<attack>976</attack>
+	<attack>966</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
 	<fu>0</fu>
 </config>
 <config>
-	<id>202000</id>
-	<type>202</type>
-	<icon>3000000</icon>
-	<lev>0</lev>
-	<exp>100</exp>
-	<hp>239</hp>
-	<attack>0</attack>
+	<id>201100</id>
+	<type>201</type>
+	<icon>2000008</icon>
+	<lev>100</lev>
+	<exp>2080</exp>
+	<hp>0</hp>
+	<attack>976</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
 	<crit>0</crit>
@@ -1318,8 +1305,8 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>1</lev>
-	<exp>120</exp>
-	<hp>478</hp>
+	<exp>100</exp>
+	<hp>239</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1331,8 +1318,8 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>2</lev>
-	<exp>140</exp>
-	<hp>717</hp>
+	<exp>120</exp>
+	<hp>478</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1344,8 +1331,8 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>3</lev>
-	<exp>160</exp>
-	<hp>956</hp>
+	<exp>140</exp>
+	<hp>717</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1357,8 +1344,8 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>4</lev>
-	<exp>180</exp>
-	<hp>1195</hp>
+	<exp>160</exp>
+	<hp>956</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1370,8 +1357,8 @@
 	<type>202</type>
 	<icon>3000000</icon>
 	<lev>5</lev>
-	<exp>200</exp>
-	<hp>1434</hp>
+	<exp>180</exp>
+	<hp>1195</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1381,10 +1368,10 @@
 <config>
 	<id>202006</id>
 	<type>202</type>
-	<icon>3000001</icon>
+	<icon>3000000</icon>
 	<lev>6</lev>
-	<exp>220</exp>
-	<hp>1673</hp>
+	<exp>200</exp>
+	<hp>1434</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1396,8 +1383,8 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>7</lev>
-	<exp>240</exp>
-	<hp>1913</hp>
+	<exp>220</exp>
+	<hp>1673</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1409,8 +1396,8 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>8</lev>
-	<exp>260</exp>
-	<hp>2152</hp>
+	<exp>240</exp>
+	<hp>1913</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1422,8 +1409,8 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>9</lev>
-	<exp>280</exp>
-	<hp>2391</hp>
+	<exp>260</exp>
+	<hp>2152</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1435,8 +1422,8 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>10</lev>
-	<exp>300</exp>
-	<hp>2630</hp>
+	<exp>280</exp>
+	<hp>2391</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1448,8 +1435,8 @@
 	<type>202</type>
 	<icon>3000001</icon>
 	<lev>11</lev>
-	<exp>320</exp>
-	<hp>2869</hp>
+	<exp>300</exp>
+	<hp>2630</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1459,10 +1446,10 @@
 <config>
 	<id>202012</id>
 	<type>202</type>
-	<icon>3000002</icon>
+	<icon>3000001</icon>
 	<lev>12</lev>
-	<exp>340</exp>
-	<hp>3108</hp>
+	<exp>320</exp>
+	<hp>2869</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1474,8 +1461,8 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>13</lev>
-	<exp>360</exp>
-	<hp>3347</hp>
+	<exp>340</exp>
+	<hp>3108</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1487,8 +1474,8 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>14</lev>
-	<exp>380</exp>
-	<hp>3586</hp>
+	<exp>360</exp>
+	<hp>3347</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1500,8 +1487,8 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>15</lev>
-	<exp>400</exp>
-	<hp>3825</hp>
+	<exp>380</exp>
+	<hp>3586</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1513,8 +1500,8 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>16</lev>
-	<exp>420</exp>
-	<hp>4064</hp>
+	<exp>400</exp>
+	<hp>3825</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1526,8 +1513,8 @@
 	<type>202</type>
 	<icon>3000002</icon>
 	<lev>17</lev>
-	<exp>440</exp>
-	<hp>4303</hp>
+	<exp>420</exp>
+	<hp>4064</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1537,10 +1524,10 @@
 <config>
 	<id>202018</id>
 	<type>202</type>
-	<icon>3000003</icon>
+	<icon>3000002</icon>
 	<lev>18</lev>
-	<exp>460</exp>
-	<hp>4542</hp>
+	<exp>440</exp>
+	<hp>4303</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1552,8 +1539,8 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>19</lev>
-	<exp>480</exp>
-	<hp>4781</hp>
+	<exp>460</exp>
+	<hp>4542</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1565,8 +1552,8 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>20</lev>
-	<exp>500</exp>
-	<hp>5020</hp>
+	<exp>480</exp>
+	<hp>4781</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1578,8 +1565,8 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>21</lev>
-	<exp>520</exp>
-	<hp>5260</hp>
+	<exp>500</exp>
+	<hp>5020</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1591,8 +1578,8 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>22</lev>
-	<exp>540</exp>
-	<hp>5499</hp>
+	<exp>520</exp>
+	<hp>5260</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1604,8 +1591,8 @@
 	<type>202</type>
 	<icon>3000003</icon>
 	<lev>23</lev>
-	<exp>560</exp>
-	<hp>5738</hp>
+	<exp>540</exp>
+	<hp>5499</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1615,10 +1602,10 @@
 <config>
 	<id>202024</id>
 	<type>202</type>
-	<icon>3000004</icon>
+	<icon>3000003</icon>
 	<lev>24</lev>
-	<exp>580</exp>
-	<hp>5977</hp>
+	<exp>560</exp>
+	<hp>5738</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1630,8 +1617,8 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>25</lev>
-	<exp>600</exp>
-	<hp>6216</hp>
+	<exp>580</exp>
+	<hp>5977</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1643,8 +1630,8 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>26</lev>
-	<exp>620</exp>
-	<hp>6455</hp>
+	<exp>600</exp>
+	<hp>6216</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1656,8 +1643,8 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>27</lev>
-	<exp>640</exp>
-	<hp>6694</hp>
+	<exp>620</exp>
+	<hp>6455</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1669,8 +1656,8 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>28</lev>
-	<exp>660</exp>
-	<hp>6933</hp>
+	<exp>640</exp>
+	<hp>6694</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1682,8 +1669,8 @@
 	<type>202</type>
 	<icon>3000004</icon>
 	<lev>29</lev>
-	<exp>680</exp>
-	<hp>7172</hp>
+	<exp>660</exp>
+	<hp>6933</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1693,10 +1680,10 @@
 <config>
 	<id>202030</id>
 	<type>202</type>
-	<icon>3000005</icon>
+	<icon>3000004</icon>
 	<lev>30</lev>
-	<exp>700</exp>
-	<hp>7411</hp>
+	<exp>680</exp>
+	<hp>7172</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1708,8 +1695,8 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>31</lev>
-	<exp>720</exp>
-	<hp>7650</hp>
+	<exp>700</exp>
+	<hp>7411</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1721,8 +1708,8 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>32</lev>
-	<exp>740</exp>
-	<hp>7889</hp>
+	<exp>720</exp>
+	<hp>7650</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1734,8 +1721,8 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>33</lev>
-	<exp>760</exp>
-	<hp>8128</hp>
+	<exp>740</exp>
+	<hp>7889</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1747,8 +1734,8 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>34</lev>
-	<exp>780</exp>
-	<hp>8367</hp>
+	<exp>760</exp>
+	<hp>8128</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1760,8 +1747,8 @@
 	<type>202</type>
 	<icon>3000005</icon>
 	<lev>35</lev>
-	<exp>800</exp>
-	<hp>8607</hp>
+	<exp>780</exp>
+	<hp>8367</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1771,10 +1758,10 @@
 <config>
 	<id>202036</id>
 	<type>202</type>
-	<icon>3000006</icon>
+	<icon>3000005</icon>
 	<lev>36</lev>
-	<exp>820</exp>
-	<hp>8846</hp>
+	<exp>800</exp>
+	<hp>8607</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1786,8 +1773,8 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>37</lev>
-	<exp>840</exp>
-	<hp>9085</hp>
+	<exp>820</exp>
+	<hp>8846</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1799,8 +1786,8 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>38</lev>
-	<exp>860</exp>
-	<hp>9324</hp>
+	<exp>840</exp>
+	<hp>9085</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1812,8 +1799,8 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>39</lev>
-	<exp>880</exp>
-	<hp>9563</hp>
+	<exp>860</exp>
+	<hp>9324</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1825,8 +1812,8 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>40</lev>
-	<exp>900</exp>
-	<hp>9802</hp>
+	<exp>880</exp>
+	<hp>9563</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1838,8 +1825,8 @@
 	<type>202</type>
 	<icon>3000006</icon>
 	<lev>41</lev>
-	<exp>920</exp>
-	<hp>10041</hp>
+	<exp>900</exp>
+	<hp>9802</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1849,10 +1836,10 @@
 <config>
 	<id>202042</id>
 	<type>202</type>
-	<icon>3000007</icon>
+	<icon>3000006</icon>
 	<lev>42</lev>
-	<exp>940</exp>
-	<hp>10280</hp>
+	<exp>920</exp>
+	<hp>10041</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1864,8 +1851,8 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>43</lev>
-	<exp>960</exp>
-	<hp>10519</hp>
+	<exp>940</exp>
+	<hp>10280</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1877,8 +1864,8 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>44</lev>
-	<exp>980</exp>
-	<hp>10758</hp>
+	<exp>960</exp>
+	<hp>10519</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1890,8 +1877,8 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>45</lev>
-	<exp>1000</exp>
-	<hp>10997</hp>
+	<exp>980</exp>
+	<hp>10758</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1903,8 +1890,8 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>46</lev>
-	<exp>1020</exp>
-	<hp>11236</hp>
+	<exp>1000</exp>
+	<hp>10997</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1916,8 +1903,8 @@
 	<type>202</type>
 	<icon>3000007</icon>
 	<lev>47</lev>
-	<exp>1040</exp>
-	<hp>11475</hp>
+	<exp>1020</exp>
+	<hp>11236</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1927,10 +1914,10 @@
 <config>
 	<id>202048</id>
 	<type>202</type>
-	<icon>3000008</icon>
+	<icon>3000007</icon>
 	<lev>48</lev>
-	<exp>1060</exp>
-	<hp>11714</hp>
+	<exp>1040</exp>
+	<hp>11475</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1942,8 +1929,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>49</lev>
-	<exp>1080</exp>
-	<hp>11954</hp>
+	<exp>1060</exp>
+	<hp>11714</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1955,8 +1942,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>50</lev>
-	<exp>1100</exp>
-	<hp>12193</hp>
+	<exp>1080</exp>
+	<hp>11954</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1968,8 +1955,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>51</lev>
-	<exp>1120</exp>
-	<hp>12432</hp>
+	<exp>1100</exp>
+	<hp>12193</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1981,8 +1968,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>52</lev>
-	<exp>1140</exp>
-	<hp>12671</hp>
+	<exp>1120</exp>
+	<hp>12432</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -1994,8 +1981,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>53</lev>
-	<exp>1160</exp>
-	<hp>12910</hp>
+	<exp>1140</exp>
+	<hp>12671</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2007,8 +1994,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>54</lev>
-	<exp>1180</exp>
-	<hp>13149</hp>
+	<exp>1160</exp>
+	<hp>12910</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2020,8 +2007,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>55</lev>
-	<exp>1200</exp>
-	<hp>13388</hp>
+	<exp>1180</exp>
+	<hp>13149</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2033,8 +2020,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>56</lev>
-	<exp>1220</exp>
-	<hp>13627</hp>
+	<exp>1200</exp>
+	<hp>13388</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2046,8 +2033,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>57</lev>
-	<exp>1240</exp>
-	<hp>13866</hp>
+	<exp>1220</exp>
+	<hp>13627</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2059,8 +2046,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>58</lev>
-	<exp>1260</exp>
-	<hp>14105</hp>
+	<exp>1240</exp>
+	<hp>13866</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2072,8 +2059,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>59</lev>
-	<exp>1280</exp>
-	<hp>14344</hp>
+	<exp>1260</exp>
+	<hp>14105</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2085,8 +2072,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>60</lev>
-	<exp>1300</exp>
-	<hp>14583</hp>
+	<exp>1280</exp>
+	<hp>14344</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2098,8 +2085,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>61</lev>
-	<exp>1320</exp>
-	<hp>14822</hp>
+	<exp>1300</exp>
+	<hp>14583</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2111,8 +2098,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>62</lev>
-	<exp>1340</exp>
-	<hp>15061</hp>
+	<exp>1320</exp>
+	<hp>14822</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2124,8 +2111,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>63</lev>
-	<exp>1360</exp>
-	<hp>15300</hp>
+	<exp>1340</exp>
+	<hp>15061</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2137,8 +2124,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>64</lev>
-	<exp>1380</exp>
-	<hp>15540</hp>
+	<exp>1360</exp>
+	<hp>15300</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2150,8 +2137,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>65</lev>
-	<exp>1400</exp>
-	<hp>15779</hp>
+	<exp>1380</exp>
+	<hp>15540</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2163,8 +2150,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>66</lev>
-	<exp>1420</exp>
-	<hp>16018</hp>
+	<exp>1400</exp>
+	<hp>15779</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2176,8 +2163,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>67</lev>
-	<exp>1440</exp>
-	<hp>16257</hp>
+	<exp>1420</exp>
+	<hp>16018</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2189,8 +2176,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>68</lev>
-	<exp>1460</exp>
-	<hp>16496</hp>
+	<exp>1440</exp>
+	<hp>16257</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2202,8 +2189,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>69</lev>
-	<exp>1480</exp>
-	<hp>16735</hp>
+	<exp>1460</exp>
+	<hp>16496</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2215,8 +2202,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>70</lev>
-	<exp>1500</exp>
-	<hp>16974</hp>
+	<exp>1480</exp>
+	<hp>16735</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2228,8 +2215,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>71</lev>
-	<exp>1520</exp>
-	<hp>17213</hp>
+	<exp>1500</exp>
+	<hp>16974</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2241,8 +2228,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>72</lev>
-	<exp>1540</exp>
-	<hp>17452</hp>
+	<exp>1520</exp>
+	<hp>17213</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2254,8 +2241,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>73</lev>
-	<exp>1560</exp>
-	<hp>17691</hp>
+	<exp>1540</exp>
+	<hp>17452</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2267,8 +2254,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>74</lev>
-	<exp>1580</exp>
-	<hp>17930</hp>
+	<exp>1560</exp>
+	<hp>17691</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2280,8 +2267,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>75</lev>
-	<exp>1600</exp>
-	<hp>18169</hp>
+	<exp>1580</exp>
+	<hp>17930</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2293,8 +2280,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>76</lev>
-	<exp>1620</exp>
-	<hp>18408</hp>
+	<exp>1600</exp>
+	<hp>18169</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2306,8 +2293,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>77</lev>
-	<exp>1640</exp>
-	<hp>18647</hp>
+	<exp>1620</exp>
+	<hp>18408</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2319,8 +2306,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>78</lev>
-	<exp>1660</exp>
-	<hp>18887</hp>
+	<exp>1640</exp>
+	<hp>18647</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2332,8 +2319,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>79</lev>
-	<exp>1680</exp>
-	<hp>19126</hp>
+	<exp>1660</exp>
+	<hp>18887</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2345,8 +2332,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>80</lev>
-	<exp>1700</exp>
-	<hp>19365</hp>
+	<exp>1680</exp>
+	<hp>19126</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2358,8 +2345,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>81</lev>
-	<exp>1720</exp>
-	<hp>19604</hp>
+	<exp>1700</exp>
+	<hp>19365</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2371,8 +2358,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>82</lev>
-	<exp>1740</exp>
-	<hp>19843</hp>
+	<exp>1720</exp>
+	<hp>19604</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2384,8 +2371,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>83</lev>
-	<exp>1760</exp>
-	<hp>20082</hp>
+	<exp>1740</exp>
+	<hp>19843</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2397,8 +2384,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>84</lev>
-	<exp>1780</exp>
-	<hp>20321</hp>
+	<exp>1760</exp>
+	<hp>20082</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2410,8 +2397,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>85</lev>
-	<exp>1800</exp>
-	<hp>20560</hp>
+	<exp>1780</exp>
+	<hp>20321</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2423,8 +2410,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>86</lev>
-	<exp>1820</exp>
-	<hp>20799</hp>
+	<exp>1800</exp>
+	<hp>20560</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2436,8 +2423,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>87</lev>
-	<exp>1840</exp>
-	<hp>21038</hp>
+	<exp>1820</exp>
+	<hp>20799</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2449,8 +2436,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>88</lev>
-	<exp>1860</exp>
-	<hp>21277</hp>
+	<exp>1840</exp>
+	<hp>21038</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2462,8 +2449,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>89</lev>
-	<exp>1880</exp>
-	<hp>21516</hp>
+	<exp>1860</exp>
+	<hp>21277</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2475,8 +2462,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>90</lev>
-	<exp>1900</exp>
-	<hp>21755</hp>
+	<exp>1880</exp>
+	<hp>21516</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2488,8 +2475,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>91</lev>
-	<exp>1920</exp>
-	<hp>21994</hp>
+	<exp>1900</exp>
+	<hp>21755</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2501,8 +2488,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>92</lev>
-	<exp>1940</exp>
-	<hp>22234</hp>
+	<exp>1920</exp>
+	<hp>21994</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2514,8 +2501,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>93</lev>
-	<exp>1960</exp>
-	<hp>22473</hp>
+	<exp>1940</exp>
+	<hp>22234</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2527,8 +2514,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>94</lev>
-	<exp>1980</exp>
-	<hp>22712</hp>
+	<exp>1960</exp>
+	<hp>22473</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2540,8 +2527,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>95</lev>
-	<exp>2000</exp>
-	<hp>22951</hp>
+	<exp>1980</exp>
+	<hp>22712</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2553,8 +2540,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>96</lev>
-	<exp>2020</exp>
-	<hp>23190</hp>
+	<exp>2000</exp>
+	<hp>22951</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2566,8 +2553,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>97</lev>
-	<exp>2040</exp>
-	<hp>23429</hp>
+	<exp>2020</exp>
+	<hp>23190</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2579,8 +2566,8 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>98</lev>
-	<exp>2060</exp>
-	<hp>23668</hp>
+	<exp>2040</exp>
+	<hp>23429</hp>
 	<attack>0</attack>
 	<defense>0</defense>
 	<symptom>0</symptom>
@@ -2592,6 +2579,19 @@
 	<type>202</type>
 	<icon>3000008</icon>
 	<lev>99</lev>
+	<exp>2060</exp>
+	<hp>23668</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+</config>
+<config>
+	<id>202100</id>
+	<type>202</type>
+	<icon>3000008</icon>
+	<lev>100</lev>
 	<exp>2080</exp>
 	<hp>23907</hp>
 	<attack>0</attack>
@@ -2601,10 +2601,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203000</id>
+	<id>203001</id>
 	<type>203</type>
 	<icon>4000000</icon>
-	<lev>0</lev>
+	<lev>1</lev>
 	<exp>100</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2614,10 +2614,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203001</id>
+	<id>203002</id>
 	<type>203</type>
 	<icon>4000000</icon>
-	<lev>1</lev>
+	<lev>2</lev>
 	<exp>120</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2627,10 +2627,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203002</id>
+	<id>203003</id>
 	<type>203</type>
 	<icon>4000000</icon>
-	<lev>2</lev>
+	<lev>3</lev>
 	<exp>140</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2640,10 +2640,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203003</id>
+	<id>203004</id>
 	<type>203</type>
 	<icon>4000000</icon>
-	<lev>3</lev>
+	<lev>4</lev>
 	<exp>160</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2653,10 +2653,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203004</id>
+	<id>203005</id>
 	<type>203</type>
 	<icon>4000000</icon>
-	<lev>4</lev>
+	<lev>5</lev>
 	<exp>180</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2666,10 +2666,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203005</id>
+	<id>203006</id>
 	<type>203</type>
 	<icon>4000000</icon>
-	<lev>5</lev>
+	<lev>6</lev>
 	<exp>200</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2679,10 +2679,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203006</id>
+	<id>203007</id>
 	<type>203</type>
 	<icon>4000001</icon>
-	<lev>6</lev>
+	<lev>7</lev>
 	<exp>220</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2692,10 +2692,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203007</id>
+	<id>203008</id>
 	<type>203</type>
 	<icon>4000001</icon>
-	<lev>7</lev>
+	<lev>8</lev>
 	<exp>240</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2705,10 +2705,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203008</id>
+	<id>203009</id>
 	<type>203</type>
 	<icon>4000001</icon>
-	<lev>8</lev>
+	<lev>9</lev>
 	<exp>260</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2718,10 +2718,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203009</id>
+	<id>203010</id>
 	<type>203</type>
 	<icon>4000001</icon>
-	<lev>9</lev>
+	<lev>10</lev>
 	<exp>280</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2731,10 +2731,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203010</id>
+	<id>203011</id>
 	<type>203</type>
 	<icon>4000001</icon>
-	<lev>10</lev>
+	<lev>11</lev>
 	<exp>300</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2744,10 +2744,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203011</id>
+	<id>203012</id>
 	<type>203</type>
 	<icon>4000001</icon>
-	<lev>11</lev>
+	<lev>12</lev>
 	<exp>320</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2757,10 +2757,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203012</id>
+	<id>203013</id>
 	<type>203</type>
 	<icon>4000002</icon>
-	<lev>12</lev>
+	<lev>13</lev>
 	<exp>340</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2770,10 +2770,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203013</id>
+	<id>203014</id>
 	<type>203</type>
 	<icon>4000002</icon>
-	<lev>13</lev>
+	<lev>14</lev>
 	<exp>360</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2783,10 +2783,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203014</id>
+	<id>203015</id>
 	<type>203</type>
 	<icon>4000002</icon>
-	<lev>14</lev>
+	<lev>15</lev>
 	<exp>380</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2796,10 +2796,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203015</id>
+	<id>203016</id>
 	<type>203</type>
 	<icon>4000002</icon>
-	<lev>15</lev>
+	<lev>16</lev>
 	<exp>400</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2809,10 +2809,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203016</id>
+	<id>203017</id>
 	<type>203</type>
 	<icon>4000002</icon>
-	<lev>16</lev>
+	<lev>17</lev>
 	<exp>420</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2822,10 +2822,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203017</id>
+	<id>203018</id>
 	<type>203</type>
 	<icon>4000002</icon>
-	<lev>17</lev>
+	<lev>18</lev>
 	<exp>440</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2835,10 +2835,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203018</id>
+	<id>203019</id>
 	<type>203</type>
 	<icon>4000003</icon>
-	<lev>18</lev>
+	<lev>19</lev>
 	<exp>460</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2848,10 +2848,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203019</id>
+	<id>203020</id>
 	<type>203</type>
 	<icon>4000003</icon>
-	<lev>19</lev>
+	<lev>20</lev>
 	<exp>480</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2861,10 +2861,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203020</id>
+	<id>203021</id>
 	<type>203</type>
 	<icon>4000003</icon>
-	<lev>20</lev>
+	<lev>21</lev>
 	<exp>500</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2874,10 +2874,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203021</id>
+	<id>203022</id>
 	<type>203</type>
 	<icon>4000003</icon>
-	<lev>21</lev>
+	<lev>22</lev>
 	<exp>520</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2887,10 +2887,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203022</id>
+	<id>203023</id>
 	<type>203</type>
 	<icon>4000003</icon>
-	<lev>22</lev>
+	<lev>23</lev>
 	<exp>540</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2900,10 +2900,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203023</id>
+	<id>203024</id>
 	<type>203</type>
 	<icon>4000003</icon>
-	<lev>23</lev>
+	<lev>24</lev>
 	<exp>560</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2913,10 +2913,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203024</id>
+	<id>203025</id>
 	<type>203</type>
 	<icon>4000004</icon>
-	<lev>24</lev>
+	<lev>25</lev>
 	<exp>580</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2926,10 +2926,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203025</id>
+	<id>203026</id>
 	<type>203</type>
 	<icon>4000004</icon>
-	<lev>25</lev>
+	<lev>26</lev>
 	<exp>600</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2939,10 +2939,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203026</id>
+	<id>203027</id>
 	<type>203</type>
 	<icon>4000004</icon>
-	<lev>26</lev>
+	<lev>27</lev>
 	<exp>620</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2952,10 +2952,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203027</id>
+	<id>203028</id>
 	<type>203</type>
 	<icon>4000004</icon>
-	<lev>27</lev>
+	<lev>28</lev>
 	<exp>640</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2965,10 +2965,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203028</id>
+	<id>203029</id>
 	<type>203</type>
 	<icon>4000004</icon>
-	<lev>28</lev>
+	<lev>29</lev>
 	<exp>660</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2978,10 +2978,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203029</id>
+	<id>203030</id>
 	<type>203</type>
 	<icon>4000004</icon>
-	<lev>29</lev>
+	<lev>30</lev>
 	<exp>680</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -2991,10 +2991,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203030</id>
+	<id>203031</id>
 	<type>203</type>
 	<icon>4000005</icon>
-	<lev>30</lev>
+	<lev>31</lev>
 	<exp>700</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3004,10 +3004,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203031</id>
+	<id>203032</id>
 	<type>203</type>
 	<icon>4000005</icon>
-	<lev>31</lev>
+	<lev>32</lev>
 	<exp>720</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3017,10 +3017,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203032</id>
+	<id>203033</id>
 	<type>203</type>
 	<icon>4000005</icon>
-	<lev>32</lev>
+	<lev>33</lev>
 	<exp>740</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3030,10 +3030,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203033</id>
+	<id>203034</id>
 	<type>203</type>
 	<icon>4000005</icon>
-	<lev>33</lev>
+	<lev>34</lev>
 	<exp>760</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3043,10 +3043,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203034</id>
+	<id>203035</id>
 	<type>203</type>
 	<icon>4000005</icon>
-	<lev>34</lev>
+	<lev>35</lev>
 	<exp>780</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3056,10 +3056,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203035</id>
+	<id>203036</id>
 	<type>203</type>
 	<icon>4000005</icon>
-	<lev>35</lev>
+	<lev>36</lev>
 	<exp>800</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3069,10 +3069,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203036</id>
+	<id>203037</id>
 	<type>203</type>
 	<icon>4000006</icon>
-	<lev>36</lev>
+	<lev>37</lev>
 	<exp>820</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3082,10 +3082,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203037</id>
+	<id>203038</id>
 	<type>203</type>
 	<icon>4000006</icon>
-	<lev>37</lev>
+	<lev>38</lev>
 	<exp>840</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3095,10 +3095,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203038</id>
+	<id>203039</id>
 	<type>203</type>
 	<icon>4000006</icon>
-	<lev>38</lev>
+	<lev>39</lev>
 	<exp>860</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3108,10 +3108,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203039</id>
+	<id>203040</id>
 	<type>203</type>
 	<icon>4000006</icon>
-	<lev>39</lev>
+	<lev>40</lev>
 	<exp>880</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3121,10 +3121,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203040</id>
+	<id>203041</id>
 	<type>203</type>
 	<icon>4000006</icon>
-	<lev>40</lev>
+	<lev>41</lev>
 	<exp>900</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3134,10 +3134,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203041</id>
+	<id>203042</id>
 	<type>203</type>
 	<icon>4000006</icon>
-	<lev>41</lev>
+	<lev>42</lev>
 	<exp>920</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3147,10 +3147,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203042</id>
+	<id>203043</id>
 	<type>203</type>
 	<icon>4000007</icon>
-	<lev>42</lev>
+	<lev>43</lev>
 	<exp>940</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3160,10 +3160,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203043</id>
+	<id>203044</id>
 	<type>203</type>
 	<icon>4000007</icon>
-	<lev>43</lev>
+	<lev>44</lev>
 	<exp>960</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3173,10 +3173,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203044</id>
+	<id>203045</id>
 	<type>203</type>
 	<icon>4000007</icon>
-	<lev>44</lev>
+	<lev>45</lev>
 	<exp>980</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3186,10 +3186,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203045</id>
+	<id>203046</id>
 	<type>203</type>
 	<icon>4000007</icon>
-	<lev>45</lev>
+	<lev>46</lev>
 	<exp>1000</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3199,10 +3199,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203046</id>
+	<id>203047</id>
 	<type>203</type>
 	<icon>4000007</icon>
-	<lev>46</lev>
+	<lev>47</lev>
 	<exp>1020</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3212,10 +3212,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203047</id>
+	<id>203048</id>
 	<type>203</type>
 	<icon>4000007</icon>
-	<lev>47</lev>
+	<lev>48</lev>
 	<exp>1040</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3225,10 +3225,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203048</id>
+	<id>203049</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>48</lev>
+	<lev>49</lev>
 	<exp>1060</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3238,10 +3238,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203049</id>
+	<id>203050</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>49</lev>
+	<lev>50</lev>
 	<exp>1080</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3251,10 +3251,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203050</id>
+	<id>203051</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>50</lev>
+	<lev>51</lev>
 	<exp>1100</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3264,10 +3264,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203051</id>
+	<id>203052</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>51</lev>
+	<lev>52</lev>
 	<exp>1120</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3277,10 +3277,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203052</id>
+	<id>203053</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>52</lev>
+	<lev>53</lev>
 	<exp>1140</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3290,10 +3290,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203053</id>
+	<id>203054</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>53</lev>
+	<lev>54</lev>
 	<exp>1160</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3303,10 +3303,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203054</id>
+	<id>203055</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>54</lev>
+	<lev>55</lev>
 	<exp>1180</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3316,10 +3316,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203055</id>
+	<id>203056</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>55</lev>
+	<lev>56</lev>
 	<exp>1200</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3329,10 +3329,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203056</id>
+	<id>203057</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>56</lev>
+	<lev>57</lev>
 	<exp>1220</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3342,10 +3342,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203057</id>
+	<id>203058</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>57</lev>
+	<lev>58</lev>
 	<exp>1240</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3355,10 +3355,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203058</id>
+	<id>203059</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>58</lev>
+	<lev>59</lev>
 	<exp>1260</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3368,10 +3368,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203059</id>
+	<id>203060</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>59</lev>
+	<lev>60</lev>
 	<exp>1280</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3381,10 +3381,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203060</id>
+	<id>203061</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>60</lev>
+	<lev>61</lev>
 	<exp>1300</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3394,10 +3394,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203061</id>
+	<id>203062</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>61</lev>
+	<lev>62</lev>
 	<exp>1320</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3407,10 +3407,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203062</id>
+	<id>203063</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>62</lev>
+	<lev>63</lev>
 	<exp>1340</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3420,10 +3420,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203063</id>
+	<id>203064</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>63</lev>
+	<lev>64</lev>
 	<exp>1360</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3433,10 +3433,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203064</id>
+	<id>203065</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>64</lev>
+	<lev>65</lev>
 	<exp>1380</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3446,10 +3446,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203065</id>
+	<id>203066</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>65</lev>
+	<lev>66</lev>
 	<exp>1400</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3459,10 +3459,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203066</id>
+	<id>203067</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>66</lev>
+	<lev>67</lev>
 	<exp>1420</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3472,10 +3472,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203067</id>
+	<id>203068</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>67</lev>
+	<lev>68</lev>
 	<exp>1440</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3485,10 +3485,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203068</id>
+	<id>203069</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>68</lev>
+	<lev>69</lev>
 	<exp>1460</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3498,10 +3498,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203069</id>
+	<id>203070</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>69</lev>
+	<lev>70</lev>
 	<exp>1480</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3511,10 +3511,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203070</id>
+	<id>203071</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>70</lev>
+	<lev>71</lev>
 	<exp>1500</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3524,10 +3524,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203071</id>
+	<id>203072</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>71</lev>
+	<lev>72</lev>
 	<exp>1520</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3537,10 +3537,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203072</id>
+	<id>203073</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>72</lev>
+	<lev>73</lev>
 	<exp>1540</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3550,10 +3550,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203073</id>
+	<id>203074</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>73</lev>
+	<lev>74</lev>
 	<exp>1560</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3563,10 +3563,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203074</id>
+	<id>203075</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>74</lev>
+	<lev>75</lev>
 	<exp>1580</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3576,10 +3576,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203075</id>
+	<id>203076</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>75</lev>
+	<lev>76</lev>
 	<exp>1600</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3589,10 +3589,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203076</id>
+	<id>203077</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>76</lev>
+	<lev>77</lev>
 	<exp>1620</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3602,10 +3602,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203077</id>
+	<id>203078</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>77</lev>
+	<lev>78</lev>
 	<exp>1640</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3615,10 +3615,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203078</id>
+	<id>203079</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>78</lev>
+	<lev>79</lev>
 	<exp>1660</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3628,10 +3628,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203079</id>
+	<id>203080</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>79</lev>
+	<lev>80</lev>
 	<exp>1680</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3641,10 +3641,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203080</id>
+	<id>203081</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>80</lev>
+	<lev>81</lev>
 	<exp>1700</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3654,10 +3654,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203081</id>
+	<id>203082</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>81</lev>
+	<lev>82</lev>
 	<exp>1720</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3667,10 +3667,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203082</id>
+	<id>203083</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>82</lev>
+	<lev>83</lev>
 	<exp>1740</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3680,10 +3680,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203083</id>
+	<id>203084</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>83</lev>
+	<lev>84</lev>
 	<exp>1760</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3693,10 +3693,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203084</id>
+	<id>203085</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>84</lev>
+	<lev>85</lev>
 	<exp>1780</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3706,10 +3706,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203085</id>
+	<id>203086</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>85</lev>
+	<lev>86</lev>
 	<exp>1800</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3719,10 +3719,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203086</id>
+	<id>203087</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>86</lev>
+	<lev>87</lev>
 	<exp>1820</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3732,10 +3732,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203087</id>
+	<id>203088</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>87</lev>
+	<lev>88</lev>
 	<exp>1840</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3745,10 +3745,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203088</id>
+	<id>203089</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>88</lev>
+	<lev>89</lev>
 	<exp>1860</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3758,10 +3758,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203089</id>
+	<id>203090</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>89</lev>
+	<lev>90</lev>
 	<exp>1880</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3771,10 +3771,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203090</id>
+	<id>203091</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>90</lev>
+	<lev>91</lev>
 	<exp>1900</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3784,10 +3784,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203091</id>
+	<id>203092</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>91</lev>
+	<lev>92</lev>
 	<exp>1920</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3797,10 +3797,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203092</id>
+	<id>203093</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>92</lev>
+	<lev>93</lev>
 	<exp>1940</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3810,10 +3810,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203093</id>
+	<id>203094</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>93</lev>
+	<lev>94</lev>
 	<exp>1960</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3823,10 +3823,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203094</id>
+	<id>203095</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>94</lev>
+	<lev>95</lev>
 	<exp>1980</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3836,10 +3836,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203095</id>
+	<id>203096</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>95</lev>
+	<lev>96</lev>
 	<exp>2000</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3849,10 +3849,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203096</id>
+	<id>203097</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>96</lev>
+	<lev>97</lev>
 	<exp>2020</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3862,10 +3862,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203097</id>
+	<id>203098</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>97</lev>
+	<lev>98</lev>
 	<exp>2040</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3875,10 +3875,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203098</id>
+	<id>203099</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>98</lev>
+	<lev>99</lev>
 	<exp>2060</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3888,10 +3888,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>203099</id>
+	<id>203100</id>
 	<type>203</type>
 	<icon>4000008</icon>
-	<lev>99</lev>
+	<lev>100</lev>
 	<exp>2080</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3901,10 +3901,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204000</id>
+	<id>204001</id>
 	<type>204</type>
 	<icon>5000000</icon>
-	<lev>0</lev>
+	<lev>1</lev>
 	<exp>100</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3914,10 +3914,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204001</id>
+	<id>204002</id>
 	<type>204</type>
 	<icon>5000000</icon>
-	<lev>1</lev>
+	<lev>2</lev>
 	<exp>120</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3927,10 +3927,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204002</id>
+	<id>204003</id>
 	<type>204</type>
 	<icon>5000000</icon>
-	<lev>2</lev>
+	<lev>3</lev>
 	<exp>140</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3940,10 +3940,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204003</id>
+	<id>204004</id>
 	<type>204</type>
 	<icon>5000000</icon>
-	<lev>3</lev>
+	<lev>4</lev>
 	<exp>160</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3953,10 +3953,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204004</id>
+	<id>204005</id>
 	<type>204</type>
 	<icon>5000000</icon>
-	<lev>4</lev>
+	<lev>5</lev>
 	<exp>180</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3966,10 +3966,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204005</id>
+	<id>204006</id>
 	<type>204</type>
 	<icon>5000000</icon>
-	<lev>5</lev>
+	<lev>6</lev>
 	<exp>200</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3979,10 +3979,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204006</id>
+	<id>204007</id>
 	<type>204</type>
 	<icon>5000001</icon>
-	<lev>6</lev>
+	<lev>7</lev>
 	<exp>220</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -3992,10 +3992,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204007</id>
+	<id>204008</id>
 	<type>204</type>
 	<icon>5000001</icon>
-	<lev>7</lev>
+	<lev>8</lev>
 	<exp>240</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4005,10 +4005,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204008</id>
+	<id>204009</id>
 	<type>204</type>
 	<icon>5000001</icon>
-	<lev>8</lev>
+	<lev>9</lev>
 	<exp>260</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4018,10 +4018,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204009</id>
+	<id>204010</id>
 	<type>204</type>
 	<icon>5000001</icon>
-	<lev>9</lev>
+	<lev>10</lev>
 	<exp>280</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4031,10 +4031,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204010</id>
+	<id>204011</id>
 	<type>204</type>
 	<icon>5000001</icon>
-	<lev>10</lev>
+	<lev>11</lev>
 	<exp>300</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4044,10 +4044,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204011</id>
+	<id>204012</id>
 	<type>204</type>
 	<icon>5000001</icon>
-	<lev>11</lev>
+	<lev>12</lev>
 	<exp>320</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4057,10 +4057,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204012</id>
+	<id>204013</id>
 	<type>204</type>
 	<icon>5000002</icon>
-	<lev>12</lev>
+	<lev>13</lev>
 	<exp>340</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4070,10 +4070,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204013</id>
+	<id>204014</id>
 	<type>204</type>
 	<icon>5000002</icon>
-	<lev>13</lev>
+	<lev>14</lev>
 	<exp>360</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4083,10 +4083,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204014</id>
+	<id>204015</id>
 	<type>204</type>
 	<icon>5000002</icon>
-	<lev>14</lev>
+	<lev>15</lev>
 	<exp>380</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4096,10 +4096,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204015</id>
+	<id>204016</id>
 	<type>204</type>
 	<icon>5000002</icon>
-	<lev>15</lev>
+	<lev>16</lev>
 	<exp>400</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4109,10 +4109,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204016</id>
+	<id>204017</id>
 	<type>204</type>
 	<icon>5000002</icon>
-	<lev>16</lev>
+	<lev>17</lev>
 	<exp>420</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4122,10 +4122,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204017</id>
+	<id>204018</id>
 	<type>204</type>
 	<icon>5000002</icon>
-	<lev>17</lev>
+	<lev>18</lev>
 	<exp>440</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4135,10 +4135,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204018</id>
+	<id>204019</id>
 	<type>204</type>
 	<icon>5000003</icon>
-	<lev>18</lev>
+	<lev>19</lev>
 	<exp>460</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4148,10 +4148,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204019</id>
+	<id>204020</id>
 	<type>204</type>
 	<icon>5000003</icon>
-	<lev>19</lev>
+	<lev>20</lev>
 	<exp>480</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4161,10 +4161,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204020</id>
+	<id>204021</id>
 	<type>204</type>
 	<icon>5000003</icon>
-	<lev>20</lev>
+	<lev>21</lev>
 	<exp>500</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4174,10 +4174,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204021</id>
+	<id>204022</id>
 	<type>204</type>
 	<icon>5000003</icon>
-	<lev>21</lev>
+	<lev>22</lev>
 	<exp>520</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4187,10 +4187,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204022</id>
+	<id>204023</id>
 	<type>204</type>
 	<icon>5000003</icon>
-	<lev>22</lev>
+	<lev>23</lev>
 	<exp>540</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4200,10 +4200,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204023</id>
+	<id>204024</id>
 	<type>204</type>
 	<icon>5000003</icon>
-	<lev>23</lev>
+	<lev>24</lev>
 	<exp>560</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4213,10 +4213,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204024</id>
+	<id>204025</id>
 	<type>204</type>
 	<icon>5000004</icon>
-	<lev>24</lev>
+	<lev>25</lev>
 	<exp>580</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4226,10 +4226,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204025</id>
+	<id>204026</id>
 	<type>204</type>
 	<icon>5000004</icon>
-	<lev>25</lev>
+	<lev>26</lev>
 	<exp>600</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4239,10 +4239,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204026</id>
+	<id>204027</id>
 	<type>204</type>
 	<icon>5000004</icon>
-	<lev>26</lev>
+	<lev>27</lev>
 	<exp>620</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4252,10 +4252,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204027</id>
+	<id>204028</id>
 	<type>204</type>
 	<icon>5000004</icon>
-	<lev>27</lev>
+	<lev>28</lev>
 	<exp>640</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4265,10 +4265,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204028</id>
+	<id>204029</id>
 	<type>204</type>
 	<icon>5000004</icon>
-	<lev>28</lev>
+	<lev>29</lev>
 	<exp>660</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4278,10 +4278,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204029</id>
+	<id>204030</id>
 	<type>204</type>
 	<icon>5000004</icon>
-	<lev>29</lev>
+	<lev>30</lev>
 	<exp>680</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4291,10 +4291,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204030</id>
+	<id>204031</id>
 	<type>204</type>
 	<icon>5000005</icon>
-	<lev>30</lev>
+	<lev>31</lev>
 	<exp>700</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4304,10 +4304,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204031</id>
+	<id>204032</id>
 	<type>204</type>
 	<icon>5000005</icon>
-	<lev>31</lev>
+	<lev>32</lev>
 	<exp>720</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4317,10 +4317,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204032</id>
+	<id>204033</id>
 	<type>204</type>
 	<icon>5000005</icon>
-	<lev>32</lev>
+	<lev>33</lev>
 	<exp>740</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4330,10 +4330,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204033</id>
+	<id>204034</id>
 	<type>204</type>
 	<icon>5000005</icon>
-	<lev>33</lev>
+	<lev>34</lev>
 	<exp>760</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4343,10 +4343,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204034</id>
+	<id>204035</id>
 	<type>204</type>
 	<icon>5000005</icon>
-	<lev>34</lev>
+	<lev>35</lev>
 	<exp>780</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4356,10 +4356,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204035</id>
+	<id>204036</id>
 	<type>204</type>
 	<icon>5000005</icon>
-	<lev>35</lev>
+	<lev>36</lev>
 	<exp>800</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4369,10 +4369,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204036</id>
+	<id>204037</id>
 	<type>204</type>
 	<icon>5000006</icon>
-	<lev>36</lev>
+	<lev>37</lev>
 	<exp>820</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4382,10 +4382,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204037</id>
+	<id>204038</id>
 	<type>204</type>
 	<icon>5000006</icon>
-	<lev>37</lev>
+	<lev>38</lev>
 	<exp>840</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4395,10 +4395,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204038</id>
+	<id>204039</id>
 	<type>204</type>
 	<icon>5000006</icon>
-	<lev>38</lev>
+	<lev>39</lev>
 	<exp>860</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4408,10 +4408,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204039</id>
+	<id>204040</id>
 	<type>204</type>
 	<icon>5000006</icon>
-	<lev>39</lev>
+	<lev>40</lev>
 	<exp>880</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4421,10 +4421,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204040</id>
+	<id>204041</id>
 	<type>204</type>
 	<icon>5000006</icon>
-	<lev>40</lev>
+	<lev>41</lev>
 	<exp>900</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4434,10 +4434,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204041</id>
+	<id>204042</id>
 	<type>204</type>
 	<icon>5000006</icon>
-	<lev>41</lev>
+	<lev>42</lev>
 	<exp>920</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4447,10 +4447,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204042</id>
+	<id>204043</id>
 	<type>204</type>
 	<icon>5000007</icon>
-	<lev>42</lev>
+	<lev>43</lev>
 	<exp>940</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4460,10 +4460,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204043</id>
+	<id>204044</id>
 	<type>204</type>
 	<icon>5000007</icon>
-	<lev>43</lev>
+	<lev>44</lev>
 	<exp>960</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4473,10 +4473,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204044</id>
+	<id>204045</id>
 	<type>204</type>
 	<icon>5000007</icon>
-	<lev>44</lev>
+	<lev>45</lev>
 	<exp>980</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4486,10 +4486,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204045</id>
+	<id>204046</id>
 	<type>204</type>
 	<icon>5000007</icon>
-	<lev>45</lev>
+	<lev>46</lev>
 	<exp>1000</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4499,10 +4499,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204046</id>
+	<id>204047</id>
 	<type>204</type>
 	<icon>5000007</icon>
-	<lev>46</lev>
+	<lev>47</lev>
 	<exp>1020</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4512,10 +4512,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204047</id>
+	<id>204048</id>
 	<type>204</type>
 	<icon>5000007</icon>
-	<lev>47</lev>
+	<lev>48</lev>
 	<exp>1040</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4525,10 +4525,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204048</id>
+	<id>204049</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>48</lev>
+	<lev>49</lev>
 	<exp>1060</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4538,10 +4538,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204049</id>
+	<id>204050</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>49</lev>
+	<lev>50</lev>
 	<exp>1080</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4551,10 +4551,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204050</id>
+	<id>204051</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>50</lev>
+	<lev>51</lev>
 	<exp>1100</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4564,10 +4564,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204051</id>
+	<id>204052</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>51</lev>
+	<lev>52</lev>
 	<exp>1120</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4577,10 +4577,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204052</id>
+	<id>204053</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>52</lev>
+	<lev>53</lev>
 	<exp>1140</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4590,10 +4590,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204053</id>
+	<id>204054</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>53</lev>
+	<lev>54</lev>
 	<exp>1160</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4603,10 +4603,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204054</id>
+	<id>204055</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>54</lev>
+	<lev>55</lev>
 	<exp>1180</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4616,10 +4616,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204055</id>
+	<id>204056</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>55</lev>
+	<lev>56</lev>
 	<exp>1200</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4629,10 +4629,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204056</id>
+	<id>204057</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>56</lev>
+	<lev>57</lev>
 	<exp>1220</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4642,10 +4642,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204057</id>
+	<id>204058</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>57</lev>
+	<lev>58</lev>
 	<exp>1240</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4655,10 +4655,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204058</id>
+	<id>204059</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>58</lev>
+	<lev>59</lev>
 	<exp>1260</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4668,10 +4668,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204059</id>
+	<id>204060</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>59</lev>
+	<lev>60</lev>
 	<exp>1280</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4681,10 +4681,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204060</id>
+	<id>204061</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>60</lev>
+	<lev>61</lev>
 	<exp>1300</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4694,10 +4694,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204061</id>
+	<id>204062</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>61</lev>
+	<lev>62</lev>
 	<exp>1320</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4707,10 +4707,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204062</id>
+	<id>204063</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>62</lev>
+	<lev>63</lev>
 	<exp>1340</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4720,10 +4720,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204063</id>
+	<id>204064</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>63</lev>
+	<lev>64</lev>
 	<exp>1360</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4733,10 +4733,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204064</id>
+	<id>204065</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>64</lev>
+	<lev>65</lev>
 	<exp>1380</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4746,10 +4746,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204065</id>
+	<id>204066</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>65</lev>
+	<lev>66</lev>
 	<exp>1400</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4759,10 +4759,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204066</id>
+	<id>204067</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>66</lev>
+	<lev>67</lev>
 	<exp>1420</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4772,10 +4772,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204067</id>
+	<id>204068</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>67</lev>
+	<lev>68</lev>
 	<exp>1440</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4785,10 +4785,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204068</id>
+	<id>204069</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>68</lev>
+	<lev>69</lev>
 	<exp>1460</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4798,10 +4798,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204069</id>
+	<id>204070</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>69</lev>
+	<lev>70</lev>
 	<exp>1480</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4811,10 +4811,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204070</id>
+	<id>204071</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>70</lev>
+	<lev>71</lev>
 	<exp>1500</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4824,10 +4824,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204071</id>
+	<id>204072</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>71</lev>
+	<lev>72</lev>
 	<exp>1520</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4837,10 +4837,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204072</id>
+	<id>204073</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>72</lev>
+	<lev>73</lev>
 	<exp>1540</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4850,10 +4850,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204073</id>
+	<id>204074</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>73</lev>
+	<lev>74</lev>
 	<exp>1560</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4863,10 +4863,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204074</id>
+	<id>204075</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>74</lev>
+	<lev>75</lev>
 	<exp>1580</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4876,10 +4876,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204075</id>
+	<id>204076</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>75</lev>
+	<lev>76</lev>
 	<exp>1600</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4889,10 +4889,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204076</id>
+	<id>204077</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>76</lev>
+	<lev>77</lev>
 	<exp>1620</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4902,10 +4902,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204077</id>
+	<id>204078</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>77</lev>
+	<lev>78</lev>
 	<exp>1640</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4915,10 +4915,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204078</id>
+	<id>204079</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>78</lev>
+	<lev>79</lev>
 	<exp>1660</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4928,10 +4928,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204079</id>
+	<id>204080</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>79</lev>
+	<lev>80</lev>
 	<exp>1680</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4941,10 +4941,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204080</id>
+	<id>204081</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>80</lev>
+	<lev>81</lev>
 	<exp>1700</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4954,10 +4954,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204081</id>
+	<id>204082</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>81</lev>
+	<lev>82</lev>
 	<exp>1720</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4967,10 +4967,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204082</id>
+	<id>204083</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>82</lev>
+	<lev>83</lev>
 	<exp>1740</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4980,10 +4980,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204083</id>
+	<id>204084</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>83</lev>
+	<lev>84</lev>
 	<exp>1760</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -4993,10 +4993,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204084</id>
+	<id>204085</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>84</lev>
+	<lev>85</lev>
 	<exp>1780</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5006,10 +5006,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204085</id>
+	<id>204086</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>85</lev>
+	<lev>86</lev>
 	<exp>1800</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5019,10 +5019,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204086</id>
+	<id>204087</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>86</lev>
+	<lev>87</lev>
 	<exp>1820</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5032,10 +5032,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204087</id>
+	<id>204088</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>87</lev>
+	<lev>88</lev>
 	<exp>1840</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5045,10 +5045,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204088</id>
+	<id>204089</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>88</lev>
+	<lev>89</lev>
 	<exp>1860</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5058,10 +5058,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204089</id>
+	<id>204090</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>89</lev>
+	<lev>90</lev>
 	<exp>1880</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5071,10 +5071,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204090</id>
+	<id>204091</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>90</lev>
+	<lev>91</lev>
 	<exp>1900</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5084,10 +5084,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204091</id>
+	<id>204092</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>91</lev>
+	<lev>92</lev>
 	<exp>1920</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5097,10 +5097,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204092</id>
+	<id>204093</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>92</lev>
+	<lev>93</lev>
 	<exp>1940</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5110,10 +5110,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204093</id>
+	<id>204094</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>93</lev>
+	<lev>94</lev>
 	<exp>1960</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5123,10 +5123,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204094</id>
+	<id>204095</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>94</lev>
+	<lev>95</lev>
 	<exp>1980</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5136,10 +5136,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204095</id>
+	<id>204096</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>95</lev>
+	<lev>96</lev>
 	<exp>2000</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5149,10 +5149,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204096</id>
+	<id>204097</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>96</lev>
+	<lev>97</lev>
 	<exp>2020</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5162,10 +5162,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204097</id>
+	<id>204098</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>97</lev>
+	<lev>98</lev>
 	<exp>2040</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5175,10 +5175,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204098</id>
+	<id>204099</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>98</lev>
+	<lev>99</lev>
 	<exp>2060</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5188,10 +5188,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>204099</id>
+	<id>204100</id>
 	<type>204</type>
 	<icon>5000008</icon>
-	<lev>99</lev>
+	<lev>100</lev>
 	<exp>2080</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5201,10 +5201,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205000</id>
+	<id>205001</id>
 	<type>205</type>
 	<icon>6000000</icon>
-	<lev>0</lev>
+	<lev>1</lev>
 	<exp>100</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5214,10 +5214,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205001</id>
+	<id>205002</id>
 	<type>205</type>
 	<icon>6000000</icon>
-	<lev>1</lev>
+	<lev>2</lev>
 	<exp>120</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5227,10 +5227,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205002</id>
+	<id>205003</id>
 	<type>205</type>
 	<icon>6000000</icon>
-	<lev>2</lev>
+	<lev>3</lev>
 	<exp>140</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5240,10 +5240,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205003</id>
+	<id>205004</id>
 	<type>205</type>
 	<icon>6000000</icon>
-	<lev>3</lev>
+	<lev>4</lev>
 	<exp>160</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5253,10 +5253,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205004</id>
+	<id>205005</id>
 	<type>205</type>
 	<icon>6000000</icon>
-	<lev>4</lev>
+	<lev>5</lev>
 	<exp>180</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5266,10 +5266,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205005</id>
+	<id>205006</id>
 	<type>205</type>
 	<icon>6000000</icon>
-	<lev>5</lev>
+	<lev>6</lev>
 	<exp>200</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5279,10 +5279,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205006</id>
+	<id>205007</id>
 	<type>205</type>
 	<icon>6000001</icon>
-	<lev>6</lev>
+	<lev>7</lev>
 	<exp>220</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5292,10 +5292,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205007</id>
+	<id>205008</id>
 	<type>205</type>
 	<icon>6000001</icon>
-	<lev>7</lev>
+	<lev>8</lev>
 	<exp>240</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5305,10 +5305,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205008</id>
+	<id>205009</id>
 	<type>205</type>
 	<icon>6000001</icon>
-	<lev>8</lev>
+	<lev>9</lev>
 	<exp>260</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5318,10 +5318,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205009</id>
+	<id>205010</id>
 	<type>205</type>
 	<icon>6000001</icon>
-	<lev>9</lev>
+	<lev>10</lev>
 	<exp>280</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5331,10 +5331,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205010</id>
+	<id>205011</id>
 	<type>205</type>
 	<icon>6000001</icon>
-	<lev>10</lev>
+	<lev>11</lev>
 	<exp>300</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5344,10 +5344,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205011</id>
+	<id>205012</id>
 	<type>205</type>
 	<icon>6000001</icon>
-	<lev>11</lev>
+	<lev>12</lev>
 	<exp>320</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5357,10 +5357,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205012</id>
+	<id>205013</id>
 	<type>205</type>
 	<icon>6000002</icon>
-	<lev>12</lev>
+	<lev>13</lev>
 	<exp>340</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5370,10 +5370,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205013</id>
+	<id>205014</id>
 	<type>205</type>
 	<icon>6000002</icon>
-	<lev>13</lev>
+	<lev>14</lev>
 	<exp>360</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5383,10 +5383,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205014</id>
+	<id>205015</id>
 	<type>205</type>
 	<icon>6000002</icon>
-	<lev>14</lev>
+	<lev>15</lev>
 	<exp>380</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5396,10 +5396,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205015</id>
+	<id>205016</id>
 	<type>205</type>
 	<icon>6000002</icon>
-	<lev>15</lev>
+	<lev>16</lev>
 	<exp>400</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5409,10 +5409,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205016</id>
+	<id>205017</id>
 	<type>205</type>
 	<icon>6000002</icon>
-	<lev>16</lev>
+	<lev>17</lev>
 	<exp>420</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5422,10 +5422,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205017</id>
+	<id>205018</id>
 	<type>205</type>
 	<icon>6000002</icon>
-	<lev>17</lev>
+	<lev>18</lev>
 	<exp>440</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5435,10 +5435,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205018</id>
+	<id>205019</id>
 	<type>205</type>
 	<icon>6000003</icon>
-	<lev>18</lev>
+	<lev>19</lev>
 	<exp>460</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5448,10 +5448,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205019</id>
+	<id>205020</id>
 	<type>205</type>
 	<icon>6000003</icon>
-	<lev>19</lev>
+	<lev>20</lev>
 	<exp>480</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5461,10 +5461,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205020</id>
+	<id>205021</id>
 	<type>205</type>
 	<icon>6000003</icon>
-	<lev>20</lev>
+	<lev>21</lev>
 	<exp>500</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5474,10 +5474,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205021</id>
+	<id>205022</id>
 	<type>205</type>
 	<icon>6000003</icon>
-	<lev>21</lev>
+	<lev>22</lev>
 	<exp>520</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5487,10 +5487,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205022</id>
+	<id>205023</id>
 	<type>205</type>
 	<icon>6000003</icon>
-	<lev>22</lev>
+	<lev>23</lev>
 	<exp>540</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5500,10 +5500,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205023</id>
+	<id>205024</id>
 	<type>205</type>
 	<icon>6000003</icon>
-	<lev>23</lev>
+	<lev>24</lev>
 	<exp>560</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5513,10 +5513,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205024</id>
+	<id>205025</id>
 	<type>205</type>
 	<icon>6000004</icon>
-	<lev>24</lev>
+	<lev>25</lev>
 	<exp>580</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5526,10 +5526,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205025</id>
+	<id>205026</id>
 	<type>205</type>
 	<icon>6000004</icon>
-	<lev>25</lev>
+	<lev>26</lev>
 	<exp>600</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5539,10 +5539,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205026</id>
+	<id>205027</id>
 	<type>205</type>
 	<icon>6000004</icon>
-	<lev>26</lev>
+	<lev>27</lev>
 	<exp>620</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5552,10 +5552,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205027</id>
+	<id>205028</id>
 	<type>205</type>
 	<icon>6000004</icon>
-	<lev>27</lev>
+	<lev>28</lev>
 	<exp>640</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5565,10 +5565,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205028</id>
+	<id>205029</id>
 	<type>205</type>
 	<icon>6000004</icon>
-	<lev>28</lev>
+	<lev>29</lev>
 	<exp>660</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5578,10 +5578,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205029</id>
+	<id>205030</id>
 	<type>205</type>
 	<icon>6000004</icon>
-	<lev>29</lev>
+	<lev>30</lev>
 	<exp>680</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5591,10 +5591,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205030</id>
+	<id>205031</id>
 	<type>205</type>
 	<icon>6000005</icon>
-	<lev>30</lev>
+	<lev>31</lev>
 	<exp>700</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5604,10 +5604,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205031</id>
+	<id>205032</id>
 	<type>205</type>
 	<icon>6000005</icon>
-	<lev>31</lev>
+	<lev>32</lev>
 	<exp>720</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5617,10 +5617,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205032</id>
+	<id>205033</id>
 	<type>205</type>
 	<icon>6000005</icon>
-	<lev>32</lev>
+	<lev>33</lev>
 	<exp>740</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5630,10 +5630,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205033</id>
+	<id>205034</id>
 	<type>205</type>
 	<icon>6000005</icon>
-	<lev>33</lev>
+	<lev>34</lev>
 	<exp>760</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5643,10 +5643,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205034</id>
+	<id>205035</id>
 	<type>205</type>
 	<icon>6000005</icon>
-	<lev>34</lev>
+	<lev>35</lev>
 	<exp>780</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5656,10 +5656,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205035</id>
+	<id>205036</id>
 	<type>205</type>
 	<icon>6000005</icon>
-	<lev>35</lev>
+	<lev>36</lev>
 	<exp>800</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5669,10 +5669,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205036</id>
+	<id>205037</id>
 	<type>205</type>
 	<icon>6000006</icon>
-	<lev>36</lev>
+	<lev>37</lev>
 	<exp>820</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5682,10 +5682,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205037</id>
+	<id>205038</id>
 	<type>205</type>
 	<icon>6000006</icon>
-	<lev>37</lev>
+	<lev>38</lev>
 	<exp>840</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5695,10 +5695,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205038</id>
+	<id>205039</id>
 	<type>205</type>
 	<icon>6000006</icon>
-	<lev>38</lev>
+	<lev>39</lev>
 	<exp>860</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5708,10 +5708,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205039</id>
+	<id>205040</id>
 	<type>205</type>
 	<icon>6000006</icon>
-	<lev>39</lev>
+	<lev>40</lev>
 	<exp>880</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5721,10 +5721,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205040</id>
+	<id>205041</id>
 	<type>205</type>
 	<icon>6000006</icon>
-	<lev>40</lev>
+	<lev>41</lev>
 	<exp>900</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5734,10 +5734,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205041</id>
+	<id>205042</id>
 	<type>205</type>
 	<icon>6000006</icon>
-	<lev>41</lev>
+	<lev>42</lev>
 	<exp>920</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5747,10 +5747,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205042</id>
+	<id>205043</id>
 	<type>205</type>
 	<icon>6000007</icon>
-	<lev>42</lev>
+	<lev>43</lev>
 	<exp>940</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5760,10 +5760,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205043</id>
+	<id>205044</id>
 	<type>205</type>
 	<icon>6000007</icon>
-	<lev>43</lev>
+	<lev>44</lev>
 	<exp>960</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5773,10 +5773,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205044</id>
+	<id>205045</id>
 	<type>205</type>
 	<icon>6000007</icon>
-	<lev>44</lev>
+	<lev>45</lev>
 	<exp>980</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5786,10 +5786,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205045</id>
+	<id>205046</id>
 	<type>205</type>
 	<icon>6000007</icon>
-	<lev>45</lev>
+	<lev>46</lev>
 	<exp>1000</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5799,10 +5799,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205046</id>
+	<id>205047</id>
 	<type>205</type>
 	<icon>6000007</icon>
-	<lev>46</lev>
+	<lev>47</lev>
 	<exp>1020</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5812,10 +5812,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205047</id>
+	<id>205048</id>
 	<type>205</type>
 	<icon>6000007</icon>
-	<lev>47</lev>
+	<lev>48</lev>
 	<exp>1040</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5825,10 +5825,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205048</id>
+	<id>205049</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>48</lev>
+	<lev>49</lev>
 	<exp>1060</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5838,10 +5838,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205049</id>
+	<id>205050</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>49</lev>
+	<lev>50</lev>
 	<exp>1080</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5851,10 +5851,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205050</id>
+	<id>205051</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>50</lev>
+	<lev>51</lev>
 	<exp>1100</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5864,10 +5864,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205051</id>
+	<id>205052</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>51</lev>
+	<lev>52</lev>
 	<exp>1120</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5877,10 +5877,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205052</id>
+	<id>205053</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>52</lev>
+	<lev>53</lev>
 	<exp>1140</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5890,10 +5890,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205053</id>
+	<id>205054</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>53</lev>
+	<lev>54</lev>
 	<exp>1160</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5903,10 +5903,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205054</id>
+	<id>205055</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>54</lev>
+	<lev>55</lev>
 	<exp>1180</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5916,10 +5916,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205055</id>
+	<id>205056</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>55</lev>
+	<lev>56</lev>
 	<exp>1200</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5929,10 +5929,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205056</id>
+	<id>205057</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>56</lev>
+	<lev>57</lev>
 	<exp>1220</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5942,10 +5942,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205057</id>
+	<id>205058</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>57</lev>
+	<lev>58</lev>
 	<exp>1240</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5955,10 +5955,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205058</id>
+	<id>205059</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>58</lev>
+	<lev>59</lev>
 	<exp>1260</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5968,10 +5968,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205059</id>
+	<id>205060</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>59</lev>
+	<lev>60</lev>
 	<exp>1280</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5981,10 +5981,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205060</id>
+	<id>205061</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>60</lev>
+	<lev>61</lev>
 	<exp>1300</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -5994,10 +5994,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205061</id>
+	<id>205062</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>61</lev>
+	<lev>62</lev>
 	<exp>1320</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6007,10 +6007,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205062</id>
+	<id>205063</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>62</lev>
+	<lev>63</lev>
 	<exp>1340</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6020,10 +6020,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205063</id>
+	<id>205064</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>63</lev>
+	<lev>64</lev>
 	<exp>1360</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6033,10 +6033,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205064</id>
+	<id>205065</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>64</lev>
+	<lev>65</lev>
 	<exp>1380</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6046,10 +6046,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205065</id>
+	<id>205066</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>65</lev>
+	<lev>66</lev>
 	<exp>1400</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6059,10 +6059,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205066</id>
+	<id>205067</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>66</lev>
+	<lev>67</lev>
 	<exp>1420</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6072,10 +6072,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205067</id>
+	<id>205068</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>67</lev>
+	<lev>68</lev>
 	<exp>1440</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6085,10 +6085,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205068</id>
+	<id>205069</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>68</lev>
+	<lev>69</lev>
 	<exp>1460</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6098,10 +6098,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205069</id>
+	<id>205070</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>69</lev>
+	<lev>70</lev>
 	<exp>1480</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6111,10 +6111,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205070</id>
+	<id>205071</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>70</lev>
+	<lev>71</lev>
 	<exp>1500</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6124,10 +6124,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205071</id>
+	<id>205072</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>71</lev>
+	<lev>72</lev>
 	<exp>1520</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6137,10 +6137,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205072</id>
+	<id>205073</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>72</lev>
+	<lev>73</lev>
 	<exp>1540</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6150,10 +6150,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205073</id>
+	<id>205074</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>73</lev>
+	<lev>74</lev>
 	<exp>1560</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6163,10 +6163,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205074</id>
+	<id>205075</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>74</lev>
+	<lev>75</lev>
 	<exp>1580</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6176,10 +6176,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205075</id>
+	<id>205076</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>75</lev>
+	<lev>76</lev>
 	<exp>1600</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6189,10 +6189,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205076</id>
+	<id>205077</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>76</lev>
+	<lev>77</lev>
 	<exp>1620</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6202,10 +6202,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205077</id>
+	<id>205078</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>77</lev>
+	<lev>78</lev>
 	<exp>1640</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6215,10 +6215,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205078</id>
+	<id>205079</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>78</lev>
+	<lev>79</lev>
 	<exp>1660</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6228,10 +6228,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205079</id>
+	<id>205080</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>79</lev>
+	<lev>80</lev>
 	<exp>1680</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6241,10 +6241,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205080</id>
+	<id>205081</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>80</lev>
+	<lev>81</lev>
 	<exp>1700</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6254,10 +6254,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205081</id>
+	<id>205082</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>81</lev>
+	<lev>82</lev>
 	<exp>1720</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6267,10 +6267,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205082</id>
+	<id>205083</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>82</lev>
+	<lev>83</lev>
 	<exp>1740</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6280,10 +6280,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205083</id>
+	<id>205084</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>83</lev>
+	<lev>84</lev>
 	<exp>1760</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6293,10 +6293,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205084</id>
+	<id>205085</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>84</lev>
+	<lev>85</lev>
 	<exp>1780</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6306,10 +6306,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205085</id>
+	<id>205086</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>85</lev>
+	<lev>86</lev>
 	<exp>1800</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6319,10 +6319,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205086</id>
+	<id>205087</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>86</lev>
+	<lev>87</lev>
 	<exp>1820</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6332,10 +6332,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205087</id>
+	<id>205088</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>87</lev>
+	<lev>88</lev>
 	<exp>1840</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6345,10 +6345,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205088</id>
+	<id>205089</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>88</lev>
+	<lev>89</lev>
 	<exp>1860</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6358,10 +6358,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205089</id>
+	<id>205090</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>89</lev>
+	<lev>90</lev>
 	<exp>1880</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6371,10 +6371,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205090</id>
+	<id>205091</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>90</lev>
+	<lev>91</lev>
 	<exp>1900</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6384,10 +6384,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205091</id>
+	<id>205092</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>91</lev>
+	<lev>92</lev>
 	<exp>1920</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6397,10 +6397,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205092</id>
+	<id>205093</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>92</lev>
+	<lev>93</lev>
 	<exp>1940</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6410,10 +6410,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205093</id>
+	<id>205094</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>93</lev>
+	<lev>94</lev>
 	<exp>1960</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6423,10 +6423,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205094</id>
+	<id>205095</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>94</lev>
+	<lev>95</lev>
 	<exp>1980</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6436,10 +6436,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205095</id>
+	<id>205096</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>95</lev>
+	<lev>96</lev>
 	<exp>2000</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6449,10 +6449,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205096</id>
+	<id>205097</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>96</lev>
+	<lev>97</lev>
 	<exp>2020</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6462,10 +6462,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205097</id>
+	<id>205098</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>97</lev>
+	<lev>98</lev>
 	<exp>2040</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6475,10 +6475,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205098</id>
+	<id>205099</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>98</lev>
+	<lev>99</lev>
 	<exp>2060</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6488,10 +6488,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>205099</id>
+	<id>205100</id>
 	<type>205</type>
 	<icon>6000008</icon>
-	<lev>99</lev>
+	<lev>100</lev>
 	<exp>2080</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6501,10 +6501,10 @@
 	<fu>0</fu>
 </config>
 <config>
-	<id>206000</id>
+	<id>206001</id>
 	<type>206</type>
 	<icon>7000000</icon>
-	<lev>0</lev>
+	<lev>1</lev>
 	<exp>100</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6514,10 +6514,10 @@
 	<fu>5</fu>
 </config>
 <config>
-	<id>206001</id>
+	<id>206002</id>
 	<type>206</type>
 	<icon>7000000</icon>
-	<lev>1</lev>
+	<lev>2</lev>
 	<exp>120</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6527,10 +6527,10 @@
 	<fu>11</fu>
 </config>
 <config>
-	<id>206002</id>
+	<id>206003</id>
 	<type>206</type>
 	<icon>7000000</icon>
-	<lev>2</lev>
+	<lev>3</lev>
 	<exp>140</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6540,10 +6540,10 @@
 	<fu>16</fu>
 </config>
 <config>
-	<id>206003</id>
+	<id>206004</id>
 	<type>206</type>
 	<icon>7000000</icon>
-	<lev>3</lev>
+	<lev>4</lev>
 	<exp>160</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6553,10 +6553,10 @@
 	<fu>21</fu>
 </config>
 <config>
-	<id>206004</id>
+	<id>206005</id>
 	<type>206</type>
 	<icon>7000000</icon>
-	<lev>4</lev>
+	<lev>5</lev>
 	<exp>180</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6566,10 +6566,10 @@
 	<fu>26</fu>
 </config>
 <config>
-	<id>206005</id>
+	<id>206006</id>
 	<type>206</type>
 	<icon>7000000</icon>
-	<lev>5</lev>
+	<lev>6</lev>
 	<exp>200</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6579,10 +6579,10 @@
 	<fu>32</fu>
 </config>
 <config>
-	<id>206006</id>
+	<id>206007</id>
 	<type>206</type>
 	<icon>7000001</icon>
-	<lev>6</lev>
+	<lev>7</lev>
 	<exp>220</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6592,10 +6592,10 @@
 	<fu>37</fu>
 </config>
 <config>
-	<id>206007</id>
+	<id>206008</id>
 	<type>206</type>
 	<icon>7000001</icon>
-	<lev>7</lev>
+	<lev>8</lev>
 	<exp>240</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6605,10 +6605,10 @@
 	<fu>42</fu>
 </config>
 <config>
-	<id>206008</id>
+	<id>206009</id>
 	<type>206</type>
 	<icon>7000001</icon>
-	<lev>8</lev>
+	<lev>9</lev>
 	<exp>260</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6618,10 +6618,10 @@
 	<fu>48</fu>
 </config>
 <config>
-	<id>206009</id>
+	<id>206010</id>
 	<type>206</type>
 	<icon>7000001</icon>
-	<lev>9</lev>
+	<lev>10</lev>
 	<exp>280</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6631,10 +6631,10 @@
 	<fu>53</fu>
 </config>
 <config>
-	<id>206010</id>
+	<id>206011</id>
 	<type>206</type>
 	<icon>7000001</icon>
-	<lev>10</lev>
+	<lev>11</lev>
 	<exp>300</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6644,10 +6644,10 @@
 	<fu>58</fu>
 </config>
 <config>
-	<id>206011</id>
+	<id>206012</id>
 	<type>206</type>
 	<icon>7000001</icon>
-	<lev>11</lev>
+	<lev>12</lev>
 	<exp>320</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6657,10 +6657,10 @@
 	<fu>63</fu>
 </config>
 <config>
-	<id>206012</id>
+	<id>206013</id>
 	<type>206</type>
 	<icon>7000002</icon>
-	<lev>12</lev>
+	<lev>13</lev>
 	<exp>340</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6670,10 +6670,10 @@
 	<fu>69</fu>
 </config>
 <config>
-	<id>206013</id>
+	<id>206014</id>
 	<type>206</type>
 	<icon>7000002</icon>
-	<lev>13</lev>
+	<lev>14</lev>
 	<exp>360</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6683,10 +6683,10 @@
 	<fu>74</fu>
 </config>
 <config>
-	<id>206014</id>
+	<id>206015</id>
 	<type>206</type>
 	<icon>7000002</icon>
-	<lev>14</lev>
+	<lev>15</lev>
 	<exp>380</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6696,10 +6696,10 @@
 	<fu>79</fu>
 </config>
 <config>
-	<id>206015</id>
+	<id>206016</id>
 	<type>206</type>
 	<icon>7000002</icon>
-	<lev>15</lev>
+	<lev>16</lev>
 	<exp>400</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6709,10 +6709,10 @@
 	<fu>84</fu>
 </config>
 <config>
-	<id>206016</id>
+	<id>206017</id>
 	<type>206</type>
 	<icon>7000002</icon>
-	<lev>16</lev>
+	<lev>17</lev>
 	<exp>420</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6722,10 +6722,10 @@
 	<fu>90</fu>
 </config>
 <config>
-	<id>206017</id>
+	<id>206018</id>
 	<type>206</type>
 	<icon>7000002</icon>
-	<lev>17</lev>
+	<lev>18</lev>
 	<exp>440</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6735,10 +6735,10 @@
 	<fu>95</fu>
 </config>
 <config>
-	<id>206018</id>
+	<id>206019</id>
 	<type>206</type>
 	<icon>7000003</icon>
-	<lev>18</lev>
+	<lev>19</lev>
 	<exp>460</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6748,10 +6748,10 @@
 	<fu>100</fu>
 </config>
 <config>
-	<id>206019</id>
+	<id>206020</id>
 	<type>206</type>
 	<icon>7000003</icon>
-	<lev>19</lev>
+	<lev>20</lev>
 	<exp>480</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6761,10 +6761,10 @@
 	<fu>106</fu>
 </config>
 <config>
-	<id>206020</id>
+	<id>206021</id>
 	<type>206</type>
 	<icon>7000003</icon>
-	<lev>20</lev>
+	<lev>21</lev>
 	<exp>500</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6774,10 +6774,10 @@
 	<fu>111</fu>
 </config>
 <config>
-	<id>206021</id>
+	<id>206022</id>
 	<type>206</type>
 	<icon>7000003</icon>
-	<lev>21</lev>
+	<lev>22</lev>
 	<exp>520</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6787,10 +6787,10 @@
 	<fu>116</fu>
 </config>
 <config>
-	<id>206022</id>
+	<id>206023</id>
 	<type>206</type>
 	<icon>7000003</icon>
-	<lev>22</lev>
+	<lev>23</lev>
 	<exp>540</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6800,10 +6800,10 @@
 	<fu>121</fu>
 </config>
 <config>
-	<id>206023</id>
+	<id>206024</id>
 	<type>206</type>
 	<icon>7000003</icon>
-	<lev>23</lev>
+	<lev>24</lev>
 	<exp>560</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6813,10 +6813,10 @@
 	<fu>127</fu>
 </config>
 <config>
-	<id>206024</id>
+	<id>206025</id>
 	<type>206</type>
 	<icon>7000004</icon>
-	<lev>24</lev>
+	<lev>25</lev>
 	<exp>580</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6826,10 +6826,10 @@
 	<fu>132</fu>
 </config>
 <config>
-	<id>206025</id>
+	<id>206026</id>
 	<type>206</type>
 	<icon>7000004</icon>
-	<lev>25</lev>
+	<lev>26</lev>
 	<exp>600</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6839,10 +6839,10 @@
 	<fu>137</fu>
 </config>
 <config>
-	<id>206026</id>
+	<id>206027</id>
 	<type>206</type>
 	<icon>7000004</icon>
-	<lev>26</lev>
+	<lev>27</lev>
 	<exp>620</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6852,10 +6852,10 @@
 	<fu>143</fu>
 </config>
 <config>
-	<id>206027</id>
+	<id>206028</id>
 	<type>206</type>
 	<icon>7000004</icon>
-	<lev>27</lev>
+	<lev>28</lev>
 	<exp>640</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6865,10 +6865,10 @@
 	<fu>148</fu>
 </config>
 <config>
-	<id>206028</id>
+	<id>206029</id>
 	<type>206</type>
 	<icon>7000004</icon>
-	<lev>28</lev>
+	<lev>29</lev>
 	<exp>660</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6878,10 +6878,10 @@
 	<fu>153</fu>
 </config>
 <config>
-	<id>206029</id>
+	<id>206030</id>
 	<type>206</type>
 	<icon>7000004</icon>
-	<lev>29</lev>
+	<lev>30</lev>
 	<exp>680</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6891,10 +6891,10 @@
 	<fu>158</fu>
 </config>
 <config>
-	<id>206030</id>
+	<id>206031</id>
 	<type>206</type>
 	<icon>7000005</icon>
-	<lev>30</lev>
+	<lev>31</lev>
 	<exp>700</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6904,10 +6904,10 @@
 	<fu>164</fu>
 </config>
 <config>
-	<id>206031</id>
+	<id>206032</id>
 	<type>206</type>
 	<icon>7000005</icon>
-	<lev>31</lev>
+	<lev>32</lev>
 	<exp>720</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6917,10 +6917,10 @@
 	<fu>169</fu>
 </config>
 <config>
-	<id>206032</id>
+	<id>206033</id>
 	<type>206</type>
 	<icon>7000005</icon>
-	<lev>32</lev>
+	<lev>33</lev>
 	<exp>740</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6930,10 +6930,10 @@
 	<fu>174</fu>
 </config>
 <config>
-	<id>206033</id>
+	<id>206034</id>
 	<type>206</type>
 	<icon>7000005</icon>
-	<lev>33</lev>
+	<lev>34</lev>
 	<exp>760</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6943,10 +6943,10 @@
 	<fu>180</fu>
 </config>
 <config>
-	<id>206034</id>
+	<id>206035</id>
 	<type>206</type>
 	<icon>7000005</icon>
-	<lev>34</lev>
+	<lev>35</lev>
 	<exp>780</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6956,10 +6956,10 @@
 	<fu>185</fu>
 </config>
 <config>
-	<id>206035</id>
+	<id>206036</id>
 	<type>206</type>
 	<icon>7000005</icon>
-	<lev>35</lev>
+	<lev>36</lev>
 	<exp>800</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6969,10 +6969,10 @@
 	<fu>190</fu>
 </config>
 <config>
-	<id>206036</id>
+	<id>206037</id>
 	<type>206</type>
 	<icon>7000006</icon>
-	<lev>36</lev>
+	<lev>37</lev>
 	<exp>820</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6982,10 +6982,10 @@
 	<fu>195</fu>
 </config>
 <config>
-	<id>206037</id>
+	<id>206038</id>
 	<type>206</type>
 	<icon>7000006</icon>
-	<lev>37</lev>
+	<lev>38</lev>
 	<exp>840</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -6995,10 +6995,10 @@
 	<fu>201</fu>
 </config>
 <config>
-	<id>206038</id>
+	<id>206039</id>
 	<type>206</type>
 	<icon>7000006</icon>
-	<lev>38</lev>
+	<lev>39</lev>
 	<exp>860</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7008,10 +7008,10 @@
 	<fu>206</fu>
 </config>
 <config>
-	<id>206039</id>
+	<id>206040</id>
 	<type>206</type>
 	<icon>7000006</icon>
-	<lev>39</lev>
+	<lev>40</lev>
 	<exp>880</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7021,10 +7021,10 @@
 	<fu>211</fu>
 </config>
 <config>
-	<id>206040</id>
+	<id>206041</id>
 	<type>206</type>
 	<icon>7000006</icon>
-	<lev>40</lev>
+	<lev>41</lev>
 	<exp>900</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7034,10 +7034,10 @@
 	<fu>216</fu>
 </config>
 <config>
-	<id>206041</id>
+	<id>206042</id>
 	<type>206</type>
 	<icon>7000006</icon>
-	<lev>41</lev>
+	<lev>42</lev>
 	<exp>920</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7047,10 +7047,10 @@
 	<fu>222</fu>
 </config>
 <config>
-	<id>206042</id>
+	<id>206043</id>
 	<type>206</type>
 	<icon>7000007</icon>
-	<lev>42</lev>
+	<lev>43</lev>
 	<exp>940</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7060,10 +7060,10 @@
 	<fu>227</fu>
 </config>
 <config>
-	<id>206043</id>
+	<id>206044</id>
 	<type>206</type>
 	<icon>7000007</icon>
-	<lev>43</lev>
+	<lev>44</lev>
 	<exp>960</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7073,10 +7073,10 @@
 	<fu>232</fu>
 </config>
 <config>
-	<id>206044</id>
+	<id>206045</id>
 	<type>206</type>
 	<icon>7000007</icon>
-	<lev>44</lev>
+	<lev>45</lev>
 	<exp>980</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7086,10 +7086,10 @@
 	<fu>238</fu>
 </config>
 <config>
-	<id>206045</id>
+	<id>206046</id>
 	<type>206</type>
 	<icon>7000007</icon>
-	<lev>45</lev>
+	<lev>46</lev>
 	<exp>1000</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7099,10 +7099,10 @@
 	<fu>243</fu>
 </config>
 <config>
-	<id>206046</id>
+	<id>206047</id>
 	<type>206</type>
 	<icon>7000007</icon>
-	<lev>46</lev>
+	<lev>47</lev>
 	<exp>1020</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7112,10 +7112,10 @@
 	<fu>248</fu>
 </config>
 <config>
-	<id>206047</id>
+	<id>206048</id>
 	<type>206</type>
 	<icon>7000007</icon>
-	<lev>47</lev>
+	<lev>48</lev>
 	<exp>1040</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7125,10 +7125,10 @@
 	<fu>253</fu>
 </config>
 <config>
-	<id>206048</id>
+	<id>206049</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>48</lev>
+	<lev>49</lev>
 	<exp>1060</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7138,10 +7138,10 @@
 	<fu>259</fu>
 </config>
 <config>
-	<id>206049</id>
+	<id>206050</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>49</lev>
+	<lev>50</lev>
 	<exp>1080</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7151,10 +7151,10 @@
 	<fu>264</fu>
 </config>
 <config>
-	<id>206050</id>
+	<id>206051</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>50</lev>
+	<lev>51</lev>
 	<exp>1100</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7164,10 +7164,10 @@
 	<fu>269</fu>
 </config>
 <config>
-	<id>206051</id>
+	<id>206052</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>51</lev>
+	<lev>52</lev>
 	<exp>1120</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7177,10 +7177,10 @@
 	<fu>275</fu>
 </config>
 <config>
-	<id>206052</id>
+	<id>206053</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>52</lev>
+	<lev>53</lev>
 	<exp>1140</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7190,10 +7190,10 @@
 	<fu>280</fu>
 </config>
 <config>
-	<id>206053</id>
+	<id>206054</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>53</lev>
+	<lev>54</lev>
 	<exp>1160</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7203,10 +7203,10 @@
 	<fu>285</fu>
 </config>
 <config>
-	<id>206054</id>
+	<id>206055</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>54</lev>
+	<lev>55</lev>
 	<exp>1180</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7216,10 +7216,10 @@
 	<fu>290</fu>
 </config>
 <config>
-	<id>206055</id>
+	<id>206056</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>55</lev>
+	<lev>56</lev>
 	<exp>1200</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7229,10 +7229,10 @@
 	<fu>296</fu>
 </config>
 <config>
-	<id>206056</id>
+	<id>206057</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>56</lev>
+	<lev>57</lev>
 	<exp>1220</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7242,10 +7242,10 @@
 	<fu>301</fu>
 </config>
 <config>
-	<id>206057</id>
+	<id>206058</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>57</lev>
+	<lev>58</lev>
 	<exp>1240</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7255,10 +7255,10 @@
 	<fu>306</fu>
 </config>
 <config>
-	<id>206058</id>
+	<id>206059</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>58</lev>
+	<lev>59</lev>
 	<exp>1260</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7268,10 +7268,10 @@
 	<fu>312</fu>
 </config>
 <config>
-	<id>206059</id>
+	<id>206060</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>59</lev>
+	<lev>60</lev>
 	<exp>1280</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7281,10 +7281,10 @@
 	<fu>317</fu>
 </config>
 <config>
-	<id>206060</id>
+	<id>206061</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>60</lev>
+	<lev>61</lev>
 	<exp>1300</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7294,10 +7294,10 @@
 	<fu>322</fu>
 </config>
 <config>
-	<id>206061</id>
+	<id>206062</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>61</lev>
+	<lev>62</lev>
 	<exp>1320</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7307,10 +7307,10 @@
 	<fu>327</fu>
 </config>
 <config>
-	<id>206062</id>
+	<id>206063</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>62</lev>
+	<lev>63</lev>
 	<exp>1340</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7320,10 +7320,10 @@
 	<fu>333</fu>
 </config>
 <config>
-	<id>206063</id>
+	<id>206064</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>63</lev>
+	<lev>64</lev>
 	<exp>1360</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7333,10 +7333,10 @@
 	<fu>338</fu>
 </config>
 <config>
-	<id>206064</id>
+	<id>206065</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>64</lev>
+	<lev>65</lev>
 	<exp>1380</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7346,10 +7346,10 @@
 	<fu>343</fu>
 </config>
 <config>
-	<id>206065</id>
+	<id>206066</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>65</lev>
+	<lev>66</lev>
 	<exp>1400</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7359,10 +7359,10 @@
 	<fu>348</fu>
 </config>
 <config>
-	<id>206066</id>
+	<id>206067</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>66</lev>
+	<lev>67</lev>
 	<exp>1420</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7372,10 +7372,10 @@
 	<fu>354</fu>
 </config>
 <config>
-	<id>206067</id>
+	<id>206068</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>67</lev>
+	<lev>68</lev>
 	<exp>1440</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7385,10 +7385,10 @@
 	<fu>359</fu>
 </config>
 <config>
-	<id>206068</id>
+	<id>206069</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>68</lev>
+	<lev>69</lev>
 	<exp>1460</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7398,10 +7398,10 @@
 	<fu>364</fu>
 </config>
 <config>
-	<id>206069</id>
+	<id>206070</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>69</lev>
+	<lev>70</lev>
 	<exp>1480</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7411,10 +7411,10 @@
 	<fu>370</fu>
 </config>
 <config>
-	<id>206070</id>
+	<id>206071</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>70</lev>
+	<lev>71</lev>
 	<exp>1500</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7424,10 +7424,10 @@
 	<fu>375</fu>
 </config>
 <config>
-	<id>206071</id>
+	<id>206072</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>71</lev>
+	<lev>72</lev>
 	<exp>1520</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7437,10 +7437,10 @@
 	<fu>380</fu>
 </config>
 <config>
-	<id>206072</id>
+	<id>206073</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>72</lev>
+	<lev>73</lev>
 	<exp>1540</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7450,10 +7450,10 @@
 	<fu>385</fu>
 </config>
 <config>
-	<id>206073</id>
+	<id>206074</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>73</lev>
+	<lev>74</lev>
 	<exp>1560</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7463,10 +7463,10 @@
 	<fu>391</fu>
 </config>
 <config>
-	<id>206074</id>
+	<id>206075</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>74</lev>
+	<lev>75</lev>
 	<exp>1580</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7476,10 +7476,10 @@
 	<fu>396</fu>
 </config>
 <config>
-	<id>206075</id>
+	<id>206076</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>75</lev>
+	<lev>76</lev>
 	<exp>1600</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7489,10 +7489,10 @@
 	<fu>401</fu>
 </config>
 <config>
-	<id>206076</id>
+	<id>206077</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>76</lev>
+	<lev>77</lev>
 	<exp>1620</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7502,10 +7502,10 @@
 	<fu>407</fu>
 </config>
 <config>
-	<id>206077</id>
+	<id>206078</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>77</lev>
+	<lev>78</lev>
 	<exp>1640</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7515,10 +7515,10 @@
 	<fu>412</fu>
 </config>
 <config>
-	<id>206078</id>
+	<id>206079</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>78</lev>
+	<lev>79</lev>
 	<exp>1660</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7528,10 +7528,10 @@
 	<fu>417</fu>
 </config>
 <config>
-	<id>206079</id>
+	<id>206080</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>79</lev>
+	<lev>80</lev>
 	<exp>1680</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7541,10 +7541,10 @@
 	<fu>422</fu>
 </config>
 <config>
-	<id>206080</id>
+	<id>206081</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>80</lev>
+	<lev>81</lev>
 	<exp>1700</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7554,10 +7554,10 @@
 	<fu>428</fu>
 </config>
 <config>
-	<id>206081</id>
+	<id>206082</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>81</lev>
+	<lev>82</lev>
 	<exp>1720</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7567,10 +7567,10 @@
 	<fu>433</fu>
 </config>
 <config>
-	<id>206082</id>
+	<id>206083</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>82</lev>
+	<lev>83</lev>
 	<exp>1740</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7580,10 +7580,10 @@
 	<fu>438</fu>
 </config>
 <config>
-	<id>206083</id>
+	<id>206084</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>83</lev>
+	<lev>84</lev>
 	<exp>1760</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7593,10 +7593,10 @@
 	<fu>444</fu>
 </config>
 <config>
-	<id>206084</id>
+	<id>206085</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>84</lev>
+	<lev>85</lev>
 	<exp>1780</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7606,10 +7606,10 @@
 	<fu>449</fu>
 </config>
 <config>
-	<id>206085</id>
+	<id>206086</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>85</lev>
+	<lev>86</lev>
 	<exp>1800</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7619,10 +7619,10 @@
 	<fu>454</fu>
 </config>
 <config>
-	<id>206086</id>
+	<id>206087</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>86</lev>
+	<lev>87</lev>
 	<exp>1820</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7632,10 +7632,10 @@
 	<fu>459</fu>
 </config>
 <config>
-	<id>206087</id>
+	<id>206088</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>87</lev>
+	<lev>88</lev>
 	<exp>1840</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7645,10 +7645,10 @@
 	<fu>465</fu>
 </config>
 <config>
-	<id>206088</id>
+	<id>206089</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>88</lev>
+	<lev>89</lev>
 	<exp>1860</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7658,10 +7658,10 @@
 	<fu>470</fu>
 </config>
 <config>
-	<id>206089</id>
+	<id>206090</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>89</lev>
+	<lev>90</lev>
 	<exp>1880</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7671,10 +7671,10 @@
 	<fu>475</fu>
 </config>
 <config>
-	<id>206090</id>
+	<id>206091</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>90</lev>
+	<lev>91</lev>
 	<exp>1900</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7684,10 +7684,10 @@
 	<fu>480</fu>
 </config>
 <config>
-	<id>206091</id>
+	<id>206092</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>91</lev>
+	<lev>92</lev>
 	<exp>1920</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7697,10 +7697,10 @@
 	<fu>486</fu>
 </config>
 <config>
-	<id>206092</id>
+	<id>206093</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>92</lev>
+	<lev>93</lev>
 	<exp>1940</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7710,10 +7710,10 @@
 	<fu>491</fu>
 </config>
 <config>
-	<id>206093</id>
+	<id>206094</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>93</lev>
+	<lev>94</lev>
 	<exp>1960</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7723,10 +7723,10 @@
 	<fu>496</fu>
 </config>
 <config>
-	<id>206094</id>
+	<id>206095</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>94</lev>
+	<lev>95</lev>
 	<exp>1980</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7736,10 +7736,10 @@
 	<fu>502</fu>
 </config>
 <config>
-	<id>206095</id>
+	<id>206096</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>95</lev>
+	<lev>96</lev>
 	<exp>2000</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7749,10 +7749,10 @@
 	<fu>507</fu>
 </config>
 <config>
-	<id>206096</id>
+	<id>206097</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>96</lev>
+	<lev>97</lev>
 	<exp>2020</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7762,10 +7762,10 @@
 	<fu>512</fu>
 </config>
 <config>
-	<id>206097</id>
+	<id>206098</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>97</lev>
+	<lev>98</lev>
 	<exp>2040</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7775,10 +7775,10 @@
 	<fu>517</fu>
 </config>
 <config>
-	<id>206098</id>
+	<id>206099</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>98</lev>
+	<lev>99</lev>
 	<exp>2060</exp>
 	<hp>0</hp>
 	<attack>0</attack>
@@ -7788,10 +7788,10 @@
 	<fu>523</fu>
 </config>
 <config>
-	<id>206099</id>
+	<id>206100</id>
 	<type>206</type>
 	<icon>7000008</icon>
-	<lev>99</lev>
+	<lev>100</lev>
 	<exp>2080</exp>
 	<hp>0</hp>
 	<attack>0</attack>

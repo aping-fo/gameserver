@@ -6,15 +6,18 @@ import com.game.params.*;
 public class GroupTaskVO implements IProtocol {
 	public int id;//任务ID
 	public int count;//完成次数
+	public int copyId;//副本ID
 
 
 	public void decode(BufferBuilder bb) {
 		this.id = bb.getInt();
 		this.count = bb.getInt();
+		this.copyId = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
 		bb.putInt(this.id);
 		bb.putInt(this.count);
+		bb.putInt(this.copyId);
 	}
 }

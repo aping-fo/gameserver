@@ -5,6 +5,7 @@ package com.game.module.ladder;
  */
 public class RoomPlayer {
     private int hp;
+    private int teamId;
 
     public RoomPlayer(int hp) {
         this.hp = hp;
@@ -16,5 +17,17 @@ public class RoomPlayer {
 
     public boolean checkDeath() {
         return hp <= 0;
+    }
+
+    public int getTeamId() {
+        return teamId;
+    }
+
+    public void setTeamId(int teamId) {
+        this.teamId = teamId;
+    }
+
+    public int getHp() {
+        return hp;
     }
 }

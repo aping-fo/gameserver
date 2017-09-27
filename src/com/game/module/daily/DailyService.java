@@ -6,6 +6,7 @@ import java.util.Map.Entry;
 
 import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.sign.SignService;
+import com.game.util.ConfigData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -178,8 +179,7 @@ public class DailyService implements InitHandler {
 		data.setDailyTime(FIVE_CLOCK);
 		shopService.dailyReset(playerId);
 		signService.dailyReset(playerId);
-		data.setGroupTimes(1);
-		data.setLadderTimes(1);
+		data.setGroupTimes(ConfigData.globalParam().groupTimes);
 		// 更新每日任务
 		taskService.dailyReset(playerId);
 		data.setLoginDays(data.getLoginDays()+1);

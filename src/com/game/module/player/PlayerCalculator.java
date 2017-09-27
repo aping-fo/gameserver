@@ -58,6 +58,7 @@ public class PlayerCalculator {
 			Jewel jewel = data.getJewels().get(type);
 			if(jewel==null){
 				jewel = new Jewel();
+				jewel.setLev(1);
 				data.getJewels().put(type, jewel);
 			}
 		}

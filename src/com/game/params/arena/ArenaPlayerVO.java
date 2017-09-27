@@ -13,6 +13,7 @@ public class ArenaPlayerVO implements IProtocol {
 	public int fashionId;//时装ID
 	public int weapon;//武器
 	public int head;//头部
+	public int id;//在竞技场中玩家ID
 
 
 	public void decode(BufferBuilder bb) {
@@ -25,6 +26,7 @@ public class ArenaPlayerVO implements IProtocol {
 		this.fashionId = bb.getInt();
 		this.weapon = bb.getInt();
 		this.head = bb.getInt();
+		this.id = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -37,5 +39,6 @@ public class ArenaPlayerVO implements IProtocol {
 		bb.putInt(this.fashionId);
 		bb.putInt(this.weapon);
 		bb.putInt(this.head);
+		bb.putInt(this.id);
 	}
 }

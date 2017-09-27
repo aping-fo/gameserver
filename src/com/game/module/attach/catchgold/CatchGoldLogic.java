@@ -8,6 +8,7 @@ import com.game.module.attach.AttachType;
 import com.game.module.attach.leadaway.LeadAwayAttach;
 import com.game.module.copy.CopyInstance;
 import com.game.module.copy.CopyService;
+import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
@@ -23,6 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 金币活动玩法
@@ -39,7 +41,7 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
 
     @Override
     public byte getType() {
-        return AttachType.LEADAWAY;
+        return AttachType.CATCH_GOLD;
     }
 
     @Override
@@ -74,7 +76,7 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
         return Response.SUCCESS;
     }
 
-    public CopyReward sweep(int playerId, int copyId,int difficulty) {
+    public CopyReward sweep(int playerId, int copyId, int difficulty) {
         CopyReward result = new CopyReward();
         result.reward = new ArrayList<>();
         CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
@@ -106,7 +108,7 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
         }
 
         // 扣钱
-        int code = goodsService.decConsume(playerId, ConfigData.globalParam().quickLeadawayCopy, LogConsume.QUICK_LEADAWAY, difficulty);
+        int code = goodsService.decConsume(playerId, ConfigData.globalParam().catchGoldPrice, LogConsume.QUICK_GOLD, difficulty);
         if (code != Response.SUCCESS) {
             result.code = code;
             return result;
@@ -115,25 +117,22 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
         if (cfg.needEnergy > 0) {
             playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, difficulty);
         }
-
+        List<GoodsEntry> copyRewards = new ArrayList<>();
         //随机奖励
         RewardList list = new RewardList();
         list.rewards = new ArrayList<>();
-        int weight = ConfigData.leadawayAwardsWeight.get(copyId);
-        RangeMap<Integer,Integer> map = ConfigData.leadawayAwardsMap.get(copyId);
-        for(int i = 0;i < 30;i++) {
-            int random = RandomUtil.randInt(weight);
-            int itemId = map.get(random);
+        for (int[] award : cfg.rewards) {
             Reward reward = new Reward();
-            reward.count = 1;
-            reward.id = itemId;
+            reward.count = award[1];
+            reward.id = award[0];
             list.rewards.add(reward);
+            copyRewards.add(new GoodsEntry(award[0], award[1]));
         }
         result.reward.add(list);
 
         attach.alterChallenge(-1);
         attach.commitSync();
-
+        goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
         return result;
     }
 

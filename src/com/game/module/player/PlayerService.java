@@ -9,16 +9,11 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
+import com.game.data.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.game.SysConfig;
-import com.game.data.ErrCode;
-import com.game.data.GlobalConfig;
-import com.game.data.PlayerUpgradeCfg;
-import com.game.data.Response;
-import com.game.data.SceneConfig;
-import com.game.data.VIPConfig;
 import com.game.event.InitHandler;
 import com.game.module.admin.MessageService;
 import com.game.module.daily.DailyService;
@@ -194,13 +189,19 @@ public class PlayerService implements InitHandler {
 		playerData.setCurHead(headId);
 		playerData.getFashions().add(headId);
 		playerData.setGroupTimes(ConfigData.globalParam().groupTimes);
-		playerData.setLadderTimes(1);
 		//初始化技能
 		int[] skills = globalParam.playerDefaultSkill[player.getVocation()-1];
 		for(int skill:skills){
 			playerData.getSkills().add(skill);
 			playerData.getCurSkills().add(skill);
 	
+		}
+
+		for(Object object : ConfigData.getConfigs(ModuleOpenCfg.class)) {
+			ModuleOpenCfg cfg = (ModuleOpenCfg)object;
+			if(cfg.openType == 1) {
+				playerData.getModules().add(cfg.id);
+			}
 		}
 
 		// 背包空格
@@ -275,15 +276,15 @@ public class PlayerService implements InitHandler {
 						newbieRewards.add(new GoodsEntry(newbieMailReward[i][0], newbieMailReward[i][1]));
 					}
 				}
-				Context.getTimerService().scheduleDelay(new Runnable() {
+				/*Context.getTimerService().scheduleDelay(new Runnable() {
 					@Override
-					public void run() {
+					public void run() {*/
 						//goodsService.addRewards(playerId, newbieRewards, LogConsume.GM);
-						String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
-						String mailContent = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_CONTENT).tips;
-						mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);
-					}
-				}, 10, TimeUnit.SECONDS);
+				String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
+				String mailContent = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_CONTENT).tips;
+				mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);
+					/*}
+				}, 10, TimeUnit.SECONDS);*/
 
 			}
 		});

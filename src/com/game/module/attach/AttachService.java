@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.attach.catchgold.CatchGoldAttach;
+import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.leadaway.LeadAwayLogic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
@@ -41,6 +43,8 @@ public class AttachService implements InitHandler {
 		register(BeanManager.getBean(TreasureLogic.class));
 		//顺手牵羊副本
 		register(BeanManager.getBean(LeadAwayLogic.class));
+		//金币副本副本
+		register(BeanManager.getBean(CatchGoldLogic.class));
 		//经验副本
 		register(BeanManager.getBean(ExperienceLogic.class));
 		//AI竞技场

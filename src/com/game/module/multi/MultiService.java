@@ -126,7 +126,6 @@ public class MultiService implements InitHandler {
      * @param playerId
      */
     public void onExit(int playerId) {
-
         Player player = playerService.getPlayer(playerId);
         SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, player.getSceneId());
         Map<String, MultiGroup> multiMap = mulitSceneMap.get(lastCfg.sceneSubType);

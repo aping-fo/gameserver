@@ -76,6 +76,7 @@ public class Player implements PlayerAddition{
 	private int groupId;
 	private int groupTeamId;
 	private int roomId;
+	public int roomTeamId;
 
 	public int getRoomId() {
 		return roomId;

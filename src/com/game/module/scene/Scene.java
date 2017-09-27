@@ -19,7 +19,7 @@ public class Scene {
 	public static final int WORLD_BOSS_PVE = 45;//世界BOSS PVE场景
 	public static final int MULTI_GROUP_ROOM = 50;//团队副本房间
 	public static final int MULTI_GROUP = 51;//团队副本
-	public static final int LEAD_AWAY = 47;//娃娃机
+	public static final int MULTI_LADDER = 61;//排位赛
 
 	private int id;// 场景ID
 	// ---其他数据
