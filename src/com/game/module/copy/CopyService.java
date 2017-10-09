@@ -191,10 +191,10 @@ public class CopyService {
 			if(attach.getClearTime() > 0){
 				return Response.ERR_PARAM;
 			}
-			if((attach.getCurrLayer() % endlessLogic.getConfig().sectionLayer == 0 && cfg.difficulty != CopyInstance.HARD)
+			/*if((attach.getCurrLayer() % endlessLogic.getConfig().sectionLayer == 0 && cfg.difficulty != CopyInstance.HARD)
 					||(attach.getCurrLayer() % endlessLogic.getConfig().sectionLayer != 0 && cfg.difficulty == CopyInstance.HARD)){
 				return Response.ERR_PARAM;
-			}
+			}*/
 		}else if(cfg.type == CopyInstance.TYPE_TREASURE){
 			TreasureAttach treasureAttach = treasureLogic.getAttach(playerId);
 			if(treasureAttach.getChallenge() == 0){
@@ -370,10 +370,10 @@ public class CopyService {
 			if (copyVo == null || copyVo.getState() == 0) {
 				for (int i = 0; i < cfg.firstReward.length; i++) {
 					int[] item = cfg.firstReward[i];
-					int vocation = ConfigData.getConfig(GoodsConfig.class, item[0]).vocation;
+					/*int vocation = ConfigData.getConfig(GoodsConfig.class, item[0]).vocation;
 					if (vocation != 0 && vocation != player.getVocation()) {
 						continue;
-					}
+					}*/
 					items.add(new GoodsEntry(item[0], item[1]));
 				}
 			}
@@ -525,13 +525,14 @@ public class CopyService {
 					if(cfg.type == CopyInstance.TYPE_ENDLESS){
 						EndlessCfg eCfg = endlessLogic.getConfig();
 						EndlessAttach attach = endlessLogic.getAttach(playerId);
-						int fight = (int)(attach.getCurrLayer() * eCfg.growRatio * eCfg.baseData * eCfg.hp * (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.scetionRatio);
-						vo.curHp = vo.hp = Math.round(fight * 47.53f);
-						vo.attack = Math.round(fight * 0.627f);
-						vo.crit = Math.round(fight * 0.19f);
-						vo.defense = Math.round(fight * 0.33f);
-						vo.symptom = Math.round(fight * 0.05f);
-						vo.fu = Math.round(fight * 0.19f);
+						int fight = Math.round(eCfg.baseData + (eCfg.baseData * (attach.getCurrLayer() - 1) * eCfg.growRatio
+								+ eCfg.baseData * (attach.getCurrLayer() / eCfg.sectionLayer) * eCfg.sectionMultiple* eCfg.scetionRatio));
+						vo.curHp = vo.hp = Math.round(fight * 3.32f);
+						vo.attack = Math.round(fight * 0.18f);
+						vo.crit = Math.round(fight * 0.13f);
+						vo.defense = Math.round(fight * 0.05f);
+						vo.symptom = Math.round(fight * 0.1f);
+						vo.fu = Math.round(fight * 0.1f);
 						//vo.curHp = vo.hp = (int)(attach.getCurrLayer() * eCfg.growRatio * eCfg.baseData * eCfg.hp * (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.scetionRatio);
 					}else{
 						vo.curHp = vo.hp = monsterCfg.hp;
@@ -552,6 +553,8 @@ public class CopyService {
 		if(cfg.type == CopyInstance.TYPE_GROUP) {
 			instanceId = groupService.onEnterBattle(playerId,copyId);
 			ServerLogger.warn("------------" + instanceId);
+		} else if(cfg.type == CopyInstance.TYPE_TRAVERSING){
+			instanceId = teamService.onEnterBattle(playerId);
 		}
 		Player player = playerService.getPlayer(playerId);
 		player.setCopyId(instanceId);

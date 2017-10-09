@@ -71,7 +71,7 @@
 	<buffSubType>0</buffSubType>
 	<name>连击保护</name>
 	<description>血量保护1级</description>
-	<duration>1.5</duration>
+	<duration>3</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2022</icon>
@@ -179,7 +179,7 @@
 	<duration>5</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
-	<icon>2023</icon>
+	<icon>2022</icon>
 	<attachEffect>0</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>

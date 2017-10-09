@@ -256,17 +256,4 @@ public class PlayerExtension {
 
 		return int2Param;
 	}
-
-	@Command(1009)
-	public Object getModules(int playerId,Object param){
-		PlayerData playerData = playerService.getPlayerData(playerId);
-		ListParam<IntParam> ret = new ListParam<>();
-		ret.params = new ArrayList<>();
-		for(int moduleId : playerData.getModules()) {
-			IntParam p = new IntParam();
-			p.param = moduleId;
-			ret.params.add(p);
-		}
-		return ret;
-	}
 }

@@ -10,6 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 import com.game.data.*;
+import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -373,7 +374,7 @@ public class PlayerService implements InitHandler {
 			}
 		}
 
-		vo.fashions = new ArrayList<Integer>();
+		vo.fashions = new ArrayList<>();
 		vo.fashions.addAll(data.getFashions());
 		vo.serialNum = AntiCheatService.getInstance().getSerialNum(playerId).get();
 		vo.key = AntiCheatService.getInstance().getPrivateKey(playerId);
@@ -386,8 +387,8 @@ public class PlayerService implements InitHandler {
 		vo.fu = player.getFu();
 		vo.symptom = player.getSymptom();
 		
-		vo.curSkills = new ArrayList<Integer>(data.getCurSkills());
-		vo.curCards = new ArrayList<Integer>(data.getCurrCard().size());
+		vo.curSkills = new ArrayList<>(data.getCurSkills());
+		vo.curCards = new ArrayList<>(data.getCurrCard().size());
 		for(int card:data.getCurrCard()){
 			if(card==0){
 				vo.curCards.add(0);
@@ -397,6 +398,12 @@ public class PlayerService implements InitHandler {
 					vo.curCards.add(skillCard.getCardId());
 				}
 			}
+		}
+
+		//开启功能列表
+		vo.modules = new ArrayList<>();
+		for(int moduleId : data.getModules()) {
+			vo.modules.add(moduleId);
 		}
 		return vo;
 	}

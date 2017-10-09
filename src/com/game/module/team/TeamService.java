@@ -5,6 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.group.Group;
+import com.game.module.group.GroupTeam;
+import com.game.params.worldboss.MonsterHurtVO;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -168,6 +172,7 @@ public class TeamService implements InitHandler {
 		return vo;
 	}
 
+	private static final int CMD_MONSTER_INFO = 4910; //同步怪物相关信息
 	// 玩家技能处理
 	public void handleSkillHurt(Player player, SkillHurtVO hurtVO) {
 		Team team = getTeam(player.getTeamId());
@@ -193,6 +198,12 @@ public class TeamService implements InitHandler {
 		}else{
 			SMonsterVo monster = monsters.get(hurtVO.targetId);
 			monster.curHp -= hurtVO.hurtValue;
+			MonsterHurtVO ret = new MonsterHurtVO();
+			ret.monsterId = hurtVO.targetId;
+			ret.curHp = monster.curHp;
+			ret.hurt = hurtVO.hurtValue;
+			ret.type = 1;
+			sceneService.brocastToSceneCurLine(player, CMD_MONSTER_INFO, ret, null);
 			if (monster.curHp <= 0) {
 				monsters.remove(hurtVO.targetId);
 				if(copy.isOver()){
@@ -213,4 +224,15 @@ public class TeamService implements InitHandler {
 		}
 	}
 
+	/**
+	 * 进入战斗
+	 *
+	 * @param playerId
+	 * @return
+	 */
+	public int onEnterBattle(int playerId) {
+		Player player = playerService.getPlayer(playerId);
+		Team team = teams.get(player.getTeamId());
+		return team.getLeader() * 100;
+	}
 }

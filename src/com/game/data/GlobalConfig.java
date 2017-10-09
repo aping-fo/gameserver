@@ -132,6 +132,7 @@ public class GlobalConfig {
 	public float[] LeadawayPlayerPosition;//顺手牵羊角色位置
 	public float[] LeadawayPlayerScale;//顺手牵羊角色缩放
 	public float[] LeadawayPlayerRotate;//顺手牵羊角色旋转
+	public Map<Integer,int[][]> CatchGoldRocketMapping;//接金币金币与导弹效果对应表
 	public int CatchGoldDelTime;//接金币挑战时间间隔（秒）
 	public Map<Integer,Integer> quickCatchGoldCopy;//接金币快速完成价格
 	public Map<Integer,Integer> catchGoldPrice;//接金币次数购买价格

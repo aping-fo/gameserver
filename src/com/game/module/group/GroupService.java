@@ -757,7 +757,7 @@ public class GroupService {
                     broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
                     copyService.getRewards(player.getPlayerId(), copy.getCopyId(), result);
                     // 更新次数,星级
-                    copyService.updateCopy(player.getPlayerId(), copy, result);
+                    //copyService.updateCopy(player.getPlayerId(), copy, result);
                     broadcastGroupTeam(team, CopyExtension.TAKE_COPY_REWARDS, result);
                     for (int playerId : team.getMembers().keySet()) {
                         // 清除
@@ -782,16 +782,17 @@ public class GroupService {
                         if (stageReward == null) {
                             return;
                         }
+                        int stagePass = (int) ((System.currentTimeMillis() - group.stageBeginTime) / 1000);
                         int[] arrRate = ConfigData.globalParam().groupRewardRate;
                         int rate = 0;
                         Int2Param awardParam = new Int2Param();
                         awardParam.param1 = group.stage;
+                        awardParam.param2 = stagePass;
                         for (int i = 0; i < arrRate.length; i += 2) {
                             int time = arrRate[i];
                             int rateTmp = arrRate[i + 1];
-                            if (pass <= time) {
+                            if (stagePass <= time) {
                                 rate = rateTmp;
-                                awardParam.param2 = pass;
                                 break;
                             }
                         }
@@ -893,7 +894,7 @@ public class GroupService {
     }
 
     /**
-     * 退出战斗
+     * 进入战斗
      *
      * @param playerId
      * @return
@@ -926,5 +927,13 @@ public class GroupService {
         if (player.getGroupId() != 0) {
             memberExit(playerId);
         }
+    }
+
+    public void chat(Player player, int cmd, IProtocol param) {
+        Group group = groupMap.get(player.getGroupId());
+        if (group == null) {
+            return;
+        }
+        broadcastGroup(group,cmd,param);
     }
 }

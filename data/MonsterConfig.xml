@@ -26,8 +26,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID></duelCameraAnimID>
-	<hurtProtectParam>[1,0.3]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam>[1,0.2]</hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[11100001,11101001,11102001,11103001,11104001]</skillId>
 	<skillIdEx>[11100002,11100003]</skillIdEx>
 	<behitAction>[11100101,11100102]</behitAction>
@@ -65,11 +65,11 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID></duelCameraAnimID>
-	<hurtProtectParam>[1,0.3]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam>[1,0.2]</hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[12100001,12101001,12102001,12103001,12104001]</skillId>
 	<skillIdEx>[12100002,12100003]</skillIdEx>
-	<behitAction>[12100101,12100103]</behitAction>
+	<behitAction>[12100101,12100102]</behitAction>
 	<flyAction>12100201</flyAction>
 	<downAction>12100202</downAction>
 	<getupAction>12100301</getupAction>
@@ -104,11 +104,11 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID></duelCameraAnimID>
-	<hurtProtectParam>[1,0.3]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam>[1,0.2]</hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[13100001,13101001,13102001,13103001,13104001]</skillId>
 	<skillIdEx>[13100002,13100003]</skillIdEx>
-	<behitAction>[13100101,13100104]</behitAction>
+	<behitAction>[13100101,13100102]</behitAction>
 	<flyAction>13100201</flyAction>
 	<downAction>13100202</downAction>
 	<getupAction>13100301</getupAction>
@@ -270,7 +270,7 @@
 	<getupAction>35001301</getupAction>
 	<bornBuff></bornBuff>
 	<skillBuff></skillBuff>
-	<hudOffset>[-0.5,0,0]</hudOffset>
+	<hudOffset></hudOffset>
 	<leadawayParam></leadawayParam>
 </config>
 <config>
@@ -3614,8 +3614,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -3731,8 +3731,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -3848,8 +3848,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -3965,8 +3965,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -4082,8 +4082,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -4199,8 +4199,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -4316,8 +4316,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -4433,8 +4433,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -4550,8 +4550,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -4667,8 +4667,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -4784,8 +4784,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -4901,8 +4901,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20305001,20305002,20305003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20305101,20305102]</behitAction>
@@ -5018,8 +5018,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -5135,8 +5135,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -5252,8 +5252,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -5369,8 +5369,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -5486,8 +5486,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -5603,8 +5603,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -5720,8 +5720,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -5837,8 +5837,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -5954,8 +5954,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -6071,8 +6071,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -6188,8 +6188,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -6305,8 +6305,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20303001,20303002,20303003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20303101,20303102]</behitAction>
@@ -6422,8 +6422,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -6539,8 +6539,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20116001,20116002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20116101,20116102]</behitAction>
@@ -6656,8 +6656,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -6773,8 +6773,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20116001,20116002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20116101,20116102]</behitAction>
@@ -6890,8 +6890,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -7007,8 +7007,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20206001,20206002,20206003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20206101,20206102]</behitAction>
@@ -7124,8 +7124,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -7241,8 +7241,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20206001,20206002,20206003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20206101,20206102]</behitAction>
@@ -7358,8 +7358,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -7475,8 +7475,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -7592,8 +7592,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -7709,8 +7709,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -7826,8 +7826,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -7943,8 +7943,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20101001,20101002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20101101,20101102]</behitAction>
@@ -8060,8 +8060,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -8177,8 +8177,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20101001,20101002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20101101,20101102]</behitAction>
@@ -8294,8 +8294,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -8411,8 +8411,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -8528,8 +8528,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -8645,8 +8645,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -8762,8 +8762,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -8879,8 +8879,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -8996,8 +8996,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -9113,8 +9113,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20302001,20302002,20302003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20302101,20302102]</behitAction>
@@ -9230,8 +9230,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -9347,8 +9347,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -9464,8 +9464,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -9581,8 +9581,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -9698,8 +9698,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -9815,8 +9815,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -9932,8 +9932,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -10049,8 +10049,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -10166,8 +10166,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -10283,8 +10283,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -10400,8 +10400,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -10517,8 +10517,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20306001,20306002,20306003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20306101,20306102]</behitAction>
@@ -10634,8 +10634,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20119001,20119002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20119101,20119102]</behitAction>
@@ -10751,8 +10751,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -10868,8 +10868,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20109001,20109002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20109101,20109102]</behitAction>
@@ -10985,8 +10985,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -11102,8 +11102,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20109001,20109002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20109101,20109102]</behitAction>
@@ -11219,8 +11219,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20205001,20205002,20205003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20205101,20205102]</behitAction>
@@ -11336,8 +11336,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -11453,8 +11453,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -11570,8 +11570,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -11687,8 +11687,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -11804,8 +11804,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -11921,8 +11921,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20307001,20307002,20307003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20307101,20307102]</behitAction>
@@ -12038,8 +12038,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -12155,8 +12155,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -12272,8 +12272,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -12389,8 +12389,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -12506,8 +12506,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -12623,8 +12623,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -12740,8 +12740,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -12857,8 +12857,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -12974,8 +12974,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -13091,8 +13091,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -13208,8 +13208,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -13325,8 +13325,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -13442,8 +13442,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -13559,8 +13559,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -13676,8 +13676,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -13793,8 +13793,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -13910,8 +13910,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -14027,8 +14027,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -14144,8 +14144,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -14261,8 +14261,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -14378,8 +14378,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -14495,8 +14495,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -14612,8 +14612,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -14729,8 +14729,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20309001,20309002,20309003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20309101,20309102]</behitAction>
@@ -14846,8 +14846,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -14963,8 +14963,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -15080,8 +15080,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -15197,8 +15197,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -15314,8 +15314,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -15431,8 +15431,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -15548,8 +15548,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -15665,8 +15665,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -15782,8 +15782,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -15899,8 +15899,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -16016,8 +16016,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -16133,8 +16133,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20305001,20305002,20305003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20305101,20305102]</behitAction>
@@ -16250,8 +16250,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -16367,8 +16367,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -16484,8 +16484,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -16601,8 +16601,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -16718,8 +16718,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -16835,8 +16835,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -16952,8 +16952,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -17069,8 +17069,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -17186,8 +17186,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -17303,8 +17303,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -17420,8 +17420,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -17537,8 +17537,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20303001,20303002,20303003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20303101,20303102]</behitAction>
@@ -17654,8 +17654,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -17771,8 +17771,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20116001,20116002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20116101,20116102]</behitAction>
@@ -17888,8 +17888,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -18005,8 +18005,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20116001,20116002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20116101,20116102]</behitAction>
@@ -18122,8 +18122,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -18239,8 +18239,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -18356,8 +18356,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -18473,8 +18473,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -18590,8 +18590,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -18707,8 +18707,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -18824,8 +18824,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -18941,8 +18941,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -19058,8 +19058,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -19175,8 +19175,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20101001,20101002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20101101,20101102]</behitAction>
@@ -19292,8 +19292,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -19409,8 +19409,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20101001,20101002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20101101,20101102]</behitAction>
@@ -19526,8 +19526,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -19643,8 +19643,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -19760,8 +19760,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -19877,8 +19877,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -19994,8 +19994,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -20111,8 +20111,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -20228,8 +20228,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -20345,8 +20345,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20302001,20302002,20302003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20302101,20302102]</behitAction>
@@ -20462,8 +20462,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -20579,8 +20579,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -20696,8 +20696,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -20813,8 +20813,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -20930,8 +20930,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -21047,8 +21047,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -21164,8 +21164,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -21281,8 +21281,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -21398,8 +21398,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -21515,8 +21515,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -21632,8 +21632,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -21749,8 +21749,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20306001,20306002,20306003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20306101,20306102]</behitAction>
@@ -21866,8 +21866,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20109001,20109002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20109101,20109102]</behitAction>
@@ -21983,8 +21983,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -22100,8 +22100,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20109001,20109002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20109101,20109102]</behitAction>
@@ -22217,8 +22217,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -22334,8 +22334,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20109001,20109002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20109101,20109102]</behitAction>
@@ -22451,8 +22451,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20205001,20205002,20205003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20205101,20205102]</behitAction>
@@ -22568,8 +22568,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -22685,8 +22685,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -22802,8 +22802,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -22919,8 +22919,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -23036,8 +23036,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -23153,8 +23153,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20307001,20307002,20307003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20307101,20307102]</behitAction>
@@ -23270,8 +23270,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -23387,8 +23387,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -23504,8 +23504,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -23621,8 +23621,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -23738,8 +23738,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -23855,8 +23855,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -23972,8 +23972,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -24089,8 +24089,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -24206,8 +24206,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -24323,8 +24323,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -24440,8 +24440,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -24557,8 +24557,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -24674,8 +24674,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -24791,8 +24791,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -24908,8 +24908,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25025,8 +25025,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25142,8 +25142,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25259,8 +25259,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25376,8 +25376,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25493,8 +25493,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25610,8 +25610,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25727,8 +25727,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25844,8 +25844,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -25961,8 +25961,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -26078,8 +26078,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -26195,8 +26195,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -26312,8 +26312,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -26429,8 +26429,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -26546,8 +26546,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -26663,8 +26663,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -26780,8 +26780,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20107001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20107101,20107102]</behitAction>
@@ -26897,8 +26897,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -27014,8 +27014,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -27131,8 +27131,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20106001,20106002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20106101,20106102]</behitAction>
@@ -27248,8 +27248,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20204001,20204002,20204003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20204101,20204102]</behitAction>
@@ -27365,8 +27365,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20305001,20305002,20305003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20305101,20305102]</behitAction>
@@ -27482,8 +27482,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -27599,8 +27599,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -27716,8 +27716,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -27833,8 +27833,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -27950,8 +27950,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -28067,8 +28067,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -28184,8 +28184,8 @@
 	<hasDeadSkill>1</hasDeadSkill>
 	<deadRocketID>201050091</deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20105001,20105002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20105101,20105102]</behitAction>
@@ -28301,8 +28301,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -28418,8 +28418,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -28535,8 +28535,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20102001]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
@@ -28652,8 +28652,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20201001,20201002,20201003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20201101,20201102]</behitAction>
@@ -28769,8 +28769,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20303001,20303002,20303003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20303101,20303102]</behitAction>
@@ -28886,8 +28886,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -29003,8 +29003,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20116001,20116002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20116101,20116102]</behitAction>
@@ -29120,8 +29120,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -29237,8 +29237,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20116001,20116002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20116101,20116102]</behitAction>
@@ -29354,8 +29354,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -29471,8 +29471,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -29588,8 +29588,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -29705,8 +29705,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -29822,8 +29822,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -29939,8 +29939,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -30056,8 +30056,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20117001,20117002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20117101,20117102]</behitAction>
@@ -30173,8 +30173,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20304101,20304102]</behitAction>
@@ -30290,8 +30290,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -30407,8 +30407,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20101001,20101002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20101101,20101102]</behitAction>
@@ -30524,8 +30524,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -30641,8 +30641,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20101001,20101002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20101101,20101102]</behitAction>
@@ -30758,8 +30758,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -30875,8 +30875,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -30992,8 +30992,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -31109,8 +31109,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -31226,8 +31226,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -31343,8 +31343,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20203001,20203002,20203003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20203101,20203102]</behitAction>
@@ -31460,8 +31460,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20115001,20115002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20115101,20115102]</behitAction>
@@ -31577,8 +31577,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20302001,20302002,20302003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20302101,20302102]</behitAction>
@@ -31694,8 +31694,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -31811,8 +31811,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -31928,8 +31928,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -32045,8 +32045,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -32162,8 +32162,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -32279,8 +32279,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -32396,8 +32396,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20111001,20111002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20111101,20111102]</behitAction>
@@ -32513,8 +32513,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -32630,8 +32630,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -32747,8 +32747,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20110001,20110002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20110101,20110102]</behitAction>
@@ -32864,8 +32864,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20202001,20202002,20202003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20202101,20202102]</behitAction>
@@ -32981,8 +32981,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20306001,20306002,20306003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20306101,20306102]</behitAction>
@@ -33098,8 +33098,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20109001,20109002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20109101,20109102]</behitAction>
@@ -33215,8 +33215,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -33332,8 +33332,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20109001,20109002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20109101,20109102]</behitAction>
@@ -33449,8 +33449,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -33566,8 +33566,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20109001,20109002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20109101,20109102]</behitAction>
@@ -33683,8 +33683,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20205001,20205002,20205003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20205101,20205102]</behitAction>
@@ -33800,8 +33800,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -33917,8 +33917,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -34034,8 +34034,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -34151,8 +34151,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -34268,8 +34268,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20108001,20108002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20108101,20108102]</behitAction>
@@ -34385,8 +34385,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20307001,20307002,20307003]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20307101,20307102]</behitAction>
@@ -34502,8 +34502,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -34619,8 +34619,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -34736,8 +34736,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -34853,8 +34853,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -34970,8 +34970,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -35087,8 +35087,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -35204,8 +35204,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -35321,8 +35321,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -35438,8 +35438,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -35555,8 +35555,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20114001,20114002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20114101,20114102]</behitAction>
@@ -35672,8 +35672,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -35789,8 +35789,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20112001,20112002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20112101,20112102]</behitAction>
@@ -35906,8 +35906,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36023,8 +36023,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36140,8 +36140,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36257,8 +36257,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36374,8 +36374,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36491,8 +36491,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36608,8 +36608,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36725,8 +36725,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36842,8 +36842,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -36959,8 +36959,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -37076,8 +37076,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -37193,8 +37193,8 @@
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
 	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam>[1,10]</hurtProtectParam>
-	<controlProtectParam>[15,7]</controlProtectParam>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20113001,20113002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20113101,20113102]</behitAction>
@@ -37234,10 +37234,10 @@
 	<duelCameraAnimID></duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam></controlProtectParam>
-	<skillId></skillId>
+	<skillId>[4000002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction></behitAction>
-	<flyAction></flyAction>
+	<flyAction>4000002</flyAction>
 	<downAction></downAction>
 	<getupAction></getupAction>
 	<bornBuff></bornBuff>
@@ -37273,10 +37273,10 @@
 	<duelCameraAnimID></duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam></controlProtectParam>
-	<skillId></skillId>
+	<skillId>[4000002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction></behitAction>
-	<flyAction></flyAction>
+	<flyAction>4000002</flyAction>
 	<downAction></downAction>
 	<getupAction></getupAction>
 	<bornBuff></bornBuff>
@@ -37312,10 +37312,10 @@
 	<duelCameraAnimID></duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam></controlProtectParam>
-	<skillId></skillId>
+	<skillId>[4000002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction></behitAction>
-	<flyAction></flyAction>
+	<flyAction>4000002</flyAction>
 	<downAction></downAction>
 	<getupAction></getupAction>
 	<bornBuff></bornBuff>
@@ -37351,10 +37351,10 @@
 	<duelCameraAnimID></duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam></controlProtectParam>
-	<skillId></skillId>
+	<skillId>[4000002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction></behitAction>
-	<flyAction></flyAction>
+	<flyAction>4000002</flyAction>
 	<downAction></downAction>
 	<getupAction></getupAction>
 	<bornBuff></bornBuff>
@@ -37390,7 +37390,124 @@
 	<duelCameraAnimID></duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam></controlProtectParam>
-	<skillId></skillId>
+	<skillId>[5000001]</skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<hudOffset></hudOffset>
+	<leadawayParam></leadawayParam>
+</config>
+<config>
+	<id>50002</id>
+	<model>50001</model>
+	<type>1</type>
+	<AI>50000001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>掉金币怪物</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>1</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId>[5000011]</skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<hudOffset></hudOffset>
+	<leadawayParam></leadawayParam>
+</config>
+<config>
+	<id>50003</id>
+	<model>50001</model>
+	<type>1</type>
+	<AI>50000001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>掉金币怪物</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>1</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId>[5000021]</skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<hudOffset></hudOffset>
+	<leadawayParam></leadawayParam>
+</config>
+<config>
+	<id>50004</id>
+	<model>50001</model>
+	<type>1</type>
+	<AI>50000001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>掉金币怪物</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>1</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId>[5000031]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction></behitAction>
 	<flyAction></flyAction>

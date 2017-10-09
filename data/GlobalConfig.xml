@@ -11,7 +11,7 @@
 	<playerDefaultSkill>[[11100001,11101001,11102001,11103001,11104001],[12100001,12101001,12102001,12103001,12104001],[13100001,13101001,13102001,13103001,13104001]]</playerDefaultSkill>
 	<defaultVocation>1</defaultVocation>
 	<reducePercentParamA>697</reducePercentParamA>
-	<reducePercentParamB>1.15</reducePercentParamB>
+	<reducePercentParamB>1.1499999999999999</reducePercentParamB>
 	<critFactor>2</critFactor>
 	<critParamA>0.81</critParamA>
 	<critParamB>1599.78</critParamB>
@@ -71,17 +71,17 @@
 	<arenaBuyChallenge>[[1,3,10],[4,10,20],[11,20,30]]</arenaBuyChallenge>
 	<personChatLev>15</personChatLev>
 	<friendLevDel>10</friendLevDel>
-	<cameraFixedX>35.62</cameraFixedX>
+	<cameraFixedX>35.619999999999997</cameraFixedX>
 	<cameraDistH>10.5</cameraDistH>
-	<cameraDistV>7.52280686296258</cameraDistV>
-	<cameraFixedYaw>38.73</cameraFixedYaw>
+	<cameraDistV>7.5228068629625753</cameraDistV>
+	<cameraFixedYaw>38.729999999999997</cameraFixedYaw>
 	<buyTreasurePrice>102:10</buyTreasurePrice>
 	<treasureDelTime>30</treasureDelTime>
 	<quickTreasureCopy>102:10</quickTreasureCopy>
 	<sweepNeedGoods>302002:1</sweepNeedGoods>
 	<crazyChestChallengeCount>2</crazyChestChallengeCount>
 	<crazyChestLightningIntervalTime>1</crazyChestLightningIntervalTime>
-	<experienceFightSection>[1000,2000,3000,5000,10000,20000,30000,50000,80000,100000000]</experienceFightSection>
+	<experienceFightSection>[1,1000,2000,3000,5000,10000,20000,30000,50000,100000000]</experienceFightSection>
 	<exprienceFightRatio>[0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2]</exprienceFightRatio>
 	<exprienceRewards>[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]</exprienceRewards>
 	<sceneFadeDistance>1</sceneFadeDistance>
@@ -129,6 +129,7 @@
 	<LeadawayPlayerPosition>[0,1.35,0.7]</LeadawayPlayerPosition>
 	<LeadawayPlayerScale>[3,3,3]</LeadawayPlayerScale>
 	<LeadawayPlayerRotate>[0,180,0]</LeadawayPlayerRotate>
+	<CatchGoldRocketMapping>304010:[[500000015,50],[500000016,100],[500000025,50],[500000026,100],[500000035,50],[500000036,100]];304011:[[500000015,60],[500000016,120],[500000025,60],[500000026,120],[500000035,60],[500000036,120]];304012:[[500000015,70],[500000016,140],[500000025,70],[500000026,140],[500000035,70],[500000036,140]];304013:[[500000015,80],[500000016,160],[500000025,80],[500000026,160],[500000035,80],[500000036,160]];</CatchGoldRocketMapping>
 	<CatchGoldDelTime>30</CatchGoldDelTime>
 	<quickCatchGoldCopy>102:10</quickCatchGoldCopy>
 	<catchGoldPrice>102:10</catchGoldPrice>
@@ -139,10 +140,10 @@
 	<PKBattleTime>90</PKBattleTime>
 	<PKRecordSize>15</PKRecordSize>
 	<PKTimeLimit>1</PKTimeLimit>
-	<PKTime>[1,23]</PKTime>
+	<PKTime>[0,23]</PKTime>
 	<PKBeginDate>2017-09-13</PKBeginDate>
 	<PKEndDate>2017-10-13</PKEndDate>
-	<robotFight>[1000,8000]</robotFight>
+	<robotFight>[500,8000]</robotFight>
 	<QualifyingRankReward>[1000,2000,3000,4000,5000,6000]</QualifyingRankReward>
 	<QualifyingMatchingPredictTime>30</QualifyingMatchingPredictTime>
 </config>

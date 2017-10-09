@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Map.Entry;
 
+import com.game.module.attach.catchgold.CatchGoldAttach;
+import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.sign.SignService;
 import com.game.util.ConfigData;
@@ -64,6 +66,8 @@ public class DailyService implements InitHandler {
 	private SignService signService;
 	@Autowired
 	private LeadAwayLogic leadAwayLogic;
+	@Autowired
+	private CatchGoldLogic catchGoldLogic;
 
 	public static long FIVE_CLOCK = 0;
 	public static long MONDAY_FIVE_CLOCK = 0;
@@ -190,6 +194,7 @@ public class DailyService implements InitHandler {
 		arenaLogic.dailyReset(playerId);
 		trainingLogic.dailyReset(playerId);
 		lotteryLogic.dailyReset(playerId);
+		catchGoldLogic.dailyReset(playerId);
 	}
 	
 	public void resetWeeklyData(PlayerData data){

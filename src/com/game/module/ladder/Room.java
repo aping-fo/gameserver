@@ -1,10 +1,9 @@
 package com.game.module.ladder;
 
-import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * Created by lucky on 2017/9/13.
@@ -43,6 +42,8 @@ public class Room {
     public final Map<Integer, RoomPlayer> roomPlayers;
 
     public final AtomicInteger loadingCount;
+    public volatile boolean rewardFlag = false;
+    private final ReentrantLock lock = new ReentrantLock();
 
     public Room(int id, int score, int type) {
         this.id = id;
@@ -67,5 +68,20 @@ public class Room {
 
     public void clear() {
         roomPlayers.clear();
+    }
+
+    /**
+     * 检测是否结算奖励
+     * @return
+     */
+    public boolean checkHasRward() {
+        try {
+            lock.lock();
+            boolean ret = rewardFlag;
+            rewardFlag = true;
+            return ret;
+        } finally {
+            lock.unlock();
+        }
     }
 }

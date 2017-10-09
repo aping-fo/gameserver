@@ -823,7 +823,7 @@ public class GangService implements InitHandler {
 
 	// 自动替换会长
 	private void checkUpdateOwner(Gang g) {
-		// 判断会长两周以上未登录
+		// 判断会长两周以上未登录d
 		Player owner = playerService.getPlayer(g.getOwnerId());
 		long passTime = (System.currentTimeMillis() - owner.getLastLoginTime()
 				.getTime()) / (TimeUtil.ONE_HOUR * 24);

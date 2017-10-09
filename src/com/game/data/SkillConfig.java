@@ -47,6 +47,7 @@ public class SkillConfig {
 	public int strickenFly;//击飞
 	public int strickenShotdown;//击落
 	public int lyingDown;//倒地
+	public int[] skillParams;//被动技能参数(受击，击飞，击落，起身)
 	public int coin;//升级消耗金币
 	public int nextId;//升级下个技能ID
 	public int setPainting;//立绘特效

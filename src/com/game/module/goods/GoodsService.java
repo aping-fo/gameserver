@@ -176,12 +176,7 @@ public class GoodsService {
 				if(upgrade == null || upgrade.getCurExp() < count) {
 					return Response.ERR_PARAM;
 				}
-			}else if(cfg.type == Goods.HONOR_POINT) {
-				if(data.getHonorPoint() < count) {
-					return Response.NO_FAME;
-				}
-			}
-			else if (goodsId > 10000) {
+			} else if (goodsId > 10000) {
 				List<Goods> exists = getExistBagGoods(playerId, goodsId);
 				int total = 0;
 				for (Goods g : exists) {
@@ -235,8 +230,6 @@ public class GoodsService {
 				playerService.decCurrency(playerId, goodsId, count, log, params);
 			}else if(config.type == Goods.FAME) {
 				decFame(playerId,config.param1[0],count);
-			}else if(config.type == Goods.HONOR_POINT) {
-				ladderService.decHonor(playerId,count);
 			} else if (goodsId > 10000) {
 				decGoodsFromBag(playerId, goodsId, count, log, params);
 			}else{
@@ -646,9 +639,9 @@ public class GoodsService {
 			if (goods.type == Goods.BOTTLE) {
 				return;
 			}
-			if (goods.vocation != 0 && goods.vocation != player.getVocation()) {
+			/*if (goods.vocation != 0 && goods.vocation != player.getVocation()) {
 				return;
-			}
+			}*/
 			//技能卡
 			if(goods.type==Goods.SKILL_CARD){
 				playerService.addSkillCard(playerId, goods.param1[0], count);
@@ -679,8 +672,6 @@ public class GoodsService {
 			}
 			else if(goods.type == Goods.CURRENCY){
 				playerService.addCurrency(playerId, id, count, type, params);
-			} else if(goods.type == Goods.HONOR_POINT){
-				ladderService.addHonor(playerId, count);
 			}
 		}
 	}

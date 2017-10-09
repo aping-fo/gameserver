@@ -6,9 +6,15 @@ package com.game.module.ladder;
 public class RoomPlayer {
     private int hp;
     private int teamId;
+    private final int playerId;
 
-    public RoomPlayer(int hp) {
+    public RoomPlayer(int hp, int playerId) {
         this.hp = hp;
+        this.playerId = playerId;
+    }
+
+    public int getPlayerId() {
+        return playerId;
     }
 
     public void decreaseHp(int hp) {

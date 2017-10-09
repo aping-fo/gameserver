@@ -7,6 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsService;
+import com.game.module.group.GroupService;
 import com.game.module.log.LogConsume;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -59,7 +60,8 @@ public class ChatExtension {
 	private SceneService sceneService;
 	@Autowired
 	private GoodsService goodsService;
-
+	@Autowired
+	private GroupService groupService;
 	private Map<Integer, Long> talkTime = new ConcurrentHashMap<Integer, Long>();
 
 	@Command(1501)
@@ -159,6 +161,8 @@ public class ChatExtension {
 			}else if(vo.channel == TEAM){
 				if(sender.getTeamId() > 0){
 					sceneService.brocastToSceneCurLine(sender, CHAT, result);
+				}else if(sender.getGroupId() > 0) {
+					groupService.chat(sender,CHAT,result);
 				}
 			}
 		}

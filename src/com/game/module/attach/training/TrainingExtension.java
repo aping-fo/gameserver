@@ -40,7 +40,8 @@ public class TrainingExtension {
         vo.hp = attach.getHp();
         vo.treasureBox = new ArrayList<Integer>(attach.getTreasureBox());
         List<TrainOpponentVO> list = new ArrayList<TrainOpponentVO>();
-        List<Integer> ids = attach.getOpponents();
+        //List<Integer> ids = attach.getOpponents();
+        List<Integer> ids = logic.getOpponents(playerId);
         for (int i = ids.size() - 1; i >= 0; i--) {
             int id = ids.get(i);
             if (id == playerId) continue;
@@ -90,7 +91,7 @@ public class TrainingExtension {
     public IntParam challengeWin(int playerId, TrainingResultVO param) {
         IntParam result = new IntParam();
         TrainAttach attach = logic.getAttach(playerId);
-        if (param.index >= logic.getMaxLevel() || param.index != attach.getIndex() || attach.getHp() < param.hp) {
+        if (param.index >= logic.getMaxLevel() || param.index != attach.getIndex()/* || attach.getHp() < param.hp*/) {
             result.param = Response.ERR_PARAM;
         } else {
             attach.setHp(param.hp);
