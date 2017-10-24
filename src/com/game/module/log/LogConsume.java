@@ -65,6 +65,13 @@ public enum LogConsume {
 	BUY_LEADAWAY_TIME(1058, "购买顺手牵羊副本次数"),
 	LADDER_AWARD(1059, "排位赛奖励"),
 	QUICK_GOLD(1060, "快速完成金币副本价格"),
+	GUILD_POINT(1061, "公会贡献"),
+	GUILD_BOSS(1062, "公会BOSS奖励"),
+	GUILD_OPEN_BOSS(1063, "开启公会副本活动"),
+	GUILD_COPY_REWARD(1064, "公会副本活动阶段奖励"),
+	BUY_ENERGY(1065, "购买体力"),
+	BUY_COIN(1066, "购买金币"),
+	ITEM_COMPOUND(1067, "物品合成"),
 	;
 	public int actionId;// id
 	public String desc;

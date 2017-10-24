@@ -12,6 +12,9 @@ public class TrainingFighterVO implements IProtocol {
 	public int symptom;//症状
 	public int fu;//符能
 	public int hp;//血量
+	public String name;//玩家名称
+	public int level;//等级
+	public int vocation;//职业
 
 
 	public void decode(BufferBuilder bb) {
@@ -23,6 +26,9 @@ public class TrainingFighterVO implements IProtocol {
 		this.symptom = bb.getInt();
 		this.fu = bb.getInt();
 		this.hp = bb.getInt();
+		this.name = bb.getString();
+		this.level = bb.getInt();
+		this.vocation = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -34,5 +40,8 @@ public class TrainingFighterVO implements IProtocol {
 		bb.putInt(this.symptom);
 		bb.putInt(this.fu);
 		bb.putInt(this.hp);
+		bb.putString(this.name);
+		bb.putInt(this.level);
+		bb.putInt(this.vocation);
 	}
 }

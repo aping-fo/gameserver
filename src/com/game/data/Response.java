@@ -172,5 +172,16 @@ public class Response {
 	public static final int LADDER_MAIL_TITLE=4120;//排位赛奖励
 	public static final int LADDER_MAIL_CONTENT=4121;//亲爱的玩家您在上赛季段位[%s]特此奖励
 	public static final int LADDER_NO_HONOR=4122;//荣誉点不够
+	//公会副本
+	public static final int GUILD_COPY_COUNT_NOT_ENOUGH=4123;//公会副本挑战次数不够
+	public static final int GUILD_NOT_EXIST=4124;//公会不存在
+	public static final int GUILD_COPY_HAS_OPEN=4125;//公会副本已经开启过了
+	public static final int GUILD_COPY_DO_NOT_OPEN=4126;//公会副本还未开启
+	public static final int GUILD_COPY_FIGHTING=4127;//公会副本有人挑战中
+	public static final int GUILD_COPY_MAIL_TITLE=4128;//公会副本挑战阶段奖励
+	public static final int GUILD_COPY_MAIL_CONTENT=4129;//公会副本挑战阶段奖励
+	public static final int GUILD_LEVEL_LIMIT=4130;//公会等级不够
+	public static final int GUILD_SKILL_UNLOCK=4131;//该科技未解锁
+	public static final int GUILD_SKILL_MAX_LV=4132;//公会科技到最大等级了
 
 }

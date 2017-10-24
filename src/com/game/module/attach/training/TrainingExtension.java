@@ -82,6 +82,9 @@ public class TrainingExtension {
         result.symptom = player.getSymptom();
         result.fu = player.getFu();
         result.hp = player.getHp();
+        result.name = player.getName();
+        result.level = player.getLev();
+        result.vocation = player.getVocation();
         return result;
 
     }

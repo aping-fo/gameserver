@@ -13,6 +13,7 @@ import com.game.module.attach.treasure.TreasureAttach;
 import com.game.module.attach.treasure.TreasureLogic;
 import com.game.module.daily.DailyService;
 import com.game.module.friend.FriendService;
+import com.game.module.gang.GangDungeonService;
 import com.game.module.gang.GangService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
@@ -96,6 +97,8 @@ public class CopyService {
 	private CatchGoldLogic catchGoldLogic;
 	@Autowired
 	private GroupService groupService;
+	@Autowired
+	private GangDungeonService gangDungeonService;
 
 	private AtomicInteger uniId = new AtomicInteger(100);
 	private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<Integer, CopyInstance>();
@@ -388,9 +391,38 @@ public class CopyService {
 				GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class, g.id);
 				if (conf.type == Goods.FAME) {
 					g.count = Math.round((1 + rate) * g.count);
+
+					for (int techId : data.getTechnologys()) {
+						GangScienceCfg config = ConfigData.getConfig(GangScienceCfg.class, techId);
+						if (config.type == 9) { //科技声望加成
+							g.count = Math.round(g.count * (1 + config.param / 100.0f));
+						}
+					}
 				}
 			}
 		}
+
+		//公会科技加成
+		if (player.getGangId() > 0) {
+			for (GoodsEntry g : items) {
+				if (g.id == Goods.COIN) {
+					for (int techId : data.getTechnologys()) {
+						GangScienceCfg conf = ConfigData.getConfig(GangScienceCfg.class, techId);
+						if (conf.type == 7) { //科技金币加成
+							g.count = Math.round(g.count * (1 + conf.param / 100.0f));
+						}
+					}
+				} else if (g.id == Goods.EXP) {
+					for (int techId : data.getTechnologys()) {
+						GangScienceCfg conf = ConfigData.getConfig(GangScienceCfg.class, techId);
+						if (conf.type == 8) { //科技经验加成
+							g.count = Math.round(g.count * (1 + conf.param / 100.0f));
+						}
+					}
+				}
+			}
+		}
+
 		return items;
 	}
 

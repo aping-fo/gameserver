@@ -20,6 +20,7 @@ public class Scene {
 	public static final int MULTI_GROUP_ROOM = 50;//团队副本房间
 	public static final int MULTI_GROUP = 51;//团队副本
 	public static final int MULTI_LADDER = 61;//排位赛
+	public static final int MULTI_GANG_BOSS = 71;//公会BOSS
 
 	private int id;// 场景ID
 	// ---其他数据

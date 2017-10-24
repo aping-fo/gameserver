@@ -1,14 +1,12 @@
 package com.game.module.attach.arena;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -74,7 +72,7 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 
 	@Override
 	public ArenaAttach generalNewAttach(int playerId) {
-		ArenaPlayer aPlayer = generalArenaPlayer(playerId);
+		ArenaPlayer aPlayer = searchArenaPlayer(playerId);
 		ArenaAttach attach = new ArenaAttach(playerId, getType());
 		GlobalConfig config = ConfigData.globalParam();
 		attach.setChallenge(config.arenaChallenge);
@@ -98,14 +96,20 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 		}
 		serialData.setInitArena(true);
 	}
-	
+
+	public ArenaPlayer searchArenaPlayer(int playerId) {
+		ArenaPlayer arenaPlayer = playerRanks.get(playerId);
+		if(arenaPlayer == null) {
+			arenaPlayer = generalArenaPlayer(playerId);
+		}
+		return arenaPlayer;
+	}
+
 	public ArenaPlayer generalArenaPlayer(int playerId){
 		int rank = minRank.incrementAndGet();
-		int uniqueId = rank * 100 + RandomUtil.randInt(100);
-		ArenaPlayer aPlayer = new ArenaPlayer(uniqueId, playerId);
-		aPlayer.setRank(rank);
+		ArenaPlayer aPlayer = new ArenaPlayer(playerId, playerId,rank);
 		ranks.put(rank, aPlayer);
-		playerRanks.put(uniqueId, aPlayer);
+		playerRanks.put(playerId, aPlayer);
 		return aPlayer;
 	}
 	
@@ -113,7 +117,7 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 		ArenaAttach attach = getAttach(playerId);
 		int uniqueId = attach.getUniqueId();
 		if(uniqueId == 0){
-			return generalArenaPlayer(playerId);
+			return searchArenaPlayer(playerId);
 		}
 		return getArenaPlayerByUniqueId(uniqueId);
 	}
@@ -124,10 +128,6 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 	
 	public ArenaPlayer getArenaPlayerByRank(int rank){
 		return ranks.get(rank);
-	}
-	
-	public Map<Integer, ArenaPlayer> getRankList(){
-		return ranks;
 	}
 	
 	public int getMinRank(){
@@ -179,8 +179,8 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 				int oldOppo = opponent.getRank();
 				me.setRank(opponent.getRank());
 				opponent.setRank(meRank);
-				getRankList().put(me.getRank(), me);
-				getRankList().put(opponent.getRank(), opponent);
+				ranks.put(me.getRank(), me);
+				ranks.put(opponent.getRank(), opponent);
 				sendReport(playerId, ARENA_UPGRADE, oppPlayer.getName(), me.getRank());
 				sendReport(opponent.getPlayerId(), ARENA_DOWNGRADE, player.getName(), opponent.getRank());
 
@@ -217,7 +217,12 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 		taskService.doTask(playerId, Task.FINISH_JOIN_PK, 1,1);
 		return vo;
 	}
-	
+
+	@Override
+	public ArenaAttach getAttach(int playerId) {
+		return super.getAttach(playerId);
+	}
+
 	private void sendReport(int playerId, int code, String name, int rank){
 		ArenaReportVO vo = new ArenaReportVO();
 		vo.id = code;
@@ -239,7 +244,7 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 		for(int i = 1; i <= size; i++){
 			ArenaPlayer aPlayer = getArenaPlayerByRank(i);
 			if(robotService.isRobot(aPlayer.getPlayerId())) continue;
-			mailService.sendRewardMail(aPlayer.getPlayerId(), MailService.ARENA_RANK, i, LogConsume.ARENA_RANK_REWARD, i);
+			mailService.sendRewardMail(aPlayer.getPlayerId(), MailService.ARENA_RANK, i, LogConsume.ARENA_RANK_REWARD, String.valueOf(i));
 		}
 	}
 }

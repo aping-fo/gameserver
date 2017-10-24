@@ -1,8 +1,11 @@
 package com.game.module.serial;
 
 import java.nio.charset.Charset;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.module.attach.arena.ArenaPlayer;
 import com.game.module.ladder.LadderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,9 +24,9 @@ public class SerialDataService implements InitHandler,ServiceDispose {
 	private LadderService ladderService;
 	private SerialData data;
 	private SerialData2 data2;//第二部分数据
-	
+
 	private AtomicInteger minGRank;
-	
+
 	@Override
 	public void handleInit() {
 		dao.initSerialData(1);
@@ -34,7 +37,7 @@ public class SerialDataService implements InitHandler,ServiceDispose {
 		}else{
 			data = new SerialData();
 		}
-		
+
 		//第二部分数据
 		dao.initSerialData(2);
 		byte[] dbData2 = dao.selectSerialData(2);
@@ -45,6 +48,21 @@ public class SerialDataService implements InitHandler,ServiceDispose {
 			data2 = new SerialData2();
 		}
 
+		Set<Integer> ids = new HashSet<>();
+		for(ArenaPlayer ap : data.getRanks().values()) {
+			if(ids.contains(ap.getPlayerId())) {
+				System.out.println("+++" + ap.getPlayerId() + "--" + ap.getUniqueId());
+			}
+			ids.add(ap.getPlayerId());
+		}
+
+		ids = new HashSet<>();
+		for(ArenaPlayer ap : data.getPlayerRanks().values()) {
+			if(ids.contains(ap.getPlayerId())) {
+				System.out.println("---"+ap.getPlayerId() + "--" + ap.getUniqueId());
+			}
+			ids.add(ap.getPlayerId());
+		}
 		ladderService.ladderSort();
 	}
 	

@@ -25,6 +25,22 @@ public class GroupTeamMember {
         this.costTimesFlag = false;
     }
 
+    public int getFight() {
+        return fight;
+    }
+
+    public void setFight(int fight) {
+        this.fight = fight;
+    }
+
+    public int getLev() {
+        return lev;
+    }
+
+    public void setLev(int lev) {
+        this.lev = lev;
+    }
+
     public int getPlayerId() {
         return playerId;
     }

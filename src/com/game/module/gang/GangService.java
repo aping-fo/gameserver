@@ -16,16 +16,13 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
+import com.game.data.*;
+import com.game.params.*;
+import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.game.SysConfig;
-import com.game.data.ErrCode;
-import com.game.data.GangBuildCfg;
-import com.game.data.GangTrainingCfg;
-import com.game.data.GlobalConfig;
-import com.game.data.Response;
-import com.game.data.TaskConfig;
 import com.game.event.InitHandler;
 import com.game.module.admin.ManagerService;
 import com.game.module.chat.ChatExtension;
@@ -44,9 +41,6 @@ import com.game.module.player.PlayerService;
 import com.game.module.serial.SerialDataService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
-import com.game.params.Int2Param;
-import com.game.params.ListParam;
-import com.game.params.Reward;
 import com.game.params.chat.ChatVo;
 import com.game.params.gang.GangApply;
 import com.game.params.gang.GangBuild;
@@ -233,7 +227,7 @@ public class GangService implements InitHandler {
 		gang.setNotice(notice);
 		gang.setLev(1);
 		gang.setRank(orderGangs.size() + 1);
-		gang.getMembers().put(playerId, new GMember(playerId, Gang.ADMIN));
+		gang.getMembers().put(playerId, new GMember(playerId, Gang.ADMIN,ConfigData.globalParam().guildCopyTimes));
 		GangBuildCfg build = ConfigData.getConfig(GangBuildCfg.class,
 				Gang.MAIN_BUILD * 100 + 1);
 		gang.setCreateDate(Calendar.getInstance());
@@ -246,6 +240,14 @@ public class GangService implements InitHandler {
 		gang.setUpdated(true);
 		sort(false);
 		resetGangTask(gang);
+
+		//初始解锁
+		for (Object obj : GameData.getConfigs(GangScienceCfg.class)) {
+			GangScienceCfg cfg = (GangScienceCfg) obj;
+			if(cfg.lv == 0 && cfg.NeedLevel == gang.getLev()) {
+				gang.getTechnologys().add(cfg.id);
+			}
+		}
 		return Response.SUCCESS;
 	}
 
@@ -325,6 +327,9 @@ public class GangService implements InitHandler {
 			build.lev = b.getValue();
 			vo.builds.add(build);
 		}
+
+		vo.technology = new ArrayList<>();
+		vo.technology.addAll(myGang.getTechnologys());
 		return vo;
 	}
 
@@ -452,7 +457,7 @@ public class GangService implements InitHandler {
 			if (gang.getMembers().size() >= gang.getMaxNum()) {
 				return Response.GANG_FULL;
 			}
-			gang.getMembers().put(applyId, new GMember(applyId));
+			gang.getMembers().put(applyId, new GMember(applyId,ConfigData.globalParam().guildCopyTimes));
 		}
 		// 更新对方
 		synchronized (applyer) {
@@ -805,7 +810,7 @@ public class GangService implements InitHandler {
 		playerService.addCurrency(playerId, Goods.CONTRIBUTE, contribute,
 				LogConsume.GANG_DONATE);
 		int gDonate = contribute * ConfigData.globalParam().person2gang / 100;
-		// 更新公会资产
+		// 更新公会资产da
 		gang.alterAsset(gDonate);
 		gang.alterTotalAsset(gDonate);
 		gang.getMembers().get(playerId).alterContribute7(gDonate);
@@ -1256,6 +1261,111 @@ public class GangService implements InitHandler {
 			future.cancel(true);
 		}
 	}
-	
-	
+
+
+	/**
+	 * 解锁
+	 * @param playerId
+	 * @param technologyId
+	 * @return
+	 */
+	public Int2Param unLockTechnology(int playerId,int technologyId) {
+		Int2Param ret = new Int2Param();
+		Player player = playerService.getPlayer(playerId);
+		Gang gang = getGang(player.getGangId());
+		if(gang == null){
+			ret.param1 = Response.ERR_PARAM;
+			return ret;
+		}
+		GMember member = gang.getMembers().get(playerId);
+		if(member.getPosition() == Gang.MEMBER) {
+			ret.param1 = Response.GANG_NO_PRIVILEGE;
+			return ret;
+		}
+
+		GangScienceCfg conf = ConfigData.getConfig(GangScienceCfg.class,technologyId);
+		if(conf.lv != 0 || gang.getLev() < conf.NeedLevel) {
+			ret.param1 = Response.GUILD_LEVEL_LIMIT;
+			return ret;
+		}
+
+		if(gang.getAsset() < conf.Price) {
+			ret.param1 = Response.NO_GANG_ASSET;
+			return ret;
+		}
+
+		if(gang.getTechnologys().contains(technologyId)) {
+			ret.param1 = Response.ERR_PARAM;
+			return ret;
+		}
+		gang.alterAsset(conf.Price);
+		gang.getTechnologys().add(technologyId);
+		ret.param1 = Response.SUCCESS;
+		ret.param2 = technologyId;
+		return ret;
+	}
+
+	/**
+	 * 升级
+	 * @param playerId
+	 * @param technologyId
+	 * @return
+	 */
+	public IntParam learnTechnology(int playerId, int technologyId) {
+		IntParam ret = new IntParam();
+		Player player = playerService.getPlayer(playerId);
+		Gang gang = getGang(player.getGangId());
+		if (gang == null) {
+			ret.param = Response.GUILD_NOT_EXIST;
+			return ret;
+		}
+
+		GangScienceCfg conf = ConfigData.getConfig(GangScienceCfg.class, technologyId);
+		int initTechnologyId = ConfigData.guildTechnology.get(conf.type + "_" + conf.NeedLevel);
+		if (!gang.getTechnologys().contains(initTechnologyId)) { //是否解锁
+			ret.param = Response.GUILD_SKILL_UNLOCK;
+			return ret;
+		}
+
+		if(conf.NextID == 0) { //最大等级了
+			ret.param = Response.GUILD_SKILL_MAX_LV;
+			return ret;
+		}
+
+		PlayerData data = playerService.getPlayerData(playerId);
+		if(initTechnologyId != technologyId && !data.getTechnologys().contains(technologyId)) { //该技能没有学习
+			ret.param = Response.GUILD_SKILL_UNLOCK;
+			return ret;
+		}
+
+		GangScienceCfg nextConf = ConfigData.getConfig(GangScienceCfg.class, conf.NextID);
+		List<GoodsEntry> goodsList = Lists.newArrayList(new GoodsEntry(Goods.CONTRIBUTE, nextConf.Price));
+		if (Response.SUCCESS != goodsService.decConsume(playerId, goodsList, LogConsume.GUILD_OPEN_BOSS)) {
+			ret.param = Response.NO_GANG_ASSET;
+			return ret;
+		}
+
+
+		data.getTechnologys().remove(technologyId);
+		data.getTechnologys().add(conf.NextID);
+
+		calculator.calculate(player);
+		ret.param = Response.SUCCESS;
+		return ret;
+	}
+
+	/**
+	 * 获取学习的科技列表
+	 * @param playerId
+	 * @return
+	 */
+	public IntList getTechnology(int playerId) {
+		IntList list = new IntList();
+		list.iList = new ArrayList<>();
+
+		PlayerData data = playerService.getPlayerData(playerId);
+		list.iList.addAll(data.getTechnologys());
+
+		return list;
+	}
 }

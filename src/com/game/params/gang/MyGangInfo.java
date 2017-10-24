@@ -13,6 +13,7 @@ public class MyGangInfo implements IProtocol {
 	public int myPosition;//我的职位(1盟主2副盟主0成员)
 	public int rank;//公会排名
 	public List<GangBuild> builds;//公会建筑
+	public List<Integer> technology ;//解锁科技列表
 
 
 	public void decode(BufferBuilder bb) {
@@ -54,6 +55,7 @@ public class MyGangInfo implements IProtocol {
 
             }
         }
+		this.technology  = bb.getIntList();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -64,5 +66,6 @@ public class MyGangInfo implements IProtocol {
 		bb.putInt(this.myPosition);
 		bb.putInt(this.rank);
 		bb.putProtocolVoList(this.builds);
+		bb.putIntList(this.technology );
 	}
 }

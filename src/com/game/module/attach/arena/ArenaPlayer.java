@@ -9,9 +9,10 @@ public class ArenaPlayer {
 	public ArenaPlayer() {
 	}
 
-	public ArenaPlayer(int uniqueId, int playerId) {
+	public ArenaPlayer(int uniqueId, int playerId,int rank) {
 		this.uniqueId = uniqueId;
 		this.playerId = playerId;
+		this.rank = rank;
 	}
 
 	public int getRank() {

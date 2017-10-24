@@ -65,6 +65,9 @@ public class LadderService implements InitHandler {
     private final static int CMD_INFO = 6001;
     //加载完毕
     private final static int CMD_LOAD_OVER = 6008;
+
+    //取消战斗
+    private final static int CMD_GAME_OVER = 6010;
     @Autowired
     private TimerService timerService;
     @Autowired
@@ -79,7 +82,6 @@ public class LadderService implements InitHandler {
     private GoodsService goodsService;
     @Autowired
     private CopyService copyService;
-    private List<Ladder> ladders = new ArrayList<>();
 
     private final Map<Integer, Integer> FightTimes = new ConcurrentHashMap<>();
     /**
@@ -140,8 +142,8 @@ public class LadderService implements InitHandler {
 
                     Player winPlayer = playerService.getPlayer(rp1.getPlayerId());
                     Player failPlayer = playerService.getPlayer(rp2.getPlayerId());
-                    float rate1 = rp1.getHp() / winPlayer.getHp();
-                    float rate2 = rp2.getHp() / failPlayer.getHp();
+                    float rate1 = rp1.getHp() / (winPlayer.getHp() * 1.0f);
+                    float rate2 = rp2.getHp() / (failPlayer.getHp() * 1.0f);
                     if (rate2 > rate1) {
                         winPlayer = playerService.getPlayer(rp2.getPlayerId());
                         failPlayer = playerService.getPlayer(rp1.getPlayerId());
@@ -284,6 +286,7 @@ public class LadderService implements InitHandler {
         if (source.matchFlag || target.matchFlag
                 || source.exitFlag || target.exitFlag
                 || source.fightFlag || target.fightFlag) { //check again
+            matchingFail(source);
             return;
         }
         allRooms.remove(target.id);
@@ -339,7 +342,8 @@ public class LadderService implements InitHandler {
         if (ladder == null) {
             ladder = new Ladder();
             ladder.setLevel(1);
-            ladder.setScore(1);
+            ladder.setScore(0);
+            ladder.setPlayerId(playerId);
             serialDataService.getData().getLadderMap().put(playerId, ladder);
         }
         PlayerData data = playerService.getPlayerData(playerId);
@@ -424,6 +428,7 @@ public class LadderService implements InitHandler {
         if (ladder == null) {
             ladder = new Ladder();
             ladder.setLevel(1);
+            ladder.setPlayerId(playerId);
             serialDataService.getData().getLadderMap().put(playerId, ladder);
         }
         Player player = playerService.getPlayer(playerId);
@@ -670,7 +675,7 @@ public class LadderService implements InitHandler {
         int level = ladderInfo.getLevel();
         int totalScore = ladderInfo.getScore();
         int maxLevel = ConfigData.getConfigs(LadderCfg.class).size();
-        for (int i = 1; i <= maxLevel; i++) {
+        for (int i = 1; i <= maxLevel - 1; i++) {
             LadderCfg cfg = ConfigData.getConfig(LadderCfg.class, i);
             if (totalScore < cfg.score) {
                 break;
@@ -708,26 +713,39 @@ public class LadderService implements InitHandler {
      * @param playerId
      */
     public void onLogout(int playerId) {
-        Player failPlayer = playerService.getPlayer(playerId);
-        Room room = allRooms.get(failPlayer.getRoomId());
-        if (room == null) {
-            return;
-        }
-        Player winPlayer = null;
-        for (int id : room.roomPlayers.keySet()) {
-            if (id != playerId) {
-                winPlayer = playerService.getPlayer(id);
+        try {
+            Player failPlayer = playerService.getPlayer(playerId);
+            Room room = allRooms.get(failPlayer.getRoomId());
+            if (room == null) {
+                return;
             }
+            if (!room.fightFlag) {
+                IntParam param = new IntParam();
+                param.param = Response.SUCCESS;
+                for (int id : room.roomPlayers.keySet()) {
+                    SessionManager.getInstance().sendMsg(CMD_GAME_OVER, param, id);
+                }
+                return;
+            }
+
+            Player winPlayer = null;
+            for (int id : room.roomPlayers.keySet()) {
+                if (id != playerId) {
+                    winPlayer = playerService.getPlayer(id);
+                }
+            }
+            if (winPlayer == null) {
+                FightTimes.remove(failPlayer.getRoomId());
+                allRooms.remove(failPlayer.getRoomId());
+                return;
+            }
+            onGameOver(room, winPlayer, failPlayer);
+        } catch (Exception e) {
+            ServerLogger.err(e, "排位赛退出异常");
         }
-        if (winPlayer == null) {
-            FightTimes.remove(failPlayer.getRoomId());
-            allRooms.remove(failPlayer.getRoomId());
-            return;
-        }
-        onGameOver(room, winPlayer, failPlayer);
     }
 
-    public void ladderSort() {
+    public List<Ladder> ladderSort() {
         if (serialDataService.getData() != null) {
             ServerLogger.warn("ladder sort ...........");
             List<Ladder> list = new ArrayList<>(serialDataService.getData().getLadderMap().values());
@@ -744,10 +762,13 @@ public class LadderService implements InitHandler {
                 vo.level = ladder.getLevel();
                 vo.vocation = player.getVocation();
                 vo.score = ladder.getScore();
-
+                vo.levNum = ladder.getLevel();
                 LADDER_RANK.params.add(vo);
             }
+
+            return list;
         }
+        return null;
     }
 
     public ListParam getLadderRank() {
@@ -760,16 +781,6 @@ public class LadderService implements InitHandler {
      * @return
      */
     public boolean checkOpen() {
-        String beginDateStr = ConfigData.globalParam().PKBeginDate + " 00:00:00";
-        String endDateStr = ConfigData.globalParam().PKEndDate + " 00:00:00";
-
-        Date beginDate = TimeUtil.parseDateTime(beginDateStr).getTime();
-        Date endDate = TimeUtil.parseDateTime(endDateStr).getTime();
-
-        Date today = new Date();
-        if (today.after(endDate) || today.before(beginDate)) {
-            return false;
-        }
         return TimeUtil.checkTimeIn(ConfigData.globalParam().PKTime);
     }
 
@@ -812,25 +823,36 @@ public class LadderService implements InitHandler {
      * 每周一定时奖励
      */
     public void weeklyAward() {
-        if (!checkOpen()) {
-            return;
-        }
-
         ServerLogger.warn("send ladder reward...........");
         String awardTitle = ConfigData.getConfig(ErrCode.class, Response.LADDER_MAIL_TITLE).tips;
         String awardContent = ConfigData.getConfig(ErrCode.class, Response.LADDER_MAIL_CONTENT).tips;
         List<GoodsEntry> rewards = new ArrayList<>();
-        for (Ladder ladder : ladders) {
-            LadderCfg cfg = ConfigData.getConfig(LadderCfg.class, ladder.getLevel());
-            for (int i = 0; i < cfg.FinalReward.length; i += 2) {
-                rewards.add(new GoodsEntry(cfg.FinalReward[i], cfg.FinalReward[i + 1]));
-            }
-            String content = String.format(awardContent, ladder.getLevel());
+        List<Ladder> list = ladderSort();
+        if(list != null) {
+            for (Ladder ladder : list) {
+                LadderCfg cfg = ConfigData.getConfig(LadderCfg.class, ladder.getLevel());
+                if(cfg == null) {
+                    cfg = ConfigData.getConfig(LadderCfg.class, ladder.getLevel() - 1);
+                    if(cfg == null) {
+                        ServerLogger.warn("send ladder reward error,level = " + ladder.getLevel());
+                        continue;
+                    }
+                }
+                rewards.clear();
+                for (int i = 0; i < cfg.FinalReward.length; i += 2) {
+                    rewards.add(new GoodsEntry(cfg.FinalReward[i], cfg.FinalReward[i + 1]));
+                }
+                String content = String.format(awardContent, cfg.name);
 
-            ladder.setLastTime(0);
-            ladder.setLevel(1);
-            ladder.setScore(0);
-            mailService.sendSysMail(awardTitle, content, rewards, ladder.getPlayerId(), LogConsume.LADDER_AWARD);
+                ladder.setLastTime(0);
+                ladder.setLevel(1);
+                ladder.setScore(0);
+                ladder.setWinTimes(0);
+                ladder.setMaxContinuityWinTimes(0);
+                ladder.setFightTimes(0);
+                ladder.getRecords().clear();
+                mailService.sendSysMail(awardTitle, content, rewards, ladder.getPlayerId(), LogConsume.LADDER_AWARD);
+            }
         }
     }
 
@@ -843,7 +865,7 @@ public class LadderService implements InitHandler {
             if (o1.getScore() == o2.getScore()) {
                 return (int) (o2.getLastTime() - o1.getLastTime());
             }
-            return o1.getScore() - o2.getScore();
+            return o2.getScore() - o1.getScore();
         }
     };
 
@@ -871,5 +893,33 @@ public class LadderService implements InitHandler {
         }
 
         return recordVOListParam;
+    }
+
+    public void gmSort() {
+        ladderSort();
+    }
+
+    public void gmAddScore(int playerId, int score) {
+        Ladder ladderInfo = serialDataService.getData().getLadderMap().get(playerId);
+        if (ladderInfo == null) {
+            ladderInfo = new Ladder();
+            ladderInfo.setScore(score);
+            serialDataService.getData().getLadderMap().put(playerId, ladderInfo);
+        }
+
+        int newLevel = 1;
+        int totalScore = score + ladderInfo.getScore();
+        int maxLevel = ConfigData.getConfigs(LadderCfg.class).size();
+        for (int i = 1; i <= maxLevel; i++) {
+            LadderCfg cfg = ConfigData.getConfig(LadderCfg.class, i);
+            if (totalScore < cfg.score) {
+                break;
+            }
+            newLevel += 1;
+            totalScore -= cfg.score;
+        }
+
+        ladderInfo.setLevel(newLevel);
+        ladderInfo.setScore(score + ladderInfo.getScore());
     }
 }

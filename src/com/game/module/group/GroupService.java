@@ -874,23 +874,27 @@ public class GroupService {
      * @param playerId
      */
     public void onExitBattle(int playerId) {
-        Player player = playerService.getPlayer(playerId);
-        Group group = groupMap.get(player.getGroupId());
-        if (group == null) {//队伍解散
-            return;
+        try {
+            Player player = playerService.getPlayer(playerId);
+            Group group = groupMap.get(player.getGroupId());
+            if (group == null) {//队伍解散
+                return;
+            }
+            GroupTeam groupTeam = group.getGroupTeam(player.getGroupTeamId());
+            if (groupTeam == null) {
+                return;
+            }
+            int size = groupTeam.fightSize.decrementAndGet();
+            if (size == 0) {
+                groupTeam.setbFight(false);
+                group.removeCopyState(groupTeam.getId());
+                broadcastGroup(group);
+                broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
+            }
+            ServerLogger.warn("Group Battle Hero Size = " + size);
+        } catch (Exception e) {
+            ServerLogger.err(e, "团队副本退出异常");
         }
-        GroupTeam groupTeam = group.getGroupTeam(player.getGroupTeamId());
-        if (groupTeam == null) {
-            return;
-        }
-        int size = groupTeam.fightSize.decrementAndGet();
-        if (size == 0) {
-            groupTeam.setbFight(false);
-            group.removeCopyState(groupTeam.getId());
-            broadcastGroup(group);
-            broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
-        }
-        ServerLogger.warn("Group Battle Hero Size = " + size);
     }
 
     /**
@@ -923,9 +927,13 @@ public class GroupService {
      * @param playerId
      */
     public void onLogout(int playerId) {
-        Player player = playerService.getPlayer(playerId);
-        if (player.getGroupId() != 0) {
-            memberExit(playerId);
+        try {
+            Player player = playerService.getPlayer(playerId);
+            if (player.getGroupId() != 0) {
+                memberExit(playerId);
+            }
+        } catch (Exception e) {
+            ServerLogger.err(e, "团队副本异常");
         }
     }
 
@@ -934,6 +942,22 @@ public class GroupService {
         if (group == null) {
             return;
         }
-        broadcastGroup(group,cmd,param);
+        broadcastGroup(group, cmd, param);
+    }
+
+    public void updateAttr(int playerId) {
+        Player player = playerService.getPlayer(playerId);
+        Group group = groupMap.get(player.getGroupId());
+        if (group == null) {//队伍解散
+            return;
+        }
+        GroupTeam groupTeam = group.getGroupTeam(player.getGroupTeamId());
+        if (groupTeam == null) {
+            return;
+        }
+        GroupTeamMember member = groupTeam.getMembers().get(playerId);
+        member.setFight(player.getFight());
+        member.setLev(player.getLev());
+        broadcastGroup(group);
     }
 }

@@ -11,8 +11,10 @@
 	<partIcon>[4000,4001,4002,4003,4004,4005,4006]</partIcon>
 	<desc>古时盗墓者所用的避邪之物,是盗墓一派摸金校尉的一种身份证明。暗含“辟邪”寓意,借取地脉之灵气,避去外界之邪物。</desc>
 	<model>31101</model>
+	<renderer>DT</renderer>
+	<effectPath>pendant_1</effectPath>
 	<modelSize>[270,270,270]</modelSize>
-	<modelRotate>[8,158,4]</modelRotate>
+	<modelRotate>[8,211,4]</modelRotate>
 	<modelPos>[-149,-268,330]</modelPos>
 	<icon>mojinfu</icon>
 	<imgTitle>mojinfu3</imgTitle>
@@ -29,6 +31,8 @@
 	<desc>匍匐在蝎子王的脚下吧！
 曾是古埃及战绩无数的蝎子王最耀眼的功勋。寄宿着蝎子王的灵魂,拥有着勇武与狠毒的双重性格。</desc>
 	<model>31103</model>
+	<renderer>31103/Artifact</renderer>
+	<effectPath>31103/Dummy001</effectPath>
 	<modelSize>[535,535,535]</modelSize>
 	<modelRotate>[22,125,342]</modelRotate>
 	<modelPos>[-107,-175,412]</modelPos>
@@ -48,6 +52,8 @@
 月牙石拥有着令光与暗颠倒的魔力。
 此石为地精小恶魔所持有,他奉命守护月牙石,防止风谷领地光明与黑暗失衡。</desc>
 	<model>31102</model>
+	<renderer>31102/Artifact</renderer>
+	<effectPath>31102/Dummy001</effectPath>
 	<modelSize>[412,412,412]</modelSize>
 	<modelRotate>[0,0,0]</modelRotate>
 	<modelPos>[-112,-62,330]</modelPos>
@@ -66,6 +72,8 @@
 	<desc>蕴含着"震慑"与“净化”,遏制邪恶、贪婪、狂躁。
 若没有此灯作庄严的修炼道场,易受邪魔侵害,变成幽魂,游荡在炼炉中,往世不得超生。</desc>
 	<model>31104</model>
+	<renderer>31104/Artifact</renderer>
+	<effectPath>31104/Dummy001</effectPath>
 	<modelSize>[467,467,467]</modelSize>
 	<modelRotate>[325,0,330]</modelRotate>
 	<modelPos>[-242,-218,330]</modelPos>

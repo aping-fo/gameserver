@@ -7,6 +7,7 @@
 	<levRequest>0</levRequest>
 	<memberCount>20</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[1000,100]]</activate>
 </config>
 <config>
 	<id>102</id>
@@ -15,6 +16,7 @@
 	<levRequest>1000</levRequest>
 	<memberCount>24</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[1100,100],[1200,100]]</activate>
 </config>
 <config>
 	<id>103</id>
@@ -23,6 +25,7 @@
 	<levRequest>2000</levRequest>
 	<memberCount>28</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[1300,100]]</activate>
 </config>
 <config>
 	<id>104</id>
@@ -31,6 +34,7 @@
 	<levRequest>3000</levRequest>
 	<memberCount>32</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[1400,100],[1500,100]]</activate>
 </config>
 <config>
 	<id>105</id>
@@ -39,6 +43,7 @@
 	<levRequest>4000</levRequest>
 	<memberCount>36</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[1600,100]]</activate>
 </config>
 <config>
 	<id>106</id>
@@ -47,6 +52,7 @@
 	<levRequest>5000</levRequest>
 	<memberCount>40</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[1700,100],[1800,100]]</activate>
 </config>
 <config>
 	<id>107</id>
@@ -55,6 +61,7 @@
 	<levRequest>6000</levRequest>
 	<memberCount>44</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[1900,100]]</activate>
 </config>
 <config>
 	<id>108</id>
@@ -63,6 +70,7 @@
 	<levRequest>7000</levRequest>
 	<memberCount>46</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[2000,100],[2100,100]]</activate>
 </config>
 <config>
 	<id>109</id>
@@ -71,6 +79,7 @@
 	<levRequest>8000</levRequest>
 	<memberCount>48</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[2200,100],[2300,100]]</activate>
 </config>
 <config>
 	<id>110</id>
@@ -79,5 +88,6 @@
 	<levRequest>9000</levRequest>
 	<memberCount>50</memberCount>
 	<viceCount>2</viceCount>
+	<activate>[[2400,100]]</activate>
 </config>
 </root>

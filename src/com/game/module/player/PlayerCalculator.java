@@ -5,6 +5,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import com.game.data.*;
+import com.game.module.group.GroupService;
+import com.game.module.team.TeamService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,6 +24,11 @@ public class PlayerCalculator {
 	private PlayerService playerService;
 	@Autowired
 	private GoodsService goodsService;
+
+	@Autowired
+	private GroupService groupService;
+	@Autowired
+	private TeamService teamService;
 
 	// 重新计算人物属性
 	public void calculate(int playerId) {
@@ -73,12 +80,41 @@ public class PlayerCalculator {
 		AddFashion(player);
 		//百分比保持最后
 		addPercent(player);
+		//公会科技加成
+		addGuildAttr(player);
 		// 更新战斗力
 		float[] fightParams = ConfigData.globalParam().fightParams;
 		float fight = player.getHp()*fightParams[0]+player.getAttack()*fightParams[1]+player.getDefense()*fightParams[2]+player.getFu()*fightParams[3]+player.getSymptom()*fightParams[4]+
 				player.getCrit()*fightParams[5]; 
 		player.setFight((int)fight);
+
+		groupService.updateAttr(player.getPlayerId());
+		teamService.updateAttr(player.getPlayerId());
 		playerService.refreshPlayerToClient(player.getPlayerId());
+	}
+
+	/**
+	 * 加成公会属性
+	 * @param player
+	 */
+	private void addGuildAttr(PlayerAddition player) {
+		PlayerData data = playerService.getPlayerData(player.getPlayerId());
+		for(int techId : data.getTechnologys()) {
+			GangScienceCfg conf = ConfigData.getConfig(GangScienceCfg.class,techId);
+			if(conf.type == 1) { //威力
+				player.addAttack(conf.param);
+			} else if(conf.type == 2) {
+				player.addDefense(conf.param);
+			} else if(conf.type == 3) {
+				player.addHp(conf.param);
+			} else if(conf.type == 4) {
+				player.addCrit(conf.param);
+			} else if(conf.type == 5) {
+				player.addSymptom(conf.param);
+			} else if(conf.type == 6) {
+				player.addFu(conf.param);
+			}
+		}
 	}
 
 	// 增加装备属性

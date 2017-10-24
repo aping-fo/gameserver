@@ -1,17 +1,19 @@
 package com.game.module.skill;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
 
+import com.game.data.*;
+import com.game.event.InitHandler;
+import com.game.module.goods.Goods;
+import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.game.data.Response;
-import com.game.data.SkillCardComposeCfg;
-import com.game.data.SkillCardConfig;
-import com.game.data.SkillConfig;
 import com.game.module.log.LogConsume;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -28,12 +30,42 @@ import com.server.SessionManager;
  * 技能系统
  */
 @Service
-public class SkillService {
+public class SkillService implements InitHandler {
 	
 	@Autowired
 	private PlayerService playerService;
 	@Autowired
 	private TaskService taskService;
+
+	private Map<Integer,Integer> goods2cards = new HashMap<>();
+
+	@Override
+	public void handleInit() {
+		/*for (Object obj : GameData.getConfigs(GoodsConfig.class)) {
+			GoodsConfig cfg = (GoodsConfig) obj;
+			if (cfg.type == Goods.SKILL_CARD) {
+				String numStr = String.valueOf(cfg.id);
+				String str = numStr.substring(numStr.length() - 1, numStr.length());
+				int maxId = Integer.parseInt(numStr.replace(str, "5"));
+
+				for (Object obj1 : GameData.getConfigs(SkillCardConfig.class)) {
+					SkillCardConfig cfg1 = (SkillCardConfig) obj1;
+					if (cfg1.goodsid == maxId && cfg1.lv == 1) {
+						goods2cards.put(cfg.id, cfg1.id);
+					}
+				}
+			}
+		}*/
+		for (Object obj : GameData.getConfigs(SkillCardConfig.class)) {
+			SkillCardConfig cfg = (SkillCardConfig) obj;
+			for (Object obj1 : GameData.getConfigs(SkillCardConfig.class)) {
+				SkillCardConfig cfg1 = (SkillCardConfig) obj1;
+				if (cfg1.lv == 1 && cfg1.quality == cfg.quality + 1) {
+					goods2cards.put(cfg.goodsid, cfg1.id);
+				}
+			}
+		}
+	}
 
 	//获取技能信息
 	public SkillInfo getInfo(int playerId){
@@ -41,10 +73,10 @@ public class SkillService {
 		PlayerData data = playerService.getPlayerData(playerId);
 		info.cardGroupInfo = new SkillCardGroupInfo();
 		info.cardGroupInfo.curGroupId = data.getCurCardId();
-		info.cardGroupInfo.curCards = new ArrayList<Integer>(data.getCurrCard());
-		info.curSkills = new ArrayList<Integer>(data.getCurSkills());
-		info.skills = new ArrayList<Integer>(data.getSkills());
-		info.skillCards = new ArrayList<SkillCardVo>(data.getSkillCards().size());
+		info.cardGroupInfo.curCards = new ArrayList<>(data.getCurrCard());
+		info.curSkills = new ArrayList<>(data.getCurSkills());
+		info.skills = new ArrayList<>(data.getSkills());
+		info.skillCards = new ArrayList<>(data.getSkillCards().size());
 		for(Entry<Integer, SkillCard> card:data.getSkillCards().entrySet()){
 			SkillCardVo vo = new SkillCardVo();
 			vo.id = card.getKey();
@@ -140,107 +172,58 @@ public class SkillService {
 	}
 	
 	//合成技能卡
-	public int composeCard(int playerId,List<Integer> ids){
+	public int composeCard(int playerId, List<Integer> ids) {
 		PlayerData data = playerService.getPlayerData(playerId);
-		int vip = playerService.getPlayer(playerId).getVip();
-		//品质
-		int type = ids.size();
 		SkillCard card = data.getSkillCards().get(ids.get(0));
 		SkillCardConfig cfg = ConfigData.getConfig(SkillCardConfig.class, card.getCardId());
-		int quality = cfg.quality;
-		int reqQuality = quality;
-		int newId = 0;
-		if(type == 4){
-			if(cfg.type != SkillCard.SPECIAL){
-				return Response.ERR_PARAM;
-			}
-			reqQuality--;
-			if(cfg.nextCard != 0){
-				newId = cfg.nextCard;
-			}
+		int newCardID = goods2cards.get(cfg.goodsid);
+
+		if(ids.size() < 5) {
+			return Response.ERR_PARAM;
 		}
 		//检查副卡类型，品质
-		for(int i = 1; i < type;i++){
+		for(int i = 1; i < ids.size();i++){
 			SkillCard sc = data.getSkillCards().get(ids.get(i));
 			SkillCardConfig scc = ConfigData.getConfig(SkillCardConfig.class, sc.getCardId());
-			if(scc.type == SkillCard.SPECIAL || scc.quality != reqQuality){
+			if(scc.type == SkillCard.SPECIAL || scc.quality != cfg.quality || scc.quality == 5){
 				return Response.ERR_PARAM;
 			}
 		}
-		if(newId == 0){
-			//概率加成
-			List<Integer> rates = ConfigData.getSkillCardRates(type, quality);
-			List<Integer> cardIds = ConfigData.getSkillCardIds(type, quality);
-			
-			for(int i=0;i<cardIds.size();i++){
-				SkillCardComposeCfg compose = ConfigData.getConfig(SkillCardComposeCfg.class, cardIds.get(i));
-				int rate = rates.get(i);
-				//vip加成
-				rate +=compose.vipAdd*vip;
-				//失败加成
-				Integer fail = data.getSkillCardTimes().get(cardIds.get(i));
-				if(fail==null){
-					fail = 0;
-				}
-				rate+=fail*compose.incRate;
-				rates.set(i, rate);
-			}
-			
-			//确定抽奖的id
-			int index = RandomUtil.getRandomIndex(rates);
-			newId = ConfigData.getConfig(SkillCardComposeCfg.class, cardIds.get(index)).skillCardId;
-			
-			//更新概率
-			for(int i=0;i<cardIds.size();i++){
-				int chooseId = cardIds.get(i);
-				Integer fail = data.getSkillCardTimes().get(chooseId);
-				if(fail==null){
-					fail=0;
-				}
-				if(i==index){
-					fail = 0;
-				}else{
-					fail++;
-				}
-				data.getSkillCardTimes().put(chooseId, fail);
-			}
-		}
-		
-		
-		SkillCard newCard = playerService.addSkillCard(playerId, newId);
-		for(int delId:ids){
+
+		SkillCard newCard = playerService.addSkillCard(playerId, newCardID);
+		for (int delId : ids) {
 			//扣除
 			SkillCard del = data.getSkillCards().remove(delId);
-			for(List<Integer> group : data.getSkillCardSets()){
-				for(int i = 0; i < 4; i++){
-					if(group.get(i) == delId){
+			for (List<Integer> group : data.getSkillCardSets()) {
+				for (int i = 0; i < 4; i++) {
+					if (group.get(i) == delId) {
 						group.set(i, 0);
 					}
 				}
 			}
 			SkillCardConfig delCfg = ConfigData.getConfig(SkillCardConfig.class, del.getCardId());
 			//增加经验
-			newCard.setExp(newCard.getExp()+del.getExp()+delCfg.decompose);
+			newCard.setExp(newCard.getExp() + del.getExp() + delCfg.decompose);
 		}
 		//检查升级
-		 cfg = ConfigData.getConfig(SkillCardConfig.class, newCard.getCardId());
-		 newCard.setExp(newCard.getExp() - cfg.decompose);
-		 while(newCard.getExp()>=cfg.exp){
-			 newCard.setLev(newCard.getLev()+1);
-			 newCard.setExp(newCard.getExp()-cfg.exp);
-			 newCard.setCardId(cfg.nextCard);
-			 
-			 cfg = ConfigData.getConfig(SkillCardConfig.class, newCard.getCardId());
-			 if(cfg.nextCard==0){
-				 break;
-			 }
-		 }
-		taskService.doTask(playerId, Task.FINISH_CARD_COMPOSE, cfg.quality, 1);
+		cfg = ConfigData.getConfig(SkillCardConfig.class, newCard.getCardId());
+		newCard.setExp(newCard.getExp() - cfg.decompose);
+		while (newCard.getExp() >= cfg.exp) {
+			newCard.setLev(newCard.getLev() + 1);
+			newCard.setExp(newCard.getExp() - cfg.exp);
+			newCard.setCardId(cfg.nextCard);
+
+			cfg = ConfigData.getConfig(SkillCardConfig.class, newCard.getCardId());
+			if (cfg.nextCard == 0) {
+				break;
+			}
+		}
+		taskService.doTask(playerId, Task.FINISH_CARD_COMPOSE, cfg.quality + 1, 1);
 		//更新前端
 		updateSkill2Client(playerId);
 		return Response.SUCCESS;
 	}
-	
+
 	//使用卡牌
 	public int setCard(int playerId,int index,int id){
 		PlayerData data = playerService.getPlayerData(playerId);
@@ -264,6 +247,9 @@ public class SkillService {
 		taskService.doTask(playerId, Task.FINISH_SKILL);
 		return Response.SUCCESS;
 	}
-	
-	
+
+	public void gmAddSkillCard(int playerId,int cardId) {
+		playerService.addSkillCard(playerId, cardId);
+		updateSkill2Client(playerId);
+	}
 }

@@ -149,4 +149,14 @@ public class GlobalConfig {
 	public int[] robotFight;//机器人战斗力
 	public int[] QualifyingRankReward;//排位赛段位奖励
 	public int QualifyingMatchingPredictTime;//排位赛匹配预计时间(秒)
+	public float joyActionTimeMini;//休闲动作间隔最小时间
+	public float joyActionTimeMax;//休闲动作间隔最大时间
+	public int guildCopyTimes;//公会副本每日次数
+	public int guildRewardRate;//公会副本伤害奖励系数
+	public int[] energyPrice;//购买体力价格
+	public int addEnergyPerTime;//每次购买增加体力
+	public int[] coinPrice;//金币购买价格
+	public int coinBuy;//金币购买获得金币数
+	public Map<Integer,Integer> buffStrikenEffectPriority;//buff受击特效优先级
+	public int[][] cardLvUpPrice;//技能卡合成价格
 }

@@ -1,5 +1,7 @@
 package com.game.module.gang;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -18,17 +20,31 @@ public class GMember {
 	private int taskContribution;
 	private float trainingTime;//总的练功时间(单位小时)
 	private long startTraining;//开始练功的时间
-	
+	private int challengeTimes; //挑战次数
+	@JsonIgnore
+	public int hp;
+	@JsonIgnore
+	public int hurt;
 	public GMember() {
 	}
 
-	public GMember(int playerId) {
+	public GMember(int playerId,int challengeTimes) {
 		this.playerId = playerId;
+		this.challengeTimes = challengeTimes;
 	}
 	
-	public GMember(int playerId, int position) {
+	public GMember(int playerId, int position,int challengeTimes) {
 		this.playerId = playerId;
 		this.position = position;
+		this.challengeTimes = challengeTimes;
+	}
+
+	public int getChallengeTimes() {
+		return challengeTimes;
+	}
+
+	public void setChallengeTimes(int challengeTimes) {
+		this.challengeTimes = challengeTimes;
 	}
 
 	public int getPlayerId() {

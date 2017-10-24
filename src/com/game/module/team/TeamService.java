@@ -156,10 +156,8 @@ public class TeamService implements InitHandler {
 	public MyTeamVO wrapTeam(Team team) {
 		MyTeamVO vo = new MyTeamVO();
 		vo.leader = team.getLeader();
-		vo.member = new ArrayList<TeamMemberVO>();
+		vo.member = new ArrayList<>();
 		for (TMember member : team.getMembers().values()) {
-			if (member.getPlayerId() == vo.leader)
-				continue;
 			vo.member.add(wrapMember(member));
 		}
 		return vo;
@@ -169,6 +167,9 @@ public class TeamService implements InitHandler {
 		TeamMemberVO vo = new TeamMemberVO();
 		vo.ready = member.isReady();
 		vo.memberId = member.getPlayerId();
+		Player player = playerService.getPlayer(member.getPlayerId());
+		vo.fight = player.getFight();
+		vo.lev = player.getLev();
 		return vo;
 	}
 
@@ -234,5 +235,15 @@ public class TeamService implements InitHandler {
 		Player player = playerService.getPlayer(playerId);
 		Team team = teams.get(player.getTeamId());
 		return team.getLeader() * 100;
+	}
+
+	public void updateAttr(int playerId) {
+		Player player = playerService.getPlayer(playerId);
+		Team team = getTeam(player.getTeamId());
+		if (team == null) {
+			return ;
+		}
+		MyTeamVO vo = wrapTeam(team);
+		sceneService.brocastToSceneCurLine(player, TeamExtension.MY_TEAM_INFO, vo,null);
 	}
 }

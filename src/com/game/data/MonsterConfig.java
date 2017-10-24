@@ -37,8 +37,15 @@ public class MonsterConfig {
 	public int[] flyAction;//击飞
 	public int[] downAction;//击落
 	public int[] getupAction;//起身
+	public float[] hudOffset;//hud偏移值
 	public int[] bornBuff;//出生buff列表
 	public Map<Integer,Integer> skillBuff;//技能附带buff
-	public float[] hudOffset;//hud偏移值
+	public int frozonBuff;//冰冻触发buff
+	public int giddyBuff;//眩晕触发buff
+	public int fossilBuff;//石化触发buff
+	public int poisonBuff;//中毒触发buff
+	public int flareBuff;//灼烧触发buff
+	public int bloodedBuff;//流血触发buff
 	public int[] leadawayParam;//娃娃机专用参数
+	public int isPosAboveGround;//是否限制位置在地面以上
 }

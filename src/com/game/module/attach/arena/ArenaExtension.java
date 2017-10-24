@@ -46,7 +46,7 @@ public class ArenaExtension {
         ArenaAttach attach = logic.getAttach(playerId);
         ArenaPlayer aPlayer = logic.getArenaPlayerByUniqueId(attach.getUniqueId());
         if (aPlayer == null) {
-            aPlayer = logic.generalArenaPlayer(playerId);
+            aPlayer = logic.searchArenaPlayer(playerId);
             attach.setUniqueId(aPlayer.getUniqueId());
         }
         ArenaVO vo = new ArenaVO();
@@ -64,15 +64,15 @@ public class ArenaExtension {
         ArenaAttach attach = logic.getAttach(playerId);
         ArenaPlayer me = logic.getArenaPlayerByUniqueId(attach.getUniqueId());
         if (me == null) {
-            ArenaPlayer arenaPlayer = logic.generalArenaPlayer(playerId);
+            ArenaPlayer arenaPlayer = logic.searchArenaPlayer(playerId);
             me = logic.getArenaPlayerByUniqueId(arenaPlayer.getUniqueId());
             attach.setUniqueId(arenaPlayer.getUniqueId());
         }
         int minRank = logic.getMinRank();
         int meRank = me.getRank();
         Set<Integer> ranks = new HashSet<>(4);
-        if (meRank < 5) {
-            for (int i = 1; i < 5; i++) {
+        if (meRank < 6) {
+            for (int i = 1; i < 6; i++) {
                 if (i != meRank) {
                     ranks.add(i);
                 }

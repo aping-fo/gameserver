@@ -13,6 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.module.ladder.LadderService;
 import com.game.module.player.Upgrade;
+import com.game.params.Int2Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -965,5 +966,25 @@ public class GoodsService {
 		Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false,
 				count, log, goods.getGoodsId(),Goods.GOOODS,params);
 		return true;
+	}
+
+	/**
+	 * 物品合成
+	 *
+	 * @param playerId
+	 * @param bagId
+	 */
+	public Int2Param compound(int playerId, int bagId) {
+		Int2Param ret = new Int2Param();
+		Goods goods = getGoods(playerId, bagId);
+		GoodsConfig config = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
+		if (!decGoodsFromBagById(playerId, bagId, config.param1[0], LogConsume.ITEM_COMPOUND)) {
+			ret.param1 = Response.NO_MATERIAL;
+			return ret;
+		}
+		addGoodsToBag(playerId, config.param2[0][0], 1, LogConsume.ITEM_COMPOUND);
+		ret.param1 = Response.SUCCESS;
+		ret.param2 = config.id;
+		return ret;
 	}
  }

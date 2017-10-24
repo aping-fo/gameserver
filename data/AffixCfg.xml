@@ -147,7 +147,7 @@
 	<id>14</id>
 	<type>1010101</type>
 	<msg>灼烧</msg>
-	<desc>攻击有30%几率附带灼烧效果</desc>
+	<desc>攻击有30%附带灼烧效果</desc>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -158,7 +158,7 @@
 	<id>15</id>
 	<type>1010201</type>
 	<msg>流血</msg>
-	<desc>攻击有30%几率附带流血效果</desc>
+	<desc>攻击有30%附带流血效果</desc>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -180,7 +180,7 @@
 	<id>17</id>
 	<type>1204</type>
 	<msg>眩晕</msg>
-	<desc>攻击有30%几率附带眩晕效果</desc>
+	<desc>攻击有30%附带眩晕效果</desc>
 	<reward>10002</reward>
 	<mutex>[18,19,20]</mutex>
 	<target>2</target>
@@ -191,7 +191,7 @@
 	<id>18</id>
 	<type>1205</type>
 	<msg>冰冻</msg>
-	<desc>攻击有30%几率附带冰冻效果</desc>
+	<desc>攻击有30%附带冰冻效果</desc>
 	<reward>10002</reward>
 	<mutex>[17,19,20]</mutex>
 	<target>2</target>
@@ -202,7 +202,7 @@
 	<id>19</id>
 	<type>1206</type>
 	<msg>石化</msg>
-	<desc>攻击有30%几率附带石化效果</desc>
+	<desc>攻击有30%附带石化效果</desc>
 	<reward>10002</reward>
 	<mutex>[17,18,20]</mutex>
 	<target>2</target>
@@ -213,7 +213,7 @@
 	<id>20</id>
 	<type>1207</type>
 	<msg>中毒</msg>
-	<desc>攻击有30%几率附带中毒效果</desc>
+	<desc>攻击有30%附带中毒效果</desc>
 	<reward>10002</reward>
 	<mutex>[18,19,17]</mutex>
 	<target>2</target>

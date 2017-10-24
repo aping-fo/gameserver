@@ -55,4 +55,21 @@ public class ShopExtension {
 		result.param = (int)time;
 		return result;
 	}
+
+	@Command(1705)
+	public Object buyEnergy(int playerId, Object obj){
+		return service.buyEnergy(playerId);
+	}
+	@Command(1706)
+	public Object getBuyEnergyTimes(int playerId, Object obj){
+		return service.getBuyEnergyTimes(playerId);
+	}
+	@Command(1707)
+	public Object buyCoin(int playerId, Object obj){
+		return service.buyCoin(playerId);
+	}
+	@Command(1708)
+	public Object getBuyCoinTimes(int playerId, Object obj){
+		return service.getBuyCoinTimes(playerId);
+	}
 }

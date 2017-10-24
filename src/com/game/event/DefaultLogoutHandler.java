@@ -1,6 +1,7 @@
 package com.game.event;
 import java.util.Date;
 
+import com.game.module.gang.GangDungeonService;
 import com.game.module.group.GroupService;
 import com.game.module.ladder.LadderService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +47,8 @@ public class DefaultLogoutHandler implements LogoutHandler{
 	private LadderService ladderService;
 	@Autowired
 	private GroupService groupService;
-
+	@Autowired
+	private GangDungeonService gangDungeonService;
 	public void handleLogout(final int playerId) {
 		Context.getThreadService().execute(new Runnable() {
 			@Override
@@ -94,6 +96,7 @@ public class DefaultLogoutHandler implements LogoutHandler{
 
 			ladderService.onLogout(playerId);
 			groupService.onLogout(playerId);
+			gangDungeonService.onLogout(playerId);
 
 			SessionManager.getInstance().removeSession(playerId);
 			AntiCheatService.getInstance().clear(playerId);

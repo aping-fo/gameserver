@@ -1,11 +1,6 @@
 package com.game.module.player;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -108,9 +103,41 @@ public class PlayerData {
 	private int honorPoint;
 
 	private List<Integer> modules =new ArrayList<>();// 开通的模块
+	//公会科技
+	private Set<Integer> technologys = new HashSet<>();
+
+	private int buyEnergyTimes;
+
+	private int buyCoinTimes;
+
+
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+	public int getBuyEnergyTimes() {
+		return buyEnergyTimes;
+	}
+
+	public void setBuyEnergyTimes(int buyEnergyTimes) {
+		this.buyEnergyTimes = buyEnergyTimes;
+	}
+
+	public int getBuyCoinTimes() {
+		return buyCoinTimes;
+	}
+
+	public void setBuyCoinTimes(int buyCoinTimes) {
+		this.buyCoinTimes = buyCoinTimes;
+	}
+
+	public Set<Integer> getTechnologys() {
+		return technologys;
+	}
+
+	public void setTechnologys(Set<Integer> technologys) {
+		this.technologys = technologys;
 	}
 
 	public List<Integer> getModules() {

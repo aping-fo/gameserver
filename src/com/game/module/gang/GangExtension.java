@@ -30,6 +30,8 @@ public class GangExtension {
 	private PlayerService playerService;
 	@Autowired
 	private PlayerCalculator playerCalculator;
+	@Autowired
+	private GangDungeonService gangDungeonService;
 
 	// 帮派列表
 	@Command(2501)
@@ -263,5 +265,40 @@ public class GangExtension {
 	@Command(2527)
 	public Object takeTrainingReward(int playerId, Object param){
 		return gangService.takeTrainingReward(playerId);
+	}
+
+	@Command(2528)
+	public Object getGangCopyInfo(int playerId, Object param){
+		return gangDungeonService.getGangCopyInfo(playerId);
+	}
+
+	@Command(2529)
+	public Object openChallenge(int playerId, Object param){
+		return gangDungeonService.openChallenge(playerId);
+	}
+
+	@Command(2530)
+	public Object startChallenge(int playerId, Object param){
+		return gangDungeonService.startChallenge(playerId);
+	}
+
+	@Command(2532)
+	public Object unLockTechnology(int playerId, IntParam param){
+		return gangService.unLockTechnology(playerId,param.param);
+	}
+
+	@Command(2533)
+	public Object upgradeTechnology(int playerId, IntParam param){
+		return gangService.learnTechnology(playerId,param.param);
+	}
+
+	@Command(2534)
+	public Object getTechnology(int playerId, Object param){
+		return gangService.getTechnology(playerId);
+	}
+
+	@Command(2535)
+	public Object getHurtRankList(int playerId, Object param){
+		return gangDungeonService.getHurtRankList(playerId);
 	}
 }

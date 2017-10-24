@@ -10,6 +10,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 import com.game.data.*;
+import com.game.module.group.GroupService;
+import com.game.module.team.TeamService;
 import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -80,7 +82,10 @@ public class PlayerService implements InitHandler {
 	private SkillService skillService;
 	@Autowired
 	private FashionService fashionService;
-	
+	@Autowired
+	private GroupService groupService;
+	@Autowired
+	private TeamService teamService;
 	private static volatile int maxPlayerId = 0;
 
 	private volatile Map<Integer, Player> players = new ConcurrentHashMap<Integer, Player>();
@@ -582,7 +587,8 @@ public class PlayerService implements InitHandler {
 		} 
 		// 发送到前端
 		updateAttrsToClient(playerId, Player.EXP,player.getExp(),Player.LEV,player.getLev());
-
+		groupService.updateAttr(playerId);
+		teamService.updateAttr(playerId);
 		Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, exp, actionType,
 				0,Goods.EXP, params);
 	}
@@ -703,6 +709,16 @@ public class PlayerService implements InitHandler {
 		synchronized (player) {
 			//VIPConfig vipCfg = ConfigData.getConfig(VIPConfig.class, player.getVip());
 			int maxEnergy = ConfigData.globalParam().maxEnergy;
+			if (player.getGangId() > 0) { //公会科技加成
+				PlayerData data = getPlayerData(player.getPlayerId());
+				for (int techID : data.getTechnologys()) {
+					GangScienceCfg cfg = ConfigData.getConfig(GangScienceCfg.class, techID);
+					if (cfg.type == 10) {
+						maxEnergy += cfg.param;
+						break;
+					}
+				}
+			}
 			if (player.getEnergy() >= maxEnergy) {
 				player.setEnergyTime(System.currentTimeMillis());
 				return;
@@ -832,9 +848,17 @@ public class PlayerService implements InitHandler {
 	}
 	
 	public boolean addCurrency(int playerId, int type, long offset, LogConsume actionType, Object ...params){
+		Player player = getPlayer(playerId);
 		PlayerCurrency currency = getPlayerData(playerId).getCurrency();
+		if(type == Goods.TRAVERSING_ENERGY) {
+			long value = currency.get(Goods.TRAVERSING_ENERGY);
+			VIPConfig config = ConfigData.getConfig(VIPConfig.class,player.getVip());
+			if(config.traveringEnergy < value + offset) {
+				offset = config.traveringEnergy - value;
+			}
+		}
 		if(currency.add(type, offset)){
-			Player player = getPlayer(playerId);
+
 			// 通知前端
 			updateCurrencyToClient(playerId, type,(int)currency.get(type));
 			// 记录日志

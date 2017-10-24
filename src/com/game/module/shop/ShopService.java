@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.data.*;
+import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -272,6 +273,10 @@ public class ShopService {
 		PlayerData data = playerService.getPlayerData(playerId);
 		data.getShopRefreshCount().clear();
 		refreshBuyRecord(playerId, -1, ShopService.LIMIT_DAILY);
+
+		Player player = playerService.getPlayer(playerId);
+		data.setBuyEnergyTimes(0);
+		data.setBuyCoinTimes(0);
 	}
 
 	/**
@@ -343,5 +348,85 @@ public class ShopService {
 		}
 		
 		return show;
+	}
+
+	/**
+	 * 购买体力
+	 * @param playerId
+	 * @return
+	 */
+	public Int2Param buyEnergy(int playerId) {
+		Player player = playerService.getPlayer(playerId);
+		PlayerData data = playerService.getPlayerData(playerId);
+		VIPConfig config = ConfigData.getConfig(VIPConfig.class,player.getVip());
+		Int2Param cli = new Int2Param();
+		if(data.getBuyEnergyTimes() > config.buyEnergy) {
+			cli.param1 = Response.ERR_PARAM;
+			return cli;
+		}
+		int index = data.getBuyEnergyTimes();
+		if(index >= ConfigData.globalParam().energyPrice.length - 1) {
+			index = ConfigData.globalParam().energyPrice.length -1;
+		}
+		int price = ConfigData.globalParam().energyPrice[index];
+		boolean ret = playerService.decDiamond(playerId,price,LogConsume.BUY_ENERGY);
+		if(!ret) {
+			cli.param1 = Response.NO_DIAMOND;
+			return cli;
+		}
+
+		data.setBuyEnergyTimes(data.getBuyEnergyTimes() + 1);
+
+		playerService.addEnergy(playerId,ConfigData.globalParam().addEnergyPerTime,LogConsume.BUY_ENERGY);
+		cli.param1 = Response.SUCCESS;
+		cli.param2 = data.getBuyEnergyTimes();
+		return cli;
+	}
+
+	/**
+	 * 购买金币
+	 * @param playerId
+	 * @return
+	 */
+	public Int2Param buyCoin(int playerId) {
+		Player player = playerService.getPlayer(playerId);
+		PlayerData data = playerService.getPlayerData(playerId);
+		Int2Param cli = new Int2Param();
+		VIPConfig config = ConfigData.getConfig(VIPConfig.class,player.getVip());
+		if(data.getBuyCoinTimes() > config.buyCoin) {
+			cli.param1 = Response.ERR_PARAM;
+			return cli;
+		}
+
+		int index = data.getBuyCoinTimes();
+		if(index >= ConfigData.globalParam().coinPrice.length - 1) {
+			index = ConfigData.globalParam().coinPrice.length -1;
+		}
+		int price = ConfigData.globalParam().coinPrice[index];
+		boolean ret = playerService.decDiamond(playerId,price,LogConsume.BUY_COIN);
+		if(!ret) {
+			cli.param1 = Response.NO_DIAMOND;
+			return cli;
+		}
+		data.setBuyCoinTimes(data.getBuyCoinTimes() + 1);
+
+		playerService.addCoin(playerId,ConfigData.globalParam().coinBuy,LogConsume.BUY_COIN);
+		cli.param1 = Response.SUCCESS;
+		cli.param2 = data.getBuyCoinTimes();
+		return cli;
+	}
+
+	public IntParam getBuyEnergyTimes(int playerId) {
+		IntParam cli = new IntParam();
+		PlayerData data = playerService.getPlayerData(playerId);
+		cli.param = data.getBuyEnergyTimes();
+		return cli;
+	}
+
+	public IntParam getBuyCoinTimes(int playerId) {
+		IntParam cli = new IntParam();
+		PlayerData data = playerService.getPlayerData(playerId);
+		cli.param = data.getBuyCoinTimes();
+		return cli;
 	}
 }

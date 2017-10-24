@@ -8,6 +8,7 @@ public class LadderRankVO implements IProtocol {
 	public int level;//段位
 	public int vocation;//职业
 	public int score;//积分
+	public int levNum;//等级
 
 
 	public void decode(BufferBuilder bb) {
@@ -15,6 +16,7 @@ public class LadderRankVO implements IProtocol {
 		this.level = bb.getInt();
 		this.vocation = bb.getInt();
 		this.score = bb.getInt();
+		this.levNum = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -22,5 +24,6 @@ public class LadderRankVO implements IProtocol {
 		bb.putInt(this.level);
 		bb.putInt(this.vocation);
 		bb.putInt(this.score);
+		bb.putInt(this.levNum);
 	}
 }

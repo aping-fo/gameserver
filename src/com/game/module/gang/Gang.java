@@ -57,7 +57,8 @@ public class Gang {
 	private volatile boolean updated = false;// 是否更新
 	@JsonIgnore
 	private int rank;
-	
+	//开启科技列表
+	private Set<Integer> technologys = new HashSet<Integer>();
 	public Gang(){
 		
 	}
@@ -65,6 +66,14 @@ public class Gang {
 	public Gang(int id){
 		this.id = id;
 		this.createDate = Calendar.getInstance();
+	}
+
+	public Set<Integer> getTechnologys() {
+		return technologys;
+	}
+
+	public void setTechnologys(Set<Integer> technologys) {
+		this.technologys = technologys;
 	}
 
 	public int getId() {

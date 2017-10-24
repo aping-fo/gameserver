@@ -697,6 +697,180 @@
 	<order>24</order>
 </config>
 <config>
+	<id>121071</id>
+	<desc>刺客第七套头部</desc>
+	<name>仙侠对立</name>
+	<vocation>2</vocation>
+	<icon></icon>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#836148</outlineColor>
+	<path>Assets/Actor/Role/12107/12107_head.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>25</order>
+</config>
+<config>
+	<id>121072</id>
+	<desc>刺客第七套身体</desc>
+	<name>仙侠对立</name>
+	<vocation>2</vocation>
+	<icon></icon>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#30303D</outlineColor>
+	<path>Assets/Actor/Role/12107/12107_body.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>26</order>
+</config>
+<config>
+	<id>121073</id>
+	<desc>刺客第七套武器</desc>
+	<name>仙侠对立</name>
+	<vocation>2</vocation>
+	<icon></icon>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>weapon01.prefab</modelName>
+	<model2Name>weapon02.prefab</model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#413139</outlineColor>
+	<path>Assets/Actor/Role/12107/12107_weapon01.prefab</path>
+	<path2>Assets/Actor/Role/12107/12107_weapon02.prefab</path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>27</order>
+</config>
+<config>
+	<id>121081</id>
+	<desc>刺客第八套头部</desc>
+	<name>精灵村</name>
+	<vocation>2</vocation>
+	<icon></icon>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#433127</outlineColor>
+	<path>Assets/Actor/Role/12108/12108_head.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>28</order>
+</config>
+<config>
+	<id>121082</id>
+	<desc>刺客第八套身体</desc>
+	<name>精灵村</name>
+	<vocation>2</vocation>
+	<icon></icon>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#5B3226</outlineColor>
+	<path>Assets/Actor/Role/12108/12108_body.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>29</order>
+</config>
+<config>
+	<id>121083</id>
+	<desc>刺客第八套武器</desc>
+	<name>精灵村</name>
+	<vocation>2</vocation>
+	<icon></icon>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>weapon01.prefab</modelName>
+	<model2Name>weapon02.prefab</model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#271F3A</outlineColor>
+	<path>Assets/Actor/Role/12108/12108_weapon01.prefab</path>
+	<path2>Assets/Actor/Role/12108/12108_weapon02.prefab</path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>30</order>
+</config>
+<config>
 	<id>131011</id>
 	<desc>法师默认头部</desc>
 	<name>默认时装</name>
@@ -723,7 +897,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>25</order>
+	<order>31</order>
 </config>
 <config>
 	<id>131012</id>
@@ -752,7 +926,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>26</order>
+	<order>32</order>
 </config>
 <config>
 	<id>131013</id>
@@ -781,7 +955,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>27</order>
+	<order>33</order>
 </config>
 <config>
 	<id>131021</id>
@@ -810,7 +984,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>28</order>
+	<order>34</order>
 </config>
 <config>
 	<id>131022</id>
@@ -839,7 +1013,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>29</order>
+	<order>35</order>
 </config>
 <config>
 	<id>131023</id>
@@ -868,7 +1042,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>30</order>
+	<order>36</order>
 </config>
 <config>
 	<id>131031</id>
@@ -897,7 +1071,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>31</order>
+	<order>37</order>
 </config>
 <config>
 	<id>131032</id>
@@ -926,7 +1100,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>32</order>
+	<order>38</order>
 </config>
 <config>
 	<id>131033</id>
@@ -955,7 +1129,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>33</order>
+	<order>39</order>
 </config>
 <config>
 	<id>131041</id>
@@ -984,7 +1158,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>34</order>
+	<order>40</order>
 </config>
 <config>
 	<id>131042</id>
@@ -1013,7 +1187,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>35</order>
+	<order>41</order>
 </config>
 <config>
 	<id>131043</id>
@@ -1042,6 +1216,180 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>36</order>
+	<order>42</order>
+</config>
+<config>
+	<id>131071</id>
+	<desc>法师第七套头部</desc>
+	<name>仙侠对立</name>
+	<vocation>3</vocation>
+	<icon></icon>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#492214</outlineColor>
+	<path>Assets/Actor/Role/13107/13107_head.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>43</order>
+</config>
+<config>
+	<id>131072</id>
+	<desc>法师第七套身体</desc>
+	<name>仙侠对立</name>
+	<vocation>3</vocation>
+	<icon></icon>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#563232</outlineColor>
+	<path>Assets/Actor/Role/13107/13107_body.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>44</order>
+</config>
+<config>
+	<id>131073</id>
+	<desc>法师第七套武器</desc>
+	<name>仙侠对立</name>
+	<vocation>3</vocation>
+	<icon></icon>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#472A2C</outlineColor>
+	<path>Assets/Actor/Role/13107/13107_equip.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>45</order>
+</config>
+<config>
+	<id>131081</id>
+	<desc>法师第八套头部</desc>
+	<name>精灵村</name>
+	<vocation>3</vocation>
+	<icon></icon>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#502718</outlineColor>
+	<path>Assets/Actor/Role/13108/13108_head.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>46</order>
+</config>
+<config>
+	<id>131082</id>
+	<desc>法师第八套身体</desc>
+	<name>精灵村</name>
+	<vocation>3</vocation>
+	<icon></icon>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#542D22</outlineColor>
+	<path>Assets/Actor/Role/13108/13108_body.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>47</order>
+</config>
+<config>
+	<id>131083</id>
+	<desc>法师第八套武器</desc>
+	<name>精灵村</name>
+	<vocation>3</vocation>
+	<icon></icon>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#472313</outlineColor>
+	<path>Assets/Actor/Role/13108/13108_equip.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>48</order>
 </config>
 </root>

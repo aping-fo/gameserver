@@ -44,4 +44,6 @@ public class CopyConfig {
 	public int[] copySettlementLayout;//副本结算界面布局
 	public int[] settlementVictoryType;//胜利通用结算方式
 	public int settlementFailType;//失败通用结算方式
+	public float settlementDelay;//结算延迟
+	public int finishType;//结束方式
 }

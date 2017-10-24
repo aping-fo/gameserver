@@ -64,7 +64,7 @@ public class ConfigData {
     public static Set<Integer> copy4Mystery = new ConcurrentSet<Integer>();
 
     public static Map<Integer, List<RewardMailCfg>> rewardMails = new ConcurrentHashMap<Integer, List<RewardMailCfg>>();
-
+    public static Map<String, Integer> guildTechnology = new HashMap<>();
     //活动玩法-顺手牵羊道具
     //public static Map<Integer,Map<Integer,Integer>> leadawayAwardsMap = new HashMap<>();
     //public static Map<Integer,RangeMap<Integer,Integer>> leadawayAwardsMap = new HashMap<>();
@@ -285,6 +285,13 @@ public class ConfigData {
                         leadawayAwardsDrop.put(cfg.id, dropId);
                     }
                 }
+            }
+        }
+
+        for (Object obj : GameData.getConfigs(GangScienceCfg.class)) {
+            GangScienceCfg cfg = (GangScienceCfg) obj;
+            if (cfg.lv == 0) {
+                guildTechnology.put(cfg.type +"_" + cfg.NeedLevel, cfg.id);
             }
         }
     }

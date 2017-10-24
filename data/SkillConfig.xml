@@ -452,7 +452,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[400,800]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -644,7 +644,7 @@
 	<audioEffectId>111011</audioEffectId>
 	<isUltimateSkill></isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
-	<isGravityField>1</isGravityField>
+	<isGravityField></isGravityField>
 	<waiting>1110100111</waiting>
 	<running>1110100111</running>
 	<attack>1110100111</attack>
@@ -3194,7 +3194,7 @@
 	<audioEffectId>111011</audioEffectId>
 	<isUltimateSkill></isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
-	<isGravityField>1</isGravityField>
+	<isGravityField></isGravityField>
 	<waiting>1110100111</waiting>
 	<running>1110100111</running>
 	<attack>1110100111</attack>
@@ -21362,7 +21362,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[400,800]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -42170,7 +42170,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[600,1150]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -62927,7 +62927,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[667,1000]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -63284,7 +63284,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[433,733]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -63641,7 +63641,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[667,1000]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -63998,7 +63998,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[633,1067]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -64355,7 +64355,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[667,933]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -64482,7 +64482,7 @@
 	<hitFactor>80</hitFactor>
 	<attackCount>3</attackCount>
 	<cd>0</cd>
-	<offsetRefer>1</offsetRefer>
+	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
 	<nextSkillId></nextSkillId>
@@ -64712,7 +64712,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[633,1067]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -65069,7 +65069,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[333,533]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -65426,7 +65426,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[533,667]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -65783,7 +65783,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[367,800]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -66140,7 +66140,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[467,800]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -66497,7 +66497,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[467,600]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -66812,7 +66812,7 @@
 </config>
 <config>
 	<id>20114201</id>
-	<name>精灵村守卫受击2</name>
+	<name>精灵村守卫击飞</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
@@ -66854,7 +66854,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[467,533]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -67169,7 +67169,7 @@
 </config>
 <config>
 	<id>20115201</id>
-	<name>单眼灵猴受击2</name>
+	<name>单眼灵猴击飞</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
@@ -67211,7 +67211,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[367,533]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -67526,7 +67526,7 @@
 </config>
 <config>
 	<id>20116201</id>
-	<name>幻灵儿受击2</name>
+	<name>幻灵儿击飞</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
@@ -67568,7 +67568,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[467,650]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -67883,7 +67883,7 @@
 </config>
 <config>
 	<id>20117201</id>
-	<name>金锁受击2</name>
+	<name>金锁击飞</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
@@ -67925,7 +67925,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[467,667]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -68240,7 +68240,7 @@
 </config>
 <config>
 	<id>20118201</id>
-	<name>机械狗受击2</name>
+	<name>机械狗击飞</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
@@ -68282,7 +68282,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[233,567]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -68597,7 +68597,7 @@
 </config>
 <config>
 	<id>20119201</id>
-	<name>木乃伊法老受击2</name>
+	<name>木乃伊法老击飞</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
@@ -68639,7 +68639,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[400,833]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -68764,7 +68764,7 @@
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
-	<attackCount>2</attackCount>
+	<attackCount>1</attackCount>
 	<cd>0</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
@@ -68810,7 +68810,7 @@
 	<logicId>20121002</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[8,1]</attackRange>
+	<attackRange>[10,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>30</strickenInteruptPriority>
@@ -68954,7 +68954,7 @@
 </config>
 <config>
 	<id>20121201</id>
-	<name>粉红粉红受击2</name>
+	<name>粉红粉红击飞</name>
 	<icon></icon>
 	<vocation></vocation>
 	<lev></lev>
@@ -68996,7 +68996,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[400,700]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -69063,6 +69063,1077 @@
 	<desc></desc>
 	<logicDataFile>20121.dsl</logicDataFile>
 	<logicId>20121301</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>getup</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20122001</id>
+	<name>豆豆普通攻击1</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20122.dsl</logicDataFile>
+	<logicId>20122001</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[7,1]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<hitFactor>80</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2012200111</waiting>
+	<running>2012200111</running>
+	<attack>2012200111</attack>
+	<skillOnGround>2012200111</skillOnGround>
+	<strickenGiddy>2012200111</strickenGiddy>
+	<strickenFallback>2012200111</strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20122002</id>
+	<name>豆豆普通攻击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20122.dsl</logicDataFile>
+	<logicId>20122002</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[8,1]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>5</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2012200211</waiting>
+	<running>2012200211</running>
+	<attack>2012200211</attack>
+	<skillOnGround>2012200211</skillOnGround>
+	<strickenGiddy>2012200211</strickenGiddy>
+	<strickenFallback>2012200211</strickenFallback>
+	<attackInAir>2012200212</attackInAir>
+	<skillInAir>2012200212</skillInAir>
+	<strickenFly>2012200212</strickenFly>
+	<strickenShotdown>2012200212</strickenShotdown>
+	<lyingDown>2012200213</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20122101</id>
+	<name>豆豆受击1</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20122.dsl</logicDataFile>
+	<logicId>20122101</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[367,400]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20122102</id>
+	<name>豆豆受击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20122.dsl</logicDataFile>
+	<logicId>20122102</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[367,400]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20122201</id>
+	<name>豆豆击飞</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20122.dsl</logicDataFile>
+	<logicId>20122201</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>fly</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[533,867]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20122202</id>
+	<name>豆豆击落</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20122.dsl</logicDataFile>
+	<logicId>20122202</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>down</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20122301</id>
+	<name>豆豆起身</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20122.dsl</logicDataFile>
+	<logicId>20122301</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>getup</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20123001</id>
+	<name>树精普通攻击1</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20123.dsl</logicDataFile>
+	<logicId>20123001</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[10,1]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<hitFactor>80</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2012300111</waiting>
+	<running>2012300111</running>
+	<attack>2012300111</attack>
+	<skillOnGround>2012300111</skillOnGround>
+	<strickenGiddy>2012300111</strickenGiddy>
+	<strickenFallback>2012300111</strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20123002</id>
+	<name>树精普通攻击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20123.dsl</logicDataFile>
+	<logicId>20123002</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[8,1]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>5</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2012300211</waiting>
+	<running>2012300211</running>
+	<attack>2012300211</attack>
+	<skillOnGround>2012300211</skillOnGround>
+	<strickenGiddy>2012300211</strickenGiddy>
+	<strickenFallback>2012300211</strickenFallback>
+	<attackInAir>2012300212</attackInAir>
+	<skillInAir>2012300212</skillInAir>
+	<strickenFly>2012300212</strickenFly>
+	<strickenShotdown>2012300212</strickenShotdown>
+	<lyingDown>2012300213</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20123101</id>
+	<name>树精受击1</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20123.dsl</logicDataFile>
+	<logicId>20123101</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[367,400]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20123102</id>
+	<name>树精受击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20123.dsl</logicDataFile>
+	<logicId>20123102</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[367,400]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20123201</id>
+	<name>树精击飞</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20123.dsl</logicDataFile>
+	<logicId>20123201</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>fly</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[533,867]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20123202</id>
+	<name>树精击落</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20123.dsl</logicDataFile>
+	<logicId>20123202</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>down</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20123301</id>
+	<name>树精起身</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20123.dsl</logicDataFile>
+	<logicId>20123301</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>getup</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20124001</id>
+	<name>野猪射手普通攻击1</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20124.dsl</logicDataFile>
+	<logicId>20124001</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[10,1]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>10</strickenInteruptPriority>
+	<hitFactor>80</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2012400111</waiting>
+	<running>2012400111</running>
+	<attack>2012400111</attack>
+	<skillOnGround>2012400111</skillOnGround>
+	<strickenGiddy>2012400111</strickenGiddy>
+	<strickenFallback>2012400111</strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20124002</id>
+	<name>野猪射手普通攻击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20124.dsl</logicDataFile>
+	<logicId>20124002</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[8,1]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>30</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>5</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2012400211</waiting>
+	<running>2012400211</running>
+	<attack>2012400211</attack>
+	<skillOnGround>2012400211</skillOnGround>
+	<strickenGiddy>2012400211</strickenGiddy>
+	<strickenFallback>2012400211</strickenFallback>
+	<attackInAir>2012400212</attackInAir>
+	<skillInAir>2012400212</skillInAir>
+	<strickenFly>2012400212</strickenFly>
+	<strickenShotdown>2012400212</strickenShotdown>
+	<lyingDown>2012400213</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20124101</id>
+	<name>野猪射手受击1</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20124.dsl</logicDataFile>
+	<logicId>20124101</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[100,133]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20124102</id>
+	<name>野猪射手受击2</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20124.dsl</logicDataFile>
+	<logicId>20124102</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>behit2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[133,167]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20124201</id>
+	<name>野猪射手击飞</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20124.dsl</logicDataFile>
+	<logicId>20124201</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>fly</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams>[467,600]</skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20124202</id>
+	<name>野猪射手击落</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20124.dsl</logicDataFile>
+	<logicId>20124202</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange></attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>20</strickenInteruptPriority>
+	<hitFactor>100</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>0</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>down</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+</config>
+<config>
+	<id>20124301</id>
+	<name>野猪射手起身</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc></desc>
+	<logicDataFile>20124.dsl</logicDataFile>
+	<logicId>20124301</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
@@ -69404,7 +70475,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[833,1000]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -69812,7 +70883,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[567,800]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -70034,7 +71105,7 @@
 	<logicId>20203003</logicId>
 	<attachedBuff></attachedBuff>
 	<givedBuff></givedBuff>
-	<attackRange>[4,1]</attackRange>
+	<attackRange>[6,1]</attackRange>
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
@@ -70042,7 +71113,7 @@
 	<attackCount>4</attackCount>
 	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
-	<followSpeed>10</followSpeed>
+	<followSpeed>3</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
@@ -70220,7 +71291,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[667,1067]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -70628,7 +71699,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[567,833]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -71036,7 +72107,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[433,633]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -71444,7 +72515,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[467,700]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -71852,7 +72923,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[833,1000]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -72260,7 +73331,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[667,1133]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -72668,7 +73739,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[367,667]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -73076,7 +74147,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[700,1000]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -73484,7 +74555,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[667,1000]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -73892,7 +74963,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[333,600]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -74127,7 +75198,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill3</actionId>
-	<actionEffectId>[203090031,203090032]</actionEffectId>
+	<actionEffectId>[203090031]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -74300,7 +75371,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams></skillParams>
+	<skillParams>[433,667]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -74424,7 +75495,7 @@
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
-	<hitFactor>100</hitFactor>
+	<hitFactor>5</hitFactor>
 	<attackCount>1</attackCount>
 	<cd>1</cd>
 	<offsetRefer>0</offsetRefer>
@@ -74730,7 +75801,7 @@
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
-	<hitFactor>100</hitFactor>
+	<hitFactor>5</hitFactor>
 	<attackCount>1</attackCount>
 	<cd>1</cd>
 	<offsetRefer>0</offsetRefer>
@@ -75036,7 +76107,7 @@
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
-	<hitFactor>100</hitFactor>
+	<hitFactor>5</hitFactor>
 	<attackCount>1</attackCount>
 	<cd>1</cd>
 	<offsetRefer>0</offsetRefer>
@@ -75045,7 +76116,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill1</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[209030011]</actionEffectId>
 	<attackDirection>2</attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -75393,7 +76464,7 @@
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
-	<hitFactor>100</hitFactor>
+	<hitFactor>5</hitFactor>
 	<attackCount>1</attackCount>
 	<cd>1</cd>
 	<offsetRefer>0</offsetRefer>
@@ -75446,7 +76517,7 @@
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
 	<attackCount>1</attackCount>
-	<cd>1</cd>
+	<cd>2</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
@@ -75750,7 +76821,7 @@
 	<isRegular>0</isRegular>
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
-	<hitFactor>100</hitFactor>
+	<hitFactor>5</hitFactor>
 	<attackCount>1</attackCount>
 	<cd>50</cd>
 	<offsetRefer>0</offsetRefer>
@@ -75759,14 +76830,14 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill1</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[209050011]</actionEffectId>
 	<attackDirection>2</attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
 	<isUltimateSkill></isUltimateSkill>
-	<isCrackSkill></isCrackSkill>
+	<isCrackSkill>1</isCrackSkill>
 	<isGravityField></isGravityField>
 	<waiting>2090500111</waiting>
 	<running>2090500111</running>

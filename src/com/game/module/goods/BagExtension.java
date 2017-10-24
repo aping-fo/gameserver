@@ -118,4 +118,10 @@ public class BagExtension {
 		result.param = goodsService.sell(playerId, param.param1,param.param2);
 		return result;
 	}
+
+	//合成
+	@Command(1214)
+	public Object compound(int playerId,IntParam param){
+		return  goodsService.compound(playerId, param.param);
+	}
 }

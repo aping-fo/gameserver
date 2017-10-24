@@ -7,6 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import com.game.module.attach.arena.ArenaPlayer;
 import com.game.module.attach.training.TrainOpponent;
 import com.game.module.copy.CopyRank;
+import com.game.module.gang.GangDungeon;
 import com.game.module.ladder.Ladder;
 
 /**
@@ -30,12 +31,21 @@ public class SerialData {
 	private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>> playerRefreshShops = new ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>>();
 	//排位赛
 	private Map<Integer, Ladder> ladderMap = new ConcurrentHashMap<>();
-
+	//公会BOSS
+	private Map<Integer, GangDungeon> gangMap = new ConcurrentHashMap<>();
 	//公会重置时间
 	private long gangDailyReset = 0L;
 	
 	public SerialData(){
 		
+	}
+
+	public Map<Integer, GangDungeon> getGangMap() {
+		return gangMap;
+	}
+
+	public void setGangMap(Map<Integer, GangDungeon> gangMap) {
+		this.gangMap = gangMap;
 	}
 
 	public ConcurrentHashMap<Integer, ArenaPlayer> getRanks() {

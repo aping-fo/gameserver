@@ -1,25 +1,10 @@
 package com.game.module.gm;
 
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.text.MessageFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import com.game.module.fame.FameService;
-import com.game.module.player.Upgrade;
-import com.game.module.shop.ShopService;
-import com.game.module.worldboss.WorldBossService;
-import com.game.params.*;
-import com.game.params.ladder.TrainingResultVO;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.game.data.CopyConfig;
 import com.game.data.GangTrainingCfg;
 import com.game.module.admin.MessageService;
 import com.game.module.attach.arena.ArenaExtension;
+import com.game.module.attach.arena.ArenaLogic;
 import com.game.module.attach.endless.EndlessAttach;
 import com.game.module.attach.endless.EndlessLogic;
 import com.game.module.attach.lottery.LotteryExtension;
@@ -30,36 +15,46 @@ import com.game.module.copy.CopyExtension;
 import com.game.module.copy.CopyInstance;
 import com.game.module.copy.CopyService;
 import com.game.module.daily.DailyService;
+import com.game.module.fame.FameService;
 import com.game.module.fashion.FashionService;
 import com.game.module.friend.FriendService;
-import com.game.module.gang.GMember;
-import com.game.module.gang.GTRoom;
-import com.game.module.gang.Gang;
-import com.game.module.gang.GangExtension;
-import com.game.module.gang.GangService;
+import com.game.module.gang.*;
 import com.game.module.goods.EquipService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
+import com.game.module.ladder.LadderService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.serial.SerialDataService;
+import com.game.module.shop.ShopService;
 import com.game.module.skill.SkillService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskExtension;
 import com.game.module.task.TaskService;
 import com.game.module.traversing.TraversingExtension;
 import com.game.module.vip.VipService;
+import com.game.module.worldboss.WorldBossService;
+import com.game.params.*;
 import com.game.params.chat.ChatVo;
 import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
+import com.game.params.ladder.TrainingResultVO;
 import com.game.util.ConfigData;
 import com.game.util.TimeUtil;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 @Service
 public class GmService {
@@ -100,7 +95,8 @@ public class GmService {
 	private FashionService fashionService;
 	@Autowired
 	private WorldBossService worldBossService;
-
+	@Autowired
+	private LadderService ladderService;
 	public void handle(int playerId, String gm) {
 		try {
 			String[] params = gm.substring(1).split(" ");
@@ -477,5 +473,30 @@ public class GmService {
 		StringParam param = new StringParam();
 		param.param = params[0];
 		SessionManager.getInstance().sendMsgToAll(ChatExtension.SYS_NOTICE, param);
+	}
+
+	public void addLadderScore(int playerId,String ... params) {
+		int score = Integer.valueOf(params[0]);
+		ladderService.gmAddScore(playerId,score);
+	}
+
+	public void ladderRankSort(int playerId,String ... params) {
+		ladderService.gmSort();
+	}
+
+	@Autowired
+	private ArenaLogic arenaLogic;
+	public void sendAreanReward(int playerId,String ... params) {
+		arenaLogic.sendRankReward();
+	}
+
+	public void ladderReward(int playerId,String ... params) {
+		ladderService.weeklyAward();
+	}
+
+	public void addSkillCard(int playerId,String ... params) {
+		StringParam param = new StringParam();
+		int id = Integer.valueOf(params[0]);
+		skillService.gmAddSkillCard(playerId,id);
 	}
 }
