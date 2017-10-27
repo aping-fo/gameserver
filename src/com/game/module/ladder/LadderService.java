@@ -747,7 +747,7 @@ public class LadderService implements InitHandler {
 
     public List<Ladder> ladderSort() {
         if (serialDataService.getData() != null) {
-            ServerLogger.warn("ladder sort ...........");
+            //ServerLogger.warn("ladder sort ...........");
             List<Ladder> list = new ArrayList<>(serialDataService.getData().getLadderMap().values());
             Collections.sort(list, COMPARATOR);
             LADDER_RANK.params = new ArrayList<>();

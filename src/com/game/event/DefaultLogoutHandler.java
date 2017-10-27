@@ -4,6 +4,7 @@ import java.util.Date;
 import com.game.module.gang.GangDungeonService;
 import com.game.module.group.GroupService;
 import com.game.module.ladder.LadderService;
+import com.game.module.pet.PetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -49,6 +50,8 @@ public class DefaultLogoutHandler implements LogoutHandler{
 	private GroupService groupService;
 	@Autowired
 	private GangDungeonService gangDungeonService;
+	@Autowired
+	private PetService petService;
 	public void handleLogout(final int playerId) {
 		Context.getThreadService().execute(new Runnable() {
 			@Override
@@ -92,6 +95,7 @@ public class DefaultLogoutHandler implements LogoutHandler{
 			playerService.updatePlayerData(playerId);
 			taskService.updateTask(playerId);
 			goodsService.updateBag(playerId);
+			petService.updateBag(playerId);
 			arenaLogic.quit(playerId);
 
 			ladderService.onLogout(playerId);

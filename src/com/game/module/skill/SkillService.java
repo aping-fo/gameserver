@@ -1,19 +1,8 @@
 package com.game.module.skill;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-
-import com.game.data.*;
-import com.game.event.InitHandler;
-import com.game.module.goods.Goods;
-import com.server.util.GameData;
-import com.server.util.ServerLogger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
+import com.game.data.Response;
+import com.game.data.SkillCardConfig;
+import com.game.data.SkillConfig;
 import com.game.module.log.LogConsume;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -23,49 +12,26 @@ import com.game.params.skill.SkillCardGroupInfo;
 import com.game.params.skill.SkillCardVo;
 import com.game.params.skill.SkillInfo;
 import com.game.util.ConfigData;
-import com.game.util.RandomUtil;
 import com.server.SessionManager;
+import com.server.util.ServerLogger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map.Entry;
 
 /**  
  * 技能系统
  */
 @Service
-public class SkillService implements InitHandler {
+public class SkillService {
 	
 	@Autowired
 	private PlayerService playerService;
 	@Autowired
 	private TaskService taskService;
 
-	private Map<Integer,Integer> goods2cards = new HashMap<>();
-
-	@Override
-	public void handleInit() {
-		/*for (Object obj : GameData.getConfigs(GoodsConfig.class)) {
-			GoodsConfig cfg = (GoodsConfig) obj;
-			if (cfg.type == Goods.SKILL_CARD) {
-				String numStr = String.valueOf(cfg.id);
-				String str = numStr.substring(numStr.length() - 1, numStr.length());
-				int maxId = Integer.parseInt(numStr.replace(str, "5"));
-
-				for (Object obj1 : GameData.getConfigs(SkillCardConfig.class)) {
-					SkillCardConfig cfg1 = (SkillCardConfig) obj1;
-					if (cfg1.goodsid == maxId && cfg1.lv == 1) {
-						goods2cards.put(cfg.id, cfg1.id);
-					}
-				}
-			}
-		}*/
-		for (Object obj : GameData.getConfigs(SkillCardConfig.class)) {
-			SkillCardConfig cfg = (SkillCardConfig) obj;
-			for (Object obj1 : GameData.getConfigs(SkillCardConfig.class)) {
-				SkillCardConfig cfg1 = (SkillCardConfig) obj1;
-				if (cfg1.lv == 1 && cfg1.quality == cfg.quality + 1) {
-					goods2cards.put(cfg.goodsid, cfg1.id);
-				}
-			}
-		}
-	}
 
 	//获取技能信息
 	public SkillInfo getInfo(int playerId){
@@ -176,7 +142,7 @@ public class SkillService implements InitHandler {
 		PlayerData data = playerService.getPlayerData(playerId);
 		SkillCard card = data.getSkillCards().get(ids.get(0));
 		SkillCardConfig cfg = ConfigData.getConfig(SkillCardConfig.class, card.getCardId());
-		int newCardID = goods2cards.get(cfg.goodsid);
+		int newCardID = cfg.nextQualityCard;
 
 		if(ids.size() < 5) {
 			return Response.ERR_PARAM;
@@ -185,7 +151,8 @@ public class SkillService implements InitHandler {
 		for(int i = 1; i < ids.size();i++){
 			SkillCard sc = data.getSkillCards().get(ids.get(i));
 			SkillCardConfig scc = ConfigData.getConfig(SkillCardConfig.class, sc.getCardId());
-			if(scc.type == SkillCard.SPECIAL || scc.quality != cfg.quality || scc.quality == 5){
+			if(scc.type == SkillCard.SPECIAL || scc.quality != cfg.quality || scc.quality == 5
+					|| cfg.goodsid != scc.goodsid){
 				return Response.ERR_PARAM;
 			}
 		}

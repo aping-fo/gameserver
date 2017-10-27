@@ -9,6 +9,7 @@ public class FashionCfg {
 	public String name;//时装名称
 	public int vocation;//职业
 	public String icon;//时装图标
+	public String atlas;//图集
 	public int type;//时装类型
 	public String bindPos;//挂载位置
 	public String modelName;//主模型名字

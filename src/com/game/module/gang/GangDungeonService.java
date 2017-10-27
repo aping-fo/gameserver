@@ -86,13 +86,16 @@ public class GangDungeonService implements InitHandler {
         if (gangDungeon == null) {
             gangDungeon = new GangDungeon();
             gangDungeon.setLayer(1);
-            serialDataService.getData().getGangMap().put(player.getGangId(), gangDungeon);
+            serialDataService.getData().getGangMap().putIfAbsent(player.getGangId(), gangDungeon);
         }
         vo.errCode = Response.SUCCESS;
         vo.layer = gangDungeon.getLayer();
         vo.progress = gangDungeon.getProgress();
         vo.hasOpen = gangDungeon.getHasOpen();
         vo.playerId = gangDungeon.fighter;
+        if(vo.hasOpen == 0) {
+            vo.progress = 0;
+        }
         return vo;
     }
 
@@ -232,13 +235,6 @@ public class GangDungeonService implements InitHandler {
             int hp = m.getCurrentHp() - hurtVO.hurtValue > 0 ? m.getCurrentHp() - hurtVO.hurtValue : 0;
             m.setCurrentHp(hp);
             member.hurt += hurtVO.hurtValue;
-            /*MonsterHurtVO vo = new MonsterHurtVO();
-            vo.monsterId = hurtVO.targetId;
-            vo.curHp = m.getCurrentHp();
-            vo.hurt = hurtVO.hurtValue;
-            vo.type = 1;
-            SessionManager.getInstance().sendMsg(CMD_MONSTER_INFO, vo, player.getPlayerId());*/
-
             if (gangDungeon.checkDeath()) { //怪死了
                 gangDungeon.setHasOpen(0); //怪物全死了，重置
                 gangDungeon.setLayer(gangDungeon.getLayer() + 1);

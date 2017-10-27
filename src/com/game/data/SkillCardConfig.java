@@ -18,4 +18,5 @@ public class SkillCardConfig {
 	public int quality;//品质
 	public int decompose;//分解获得经验
 	public int CardType;//技能卡类型
+	public int nextQualityCard;//下一个品质的技能卡ID
 }

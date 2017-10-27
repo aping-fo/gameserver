@@ -25,6 +25,7 @@ import com.game.module.goods.GoodsService;
 import com.game.module.ladder.LadderService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
+import com.game.module.pet.PetService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -470,7 +471,9 @@ public class GmService {
 	}
 
 	public void sendNotice(int playerId,String ... params) {
-		StringParam param = new StringParam();
+		StringParam param = new StringParam(
+
+		);
 		param.param = params[0];
 		SessionManager.getInstance().sendMsgToAll(ChatExtension.SYS_NOTICE, param);
 	}
@@ -498,5 +501,19 @@ public class GmService {
 		StringParam param = new StringParam();
 		int id = Integer.valueOf(params[0]);
 		skillService.gmAddSkillCard(playerId,id);
+	}
+
+	@Autowired
+	private PetService petService;
+
+	public void addPet(int playerId,String ... params) {
+		int petId = Integer.valueOf(params[0]);
+		petService.addPet(playerId,petId);
+	}
+
+	public void addPetMaterial(int playerId,String ... params) {
+		int petId = Integer.valueOf(params[0]);
+		int count = Integer.valueOf(params[1]);
+		petService.addPetMaterial(playerId,petId,count);
 	}
 }

@@ -183,5 +183,10 @@ public class Response {
 	public static final int GUILD_LEVEL_LIMIT=4130;//公会等级不够
 	public static final int GUILD_SKILL_UNLOCK=4131;//该科技未解锁
 	public static final int GUILD_SKILL_MAX_LV=4132;//公会科技到最大等级了
+	//宠物
+	public static final int PET_HAS_SAME_TYPE=4200;//拥有同类型宠物
+	public static final int PET_MATERIAL_NOT_ENOUGH=4201;//宠物碎片不够
+	public static final int PET_NOT_EXIST=4202;//宠物不存在
+	public static final int PET_MATERIAL_NOT_EXIST=4203;//宠物碎片不存在
 
 }

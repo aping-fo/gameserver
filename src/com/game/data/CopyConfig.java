@@ -46,4 +46,5 @@ public class CopyConfig {
 	public int settlementFailType;//失败通用结算方式
 	public float settlementDelay;//结算延迟
 	public int finishType;//结束方式
+	public int isCanAutoFight;//是否可以自动战斗
 }

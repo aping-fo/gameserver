@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 import com.game.data.*;
 import com.game.module.group.GroupService;
+import com.game.module.pet.PetService;
 import com.game.module.team.TeamService;
 import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -86,6 +87,8 @@ public class PlayerService implements InitHandler {
 	private GroupService groupService;
 	@Autowired
 	private TeamService teamService;
+	@Autowired
+	private PetService petService;
 	private static volatile int maxPlayerId = 0;
 
 	private volatile Map<Integer, Player> players = new ConcurrentHashMap<Integer, Player>();
@@ -215,6 +218,7 @@ public class PlayerService implements InitHandler {
 		// 任务
 		taskService.initTask(playerId);
 		goodsService.initBag(playerId);
+		petService.initBag(playerId);
 		// 计算属性
 		playerCalculator.calculate(player);
 

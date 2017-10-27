@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.data.*;
+import com.game.params.BuyShopVO;
 import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -155,19 +156,22 @@ public class ShopService {
 	}
 
 	// 购买
-	public int buy(int playerId, int id, int count) {
+	public BuyShopVO buy(int playerId, int id, int count) {
+		BuyShopVO vo = new BuyShopVO();
 		PlayerData data = playerService.getPlayerData(playerId);
 		Player player = playerService.getPlayer(playerId);
 		// 刷新，id，是否已经购买过
 		ShopCfg cfg = ConfigData.getConfig(ShopCfg.class, id);
 		if (cfg == null || count <= 0) {
-			return Response.ERR_PARAM;
+			vo.errCode = Response.ERR_PARAM;
+			return vo;
 		}
 		if (cfg.tab == REFRESH) {
 			//count = 1;
 			ConcurrentHashMap<Integer, List<Integer>> map = serial.getData().getPlayerRefreshShops().get(cfg.shopType);
 			if (map == null || !map.get(playerId).contains(id)) {
-				return Response.SHOP_HAS_REFRESH;
+				vo.errCode = Response.SHOP_HAS_REFRESH;
+				return vo;
 			}
 		}
 		// 限购数量
@@ -180,22 +184,26 @@ public class ShopService {
 					limit *= 1 + vip.addBuy;
 				}
 				if ((buyCount + count) > limit) {
-					return Response.ERR_PARAM;
+					vo.errCode = Response.ERR_PARAM;
+					return vo;
 				}
 			}
 		}
 		// vip验证
 		if (player.getVip() < cfg.vip) {
-			return Response.NO_VIP;
+			vo.errCode = Response.NO_VIP;
+			return vo;
 		}
 		// 职业计算
 		GoodsConfig g = ConfigData.getConfig(GoodsConfig.class, cfg.goodsId);
 		if (g == null || (g.vocation > 0 && g.vocation != player.getVocation())) {
-			return Response.NO_VOCATION;
+			vo.errCode = Response.NO_VOCATION;
+			return vo;
 		}
 		// 背包检查
 		if (!goodsService.checkCanAdd(playerId, cfg.goodsId, cfg.count * count)) {
-			return Response.BAG_FULL;
+			vo.errCode = Response.BAG_FULL;
+			return vo;
 		}
 		// 折扣计算
 		int discount = 0;
@@ -215,7 +223,8 @@ public class ShopService {
 		int code = goodsService.decConsume(playerId, Arrays.asList(new GoodsEntry(cfg.moneyType, price)),
 				LogConsume.SHOP_BUY_COST, id);
 		if (code != Response.SUCCESS) {
-			return code;
+			vo.errCode = code;
+			return vo;
 		}
 
 		if (cfg.limitCount > 0) {
@@ -227,7 +236,11 @@ public class ShopService {
 			data.getShopBuyRecords().put(id, buyCount);
 		}
 		goodsService.addRewrad(playerId, cfg.goodsId, cfg.count * count, LogConsume.SHOP_BUY_ADD, id);
-		return Response.SUCCESS;
+
+		vo.errCode = Response.SUCCESS;
+		vo.id = id;
+		vo.count = count;
+		return vo;
 	}
 
 	// 刷新

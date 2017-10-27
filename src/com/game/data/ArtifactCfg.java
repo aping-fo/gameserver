@@ -21,4 +21,5 @@ public class ArtifactCfg {
 	public float[] modelPos;//模型位置
 	public String icon;//图标
 	public String imgTitle;//名称图片字
+	public String bgName;//背景图名字
 }

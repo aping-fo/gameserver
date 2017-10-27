@@ -31,9 +31,7 @@ public class ShopExtension {
 	//购买
 	@Command(1702)
 	public Object buy(int playerId,Int2Param shop){
-		IntParam result = new IntParam();
-		result.param = service.buy(playerId, shop.param1, shop.param2);
-		return result;
+		return service.buy(playerId, shop.param1, shop.param2);
 	}
 	
 	//刷新

@@ -1298,7 +1298,7 @@ public class GangService implements InitHandler {
 			ret.param1 = Response.ERR_PARAM;
 			return ret;
 		}
-		gang.alterAsset(conf.Price);
+		gang.setAsset(gang.getAsset() - conf.Price);
 		gang.getTechnologys().add(technologyId);
 		ret.param1 = Response.SUCCESS;
 		ret.param2 = technologyId;
