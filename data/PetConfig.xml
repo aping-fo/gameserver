@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<type>1</type>
+	<quality>1</quality>
+	<name>宠物1（白）</name>
+	<property>1</property>
+	<petId></petId>
+	<materialId>1001</materialId>
+	<nextQualityId>2</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,1000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<sameMaterial>[1001,1000]</sameMaterial>
+	<activeSkillId>1</activeSkillId>
+	<goodsId>60011</goodsId>
+</config>
+<config>
+	<id>2</id>
+	<type>1</type>
+	<quality>2</quality>
+	<name>宠物1（绿）</name>
+	<property>1</property>
+	<petId></petId>
+	<materialId>1002</materialId>
+	<nextQualityId>3</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,1000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<sameMaterial>[1002,1000]</sameMaterial>
+	<activeSkillId>2</activeSkillId>
+	<goodsId>60012</goodsId>
+</config>
+<config>
+	<id>3</id>
+	<type>1</type>
+	<quality>3</quality>
+	<name>宠物1（蓝）</name>
+	<property>1</property>
+	<petId></petId>
+	<materialId>1003</materialId>
+	<nextQualityId>4</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,1000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<sameMaterial>[1003,1000]</sameMaterial>
+	<activeSkillId>3</activeSkillId>
+	<goodsId>60012</goodsId>
+</config>
+<config>
+	<id>4</id>
+	<type>1</type>
+	<quality>4</quality>
+	<name>宠物1（紫）</name>
+	<property>1</property>
+	<petId></petId>
+	<materialId>1004</materialId>
+	<nextQualityId></nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost></nextQualityCost>
+	<nextQualityMaterialCount></nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<sameMaterial>[1004,1000]</sameMaterial>
+	<activeSkillId>4</activeSkillId>
+	<goodsId>60012</goodsId>
+</config>
+<config>
+	<id>1001</id>
+	<type>2</type>
+	<quality>1</quality>
+	<name>宠物1碎片（白）</name>
+	<property>1</property>
+	<petId>1</petId>
+	<materialId></materialId>
+	<nextQualityId>1002</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost></nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<sameMaterial></sameMaterial>
+	<activeSkillId></activeSkillId>
+	<goodsId>65001</goodsId>
+</config>
+<config>
+	<id>1002</id>
+	<type>2</type>
+	<quality>2</quality>
+	<name>宠物1碎片（绿）</name>
+	<property>1</property>
+	<petId>2</petId>
+	<materialId></materialId>
+	<nextQualityId>1003</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost></nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<sameMaterial></sameMaterial>
+	<activeSkillId></activeSkillId>
+	<goodsId>65002</goodsId>
+</config>
+<config>
+	<id>1003</id>
+	<type>2</type>
+	<quality>3</quality>
+	<name>宠物1碎片（蓝）</name>
+	<property>1</property>
+	<petId>3</petId>
+	<materialId></materialId>
+	<nextQualityId>1004</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost></nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<sameMaterial></sameMaterial>
+	<activeSkillId></activeSkillId>
+	<goodsId>65002</goodsId>
+</config>
+<config>
+	<id>1004</id>
+	<type>2</type>
+	<quality>4</quality>
+	<name>宠物1碎片（紫）</name>
+	<property>1</property>
+	<petId>4</petId>
+	<materialId></materialId>
+	<nextQualityId></nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost></nextQualityCost>
+	<nextQualityMaterialCount></nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<sameMaterial></sameMaterial>
+	<activeSkillId></activeSkillId>
+	<goodsId>65002</goodsId>
+</config>
+</root>

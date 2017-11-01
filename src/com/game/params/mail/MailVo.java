@@ -11,7 +11,7 @@ public class MailVo implements IProtocol {
 	public String receiverName;//收件人姓名
 	public String title;//标题
 	public String content;//内容
-	public String rewards;//奖励
+	public String rewards;//奖励(id:count;id:count)
 	public boolean hasReward;//是否有附件
 	public int state;//状态0未读1已读
 	public long sendTime;//发送时间

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<name>宠物1主动技能lv1</name>
+	<describe>宠物1主动技能lv1</describe>
+	<type>1</type>
+	<quality>1</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>12102069</skillId>
+</config>
+<config>
+	<id>2</id>
+	<name>宠物1主动技能lv2</name>
+	<describe>宠物1主动技能lv2</describe>
+	<type>1</type>
+	<quality>2</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>12102069</skillId>
+</config>
+<config>
+	<id>3</id>
+	<name>宠物1主动技能lv3</name>
+	<describe>宠物1主动技能lv3</describe>
+	<type>1</type>
+	<quality>3</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>12102069</skillId>
+</config>
+<config>
+	<id>4</id>
+	<name>宠物1主动技能lv4</name>
+	<describe>宠物1主动技能lv4</describe>
+	<type>1</type>
+	<quality>4</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>12102069</skillId>
+</config>
+<config>
+	<id>100</id>
+	<name>被动技能lv1</name>
+	<describe>被动技能lv1</describe>
+	<type>2</type>
+	<quality>1</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId>13101025</skillId>
+</config>
+<config>
+	<id>101</id>
+	<name>被动技能lv2</name>
+	<describe>被动技能lv2</describe>
+	<type>2</type>
+	<quality>2</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId>13101025</skillId>
+</config>
+<config>
+	<id>103</id>
+	<name>被动技能lv3</name>
+	<describe>被动技能lv3</describe>
+	<type>2</type>
+	<quality>3</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId>13101025</skillId>
+</config>
+<config>
+	<id>104</id>
+	<name>被动技能lv4</name>
+	<describe>被动技能lv4</describe>
+	<type>2</type>
+	<quality>4</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId>13101025</skillId>
+</config>
+<config>
+	<id>1001</id>
+	<name>超级被动技能lv1</name>
+	<describe>超级被动技能lv1</describe>
+	<type>2</type>
+	<quality>1</quality>
+	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<skillId>13104042</skillId>
+</config>
+<config>
+	<id>1002</id>
+	<name>超级被动技能lv2</name>
+	<describe>超级被动技能lv2</describe>
+	<type>2</type>
+	<quality>2</quality>
+	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<skillId>13104042</skillId>
+</config>
+<config>
+	<id>1003</id>
+	<name>超级被动技能lv3</name>
+	<describe>超级被动技能lv3</describe>
+	<type>2</type>
+	<quality>3</quality>
+	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<skillId>13104042</skillId>
+</config>
+<config>
+	<id>1004</id>
+	<name>超级被动技能lv4</name>
+	<describe>超级被动技能lv4</describe>
+	<type>2</type>
+	<quality>4</quality>
+	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<skillId>13104042</skillId>
+</config>
+</root>

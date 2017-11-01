@@ -10,4 +10,5 @@ public class ModuleOpenCfg {
 	public int type;//功能类型
 	public int openType;//开放类型
 	public int param;//生效参数
+	public String icon;//图标
 }

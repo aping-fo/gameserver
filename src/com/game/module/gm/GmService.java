@@ -516,4 +516,32 @@ public class GmService {
 		int count = Integer.valueOf(params[1]);
 		petService.addPetMaterial(playerId,petId,count);
 	}
+
+	public void improveQuality(int playerId,String ... params) {
+		int petId = Integer.valueOf(params[0]);
+		petService.improveQuality(playerId,petId);
+	}
+
+	public void mutate(int playerId,String ... params) {
+		int mutateID = Integer.valueOf(params[0]);
+		int consumeID = Integer.valueOf(params[1]);
+		int newSkillID = Integer.valueOf(params[2]);
+		petService.mutate(playerId,mutateID,consumeID,newSkillID);
+	}
+
+	public void decompose(int playerId,String ... params) {
+		int petId = Integer.valueOf(params[0]);
+		petService.decompose(playerId,petId);
+	}
+
+	public void compound(int playerId,String ... params) {
+		int petId = Integer.valueOf(params[0]);
+		int count = Integer.valueOf(params[1]);
+		petService.compound(playerId,petId,count);
+	}
+
+	public void gainPet(int playerId,String ... params) {
+		int petId = Integer.valueOf(params[0]);
+		petService.gainPet(playerId,petId);
+	}
 }

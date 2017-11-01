@@ -547,6 +547,237 @@
 	<extraEffectParam></extraEffectParam>
 </config>
 <config>
+	<id>801001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>特性副本中毒1级</name>
+	<description>中毒1级</description>
+	<duration>10</duration>
+	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>7000009</attachEffect>
+	<overlayType>5</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas>[1,1]</addTimeParas>
+	<addEfectParas>[1,1]</addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex>[2]</addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>801101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>1</buffSubType>
+	<name>特性副本灼烧1级</name>
+	<description>灼烧1级</description>
+	<duration>10</duration>
+	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2015</icon>
+	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>801201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>2</buffSubType>
+	<name>特性副本流血1级</name>
+	<description>流血1级</description>
+	<duration>10</duration>
+	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2014</icon>
+	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>801301</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>2</buffType>
+	<buffSubType></buffSubType>
+	<name>特性副本霸体1级</name>
+	<description>霸体1级</description>
+	<duration>5</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2022</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam>[[0],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
+	<id>801401</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>1</buffSubType>
+	<name>特性副本灼烧1级</name>
+	<description>灼烧1级</description>
+	<duration>10</duration>
+	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2015</icon>
+	<attachEffect>7000010</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>801501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>2</buffSubType>
+	<name>特性副本流血1级</name>
+	<description>流血1级</description>
+	<duration>10</duration>
+	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2014</icon>
+	<attachEffect>7000011</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>801601</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>2</buffType>
+	<buffSubType></buffSubType>
+	<name>特性副本霸体1级</name>
+	<description>霸体1级</description>
+	<duration>5</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2022</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam>[[0],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
+	<id>801701</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>20</buffType>
+	<buffSubType>0</buffSubType>
+	<name>特性副本眩晕</name>
+	<description>眩晕</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.3,3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2010</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>801801</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>21</buffType>
+	<buffSubType>0</buffSubType>
+	<name>特性副本冰冻</name>
+	<description>冰冻</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.3,3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2011</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>801901</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>22</buffType>
+	<buffSubType>0</buffSubType>
+	<name>特性副本石化</name>
+	<description>石化</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.3,3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2012</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>802001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>23</buffType>
+	<buffSubType>0</buffSubType>
+	<name>特性副本中毒</name>
+	<description>中毒</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.3,2110101]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
 	<id>1010001</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>

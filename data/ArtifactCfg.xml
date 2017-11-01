@@ -2,45 +2,27 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
-	<name>摸金符</name>
-	<clip>[400001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrsInfo>
-	<components>[[4011001,1],[4011002,1],[4011003,1],[4011004,1],[4011005,1],[4011006,1]]</components>
-	<decompose>[[10,10,10,10,10,10],[4011001,4011002,4011003,4011004,4011005,4011006]]</decompose>
-	<partIcon>[4000,4001,4002,4003,4004,4005,4006]</partIcon>
-	<desc>古时盗墓者所用的避邪之物,是盗墓一派摸金校尉的一种身份证明。暗含“辟邪”寓意,借取地脉之灵气,避去外界之邪物。</desc>
-	<model>31101</model>
-	<renderer>DT</renderer>
-	<effectPath>pendant_1</effectPath>
-	<modelSize>[270,270,270]</modelSize>
-	<modelRotate>[8,211,4]</modelRotate>
-	<modelPos>[-149,-268,330]</modelPos>
-	<icon>mojinfu</icon>
-	<imgTitle>mojinfu3</imgTitle>
+	<name>镇魂灯</name>
+	<clip>[700001,100]</clip>
+	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,103]]</attrs>
+	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,103]]</attrsInfo>
+	<components>[[7011001,1],[7011002,1],[7011003,1],[7011004,1],[7011005,1],[7011006,1]]</components>
+	<decompose>[[10,10,10,10,10,10],[7011001,7011002,7011003,7011004,7011005,7011006]]</decompose>
+	<partIcon>[7000,7001,7002,7003,7004,7005,7006]</partIcon>
+	<desc>蕴含着"震慑"与“净化”,遏制邪恶、贪婪、狂躁。
+若没有此灯作庄严的修炼道场,易受邪魔侵害,变成幽魂,游荡在炼炉中,往世不得超生。</desc>
+	<model>31104</model>
+	<renderer>31104/Artifact</renderer>
+	<effectPath>31104/Dummy001</effectPath>
+	<modelSize>[467,467,467]</modelSize>
+	<modelRotate>[325,0,330]</modelRotate>
+	<modelPos>[-132,-170,330]</modelPos>
+	<icon>lamp</icon>
+	<imgTitle>lamp3</imgTitle>
+	<bgName>Artifact4_Bg.jpg</bgName>
 </config>
 <config>
 	<id>2</id>
-	<name>蝎子王</name>
-	<clip>[500001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,101]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,101]]</attrsInfo>
-	<components>[[5011001,1],[5011002,1],[5011003,1],[5011004,1],[5011005,1],[5011006,1]]</components>
-	<decompose>[[10,10,10,10,10,10],[5011001,5011002,5011003,5011004,5011005,5011006]]</decompose>
-	<partIcon>[5000,5001,5002,5003,5004,5005,5006]</partIcon>
-	<desc>匍匐在蝎子王的脚下吧！
-曾是古埃及战绩无数的蝎子王最耀眼的功勋。寄宿着蝎子王的灵魂,拥有着勇武与狠毒的双重性格。</desc>
-	<model>31103</model>
-	<renderer>31103/Artifact</renderer>
-	<effectPath>31103/Dummy001</effectPath>
-	<modelSize>[535,535,535]</modelSize>
-	<modelRotate>[22,125,342]</modelRotate>
-	<modelPos>[-107,-175,412]</modelPos>
-	<icon>scorpion</icon>
-	<imgTitle>scorpion3</imgTitle>
-</config>
-<config>
-	<id>3</id>
 	<name>月牙石</name>
 	<clip>[600001,100]</clip>
 	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,102]]</attrs>
@@ -59,25 +41,47 @@
 	<modelPos>[-112,-62,330]</modelPos>
 	<icon>stone</icon>
 	<imgTitle>stone3</imgTitle>
+	<bgName>Artifact3_Bg.jpg</bgName>
+</config>
+<config>
+	<id>3</id>
+	<name>蝎子王</name>
+	<clip>[500001,100]</clip>
+	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,101]]</attrs>
+	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,101]]</attrsInfo>
+	<components>[[5011001,1],[5011002,1],[5011003,1],[5011004,1],[5011005,1],[5011006,1]]</components>
+	<decompose>[[10,10,10,10,10,10],[5011001,5011002,5011003,5011004,5011005,5011006]]</decompose>
+	<partIcon>[5000,5001,5002,5003,5004,5005,5006]</partIcon>
+	<desc>匍匐在蝎子王的脚下吧！
+曾是古埃及战绩无数的蝎子王最耀眼的功勋。寄宿着蝎子王的灵魂,拥有着勇武与狠毒的双重性格。</desc>
+	<model>31103</model>
+	<renderer>31103/Artifact</renderer>
+	<effectPath>31103/Dummy001</effectPath>
+	<modelSize>[535,535,535]</modelSize>
+	<modelRotate>[22,125,342]</modelRotate>
+	<modelPos>[-107,-175,412]</modelPos>
+	<icon>scorpion</icon>
+	<imgTitle>scorpion3</imgTitle>
+	<bgName>Artifact2_Bg.jpg</bgName>
 </config>
 <config>
 	<id>4</id>
-	<name>镇魂灯</name>
-	<clip>[700001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,103]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,103]]</attrsInfo>
-	<components>[[7011001,1],[7011002,1],[7011003,1],[7011004,1],[7011005,1],[7011006,1]]</components>
-	<decompose>[[10,10,10,10,10,10],[7011001,7011002,7011003,7011004,7011005,7011006]]</decompose>
-	<partIcon>[7000,7001,7002,7003,7004,7005,7006]</partIcon>
-	<desc>蕴含着"震慑"与“净化”,遏制邪恶、贪婪、狂躁。
-若没有此灯作庄严的修炼道场,易受邪魔侵害,变成幽魂,游荡在炼炉中,往世不得超生。</desc>
-	<model>31104</model>
-	<renderer>31104/Artifact</renderer>
-	<effectPath>31104/Dummy001</effectPath>
-	<modelSize>[467,467,467]</modelSize>
-	<modelRotate>[325,0,330]</modelRotate>
-	<modelPos>[-242,-218,330]</modelPos>
-	<icon>lamp</icon>
-	<imgTitle>lamp3</imgTitle>
+	<name>摸金符</name>
+	<clip>[400001,100]</clip>
+	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrs>
+	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrsInfo>
+	<components>[[4011001,1],[4011002,1],[4011003,1],[4011004,1],[4011005,1],[4011006,1]]</components>
+	<decompose>[[10,10,10,10,10,10],[4011001,4011002,4011003,4011004,4011005,4011006]]</decompose>
+	<partIcon>[4000,4001,4002,4003,4004,4005,4006]</partIcon>
+	<desc>古时盗墓者所用的避邪之物,是盗墓一派摸金校尉的一种身份证明。暗含“辟邪”寓意,借取地脉之灵气,避去外界之邪物。</desc>
+	<model>31101</model>
+	<renderer>DT</renderer>
+	<effectPath>pendant_1</effectPath>
+	<modelSize>[270,270,270]</modelSize>
+	<modelRotate>[8,211,4]</modelRotate>
+	<modelPos>[-149,-268,330]</modelPos>
+	<icon>mojinfu</icon>
+	<imgTitle>mojinfu3</imgTitle>
+	<bgName>Artifact1_Bg.jpg</bgName>
 </config>
 </root>

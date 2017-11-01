@@ -101,8 +101,8 @@ public class ChatExtension {
 		vo.senderVocation = sender.getVocation();
 		vo.fight = sender.getFight();
 		//世界
-		if(vo.channel==WORLD){
-			if(sender.getLev()<ConfigData.globalParam().worldChatLevel){
+		if(vo.channel==WORLD || vo.channel == SYS){
+			if(vo.channel==WORLD && sender.getLev()<ConfigData.globalParam().worldChatLevel){
 				return null;
 			}
 			if(vo.broadcast) {

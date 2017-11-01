@@ -159,4 +159,5 @@ public class GlobalConfig {
 	public int coinBuy;//金币购买获得金币数
 	public Map<Integer,Integer> buffStrikenEffectPriority;//buff受击特效优先级
 	public int[][] cardLvUpPrice;//技能卡合成价格
+	public float[] mainCityMapParas;//主城功能地图移动参数(移动速度/左边X限制/右边X限制)
 }

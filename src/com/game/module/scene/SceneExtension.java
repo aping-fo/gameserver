@@ -115,6 +115,20 @@ public class SceneExtension {
 		return null;
 	}
 
+	public static final int ADD_BUFF = 1114;
+	@Command(1114)
+	public Object addBuffToActor(int playerId,AddBuffVO vo) {
+		sceneService.adBuffToActor(playerId,vo);
+		return null;
+	}
+
+	public static final int DEL_BUFF = 1115;
+	@Command(1115)
+	public Object delBuffFromActor(int playerId,DelBuffVO vo) {
+		sceneService.delBuffFromActor(playerId,vo);
+		return null;
+	}
+
 	@Command(4912)
 	public Object npcDir(int playerId,Int2Param vo) {
 		sceneService.monsterDir(playerId,vo);

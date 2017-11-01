@@ -387,6 +387,15 @@ public class SceneService implements InitHandler {
 		brocastToSceneCurLine(player, SceneExtension.USE_SKILL, skillVO);
 	}
 
+	public void adBuffToActor(int playerId, AddBuffVO vo){
+		Player player = playerService.getPlayer(playerId);
+		brocastToSceneCurLine(player, SceneExtension.ADD_BUFF, vo);
+	}
+
+	public void delBuffFromActor(int playerId, DelBuffVO vo){
+		Player player = playerService.getPlayer(playerId);
+		brocastToSceneCurLine(player, SceneExtension.DEL_BUFF, vo);
+	}
 	/**
 	 * 停止使用技能
 	 * @param playerId

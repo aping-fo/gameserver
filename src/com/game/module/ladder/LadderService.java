@@ -903,14 +903,14 @@ public class LadderService implements InitHandler {
         Ladder ladderInfo = serialDataService.getData().getLadderMap().get(playerId);
         if (ladderInfo == null) {
             ladderInfo = new Ladder();
-            ladderInfo.setScore(score);
+            ladderInfo.setScore(0);
             serialDataService.getData().getLadderMap().put(playerId, ladderInfo);
         }
 
         int newLevel = 1;
         int totalScore = score + ladderInfo.getScore();
         int maxLevel = ConfigData.getConfigs(LadderCfg.class).size();
-        for (int i = 1; i <= maxLevel; i++) {
+        for (int i = 1; i <= maxLevel - 1; i++) {
             LadderCfg cfg = ConfigData.getConfig(LadderCfg.class, i);
             if (totalScore < cfg.score) {
                 break;

@@ -6,6 +6,7 @@
 	<name>默认时装</name>
 	<vocation>1</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -35,6 +36,7 @@
 	<name>默认时装</name>
 	<vocation>1</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -64,6 +66,7 @@
 	<name>默认时装</name>
 	<vocation>1</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>3</type>
 	<bindPos></bindPos>
 	<modelName>equip.prefab</modelName>
@@ -89,10 +92,11 @@
 </config>
 <config>
 	<id>111021</id>
-	<desc>战士第二套头部</desc>
-	<name>盗墓</name>
+	<desc>瞬影三绝剑似风,幻剑之术破时空。</desc>
+	<name>狂战士</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1021</icon>
+	<atlas>Fashion_1</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -118,10 +122,11 @@
 </config>
 <config>
 	<id>111022</id>
-	<desc>战士第二套身体</desc>
-	<name>盗墓</name>
+	<desc>瞬影三绝剑似风,幻剑之术破时空。</desc>
+	<name>狂战士</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1022</icon>
+	<atlas>Fashion_1</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -147,10 +152,11 @@
 </config>
 <config>
 	<id>111023</id>
-	<desc>战士第二套武器</desc>
-	<name>盗墓</name>
+	<desc>瞬影三绝剑似风,幻剑之术破时空。</desc>
+	<name>狂战士</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1023</icon>
+	<atlas>Fashion_1</atlas>
 	<type>3</type>
 	<bindPos></bindPos>
 	<modelName>equip.prefab</modelName>
@@ -176,10 +182,11 @@
 </config>
 <config>
 	<id>111031</id>
-	<desc>战士第三套头部</desc>
-	<name>盗墓对立</name>
+	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
+	<name>斗笠道人</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1031</icon>
+	<atlas>Fashion_1</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -205,10 +212,11 @@
 </config>
 <config>
 	<id>111032</id>
-	<desc>战士第三套身体</desc>
-	<name>盗墓对立</name>
+	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
+	<name>斗笠道人</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1032</icon>
+	<atlas>Fashion_1</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -234,10 +242,11 @@
 </config>
 <config>
 	<id>111033</id>
-	<desc>战士第三套武器</desc>
-	<name>盗墓对立</name>
+	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
+	<name>斗笠道人</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1033</icon>
+	<atlas>Fashion_1</atlas>
 	<type>3</type>
 	<bindPos></bindPos>
 	<modelName>equip.prefab</modelName>
@@ -263,10 +272,11 @@
 </config>
 <config>
 	<id>111041</id>
-	<desc>战士第四套头部</desc>
-	<name>埃及</name>
+	<desc>正义的审判从不迟到！</desc>
+	<name>法老之鹰</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1041</icon>
+	<atlas>Fashion_1</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -292,10 +302,11 @@
 </config>
 <config>
 	<id>111042</id>
-	<desc>战士第四套身体</desc>
-	<name>埃及</name>
+	<desc>正义的审判从不迟到！</desc>
+	<name>法老之鹰</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1042</icon>
+	<atlas>Fashion_1</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -321,10 +332,11 @@
 </config>
 <config>
 	<id>111043</id>
-	<desc>战士第四套武器</desc>
-	<name>埃及</name>
+	<desc>正义的审判从不迟到！</desc>
+	<name>法老之鹰</name>
 	<vocation>1</vocation>
-	<icon></icon>
+	<icon>1043</icon>
+	<atlas>Fashion_1</atlas>
 	<type>3</type>
 	<bindPos></bindPos>
 	<modelName>equip.prefab</modelName>
@@ -349,11 +361,102 @@
 	<order>12</order>
 </config>
 <config>
+	<id>111051</id>
+	<desc>我会摧毁你的灵魂！</desc>
+	<name>阿努比斯王朝</name>
+	<vocation>1</vocation>
+	<icon>1051</icon>
+	<atlas>Fashion_1</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#583016</outlineColor>
+	<path>Assets/Actor/Role/11105/11105_head.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>13</order>
+</config>
+<config>
+	<id>111052</id>
+	<desc>我会摧毁你的灵魂！</desc>
+	<name>阿努比斯王朝</name>
+	<vocation>1</vocation>
+	<icon>1052</icon>
+	<atlas>Fashion_1</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#431F12</outlineColor>
+	<path>Assets/Actor/Role/11105/11105_body.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>14</order>
+</config>
+<config>
+	<id>111053</id>
+	<desc>我会摧毁你的灵魂！</desc>
+	<name>阿努比斯王朝</name>
+	<vocation>1</vocation>
+	<icon>1053</icon>
+	<atlas>Fashion_1</atlas>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#341E0D</outlineColor>
+	<path>Assets/Actor/Role/11105/11105_equip.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>15</order>
+</config>
+<config>
 	<id>121011</id>
 	<desc>刺客默认头部</desc>
 	<name>默认时装</name>
 	<vocation>2</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -375,7 +478,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>13</order>
+	<order>16</order>
 </config>
 <config>
 	<id>121012</id>
@@ -383,6 +486,7 @@
 	<name>默认时装</name>
 	<vocation>2</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -404,7 +508,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>14</order>
+	<order>17</order>
 </config>
 <config>
 	<id>121013</id>
@@ -412,6 +516,7 @@
 	<name>默认时装</name>
 	<vocation>2</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
@@ -433,14 +538,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>15</order>
+	<order>18</order>
 </config>
 <config>
 	<id>121021</id>
-	<desc>刺客第二套头部</desc>
-	<name>盗墓</name>
+	<desc>“问世间情为何物,直教生死相许。”</desc>
+	<name>赤练仙子</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2021</icon>
+	<atlas>Fashion_2</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -462,14 +568,15 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>16</order>
+	<order>19</order>
 </config>
 <config>
 	<id>121022</id>
-	<desc>刺客第二套身体</desc>
-	<name>盗墓</name>
+	<desc>“问世间情为何物,直教生死相许。”</desc>
+	<name>赤练仙子</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2022</icon>
+	<atlas>Fashion_2</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -491,14 +598,15 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>17</order>
+	<order>20</order>
 </config>
 <config>
 	<id>121023</id>
-	<desc>刺客第二套武器</desc>
-	<name>盗墓</name>
+	<desc>“问世间情为何物,直教生死相许。”</desc>
+	<name>赤练仙子</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2023</icon>
+	<atlas>Fashion_2</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
@@ -520,14 +628,15 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>18</order>
+	<order>21</order>
 </config>
 <config>
 	<id>121031</id>
-	<desc>刺客第三套头部</desc>
-	<name>盗墓对立</name>
+	<desc>那些恶贯满盈的人,只有死亡才能让他从名单上抹掉。</desc>
+	<name>鬼面女忍</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2031</icon>
+	<atlas>Fashion_2</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -549,14 +658,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>19</order>
+	<order>22</order>
 </config>
 <config>
 	<id>121032</id>
-	<desc>刺客第三套身体</desc>
-	<name>盗墓对立</name>
+	<desc>那些恶贯满盈的人,只有死亡才能让他从名单上抹掉。</desc>
+	<name>鬼面女忍</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2032</icon>
+	<atlas>Fashion_2</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -578,14 +688,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>20</order>
+	<order>23</order>
 </config>
 <config>
 	<id>121033</id>
-	<desc>刺客第三套武器</desc>
-	<name>盗墓对立</name>
+	<desc>那些恶贯满盈的人,只有死亡才能让他从名单上抹掉。</desc>
+	<name>鬼面女忍</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2033</icon>
+	<atlas>Fashion_2</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
@@ -607,14 +718,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>21</order>
+	<order>24</order>
 </config>
 <config>
 	<id>121041</id>
-	<desc>刺客第四套头部</desc>
-	<name>埃及</name>
+	<desc>一舞一幻铃,可想与我共舞？</desc>
+	<name>沙漠舞姬</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2041</icon>
+	<atlas>Fashion_2</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -636,14 +748,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>22</order>
+	<order>25</order>
 </config>
 <config>
 	<id>121042</id>
-	<desc>刺客第四套身体</desc>
-	<name>埃及</name>
+	<desc>一舞一幻铃,可想与我共舞？</desc>
+	<name>沙漠舞姬</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2042</icon>
+	<atlas>Fashion_2</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -665,14 +778,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>23</order>
+	<order>26</order>
 </config>
 <config>
 	<id>121043</id>
-	<desc>刺客第四套武器</desc>
-	<name>埃及</name>
+	<desc>一舞一幻铃,可想与我共舞？</desc>
+	<name>沙漠舞姬</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2043</icon>
+	<atlas>Fashion_2</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
@@ -694,14 +808,105 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>24</order>
+	<order>27</order>
 </config>
 <config>
-	<id>121071</id>
-	<desc>刺客第七套头部</desc>
-	<name>仙侠对立</name>
+	<id>121051</id>
+	<desc>埃及魅影,最妖娆,最强权。</desc>
+	<name>埃及艳后</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2051</icon>
+	<atlas>Fashion_2</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#433127</outlineColor>
+	<path>Assets/Actor/Role/12105/12105_head.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>28</order>
+</config>
+<config>
+	<id>121052</id>
+	<desc>埃及魅影,最妖娆,最强权。</desc>
+	<name>埃及艳后</name>
+	<vocation>2</vocation>
+	<icon>2052</icon>
+	<atlas>Fashion_2</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#5B3226</outlineColor>
+	<path>Assets/Actor/Role/12105/12105_body.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>29</order>
+</config>
+<config>
+	<id>121053</id>
+	<desc>埃及魅影,最妖娆,最强权。</desc>
+	<name>埃及艳后</name>
+	<vocation>2</vocation>
+	<icon>2053</icon>
+	<atlas>Fashion_2</atlas>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>weapon01.prefab</modelName>
+	<model2Name>weapon02.prefab</model2Name>
+	<effectId>1210043</effectId>
+	<effect2Id>1210044</effect2Id>
+	<outlineColor>#271F3A</outlineColor>
+	<path>Assets/Actor/Role/12105/12105_weapon01.prefab</path>
+	<path2>Assets/Actor/Role/12105/12105_weapon02.prefab</path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>30</order>
+</config>
+<config>
+	<id>121061</id>
+	<desc>静如影,轻如羽,迅如蛇。</desc>
+	<name>影舞使者</name>
+	<vocation>2</vocation>
+	<icon>2071</icon>
+	<atlas>Fashion_2</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -723,14 +928,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>25</order>
+	<order>31</order>
 </config>
 <config>
-	<id>121072</id>
-	<desc>刺客第七套身体</desc>
-	<name>仙侠对立</name>
+	<id>121062</id>
+	<desc>静如影,轻如羽,迅如蛇。</desc>
+	<name>影舞使者</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2072</icon>
+	<atlas>Fashion_2</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -752,14 +958,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>26</order>
+	<order>32</order>
 </config>
 <config>
-	<id>121073</id>
-	<desc>刺客第七套武器</desc>
-	<name>仙侠对立</name>
+	<id>121063</id>
+	<desc>静如影,轻如羽,迅如蛇。</desc>
+	<name>影舞使者</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2073</icon>
+	<atlas>Fashion_2</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
@@ -781,94 +988,97 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>27</order>
+	<order>33</order>
 </config>
 <config>
-	<id>121081</id>
-	<desc>刺客第八套头部</desc>
-	<name>精灵村</name>
+	<id>121071</id>
+	<desc>暗夜,是完美的掩护！喵~</desc>
+	<name>暗夜猫女</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2081</icon>
+	<atlas>Fashion_2</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
-	<outlineColor>#433127</outlineColor>
+	<outlineColor>#836148</outlineColor>
 	<path>Assets/Actor/Role/12108/12108_head.prefab</path>
 	<path2></path2>
-	<hp>1992</hp>
-	<attack>83</attack>
-	<defense>58</defense>
-	<crit>21</crit>
-	<symptom>21</symptom>
-	<fu>46</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>28</order>
+	<order>34</order>
 </config>
 <config>
-	<id>121082</id>
-	<desc>刺客第八套身体</desc>
-	<name>精灵村</name>
+	<id>121072</id>
+	<desc>暗夜,是完美的掩护！喵~</desc>
+	<name>暗夜猫女</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2082</icon>
+	<atlas>Fashion_2</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
 	<model2Name></model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
-	<outlineColor>#5B3226</outlineColor>
+	<outlineColor>#30303D</outlineColor>
 	<path>Assets/Actor/Role/12108/12108_body.prefab</path>
 	<path2></path2>
-	<hp>1992</hp>
-	<attack>83</attack>
-	<defense>58</defense>
-	<crit>21</crit>
-	<symptom>21</symptom>
-	<fu>46</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>29</order>
+	<order>35</order>
 </config>
 <config>
-	<id>121083</id>
-	<desc>刺客第八套武器</desc>
-	<name>精灵村</name>
+	<id>121073</id>
+	<desc>暗夜,是完美的掩护！喵~</desc>
+	<name>暗夜猫女</name>
 	<vocation>2</vocation>
-	<icon></icon>
+	<icon>2083</icon>
+	<atlas>Fashion_2</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
 	<model2Name>weapon02.prefab</model2Name>
 	<effectId></effectId>
 	<effect2Id></effect2Id>
-	<outlineColor>#271F3A</outlineColor>
+	<outlineColor>#413139</outlineColor>
 	<path>Assets/Actor/Role/12108/12108_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12108/12108_weapon02.prefab</path2>
-	<hp>1992</hp>
-	<attack>83</attack>
-	<defense>58</defense>
-	<crit>21</crit>
-	<symptom>21</symptom>
-	<fu>46</fu>
-	<limitType>1</limitType>
-	<limitParams>[3]</limitParams>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
 	<price>[102,100]</price>
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>30</order>
+	<order>36</order>
 </config>
 <config>
 	<id>131011</id>
@@ -876,6 +1086,7 @@
 	<name>默认时装</name>
 	<vocation>3</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -897,7 +1108,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>31</order>
+	<order>37</order>
 </config>
 <config>
 	<id>131012</id>
@@ -905,6 +1116,7 @@
 	<name>默认时装</name>
 	<vocation>3</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -926,7 +1138,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>32</order>
+	<order>38</order>
 </config>
 <config>
 	<id>131013</id>
@@ -934,6 +1146,7 @@
 	<name>默认时装</name>
 	<vocation>3</vocation>
 	<icon></icon>
+	<atlas></atlas>
 	<type>3</type>
 	<bindPos></bindPos>
 	<modelName>equip.prefab</modelName>
@@ -955,14 +1168,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>33</order>
+	<order>39</order>
 </config>
 <config>
 	<id>131021</id>
-	<desc>法师第二套头部</desc>
-	<name>盗墓</name>
+	<desc>大师兄,等我练成了这“摄魂十九式”,就不会受你欺负了。</desc>
+	<name>刁蛮小师妹</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3021</icon>
+	<atlas>Fashion_3</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -984,14 +1198,15 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>34</order>
+	<order>40</order>
 </config>
 <config>
 	<id>131022</id>
-	<desc>法师第二套身体</desc>
-	<name>盗墓</name>
+	<desc>大师兄,等我练成了这“摄魂十九式”,就不会受你欺负了。</desc>
+	<name>刁蛮小师妹</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3022</icon>
+	<atlas>Fashion_3</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -1013,14 +1228,15 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>35</order>
+	<order>41</order>
 </config>
 <config>
 	<id>131023</id>
-	<desc>法师第二套武器</desc>
-	<name>盗墓</name>
+	<desc>大师兄,等我练成了这“摄魂十九式”,就不会受你欺负了。</desc>
+	<name>刁蛮小师妹</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3023</icon>
+	<atlas>Fashion_3</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>equip.prefab</modelName>
@@ -1042,14 +1258,15 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>36</order>
+	<order>42</order>
 </config>
 <config>
 	<id>131031</id>
-	<desc>法师第三套头部</desc>
-	<name>盗墓对立</name>
+	<desc>完美的嫁衣,血色的浪漫。</desc>
+	<name>血色花嫁</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3031</icon>
+	<atlas>Fashion_3</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -1071,14 +1288,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>37</order>
+	<order>43</order>
 </config>
 <config>
 	<id>131032</id>
-	<desc>法师第三套身体</desc>
-	<name>盗墓对立</name>
+	<desc>完美的嫁衣,血色的浪漫。</desc>
+	<name>血色花嫁</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3032</icon>
+	<atlas>Fashion_3</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -1100,14 +1318,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>38</order>
+	<order>44</order>
 </config>
 <config>
 	<id>131033</id>
-	<desc>法师第三套武器</desc>
-	<name>盗墓对立</name>
+	<desc>完美的嫁衣,血色的浪漫。</desc>
+	<name>血色花嫁</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3033</icon>
+	<atlas>Fashion_3</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>equip.prefab</modelName>
@@ -1129,14 +1348,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>39</order>
+	<order>45</order>
 </config>
 <config>
 	<id>131041</id>
-	<desc>法师第四套头部</desc>
-	<name>埃及</name>
+	<desc>神权至上！</desc>
+	<name>沙漠公主</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3041</icon>
+	<atlas>Fashion_3</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -1158,14 +1378,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>40</order>
+	<order>46</order>
 </config>
 <config>
 	<id>131042</id>
-	<desc>法师第四套身体</desc>
-	<name>埃及</name>
+	<desc>神权至上！</desc>
+	<name>沙漠公主</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3042</icon>
+	<atlas>Fashion_3</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -1187,14 +1408,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>41</order>
+	<order>47</order>
 </config>
 <config>
 	<id>131043</id>
-	<desc>法师第四套武器</desc>
-	<name>埃及</name>
+	<desc>神权至上！</desc>
+	<name>沙漠公主</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3043</icon>
+	<atlas>Fashion_3</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>equip.prefab</modelName>
@@ -1216,14 +1438,105 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>42</order>
+	<order>48</order>
 </config>
 <config>
-	<id>131071</id>
-	<desc>法师第七套头部</desc>
-	<name>仙侠对立</name>
+	<id>131051</id>
+	<desc>神权至下！</desc>
+	<name>努比亚少女</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3051</icon>
+	<atlas>Fashion_3</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#492214</outlineColor>
+	<path>Assets/Actor/Role/13105/13105_head.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>49</order>
+</config>
+<config>
+	<id>131052</id>
+	<desc>神权至下！</desc>
+	<name>努比亚少女</name>
+	<vocation>3</vocation>
+	<icon>3052</icon>
+	<atlas>Fashion_3</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#563232</outlineColor>
+	<path>Assets/Actor/Role/13105/13105_body.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>50</order>
+</config>
+<config>
+	<id>131053</id>
+	<desc>神权至下！</desc>
+	<name>努比亚少女</name>
+	<vocation>3</vocation>
+	<icon>3053</icon>
+	<atlas>Fashion_3</atlas>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#472A2C</outlineColor>
+	<path>Assets/Actor/Role/13105/13105_equip.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>51</order>
+</config>
+<config>
+	<id>131061</id>
+	<desc>和风日丽,等待下一个夏日祭到来吧。</desc>
+	<name>东瀛少女</name>
+	<vocation>3</vocation>
+	<icon>3071</icon>
+	<atlas>Fashion_3</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -1245,14 +1558,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>43</order>
+	<order>52</order>
 </config>
 <config>
-	<id>131072</id>
-	<desc>法师第七套身体</desc>
-	<name>仙侠对立</name>
+	<id>131062</id>
+	<desc>和风日丽,等待下一个夏日祭到来吧。</desc>
+	<name>东瀛少女</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3072</icon>
+	<atlas>Fashion_3</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -1274,14 +1588,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>44</order>
+	<order>53</order>
 </config>
 <config>
-	<id>131073</id>
-	<desc>法师第七套武器</desc>
-	<name>仙侠对立</name>
+	<id>131063</id>
+	<desc>和风日丽,等待下一个夏日祭到来吧。</desc>
+	<name>东瀛少女</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3073</icon>
+	<atlas>Fashion_3</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>equip.prefab</modelName>
@@ -1303,14 +1618,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>45</order>
+	<order>54</order>
 </config>
 <config>
-	<id>131081</id>
-	<desc>法师第八套头部</desc>
-	<name>精灵村</name>
+	<id>131071</id>
+	<desc>敢抢走我的胡萝卜,告诉你家长哟~</desc>
+	<name>乖萌兔女</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3081</icon>
+	<atlas>Fashion_3</atlas>
 	<type>1</type>
 	<bindPos></bindPos>
 	<modelName>head.prefab</modelName>
@@ -1332,14 +1648,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>46</order>
+	<order>55</order>
 </config>
 <config>
-	<id>131082</id>
-	<desc>法师第八套身体</desc>
-	<name>精灵村</name>
+	<id>131072</id>
+	<desc>敢抢走我的胡萝卜,告诉你家长哟~</desc>
+	<name>乖萌兔女</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3082</icon>
+	<atlas>Fashion_3</atlas>
 	<type>2</type>
 	<bindPos></bindPos>
 	<modelName>body.prefab</modelName>
@@ -1361,14 +1678,15 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>47</order>
+	<order>56</order>
 </config>
 <config>
-	<id>131083</id>
-	<desc>法师第八套武器</desc>
-	<name>精灵村</name>
+	<id>131073</id>
+	<desc>敢抢走我的胡萝卜,告诉你家长哟~</desc>
+	<name>乖萌兔女</name>
 	<vocation>3</vocation>
-	<icon></icon>
+	<icon>3083</icon>
+	<atlas>Fashion_3</atlas>
 	<type>3</type>
 	<bindPos>equip</bindPos>
 	<modelName>equip.prefab</modelName>
@@ -1390,6 +1708,6 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>48</order>
+	<order>57</order>
 </config>
 </root>

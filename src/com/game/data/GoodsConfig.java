@@ -28,5 +28,5 @@ public class GoodsConfig {
 	public int[][] param2;//参数2
 	public int rare;//稀缺
 	public int tipsType;//提示框类型
-	public int[] openId;//跳转界面ID
+	public int[][] openId;//跳转界面ID
 }

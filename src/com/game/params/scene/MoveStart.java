@@ -10,6 +10,7 @@ public class MoveStart implements IProtocol {
 	public float x;//当前位置x
 	public float z;//当前位置z
 	public boolean isSkillMoving;//是否是技能触发的位移
+	public int hp;//当前血量
 
 
 	public void decode(BufferBuilder bb) {
@@ -19,6 +20,7 @@ public class MoveStart implements IProtocol {
 		this.x = bb.getFloat();
 		this.z = bb.getFloat();
 		this.isSkillMoving = bb.getBoolean();
+		this.hp = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -28,5 +30,6 @@ public class MoveStart implements IProtocol {
 		bb.putFloat(this.x);
 		bb.putFloat(this.z);
 		bb.putBoolean(this.isSkillMoving);
+		bb.putInt(this.hp);
 	}
 }
