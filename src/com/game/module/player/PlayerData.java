@@ -110,10 +110,19 @@ public class PlayerData {
 
 	private int buyCoinTimes;
 
+	private int newHandleStep;
 
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+	public int getNewHandleStep() {
+		return newHandleStep;
+	}
+
+	public void setNewHandleStep(int newHandleStep) {
+		this.newHandleStep = newHandleStep;
 	}
 
 	public int getBuyEnergyTimes() {

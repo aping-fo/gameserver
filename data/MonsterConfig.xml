@@ -10076,12 +10076,12 @@
 </config>
 <config>
 	<id>10763</id>
-	<model>20308</model>
+	<model>20207</model>
 	<type>3</type>
-	<AI>20308001</AI>
+	<AI>20207001</AI>
 	<AppointAI></AppointAI>
-	<icon>20308</icon>
-	<name>仙人掌</name>
+	<icon>20207</icon>
+	<name>大萝卜</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>126</lev>
@@ -10102,12 +10102,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20308001,20308002,20308003]</skillId>
+	<skillId>[20207001,20207002,20207003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20308101,20308102]</behitAction>
-	<flyAction>20308201</flyAction>
-	<downAction>20308202</downAction>
-	<getupAction>20308301</getupAction>
+	<behitAction>[20207101,20207102]</behitAction>
+	<flyAction>20207201</flyAction>
+	<downAction>20207202</downAction>
+	<getupAction>20207301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102,2110701,2110702]</bornBuff>
 	<skillBuff></skillBuff>
@@ -10904,12 +10904,12 @@
 </config>
 <config>
 	<id>10863</id>
-	<model>20207</model>
+	<model>20308</model>
 	<type>3</type>
-	<AI>20207001</AI>
+	<AI>20308001</AI>
 	<AppointAI></AppointAI>
-	<icon>20207</icon>
-	<name>大萝卜</name>
+	<icon>20308</icon>
+	<name>仙人掌</name>
 	<desc>x</desc>
 	<scale>1.2</scale>
 	<lev>144</lev>
@@ -10930,12 +10930,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20207001,20207002,20207003]</skillId>
+	<skillId>[20308001,20308002,20308003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20207101,20207102]</behitAction>
-	<flyAction>20207201</flyAction>
-	<downAction>20207202</downAction>
-	<getupAction>20207301</getupAction>
+	<behitAction>[20308101,20308102]</behitAction>
+	<flyAction>20308201</flyAction>
+	<downAction>20308202</downAction>
+	<getupAction>20308301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102,2110801,2110802]</bornBuff>
 	<skillBuff></skillBuff>
@@ -23324,12 +23324,12 @@
 </config>
 <config>
 	<id>20763</id>
-	<model>20308</model>
+	<model>20207</model>
 	<type>3</type>
-	<AI>20308001</AI>
+	<AI>20207001</AI>
 	<AppointAI></AppointAI>
-	<icon>20308</icon>
-	<name>仙人掌</name>
+	<icon>20207</icon>
+	<name>大萝卜</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>414</lev>
@@ -23350,12 +23350,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20308001,20308002,20308003]</skillId>
+	<skillId>[20207001,20207002,20207003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20308101,20308102]</behitAction>
-	<flyAction>20308201</flyAction>
-	<downAction>20308202</downAction>
-	<getupAction>20308301</getupAction>
+	<behitAction>[20207101,20207102]</behitAction>
+	<flyAction>20207201</flyAction>
+	<downAction>20207202</downAction>
+	<getupAction>20207301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102,2120701,2120702]</bornBuff>
 	<skillBuff></skillBuff>
@@ -24152,12 +24152,12 @@
 </config>
 <config>
 	<id>20863</id>
-	<model>20207</model>
+	<model>20308</model>
 	<type>3</type>
-	<AI>20207001</AI>
+	<AI>20308001</AI>
 	<AppointAI></AppointAI>
-	<icon>20207</icon>
-	<name>大萝卜</name>
+	<icon>20308</icon>
+	<name>仙人掌</name>
 	<desc>x</desc>
 	<scale>1.2</scale>
 	<lev>432</lev>
@@ -24178,12 +24178,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20207001,20207002,20207003]</skillId>
+	<skillId>[20308001,20308002,20308003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20207101,20207102]</behitAction>
-	<flyAction>20207201</flyAction>
-	<downAction>20207202</downAction>
-	<getupAction>20207301</getupAction>
+	<behitAction>[20308101,20308102]</behitAction>
+	<flyAction>20308201</flyAction>
+	<downAction>20308202</downAction>
+	<getupAction>20308301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102,2120801,2120802]</bornBuff>
 	<skillBuff></skillBuff>
@@ -36572,12 +36572,12 @@
 </config>
 <config>
 	<id>30763</id>
-	<model>20308</model>
+	<model>20207</model>
 	<type>3</type>
-	<AI>20308001</AI>
+	<AI>20207001</AI>
 	<AppointAI></AppointAI>
-	<icon>20308</icon>
-	<name>仙人掌</name>
+	<icon>20207</icon>
+	<name>大萝卜</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>702</lev>
@@ -36598,12 +36598,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20308001,20308002,20308003]</skillId>
+	<skillId>[20207001,20207002,20207003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20308101,20308102]</behitAction>
-	<flyAction>20308201</flyAction>
-	<downAction>20308202</downAction>
-	<getupAction>20308301</getupAction>
+	<behitAction>[20207101,20207102]</behitAction>
+	<flyAction>20207201</flyAction>
+	<downAction>20207202</downAction>
+	<getupAction>20207301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102,2130701,2130702]</bornBuff>
 	<skillBuff></skillBuff>
@@ -37400,12 +37400,12 @@
 </config>
 <config>
 	<id>30863</id>
-	<model>20207</model>
+	<model>20308</model>
 	<type>3</type>
-	<AI>20207001</AI>
+	<AI>20308001</AI>
 	<AppointAI></AppointAI>
-	<icon>20207</icon>
-	<name>大萝卜</name>
+	<icon>20308</icon>
+	<name>仙人掌</name>
 	<desc>x</desc>
 	<scale>1.2</scale>
 	<lev>720</lev>
@@ -37426,12 +37426,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20207001,20207002,20207003]</skillId>
+	<skillId>[20308001,20308002,20308003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20207101,20207102]</behitAction>
-	<flyAction>20207201</flyAction>
-	<downAction>20207202</downAction>
-	<getupAction>20207301</getupAction>
+	<behitAction>[20308101,20308102]</behitAction>
+	<flyAction>20308201</flyAction>
+	<downAction>20308202</downAction>
+	<getupAction>20308301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102,2130801,2130802]</bornBuff>
 	<skillBuff></skillBuff>

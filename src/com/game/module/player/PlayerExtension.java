@@ -256,4 +256,13 @@ public class PlayerExtension {
 
 		return int2Param;
 	}
+
+	@Command(1009)
+	public Object newHandleStep(int playerId, IntParam param){
+		PlayerData playerData = playerService.getPlayerData(playerId);
+		playerData.setNewHandleStep(param.param);
+		IntParam intParam = new IntParam();
+		intParam.param = param.param;
+		return intParam;
+	}
 }

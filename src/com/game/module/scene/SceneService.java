@@ -396,6 +396,16 @@ public class SceneService implements InitHandler {
 		Player player = playerService.getPlayer(playerId);
 		brocastToSceneCurLine(player, SceneExtension.DEL_BUFF, vo);
 	}
+
+	/**
+	 * 同步位置信息
+	 * @param playerId
+	 * @param vo
+	 */
+	public void actorPos(int playerId, ActorMoveState vo){
+		Player player = playerService.getPlayer(playerId);
+		brocastToSceneCurLine(player, SceneExtension.ACTOR_POS, vo);
+	}
 	/**
 	 * 停止使用技能
 	 * @param playerId

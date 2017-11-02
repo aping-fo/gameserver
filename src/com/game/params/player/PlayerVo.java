@@ -50,6 +50,7 @@ public class PlayerVo implements IProtocol {
 	public int signDay;//签到天数
 	public int signFlag;//当前天是否已签到,0表示未签到，1表示已签到
 	public List<Integer> modules;//已经开启的功能
+	public int newHandleStep;//引导步骤
 
 
 	public void decode(BufferBuilder bb) {
@@ -98,6 +99,7 @@ public class PlayerVo implements IProtocol {
 		this.signDay = bb.getInt();
 		this.signFlag = bb.getInt();
 		this.modules = bb.getIntList();
+		this.newHandleStep = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -146,5 +148,6 @@ public class PlayerVo implements IProtocol {
 		bb.putInt(this.signDay);
 		bb.putInt(this.signFlag);
 		bb.putIntList(this.modules);
+		bb.putInt(this.newHandleStep);
 	}
 }

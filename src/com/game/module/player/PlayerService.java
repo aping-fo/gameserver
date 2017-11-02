@@ -414,6 +414,8 @@ public class PlayerService implements InitHandler {
 		for(int moduleId : data.getModules()) {
 			vo.modules.add(moduleId);
 		}
+
+		vo.newHandleStep = data.getNewHandleStep();
 		return vo;
 	}
 

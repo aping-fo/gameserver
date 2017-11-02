@@ -129,6 +129,12 @@ public class SceneExtension {
 		return null;
 	}
 
+	public static final int ACTOR_POS = 1105;
+	@Command(1105)
+	public Object actorPos(int playerId,ActorMoveState vo) {
+		sceneService.actorPos(playerId,vo);
+		return null;
+	}
 	@Command(4912)
 	public Object npcDir(int playerId,Int2Param vo) {
 		sceneService.monsterDir(playerId,vo);

@@ -13681,51 +13681,6 @@
 	<isCanAutoFight>0</isCanAutoFight>
 </config>
 <config>
-	<id>600101</id>
-	<cityId>1</cityId>
-	<chapterId>-1</chapterId>
-	<chapterName>公会多人副本</chapterName>
-	<group>1</group>
-	<name>公会多人副本</name>
-	<nameType></nameType>
-	<desc></desc>
-	<preId></preId>
-	<scenes>[10022]</scenes>
-	<type>6</type>
-	<difficulty>1</difficulty>
-	<passType>1</passType>
-	<camp>0</camp>
-	<groupName>公会多人副本</groupName>
-	<timeLimit></timeLimit>
-	<needEnergy></needEnergy>
-	<recommendFight></recommendFight>
-	<lev></lev>
-	<count></count>
-	<firstReward></firstReward>
-	<rewards></rewards>
-	<reviveCost></reviveCost>
-	<starRewards></starRewards>
-	<randomRates></randomRates>
-	<randomRewards></randomRewards>
-	<getstarbytime></getstarbytime>
-	<getstarbyhit></getstarbyhit>
-	<isStopTimeWhenPause></isStopTimeWhenPause>
-	<monsterId>110027</monsterId>
-	<monsterIcon>100008_2</monsterIcon>
-	<qualities></qualities>
-	<weakness></weakness>
-	<isWinTimeOver>0</isWinTimeOver>
-	<isIgnoreSkillClick>0</isIgnoreSkillClick>
-	<isClearMonsterWhenOver>1</isClearMonsterWhenOver>
-	<trickTask></trickTask>
-	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
-	<settlementVictoryType>[0]</settlementVictoryType>
-	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
-	<finishType>1</finishType>
-	<isCanAutoFight>1</isCanAutoFight>
-</config>
-<config>
 	<id>800111</id>
 	<cityId>1</cityId>
 	<chapterId>-1</chapterId>
