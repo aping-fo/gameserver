@@ -51,7 +51,7 @@ public class MultiGroup {
             if (hostId == playerId) {
                 if (players.isEmpty()) {
                     hostId = 0;
-                    ServerLogger.warn("remove old host =>"+playerId+" ,change hostId ===>" + hostId);
+                    ServerLogger.warn("isEmpty remove old host =>"+playerId+" ,change hostId ===>" + hostId);
                 } else {
                     hostId = players.iterator().next();
                     ServerLogger.warn("remove old host =>"+playerId+" ,change hostId ===>" + hostId);

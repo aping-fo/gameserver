@@ -12,6 +12,7 @@ import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.module.ladder.LadderService;
+import com.game.module.pet.PetService;
 import com.game.module.player.Upgrade;
 import com.game.params.Int2Param;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,7 +70,7 @@ public class GoodsService {
 	@Autowired
 	private TaskService taskService;
 	@Autowired
-	private LadderService ladderService;
+	private PetService petService;
 	private Map<Integer, PlayerBag> playerGoods = new ConcurrentHashMap<Integer, PlayerBag>();
 
 	// 获取玩家的所有物品集合
@@ -651,6 +652,10 @@ public class GoodsService {
 				traversingService.addMap(playerId, goods, count);
 			}else if(goods.type == Goods.FASHION){
 				fashionService.addFashion(playerId, goods.param1[0], goods.param1[1]);
+			} else if(goods.type == Goods.PET) {
+				petService.addPet(playerId,id);
+			} else if(goods.type == Goods.PET_MATERIAL) {
+				petService.addPetMaterial(playerId,id,count);
 			}
 			else{
 				addGoodsToBag(playerId, id, count, type, params);

@@ -25,7 +25,10 @@ public class Goods {
 
 	public final static int ARTIFACT_COMPONENT = 401;//神器部件
 	public final static int FASHION = 501;//时装道具
-	
+
+	public final static int PET = 700;//宠物
+	public final static int PET_MATERIAL = 701;//宠物碎片
+
 	public final static int CURRENCY = 104;//通用货币类型
 
 	

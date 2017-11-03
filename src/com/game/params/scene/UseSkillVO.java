@@ -9,6 +9,7 @@ public class UseSkillVO implements IProtocol {
 	public int skillId;//技能id
 	public float x;//x
 	public float z;//z
+	public int faceDir;//释放技能时的朝向
 
 
 	public void decode(BufferBuilder bb) {
@@ -17,6 +18,7 @@ public class UseSkillVO implements IProtocol {
 		this.skillId = bb.getInt();
 		this.x = bb.getFloat();
 		this.z = bb.getFloat();
+		this.faceDir = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -25,5 +27,6 @@ public class UseSkillVO implements IProtocol {
 		bb.putInt(this.skillId);
 		bb.putFloat(this.x);
 		bb.putFloat(this.z);
+		bb.putInt(this.faceDir);
 	}
 }

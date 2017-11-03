@@ -116,6 +116,7 @@ public class MultiService implements InitHandler {
         IntParam param = new IntParam();
         param.param = playerId;
         SessionManager.getInstance().sendMsg(CMD_HOST, param, playerId);
+        ServerLogger.warn("push host id = " + playerId);
     }
 
     /**
@@ -133,11 +134,11 @@ public class MultiService implements InitHandler {
             String key = sceneService.getGroupKey(player);
             MultiGroup group = multiMap.get(key);
             if (group != null) {
-                ServerLogger.warn("one player exit ,group key = " + key);
                 int oldId = group.getHostId();
                 int masterId = group.removePlayer(playerId);
-                //heartBeatMap.remove(playerId);
+                ServerLogger.warn("one player exit ,playerId = " + playerId + "  current host id =" + masterId);
                 heartBeatMap.invalidate(playerId);
+                ServerLogger.warn("oldId = " + oldId + " current masterId id =" + masterId);
                 if (oldId != masterId) {
                     pushHost(masterId);
                 }
@@ -154,7 +155,6 @@ public class MultiService implements InitHandler {
             for (MultiGroup group : multiMap.values()) {
                 if (group != null) {
                     for (int id : group.getAll()) {
-//                        heartBeatMap.remove(id);
                         heartBeatMap.invalidate(id);
                     }
                 }
@@ -180,8 +180,11 @@ public class MultiService implements InitHandler {
             String key = sceneService.getGroupKey(player);
             MultiGroup group = multiMap.get(key);
             if (group != null && !group.contains(playerId)) { //如果不包含，重新加入
-                group.addPlayer(playerId);
-            }
+                int playerId1 = group.addPlayer(playerId);
+                if(playerId1 == playerId) {
+                    pushHost(playerId);
+                }
+            }@openWorld
         }*/
     }
 }

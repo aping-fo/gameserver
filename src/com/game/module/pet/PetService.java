@@ -407,6 +407,7 @@ public class PetService {
             addPets.add(newPet);
         }
 
+
         //减少的
         Int2Param delId = new Int2Param();
         delId.param1 = petConfig.materialId;
@@ -421,7 +422,13 @@ public class PetService {
 
         pushUpdateBag(playerId, addPets, updateIds);
         cli.param1 = Response.SUCCESS;
-        return cli;
+
+        SessionManager.getInstance().sendMsg(7007, cli, playerId);
+        if(bag.getFightPetId() == petId) {
+            Int2Param vo = toFight(playerId,petConfig.nextQualityId);
+            SessionManager.getInstance().sendMsg(7008, vo, playerId);
+        }
+        return null;
     }
 
     /**

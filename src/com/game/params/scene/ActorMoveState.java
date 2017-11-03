@@ -8,6 +8,7 @@ public class ActorMoveState implements IProtocol {
 	public int posX;//位置x
 	public int posZ;//位置z
 	public int faceDir;//朝向
+	public int hp;//当前血量
 
 
 	public void decode(BufferBuilder bb) {
@@ -15,6 +16,7 @@ public class ActorMoveState implements IProtocol {
 		this.posX = bb.getInt();
 		this.posZ = bb.getInt();
 		this.faceDir = bb.getInt();
+		this.hp = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -22,5 +24,6 @@ public class ActorMoveState implements IProtocol {
 		bb.putInt(this.posX);
 		bb.putInt(this.posZ);
 		bb.putInt(this.faceDir);
+		bb.putInt(this.hp);
 	}
 }
