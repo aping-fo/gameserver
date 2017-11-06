@@ -9,6 +9,8 @@ public class PetConfig {
 	public int quality;//品质
 	public String name;//名字
 	public int property;//属性
+	public int monsterId;//怪物ID
+	public int mutateMonsterId;//变异后对应怪物ID
 	public int petId;//对应宠物ID
 	public int materialId;//对应碎片ID
 	public int nextQualityId;//下一品质id

@@ -9,13 +9,22 @@ public class Pet {
     private int id;
     private int skillID;
     private int passiveSkillId;
-
+    private boolean mutateFlag;
     public Pet() {
     }
 
     public Pet(int id, int skillID) {
         this.id = id;
         this.skillID = skillID;
+        this.mutateFlag = false;
+    }
+
+    public boolean isMutateFlag() {
+        return mutateFlag;
+    }
+
+    public void setMutateFlag(boolean mutateFlag) {
+        this.mutateFlag = mutateFlag;
     }
 
     public int getPassiveSkillId() {
@@ -47,6 +56,7 @@ public class Pet {
         vo.id = id;
         vo.skillId = skillID;
         vo.passiveSkillId = passiveSkillId;
+        vo.hasMutate = mutateFlag;
         return vo;
     }
 }

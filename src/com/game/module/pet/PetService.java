@@ -57,9 +57,12 @@ public class PetService {
         if (data == null) {
             return;
         }
-        String str = JsonUtils.object2String(data);
-        byte[] dbData = str.getBytes(Charset.forName("utf-8"));
-        petDao.update(playerId, CompressUtil.compressBytes(dbData));
+        if (data.updateFlag) {
+            data.updateFlag = false;
+            String str = JsonUtils.object2String(data);
+            byte[] dbData = str.getBytes(Charset.forName("utf-8"));
+            petDao.update(playerId, CompressUtil.compressBytes(dbData));
+        }
     }
 
     public PetBag getPetBag(int playerId) {
@@ -80,13 +83,6 @@ public class PetService {
             bag = new PetBag();
         }
         petBags.put(playerId, bag);
-        /*int maxId = 0; //设置最大ID
-        for (int id : bag.getPetMap().keySet()) {
-            if (id > maxId) {
-                maxId = id;
-            }
-        }
-        bag.idGen.set(maxId);*/
         return bag;
     }
 
@@ -329,6 +325,7 @@ public class PetService {
             return cli;
         }
         mutatePet.setPassiveSkillId(newSkillID);
+        mutatePet.setMutateFlag(true);
 
         bag.getPetMap().remove(consumeID);
         List<Int2Param> updateIds = Lists.newArrayList();
@@ -387,6 +384,7 @@ public class PetService {
             return cli;
         }
 
+        bag.getPetMap().remove(petId);
         List<Pet> addPets = Lists.newArrayList();
         List<Int2Param> updateIds = Lists.newArrayList();
         //判断是否拥有同类型宠物
@@ -395,10 +393,10 @@ public class PetService {
             samePetDecompose(bag, newPetConfig, updateIds);
             cli.param2 = 1;
         } else {
-            bag.getPetMap().remove(petId);
             Pet newPet = new Pet();
             newPet.setId(petConfig.nextQualityId);
             newPet.setSkillID(petConfig.activeSkillId);
+            newPet.setPassiveSkillId(pet.getPassiveSkillId() + 1);
             bag.getPetMap().put(newPet.getId(), newPet);
             bag.getMaterialMap().put(petConfig.materialId, currentCount - petConfig.nextQualityMaterialCount);
             if (currentCount == petConfig.nextQualityMaterialCount) {
@@ -406,7 +404,6 @@ public class PetService {
             }
             addPets.add(newPet);
         }
-
 
         //减少的
         Int2Param delId = new Int2Param();
@@ -424,8 +421,8 @@ public class PetService {
         cli.param1 = Response.SUCCESS;
 
         SessionManager.getInstance().sendMsg(7007, cli, playerId);
-        if(bag.getFightPetId() == petId) {
-            Int2Param vo = toFight(playerId,petConfig.nextQualityId);
+        if (bag.getFightPetId() == petId) {
+            Int2Param vo = toFight(playerId, petConfig.nextQualityId);
             SessionManager.getInstance().sendMsg(7008, vo, playerId);
         }
         return null;
@@ -447,7 +444,7 @@ public class PetService {
         }
 
         bag.setFightPetId(petId);
-
+        bag.updateFlag = true;
         cli.param1 = Response.SUCCESS;
         cli.param2 = petId;
         return cli;
@@ -470,6 +467,9 @@ public class PetService {
         }
 
         SessionManager.getInstance().sendMsg(CMD_UPDATE_BAG, vo, playerId);
+
+        PetBag data = petBags.get(playerId);
+        data.updateFlag = true;
     }
 
     public Pet getFightPet(int playerId) {

@@ -15,6 +15,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class PetBag {
     @JsonIgnore
     public final AtomicInteger idGen = new AtomicInteger();
+    @JsonIgnore
+    public volatile boolean updateFlag;
+
     //宠物  <configID,pet>
     private Map<Integer, Pet> petMap = new HashMap<>();
     //材料 <configID -- material>
