@@ -13,8 +13,7 @@ public class MultiExtension {
 
     @Command(4909)
     public Object getWorldBossHurt(int playerId, LongParam param) {
-        multiService.hostHeart(playerId);
-        return null;
+        return multiService.hostHeart(playerId);
     }
 
 }

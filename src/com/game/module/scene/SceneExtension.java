@@ -1,6 +1,7 @@
 package com.game.module.scene;
 
 import com.game.params.Int2Param;
+import com.game.params.IntParam;
 import com.game.params.scene.*;
 
 import io.netty.channel.Channel;
@@ -131,10 +132,46 @@ public class SceneExtension {
 
 	public static final int ACTOR_POS = 1105;
 	@Command(1105)
-	public Object actorPos(int playerId,ActorMoveState vo) {
+	public Object actorPos(int playerId,ActorWaitState vo) {
 		sceneService.actorPos(playerId,vo);
 		return null;
 	}
+
+	public static final int ACTOR_MOVE = 1116;
+	@Command(1116)
+	public Object actorMove(int playerId,ActorMoveState vo) {
+		sceneService.actorMove(playerId,vo);
+		return null;
+	}
+
+	public static final int ACTOR_STRICK = 1117;
+	@Command(1117)
+	public Object actorStricken(int playerId,ActorStrickenState vo) {
+		sceneService.actorStrick(playerId,vo);
+		return null;
+	}
+
+	public static final int ACTOR_DEAD = 1118;
+	@Command(1118)
+	public Object actorDead(int playerId,IntParam vo) {
+		sceneService.actorDead(playerId,vo);
+		return null;
+	}
+
+	public static final int ACTOR_SKILL = 1119;
+	@Command(1119)
+	public Object actorActorSkill(int playerId,ActorSkillVO vo) {
+		sceneService.actorActorSkill(playerId,vo);
+		return null;
+	}
+
+	public static final int ACTOR_CARD = 1120;
+	@Command(1120)
+	public Object actorActorSkillCard(int playerId,SkillCardEffectVO vo) {
+		sceneService.actorActorSkillCard(playerId,vo);
+		return null;
+	}
+
 	@Command(4912)
 	public Object npcDir(int playerId,Int2Param vo) {
 		sceneService.monsterDir(playerId,vo);

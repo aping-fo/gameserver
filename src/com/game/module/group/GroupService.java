@@ -732,9 +732,10 @@ public class GroupService {
             monster.curHp -= hurtVO.hurtValue;
             int hp = monster.curHp > 0 ? monster.curHp : 0;
             MonsterHurtVO ret = new MonsterHurtVO();
-            ret.monsterId = hurtVO.targetId;
+            ret.actorId = hurtVO.targetId;
             ret.curHp = hp;
             ret.hurt = hurtVO.hurtValue;
+            ret.isCrit = hurtVO.isCrit;
             ret.type = 1;
 
             broadcastGroupTeam(team, CMD_MONSTER_INFO, ret);

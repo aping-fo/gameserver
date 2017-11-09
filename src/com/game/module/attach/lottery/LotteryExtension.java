@@ -10,6 +10,7 @@ import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
 import com.game.module.goods.Goods;
 import com.game.util.ConfigData;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.LotteryCfg;
@@ -122,6 +123,9 @@ public class LotteryExtension {
 
 		for(Reward reward : result.rewards) {
 			GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class,reward.id);
+			if(conf == null) {
+				ServerLogger.warn("goods don't exist id = " + reward.id);
+			}
 			if(conf.type == Goods.SKILL_CARD && (conf.color == Goods.QUALITY_VIOLET || conf.color == Goods.QUALITY_ORANGE)) { //消息广播
 				messageService.sendSysMsg(MessageConsts.MSG_LOTTERY,player.getName(),conf.name);
 			}

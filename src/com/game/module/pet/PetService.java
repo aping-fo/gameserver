@@ -32,6 +32,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Service
 public class PetService {
+    private static final int CMD_IMPROVE = 7007;
+    private static final int CMD_TO_FIGHT = 7008;
 
     @Autowired
     private PetDao petDao;
@@ -420,10 +422,10 @@ public class PetService {
         pushUpdateBag(playerId, addPets, updateIds);
         cli.param1 = Response.SUCCESS;
 
-        SessionManager.getInstance().sendMsg(7007, cli, playerId);
+        SessionManager.getInstance().sendMsg(CMD_IMPROVE, cli, playerId);
         if (bag.getFightPetId() == petId) {
             Int2Param vo = toFight(playerId, petConfig.nextQualityId);
-            SessionManager.getInstance().sendMsg(7008, vo, playerId);
+            SessionManager.getInstance().sendMsg(CMD_TO_FIGHT, vo, playerId);
         }
         return null;
     }

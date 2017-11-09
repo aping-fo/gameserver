@@ -544,4 +544,8 @@ public class GmService {
 		int petId = Integer.valueOf(params[0]);
 		petService.gainPet(playerId,petId);
 	}
+
+	public void ladderDebug(int playerId,String ... params) {
+		ladderService.gmDebug();
+	}
 }

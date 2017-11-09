@@ -200,9 +200,10 @@ public class TeamService implements InitHandler {
 			SMonsterVo monster = monsters.get(hurtVO.targetId);
 			monster.curHp -= hurtVO.hurtValue;
 			MonsterHurtVO ret = new MonsterHurtVO();
-			ret.monsterId = hurtVO.targetId;
+			ret.actorId = hurtVO.targetId;
 			ret.curHp = monster.curHp;
 			ret.hurt = hurtVO.hurtValue;
+			ret.isCrit = hurtVO.isCrit;
 			ret.type = 1;
 			sceneService.brocastToSceneCurLine(player, CMD_MONSTER_INFO, ret, null);
 			if (monster.curHp <= 0) {

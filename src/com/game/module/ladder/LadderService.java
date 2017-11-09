@@ -101,6 +101,7 @@ public class LadderService implements InitHandler {
      */
     private final ListParam<LadderRankVO> LADDER_RANK = new ListParam();
 
+    private boolean debug = false;
     @Override
     public void handleInit() {
         //5S定时
@@ -189,10 +190,12 @@ public class LadderService implements InitHandler {
                     continue;
                 }
 
-                int sourceScore = source.score;
-                if (source.score == 0) {
-                    sourceScore = 100;
+                if(debug) {
+                    startGame(source, target);
+                    break;
                 }
+
+                int sourceScore = source.score;
                 if (source.time == 0) { //-5%
                     if (target.score <= sourceScore && target.score >= sourceScore * (1 - 0.05)) {
                         startGame(source, target);
@@ -795,9 +798,10 @@ public class LadderService implements InitHandler {
             roomPlayer.decreaseHp(hurtVO.hurtValue);
 
             MonsterHurtVO vo = new MonsterHurtVO();
-            vo.monsterId = hurtVO.targetId;
+            vo.actorId = hurtVO.targetId;
             vo.curHp = roomPlayer.getHp();
             vo.hurt = hurtVO.hurtValue;
+            vo.isCrit = hurtVO.isCrit;
             vo.type = 0;
             for (int playerId : room.roomPlayers.keySet()) {
                 SessionManager.getInstance().sendMsg(CMD_MONSTER_INFO, vo, playerId);
@@ -921,5 +925,9 @@ public class LadderService implements InitHandler {
 
         ladderInfo.setLevel(newLevel);
         ladderInfo.setScore(score + ladderInfo.getScore());
+    }
+
+    public void gmDebug() {
+        debug = true;
     }
 }

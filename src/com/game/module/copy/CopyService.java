@@ -338,7 +338,10 @@ public class CopyService {
 			int index = RandomUtil.getRandomIndex(cfg.randomRates);
 			int id = cfg.randomRewards[index][0];
 			int count = cfg.randomRewards[index][1];
-			int vocation = ConfigData.getConfig(GoodsConfig.class, id).vocation;
+			if(ConfigData.getConfig(GoodsConfig.class, id) == null) {
+				ServerLogger.warn("goods don't exist id = " + id);
+			}
+			//int vocation = ConfigData.getConfig(GoodsConfig.class, id).vocation;
 			//if (vocation == 0 || vocation == player.getVocation()) { //去掉职业限制
 			if (id > 0 && count > 0) {
 				addItem(totalRewards, id, count);
@@ -389,6 +392,9 @@ public class CopyService {
 			float rate = ConfigData.globalParam().fameAddRate;
 			for (GoodsEntry g : items) {
 				GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class, g.id);
+				if(conf == null) {
+					ServerLogger.warn("goods don't exist id = " + g.id);
+				}
 				if (conf.type == Goods.FAME) {
 					g.count = Math.round((1 + rate) * g.count);
 
@@ -680,6 +686,9 @@ public class CopyService {
 			}
 			dropReward.rewards.add(reward);
 			GoodsConfig goodsCfg = ConfigData.getConfig(GoodsConfig.class, reward.id);
+			if(goodsCfg == null) {
+				ServerLogger.warn("goods don't exist id = " + reward.id);
+			}
 			if (goodsCfg.type != Goods.BOTTLE) {
 				// 加入缓存
 				addItem(copy.getDrops(), reward.id, reward.count);

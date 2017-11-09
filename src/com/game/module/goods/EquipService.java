@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map.Entry;
 
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -130,6 +131,9 @@ public class EquipService {
 			int equipMaterials = 0;
 			Goods goods = goodsService.getGoods(playerId, id);
 			GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
+			if(cfg == null) {
+				ServerLogger.warn("goods don't exist id = " + cfg.id);
+			}
 			goodsId = cfg.decompose[0][0];
 			equipMaterials +=cfg.decompose[0][1];
 			
@@ -328,6 +332,9 @@ public class EquipService {
 	public int clear(int playerId,long id,int lock){
 		Goods goods = goodsService.getGoods(playerId, id);
 		GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
+		if(cfg == null) {
+			ServerLogger.warn("goods don't exist id = " + cfg.id);
+		}
 		//扣除锁定
 		if(lock>0){
 			if(!playerService.decDiamond(playerId, ConfigData.globalParam().clearCostDiamond, LogConsume.CLEAR_LOCK,goods.getGoodsId() )){

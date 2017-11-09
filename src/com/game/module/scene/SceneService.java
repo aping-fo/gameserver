@@ -4,6 +4,7 @@ import com.game.module.gang.GangDungeonService;
 import com.game.module.group.GroupService;
 import com.game.module.ladder.LadderService;
 import com.game.module.multi.MultiService;
+import com.game.params.IntParam;
 import com.game.params.scene.*;
 import io.netty.channel.Channel;
 
@@ -402,10 +403,36 @@ public class SceneService implements InitHandler {
 	 * @param playerId
 	 * @param vo
 	 */
-	public void actorPos(int playerId, ActorMoveState vo){
+	public void actorPos(int playerId, ActorWaitState vo){
 		Player player = playerService.getPlayer(playerId);
 		brocastToSceneCurLine(player, SceneExtension.ACTOR_POS, vo);
 	}
+
+	public void actorMove(int playerId, ActorMoveState vo){
+		Player player = playerService.getPlayer(playerId);
+		brocastToSceneCurLine(player, SceneExtension.ACTOR_MOVE, vo);
+	}
+
+	public void actorStrick(int playerId, ActorStrickenState vo){
+		Player player = playerService.getPlayer(playerId);
+		brocastToSceneCurLine(player, SceneExtension.ACTOR_STRICK, vo);
+	}
+
+	public void actorDead(int playerId, IntParam vo){
+		Player player = playerService.getPlayer(playerId);
+		brocastToSceneCurLine(player, SceneExtension.ACTOR_DEAD, vo);
+	}
+
+	public void actorActorSkill(int playerId, ActorSkillVO vo){
+		Player player = playerService.getPlayer(playerId);
+		brocastToSceneCurLine(player, SceneExtension.ACTOR_SKILL, vo);
+	}
+
+	public void actorActorSkillCard(int playerId, SkillCardEffectVO vo){
+		Player player = playerService.getPlayer(playerId);
+		brocastToSceneCurLine(player, SceneExtension.ACTOR_CARD, vo);
+	}
+
 	/**
 	 * 停止使用技能
 	 * @param playerId

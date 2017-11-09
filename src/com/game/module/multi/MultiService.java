@@ -32,7 +32,7 @@ public class MultiService implements InitHandler {
 
     private Map<Integer, Map<String, MultiGroup>> mulitSceneMap = new ConcurrentHashMap<>();
     //private final Map<Integer, Long> heartBeatMap = new ConcurrentHashMap<>();
-    private final Cache<Integer,Long> heartBeatMap = CacheBuilder.newBuilder().expireAfterWrite(30,TimeUnit.SECONDS).build();
+    private final Cache<Integer, Long> heartBeatMap = CacheBuilder.newBuilder().expireAfterWrite(30, TimeUnit.SECONDS).build();
     @Autowired
     private TimerService timerService;
     @Autowired
@@ -87,7 +87,7 @@ public class MultiService implements InitHandler {
         if (multiMap == null) {
             multiMap = new ConcurrentHashMap<>();
             multiMap = mulitSceneMap.putIfAbsent(conf.sceneSubType, multiMap);
-            if(multiMap == null) { //deal with multi thread
+            if (multiMap == null) { //deal with multi thread
                 multiMap = mulitSceneMap.get(conf.sceneSubType);
             }
         }
@@ -95,7 +95,7 @@ public class MultiService implements InitHandler {
         if (group == null) {
             group = new MultiGroup();
             group = multiMap.putIfAbsent(key, group);
-            if(group == null) {
+            if (group == null) {
                 group = multiMap.get(key);
             }
         }
@@ -170,21 +170,17 @@ public class MultiService implements InitHandler {
      * @param playerId
      * @return
      */
-    public void hostHeart(int playerId) {
+    public IntParam hostHeart(int playerId) {
+        IntParam param = new IntParam();
         heartBeatMap.put(playerId, System.currentTimeMillis());
-        //TODO 先注释下
-        /*Player player = playerService.getPlayer(playerId);
+        Player player = playerService.getPlayer(playerId);
         SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, player.getSceneId());
         Map<String, MultiGroup> multiMap = mulitSceneMap.get(lastCfg.sceneSubType);
         if (multiMap != null) {
             String key = sceneService.getGroupKey(player);
             MultiGroup group = multiMap.get(key);
-            if (group != null && !group.contains(playerId)) { //如果不包含，重新加入
-                int playerId1 = group.addPlayer(playerId);
-                if(playerId1 == playerId) {
-                    pushHost(playerId);
-                }
-            }@openWorld
-        }*/
+            param.param = group.getHostId();
+        }
+        return param;
     }
 }

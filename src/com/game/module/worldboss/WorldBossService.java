@@ -238,7 +238,7 @@ public class WorldBossService implements InitHandler {
      * @param playerId
      * @param hurt
      */
-    private synchronized void onBossHurt(int playerId, int hurt, int bossId) {
+    private synchronized void onBossHurt(int playerId, int hurt, int bossId,boolean isCrit) {
         WorldBoss boss = worldBossData.getWorldBossMap().get(bossId);
         if (boss == null || boss.getCurHp() <= 0) {
             ServerLogger.warn("world boss can not found bossId", bossId);
@@ -273,10 +273,11 @@ public class WorldBossService implements InitHandler {
         hr.setCurHurt(hr.getCurHurt() + realHurt);
 
         MonsterHurtVO ret = new MonsterHurtVO();
-        ret.monsterId = bossId;
+        ret.actorId = bossId;
         ret.curHp = boss.getCurHp() < 0 ? 0 : boss.getCurHp();
         ret.hurt = hurt;
         ret.type = 1;
+        ret.isCrit = isCrit;
         broadcast(CMD_MONSTER_INFO, ret);
 
 
@@ -783,7 +784,7 @@ public class WorldBossService implements InitHandler {
     public void handleSkillHurt(Player player, SkillHurtVO hurtVO) {
         //broadcast(SceneExtension.SKILL_HURT, hurtVO);
         if (hurtVO.targetType == 1) {
-            onBossHurt(player.getPlayerId(), hurtVO.hurtValue, hurtVO.targetId);
+            onBossHurt(player.getPlayerId(), hurtVO.hurtValue, hurtVO.targetId,hurtVO.isCrit);
         }
     }
 
