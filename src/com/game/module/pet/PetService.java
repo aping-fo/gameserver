@@ -398,7 +398,9 @@ public class PetService {
             Pet newPet = new Pet();
             newPet.setId(petConfig.nextQualityId);
             newPet.setSkillID(petConfig.activeSkillId);
-            newPet.setPassiveSkillId(pet.getPassiveSkillId() + 1);
+            if(newPet.getPassiveSkillId() != 0) {
+                newPet.setPassiveSkillId(pet.getPassiveSkillId() + 1);
+            }
             bag.getPetMap().put(newPet.getId(), newPet);
             bag.getMaterialMap().put(petConfig.materialId, currentCount - petConfig.nextQualityMaterialCount);
             if (currentCount == petConfig.nextQualityMaterialCount) {

@@ -1109,6 +1109,7 @@ public class GangService implements InitHandler {
 			result.code = Response.ERR_PARAM;
 			return result;
 		}
+		room.setMax(room.getMax() - 1);
 		GangTrainingCfg cfg = GameData.getConfig(GangTrainingCfg.class, room.getId());
 		float plus = Math.min(room.getMax() * cfg.rewardPlus[1], cfg.rewardPlus[0]);
 		int hour = (int)member.getTrainingTime();

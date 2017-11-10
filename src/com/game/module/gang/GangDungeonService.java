@@ -249,9 +249,9 @@ public class GangDungeonService implements InitHandler {
                 if (gangDungeon.checkAndAdd(i)) {
                     ServerLogger.warn("============ send guild copy step award" + cfg.progress[i]);
                     List<GoodsEntry> rewards = new ArrayList<>();
-                    int[] itemArr = cfg.progressRewards[i];
-                    for (int k = 0; k < itemArr.length; k += 2) {
-                        GoodsEntry goodsEntry = new GoodsEntry(itemArr[k], itemArr[k + 1]);
+                    int[][] itemArr = cfg.progressRewards.get(i);
+                    for(int[] item : itemArr) {
+                        GoodsEntry goodsEntry = new GoodsEntry(item[0], item[1]);
                         rewards.add(goodsEntry);
                     }
                     String title = ConfigData.getConfig(ErrCode.class, Response.GUILD_COPY_MAIL_TITLE).tips;

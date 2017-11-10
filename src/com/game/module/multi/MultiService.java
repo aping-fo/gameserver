@@ -137,6 +137,9 @@ public class MultiService implements InitHandler {
                 int oldId = group.getHostId();
                 int masterId = group.removePlayer(playerId);
                 ServerLogger.warn("one player exit ,playerId = " + playerId + "  current host id =" + masterId);
+                if(group.getAll().isEmpty()) {
+                    multiMap.remove(key);
+                }
                 heartBeatMap.invalidate(playerId);
                 ServerLogger.warn("oldId = " + oldId + " current masterId id =" + masterId);
                 if (oldId != masterId) {
@@ -179,7 +182,9 @@ public class MultiService implements InitHandler {
         if (multiMap != null) {
             String key = sceneService.getGroupKey(player);
             MultiGroup group = multiMap.get(key);
-            param.param = group.getHostId();
+            if(group != null) {
+                param.param = group.getHostId();
+            }
         }
         return param;
     }

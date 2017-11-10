@@ -46,6 +46,8 @@ public class GlobalConfig {
 	public int[] weaponId;//初始武器
 	public int[][] initEquips;//初始装备
 	public int[][] newbieMailReward;//新手奖励
+	public int[][] newbieskillCard;//新手初始技能卡
+	public int[][] GuideEquip;//初始引导装备
 	public int restoreEnergy;//体力恢复
 	public int strengthTicket;//强化券id
 	public int strengthTicketAdd;//强化券增加概率

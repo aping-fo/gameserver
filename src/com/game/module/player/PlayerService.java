@@ -206,6 +206,10 @@ public class PlayerService implements InitHandler {
 	
 		}
 
+		for(int[] cardArr : globalParam.newbieskillCard) {
+			addSkillCard(playerId,cardArr[0],cardArr[1]);
+		}
+
 		for(Object object : ConfigData.getConfigs(ModuleOpenCfg.class)) {
 			ModuleOpenCfg cfg = (ModuleOpenCfg)object;
 			if(cfg.openType == 1) {
@@ -218,6 +222,14 @@ public class PlayerService implements InitHandler {
 		// 任务
 		taskService.initTask(playerId);
 		goodsService.initBag(playerId);
+
+		for(int[] itemArr : globalParam.GuideEquip) {
+			if(vocation == itemArr[0]) {
+				goodsService.addGoodsToBag(playerId,itemArr[1],1,LogConsume.BAG_INIT);
+				break;
+			}
+
+		}
 		petService.initBag(playerId);
 		// 计算属性
 		playerCalculator.calculate(player);
