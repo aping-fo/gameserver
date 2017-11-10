@@ -47,4 +47,5 @@ public class CopyConfig {
 	public float settlementDelay;//结算延迟
 	public int finishType;//结束方式
 	public int isCanAutoFight;//是否可以自动战斗
+	public int bossHpNum;//boss血条数量
 }

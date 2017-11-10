@@ -4,6 +4,9 @@ import com.game.module.gang.GangDungeonService;
 import com.game.module.group.GroupService;
 import com.game.module.ladder.LadderService;
 import com.game.module.multi.MultiService;
+import com.game.module.pet.Pet;
+import com.game.module.pet.PetBag;
+import com.game.module.pet.PetService;
 import com.game.params.IntParam;
 import com.game.params.scene.*;
 import io.netty.channel.Channel;
@@ -55,6 +58,9 @@ public class SceneService implements InitHandler {
 	private GroupService groupService;
 	@Autowired
 	private GangDungeonService gangDungeonService;
+	@Autowired
+	private PetService petService;
+
 	private Map<Integer, Scene> scenes = new ConcurrentHashMap<Integer, Scene>();
 
 	private Map<String, Integer> useSkills = new ConcurrentHashMap<String, Integer>();
@@ -252,6 +258,10 @@ public class SceneService implements InitHandler {
 		vo.title = player.getTitle();
 		vo.roomTeam = player.roomTeamId;
 		vo.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
+		Pet pet = petService.getFightPet(player.getPlayerId());
+		if(pet != null) {
+			vo.fightPetConfigId = pet.getConfigId();
+		}
 		if(player.getGangId() > 0){
 			vo.gang = gangService.getGang(player.getGangId()).getName();
 		}

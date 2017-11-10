@@ -514,7 +514,7 @@ public class GmService {
 	public void addPetMaterial(int playerId,String ... params) {
 		int petId = Integer.valueOf(params[0]);
 		int count = Integer.valueOf(params[1]);
-		petService.addPetMaterial(playerId,petId,count);
+		petService.addPetMaterial(playerId,petId,count,true);
 	}
 
 	public void improveQuality(int playerId,String ... params) {

@@ -655,7 +655,7 @@ public class GoodsService {
 			} else if(goods.type == Goods.PET) {
 				petService.addPet(playerId,id);
 			} else if(goods.type == Goods.PET_MATERIAL) {
-				petService.addPetMaterial(playerId,id,count);
+				petService.addPetMaterial(playerId,id,count,true);
 			}
 			else{
 				addGoodsToBag(playerId, id, count, type, params);

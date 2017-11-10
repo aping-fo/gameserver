@@ -7,16 +7,27 @@ import com.game.params.pet.PetVO;
  */
 public class Pet {
     private int id;
+    private int configId;
     private int skillID;
     private int passiveSkillId;
     private boolean mutateFlag;
+
     public Pet() {
     }
 
-    public Pet(int id, int skillID) {
+    public Pet(int id, int configId, int skillID) {
         this.id = id;
         this.skillID = skillID;
+        this.configId = configId;
         this.mutateFlag = false;
+    }
+
+    public int getConfigId() {
+        return configId;
+    }
+
+    public void setConfigId(int configId) {
+        this.configId = configId;
     }
 
     public boolean isMutateFlag() {
@@ -57,6 +68,7 @@ public class Pet {
         vo.skillId = skillID;
         vo.passiveSkillId = passiveSkillId;
         vo.hasMutate = mutateFlag;
+        vo.configId = configId;
         return vo;
     }
 }

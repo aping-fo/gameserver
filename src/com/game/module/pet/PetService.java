@@ -5,9 +5,14 @@ import com.game.data.Response;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
+import com.game.module.player.Player;
+import com.game.module.player.PlayerService;
+import com.game.module.scene.SceneExtension;
+import com.game.module.scene.SceneService;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.pet.PetBagVO;
+import com.game.params.pet.PetChangeVO;
 import com.game.params.pet.UpdatePetBagVO;
 import com.game.util.CompressUtil;
 import com.game.util.ConfigData;
@@ -34,11 +39,17 @@ import java.util.concurrent.ConcurrentHashMap;
 public class PetService {
     private static final int CMD_IMPROVE = 7007;
     private static final int CMD_TO_FIGHT = 7008;
-
+    private static final int CMD_UPDATE_BAG = 7003;
+    private static final int CMD_CHANGE = 7009;
     @Autowired
     private PetDao petDao;
     @Autowired
     private GoodsService goodsService;
+    @Autowired
+    private SceneService sceneService;
+    @Autowired
+    private PlayerService playerService;
+
     private Map<Integer, PetBag> petBags = new ConcurrentHashMap<>();
 
     //初始化背包
@@ -85,6 +96,14 @@ public class PetService {
             bag = new PetBag();
         }
         petBags.put(playerId, bag);
+
+        int maxId = 0; //设置最大ID
+        for (int id : bag.getPetMap().keySet()) {
+            if (id > maxId) {
+                maxId = id;
+            }
+        }
+        bag.idGen.set(maxId);
         return bag;
     }
 
@@ -110,27 +129,10 @@ public class PetService {
         PetConfig newPetConfig = ConfigData.getConfig(PetConfig.class, configID);
         List<Pet> pets = new ArrayList<>();
         List<Int2Param> updateIds = Lists.newArrayList();
-        if (bag.getPetMap().containsKey(configID)) {
-            samePetDecompose(bag, newPetConfig, updateIds);
-        } else {
-            Pet pet = new Pet(newPetConfig.id, newPetConfig.activeSkillId);
-            bag.getPetMap().put(configID, pet);
-            pets.add(pet);
-        }
+        Pet pet = new Pet(bag.idGen.incrementAndGet(), newPetConfig.id, newPetConfig.activeSkillId);
+        bag.getPetMap().put(pet.getId(), pet);
+        pets.add(pet);
         pushUpdateBag(playerId, pets, updateIds);
-    }
-
-    private void samePetDecompose(PetBag bag, PetConfig newPetConfig, List<Int2Param> updateIds) {
-        Integer currentCount = bag.getMaterialMap().get(newPetConfig.sameMaterial[0]);
-        if (currentCount == null) {
-            currentCount = 0;
-        }
-        currentCount = currentCount + newPetConfig.sameMaterial[1];
-        bag.getMaterialMap().put(newPetConfig.sameMaterial[0], currentCount);
-        Int2Param idParam = new Int2Param();
-        idParam.param1 = newPetConfig.sameMaterial[0];
-        idParam.param2 = currentCount;
-        updateIds.add(idParam);
     }
 
     /**
@@ -140,7 +142,7 @@ public class PetService {
      * @param configID
      * @param count
      */
-    public void addPetMaterial(int playerId, int configID, int count) {
+    public void addPetMaterial(int playerId, int configID, int count, boolean toCli) {
         PetBag bag = getPetBag(playerId);
         Integer currentCount = bag.getMaterialMap().get(configID);
         if (currentCount == null) {
@@ -155,8 +157,9 @@ public class PetService {
         idParam.param1 = configID;
         idParam.param2 = remainCount;
         updateIds.add(idParam);
-
-        pushUpdateBag(playerId, Collections.emptyList(), updateIds);
+        if (toCli) {
+            pushUpdateBag(playerId, Collections.emptyList(), updateIds);
+        }
     }
 
     /**
@@ -174,11 +177,6 @@ public class PetService {
         }
 
         PetConfig petConfig = ConfigData.getConfig(PetConfig.class, id);
-        //判断是否有同类型的了
-        if (bag.getPetMap().containsKey(petConfig.petId)) {
-            cli.param = Response.PET_HAS_SAME_TYPE;
-            return cli;
-        }
         //数量不够
         int remainCount = currentCount - petConfig.gainNeedMaterialCount;
         if (remainCount < 0) {
@@ -192,7 +190,7 @@ public class PetService {
         }
 
         PetConfig newPetConfig = ConfigData.getConfig(PetConfig.class, petConfig.petId);
-        Pet pet = new Pet(newPetConfig.id, newPetConfig.activeSkillId);
+        Pet pet = new Pet(bag.idGen.incrementAndGet(), newPetConfig.id, newPetConfig.activeSkillId);
         bag.getPetMap().put(pet.getId(), pet);
         List<Pet> pets = Lists.newArrayList(pet);
 
@@ -276,6 +274,7 @@ public class PetService {
         List<Int2Param> updateIds = Lists.newArrayList();
         Pet pet = bag.getPetMap().get(id);
         LogConsume type;
+        int configId = id;
         if (pet != null) { //宠物分解
             if (bag.getFightPetId() == id) {
                 cli.param = Response.ERR_PARAM;
@@ -283,6 +282,7 @@ public class PetService {
             }
             bag.getPetMap().remove(id);
             type = LogConsume.PET_DEC;
+            configId = pet.getConfigId();
         } else { //碎片分解
             bag.getMaterialMap().remove(id);
             type = LogConsume.PET_MATERIAL_DEC;
@@ -295,7 +295,7 @@ public class PetService {
         pushUpdateBag(playerId, Collections.emptyList(), updateIds);
 
 
-        PetConfig petConfig = ConfigData.getConfig(PetConfig.class, id);
+        PetConfig petConfig = ConfigData.getConfig(PetConfig.class, configId);
         goodsService.addRewards(playerId, petConfig.decomposeGoods, type);
         cli.param = Response.SUCCESS;
         return cli;
@@ -308,22 +308,22 @@ public class PetService {
      * @param mutateID
      * @param consumeID
      */
-    public IntParam mutate(int playerId, int mutateID, int consumeID, int newSkillID) {
-        IntParam cli = new IntParam();
+    public Int2Param mutate(int playerId, int mutateID, int consumeID, int newSkillID) {
+        Int2Param cli = new Int2Param();
         PetBag bag = getPetBag(playerId);
         Pet mutatePet = bag.getPetMap().get(mutateID);
         if (mutatePet == null) {
-            cli.param = Response.PET_NOT_EXIST;
+            cli.param1 = Response.PET_NOT_EXIST;
             return cli;
         }
         Pet consumePet = bag.getPetMap().get(mutateID);
         if (consumePet == null) {
-            cli.param = Response.PET_NOT_EXIST;
+            cli.param1 = Response.PET_NOT_EXIST;
             return cli;
         }
 
         if (mutateID == consumeID) {
-            cli.param = Response.ERR_PARAM;
+            cli.param1 = Response.ERR_PARAM;
             return cli;
         }
         mutatePet.setPassiveSkillId(newSkillID);
@@ -338,7 +338,8 @@ public class PetService {
         List<Pet> addPets = Lists.newArrayList(mutatePet);
 
         pushUpdateBag(playerId, addPets, updateIds);
-        cli.param = Response.SUCCESS;
+        cli.param1 = Response.SUCCESS;
+        cli.param2 = mutateID;
         return cli;
     }
 
@@ -357,7 +358,7 @@ public class PetService {
             return cli;
         }
 
-        PetConfig petConfig = ConfigData.getConfig(PetConfig.class, petId);
+        PetConfig petConfig = ConfigData.getConfig(PetConfig.class, pet.getConfigId());
         Integer currentCount = bag.getMaterialMap().get(petConfig.materialId);
         if (currentCount == null) {
             currentCount = 0;
@@ -389,22 +390,18 @@ public class PetService {
         bag.getPetMap().remove(petId);
         List<Pet> addPets = Lists.newArrayList();
         List<Int2Param> updateIds = Lists.newArrayList();
-        //判断是否拥有同类型宠物
-        if (bag.getPetMap().containsKey(petConfig.nextQualityId)) {
-            PetConfig newPetConfig = ConfigData.getConfig(PetConfig.class, petConfig.nextQualityId);
-            samePetDecompose(bag, newPetConfig, updateIds);
-            cli.param2 = 1;
-        } else {
-            Pet newPet = new Pet();
-            newPet.setId(petConfig.nextQualityId);
-            newPet.setSkillID(petConfig.activeSkillId);
-            newPet.setPassiveSkillId(pet.getPassiveSkillId() + 1);
-            bag.getPetMap().put(newPet.getId(), newPet);
-            bag.getMaterialMap().put(petConfig.materialId, currentCount - petConfig.nextQualityMaterialCount);
-            if (currentCount == petConfig.nextQualityMaterialCount) {
-                bag.getMaterialMap().remove(petConfig.materialId);
-            }
-            addPets.add(newPet);
+
+        PetConfig nextPet = ConfigData.getConfig(PetConfig.class, petConfig.nextQualityId);
+        pet.setConfigId(nextPet.id);
+        pet.setSkillID(nextPet.activeSkillId);
+
+        if (pet.getPassiveSkillId() != 0) {
+            pet.setPassiveSkillId(pet.getPassiveSkillId() + 1);
+        }
+
+        bag.getMaterialMap().put(petConfig.materialId, currentCount - petConfig.nextQualityMaterialCount);
+        if (currentCount == petConfig.nextQualityMaterialCount) {
+            bag.getMaterialMap().remove(petConfig.materialId);
         }
 
         //减少的
@@ -413,15 +410,10 @@ public class PetService {
         delId.param2 = currentCount - petConfig.nextQualityMaterialCount;
         updateIds.add(delId);
 
-        //宠物消耗
-        delId = new Int2Param();
-        delId.param1 = petId;
-        delId.param2 = 0;
-        updateIds.add(delId);
-
+        addPets.add(pet);
         pushUpdateBag(playerId, addPets, updateIds);
         cli.param1 = Response.SUCCESS;
-
+        cli.param2 = petId;
         SessionManager.getInstance().sendMsg(CMD_IMPROVE, cli, playerId);
         if (bag.getFightPetId() == petId) {
             Int2Param vo = toFight(playerId, petConfig.nextQualityId);
@@ -449,10 +441,15 @@ public class PetService {
         bag.updateFlag = true;
         cli.param1 = Response.SUCCESS;
         cli.param2 = petId;
+
+        Player player = playerService.getPlayer(playerId);
+        PetChangeVO vo = new PetChangeVO();
+        vo.playerId = playerId;
+        vo.petId = toFightPet.getConfigId();
+        sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
         return cli;
     }
 
-    private static final int CMD_UPDATE_BAG = 7003;
 
     /**
      * 更新宠物背包

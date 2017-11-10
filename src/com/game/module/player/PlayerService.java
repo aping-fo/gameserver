@@ -14,6 +14,7 @@ import com.game.module.group.GroupService;
 import com.game.module.pet.PetService;
 import com.game.module.team.TeamService;
 import com.game.params.IntParam;
+import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -206,6 +207,10 @@ public class PlayerService implements InitHandler {
 	
 		}
 
+		for(int[] cardArr : globalParam.newbieskillCard) {
+			addSkillCard(playerId,cardArr[0],cardArr[1]);
+		}
+
 		for(Object object : ConfigData.getConfigs(ModuleOpenCfg.class)) {
 			ModuleOpenCfg cfg = (ModuleOpenCfg)object;
 			if(cfg.openType == 1) {
@@ -218,7 +223,19 @@ public class PlayerService implements InitHandler {
 		// 任务
 		taskService.initTask(playerId);
 		goodsService.initBag(playerId);
+
+		for(int[] itemArr : globalParam.GuideEquip) {
+			if(vocation == itemArr[0]) {
+				goodsService.addGoodsToBag(playerId,itemArr[1],1,LogConsume.BAG_INIT);
+				break;
+			}
+
+		}
 		petService.initBag(playerId);
+		for(int[] itemArr : globalParam.InitPets) {
+			petService.addPetMaterial(playerId,itemArr[0],itemArr[1],false);
+		}
+
 		// 计算属性
 		playerCalculator.calculate(player);
 
@@ -415,7 +432,10 @@ public class PlayerService implements InitHandler {
 			vo.modules.add(moduleId);
 		}
 
-		vo.newHandleStep = data.getNewHandleStep();
+		vo.newHandleSteps = Lists.newArrayList();
+		for(int step : data.getGuideSteps()) {
+			vo.newHandleSteps.add(step);
+		}
 		return vo;
 	}
 

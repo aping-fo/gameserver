@@ -260,7 +260,7 @@ public class PlayerExtension {
 	@Command(1009)
 	public Object newHandleStep(int playerId, IntParam param){
 		PlayerData playerData = playerService.getPlayerData(playerId);
-		playerData.setNewHandleStep(param.param);
+		playerData.getGuideSteps().add(param.param);
 		IntParam intParam = new IntParam();
 		intParam.param = param.param;
 		return intParam;

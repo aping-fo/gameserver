@@ -46,6 +46,9 @@ public class GlobalConfig {
 	public int[] weaponId;//初始武器
 	public int[][] initEquips;//初始装备
 	public int[][] newbieMailReward;//新手奖励
+	public int[][] InitPets;//新手宠物
+	public int[][] newbieskillCard;//新手初始技能卡
+	public int[][] GuideEquip;//初始引导装备
 	public int restoreEnergy;//体力恢复
 	public int strengthTicket;//强化券id
 	public int strengthTicketAdd;//强化券增加概率
@@ -151,6 +154,8 @@ public class GlobalConfig {
 	public int QualifyingMatchingPredictTime;//排位赛匹配预计时间(秒)
 	public float joyActionTimeMini;//休闲动作间隔最小时间
 	public float joyActionTimeMax;//休闲动作间隔最大时间
+	public float petJoyActionIntervalMin;//宠物休闲动作间隔最小时间
+	public float petJoyActionIntervalMax;//宠物休闲动作间隔最大时间
 	public int guildCopyTimes;//公会副本每日次数
 	public int guildRewardRate;//公会副本伤害奖励系数
 	public int[] energyPrice;//购买体力价格

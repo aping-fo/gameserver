@@ -139,6 +139,8 @@ public class GangDungeonService implements InitHandler {
         gangDungeon.setHasOpen(1);
         gang.setAsset(gang.getAsset() - cfg.needCredit);
         gangDungeon.getMonsterMap().clear();
+        gangDungeon.getAwardStep().clear();
+
         List<MonsterRefreshConfig> monsters = monsterMap.get(cfg.copyId);
         for (MonsterRefreshConfig conf : monsters) {
             MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
@@ -244,14 +246,15 @@ public class GangDungeonService implements InitHandler {
 
         GangCopyCfg cfg = ConfigData.getConfig(GangCopyCfg.class, gangDungeon.getLayer());
         float progress = gangDungeon.getProgress();
-        for (int i = 0; i < cfg.progress.length; i++) {
+        for (int i = 0; i <= cfg.progress.length; i++) {
             if (progress >= cfg.progress[i]) {
-                if (gangDungeon.checkAndAdd(i)) {
+                int step = i + 1;
+                if (gangDungeon.checkAndAdd(step)) {
                     ServerLogger.warn("============ send guild copy step award" + cfg.progress[i]);
                     List<GoodsEntry> rewards = new ArrayList<>();
-                    int[] itemArr = cfg.progressRewards[i];
-                    for (int k = 0; k < itemArr.length; k += 2) {
-                        GoodsEntry goodsEntry = new GoodsEntry(itemArr[k], itemArr[k + 1]);
+                    int[][] itemArr = cfg.progressRewards.get(step);
+                    for(int[] item : itemArr) {
+                        GoodsEntry goodsEntry = new GoodsEntry(item[0], item[1]);
                         rewards.add(goodsEntry);
                     }
                     String title = ConfigData.getConfig(ErrCode.class, Response.GUILD_COPY_MAIL_TITLE).tips;

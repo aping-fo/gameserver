@@ -127,7 +127,12 @@ public class ShopService {
 				rates.set(i, 0);
 			}
 		}
-		if(result.size() < 6){			
+
+		int n = 6;
+		if(type == COMMON) {
+			n = 10;
+		}
+		if(result.size() < n){
 			for (int i = 0; i < 60; i++) {
 				int index = RandomUtil.getRandomIndex(rates);
 				// 过滤职业
@@ -147,7 +152,7 @@ public class ShopService {
 				// 处理一下权重
 				result.add(ids.get(index));
 				rates.set(index, 0);
-				if (result.size() >= 6) {
+				if (result.size() >= n) {
 					break;
 				}
 			}

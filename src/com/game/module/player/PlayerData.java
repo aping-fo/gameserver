@@ -112,6 +112,7 @@ public class PlayerData {
 
 	private int newHandleStep;
 
+	private Set<Integer> guideSteps = new HashSet<>();
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
@@ -119,6 +120,14 @@ public class PlayerData {
 
 	public int getNewHandleStep() {
 		return newHandleStep;
+	}
+
+	public Set<Integer> getGuideSteps() {
+		return guideSteps;
+	}
+
+	public void setGuideSteps(Set<Integer> guideSteps) {
+		this.guideSteps = guideSteps;
 	}
 
 	public void setNewHandleStep(int newHandleStep) {
