@@ -15,6 +15,7 @@ import java.util.Random;
 
 /**
  * Created by lucky on 2017/7/18.
+ * 
  */
 public class Robot {
     private final String accName;
