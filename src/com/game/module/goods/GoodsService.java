@@ -1,5 +1,6 @@
 package com.game.module.goods;
 
+import java.awt.datatransfer.MimeTypeParseException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -63,7 +64,7 @@ public class GoodsService {
 	private ArtifactService artifactService;
 	@Autowired
 	private trainingLogic trainingLogic;
-	@Autowired	
+	@Autowired
 	private TraversingService traversingService;
 	@Autowired
 	private FashionService fashionService;
@@ -71,6 +72,9 @@ public class GoodsService {
 	private TaskService taskService;
 	@Autowired
 	private PetService petService;
+	@Autowired
+	private GoodsService goodsService;
+
 	private Map<Integer, PlayerBag> playerGoods = new ConcurrentHashMap<Integer, PlayerBag>();
 
 	// 获取玩家的所有物品集合
@@ -94,7 +98,7 @@ public class GoodsService {
 		resetBag(playerId);
 		return bag;
 	}
-	
+
 	//初始化背包
 	public void initBag(int playerId){
 		PlayerBag bag = new PlayerBag();
@@ -106,7 +110,7 @@ public class GoodsService {
 			}
 		});
 	}
-	
+
 	//更新数据库
 	public void updateBag(int playerId){
 		PlayerBag data = playerGoods.get(playerId);
@@ -117,12 +121,12 @@ public class GoodsService {
 		byte[] dbData = str.getBytes(Charset.forName("utf-8"));
 		goodsDao.update(playerId, CompressUtil.compressBytes(dbData));
 	}
-	
+
 	//获得物品
 	public Goods getGoods(int playerId,long id){
 		return getPlayerBag(playerId).getAllGoods().get(id);
 	}
-	
+
 	//增加新物品
 	public void addGoods(int playerId,Goods g){
 		getPlayerBag(playerId).getAllGoods().put(g.getId(), g);
@@ -143,7 +147,7 @@ public class GoodsService {
 		}
 		return exists;
 	}
-		
+
 	// 获取物品配置
 	public GoodsConfig getGoodsConfig(int goodsId) {
 		return GameData.getConfig(GoodsConfig.class, goodsId);
@@ -194,10 +198,10 @@ public class GoodsService {
 		}
 		return Response.SUCCESS;
 	}
-	
+
 	/**
 	 * 扣除消耗
-	 * 
+	 *
 	 * @return 是否成功
 	 */
 	public int decConsume(int playerId, Map<Integer, Integer> goods, LogConsume log, Object... params) {
@@ -210,7 +214,7 @@ public class GoodsService {
 
 	/**
 	 * 扣除消耗
-	 * 
+	 *
 	 * @return 是否成功
 	 */
 	public int decConsume(int playerId, List<GoodsEntry> goodsList, LogConsume log, Object... params) {
@@ -264,7 +268,7 @@ public class GoodsService {
 
 	/**
 	 * 增加物品
-	 * 
+	 *
 	 * @param playerId
 	 * @param goodsId
 	 * @param count
@@ -338,7 +342,7 @@ public class GoodsService {
 				config.type)) {
 			taskService.doTask(playerId, Task.FINISH_WEAR, config.color);
 		}
-	
+
 		return true;
 	}
 
@@ -351,7 +355,7 @@ public class GoodsService {
 
 		return newGoods;
 	}
-	
+
 	//添加附加属性
 	private void addAditiveAttrs(Goods g) {
 		GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, g.getGoodsId());
@@ -377,7 +381,7 @@ public class GoodsService {
 
 	/**
 	 * 增加一堆物品到背包，
-	 * 
+	 *
 	 * @param playerId
 	 * @param addedGoods
 	 * @param log
@@ -493,7 +497,7 @@ public class GoodsService {
 
 	/**
 	 * 删除物品
-	 * 
+	 *
 	 * @param playerId
 	 * @param goodsId
 	 * @param count
@@ -539,7 +543,7 @@ public class GoodsService {
 
 		// 记录日志
 		Player player = playerService.getPlayer(playerId);
-		
+
 		Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false,
 				count, log, goodsId,Goods.GOOODS,params);
 
@@ -555,8 +559,8 @@ public class GoodsService {
 		}
 		return curCount;
 	}
-	
-	
+
+
 
 	public ListParam<SGoodsVo> getAllGoods(int playerId) {
 		ListParam<SGoodsVo> result = new ListParam<SGoodsVo>();
@@ -575,26 +579,26 @@ public class GoodsService {
 
 	public SGoodsVo toVO(Goods g) {
 		SGoodsVo vo = new SGoodsVo();
-		
+
 		vo.id = g.getId();
 		vo.goodsId = g.getGoodsId();
 		vo.stackNum = g.getStackNum();
 		vo.storeType = (byte)g.getStoreType();
 		vo.star = (byte)g.getStar();
-		
+		vo.bLock = g.isLock();
 		vo.addAttrs = new ArrayList<AttrItem>(2);
 		if (!g.getAddAttrList().isEmpty()) {
 			vo.addAttrs.addAll(g.getAddAttrList());
 		}
-		
+
 		vo.lastAttrs = new ArrayList<AttrItem>(2);
 		if(!g.getLastAttrs().isEmpty()){
 			vo.lastAttrs.addAll(g.getLastAttrs());
 		}
-		
+
 		return vo;
 	}
-	
+
 	// 发送奖励api，背包已满自动发送邮件
 	public void addRewards(int playerId, Map<Integer, Integer> rewards, LogConsume type, Object... params) {
 		List<GoodsEntry> _rewards = new ArrayList<GoodsEntry>();
@@ -836,7 +840,7 @@ public class GoodsService {
 		goodsUpdate.add(toVO(owned));
 		if (owned.getStackNum() == 0) {// 删除
 			removeGoods(playerId, owned);
-		} 
+		}
 		refreshGoodsToClient(playerId, goodsUpdate);
 
 		// 记录日志
@@ -990,6 +994,22 @@ public class GoodsService {
 		addGoodsToBag(playerId, config.param2[0][0], 1, LogConsume.ITEM_COMPOUND);
 		ret.param1 = Response.SUCCESS;
 		ret.param2 = config.id;
+		return ret;
+	}
+
+	public Int2Param lockItem(int playerId, int bagId,int lockState) {
+		Int2Param ret = new Int2Param();
+		Goods goods = getGoods(playerId, bagId);
+		if(goods == null) {
+			ret.param1 = Response.ERR_PARAM;
+			return ret;
+		}
+
+		goods.setLock(lockState == 1);
+		ret.param1 = Response.SUCCESS;
+		ret.param2 = bagId;
+
+        //goodsService.refreshGoodsToClient(playerId, goodsService.toVO(goods));
 		return ret;
 	}
  }

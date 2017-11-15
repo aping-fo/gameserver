@@ -141,6 +141,9 @@ public class SkillService {
 	public int composeCard(int playerId, List<Integer> ids) {
 		PlayerData data = playerService.getPlayerData(playerId);
 		SkillCard card = data.getSkillCards().get(ids.get(0));
+		if(card == null) {
+			return Response.ERR_PARAM;
+		}
 		SkillCardConfig cfg = ConfigData.getConfig(SkillCardConfig.class, card.getCardId());
 		int newCardID = cfg.nextQualityCard;
 

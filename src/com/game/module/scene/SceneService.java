@@ -261,6 +261,7 @@ public class SceneService implements InitHandler {
 		Pet pet = petService.getFightPet(player.getPlayerId());
 		if(pet != null) {
 			vo.fightPetConfigId = pet.getConfigId();
+			vo.fightPetHasMutate = pet.isMutate();
 		}
 		if(player.getGangId() > 0){
 			vo.gang = gangService.getGang(player.getGangId()).getName();

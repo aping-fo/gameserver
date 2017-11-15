@@ -24,6 +24,7 @@ public class SScenePlayerVo implements IProtocol {
 	public String gang;//公会
 	public int roomTeam;//组队玩法队伍ID
 	public int fightPetConfigId;//出战宠物配置ID
+	public boolean fightPetHasMutate;//出战宠物是否变异
 
 
 	public void decode(BufferBuilder bb) {
@@ -47,6 +48,7 @@ public class SScenePlayerVo implements IProtocol {
 		this.gang = bb.getString();
 		this.roomTeam = bb.getInt();
 		this.fightPetConfigId = bb.getInt();
+		this.fightPetHasMutate = bb.getBoolean();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -70,5 +72,6 @@ public class SScenePlayerVo implements IProtocol {
 		bb.putString(this.gang);
 		bb.putInt(this.roomTeam);
 		bb.putInt(this.fightPetConfigId);
+		bb.putBoolean(this.fightPetHasMutate);
 	}
 }

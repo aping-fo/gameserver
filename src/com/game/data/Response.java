@@ -188,5 +188,6 @@ public class Response {
 	public static final int PET_MATERIAL_NOT_ENOUGH=4201;//宠物碎片不够
 	public static final int PET_NOT_EXIST=4202;//宠物不存在
 	public static final int PET_MATERIAL_NOT_EXIST=4203;//宠物碎片不存在
+	public static final int PET_FIGHTING=4204;//宠物出战中
 
 }

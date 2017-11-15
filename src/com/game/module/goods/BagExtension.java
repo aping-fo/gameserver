@@ -124,4 +124,10 @@ public class BagExtension {
 	public Object compound(int playerId,IntParam param){
 		return  goodsService.compound(playerId, param.param);
 	}
+
+	//合成
+	@Command(1215)
+	public Object lockItem(int playerId,Int2Param param){
+		return  goodsService.lockItem(playerId, param.param1,param.param2);
+	}
 }

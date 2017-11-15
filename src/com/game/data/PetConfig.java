@@ -18,7 +18,5 @@ public class PetConfig {
 	public int[] nextQualityCost;//升品消耗货币
 	public int nextQualityMaterialCount;//升品或合成需要碎片数量
 	public int[][] decomposeGoods;//分解产生物品id和数量
-	public int[] sameMaterial;//拥有同样属性品质宠物时对应的碎片id和数量
 	public int activeSkillId;//主动技能ID
-	public int goodsId;//物品id
 }

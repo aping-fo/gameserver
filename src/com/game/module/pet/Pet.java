@@ -71,4 +71,8 @@ public class Pet {
         vo.configId = configId;
         return vo;
     }
+
+    public boolean isMutate() {
+        return this.passiveSkillId != 0;
+    }
 }

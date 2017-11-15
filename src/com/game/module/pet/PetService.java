@@ -326,6 +326,12 @@ public class PetService {
             cli.param1 = Response.ERR_PARAM;
             return cli;
         }
+
+        if(bag.getFightPetId() == consumeID) {
+            cli.param1 = Response.PET_FIGHTING;
+            return cli;
+        }
+
         mutatePet.setPassiveSkillId(newSkillID);
         mutatePet.setMutateFlag(true);
 
@@ -387,12 +393,11 @@ public class PetService {
             return cli;
         }
 
-        bag.getPetMap().remove(petId);
         List<Pet> addPets = Lists.newArrayList();
         List<Int2Param> updateIds = Lists.newArrayList();
 
         PetConfig nextPet = ConfigData.getConfig(PetConfig.class, petConfig.nextQualityId);
-        pet.setConfigId(nextPet.id);
+        pet.setConfigId(petConfig.nextQualityId);
         pet.setSkillID(nextPet.activeSkillId);
 
         if (pet.getPassiveSkillId() != 0) {
@@ -415,10 +420,6 @@ public class PetService {
         cli.param1 = Response.SUCCESS;
         cli.param2 = petId;
         SessionManager.getInstance().sendMsg(CMD_IMPROVE, cli, playerId);
-        if (bag.getFightPetId() == petId) {
-            Int2Param vo = toFight(playerId, petConfig.nextQualityId);
-            SessionManager.getInstance().sendMsg(CMD_TO_FIGHT, vo, playerId);
-        }
         return null;
     }
 
@@ -446,6 +447,7 @@ public class PetService {
         PetChangeVO vo = new PetChangeVO();
         vo.playerId = playerId;
         vo.petId = toFightPet.getConfigId();
+        vo.hasMutate = toFightPet.isMutate();
         sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
         return cli;
     }

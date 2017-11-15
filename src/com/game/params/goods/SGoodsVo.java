@@ -13,6 +13,7 @@ public class SGoodsVo implements IProtocol {
 	public List<AttrItem> addAttrs;//附加属性
 	public List<AttrItem> lastAttrs;//上次洗练出来的属性
 	public byte star;//星
+	public boolean bLock;//锁定标记
 
 
 	public void decode(BufferBuilder bb) {
@@ -71,6 +72,7 @@ public class SGoodsVo implements IProtocol {
             }
         }
 		this.star = bb.getByte();
+		this.bLock = bb.getBoolean();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -81,5 +83,6 @@ public class SGoodsVo implements IProtocol {
 		bb.putProtocolVoList(this.addAttrs);
 		bb.putProtocolVoList(this.lastAttrs);
 		bb.putByte(this.star);
+		bb.putBoolean(this.bLock);
 	}
 }
