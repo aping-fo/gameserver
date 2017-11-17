@@ -23,4 +23,5 @@ public class ShopCfg {
 	public boolean isFixed;//是否常驻
 	public boolean isCanAddBuy;//是否可加购
 	public int tabLayoutType;//页UI布局类型
+	public int[] fameLevLimit;//阵营及等级限制
 }

@@ -8,6 +8,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.data.*;
+import com.game.module.fame.FameService;
 import com.game.params.BuyShopVO;
 import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,7 @@ import com.game.util.RandomUtil;
 import com.game.util.TimeUtil;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
+import sun.security.krb5.Config;
 
 /**
  * 商城
@@ -63,6 +65,8 @@ public class ShopService {
 	private PlayerService playerService;
 	@Autowired
 	private GoodsService goodsService;
+	@Autowired
+	private FameService fameService;
 
 	// 获取商城信息
 	public ShopInfo getInfo(int playerId, int type) {
@@ -170,6 +174,14 @@ public class ShopService {
 		if (cfg == null || count <= 0) {
 			vo.errCode = Response.ERR_PARAM;
 			return vo;
+		}
+
+		//阵营等级判断
+		if(cfg.fameLevLimit != null) {
+			if (!fameService.checkFameShopBuy(playerId, cfg.fameLevLimit[0], cfg.fameLevLimit[1])) {
+				vo.errCode = Response.ERR_PARAM;
+				return vo;
+			}
 		}
 		if (cfg.tab == REFRESH) {
 			//count = 1;

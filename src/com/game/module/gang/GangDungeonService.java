@@ -180,7 +180,12 @@ public class GangDungeonService implements InitHandler {
             vo.errCode = Response.GUILD_COPY_DO_NOT_OPEN;
             return vo;
         }
-
+        GangCopyCfg cfg = ConfigData.getConfig(GangCopyCfg.class, gangDungeon.getLayer());
+        CopyConfig copyConfig = ConfigData.getConfig(CopyConfig.class,cfg.copyId);
+        if (player.getLev() < copyConfig.lev) {
+            vo.errCode = Response.NO_LEV;
+            return vo;
+        }
         if (!gangDungeon.checkAndSet(playerId)) {
             vo.errCode = Response.GUILD_COPY_FIGHTING;
             return vo;
@@ -238,15 +243,18 @@ public class GangDungeonService implements InitHandler {
             m.setCurrentHp(hp);
             member.hurt += hurtVO.hurtValue;
             if (gangDungeon.checkDeath()) { //怪死了
-                gangDungeon.setHasOpen(0); //怪物全死了，重置
-                gangDungeon.setLayer(gangDungeon.getLayer() + 1);
+                int maxLayer = ConfigData.getConfigs(GangCopyCfg.class).size();
+                if(gangDungeon.getLayer() < maxLayer) {
+                    gangDungeon.setHasOpen(0); //怪物全死了，重置
+                    gangDungeon.setLayer(gangDungeon.getLayer() + 1);
+                }
                 onBattleEnd(player);
             }
         }
 
         GangCopyCfg cfg = ConfigData.getConfig(GangCopyCfg.class, gangDungeon.getLayer());
         float progress = gangDungeon.getProgress();
-        for (int i = 0; i <= cfg.progress.length; i++) {
+        for (int i = 0; i < cfg.progress.length; i++) {
             if (progress >= cfg.progress[i]) {
                 int step = i + 1;
                 if (gangDungeon.checkAndAdd(step)) {
@@ -330,7 +338,7 @@ public class GangDungeonService implements InitHandler {
         }
 
         Gang gang = gangService.getGang(player.getGangId());
-        if(gang == null) {
+        if(gang != null) {
             GMember member = gang.getMembers().get(playerId);
             member.setChallengeTimes(ConfigData.globalParam().guildCopyTimes);
         }
@@ -380,6 +388,9 @@ public class GangDungeonService implements InitHandler {
         cli.params = new ArrayList<>();
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
         for (GangHurt gh : gangDungeon.hurtRankMap.values()) {
+            if(gh.getHurt() == 0) {
+                continue;
+            }
             GangHurtVO vo = new GangHurtVO();
             vo.name = gh.getName();
             vo.hurt = gh.getHurt();

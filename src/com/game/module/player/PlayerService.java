@@ -224,12 +224,13 @@ public class PlayerService implements InitHandler {
 		taskService.initTask(playerId);
 		goodsService.initBag(playerId);
 
-		for(int[] itemArr : globalParam.GuideEquip) {
-			if(vocation == itemArr[0]) {
-				goodsService.addGoodsToBag(playerId,itemArr[1],1,LogConsume.BAG_INIT);
-				break;
+		if(globalParam.GuideEquip != null) {
+			for (int[] itemArr : globalParam.GuideEquip) {
+				if (vocation == itemArr[0]) {
+					goodsService.addGoodsToBag(playerId, itemArr[1], 1, LogConsume.BAG_INIT);
+					break;
+				}
 			}
-
 		}
 		petService.initBag(playerId);
 		for(int[] itemArr : globalParam.InitPets) {

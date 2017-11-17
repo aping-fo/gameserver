@@ -72,8 +72,6 @@ public class GoodsService {
 	private TaskService taskService;
 	@Autowired
 	private PetService petService;
-	@Autowired
-	private GoodsService goodsService;
 
 	private Map<Integer, PlayerBag> playerGoods = new ConcurrentHashMap<Integer, PlayerBag>();
 
