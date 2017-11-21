@@ -5,10 +5,12 @@ import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.game.module.activity.ActivityTask;
 import com.game.module.copy.Copy;
 import com.game.module.copy.TraverseMap;
 import com.game.module.fashion.Fashion;
 import com.game.module.skill.SkillCard;
+import com.google.common.collect.Maps;
 
 /**
  * 本对象存储一些业务系统的数据 最终将系列化成json字节，压缩后存入数据库
@@ -113,9 +115,20 @@ public class PlayerData {
 	private int newHandleStep;
 
 	private Set<Integer> guideSteps = new HashSet<>();
+
+	private Map<Integer,ActivityTask> activityTasks = Maps.newHashMap();
+
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+	public Map<Integer, ActivityTask> getActivityTasks() {
+		return activityTasks;
+	}
+
+	public void setActivityTasks(Map<Integer, ActivityTask> activityTasks) {
+		this.activityTasks = activityTasks;
 	}
 
 	public int getNewHandleStep() {

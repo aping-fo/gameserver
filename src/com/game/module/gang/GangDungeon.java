@@ -29,6 +29,7 @@ public class GangDungeon {
     @JsonIgnore
     public int fighter = 0;
 
+    /**0：未开启，1：已开启，2：已通关*/
     private int hasOpen = 0;
     /**
      * 公会BOSS 伤害
@@ -163,7 +164,8 @@ public class GangDungeon {
     }
 
     public void reset() {
-        layer = 0;
+        layer = 1;
+        hasOpen = 0;
         monsterMap.clear();
         awardStep.clear();
     }

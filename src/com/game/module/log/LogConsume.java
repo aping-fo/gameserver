@@ -75,7 +75,10 @@ public enum LogConsume {
 	PET_MATERIAL_DEC(1068, "宠物碎片分解"),
 	PET_DEC(1069, "宠物分解"),
 	PET_IMPROVE(1070, "宠物分解"),
-	BAG_INIT(1071, "初始装备")
+	BAG_INIT(1071, "初始装备"),
+	ACTIVITY_REWARD(1072, "活动奖励领取"),
+	ACTIVITY_RE_REWARD(1073, "活动补奖励领取"),
+	ACTIVITY_OPEN(1074, "活动开启")
 	;
 	public int actionId;// id
 	public String desc;

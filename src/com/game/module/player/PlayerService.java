@@ -10,6 +10,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 import com.game.data.*;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.group.GroupService;
 import com.game.module.pet.PetService;
 import com.game.module.team.TeamService;
@@ -90,6 +92,9 @@ public class PlayerService implements InitHandler {
 	private TeamService teamService;
 	@Autowired
 	private PetService petService;
+	@Autowired
+	private ActivityService activityService;
+
 	private static volatile int maxPlayerId = 0;
 
 	private volatile Map<Integer, Player> players = new ConcurrentHashMap<Integer, Player>();
@@ -350,6 +355,8 @@ public class PlayerService implements InitHandler {
 		refreshTraversingEnergy(player);
 		//更新货币
 		updateCurrencyToClient(playerId);
+		//活动检测
+		activityService.checkNewActivity(playerId);
 		nameCaches.putIfAbsent(player.getName(), player.getPlayerId());
 	}
 
@@ -611,6 +618,8 @@ public class PlayerService implements InitHandler {
 				SessionManager.getInstance().setPlayerLev(playerId, player.getLev());
 			}
 			taskService.checkTaskWhenLevUp(playerId);
+
+			activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_LEVEL,player.getLev(), ActivityConsts.UpdateType.T_VALUE);
 		} 
 		// 发送到前端
 		updateAttrsToClient(playerId, Player.EXP,player.getExp(),Player.LEV,player.getLev());
@@ -910,5 +919,13 @@ public class PlayerService implements InitHandler {
 			return true;
 		}
 		return false;
+	}
+
+	public Map<Integer, Player> getPlayers() {
+		return players;
+	}
+
+	public Map<Integer, PlayerData> getPlayerDatas() {
+		return playerDatas;
 	}
 }

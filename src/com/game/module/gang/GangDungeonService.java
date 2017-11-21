@@ -13,6 +13,7 @@ import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.gang.*;
 import com.game.params.scene.SkillHurtVO;
+import com.game.params.worldboss.MonsterHurtVO;
 import com.game.util.ConfigData;
 import com.server.SessionManager;
 import com.server.util.GameData;
@@ -93,7 +94,7 @@ public class GangDungeonService implements InitHandler {
         vo.progress = gangDungeon.getProgress();
         vo.hasOpen = gangDungeon.getHasOpen();
         vo.playerId = gangDungeon.fighter;
-        if(vo.hasOpen == 0) {
+        if (vo.hasOpen == 0) {
             vo.progress = 0;
         }
         return vo;
@@ -180,8 +181,14 @@ public class GangDungeonService implements InitHandler {
             vo.errCode = Response.GUILD_COPY_DO_NOT_OPEN;
             return vo;
         }
+
+        if(gangDungeon.getHasOpen() == 2) {
+            vo.errCode = Response.ERR_PARAM;
+            return vo;
+        }
+
         GangCopyCfg cfg = ConfigData.getConfig(GangCopyCfg.class, gangDungeon.getLayer());
-        CopyConfig copyConfig = ConfigData.getConfig(CopyConfig.class,cfg.copyId);
+        CopyConfig copyConfig = ConfigData.getConfig(CopyConfig.class, cfg.copyId);
         if (player.getLev() < copyConfig.lev) {
             vo.errCode = Response.NO_LEV;
             return vo;
@@ -197,7 +204,7 @@ public class GangDungeonService implements InitHandler {
         vo.errCode = Response.SUCCESS;
         vo.monsters = new ArrayList<>();
         for (Monster m : gangDungeon.getMonsterMap().values()) {
-            if(m.getCurrentHp() <= 0) {
+            if (m.getCurrentHp() <= 0) {
                 continue;
             }
             MonsterVo svo = new MonsterVo();
@@ -209,16 +216,17 @@ public class GangDungeonService implements InitHandler {
         return vo;
     }
 
-    public boolean checkDeath(Player player,int monsterId) {
+    public boolean checkDeath(Player player, int monsterId) {
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
         Monster m = gangDungeon.getMonsterMap().get(monsterId);
-        if(m == null) {
+        if (m == null) {
             return true;
         }
         return m.getCurrentHp() <= 0;
     }
 
     private static final int CMD_BATTLE_END = 2531; //推送战斗结束
+    private static final int CMD_MONSTER_INFO = 4910; //同步怪物相关信息
 
     // 玩家技能处理
     public void handleSkillHurt(Player player, SkillHurtVO hurtVO) {
@@ -241,12 +249,23 @@ public class GangDungeonService implements InitHandler {
             Monster m = gangDungeon.getMonsterMap().get(hurtVO.targetId);
             int hp = m.getCurrentHp() - hurtVO.hurtValue > 0 ? m.getCurrentHp() - hurtVO.hurtValue : 0;
             m.setCurrentHp(hp);
+            MonsterHurtVO vo = new MonsterHurtVO();
+            vo.actorId = hurtVO.targetId;
+            vo.curHp = hp;
+            vo.hurt = hurtVO.hurtValue;
+            vo.isCrit = hurtVO.isCrit;
+            vo.type = 1;
+            SessionManager.getInstance().sendMsg(CMD_MONSTER_INFO, vo, player.getPlayerId());
+
+
             member.hurt += hurtVO.hurtValue;
             if (gangDungeon.checkDeath()) { //怪死了
                 int maxLayer = ConfigData.getConfigs(GangCopyCfg.class).size();
-                if(gangDungeon.getLayer() < maxLayer) {
+                if (gangDungeon.getLayer() < maxLayer) {
                     gangDungeon.setHasOpen(0); //怪物全死了，重置
                     gangDungeon.setLayer(gangDungeon.getLayer() + 1);
+                } else {
+                    gangDungeon.setHasOpen(2);
                 }
                 onBattleEnd(player);
             }
@@ -261,7 +280,7 @@ public class GangDungeonService implements InitHandler {
                     ServerLogger.warn("============ send guild copy step award" + cfg.progress[i]);
                     List<GoodsEntry> rewards = new ArrayList<>();
                     int[][] itemArr = cfg.progressRewards.get(step);
-                    for(int[] item : itemArr) {
+                    for (int[] item : itemArr) {
                         GoodsEntry goodsEntry = new GoodsEntry(item[0], item[1]);
                         rewards.add(goodsEntry);
                     }
@@ -326,8 +345,8 @@ public class GangDungeonService implements InitHandler {
     public void onLogout(int playerId) {
         try {
             onExitDungeon(playerId);
-        }catch (Exception e) {
-            ServerLogger.err(e,"=========== guild copy ");
+        } catch (Exception e) {
+            ServerLogger.err(e, "=========== guild copy ");
         }
     }
 
@@ -338,7 +357,7 @@ public class GangDungeonService implements InitHandler {
         }
 
         Gang gang = gangService.getGang(player.getGangId());
-        if(gang != null) {
+        if (gang != null) {
             GMember member = gang.getMembers().get(playerId);
             member.setChallengeTimes(ConfigData.globalParam().guildCopyTimes);
         }
@@ -375,6 +394,7 @@ public class GangDungeonService implements InitHandler {
 
     /**
      * 获取伤害列表
+     *
      * @param playerId
      * @return
      */
@@ -388,7 +408,7 @@ public class GangDungeonService implements InitHandler {
         cli.params = new ArrayList<>();
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
         for (GangHurt gh : gangDungeon.hurtRankMap.values()) {
-            if(gh.getHurt() == 0) {
+            if (gh.getHurt() == 0) {
                 continue;
             }
             GangHurtVO vo = new GangHurtVO();

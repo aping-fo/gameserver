@@ -228,6 +228,9 @@ public class GangExtension {
 		GTrainingVO vo = new GTrainingVO();
 		Player player = playerService.getPlayer(playerId);
 		Gang gang = gangService.getGang(player.getGangId());
+		if(gang == null) {
+			return null;
+		}
 		GTRoom room = gang.getGtRoom();
 		if(room != null){
 			vo.id = room.getId();

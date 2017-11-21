@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.Map.Entry;
 
 import com.game.data.VIPConfig;
+import com.game.module.activity.ActivityService;
 import com.game.module.attach.catchgold.CatchGoldAttach;
 import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.leadaway.LeadAwayLogic;
@@ -72,7 +73,8 @@ public class DailyService implements InitHandler {
 	private CatchGoldLogic catchGoldLogic;
 	@Autowired
 	private GangDungeonService gangDungeonService;
-
+	@Autowired
+	private ActivityService activityService;
 	public static long FIVE_CLOCK = 0;
 	public static long MONDAY_FIVE_CLOCK = 0;
 
@@ -200,6 +202,7 @@ public class DailyService implements InitHandler {
 		lotteryLogic.dailyReset(playerId);
 		catchGoldLogic.dailyReset(playerId);
 		gangDungeonService.dailyReset(playerId);
+		activityService.dailyRest(playerId);
 	}
 	
 	public void resetWeeklyData(PlayerData data){

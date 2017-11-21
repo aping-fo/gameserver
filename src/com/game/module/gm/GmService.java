@@ -2,6 +2,7 @@ package com.game.module.gm;
 
 import com.game.data.CopyConfig;
 import com.game.data.GangTrainingCfg;
+import com.game.module.activity.ActivityService;
 import com.game.module.admin.MessageService;
 import com.game.module.attach.arena.ArenaExtension;
 import com.game.module.attach.arena.ArenaLogic;
@@ -548,4 +549,21 @@ public class GmService {
 	public void ladderDebug(int playerId,String ... params) {
 		ladderService.gmDebug();
 	}
+
+	@Autowired
+	private ActivityService activityService;
+	public void getOpenActivitys(int playerId,String ... params) {
+		activityService.getOpenActivitys(playerId);
+	}
+
+	public void getActivityAwards(int playerId,String ... params) {
+		int taskId = Integer.valueOf(params[0]);
+		activityService.getActivityAwards(playerId,taskId);
+	}
+
+	public void openActivity(int playerId,String ... params) {
+		int activityId = Integer.valueOf(params[0]);
+		activityService.openActivity(playerId,activityId);
+	}
+
 }
