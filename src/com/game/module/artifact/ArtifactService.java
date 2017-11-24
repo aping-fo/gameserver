@@ -174,7 +174,7 @@ public class ArtifactService {
 		int itemId = conf.consume[0];
 		int totalCount = goodsService.getGoodsCount(playerId, itemId);
 		int upTimes = 0;
-		for (int i = level + 1; i <= maxLevel; i++) {
+		for (int i = level + 1; i <= level + 1; i++) {
 			conf = ConfigData.getArtifactLevelUpCfgs().get(sid + "_" + i);
 			int needCount = conf.consume[1];
 			if (needCount > totalCount) {

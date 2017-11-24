@@ -38,7 +38,6 @@ import com.server.util.ServerLogger;
 
 @Extension
 public class PlayerExtension {
-
 	@Autowired
 	private PlayerService playerService;
 	@Autowired
@@ -61,6 +60,12 @@ public class PlayerExtension {
 	@UnLogin
 	@Command(1001)
 	public Object getRoleList(int playerId, StringParam param, Channel channel) {
+		if (playerService.getPlayers().size() > SysConfig.maxCon) {
+			IntParam result = new IntParam();
+			SessionManager.sendDataInner(channel, 1010, result);
+			return null;
+		}
+
 		String accName = param.param;
 		channel.attr(CHANNEL).set(accName);
 		List<Player> roleList = playerService.getPlayersByAccName(accName);

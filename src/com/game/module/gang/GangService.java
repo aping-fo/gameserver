@@ -1198,24 +1198,7 @@ public class GangService implements InitHandler {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	public static class CloseTask implements Runnable{
 
 		private Gang gang;

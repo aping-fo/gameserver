@@ -14,4 +14,8 @@ public class ActivityCfg {
 	public String EndTime;//结束时间
 	public int[] WeekTime;//周时间
 	public int[] HourTime;//小时
+	public int Param0;//偏移参数
+	public int sort;//排序
+	public String des;//描述
+	public String viewname;//View名字
 }

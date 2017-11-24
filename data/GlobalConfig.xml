@@ -42,7 +42,10 @@
 	<fashionId>[111012,121012,131012]</fashionId>
 	<weaponId>[111013,121013,131013]</weaponId>
 	<initEquips>[[20111001,20211001,20311001,20411001,20511001,20611001],[20121001,20221001,20321001,20421001,20521001,20621001],[20131001,20231001,20331001,20431001,20531001,20631001]]</initEquips>
-	<newbieMailReward>[[109101,2],[109201,2],[109301,2],[109401,2],[109501,2],[124,100],[50101,5],[50202,5],[50303,5],[50404,5],[50505,1],[50601,5],[50802,5],[50813,5],[50824,5],[50835,1],[50841,5],[50852,5],[51003,5],[51204,5],[50905,1],[51301,5],[51702,5],[50883,5],[51904,5],[51605,1]]</newbieMailReward>
+	<newbieMailReward>[[102,888],[103,888]]</newbieMailReward>
+	<InitPets>[[65011,100],[65021,100],[65031,100],[65041,100],[65051,100],[65061,100]]</InitPets>
+	<newbieskillCard>[[1040206,5],[1050206,5]]</newbieskillCard>
+	<GuideEquip></GuideEquip>
 	<restoreEnergy>6</restoreEnergy>
 	<strengthTicket>302001</strengthTicket>
 	<strengthTicketAdd>10</strengthTicketAdd>
@@ -108,9 +111,9 @@
 	<worldBossHurtReward>[102,10]</worldBossHurtReward>
 	<worldBossOpenTime>[11,12,15,16,18,19]</worldBossOpenTime>
 	<teamLimit>1:2</teamLimit>
-	<skillCardGroupOpenVip>[0,1,3,5,7,9]</skillCardGroupOpenVip>
+	<skillCardGroupOpenVip>[0,0,3,5,7,8]</skillCardGroupOpenVip>
 	<rewardRate>[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]</rewardRate>
-	<mainCityPlayerInfo>1:[[17,-4.5,-0.6],[0,288,6.5],[2.1,2.1,2.1]];2:[[17,-4.5,-0.6],[0,288,6.5],[2.1,2.1,2.1]];3:[[17,-4.5,-0.6],[0,288,6.5],[2.1,2.1,2.1]]</mainCityPlayerInfo>
+	<mainCityPlayerInfo>1:[[12.54,-8.8,15.5],[0,292,6.5],[3.6,3.6,3.6]];2:[[12.54,-8.8,15.5],[0,292,6.5],[3.6,3.6,3.6]];3:[[12.54,-8.8,15.5],[0,292,6.5],[3.6,3.6,3.6]]</mainCityPlayerInfo>
 	<mainCityCameraInfo>[-0.01,0.06,-0.2,0.11]</mainCityCameraInfo>
 	<attackMinThreshold>[3.6,3.6,2,2]</attackMinThreshold>
 	<attackSafeThreshold>[8,8,2,2]</attackSafeThreshold>
@@ -148,6 +151,8 @@
 	<QualifyingMatchingPredictTime>30</QualifyingMatchingPredictTime>
 	<joyActionTimeMini>50</joyActionTimeMini>
 	<joyActionTimeMax>65</joyActionTimeMax>
+	<petJoyActionIntervalMin>6</petJoyActionIntervalMin>
+	<petJoyActionIntervalMax>12</petJoyActionIntervalMax>
 	<guildCopyTimes>10</guildCopyTimes>
 	<guildRewardRate>10000</guildRewardRate>
 	<energyPrice>[25,50,75,100,125,150,175,200]</energyPrice>
@@ -156,6 +161,6 @@
 	<coinBuy>5000</coinBuy>
 	<buffStrikenEffectPriority>1:6;2:4;3:5;4:1;5:2;6:3</buffStrikenEffectPriority>
 	<cardLvUpPrice>[[103,1],[103,2],[103,3],[103,4]]</cardLvUpPrice>
-	<mainCityMapParas>[0.3,0.3,14.7]</mainCityMapParas>
+	<mainCityMapParas>[0.3,0.3,23.7]</mainCityMapParas>
 </config>
 </root>

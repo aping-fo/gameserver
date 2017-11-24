@@ -71,7 +71,7 @@
 	<bindPos></bindPos>
 	<modelName>equip.prefab</modelName>
 	<model2Name></model2Name>
-	<effectId>1110013</effectId>
+	<effectId></effectId>
 	<effect2Id></effect2Id>
 	<outlineColor>#42373d</outlineColor>
 	<path>Assets/Actor/Role/11101/11101_equip.prefab</path>
@@ -431,7 +431,7 @@
 	<bindPos></bindPos>
 	<modelName>equip.prefab</modelName>
 	<model2Name></model2Name>
-	<effectId></effectId>
+	<effectId>1110053</effectId>
 	<effect2Id></effect2Id>
 	<outlineColor>#341E0D</outlineColor>
 	<path>Assets/Actor/Role/11105/11105_equip.prefab</path>
@@ -449,6 +449,96 @@
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
 	<order>15</order>
+</config>
+<config>
+	<id>111061</id>
+	<desc>走马狂歌,仗剑行天下。</desc>
+	<name>狂歌行</name>
+	<vocation>1</vocation>
+	<icon>1061</icon>
+	<atlas>Fashion_1</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#583016</outlineColor>
+	<path>Assets/Actor/Role/11106/11106_head.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>16</order>
+</config>
+<config>
+	<id>111062</id>
+	<desc>走马狂歌,仗剑行天下。</desc>
+	<name>狂歌行</name>
+	<vocation>1</vocation>
+	<icon>1062</icon>
+	<atlas>Fashion_1</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#431F12</outlineColor>
+	<path>Assets/Actor/Role/11106/11106_body.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>17</order>
+</config>
+<config>
+	<id>111063</id>
+	<desc>走马狂歌,仗剑行天下。</desc>
+	<name>狂歌行</name>
+	<vocation>1</vocation>
+	<icon>1063</icon>
+	<atlas>Fashion_1</atlas>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId>1110063</effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#341E0D</outlineColor>
+	<path>Assets/Actor/Role/11106/11106_equip.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>18</order>
 </config>
 <config>
 	<id>121011</id>
@@ -478,7 +568,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>16</order>
+	<order>19</order>
 </config>
 <config>
 	<id>121012</id>
@@ -508,7 +598,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>17</order>
+	<order>20</order>
 </config>
 <config>
 	<id>121013</id>
@@ -538,7 +628,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>18</order>
+	<order>21</order>
 </config>
 <config>
 	<id>121021</id>
@@ -568,7 +658,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>19</order>
+	<order>22</order>
 </config>
 <config>
 	<id>121022</id>
@@ -598,7 +688,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>20</order>
+	<order>23</order>
 </config>
 <config>
 	<id>121023</id>
@@ -628,7 +718,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>21</order>
+	<order>24</order>
 </config>
 <config>
 	<id>121031</id>
@@ -658,7 +748,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>22</order>
+	<order>25</order>
 </config>
 <config>
 	<id>121032</id>
@@ -688,7 +778,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>23</order>
+	<order>26</order>
 </config>
 <config>
 	<id>121033</id>
@@ -718,7 +808,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>24</order>
+	<order>27</order>
 </config>
 <config>
 	<id>121041</id>
@@ -748,7 +838,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>25</order>
+	<order>28</order>
 </config>
 <config>
 	<id>121042</id>
@@ -778,7 +868,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>26</order>
+	<order>29</order>
 </config>
 <config>
 	<id>121043</id>
@@ -808,7 +898,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>27</order>
+	<order>30</order>
 </config>
 <config>
 	<id>121051</id>
@@ -838,7 +928,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>28</order>
+	<order>31</order>
 </config>
 <config>
 	<id>121052</id>
@@ -868,7 +958,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>29</order>
+	<order>32</order>
 </config>
 <config>
 	<id>121053</id>
@@ -881,8 +971,8 @@
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
 	<model2Name>weapon02.prefab</model2Name>
-	<effectId>1210043</effectId>
-	<effect2Id>1210044</effect2Id>
+	<effectId>1210053</effectId>
+	<effect2Id>1210054</effect2Id>
 	<outlineColor>#271F3A</outlineColor>
 	<path>Assets/Actor/Role/12105/12105_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12105/12105_weapon02.prefab</path2>
@@ -898,10 +988,100 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>30</order>
+	<order>33</order>
 </config>
 <config>
 	<id>121061</id>
+	<desc>蝶舞乱相迎,仙歌宛转听。</desc>
+	<name>蝶舞妃姬</name>
+	<vocation>2</vocation>
+	<icon>2061</icon>
+	<atlas>Fashion_2</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#433127</outlineColor>
+	<path>Assets/Actor/Role/12106/12106_head.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>34</order>
+</config>
+<config>
+	<id>121062</id>
+	<desc>蝶舞乱相迎,仙歌宛转听。</desc>
+	<name>蝶舞妃姬</name>
+	<vocation>2</vocation>
+	<icon>2062</icon>
+	<atlas>Fashion_2</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#5B3226</outlineColor>
+	<path>Assets/Actor/Role/12106/12106_body.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>35</order>
+</config>
+<config>
+	<id>121063</id>
+	<desc>蝶舞乱相迎,仙歌宛转听。</desc>
+	<name>蝶舞妃姬</name>
+	<vocation>2</vocation>
+	<icon>2063</icon>
+	<atlas>Fashion_2</atlas>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>weapon01.prefab</modelName>
+	<model2Name>weapon02.prefab</model2Name>
+	<effectId>1210063</effectId>
+	<effect2Id>1210064</effect2Id>
+	<outlineColor>#271F3A</outlineColor>
+	<path>Assets/Actor/Role/12106/12106_weapon01.prefab</path>
+	<path2>Assets/Actor/Role/12106/12106_weapon02.prefab</path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>36</order>
+</config>
+<config>
+	<id>121071</id>
 	<desc>静如影,轻如羽,迅如蛇。</desc>
 	<name>影舞使者</name>
 	<vocation>2</vocation>
@@ -928,10 +1108,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>31</order>
+	<order>37</order>
 </config>
 <config>
-	<id>121062</id>
+	<id>121072</id>
 	<desc>静如影,轻如羽,迅如蛇。</desc>
 	<name>影舞使者</name>
 	<vocation>2</vocation>
@@ -958,10 +1138,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>32</order>
+	<order>38</order>
 </config>
 <config>
-	<id>121063</id>
+	<id>121073</id>
 	<desc>静如影,轻如羽,迅如蛇。</desc>
 	<name>影舞使者</name>
 	<vocation>2</vocation>
@@ -971,8 +1151,8 @@
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
 	<model2Name>weapon02.prefab</model2Name>
-	<effectId></effectId>
-	<effect2Id></effect2Id>
+	<effectId>1210073</effectId>
+	<effect2Id>1210074</effect2Id>
 	<outlineColor>#413139</outlineColor>
 	<path>Assets/Actor/Role/12107/12107_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12107/12107_weapon02.prefab</path2>
@@ -988,10 +1168,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>33</order>
+	<order>39</order>
 </config>
 <config>
-	<id>121071</id>
+	<id>121081</id>
 	<desc>暗夜,是完美的掩护！喵~</desc>
 	<name>暗夜猫女</name>
 	<vocation>2</vocation>
@@ -1018,10 +1198,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>34</order>
+	<order>40</order>
 </config>
 <config>
-	<id>121072</id>
+	<id>121082</id>
 	<desc>暗夜,是完美的掩护！喵~</desc>
 	<name>暗夜猫女</name>
 	<vocation>2</vocation>
@@ -1048,10 +1228,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>35</order>
+	<order>41</order>
 </config>
 <config>
-	<id>121073</id>
+	<id>121083</id>
 	<desc>暗夜,是完美的掩护！喵~</desc>
 	<name>暗夜猫女</name>
 	<vocation>2</vocation>
@@ -1061,8 +1241,8 @@
 	<bindPos>equip</bindPos>
 	<modelName>weapon01.prefab</modelName>
 	<model2Name>weapon02.prefab</model2Name>
-	<effectId></effectId>
-	<effect2Id></effect2Id>
+	<effectId>1210083</effectId>
+	<effect2Id>1210084</effect2Id>
 	<outlineColor>#413139</outlineColor>
 	<path>Assets/Actor/Role/12108/12108_weapon01.prefab</path>
 	<path2>Assets/Actor/Role/12108/12108_weapon02.prefab</path2>
@@ -1078,7 +1258,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>36</order>
+	<order>42</order>
 </config>
 <config>
 	<id>131011</id>
@@ -1108,7 +1288,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>37</order>
+	<order>43</order>
 </config>
 <config>
 	<id>131012</id>
@@ -1138,7 +1318,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>38</order>
+	<order>44</order>
 </config>
 <config>
 	<id>131013</id>
@@ -1168,7 +1348,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>39</order>
+	<order>45</order>
 </config>
 <config>
 	<id>131021</id>
@@ -1198,7 +1378,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>40</order>
+	<order>46</order>
 </config>
 <config>
 	<id>131022</id>
@@ -1228,7 +1408,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>41</order>
+	<order>47</order>
 </config>
 <config>
 	<id>131023</id>
@@ -1258,7 +1438,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>42</order>
+	<order>48</order>
 </config>
 <config>
 	<id>131031</id>
@@ -1288,7 +1468,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>43</order>
+	<order>49</order>
 </config>
 <config>
 	<id>131032</id>
@@ -1318,7 +1498,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>44</order>
+	<order>50</order>
 </config>
 <config>
 	<id>131033</id>
@@ -1348,7 +1528,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>45</order>
+	<order>51</order>
 </config>
 <config>
 	<id>131041</id>
@@ -1378,7 +1558,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>46</order>
+	<order>52</order>
 </config>
 <config>
 	<id>131042</id>
@@ -1408,7 +1588,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>47</order>
+	<order>53</order>
 </config>
 <config>
 	<id>131043</id>
@@ -1438,11 +1618,11 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>48</order>
+	<order>54</order>
 </config>
 <config>
 	<id>131051</id>
-	<desc>神权至下！</desc>
+	<desc>为了阿蒙的荣耀,上埃及必定统治下埃及！</desc>
 	<name>努比亚少女</name>
 	<vocation>3</vocation>
 	<icon>3051</icon>
@@ -1468,11 +1648,11 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>49</order>
+	<order>55</order>
 </config>
 <config>
 	<id>131052</id>
-	<desc>神权至下！</desc>
+	<desc>为了阿蒙的荣耀,上埃及必定统治下埃及！</desc>
 	<name>努比亚少女</name>
 	<vocation>3</vocation>
 	<icon>3052</icon>
@@ -1498,11 +1678,11 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>50</order>
+	<order>56</order>
 </config>
 <config>
 	<id>131053</id>
-	<desc>神权至下！</desc>
+	<desc>为了阿蒙的荣耀,上埃及必定统治下埃及！</desc>
 	<name>努比亚少女</name>
 	<vocation>3</vocation>
 	<icon>3053</icon>
@@ -1511,7 +1691,7 @@
 	<bindPos>equip</bindPos>
 	<modelName>equip.prefab</modelName>
 	<model2Name></model2Name>
-	<effectId></effectId>
+	<effectId>1310053</effectId>
 	<effect2Id></effect2Id>
 	<outlineColor>#472A2C</outlineColor>
 	<path>Assets/Actor/Role/13105/13105_equip.prefab</path>
@@ -1528,10 +1708,100 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>51</order>
+	<order>57</order>
 </config>
 <config>
 	<id>131061</id>
+	<desc>吃我一招蝶舞纷飞波！</desc>
+	<name>花仙子</name>
+	<vocation>3</vocation>
+	<icon>3061</icon>
+	<atlas>Fashion_3</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#492214</outlineColor>
+	<path>Assets/Actor/Role/13106/13106_head.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>55</order>
+</config>
+<config>
+	<id>131062</id>
+	<desc>吃我一招蝶舞纷飞波！</desc>
+	<name>花仙子</name>
+	<vocation>3</vocation>
+	<icon>3062</icon>
+	<atlas>Fashion_3</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#563232</outlineColor>
+	<path>Assets/Actor/Role/13106/13106_body.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>56</order>
+</config>
+<config>
+	<id>131063</id>
+	<desc>吃我一招蝶舞纷飞波！</desc>
+	<name>花仙子</name>
+	<vocation>3</vocation>
+	<icon>3063</icon>
+	<atlas>Fashion_3</atlas>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId>1310063</effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#472A2C</outlineColor>
+	<path>Assets/Actor/Role/13106/13106_equip.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,100]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>57</order>
+</config>
+<config>
+	<id>131071</id>
 	<desc>和风日丽,等待下一个夏日祭到来吧。</desc>
 	<name>东瀛少女</name>
 	<vocation>3</vocation>
@@ -1558,10 +1828,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>52</order>
+	<order>58</order>
 </config>
 <config>
-	<id>131062</id>
+	<id>131072</id>
 	<desc>和风日丽,等待下一个夏日祭到来吧。</desc>
 	<name>东瀛少女</name>
 	<vocation>3</vocation>
@@ -1588,10 +1858,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>53</order>
+	<order>59</order>
 </config>
 <config>
-	<id>131063</id>
+	<id>131073</id>
 	<desc>和风日丽,等待下一个夏日祭到来吧。</desc>
 	<name>东瀛少女</name>
 	<vocation>3</vocation>
@@ -1601,7 +1871,7 @@
 	<bindPos>equip</bindPos>
 	<modelName>equip.prefab</modelName>
 	<model2Name></model2Name>
-	<effectId></effectId>
+	<effectId>1310073</effectId>
 	<effect2Id></effect2Id>
 	<outlineColor>#472A2C</outlineColor>
 	<path>Assets/Actor/Role/13107/13107_equip.prefab</path>
@@ -1618,10 +1888,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>54</order>
+	<order>60</order>
 </config>
 <config>
-	<id>131071</id>
+	<id>131081</id>
 	<desc>敢抢走我的胡萝卜,告诉你家长哟~</desc>
 	<name>乖萌兔女</name>
 	<vocation>3</vocation>
@@ -1648,10 +1918,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>55</order>
+	<order>61</order>
 </config>
 <config>
-	<id>131072</id>
+	<id>131082</id>
 	<desc>敢抢走我的胡萝卜,告诉你家长哟~</desc>
 	<name>乖萌兔女</name>
 	<vocation>3</vocation>
@@ -1678,10 +1948,10 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>56</order>
+	<order>62</order>
 </config>
 <config>
-	<id>131073</id>
+	<id>131083</id>
 	<desc>敢抢走我的胡萝卜,告诉你家长哟~</desc>
 	<name>乖萌兔女</name>
 	<vocation>3</vocation>
@@ -1691,7 +1961,7 @@
 	<bindPos>equip</bindPos>
 	<modelName>equip.prefab</modelName>
 	<model2Name></model2Name>
-	<effectId></effectId>
+	<effectId>1310083</effectId>
 	<effect2Id></effect2Id>
 	<outlineColor>#472313</outlineColor>
 	<path>Assets/Actor/Role/13108/13108_equip.prefab</path>
@@ -1708,6 +1978,6 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>57</order>
+	<order>63</order>
 </config>
 </root>

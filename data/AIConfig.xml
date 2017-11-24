@@ -613,6 +613,15 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>50101001</id>
+	<url>Assets/Data/Designer/Pet_General.prefab</url>
+	<AiStateLogicId>5</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>350011</id>
 	<url>Assets/Data/Designer/350011.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>

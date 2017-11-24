@@ -191,5 +191,9 @@ public class Response {
 	public static final int PET_FIGHTING=4204;//宠物出战中
 	//活动
 	public static final int ACTIVITY_DONT_FINISH=4205;//活动未完成
+	public static final int WEEKLY_CARD_TITLE=4206;//周卡邮件标题
+	public static final int WEEKLY_CARD_CONTENT=4207;//周卡邮件内容
+	public static final int MONTHLYLY_CARD_TITLE=4208;//月卡邮件内容
+	public static final int MONTHLYLY_CARD_CONTENT=4209;//月卡邮件内容
 
 }

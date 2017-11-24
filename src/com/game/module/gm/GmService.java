@@ -553,7 +553,7 @@ public class GmService {
 	@Autowired
 	private ActivityService activityService;
 	public void getOpenActivitys(int playerId,String ... params) {
-		activityService.getOpenActivitys(playerId);
+		activityService.getPlayerActivitys(playerId);
 	}
 
 	public void getActivityAwards(int playerId,String ... params) {
@@ -566,4 +566,14 @@ public class GmService {
 		activityService.openActivity(playerId,activityId);
 	}
 
+	public void getAwardAgain(int playerId,String ... params) {
+		int taskId = Integer.valueOf(params[0]);
+		activityService.fixedActivityAwards(playerId,taskId);
+	}
+
+	@Autowired
+	private GangDungeonService gangDungeonService;
+	public void gangCopyReset(int playerId,String ... params){
+		gangDungeonService.gmGangCopyRest(playerId);
+	}
 }

@@ -6,7 +6,7 @@
 	<name>1</name>
 	<needCredit>100</needCredit>
 	<hurtRewards>[104,1]</hurtRewards>
-	<progressRewards>[[102,103],[102,103],[102,103],[102,103],[102,103]]</progressRewards>
+	<progressRewards>1:[[102,5],[103,100]];2:[[102,10],[103,200]];3:[[102,20],[103,300]];4:[[102,30],[103,400]];5:[[102,40],[103,500]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
@@ -15,7 +15,7 @@
 	<name>1</name>
 	<needCredit>100</needCredit>
 	<hurtRewards>[104,2]</hurtRewards>
-	<progressRewards>[[102,103,104],[102,103,104],[102,103,104],[102,103,104],[102,103,104]]</progressRewards>
+	<progressRewards>1:[[102,10],[103,200]];2:[[102,20],[103,300]];3:[[102,30],[103,400]];4:[[102,40],[103,500]];5:[[102,50],[103,600]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
@@ -24,7 +24,7 @@
 	<name>1</name>
 	<needCredit>100</needCredit>
 	<hurtRewards>[104,3]</hurtRewards>
-	<progressRewards>[[102,103],[102,103],[102,103],[102,103],[102,103]]</progressRewards>
+	<progressRewards>1:[[102,20],[103,300]];2:[[102,30],[103,400]];3:[[102,40],[103,500]];4:[[102,50],[103,600]];5:[[102,60],[103,700]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
@@ -33,7 +33,7 @@
 	<name>1</name>
 	<needCredit>100</needCredit>
 	<hurtRewards>[104,4]</hurtRewards>
-	<progressRewards>[[102,103,104],[102,103,104],[102,103,104],[102,103,104],[102,103,104]]</progressRewards>
+	<progressRewards>1:[[102,30],[103,400]];2:[[102,40],[103,500]];3:[[102,50],[103,600]];4:[[102,60],[103,700]];5:[[102,70],[103,800]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
@@ -42,7 +42,7 @@
 	<name>1</name>
 	<needCredit>100</needCredit>
 	<hurtRewards>[104,5]</hurtRewards>
-	<progressRewards>[[102,103],[102,103],[102,103],[102,103],[102,103]]</progressRewards>
+	<progressRewards>1:[[102,40],[103,500]];2:[[102,50],[103,600]];3:[[102,60],[103,700]];4:[[102,70],[103,800]];5:[[102,80],[103,900]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
@@ -51,7 +51,7 @@
 	<name>1</name>
 	<needCredit>100</needCredit>
 	<hurtRewards>[104,6]</hurtRewards>
-	<progressRewards>[[102,103,104],[102,103,104],[102,103,104],[102,103,104],[102,103,104]]</progressRewards>
+	<progressRewards>1:[[102,50],[103,600]];2:[[102,60],[103,700]];3:[[102,70],[103,800]];4:[[102,80],[103,900]];5:[[102,90],[103,1000]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
@@ -60,7 +60,7 @@
 	<name>1</name>
 	<needCredit>100</needCredit>
 	<hurtRewards>[104,7]</hurtRewards>
-	<progressRewards>[[102,103],[102,103],[102,103],[102,103],[102,103]]</progressRewards>
+	<progressRewards>1:[[102,60],[103,700]];2:[[102,70],[103,800]];3:[[102,80],[103,900]];4:[[102,90],[103,1000]];5:[[102,100],[103,1100]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 </root>

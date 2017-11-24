@@ -29,8 +29,12 @@ public class GangDungeon {
     @JsonIgnore
     public int fighter = 0;
 
-    /**0：未开启，1：已开启，2：已通关*/
+    /**
+     * 0：未开启，1：已开启，2：已通关
+     */
     private int hasOpen = 0;
+    @JsonIgnore
+    public boolean hasOver; //战斗是否结束并结算
     /**
      * 公会BOSS 伤害
      */
@@ -166,6 +170,7 @@ public class GangDungeon {
     public void reset() {
         layer = 1;
         hasOpen = 0;
+        hasOver = false;
         monsterMap.clear();
         awardStep.clear();
     }

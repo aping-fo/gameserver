@@ -10,7 +10,7 @@ import net.paoding.rose.jade.annotation.SQLParam;
 public interface PlayerDao {
 
 	//player
-	@SQL("select * from player where accName = :accName")
+	@SQL("select * from player where binary accName = :accName")
 	public List<Player> selectRoleList(@SQLParam("accName")String accName);
 	
 	@SQL("insert into player(playerId,accName,name,sex,vocation,regTime,serverId,channel) values(:player.playerId,:player.accName,:player.name,:player.sex,:player.vocation,:player.regTime,:player.serverId,:player.channel)")

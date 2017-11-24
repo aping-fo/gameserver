@@ -6,14 +6,7 @@ import com.google.common.collect.RangeMap;
 import com.google.common.collect.TreeRangeMap;
 import io.netty.util.internal.ConcurrentSet;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.module.copy.CopyInstance;
@@ -65,12 +58,8 @@ public class ConfigData {
 
     public static Map<Integer, List<RewardMailCfg>> rewardMails = new ConcurrentHashMap<Integer, List<RewardMailCfg>>();
     public static Map<String, Integer> guildTechnology = new HashMap<>();
-    //活动玩法-顺手牵羊道具
-    //public static Map<Integer,Map<Integer,Integer>> leadawayAwardsMap = new HashMap<>();
-    //public static Map<Integer,RangeMap<Integer,Integer>> leadawayAwardsMap = new HashMap<>();
-    //public static Map<Integer,Integer> leadawayAwardsWeight = new HashMap<>();
     public static Map<Integer, Integer> leadawayAwardsDrop = new HashMap<>();
-
+    public static final Set<String> accountSet = new HashSet<>();
     // 获取充值配置
     public static List<ChargeConfig> getCharges() {
         return charges;
@@ -293,6 +282,11 @@ public class ConfigData {
             if (cfg.lv == 0) {
                 guildTechnology.put(cfg.type +"_" + cfg.NeedLevel, cfg.id);
             }
+        }
+
+        for (Object obj : GameData.getConfigs(AccountCfg.class)) {
+            AccountCfg cfg = (AccountCfg) obj;
+            accountSet.add(cfg.name);
         }
     }
 }

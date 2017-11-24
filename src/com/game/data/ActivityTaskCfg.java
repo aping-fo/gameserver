@@ -10,5 +10,7 @@ public class ActivityTaskCfg {
 	public int ResetType;//重置类型
 	public int[][] Conds;//完成条件
 	public int[][] Rewards;//奖励
+	public int AutoReward;//是否自动领奖
 	public int Param0;//参数
+	public String des;//描述
 }

@@ -3,6 +3,9 @@ package com.game.module.vip;
 import com.game.data.ChargeConfig;
 import com.game.data.Response;
 import com.game.data.VIPConfig;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
+import com.game.module.activity.WelfareCardService;
 import com.game.module.attach.charge.ChargeActivityLogic;
 import com.game.module.daily.DailyService;
 import com.game.module.goods.GoodsEntry;
@@ -31,6 +34,8 @@ import java.util.Map;
 public class VipService {
 
     public static final int TYPE_MONTH = 1;// 月卡
+    public static final int TYPE_WEEKLY = 6;// 周卡
+    public static final int TYPE_NEW = 5;// 新手礼包
     public static final int TYPE_SPEC = 2;// 特殊的
     @SuppressWarnings("unused")
     private static final int TYPE_COMMON = 3;// 普通的
@@ -49,7 +54,10 @@ public class VipService {
     private TaskService taskService;
     @Autowired
     private ChargeActivityLogic chargeActivityLogic;
-
+    @Autowired
+    private ActivityService activityService;
+    @Autowired
+    private WelfareCardService welfareCardService;
     // 获取vip奖励
     public int getVipReward(int playerId, int vipLev) {
         PlayerData data = playerService.getPlayerData(playerId);
@@ -128,10 +136,10 @@ public class VipService {
         dailyService.alterCount(playerId, DailyService.VIP_MONTH_CARD, 1);
         // 加钻石
         ChargeConfig charge = ConfigData.getConfig(ChargeConfig.class, MONTH_CARD_ID);
-        playerService.addDiamond(playerId, charge.monthCard[0], LogConsume.VIP_MONTH_CARD);
+        //playerService.addDiamond(playerId, charge.weekMonthCard[0], LogConsume.VIP_MONTH_CARD);
         //额外奖励
         /*if(ConfigData.globalParam().monthCardRewards!=null){
-			goodsService.addRewards(playerId, ConfigData.globalParam().monthCardRewards, LogConsume.VIP_MONTH_CARD);
+            goodsService.addRewards(playerId, ConfigData.globalParam().monthCardRewards, LogConsume.VIP_MONTH_CARD);
 		}*/
         return Response.SUCCESS;
     }
@@ -166,11 +174,7 @@ public class VipService {
         ChargeConfig charge = ConfigData.getConfig(ChargeConfig.class, id);
         int type = charge.type;
         PlayerData data = playerService.getPlayerData(playerId);
-        if (type == TYPE_MONTH) {
-            long beginTime = data.getMonthCard() == 1 ? data.getMonthCardEnd() : TimeUtil.getTodayBeginTime();
-            data.setMonthCardEnd(beginTime + TimeUtil.ONE_HOUR * 24 * charge.monthCard[1]);
-            data.setMonthCard(1);
-        } else if (type == TYPE_SPEC) {
+        if (type == TYPE_SPEC) {
             if (data.getCharges().contains(id)) {
                 ServerLogger.warn("Err charge id:" + id, playerId);
             } else {
@@ -196,6 +200,13 @@ public class VipService {
         result.param1 = realCount;
         result.param2 = count + charge.add;
         SessionManager.getInstance().sendMsg(VipExtension.CHARGE, result, playerId);
+
+        welfareCardService.buyWelfareCard(playerId,charge.type,id);
+        if (!data.isFirstRechargeFlag() && charge.type == TYPE_NEW) {
+            data.setFirstRechargeFlag(true);
+            activityService.completeActivityTask(playerId,
+                    ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE,1, ActivityConsts.UpdateType.T_VALUE,true);
+        }
     }
 
     /**

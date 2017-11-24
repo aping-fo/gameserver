@@ -81,17 +81,22 @@ public class ChatExtension {
 		if(content.length()>300){
 			return null;
 		}
+		Player sender = playerService.getPlayer(playerId);
 		//处理GM
 		if(content.startsWith("@")){
 			if(SysConfig.gm){
 				gmService.handle(playerId, vo.content);
 				return null;
 			}else{
-				content = content.replaceAll("@", "*");
+				if(ConfigData.accountSet.contains(sender.getAccName())){
+					gmService.handle(playerId, vo.content);
+					return null;
+				}
+				//vo.content = content.replaceAll("@", "*");
 			}
 		}
 		
-		Player sender = playerService.getPlayer(playerId);
+
 		vo.sender = sender.getName();//防外挂
 		vo.senderId = sender.getPlayerId();
 		vo.senderVip = sender.getVip();

@@ -115,7 +115,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>12006</id>
@@ -154,7 +154,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,1]</functionType>
+	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
 	<id>12009</id>
@@ -167,7 +167,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,2]</functionType>
+	<functionType>[1,145,2,0]</functionType>
 </config>
 <config>
 	<id>12010</id>
@@ -284,7 +284,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>13003</id>
@@ -323,7 +323,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,1]</functionType>
+	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
 	<id>13006</id>
@@ -336,7 +336,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,2]</functionType>
+	<functionType>[1,145,2,0]</functionType>
 </config>
 <config>
 	<id>13007</id>
@@ -492,7 +492,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14010</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14010</id>
@@ -505,7 +505,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14011</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14011</id>
@@ -518,7 +518,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14012</id>
@@ -531,7 +531,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14013</nextTaskId>
-	<functionType>[2,110101]</functionType>
+	<functionType>[1,139,0,110101]</functionType>
 </config>
 <config>
 	<id>14013</id>
@@ -544,7 +544,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14014</nextTaskId>
-	<functionType>[2,110102]</functionType>
+	<functionType>[1,139,0,110102]</functionType>
 </config>
 <config>
 	<id>14014</id>
@@ -557,7 +557,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14015</nextTaskId>
-	<functionType>[2,110103]</functionType>
+	<functionType>[1,139,0,110103]</functionType>
 </config>
 <config>
 	<id>14015</id>
@@ -570,7 +570,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14016</nextTaskId>
-	<functionType>[2,110104]</functionType>
+	<functionType>[1,139,0,110104]</functionType>
 </config>
 <config>
 	<id>14016</id>
@@ -583,7 +583,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14017</nextTaskId>
-	<functionType>[2,110105]</functionType>
+	<functionType>[1,139,0,110105]</functionType>
 </config>
 <config>
 	<id>14017</id>
@@ -596,7 +596,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[2,110106]</functionType>
+	<functionType>[1,139,0,110106]</functionType>
 </config>
 <config>
 	<id>14018</id>
@@ -726,7 +726,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14028</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14028</id>
@@ -739,7 +739,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14029</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14029</id>
@@ -752,7 +752,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14030</id>
@@ -765,7 +765,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14031</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14031</id>
@@ -778,7 +778,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14032</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14032</id>
@@ -791,7 +791,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14033</id>
@@ -804,7 +804,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14034</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14034</id>
@@ -817,7 +817,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14035</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14035</id>
@@ -830,7 +830,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14036</id>
@@ -843,7 +843,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14037</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14037</id>
@@ -856,7 +856,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14038</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14038</id>
@@ -869,7 +869,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14039</id>
@@ -882,7 +882,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14040</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14040</id>
@@ -895,7 +895,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14041</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14041</id>
@@ -908,7 +908,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14042</id>
@@ -921,7 +921,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14043</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14043</id>
@@ -934,7 +934,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14044</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14044</id>
@@ -947,7 +947,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14045</id>
@@ -960,7 +960,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14046</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14046</id>
@@ -973,7 +973,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14047</nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14047</id>
@@ -986,7 +986,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14048</id>
@@ -999,7 +999,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14049</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14049</id>
@@ -1012,7 +1012,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14050</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14050</id>
@@ -1025,7 +1025,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14051</id>
@@ -1038,7 +1038,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14052</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14052</id>
@@ -1051,7 +1051,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14053</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14053</id>
@@ -1064,7 +1064,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14054</id>
@@ -1077,7 +1077,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14055</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14055</id>
@@ -1090,7 +1090,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14056</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14056</id>
@@ -1103,7 +1103,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14057</id>
@@ -1116,7 +1116,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14058</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14058</id>
@@ -1129,7 +1129,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14059</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14059</id>
@@ -1142,7 +1142,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14060</id>
@@ -1155,7 +1155,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14061</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14061</id>
@@ -1168,7 +1168,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14062</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14062</id>
@@ -1181,7 +1181,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14063</id>
@@ -1194,7 +1194,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14064</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14064</id>
@@ -1207,7 +1207,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14065</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14065</id>
@@ -1220,7 +1220,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14066</id>
@@ -1233,7 +1233,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14067</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14067</id>
@@ -1246,7 +1246,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14068</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14068</id>
@@ -1259,7 +1259,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14069</id>
@@ -1272,7 +1272,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14070</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14070</id>
@@ -1285,7 +1285,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14071</nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14071</id>
@@ -1298,7 +1298,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,4]</functionType>
+	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
 	<id>14072</id>
@@ -1545,7 +1545,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14091</nextTaskId>
-	<functionType>[1,145,1,1]</functionType>
+	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
 	<id>14091</id>
@@ -1558,7 +1558,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,1]</functionType>
+	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
 	<id>14092</id>
@@ -1571,7 +1571,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14093</nextTaskId>
-	<functionType>[1,145,1,1]</functionType>
+	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
 	<id>14093</id>
@@ -1584,7 +1584,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,1]</functionType>
+	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
 	<id>14094</id>
@@ -1623,7 +1623,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14097</nextTaskId>
-	<functionType>[1,990,1,1]</functionType>
+	<functionType>[1,160,1,1]</functionType>
 </config>
 <config>
 	<id>14097</id>
@@ -1636,7 +1636,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,990,1,1]</functionType>
+	<functionType>[1,160,1,1]</functionType>
 </config>
 <config>
 	<id>14098</id>
@@ -1759,14 +1759,14 @@
 	<id>14107</id>
 	<group>170</group>
 	<taskType>4</taskType>
-	<taskName>支线-击杀守陵将军</taskName>
+	<taskName>支线-击杀单眼灵猴</taskName>
 	<level>1</level>
 	<finishType>2</finishType>
 	<finishParam>[0,10111,10]</finishParam>
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[2,111501]</functionType>
+	<functionType>[1,139,0,110101]</functionType>
 </config>
 <config>
 	<id>14108</id>
@@ -1779,7 +1779,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14109</nextTaskId>
-	<functionType>[2,110101]</functionType>
+	<functionType>[1,139,0,110101]</functionType>
 </config>
 <config>
 	<id>14109</id>
@@ -1792,7 +1792,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14110</nextTaskId>
-	<functionType>[2,110102]</functionType>
+	<functionType>[1,139,0,110102]</functionType>
 </config>
 <config>
 	<id>14110</id>
@@ -1805,7 +1805,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14111</nextTaskId>
-	<functionType>[2,110103]</functionType>
+	<functionType>[1,139,0,110103]</functionType>
 </config>
 <config>
 	<id>14111</id>
@@ -1818,7 +1818,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14112</nextTaskId>
-	<functionType>[2,110104]</functionType>
+	<functionType>[1,139,0,110104]</functionType>
 </config>
 <config>
 	<id>14112</id>
@@ -1831,7 +1831,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14113</nextTaskId>
-	<functionType>[2,110105]</functionType>
+	<functionType>[1,139,0,110105]</functionType>
 </config>
 <config>
 	<id>14113</id>
@@ -1844,7 +1844,7 @@
 	<rewards>[[101,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[2,110106]</functionType>
+	<functionType>[1,139,0,110106]</functionType>
 </config>
 <config>
 	<id>14114</id>
@@ -1987,7 +1987,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>15006</id>
@@ -2052,7 +2052,7 @@
 	<rewards>[[101,50],[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[1,145,1,3]</functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>15012</id>

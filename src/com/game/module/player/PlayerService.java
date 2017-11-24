@@ -356,7 +356,7 @@ public class PlayerService implements InitHandler {
 		//更新货币
 		updateCurrencyToClient(playerId);
 		//活动检测
-		activityService.checkNewActivity(playerId);
+		activityService.onLogin(playerId);
 		nameCaches.putIfAbsent(player.getName(), player.getPlayerId());
 	}
 
@@ -574,6 +574,7 @@ public class PlayerService implements InitHandler {
 			return false;
 		}
 		Player player = getPlayer(playerId);
+		VIPConfig oldCfg = ConfigData.getConfig(VIPConfig.class,player.getVip());
 		synchronized (player) {
 			player.setChargeDiamond(player.getChargeDiamond() + add);
 			// 检查VIP是否升级
@@ -590,6 +591,12 @@ public class PlayerService implements InitHandler {
 				break;
 			}
 		}
+		VIPConfig newCfg = ConfigData.getConfig(VIPConfig.class,player.getVip());
+		PlayerData data = getPlayerData(playerId);
+		PlayerCurrency currency = data.getCurrency();
+		currency.add(Goods.TRAVERSING_ENERGY, newCfg.traveringEnergy - oldCfg.traveringEnergy);
+		long curEnergy = currency.get(Goods.TRAVERSING_ENERGY);
+		updateCurrencyToClient(playerId, Goods.TRAVERSING_ENERGY,(int)curEnergy);
 		// 更新客户端
 		updateAttrsToClient(playerId, Player.VIP_EXP,player.getChargeDiamond(),Player.VIP_LEV,player.getVip());
 		// 充值后续处理
@@ -619,7 +626,10 @@ public class PlayerService implements InitHandler {
 			}
 			taskService.checkTaskWhenLevUp(playerId);
 
-			activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_LEVEL,player.getLev(), ActivityConsts.UpdateType.T_VALUE);
+			activityService.completeActivityTask(playerId,
+					ActivityConsts.ActivityTaskCondType.T_GROW_FUND,player.getLev(), ActivityConsts.UpdateType.T_VALUE,true);
+			activityService.completeActivityTask(playerId,
+					ActivityConsts.ActivityTaskCondType.T_LEVEL_UP,player.getLev(), ActivityConsts.UpdateType.T_VALUE,true);
 		} 
 		// 发送到前端
 		updateAttrsToClient(playerId, Player.EXP,player.getExp(),Player.LEV,player.getLev());

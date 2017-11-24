@@ -8,11 +8,31 @@
 	<rmb>25</rmb>
 	<total>300</total>
 	<add>0</add>
-	<monthCard>[120,30]</monthCard>
+	<weekMonthCard>[[102,30]]</weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N1</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem7</icon>
+	<name>钻月卡</name>
+	<rewards></rewards>
+</config>
+<config>
+	<id>12</id>
+	<type>6</type>
+	<group>1</group>
+	<limit>0</limit>
+	<rmb>10</rmb>
+	<total>0</total>
+	<add>0</add>
+	<weekMonthCard>[[102,30]]</weekMonthCard>
+	<platformType>3</platformType>
+	<platformId>com.lucky.N1</platformId>
+	<funds></funds>
+	<atlas>Gem</atlas>
+	<icon>gem7</icon>
+	<name>钻周卡</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>23</id>
@@ -22,11 +42,14 @@
 	<rmb>10</rmb>
 	<total>100</total>
 	<add>100</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N2</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem2</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>33</id>
@@ -36,11 +59,14 @@
 	<rmb>10</rmb>
 	<total>100</total>
 	<add>10</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N3</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem2</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>24</id>
@@ -50,11 +76,14 @@
 	<rmb>50</rmb>
 	<total>500</total>
 	<add>500</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N4</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem3</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>34</id>
@@ -64,11 +93,14 @@
 	<rmb>50</rmb>
 	<total>500</total>
 	<add>60</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N5</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem3</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>25</id>
@@ -78,11 +110,14 @@
 	<rmb>98</rmb>
 	<total>1000</total>
 	<add>1000</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N6</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem4</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>35</id>
@@ -92,11 +127,14 @@
 	<rmb>98</rmb>
 	<total>1000</total>
 	<add>150</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N7</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem4</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>26</id>
@@ -106,11 +144,14 @@
 	<rmb>6</rmb>
 	<total>60</total>
 	<add>60</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N8</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem1</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>36</id>
@@ -120,11 +161,14 @@
 	<rmb>6</rmb>
 	<total>60</total>
 	<add>5</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N9</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem1</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>27</id>
@@ -134,11 +178,14 @@
 	<rmb>198</rmb>
 	<total>2000</total>
 	<add>2000</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N10</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem5</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>37</id>
@@ -148,11 +195,14 @@
 	<rmb>198</rmb>
 	<total>2000</total>
 	<add>350</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N11</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem5</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>28</id>
@@ -162,11 +212,14 @@
 	<rmb>298</rmb>
 	<total>3000</total>
 	<add>3000</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N12</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem6</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>38</id>
@@ -176,11 +229,14 @@
 	<rmb>298</rmb>
 	<total>3000</total>
 	<add>600</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N13</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem6</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>29</id>
@@ -190,11 +246,14 @@
 	<rmb>498</rmb>
 	<total>5000</total>
 	<add>5000</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N14</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem7</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>39</id>
@@ -204,11 +263,14 @@
 	<rmb>498</rmb>
 	<total>5000</total>
 	<add>1200</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N15</platformId>
 	<funds></funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem7</icon>
+	<name>钻石</name>
+	<rewards></rewards>
 </config>
 <config>
 	<id>41</id>
@@ -218,10 +280,30 @@
 	<rmb>100</rmb>
 	<total>1000</total>
 	<add>0</add>
-	<monthCard></monthCard>
+	<weekMonthCard></weekMonthCard>
 	<platformType>3</platformType>
 	<platformId>com.lucky.N16</platformId>
 	<funds>10:600;20:600;25:500;30:500;35:500;40:400;45:400;50:400;55:300;60:300;</funds>
-	<atlas>Recharge</atlas>
+	<atlas>Gem</atlas>
+	<icon>gem7</icon>
+	<name>钻基金</name>
+	<rewards></rewards>
+</config>
+<config>
+	<id>50</id>
+	<type>5</type>
+	<group>0</group>
+	<limit>1</limit>
+	<rmb>6</rmb>
+	<total>0</total>
+	<add>0</add>
+	<weekMonthCard></weekMonthCard>
+	<platformType>3</platformType>
+	<platformId></platformId>
+	<funds></funds>
+	<atlas></atlas>
+	<icon></icon>
+	<name>新手礼包</name>
+	<rewards>[[102,700]]</rewards>
 </config>
 </root>

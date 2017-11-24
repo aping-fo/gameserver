@@ -8,6 +8,7 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1251</id>
@@ -17,15 +18,17 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
+	<subtype></subtype>
 </config>
 <config>
-	<id>9901</id>
-	<uID>990</uID>
+	<id>1711</id>
+	<uID>171</uID>
 	<name>活动</name>
 	<type>1</type>
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1401</id>
@@ -35,33 +38,17 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-</config>
-<config>
-	<id>1402</id>
-	<uID></uID>
-	<name>VIP</name>
-	<type>2</type>
-	<openType>1</openType>
-	<param></param>
-	<icon></icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1006</id>
 	<uID></uID>
-	<name>金币购买</name>
+	<name>金币/体力购买</name>
 	<type>1</type>
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-</config>
-<config>
-	<id>1007</id>
-	<uID></uID>
-	<name>体力购买</name>
-	<type>1</type>
-	<openType>1</openType>
-	<param></param>
-	<icon></icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1451</id>
@@ -71,42 +58,7 @@
 	<openType>2</openType>
 	<param>2</param>
 	<icon>equip</icon>
-</config>
-<config>
-	<id>1452</id>
-	<uID>145</uID>
-	<name>升级</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>3</param>
-	<icon></icon>
-</config>
-<config>
-	<id>1453</id>
-	<uID>145</uID>
-	<name>洗练</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>4</param>
-	<icon></icon>
-</config>
-<config>
-	<id>1454</id>
-	<uID>145</uID>
-	<name>强化</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>5</param>
-	<icon></icon>
-</config>
-<config>
-	<id>1455</id>
-	<uID>145</uID>
-	<name>宝石</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>6</param>
-	<icon></icon>
+	<subtype>[[1,2,2],[2,2,31],[3,2,5],[4,2,13]]</subtype>
 </config>
 <config>
 	<id>1491</id>
@@ -114,8 +66,9 @@
 	<name>时装</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>5</param>
+	<param>9</param>
 	<icon>fashion</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1281</id>
@@ -123,17 +76,9 @@
 	<name>技能</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>3</param>
+	<param>4</param>
 	<icon>skill</icon>
-</config>
-<config>
-	<id>1015</id>
-	<uID></uID>
-	<name>技能卡槽</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>3</param>
-	<icon></icon>
+	<subtype>[[1,2,4]]</subtype>
 </config>
 <config>
 	<id>1291</id>
@@ -141,8 +86,9 @@
 	<name>卡包</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>3</param>
+	<param>6</param>
 	<icon>skillcard</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1241</id>
@@ -150,8 +96,9 @@
 	<name>神器</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>4</param>
+	<param>12</param>
 	<icon>fumo</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1511</id>
@@ -159,62 +106,19 @@
 	<name>阵营</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>5</param>
+	<param>10</param>
 	<icon>mingge</icon>
-</config>
-<config>
-	<id>1170</id>
-	<uID>117</uID>
-	<name>排行榜</name>
-	<type>1</type>
-	<openType>2</openType>
-	<param>6</param>
-	<icon>top2</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1171</id>
 	<uID>117</uID>
-	<name>战力排行榜</name>
-	<type>2</type>
+	<name>排行榜</name>
+	<type>1</type>
 	<openType>2</openType>
-	<param>6</param>
-	<icon></icon>
-</config>
-<config>
-	<id>1172</id>
-	<uID>117</uID>
-	<name>等级排行榜</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>6</param>
-	<icon></icon>
-</config>
-<config>
-	<id>1173</id>
-	<uID>117</uID>
-	<name>竞技场排行榜</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>6</param>
-	<icon></icon>
-</config>
-<config>
-	<id>1174</id>
-	<uID>117</uID>
-	<name>无尽漩涡排行榜</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>6</param>
-	<icon></icon>
-</config>
-<config>
-	<id>1175</id>
-	<uID>117</uID>
-	<name>公会排行榜</name>
-	<type>2</type>
-	<openType>2</openType>
-	<param>6</param>
-	<icon></icon>
+	<param>14</param>
+	<icon>top2</icon>
+	<subtype>[[1,2,14],[2,2,14],[3,2,18],[4,2,14],[5,2,15],[6,2,35]]</subtype>
 </config>
 <config>
 	<id>1331</id>
@@ -224,6 +128,7 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1411</id>
@@ -233,6 +138,7 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1221</id>
@@ -240,8 +146,9 @@
 	<name>抽奖</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>7</param>
+	<param>8</param>
 	<icon>card2</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1121</id>
@@ -251,6 +158,7 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1081</id>
@@ -258,8 +166,9 @@
 	<name>任务</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>8</param>
+	<param>16</param>
 	<icon>task2</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1371</id>
@@ -267,8 +176,9 @@
 	<name>资源副本</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>9</param>
+	<param>5</param>
 	<icon>resourcescopy</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1361</id>
@@ -276,17 +186,19 @@
 	<name>世界BOSS</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>5</param>
+	<param>23</param>
 	<icon>worldboss</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1211</id>
 	<uID>121</uID>
-	<name>时空漩涡</name>
+	<name>无尽漩涡</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>10</param>
+	<param>13</param>
 	<icon>infinitevortex</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1011</id>
@@ -294,8 +206,9 @@
 	<name>竞技场</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>11</param>
+	<param>18</param>
 	<icon>arena</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1041</id>
@@ -303,8 +216,9 @@
 	<name>公会</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>13</param>
+	<param>15</param>
 	<icon>guild</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1035</id>
@@ -312,8 +226,9 @@
 	<name>多人场景</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>12</param>
+	<param>30</param>
 	<icon>collectively</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1131</id>
@@ -321,8 +236,9 @@
 	<name>时空仪</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>15</param>
+	<param>30</param>
 	<icon>spaceinstrument</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1571</id>
@@ -330,8 +246,9 @@
 	<name>团队副本</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>20</param>
+	<param>40</param>
 	<icon>teamcopy</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1701</id>
@@ -339,8 +256,9 @@
 	<name>宠物</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>1</param>
+	<param>25</param>
 	<icon>pet</icon>
+	<subtype></subtype>
 </config>
 <config>
 	<id>1601</id>
@@ -348,7 +266,58 @@
 	<name>排位赛</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>25</param>
+	<param>35</param>
 	<icon>qualifying</icon>
+	<subtype></subtype>
+</config>
+<config>
+	<id>1061</id>
+	<uID>106</uID>
+	<name>英雄试炼</name>
+	<type>3</type>
+	<openType>2</openType>
+	<param>20</param>
+	<icon>resourcescopy</icon>
+	<subtype></subtype>
+</config>
+<config>
+	<id>1372</id>
+	<uID></uID>
+	<name>极限躲避</name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>5</param>
+	<icon>resourcescopy</icon>
+	<subtype></subtype>
+</config>
+<config>
+	<id>1373</id>
+	<uID></uID>
+	<name>疯狂宝箱</name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>10</param>
+	<icon>resourcescopy</icon>
+	<subtype></subtype>
+</config>
+<config>
+	<id>1374</id>
+	<uID></uID>
+	<name>顺手牵羊</name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>20</param>
+	<icon>resourcescopy</icon>
+	<subtype></subtype>
+</config>
+<config>
+	<id>1375</id>
+	<uID></uID>
+	<name>金币副本</name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>30</param>
+	<icon>resourcescopy</icon>
+	<subtype></subtype>
 </config>
 </root>

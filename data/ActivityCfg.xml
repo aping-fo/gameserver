@@ -2,25 +2,114 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
-	<name>游戏公告</name>
-	<IsOpen>1</IsOpen>
-	<BigType>0</BigType>
-	<icon>Other13</icon>
-	<logo>2</logo>
-	<sortRange>0</sortRange>
-	<showLev>1</showLev>
+	<name>体力领取</name>
+	<Conds></Conds>
+	<ActivityType>1</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>1</sort>
+	<des></des>
+	<viewname>GettiliView</viewname>
+</config>
+<config>
+	<id>2</id>
+	<name>成长基金</name>
+	<Conds>[[1,4],[2,102,2000]]</Conds>
+	<ActivityType>2</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>2</sort>
+	<des></des>
+	<viewname>FundView</viewname>
+</config>
+<config>
+	<id>3</id>
+	<name>七天登录奖励</name>
+	<Conds></Conds>
+	<ActivityType>3</ActivityType>
+	<OpenType>1</OpenType>
 	<TimeType>2</TimeType>
-	<StartTime>0</StartTime>
-	<EndTime>0</EndTime>
-	<rewards1></rewards1>
-	<beginHandler></beginHandler>
-	<dailyHandler></dailyHandler>
-	<endHandler></endHandler>
-	<rankRewards></rankRewards>
-	<ForwardView></ForwardView>
-	<uiConfig>act_1</uiConfig>
-	<Type>1</Type>
-	<Content></Content>
-	<GuildID></GuildID>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>7</Param0>
+	<sort>3</sort>
+	<des></des>
+	<viewname>SevenDaysRewardView</viewname>
+</config>
+<config>
+	<id>4</id>
+	<name>新手礼包</name>
+	<Conds></Conds>
+	<ActivityType>4</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<viewname></viewname>
+</config>
+<config>
+	<id>5</id>
+	<name>冲级活动</name>
+	<Conds></Conds>
+	<ActivityType>5</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>4</sort>
+	<des></des>
+	<viewname></viewname>
+</config>
+<config>
+	<id>6</id>
+	<name>周卡 月卡</name>
+	<Conds></Conds>
+	<ActivityType>6</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>2</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>5</sort>
+	<des></des>
+	<viewname>WeekMonthCardView</viewname>
+</config>
+<config>
+	<id>7</id>
+	<name>签到</name>
+	<Conds></Conds>
+	<ActivityType>8</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>6</sort>
+	<des></des>
+	<viewname>SignView</viewname>
 </config>
 </root>

@@ -1,18 +1,19 @@
 package com.game.module.skill;
 
-import java.util.Arrays;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
+import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.params.Int2Param;
 import com.game.params.IntList;
 import com.game.params.IntParam;
 import com.game.params.skill.SkillCardGroupInfo;
+import com.game.util.ConfigData;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**  
  * 技能系统
@@ -64,8 +65,22 @@ public class SkillExtension {
 	public Object setCardGroup(int playerId, IntParam param)
 	{
 		PlayerData data = playerService.getPlayerData(playerId);
+		Player player = playerService.getPlayer(playerId);
 		List<List<Integer>> cardgroup = data.getSkillCardSets();
+		int vip = player.getVip();
+		int count = 0;
+		for(int vipLev : ConfigData.globalParam().skillCardGroupOpenVip) {
+			if(vipLev <= vip) {
+				count += 1;
+			}
+		}
+
 		List<Integer> cards = null;
+		while (cardgroup.size() < count) {
+			cards = Arrays.asList(0, 0, 0, 0);
+			cardgroup.add(cards);
+		}
+
 		if(param.param >= cardgroup.size()){
 			cards = Arrays.asList(0, 0, 0, 0);
 			cardgroup.add(cards);

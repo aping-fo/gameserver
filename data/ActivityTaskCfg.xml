@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<name>体力</name>
+	<ActivityId>1</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[1,11,12]]</Conds>
+	<Rewards>[[107,100]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0>200</Param0>
+	<des>11点到12点可领取</des>
+</config>
+<config>
+	<id>2</id>
+	<name>体力</name>
+	<ActivityId>1</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[1,17,18]]</Conds>
+	<Rewards>[[107,100]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0>200</Param0>
+	<des>17点到18点可领取</des>
+</config>
+<config>
+	<id>3</id>
+	<name>体力</name>
+	<ActivityId>1</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[1,20,21]]</Conds>
+	<Rewards>[[107,100]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0>200</Param0>
+	<des>20点到21点可领取</des>
+</config>
+<config>
+	<id>4</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,0]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>领取1000钻石</des>
+</config>
+<config>
+	<id>5</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,20]]</Conds>
+	<Rewards>[[102,200]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到20级领取200钻石</des>
+</config>
+<config>
+	<id>6</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,25]]</Conds>
+	<Rewards>[[102,300]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到25级领取200钻石</des>
+</config>
+<config>
+	<id>7</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,30]]</Conds>
+	<Rewards>[[102,350]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到30级领取200钻石</des>
+</config>
+<config>
+	<id>8</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,36]]</Conds>
+	<Rewards>[[102,400]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到36级领取200钻石</des>
+</config>
+<config>
+	<id>9</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,40]]</Conds>
+	<Rewards>[[102,450]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到40级领取200钻石</des>
+</config>
+<config>
+	<id>10</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,45]]</Conds>
+	<Rewards>[[102,500]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到45级领取200钻石</des>
+</config>
+<config>
+	<id>11</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,50]]</Conds>
+	<Rewards>[[102,500]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到50级领取200钻石</des>
+</config>
+<config>
+	<id>12</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,55]]</Conds>
+	<Rewards>[[102,600]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到55级领取200钻石</des>
+</config>
+<config>
+	<id>13</id>
+	<name>成长基金</name>
+	<ActivityId>2</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[2,60]]</Conds>
+	<Rewards>[[102,700]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到60级领取200钻石</des>
+</config>
+<config>
+	<id>14</id>
+	<name>第一天登录</name>
+	<ActivityId>3</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[3,1]]</Conds>
+	<Rewards>[[103,1],[102,1],[137,1]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>15</id>
+	<name>第二天登录</name>
+	<ActivityId>3</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[3,2]]</Conds>
+	<Rewards>[[138,1],[133,1],[132,1]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>16</id>
+	<name>第三天登录</name>
+	<ActivityId>3</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[3,3]]</Conds>
+	<Rewards>[[135,1],[112,1],[136,1]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>17</id>
+	<name>第四天登录</name>
+	<ActivityId>3</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[3,4]]</Conds>
+	<Rewards>[[134,1],[104,1],[111,1]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>18</id>
+	<name>第五天登录</name>
+	<ActivityId>3</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[3,5]]</Conds>
+	<Rewards>[[131,1],[135,1],[104,1]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>19</id>
+	<name>第六天登录</name>
+	<ActivityId>3</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[3,6]]</Conds>
+	<Rewards>[[109101,1],[134,1],[133,1]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>20</id>
+	<name>第七天登录</name>
+	<ActivityId>3</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[3,7]]</Conds>
+	<Rewards>[[137,1],[301001,1],[135,1]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>21</id>
+	<name>新手礼包</name>
+	<ActivityId>4</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[4,1]]</Conds>
+	<Rewards>[[102,1],[102,1],[102,7],[102,100]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>22</id>
+	<name>5级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,5]]</Conds>
+	<Rewards>[[102,702]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>23</id>
+	<name>6级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,6]]</Conds>
+	<Rewards>[[102,703]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>24</id>
+	<name>周卡</name>
+	<ActivityId>6</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[6,1]]</Conds>
+	<Rewards>[[102,704]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>25</id>
+	<name>月卡</name>
+	<ActivityId>7</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[7,1]]</Conds>
+	<Rewards>[[102,705]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+</root>

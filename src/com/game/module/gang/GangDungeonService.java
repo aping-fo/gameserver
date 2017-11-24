@@ -15,6 +15,7 @@ import com.game.params.gang.*;
 import com.game.params.scene.SkillHurtVO;
 import com.game.params.worldboss.MonsterHurtVO;
 import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -33,6 +34,10 @@ import java.util.Map;
  */
 @Service
 public class GangDungeonService implements InitHandler {
+    private static final int T_DONT_OPEN = 0; //副本未开启
+    private static final int T_OPEN = 1; //副本开启
+    private static final int T_PASS = 2; //副本通关
+
     @Autowired
     private GangService gangService;
     @Autowired
@@ -94,7 +99,7 @@ public class GangDungeonService implements InitHandler {
         vo.progress = gangDungeon.getProgress();
         vo.hasOpen = gangDungeon.getHasOpen();
         vo.playerId = gangDungeon.fighter;
-        if (vo.hasOpen == 0) {
+        if (vo.hasOpen == T_DONT_OPEN) {
             vo.progress = 0;
         }
         return vo;
@@ -126,7 +131,7 @@ public class GangDungeonService implements InitHandler {
             serialDataService.getData().getGangMap().put(player.getGangId(), gangDungeon);
         }
 
-        if (gangDungeon.getHasOpen() == 1) { //已经开启过了
+        if (gangDungeon.getHasOpen() == T_OPEN) { //已经开启过了
             param.param = Response.GUILD_COPY_HAS_OPEN;
             return param;
         }
@@ -137,7 +142,7 @@ public class GangDungeonService implements InitHandler {
             return param;
         }
 
-        gangDungeon.setHasOpen(1);
+        gangDungeon.setHasOpen(T_OPEN);
         gang.setAsset(gang.getAsset() - cfg.needCredit);
         gangDungeon.getMonsterMap().clear();
         gangDungeon.getAwardStep().clear();
@@ -177,12 +182,12 @@ public class GangDungeonService implements InitHandler {
         }
 
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
-        if (gangDungeon.getHasOpen() == 0) {
+        if (gangDungeon.getHasOpen() == T_DONT_OPEN) {
             vo.errCode = Response.GUILD_COPY_DO_NOT_OPEN;
             return vo;
         }
 
-        if(gangDungeon.getHasOpen() == 2) {
+        if (gangDungeon.getHasOpen() == T_PASS) {
             vo.errCode = Response.ERR_PARAM;
             return vo;
         }
@@ -198,6 +203,7 @@ public class GangDungeonService implements InitHandler {
             return vo;
         }
 
+        gangDungeon.hasOver = false;
         member.setChallengeTimes(member.getChallengeTimes() - 1);
         member.hp = player.getHp();
         member.hurt = 0;
@@ -247,6 +253,10 @@ public class GangDungeonService implements InitHandler {
             }
         } else { //怪物
             Monster m = gangDungeon.getMonsterMap().get(hurtVO.targetId);
+            if (m.getCurrentHp() <= 0) {
+                ServerLogger.warn("==================== Monster Die，Monster Id = " + m.getId());
+                return;
+            }
             int hp = m.getCurrentHp() - hurtVO.hurtValue > 0 ? m.getCurrentHp() - hurtVO.hurtValue : 0;
             m.setCurrentHp(hp);
             MonsterHurtVO vo = new MonsterHurtVO();
@@ -260,12 +270,13 @@ public class GangDungeonService implements InitHandler {
 
             member.hurt += hurtVO.hurtValue;
             if (gangDungeon.checkDeath()) { //怪死了
+                ServerLogger.warn("====================>>>>>>  All Monster Die,Begin To Send Fight Over");
                 int maxLayer = ConfigData.getConfigs(GangCopyCfg.class).size();
                 if (gangDungeon.getLayer() < maxLayer) {
-                    gangDungeon.setHasOpen(0); //怪物全死了，重置
+                    gangDungeon.setHasOpen(T_DONT_OPEN); //怪物全死了，重置
                     gangDungeon.setLayer(gangDungeon.getLayer() + 1);
                 } else {
-                    gangDungeon.setHasOpen(2);
+                    gangDungeon.setHasOpen(T_PASS);
                 }
                 onBattleEnd(player);
             }
@@ -277,7 +288,7 @@ public class GangDungeonService implements InitHandler {
             if (progress >= cfg.progress[i]) {
                 int step = i + 1;
                 if (gangDungeon.checkAndAdd(step)) {
-                    ServerLogger.warn("============ send guild copy step award" + cfg.progress[i]);
+                    ServerLogger.warn("============ send guild copy step award" + cfg.progress[i] + "   progress = " + progress);
                     List<GoodsEntry> rewards = new ArrayList<>();
                     int[][] itemArr = cfg.progressRewards.get(step);
                     for (int[] item : itemArr) {
@@ -300,6 +311,13 @@ public class GangDungeonService implements InitHandler {
         GMember member = gang.getMembers().get(player.getPlayerId());
 
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(gang.getId());
+        if (gangDungeon == null) {
+            return;
+        }
+        if (gangDungeon.hasOver) {
+            return;
+        }
+        gangDungeon.hasOver = true;
         GangHurt hurt = gangDungeon.getHurtMap().get(player.getPlayerId());
         if (hurt == null) {
             hurt = new GangHurt(player.getPlayerId(), player.getName(), player.getVocation());
@@ -320,6 +338,8 @@ public class GangDungeonService implements InitHandler {
         vo.totalHurt = hurt.getHurt();
         vo.progress = gangDungeon.getProgress();
         vo.gangContribution = Math.round(member.hurt / (gangDungeon.getTotalHp() * 1.0f) * ConfigData.globalParam().guildRewardRate);
+
+        ServerLogger.warn(JsonUtils.object2String(vo));
 
         int rank = 0;
         for (GangHurt gh : gangDungeon.hurtRankMap.values()) {
@@ -377,7 +397,7 @@ public class GangDungeonService implements InitHandler {
         if (gangDungeon == null) {
             return;
         }
-        if (gangDungeon.clearFighter(playerId)) {
+        if (!gangDungeon.clearFighter(playerId)) {
             return;
         }
         Gang gang = gangService.getGang(player.getGangId());
@@ -431,5 +451,14 @@ public class GangDungeonService implements InitHandler {
         for (GangDungeon gd : serialDataService.getData().getGangMap().values()) {
             gd.reset();
         }
+    }
+
+    public void gmGangCopyRest(int playerId) {
+        Player player = playerService.getPlayer(playerId);
+        GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
+        if (gangDungeon == null) {
+            return;
+        }
+        gangDungeon.reset();
     }
 }

@@ -5,7 +5,10 @@ import java.util.Calendar;
 import java.util.Map.Entry;
 
 import com.game.data.VIPConfig;
+import com.game.module.activity.ActivityConsts;
 import com.game.module.activity.ActivityService;
+import com.game.module.activity.WelfareCard;
+import com.game.module.activity.WelfareCardService;
 import com.game.module.attach.catchgold.CatchGoldAttach;
 import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.leadaway.LeadAwayLogic;
@@ -75,6 +78,8 @@ public class DailyService implements InitHandler {
 	private GangDungeonService gangDungeonService;
 	@Autowired
 	private ActivityService activityService;
+	@Autowired
+	private WelfareCardService welfareCardService;
 	public static long FIVE_CLOCK = 0;
 	public static long MONDAY_FIVE_CLOCK = 0;
 
@@ -82,10 +87,10 @@ public class DailyService implements InitHandler {
 	public void handleInit() {
 		resetFiveClock();
 	}
-	
+
 	public void resetFiveClock(){
 		Calendar five = Calendar.getInstance();
-		
+
 		five.set(Calendar.HOUR_OF_DAY, 5);
 		five.set(Calendar.MINUTE, 0);
 		five.set(Calendar.SECOND, 0);
@@ -95,14 +100,14 @@ public class DailyService implements InitHandler {
 			five.add(Calendar.DATE, -1);
 		}
 		FIVE_CLOCK = five.getTimeInMillis();
-		
+
 		five.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
 		if(five.getTimeInMillis() > System.currentTimeMillis()){
 			five.add(Calendar.DATE, -7);
 		}
-		MONDAY_FIVE_CLOCK = five.getTimeInMillis();		
+		MONDAY_FIVE_CLOCK = five.getTimeInMillis();
 	}
-	
+
 	// 获得今天已经做了多少次
 	public int getCount(int playerId, int type) {
 		PlayerData playerData = playerService.getPlayerData(playerId);
@@ -144,7 +149,7 @@ public class DailyService implements InitHandler {
 		}
 		gangService.dailyReset();
 	}
-	
+
 	// 重置
 	public void resetWeekly() {
 		for (int id:SessionManager.getInstance().getAllSessions().keySet()) {
@@ -156,7 +161,7 @@ public class DailyService implements InitHandler {
 			SessionManager.getInstance().sendMsg(VipExtension.GET_DAILY_INFO, getDailyInfo(playerId), playerId);
 		}
 	}
-	
+
 
 	// 检查月卡有无过期
 	public void checkMonthCardOutdate(PlayerData data) {
@@ -173,12 +178,12 @@ public class DailyService implements InitHandler {
 	public boolean isSameDate(long dailyResetTime) {
 		return dailyResetTime >= FIVE_CLOCK;
 	}
-	
+
 	public boolean isSameWeek(long weeklyResetTime){
 		return weeklyResetTime >= MONDAY_FIVE_CLOCK;
 	}
-	
-	
+
+
 
 	// 重置每日数据
 	public void resetDailyData(PlayerData data) {
@@ -203,12 +208,15 @@ public class DailyService implements InitHandler {
 		catchGoldLogic.dailyReset(playerId);
 		gangDungeonService.dailyReset(playerId);
 		activityService.dailyRest(playerId);
+		activityService.completeActivityTask(playerId,
+                ActivityConsts.ActivityTaskCondType.T_LOGIN, data.getLoginDays(), ActivityConsts.UpdateType.T_VALUE,false);
+		welfareCardService.daily(playerId);
 	}
-	
+
 	public void resetWeeklyData(PlayerData data){
 		int playerId = data.getPlayerId();
 		taskService.updateWeeklyTasks(playerId);
-		
+
 		//更新重置时间，放最后一行
 		data.setWeeklyTime(MONDAY_FIVE_CLOCK);
 	}

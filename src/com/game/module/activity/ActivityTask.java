@@ -66,6 +66,7 @@ public class ActivityTask {
 
     public void cleanup() {
         rewardFlag = false;
+        state = ActivityConsts.ActivityState.T_UN_FINISH;
         cond.cleanup();
     }
 

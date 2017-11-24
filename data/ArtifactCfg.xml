@@ -84,4 +84,26 @@
 	<imgTitle>mojinfu3</imgTitle>
 	<bgName>Artifact1_Bg.jpg</bgName>
 </config>
+<config>
+	<id>5</id>
+	<name>亡灵皿</name>
+	<clip>[400001,100]</clip>
+	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrs>
+	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrsInfo>
+	<components>[[4011001,1],[4011002,1],[4011003,1],[4011004,1],[4011005,1],[4011006,1]]</components>
+	<decompose>[[10,10,10,10,10,10],[4011001,4011002,4011003,4011004,4011005,4011006]]</decompose>
+	<partIcon>[4000,4001,4002,4003,4004,4005,4006]</partIcon>
+	<desc>古埃及神衹庄严的守护！
+法老王灵魂居所,可防侵害,确保形神永存。
+能获取永生的力量,神祗的祝福。</desc>
+	<model>31105</model>
+	<renderer>Artifact</renderer>
+	<effectPath>Bone001</effectPath>
+	<modelSize>[467,467,467]</modelSize>
+	<modelRotate>[340,0,0]</modelRotate>
+	<modelPos>[-98,-226,330]</modelPos>
+	<icon>lamp</icon>
+	<imgTitle>lamp3</imgTitle>
+	<bgName>Artifact4_Bg.jpg</bgName>
+</config>
 </root>

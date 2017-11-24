@@ -11,9 +11,12 @@ public class ChargeConfig {
 	public float rmb;//充值金额(rmb)
 	public int total;//获得充值礼包金额（钻石）
 	public int add;//额外赠送金额（钻石）
-	public int[] monthCard;//月卡领取钻石
+	public int[][] weekMonthCard;//周卡月卡领取钻石
 	public int platformType;//平台类型
 	public String platformId;//平台id
 	public Map<Integer,Integer> funds;//领取基金
 	public String atlas;//图集
+	public String icon;//图标
+	public String name;//名字
+	public int[][] rewards;//奖励
 }

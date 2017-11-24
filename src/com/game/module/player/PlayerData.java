@@ -6,6 +6,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.game.module.activity.ActivityTask;
+import com.game.module.activity.WelfareCard;
 import com.game.module.copy.Copy;
 import com.game.module.copy.TraverseMap;
 import com.game.module.fashion.Fashion;
@@ -16,7 +17,7 @@ import com.google.common.collect.Maps;
  * 本对象存储一些业务系统的数据 最终将系列化成json字节，压缩后存入数据库
  */
 public class PlayerData {
-	
+
 	private int playerId;
 	private List<Integer> fashions = new ArrayList<Integer>();
 	private ConcurrentHashMap<Integer, Long> tempFashions = new ConcurrentHashMap<Integer, Long>();
@@ -38,7 +39,7 @@ public class PlayerData {
 	private ArrayList<Integer> charges=new ArrayList<Integer>();// 充值记录
 	private ArrayList<Integer> funds= new ArrayList<Integer>();// 基金领取记录
 	private int fundActive;// 基金激活
-	
+
 	private ConcurrentHashMap<Integer, Boolean> friends = new ConcurrentHashMap<Integer, Boolean>();// 好友
 	private LinkedHashMap<Integer, Boolean> recentContacters = new LinkedHashMap<Integer, Boolean>(20, 0.5f){
 		private static final long serialVersionUID = 1L;
@@ -46,27 +47,27 @@ public class PlayerData {
 		protected boolean removeEldestEntry(Entry<Integer, Boolean> eldest) {
 			return size() > 20;
 		}
-		
+
 	};// 陌生人
 	private ConcurrentHashMap<Integer, Boolean> black = new ConcurrentHashMap<Integer, Boolean>();// 黑名单
-	
+
 	private ConcurrentHashMap<Integer, Copy> copys = new ConcurrentHashMap<Integer, Copy>();//副本
 	private ConcurrentHashMap<Integer, Integer> copyTimes = new ConcurrentHashMap<Integer, Integer>();//副本次数ResetCopy
 	private ConcurrentHashMap<Integer, Integer> resetCopy = new ConcurrentHashMap<Integer, Integer>();//副本重置次数
 	private List<Integer> threeStars= new ArrayList<Integer>();//三星奖励
-	
+
 	private int equipMaterial;//装备分解活动的材料
 	private ConcurrentHashMap<Integer, Integer> strengths = new ConcurrentHashMap<Integer, Integer>();//装备位强化等级
-	
+
 	private Map<Integer,Jewel> jewels = new ConcurrentHashMap<Integer,Jewel>();//装备位强化等级
-	
+
 	private List<Integer> skills=new ArrayList<Integer>();// 开通的技能
 	private List<Integer> curSkills = new ArrayList<Integer>(4);// 当前技能
 	private int curCardId = 0;//当前技能卡组ID
 	private List<List<Integer>> skillCardSets = new ArrayList<List<Integer>>();//技能卡组列表
 	private int maxSkillCardId=1;//技能卡id
 	private ConcurrentHashMap<Integer,SkillCard> skillCards = new ConcurrentHashMap<Integer, SkillCard>();//技能卡
-	
+
 	// 技能卡未抽中次数
 	private ConcurrentHashMap<Integer, Integer> skillCardTimes = new ConcurrentHashMap<>();
 
@@ -81,7 +82,7 @@ public class PlayerData {
 	private int maxTraverseId = 0;
 	//副本地图
 	private Map<Integer, TraverseMap> traverseMaps = new ConcurrentHashMap<Integer, TraverseMap>();
-	
+
 	//刷新商店的刷新次数<商店类型,刷新次数>
 	private ConcurrentHashMap<Integer, Integer> shopRefreshCount = new ConcurrentHashMap<Integer, Integer>();
 	//刷新商店的购买记录<商品id，购买次数>
@@ -92,9 +93,9 @@ public class PlayerData {
 	private int power4Mystery = 0;
 	//穿越仪能量刷新时间
 	private long traversingEnergyResetTime = 0;
-	
+
 	private long lastQuitGang;
-	
+
 	private PlayerCurrency currency = new PlayerCurrency();
 	//VIP礼包领取记录
 	private List<Integer> vipGifts = new ArrayList<>();
@@ -118,9 +119,30 @@ public class PlayerData {
 
 	private Map<Integer,ActivityTask> activityTasks = Maps.newHashMap();
 
+	//首充标识
+	private boolean firstRechargeFlag;
+
+	private WelfareCard welfareCard = new WelfareCard();
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+
+	public WelfareCard getWelfareCard() {
+		return welfareCard;
+	}
+
+	public void setWelfareCard(WelfareCard welfareCard) {
+		this.welfareCard = welfareCard;
+	}
+
+	public boolean isFirstRechargeFlag() {
+		return firstRechargeFlag;
+	}
+
+	public void setFirstRechargeFlag(boolean firstRechargeFlag) {
+		this.firstRechargeFlag = firstRechargeFlag;
 	}
 
 	public Map<Integer, ActivityTask> getActivityTasks() {
@@ -198,7 +220,7 @@ public class PlayerData {
 	public int getPlayerId() {
 		return playerId;
 	}
-	
+
 	public void setPlayerId(int playerId) {
 		this.playerId = playerId;
 	}
@@ -442,10 +464,10 @@ public class PlayerData {
 		if(skillCardSets.isEmpty()){
 			List<Integer> first = Arrays.asList(0,0,0,0);
 			skillCardSets.add(first);
-		} 
+		}
 		return skillCardSets;
 	}
-	
+
 	@JsonIgnore
 	public List<Integer> getCurrCard(){
 		List<Integer> set = getSkillCardSets().get(curCardId);
@@ -453,7 +475,7 @@ public class PlayerData {
 			set = skillCardSets.get(0);
 		return set;
 	}
-	
+
 
 	public void setSkillCardSets(List<List<Integer>> skillCardSets) {
 		this.skillCardSets = skillCardSets;

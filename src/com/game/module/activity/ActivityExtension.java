@@ -9,10 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class ActivityExtension {
     @Autowired
     private ActivityService activityService;
+    @Autowired
+    private WelfareCardService welfareCardService;
 
     @Command(8001)
-    public Object getActivityList(int playerId, Object param) {
-        return activityService.getOpenActivitys(playerId);
+    public Object getPlayerActivitys(int playerId, Object param) {
+        return activityService.getPlayerActivitys(playerId);
     }
 
     @Command(8002)
@@ -21,12 +23,17 @@ public class ActivityExtension {
     }
 
     @Command(8003)
-    public Object getActivityRewardAgain(int playerId, IntParam param) {
-        return activityService.getAwardAgain(playerId,param.param);
+    public Object fixedActivityAwards(int playerId, IntParam param) {
+        return activityService.fixedActivityAwards(playerId,param.param);
     }
 
     @Command(8007)
     public Object buyActivity(int playerId, IntParam param) {
         return activityService.openActivity(playerId,param.param);
+    }
+
+    @Command(8008)
+    public Object getWelfareCardInfo(int playerId, Object param) {
+        return welfareCardService.getWelfareCardInfo(playerId);
     }
 }

@@ -37,6 +37,33 @@
 	<skillId>12102069</skillId>
 </config>
 <config>
+	<id>5</id>
+	<name>宠物1主动技能lv5</name>
+	<describe>宠物1主动技能lv5</describe>
+	<type>1</type>
+	<quality>5</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>12102069</skillId>
+</config>
+<config>
+	<id>6</id>
+	<name>宠物1主动技能lv6</name>
+	<describe>宠物1主动技能lv6</describe>
+	<type>1</type>
+	<quality>6</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>12102069</skillId>
+</config>
+<config>
+	<id>7</id>
+	<name>宠物1主动技能lv7</name>
+	<describe>宠物1主动技能lv7</describe>
+	<type>1</type>
+	<quality>7</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>12102069</skillId>
+</config>
+<config>
 	<id>100</id>
 	<name>被动技能lv1</name>
 	<describe>被动技能lv1</describe>
@@ -73,6 +100,33 @@
 	<skillId>13101025</skillId>
 </config>
 <config>
+	<id>105</id>
+	<name>被动技能lv5</name>
+	<describe>被动技能lv5</describe>
+	<type>2</type>
+	<quality>5</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId>13101025</skillId>
+</config>
+<config>
+	<id>106</id>
+	<name>被动技能lv6</name>
+	<describe>被动技能lv6</describe>
+	<type>2</type>
+	<quality>6</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId>13101025</skillId>
+</config>
+<config>
+	<id>107</id>
+	<name>被动技能lv7</name>
+	<describe>被动技能lv7</describe>
+	<type>2</type>
+	<quality>7</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId>13101025</skillId>
+</config>
+<config>
 	<id>1001</id>
 	<name>超级被动技能lv1</name>
 	<describe>超级被动技能lv1</describe>
@@ -105,6 +159,33 @@
 	<describe>超级被动技能lv4</describe>
 	<type>2</type>
 	<quality>4</quality>
+	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<skillId>13104042</skillId>
+</config>
+<config>
+	<id>1005</id>
+	<name>超级被动技能lv5</name>
+	<describe>超级被动技能lv5</describe>
+	<type>2</type>
+	<quality>5</quality>
+	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<skillId>13104042</skillId>
+</config>
+<config>
+	<id>1006</id>
+	<name>超级被动技能lv6</name>
+	<describe>超级被动技能lv6</describe>
+	<type>2</type>
+	<quality>6</quality>
+	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<skillId>13104042</skillId>
+</config>
+<config>
+	<id>1007</id>
+	<name>超级被动技能lv7</name>
+	<describe>超级被动技能lv7</describe>
+	<type>2</type>
+	<quality>7</quality>
 	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
 	<skillId>13104042</skillId>
 </config>
