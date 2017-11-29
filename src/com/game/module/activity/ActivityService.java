@@ -108,7 +108,6 @@ public class ActivityService implements InitHandler {
         for (PlayerData data : players) {
             updateActivityList.clear();
             for (ActivityTask at : data.getActivityTasks().values()) {
-                //checkActivityTaskUpdate(updateActivityList, data, at);
                 if (checkActivityTaskUpdate(data, at)) {
                     updateActivityList.add(at);
                 }
@@ -304,20 +303,21 @@ public class ActivityService implements InitHandler {
     private void checkAddNewActivity(int playerId, Collection<ActivityCfg> openActivitys,
                                      List<Integer> openActivity, List<ActivityTask> openActivityTasks) {
         PlayerData data = playerService.getPlayerData(playerId);
-        Player player = playerService.getPlayer(playerId);
+        //Player player = playerService.getPlayer(playerId);
         for (ActivityCfg cfg : openActivitys) {
             if (openActivity != null) {
                 openActivity.add(cfg.id);
             }
 
-            if (cfg.OpenType == ActivityConsts.ActivityOpenType.T_HANDLE) continue;
-            List<ActivityTaskCfg> list = ActivityTasks.get(cfg.id);
-            if (cfg.ActivityType == ActivityConsts.ActivityType.T_LOGIN) {
+            if (cfg.OpenType == ActivityConsts.ActivityOpenType.T_HANDLE)
+                continue;
+/*            if (cfg.ActivityType == ActivityConsts.ActivityType.T_LOGIN) {
                 if (!checkLoginActivity(player.getRegTime(), cfg.Param0)) { //过滤本人7天登录活动
                     continue;
                 }
-            }
+            }*/
 
+            List<ActivityTaskCfg> list = ActivityTasks.get(cfg.id);
             for (ActivityTaskCfg taskCfg : list) {
                 if (!data.getActivityTasks().containsKey(taskCfg.id)) {
                     ActivityTask at = createActivityTask(taskCfg);
@@ -344,7 +344,7 @@ public class ActivityService implements InitHandler {
      * @param date
      * @return
      */
-    private boolean checkLoginActivity(Date date, int param) {
+    private boolean checkLoginActivity(PlayerData data, Date date, int param) {
         LocalDate localDate = LocalDate.now();
         int today = localDate.getDayOfYear();
 
@@ -352,7 +352,18 @@ public class ActivityService implements InitHandler {
         ZoneId zone = ZoneId.systemDefault();
         LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, zone);
         int day = localDateTime.toLocalDate().getDayOfYear();
-        return today - day < param;
+
+        boolean ret = today - day < param; //时间范围内
+        boolean unFinish = false;
+        if (ret) {
+            for (ActivityTask at : data.getActivityTasks().values()) {
+                if (at.getState() != ActivityConsts.ActivityState.T_AWARD) {
+                    unFinish = true;
+                    break;
+                }
+            }
+        }
+        return ret && unFinish;
     }
 
     /**
@@ -386,7 +397,7 @@ public class ActivityService implements InitHandler {
         Player player = playerService.getPlayer(playerId);
         for (ActivityCfg cfg : OpenActivitys.values()) {
             if (cfg.ActivityType == ActivityConsts.ActivityType.T_LOGIN) { //7天登录
-                if (!checkLoginActivity(player.getRegTime(), cfg.Param0)) {
+                if (!checkLoginActivity(data, player.getRegTime(), cfg.Param0)) {
                     continue;
                 }
             } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_NEW_ROLE) { //新手礼包
@@ -406,7 +417,7 @@ public class ActivityService implements InitHandler {
         }
 
         for (ActivityTask at : data.getActivityTasks().values()) {
-            if (OpenActivitys.containsKey(at.getActivityId())) {
+            if (result.id.contains(at.getActivityId())) {
                 result.tasks.add(at.toProto());
             }
         }

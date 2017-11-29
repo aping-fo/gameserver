@@ -76975,15 +76975,15 @@
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>50</hitFactor>
-	<attackCount>1</attackCount>
+	<attackCount>3</attackCount>
 	<cd>0</cd>
-	<offsetRefer>1</offsetRefer>
+	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
 	<successiveAttackProb>1</successiveAttackProb>
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill1</actionId>
-	<actionEffectId>[203020011]</actionEffectId>
+	<actionEffectId>[203080011]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -77026,7 +77026,7 @@
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>2000</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
-	<attackCount>3</attackCount>
+	<attackCount>2</attackCount>
 	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
@@ -77034,7 +77034,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill2</actionId>
-	<actionEffectId>[203020021,203020022,203020023]</actionEffectId>
+	<actionEffectId>[203080021]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -77077,7 +77077,7 @@
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>3000</strickenInteruptPriority>
 	<hitFactor>100</hitFactor>
-	<attackCount>2</attackCount>
+	<attackCount>9</attackCount>
 	<cd>10</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
@@ -77085,7 +77085,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>skill3</actionId>
-	<actionEffectId>[203020031,203020032]</actionEffectId>
+	<actionEffectId>[203080031]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -77156,7 +77156,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams>[200,233]</skillParams>
+	<skillParams>[133,167]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -77207,7 +77207,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams>[233,267]</skillParams>
+	<skillParams>[200,233]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>
@@ -77258,7 +77258,7 @@
 	<strickenFly></strickenFly>
 	<strickenShotdown></strickenShotdown>
 	<lyingDown></lyingDown>
-	<skillParams>[833,1000]</skillParams>
+	<skillParams>[600,867]</skillParams>
 	<coin></coin>
 	<nextId></nextId>
 	<setPainting></setPainting>

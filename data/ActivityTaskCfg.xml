@@ -240,7 +240,7 @@
 	<Rewards>[[102,702]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des></des>
+	<des>达到5级可以领取</des>
 </config>
 <config>
 	<id>23</id>
@@ -251,28 +251,6 @@
 	<Rewards>[[102,703]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des></des>
-</config>
-<config>
-	<id>24</id>
-	<name>周卡</name>
-	<ActivityId>6</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[6,1]]</Conds>
-	<Rewards>[[102,704]]</Rewards>
-	<AutoReward>0</AutoReward>
-	<Param0></Param0>
-	<des></des>
-</config>
-<config>
-	<id>25</id>
-	<name>月卡</name>
-	<ActivityId>7</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[7,1]]</Conds>
-	<Rewards>[[102,705]]</Rewards>
-	<AutoReward>0</AutoReward>
-	<Param0></Param0>
-	<des></des>
+	<des>达到6级可以领取</des>
 </config>
 </root>

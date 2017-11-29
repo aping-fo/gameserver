@@ -24,6 +24,8 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerDao;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.sct.SkillCardTrainService;
+import com.game.module.sct.Train;
 import com.game.module.serial.SerialData;
 import com.game.module.serial.SerialDataService;
 import com.game.module.shop.ShopService;
@@ -98,7 +100,7 @@ public class CopyService {
 	@Autowired
 	private GroupService groupService;
 	@Autowired
-	private GangDungeonService gangDungeonService;
+	private SkillCardTrainService skillCardTrainService;
 
 	private AtomicInteger uniId = new AtomicInteger(100);
 	private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<Integer, CopyInstance>();
@@ -170,16 +172,30 @@ public class CopyService {
 				return Response.COPY_NO_PRE;
 			}
 		}
-		// 次数
-		if (cfg.count > 0) {
-			Integer curCount = playerService.getPlayerData(playerId).getCopyTimes().get(copyId);
-			if (curCount == null) {
-				curCount = 0;
+
+		if(cfg.type == CopyInstance.TYPE_TRAIN){
+			Train train = playerData.getTrain();
+			Integer count = train.getGroupTimes().get(cfg.chapterId);
+			if(count == null) {
+				count = 0;
 			}
-			if (curCount >= cfg.count) {
+			int totalCount = ConfigData.chapterToCount.get(cfg.chapterId);
+			if(count >= totalCount) {
 				return Response.NO_TODAY_TIMES;
 			}
+		}else{
+			// 次数
+			if (cfg.count > 0) {
+				Integer curCount = playerService.getPlayerData(playerId).getCopyTimes().get(copyId);
+				if (curCount == null) {
+					curCount = 0;
+				}
+				if (curCount >= cfg.count) {
+					return Response.NO_TODAY_TIMES;
+				}
+			}
 		}
+
 		if (cfg.needEnergy > 0) {
 			if (player.getEnergy() < cfg.needEnergy) {
 				return Response.NO_ENERGY;
@@ -455,15 +471,20 @@ public class CopyService {
 
 		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
 		// 有次数的副本
-		
-		if (cfg.count > 0) {
-			Integer count = playerData.getCopyTimes().get(copyId);
-			if (count == null) {
-				count = 0;
+
+		if(cfg.type == CopyInstance.TYPE_TRAIN){
+			skillCardTrainService.updateCopyTimes(playerId,cfg.chapterId,1,copyId);
+		}else {
+			if (cfg.count > 0) {
+				Integer count = playerData.getCopyTimes().get(copyId);
+				if (count == null) {
+					count = 0;
+				}
+				count++;
+				playerData.getCopyTimes().put(copyId, count);
 			}
-			count++;
-			playerData.getCopyTimes().put(copyId, count);
 		}
+
 		if(cfg.type == CopyInstance.TYPE_ENDLESS){
 			endlessLogic.updateLayer(playerId, result);
 		}else if(cfg.type == CopyInstance.TYPE_TREASURE){
@@ -771,40 +792,46 @@ public class CopyService {
 				result.code = Response.NO_ENERGY;
 				return result;
 			}
-			
-			if(goodsService.decConsume(playerId, ConfigData.globalParam().sweepNeedGoods, LogConsume.SWEEP_COPY) > 0){
-				result.code = Response.NO_MATERIAL;
-				return result;
-			}
-			// 活动副本扣除体力
-			if (cfg.needEnergy>0) {
-				if (!playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId)) {
-					result.code = Response.NO_ENERGY;
-					refreshCopyInfo(playerId, copyId, playerData);
+
+			if(cfg.type == CopyInstance.TYPE_TRAIN) {
+
+			}else {
+				if(goodsService.decConsume(playerId, ConfigData.globalParam().sweepNeedGoods, LogConsume.SWEEP_COPY) > 0){
+					result.code = Response.NO_MATERIAL;
 					return result;
 				}
-			}
-			
-			boolean show = shopService.triggerMysteryShop(playerId, copyId, null);
-			if(show){
-				result.showMystery = true;
+				// 活动副本扣除体力
+				if (cfg.needEnergy>0) {
+					if (!playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId)) {
+						result.code = Response.NO_ENERGY;
+						refreshCopyInfo(playerId, copyId, playerData);
+						return result;
+					}
+				}
+
+				boolean show = shopService.triggerMysteryShop(playerId, copyId, null);
+				if(show){
+					result.showMystery = true;
+				}
+				// 更新副本次数
+				if (cfg.count >0) {
+					Integer count = playerData.getCopyTimes().get(copyId);
+					if (count == null) {
+						count = 0;
+					}
+					count++;
+					playerData.getCopyTimes().put(copyId, count);
+				}
 			}
 
 			RewardList list = new RewardList();
 			list.rewards = swipeCopyInner(playerId, copyId);
 			result.reward.add(list);
-
-			// 更新副本次数
-			if (cfg.count >0) {
-				Integer count = playerData.getCopyTimes().get(copyId);
-				if (count == null) {
-					count = 0;
-				}
-				count++;
-				playerData.getCopyTimes().put(copyId, count);
-			}
 		}
 
+		if(cfg.type == CopyInstance.TYPE_TRAIN) {
+			skillCardTrainService.updateCopyTimes(playerId,cfg.chapterId,times,0);
+		}
 		refreshCopyInfo(playerId, copyId, playerData);
 		return result;
 	}

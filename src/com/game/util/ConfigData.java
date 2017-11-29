@@ -60,6 +60,7 @@ public class ConfigData {
     public static Map<String, Integer> guildTechnology = new HashMap<>();
     public static Map<Integer, Integer> leadawayAwardsDrop = new HashMap<>();
     public static final Set<String> accountSet = new HashSet<>();
+    public static Map<Integer,Integer> chapterToCount = new HashMap<>();
     // 获取充值配置
     public static List<ChargeConfig> getCharges() {
         return charges;
@@ -274,6 +275,8 @@ public class ConfigData {
                         leadawayAwardsDrop.put(cfg.id, dropId);
                     }
                 }
+            } else if(cfg.type == CopyInstance.TYPE_TRAIN){
+                chapterToCount.putIfAbsent(cfg.chapterId,cfg.count);
             }
         }
 

@@ -10,6 +10,7 @@ import com.game.module.activity.WelfareCard;
 import com.game.module.copy.Copy;
 import com.game.module.copy.TraverseMap;
 import com.game.module.fashion.Fashion;
+import com.game.module.sct.Train;
 import com.game.module.skill.SkillCard;
 import com.google.common.collect.Maps;
 
@@ -123,11 +124,21 @@ public class PlayerData {
 	private boolean firstRechargeFlag;
 
 	private WelfareCard welfareCard = new WelfareCard();
+	private Train train = new Train();
+
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
 	}
 
+
+	public Train getTrain() {
+		return train;
+	}
+
+	public void setTrain(Train train) {
+		this.train = train;
+	}
 
 	public WelfareCard getWelfareCard() {
 		return welfareCard;

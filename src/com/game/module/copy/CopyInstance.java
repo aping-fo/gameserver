@@ -23,6 +23,7 @@ public class CopyInstance {
 	public static final int TYPE_LEADAWAY = 11; //顺手牵羊玩法
 	public static final int TYPE_GOLD = 12; //金币玩法
 	public static final int TYPE_LADDER = 13; //排位赛
+	public static final int TYPE_TRAIN = 15; //技能卡试练
 
 	public static final int EASY = 1;
 	public static final int HARD = 2;
