@@ -60,7 +60,9 @@ public class ConfigData {
     public static Map<String, Integer> guildTechnology = new HashMap<>();
     public static Map<Integer, Integer> leadawayAwardsDrop = new HashMap<>();
     public static final Set<String> accountSet = new HashSet<>();
-    public static Map<Integer,Integer> chapterToCount = new HashMap<>();
+    public static Map<Integer, Integer> trainCount = new HashMap<>();
+    public static Map<Integer, TrialFieldCfg> trainCopy = new HashMap<>();
+
     // 获取充值配置
     public static List<ChargeConfig> getCharges() {
         return charges;
@@ -275,15 +277,13 @@ public class ConfigData {
                         leadawayAwardsDrop.put(cfg.id, dropId);
                     }
                 }
-            } else if(cfg.type == CopyInstance.TYPE_TRAIN){
-                chapterToCount.putIfAbsent(cfg.chapterId,cfg.count);
             }
         }
 
         for (Object obj : GameData.getConfigs(GangScienceCfg.class)) {
             GangScienceCfg cfg = (GangScienceCfg) obj;
             if (cfg.lv == 0) {
-                guildTechnology.put(cfg.type +"_" + cfg.NeedLevel, cfg.id);
+                guildTechnology.put(cfg.type + "_" + cfg.NeedLevel, cfg.id);
             }
         }
 
@@ -291,5 +291,11 @@ public class ConfigData {
             AccountCfg cfg = (AccountCfg) obj;
             accountSet.add(cfg.name);
         }
+
+        /*for (Object obj : GameData.getConfigs(TrialFieldCfg.class)) {
+            TrialFieldCfg cfg = (TrialFieldCfg) obj;
+            trainCount.put(cfg.type, cfg.count);
+            trainCopy.put(cfg.copyId, cfg);
+        }*/
     }
 }

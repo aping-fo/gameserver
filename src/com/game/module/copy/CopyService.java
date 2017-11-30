@@ -175,12 +175,10 @@ public class CopyService {
 
 		if(cfg.type == CopyInstance.TYPE_TRAIN){
 			Train train = playerData.getTrain();
-			Integer count = train.getGroupTimes().get(cfg.chapterId);
-			if(count == null) {
-				count = 0;
-			}
-			int totalCount = ConfigData.chapterToCount.get(cfg.chapterId);
-			if(count >= totalCount) {
+			TrialFieldCfg trainCfg = ConfigData.trainCopy.get(copyId);
+			int count = train.getGroupTimes().get(trainCfg.type);
+			int totalCount = ConfigData.trainCount.get(trainCfg.type);
+			if (count >= totalCount) {
 				return Response.NO_TODAY_TIMES;
 			}
 		}else{
@@ -473,7 +471,7 @@ public class CopyService {
 		// 有次数的副本
 
 		if(cfg.type == CopyInstance.TYPE_TRAIN){
-			skillCardTrainService.updateCopyTimes(playerId,cfg.chapterId,1,copyId);
+			skillCardTrainService.updateCopyTimes(playerId,1,copyId);
 		}else {
 			if (cfg.count > 0) {
 				Integer count = playerData.getCopyTimes().get(copyId);
@@ -830,7 +828,7 @@ public class CopyService {
 		}
 
 		if(cfg.type == CopyInstance.TYPE_TRAIN) {
-			skillCardTrainService.updateCopyTimes(playerId,cfg.chapterId,times,0);
+			skillCardTrainService.updateCopyTimes(playerId,times,copyId);
 		}
 		refreshCopyInfo(playerId, copyId, playerData);
 		return result;

@@ -13,6 +13,7 @@ import com.game.module.attach.catchgold.CatchGoldAttach;
 import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.gang.GangDungeonService;
+import com.game.module.sct.SkillCardTrainService;
 import com.game.module.sign.SignService;
 import com.game.util.ConfigData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,6 +81,8 @@ public class DailyService implements InitHandler {
 	private ActivityService activityService;
 	@Autowired
 	private WelfareCardService welfareCardService;
+	@Autowired
+	private SkillCardTrainService skillCardTrainService;
 	public static long FIVE_CLOCK = 0;
 	public static long MONDAY_FIVE_CLOCK = 0;
 
@@ -208,9 +211,8 @@ public class DailyService implements InitHandler {
 		catchGoldLogic.dailyReset(playerId);
 		gangDungeonService.dailyReset(playerId);
 		activityService.dailyRest(playerId);
-		activityService.completeActivityTask(playerId,
-                ActivityConsts.ActivityTaskCondType.T_LOGIN, data.getLoginDays(), ActivityConsts.UpdateType.T_VALUE,false);
 		welfareCardService.daily(playerId);
+		skillCardTrainService.dailyRest(playerId);
 	}
 
 	public void resetWeeklyData(PlayerData data){

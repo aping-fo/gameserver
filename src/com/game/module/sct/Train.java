@@ -43,18 +43,4 @@ public class Train {
             groupTimes.put(id, 0);
         }
     }
-
-    public TrainVo toProto() {
-        TrainVo vo = new TrainVo();
-        vo.ids = Lists.newArrayList();
-        vo.rewards = Lists.newArrayList();
-        vo.ids.addAll(challengeIds);
-        for (Map.Entry<Integer, Integer> e : groupTimes.entrySet()) {
-            Int2Param param = new Int2Param();
-            param.param1 = e.getKey();
-            param.param2 = e.getValue();
-            vo.rewards.add(param);
-        }
-        return vo;
-    }
 }

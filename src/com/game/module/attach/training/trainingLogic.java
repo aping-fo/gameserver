@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.game.util.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -65,7 +66,7 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
 
         for (int i = 0; i < size; i++) {
             List<Integer> ex = sectionOpponents.getOrDefault(i, NULL);
-            List<Integer> ids = playerDao.selectByFightingPower(ex, fightSection[i], total);
+            List<Integer> ids = playerDao.selectByFightingPower(ex, fightSection[i], total + 1);
             sectionOpponents.put(i, ids);
             for (int id : ids) {
                 Player player = playerService.getPlayer(id);
@@ -84,10 +85,8 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
                 opponent.setWeaponId(player.getWeaponId());
                 PlayerData playerData = playerService.getPlayerData(id);
                 //if(playerData == null) continue;
-                opponent.setCurCards(playerData.getCurrCard());
+                opponent.setCurCards(playerData.getCurrCardIds());
                 opponent.setCurSkills(playerData.getCurSkills());
-
-
                 opponents.put(id, opponent);
             }
         }
@@ -138,7 +137,7 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
                 }
             }
         }
-        int size = targets.size() > 11 ? 11 : targets.size();
+        int size = targets.size() > 12 ? 12 : targets.size();
         return targets.subList(0, size - 1);
     }
 

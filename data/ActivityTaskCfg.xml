@@ -8,7 +8,7 @@
 	<Conds>[[1,11,12]]</Conds>
 	<Rewards>[[107,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0>200</Param0>
+	<Param0>99</Param0>
 	<des>11点到12点可领取</des>
 </config>
 <config>
@@ -19,7 +19,7 @@
 	<Conds>[[1,17,18]]</Conds>
 	<Rewards>[[107,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0>200</Param0>
+	<Param0>99</Param0>
 	<des>17点到18点可领取</des>
 </config>
 <config>
@@ -30,7 +30,7 @@
 	<Conds>[[1,20,21]]</Conds>
 	<Rewards>[[107,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0>200</Param0>
+	<Param0>99</Param0>
 	<des>20点到21点可领取</des>
 </config>
 <config>
@@ -227,7 +227,7 @@
 	<ResetType>0</ResetType>
 	<Conds>[[4,1]]</Conds>
 	<Rewards>[[102,1],[102,1],[102,7],[102,100]]</Rewards>
-	<AutoReward>1</AutoReward>
+	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
 </config>
@@ -237,20 +237,174 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,5]]</Conds>
-	<Rewards>[[102,702]]</Rewards>
+	<Rewards>[[102,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到5级可以领取</des>
 </config>
 <config>
 	<id>23</id>
-	<name>6级</name>
+	<name>10级</name>
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[5,6]]</Conds>
-	<Rewards>[[102,703]]</Rewards>
+	<Conds>[[5,10]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到6级可以领取</des>
+	<des>达到10级可以领取</des>
+</config>
+<config>
+	<id>24</id>
+	<name>15级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,15]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到20级可以领取</des>
+</config>
+<config>
+	<id>25</id>
+	<name>20级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,20]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到25级可以领取</des>
+</config>
+<config>
+	<id>26</id>
+	<name>25级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,25]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到30级可以领取</des>
+</config>
+<config>
+	<id>27</id>
+	<name>30级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,30]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到35级可以领取</des>
+</config>
+<config>
+	<id>28</id>
+	<name>35级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,35]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到40级可以领取</des>
+</config>
+<config>
+	<id>29</id>
+	<name>40级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,40]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到45级可以领取</des>
+</config>
+<config>
+	<id>30</id>
+	<name>45级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,45]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到50级可以领取</des>
+</config>
+<config>
+	<id>31</id>
+	<name>50级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,50]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到55级可以领取</des>
+</config>
+<config>
+	<id>32</id>
+	<name>55级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,55]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到60级可以领取</des>
+</config>
+<config>
+	<id>33</id>
+	<name>60级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,60]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到65级可以领取</des>
+</config>
+<config>
+	<id>34</id>
+	<name>65级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,65]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到70级可以领取</des>
+</config>
+<config>
+	<id>35</id>
+	<name>70级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,70]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到75级可以领取</des>
+</config>
+<config>
+	<id>36</id>
+	<name>75级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,75]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到80级可以领取</des>
+</config>
+<config>
+	<id>37</id>
+	<name>80级</name>
+	<ActivityId>5</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[5,80]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>达到90级可以领取</des>
 </config>
 </root>

@@ -7,6 +7,7 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.params.ladder.TrainingResultVO;
 import com.game.params.training.TrainingFighterVO;
+import com.game.util.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.Response;

@@ -12,6 +12,7 @@ import com.game.module.copy.TraverseMap;
 import com.game.module.fashion.Fashion;
 import com.game.module.sct.Train;
 import com.game.module.skill.SkillCard;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
 /**
@@ -125,6 +126,7 @@ public class PlayerData {
 
 	private WelfareCard welfareCard = new WelfareCard();
 	private Train train = new Train();
+	private int sevenDays = 1; // 7次领奖活动
 
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
@@ -134,6 +136,14 @@ public class PlayerData {
 
 	public Train getTrain() {
 		return train;
+	}
+
+	public int getSevenDays() {
+		return sevenDays;
+	}
+
+	public void setSevenDays(int sevenDays) {
+		this.sevenDays = sevenDays;
 	}
 
 	public void setTrain(Train train) {
@@ -487,6 +497,23 @@ public class PlayerData {
 		return set;
 	}
 
+	@JsonIgnore
+	public List<Integer> getCurrCardIds(){
+		List<Integer> set = getSkillCardSets().get(curCardId);
+		if(set == null)
+			set = skillCardSets.get(0);
+
+		List<Integer> list = Lists.newArrayList();
+		for(int id : set) {
+			SkillCard card = skillCards.get(id);
+			if(card != null) {
+				list.add(card.getCardId());
+			}else {
+				list.add(0);
+			}
+		}
+		return list;
+	}
 
 	public void setSkillCardSets(List<List<Integer>> skillCardSets) {
 		this.skillCardSets = skillCardSets;
