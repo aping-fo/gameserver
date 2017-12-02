@@ -15,5 +15,5 @@ public class EquipStarCfg {
 	public int defense;//坚韧
 	public int symptom;//症状
 	public int crit;//精准
-	public int fu;//抗性
+	public int fu;//符能
 }

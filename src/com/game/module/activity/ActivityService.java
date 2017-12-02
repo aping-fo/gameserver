@@ -314,7 +314,7 @@ public class ActivityService implements InitHandler {
                 continue;
             List<ActivityTaskCfg> list = ActivityTasks.get(cfg.id);
             for (ActivityTaskCfg taskCfg : list) {
-                if (cfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) { //体力活动，登录检测
+                if (cfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) {
                     ActivityTask at = data.getActivityTasks().get(taskCfg.id);
                     if (at != null) {
                         checkActivityTaskUpdate(data, at);

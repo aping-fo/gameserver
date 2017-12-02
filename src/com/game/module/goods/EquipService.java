@@ -127,7 +127,6 @@ public class EquipService {
 		//计算总的获得
 		int goodsId = 0;
 		int count = 0;
-		boolean bUpdate = false;
 		for(long id:ids){
 			int equipMaterials = 0;
 			Goods goods = goodsService.getGoods(playerId, id);
@@ -149,12 +148,6 @@ public class EquipService {
 			//扣除物品
 			goodsService.decSpecGoods(goods, goods.getStackNum(), LogConsume.DECOMPOSE_DEC);
 			goodsService.addRewrad(playerId, cfg.decompose[0][0], equipMaterials, LogConsume.DECOMPOSE_DEC);
-			if(goods.getStoreType() == Goods.EQUIP){ //goods.setStoreType(Goods.EQUIP);
-				bUpdate = true;
-			}
-		}
-		if(bUpdate) {
-			playerCalculator.calculate(playerId);
 		}
 		GainGoodNotify notify = new GainGoodNotify();
 		//加奖励
