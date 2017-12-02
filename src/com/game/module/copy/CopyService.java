@@ -470,17 +470,10 @@ public class CopyService {
 		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
 		// 有次数的副本
 
-		if(cfg.type == CopyInstance.TYPE_TRAIN){
+		if(cfg.type == CopyInstance.TYPE_TRAIN){ //更新试练场挑战次数
 			skillCardTrainService.updateCopyTimes(playerId,1,copyId);
 		}else {
-			if (cfg.count > 0) {
-				Integer count = playerData.getCopyTimes().get(copyId);
-				if (count == null) {
-					count = 0;
-				}
-				count++;
-				playerData.getCopyTimes().put(copyId, count);
-			}
+			updateCopyTimes(copyId, playerData, cfg);
 		}
 
 		if(cfg.type == CopyInstance.TYPE_ENDLESS){
@@ -506,6 +499,23 @@ public class CopyService {
 		// 更新数据到前端
 		refreshCopyInfo(playerId, copyId, playerData);
 		taskService.doTask(playerId, Task.FINISH_TRANSIT, copyId, cfg.type, result.star, 1);
+	}
+
+	/**
+	 * 更新副本次数
+	 * @param copyId
+	 * @param playerData
+	 * @param cfg
+	 */
+	private void updateCopyTimes(int copyId, PlayerData playerData, CopyConfig cfg) {
+		if (cfg.count > 0) {
+            Integer count = playerData.getCopyTimes().get(copyId);
+            if (count == null) {
+                count = 0;
+            }
+            count++;
+            playerData.getCopyTimes().put(copyId, count);
+        }
 	}
 
 	// 更新副本
@@ -792,7 +802,7 @@ public class CopyService {
 			}
 
 			if(cfg.type == CopyInstance.TYPE_TRAIN) {
-
+				skillCardTrainService.updateCopyTimes(playerId,times,copyId);
 			}else {
 				if(goodsService.decConsume(playerId, ConfigData.globalParam().sweepNeedGoods, LogConsume.SWEEP_COPY) > 0){
 					result.code = Response.NO_MATERIAL;
@@ -812,14 +822,7 @@ public class CopyService {
 					result.showMystery = true;
 				}
 				// 更新副本次数
-				if (cfg.count >0) {
-					Integer count = playerData.getCopyTimes().get(copyId);
-					if (count == null) {
-						count = 0;
-					}
-					count++;
-					playerData.getCopyTimes().put(copyId, count);
-				}
+				updateCopyTimes(copyId, playerData, cfg);
 			}
 
 			RewardList list = new RewardList();
@@ -827,9 +830,6 @@ public class CopyService {
 			result.reward.add(list);
 		}
 
-		if(cfg.type == CopyInstance.TYPE_TRAIN) {
-			skillCardTrainService.updateCopyTimes(playerId,times,copyId);
-		}
 		refreshCopyInfo(playerId, copyId, playerData);
 		return result;
 	}
