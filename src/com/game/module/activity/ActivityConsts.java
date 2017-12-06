@@ -18,6 +18,16 @@ public class ActivityConsts {
     }
 
     /**
+     * 活动任务完成条件类型
+     */
+    public static class ActivityTaskCondType {
+        public static final int T_ENERGY = 1; //时间区间类型
+        public static final int T_GROW_FUND = 2; //成长基金
+        public static final int T_LOGIN = 3; //7日登录
+        public static final int T_FIRST_RECHARGE = 4; //首充
+        public static final int T_LEVEL_UP = 5; //冲级活动
+    }
+    /**
      * 活动状态
      */
     public static class ActivityState {
@@ -33,17 +43,6 @@ public class ActivityConsts {
     public static class ActivityCondType {
         public static final int T_VIP = 1; //vip等级
         public static final int T_ITEM = 2; //道具消耗
-    }
-
-    /**
-     * 活动任务完成条件类型
-     */
-    public static class ActivityTaskCondType {
-        public static final int T_TIME = 1; //时间区间类型
-        public static final int T_GROW_FUND = 2; //成长基金
-        public static final int T_LOGIN = 3; //7日登录
-        public static final int T_FIRST_RECHARGE = 4; //首充
-        public static final int T_LEVEL_UP = 5; //冲级活动
     }
 
     /**

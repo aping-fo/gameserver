@@ -687,6 +687,10 @@ public class TaskService implements Dispose {
 		if (playerTask2.getJointedCount() >= 3) {
 			return Response.TASK_NO_NOINT;
 		}
+		if (partner.getTeamId() != 0) {
+			return Response.ERR_PARAM;
+		}
+
 		String key = String.format("%d_%d", taskId, playerId);
 		List<String> jointedTasks = playerTask2.getJointedTasks();
 		jointedTasks.remove(key);

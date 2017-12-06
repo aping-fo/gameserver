@@ -25,12 +25,9 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.Collection;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -57,7 +54,7 @@ public class ActivityService implements InitHandler {
     @Override
     public void handleInit() {
         try {
-            doCheckActivityOpen();
+            doScheduleCheckActivity();
         } catch (Exception e) {
             ServerLogger.err(e, "活动异常");
         }
@@ -68,7 +65,7 @@ public class ActivityService implements InitHandler {
             @Override
             public void run() {
                 try {
-                    doCheckActivityOpen();
+                    doScheduleCheckActivity();
                 } catch (Exception e) {
                     ServerLogger.err(e, "活动定时器异常");
                 }
@@ -80,7 +77,7 @@ public class ActivityService implements InitHandler {
             @Override
             public void run() {
                 try {
-                    doCheckActivityComplete(playerService.getPlayerDatas().values(), true);
+                    doScheduleCheckActivityTask(playerService.getPlayerDatas().values(), true);
                 } catch (Exception e) {
                     ServerLogger.err(e, "玩家活动定时器异常");
                 }
@@ -99,16 +96,16 @@ public class ActivityService implements InitHandler {
     }
 
     /**
-     * 检测任务是否完成
+     * 定时检测活动任务状态
      *
      * @param players
      */
-    private void doCheckActivityComplete(Collection<PlayerData> players, boolean toCli) {
+    private void doScheduleCheckActivityTask(Collection<PlayerData> players, boolean toCli) {
         List<ActivityTask> updateActivityList = Lists.newArrayList();
         for (PlayerData data : players) {
             updateActivityList.clear();
             for (ActivityTask at : data.getActivityTasks().values()) {
-                if (checkActivityTaskUpdate(data, at)) {
+                if (checkTimeActivityUpdate(at)) {
                     updateActivityList.add(at);
                 }
             }
@@ -118,52 +115,12 @@ public class ActivityService implements InitHandler {
         }
     }
 
-    private boolean checkActivityTaskUpdate(PlayerData data, ActivityTask at) {
-        boolean bUpdate = false;
-        if (at.isRewardFlag()) { //已经奖励完，则不检测
-            return bUpdate;
-        }
-
-        if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIME) { //时间区间类型单独处理
-            ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
-            int beginHour = cfg.Conds[0][1];
-            int endHour = cfg.Conds[0][2];
-            int hour = LocalDateTime.now().getHour();
-            if (beginHour <= hour && endHour > hour) {
-                if (at.getState() == ActivityConsts.ActivityState.T_UN_FINISH) {
-                    at.setState(ActivityConsts.ActivityState.T_FINISH);
-                    bUpdate = true;
-                }
-            } else if (endHour <= hour) { //时间已过，进行补领判断
-                if (at.getState() == ActivityConsts.ActivityState.T_UN_FINISH || //未完成的
-                        at.getState() == ActivityConsts.ActivityState.T_FINISH) { //已完成的
-                    at.setState(ActivityConsts.ActivityState.T_AGAIN_AWARD);
-                    bUpdate = true;
-                }
-            }
-        } else { //其他类型
-            if (at.getState() == ActivityConsts.ActivityState.T_FINISH) { //已经完成的，则不检测
-                return bUpdate;
-            }
-            if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_LEVEL_UP
-                    || at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_GROW_FUND) { //等级类型
-                Player player = playerService.getPlayer(data.getPlayerId());
-                at.getCond().setValue(player.getLev());
-                bUpdate = true;
-
-            } else if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_LOGIN) { //7天登录
-                at.getCond().setValue(data.getLoginDays());
-                bUpdate = true;
-            }
-            if (at.getCond().checkComplete()) {
-                at.setState(ActivityConsts.ActivityState.T_FINISH);
-                bUpdate = true;
-            }
-        }
-        return bUpdate;
-    }
-
-    private void doCheckActivityOpen() throws Exception {
+    /**
+     * 定时检测活动开启关闭
+     *
+     * @throws Exception
+     */
+    private void doScheduleCheckActivity() throws Exception {
         List<ActivityCfg> openActivitys = Lists.newArrayList();
         List<Integer> closeActivitys = Lists.newArrayList();
         LocalDate nowDate = LocalDate.now();
@@ -221,11 +178,76 @@ public class ActivityService implements InitHandler {
         }
 
         if (!openActivitys.isEmpty()) { //新活动开启
-            addNewActivity(openActivitys);
+            playerAddNewActivity(openActivitys);
         }
         if (!closeActivitys.isEmpty()) { //关闭的活动
             pushActivityClose(closeActivitys, 0);
         }
+    }
+
+
+    /**
+     * 检查区间时间活动状态
+     *
+     * @param at
+     * @return
+     */
+    private boolean checkTimeActivityUpdate(ActivityTask at) {
+        boolean bUpdate = false;
+        if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_ENERGY) { //体力活动时间区间类型单独处理
+            ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+            int beginHour = cfg.Conds[0][1];
+            int endHour = cfg.Conds[0][2];
+            int hour = LocalDateTime.now().getHour();
+            if (beginHour <= hour && endHour > hour) {
+                if (at.getState() == ActivityConsts.ActivityState.T_UN_FINISH) {
+                    at.setState(ActivityConsts.ActivityState.T_FINISH);
+                    bUpdate = true;
+                }
+            } else if (endHour <= hour) { //时间已过，进行补领判断
+                if (at.getState() == ActivityConsts.ActivityState.T_UN_FINISH || //未完成的
+                        at.getState() == ActivityConsts.ActivityState.T_FINISH) { //已完成的
+                    at.setState(ActivityConsts.ActivityState.T_AGAIN_AWARD);
+                    bUpdate = true;
+                }
+            }
+        }
+        return bUpdate;
+    }
+
+    /**
+     * 检查任务当前状态
+     *
+     * @param data
+     * @param at
+     * @return
+     */
+    private boolean checkActivityTaskUpdate(PlayerData data, ActivityTask at) {
+        boolean bUpdate = false;
+        if (at.isRewardFlag()) { //已经奖励完，则不检测
+            return bUpdate;
+        }
+        if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_ENERGY) { //体力时间区间类型单独处理
+            bUpdate = checkTimeActivityUpdate(at);
+        } else { //其他类型
+            if (at.getState() == ActivityConsts.ActivityState.T_FINISH) { //已经完成的，则不检测
+                return bUpdate;
+            }
+            if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_LEVEL_UP
+                    || at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_GROW_FUND) { //等级类型
+                Player player = playerService.getPlayer(data.getPlayerId());
+                at.getCond().setValue(player.getLev());
+                bUpdate = true;
+            } else if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_LOGIN) { //7天登录
+                at.getCond().setValue(data.getSevenDays());
+                bUpdate = false;
+            }
+            if (at.getCond().checkComplete()) {
+                at.setState(ActivityConsts.ActivityState.T_FINISH);
+                bUpdate = true;
+            }
+        }
+        return bUpdate;
     }
 
     /**
@@ -289,20 +311,31 @@ public class ActivityService implements InitHandler {
      * @param playerId
      */
     public void onLogin(int playerId) {
-        checkAddNewActivity(playerId, OpenActivitys.values(), null, null);
+        checkOrAddNewActivity(playerId, OpenActivitys.values(), null, null);
     }
 
-    private void addNewActivity(List<ActivityCfg> openActivitys) {
+    /**
+     * 玩家新增活动
+     * @param openActivitys
+     */
+    private void playerAddNewActivity(List<ActivityCfg> openActivitys) {
         List<Integer> openActivity = Lists.newArrayList();
         List<ActivityTask> openActivityTasks = Lists.newArrayList();
         for (int playerId : playerService.getPlayerDatas().keySet()) {
             openActivity.clear();
             openActivityTasks.clear();
-            checkAddNewActivity(playerId, openActivitys, openActivity, openActivityTasks);
+            checkOrAddNewActivity(playerId, openActivitys, openActivity, openActivityTasks);
         }
     }
 
-    private void checkAddNewActivity(int playerId, Collection<ActivityCfg> openActivitys,
+    /**
+     * 活动任务状态检查 或者 新增活动及任务
+     * @param playerId
+     * @param openActivitys
+     * @param openActivity
+     * @param openActivityTasks
+     */
+    private void checkOrAddNewActivity(int playerId, Collection<ActivityCfg> openActivitys,
                                      List<Integer> openActivity, List<ActivityTask> openActivityTasks) {
         PlayerData data = playerService.getPlayerData(playerId);
         for (ActivityCfg cfg : openActivitys) {
@@ -314,7 +347,7 @@ public class ActivityService implements InitHandler {
                 continue;
             List<ActivityTaskCfg> list = ActivityTasks.get(cfg.id);
             for (ActivityTaskCfg taskCfg : list) {
-                if (cfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) {
+                if (cfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) { //体力活动，登录检测
                     ActivityTask at = data.getActivityTasks().get(taskCfg.id);
                     if (at != null) {
                         checkActivityTaskUpdate(data, at);
@@ -356,7 +389,7 @@ public class ActivityService implements InitHandler {
         //检测登录活动
         List<ActivityTask> sevenTasks = completeActivityTask(playerId,
                 ActivityConsts.ActivityTaskCondType.T_LOGIN, data.getSevenDays(), ActivityConsts.UpdateType.T_VALUE, false);
-        if(!sevenTasks.isEmpty()) {
+        if (!sevenTasks.isEmpty()) {
             list.addAll(sevenTasks);
         }
         pushActivityUpdate(playerId, list);
@@ -372,7 +405,7 @@ public class ActivityService implements InitHandler {
         PlayerData data = playerService.getPlayerData(playerId);
         for (ActivityCfg cfg : OpenActivitys.values()) {
             if (cfg.ActivityType == ActivityConsts.ActivityType.T_LOGIN) { //7天登录
-                if (data.getSevenDays() >= cfg.Param0) {
+                if (data.getSevenDays() > cfg.Param0) {
                     continue;
                 }
             } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_NEW_ROLE) { //新手礼包
@@ -408,6 +441,7 @@ public class ActivityService implements InitHandler {
      */
     public IntParam getActivityAwards(int playerId, int taskId) {
         PlayerData data = playerService.getPlayerData(playerId);
+        Player player = playerService.getPlayer(playerId);
         ActivityTask task = data.getActivityTasks().get(taskId);
         IntParam result = new IntParam();
         if (task.getState() != ActivityConsts.ActivityState.T_FINISH) {
@@ -419,7 +453,19 @@ public class ActivityService implements InitHandler {
         task.setState(ActivityConsts.ActivityState.T_AWARD);
         task.setRewardFlag(true);
         ActivityTaskCfg config = ConfigData.getConfig(ActivityTaskCfg.class, taskId);
-        goodsService.addRewards(playerId, config.Rewards, LogConsume.ACTIVITY_REWARD);
+        List<GoodsEntry> itemList = Lists.newArrayList();
+        for (int[] arr : config.Rewards) {
+            if (arr.length == 2) {
+                GoodsEntry goodsEntry = new GoodsEntry(arr[0], arr[1]);
+                itemList.add(goodsEntry);
+            } else if (arr.length == 3) {
+                if (player.getVocation() == arr[2]) {
+                    GoodsEntry goodsEntry = new GoodsEntry(arr[0], arr[1]);
+                    itemList.add(goodsEntry);
+                }
+            }
+        }
+        goodsService.addRewards(playerId, itemList, LogConsume.ACTIVITY_REWARD);
 
         ActivityCfg activityCfg = ConfigData.getConfig(ActivityCfg.class, config.ActivityId);
         if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_LOGIN) {

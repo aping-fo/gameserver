@@ -3,6 +3,7 @@ package com.game.module.gm;
 import com.game.data.CopyConfig;
 import com.game.data.GangTrainingCfg;
 import com.game.module.activity.ActivityService;
+import com.game.module.activity.WelfareCardService;
 import com.game.module.admin.MessageService;
 import com.game.module.attach.arena.ArenaExtension;
 import com.game.module.attach.arena.ArenaLogic;
@@ -575,5 +576,11 @@ public class GmService {
 	private GangDungeonService gangDungeonService;
 	public void gangCopyReset(int playerId,String ... params){
 		gangDungeonService.gmGangCopyRest(playerId);
+	}
+
+	@Autowired
+	private WelfareCardService welfareCardService;
+	public void welfare(int playerId,String ... params){
+		welfareCardService.daily(playerId);
 	}
 }

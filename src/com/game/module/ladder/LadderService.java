@@ -727,7 +727,10 @@ public class LadderService implements InitHandler {
                 param.param = Response.SUCCESS;
                 for (int id : room.roomPlayers.keySet()) {
                     SessionManager.getInstance().sendMsg(CMD_GAME_OVER, param, id);
+                    Player p = playerService.getPlayer(id);
+                    p.setRoomId(0);
                 }
+                allRooms.remove(failPlayer.getRoomId());
                 return;
             }
 

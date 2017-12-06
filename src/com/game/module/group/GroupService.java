@@ -385,6 +385,14 @@ public class GroupService {
         IntParam param = new IntParam();
         Player player = playerService.getPlayer(playerId);
         Group group = groupMap.get(player.getGroupId());
+        Player targetPlayer = playerService.getPlayer(targetId);
+
+        if(targetPlayer.getGroupId() != 0) {
+            ServerLogger.warn("groupId = " + player.getGroupId());
+            param.param = Response.ERR_PARAM;
+            return param;
+        }
+
         if (group == null) {
             ServerLogger.warn("groupId = " + player.getGroupId());
             param.param = Response.GROUP_NO_EXIT;
@@ -401,7 +409,7 @@ public class GroupService {
             return param;
         }
 
-        Player targetPlayer = playerService.getPlayer(targetId);
+
         int groupTeamId = group.addTeamMember(targetId, targetPlayer.getHp(),
                 targetPlayer.getVocation(), targetPlayer.getFight(), targetPlayer.getLev(), targetPlayer.getName());
         targetPlayer.setGroupTeamId(groupTeamId);

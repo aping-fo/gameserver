@@ -292,10 +292,10 @@ public class ConfigData {
             accountSet.add(cfg.name);
         }
 
-        /*for (Object obj : GameData.getConfigs(TrialFieldCfg.class)) {
+        for (Object obj : GameData.getConfigs(TrialFieldCfg.class)) {
             TrialFieldCfg cfg = (TrialFieldCfg) obj;
             trainCount.put(cfg.type, cfg.count);
             trainCopy.put(cfg.copyId, cfg);
-        }*/
+        }
     }
 }

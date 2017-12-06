@@ -13,4 +13,5 @@ public class TrialFieldCfg {
 	public String role;//界面立绘
 	public int copyId;//副本id
 	public int count;//挑战次数
+	public String background;//背景
 }

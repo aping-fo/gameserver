@@ -184,10 +184,11 @@ public class MailService {
 
 	public SMailReward takenAll(int playerId) {
 		List<Mail> mails = mailDao.selectMails(playerId);
-		List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
+		List<GoodsEntry> rewards = new ArrayList<>();
 		SMailReward result = new SMailReward();
 		StringBuilder rewardStr = new StringBuilder();
 		for (Mail mail : mails) {
+			rewards.clear();
 			if (mail.getHasReward() == 1 && !mail.getRewardsMap().isEmpty()) {
 				for (Entry<Integer, Integer> entry : mail.getRewardsMap().entrySet()) {
 					rewards.add(new GoodsEntry(entry.getKey(), entry.getValue()));
@@ -201,14 +202,14 @@ public class MailService {
 				if (!goodsService.checkCanAddToBag(playerId, rewards)) {
 					result.rewards = rewardStr.toString();
 					result.code = Response.BAG_FULL;
-					return result;
+					/*return result;*/
+					continue;
 				}
 				mailDao.updateReward(mail.getId());
 				goodsService.addRewards(playerId, rewards, log);
 				for(GoodsEntry g:rewards){
 					rewardStr.append(g.id).append(":").append(g.count).append(";");
 				}
-				rewards.clear();
 			}
 		}
 		

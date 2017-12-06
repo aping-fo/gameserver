@@ -282,6 +282,7 @@ public class WorldBossService implements InitHandler {
 
 
         if (boss.getCurHp() <= 0) { //死亡
+            ServerLogger.warn("boss go die.... boss id ==" + boss.getId());
             worldBossData.getKillMap().put(bossId, playerId);
             //boss死亡，广播
             Int2Param param = new Int2Param();
