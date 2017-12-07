@@ -46,6 +46,7 @@ import com.game.params.scene.SMonsterVo;
 import com.game.util.ConfigData;
 import com.game.util.RandomUtil;
 import com.game.util.TimeUtil;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -391,7 +392,7 @@ public class CopyService {
                 for (int i = 0; i < cfg.firstReward.length; i++) {
                     int[] item = cfg.firstReward[i];
                     /*int vocation = ConfigData.getConfig(GoodsConfig.class, item[0]).vocation;
-					if (vocation != 0 && vocation != player.getVocation()) {
+                    if (vocation != 0 && vocation != player.getVocation()) {
 						continue;
 					}*/
                     items.add(new GoodsEntry(item[0], item[1]));
@@ -509,12 +510,23 @@ public class CopyService {
      * @param cfg
      */
     private void updateCopyTimes(int copyId, PlayerData playerData, CopyConfig cfg) {
+        updateCopyTimes(copyId, playerData, cfg, 1);
+    }
+
+    /**
+     * 更新副本次数
+     *
+     * @param copyId
+     * @param playerData
+     * @param cfg
+     */
+    private void updateCopyTimes(int copyId, PlayerData playerData, CopyConfig cfg, int times) {
         if (cfg.count > 0) {
             Integer count = playerData.getCopyTimes().get(copyId);
             if (count == null) {
                 count = 0;
             }
-            count++;
+            count += times;
             playerData.getCopyTimes().put(copyId, count);
         }
     }
@@ -748,8 +760,8 @@ public class CopyService {
         }
         result.time = (int) pass;
         //检查一下战力
-		/*
-		Player player = playerService.getPlayer(playerId);
+        /*
+        Player player = playerService.getPlayer(playerId);
 		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copy.getCopyId());
 		if(cfg.type!=CopyInstance.TYPE_ACTIVITY&&(cfg.recommendFight>=100000&&cfg.recommendFight>player.getFight()*2)){
 			ServerLogger.warn("Error Copy Fight:",playerId,cfg.recommendFight,player.getFight(),cfg.name,cfg.id);
@@ -780,62 +792,57 @@ public class CopyService {
         result.reward = new ArrayList<>();
 
         CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
-        Player player = playerService.getPlayer(playerId);
         PlayerData playerData = playerService.getPlayerData(playerId);
         if (cfg.type == CopyInstance.TYPE_TRAIN) {
             Train train = playerData.getTrain();
             TrialFieldCfg trainCfg = ConfigData.trainCopy.get(copyId);
             int count = train.getGroupTimes().get(trainCfg.type);
             int totalCount = ConfigData.trainCount.get(trainCfg.type);
-            if ((totalCount - count) < times) {
+            if ((times + count) > totalCount) {
                 result.code = Response.NO_TODAY_TIMES;
                 return result;
             }
         } else {
-            for (int i = 0; i < times; i++) {
-                // 检查次数
-                if (cfg.count > 0) {// 普通副本
-                    Integer count = playerData.getCopyTimes().get(copyId);
-                    if (count == null) {
-                        count = 0;
-                    }
-                    if (count >= cfg.count) {
-                        result.code = Response.NO_TODAY_TIMES;
-                        refreshCopyInfo(playerId, copyId, playerData);
-                        return result;
-                    }
+            // 检查次数
+            if (cfg.count > 0) {// 普通副本
+                Integer count = playerData.getCopyTimes().get(copyId);
+                if (count == null) {
+                    count = 0;
+                }
+                if (count + times >= cfg.count) {
+                    result.code = Response.NO_TODAY_TIMES;
+                    return result;
                 }
             }
-
-            if (cfg.needEnergy > 0 && player.getEnergy() < cfg.needEnergy) {
+        }
+        // 活动副本扣除体力
+        if (cfg.needEnergy > 0) {
+            if (!playerService.decEnergy(playerId, cfg.needEnergy * times, LogConsume.COPY_ENERGY, copyId)) {
                 result.code = Response.NO_ENERGY;
                 return result;
             }
+        }
 
-            if (cfg.type == CopyInstance.TYPE_TRAIN) {
-                skillCardTrainService.updateCopyTimes(playerId, times, copyId);
-            } else {
-                if (goodsService.decConsume(playerId, ConfigData.globalParam().sweepNeedGoods, LogConsume.SWEEP_COPY) > 0) {
-                    result.code = Response.NO_MATERIAL;
-                    return result;
-                }
-                // 活动副本扣除体力
-                if (cfg.needEnergy > 0) {
-                    if (!playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId)) {
-                        result.code = Response.NO_ENERGY;
-                        refreshCopyInfo(playerId, copyId, playerData);
-                        return result;
-                    }
-                }
-
-                boolean show = shopService.triggerMysteryShop(playerId, copyId, null);
-                if (show) {
-                    result.showMystery = true;
-                }
-                // 更新副本次数
-                updateCopyTimes(copyId, playerData, cfg);
+        if (cfg.type == CopyInstance.TYPE_TRAIN) {
+            skillCardTrainService.updateCopyTimes(playerId, times, copyId);
+        } else {
+            Map<Integer, Integer> sweepNeedGoods = Maps.newHashMap();
+            for (Map.Entry<Integer, Integer> e : ConfigData.globalParam().sweepNeedGoods.entrySet()) {
+                sweepNeedGoods.put(e.getKey(), e.getValue() * times);
             }
+            if (goodsService.decConsume(playerId, sweepNeedGoods, LogConsume.SWEEP_COPY) > 0) {
+                result.code = Response.NO_MATERIAL;
+                return result;
+            }
+            boolean show = shopService.triggerMysteryShop(playerId, copyId, null);
+            if (show) {
+                result.showMystery = true;
+            }
+            // 更新副本次数
+            updateCopyTimes(copyId, playerData, cfg, times);
+        }
 
+        for (int i = 0; i < times; i++) {
             RewardList list = new RewardList();
             list.rewards = swipeCopyInner(playerId, copyId);
             result.reward.add(list);

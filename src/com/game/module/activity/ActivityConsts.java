@@ -5,12 +5,12 @@ package com.game.module.activity;
  */
 public class ActivityConsts {
     /**
-     * 活动类型
+     * 活动类型,暂时先跟任务类型分开
      */
     public static class ActivityType {
         public static final int T_ENERGY = 1; //体力
         public static final int T_GROW_FUND = 2; //成长基金
-        public static final int T_LOGIN = 3; //7日登录
+        public static final int T_SEVEN_DAYS = 3; //7日登录
         public static final int T_NEW_ROLE = 4; //新手礼包
         public static final int T_LEVEL_UP = 5; //冲级
         public static final int T_WEEKLY_CARD = 6; //周卡
@@ -23,10 +23,11 @@ public class ActivityConsts {
     public static class ActivityTaskCondType {
         public static final int T_ENERGY = 1; //时间区间类型
         public static final int T_GROW_FUND = 2; //成长基金
-        public static final int T_LOGIN = 3; //7日登录
+        public static final int T_SEVEN_DAYS = 3; //7日登录
         public static final int T_FIRST_RECHARGE = 4; //首充
         public static final int T_LEVEL_UP = 5; //冲级活动
     }
+
     /**
      * 活动状态
      */

@@ -238,7 +238,7 @@ public class ActivityService implements InitHandler {
                 Player player = playerService.getPlayer(data.getPlayerId());
                 at.getCond().setValue(player.getLev());
                 bUpdate = true;
-            } else if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_LOGIN) { //7天登录
+            } else if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_SEVEN_DAYS) { //7天登录
                 at.getCond().setValue(data.getSevenDays());
                 bUpdate = false;
             }
@@ -316,6 +316,7 @@ public class ActivityService implements InitHandler {
 
     /**
      * 玩家新增活动
+     *
      * @param openActivitys
      */
     private void playerAddNewActivity(List<ActivityCfg> openActivitys) {
@@ -330,13 +331,14 @@ public class ActivityService implements InitHandler {
 
     /**
      * 活动任务状态检查 或者 新增活动及任务
+     *
      * @param playerId
      * @param openActivitys
      * @param openActivity
      * @param openActivityTasks
      */
     private void checkOrAddNewActivity(int playerId, Collection<ActivityCfg> openActivitys,
-                                     List<Integer> openActivity, List<ActivityTask> openActivityTasks) {
+                                       List<Integer> openActivity, List<ActivityTask> openActivityTasks) {
         PlayerData data = playerService.getPlayerData(playerId);
         for (ActivityCfg cfg : openActivitys) {
             if (openActivity != null) {
@@ -388,7 +390,7 @@ public class ActivityService implements InitHandler {
         }
         //检测登录活动
         List<ActivityTask> sevenTasks = completeActivityTask(playerId,
-                ActivityConsts.ActivityTaskCondType.T_LOGIN, data.getSevenDays(), ActivityConsts.UpdateType.T_VALUE, false);
+                ActivityConsts.ActivityTaskCondType.T_SEVEN_DAYS, data.getSevenDays(), ActivityConsts.UpdateType.T_VALUE, false);
         if (!sevenTasks.isEmpty()) {
             list.addAll(sevenTasks);
         }
@@ -404,7 +406,7 @@ public class ActivityService implements InitHandler {
         result.tasks = Lists.newArrayList();
         PlayerData data = playerService.getPlayerData(playerId);
         for (ActivityCfg cfg : OpenActivitys.values()) {
-            if (cfg.ActivityType == ActivityConsts.ActivityType.T_LOGIN) { //7天登录
+            if (cfg.ActivityType == ActivityConsts.ActivityType.T_SEVEN_DAYS) { //7天登录
                 if (data.getSevenDays() > cfg.Param0) {
                     continue;
                 }
@@ -468,7 +470,7 @@ public class ActivityService implements InitHandler {
         goodsService.addRewards(playerId, itemList, LogConsume.ACTIVITY_REWARD);
 
         ActivityCfg activityCfg = ConfigData.getConfig(ActivityCfg.class, config.ActivityId);
-        if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_LOGIN) {
+        if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_SEVEN_DAYS) {
             data.setSevenDays(data.getSevenDays() + 1);
         }
 

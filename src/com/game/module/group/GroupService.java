@@ -683,14 +683,6 @@ public class GroupService {
             return param;
         }
 
-        /*for (int id : team.getMembers().keySet()) {
-            PlayerData data = playerService.getPlayerData(id);
-            if (data.getGroupTimes() < 1) {
-                param.param1 = Response.TEAM_NO_NUM_FALSE;
-                return param;
-            }
-        }*/
-
         if (!team.isReady()) { //是否准备
             param.param1 = Response.TEAM_NO_OK;
             return param;
