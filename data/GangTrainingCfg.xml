@@ -4,55 +4,33 @@
 	<id>10001</id>
 	<name>初级练功房</name>
 	<reqLev>1</reqLev>
-	<assetConsume>100</assetConsume>
+	<assetConsume>3000</assetConsume>
 	<itemConsume>[[102,0]]</itemConsume>
-	<maxTime>120</maxTime>
-	<reward>[[102,200]]</reward>
-	<validTime>1</validTime>
-	<rewardPlus>[2.0,0.1]</rewardPlus>
+	<maxTime>360</maxTime>
+	<reward>[[102,50]]</reward>
+	<validTime>3</validTime>
+	<rewardPlus>[10,0.05]</rewardPlus>
 </config>
 <config>
 	<id>10002</id>
 	<name>中级练功房</name>
-	<reqLev>2</reqLev>
-	<assetConsume>200</assetConsume>
+	<reqLev>3</reqLev>
+	<assetConsume>5000</assetConsume>
 	<itemConsume>[[102,0]]</itemConsume>
-	<maxTime>180</maxTime>
-	<reward>[[102,300]]</reward>
-	<validTime>2</validTime>
-	<rewardPlus>[3.0,0.2]</rewardPlus>
+	<maxTime>720</maxTime>
+	<reward>[[102,50]]</reward>
+	<validTime>6</validTime>
+	<rewardPlus>[20,0.05]</rewardPlus>
 </config>
 <config>
 	<id>10003</id>
 	<name>高级练功房</name>
-	<reqLev>3</reqLev>
-	<assetConsume>300</assetConsume>
-	<itemConsume>[[102,0]]</itemConsume>
-	<maxTime>240</maxTime>
-	<reward>[[102,400]]</reward>
-	<validTime>3</validTime>
-	<rewardPlus>[4.0,0.3]</rewardPlus>
-</config>
-<config>
-	<id>10004</id>
-	<name>专家练功房</name>
-	<reqLev>4</reqLev>
-	<assetConsume>400</assetConsume>
-	<itemConsume>[[102,0]]</itemConsume>
-	<maxTime>300</maxTime>
-	<reward>[[102,500]]</reward>
-	<validTime>4</validTime>
-	<rewardPlus>[5.0,0.4]</rewardPlus>
-</config>
-<config>
-	<id>10005</id>
-	<name>神级练功房</name>
 	<reqLev>5</reqLev>
-	<assetConsume>500</assetConsume>
+	<assetConsume>10000</assetConsume>
 	<itemConsume>[[102,0]]</itemConsume>
-	<maxTime>360</maxTime>
-	<reward>[[102,600]]</reward>
-	<validTime>5</validTime>
-	<rewardPlus>[6.0,0.5]</rewardPlus>
+	<maxTime>1440</maxTime>
+	<reward>[[102,50]]</reward>
+	<validTime>12</validTime>
+	<rewardPlus>[30,0.05]</rewardPlus>
 </config>
 </root>

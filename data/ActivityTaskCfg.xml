@@ -6,7 +6,7 @@
 	<ActivityId>1</ActivityId>
 	<ResetType>1</ResetType>
 	<Conds>[[1,11,12]]</Conds>
-	<Rewards>[[107,100]]</Rewards>
+	<Rewards>[[107,40]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0>99</Param0>
 	<des>11点到12点可领取</des>
@@ -17,7 +17,7 @@
 	<ActivityId>1</ActivityId>
 	<ResetType>1</ResetType>
 	<Conds>[[1,17,18]]</Conds>
-	<Rewards>[[107,100]]</Rewards>
+	<Rewards>[[107,40]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0>99</Param0>
 	<des>17点到18点可领取</des>
@@ -28,7 +28,7 @@
 	<ActivityId>1</ActivityId>
 	<ResetType>1</ResetType>
 	<Conds>[[1,20,21]]</Conds>
-	<Rewards>[[107,100]]</Rewards>
+	<Rewards>[[107,40]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0>99</Param0>
 	<des>20点到21点可领取</des>
@@ -64,7 +64,7 @@
 	<Rewards>[[102,300]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到25级领取200钻石</des>
+	<des>达到25级领取300钻石</des>
 </config>
 <config>
 	<id>7</id>
@@ -72,10 +72,10 @@
 	<ActivityId>2</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[2,30]]</Conds>
-	<Rewards>[[102,350]]</Rewards>
+	<Rewards>[[102,400]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到30级领取200钻石</des>
+	<des>达到30级领取400钻石</des>
 </config>
 <config>
 	<id>8</id>
@@ -83,10 +83,10 @@
 	<ActivityId>2</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[2,36]]</Conds>
-	<Rewards>[[102,400]]</Rewards>
+	<Rewards>[[102,500]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到36级领取200钻石</des>
+	<des>达到36级领取500钻石</des>
 </config>
 <config>
 	<id>9</id>
@@ -94,10 +94,10 @@
 	<ActivityId>2</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[2,40]]</Conds>
-	<Rewards>[[102,450]]</Rewards>
+	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到40级领取200钻石</des>
+	<des>达到40级领取600钻石</des>
 </config>
 <config>
 	<id>10</id>
@@ -105,10 +105,10 @@
 	<ActivityId>2</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[2,45]]</Conds>
-	<Rewards>[[102,500]]</Rewards>
+	<Rewards>[[102,700]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到45级领取200钻石</des>
+	<des>达到45级领取700钻石</des>
 </config>
 <config>
 	<id>11</id>
@@ -116,10 +116,10 @@
 	<ActivityId>2</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[2,50]]</Conds>
-	<Rewards>[[102,500]]</Rewards>
+	<Rewards>[[102,800]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到50级领取200钻石</des>
+	<des>达到50级领取800钻石</des>
 </config>
 <config>
 	<id>12</id>
@@ -127,10 +127,10 @@
 	<ActivityId>2</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[2,55]]</Conds>
-	<Rewards>[[102,600]]</Rewards>
+	<Rewards>[[102,900]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到55级领取200钻石</des>
+	<des>达到55级领取900钻石</des>
 </config>
 <config>
 	<id>13</id>
@@ -138,10 +138,10 @@
 	<ActivityId>2</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[2,60]]</Conds>
-	<Rewards>[[102,700]]</Rewards>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>达到60级领取200钻石</des>
+	<des>达到60级领取1000钻石</des>
 </config>
 <config>
 	<id>14</id>
@@ -149,7 +149,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,1]]</Conds>
-	<Rewards>[[103,1],[102,1],[137,1]]</Rewards>
+	<Rewards>[[103,1000],[102,50],[302002,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -160,7 +160,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,2]]</Conds>
-	<Rewards>[[138,1],[133,1],[132,1]]</Rewards>
+	<Rewards>[[103,2000],[102,100],[60041,30]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -171,7 +171,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,3]]</Conds>
-	<Rewards>[[135,1],[112,1],[136,1]]</Rewards>
+	<Rewards>[[103,3000],[102,150],[125,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -182,7 +182,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,4]]</Conds>
-	<Rewards>[[134,1],[104,1],[111,1]]</Rewards>
+	<Rewards>[[103,4000],[102,200],[51904,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -193,7 +193,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,5]]</Conds>
-	<Rewards>[[131,1],[135,1],[104,1]]</Rewards>
+	<Rewards>[[103,5000],[102,250],[60021,30]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -204,7 +204,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,6]]</Conds>
-	<Rewards>[[109101,1],[134,1],[133,1]]</Rewards>
+	<Rewards>[[103,6000],[102,300],[51601,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -215,7 +215,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,7]]</Conds>
-	<Rewards>[[137,1],[301001,1],[135,1]]</Rewards>
+	<Rewards>[[103,7000],[102,350],[50905,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -248,7 +248,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,10]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,100]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到10级可以领取</des>
@@ -259,7 +259,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,15]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,150]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到20级可以领取</des>
@@ -270,7 +270,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,20]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,200]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到25级可以领取</des>
@@ -281,7 +281,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,25]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,250]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到30级可以领取</des>
@@ -292,7 +292,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,30]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,300]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到35级可以领取</des>
@@ -303,7 +303,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,35]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,350]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到40级可以领取</des>
@@ -314,7 +314,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,40]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,400]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到45级可以领取</des>
@@ -325,7 +325,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,45]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,450]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到50级可以领取</des>
@@ -336,7 +336,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,50]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,500]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到55级可以领取</des>
@@ -347,7 +347,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,55]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,550]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到60级可以领取</des>
@@ -358,7 +358,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,60]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到65级可以领取</des>
@@ -369,7 +369,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,65]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,650]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到70级可以领取</des>
@@ -380,7 +380,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,70]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,700]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到75级可以领取</des>
@@ -391,7 +391,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,75]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,750]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到80级可以领取</des>
@@ -402,7 +402,7 @@
 	<ActivityId>5</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[5,80]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[102,800]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>达到90级可以领取</des>

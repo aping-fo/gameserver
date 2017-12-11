@@ -410,7 +410,9 @@ public class ActivityService implements InitHandler {
                 if (data.getSevenDays() > cfg.Param0) {
                     continue;
                 }
-            } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_NEW_ROLE) { //新手礼包
+            } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_NEW_ROLE   //新手礼包
+                    || cfg.ActivityType == ActivityConsts.ActivityType.T_LEVEL_UP   //冲级活动
+                    || cfg.ActivityType == ActivityConsts.ActivityType.T_GROW_FUND) { //成长基金
                 List<ActivityTaskCfg> list = ActivityTasks.get(cfg.id);
                 boolean bClose = true;
                 for (ActivityTaskCfg taskCfg : list) {

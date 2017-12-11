@@ -4,6 +4,8 @@ import com.game.data.Response;
 import com.game.params.Int2Param;
 import com.game.params.group.GroupStageVO;
 import com.game.params.group.GroupVO;
+import com.game.util.JsonUtils;
+import com.server.util.ServerLogger;
 
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
@@ -313,6 +315,7 @@ public class Group {
                     }
                 }
             }
+            ServerLogger.warn(JsonUtils.object2String(tasks));
         } finally {
             lock.unlock();
         }
@@ -357,6 +360,20 @@ public class Group {
             if (!passCopy.contains(copyId)) {
                 passCopy.add(copyId);
             }
+        } finally {
+            lock.unlock();
+        }
+    }
+
+    public boolean hasFightTeam() {
+        try {
+            lock.lock();
+            for (Map.Entry<Integer, GroupTeam> s : teamMap.entrySet()) {
+                if (s.getValue().isbFight()) {
+                    return true;
+                }
+            }
+            return false;
         } finally {
             lock.unlock();
         }

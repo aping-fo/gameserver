@@ -2,62 +2,62 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
-	<level>20</level>
-	<name>天空之城</name>
-	<icon>100002_2</icon>
-	<atlas>Skillcard</atlas>
+	<level>25</level>
+	<name>勇气试炼</name>
+	<icon>100014_2</icon>
+	<atlas>Skillcardgongneng</atlas>
 	<stageCount>3</stageCount>
-	<stage1Name>第一阶:凡人试炼</stage1Name>
+	<stage1Name>第一阶:希望试炼</stage1Name>
 	<stage1Copy>[1000111,1000112]</stage1Copy>
-	<stage1Mission>[[2,1000111,1],[3,1000112,1,1200]]</stage1Mission>
-	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
-	<stage2Name>第二阶:凡人历练</stage2Name>
+	<stage1Mission>[[2,1000111,1],[3,1000112,1,600]]</stage1Mission>
+	<stage1Reward>[[102,100],[103,1000],[108,100],[109,10]]</stage1Reward>
+	<stage2Name>第二阶:坚毅试炼</stage2Name>
 	<stage2Copy>[1000113,1000114]</stage2Copy>
-	<stage2Mission>[[2,1000113,1],[3,1000114,1,1200]]</stage2Mission>
-	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
-	<stage3Name>第三阶:凡人修仙</stage3Name>
+	<stage2Mission>[[2,1000113,1],[3,1000114,1,600]]</stage2Mission>
+	<stage2Reward>[[102,150],[103,2000],[108,100],[109,10]]</stage2Reward>
+	<stage3Name>第三阶:勇气试炼</stage3Name>
 	<stage3Copy>[1000115]</stage3Copy>
 	<stage3Mission>[[2,1000115,1]]</stage3Mission>
-	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
+	<stage3Reward>[[102,200],[103,3000],[108,100],[109,10]]</stage3Reward>
 </config>
 <config>
 	<id>2</id>
-	<level>30</level>
+	<level>40</level>
 	<name>地底之城</name>
 	<icon>100001_2</icon>
-	<atlas>Skillcard</atlas>
+	<atlas>Skillcardgongneng</atlas>
 	<stageCount>3</stageCount>
 	<stage1Name>第一阶:英雄试炼</stage1Name>
 	<stage1Copy>[1000111,1000112]</stage1Copy>
 	<stage1Mission>[[2,1000111,2],[3,1000112,2,1200]]</stage1Mission>
-	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
+	<stage1Reward>[[102,100],[103,1000],[108,100],[109,10]]</stage1Reward>
 	<stage2Name>第二阶:英雄历练</stage2Name>
 	<stage2Copy>[1000113,1000114]</stage2Copy>
 	<stage2Mission>[[2,1000113,2],[3,1000114,2,1200]]</stage2Mission>
-	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
+	<stage2Reward>[[102,150],[103,2000],[108,100],[109,10]]</stage2Reward>
 	<stage3Name>第三阶:英雄修仙</stage3Name>
 	<stage3Copy>[1000115]</stage3Copy>
 	<stage3Mission>[[2,1000115,2]]</stage3Mission>
-	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
+	<stage3Reward>[[102,200],[103,3000],[108,100],[109,10]]</stage3Reward>
 </config>
 <config>
 	<id>3</id>
-	<level>40</level>
-	<name>地底深渊</name>
+	<level>55</level>
+	<name>无尽深渊</name>
 	<icon>100008_2</icon>
-	<atlas>Skillcard</atlas>
+	<atlas>Skillcardzengyi</atlas>
 	<stageCount>3</stageCount>
 	<stage1Name>第一阶:大神试炼</stage1Name>
 	<stage1Copy>[1000111,1000112]</stage1Copy>
 	<stage1Mission>[[2,1000111,3],[3,1000112,3,1200]]</stage1Mission>
-	<stage1Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage1Reward>
+	<stage1Reward>[[102,100],[103,1000],[108,100],[109,10]]</stage1Reward>
 	<stage2Name>第二阶:大神历练</stage2Name>
 	<stage2Copy>[1000113,1000114]</stage2Copy>
 	<stage2Mission>[[2,1000113,3],[3,1000114,3,1200]]</stage2Mission>
-	<stage2Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage2Reward>
+	<stage2Reward>[[102,150],[103,2000],[108,100],[109,10]]</stage2Reward>
 	<stage3Name>第三阶:大神修仙</stage3Name>
 	<stage3Copy>[1000115]</stage3Copy>
 	<stage3Mission>[[2,1000115,3]]</stage3Mission>
-	<stage3Reward>[[138,100],[101,60],[103,100],[303001,12]]</stage3Reward>
+	<stage3Reward>[[102,200],[103,3000],[108,100],[109,10]]</stage3Reward>
 </config>
 </root>

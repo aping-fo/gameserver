@@ -311,9 +311,9 @@
 <config>
 	<id>15</id>
 	<shopType>1</shopType>
-	<name>摸金符部件1</name>
-	<goodsId>4011001</goodsId>
-	<count>1</count>
+	<name>小木乃伊</name>
+	<goodsId>60011</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -333,9 +333,9 @@
 <config>
 	<id>16</id>
 	<shopType>1</shopType>
-	<name>摸金符部件2</name>
-	<goodsId>4011002</goodsId>
-	<count>1</count>
+	<name>小蛇</name>
+	<goodsId>60021</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -355,9 +355,9 @@
 <config>
 	<id>17</id>
 	<shopType>1</shopType>
-	<name>摸金符部件3</name>
-	<goodsId>4011003</goodsId>
-	<count>1</count>
+	<name>小树桩</name>
+	<goodsId>60031</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -377,9 +377,9 @@
 <config>
 	<id>18</id>
 	<shopType>1</shopType>
-	<name>摸金符部件4</name>
-	<goodsId>4011004</goodsId>
-	<count>1</count>
+	<name>小蘑菇</name>
+	<goodsId>60041</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -399,9 +399,9 @@
 <config>
 	<id>19</id>
 	<shopType>1</shopType>
-	<name>摸金符部件5</name>
-	<goodsId>4011005</goodsId>
-	<count>1</count>
+	<name>小僵尸</name>
+	<goodsId>60051</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -421,9 +421,9 @@
 <config>
 	<id>20</id>
 	<shopType>1</shopType>
-	<name>摸金符部件6</name>
-	<goodsId>4011006</goodsId>
-	<count>1</count>
+	<name>小兔子</name>
+	<goodsId>60061</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -443,9 +443,9 @@
 <config>
 	<id>21</id>
 	<shopType>1</shopType>
-	<name>蝎王戒部件1</name>
-	<goodsId>5011001</goodsId>
-	<count>1</count>
+	<name>小木乃伊</name>
+	<goodsId>65011</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -465,9 +465,9 @@
 <config>
 	<id>22</id>
 	<shopType>1</shopType>
-	<name>蝎王戒部件2</name>
-	<goodsId>5011002</goodsId>
-	<count>1</count>
+	<name>小蛇</name>
+	<goodsId>65021</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -487,9 +487,9 @@
 <config>
 	<id>23</id>
 	<shopType>1</shopType>
-	<name>蝎王戒部件3</name>
-	<goodsId>5011003</goodsId>
-	<count>1</count>
+	<name>小树桩</name>
+	<goodsId>65031</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -509,9 +509,9 @@
 <config>
 	<id>24</id>
 	<shopType>1</shopType>
-	<name>蝎王戒部件4</name>
-	<goodsId>5011004</goodsId>
-	<count>1</count>
+	<name>小蘑菇</name>
+	<goodsId>65041</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -531,9 +531,9 @@
 <config>
 	<id>25</id>
 	<shopType>1</shopType>
-	<name>蝎王戒部件5</name>
-	<goodsId>5011005</goodsId>
-	<count>1</count>
+	<name>小僵尸</name>
+	<goodsId>65051</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -553,9 +553,9 @@
 <config>
 	<id>26</id>
 	<shopType>1</shopType>
-	<name>蝎王戒部件6</name>
-	<goodsId>5011006</goodsId>
-	<count>1</count>
+	<name>小兔子</name>
+	<goodsId>65061</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -575,270 +575,6 @@
 <config>
 	<id>27</id>
 	<shopType>1</shopType>
-	<name>月牙石部件1</name>
-	<goodsId>6011001</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>27</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>28</id>
-	<shopType>1</shopType>
-	<name>月牙石部件2</name>
-	<goodsId>6011002</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>28</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>29</id>
-	<shopType>1</shopType>
-	<name>月牙石部件3</name>
-	<goodsId>6011003</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>29</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>30</id>
-	<shopType>1</shopType>
-	<name>月牙石部件4</name>
-	<goodsId>6011004</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>30</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>31</id>
-	<shopType>1</shopType>
-	<name>月牙石部件5</name>
-	<goodsId>6011005</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>31</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>32</id>
-	<shopType>1</shopType>
-	<name>月牙石部件6</name>
-	<goodsId>6011006</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>32</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>33</id>
-	<shopType>1</shopType>
-	<name>镇魂灯部件1</name>
-	<goodsId>7011001</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>33</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>34</id>
-	<shopType>1</shopType>
-	<name>镇魂灯部件2</name>
-	<goodsId>7011002</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>34</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>35</id>
-	<shopType>1</shopType>
-	<name>镇魂灯部件3</name>
-	<goodsId>7011003</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>35</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>36</id>
-	<shopType>1</shopType>
-	<name>镇魂灯部件4</name>
-	<goodsId>7011004</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>36</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>37</id>
-	<shopType>1</shopType>
-	<name>镇魂灯部件5</name>
-	<goodsId>7011005</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>37</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>38</id>
-	<shopType>1</shopType>
-	<name>镇魂灯部件6</name>
-	<goodsId>7011006</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip></vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>200</moneyCount>
-	<specIcon></specIcon>
-	<order>38</order>
-	<refreshRate>1</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>39</id>
-	<shopType>1</shopType>
 	<name>扫荡券</name>
 	<goodsId>302002</goodsId>
 	<count>10</count>
@@ -851,6 +587,270 @@
 	<moneyCount>50</moneyCount>
 	<specIcon></specIcon>
 	<order>1</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>28</id>
+	<shopType>1</shopType>
+	<name>强化券</name>
+	<goodsId>302001</goodsId>
+	<count>1</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>100</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>29</id>
+	<shopType>1</shopType>
+	<name>装备材料</name>
+	<goodsId>108</goodsId>
+	<count>10</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>30</id>
+	<shopType>1</shopType>
+	<name>强化材料</name>
+	<goodsId>109</goodsId>
+	<count>1</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>31</id>
+	<shopType>1</shopType>
+	<name>宝石材料1</name>
+	<goodsId>303001</goodsId>
+	<count>10</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>32</id>
+	<shopType>1</shopType>
+	<name>宝石材料2</name>
+	<goodsId>304001</goodsId>
+	<count>10</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>33</id>
+	<shopType>1</shopType>
+	<name>宝石材料3</name>
+	<goodsId>305001</goodsId>
+	<count>10</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>7</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>34</id>
+	<shopType>1</shopType>
+	<name>宝石材料4</name>
+	<goodsId>306001</goodsId>
+	<count>10</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>8</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>35</id>
+	<shopType>1</shopType>
+	<name>宝石材料5</name>
+	<goodsId>307001</goodsId>
+	<count>10</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>9</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>36</id>
+	<shopType>1</shopType>
+	<name>宝石材料6</name>
+	<goodsId>308001</goodsId>
+	<count>10</count>
+	<tab>2</tab>
+	<vip>0</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>10</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>37</id>
+	<shopType>1</shopType>
+	<name>扫荡券</name>
+	<goodsId>302002</goodsId>
+	<count>10</count>
+	<tab>3</tab>
+	<vip>3</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>38</id>
+	<shopType>1</shopType>
+	<name>强化券</name>
+	<goodsId>302001</goodsId>
+	<count>1</count>
+	<tab>3</tab>
+	<vip>3</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>100</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>39</id>
+	<shopType>1</shopType>
+	<name>装备材料</name>
+	<goodsId>108</goodsId>
+	<count>10</count>
+	<tab>3</tab>
+	<vip>3</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>1</isFixed>
@@ -861,18 +861,18 @@
 <config>
 	<id>40</id>
 	<shopType>1</shopType>
-	<name>强化券</name>
-	<goodsId>302001</goodsId>
+	<name>强化材料</name>
+	<goodsId>109</goodsId>
 	<count>1</count>
-	<tab>2</tab>
-	<vip>0</vip>
+	<tab>3</tab>
+	<vip>3</vip>
 	<limitType>1</limitType>
 	<limitCount>3</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
-	<moneyCount>100</moneyCount>
+	<moneyCount>50</moneyCount>
 	<specIcon></specIcon>
-	<order>2</order>
+	<order>4</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>1</isFixed>
@@ -883,55 +883,11 @@
 <config>
 	<id>41</id>
 	<shopType>1</shopType>
-	<name>装备材料</name>
-	<goodsId>108</goodsId>
-	<count>10</count>
-	<tab>2</tab>
-	<vip>0</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>3</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>1</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>42</id>
-	<shopType>1</shopType>
-	<name>强化材料</name>
-	<goodsId>109</goodsId>
-	<count>1</count>
-	<tab>2</tab>
-	<vip>0</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>4</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>1</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>43</id>
-	<shopType>1</shopType>
 	<name>宝石材料1</name>
 	<goodsId>303001</goodsId>
 	<count>10</count>
-	<tab>2</tab>
-	<vip>0</vip>
+	<tab>3</tab>
+	<vip>3</vip>
 	<limitType>1</limitType>
 	<limitCount>3</limitCount>
 	<vipDiscount></vipDiscount>
@@ -939,6 +895,50 @@
 	<moneyCount>50</moneyCount>
 	<specIcon></specIcon>
 	<order>5</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>42</id>
+	<shopType>1</shopType>
+	<name>宝石材料2</name>
+	<goodsId>304001</goodsId>
+	<count>10</count>
+	<tab>3</tab>
+	<vip>3</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>2</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+</config>
+<config>
+	<id>43</id>
+	<shopType>1</shopType>
+	<name>宝石材料3</name>
+	<goodsId>305001</goodsId>
+	<count>10</count>
+	<tab>3</tab>
+	<vip>3</vip>
+	<limitType>1</limitType>
+	<limitCount>3</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>102</moneyType>
+	<moneyCount>50</moneyCount>
+	<specIcon></specIcon>
+	<order>7</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
@@ -949,18 +949,18 @@
 <config>
 	<id>44</id>
 	<shopType>1</shopType>
-	<name>宝石材料2</name>
-	<goodsId>304001</goodsId>
+	<name>宝石材料4</name>
+	<goodsId>306001</goodsId>
 	<count>10</count>
-	<tab>2</tab>
-	<vip>0</vip>
+	<tab>3</tab>
+	<vip>3</vip>
 	<limitType>1</limitType>
 	<limitCount>3</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
 	<specIcon></specIcon>
-	<order>6</order>
+	<order>8</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
@@ -971,18 +971,18 @@
 <config>
 	<id>45</id>
 	<shopType>1</shopType>
-	<name>宝石材料3</name>
-	<goodsId>305001</goodsId>
+	<name>宝石材料5</name>
+	<goodsId>307001</goodsId>
 	<count>10</count>
-	<tab>2</tab>
-	<vip>0</vip>
+	<tab>3</tab>
+	<vip>3</vip>
 	<limitType>1</limitType>
 	<limitCount>3</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
 	<specIcon></specIcon>
-	<order>7</order>
+	<order>9</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
@@ -993,18 +993,18 @@
 <config>
 	<id>46</id>
 	<shopType>1</shopType>
-	<name>宝石材料4</name>
-	<goodsId>306001</goodsId>
+	<name>宝石材料6</name>
+	<goodsId>308001</goodsId>
 	<count>10</count>
-	<tab>2</tab>
-	<vip>0</vip>
+	<tab>3</tab>
+	<vip>3</vip>
 	<limitType>1</limitType>
 	<limitCount>3</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
 	<specIcon></specIcon>
-	<order>8</order>
+	<order>10</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
@@ -1014,270 +1014,6 @@
 </config>
 <config>
 	<id>47</id>
-	<shopType>1</shopType>
-	<name>宝石材料5</name>
-	<goodsId>307001</goodsId>
-	<count>10</count>
-	<tab>2</tab>
-	<vip>0</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>9</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>48</id>
-	<shopType>1</shopType>
-	<name>宝石材料6</name>
-	<goodsId>308001</goodsId>
-	<count>10</count>
-	<tab>2</tab>
-	<vip>0</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>10</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>49</id>
-	<shopType>1</shopType>
-	<name>扫荡券</name>
-	<goodsId>302002</goodsId>
-	<count>10</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>1</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>1</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>50</id>
-	<shopType>1</shopType>
-	<name>强化券</name>
-	<goodsId>302001</goodsId>
-	<count>1</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>100</moneyCount>
-	<specIcon></specIcon>
-	<order>2</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>1</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>51</id>
-	<shopType>1</shopType>
-	<name>装备材料</name>
-	<goodsId>108</goodsId>
-	<count>10</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>3</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>1</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>52</id>
-	<shopType>1</shopType>
-	<name>强化材料</name>
-	<goodsId>109</goodsId>
-	<count>1</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>4</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>1</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>53</id>
-	<shopType>1</shopType>
-	<name>宝石材料1</name>
-	<goodsId>303001</goodsId>
-	<count>10</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>5</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>54</id>
-	<shopType>1</shopType>
-	<name>宝石材料2</name>
-	<goodsId>304001</goodsId>
-	<count>10</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>6</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>55</id>
-	<shopType>1</shopType>
-	<name>宝石材料3</name>
-	<goodsId>305001</goodsId>
-	<count>10</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>7</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>56</id>
-	<shopType>1</shopType>
-	<name>宝石材料4</name>
-	<goodsId>306001</goodsId>
-	<count>10</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>8</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>57</id>
-	<shopType>1</shopType>
-	<name>宝石材料5</name>
-	<goodsId>307001</goodsId>
-	<count>10</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>9</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>58</id>
-	<shopType>1</shopType>
-	<name>宝石材料6</name>
-	<goodsId>308001</goodsId>
-	<count>10</count>
-	<tab>3</tab>
-	<vip>3</vip>
-	<limitType>1</limitType>
-	<limitCount>3</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>102</moneyType>
-	<moneyCount>50</moneyCount>
-	<specIcon></specIcon>
-	<order>10</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>2</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-</config>
-<config>
-	<id>59</id>
 	<shopType>1</shopType>
 	<name>神器碎片1</name>
 	<goodsId>400001</goodsId>
@@ -1299,7 +1035,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>60</id>
+	<id>48</id>
 	<shopType>1</shopType>
 	<name>神器碎片2</name>
 	<goodsId>500001</goodsId>
@@ -1321,7 +1057,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>61</id>
+	<id>49</id>
 	<shopType>1</shopType>
 	<name>神器碎片3</name>
 	<goodsId>600001</goodsId>
@@ -1343,7 +1079,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>62</id>
+	<id>50</id>
 	<shopType>1</shopType>
 	<name>神器碎片4</name>
 	<goodsId>700001</goodsId>
@@ -1365,7 +1101,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>63</id>
+	<id>51</id>
 	<shopType>10</shopType>
 	<name>中毒卡D</name>
 	<goodsId>50401</goodsId>
@@ -1387,7 +1123,7 @@
 	<fameLevLimit>[4,0]</fameLevLimit>
 </config>
 <config>
-	<id>64</id>
+	<id>52</id>
 	<shopType>10</shopType>
 	<name>眩晕卡D</name>
 	<goodsId>50101</goodsId>
@@ -1409,7 +1145,7 @@
 	<fameLevLimit>[4,0]</fameLevLimit>
 </config>
 <config>
-	<id>65</id>
+	<id>53</id>
 	<shopType>10</shopType>
 	<name>中毒卡C</name>
 	<goodsId>50402</goodsId>
@@ -1431,7 +1167,7 @@
 	<fameLevLimit>[4,0]</fameLevLimit>
 </config>
 <config>
-	<id>66</id>
+	<id>54</id>
 	<shopType>10</shopType>
 	<name>眩晕卡C</name>
 	<goodsId>50102</goodsId>
@@ -1453,7 +1189,7 @@
 	<fameLevLimit>[4,0]</fameLevLimit>
 </config>
 <config>
-	<id>67</id>
+	<id>55</id>
 	<shopType>10</shopType>
 	<name>宝石材料1</name>
 	<goodsId>303001</goodsId>
@@ -1473,142 +1209,406 @@
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
 	<fameLevLimit>[4,0]</fameLevLimit>
+</config>
+<config>
+	<id>56</id>
+	<shopType>10</shopType>
+	<name>宝石材料2</name>
+	<goodsId>304001</goodsId>
+	<count>10</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>300</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[4,0]</fameLevLimit>
+</config>
+<config>
+	<id>57</id>
+	<shopType>10</shopType>
+	<name>宝石材料3</name>
+	<goodsId>305001</goodsId>
+	<count>10</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>300</moneyCount>
+	<specIcon></specIcon>
+	<order>7</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[4,0]</fameLevLimit>
+</config>
+<config>
+	<id>58</id>
+	<shopType>10</shopType>
+	<name>宝石材料4</name>
+	<goodsId>306001</goodsId>
+	<count>10</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>300</moneyCount>
+	<specIcon></specIcon>
+	<order>8</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[4,0]</fameLevLimit>
+</config>
+<config>
+	<id>59</id>
+	<shopType>10</shopType>
+	<name>宝石材料5</name>
+	<goodsId>307001</goodsId>
+	<count>10</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>300</moneyCount>
+	<specIcon></specIcon>
+	<order>9</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[4,0]</fameLevLimit>
+</config>
+<config>
+	<id>60</id>
+	<shopType>10</shopType>
+	<name>宝石材料6</name>
+	<goodsId>308001</goodsId>
+	<count>10</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>300</moneyCount>
+	<specIcon></specIcon>
+	<order>10</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[4,0]</fameLevLimit>
+</config>
+<config>
+	<id>61</id>
+	<shopType>10</shopType>
+	<name>补给卷</name>
+	<goodsId>125</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>134</moneyType>
+	<moneyCount>500</moneyCount>
+	<specIcon></specIcon>
+	<order>11</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[4,0]</fameLevLimit>
+</config>
+<config>
+	<id>62</id>
+	<shopType>9</shopType>
+	<name>灼烧卡D</name>
+	<goodsId>50501</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>600</moneyCount>
+	<specIcon></specIcon>
+	<order>1</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[3,0]</fameLevLimit>
+</config>
+<config>
+	<id>63</id>
+	<shopType>9</shopType>
+	<name>流血卡D</name>
+	<goodsId>50601</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>600</moneyCount>
+	<specIcon></specIcon>
+	<order>2</order>
+	<refreshRate>50</refreshRate>
+	<refreshAdd>10</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[3,0]</fameLevLimit>
+</config>
+<config>
+	<id>64</id>
+	<shopType>9</shopType>
+	<name>灼烧卡C</name>
+	<goodsId>50502</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>1800</moneyCount>
+	<specIcon></specIcon>
+	<order>3</order>
+	<refreshRate>50</refreshRate>
+	<refreshAdd>0</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[3,0]</fameLevLimit>
+</config>
+<config>
+	<id>65</id>
+	<shopType>9</shopType>
+	<name>流血卡C</name>
+	<goodsId>50602</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>1800</moneyCount>
+	<specIcon></specIcon>
+	<order>4</order>
+	<refreshRate>50</refreshRate>
+	<refreshAdd>0</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[3,0]</fameLevLimit>
+</config>
+<config>
+	<id>66</id>
+	<shopType>9</shopType>
+	<name>宝石材料1</name>
+	<goodsId>303001</goodsId>
+	<count>10</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>300</moneyCount>
+	<specIcon></specIcon>
+	<order>5</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[3,0]</fameLevLimit>
+</config>
+<config>
+	<id>67</id>
+	<shopType>9</shopType>
+	<name>宝石材料2</name>
+	<goodsId>304001</goodsId>
+	<count>10</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>1</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>300</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>[3,0]</fameLevLimit>
 </config>
 <config>
 	<id>68</id>
-	<shopType>10</shopType>
-	<name>宝石材料2</name>
-	<goodsId>304001</goodsId>
+	<shopType>9</shopType>
+	<name>宝石材料3</name>
+	<goodsId>305001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
+	<moneyType>133</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>6</order>
+	<order>7</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit>[3,0]</fameLevLimit>
 </config>
 <config>
 	<id>69</id>
-	<shopType>10</shopType>
-	<name>宝石材料3</name>
-	<goodsId>305001</goodsId>
+	<shopType>9</shopType>
+	<name>宝石材料4</name>
+	<goodsId>306001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
+	<moneyType>133</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>7</order>
+	<order>8</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit>[3,0]</fameLevLimit>
 </config>
 <config>
 	<id>70</id>
-	<shopType>10</shopType>
-	<name>宝石材料4</name>
-	<goodsId>306001</goodsId>
+	<shopType>9</shopType>
+	<name>宝石材料5</name>
+	<goodsId>307001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
+	<moneyType>133</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>8</order>
+	<order>9</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit>[3,0]</fameLevLimit>
 </config>
 <config>
 	<id>71</id>
-	<shopType>10</shopType>
-	<name>宝石材料5</name>
-	<goodsId>307001</goodsId>
+	<shopType>9</shopType>
+	<name>宝石材料6</name>
+	<goodsId>308001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
+	<moneyType>133</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>9</order>
+	<order>10</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit>[3,0]</fameLevLimit>
 </config>
 <config>
 	<id>72</id>
-	<shopType>10</shopType>
-	<name>宝石材料6</name>
-	<goodsId>308001</goodsId>
-	<count>10</count>
+	<shopType>9</shopType>
+	<name>补给卷</name>
+	<goodsId>125</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>300</moneyCount>
+	<moneyType>133</moneyType>
+	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
-	<order>10</order>
+	<order>11</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit>[3,0]</fameLevLimit>
 </config>
 <config>
 	<id>73</id>
-	<shopType>10</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
+	<shopType>12</shopType>
+	<name>流血卡D</name>
+	<goodsId>50601</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyType>136</moneyType>
+	<moneyCount>600</moneyCount>
 	<specIcon></specIcon>
-	<order>11</order>
+	<order>1</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>74</id>
-	<shopType>9</shopType>
+	<shopType>12</shopType>
 	<name>灼烧卡D</name>
 	<goodsId>50501</goodsId>
 	<count>1</count>
@@ -1617,42 +1617,42 @@
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
+	<moneyType>136</moneyType>
 	<moneyCount>600</moneyCount>
 	<specIcon></specIcon>
-	<order>1</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
+	<order>2</order>
+	<refreshRate>50</refreshRate>
+	<refreshAdd>10</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>75</id>
-	<shopType>9</shopType>
-	<name>流血卡D</name>
-	<goodsId>50601</goodsId>
+	<shopType>12</shopType>
+	<name>流血卡C</name>
+	<goodsId>50602</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyType>136</moneyType>
+	<moneyCount>1800</moneyCount>
 	<specIcon></specIcon>
-	<order>2</order>
+	<order>3</order>
 	<refreshRate>50</refreshRate>
-	<refreshAdd>10</refreshAdd>
+	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>76</id>
-	<shopType>9</shopType>
+	<shopType>12</shopType>
 	<name>灼烧卡C</name>
 	<goodsId>50502</goodsId>
 	<count>1</count>
@@ -1661,437 +1661,173 @@
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
+	<moneyType>136</moneyType>
 	<moneyCount>1800</moneyCount>
 	<specIcon></specIcon>
-	<order>3</order>
+	<order>4</order>
 	<refreshRate>50</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>77</id>
-	<shopType>9</shopType>
-	<name>流血卡C</name>
-	<goodsId>50602</goodsId>
-	<count>1</count>
+	<shopType>12</shopType>
+	<name>宝石材料1</name>
+	<goodsId>303001</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyType>136</moneyType>
+	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>4</order>
-	<refreshRate>50</refreshRate>
-	<refreshAdd>0</refreshAdd>
+	<order>5</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>78</id>
-	<shopType>9</shopType>
-	<name>宝石材料1</name>
-	<goodsId>303001</goodsId>
+	<shopType>12</shopType>
+	<name>宝石材料2</name>
+	<goodsId>304001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
+	<moneyType>136</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>5</order>
+	<order>6</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>79</id>
-	<shopType>9</shopType>
-	<name>宝石材料2</name>
-	<goodsId>304001</goodsId>
+	<shopType>12</shopType>
+	<name>宝石材料3</name>
+	<goodsId>305001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
+	<moneyType>136</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>6</order>
+	<order>7</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>80</id>
-	<shopType>9</shopType>
-	<name>宝石材料3</name>
-	<goodsId>305001</goodsId>
+	<shopType>12</shopType>
+	<name>宝石材料4</name>
+	<goodsId>306001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
+	<moneyType>136</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>7</order>
+	<order>8</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>81</id>
-	<shopType>9</shopType>
-	<name>宝石材料4</name>
-	<goodsId>306001</goodsId>
+	<shopType>12</shopType>
+	<name>宝石材料5</name>
+	<goodsId>307001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
+	<moneyType>136</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>8</order>
+	<order>9</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>82</id>
-	<shopType>9</shopType>
-	<name>宝石材料5</name>
-	<goodsId>307001</goodsId>
+	<shopType>12</shopType>
+	<name>宝石材料6</name>
+	<goodsId>308001</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
+	<moneyType>136</moneyType>
 	<moneyCount>300</moneyCount>
 	<specIcon></specIcon>
-	<order>9</order>
+	<order>10</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>83</id>
-	<shopType>9</shopType>
-	<name>宝石材料6</name>
-	<goodsId>308001</goodsId>
-	<count>10</count>
+	<shopType>12</shopType>
+	<name>补给卷</name>
+	<goodsId>125</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
-	<moneyCount>300</moneyCount>
+	<moneyType>136</moneyType>
+	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
-	<order>10</order>
+	<order>11</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit>[8,0]</fameLevLimit>
 </config>
 <config>
 	<id>84</id>
-	<shopType>9</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>133</moneyType>
-	<moneyCount>500</moneyCount>
-	<specIcon></specIcon>
-	<order>11</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
-</config>
-<config>
-	<id>85</id>
-	<shopType>12</shopType>
-	<name>流血卡D</name>
-	<goodsId>50601</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>600</moneyCount>
-	<specIcon></specIcon>
-	<order>1</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>86</id>
-	<shopType>12</shopType>
-	<name>灼烧卡D</name>
-	<goodsId>50501</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>600</moneyCount>
-	<specIcon></specIcon>
-	<order>2</order>
-	<refreshRate>50</refreshRate>
-	<refreshAdd>10</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>87</id>
-	<shopType>12</shopType>
-	<name>流血卡C</name>
-	<goodsId>50602</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>1800</moneyCount>
-	<specIcon></specIcon>
-	<order>3</order>
-	<refreshRate>50</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>88</id>
-	<shopType>12</shopType>
-	<name>灼烧卡C</name>
-	<goodsId>50502</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>1800</moneyCount>
-	<specIcon></specIcon>
-	<order>4</order>
-	<refreshRate>50</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>89</id>
-	<shopType>12</shopType>
-	<name>宝石材料1</name>
-	<goodsId>303001</goodsId>
-	<count>10</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>300</moneyCount>
-	<specIcon></specIcon>
-	<order>5</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>90</id>
-	<shopType>12</shopType>
-	<name>宝石材料2</name>
-	<goodsId>304001</goodsId>
-	<count>10</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>300</moneyCount>
-	<specIcon></specIcon>
-	<order>6</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>91</id>
-	<shopType>12</shopType>
-	<name>宝石材料3</name>
-	<goodsId>305001</goodsId>
-	<count>10</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>300</moneyCount>
-	<specIcon></specIcon>
-	<order>7</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>92</id>
-	<shopType>12</shopType>
-	<name>宝石材料4</name>
-	<goodsId>306001</goodsId>
-	<count>10</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>300</moneyCount>
-	<specIcon></specIcon>
-	<order>8</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>93</id>
-	<shopType>12</shopType>
-	<name>宝石材料5</name>
-	<goodsId>307001</goodsId>
-	<count>10</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>300</moneyCount>
-	<specIcon></specIcon>
-	<order>9</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>94</id>
-	<shopType>12</shopType>
-	<name>宝石材料6</name>
-	<goodsId>308001</goodsId>
-	<count>10</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>300</moneyCount>
-	<specIcon></specIcon>
-	<order>10</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>95</id>
-	<shopType>12</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>1</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>500</moneyCount>
-	<specIcon></specIcon>
-	<order>11</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
-</config>
-<config>
-	<id>96</id>
 	<shopType>11</shopType>
 	<name>中毒卡D</name>
 	<goodsId>50401</goodsId>
@@ -2113,7 +1849,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>97</id>
+	<id>85</id>
 	<shopType>11</shopType>
 	<name>流血卡D</name>
 	<goodsId>50601</goodsId>
@@ -2135,7 +1871,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>98</id>
+	<id>86</id>
 	<shopType>11</shopType>
 	<name>中毒卡C</name>
 	<goodsId>50402</goodsId>
@@ -2157,7 +1893,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>99</id>
+	<id>87</id>
 	<shopType>11</shopType>
 	<name>流血卡C</name>
 	<goodsId>50602</goodsId>
@@ -2179,7 +1915,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>100</id>
+	<id>88</id>
 	<shopType>11</shopType>
 	<name>宝石材料1</name>
 	<goodsId>303001</goodsId>
@@ -2201,7 +1937,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>101</id>
+	<id>89</id>
 	<shopType>11</shopType>
 	<name>宝石材料2</name>
 	<goodsId>304001</goodsId>
@@ -2223,7 +1959,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>102</id>
+	<id>90</id>
 	<shopType>11</shopType>
 	<name>宝石材料3</name>
 	<goodsId>305001</goodsId>
@@ -2245,7 +1981,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>103</id>
+	<id>91</id>
 	<shopType>11</shopType>
 	<name>宝石材料4</name>
 	<goodsId>306001</goodsId>
@@ -2267,7 +2003,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>104</id>
+	<id>92</id>
 	<shopType>11</shopType>
 	<name>宝石材料5</name>
 	<goodsId>307001</goodsId>
@@ -2289,7 +2025,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>105</id>
+	<id>93</id>
 	<shopType>11</shopType>
 	<name>宝石材料6</name>
 	<goodsId>308001</goodsId>
@@ -2311,7 +2047,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>106</id>
+	<id>94</id>
 	<shopType>11</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -2333,7 +2069,7 @@
 	<fameLevLimit>[7,0]</fameLevLimit>
 </config>
 <config>
-	<id>107</id>
+	<id>95</id>
 	<shopType>13</shopType>
 	<name>流血卡D</name>
 	<goodsId>50601</goodsId>
@@ -2355,7 +2091,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>108</id>
+	<id>96</id>
 	<shopType>13</shopType>
 	<name>灼烧卡D</name>
 	<goodsId>50501</goodsId>
@@ -2377,7 +2113,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>109</id>
+	<id>97</id>
 	<shopType>13</shopType>
 	<name>流血卡C</name>
 	<goodsId>50602</goodsId>
@@ -2399,7 +2135,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>110</id>
+	<id>98</id>
 	<shopType>13</shopType>
 	<name>灼烧卡C</name>
 	<goodsId>50502</goodsId>
@@ -2421,7 +2157,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>111</id>
+	<id>99</id>
 	<shopType>13</shopType>
 	<name>宝石材料1</name>
 	<goodsId>303001</goodsId>
@@ -2443,7 +2179,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>112</id>
+	<id>100</id>
 	<shopType>13</shopType>
 	<name>宝石材料2</name>
 	<goodsId>304001</goodsId>
@@ -2465,7 +2201,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>113</id>
+	<id>101</id>
 	<shopType>13</shopType>
 	<name>宝石材料3</name>
 	<goodsId>305001</goodsId>
@@ -2487,7 +2223,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>114</id>
+	<id>102</id>
 	<shopType>13</shopType>
 	<name>宝石材料4</name>
 	<goodsId>306001</goodsId>
@@ -2509,7 +2245,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>115</id>
+	<id>103</id>
 	<shopType>13</shopType>
 	<name>宝石材料5</name>
 	<goodsId>307001</goodsId>
@@ -2531,7 +2267,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>116</id>
+	<id>104</id>
 	<shopType>13</shopType>
 	<name>宝石材料6</name>
 	<goodsId>308001</goodsId>
@@ -2553,7 +2289,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>117</id>
+	<id>105</id>
 	<shopType>13</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -2575,7 +2311,7 @@
 	<fameLevLimit>[5,0]</fameLevLimit>
 </config>
 <config>
-	<id>118</id>
+	<id>106</id>
 	<shopType>14</shopType>
 	<name>灼烧卡D</name>
 	<goodsId>50501</goodsId>
@@ -2597,7 +2333,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>119</id>
+	<id>107</id>
 	<shopType>14</shopType>
 	<name>石化卡D</name>
 	<goodsId>50301</goodsId>
@@ -2619,7 +2355,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>120</id>
+	<id>108</id>
 	<shopType>14</shopType>
 	<name>灼烧卡C</name>
 	<goodsId>50502</goodsId>
@@ -2641,7 +2377,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>121</id>
+	<id>109</id>
 	<shopType>14</shopType>
 	<name>石化卡C</name>
 	<goodsId>50302</goodsId>
@@ -2663,7 +2399,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>122</id>
+	<id>110</id>
 	<shopType>14</shopType>
 	<name>宝石材料1</name>
 	<goodsId>303001</goodsId>
@@ -2685,7 +2421,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>123</id>
+	<id>111</id>
 	<shopType>14</shopType>
 	<name>宝石材料2</name>
 	<goodsId>304001</goodsId>
@@ -2707,7 +2443,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>124</id>
+	<id>112</id>
 	<shopType>14</shopType>
 	<name>宝石材料3</name>
 	<goodsId>305001</goodsId>
@@ -2729,7 +2465,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>125</id>
+	<id>113</id>
 	<shopType>14</shopType>
 	<name>宝石材料4</name>
 	<goodsId>306001</goodsId>
@@ -2751,7 +2487,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>126</id>
+	<id>114</id>
 	<shopType>14</shopType>
 	<name>宝石材料5</name>
 	<goodsId>307001</goodsId>
@@ -2773,7 +2509,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>127</id>
+	<id>115</id>
 	<shopType>14</shopType>
 	<name>宝石材料6</name>
 	<goodsId>308001</goodsId>
@@ -2795,7 +2531,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>128</id>
+	<id>116</id>
 	<shopType>14</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -2817,7 +2553,7 @@
 	<fameLevLimit>[6,0]</fameLevLimit>
 </config>
 <config>
-	<id>129</id>
+	<id>117</id>
 	<shopType>8</shopType>
 	<name>石化卡D</name>
 	<goodsId>50301</goodsId>
@@ -2839,7 +2575,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>130</id>
+	<id>118</id>
 	<shopType>8</shopType>
 	<name>反伤卡D</name>
 	<goodsId>51701</goodsId>
@@ -2861,7 +2597,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>131</id>
+	<id>119</id>
 	<shopType>8</shopType>
 	<name>石化卡C</name>
 	<goodsId>50302</goodsId>
@@ -2883,7 +2619,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>132</id>
+	<id>120</id>
 	<shopType>8</shopType>
 	<name>反伤卡C</name>
 	<goodsId>51702</goodsId>
@@ -2905,7 +2641,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>133</id>
+	<id>121</id>
 	<shopType>8</shopType>
 	<name>宝石材料1</name>
 	<goodsId>303001</goodsId>
@@ -2927,7 +2663,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>134</id>
+	<id>122</id>
 	<shopType>8</shopType>
 	<name>宝石材料2</name>
 	<goodsId>304001</goodsId>
@@ -2949,7 +2685,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>135</id>
+	<id>123</id>
 	<shopType>8</shopType>
 	<name>宝石材料3</name>
 	<goodsId>305001</goodsId>
@@ -2971,7 +2707,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>136</id>
+	<id>124</id>
 	<shopType>8</shopType>
 	<name>宝石材料4</name>
 	<goodsId>306001</goodsId>
@@ -2993,7 +2729,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>137</id>
+	<id>125</id>
 	<shopType>8</shopType>
 	<name>宝石材料5</name>
 	<goodsId>307001</goodsId>
@@ -3015,7 +2751,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>138</id>
+	<id>126</id>
 	<shopType>8</shopType>
 	<name>宝石材料6</name>
 	<goodsId>308001</goodsId>
@@ -3037,7 +2773,7 @@
 	<fameLevLimit>[2,0]</fameLevLimit>
 </config>
 <config>
-	<id>139</id>
+	<id>127</id>
 	<shopType>8</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -3059,7 +2795,7 @@
 	<fameLevLimit>[2,1]</fameLevLimit>
 </config>
 <config>
-	<id>140</id>
+	<id>128</id>
 	<shopType>7</shopType>
 	<name>反伤卡D</name>
 	<goodsId>51701</goodsId>
@@ -3081,7 +2817,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>141</id>
+	<id>129</id>
 	<shopType>7</shopType>
 	<name>冰冻卡D</name>
 	<goodsId>50201</goodsId>
@@ -3103,7 +2839,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>142</id>
+	<id>130</id>
 	<shopType>7</shopType>
 	<name>反伤卡C</name>
 	<goodsId>51702</goodsId>
@@ -3125,7 +2861,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>143</id>
+	<id>131</id>
 	<shopType>7</shopType>
 	<name>冰冻卡C</name>
 	<goodsId>50202</goodsId>
@@ -3147,7 +2883,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>144</id>
+	<id>132</id>
 	<shopType>7</shopType>
 	<name>宝石材料1</name>
 	<goodsId>303001</goodsId>
@@ -3169,7 +2905,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>145</id>
+	<id>133</id>
 	<shopType>7</shopType>
 	<name>宝石材料2</name>
 	<goodsId>304001</goodsId>
@@ -3191,7 +2927,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>146</id>
+	<id>134</id>
 	<shopType>7</shopType>
 	<name>宝石材料3</name>
 	<goodsId>305001</goodsId>
@@ -3213,7 +2949,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>147</id>
+	<id>135</id>
 	<shopType>7</shopType>
 	<name>宝石材料4</name>
 	<goodsId>306001</goodsId>
@@ -3235,7 +2971,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>148</id>
+	<id>136</id>
 	<shopType>7</shopType>
 	<name>宝石材料5</name>
 	<goodsId>307001</goodsId>
@@ -3257,7 +2993,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>149</id>
+	<id>137</id>
 	<shopType>7</shopType>
 	<name>宝石材料6</name>
 	<goodsId>308001</goodsId>
@@ -3279,7 +3015,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>150</id>
+	<id>138</id>
 	<shopType>7</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -3301,7 +3037,7 @@
 	<fameLevLimit>[1,0]</fameLevLimit>
 </config>
 <config>
-	<id>151</id>
+	<id>139</id>
 	<shopType>2</shopType>
 	<name>扫荡券</name>
 	<goodsId>302002</goodsId>
@@ -3323,7 +3059,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>152</id>
+	<id>140</id>
 	<shopType>2</shopType>
 	<name>强化券</name>
 	<goodsId>302001</goodsId>
@@ -3345,7 +3081,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>153</id>
+	<id>141</id>
 	<shopType>2</shopType>
 	<name>装备材料</name>
 	<goodsId>108</goodsId>
@@ -3367,7 +3103,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>154</id>
+	<id>142</id>
 	<shopType>2</shopType>
 	<name>强化材料</name>
 	<goodsId>109</goodsId>
@@ -3389,7 +3125,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>155</id>
+	<id>143</id>
 	<shopType>2</shopType>
 	<name>生命增益D</name>
 	<goodsId>50821</goodsId>
@@ -3411,7 +3147,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>156</id>
+	<id>144</id>
 	<shopType>2</shopType>
 	<name>威力增益D</name>
 	<goodsId>50801</goodsId>
@@ -3433,7 +3169,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>157</id>
+	<id>145</id>
 	<shopType>2</shopType>
 	<name>防御增益D</name>
 	<goodsId>50811</goodsId>
@@ -3455,7 +3191,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>158</id>
+	<id>146</id>
 	<shopType>2</shopType>
 	<name>暴击增益D</name>
 	<goodsId>50831</goodsId>
@@ -3477,7 +3213,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>159</id>
+	<id>147</id>
 	<shopType>2</shopType>
 	<name>异常增益D</name>
 	<goodsId>50841</goodsId>
@@ -3499,7 +3235,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>160</id>
+	<id>148</id>
 	<shopType>2</shopType>
 	<name>生命增益C</name>
 	<goodsId>50822</goodsId>
@@ -3521,7 +3257,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>161</id>
+	<id>149</id>
 	<shopType>2</shopType>
 	<name>威力增益C</name>
 	<goodsId>50802</goodsId>
@@ -3543,7 +3279,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>162</id>
+	<id>150</id>
 	<shopType>2</shopType>
 	<name>防御增益C</name>
 	<goodsId>50812</goodsId>
@@ -3565,7 +3301,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>163</id>
+	<id>151</id>
 	<shopType>2</shopType>
 	<name>暴击增益C</name>
 	<goodsId>50832</goodsId>
@@ -3587,7 +3323,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>164</id>
+	<id>152</id>
 	<shopType>2</shopType>
 	<name>异常增益C</name>
 	<goodsId>50842</goodsId>
@@ -3609,7 +3345,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>165</id>
+	<id>153</id>
 	<shopType>6</shopType>
 	<name>重伤卡D</name>
 	<goodsId>51601</goodsId>
@@ -3631,7 +3367,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>166</id>
+	<id>154</id>
 	<shopType>6</shopType>
 	<name>破甲卡D</name>
 	<goodsId>51901</goodsId>
@@ -3653,7 +3389,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>167</id>
+	<id>155</id>
 	<shopType>6</shopType>
 	<name>重伤卡C</name>
 	<goodsId>51602</goodsId>
@@ -3675,7 +3411,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>168</id>
+	<id>156</id>
 	<shopType>6</shopType>
 	<name>破甲卡C</name>
 	<goodsId>51902</goodsId>
@@ -3697,7 +3433,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>169</id>
+	<id>157</id>
 	<shopType>6</shopType>
 	<name>神器碎片1</name>
 	<goodsId>400001</goodsId>
@@ -3719,7 +3455,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>170</id>
+	<id>158</id>
 	<shopType>6</shopType>
 	<name>神器碎片2</name>
 	<goodsId>500001</goodsId>
@@ -3741,7 +3477,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>171</id>
+	<id>159</id>
 	<shopType>6</shopType>
 	<name>神器碎片3</name>
 	<goodsId>600001</goodsId>
@@ -3763,7 +3499,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>172</id>
+	<id>160</id>
 	<shopType>6</shopType>
 	<name>神器碎片4</name>
 	<goodsId>700001</goodsId>
@@ -3785,7 +3521,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>173</id>
+	<id>161</id>
 	<shopType>6</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -3807,7 +3543,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>174</id>
+	<id>162</id>
 	<shopType>15</shopType>
 	<name>减CD卡D</name>
 	<goodsId>51001</goodsId>
@@ -3829,7 +3565,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>175</id>
+	<id>163</id>
 	<shopType>15</shopType>
 	<name>霸体卡D</name>
 	<goodsId>50901</goodsId>
@@ -3851,7 +3587,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>176</id>
+	<id>164</id>
 	<shopType>15</shopType>
 	<name>减CD卡C</name>
 	<goodsId>51002</goodsId>
@@ -3873,7 +3609,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>177</id>
+	<id>165</id>
 	<shopType>15</shopType>
 	<name>霸体卡C</name>
 	<goodsId>50902</goodsId>
@@ -3895,7 +3631,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>178</id>
+	<id>166</id>
 	<shopType>15</shopType>
 	<name>神器碎片1</name>
 	<goodsId>400001</goodsId>
@@ -3917,7 +3653,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>179</id>
+	<id>167</id>
 	<shopType>15</shopType>
 	<name>神器碎片2</name>
 	<goodsId>500001</goodsId>
@@ -3939,7 +3675,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>180</id>
+	<id>168</id>
 	<shopType>15</shopType>
 	<name>神器碎片3</name>
 	<goodsId>600001</goodsId>
@@ -3961,7 +3697,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>181</id>
+	<id>169</id>
 	<shopType>15</shopType>
 	<name>神器碎片4</name>
 	<goodsId>700001</goodsId>
@@ -3983,7 +3719,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>182</id>
+	<id>170</id>
 	<shopType>15</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -4005,7 +3741,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>183</id>
+	<id>171</id>
 	<shopType>5</shopType>
 	<name>治疗卡D</name>
 	<goodsId>50881</goodsId>
@@ -4027,7 +3763,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>184</id>
+	<id>172</id>
 	<shopType>5</shopType>
 	<name>伤害浮动D</name>
 	<goodsId>51201</goodsId>
@@ -4049,7 +3785,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>185</id>
+	<id>173</id>
 	<shopType>5</shopType>
 	<name>治疗卡C</name>
 	<goodsId>50882</goodsId>
@@ -4071,7 +3807,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>186</id>
+	<id>174</id>
 	<shopType>5</shopType>
 	<name>伤害浮动C</name>
 	<goodsId>51202</goodsId>
@@ -4093,7 +3829,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>187</id>
+	<id>175</id>
 	<shopType>5</shopType>
 	<name>神器碎片1</name>
 	<goodsId>400001</goodsId>
@@ -4115,7 +3851,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>188</id>
+	<id>176</id>
 	<shopType>5</shopType>
 	<name>神器碎片2</name>
 	<goodsId>500001</goodsId>
@@ -4137,7 +3873,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>189</id>
+	<id>177</id>
 	<shopType>5</shopType>
 	<name>神器碎片3</name>
 	<goodsId>600001</goodsId>
@@ -4159,7 +3895,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>190</id>
+	<id>178</id>
 	<shopType>5</shopType>
 	<name>神器碎片4</name>
 	<goodsId>700001</goodsId>
@@ -4181,7 +3917,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>191</id>
+	<id>179</id>
 	<shopType>5</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -4203,7 +3939,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>192</id>
+	<id>180</id>
 	<shopType>3</shopType>
 	<name>吸血卡D</name>
 	<goodsId>51301</goodsId>
@@ -4225,7 +3961,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>193</id>
+	<id>181</id>
 	<shopType>3</shopType>
 	<name>吸血卡C</name>
 	<goodsId>51302</goodsId>
@@ -4247,7 +3983,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>194</id>
+	<id>182</id>
 	<shopType>3</shopType>
 	<name>神器碎片1</name>
 	<goodsId>400001</goodsId>
@@ -4269,7 +4005,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>195</id>
+	<id>183</id>
 	<shopType>3</shopType>
 	<name>神器碎片2</name>
 	<goodsId>500001</goodsId>
@@ -4291,7 +4027,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>196</id>
+	<id>184</id>
 	<shopType>3</shopType>
 	<name>神器碎片3</name>
 	<goodsId>600001</goodsId>
@@ -4313,7 +4049,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>197</id>
+	<id>185</id>
 	<shopType>3</shopType>
 	<name>神器碎片4</name>
 	<goodsId>700001</goodsId>
@@ -4335,7 +4071,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>198</id>
+	<id>186</id>
 	<shopType>3</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>
@@ -4357,7 +4093,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>199</id>
+	<id>187</id>
 	<shopType>4</shopType>
 	<name>暴伤增益D</name>
 	<goodsId>50851</goodsId>
@@ -4379,7 +4115,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>200</id>
+	<id>188</id>
 	<shopType>4</shopType>
 	<name>暴伤增益C</name>
 	<goodsId>50852</goodsId>
@@ -4401,7 +4137,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>201</id>
+	<id>189</id>
 	<shopType>4</shopType>
 	<name>神器碎片1</name>
 	<goodsId>400001</goodsId>
@@ -4423,7 +4159,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>202</id>
+	<id>190</id>
 	<shopType>4</shopType>
 	<name>神器碎片2</name>
 	<goodsId>500001</goodsId>
@@ -4445,7 +4181,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>203</id>
+	<id>191</id>
 	<shopType>4</shopType>
 	<name>神器碎片3</name>
 	<goodsId>600001</goodsId>
@@ -4467,7 +4203,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>204</id>
+	<id>192</id>
 	<shopType>4</shopType>
 	<name>神器碎片4</name>
 	<goodsId>700001</goodsId>
@@ -4489,7 +4225,7 @@
 	<fameLevLimit></fameLevLimit>
 </config>
 <config>
-	<id>205</id>
+	<id>193</id>
 	<shopType>4</shopType>
 	<name>补给卷</name>
 	<goodsId>125</goodsId>

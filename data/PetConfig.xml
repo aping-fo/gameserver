@@ -715,6 +715,125 @@
 	<activeSkillId>7</activeSkillId>
 </config>
 <config>
+	<id>60071</id>
+	<type>1</type>
+	<quality>1</quality>
+	<name>小猫咪</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50114</mutateMonsterId>
+	<petId></petId>
+	<materialId>65071</materialId>
+	<nextQualityId>60072</nextQualityId>
+	<gainNeedMaterialCount>30</gainNeedMaterialCount>
+	<nextQualityCost>[103,1000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>1</activeSkillId>
+</config>
+<config>
+	<id>60072</id>
+	<type>1</type>
+	<quality>2</quality>
+	<name>小猫咪</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50114</mutateMonsterId>
+	<petId></petId>
+	<materialId>65071</materialId>
+	<nextQualityId>60073</nextQualityId>
+	<gainNeedMaterialCount>30</gainNeedMaterialCount>
+	<nextQualityCost>[103,2000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>2</activeSkillId>
+</config>
+<config>
+	<id>60073</id>
+	<type>1</type>
+	<quality>3</quality>
+	<name>小猫咪</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50114</mutateMonsterId>
+	<petId></petId>
+	<materialId>65071</materialId>
+	<nextQualityId>60074</nextQualityId>
+	<gainNeedMaterialCount>50</gainNeedMaterialCount>
+	<nextQualityCost>[103,4000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>3</activeSkillId>
+</config>
+<config>
+	<id>60074</id>
+	<type>1</type>
+	<quality>4</quality>
+	<name>小猫咪</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50114</mutateMonsterId>
+	<petId></petId>
+	<materialId>65071</materialId>
+	<nextQualityId>60075</nextQualityId>
+	<gainNeedMaterialCount>50</gainNeedMaterialCount>
+	<nextQualityCost>[103,8000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>4</activeSkillId>
+</config>
+<config>
+	<id>60075</id>
+	<type>1</type>
+	<quality>5</quality>
+	<name>小猫咪</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50114</mutateMonsterId>
+	<petId></petId>
+	<materialId>65071</materialId>
+	<nextQualityId>60076</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,15000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>5</activeSkillId>
+</config>
+<config>
+	<id>60076</id>
+	<type>1</type>
+	<quality>6</quality>
+	<name>小猫咪</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50114</mutateMonsterId>
+	<petId></petId>
+	<materialId>65071</materialId>
+	<nextQualityId>60077</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,25000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>6</activeSkillId>
+</config>
+<config>
+	<id>60077</id>
+	<type>1</type>
+	<quality>7</quality>
+	<name>小猫咪</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50114</mutateMonsterId>
+	<petId></petId>
+	<materialId>65071</materialId>
+	<nextQualityId></nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,50000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>7</activeSkillId>
+</config>
+<config>
 	<id>65011</id>
 	<type>2</type>
 	<quality>1</quality>
@@ -1420,6 +1539,125 @@
 	<monsterId>50111</monsterId>
 	<mutateMonsterId>50111</mutateMonsterId>
 	<petId>60067</petId>
+	<materialId></materialId>
+	<nextQualityId></nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,50000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>7</activeSkillId>
+</config>
+<config>
+	<id>65071</id>
+	<type>2</type>
+	<quality>1</quality>
+	<name>小猫咪碎片</name>
+	<property>1</property>
+	<monsterId>50114</monsterId>
+	<mutateMonsterId>50113</mutateMonsterId>
+	<petId>60071</petId>
+	<materialId></materialId>
+	<nextQualityId>65072</nextQualityId>
+	<gainNeedMaterialCount>30</gainNeedMaterialCount>
+	<nextQualityCost>[103,1000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>1</activeSkillId>
+</config>
+<config>
+	<id>65072</id>
+	<type>2</type>
+	<quality>2</quality>
+	<name>小猫咪碎片</name>
+	<property>1</property>
+	<monsterId>50114</monsterId>
+	<mutateMonsterId>50113</mutateMonsterId>
+	<petId>60072</petId>
+	<materialId></materialId>
+	<nextQualityId>65073</nextQualityId>
+	<gainNeedMaterialCount>30</gainNeedMaterialCount>
+	<nextQualityCost>[103,2000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>2</activeSkillId>
+</config>
+<config>
+	<id>65073</id>
+	<type>2</type>
+	<quality>3</quality>
+	<name>小猫咪碎片</name>
+	<property>1</property>
+	<monsterId>50114</monsterId>
+	<mutateMonsterId>50113</mutateMonsterId>
+	<petId>60073</petId>
+	<materialId></materialId>
+	<nextQualityId>65074</nextQualityId>
+	<gainNeedMaterialCount>50</gainNeedMaterialCount>
+	<nextQualityCost>[103,4000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>3</activeSkillId>
+</config>
+<config>
+	<id>65074</id>
+	<type>2</type>
+	<quality>4</quality>
+	<name>小猫咪碎片</name>
+	<property>1</property>
+	<monsterId>50114</monsterId>
+	<mutateMonsterId>50113</mutateMonsterId>
+	<petId>60074</petId>
+	<materialId></materialId>
+	<nextQualityId>65075</nextQualityId>
+	<gainNeedMaterialCount>50</gainNeedMaterialCount>
+	<nextQualityCost>[103,8000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>4</activeSkillId>
+</config>
+<config>
+	<id>65075</id>
+	<type>2</type>
+	<quality>5</quality>
+	<name>小猫咪碎片</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50113</mutateMonsterId>
+	<petId>60075</petId>
+	<materialId></materialId>
+	<nextQualityId>65076</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,15000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>5</activeSkillId>
+</config>
+<config>
+	<id>65076</id>
+	<type>2</type>
+	<quality>6</quality>
+	<name>小猫咪碎片</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50113</mutateMonsterId>
+	<petId>60076</petId>
+	<materialId></materialId>
+	<nextQualityId>65077</nextQualityId>
+	<gainNeedMaterialCount>100</gainNeedMaterialCount>
+	<nextQualityCost>[103,25000]</nextQualityCost>
+	<nextQualityMaterialCount>10</nextQualityMaterialCount>
+	<decomposeGoods>[[150,10],[103,10000]]</decomposeGoods>
+	<activeSkillId>6</activeSkillId>
+</config>
+<config>
+	<id>65077</id>
+	<type>2</type>
+	<quality>7</quality>
+	<name>小猫咪碎片</name>
+	<property>1</property>
+	<monsterId>50113</monsterId>
+	<mutateMonsterId>50113</mutateMonsterId>
+	<petId>60077</petId>
 	<materialId></materialId>
 	<nextQualityId></nextQualityId>
 	<gainNeedMaterialCount>100</gainNeedMaterialCount>

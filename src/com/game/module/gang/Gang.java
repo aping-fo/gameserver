@@ -46,7 +46,8 @@ public class Gang {
 	
 	private boolean contribute;
 	private Calendar createDate;
-	
+	private long refreshTime;
+
 	private Map<Integer, Task> tasks = new HashMap<Integer, Task>();//公会任务
 	private GTRoom gtRoom;//当前练功房
 
@@ -66,6 +67,14 @@ public class Gang {
 	public Gang(int id){
 		this.id = id;
 		this.createDate = Calendar.getInstance();
+	}
+
+	public long getRefreshTime() {
+		return refreshTime;
+	}
+
+	public void setRefreshTime(long refreshTime) {
+		this.refreshTime = refreshTime;
 	}
 
 	public Set<Integer> getTechnologys() {

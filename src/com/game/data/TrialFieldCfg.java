@@ -11,6 +11,8 @@ public class TrialFieldCfg {
 	public String[][] weakness;//弱点描述
 	public int difficulty;//难度
 	public String role;//界面立绘
+	public int[] pos;//位置
+	public float[] spriteSize;//半身像尺寸
 	public int copyId;//副本id
 	public int count;//挑战次数
 	public String background;//背景

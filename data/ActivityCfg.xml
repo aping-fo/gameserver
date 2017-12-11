@@ -2,7 +2,7 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
-	<name>体力领取</name>
+	<name>乐起食堂</name>
 	<Conds></Conds>
 	<ActivityType>1</ActivityType>
 	<OpenType>1</OpenType>
@@ -18,7 +18,7 @@
 </config>
 <config>
 	<id>2</id>
-	<name>成长基金</name>
+	<name>乐起理财</name>
 	<Conds>[[1,4],[2,102,2000]]</Conds>
 	<ActivityType>2</ActivityType>
 	<OpenType>2</OpenType>
@@ -35,7 +35,7 @@
 </config>
 <config>
 	<id>3</id>
-	<name>七天登录奖励</name>
+	<name>七天大奖</name>
 	<Conds></Conds>
 	<ActivityType>3</ActivityType>
 	<OpenType>1</OpenType>
@@ -45,7 +45,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0>7</Param0>
-	<sort>5</sort>
+	<sort>4</sort>
 	<des></des>
 	<viewname>SevenDaysRewardView</viewname>
 </config>
@@ -77,7 +77,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>4</sort>
+	<sort>5</sort>
 	<des></des>
 	<viewname>LevRewardsView</viewname>
 </config>
@@ -93,7 +93,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>6</sort>
+	<sort></sort>
 	<des></des>
 	<viewname>WeekMonthCardView</viewname>
 </config>

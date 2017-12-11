@@ -44,6 +44,7 @@ import com.game.params.copy.CopyVo;
 import com.game.params.scene.CMonster;
 import com.game.params.scene.SMonsterVo;
 import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
 import com.game.util.RandomUtil;
 import com.game.util.TimeUtil;
 import com.google.common.collect.Maps;
@@ -304,6 +305,7 @@ public class CopyService {
             result.rewards.add(reward);
         }
 
+        ServerLogger.warn(JsonUtils.object2String(items));
         // 特殊物品公告
         String myName = playerService.getPlayer(playerId).getName();
         for (GoodsNotice g : copy.getSpecReward()) {
@@ -579,7 +581,7 @@ public class CopyService {
         CopyInstance instance = new CopyInstance();
         instance.setCopyId(copyId);
         instance.setPassId(passId);
-
+        Player player = playerService.getPlayer(playerId);
         CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, passId);
         if (cfg.type != CopyInstance.TYPE_LADDER) {
             for (int i = 0; i < cfg.scenes.length; i++) {
@@ -590,7 +592,6 @@ public class CopyService {
                     _monsters = endlessLogic.getSceneMonster(playerId, copyId, i + 1);
                 } else {
                     _monsters = ConfigData.getSceneMonster(passId, i + 1);
-
                 }
                 if (_monsters == null) {
                     throw new RuntimeException(String.format("can not found the monster, copyid=%d,group=%d", copyId, i + 1));
@@ -613,8 +614,16 @@ public class CopyService {
                         vo.defense = Math.round(fight * 0.05f);
                         vo.symptom = Math.round(fight * 0.1f);
                         vo.fu = Math.round(fight * 0.1f);
-                        //vo.curHp = vo.hp = (int)(attach.getCurrLayer() * eCfg.growRatio * eCfg.baseData * eCfg.hp * (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.scetionRatio);
-                    } else {
+                    }
+                    else if(cfg.type == CopyInstance.TYPE_TRAIN){
+                        vo.curHp = vo.hp = Math.round(player.getFight() * 3.32f);
+                        vo.attack = Math.round(player.getFight() * 0.18f);
+                        vo.crit = Math.round(player.getFight() * 0.13f);
+                        vo.defense = Math.round(player.getFight() * 0.05f);
+                        vo.symptom = Math.round(player.getFight() * 0.1f);
+                        vo.fu = Math.round(player.getFight() * 0.1f);
+                    }
+                    else {
                         vo.curHp = vo.hp = monsterCfg.hp;
                         vo.attack = monsterCfg.physicAttack;
                         vo.crit = monsterCfg.crit;
@@ -636,7 +645,6 @@ public class CopyService {
         } else if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
             instanceId = teamService.onEnterBattle(playerId);
         }
-        Player player = playerService.getPlayer(playerId);
         player.setCopyId(instanceId);
         instances.put(instanceId, instance);
 

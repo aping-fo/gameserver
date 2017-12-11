@@ -87234,4 +87234,361 @@
 	<addEfectIndex></addEfectIndex>
 	<extraEffectParam></extraEffectParam>
 </config>
+<config>
+	<id>15001001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>防御1级</name>
+	<description>防御1级</description>
+	<duration>0</duration>
+	<takeEffectParam>[1,3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15001002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>防御2级</name>
+	<description>防御2级</description>
+	<duration>0</duration>
+	<takeEffectParam>[1,5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15001003</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>防御3级</name>
+	<description>防御3级</description>
+	<duration>0</duration>
+	<takeEffectParam>[1,8]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15001004</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>防御4级</name>
+	<description>防御4级</description>
+	<duration>0</duration>
+	<takeEffectParam>[1,11]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15001099</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>防御99级</name>
+	<description>防御99级</description>
+	<duration>0</duration>
+	<takeEffectParam>[1,1000]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15002001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>减防99级</name>
+	<description>防御99级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,-0.85]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15002002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>减防99级</name>
+	<description>防御99级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,-0.9]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15002003</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>减防99级</name>
+	<description>防御99级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,-0.95]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15002004</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>减防99级</name>
+	<description>防御99级</description>
+	<duration>8</duration>
+	<takeEffectParam>[1,-1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15003001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>加攻1级</name>
+	<description>加攻1级</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15003002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>加攻2级</name>
+	<description>加攻2级</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15003003</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>加攻3级</name>
+	<description>加攻3级</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,0.8]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15003004</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>加攻4级</name>
+	<description>加攻4级</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,1.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15004001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>易伤1级</name>
+	<description>易伤1级</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.2]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15004002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>易伤2级</name>
+	<description>易伤2级</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15004003</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>易伤3级</name>
+	<description>易伤3级</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>15004004</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>12</buffType>
+	<buffSubType></buffSubType>
+	<name>易伤4级</name>
+	<description>易伤4级</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.05]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000024</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
 </root>

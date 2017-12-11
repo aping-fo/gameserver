@@ -12,4 +12,5 @@ public class ModuleOpenCfg {
 	public int param;//生效参数
 	public String icon;//图标
 	public int[][] subtype;//功能页签
+	public int[] position;//主界面坐标
 }

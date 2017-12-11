@@ -27,16 +27,16 @@
 	<createGangDiamond>200</createGangDiamond>
 	<applyGangLev>1</applyGangLev>
 	<quitPunish>12</quitPunish>
-	<applyLimit>2</applyLimit>
-	<donateParams>[[103,1000,1000,5,1],[102,10,1000,2,2],[102,50,1000,2,3]]</donateParams>
-	<person2gang>25</person2gang>
+	<applyLimit>20</applyLimit>
+	<donateParams>[[103,1000,5,10,1],[102,10,10,10,2],[102,100,100,10,3]]</donateParams>
+	<person2gang>1000</person2gang>
 	<gangCompensate>100</gangCompensate>
 	<renameGang>200</renameGang>
 	<gangBrocast>100</gangBrocast>
 	<gangTasks>[15001,15002]</gangTasks>
 	<firstTask>[14000,14003,14006,14009,14012,14018,14023,14027,14030,14033,14036,14039,14042,14045,14048,14051,14054,14057,14060,14063,14066,14069,14072,14075,14078,14083,14086,14090,14092,14094,14096,14098,14100,14104,14107,14108,14114]</firstTask>
 	<version>1</version>
-	<maxEnergy>200</maxEnergy>
+	<maxEnergy>120</maxEnergy>
 	<firstScene>10013</firstScene>
 	<headId>[111011,121011,131011]</headId>
 	<fashionId>[111012,121012,131012]</fashionId>
@@ -88,7 +88,7 @@
 	<exprienceFightRatio>[0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0,1.1,1.2]</exprienceFightRatio>
 	<exprienceRewards>[10000,10000,10000,10000,10000,10000,10000,10000,10000,10000,10000]</exprienceRewards>
 	<sceneFadeDistance>1</sceneFadeDistance>
-	<guildBroadcastPrice>200</guildBroadcastPrice>
+	<guildBroadcastPrice>100</guildBroadcastPrice>
 	<buyExtremeEvasionPrice>102:10</buyExtremeEvasionPrice>
 	<extremeEvasionDelTime>30</extremeEvasionDelTime>
 	<quickExtremeEvasionCopy>102:10</quickExtremeEvasionCopy>
@@ -109,7 +109,7 @@
 	<worldBossBuyAttackCost>[102,10]</worldBossBuyAttackCost>
 	<worldBossCopy>[800101,80010101,800102,80010102,800103,80010103]</worldBossCopy>
 	<worldBossHurtReward>[102,10]</worldBossHurtReward>
-	<worldBossOpenTime>[11,12,15,16,18,19]</worldBossOpenTime>
+	<worldBossOpenTime>[11,12,15,16,20,22]</worldBossOpenTime>
 	<teamLimit>1:2</teamLimit>
 	<skillCardGroupOpenVip>[0,0,3,5,7,8]</skillCardGroupOpenVip>
 	<rewardRate>[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]</rewardRate>
@@ -122,7 +122,7 @@
 	<BeHitMaxInterval>1</BeHitMaxInterval>
 	<groupCopyOpenTime>[9,10,11,12,13,14]</groupCopyOpenTime>
 	<groupRewardRate>[300,40,600,30,900,20,1200,10]</groupRewardRate>
-	<groupTimes>2</groupTimes>
+	<groupTimes>1</groupTimes>
 	<LeadawayCopyDelTime>30</LeadawayCopyDelTime>
 	<quickLeadawayCopy>102:10</quickLeadawayCopy>
 	<buyLeadawayPrice>102:10</buyLeadawayPrice>
@@ -153,14 +153,14 @@
 	<joyActionTimeMax>65</joyActionTimeMax>
 	<petJoyActionIntervalMin>6</petJoyActionIntervalMin>
 	<petJoyActionIntervalMax>12</petJoyActionIntervalMax>
-	<guildCopyTimes>10</guildCopyTimes>
+	<guildCopyTimes>3</guildCopyTimes>
 	<guildRewardRate>10000</guildRewardRate>
 	<energyPrice>[25,50,75,100,125,150,175,200]</energyPrice>
 	<addEnergyPerTime>50</addEnergyPerTime>
 	<coinPrice>[25,50,75,100,125,150,175,200]</coinPrice>
 	<coinBuy>5000</coinBuy>
 	<buffStrikenEffectPriority>1:6;2:4;3:5;4:1;5:2;6:3</buffStrikenEffectPriority>
-	<cardLvUpPrice>[[103,1],[103,2],[103,3],[103,4]]</cardLvUpPrice>
+	<cardLvUpPrice>[[103,100],[103,1000],[103,5000],[103,10000]]</cardLvUpPrice>
 	<mainCityMapParas>[0.3,0.3,23.7]</mainCityMapParas>
 </config>
 </root>

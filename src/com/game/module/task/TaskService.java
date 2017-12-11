@@ -320,6 +320,9 @@ public class TaskService implements Dispose {
 					if (count == 1) {
 						task.alterCount(params[params.length - 1]);
 					} else {
+						if(params.length != count) {
+							continue;
+						}
 						int reqLev = targets[0];
 						int reqPos = targets[1];
 						if(params[0] < reqLev || (reqPos > 0 && reqPos != params[1])){
@@ -687,9 +690,9 @@ public class TaskService implements Dispose {
 		if (playerTask2.getJointedCount() >= 3) {
 			return Response.TASK_NO_NOINT;
 		}
-		if (partner.getTeamId() != 0) {
+		/*if (partner.getTeamId() != 0) {
 			return Response.ERR_PARAM;
-		}
+		}*/
 
 		String key = String.format("%d_%d", taskId, playerId);
 		List<String> jointedTasks = playerTask2.getJointedTasks();

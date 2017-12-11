@@ -280,9 +280,8 @@ public class WorldBossService implements InitHandler {
         ret.isCrit = isCrit;
         broadcast(CMD_MONSTER_INFO, ret);
 
-
         if (boss.getCurHp() <= 0) { //死亡
-            ServerLogger.warn("boss go die.... boss id ==" + boss.getId());
+            ServerLogger.warn("boss go die....... boss id ==" + boss.getId());
             worldBossData.getKillMap().put(bossId, playerId);
             //boss死亡，广播
             Int2Param param = new Int2Param();
@@ -377,7 +376,7 @@ public class WorldBossService implements InitHandler {
                 worldBossData.setEndHour(endHour);
                 worldBossData.setDay(c.get(Calendar.DAY_OF_YEAR));
                 worldBossData.setStartTime(System.currentTimeMillis());
-
+                players.clear();
                 ServerLogger.info("open new world boss activity...");
 
                 int[] copyArr = ConfigData.globalParam().worldBossCopy;
@@ -421,7 +420,7 @@ public class WorldBossService implements InitHandler {
                 return;
             }
             //活动结束，清理相关数据
-            players.clear();
+
             worldBossData.setbAward(true);
             messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_END);
             multiService.clearGroup(Scene.WORLD_BOSS_PVE);
@@ -560,11 +559,14 @@ public class WorldBossService implements InitHandler {
     };
 
     public void addPlayer(Integer playerId) {
+        ServerLogger.warn("addPlayer = " + playerId);
         players.add(playerId);
+        ServerLogger.warn("addPlayer = " + JsonUtils.object2String(players));
         multiService.onEnter(playerId);
     }
 
     public void removePlayer(Integer playerId) {
+        ServerLogger.warn("removePlayer = " + playerId);
         players.remove(playerId);
         multiService.onExit(playerId);
     }
@@ -846,6 +848,7 @@ public class WorldBossService implements InitHandler {
         worldBossData.setLastKillTime(0);
         worldBossData.setLastKillPlayerId(0);
         treeMap.clear();
+        players.clear();
         ServerLogger.warn("gm reset world boss activity .........");
     }
 }

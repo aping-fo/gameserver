@@ -4,7 +4,13 @@ import com.server.util.ServerLogger;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalField;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.function.Supplier;
@@ -125,5 +131,16 @@ public class TimeUtil {
             }
         }
         return ret;
+    }
+
+    public static long getNextDay() {
+        LocalDateTime dateTime = LocalDateTime.now();
+        long nextTime = dateTime.withHour(0).withMinute(0).withSecond(0).with(ChronoField.MILLI_OF_SECOND,0)
+                .plusDays(1).atZone(ZoneId.systemDefault()).toInstant().toEpochMilli();
+        return nextTime;
+    }
+
+    public static void main(String[] args){
+        getNextDay();
     }
 }

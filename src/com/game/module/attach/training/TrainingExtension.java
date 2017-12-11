@@ -102,6 +102,8 @@ public class TrainingExtension {
             if (param.victory) {
                 attach.setIndex(param.index + 1);
                 attach.getTreasureBox().add(param.index);
+            }else{
+                attach.setHp(0);
             }
             attach.commitSync();
         }

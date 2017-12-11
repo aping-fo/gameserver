@@ -84,7 +84,7 @@ public class GroupService {
         ListParam<GroupVO> result = new ListParam();
         result.params = new ArrayList();
         for (Group group : groupMap.values()) {
-            if (group.isOpenFlag()) {
+            if (group.isOpenFlag() && !group.hasFightTeam()) {
                 result.params.add(groupToProto(group));
             }
         }
@@ -387,7 +387,7 @@ public class GroupService {
         Group group = groupMap.get(player.getGroupId());
         Player targetPlayer = playerService.getPlayer(targetId);
 
-        if(targetPlayer.getGroupId() != 0) {
+        if (targetPlayer.getGroupId() != 0) {
             ServerLogger.warn("groupId = " + player.getGroupId());
             param.param = Response.ERR_PARAM;
             return param;
@@ -756,17 +756,14 @@ public class GroupService {
                     int pass = (int) ((System.currentTimeMillis() - copy.getCreateTime()) / 1000);
                     group.completeTask(group.stage, GroupTaskType.PASS_TIME, copy.getCopyId(), pass);
                     broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
-                    copyService.getRewards(player.getPlayerId(), copy.getCopyId(), result);
                     // 更新次数,星级
-                    //copyService.updateCopy(player.getPlayerId(), copy, result);
-                    broadcastGroupTeam(team, CopyExtension.TAKE_COPY_REWARDS, result);
                     for (int playerId : team.getMembers().keySet()) {
                         // 清除
+                        copyService.getRewards(playerId, copy.getCopyId(), result);
                         copyService.removeCopy(playerId);
+                        SessionManager.getInstance().sendMsg(CopyExtension.TAKE_COPY_REWARDS, result, playerId);
                     }
                     if (group.checkComplete(group.stage)) {
-                        //GroupStageAwardVO vo = new GroupStageAwardVO();
-                        //vo.rewards = new ArrayList<>();
                         List<GoodsEntry> items = new ArrayList<>();
 
                         int[][] stageReward = null;
