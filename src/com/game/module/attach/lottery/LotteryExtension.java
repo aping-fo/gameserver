@@ -125,6 +125,7 @@ public class LotteryExtension {
 			GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class,reward.id);
 			if(conf == null) {
 				ServerLogger.warn("goods don't exist id = " + reward.id);
+				continue;
 			}
 			if(conf.type == Goods.SKILL_CARD && (conf.color == Goods.QUALITY_VIOLET || conf.color == Goods.QUALITY_ORANGE)) { //消息广播
 				messageService.sendSysMsg(MessageConsts.MSG_LOTTERY,player.getName(),conf.name);

@@ -119,7 +119,7 @@ public class PlayerData {
 
 	private Set<Integer> guideSteps = new HashSet<>();
 
-	private Map<Integer,ActivityTask> activityTasks = Maps.newHashMap();
+	private Map<Integer,ActivityTask> activityTasks = Maps.newConcurrentMap();
 
 	//首充标识
 	private boolean firstRechargeFlag;

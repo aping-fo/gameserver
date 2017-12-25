@@ -250,13 +250,13 @@ public class LadderService implements InitHandler {
         Player player = playerService.getPlayer(playerId);
         Room room = allRooms.get(player.getRoomId());
         if (room == null) {
-            ServerLogger.warn("ladder fight check fail roomId = " + player.getRoomId());
+            ServerLogger.info("ladder fight check fail roomId = " + player.getRoomId());
             player.setRoomId(0);
             return false;
         }
 
         if (room.roomPlayers.size() < 2) {
-            ServerLogger.warn("ladder fight check fail room size  = " + room.roomPlayers.size());
+            ServerLogger.info("ladder fight check fail room size  = " + room.roomPlayers.size());
             return false;
         }
         return true;
@@ -300,7 +300,7 @@ public class LadderService implements InitHandler {
             return;
         }
 
-        ServerLogger.warn("start fight..............");
+        ServerLogger.info("start fight..............");
         source.matchFlag = true;
         target.matchFlag = true;
         int roomId = source.id;
@@ -400,7 +400,7 @@ public class LadderService implements InitHandler {
         Player player = playerService.getPlayer(playerId);
         Room room = allRooms.get(player.getRoomId());
         if (room == null) {
-            ServerLogger.warn("loading over fail ,,,roomId == " + player.getRoomId());
+            ServerLogger.info("loading over fail ,,,roomId == " + player.getRoomId());
             return;
         }
         if (room.loadingCount.incrementAndGet() >= room.roomPlayers.size()) {
@@ -446,7 +446,7 @@ public class LadderService implements InitHandler {
         room.roomPlayers.put(playerId, new RoomPlayer(player.getHp(), player.getPlayerId()));
         allRooms.put(room.id, room);
 
-        ServerLogger.warn("matching room size === " + allRooms.size() + " roomId = " + room.id);
+        ServerLogger.info("matching room size === " + allRooms.size() + " roomId = " + room.id);
         player.setRoomId(room.id);
         param.param = Response.SUCCESS;
         return param;
@@ -460,7 +460,7 @@ public class LadderService implements InitHandler {
     public IntParam cancelMatching(int playerId) {
         Player player = playerService.getPlayer(playerId);
         Room room = allRooms.remove(player.getRoomId());
-        ServerLogger.warn("matching room size === " + allRooms.size());
+        ServerLogger.info("matching room size === " + allRooms.size());
         player.setRoomId(0);
         if (room != null) {
             room.exitFlag = true;
@@ -484,7 +484,7 @@ public class LadderService implements InitHandler {
         }
         FightTimes.remove(room.id);
         allRooms.remove(room.id);
-        ServerLogger.warn("fight over, room size === " + allRooms.size());
+        ServerLogger.info("fight over, room size === " + allRooms.size());
         failPlayer1.setRoomId(0);
         failPlayer2.setRoomId(0);
 
@@ -552,7 +552,7 @@ public class LadderService implements InitHandler {
         }
         FightTimes.remove(room.id);
         allRooms.remove(room.id);
-        ServerLogger.warn("fight over, room size === " + allRooms.size());
+        ServerLogger.info("fight over, room size === " + allRooms.size());
         winPlayer.setRoomId(0);
         failPlayer.setRoomId(0);
 

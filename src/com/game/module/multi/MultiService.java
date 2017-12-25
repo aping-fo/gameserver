@@ -50,7 +50,7 @@ public class MultiService implements InitHandler {
                 try {
                     for (Map.Entry<Integer, Long> s : heartBeatMap.asMap().entrySet()) {
                         if (System.currentTimeMillis() - s.getValue() > 4000) {
-                            ServerLogger.warn("time out remove playerId ===>" + s.getKey());
+                            ServerLogger.info("time out remove playerId ===>" + s.getKey());
                             onExit(s.getKey());
                             heartBeatMap.invalidate(s.getKey());
                         }
@@ -116,7 +116,7 @@ public class MultiService implements InitHandler {
         IntParam param = new IntParam();
         param.param = playerId;
         SessionManager.getInstance().sendMsg(CMD_HOST, param, playerId);
-        ServerLogger.warn("push host id = " + playerId);
+        ServerLogger.info("push host id = " + playerId);
     }
 
     /**
@@ -136,12 +136,12 @@ public class MultiService implements InitHandler {
             if (group != null) {
                 int oldId = group.getHostId();
                 int masterId = group.removePlayer(playerId);
-                ServerLogger.warn("one player exit ,playerId = " + playerId + "  current host id =" + masterId);
+                ServerLogger.info("one player exit ,playerId = " + playerId + "  current host id =" + masterId);
                 if(group.getAll().isEmpty()) {
                     multiMap.remove(key);
                 }
                 heartBeatMap.invalidate(playerId);
-                ServerLogger.warn("oldId = " + oldId + " current masterId id =" + masterId);
+                ServerLogger.info("oldId = " + oldId + " current masterId id =" + masterId);
                 if (oldId != masterId) {
                     pushHost(masterId);
                 }

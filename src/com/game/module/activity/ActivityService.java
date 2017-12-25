@@ -25,7 +25,6 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
@@ -123,12 +122,12 @@ public class ActivityService implements InitHandler {
     private void doScheduleCheckActivity() throws Exception {
         List<ActivityCfg> openActivitys = Lists.newArrayList();
         List<Integer> closeActivitys = Lists.newArrayList();
-        LocalDate nowDate = LocalDate.now();
+        LocalDateTime nowDate = LocalDateTime.now();
         for (Object obj : GameData.getConfigs(ActivityCfg.class)) {
             ActivityCfg cfg = (ActivityCfg) obj;
 
             if (cfg.BeginTime != null && !"".equals(cfg.BeginTime)) {
-                LocalDate beginDate = LocalDate.parse(cfg.BeginTime, TimeUtil.formatter);
+                LocalDateTime beginDate = LocalDateTime.parse(cfg.BeginTime, TimeUtil.formatter);
                 if (nowDate.isBefore(beginDate)) { //还未开启
                     closeActivity(cfg.id, closeActivitys);
                     continue;
@@ -136,7 +135,7 @@ public class ActivityService implements InitHandler {
             }
 
             if (cfg.EndTime != null && !"".equals(cfg.EndTime)) {
-                LocalDate beginDate = LocalDate.parse(cfg.EndTime, TimeUtil.formatter);
+                LocalDateTime beginDate = LocalDateTime.parse(cfg.EndTime, TimeUtil.formatter);
                 if (nowDate.isAfter(beginDate)) { //活动结束
                     closeActivity(cfg.id, closeActivitys);
                     continue;
@@ -417,9 +416,9 @@ public class ActivityService implements InitHandler {
                 boolean bClose = true;
                 for (ActivityTaskCfg taskCfg : list) {
                     ActivityTask task = data.getActivityTasks().get(taskCfg.id);
-                    if (task != null) {
-                        bClose = bClose && task.getState() == ActivityConsts.ActivityState.T_AWARD;
-                    }
+                    //检测是否有未领取奖励的或者未领取任务的活动(task == null)
+                    bClose = task != null && bClose && task.getState() == ActivityConsts.ActivityState.T_AWARD;
+                    if (!bClose) break;
                 }
                 if (bClose) {
                     continue;
@@ -557,6 +556,8 @@ public class ActivityService implements InitHandler {
         List<ActivityTaskCfg> taskCfgs = ActivityTasks.get(activityId);
         if (taskCfgs == null) {
             logger.error("活动配置有错误~~~~~~ 活动ID = " + activityId);
+            result.param = Response.ERR_PARAM;
+            return result;
         }
 
         for (ActivityTaskCfg taskCfg : taskCfgs) {

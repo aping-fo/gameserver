@@ -93,7 +93,7 @@ public class WelfareCardService {
                 content = ConfigData.getConfig(ErrCode.class, Response.MONTHLYLY_CARD_CONTENT).tips;
             }
             ChargeConfig cfg = ConfigData.getConfig(ChargeConfig.class, rechargeId);
-            mailService.sendSysMailRewards(title, content, cfg.rewards, playerId, LogConsume.GUILD_COPY_REWARD);
+            mailService.sendSysMailRewards(title, content, cfg.weekMonthCard, playerId, LogConsume.GUILD_COPY_REWARD);
         }
 
         Int2Param param = new Int2Param();

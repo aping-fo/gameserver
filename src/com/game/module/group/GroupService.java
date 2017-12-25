@@ -137,9 +137,6 @@ public class GroupService {
         groupMap.put(groupId, group);
         player.setGroupId(groupId);
         player.setGroupTeamId(groupTeamId);
-        ServerLogger.warn(JsonUtils.object2String(group));
-
-
         switch (groupCopyCfg.stageCount) {
             case 3: {
                 Map<Integer, GroupTask> map = new HashMap<>();
@@ -176,7 +173,7 @@ public class GroupService {
             }
         }
 
-        ServerLogger.warn("==========" + groupMap.size());
+        ServerLogger.info("group size = " + groupMap.size());
 
         broadcastGroup(group);
 
@@ -204,7 +201,7 @@ public class GroupService {
         if (group == null) {
             player.setGroupId(0);
             player.setGroupTeamId(0);
-            ServerLogger.warn("groupId = " + player.getGroupId());
+            ServerLogger.info("groupId = " + player.getGroupId());
             return;
         }
 
@@ -248,7 +245,7 @@ public class GroupService {
         Player player = playerService.getPlayer(playerId);
         Group group = groupMap.get(player.getGroupId());
         if (group == null) {
-            ServerLogger.warn("groupId = " + player.getGroupId());
+            ServerLogger.info("groupId = " + player.getGroupId());
             param.param = Response.GROUP_NO_EXIT;
             return param;
         }
@@ -283,7 +280,7 @@ public class GroupService {
         Player player = playerService.getPlayer(playerId);
         Group group = groupMap.get(player.getGroupId());
         if (group == null) {
-            ServerLogger.warn("groupId = " + player.getGroupId());
+            ServerLogger.info("groupId = " + player.getGroupId());
             param.param = Response.GROUP_NO_EXIT;
             return param;
         }
@@ -340,7 +337,7 @@ public class GroupService {
         for (GroupTeam team : teamMap.values()) {
             for (int playerId : team.getMembers().keySet()) {
                 SessionManager.getInstance().sendMsg(CMD_STAGE_AWARD, awards, playerId);
-                ServerLogger.warn("group award ---------------------" + playerId);
+                ServerLogger.info("group award ==>" + playerId);
                 goodsService.addRewards(playerId, items, LogConsume.COPY_REWARD, group.groupCopyId);
 
                 //扣除次数，只扣一次
@@ -607,7 +604,7 @@ public class GroupService {
             return param;
         }
 
-        if (toTeamId <= 0 && toTeamId > 6) {
+        if (toTeamId <= 0 || toTeamId > 6) {
             param.param = Response.ERR_PARAM;
             return param;
         }
@@ -667,7 +664,7 @@ public class GroupService {
         Player player = playerService.getPlayer(playerId);
         Group group = groupMap.get(player.getGroupId());
         if (group == null) {
-            ServerLogger.warn("groupId = " + player.getGroupId());
+            ServerLogger.info("groupId = " + player.getGroupId());
             param.param1 = Response.GROUP_NO_EXIT;
             return param;
         }
@@ -829,7 +826,7 @@ public class GroupService {
         Player player = playerService.getPlayer(playerId);
         Group group = groupMap.get(player.getGroupId());
         if (group == null) {
-            ServerLogger.warn("groupId = " + player.getGroupId());
+            ServerLogger.info("groupId = " + player.getGroupId());
             param.param = Response.GROUP_NO_EXIT;
             return param;
         }
@@ -859,7 +856,7 @@ public class GroupService {
         Player player = playerService.getPlayer(playerId);
         Group group = groupMap.get(player.getGroupId());
         if (group == null) {
-            ServerLogger.warn("groupId = " + player.getGroupId());
+            ServerLogger.info("groupId = " + player.getGroupId());
             return null;
         }
         GroupStageVO vo = group.toStageCopyProto();
@@ -889,7 +886,7 @@ public class GroupService {
                 broadcastGroup(group);
                 broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
             }
-            ServerLogger.warn("Group Battle Hero Size = " + size);
+            ServerLogger.info("Group Battle Hero Size = " + size);
         } catch (Exception e) {
             ServerLogger.err(e, "团队副本退出异常");
         }
@@ -915,7 +912,7 @@ public class GroupService {
 
         GroupTeam groupTeam = group.getGroupTeam(player.getGroupTeamId());
         int size = groupTeam.fightSize.incrementAndGet();
-        ServerLogger.warn("Group Battle Hero Size = " + size);
+        ServerLogger.info("Group Battle Hero Size = " + size);
         return groupTeam.getLeader() * 100;
     }
 

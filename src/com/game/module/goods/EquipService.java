@@ -133,7 +133,8 @@ public class EquipService {
 			Goods goods = goodsService.getGoods(playerId, id);
 			GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
 			if(cfg == null) {
-				ServerLogger.warn("goods don't exist id = " + cfg.id);
+				ServerLogger.warn("goods don't exist id = " + id);
+				continue;
 			}
 			goodsId = cfg.decompose[0][0];
 			equipMaterials +=cfg.decompose[0][1];
@@ -340,7 +341,8 @@ public class EquipService {
 		Goods goods = goodsService.getGoods(playerId, id);
 		GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
 		if(cfg == null) {
-			ServerLogger.warn("goods don't exist id = " + cfg.id);
+			ServerLogger.warn("goods don't exist id = " + id);
+			return Response.ERR_PARAM;
 		}
 		//扣除锁定
 		if(lock>0){

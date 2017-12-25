@@ -114,7 +114,6 @@ public class GangService implements InitHandler {
 				gangNames.put(gang.getName(), gang.getId());
 				if(gang.getCreateDate() == null){
 					gang.setCreateDate(Calendar.getInstance());
-					gang.setRefreshTime(TimeUtil.getNextDay());
 				}
 				GTRoom room = gang.getGtRoom();
 				if(room != null){
@@ -132,7 +131,6 @@ public class GangService implements InitHandler {
 			}
 		}
 		sort();
-		daily();
 	}
 	
 	public void dailyReset(){
@@ -233,7 +231,6 @@ public class GangService implements InitHandler {
 		GangBuildCfg build = ConfigData.getConfig(GangBuildCfg.class,
 				Gang.MAIN_BUILD * 100 + 1);
 		gang.setCreateDate(Calendar.getInstance());
-		gang.setRefreshTime(TimeUtil.getNextDay());
 		gang.setTotalFight(player.getFight());
 		gang.setMaxNum(build.memberCount);
 		gangs.put(gangId, gang);
@@ -890,15 +887,10 @@ public class GangService implements InitHandler {
 				g.setLev(1);
 				lev = 1;
 			}
-			//long day = (System.currentTimeMillis() - g.getCreateDate().getTimeInMillis()) / (TimeUtil.ONE_DAY) + 1;
-			long day = (System.currentTimeMillis() - g.getRefreshTime()) / (TimeUtil.ONE_DAY) + 1;
+			long day = (System.currentTimeMillis() - g.getCreateDate().getTimeInMillis()) / (TimeUtil.ONE_DAY) + 1;
 			boolean refresh = day % 7 == 0;
-			boolean bDonatClear = false;
 			for(GMember member : g.getMembers().values()){
-				if(System.currentTimeMillis() > g.getRefreshTime()) {
-					member.getDonationRecord().clear();
-					bDonatClear = true;
-				}
+				member.getDonationRecord().clear();
 				if(refresh){
 					member.setContribute7(0);
 				}
@@ -908,9 +900,6 @@ public class GangService implements InitHandler {
 				checkUpdateOwner(g);
 			}
 			g.setUpdated(true);
-			if(bDonatClear){
-				g.setRefreshTime(TimeUtil.getNextDay());
-			}
 		}
 	}
 

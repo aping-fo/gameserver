@@ -4,8 +4,6 @@ import com.game.data.Response;
 import com.game.params.Int2Param;
 import com.game.params.group.GroupStageVO;
 import com.game.params.group.GroupVO;
-import com.game.util.JsonUtils;
-import com.server.util.ServerLogger;
 
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
@@ -300,22 +298,20 @@ public class Group {
             Map<Integer, GroupTask> map = tasks.get(stage);
             for (GroupTask task : map.values()) {
                 if (task.getType() == type && task.getTarget() == target) {
-                    if (task != null) {
-                        int n = 0;
-                        if (type == GroupTaskType.PASS_COUNT) {
-                            n = 1;
-                        } else if (type == GroupTaskType.PASS_TIME) {
-                            if (param > task.getParam()) {
-                                continue;
-                            }
-                            n = 1;
+                    int n = 0;
+                    if (type == GroupTaskType.PASS_COUNT) {
+                        n = 1;
+                    } else if (type == GroupTaskType.PASS_TIME) {
+                        if (param > task.getParam()) {
+                            continue;
                         }
-                        int value = task.getValue() + n > task.getCount() ? task.getCount() : task.getValue() + n;
-                        task.setValue(value);
+                        n = 1;
                     }
+                    int value = task.getValue() + n > task.getCount() ? task.getCount() : task.getValue() + n;
+                    task.setValue(value);
                 }
             }
-            ServerLogger.warn(JsonUtils.object2String(tasks));
+            //ServerLogger.warn(JsonUtils.object2String(tasks));
         } finally {
             lock.unlock();
         }

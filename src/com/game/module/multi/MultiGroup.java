@@ -33,10 +33,10 @@ public class MultiGroup {
             if (!players.contains(playerId)) {
                 players.add(playerId);
             }
-            ServerLogger.warn("add new player playerId=>" + playerId + "  current group hostId = " + hostId);
+            ServerLogger.info("add new player playerId=>" + playerId + "  current group hostId = " + hostId);
             if (hostId == 0) {
                 hostId = playerId;
-                ServerLogger.warn("first hostId====>" + hostId);
+                ServerLogger.info("first hostId====>" + hostId);
             }
             return hostId;
         } finally {
@@ -51,10 +51,10 @@ public class MultiGroup {
             if (hostId == playerId) {
                 if (players.isEmpty()) {
                     hostId = 0;
-                    ServerLogger.warn("isEmpty remove old host =>"+playerId+" ,change hostId ===>" + hostId);
+                    ServerLogger.info("isEmpty remove old host =>"+playerId+" ,change hostId ===>" + hostId);
                 } else {
                     hostId = players.iterator().next();
-                    ServerLogger.warn("remove old host =>"+playerId+" ,change hostId ===>" + hostId);
+                    ServerLogger.info("remove old host =>"+playerId+" ,change hostId ===>" + hostId);
                 }
             }
             return hostId;

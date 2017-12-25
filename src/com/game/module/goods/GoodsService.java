@@ -870,12 +870,18 @@ public class GoodsService {
 			if (g.getStoreType() != Goods.BAG) {
 				continue;
 			}
+			if(ConfigData.getConfig(GoodsConfig.class, g.getGoodsId()) == null){
+				ServerLogger.info("goods id don't exist id = " + g.getGoodsId());
+			}
 			int type = ConfigData.getConfig(GoodsConfig.class, g.getGoodsId()).type;
 			int bagType = getBagType(type);
 			existCounts[bagType]++;
 		}
 
 		int[] totalCounts = playerService.getPlayerData(playerId).getBlankGrids();
+		if(totalCounts == null){
+			ServerLogger.info("totalCounts is null = " + totalCounts);
+		}
 		int[] leftCounts = new int[6];
 		for (int i = 0; i < 3; i++) {
 			leftCounts[i] = totalCounts[i] - existCounts[i];

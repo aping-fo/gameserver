@@ -44,7 +44,6 @@ import com.game.params.copy.CopyVo;
 import com.game.params.scene.CMonster;
 import com.game.params.scene.SMonsterVo;
 import com.game.util.ConfigData;
-import com.game.util.JsonUtils;
 import com.game.util.RandomUtil;
 import com.game.util.TimeUtil;
 import com.google.common.collect.Maps;
@@ -304,8 +303,6 @@ public class CopyService {
             reward.count = g.count;
             result.rewards.add(reward);
         }
-
-        ServerLogger.warn(JsonUtils.object2String(items));
         // 特殊物品公告
         String myName = playerService.getPlayer(playerId).getName();
         for (GoodsNotice g : copy.getSpecReward()) {
@@ -411,6 +408,7 @@ public class CopyService {
                 GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class, g.id);
                 if (conf == null) {
                     ServerLogger.warn("goods don't exist id = " + g.id);
+                    continue;
                 }
                 if (conf.type == Goods.FAME) {
                     g.count = Math.round((1 + rate) * g.count);
@@ -641,7 +639,6 @@ public class CopyService {
         int instanceId = uniId.incrementAndGet();
         if (cfg.type == CopyInstance.TYPE_GROUP) {
             instanceId = groupService.onEnterBattle(playerId, copyId);
-            ServerLogger.warn("------------" + instanceId);
         } else if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
             instanceId = teamService.onEnterBattle(playerId);
         }
@@ -737,6 +734,7 @@ public class CopyService {
             GoodsConfig goodsCfg = ConfigData.getConfig(GoodsConfig.class, reward.id);
             if (goodsCfg == null) {
                 ServerLogger.warn("goods don't exist id = " + reward.id);
+                continue;
             }
             if (goodsCfg.type != Goods.BOTTLE) {
                 // 加入缓存

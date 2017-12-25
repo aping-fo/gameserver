@@ -62,12 +62,12 @@ public class TaskExtension {
 				TaskConfig newTaskCfg = GameData.getConfig(TaskConfig.class, taskCfg.nextTaskId);
 				if(newTaskCfg != null){
 					Task newTask = taskService.addNewTask(playerId, taskCfg.nextTaskId, false);
-					if(taskCfg.group == newTaskCfg.group){						
+					if(taskCfg.group == newTaskCfg.group){
 						newTask.setCount(task.getCount());
 						taskService.checkFinished(newTask);
 						updateList.add(newTask);
 					}else{
-						taskService.doTask(playerId, taskCfg.finishType, taskCfg.finishParam);
+						taskService.doTask(playerId, taskCfg.finishType, newTask,taskCfg.finishParam);
 					}
 				}
 				taskService.updateTaskToClient(playerId, updateList);

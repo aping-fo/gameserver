@@ -254,7 +254,7 @@ public class GangDungeonService implements InitHandler {
         } else { //怪物
             Monster m = gangDungeon.getMonsterMap().get(hurtVO.targetId);
             if (m.getCurrentHp() <= 0) {
-                ServerLogger.warn("==================== Monster Die，Monster Id = " + m.getId());
+                ServerLogger.info("==================== Monster Die，Monster Id = " + m.getId());
                 return;
             }
             int hp = m.getCurrentHp() - hurtVO.hurtValue > 0 ? m.getCurrentHp() - hurtVO.hurtValue : 0;
@@ -270,7 +270,7 @@ public class GangDungeonService implements InitHandler {
 
             member.hurt += hurtVO.hurtValue;
             if (gangDungeon.checkDeath()) { //怪死了
-                ServerLogger.warn("====================>>>>>>  All Monster Die,Begin To Send Fight Over");
+                ServerLogger.info("====================>>>>>>  All Monster Die,Begin To Send Fight Over");
                 int maxLayer = ConfigData.getConfigs(GangCopyCfg.class).size();
                 if (gangDungeon.getLayer() < maxLayer) {
                     gangDungeon.setHasOpen(T_DONT_OPEN); //怪物全死了，重置
@@ -288,7 +288,7 @@ public class GangDungeonService implements InitHandler {
             if (progress >= cfg.progress[i]) {
                 int step = i + 1;
                 if (gangDungeon.checkAndAdd(step)) {
-                    ServerLogger.warn("============ send guild copy step award" + cfg.progress[i] + "   progress = " + progress);
+                    ServerLogger.info("============ send guild copy step award" + cfg.progress[i] + "   progress = " + progress);
                     List<GoodsEntry> rewards = new ArrayList<>();
                     int[][] itemArr = cfg.progressRewards.get(step);
                     for (int[] item : itemArr) {
@@ -338,8 +338,6 @@ public class GangDungeonService implements InitHandler {
         vo.totalHurt = hurt.getHurt();
         vo.progress = gangDungeon.getProgress();
         vo.gangContribution = Math.round(member.hurt / (gangDungeon.getTotalHp() * 1.0f) * ConfigData.globalParam().guildRewardRate);
-
-        ServerLogger.warn(JsonUtils.object2String(vo));
 
         int rank = 0;
         for (GangHurt gh : gangDungeon.hurtRankMap.values()) {

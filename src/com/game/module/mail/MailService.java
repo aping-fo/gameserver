@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -108,14 +110,33 @@ public class MailService {
 	public void sendSysMail(String title, String content, List<GoodsEntry> rewards, final int receiverId,LogConsume log) {
 		StringBuilder rewardStr = new StringBuilder();
 		if(rewards!=null){
-			for (int i = 0; i < rewards.size(); i++) {
+			Map<Integer,GoodsEntry> map = Maps.newHashMap();
+			for(GoodsEntry reward : rewards) {
+				GoodsEntry ge = map.get(reward.id);
+				if(ge != null){
+					ge.count += reward.count;
+				}else {
+					map.put(reward.id,reward);
+				}
+			}
+
+			int i = 0;
+			for(GoodsEntry item : map.values()){
+				rewardStr.append(item.id).append(":").append(item.count);
+				if (i != map.size() - 1) {
+					rewardStr.append(";");
+				}
+				i++;
+			}
+
+			/*for (int i = 0; i < rewards.size(); i++) {
 				GoodsEntry item = rewards.get(i);
 				
 				rewardStr.append(item.id).append(":").append(item.count);
 				if (i != rewards.size() - 1) {
 					rewardStr.append(";");
 				}
-			}
+			}*/
 		}
 		sendSysMailInner(title, content, rewardStr.toString(), receiverId, log);
 	}

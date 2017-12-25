@@ -281,7 +281,7 @@ public class WorldBossService implements InitHandler {
         broadcast(CMD_MONSTER_INFO, ret);
 
         if (boss.getCurHp() <= 0) { //死亡
-            ServerLogger.warn("boss go die....... boss id ==" + boss.getId());
+            ServerLogger.info("boss go die....... boss id ==" + boss.getId());
             worldBossData.getKillMap().put(bossId, playerId);
             //boss死亡，广播
             Int2Param param = new Int2Param();
@@ -559,14 +559,11 @@ public class WorldBossService implements InitHandler {
     };
 
     public void addPlayer(Integer playerId) {
-        ServerLogger.warn("addPlayer = " + playerId);
         players.add(playerId);
-        ServerLogger.warn("addPlayer = " + JsonUtils.object2String(players));
         multiService.onEnter(playerId);
     }
 
     public void removePlayer(Integer playerId) {
-        ServerLogger.warn("removePlayer = " + playerId);
         players.remove(playerId);
         multiService.onExit(playerId);
     }
