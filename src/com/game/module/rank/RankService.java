@@ -1,22 +1,24 @@
 package com.game.module.rank;
 
-import java.nio.charset.Charset;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-import com.game.module.ladder.LadderService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.game.event.InitHandler;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.ladder.LadderService;
 import com.game.module.player.Player;
 import com.game.module.rank.vo.EndlessRankEntity;
 import com.game.module.rank.vo.FightingRankEntity;
 import com.game.module.rank.vo.LevelRankEntity;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.game.util.CompressUtil;
 import com.game.util.JsonUtils;
 import com.game.util.TimeUtil;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.nio.charset.Charset;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class RankService implements InitHandler {
@@ -32,6 +34,8 @@ public class RankService implements InitHandler {
 	private RankingDao dao;
 	@Autowired
 	private LadderService ladderService;
+	@Autowired
+	private TitleService titleService;
 
 	private final Map<Integer, RankingList<? extends IRankCA>> rankings = new ConcurrentHashMap<Integer, RankingList<? extends IRankCA>>();
 	
@@ -86,6 +90,7 @@ public class RankService implements InitHandler {
 			Map<Integer, FightingRankEntity> fightingEntities = new ConcurrentHashMap<Integer, FightingRankEntity>();
 			for(Player player : players){
 				fightingEntities.put(player.getPlayerId(), new FightingRankEntity(player.getFight()));
+				titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING,player.getFight(), ActivityConsts.UpdateType.T_VALUE);
 			}
 			fightingList.putAll(fightingEntities);
 		}

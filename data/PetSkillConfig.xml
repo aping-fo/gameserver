@@ -1,67 +1,445 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
-	<id>1</id>
+	<id>6001101</id>
 	<name>宠物1主动技能lv1</name>
 	<describe>宠物1主动技能lv1</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
-	<skillId>12102069</skillId>
+	<skillId>6001101</skillId>
 </config>
 <config>
-	<id>2</id>
+	<id>6001201</id>
 	<name>宠物1主动技能lv2</name>
 	<describe>宠物1主动技能lv2</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
-	<skillId>12102069</skillId>
+	<skillId>6001201</skillId>
 </config>
 <config>
-	<id>3</id>
+	<id>6001301</id>
 	<name>宠物1主动技能lv3</name>
 	<describe>宠物1主动技能lv3</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
-	<skillId>12102069</skillId>
+	<skillId>6001301</skillId>
 </config>
 <config>
-	<id>4</id>
+	<id>6001401</id>
 	<name>宠物1主动技能lv4</name>
 	<describe>宠物1主动技能lv4</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
-	<skillId>12102069</skillId>
+	<skillId>6001401</skillId>
 </config>
 <config>
-	<id>5</id>
+	<id>6001501</id>
 	<name>宠物1主动技能lv5</name>
 	<describe>宠物1主动技能lv5</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
-	<skillId>12102069</skillId>
+	<skillId>6001501</skillId>
 </config>
 <config>
-	<id>6</id>
+	<id>6001601</id>
 	<name>宠物1主动技能lv6</name>
 	<describe>宠物1主动技能lv6</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
-	<skillId>12102069</skillId>
+	<skillId>6001601</skillId>
 </config>
 <config>
-	<id>7</id>
+	<id>6001701</id>
 	<name>宠物1主动技能lv7</name>
 	<describe>宠物1主动技能lv7</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
-	<skillId>12102069</skillId>
+	<skillId>6001701</skillId>
+</config>
+<config>
+	<id>6002101</id>
+	<name>宠物2主动技能lv1</name>
+	<describe>宠物2主动技能lv1</describe>
+	<type>1</type>
+	<quality>1</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6002101</skillId>
+</config>
+<config>
+	<id>6002201</id>
+	<name>宠物2主动技能lv2</name>
+	<describe>宠物2主动技能lv2</describe>
+	<type>1</type>
+	<quality>2</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6002201</skillId>
+</config>
+<config>
+	<id>6002301</id>
+	<name>宠物2主动技能lv3</name>
+	<describe>宠物2主动技能lv3</describe>
+	<type>1</type>
+	<quality>3</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6002301</skillId>
+</config>
+<config>
+	<id>6002401</id>
+	<name>宠物2主动技能lv4</name>
+	<describe>宠物2主动技能lv4</describe>
+	<type>1</type>
+	<quality>4</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6002401</skillId>
+</config>
+<config>
+	<id>6002501</id>
+	<name>宠物2主动技能lv5</name>
+	<describe>宠物2主动技能lv5</describe>
+	<type>1</type>
+	<quality>5</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6002501</skillId>
+</config>
+<config>
+	<id>6002601</id>
+	<name>宠物2主动技能lv6</name>
+	<describe>宠物2主动技能lv6</describe>
+	<type>1</type>
+	<quality>6</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6002601</skillId>
+</config>
+<config>
+	<id>6002701</id>
+	<name>宠物2主动技能lv7</name>
+	<describe>宠物2主动技能lv7</describe>
+	<type>1</type>
+	<quality>7</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6002701</skillId>
+</config>
+<config>
+	<id>6003101</id>
+	<name>宠物3主动技能lv1</name>
+	<describe>宠物3主动技能lv1</describe>
+	<type>1</type>
+	<quality>1</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6003101</skillId>
+</config>
+<config>
+	<id>6003201</id>
+	<name>宠物3主动技能lv2</name>
+	<describe>宠物3主动技能lv2</describe>
+	<type>1</type>
+	<quality>2</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6003201</skillId>
+</config>
+<config>
+	<id>6003301</id>
+	<name>宠物3主动技能lv3</name>
+	<describe>宠物3主动技能lv3</describe>
+	<type>1</type>
+	<quality>3</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6003301</skillId>
+</config>
+<config>
+	<id>6003401</id>
+	<name>宠物3主动技能lv4</name>
+	<describe>宠物3主动技能lv4</describe>
+	<type>1</type>
+	<quality>4</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6003401</skillId>
+</config>
+<config>
+	<id>6003501</id>
+	<name>宠物3主动技能lv5</name>
+	<describe>宠物3主动技能lv5</describe>
+	<type>1</type>
+	<quality>5</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6003501</skillId>
+</config>
+<config>
+	<id>6003601</id>
+	<name>宠物3主动技能lv6</name>
+	<describe>宠物3主动技能lv6</describe>
+	<type>1</type>
+	<quality>6</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6003601</skillId>
+</config>
+<config>
+	<id>6003701</id>
+	<name>宠物3主动技能lv7</name>
+	<describe>宠物3主动技能lv7</describe>
+	<type>1</type>
+	<quality>7</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6003701</skillId>
+</config>
+<config>
+	<id>6004101</id>
+	<name>宠物4主动技能lv1</name>
+	<describe>宠物4主动技能lv1</describe>
+	<type>1</type>
+	<quality>1</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6004101</skillId>
+</config>
+<config>
+	<id>6004201</id>
+	<name>宠物4主动技能lv2</name>
+	<describe>宠物4主动技能lv2</describe>
+	<type>1</type>
+	<quality>2</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6004201</skillId>
+</config>
+<config>
+	<id>6004301</id>
+	<name>宠物4主动技能lv3</name>
+	<describe>宠物4主动技能lv3</describe>
+	<type>1</type>
+	<quality>3</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6004301</skillId>
+</config>
+<config>
+	<id>6004401</id>
+	<name>宠物4主动技能lv4</name>
+	<describe>宠物4主动技能lv4</describe>
+	<type>1</type>
+	<quality>4</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6004401</skillId>
+</config>
+<config>
+	<id>6004501</id>
+	<name>宠物4主动技能lv5</name>
+	<describe>宠物4主动技能lv5</describe>
+	<type>1</type>
+	<quality>5</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6004501</skillId>
+</config>
+<config>
+	<id>6004601</id>
+	<name>宠物4主动技能lv6</name>
+	<describe>宠物4主动技能lv6</describe>
+	<type>1</type>
+	<quality>6</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6004601</skillId>
+</config>
+<config>
+	<id>6004701</id>
+	<name>宠物4主动技能lv7</name>
+	<describe>宠物4主动技能lv7</describe>
+	<type>1</type>
+	<quality>7</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6004701</skillId>
+</config>
+<config>
+	<id>6005101</id>
+	<name>宠物5主动技能lv1</name>
+	<describe>宠物5主动技能lv1</describe>
+	<type>1</type>
+	<quality>1</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6005101</skillId>
+</config>
+<config>
+	<id>6005201</id>
+	<name>宠物5主动技能lv2</name>
+	<describe>宠物5主动技能lv2</describe>
+	<type>1</type>
+	<quality>2</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6005201</skillId>
+</config>
+<config>
+	<id>6005301</id>
+	<name>宠物5主动技能lv3</name>
+	<describe>宠物5主动技能lv3</describe>
+	<type>1</type>
+	<quality>3</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6005301</skillId>
+</config>
+<config>
+	<id>6005401</id>
+	<name>宠物5主动技能lv4</name>
+	<describe>宠物5主动技能lv4</describe>
+	<type>1</type>
+	<quality>4</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6005401</skillId>
+</config>
+<config>
+	<id>6005501</id>
+	<name>宠物5主动技能lv5</name>
+	<describe>宠物5主动技能lv5</describe>
+	<type>1</type>
+	<quality>5</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6005501</skillId>
+</config>
+<config>
+	<id>6005601</id>
+	<name>宠物5主动技能lv6</name>
+	<describe>宠物5主动技能lv6</describe>
+	<type>1</type>
+	<quality>6</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6005601</skillId>
+</config>
+<config>
+	<id>6005701</id>
+	<name>宠物5主动技能lv7</name>
+	<describe>宠物5主动技能lv7</describe>
+	<type>1</type>
+	<quality>7</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6005701</skillId>
+</config>
+<config>
+	<id>6006101</id>
+	<name>宠物6主动技能lv1</name>
+	<describe>宠物6主动技能lv1</describe>
+	<type>1</type>
+	<quality>1</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6006101</skillId>
+</config>
+<config>
+	<id>6006201</id>
+	<name>宠物6主动技能lv2</name>
+	<describe>宠物6主动技能lv2</describe>
+	<type>1</type>
+	<quality>2</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6006201</skillId>
+</config>
+<config>
+	<id>6006301</id>
+	<name>宠物6主动技能lv3</name>
+	<describe>宠物6主动技能lv3</describe>
+	<type>1</type>
+	<quality>3</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6006301</skillId>
+</config>
+<config>
+	<id>6006401</id>
+	<name>宠物6主动技能lv4</name>
+	<describe>宠物6主动技能lv4</describe>
+	<type>1</type>
+	<quality>4</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6006401</skillId>
+</config>
+<config>
+	<id>6006501</id>
+	<name>宠物6主动技能lv5</name>
+	<describe>宠物6主动技能lv5</describe>
+	<type>1</type>
+	<quality>5</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6006501</skillId>
+</config>
+<config>
+	<id>6006601</id>
+	<name>宠物6主动技能lv6</name>
+	<describe>宠物6主动技能lv6</describe>
+	<type>1</type>
+	<quality>6</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6006601</skillId>
+</config>
+<config>
+	<id>6006701</id>
+	<name>宠物6主动技能lv7</name>
+	<describe>宠物6主动技能lv7</describe>
+	<type>1</type>
+	<quality>7</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6006701</skillId>
+</config>
+<config>
+	<id>6007101</id>
+	<name>宠物7主动技能lv1</name>
+	<describe>宠物7主动技能lv1</describe>
+	<type>1</type>
+	<quality>1</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6007101</skillId>
+</config>
+<config>
+	<id>6007201</id>
+	<name>宠物7主动技能lv2</name>
+	<describe>宠物7主动技能lv2</describe>
+	<type>1</type>
+	<quality>2</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6007201</skillId>
+</config>
+<config>
+	<id>6007301</id>
+	<name>宠物7主动技能lv3</name>
+	<describe>宠物7主动技能lv3</describe>
+	<type>1</type>
+	<quality>3</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6007301</skillId>
+</config>
+<config>
+	<id>6007401</id>
+	<name>宠物7主动技能lv4</name>
+	<describe>宠物7主动技能lv4</describe>
+	<type>1</type>
+	<quality>4</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6007401</skillId>
+</config>
+<config>
+	<id>6007501</id>
+	<name>宠物7主动技能lv5</name>
+	<describe>宠物7主动技能lv5</describe>
+	<type>1</type>
+	<quality>5</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6007501</skillId>
+</config>
+<config>
+	<id>6007601</id>
+	<name>宠物7主动技能lv6</name>
+	<describe>宠物7主动技能lv6</describe>
+	<type>1</type>
+	<quality>6</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6007601</skillId>
+</config>
+<config>
+	<id>6007701</id>
+	<name>宠物7主动技能lv7</name>
+	<describe>宠物7主动技能lv7</describe>
+	<type>1</type>
+	<quality>7</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6007701</skillId>
 </config>
 <config>
 	<id>100</id>

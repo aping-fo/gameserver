@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
-	<id>11000</id>
-	<group>1</group>
-	<taskType>1</taskType>
-	<taskName>合作-金币消耗</taskName>
-	<level>1</level>
-	<finishType>9</finishType>
-	<finishParam>[103,500]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
-	<liveness>0</liveness>
-	<nextTaskId></nextTaskId>
-	<functionType>[1,112,1,1]</functionType>
-</config>
-<config>
 	<id>11003</id>
 	<group>4</group>
 	<taskType>1</taskType>
@@ -414,7 +401,7 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14004</nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,137,0,0]</functionType>
 </config>
 <config>
 	<id>14004</id>
@@ -427,7 +414,7 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14005</nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,137,0,0]</functionType>
 </config>
 <config>
 	<id>14005</id>
@@ -440,7 +427,7 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,137,0,0]</functionType>
 </config>
 <config>
 	<id>14006</id>
@@ -457,7 +444,7 @@
 </config>
 <config>
 	<id>14007</id>
-	<group>56</group>
+	<group>57</group>
 	<taskType>4</taskType>
 	<taskName>支线-击杀怪物</taskName>
 	<level>3</level>
@@ -470,7 +457,7 @@
 </config>
 <config>
 	<id>14008</id>
-	<group>56</group>
+	<group>58</group>
 	<taskType>4</taskType>
 	<taskName>支线-击杀怪物</taskName>
 	<level>3</level>
@@ -1367,12 +1354,12 @@
 </config>
 <config>
 	<id>14077</id>
-	<group>125</group>
+	<group>127</group>
 	<taskType>4</taskType>
 	<taskName>支线-技能升级</taskName>
 	<level>40</level>
 	<finishType>7</finishType>
-	<finishParam>[2,0,4]</finishParam>
+	<finishParam>[10,0,4]</finishParam>
 	<rewards>[[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
@@ -1961,7 +1948,7 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,137,0,0]</functionType>
 </config>
 <config>
 	<id>15004</id>
@@ -2026,7 +2013,7 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,137,0,0]</functionType>
 </config>
 <config>
 	<id>15010</id>
@@ -2091,6 +2078,6 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType>[3,10022]</functionType>
+	<functionType>[3,10022,2,1002208]</functionType>
 </config>
 </root>

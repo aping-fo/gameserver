@@ -14,9 +14,20 @@ public class PetConfig {
 	public int petId;//对应宠物ID
 	public int materialId;//对应碎片ID
 	public int nextQualityId;//下一品质id
+	public int mutateId;//变异后id
 	public int gainNeedMaterialCount;//召唤宠物需要碎片数量
-	public int[] nextQualityCost;//升品消耗货币
+	public int[][] nextQualityCost;//升品消耗材料
 	public int nextQualityMaterialCount;//升品或合成需要碎片数量
 	public int[][] decomposeGoods;//分解产生物品id和数量
 	public int activeSkillId;//主动技能ID
+	public int passiveSkillId;//被动技能ID
+	public int passiveSkillCount;//被动技能数量
+	public int variationNeedMaterialCount;//变异宠物需要碎片数量
+	public int[][] variationCost;//变异消耗材料
+	public int hp;//生命加成
+	public int attack;//威力加成
+	public int defense;//防御加成
+	public int crit;//暴击加成
+	public int symptom;//异常加成
+	public int fu;//抗性加成
 }

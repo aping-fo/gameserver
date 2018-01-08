@@ -6,6 +6,9 @@ import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.activity.ActivityConsts;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -49,7 +52,8 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
 	private MailService mailService;
 	@Autowired
 	private TaskService taskService;
-	
+	@Autowired
+	private TitleService titleService;
 	private Map<String, Map<Integer, MonsterRefreshConfig>> monsterRefreshs = new ConcurrentHashMap<String, Map<Integer, MonsterRefreshConfig>>();
 
 	private EndlessCfg cfg;
@@ -168,6 +172,8 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
 				return result;
 			}
 			layer = max + 1;
+			//无尽漩涡称号
+			titleService.complete(playerId, TitleConsts.WJXW_LAYER,layer, ActivityConsts.UpdateType.T_VALUE);
 		}else{
 			layer = (int)((System.currentTimeMillis() - attach.getClearTime()) / (30 * TimeUtil.ONE_SECOND));
 			if(layer < 1){

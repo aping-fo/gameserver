@@ -5,6 +5,7 @@ import com.game.data.ErrCode;
 import com.game.data.LadderCfg;
 import com.game.data.Response;
 import com.game.event.InitHandler;
+import com.game.module.activity.ActivityConsts;
 import com.game.module.copy.CopyExtension;
 import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
@@ -14,8 +15,11 @@ import com.game.module.mail.MailService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.rank.RankService;
 import com.game.module.scene.SceneService;
 import com.game.module.serial.SerialDataService;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.Reward;
@@ -82,8 +86,13 @@ public class LadderService implements InitHandler {
     private GoodsService goodsService;
     @Autowired
     private CopyService copyService;
+    @Autowired
+    private TitleService titleService;
 
     private final Map<Integer, Integer> FightTimes = new ConcurrentHashMap<>();
+    //玩家ID -- rank
+    private final Map<Integer, Integer> ladderRank = new ConcurrentHashMap<>();
+    private final static int MAX_RANK = 200;
     /**
      * ID生成
      */
@@ -102,6 +111,7 @@ public class LadderService implements InitHandler {
     private final ListParam<LadderRankVO> LADDER_RANK = new ListParam();
 
     private boolean debug = false;
+
     @Override
     public void handleInit() {
         //5S定时
@@ -190,7 +200,7 @@ public class LadderService implements InitHandler {
                     continue;
                 }
 
-                if(debug) {
+                if (debug) {
                     startGame(source, target);
                     break;
                 }
@@ -753,16 +763,22 @@ public class LadderService implements InitHandler {
 
     public List<Ladder> ladderSort() {
         if (serialDataService.getData() != null) {
+            ladderRank.clear();
             //ServerLogger.warn("ladder sort ...........");
             List<Ladder> list = new ArrayList<>(serialDataService.getData().getLadderMap().values());
             Collections.sort(list, COMPARATOR);
             LADDER_RANK.params = new ArrayList<>();
+            int i = 0;
             for (Ladder ladder : list) {
                 Player player = playerService.getPlayer(ladder.getPlayerId());
                 if (player == null) {
                     continue;
                 }
-
+                i++;
+                if (i < MAX_RANK) {
+                    titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER,i, ActivityConsts.UpdateType.T_VALUE);
+                    ladderRank.put(ladder.getPlayerId(), i);
+                }
                 LadderRankVO vo = new LadderRankVO();
                 vo.name = player.getName();
                 vo.level = ladder.getLevel();
@@ -779,6 +795,14 @@ public class LadderService implements InitHandler {
 
     public ListParam getLadderRank() {
         return LADDER_RANK;
+    }
+
+    public int getRank(int playerId) {
+        Integer rank = ladderRank.get(playerId);
+        if (rank == null) {
+            rank = 0;
+        }
+        return rank;
     }
 
     /**
@@ -835,12 +859,12 @@ public class LadderService implements InitHandler {
         String awardContent = ConfigData.getConfig(ErrCode.class, Response.LADDER_MAIL_CONTENT).tips;
         List<GoodsEntry> rewards = new ArrayList<>();
         List<Ladder> list = ladderSort();
-        if(list != null) {
+        if (list != null) {
             for (Ladder ladder : list) {
                 LadderCfg cfg = ConfigData.getConfig(LadderCfg.class, ladder.getLevel());
-                if(cfg == null) {
+                if (cfg == null) {
                     cfg = ConfigData.getConfig(LadderCfg.class, ladder.getLevel() - 1);
-                    if(cfg == null) {
+                    if (cfg == null) {
                         ServerLogger.warn("send ladder reward error,level = " + ladder.getLevel());
                         continue;
                     }

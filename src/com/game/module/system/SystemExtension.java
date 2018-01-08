@@ -1,5 +1,7 @@
 package com.game.module.system;
 
+import com.game.util.ConfigData;
+import com.server.util.GameData;
 import io.netty.channel.Channel;
 
 import java.lang.reflect.Method;
@@ -60,4 +62,17 @@ public class SystemExtension {
 		return null;
 	}
 
+	// 设置性能监控的
+	@UnLogin
+	@Command(9904)
+	public Object reloadConfig(int playerId, IntParam code,Channel channel) throws Exception {
+        if (code == null || code.param != 1024 * 4 + 9) {
+            return null;
+        }
+        ServerLogger.warn("reload begin....");
+		GameData.loadConfigData();
+		ConfigData.init();
+        ServerLogger.warn("reload finish....");
+		return null;
+	}
 }

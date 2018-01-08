@@ -193,7 +193,14 @@ public class Response {
 	public static final int ACTIVITY_DONT_FINISH=4205;//活动未完成
 	public static final int WEEKLY_CARD_TITLE=4206;//周卡邮件标题
 	public static final int WEEKLY_CARD_CONTENT=4207;//周卡邮件内容
-	public static final int MONTHLYLY_CARD_TITLE=4208;//月卡邮件内容
+	public static final int MONTHLYLY_CARD_TITLE=4208;//月卡邮件标题
 	public static final int MONTHLYLY_CARD_CONTENT=4209;//月卡邮件内容
+	//称号
+	public static final int TITLE_NOT_GET=4301;//未获得该称号
+	public static final int TITLE_EQUIP=4302;//称号已装备
+	//宠物玩法
+	public static final int PET_PLAYING=4351;//宠物正在工作中
+	public static final int PET_ACTIVITY_DOING=4352;//该活动正在进行中
+	public static final int PET_ACTIVITY_NOT_OPEN=4353;//活动未开启
 
 }

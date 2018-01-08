@@ -1,21 +1,22 @@
 package com.game.module.player;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
-
 import com.game.data.*;
-import com.game.module.group.GroupService;
-import com.game.module.team.TeamService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsService;
 import com.game.module.goods.PlayerBag;
+import com.game.module.group.GroupService;
+import com.game.module.pet.PetBag;
+import com.game.module.pet.PetService;
+import com.game.module.team.TeamService;
 import com.game.params.goods.AttrItem;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 @Service
 public class PlayerCalculator {
@@ -29,7 +30,8 @@ public class PlayerCalculator {
 	private GroupService groupService;
 	@Autowired
 	private TeamService teamService;
-
+	@Autowired
+	private PetService petService;
 	// 重新计算人物属性
 	public void calculate(int playerId) {
 		calculate(playerService.getPlayer(playerId));
@@ -82,6 +84,10 @@ public class PlayerCalculator {
 		addPercent(player);
 		//公会科技加成
 		addGuildAttr(player);
+		//称号加成
+		addTitleAttr(player);
+		//宠物加成
+		AddPet(player);
 		// 更新战斗力
 		float[] fightParams = ConfigData.globalParam().fightParams;
 		float fight = player.getHp()*fightParams[0]+player.getAttack()*fightParams[1]+player.getDefense()*fightParams[2]+player.getFu()*fightParams[3]+player.getSymptom()*fightParams[4]+
@@ -190,7 +196,57 @@ public class PlayerCalculator {
 			player.addSymptom(cfg.symptom);
 		}
 	}
-	
+
+
+	//加称号属性
+	private void addTitleAttr(PlayerAddition player) {
+		PlayerData data = playerService.getPlayerData(player.getPlayerId());
+		Player p = (Player) player;
+		//装备称号加成
+		TitleConfig config = ConfigData.getConfig(TitleConfig.class, p.getTitle());
+		if (config != null) {
+			player.addAttack(config.attack);
+			player.addCrit(config.crit);
+			player.addDefense(config.defense);
+			player.addFu(config.fu);
+			player.addSymptom(config.symptom);
+			player.addHp(config.hp);
+		}
+		//套装加成
+		int size = data.getTitles().size();
+
+		TitleSelectConfig titleSelectConfig = ConfigData.getConfig(TitleSelectConfig.class, size);
+		if (titleSelectConfig != null) {
+			player.addAttack(titleSelectConfig.srvAttack);
+			player.addCrit(titleSelectConfig.srvCrit);
+			player.addDefense(titleSelectConfig.srvDefense);
+			player.addFu(titleSelectConfig.srvFu);
+			player.addSymptom(titleSelectConfig.srvSymptom);
+			player.addHp(titleSelectConfig.srvHp);
+		}
+	}
+
+	//加时装战力，非百分比的部分
+	private void AddPet(PlayerAddition player){
+		PetBag petBag = petService.getPetBag(player.getPlayerId());
+		if (petBag == null) {
+			return;
+		}
+		Player p = (Player) player;
+		PetConfig config = ConfigData.getConfig(PetConfig.class,petBag.getFightPetId());
+		if (config == null) {
+			return;
+		}
+
+
+		player.addAttack(config.attack);
+		player.addCrit(config.crit);
+		player.addDefense(config.defense);
+		player.addFu(config.fu);
+		player.addSymptom(config.symptom);
+		player.addHp(config.hp);
+	}
+
 	//加时装战力，非百分比的部分
 	private void AddFashion(PlayerAddition player){
 		PlayerData data = playerService.getPlayerData(player.getPlayerId());

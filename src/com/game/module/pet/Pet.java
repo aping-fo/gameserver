@@ -10,7 +10,9 @@ public class Pet {
     private int configId;
     private int skillID;
     private int passiveSkillId;
+    private int passiveSkillId2;
     private boolean mutateFlag;
+    private boolean playFlag;
 
     public Pet() {
     }
@@ -20,6 +22,15 @@ public class Pet {
         this.skillID = skillID;
         this.configId = configId;
         this.mutateFlag = false;
+        this.playFlag = false;
+    }
+
+    public boolean isPlayFlag() {
+        return playFlag;
+    }
+
+    public void setPlayFlag(boolean playFlag) {
+        this.playFlag = playFlag;
     }
 
     public int getConfigId() {
@@ -70,6 +81,14 @@ public class Pet {
         vo.hasMutate = mutateFlag;
         vo.configId = configId;
         return vo;
+    }
+
+    public int getPassiveSkillId2() {
+        return passiveSkillId2;
+    }
+
+    public void setPassiveSkillId2(int passiveSkillId2) {
+        this.passiveSkillId2 = passiveSkillId2;
     }
 
     public boolean isMutate() {

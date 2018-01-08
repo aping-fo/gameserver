@@ -111,7 +111,7 @@ public class CopyExtension {
         Player player = playerService.getPlayer(playerId);
         int copyInstanceId = player.getCopyId();
         if (copyInstanceId == 0) {
-            ServerLogger.warn("Err CopyId:", copyInstanceId);
+            ServerLogger.info("Err CopyId:", copyInstanceId);
             return null;
         }
         CopyInstance instance = copyService.getCopyInstance(copyInstanceId);

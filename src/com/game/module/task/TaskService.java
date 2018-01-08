@@ -9,6 +9,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.module.activity.ActivityConsts;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -47,7 +51,6 @@ import com.server.util.ServerLogger;
 
 @Service
 public class TaskService implements Dispose {
-
     @Autowired
     private TaskDao taskDao;
     @Autowired
@@ -56,7 +59,8 @@ public class TaskService implements Dispose {
     private GoodsService goodsService;
     @Autowired
     private GangService gangService;
-
+    @Autowired
+    private TitleService titleService;
     private Map<Integer, PlayerTask> tasks = new ConcurrentHashMap<Integer, PlayerTask>();
 
     @Override
@@ -225,7 +229,7 @@ public class TaskService implements Dispose {
     }
 
     // 检查任务是否完成
-    public boolean checkFinished(Task task) {
+    public boolean checkFinished(Task task, int playerId) {
         TaskConfig config = getConfig(task.getTaskId());
         int[] targets = config.finishParam;
 
@@ -235,6 +239,8 @@ public class TaskService implements Dispose {
         int count = targets[targets.length - 1];
         if (task.getCount() >= count) {
             task.setState(Task.STATE_FINISHED);
+            //任务称号
+            titleService.complete(playerId, TitleConsts.TASK, task.getTaskId(), ActivityConsts.UpdateType.T_VALUE);
             return true;
         }
         return false;
@@ -317,7 +323,7 @@ public class TaskService implements Dispose {
                     }
                     int reqLev = targets[0];
                     int reqPos = targets[1];
-                    if (params[0] < reqLev || (reqPos > 0 && reqPos != params[1])) {
+                    if (/*params[0] < reqLev ||*/ (reqPos > 0 && reqPos != params[1])) {
                         return;
                     }
                     int curCount = 0;
@@ -341,7 +347,7 @@ public class TaskService implements Dispose {
                 } else {
                     int reqLev = targets[0];
                     int reqPos = targets[1];
-                    if (params[0] < reqLev || (reqPos > 0 && reqPos != params[1])) {
+                    if (/*params[0] < reqLev || */(reqPos > 0 && reqPos != params[1])) {
                         return;
                     }
                     Map<Integer, Integer> strengths = playerService
@@ -391,7 +397,7 @@ public class TaskService implements Dispose {
                 int curCount = 0;
                 int reqLev = targets[0];
                 int reqCLev = targets[1];
-                for (int i = 0; i < 4; i++) {
+                for (int i = 1; i <= 4; i++) {
                     int skillId = skills.get(i);
                     if (skillId == 0) {
                         continue;
@@ -401,7 +407,7 @@ public class TaskService implements Dispose {
                         continue;
                     }
                     if (reqCLev > 0) {
-                        SkillCard skillCard = data.getSkillCards().get(curCards.get(i));
+                        SkillCard skillCard = data.getSkillCards().get(curCards.get(i-1));
                         if (skillCard == null) {
                             continue;
                         }
@@ -448,7 +454,7 @@ public class TaskService implements Dispose {
                 task.alterCount(params[count - 1]);
             }
 
-            checkFinished(task);
+            checkFinished(task, playerId);
 
             if (task.getCount() != oldCount || task.getState() != oldState) {
                 if (config.taskType == Task.TYPE_GANG) {
@@ -498,6 +504,7 @@ public class TaskService implements Dispose {
             tasks.addAll(gang.getTasks().values());
         }
         for (Task task : tasks) {
+            ServerLogger.info("do task id =" + task.getTaskId());
             doTask(playerId, type, task, params);
         }
     }

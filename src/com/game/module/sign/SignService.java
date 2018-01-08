@@ -2,11 +2,14 @@ package com.game.module.sign;
 
 import com.game.data.Response;
 import com.game.data.SignCfg;
+import com.game.module.activity.ActivityConsts;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.game.params.Int2Param;
 import com.game.util.ConfigData;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +30,8 @@ public class SignService {
     private PlayerService playerService;
     @Autowired
     private GoodsService goodsService;
-
+    @Autowired
+    private TitleService titleService;
     public Int2Param sign(int playerId) {
         Int2Param ret = new Int2Param();
         ret.param1 = Response.ERR_PARAM;
@@ -56,6 +60,8 @@ public class SignService {
                 rewards.put(e.getKey(), e.getValue() * 2);
             }
         }
+        //签到称号
+        titleService.complete(playerId, TitleConsts.SIGN,data.getSign(), ActivityConsts.UpdateType.T_VALUE);
         data.setSignFlag(SIGN_DONE);
         // 奖励
         goodsService.addRewards(playerId, rewards, LogConsume.SIGN_REWARD, data.getSign());

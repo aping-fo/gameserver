@@ -20,6 +20,7 @@ import com.game.params.ListParam;
 import com.game.params.goods.AttrItem;
 import com.game.params.goods.SGoodsVo;
 import com.game.util.*;
+import com.google.common.collect.Lists;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -162,7 +163,12 @@ public class GoodsService {
 				if(upgrade == null || upgrade.getCurExp() < count) {
 					return Response.ERR_PARAM;
 				}
-			} else if (goodsId > 10000) {
+			} else if(cfg.type == Goods.PET_MATERIAL){
+				if(!petService.checkEnough(playerId,goodsId,count)){
+					return Response.ERR_GOODS_COUNT;
+				}
+			}
+			else if (goodsId > 10000) {
 				List<Goods> exists = getExistBagGoods(playerId, goodsId);
 				int total = 0;
 				for (Goods g : exists) {
@@ -202,6 +208,7 @@ public class GoodsService {
 		if (check != Response.SUCCESS) {
 			return check;
 		}
+		List<Int2Param> petConsume = Lists.newArrayList();
 		for (GoodsEntry item : goodsList) {
 			int goodsId = item.id;
 			int count = item.count;
@@ -216,12 +223,19 @@ public class GoodsService {
 				playerService.decCurrency(playerId, goodsId, count, log, params);
 			}else if(config.type == Goods.FAME) {
 				decFame(playerId,config.param1[0],count);
-			} else if (goodsId > 10000) {
+			} else if(config.type == Goods.PET_MATERIAL){
+				Int2Param param = new Int2Param();
+				param.param1 = goodsId;
+				param.param2 = count;
+				petConsume.add(param);
+			}
+			else if (goodsId > 10000) {
 				decGoodsFromBag(playerId, goodsId, count, log, params);
 			}else{
 				throw new RuntimeException("ErrGoodsId:"+goodsId);
 			}
 		}
+		petService.consume(playerId,petConsume);
 		return Response.SUCCESS;
 	}
 

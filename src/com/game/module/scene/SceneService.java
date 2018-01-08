@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -39,6 +40,7 @@ import com.server.util.ServerLogger;
 
 @Service
 public class SceneService implements InitHandler {
+	private static final Logger logger = Logger.getLogger(SceneService.class);
 
 	@Autowired
 	private PlayerService playerService;
@@ -263,6 +265,11 @@ public class SceneService implements InitHandler {
 			vo.fightPetConfigId = pet.getConfigId();
 			vo.fightPetHasMutate = pet.isMutate();
 		}
+		Pet showPet = petService.getShowPet(player.getPlayerId());
+		if(showPet != null) {
+			vo.showPetConfigId = showPet.getConfigId();
+			vo.showPetHasMutate = showPet.isMutate();
+		}
 		if(player.getGangId() > 0){
 			vo.gang = gangService.getGang(player.getGangId()).getName();
 		}
@@ -310,36 +317,41 @@ public class SceneService implements InitHandler {
 	// 生成怪物
 	public SSceneInfo genMonster(SceneConfig cfg, Player player) {
 		SSceneInfo sceneInfo = new SSceneInfo();
-		List<SMonsterVo> monsters = new ArrayList<SMonsterVo>();
-		if (cfg.type == Scene.COPY
-				|| (cfg.type == Scene.MULTI &&
-				(cfg.sceneSubType == Scene.MULTI_PVE || cfg.sceneSubType == Scene.WORLD_BOSS_PVE
-                || cfg.sceneSubType == Scene.MULTI_GROUP || cfg.sceneSubType == Scene.MULTI_GANG_BOSS))) {// 普通副本，多人PVE
-			int copyInstance = player.getCopyId();
-			CopyInstance copy = copyService.getCopyInstance(copyInstance);
-			monsters.addAll(copy.getMonsters().get(cfg.id).values());
+		try {
+			List<SMonsterVo> monsters = new ArrayList<SMonsterVo>();
+			if (cfg.type == Scene.COPY
+					|| (cfg.type == Scene.MULTI &&
+					(cfg.sceneSubType == Scene.MULTI_PVE || cfg.sceneSubType == Scene.WORLD_BOSS_PVE
+							|| cfg.sceneSubType == Scene.MULTI_GROUP || cfg.sceneSubType == Scene.MULTI_GANG_BOSS))) {// 普通副本，多人PVE
+				int copyInstance = player.getCopyId();
+				CopyInstance copy = copyService.getCopyInstance(copyInstance);
+				monsters.addAll(copy.getMonsters().get(cfg.id).values());
 
-			if(cfg.sceneSubType == Scene.MULTI_GANG_BOSS) { //公会副本怪物信息处理
-				monsters.clear();
-				for(SMonsterVo vo : copy.getMonsters().get(cfg.id).values()) {
-					if(!gangDungeonService.checkDeath(player,vo.id)) {
-						monsters.add(vo);
+				if(cfg.sceneSubType == Scene.MULTI_GANG_BOSS) { //公会副本怪物信息处理
+					monsters.clear();
+					for(SMonsterVo vo : copy.getMonsters().get(cfg.id).values()) {
+						if(!gangDungeonService.checkDeath(player,vo.id)) {
+							monsters.add(vo);
+						}
+					}
+				}
+
+				if (copy.getTraverseMap() != null) {
+					int[] affixs = copy.getTraverseMap().getAffixs();
+					ServerLogger.info("Traverse length: " + affixs.length);
+					if (affixs != null) {
+						sceneInfo.affixs = new ArrayList<Integer>();
+						for (int id : affixs) {
+							sceneInfo.affixs.add(id);
+						}
 					}
 				}
 			}
-
-			if (copy.getTraverseMap() != null) {
-				int[] affixs = copy.getTraverseMap().getAffixs();
-				if (affixs != null) {
-					sceneInfo.affixs = new ArrayList<Integer>();
-					for (int id : affixs) {
-						sceneInfo.affixs.add(id);
-					}
-				}
-			}
-
+			sceneInfo.monsters = monsters;
+		}catch (Exception e){
+			logger.error("create monster",e);
+			throw new RuntimeException(e);
 		}
-		sceneInfo.monsters = monsters;
 		return sceneInfo;
 	}
 

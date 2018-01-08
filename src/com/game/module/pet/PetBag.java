@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.game.params.Int2Param;
 import com.game.params.pet.PetBagVO;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -24,6 +25,34 @@ public class PetBag {
     private Map<Integer, Integer> materialMap = new HashMap<>();
 
     private int fightPetId;
+
+    private int showPetId;
+    //宠物玩法
+    private Map<Integer,PetActivity> petActivityMap = Maps.newHashMap();
+    private Map<Integer,Integer> activityCount = Maps.newHashMap();
+    public Map<Integer, PetActivity> getPetActivityMap() {
+        return petActivityMap;
+    }
+
+    public Map<Integer, Integer> getActivityCount() {
+        return activityCount;
+    }
+
+    public void setActivityCount(Map<Integer, Integer> activityCount) {
+        this.activityCount = activityCount;
+    }
+
+    public void setPetActivityMap(Map<Integer, PetActivity> petActivityMap) {
+        this.petActivityMap = petActivityMap;
+    }
+
+    public int getShowPetId() {
+        return showPetId;
+    }
+
+    public void setShowPetId(int showPetId) {
+        this.showPetId = showPetId;
+    }
 
     public int getFightPetId() {
         return fightPetId;
@@ -54,7 +83,7 @@ public class PetBag {
         vo.pets = Lists.newArrayList();
         vo.materials = Lists.newArrayList();
         vo.fightPetId = fightPetId;
-
+        vo.showPetId = showPetId;
         for (Map.Entry<Integer, Integer> s : materialMap.entrySet()) {
             Int2Param materialVo = new Int2Param();
             materialVo.param1 = s.getKey();

@@ -78,7 +78,9 @@ public enum LogConsume {
 	BAG_INIT(1071, "初始装备"),
 	ACTIVITY_REWARD(1072, "活动奖励领取"),
 	ACTIVITY_RE_REWARD(1073, "活动补奖励领取"),
-	ACTIVITY_OPEN(1074, "活动开启")
+	ACTIVITY_OPEN(1074, "活动开启"),
+	PET_ACTIVITY(1075, "宠物玩法立即完成"),
+	PET_ACTIVITY_REWARD(1076, "宠物玩法奖励领取")
 	;
 	public int actionId;// id
 	public String desc;

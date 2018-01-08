@@ -15,6 +15,8 @@ import com.game.module.activity.ActivityService;
 import com.game.module.group.GroupService;
 import com.game.module.pet.PetService;
 import com.game.module.team.TeamService;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.game.params.IntParam;
 import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -94,6 +96,8 @@ public class PlayerService implements InitHandler {
 	private PetService petService;
 	@Autowired
 	private ActivityService activityService;
+	@Autowired
+	private TitleService titleService;
 
 	private static volatile int maxPlayerId = 0;
 
@@ -228,7 +232,7 @@ public class PlayerService implements InitHandler {
 		// 任务
 		taskService.initTask(playerId);
 		goodsService.initBag(playerId);
-
+		titleService.doInit(playerId); //称号初始化
 		if(globalParam.GuideEquip != null) {
 			for (int[] itemArr : globalParam.GuideEquip) {
 				if (vocation == itemArr[0]) {
@@ -357,6 +361,7 @@ public class PlayerService implements InitHandler {
 		updateCurrencyToClient(playerId);
 		//活动检测
 		activityService.onLogin(playerId);
+		titleService.onLogin(playerId);
 		nameCaches.putIfAbsent(player.getName(), player.getPlayerId());
 	}
 
@@ -587,6 +592,8 @@ public class PlayerService implements InitHandler {
 				int newVIP = i;
 				if (player.getVip() != newVIP) {
 					player.setVip(newVIP);
+					//VIP称号
+					titleService.complete(playerId, TitleConsts.VIP,newVIP, ActivityConsts.UpdateType.T_VALUE);
 				}
 				break;
 			}
@@ -630,6 +637,8 @@ public class PlayerService implements InitHandler {
 					ActivityConsts.ActivityTaskCondType.T_GROW_FUND,player.getLev(), ActivityConsts.UpdateType.T_VALUE,true);
 			activityService.completeActivityTask(playerId,
 					ActivityConsts.ActivityTaskCondType.T_LEVEL_UP,player.getLev(), ActivityConsts.UpdateType.T_VALUE,true);
+			//等级称号
+			titleService.complete(playerId, TitleConsts.LEVEL,player.getLev(), ActivityConsts.UpdateType.T_VALUE);
 		} 
 		// 发送到前端
 		updateAttrsToClient(playerId, Player.EXP,player.getExp(),Player.LEV,player.getLev());
@@ -745,6 +754,7 @@ public class PlayerService implements InitHandler {
 					updatePlayerData(playerId);
 					taskService.updateTask(playerId);
 					goodsService.updateBag(playerId);
+					petService.updateBag(playerId);
 				}
 			});
 		}

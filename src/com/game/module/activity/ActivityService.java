@@ -10,6 +10,8 @@ import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.activity.ActivityInfo;
@@ -49,7 +51,8 @@ public class ActivityService implements InitHandler {
     private PlayerService playerService;
     @Autowired
     private GoodsService goodsService;
-
+    @Autowired
+    private TitleService titleService;
     @Override
     public void handleInit() {
         try {
@@ -292,6 +295,8 @@ public class ActivityService implements InitHandler {
                 }
                 if (at.getCond().checkComplete()) {
                     at.setState(ActivityConsts.ActivityState.T_FINISH);
+                    //活动称号
+                    titleService.complete(playerId, TitleConsts.ACTIVITY,at.getActivityId(), ActivityConsts.UpdateType.T_VALUE);
                 }
                 tasks.add(at);
             }

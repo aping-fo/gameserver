@@ -60,9 +60,9 @@ public class TraversingService implements InitHandler {
 	public TraverseMap createMap(GoodsConfig config){
 		TraverseMap map = new TraverseMap();
 		map.setCopyId(config.param1[0]);
-		int size = config.color - 1;
-		if(size > 0){			
-			int[] affixs = new int[size];
+		int size = config.color;
+		if(size > 0){
+		int[] affixs = new int[size];
 			int[] rates = config.param2[0];
 			int[] candidations = config.param2[1];
 			Set<Integer> exclude = new HashSet<Integer>();

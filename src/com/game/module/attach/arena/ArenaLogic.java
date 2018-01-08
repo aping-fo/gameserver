@@ -4,8 +4,11 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.module.activity.ActivityConsts;
 import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -54,7 +57,9 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 	private TaskService taskService;
 	@Autowired
 	private MessageService messageService;
-	
+	@Autowired
+	private TitleService titleService;
+
 	private SerialData serialData;
 	private ConcurrentHashMap<Integer, ArenaPlayer> ranks;
 	private ConcurrentHashMap<Integer, ArenaPlayer> playerRanks;
@@ -188,6 +193,8 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 					//广播竞技场第一名消息
 					messageService.sendSysMsg(MessageConsts.MSG_AREA,player.getName(),oppPlayer.getName());
 				}
+				//称号
+				titleService.complete(playerId, TitleConsts.ARENA,meRank, ActivityConsts.UpdateType.T_VALUE);
 			}else{
 				sendReport(playerId, ARENA_WIN, oppPlayer.getName(), 0);
 			}

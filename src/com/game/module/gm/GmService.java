@@ -37,6 +37,7 @@ import com.game.module.skill.SkillService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskExtension;
 import com.game.module.task.TaskService;
+import com.game.module.title.TitleService;
 import com.game.module.traversing.TraversingExtension;
 import com.game.module.vip.VipService;
 import com.game.module.worldboss.WorldBossService;
@@ -46,7 +47,9 @@ import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
 import com.game.params.ladder.TrainingResultVO;
 import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
 import com.game.util.TimeUtil;
+import com.google.common.collect.Lists;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -174,10 +177,14 @@ public class GmService {
 		int count = Integer.valueOf(param[1]);
 		Task task = taskService.getPlayerTask(playerId).getTasks().get(id);
 		task.setCount(count);
-		taskService.checkFinished(task);
+		taskService.checkFinished(task,playerId);
 		taskService.updateTaskToClient(playerId, task);
 	}
 
+	public void addTask(int playerId, String... param) {
+		int id = Integer.valueOf(param[0]);
+		taskService.addNewTask(playerId,id);
+	}
 	// 加任何物品
 	public void addGoods(int playerId, String... param) {
 		int id = Integer.valueOf(param[0]);
@@ -513,6 +520,20 @@ public class GmService {
 		petService.addPet(playerId,petId);
 	}
 
+	public void getPetActivity(int playerId,String ... params) {
+		petService.getPetActivity(playerId);
+	}
+	public void startPetActivity(int playerId,String ... params) {
+		int activityId = Integer.valueOf(params[0]);
+		int petId = Integer.valueOf(params[1]);
+		petService.startPetActivity(playerId,activityId,petId);
+	}
+	public void finishPetActivity(int playerId,String ... params) {
+		int activityId = Integer.valueOf(params[0]);
+		petService.finishPetActivity(playerId,activityId);
+		petService.getPetActivityRewards(playerId,activityId);
+	}
+
 	public void addPetMaterial(int playerId,String ... params) {
 		int petId = Integer.valueOf(params[0]);
 		int count = Integer.valueOf(params[1]);
@@ -527,8 +548,10 @@ public class GmService {
 	public void mutate(int playerId,String ... params) {
 		int mutateID = Integer.valueOf(params[0]);
 		int consumeID = Integer.valueOf(params[1]);
-		int newSkillID = Integer.valueOf(params[2]);
-		petService.mutate(playerId,mutateID,consumeID,newSkillID);
+		int count = Integer.valueOf(params[2]);
+		Int2Param p = new Int2Param();
+		int itemId = Integer.valueOf(params[3]);
+		petService.mutate(playerId,mutateID, Lists.newArrayList(p),itemId);
 	}
 
 	public void decompose(int playerId,String ... params) {
@@ -583,4 +606,40 @@ public class GmService {
 	public void welfare(int playerId,String ... params){
 		welfareCardService.daily(playerId);
 	}
+
+	@Autowired
+	private TitleService titleService;
+	public void getTitles(int playerId,String ... params){
+		ListParam result = titleService.getTitles(playerId);
+		System.out.println(JsonUtils.object2String(result));
+	}
+	public void equipTitle(int playerId,String ... params){
+		int taskId = Integer.valueOf(params[0]);
+		Int2Param result = titleService.equipTitle(playerId,taskId);
+		System.out.println(JsonUtils.object2String(result));
+	}
+
+	public void reloadConfig(int playerId,String ... params) throws Exception {
+		GameData.loadConfigData();
+		ConfigData.init();
+	}
+
+	// 重启更新服务器
+	public void reload(int playerId, String... params) {
+		Runtime rt = Runtime.getRuntime();
+		try {
+			String os = System.getProperty("os.name");
+			if (os.toLowerCase().contains("win")) {
+				String[] stopCmd = new String[] { "cmd.exe", "/C", "start reload.bat" };
+				rt.exec(stopCmd);
+			} else {
+				String[] stopCmd = new String[] { "/bin/sh", "-c", "nohup ./reload.sh > myout.file 2>&1 &" };
+				Runtime.getRuntime().exec(stopCmd);
+			}
+		} catch (IOException e) {
+			ServerLogger.err(e, "restart err!");
+		}
+	}
+
+
 }

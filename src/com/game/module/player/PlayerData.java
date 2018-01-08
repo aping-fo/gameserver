@@ -10,8 +10,10 @@ import com.game.module.activity.WelfareCard;
 import com.game.module.copy.Copy;
 import com.game.module.copy.TraverseMap;
 import com.game.module.fashion.Fashion;
+import com.game.module.pet.PetActivity;
 import com.game.module.sct.Train;
 import com.game.module.skill.SkillCard;
+import com.game.module.title.Title;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
@@ -127,12 +129,28 @@ public class PlayerData {
 	private WelfareCard welfareCard = new WelfareCard();
 	private Train train = new Train();
 	private int sevenDays = 1; // 7次领奖活动
-
+	private Map<Integer,Title> titleMap = Maps.newHashMap();
+	private Set<Integer> titles = new HashSet<>();
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
 	}
 
+	public Set<Integer> getTitles() {
+		return titles;
+	}
+
+	public void setTitles(Set<Integer> titles) {
+		this.titles = titles;
+	}
+
+	public Map<Integer, Title> getTitleMap() {
+		return titleMap;
+	}
+
+	public void setTitleMap(Map<Integer, Title> titleMap) {
+		this.titleMap = titleMap;
+	}
 
 	public Train getTrain() {
 		return train;

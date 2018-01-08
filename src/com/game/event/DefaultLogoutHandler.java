@@ -95,7 +95,7 @@ public class DefaultLogoutHandler implements LogoutHandler{
 			playerService.updatePlayerData(playerId);
 			taskService.updateTask(playerId);
 			goodsService.updateBag(playerId);
-			petService.updateBag(playerId);
+			petService.onLogout(playerId);
 			arenaLogic.quit(playerId);
 
 			ladderService.onLogout(playerId);

@@ -37,7 +37,7 @@ public class PetExtension {
 
     @Command(7006)
     public Object mutate(int playerId, MutateVO param) {
-        return petService.mutate(playerId, param.mutateID, param.consumeID, param.newSkillID);
+        return petService.mutate(playerId, param.mutateID, param.consume, param.itemId);
     }
 
     @Command(7007)
@@ -48,5 +48,30 @@ public class PetExtension {
     @Command(7008)
     public Object toFight(int playerId, IntParam param) {
         return petService.toFight(playerId, param.param);
+    }
+
+    @Command(7010)
+    public Object toShow(int playerId, IntParam param) {
+        return petService.toShow(playerId, param.param);
+    }
+
+    @Command(7011)
+    public Object getPetActivity(int playerId, Object param) {
+        return petService.getPetActivity(playerId);
+    }
+
+    @Command(7012)
+    public Object startPetActivity(int playerId, Int2Param param) {
+        return petService.startPetActivity(playerId, param.param1,param.param2);
+    }
+
+    @Command(7013)
+    public Object finishPetActivity(int playerId, IntParam param) {
+        return petService.finishPetActivity(playerId, param.param);
+    }
+
+    @Command(7014)
+    public Object getPetActivityRewards(int playerId, IntParam param) {
+        return petService.getPetActivityRewards(playerId, param.param);
     }
 }
