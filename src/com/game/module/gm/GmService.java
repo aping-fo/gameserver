@@ -641,5 +641,9 @@ public class GmService {
 		}
 	}
 
-
+	public void vip(int playerId,String ... params){
+		int id = Integer.valueOf(params[0]);
+		int count = Integer.valueOf(params[1]);
+		vipService.addCharge(playerId,id,count);
+	}
 }

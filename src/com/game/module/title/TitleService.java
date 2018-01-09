@@ -52,15 +52,18 @@ public class TitleService {
         PlayerData data = playerService.getPlayerData(playerId);
         for (Object obj : GameData.getConfigs(TitleConfig.class)) {
             TitleConfig cfg = (TitleConfig) obj;
-            Title title = new Title();
-            title.setId(cfg.id);
-            title.setOpenFlag(false);
-            title.setCondType(cfg.titleSubType);
-            data.getTitleMap().put(cfg.id, title);
+            if(!data.getTitleMap().containsKey(cfg.id)) {
+                Title title = new Title();
+                title.setId(cfg.id);
+                title.setOpenFlag(false);
+                title.setCondType(cfg.titleSubType);
+                data.getTitleMap().put(cfg.id, title);
+            }
         }
     }
 
     public void onLogin(int playerId) {
+        doInit(playerId);
         RankingList<FightingRankEntity> rank = rankService.getRankingList(RankService.TYPE_FIGHTING);
         FightingRankEntity rankEntity = rank.getEntity(playerId);
         if (rankEntity != null) { //战斗力称号更新
