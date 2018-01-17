@@ -26,7 +26,7 @@ public class RankingList<T extends IRankCA> {
 	private List<RankEntity> orderList;
 	private RankService service;
 	private final DelayUpdater updater;
-	
+
 	public RankingList(int type, int maxCapacity, int updatePeriod){
 		this.type = type;
 		this.maxCapacity = maxCapacity;
@@ -40,14 +40,14 @@ public class RankingList<T extends IRankCA> {
 			}
 		};
 	}
-	
+
 	public void putEntity(int playerId, T entity){
 		keys.put(playerId, entity);
 		entity.setOwner(playerId);
 		RankEntity rEntity = new RankEntity(type, playerId, entity);
 		entities.put(entity, rEntity);
 	}
-	
+
 	public void putAll(Map<Integer, T> keys){
 		//this.keys.putAll(keys);
 		for(Map.Entry<Integer, T> entry : keys.entrySet()){
@@ -56,7 +56,7 @@ public class RankingList<T extends IRankCA> {
 			//entities.put(entry.getValue(), rEntity);
 		}
 	}
-	
+
 	public T getEntity(int playerId){
 		readLock.tryLock();
 		try{
@@ -65,7 +65,7 @@ public class RankingList<T extends IRankCA> {
 			readLock.unlock();
 		}
 	}
-	
+
 	public RankEntity getRankEntity(int rank){
 		readLock.tryLock();
 		try{
@@ -81,7 +81,29 @@ public class RankingList<T extends IRankCA> {
 			readLock.unlock();
 		}
 	}
-	
+
+
+	public int getRank(int playerId){
+		T me = keys.get(playerId);
+		if(me == null){
+			return -1;
+		}
+		readLock.tryLock();
+		try{
+			int rank = 0;
+			List<RankEntity> list = getOrderList();
+			for(RankEntity re : list) {
+				if(re.getPlayerId() == playerId){
+					return rank + 1;
+				}
+				rank ++;
+			}
+			return -1;
+		}finally{
+			readLock.unlock();
+		}
+	}
+
 	public int getPosition(int playerId){
 		T me = keys.get(playerId);
 		if(me == null){
@@ -108,7 +130,7 @@ public class RankingList<T extends IRankCA> {
 			readLock.unlock();
 		}
 	}
-	
+
 	public List<RankEntity> getOrderList(){
 		readLock.tryLock();
 		try{
@@ -120,8 +142,8 @@ public class RankingList<T extends IRankCA> {
 			readLock.unlock();
 		}
 	}
-	
-	
+
+
 	public void updateEntity(int playerId, T entity){
 		writeLock.tryLock();
 		try{
@@ -130,7 +152,7 @@ public class RankingList<T extends IRankCA> {
 			if(key == null){
 				if(keys.size() < maxCapacity){
 					putEntity(playerId, entity);
-				}else{					
+				}else{
 					T last = entities.lastKey();
 					if(entity.compareTo(last) <= 0){
 						putEntity(playerId, entity);
@@ -157,7 +179,7 @@ public class RankingList<T extends IRankCA> {
 			writeLock.unlock();
 		}
 	}
-	
+
 	public void clear(){
 		orderList = null;
 		keys.clear();
@@ -174,7 +196,7 @@ public class RankingList<T extends IRankCA> {
 		}
 		return false;
 	}
-	
+
 	public boolean isDirty(){
 		return updater.dirty();
 	}

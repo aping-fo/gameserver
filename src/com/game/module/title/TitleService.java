@@ -9,8 +9,6 @@ import com.game.module.player.PlayerCalculator;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.rank.RankService;
-import com.game.module.rank.RankingList;
-import com.game.module.rank.vo.FightingRankEntity;
 import com.game.module.scene.SceneService;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
@@ -24,7 +22,6 @@ import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.management.counter.perf.PerfLongArrayCounter;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -52,7 +49,7 @@ public class TitleService {
         PlayerData data = playerService.getPlayerData(playerId);
         for (Object obj : GameData.getConfigs(TitleConfig.class)) {
             TitleConfig cfg = (TitleConfig) obj;
-            if(!data.getTitleMap().containsKey(cfg.id)) {
+            if (!data.getTitleMap().containsKey(cfg.id)) {
                 Title title = new Title();
                 title.setId(cfg.id);
                 title.setOpenFlag(false);
@@ -64,11 +61,11 @@ public class TitleService {
 
     public void onLogin(int playerId) {
         doInit(playerId);
-        RankingList<FightingRankEntity> rank = rankService.getRankingList(RankService.TYPE_FIGHTING);
-        FightingRankEntity rankEntity = rank.getEntity(playerId);
-        if (rankEntity != null) { //战斗力称号更新
-            checkTitle(playerId, TitleConsts.FIGHTING, rankEntity.getFight(), ActivityConsts.UpdateType.T_VALUE, null);
-        }
+        /*RankingList<FightingRankEntity> rank = rankService.getRankingList(RankService.TYPE_FIGHTING);
+        int position = rank.getRank(playerId);
+        if (position != -1) { //战斗力称号更新
+            checkTitle(playerId, TitleConsts.FIGHTING, position, ActivityConsts.UpdateType.T_VALUE, null);
+        }*/
         int ladderLevel = ladderService.getRank(playerId);
         if (ladderLevel != 0) { //排位赛
             checkTitle(playerId, TitleConsts.LADDER, ladderLevel, ActivityConsts.UpdateType.T_VALUE, null);
@@ -125,8 +122,7 @@ public class TitleService {
                 }
 
                 TitleConfig config = ConfigData.getConfig(TitleConfig.class, title.getId());
-                if (title.getCondType() == TitleConsts.ARENA || title.getCondType() == TitleConsts.LADDER
-                        || title.getCondType() == TitleConsts.FIGHTING) {
+                if (title.getCondType() == TitleConsts.ARENA || title.getCondType() == TitleConsts.LADDER) {
                     if (title.getValue() >= config.cond[1] && title.getValue() <= config.cond[2]) {
                         if (titles != null) titles.add(title.getId());
                         data.getTitles().add(title.getId());

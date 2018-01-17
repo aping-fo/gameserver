@@ -1,6 +1,7 @@
 package com.game.module.player;
 
 import com.game.data.*;
+import com.game.module.activity.ActivityConsts;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsService;
 import com.game.module.goods.PlayerBag;
@@ -8,6 +9,8 @@ import com.game.module.group.GroupService;
 import com.game.module.pet.PetBag;
 import com.game.module.pet.PetService;
 import com.game.module.team.TeamService;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.game.params.goods.AttrItem;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
@@ -32,6 +35,9 @@ public class PlayerCalculator {
 	private TeamService teamService;
 	@Autowired
 	private PetService petService;
+	@Autowired
+	private TitleService titleService;
+
 	// 重新计算人物属性
 	public void calculate(int playerId) {
 		calculate(playerService.getPlayer(playerId));
@@ -76,6 +82,8 @@ public class PlayerCalculator {
 
 	// 计算属性加成
 	public void updateAttr(Player player) {
+		int oldFight = player.getFight();
+
 		addEquip(player);
 		addJewel(player);
 		addArtifact(player);
@@ -94,6 +102,9 @@ public class PlayerCalculator {
 				player.getCrit()*fightParams[5]; 
 		player.setFight((int)fight);
 
+		if(fight > oldFight){
+			titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING,(int)fight, ActivityConsts.UpdateType.T_VALUE);
+		}
 		groupService.updateAttr(player.getPlayerId());
 		teamService.updateAttr(player.getPlayerId());
 		playerService.refreshPlayerToClient(player.getPlayerId());

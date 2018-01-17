@@ -3,6 +3,7 @@ package com.game.module.pet;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.pet.MutateVO;
+import com.game.params.pet.StartPetActivityVO;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -61,8 +62,8 @@ public class PetExtension {
     }
 
     @Command(7012)
-    public Object startPetActivity(int playerId, Int2Param param) {
-        return petService.startPetActivity(playerId, param.param1,param.param2);
+    public Object startPetActivity(int playerId, StartPetActivityVO param) {
+        return petService.startPetActivity(playerId, param);
     }
 
     @Command(7013)

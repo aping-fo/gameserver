@@ -270,4 +270,10 @@ public class PlayerExtension {
 		intParam.param = param.param;
 		return intParam;
 	}
+
+	@Command(1011)
+	public Object selectRole(int playerId, Object param){
+		playerService.selectRole(playerId);
+		return null;
+	}
 }

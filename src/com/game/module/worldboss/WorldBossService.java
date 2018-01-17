@@ -238,7 +238,7 @@ public class WorldBossService implements InitHandler {
      * @param playerId
      * @param hurt
      */
-    private synchronized void onBossHurt(int playerId, int hurt, int bossId,boolean isCrit) {
+    private synchronized void onBossHurt(int playerId, int hurt, int bossId, boolean isCrit) {
         WorldBoss boss = worldBossData.getWorldBossMap().get(bossId);
         if (boss == null || boss.getCurHp() <= 0) {
             ServerLogger.warn("world boss can not found bossId", bossId);
@@ -291,7 +291,7 @@ public class WorldBossService implements InitHandler {
 
             MonsterRefreshConfig conf = ConfigData.getConfig(MonsterRefreshConfig.class, bossId);
             MonsterConfig conf1 = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
-            messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_DIE,player.getName(), conf1.name);
+            messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_DIE, player.getName(), conf1.name);
             //排序
             Context.getThreadService().execute(new Runnable() {
                 @Override
@@ -354,7 +354,7 @@ public class WorldBossService implements InitHandler {
 
         if (openHour - hour == 1) { //先不考虑0点
             if (60 - min == 10) {//10分钟公告
-                messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_PRE,10);
+                messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_PRE, 10);
             }
             if (60 - min == 5) { //5分钟公告
                 messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_PRE, 5);
@@ -784,7 +784,7 @@ public class WorldBossService implements InitHandler {
     public void handleSkillHurt(Player player, SkillHurtVO hurtVO) {
         //broadcast(SceneExtension.SKILL_HURT, hurtVO);
         if (hurtVO.targetType == 1) {
-            onBossHurt(player.getPlayerId(), hurtVO.hurtValue, hurtVO.targetId,hurtVO.isCrit);
+            onBossHurt(player.getPlayerId(), hurtVO.hurtValue, hurtVO.targetId, hurtVO.isCrit);
         }
     }
 

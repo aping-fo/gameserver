@@ -3,8 +3,10 @@ package com.game.module.rank;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.game.module.gang.Gang;
 import com.game.module.ladder.LadderService;
 import com.game.params.rank.*;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.module.attach.arena.ArenaLogic;
@@ -72,7 +74,13 @@ public class RankExtension {
 			vo.name = player.getName();
 			vo.vocation = player.getVocation();
 			if(player.getGangId() > 0){
-				vo.gang = gangService.getGang(player.getGangId()).getName();
+				Gang gang = gangService.getGang(player.getGangId());
+				if(gang == null){
+					ServerLogger.warn("gang do not exist,gang id = " + player.getGangId());
+					player.setGangId(0);
+				}else{
+					vo.gang = gang.getName();
+				}
 			}
 			vo.level = rEntity.getLevel();
 			return vo;

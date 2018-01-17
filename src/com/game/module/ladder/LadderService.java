@@ -15,7 +15,6 @@ import com.game.module.mail.MailService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
-import com.game.module.rank.RankService;
 import com.game.module.scene.SceneService;
 import com.game.module.serial.SerialDataService;
 import com.game.module.title.TitleConsts;
@@ -194,7 +193,6 @@ public class LadderService implements InitHandler {
                     continue;
                 }
 
-                source.selfMatchCount = 0;
                 if (target.exitFlag
                         || target.matchFlag || target.fightFlag) { //check target room
                     continue;
@@ -246,10 +244,12 @@ public class LadderService implements InitHandler {
                         startGame(source, target);
                         break;
                     }
-                } else if (source.time == 8) { // 100% debug
-                    startGame(source, target);
-                } else {
-                    matchingFail(source);
+                } else if (source.time == 8) {
+                    if (debug) {// 100% debug
+                        startGame(source, target);
+                    } else {
+                        matchingFail(source);
+                    }
                 }
                 source.time += 1;
             }
@@ -776,7 +776,7 @@ public class LadderService implements InitHandler {
                 }
                 i++;
                 if (i < MAX_RANK) {
-                    titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER,i, ActivityConsts.UpdateType.T_VALUE);
+                    titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER, i, ActivityConsts.UpdateType.T_VALUE);
                     ladderRank.put(ladder.getPlayerId(), i);
                 }
                 LadderRankVO vo = new LadderRankVO();

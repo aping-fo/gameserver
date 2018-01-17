@@ -19,6 +19,7 @@ import com.game.params.Reward;
 import com.game.params.pet.*;
 import com.game.util.*;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -26,15 +27,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by lucky on 2017/9/13.
- * 排位赛
+ * 宠物
  */
 @Service
 public class PetService implements InitHandler {
@@ -63,7 +61,7 @@ public class PetService implements InitHandler {
         for (Object obj : GameData.getConfigs(PetSkillConfig.class)) {
             PetSkillConfig cfg = (PetSkillConfig) obj;
             if (cfg.type == 2) {
-                skillIds.add(cfg.skillId);
+                skillIds.add(cfg.id);
             }
         }
     }
@@ -200,7 +198,7 @@ public class PetService implements InitHandler {
 
             updateList.add(idParam);
         }
-
+        bag.updateFlag = true;
         return updateList;
     }
 
@@ -226,6 +224,7 @@ public class PetService implements InitHandler {
         idParam.param1 = configID;
         idParam.param2 = remainCount;
         updateIds.add(idParam);
+        bag.updateFlag = true;
         if (toCli) {
             pushUpdateBag(playerId, Collections.emptyList(), updateIds);
         }
@@ -387,11 +386,6 @@ public class PetService implements InitHandler {
             cli.param1 = Response.PET_NOT_EXIST;
             return cli;
         }
-        Pet consumePet = bag.getPetMap().get(mutateID);
-        if (consumePet == null) {
-            cli.param1 = Response.PET_NOT_EXIST;
-            return cli;
-        }
 
         int total = 0;
         for (Int2Param param : consume) {
@@ -406,7 +400,7 @@ public class PetService implements InitHandler {
             total += param.param2;
         }
 
-        PetConfig petConfig = ConfigData.getConfig(PetConfig.class, mutateID);
+        PetConfig petConfig = ConfigData.getConfig(PetConfig.class, mutatePet.getConfigId());
         if (petConfig.variationNeedMaterialCount != total) {
             cli.param1 = Response.ERR_PARAM;
             return cli;
@@ -443,6 +437,8 @@ public class PetService implements InitHandler {
             } else {
                 mutatePet.setPassiveSkillId2(newSkillId);
             }
+
+            ServerLogger.info(JsonUtils.object2String(mutatePet));
         }
 
         List<Pet> addPets = Lists.newArrayList(mutatePet);
@@ -640,37 +636,35 @@ public class PetService implements InitHandler {
         vo.activityList = Lists.newArrayList();
         PetBag bag = getPetBag(playerId);
         for (PetActivity pa : bag.getPetActivityMap().values()) {
-            if (!pa.isAwardFlag()) {
+            if (!pa.isbAward()) {
                 vo.activityList.add(toProto(pa));
             }
         }
-        for (Map.Entry<Integer, Integer> e : bag.getActivityCount().entrySet()) {
-            for (Object obj : GameData.getConfigs(PetActivityConfig.class)) {
-                PetActivityConfig cfg = (PetActivityConfig) obj;
-                if (e.getKey() == cfg.type && (cfg.levelUpCondition != 0 && e.getValue() <= cfg.levelUpCondition)) {
-                    Int2Param param = new Int2Param();
-                    param.param1 = cfg.id;
-                    param.param2 = e.getValue();
-                    vo.activityCount.add(param);
-                    break;
-                }
-            }
+
+        for (Map.Entry<Integer, PetActivityData> e : bag.getPetActivityAttr().entrySet()) {
+            Int2Param param = new Int2Param();
+            param.param1 = e.getKey();
+            param.param2 = e.getValue().getTotalCount();
+            vo.activityCount.add(param);
         }
+        ServerLogger.info(JsonUtils.object2String(vo));
         return vo;
     }
+
 
     private PetActivityVO toProto(PetActivity pa) {
         PetActivityVO vo = new PetActivityVO();
         PetActivityConfig config = ConfigData.getConfig(PetActivityConfig.class, pa.getId());
         vo.id = pa.getId();
         int dec = 0;
-        if (pa.getPetId() != 0) {
-            PetConfig petConfig = ConfigData.getConfig(PetConfig.class, pa.getPetId());
+        vo.petId = Lists.newArrayList();
+        for (PetKV kv : pa.getPets()) {
+            vo.petId.add(kv.getPetId());
+            PetConfig petConfig = ConfigData.getConfig(PetConfig.class, kv.getPetConfigId());
             PetActivityConfig petActivityConfig = ConfigData.getConfig(PetActivityConfig.class, pa.getId());
             dec = petActivityConfig.plotAcclerate[petConfig.quality - 1];
         }
         vo.remainTime = pa.getRemainTime(config.finishSec - dec);
-        vo.petId = pa.getPetId();
         return vo;
     }
 
@@ -678,51 +672,80 @@ public class PetService implements InitHandler {
      * 开始某个活动
      *
      * @param playerId
-     * @param activityId
+     * @param startPetActivityVO
      */
-    public IntParam startPetActivity(int playerId, int activityId, int petId) {
+    public IntParam startPetActivity(int playerId, StartPetActivityVO startPetActivityVO) {
         IntParam param = new IntParam();
         PetBag bag = getPetBag(playerId);
 
-        if (bag.getPetActivityMap().containsKey(activityId)) {
-            param.param = Response.PET_ACTIVITY_DOING;
-            return param;
-        }
+        int count = 0;
+        int type = 0;
+        Set<Integer> petSet = Sets.newHashSet();
+        for (PetPlayData playData : startPetActivityVO.petActivitys) { //校验
+            int activityId = playData.activityId;
+            PetActivity petActivity = bag.getPetActivityMap().get(activityId);
+            if (petActivity != null && !petActivity.isbAward()) {
+                param.param = Response.PET_ACTIVITY_DOING;
+                return param;
+            }
 
-        Pet pet = bag.getPetMap().get(petId);
-        if (petId != 0 && pet == null) {
-            param.param = Response.PET_NOT_EXIST;
-            return param;
-        }
+            for (int petId : playData.petIds) {
+                Pet pet = bag.getPetMap().get(petId);
+                if (pet == null) {
+                    param.param = Response.PET_NOT_EXIST;
+                    return param;
+                }
 
-        if (pet != null && pet.isPlayFlag()) {
-            param.param = Response.PET_PLAYING;
-            return param;
-        }
+                if (pet.isPlayFlag()) {
+                    param.param = Response.PET_PLAYING;
+                    return param;
+                }
+                if (petSet.contains(petId)) {
+                    param.param = Response.PET_ACTIVITY_SAME;
+                    return param;
+                }
+                petSet.add(petId);
+            }
+            PetActivityConfig config = ConfigData.getConfig(PetActivityConfig.class, activityId);
+            PetActivityData petActivityData = bag.getPetActivityData(config.type);
+            int level = petActivityData.getLevel();
+            if (petActivityData.getDoingCount() + count >= config.count) { //超过当前可以并行活动个数
+                param.param = Response.PET_ACTIVITY_DOING;
+                return param;
+            }
+            count += 1;
 
-        PetActivityConfig config = ConfigData.getConfig(PetActivityConfig.class, activityId);
-        Integer count = bag.getActivityCount().get(config.type);
-        if (count == null) {
-            count = 0;
+            if (config.level != level) {
+                param.param = Response.PET_ACTIVITY_NOT_OPEN;
+                return param;
+            }
+            type = config.type;
         }
-        int needCount = 0;
-        if (config.level != 1 && count < needCount) { //不够次数
-            param.param = Response.PET_ACTIVITY_NOT_OPEN;
-            return param;
-        }
+        petSet.clear();
+        PetActivityData petActivityData = bag.getPetActivityAttr().get(type);
+        petActivityData.setDoingCount(petActivityData.getDoingCount() + count);
 
-        if (pet != null) {
-            pet.setPlayFlag(true);
-        }
-        PetActivity petActivity = bag.getPetActivityMap().get(activityId);
-        if (petActivity == null) {
-            petActivity = new PetActivity();
-            petActivity.setId(activityId);
-            bag.getPetActivityMap().put(activityId, petActivity);
-        }
+        for (PetPlayData playData : startPetActivityVO.petActivitys) { //开始活动
+            int activityId = playData.activityId;
+            PetActivity petActivity = bag.getPetActivityMap().get(activityId);
+            if (petActivity == null) {
+                petActivity = new PetActivity();
+                petActivity.setId(activityId);
+                bag.getPetActivityMap().put(activityId, petActivity);
+            }
 
-        petActivity.setStartTime(System.currentTimeMillis());
-        petActivity.setPetId(petId);
+            for (int petId : playData.petIds) {
+                Pet pet = bag.getPetMap().get(petId);
+                pet.setPlayFlag(true);
+                PetKV kv = new PetKV();
+                kv.setPetId(petId);
+                kv.setPetConfigId(pet.getConfigId());
+                petActivity.getPets().add(kv);
+            }
+            petActivity.setStartTime(System.currentTimeMillis());
+            petActivity.setbAward(false);
+        }
+        bag.updateFlag = true;
         param.param = Response.SUCCESS;
         return param;
     }
@@ -743,10 +766,21 @@ public class PetService implements InitHandler {
             param.param = Response.ERR_PARAM;
             return param;
         }
-        if (!playerService.decDiamond(playerId, config.finishCostPerMins[1], LogConsume.CLEAR_LOCK, activityId)) {
+        int dec = 0;
+        for (PetKV kv : petActivity.getPets()) {
+            PetConfig petConfig = ConfigData.getConfig(PetConfig.class, kv.getPetConfigId());
+            PetActivityConfig petActivityConfig = ConfigData.getConfig(PetActivityConfig.class, petActivity.getId());
+            dec = petActivityConfig.plotAcclerate[petConfig.quality - 1];
+        }
+
+        int remain = petActivity.getRemainTime(config.finishSec - dec);
+        int min = remain / 60 + (remain % 60 == 0 ? 0 : 1);
+        int needDiamond = min * config.finishCostPerMins[1];
+        if (needDiamond != 0 && !playerService.decDiamond(playerId, needDiamond, LogConsume.CLEAR_LOCK, activityId)) {
             param.param = Response.ERR_PARAM;
             return param;
         }
+        bag.updateFlag = true;
         petActivity.setStartTime(0);
         param.param = Response.SUCCESS;
         return param;
@@ -763,18 +797,15 @@ public class PetService implements InitHandler {
         PetGetRewardVO param = new PetGetRewardVO();
         param.rewards = Lists.newArrayList();
         PetActivity petActivity = bag.getPetActivityMap().get(activityId);
-        if (petActivity.isAwardFlag()) {
+        if (petActivity.isbAward()) {
             param.errCode = Response.HAS_TAKE_REWARD;
             return param;
         }
-
-        int dec = 0;
         PetActivityConfig config = ConfigData.getConfig(PetActivityConfig.class, activityId);
-        PetConfig petConfig = ConfigData.getConfig(PetConfig.class, petActivity.getPetId());
-        if (petActivity.getPetId() != 0) {
-            if (petConfig != null) {
-                dec = config.plotAcclerate[petConfig.quality - 1];
-            }
+        int dec = 0;
+        for (PetKV kv : petActivity.getPets()) {
+            PetConfig petConfig = ConfigData.getConfig(PetConfig.class, kv.getPetConfigId());
+            dec = config.plotAcclerate[petConfig.quality - 1];
         }
 
         if (!petActivity.checkFinish(config.finishSec - dec)) {
@@ -783,20 +814,32 @@ public class PetService implements InitHandler {
         }
 
         List<Reward> list = Lists.newArrayList();
-        if (petActivity.getPetId() != 0) {
-            Pet pet = bag.getPetMap().get(petActivity.getPetId());
+        for (PetKV kv : petActivity.getPets()) {
+            Pet pet = bag.getPetMap().get(kv.getPetId());
             pet.setPlayFlag(false);
+            PetConfig petConfig = ConfigData.getConfig(PetConfig.class, kv.getPetConfigId());
             int rate = config.rate[petConfig.quality - 1];
             if (RandomUtil.randInt(100) < rate) {
-                list.addAll(randomRewardService.getRewards(playerId, config.dropId[petConfig.quality - 1], 5, LogConsume.PET_ACTIVITY_REWARD));
+                List<Reward> dropRewards = randomRewardService.getRewards(playerId, config.dropId, config.dropCount, LogConsume.PET_ACTIVITY_REWARD);
+                if (dropRewards != null) {
+                    list.addAll(dropRewards);
+                }
             }
         }
 
-        Integer count = bag.getActivityCount().get(config.type);
-        if (count == null) {
-            count = 0;
+        petActivity.setStartTime(0);
+        petActivity.setbAward(true);
+        petActivity.getPets().clear();
+        PetActivityData data = bag.getPetActivityData(config.type);
+        data.setTotalCount(data.getTotalCount() + 1);
+        if (config.levelUpCondition != 0 && data.getTotalCount() >= config.levelUpCondition) {
+            data.setLevel(config.level + 1);
+            ServerLogger.info(JsonUtils.object2String(data));
         }
-        bag.getActivityCount().put(config.type, count + 1);
+
+        if (data.getDoingCount() > 0) {
+            data.setDoingCount(data.getDoingCount() - 1);
+        }
 
         List<GoodsEntry> goodsEntries = Lists.newArrayList();
         for (int[] arr : config.rewards) {
@@ -808,9 +851,18 @@ public class PetService implements InitHandler {
         for (Reward reward : list) {
             goodsEntries.add(new GoodsEntry(reward.id, reward.count));
         }
+
+        bag.updateFlag = true;
         param.rewards.addAll(list);
+        ServerLogger.info(JsonUtils.object2String(param));
         goodsService.addRewards(playerId, goodsEntries, LogConsume.PET_ACTIVITY_REWARD);
         param.errCode = Response.SUCCESS;
         return param;
+    }
+
+    public void gmAddPetPlayTimes(int playerId, int type, int count) {
+        PetBag bag = getPetBag(playerId);
+        PetActivityData petActivityData = bag.getPetActivityData(type);
+        petActivityData.setTotalCount(petActivityData.getTotalCount() + count);
     }
 }

@@ -202,5 +202,6 @@ public class Response {
 	public static final int PET_PLAYING=4351;//宠物正在工作中
 	public static final int PET_ACTIVITY_DOING=4352;//该活动正在进行中
 	public static final int PET_ACTIVITY_NOT_OPEN=4353;//活动未开启
+	public static final int PET_ACTIVITY_SAME=4354;//宠物重复
 
 }

@@ -200,6 +200,13 @@ public class GangService implements InitHandler {
         if (gangNames.get(name) != null) {
             return Response.GANG_SAME_NAME;
         }
+        PlayerData data = playerService.getPlayerData(playerId);
+        if (data.getLastQuitGang() > 0) { //24小时判断
+            if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR
+                    * ConfigData.globalParam().quitPunish) {
+                return Response.QUIT_GANG_LAST;
+            }
+        }
         GlobalConfig global = ConfigData.globalParam();
         // 验证等级
         if (player.getLev() < global.createGangLev) {
@@ -409,7 +416,7 @@ public class GangService implements InitHandler {
         GlobalConfig global = ConfigData.globalParam();
         // 验证申请次数
         /*if (gang.getApplys().size() >= global.applyLimit) {
-			return Response.GANG_APPLY_MAX;
+            return Response.GANG_APPLY_MAX;
 		}*/
 
         // 退出时间
@@ -460,6 +467,7 @@ public class GangService implements InitHandler {
                 return Response.GANG_FULL;
             }
             gang.getMembers().put(applyId, new GMember(applyId, ConfigData.globalParam().guildCopyTimes));
+
         }
         // 更新对方
         synchronized (applyer) {
@@ -620,8 +628,8 @@ public class GangService implements InitHandler {
         managerService.sendMail(title, content, null, new ArrayList<Integer>(
                 gang.getMembers().keySet()));
 
+        gang.getAdmins().remove(playerId);
         gang.setUpdated(true);
-
         return Response.SUCCESS;
     }
 
@@ -708,6 +716,8 @@ public class GangService implements InitHandler {
         sort(false);
         calculator.calculate(player);
 
+        PlayerData data = playerService.getPlayerData(playerId);
+        data.setLastQuitGang(System.currentTimeMillis());
 //		SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
 //				getMyGang(playerId), playerId);
         return Response.SUCCESS;
@@ -898,12 +908,20 @@ public class GangService implements InitHandler {
                 contribute = member.getContribute7();
                 newId = id;
             } else if (member.getContribute7() == contribute) {
-                Player newPlayer = playerService.getPlayer(newId);
-                if (adminPlayer.getFight() > newPlayer.getFight()) {
+                if (newId == 0) {
                     newId = id;
+                } else {
+                    Player newPlayer = playerService.getPlayer(newId);
+                    if (newPlayer == null) {
+                        ServerLogger.info("newId ==" + newId);
+                        newId = id;
+                        continue;
+                    }
+                    if (adminPlayer.getFight() > newPlayer.getFight()) {
+                        newId = id;
+                    }
                 }
             }
-
         }
         return newId;
     }

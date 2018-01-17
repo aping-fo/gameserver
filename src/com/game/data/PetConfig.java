@@ -30,4 +30,6 @@ public class PetConfig {
 	public int crit;//暴击加成
 	public int symptom;//异常加成
 	public int fu;//抗性加成
+	public float scale;//缩放比例
+	public float rotate;//旋转角度
 }

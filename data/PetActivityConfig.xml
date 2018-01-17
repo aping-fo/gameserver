@@ -5,6 +5,7 @@
 	<type>1</type>
 	<title>初级召唤塔</title>
 	<level>1</level>
+	<count>1</count>
 	<finishSec>360</finishSec>
 	<plotNum>1</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
@@ -12,6 +13,7 @@
 	<finishCostPerMins>[103,5]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -19,6 +21,7 @@
 	<type>1</type>
 	<title>中级召唤塔</title>
 	<level>2</level>
+	<count>1</count>
 	<finishSec>480</finishSec>
 	<plotNum>2</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
@@ -26,6 +29,7 @@
 	<finishCostPerMins>[103,6]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -33,6 +37,7 @@
 	<type>1</type>
 	<title>高级召唤塔</title>
 	<level>3</level>
+	<count>1</count>
 	<finishSec>560</finishSec>
 	<plotNum>3</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
@@ -40,6 +45,7 @@
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -47,13 +53,15 @@
 	<type>2</type>
 	<title>矿山1层</title>
 	<level>1</level>
+	<count>1</count>
 	<finishSec>560</finishSec>
-	<plotNum>1</plotNum>
+	<plotNum>2</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>30</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -61,13 +69,15 @@
 	<type>2</type>
 	<title>矿山2层</title>
 	<level>2</level>
+	<count>2</count>
 	<finishSec>560</finishSec>
-	<plotNum>1</plotNum>
+	<plotNum>2</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>60</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -75,13 +85,15 @@
 	<type>2</type>
 	<title>矿山3层</title>
 	<level>3</level>
+	<count>3</count>
 	<finishSec>560</finishSec>
-	<plotNum>1</plotNum>
+	<plotNum>2</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -89,13 +101,15 @@
 	<type>3</type>
 	<title>手工锻造</title>
 	<level>1</level>
+	<count>1</count>
 	<finishSec>560</finishSec>
-	<plotNum>2</plotNum>
+	<plotNum>1</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>30</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -103,13 +117,15 @@
 	<type>3</type>
 	<title>风车锻造</title>
 	<level>2</level>
+	<count>2</count>
 	<finishSec>560</finishSec>
-	<plotNum>2</plotNum>
+	<plotNum>1</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>60</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -117,13 +133,15 @@
 	<type>3</type>
 	<title>水利锻造</title>
 	<level>3</level>
+	<count>3</count>
 	<finishSec>560</finishSec>
-	<plotNum>2</plotNum>
+	<plotNum>1</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -131,13 +149,15 @@
 	<type>4</type>
 	<title>烹饪1级</title>
 	<level>1</level>
+	<count>1</count>
 	<finishSec>560</finishSec>
-	<plotNum>2</plotNum>
+	<plotNum>1</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>30</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -145,13 +165,15 @@
 	<type>4</type>
 	<title>烹饪2级</title>
 	<level>2</level>
+	<count>1</count>
 	<finishSec>560</finishSec>
-	<plotNum>4</plotNum>
+	<plotNum>2</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>60</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -159,13 +181,15 @@
 	<type>4</type>
 	<title>烹饪3级</title>
 	<level>3</level>
+	<count>1</count>
 	<finishSec>560</finishSec>
-	<plotNum>6</plotNum>
+	<plotNum>3</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -173,13 +197,15 @@
 	<type>5</type>
 	<title>探险1级</title>
 	<level>1</level>
+	<count>1</count>
 	<finishSec>560</finishSec>
-	<plotNum>3</plotNum>
+	<plotNum>2</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>30</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -187,13 +213,15 @@
 	<type>5</type>
 	<title>探险2级</title>
 	<level>2</level>
+	<count>2</count>
 	<finishSec>560</finishSec>
-	<plotNum>3</plotNum>
+	<plotNum>2</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>60</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 <config>
@@ -201,13 +229,15 @@
 	<type>5</type>
 	<title>探险3级</title>
 	<level>3</level>
+	<count>3</count>
 	<finishSec>560</finishSec>
-	<plotNum>3</plotNum>
+	<plotNum>2</plotNum>
 	<plotAcclerate>[40,50,60,70,80,90,100]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
 	<finishCostPerMins>[103,7]</finishCostPerMins>
 	<rewards>[[102,100],[103,100]]</rewards>
 	<dropId></dropId>
+	<dropCount>2</dropCount>
 	<rate>[1,2,3,4,5,6,7]</rate>
 </config>
 </root>

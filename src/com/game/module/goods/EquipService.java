@@ -170,6 +170,9 @@ public class EquipService {
 	public int upStar(int playerId,long id){
 		//已经到满星
 		Goods goods = goodsService.getGoods(playerId, id);
+		if(goods == null) {
+			ServerLogger.warn("EquipService#upStar id = " + id);
+		}
 		GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
 		int nextStar = goods.getStar()+1;
 		EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type*100000+cfg.level*100+nextStar);
@@ -179,7 +182,7 @@ public class EquipService {
 		//扣除材料
 		if(!playerService.decCurrency(playerId, Goods.EQUIP_TOOL,nextCfg.cost, LogConsume.UP_STAR_COST, cfg.id)){
 			return Response.NO_MATERIAL;
-		};
+		}
 		//更新星级
 		goods.setStar(nextStar);
 		//更新物品

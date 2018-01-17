@@ -33184,6 +33184,33 @@
 	<openId></openId>
 </config>
 <config>
+	<id>65000</id>
+	<atlas>Pet</atlas>
+	<name>宠物碎片</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice></buyPrice>
+	<sellPrice></sellPrice>
+	<type>701</type>
+	<level></level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+	<tipsType>2</tipsType>
+	<openId></openId>
+</config>
+<config>
 	<id>65011</id>
 	<atlas>Pet</atlas>
 	<name>小木乃伊碎片</name>
@@ -33375,7 +33402,7 @@
 <config>
 	<id>68000</id>
 	<atlas>Pet</atlas>
-	<name>变异药水1</name>
+	<name>变异药水</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -33402,7 +33429,7 @@
 <config>
 	<id>68001</id>
 	<atlas>Pet</atlas>
-	<name>变异药水2</name>
+	<name>变异药水1</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -33429,7 +33456,7 @@
 <config>
 	<id>68002</id>
 	<atlas>Pet</atlas>
-	<name>变异药水3</name>
+	<name>变异药水2</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -33456,7 +33483,7 @@
 <config>
 	<id>68003</id>
 	<atlas>Pet</atlas>
-	<name>变异药水4</name>
+	<name>变异药水3</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -33482,6 +33509,33 @@
 </config>
 <config>
 	<id>68004</id>
+	<atlas>Pet</atlas>
+	<name>变异药水4</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice></buyPrice>
+	<sellPrice></sellPrice>
+	<type>702</type>
+	<level></level>
+	<vocation></vocation>
+	<color>1</color>
+	<maxStack>999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+	<tipsType>2</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>68005</id>
 	<atlas>Pet</atlas>
 	<name>变异药水5</name>
 	<decompose></decompose>

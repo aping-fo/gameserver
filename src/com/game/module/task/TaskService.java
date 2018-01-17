@@ -120,9 +120,11 @@ public class TaskService implements Dispose {
         }
         for (Task task : tasks) {
             TaskConfig config = getConfig(task.getTaskId());
-            if (task.getState() == Task.STATE_INIT
-                    || (task.getState() == Task.STATE_SUBMITED && config.nextTaskId != 0))
-                continue;
+            if(!(config.taskType == 3 || config.taskType == 4)){
+                if (task.getState() == Task.STATE_INIT
+                        || (task.getState() == Task.STATE_SUBMITED && config.nextTaskId != 0))
+                    continue;
+            }
             STaskVo vo = new STaskVo();
             vo.id = task.getTaskId();
             vo.state = task.getState();
@@ -504,7 +506,7 @@ public class TaskService implements Dispose {
             tasks.addAll(gang.getTasks().values());
         }
         for (Task task : tasks) {
-            ServerLogger.info("do task id =" + task.getTaskId());
+            //ServerLogger.info("do task id =" + task.getTaskId());
             doTask(playerId, type, task, params);
         }
     }

@@ -147,9 +147,14 @@ public class ShopService {
 				if ((gCfg.vocation != 0 && gCfg.vocation != player.getVocation())) {
 					continue;
 				}
+
 				// 处理一下权重
-				result.add(ids.get(index));
-				rates.set(index, 0);
+				int itemId = ids.get(index);
+				if (!result.contains(itemId)) {
+					result.add(itemId);
+					rates.set(index, 0);
+				}
+
 				if (result.size() >= n) {
 					break;
 				}

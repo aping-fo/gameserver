@@ -1,13 +1,11 @@
 package com.game.module.rank;
 
 import com.game.event.InitHandler;
-import com.game.module.activity.ActivityConsts;
 import com.game.module.ladder.LadderService;
 import com.game.module.player.Player;
 import com.game.module.rank.vo.EndlessRankEntity;
 import com.game.module.rank.vo.FightingRankEntity;
 import com.game.module.rank.vo.LevelRankEntity;
-import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
 import com.game.util.CompressUtil;
 import com.game.util.JsonUtils;
@@ -90,7 +88,7 @@ public class RankService implements InitHandler {
 			Map<Integer, FightingRankEntity> fightingEntities = new ConcurrentHashMap<Integer, FightingRankEntity>();
 			for(Player player : players){
 				fightingEntities.put(player.getPlayerId(), new FightingRankEntity(player.getFight()));
-				titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING,player.getFight(), ActivityConsts.UpdateType.T_VALUE);
+				//titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING,player.getFight(), ActivityConsts.UpdateType.T_VALUE);
 			}
 			fightingList.putAll(fightingEntities);
 		}

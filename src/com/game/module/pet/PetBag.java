@@ -27,19 +27,30 @@ public class PetBag {
     private int fightPetId;
 
     private int showPetId;
-    //宠物玩法
-    private Map<Integer,PetActivity> petActivityMap = Maps.newHashMap();
-    private Map<Integer,Integer> activityCount = Maps.newHashMap();
+    //宠物玩法，活动ID --- 活动
+    private Map<Integer, PetActivity> petActivityMap = Maps.newHashMap();
+    private Map<Integer, PetActivityData> petActivityAttr = Maps.newHashMap();
+
+    public Map<Integer, PetActivityData> getPetActivityAttr() {
+        return petActivityAttr;
+    }
+
+    public PetActivityData getPetActivityData(int type) {
+        PetActivityData data = petActivityAttr.get(type);
+        if (data == null) {
+            data = new PetActivityData();
+            data.setLevel(1);
+            petActivityAttr.put(type, data);
+        }
+        return data;
+    }
+
+    public void setPetActivityAttr(Map<Integer, PetActivityData> petActivityAttr) {
+        this.petActivityAttr = petActivityAttr;
+    }
+
     public Map<Integer, PetActivity> getPetActivityMap() {
         return petActivityMap;
-    }
-
-    public Map<Integer, Integer> getActivityCount() {
-        return activityCount;
-    }
-
-    public void setActivityCount(Map<Integer, Integer> activityCount) {
-        this.activityCount = activityCount;
     }
 
     public void setPetActivityMap(Map<Integer, PetActivity> petActivityMap) {

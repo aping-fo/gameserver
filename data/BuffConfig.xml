@@ -22,6 +22,27 @@
 	<extraEffectParam>[[1000],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
 </config>
 <config>
+	<id>1102</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>3</buffType>
+	<buffSubType>0</buffSubType>
+	<name>主角复活保护</name>
+	<description>无敌1级</description>
+	<duration>3</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2023</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam>[[3000],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
 	<id>1201</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>

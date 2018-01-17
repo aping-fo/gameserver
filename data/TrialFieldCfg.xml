@@ -135,7 +135,7 @@
 	<difficulty>2</difficulty>
 	<role>20303</role>
 	<pos>[-120,0,0]</pos>
-	<spriteSize>[612.7,557]</spriteSize>
+	<spriteSize>[464,494]</spriteSize>
 	<copyId>1500302</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -229,7 +229,7 @@
 	<type>5</type>
 	<title>[shengming,生命]</title>
 	<features>[[3040,造成的伤害提升30%]]</features>
-	<weakness>[[2019,生命加成特性触发几率提升100%],[2027,生命加成效果提升200%]]</weakness>
+	<weakness>[[2019,生命特性触发几率提升100%],[2027,生命加成效果提升200%]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20106</role>
 	<pos>[-77,0,0]</pos>
@@ -243,7 +243,7 @@
 	<type>5</type>
 	<title>[shengming,生命]</title>
 	<features>[[3040,造成的伤害提升50%]]</features>
-	<weakness>[[2019,生命加成特性触发几率提升100%],[2027,生命加成效果提升180%]]</weakness>
+	<weakness>[[2019,生命特性触发几率提升100%],[2027,生命加成效果提升180%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20105</role>
 	<pos>[-37,0,0]</pos>
@@ -257,7 +257,7 @@
 	<type>5</type>
 	<title>[shengming,生命]</title>
 	<features>[[3040,造成的伤害提升80%]]</features>
-	<weakness>[[2019,生命加成特性触发几率提升100%],[2027,生命加成效果提升160%]]</weakness>
+	<weakness>[[2019,生命特性触发几率提升100%],[2027,生命加成效果提升160%]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20201</role>
 	<pos>[-40,0,0]</pos>
@@ -271,11 +271,11 @@
 	<type>5</type>
 	<title>[shengming,生命]</title>
 	<features>[[3040,造成的伤害提升110%]]</features>
-	<weakness>[[2019,生命加成特性触发几率提升100%],[2027,生命加成效果提升140%]]</weakness>
+	<weakness>[[2019,生命特性触发几率提升100%],[2027,生命加成效果提升140%]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20303</role>
 	<pos>[-95,0,0]</pos>
-	<spriteSize>[559,497]</spriteSize>
+	<spriteSize>[464,494]</spriteSize>
 	<copyId>1500504</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -414,8 +414,8 @@
 	<weakness>[[2016,眩晕后受到防御降低95%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20304</role>
-	<pos>[0,0,0]</pos>
-	<spriteSize>[373,585]</spriteSize>
+	<pos>[-61,-2,0]</pos>
+	<spriteSize>[480.1,462.3]</spriteSize>
 	<copyId>1500802</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -527,7 +527,7 @@
 	<difficulty>2</difficulty>
 	<role>20120</role>
 	<pos>[-77,0,0]</pos>
-	<spriteSize>[485,456.7]</spriteSize>
+	<spriteSize>[423,569]</spriteSize>
 	<copyId>1501002</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>

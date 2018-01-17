@@ -80,6 +80,7 @@ public class Pet {
         vo.passiveSkillId = passiveSkillId;
         vo.hasMutate = mutateFlag;
         vo.configId = configId;
+        vo.passiveSkillId2 = passiveSkillId2;
         return vo;
     }
 
