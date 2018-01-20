@@ -202,12 +202,13 @@ public class PlayerExtension {
 			result.code = Response.ERR_PARAM;
 			return result;
 		}
-		final Channel oldChannel = SessionManager.getInstance().getChannel(playerId);
-		if (oldChannel != null) {
-			ServerLogger.debug("duplicated login:", playerId);
-			SessionManager.getInstance().removePlayerAttr(oldChannel);
-			oldChannel.close();
-			logoutHandler.logout(playerId);
+		//final Channel oldChannel = SessionManager.getInstance().getChannel(playerId);
+		final User user = playerService.getOldAndCache(accName,playerId,channel);
+		if (user != null) {
+			ServerLogger.debug("duplicated login:", user.playerId);
+			SessionManager.getInstance().removePlayerAttr(user.channel);
+			user.channel.close();
+			logoutHandler.logout(user.playerId);
 		}
 		
 		player.setRefresh(false);

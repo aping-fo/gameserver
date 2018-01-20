@@ -2,37 +2,37 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
-	<name>竞技之王</name>
+	<name>千军破</name>
 	<titleType>2</titleType>
-	<icon>105</icon>
+	<icon>101</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>1</titleSubType>
-	<cond>[1,1,1]</cond>
+	<cond>[1,51,200]</cond>
 	<period>0</period>
 	<hp>0</hp>
-	<attack>100</attack>
+	<attack>60</attack>
 	<defense>0</defense>
-	<crit>30</crit>
+	<crit>18</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>竞技场第1名获得</gainPath>
+	<gainPath>竞技场第51-200名获得</gainPath>
 </config>
 <config>
 	<id>2</id>
-	<name>竞技绞肉机</name>
+	<name>不服SALA</name>
 	<titleType>2</titleType>
-	<icon>104</icon>
+	<icon>102</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>1</titleSubType>
-	<cond>[1,2,2]</cond>
+	<cond>[1,4,50]</cond>
 	<period>0</period>
 	<hp>0</hp>
-	<attack>90</attack>
+	<attack>70</attack>
 	<defense>0</defense>
-	<crit>27</crit>
+	<crit>21</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>竞技场第2名获得</gainPath>
+	<gainPath>竞技场第4-50名获得</gainPath>
 </config>
 <config>
 	<id>3</id>
@@ -53,125 +53,40 @@
 </config>
 <config>
 	<id>4</id>
-	<name>不服SALA</name>
+	<name>竞技绞肉机</name>
 	<titleType>2</titleType>
-	<icon>102</icon>
+	<icon>104</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>1</titleSubType>
-	<cond>[1,4,50]</cond>
+	<cond>[1,2,2]</cond>
 	<period>0</period>
-	<hp>0</hp>
-	<attack>70</attack>
-	<defense>0</defense>
-	<crit>21</crit>
-	<symptom>0</symptom>
-	<fu>0</fu>
-	<gainPath>竞技场第4-50名获得</gainPath>
-</config>
-<config>
-	<id>5</id>
-	<name>千军破</name>
-	<titleType>2</titleType>
-	<icon>101</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>1</titleSubType>
-	<cond>[1,51,200]</cond>
-	<period>0</period>
-	<hp>0</hp>
-	<attack>60</attack>
-	<defense>0</defense>
-	<crit>18</crit>
-	<symptom>0</symptom>
-	<fu>0</fu>
-	<gainPath>竞技场第51-200名获得</gainPath>
-</config>
-<config>
-	<id>6</id>
-	<name>传奇王者</name>
-	<titleType>2</titleType>
-	<icon>206</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,1,1]</cond>
-	<period>7</period>
-	<hp>0</hp>
-	<attack>100</attack>
-	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>50</symptom>
-	<fu>0</fu>
-	<gainPath>排位赛第1名获得</gainPath>
-</config>
-<config>
-	<id>7</id>
-	<name>至尊钻石</name>
-	<titleType>2</titleType>
-	<icon>205</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,2,2]</cond>
-	<period>7</period>
 	<hp>0</hp>
 	<attack>90</attack>
 	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>45</symptom>
+	<crit>27</crit>
+	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>排位赛第2名获得</gainPath>
+	<gainPath>竞技场第2名获得</gainPath>
 </config>
 <config>
-	<id>8</id>
-	<name>傲气铂金</name>
+	<id>5</id>
+	<name>竞技之王</name>
 	<titleType>2</titleType>
-	<icon>204</icon>
+	<icon>105</icon>
 	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,3,3]</cond>
-	<period>7</period>
+	<titleSubType>1</titleSubType>
+	<cond>[1,1,1]</cond>
+	<period>0</period>
 	<hp>0</hp>
-	<attack>80</attack>
+	<attack>100</attack>
 	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>40</symptom>
+	<crit>30</crit>
+	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>排位赛第3名获得</gainPath>
+	<gainPath>竞技场第1名获得</gainPath>
 </config>
 <config>
-	<id>9</id>
-	<name>暴走黄金</name>
-	<titleType>2</titleType>
-	<icon>203</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,4,50]</cond>
-	<period>7</period>
-	<hp>0</hp>
-	<attack>70</attack>
-	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>35</symptom>
-	<fu>0</fu>
-	<gainPath>排位赛第4-50名获得</gainPath>
-</config>
-<config>
-	<id>10</id>
-	<name>无畏白银</name>
-	<titleType>2</titleType>
-	<icon>202</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,51,200]</cond>
-	<period>7</period>
-	<hp>0</hp>
-	<attack>60</attack>
-	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>30</symptom>
-	<fu>0</fu>
-	<gainPath>排位赛第51-200名获得</gainPath>
-</config>
-<config>
-	<id>11</id>
+	<id>6</id>
 	<name>土著黄铜</name>
 	<titleType>2</titleType>
 	<icon>201</icon>
@@ -188,10 +103,95 @@
 	<gainPath>排位赛第201-500名获得</gainPath>
 </config>
 <config>
+	<id>7</id>
+	<name>无畏白银</name>
+	<titleType>2</titleType>
+	<icon>202</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,51,200]</cond>
+	<period>7</period>
+	<hp>0</hp>
+	<attack>60</attack>
+	<defense>0</defense>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛第51-200名获得</gainPath>
+</config>
+<config>
+	<id>8</id>
+	<name>暴走黄金</name>
+	<titleType>2</titleType>
+	<icon>203</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,4,50]</cond>
+	<period>7</period>
+	<hp>0</hp>
+	<attack>70</attack>
+	<defense>0</defense>
+	<crit>0</crit>
+	<symptom>35</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛第4-50名获得</gainPath>
+</config>
+<config>
+	<id>9</id>
+	<name>傲气铂金</name>
+	<titleType>2</titleType>
+	<icon>204</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,3,3]</cond>
+	<period>7</period>
+	<hp>0</hp>
+	<attack>80</attack>
+	<defense>0</defense>
+	<crit>0</crit>
+	<symptom>40</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛第3名获得</gainPath>
+</config>
+<config>
+	<id>10</id>
+	<name>至尊钻石</name>
+	<titleType>2</titleType>
+	<icon>205</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,2,2]</cond>
+	<period>7</period>
+	<hp>0</hp>
+	<attack>90</attack>
+	<defense>0</defense>
+	<crit>0</crit>
+	<symptom>45</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛第2名获得</gainPath>
+</config>
+<config>
+	<id>11</id>
+	<name>传奇王者</name>
+	<titleType>2</titleType>
+	<icon>206</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,1,1]</cond>
+	<period>7</period>
+	<hp>0</hp>
+	<attack>100</attack>
+	<defense>0</defense>
+	<crit>0</crit>
+	<symptom>50</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛第1名获得</gainPath>
+</config>
+<config>
 	<id>12</id>
 	<name>颤抖吧少年</name>
 	<titleType>1</titleType>
-	<icon>305</icon>
+	<icon>301</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
 	<cond>[3,10000]</cond>
@@ -208,7 +208,7 @@
 	<id>13</id>
 	<name>放学别走</name>
 	<titleType>1</titleType>
-	<icon>304</icon>
+	<icon>302</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
 	<cond>[3,20000]</cond>
@@ -242,7 +242,7 @@
 	<id>15</id>
 	<name>上面有人罩</name>
 	<titleType>1</titleType>
-	<icon>302</icon>
+	<icon>304</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
 	<cond>[3,100000]</cond>
@@ -259,7 +259,7 @@
 	<id>16</id>
 	<name>少年求侮辱</name>
 	<titleType>1</titleType>
-	<icon>301</icon>
+	<icon>305</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
 	<cond>[3,200000]</cond>

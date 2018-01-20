@@ -940,6 +940,7 @@ public class GangService implements InitHandler {
             boolean refresh = day % 7 == 0;
             for (GMember member : g.getMembers().values()) {
                 member.getDonationRecord().clear();
+                member.setChallengeTimes(ConfigData.globalParam().guildCopyTimes);
                 if (refresh) {
                     member.setContribute7(0);
                 }

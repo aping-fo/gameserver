@@ -68,10 +68,10 @@ public class DefaultLogoutHandler implements LogoutHandler{
 		try {
 
 			ServerLogger.info(".....user logout:" + playerId);
-
 			Player player = playerService.getPlayer(playerId);
 			player.setLastLogoutTime(new Date());
-			
+			playerService.removeChannel(player.getAccName(),SessionManager.getInstance().getChannel(playerId));
+
 			//清除副本实例
 			copyService.removeCopy(playerId);
 			

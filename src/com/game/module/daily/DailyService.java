@@ -1,42 +1,37 @@
 package com.game.module.daily;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Map.Entry;
-
-import com.game.data.VIPConfig;
-import com.game.module.activity.ActivityConsts;
-import com.game.module.activity.ActivityService;
-import com.game.module.activity.WelfareCard;
-import com.game.module.activity.WelfareCardService;
-import com.game.module.attach.catchgold.CatchGoldAttach;
-import com.game.module.attach.catchgold.CatchGoldLogic;
-import com.game.module.attach.leadaway.LeadAwayLogic;
-import com.game.module.gang.GangDungeonService;
-import com.game.module.sct.SkillCardTrainService;
-import com.game.module.sign.SignService;
-import com.game.util.ConfigData;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.game.event.InitHandler;
+import com.game.module.activity.ActivityService;
+import com.game.module.activity.WelfareCardService;
 import com.game.module.attach.arena.ArenaLogic;
+import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.endless.EndlessLogic;
 import com.game.module.attach.experience.ExperienceLogic;
+import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.attach.lottery.LotteryLogic;
 import com.game.module.attach.training.trainingLogic;
 import com.game.module.attach.treasure.TreasureLogic;
 import com.game.module.copy.CopyService;
+import com.game.module.gang.GangDungeonService;
 import com.game.module.gang.GangService;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.sct.SkillCardTrainService;
 import com.game.module.shop.ShopService;
+import com.game.module.sign.SignService;
 import com.game.module.task.TaskService;
 import com.game.module.vip.VipExtension;
 import com.game.module.vip.VipService;
 import com.game.params.DailyVo;
 import com.game.params.Int2Param;
+import com.game.util.ConfigData;
 import com.server.SessionManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Map.Entry;
 
 @Service
 public class DailyService implements InitHandler {
@@ -209,7 +204,7 @@ public class DailyService implements InitHandler {
 		trainingLogic.dailyReset(playerId);
 		lotteryLogic.dailyReset(playerId);
 		catchGoldLogic.dailyReset(playerId);
-		gangDungeonService.dailyReset(playerId);
+		//gangDungeonService.dailyReset(playerId);
 		activityService.dailyRest(playerId);
 		welfareCardService.daily(playerId);
 		skillCardTrainService.dailyRest(playerId);

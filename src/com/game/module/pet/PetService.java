@@ -430,6 +430,7 @@ public class PetService implements InitHandler {
         int rand = RandomUtil.randInt(100);
         if (rand >= defaultRnd) { //变异成功
             mutatePet.setMutateFlag(true);
+            cli.param1 = Response.SUCCESS;
             mutatePet.setConfigId(petConfig.mutateId);
             int newSkillId = skillIds.get(RandomUtil.randInt(skillIds.size()));
             if (mutatePet.getPassiveSkillId() == 0) {
@@ -437,13 +438,13 @@ public class PetService implements InitHandler {
             } else {
                 mutatePet.setPassiveSkillId2(newSkillId);
             }
-
             ServerLogger.info(JsonUtils.object2String(mutatePet));
+        } else {
+            cli.param1 = 1;
         }
 
         List<Pet> addPets = Lists.newArrayList(mutatePet);
         pushUpdateBag(playerId, addPets, updateIds);
-        cli.param1 = Response.SUCCESS;
         cli.param2 = mutateID;
         return cli;
     }

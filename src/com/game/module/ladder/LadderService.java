@@ -123,7 +123,7 @@ public class LadderService implements InitHandler {
                     ServerLogger.err(e, "排位赛匹配异常");
                 }
             }
-        }, 10, 4, TimeUnit.SECONDS);
+        }, 10, 10, TimeUnit.SECONDS);
 
         //1S定时
         timerService.scheduleAtFixedRate(new Runnable() {
@@ -179,80 +179,39 @@ public class LadderService implements InitHandler {
                 continue;
             }
 
-            for (Room target : allRooms.values()) {
-                if (source.matchFlag
-                        || source.exitFlag || source.fightFlag) { // check source room again
-                    break;
-                }
+            for (int i = 0; i < 5; i++) {
+                for (Room target : allRooms.values()) {
+                    if (source.matchFlag
+                            || source.exitFlag || source.fightFlag) { // check source room again
+                        break;
+                    }
 
-                if (source.id == target.id) {
-                    source.selfMatchCount += 1;
-                    if (source.selfMatchCount >= 8) {
-                        matchingFail(source);
+                    if (source.id == target.id) {
+                        continue;
                     }
-                    continue;
-                }
 
-                if (target.exitFlag
-                        || target.matchFlag || target.fightFlag) { //check target room
-                    continue;
-                }
+                    if (target.exitFlag
+                            || target.matchFlag || target.fightFlag) { //check target room
+                        continue;
+                    }
 
-                if (debug) {
-                    startGame(source, target);
-                    break;
-                }
+                    if (debug) {
+                        startGame(source, target);
+                        break;
+                    }
 
-                int sourceScore = source.score;
-                if (source.time == 0) { //-5%
-                    if (target.score <= sourceScore && target.score >= sourceScore * (1 - 0.05)) {
+                    int minScore = (int) (source.score - ((source.score + 100) * (0.1 + 0.05 * i)));
+                    int maxScore = (int) (source.score + ((source.score + 100) * (0.1 + 0.05 * i)));
+                    if (target.score >= minScore && target.score <= maxScore) {
                         startGame(source, target);
                         break;
-                    }
-                } else if (source.time == 1) { // 5%
-                    if (target.score >= sourceScore && target.score <= sourceScore * (1 + 0.05)) {
-                        startGame(source, target);
-                        break;
-                    }
-                } else if (source.time == 2) { // -15%
-                    if (target.score <= sourceScore && target.score >= sourceScore * (1 - 0.15)) {
-                        startGame(source, target);
-                        break;
-                    }
-                } else if (source.time == 3) { // 15%
-                    if (target.score >= sourceScore && target.score <= sourceScore * (1 + 0.15)) {
-                        startGame(source, target);
-                        break;
-                    }
-                } else if (source.time == 4) { // -35%
-                    if (target.score <= sourceScore && target.score >= sourceScore * (1 - 0.35)) {
-                        startGame(source, target);
-                        break;
-                    }
-                } else if (source.time == 5) { // 35%
-                    if (target.score >= sourceScore && target.score <= sourceScore * (1 + 0.35)) {
-                        startGame(source, target);
-                        break;
-                    }
-                } else if (source.time == 6) { // -60%
-                    if (target.score <= sourceScore && target.score >= sourceScore * (1 - 0.6)) {
-                        startGame(source, target);
-                        break;
-                    }
-                } else if (source.time == 7) { // 60%
-                    if (target.score >= sourceScore && target.score <= sourceScore * (1 + 0.6)) {
-                        startGame(source, target);
-                        break;
-                    }
-                } else if (source.time == 8) {
-                    if (debug) {// 100% debug
-                        startGame(source, target);
-                    } else {
-                        matchingFail(source);
                     }
                 }
-                source.time += 1;
             }
+            if (source.time == 3) {
+                matchingFail(source);
+            }
+            source.time += 1;
         }
     }
 

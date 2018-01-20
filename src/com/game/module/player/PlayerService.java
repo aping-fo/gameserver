@@ -1,62 +1,47 @@
 package com.game.module.player;
 
-import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.TimeUnit;
-
+import com.game.SysConfig;
 import com.game.data.*;
 import com.game.event.DefaultLogoutHandler;
+import com.game.event.InitHandler;
 import com.game.module.activity.ActivityConsts;
 import com.game.module.activity.ActivityService;
-import com.game.module.group.GroupService;
-import com.game.module.pet.PetService;
-import com.game.module.team.TeamService;
-import com.game.module.title.TitleConsts;
-import com.game.module.title.TitleService;
-import com.game.params.IntParam;
-import com.google.common.collect.Lists;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.game.SysConfig;
-import com.game.event.InitHandler;
-import com.game.module.admin.MessageService;
 import com.game.module.daily.DailyService;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
-import com.game.module.goods.EquipService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
+import com.game.module.group.GroupService;
 import com.game.module.log.LogConsume;
-import com.game.module.mail.MailDao;
 import com.game.module.mail.MailService;
+import com.game.module.pet.PetService;
 import com.game.module.scene.Scene;
-import com.game.module.serial.SerialDataService;
 import com.game.module.skill.SkillCard;
 import com.game.module.skill.SkillService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
-import com.game.module.vip.VipService;
+import com.game.module.team.TeamService;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.game.params.Int2Param;
 import com.game.params.ListParam;
 import com.game.params.player.CRegVo;
 import com.game.params.player.PlayerVo;
-import com.game.util.CompressUtil;
-import com.game.util.ConfigData;
-import com.game.util.Context;
-import com.game.util.JsonUtils;
-import com.game.util.TimeUtil;
+import com.game.util.*;
+import com.google.common.collect.Lists;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import com.server.validate.AntiCheatService;
+import io.netty.channel.Channel;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.nio.charset.Charset;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class PlayerService implements InitHandler {
@@ -97,6 +82,7 @@ public class PlayerService implements InitHandler {
     private volatile Map<Integer, Player> players = new ConcurrentHashMap<Integer, Player>();
     private volatile Map<Integer, PlayerData> playerDatas = new ConcurrentHashMap<Integer, PlayerData>();
     private volatile Map<String, Integer> nameCaches = new ConcurrentHashMap<String, Integer>();
+    private volatile Map<String, User> userMap = new ConcurrentHashMap<>();
 
     public static final String ROBOT = "sys";
 
@@ -307,7 +293,7 @@ public class PlayerService implements InitHandler {
                     }
                 }
                 /*Context.getTimerService().scheduleDelay(new Runnable() {
-					@Override
+                    @Override
 					public void run() {*/
                 //goodsService.addRewards(playerId, newbieRewards, LogConsume.GM);
                 String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
@@ -355,7 +341,7 @@ public class PlayerService implements InitHandler {
         //活动检测
         activityService.onLogin(playerId);
         titleService.onLogin(playerId);
-        nameCaches.putIfAbsent(player.getName(), player.getPlayerId());
+        nameCaches.put(player.getName(), player.getPlayerId());
     }
 
     public PlayerVo toSLoginVo(int playerId) {
@@ -943,6 +929,24 @@ public class PlayerService implements InitHandler {
     }
 
     public void selectRole(int playerId) {
+        Player player = players.get(playerId);
+        userMap.remove(player.getAccName());
         logoutHandler.logout(playerId);
+    }
+
+    public User getOldAndCache(String name, int playerId,Channel channel) {
+        User user = null;
+        if (userMap.containsKey(name)) {
+            user = userMap.remove(name);
+        }
+        userMap.put(name, new User(playerId,channel));
+        return user;
+    }
+
+    public void removeChannel(String name,Channel channel) {
+        User user = userMap.get(name);
+        if(user!= null && user.channel == channel){
+            userMap.remove(name);
+        }
     }
 }
