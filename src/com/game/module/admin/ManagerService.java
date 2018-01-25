@@ -336,4 +336,42 @@ public class ManagerService implements InitHandler{
 		bans.put(playerId, u);
 		SessionManager.getInstance().kick(playerId);
 	}
+
+	//=====================================================
+
+	/**
+	 * 帐号信息
+	 * @param params
+	 * @return
+	 */
+	private String account(Map<String,String> params){
+		return "";
+	}
+
+	/**
+	 * 角色信息
+	 * @param params
+	 * @return
+	 */
+	private String role(Map<String,String> params){
+		return "";
+	}
+
+	/**
+	 * 玩家提问
+	 * @param params
+	 * @return
+	 */
+	private String question(Map<String,String> params){
+		return "";
+	}
+
+	/**
+	 * 公告发布
+	 * @param params
+	 * @return
+	 */
+	private String notice(Map<String,String> params){
+		return "";
+	}
 }

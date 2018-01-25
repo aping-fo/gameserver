@@ -182,8 +182,8 @@
 </config>
 <config>
 	<id>111031</id>
-	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
-	<name>斗笠道人</name>
+	<desc>战略若太复杂,必然失败。</desc>
+	<name>最后的武士</name>
 	<vocation>1</vocation>
 	<icon>1031</icon>
 	<atlas>Fashion_1</atlas>
@@ -212,8 +212,8 @@
 </config>
 <config>
 	<id>111032</id>
-	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
-	<name>斗笠道人</name>
+	<desc>战略若太复杂,必然失败。</desc>
+	<name>最后的武士</name>
 	<vocation>1</vocation>
 	<icon>1032</icon>
 	<atlas>Fashion_1</atlas>
@@ -242,8 +242,8 @@
 </config>
 <config>
 	<id>111033</id>
-	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
-	<name>斗笠道人</name>
+	<desc>战略若太复杂,必然失败。</desc>
+	<name>最后的武士</name>
 	<vocation>1</vocation>
 	<icon>1033</icon>
 	<atlas>Fashion_1</atlas>
@@ -541,6 +541,186 @@
 	<order>18</order>
 </config>
 <config>
+	<id>111071</id>
+	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
+	<name>斗笠道人</name>
+	<vocation>1</vocation>
+	<icon>1071</icon>
+	<atlas>Fashion_1</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#2C292B</outlineColor>
+	<path>Assets/Actor/Role/11107/11107_head.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>19</order>
+</config>
+<config>
+	<id>111072</id>
+	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
+	<name>斗笠道人</name>
+	<vocation>1</vocation>
+	<icon>1072</icon>
+	<atlas>Fashion_1</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#152229</outlineColor>
+	<path>Assets/Actor/Role/11107/11107_body.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>20</order>
+</config>
+<config>
+	<id>111073</id>
+	<desc>消灾解厄,接福接寿的符纸我这都有,你要不要来一张？</desc>
+	<name>斗笠道人</name>
+	<vocation>1</vocation>
+	<icon>1073</icon>
+	<atlas>Fashion_1</atlas>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId>1110073</effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#413F45</outlineColor>
+	<path>Assets/Actor/Role/11107/11107_equip.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>21</order>
+</config>
+<config>
+	<id>111081</id>
+	<desc>我喵（骚）起来连自己都害怕。</desc>
+	<name>哥特猫先森</name>
+	<vocation>1</vocation>
+	<icon>1081</icon>
+	<atlas>Fashion_1</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#2C292B</outlineColor>
+	<path>Assets/Actor/Role/11108/11108_head.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>22</order>
+</config>
+<config>
+	<id>111082</id>
+	<desc>我喵（骚）起来连自己都害怕。</desc>
+	<name>哥特猫先森</name>
+	<vocation>1</vocation>
+	<icon>1082</icon>
+	<atlas>Fashion_1</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#152229</outlineColor>
+	<path>Assets/Actor/Role/11108/11108_body.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>23</order>
+</config>
+<config>
+	<id>111083</id>
+	<desc>我喵（骚）起来连自己都害怕。</desc>
+	<name>哥特猫先森</name>
+	<vocation>1</vocation>
+	<icon>1083</icon>
+	<atlas>Fashion_1</atlas>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId>1110083</effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#413F45</outlineColor>
+	<path>Assets/Actor/Role/11108/11108_equip.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>24</order>
+</config>
+<config>
 	<id>121011</id>
 	<desc>刺客默认头部</desc>
 	<name>默认时装</name>
@@ -568,7 +748,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>19</order>
+	<order>25</order>
 </config>
 <config>
 	<id>121012</id>
@@ -598,7 +778,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>20</order>
+	<order>26</order>
 </config>
 <config>
 	<id>121013</id>
@@ -628,7 +808,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>21</order>
+	<order>27</order>
 </config>
 <config>
 	<id>121021</id>
@@ -658,7 +838,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>22</order>
+	<order>28</order>
 </config>
 <config>
 	<id>121022</id>
@@ -688,7 +868,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>23</order>
+	<order>29</order>
 </config>
 <config>
 	<id>121023</id>
@@ -718,7 +898,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>24</order>
+	<order>30</order>
 </config>
 <config>
 	<id>121031</id>
@@ -748,7 +928,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>25</order>
+	<order>31</order>
 </config>
 <config>
 	<id>121032</id>
@@ -778,7 +958,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>26</order>
+	<order>32</order>
 </config>
 <config>
 	<id>121033</id>
@@ -808,7 +988,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>27</order>
+	<order>33</order>
 </config>
 <config>
 	<id>121041</id>
@@ -838,7 +1018,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>28</order>
+	<order>34</order>
 </config>
 <config>
 	<id>121042</id>
@@ -868,7 +1048,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>29</order>
+	<order>35</order>
 </config>
 <config>
 	<id>121043</id>
@@ -898,7 +1078,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>30</order>
+	<order>36</order>
 </config>
 <config>
 	<id>121051</id>
@@ -928,7 +1108,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>31</order>
+	<order>37</order>
 </config>
 <config>
 	<id>121052</id>
@@ -958,7 +1138,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>32</order>
+	<order>38</order>
 </config>
 <config>
 	<id>121053</id>
@@ -988,7 +1168,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>33</order>
+	<order>39</order>
 </config>
 <config>
 	<id>121061</id>
@@ -1018,7 +1198,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>34</order>
+	<order>40</order>
 </config>
 <config>
 	<id>121062</id>
@@ -1048,7 +1228,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>35</order>
+	<order>41</order>
 </config>
 <config>
 	<id>121063</id>
@@ -1078,7 +1258,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>36</order>
+	<order>42</order>
 </config>
 <config>
 	<id>121071</id>
@@ -1108,7 +1288,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>37</order>
+	<order>43</order>
 </config>
 <config>
 	<id>121072</id>
@@ -1138,7 +1318,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>38</order>
+	<order>44</order>
 </config>
 <config>
 	<id>121073</id>
@@ -1168,7 +1348,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>39</order>
+	<order>45</order>
 </config>
 <config>
 	<id>121081</id>
@@ -1198,7 +1378,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>40</order>
+	<order>46</order>
 </config>
 <config>
 	<id>121082</id>
@@ -1228,7 +1408,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>41</order>
+	<order>47</order>
 </config>
 <config>
 	<id>121083</id>
@@ -1258,7 +1438,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>42</order>
+	<order>48</order>
 </config>
 <config>
 	<id>131011</id>
@@ -1288,7 +1468,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>43</order>
+	<order>49</order>
 </config>
 <config>
 	<id>131012</id>
@@ -1318,7 +1498,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>44</order>
+	<order>50</order>
 </config>
 <config>
 	<id>131013</id>
@@ -1348,7 +1528,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>45</order>
+	<order>51</order>
 </config>
 <config>
 	<id>131021</id>
@@ -1378,7 +1558,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,103]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>46</order>
+	<order>52</order>
 </config>
 <config>
 	<id>131022</id>
@@ -1408,7 +1588,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,104]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>47</order>
+	<order>53</order>
 </config>
 <config>
 	<id>131023</id>
@@ -1438,7 +1618,7 @@
 	<timeLimit>3600</timeLimit>
 	<costPrice>[102,105]</costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>48</order>
+	<order>54</order>
 </config>
 <config>
 	<id>131031</id>
@@ -1468,7 +1648,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>49</order>
+	<order>55</order>
 </config>
 <config>
 	<id>131032</id>
@@ -1498,7 +1678,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>50</order>
+	<order>56</order>
 </config>
 <config>
 	<id>131033</id>
@@ -1528,7 +1708,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>51</order>
+	<order>57</order>
 </config>
 <config>
 	<id>131041</id>
@@ -1558,7 +1738,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>52</order>
+	<order>58</order>
 </config>
 <config>
 	<id>131042</id>
@@ -1588,7 +1768,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>53</order>
+	<order>59</order>
 </config>
 <config>
 	<id>131043</id>
@@ -1618,7 +1798,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>54</order>
+	<order>60</order>
 </config>
 <config>
 	<id>131051</id>
@@ -1648,7 +1828,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>55</order>
+	<order>61</order>
 </config>
 <config>
 	<id>131052</id>
@@ -1678,7 +1858,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>56</order>
+	<order>62</order>
 </config>
 <config>
 	<id>131053</id>
@@ -1708,7 +1888,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>57</order>
+	<order>63</order>
 </config>
 <config>
 	<id>131061</id>
@@ -1738,7 +1918,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>55</order>
+	<order>64</order>
 </config>
 <config>
 	<id>131062</id>
@@ -1768,7 +1948,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>56</order>
+	<order>65</order>
 </config>
 <config>
 	<id>131063</id>
@@ -1798,7 +1978,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>57</order>
+	<order>66</order>
 </config>
 <config>
 	<id>131071</id>
@@ -1828,7 +2008,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>58</order>
+	<order>67</order>
 </config>
 <config>
 	<id>131072</id>
@@ -1858,7 +2038,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>59</order>
+	<order>68</order>
 </config>
 <config>
 	<id>131073</id>
@@ -1888,7 +2068,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>60</order>
+	<order>69</order>
 </config>
 <config>
 	<id>131081</id>
@@ -1918,7 +2098,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>61</order>
+	<order>70</order>
 </config>
 <config>
 	<id>131082</id>
@@ -1948,7 +2128,7 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>62</order>
+	<order>71</order>
 </config>
 <config>
 	<id>131083</id>
@@ -1978,6 +2158,276 @@
 	<timeLimit>0</timeLimit>
 	<costPrice></costPrice>
 	<duplicateReturn>100</duplicateReturn>
-	<order>63</order>
+	<order>72</order>
+</config>
+<config>
+	<id>131091</id>
+	<desc>魔法,炸裂吧！</desc>
+	<name>精灵笔记</name>
+	<vocation>3</vocation>
+	<icon>3091</icon>
+	<atlas>Fashion_3</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#492214</outlineColor>
+	<path>Assets/Actor/Role/13109/13109_head.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>73</order>
+</config>
+<config>
+	<id>131092</id>
+	<desc>魔法,炸裂吧！</desc>
+	<name>精灵笔记</name>
+	<vocation>3</vocation>
+	<icon>3092</icon>
+	<atlas>Fashion_3</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#563232</outlineColor>
+	<path>Assets/Actor/Role/13109/13109_body.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>74</order>
+</config>
+<config>
+	<id>131093</id>
+	<desc>魔法,炸裂吧！</desc>
+	<name>精灵笔记</name>
+	<vocation>3</vocation>
+	<icon>3093</icon>
+	<atlas>Fashion_3</atlas>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId>1310093</effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#472A2C</outlineColor>
+	<path>Assets/Actor/Role/13109/13109_equip.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>75</order>
+</config>
+<config>
+	<id>131101</id>
+	<desc>你一点都不可爱,猫咪女王,咬他。</desc>
+	<name>动感喵喵</name>
+	<vocation>3</vocation>
+	<icon>3101</icon>
+	<atlas>Fashion_3</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#492214</outlineColor>
+	<path>Assets/Actor/Role/13110/13110_head.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>76</order>
+</config>
+<config>
+	<id>131102</id>
+	<desc>你一点都不可爱,猫咪女王,咬他。</desc>
+	<name>动感喵喵</name>
+	<vocation>3</vocation>
+	<icon>3102</icon>
+	<atlas>Fashion_3</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#563232</outlineColor>
+	<path>Assets/Actor/Role/13110/13110_body.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>77</order>
+</config>
+<config>
+	<id>131103</id>
+	<desc>你一点都不可爱,猫咪女王,咬他。</desc>
+	<name>动感喵喵</name>
+	<vocation>3</vocation>
+	<icon>3103</icon>
+	<atlas>Fashion_3</atlas>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId>1310103</effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#472A2C</outlineColor>
+	<path>Assets/Actor/Role/13110/13110_equip.prefab</path>
+	<path2></path2>
+	<hp>1593</hp>
+	<attack>67</attack>
+	<defense>47</defense>
+	<crit>17</crit>
+	<symptom>17</symptom>
+	<fu>37</fu>
+	<limitType>0</limitType>
+	<limitParams></limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>78</order>
+</config>
+<config>
+	<id>131111</id>
+	<desc>那个敌人,好像值得一战！</desc>
+	<name>暗地魔女</name>
+	<vocation>3</vocation>
+	<icon>3111</icon>
+	<atlas>Fashion_3</atlas>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#502718</outlineColor>
+	<path>Assets/Actor/Role/13111/13111_head.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>79</order>
+</config>
+<config>
+	<id>131112</id>
+	<desc>那个敌人,好像值得一战！</desc>
+	<name>暗地魔女</name>
+	<vocation>3</vocation>
+	<icon>3112</icon>
+	<atlas>Fashion_3</atlas>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId></effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#542D22</outlineColor>
+	<path>Assets/Actor/Role/13111/13111_body.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>80</order>
+</config>
+<config>
+	<id>131113</id>
+	<desc>那个敌人,好像值得一战！</desc>
+	<name>暗地魔女</name>
+	<vocation>3</vocation>
+	<icon>3113</icon>
+	<atlas>Fashion_3</atlas>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<effectId>1310113</effectId>
+	<effect2Id></effect2Id>
+	<outlineColor>#472313</outlineColor>
+	<path>Assets/Actor/Role/13111/13111_equip.prefab</path>
+	<path2></path2>
+	<hp>1992</hp>
+	<attack>83</attack>
+	<defense>58</defense>
+	<crit>21</crit>
+	<symptom>21</symptom>
+	<fu>46</fu>
+	<limitType>1</limitType>
+	<limitParams>[3]</limitParams>
+	<price>[102,450]</price>
+	<timeLimit>0</timeLimit>
+	<costPrice></costPrice>
+	<duplicateReturn>100</duplicateReturn>
+	<order>81</order>
 </config>
 </root>

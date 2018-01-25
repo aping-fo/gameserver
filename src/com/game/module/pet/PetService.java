@@ -709,17 +709,20 @@ public class PetService implements InitHandler {
             }
             PetActivityConfig config = ConfigData.getConfig(PetActivityConfig.class, activityId);
             PetActivityData petActivityData = bag.getPetActivityData(config.type);
-            int level = petActivityData.getLevel();
-            if (petActivityData.getDoingCount() + count >= config.count) { //超过当前可以并行活动个数
+            int curLevel = getCurrLevel(config.type, petActivityData.getTotalCount());
+            if (config.level > curLevel) {
+                param.param = Response.PET_ACTIVITY_NOT_OPEN;
+                return param;
+            }
+            if (petActivityData.getMaxCount() < config.count) {
+                petActivityData.setMaxCount(config.count);
+            }
+            if (petActivityData.getDoingCount() + count >= petActivityData.getMaxCount()) { //超过当前可以并行活动个数
                 param.param = Response.PET_ACTIVITY_DOING;
                 return param;
             }
             count += 1;
 
-            if (config.level != level) {
-                param.param = Response.PET_ACTIVITY_NOT_OPEN;
-                return param;
-            }
             type = config.type;
         }
         petSet.clear();
@@ -787,6 +790,19 @@ public class PetService implements InitHandler {
         return param;
     }
 
+    private int getCurrLevel(int type, int count) {
+        int level = 1;
+        for (Object obj : GameData.getConfigs(PetActivityConfig.class)) {
+            PetActivityConfig cfg = (PetActivityConfig) obj;
+            if (type == cfg.type) {
+                if (cfg.levelUpCondition != 0 && count >= cfg.levelUpCondition) {
+                    level = cfg.level + 1;
+                }
+            }
+        }
+        return level;
+    }
+
     /**
      * 领取活动奖励
      *
@@ -841,6 +857,7 @@ public class PetService implements InitHandler {
         if (data.getDoingCount() > 0) {
             data.setDoingCount(data.getDoingCount() - 1);
         }
+
 
         List<GoodsEntry> goodsEntries = Lists.newArrayList();
         for (int[] arr : config.rewards) {

@@ -442,6 +442,69 @@
 	<skillId>6007701</skillId>
 </config>
 <config>
+	<id>6008101</id>
+	<name>宠物8主动技能lv1</name>
+	<describe>宠物8主动技能lv1</describe>
+	<type>1</type>
+	<quality>1</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6008101</skillId>
+</config>
+<config>
+	<id>6008201</id>
+	<name>宠物8主动技能lv2</name>
+	<describe>宠物8主动技能lv2</describe>
+	<type>1</type>
+	<quality>2</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6008201</skillId>
+</config>
+<config>
+	<id>6008301</id>
+	<name>宠物8主动技能lv3</name>
+	<describe>宠物8主动技能lv3</describe>
+	<type>1</type>
+	<quality>3</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6008301</skillId>
+</config>
+<config>
+	<id>6008401</id>
+	<name>宠物8主动技能lv4</name>
+	<describe>宠物8主动技能lv4</describe>
+	<type>1</type>
+	<quality>4</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6008401</skillId>
+</config>
+<config>
+	<id>6008501</id>
+	<name>宠物8主动技能lv5</name>
+	<describe>宠物8主动技能lv5</describe>
+	<type>1</type>
+	<quality>5</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6008501</skillId>
+</config>
+<config>
+	<id>6008601</id>
+	<name>宠物8主动技能lv6</name>
+	<describe>宠物8主动技能lv6</describe>
+	<type>1</type>
+	<quality>6</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6008601</skillId>
+</config>
+<config>
+	<id>6008701</id>
+	<name>宠物8主动技能lv7</name>
+	<describe>宠物8主动技能lv7</describe>
+	<type>1</type>
+	<quality>7</quality>
+	<swallowPercents></swallowPercents>
+	<skillId>6008701</skillId>
+</config>
+<config>
 	<id>100</id>
 	<name>被动技能lv1</name>
 	<describe>被动技能lv1</describe>
@@ -505,6 +568,15 @@
 	<skillId>13101025</skillId>
 </config>
 <config>
+	<id>108</id>
+	<name>被动技能lv8</name>
+	<describe>被动技能lv8</describe>
+	<type>2</type>
+	<quality>7</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId>13101025</skillId>
+</config>
+<config>
 	<id>1001</id>
 	<name>超级被动技能lv1</name>
 	<describe>超级被动技能lv1</describe>
@@ -562,6 +634,15 @@
 	<id>1007</id>
 	<name>超级被动技能lv7</name>
 	<describe>超级被动技能lv7</describe>
+	<type>2</type>
+	<quality>7</quality>
+	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<skillId>13104042</skillId>
+</config>
+<config>
+	<id>1008</id>
+	<name>超级被动技能lv8</name>
+	<describe>超级被动技能lv8</describe>
 	<type>2</type>
 	<quality>7</quality>
 	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>

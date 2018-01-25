@@ -25,7 +25,7 @@ import java.util.Map;
 @Service
 public class SignService {
     private final static int SIGN_DONE = 1; //当天已经签到
-    private final static int SIGN_TOTAL_DAY = 30; //签到最大天数
+    private final static int SIGN_TOTAL_DAY = 25; //签到最大天数
     @Autowired
     private PlayerService playerService;
     @Autowired

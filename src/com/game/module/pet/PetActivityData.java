@@ -17,6 +17,19 @@ public class PetActivityData {
      */
     private int doingCount;
 
+    /**
+     * 最大次数
+     */
+    private int maxCount;
+
+    public int getMaxCount() {
+        return maxCount;
+    }
+
+    public void setMaxCount(int maxCount) {
+        this.maxCount = maxCount;
+    }
+
     public int getTotalCount() {
         return totalCount;
     }

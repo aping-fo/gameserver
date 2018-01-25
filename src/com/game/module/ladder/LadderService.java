@@ -255,12 +255,12 @@ public class LadderService implements InitHandler {
      * @param target
      */
     private void startGame(Room source, Room target) {
-        if (source.matchFlag || target.matchFlag
-                || source.exitFlag || target.exitFlag
-                || source.fightFlag || target.fightFlag) { //check again
+        if (source.exitFlag || target.exitFlag) { //check again
             matchingFail(source);
+            matchingFail(target);
             return;
         }
+
         allRooms.remove(target.id);
         source.roomPlayers.putAll(target.roomPlayers);
 
