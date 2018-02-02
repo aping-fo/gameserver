@@ -11,4 +11,5 @@ public class PetSkillConfig {
 	public int quality;//品质
 	public int[] swallowPercents;//吞噬获得的概率
 	public int skillId;//技能表id
+	public int fight;//战斗力
 }

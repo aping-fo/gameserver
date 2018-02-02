@@ -175,11 +175,10 @@ public class RankExtension {
 
 	private <T extends IProtocol> ListParam<T> getRankList(int playerId, int type,
 			Class<T> clazz, IParser<T> parser) {
-		RankingList<IRankCA> ranking = rankService
-				.getRankingList(type);
+		RankingList<IRankCA> ranking = rankService.getRankingList(type);
 		List<RankEntity> list = ranking.getOrderList();
-		ListParam<T> result = new ListParam<T>();
-		result.params = new ArrayList<T>();
+		ListParam<T> result = new ListParam<>();
+		result.params = new ArrayList<>();
 		for (RankEntity entity : list) {
 			result.params.add(parser.parse(entity));
 		}

@@ -10,6 +10,7 @@ import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
 import com.game.module.goods.Goods;
 import com.game.util.ConfigData;
+import com.google.common.collect.Maps;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -121,6 +122,7 @@ public class LotteryExtension {
 			result.rewards = rewardService.getRewards(playerId, cfg.singleId, 1, LogConsume.LOTTERY_REWARD);			
 		}
 
+		Map<Integer,Integer> qualityCount = Maps.newHashMap();
 		for(Reward reward : result.rewards) {
 			GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class,reward.id);
 			if(conf == null) {
@@ -130,11 +132,21 @@ public class LotteryExtension {
 			if(conf.type == Goods.SKILL_CARD && (conf.color == Goods.QUALITY_VIOLET || conf.color == Goods.QUALITY_ORANGE)) { //消息广播
 				messageService.sendSysMsg(MessageConsts.MSG_LOTTERY,player.getName(),conf.name);
 			}
+			Integer count = qualityCount.get(conf.color);
+			if(count == null){
+				count = 0;
+			}
+			qualityCount.put(conf.color,count + 1);
 		}
+
+		for(Map.Entry<Integer,Integer> s : qualityCount.entrySet()) {
+			taskService.doTask(playerId, Task.TYPE_LOTTERY_COUNT,s.getKey(), s.getValue());
+		}
+
 		record.count += time;
 		record.curCount += time;
 		attach.commitSync();
-		taskService.doTask(playerId, Task.FINISH_LOTTERY, param.param1, time);
+		taskService.doTask(playerId, Task.FINISH_LOTTERY,param.param1, time);
 		return result;
 	}
 }

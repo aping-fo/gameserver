@@ -9,147 +9,167 @@ import com.game.module.attach.training.TrainOpponent;
 import com.game.module.copy.CopyRank;
 import com.game.module.gang.GangDungeon;
 import com.game.module.ladder.Ladder;
+import com.google.common.collect.Maps;
 
 /**
- * 全局的序列化数据  
+ * 全局的序列化数据
  */
 public class SerialData {
-	
-	private boolean initArena;
-	private boolean initRobot;
-	private long trainingReset;
-	private Map<Integer, TrainOpponent> opponents = new ConcurrentHashMap<Integer, TrainOpponent>();
-	private Map<Integer, List<Integer>> sectionOpponents = new ConcurrentHashMap<Integer, List<Integer>>(); 
-	private ConcurrentHashMap<Integer, ArenaPlayer> ranks = new ConcurrentHashMap<Integer, ArenaPlayer>();
-	private ConcurrentHashMap<Integer, ArenaPlayer> playerRanks = new ConcurrentHashMap<Integer, ArenaPlayer>();
-	private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> friendRequests = new ConcurrentHashMap<Integer, ConcurrentHashMap<Integer,Boolean>>();
-	private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> friendSendRequests = new ConcurrentHashMap<Integer, ConcurrentHashMap<Integer,Boolean>>();
-	
-	private ConcurrentHashMap<Integer, CopyRank> copyRanks = new ConcurrentHashMap<Integer, CopyRank>();
-	
-	// 玩家刷出的商品数据<商店类型,<玩家id,[商品id]>
-	private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>> playerRefreshShops = new ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>>();
-	//排位赛
-	private Map<Integer, Ladder> ladderMap = new ConcurrentHashMap<>();
-	//公会BOSS
-	private Map<Integer, GangDungeon> gangMap = new ConcurrentHashMap<>();
-	//公会重置时间
-	private long gangDailyReset = 0L;
-	
-	public SerialData(){
-		
-	}
 
-	public Map<Integer, GangDungeon> getGangMap() {
-		return gangMap;
-	}
+    private boolean initArena;
+    private boolean initRobot;
+    private long trainingReset;
+    private Map<Integer, TrainOpponent> opponents = new ConcurrentHashMap<Integer, TrainOpponent>();
+    private Map<Integer, List<Integer>> sectionOpponents = new ConcurrentHashMap<Integer, List<Integer>>();
+    private ConcurrentHashMap<Integer, ArenaPlayer> ranks = new ConcurrentHashMap<Integer, ArenaPlayer>();
+    private ConcurrentHashMap<Integer, ArenaPlayer> playerRanks = new ConcurrentHashMap<Integer, ArenaPlayer>();
+    private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> friendRequests = new ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>>();
+    private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> friendSendRequests = new ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>>();
+    private ConcurrentHashMap<Integer, CopyRank> copyRanks = new ConcurrentHashMap<Integer, CopyRank>();
 
-	public void setGangMap(Map<Integer, GangDungeon> gangMap) {
-		this.gangMap = gangMap;
-	}
+    // 玩家刷出的商品数据<商店类型,<玩家id,[商品id]>
+    private ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>> playerRefreshShops = new ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>>();
+    //排位赛
+    private Map<Integer, Ladder> ladderMap = new ConcurrentHashMap<>();
+    //公会BOSS
+    private Map<Integer, GangDungeon> gangMap = new ConcurrentHashMap<>();
+    //公会重置时间
+    private long gangDailyReset = 0L;
 
-	public ConcurrentHashMap<Integer, ArenaPlayer> getRanks() {
-		return ranks;
-	}
+    //玩家相关数据最高排名缓存
+    private Map<Integer, PlayerView> playerViews = new ConcurrentHashMap<>();
 
-	public void setRanks(ConcurrentHashMap<Integer, ArenaPlayer> ranks) {
-		this.ranks = ranks;
-	}
+    public SerialData() {
 
-	public ConcurrentHashMap<Integer, ArenaPlayer> getPlayerRanks() {
-		return playerRanks;
-	}
+    }
 
-	public void setPlayerRanks(ConcurrentHashMap<Integer, ArenaPlayer> playerRanks) {
-		this.playerRanks = playerRanks;
-	}
+    public Map<Integer, PlayerView> getPlayerViews() {
+        return playerViews;
+    }
 
-	public boolean getInitArena() {
-		return initArena;
-	}
+    public void setPlayerViews(Map<Integer, PlayerView> playerViews) {
+        this.playerViews = playerViews;
+    }
 
-	public void setInitArena(boolean initArena) {
-		this.initArena = initArena;
-	}
+    public PlayerView getPlayerView(int playerId) {
+        PlayerView view = playerViews.get(playerId);
+        if (view == null) {
+            view = new PlayerView();
+            playerViews.put(playerId, view);
+        }
+        return view;
+    }
 
-	public boolean isInitRobot() {
-		return initRobot;
-	}
+    public Map<Integer, GangDungeon> getGangMap() {
+        return gangMap;
+    }
 
-	public void setInitRobot(boolean initRobot) {
-		this.initRobot = initRobot;
-	}
+    public void setGangMap(Map<Integer, GangDungeon> gangMap) {
+        this.gangMap = gangMap;
+    }
 
-	public long getTrainingReset() {
-		return trainingReset;
-	}
+    public ConcurrentHashMap<Integer, ArenaPlayer> getRanks() {
+        return ranks;
+    }
 
-	public void setTrainingReset(long trainingReset) {
-		this.trainingReset = trainingReset;
-	}
+    public void setRanks(ConcurrentHashMap<Integer, ArenaPlayer> ranks) {
+        this.ranks = ranks;
+    }
 
-	public ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> getFriendRequests() {
-		return friendRequests;
-	}
+    public ConcurrentHashMap<Integer, ArenaPlayer> getPlayerRanks() {
+        return playerRanks;
+    }
 
-	public void setFriendRequests(ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> friendRequests) {
-		this.friendRequests = friendRequests;
-	}
+    public void setPlayerRanks(ConcurrentHashMap<Integer, ArenaPlayer> playerRanks) {
+        this.playerRanks = playerRanks;
+    }
 
-	public ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> getFriendSendRequests() {
-		return friendSendRequests;
-	}
+    public boolean getInitArena() {
+        return initArena;
+    }
 
-	public void setFriendSendRequests(ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> friendSendRequests) {
-		this.friendSendRequests = friendSendRequests;
-	}
+    public void setInitArena(boolean initArena) {
+        this.initArena = initArena;
+    }
 
-	public ConcurrentHashMap<Integer, CopyRank> getCopyRanks() {
-		return copyRanks;
-	}
+    public boolean isInitRobot() {
+        return initRobot;
+    }
 
-	public void setCopyRanks(ConcurrentHashMap<Integer, CopyRank> copyRanks) {
-		this.copyRanks = copyRanks;
-	}
+    public void setInitRobot(boolean initRobot) {
+        this.initRobot = initRobot;
+    }
 
-	public ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>> getPlayerRefreshShops() {
-		return playerRefreshShops;
-	}
+    public long getTrainingReset() {
+        return trainingReset;
+    }
 
-	public void setPlayerRefreshShops(
-			ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>> playerRefreshShops) {
-		this.playerRefreshShops = playerRefreshShops;
-	}
+    public void setTrainingReset(long trainingReset) {
+        this.trainingReset = trainingReset;
+    }
 
-	public long getGangDailyReset() {
-		return gangDailyReset;
-	}
+    public ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> getFriendRequests() {
+        return friendRequests;
+    }
 
-	public void setGangDailyReset(long gangDailyReset) {
-		this.gangDailyReset = gangDailyReset;
-	}
+    public void setFriendRequests(ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> friendRequests) {
+        this.friendRequests = friendRequests;
+    }
 
-	public Map<Integer, TrainOpponent> getOpponents() {
-		return opponents;
-	}
+    public ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> getFriendSendRequests() {
+        return friendSendRequests;
+    }
 
-	public void setOpponents(Map<Integer, TrainOpponent> opponents) {
-		this.opponents = opponents;
-	}
+    public void setFriendSendRequests(ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, Boolean>> friendSendRequests) {
+        this.friendSendRequests = friendSendRequests;
+    }
 
-	public Map<Integer, List<Integer>> getSectionOpponents() {
-		return sectionOpponents;
-	}
+    public ConcurrentHashMap<Integer, CopyRank> getCopyRanks() {
+        return copyRanks;
+    }
 
-	public void setSectionOpponents(Map<Integer, List<Integer>> sectionOpponents) {
-		this.sectionOpponents = sectionOpponents;
-	}
+    public void setCopyRanks(ConcurrentHashMap<Integer, CopyRank> copyRanks) {
+        this.copyRanks = copyRanks;
+    }
 
-	public Map<Integer, Ladder> getLadderMap() {
-		return ladderMap;
-	}
+    public ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>> getPlayerRefreshShops() {
+        return playerRefreshShops;
+    }
 
-	public void setLadderMap(Map<Integer, Ladder> ladderMap) {
-		this.ladderMap = ladderMap;
-	}
+    public void setPlayerRefreshShops(
+            ConcurrentHashMap<Integer, ConcurrentHashMap<Integer, List<Integer>>> playerRefreshShops) {
+        this.playerRefreshShops = playerRefreshShops;
+    }
+
+    public long getGangDailyReset() {
+        return gangDailyReset;
+    }
+
+    public void setGangDailyReset(long gangDailyReset) {
+        this.gangDailyReset = gangDailyReset;
+    }
+
+    public Map<Integer, TrainOpponent> getOpponents() {
+        return opponents;
+    }
+
+    public void setOpponents(Map<Integer, TrainOpponent> opponents) {
+        this.opponents = opponents;
+    }
+
+    public Map<Integer, List<Integer>> getSectionOpponents() {
+        return sectionOpponents;
+    }
+
+    public void setSectionOpponents(Map<Integer, List<Integer>> sectionOpponents) {
+        this.sectionOpponents = sectionOpponents;
+    }
+
+    public Map<Integer, Ladder> getLadderMap() {
+        return ladderMap;
+    }
+
+    public void setLadderMap(Map<Integer, Ladder> ladderMap) {
+        this.ladderMap = ladderMap;
+    }
 }

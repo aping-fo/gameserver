@@ -1,5 +1,8 @@
 package com.game.module.system;
 
+import com.game.module.RandomReward.RandomRewardService;
+import com.game.module.goods.EquipService;
+import com.game.module.pet.PetService;
 import com.game.util.ConfigData;
 import com.server.util.GameData;
 import io.netty.channel.Channel;
@@ -12,6 +15,7 @@ import com.server.anotation.Extension;
 import com.server.anotation.UnLogin;
 import com.server.util.Profile;
 import com.server.util.ServerLogger;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * 系统命令
@@ -62,6 +66,11 @@ public class SystemExtension {
 		return null;
 	}
 
+	@Autowired
+	private RandomRewardService randomRewardService;
+	private EquipService equipService;
+	@Autowired
+	private PetService petService;
 	// 设置性能监控的
 	@UnLogin
 	@Command(9904)
@@ -72,6 +81,8 @@ public class SystemExtension {
         ServerLogger.warn("reload begin....");
 		GameData.loadConfigData();
 		ConfigData.init();
+		randomRewardService.handleInit();
+		equipService.handleInit();
         ServerLogger.warn("reload finish....");
 		return null;
 	}

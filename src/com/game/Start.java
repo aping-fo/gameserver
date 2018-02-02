@@ -27,9 +27,8 @@ public class Start {
 
 	private void init() {
 		try {
-			SysConfig.init();
-			
 			DOMConfigurator.configure("config/log4j.xml");
+			SysConfig.init();
 			ServerLogger.info("begin init server...");
 			
 			ServerLogger.info("load game config...");

@@ -131,9 +131,72 @@ public class PlayerData {
 	private int sevenDays = 1; // 7次领奖活动
 	private Map<Integer,Title> titleMap = Maps.newHashMap();
 	private Set<Integer> titles = new HashSet<>();
+	private int arenaWins; //连胜次数
+	private int buyCount;
+	private int finishTaskCount;
+	private int signTotal;
+	private int energyCount;
+	private Map<Integer,Integer> titleRead = Maps.newHashMap();
+	private Map<Integer, Set<Integer>> suitMap = Maps.newHashMap();
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+	public Map<Integer, Set<Integer>> getSuitMap() {
+		return suitMap;
+	}
+
+	public void setSuitMap(Map<Integer, Set<Integer>> suitMap) {
+		this.suitMap = suitMap;
+	}
+
+	public Map<Integer, Integer> getTitleRead() {
+		return titleRead;
+	}
+
+	public void setTitleRead(Map<Integer, Integer> titleRead) {
+		this.titleRead = titleRead;
+	}
+
+	public int getEnergyCount() {
+		return energyCount;
+	}
+
+	public void setEnergyCount(int energyCount) {
+		this.energyCount = energyCount;
+	}
+
+	public int getSignTotal() {
+		return signTotal;
+	}
+
+	public void setSignTotal(int signTotal) {
+		this.signTotal = signTotal;
+	}
+
+	public int getFinishTaskCount() {
+		return finishTaskCount;
+	}
+
+	public void setFinishTaskCount(int finishTaskCount) {
+		this.finishTaskCount = finishTaskCount;
+	}
+
+	public int getBuyCount() {
+		return buyCount;
+	}
+
+	public void setBuyCount(int buyCount) {
+		this.buyCount = buyCount;
+	}
+
+	public int getArenaWins() {
+		return arenaWins;
+	}
+
+	public void setArenaWins(int arenaWins) {
+		this.arenaWins = arenaWins;
 	}
 
 	public Set<Integer> getTitles() {

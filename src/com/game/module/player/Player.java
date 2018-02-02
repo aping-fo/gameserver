@@ -16,6 +16,7 @@ public class Player implements PlayerAddition{
 	public final static int LEV = 9;//等级
 	public final static int LIVENESS = 10;//活跃度
 	public final static int TRAVERSING_ENERGY = 11;//穿越仪能量
+	public final static int ACHIEVEMENT = 12;//成就
 
 	private int playerId;
 	private String name;
@@ -32,7 +33,7 @@ public class Player implements PlayerAddition{
 	private int vip;// vip等级
 	private int contribute;//帮贡;
 	private String channel;//渠道
-
+	private int achievement; //成就
 	private int energy;// 体力
 
 	private int serverId;// 服务器id
@@ -77,6 +78,14 @@ public class Player implements PlayerAddition{
 	private int groupTeamId;
 	private int roomId;
 	public int roomTeamId;
+
+	public int getAchievement() {
+		return achievement;
+	}
+
+	public void setAchievement(int achievement) {
+		this.achievement = achievement;
+	}
 
 	public int getRoomId() {
 		return roomId;

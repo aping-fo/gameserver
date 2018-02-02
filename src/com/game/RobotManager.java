@@ -17,8 +17,8 @@ public class RobotManager {
     public static void main(String[] args) throws Exception {
         SysConfig.init();
         DOMConfigurator.configure("config/log4j.xml");
-        final String host = "192.168.6.223";
-        final int port = 10010;
+        final String host = "192.168.7.102";
+        final int port = 10012;
 
         for (int i = 0; i < 20; i++) {
             new Thread(new Runnable() {

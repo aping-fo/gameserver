@@ -87612,4 +87612,46 @@
 	<addEfectIndex></addEfectIndex>
 	<extraEffectParam></extraEffectParam>
 </config>
+<config>
+	<id>3000001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>套装:防御增益</name>
+	<description>套装:防御增益</description>
+	<duration>300</duration>
+	<takeEffectParam>[1,1.3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>3000002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>套装:威力增益</name>
+	<description>套装:威力增益</description>
+	<duration>300</duration>
+	<takeEffectParam>[0,1.3]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2024</icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
 </root>

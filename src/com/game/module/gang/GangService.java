@@ -9,8 +9,10 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
 import com.game.data.*;
+import com.game.module.serial.PlayerView;
 import com.game.params.*;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -149,7 +151,7 @@ public class GangService implements InitHandler {
         for (int id : ConfigData.globalParam().gangTasks) {
             TaskConfig cfg = GameData.getConfig(TaskConfig.class, id);
             types.add(cfg.finishType);
-            gTasks.put(id, new Task(id, Task.STATE_ACCEPTED));
+            gTasks.put(id, new Task(id, Task.STATE_ACCEPTED,cfg.taskType));
         }
         int tmp = 0;
         while (gTasks.size() < 8 && tmp++ < 50) {//防止策划数据太少进入死循环
@@ -163,7 +165,7 @@ public class GangService implements InitHandler {
                 continue;
             }
             types.add(cfg.finishType);
-            gTasks.put(id, new Task(id, Task.STATE_ACCEPTED));
+            gTasks.put(id, new Task(id, Task.STATE_ACCEPTED,cfg.taskType));
         }
         gang.setTasks(gTasks);
     }
@@ -978,10 +980,20 @@ public class GangService implements InitHandler {
                 g.refreshFight();
             }
         }
-        orderGangs = new ArrayList<Gang>(gangs.values());
+        orderGangs = new ArrayList<>(gangs.values());
         orderGangs.sort(comparator);
         int rank = 1;
         for (Gang g : orderGangs) {
+            for(int id : g.getMembers().keySet()){
+                if(serialService.getData() !=null){
+                    taskService.doTask(id,Task.TYPE_GANG_RANK,rank);
+                    PlayerView playerView = serialService.getData().getPlayerView(id);
+                    if(playerView == null || playerView.getGangMaxRank() > rank){
+                        playerView.setGangMaxRank(rank);
+                    }
+                }
+            }
+
             g.setRank(rank++);
         }
     }

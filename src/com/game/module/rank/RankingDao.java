@@ -22,4 +22,7 @@ public interface RankingDao {
 	
 	@SQL("SELECT playerId, lev, exp FROM player ORDER BY lev DESC, exp DESC LIMIT 50")
 	public List<Player> selectLevelRanking();
+
+	@SQL("SELECT playerId, lev, achievement FROM player ORDER BY achievement DESC LIMIT 50")
+	public List<Player> selectAchievementRanking();
 }

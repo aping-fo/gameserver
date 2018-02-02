@@ -67,6 +67,16 @@ public class ArtifactService {
 			goodsService.addGoodsToBag(playerId, componentId, 1, LogConsume.COMPOSE_ARTIFACT, id);
 			//检测是否足够激活
 			checkActive(playerId);
+			boolean ret = true;
+			for(int idx : components){
+				if(idx != 1){
+					ret = false;
+				}
+			}
+
+			if(ret){
+				taskService.doTask(playerId,Task.TYPE_SQ,id);
+			}
 			return Response.SUCCESS;
 		}
 	}
@@ -195,6 +205,8 @@ public class ArtifactService {
 		}
 		param.id = sid;
 		param.level = level + upTimes;
+
+		taskService.doTask(playerId,Task.TYPE_SQ_UP,level + upTimes);
 		return param;
 	}
 

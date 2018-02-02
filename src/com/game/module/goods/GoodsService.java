@@ -154,7 +154,12 @@ public class GoodsService {
 				if (player.getEnergy() < count) {
 					return Response.NO_ENERGY;
 				}
-			} else if(cfg.type == Goods.CURRENCY){
+			} else if(goodsId == Goods.ACHIEVEMENT){
+				if(player.getAchievement() < count){
+					return Response.ERR_PARAM;
+				}
+			}
+			else if(cfg.type == Goods.CURRENCY){
 				if(!playerService.verifyCurrency(playerId, goodsId, count)){
 					return ConfigData.globalParam().noCurrencyTips.get(cfg.id);
 				}
@@ -219,7 +224,10 @@ public class GoodsService {
 				playerService.decDiamond(playerId, count, log, params);
 			} else if (goodsId == Goods.ENERGY) {
 				playerService.decEnergy(playerId, count, log, params);
-			} else if(config.type == Goods.CURRENCY){
+			} else if(goodsId == Goods.ACHIEVEMENT){
+				playerService.decAchievement(playerId,count,log,params);
+			}
+			else if(config.type == Goods.CURRENCY){
 				playerService.decCurrency(playerId, goodsId, count, log, params);
 			}else if(config.type == Goods.FAME) {
 				decFame(playerId,config.param1[0],count);
@@ -361,15 +369,17 @@ public class GoodsService {
 		if(addCfg==null){
 			return;
 		}
-		for(int i=1;i<=2;i++){
-			int typeIndex = RandomUtil.getRandomIndex(addCfg.typeRates);
-			int type = addCfg.types[typeIndex];
-			int[] range = addCfg.parameter.get(type);
-			int value = RandomUtil.randInt(range[0], range[1]);
-			AttrItem attr = new AttrItem();
-			attr.type = type;
-			attr.value = value;
-			g.getAddAttrList().add(attr);
+		if(addCfg.typeRates != null) {
+			for(int i=1;i<=2;i++){
+				int typeIndex = RandomUtil.getRandomIndex(addCfg.typeRates);
+				int type = addCfg.types[typeIndex];
+				int[] range = addCfg.parameter.get(type);
+				int value = RandomUtil.randInt(range[0], range[1]);
+				AttrItem attr = new AttrItem();
+				attr.type = type;
+				attr.value = value;
+				g.getAddAttrList().add(attr);
+			}
 		}
 	}
 
@@ -665,7 +675,10 @@ public class GoodsService {
 				playerService.addDiamond(playerId, count, type, params);
 			} else if (id == Goods.EXP) {// 经验
 				playerService.addExp(playerId, count, type, params);
-			} else if (id == Goods.ENERGY) {// 体力
+			} else if(id == Goods.ACHIEVEMENT){
+				playerService.addAchievement(playerId,count,type,params);
+			}
+			else if (id == Goods.ENERGY) {// 体力
 				playerService.addEnergy(playerId, count, type, params);
 			}else if (id == Goods.VIP_EXP) {// vip经验值
 				playerService.addVipExp(playerId, count);

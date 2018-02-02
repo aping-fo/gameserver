@@ -1,8 +1,8 @@
 package com.game.module.group;
 
 import com.game.data.GroupCopyCfg;
+import com.game.data.MonsterConfig;
 import com.game.data.Response;
-import com.game.module.admin.MessageService;
 import com.game.module.copy.CopyExtension;
 import com.game.module.copy.CopyInstance;
 import com.game.module.copy.CopyService;
@@ -13,6 +13,8 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.*;
 import com.game.params.copy.CopyResult;
 import com.game.params.group.GroupStageVO;
@@ -24,6 +26,7 @@ import com.game.params.worldboss.MonsterHurtVO;
 import com.game.util.ConfigData;
 import com.game.util.JsonUtils;
 import com.game.util.TimeUtil;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -69,7 +72,7 @@ public class GroupService {
     @Autowired
     private PlayerService playerService;
     @Autowired
-    private MessageService messageService;
+    private TaskService taskService;
     @Autowired
     private CopyService copyService;
     @Autowired
@@ -738,6 +741,13 @@ public class GroupService {
             broadcastGroupTeam(team, CMD_MONSTER_INFO, ret);
 
             if (monster.curHp <= 0) {
+                MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class,monster.monsterId);
+                Map<Integer, int[]> condParams = Maps.newHashMap();
+                condParams.put(Task.FINISH_KILL, new int[]{monsterConfig.type, monster.monsterId, 1});
+                condParams.put(Task.TYPE_KILL, new int[]{monsterConfig.type,1});
+                condParams.put(Task.TYPE_KILL, new int[]{0,1});
+                taskService.doTask(player.getPlayerId(), condParams);
+
                 monsters.remove(hurtVO.targetId);
                 if (copy.isOver()) {
                     group.removeCopyState(team.getId());
@@ -798,7 +808,9 @@ public class GroupService {
                             //vo.rewards.add(reward);
                             items.add(new GoodsEntry(arr[0], arr[1]));
                         }
-
+                        if (group.stage == 3) {
+                            taskService.doTask(group.getLeader(), Task.TYPE_LEADER_PASS, copy.getCopyId());
+                        }
                         if (group.stage <= 3) {
                             group.stageBeginTime = System.currentTimeMillis();
                             broadcastGroup(group);

@@ -1,5 +1,6 @@
 package com.game.module.title;
 
+import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
@@ -26,5 +27,15 @@ public class TitleExtension {
     @Command(9004) //打开称号
     public Object openTitle(int playerId, IntParam param) {
         return titleService.openTitle(playerId, param.param);
+    }
+
+    @Command(9006) //获取红点列表
+    public Object getThreeTypesRed(int playerId, Object param) {
+        return titleService.getThreeTypesRed(playerId);
+    }
+
+    @Command(9007) //获取红点列表
+    public Object getThreeTypesRed(int playerId, Int2Param param) {
+        return titleService.getSingleTypesRed(playerId, param);
     }
 }

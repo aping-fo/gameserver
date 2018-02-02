@@ -7,7 +7,6 @@ import com.game.data.Response;
 import com.game.event.InitHandler;
 import com.game.module.activity.ActivityConsts;
 import com.game.module.copy.CopyExtension;
-import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -15,8 +14,10 @@ import com.game.module.mail.MailService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
-import com.game.module.scene.SceneService;
+import com.game.module.serial.PlayerView;
 import com.game.module.serial.SerialDataService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
 import com.game.params.IntParam;
@@ -54,6 +55,7 @@ public class LadderService implements InitHandler {
     private final static int TYPE_3 = 3; //战斗胜利而且段位提升
     private final static int TYPE_4 = 4; //战斗失败并且段位下降
     private final static int TYPE_5 = 5; //战斗失败但不扣除积分
+    private final static int MATCH_TIMES = 5;
 
     private final static int LADDER_COPY = 1300101;
     //大段里面小段为
@@ -68,9 +70,10 @@ public class LadderService implements InitHandler {
     private final static int CMD_INFO = 6001;
     //加载完毕
     private final static int CMD_LOAD_OVER = 6008;
-
     //取消战斗
     private final static int CMD_GAME_OVER = 6010;
+
+
     @Autowired
     private TimerService timerService;
     @Autowired
@@ -80,13 +83,11 @@ public class LadderService implements InitHandler {
     @Autowired
     private MailService mailService;
     @Autowired
-    private SceneService sceneService;
-    @Autowired
     private GoodsService goodsService;
     @Autowired
-    private CopyService copyService;
-    @Autowired
     private TitleService titleService;
+    @Autowired
+    private TaskService taskService;
 
     private final Map<Integer, Integer> FightTimes = new ConcurrentHashMap<>();
     //玩家ID -- rank
@@ -179,7 +180,7 @@ public class LadderService implements InitHandler {
                 continue;
             }
 
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < MATCH_TIMES; i++) {
                 for (Room target : allRooms.values()) {
                     if (source.matchFlag
                             || source.exitFlag || source.fightFlag) { // check source room again
@@ -658,6 +659,7 @@ public class LadderService implements InitHandler {
 
         if (newLevel != level) {
             ladderInfo.setLevel(newLevel);
+            taskService.doTask(player.getPlayerId(), Task.TYPE_LADDER, newLevel);
         }
 
         if (newLevel != level || oldScore != ladderInfo.getScore()) {
@@ -738,7 +740,16 @@ public class LadderService implements InitHandler {
                     titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER, i, ActivityConsts.UpdateType.T_VALUE);
                     ladderRank.put(ladder.getPlayerId(), i);
                 }
+
+                /*PlayerView playerView = serialDataService.getData().getPlayerView(ladder.getPlayerId());
+                if (playerView.getLadderMaxRank() == 0 || playerView.getLadderMaxRank() > i) {
+                    playerView.setLadderMaxRank(i);
+                }
+
+                taskService.doTask(ladder.getPlayerId(), Task.TYPE_LADDER_RANK,i);*/
+
                 LadderRankVO vo = new LadderRankVO();
+                vo.playerId = ladder.getPlayerId();
                 vo.name = player.getName();
                 vo.level = ladder.getLevel();
                 vo.vocation = player.getVocation();
@@ -755,6 +766,14 @@ public class LadderService implements InitHandler {
     public ListParam getLadderRank() {
         return LADDER_RANK;
     }
+
+   /* private void onLogin(int playerId) {
+        Integer rank = serialDataService.getData().getLadderRank().get(playerId);
+        if (rank == null) {
+            return;
+        }
+        taskService.doTask(playerId, Task.TYPE_LADDER_RANK, rank.intValue());
+    }*/
 
     public int getRank(int playerId) {
         Integer rank = ladderRank.get(playerId);

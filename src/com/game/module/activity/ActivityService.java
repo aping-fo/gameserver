@@ -10,6 +10,8 @@ import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
 import com.game.params.IntParam;
@@ -53,6 +55,8 @@ public class ActivityService implements InitHandler {
     private GoodsService goodsService;
     @Autowired
     private TitleService titleService;
+    @Autowired
+    private TaskService taskService;
     @Override
     public void handleInit() {
         try {
@@ -480,6 +484,11 @@ public class ActivityService implements InitHandler {
             data.setSevenDays(data.getSevenDays() + 1);
         }
 
+        if(activityCfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY){
+            data.setEnergyCount(data.getEnergyCount() + 1);
+            taskService.doTask(playerId, Task.TYPE_ENERGY,data.getEnergyCount());
+        }
+
         ActivityCfg cfg = ConfigData.getConfig(ActivityCfg.class, task.getActivityId());
         if (cfg.ActivityType == ActivityConsts.ActivityType.T_NEW_ROLE) {
             pushActivityClose(Lists.newArrayList(task.getActivityId()), playerId);
@@ -514,6 +523,11 @@ public class ActivityService implements InitHandler {
         task.setRewardFlag(true);
         goodsService.addRewards(playerId, config.Rewards, LogConsume.ACTIVITY_REWARD);
 
+        ActivityCfg activityCfg = ConfigData.getConfig(ActivityCfg.class, config.ActivityId);
+        if(activityCfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY){
+            data.setEnergyCount(data.getEnergyCount() + 1);
+            taskService.doTask(playerId, Task.TYPE_ENERGY,data.getEnergyCount());
+        }
         pushActivityUpdate(playerId, Lists.newArrayList(task));
         result.param = Response.SUCCESS;
         return result;

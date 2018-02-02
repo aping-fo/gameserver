@@ -3,19 +3,15 @@ package com.game.module.admin;
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_LENGTH;
 import static io.netty.handler.codec.http.HttpHeaders.Names.CONTENT_TYPE;
 import static io.netty.handler.codec.http.HttpResponseStatus.OK;
+import static io.netty.handler.codec.http.HttpVersion.HTTP_1_1;
+
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.Channel;
+import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.handler.codec.http.DefaultFullHttpResponse;
-import io.netty.handler.codec.http.DefaultHttpResponse;
-import io.netty.handler.codec.http.FullHttpResponse;
-import io.netty.handler.codec.http.HttpMethod;
-import io.netty.handler.codec.http.HttpRequest;
-import io.netty.handler.codec.http.HttpResponse;
-import io.netty.handler.codec.http.HttpResponseStatus;
-import io.netty.handler.codec.http.HttpVersion;
+import io.netty.handler.codec.http.*;
 import io.netty.handler.codec.http.multipart.Attribute;
 import io.netty.handler.codec.http.multipart.DefaultHttpDataFactory;
 import io.netty.handler.codec.http.multipart.HttpDataFactory;
@@ -32,16 +28,31 @@ import java.util.Map;
 import com.game.util.Context;
 import com.game.util.StringUtil;
 import com.server.util.ServerLogger;
+import io.netty.util.CharsetUtil;
 
 public class ManagerHandler extends ChannelInboundHandlerAdapter {
 
-	private static final HttpDataFactory factory = new DefaultHttpDataFactory(false); 
+	private static final HttpDataFactory factory = new DefaultHttpDataFactory(false);
+
+	private void sendHttpResponse(ChannelHandlerContext ctx,String data) {
+		//boolean keepAlive = HttpHeaders.isKeepAlive(request);
+		FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK, Unpooled.wrappedBuffer(data.getBytes(CharsetUtil.UTF_8)));
+		response.headers().set(CONTENT_TYPE, "text/plain; charset=UTF-8");
+		response.headers().set(CONTENT_LENGTH, response.content().readableBytes());
+		ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
+	}
 
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) {
 		if (!(msg instanceof HttpRequest)) {
 			return;
 		}
+
+		if(true) {
+			sendHttpResponse(ctx, "1111111");
+			return;
+		}
+
 		HttpRequest request = (HttpRequest) msg;
 
 		String url=null;
@@ -52,7 +63,7 @@ public class ManagerHandler extends ChannelInboundHandlerAdapter {
 			return;
 		}
 		if (url.equals("/favicon.ico")) {
-			HttpResponse res = new DefaultHttpResponse(HttpVersion.HTTP_1_1, HttpResponseStatus.NOT_FOUND);
+			HttpResponse res = new DefaultHttpResponse(HTTP_1_1, HttpResponseStatus.NOT_FOUND);
 			Channel channel = ctx.channel();
 			channel.write(res);
 			channel.flush();
@@ -122,7 +133,7 @@ public class ManagerHandler extends ChannelInboundHandlerAdapter {
 		if (result != null) {
 			buffer.writeBytes(result.getBytes(Charset.forName("utf-8")));
 		}
-		FullHttpResponse response = new DefaultFullHttpResponse(HttpVersion.HTTP_1_1, OK, buffer);
+		FullHttpResponse response = new DefaultFullHttpResponse(HTTP_1_1, OK, buffer);
 		response.headers().set(CONTENT_TYPE, "text/plain");
 		response.headers().set(CONTENT_LENGTH, response.content().readableBytes());
 

@@ -12,17 +12,12 @@ import com.game.module.attach.experience.ExperienceLogic;
 import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.attach.treasure.TreasureAttach;
 import com.game.module.attach.treasure.TreasureLogic;
-import com.game.module.daily.DailyService;
-import com.game.module.friend.FriendService;
-import com.game.module.gang.GangDungeonService;
-import com.game.module.gang.GangService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.group.GroupService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
-import com.game.module.player.PlayerDao;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.sct.SkillCardTrainService;
@@ -72,17 +67,7 @@ public class CopyService {
     @Autowired
     private GoodsService goodsService;
     @Autowired
-    private TaskService taskService;
-    @Autowired
     private MessageService messageService;
-    @Autowired
-    private PlayerDao playerDao;
-    @Autowired
-    private DailyService dailyService;
-    @Autowired
-    private GangService gangService;
-    @Autowired
-    private FriendService friendService;
     @Autowired
     private SerialDataService serialDataService;
     @Autowired
@@ -107,6 +92,8 @@ public class CopyService {
     private SkillCardTrainService skillCardTrainService;
     @Autowired
     private TitleService titleService;
+    @Autowired
+    private TaskService taskService;
     private AtomicInteger uniId = new AtomicInteger(100);
     private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<Integer, CopyInstance>();
 
@@ -293,7 +280,7 @@ public class CopyService {
                 g.count *= multiple;
             }
             //无尽漩涡称号
-            titleService.complete(playerId, TitleConsts.WJXW_LAYER,attach.getMaxLayer(), ActivityConsts.UpdateType.T_VALUE);
+            titleService.complete(playerId, TitleConsts.WJXW_LAYER, attach.getMaxLayer(), ActivityConsts.UpdateType.T_VALUE);
         } else if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
 
             List<Reward> affixReward = traversingService.takeReward(playerId, playerId, copy.getTraverseMap());
@@ -505,7 +492,18 @@ public class CopyService {
         playerData.getCopys().put(copyId, copy);
         // 更新数据到前端
         refreshCopyInfo(playerId, copyId, playerData);
-        taskService.doTask(playerId, Task.FINISH_TRANSIT, copyId, cfg.type, result.star, 1);
+
+        Map<Integer, int[]> condParams = Maps.newHashMap();
+        condParams.put(Task.FINISH_TRANSIT, new int[]{copyId, cfg.type, result.star, 1});
+        condParams.put(Task.TYPE_PASS_COPY_TEAM, new int[]{copyId, 1});
+        condParams.put(Task.TYPE_PASS_COPY_SINGLE, new int[]{copyId, 1});
+        //condParams.put(Task.TYPE_PASS_TIME,new int[]{copyId, result.time});
+
+        taskService.doTask(playerId, condParams);
+        /*taskService.doTask(playerId, Task.FINISH_TRANSIT, copyId, cfg.type, result.star, 1);
+        taskService.doTask(playerId, Task.TYPE_PASS_COPY, copyId, Task.TYPE_PASS_COPY_SIGNLE,1);
+        taskService.doTask(playerId, Task.TYPE_PASS_COPY, copyId, Task.TYPE_PASS_COPY_TEAM,1);
+        taskService.doTask(playerId, Task.TYPE_PASS_TIME, copyId, result.time);*/
     }
 
     /**
@@ -618,16 +616,14 @@ public class CopyService {
                         vo.defense = Math.round(fight * 0.05f);
                         vo.symptom = Math.round(fight * 0.1f);
                         vo.fu = Math.round(fight * 0.1f);
-                    }
-                    else if(cfg.type == CopyInstance.TYPE_TRAIN){
+                    } else if (cfg.type == CopyInstance.TYPE_TRAIN) {
                         vo.curHp = vo.hp = Math.round(player.getFight() * 3.32f);
                         vo.attack = Math.round(player.getFight() * 0.18f);
                         vo.crit = Math.round(player.getFight() * 0.13f);
                         vo.defense = Math.round(player.getFight() * 0.05f);
                         vo.symptom = Math.round(player.getFight() * 0.1f);
                         vo.fu = Math.round(player.getFight() * 0.1f);
-                    }
-                    else {
+                    } else {
                         vo.curHp = vo.hp = monsterCfg.hp;
                         vo.attack = monsterCfg.physicAttack;
                         vo.crit = monsterCfg.crit;
@@ -719,7 +715,12 @@ public class CopyService {
             return dropReward;
         }
         MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, monster.monsterId);
-        taskService.doTask(playerId, Task.FINISH_KILL, monsterCfg.type, monster.monsterId, 1);
+        Map<Integer, int[]> condParams = Maps.newHashMap();
+        condParams.put(Task.FINISH_KILL, new int[]{monsterCfg.type, monster.monsterId, 1});
+        condParams.put(Task.TYPE_KILL, new int[]{monsterCfg.type,1});
+        condParams.put(Task.TYPE_KILL, new int[]{0,1});
+        taskService.doTask(playerId, condParams);
+
         if (m.reward == 0) {// 不需要奖励
             return dropReward;
         }
@@ -859,7 +860,7 @@ public class CopyService {
             list.rewards = swipeCopyInner(playerId, copyId);
             result.reward.add(list);
         }
-
+        taskService.doTask(playerId, Task.TYPE_SWIPE_COPY, copyId, times);
         refreshCopyInfo(playerId, copyId, playerData);
         return result;
     }
@@ -881,7 +882,7 @@ public class CopyService {
 
         goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
 
-        List<Reward> rewards = new ArrayList<Reward>(copyRewards.size());
+        List<Reward> rewards = new ArrayList<>(copyRewards.size());
         for (GoodsEntry item : copyRewards) {
             Reward r = new Reward();
             r.id = item.id;

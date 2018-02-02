@@ -1,29 +1,23 @@
 package com.game.module.chat;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-import com.game.module.goods.Goods;
-import com.game.module.goods.GoodsService;
-import com.game.module.group.GroupService;
-import com.game.module.log.LogConsume;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.game.SysConfig;
 import com.game.module.admin.ManagerService;
 import com.game.module.admin.MessageService;
 import com.game.module.admin.UserManager;
-import com.game.module.daily.DailyService;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
 import com.game.module.gm.GmService;
+import com.game.module.goods.Goods;
+import com.game.module.goods.GoodsService;
+import com.game.module.group.GroupService;
+import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerDao;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.ListParam;
 import com.game.params.chat.ChatVo;
 import com.game.util.ConfigData;
@@ -31,6 +25,12 @@ import com.game.util.TimeUtil;
 import com.server.SessionManager;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Extension
 public class ChatExtension {
@@ -51,7 +51,7 @@ public class ChatExtension {
 	@Autowired
 	private PlayerDao playerDao;
 	@Autowired
-	private DailyService dailyService;
+	private TaskService taskService;
 	@Autowired
 	private MessageService messageService;
 	@Autowired
@@ -105,6 +105,7 @@ public class ChatExtension {
 		}
 		vo.senderVocation = sender.getVocation();
 		vo.fight = sender.getFight();
+		int chatType = 0;
 		//世界
 		if(vo.channel==WORLD || vo.channel == SYS){
 			if(vo.channel==WORLD && sender.getLev()<ConfigData.globalParam().worldChatLevel){
@@ -123,6 +124,10 @@ public class ChatExtension {
 			}
 			talkTime.put(playerId, now);
 			messageService.addChatVo(vo);
+
+			if(vo.channel == WORLD){
+				chatType = WORLD;
+			}
 		//私聊
 		}else{ 
 			ListParam<ChatVo> result = new ListParam<ChatVo>();
@@ -155,6 +160,7 @@ public class ChatExtension {
 				
 			//帮派
 			}else if(vo.channel==GANG){
+				chatType = GANG;
 				int gangId = sender.getGangId();
 				if(gangId>0){
 					Gang gang = gangService.getGang(gangId);
@@ -164,6 +170,7 @@ public class ChatExtension {
 					}
 				}
 			}else if(vo.channel == TEAM){
+				chatType = TEAM;
 				if(sender.getTeamId() > 0){
 					sceneService.brocastToSceneCurLine(sender, CHAT, result);
 				}else if(sender.getGroupId() > 0) {
@@ -171,6 +178,7 @@ public class ChatExtension {
 				}
 			}
 		}
+		taskService.doTask(playerId, Task.TYPE_CHAT,chatType);
 		return null;
 	}
 	

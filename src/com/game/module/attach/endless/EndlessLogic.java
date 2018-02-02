@@ -172,8 +172,6 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
 				return result;
 			}
 			layer = max + 1;
-			//无尽漩涡称号
-			titleService.complete(playerId, TitleConsts.WJXW_LAYER,layer, ActivityConsts.UpdateType.T_VALUE);
 		}else{
 			layer = (int)((System.currentTimeMillis() - attach.getClearTime()) / (30 * TimeUtil.ONE_SECOND));
 			if(layer < 1){
@@ -205,7 +203,9 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
 	
 		}
 		attach.setClearTime(0L);
-		attach.setCurrLayer(layer);	
+		attach.setCurrLayer(layer);
+		//无尽漩涡称号
+		titleService.complete(playerId, TitleConsts.WJXW_LAYER,layer, ActivityConsts.UpdateType.T_VALUE);
 		attach.commitSync();
 		return result;
 	}

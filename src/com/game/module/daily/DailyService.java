@@ -71,8 +71,6 @@ public class DailyService implements InitHandler {
 	@Autowired
 	private CatchGoldLogic catchGoldLogic;
 	@Autowired
-	private GangDungeonService gangDungeonService;
-	@Autowired
 	private ActivityService activityService;
 	@Autowired
 	private WelfareCardService welfareCardService;
@@ -204,7 +202,6 @@ public class DailyService implements InitHandler {
 		trainingLogic.dailyReset(playerId);
 		lotteryLogic.dailyReset(playerId);
 		catchGoldLogic.dailyReset(playerId);
-		//gangDungeonService.dailyReset(playerId);
 		activityService.dailyRest(playerId);
 		welfareCardService.daily(playerId);
 		skillCardTrainService.dailyRest(playerId);
@@ -222,7 +219,7 @@ public class DailyService implements InitHandler {
 	public DailyVo getDailyInfo(int playerId) {
 		PlayerData data = playerService.getPlayerData(playerId);
 		DailyVo vo = new DailyVo();
-		vo.dailys = new ArrayList<Int2Param>(data.getDailyData().size());
+		vo.dailys = new ArrayList<>(data.getDailyData().size());
 		for(Entry<Integer, Integer> e:data.getDailyData().entrySet()){
 			Int2Param d = new Int2Param();
 			d.param1 = e.getKey();
@@ -235,7 +232,7 @@ public class DailyService implements InitHandler {
 		vo.charges = data.getCharges();
 		vo.fundOpen = data.getFundActive();
 		vo.fundsTake = data.getFunds();
-		vo.vipBag = new ArrayList<Integer>(data.getVipReward().keySet());
+		vo.vipBag = new ArrayList<>(data.getVipReward().keySet());
 		vo.signFlag = data.getSignFlag();
 		return vo;
 	}

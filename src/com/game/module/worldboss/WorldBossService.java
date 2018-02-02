@@ -16,6 +16,10 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.Scene;
 import com.game.module.scene.SceneService;
+import com.game.module.serial.PlayerView;
+import com.game.module.serial.SerialDataService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.IProtocol;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
@@ -23,6 +27,7 @@ import com.game.params.Reward;
 import com.game.params.scene.SkillHurtVO;
 import com.game.params.worldboss.*;
 import com.game.util.*;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import io.netty.util.internal.ConcurrentSet;
@@ -63,12 +68,13 @@ public class WorldBossService implements InitHandler {
     @Autowired
     private SceneService sceneService;
     @Autowired
-    private CopyService copyService;
+    private TaskService taskService;
     @Autowired
     private MultiService multiService;
     @Autowired
     private WorldBossDao worldBossDao;
-
+    @Autowired
+    private SerialDataService serialDataService;
     private int maxId = 0;
     /**
      * 数据记录
@@ -283,6 +289,7 @@ public class WorldBossService implements InitHandler {
         if (boss.getCurHp() <= 0) { //死亡
             ServerLogger.info("boss go die....... boss id ==" + boss.getId());
             worldBossData.getKillMap().put(bossId, playerId);
+            taskService.doTask(playerId, Task.ACHIEVEMENT_WB_LAST, 1);
             //boss死亡，广播
             Int2Param param = new Int2Param();
             param.param1 = playerId;
@@ -424,6 +431,14 @@ public class WorldBossService implements InitHandler {
             worldBossData.setbAward(true);
             messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_END);
             multiService.clearGroup(Scene.WORLD_BOSS_PVE);
+            for (HurtRecord hr : worldBossData.getRankMap().values()) {
+                PlayerView playerView = serialDataService.getData().getPlayerView(hr.getPlayerId());
+                if (playerView.getWorldBossMaxRank() == 0 || playerView.getWorldBossMaxRank() > hr.getRank()) {
+                    playerView.setWorldBossMaxRank(hr.getRank());
+                }
+                taskService.doTask(hr.getPlayerId(), Task.TYPE_WB_RANK,hr.getRank());
+            }
+
             //排序
             //List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
             //Collections.sort(list, SORT);
@@ -848,4 +863,11 @@ public class WorldBossService implements InitHandler {
         players.clear();
         ServerLogger.warn("gm reset world boss activity .........");
     }
+
+    /*public void onLogin(int playerId) {
+        PlayerView playerView = serialDataService.getData().getPlayerView(playerId);
+        if (rank != null) {
+            taskService.doTask(playerId, Task.TYPE_WB_RANK, rank.intValue());
+        }
+    }*/
 }

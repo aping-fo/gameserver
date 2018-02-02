@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Map.Entry;
 
 import com.game.data.ShopCfg;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.FameListVO;
 import com.game.params.IntParam;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,6 +28,8 @@ public class FameService {
 
     @Autowired
     private PlayerService playerService;
+    @Autowired
+    private TaskService taskService;
 
     // 获取声望数据
     public FameListVO getInfo(int playerId) {
@@ -67,6 +71,7 @@ public class FameService {
         fameData.setExp(fameData.getExp() + fame);
         fameData.setCurExp(fameData.getCurExp() + fame);
 
+        taskService.doTask(playerId, Task.TYPE_FAME,fameData.getExp());
         while (true) {
             FameConfig cfg = ConfigData.getConfig(FameConfig.class, camp * 1000 + fameData.getLev());
             if (cfg.exp > fameData.getExp()) {

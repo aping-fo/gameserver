@@ -1,18 +1,28 @@
 package com.game.module.task;
 
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.module.activity.ActivityConsts;
+import com.game.module.attach.arena.ArenaLogic;
+import com.game.module.attach.arena.ArenaPlayer;
+import com.game.module.ladder.LadderService;
+import com.game.module.rank.RankEntity;
+import com.game.module.rank.RankService;
+import com.game.module.rank.RankingList;
+import com.game.module.rank.vo.AchievementRankEntity;
+import com.game.module.rank.vo.FightingRankEntity;
+import com.game.module.rank.vo.LevelRankEntity;
+import com.game.module.serial.PlayerView;
+import com.game.module.serial.SerialDataService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
-import org.apache.log4j.Logger;
+import com.game.params.AchievementSyncVo;
+import com.game.params.rank.AIArenaRankVO;
+import com.game.params.rank.LadderRankVO;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -61,6 +71,14 @@ public class TaskService implements Dispose {
     private GangService gangService;
     @Autowired
     private TitleService titleService;
+    @Autowired
+    private RankService rankService;
+    @Autowired
+    private ArenaLogic arenaLogic;
+    @Autowired
+    private SerialDataService serialDataService;
+    @Autowired
+    private LadderService ladderService;
     private Map<Integer, PlayerTask> tasks = new ConcurrentHashMap<Integer, PlayerTask>();
 
     @Override
@@ -120,7 +138,7 @@ public class TaskService implements Dispose {
         }
         for (Task task : tasks) {
             TaskConfig config = getConfig(task.getTaskId());
-            if(!(config.taskType == 3 || config.taskType == 4)){
+            if (!(config.taskType == 3 || config.taskType == 4)) {
                 if (task.getState() == Task.STATE_INIT
                         || (task.getState() == Task.STATE_SUBMITED && config.nextTaskId != 0))
                     continue;
@@ -222,7 +240,7 @@ public class TaskService implements Dispose {
         TaskConfig taskCfg = getConfig(taskId);
         Task task = new Task(taskId,
                 player.getLev() >= taskCfg.level ? Task.STATE_ACCEPTED
-                        : Task.STATE_INIT);
+                        : Task.STATE_INIT, taskCfg.finishType);
         getPlayerTask(playerId).getTasks().put(taskId, task);
         if (refresh) {
             updateTaskToClient(playerId, task);
@@ -239,12 +257,26 @@ public class TaskService implements Dispose {
             return true;
         }
         int count = targets[targets.length - 1];
-        if (task.getCount() >= count) {
-            task.setState(Task.STATE_FINISHED);
-            //任务称号
-            titleService.complete(playerId, TitleConsts.TASK, task.getTaskId(), ActivityConsts.UpdateType.T_VALUE);
-            return true;
+        if (config.finishType == Task.TYPE_PASS_TIME
+                || config.finishType == Task.TYPE_GANG_RANK
+                || config.finishType == Task.TYPE_ARENA_RANK
+                || config.finishType == Task.TYPE_FIGHT_RANK
+                || config.finishType == Task.TYPE_LADDER_RANK
+                || config.finishType == Task.TYPE_ACHIEVEMENT_RANK) {
+            if (task.getCount() <= count) {
+                task.setState(Task.STATE_FINISHED);
+                return true;
+            }
+        } else {
+            if (task.getCount() >= count) {
+                task.setCount(count);
+                task.setState(Task.STATE_FINISHED);
+                //任务称号
+                titleService.complete(playerId, TitleConsts.TASK, task.getTaskId(), ActivityConsts.UpdateType.T_VALUE);
+                return true;
+            }
         }
+
         return false;
     }
 
@@ -255,11 +287,11 @@ public class TaskService implements Dispose {
      * @param type
      * @param params
      */
-    public void doTask(int playerId, int type, Task task, int... params) {
+    private boolean doTasks(int playerId, int type, Task task, int... params) {
         try {
             Player player = playerService.getPlayer(playerId);
             if (player.getAccName().equals(PlayerService.ROBOT)) {
-                return;
+                return false;
             }
             PlayerData data = playerService.getPlayerData(playerId);
             Gang gang = null;
@@ -270,26 +302,30 @@ public class TaskService implements Dispose {
             int oldState = task.getState();
 
             if (oldState == Task.STATE_INIT || oldState == Task.STATE_SUBMITED) {
-                return;
+                return false;
             }
             TaskConfig config = getConfig(task.getTaskId());
 
             if (config == null) {
                 ServerLogger.warn("ErrorTaskId:", task.getTaskId());
-                return;
+                return false;
             }
-            if (config.finishType != type) {
+            /*if (config.finishType != type) {
                 return;
+            }*/
+
+            if (type != config.finishType) {
+                return false;
             }
 
             if (player.getLev() < config.level) {
-                return;
+                return false;
             }
 
             int[] targets = config.finishParam;
             // 无任务目标的
             if (targets == null) {
-                return;
+                return false;
             }
 
             int count = targets.length;
@@ -321,12 +357,12 @@ public class TaskService implements Dispose {
                     task.alterCount(params[params.length - 1]);
                 } else {
                     if (params.length != count) {
-                        return;
+                        return false;
                     }
                     int reqLev = targets[0];
                     int reqPos = targets[1];
                     if (/*params[0] < reqLev ||*/ (reqPos > 0 && reqPos != params[1])) {
-                        return;
+                        return false;
                     }
                     int curCount = 0;
                     if (reqPos > 0) {
@@ -350,7 +386,7 @@ public class TaskService implements Dispose {
                     int reqLev = targets[0];
                     int reqPos = targets[1];
                     if (/*params[0] < reqLev || */(reqPos > 0 && reqPos != params[1])) {
-                        return;
+                        return false;
                     }
                     Map<Integer, Integer> strengths = playerService
                             .getPlayerData(playerId).getStrengths();
@@ -372,7 +408,7 @@ public class TaskService implements Dispose {
                 } else {
                     int request = targets[0];
                     if (params[0] < request) {
-                        return;
+                        return false;
                     }
                     Collection<Goods> goods = goodsService.getPlayerBag(playerId)
                             .getAllGoods().values();
@@ -409,7 +445,7 @@ public class TaskService implements Dispose {
                         continue;
                     }
                     if (reqCLev > 0) {
-                        SkillCard skillCard = data.getSkillCards().get(curCards.get(i-1));
+                        SkillCard skillCard = data.getSkillCards().get(curCards.get(i - 1));
                         if (skillCard == null) {
                             continue;
                         }
@@ -427,7 +463,7 @@ public class TaskService implements Dispose {
                 } else {
                     int request = targets[0];
                     if (params[0] < request) {
-                        return;
+                        return false;
                     }
                     int curCount = 0;
                     Collection<SkillCard> skillCards = data.getSkillCards().values();
@@ -440,9 +476,32 @@ public class TaskService implements Dispose {
                     }
                     task.alterCount(curCount);
                 }
+            } else if (config.finishType == Task.TYPE_ARENA_WINS) {
+                if (task.getCount() < data.getArenaWins()) {
+                    task.setCount(data.getArenaWins());
+                }
+            } else if (config.finishType == Task.TYPE_SQ_UP) {
+                if (task.getCount() < params[0]) {
+                    task.setCount(params[0]);
+                }
+            } else if (config.finishType == Task.TYPE_GANG_LEVEL) {
+                if (task.getCount() < params[0]) {
+                    task.setCount(params[0]);
+                }
+            } else if (config.finishType == Task.TYPE_GANG_RANK
+                    || config.finishType == Task.TYPE_WB_RANK
+                    || config.finishType == Task.TYPE_ARENA_RANK
+                    || config.finishType == Task.TYPE_LADDER_RANK
+                    || config.finishType == Task.TYPE_PASS_TIME
+                    || config.finishType == Task.TYPE_FIGHT_RANK
+                    || config.finishType == Task.TYPE_LEVEL
+                    || config.finishType == Task.TYPE_ACHIEVEMENT_RANK) {
+                if (task.getCount() > params[0]) {
+                    task.setCount(params[0]);
+                }
             } else {
                 if (params.length != count) {
-                    return;
+                    return false;
                 }
                 int i = count - 2;
                 for (; i >= 0; i--) {
@@ -451,12 +510,18 @@ public class TaskService implements Dispose {
                     }
                 }
                 if (i >= 0) {
-                    return;
+                    return false;
                 }
                 task.alterCount(params[count - 1]);
             }
 
             checkFinished(task, playerId);
+            if (task.getState() == Task.STATE_FINISHED) {
+                if (task.getType() < 20) {
+                    data.setFinishTaskCount(data.getFinishTaskCount() + 1);
+                    doTask(playerId, Task.TYPE_TASK_COUNT, data.getFinishTaskCount());
+                }
+            }
 
             if (task.getCount() != oldCount || task.getState() != oldState) {
                 if (config.taskType == Task.TYPE_GANG) {
@@ -468,11 +533,12 @@ public class TaskService implements Dispose {
                     }
                 }
                 // 发送到前端
-                updateTaskToClient(playerId, task);
+                //updateTaskToClient(playerId, task);
                 if (config.taskType == Task.TYPE_JOINT) {
                     // 邀请任务
                     checkJointTask(playerId, task);
                 }
+                return true;
             }
         } catch (Exception ex) {
             String paramStr = "";
@@ -481,7 +547,7 @@ public class TaskService implements Dispose {
             }
             ServerLogger.err(ex, "doTask error,type=" + type + ",params=" + paramStr);
         }
-
+        return false;
     }
 
     /**
@@ -491,7 +557,20 @@ public class TaskService implements Dispose {
      * @param type
      * @param params
      */
-    public void doTask(int playerId, int type, int... params) {
+    public void doTask(int playerId, int type, Task newTask, int... params) {
+        boolean result = doTasks(playerId, type, newTask, params);
+        if (result) {
+            updateTaskToClient(playerId, newTask);
+        }
+    }
+
+    public void doTask(int playerId, Map<Integer, int[]> condParams) {
+        if(condParams.isEmpty()){
+            return;
+        }
+        if (!SessionManager.getInstance().getAllSessions().containsKey(playerId)) {
+            return;
+        }
         Player player = playerService.getPlayer(playerId);
         if (player.getAccName().equals(PlayerService.ROBOT)) {
             return;
@@ -505,11 +584,35 @@ public class TaskService implements Dispose {
             Gang gang = gangService.getGang(player.getGangId());
             tasks.addAll(gang.getTasks().values());
         }
+
+        List<Task> updateTasks = Lists.newArrayList();
         for (Task task : tasks) {
-            //ServerLogger.info("do task id =" + task.getTaskId());
-            doTask(playerId, type, task, params);
+            if (task.getState() == Task.STATE_FINISHED ||
+                    task.getState() == Task.STATE_SUBMITED) {
+                continue;
+            }
+            int[] params = condParams.get(task.getType());
+            if (params == null) {
+                continue;
+            }
+
+            boolean result = doTasks(playerId, task.getType(), task, params);
+            if (result) {
+                updateTasks.add(task);
+            }
         }
+        updateTaskToClient(playerId, updateTasks);
     }
+
+    public void doTask(int playerId, int type, int... params) {
+        if (!SessionManager.getInstance().getAllSessions().containsKey(playerId)) {
+            return;
+        }
+        Map<Integer, int[]> condParams = Maps.newHashMapWithExpectedSize(1);
+        condParams.put(type, params);
+        doTask(playerId, condParams);
+    }
+
 
     private void checkJointTask(int playerId, Task task) {
         int taskId = task.getTaskId();
@@ -635,6 +738,43 @@ public class TaskService implements Dispose {
         playerTask.getLiveBox().clear();
         SessionManager.getInstance().sendMsg(TaskExtension.TASK_LIST_INFO,
                 getCurTasks(playerId), playerId);
+
+
+        /////成就
+        RankingList<FightingRankEntity> fightRank = rankService.getRankingList(RankService.TYPE_FIGHTING);
+        int i = 1;
+        for (RankEntity rankEntity : fightRank.getOrderList()) {
+            PlayerView playerView = serialDataService.getData().getPlayerView(rankEntity.getPlayerId());
+            playerView.setLadderMaxRank(i);
+            doTask(rankEntity.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK, i);
+            i++;
+        }
+        i = 1;
+        RankingList<AchievementRankEntity> achievementRank = rankService.getRankingList(RankService.TYPE_ACHIEVEMENT);
+        for (RankEntity rankEntity : achievementRank.getOrderList()) {
+            PlayerView playerView = serialDataService.getData().getPlayerView(rankEntity.getPlayerId());
+            playerView.setAchievementMaxRank(i);
+            doTask(rankEntity.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK, i);
+            i++;
+        }
+
+        for (i = 1; i <= 50; i++) {
+            ArenaPlayer player = arenaLogic.getArenaPlayerByRank(i);
+            if (serialDataService.getData() != null) {
+                PlayerView playerView = serialDataService.getData().getPlayerView(player.getPlayerId());
+                playerView.setAchievementMaxRank(i);
+                doTask(player.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK, i);
+            }
+        }
+
+        ListParam<LadderRankVO> ladderRank = ladderService.getLadderRank();
+        i = 1;
+        for(LadderRankVO vo : ladderRank.params){
+            PlayerView playerView = serialDataService.getData().getPlayerView(vo.playerId);
+            playerView.setAchievementMaxRank(i);
+            doTask(vo.playerId, Task.TYPE_ACHIEVEMENT_RANK, i);
+            i ++;
+        }
     }
 
     public void updateDailyTasks(int playerId) {
@@ -763,7 +903,8 @@ public class TaskService implements Dispose {
             return Response.TASK_PERFORMING;
         }
         jointedTasks.remove(key);
-        myCurrJointedTask = new JointTask(taskId, partnerId);
+        TaskConfig cfg = ConfigData.getConfig(TaskConfig.class, taskId);
+        myCurrJointedTask = new JointTask(taskId, partnerId, cfg.taskType);
         playerTask.setCurrJointedTask(myCurrJointedTask);
 
         myJointTasks2.put(taskId, playerId);
@@ -779,5 +920,16 @@ public class TaskService implements Dispose {
         }
 
         return Response.SUCCESS;
+    }
+
+    public IntParam achievementTask(int playerId, AchievementSyncVo param) {
+        int[] params = new int[param.argsList.size()];
+        for (int i = 0; i < param.argsList.size(); i++) {
+            params[i] = param.argsList.get(i);
+        }
+        doTask(playerId, param.finishType, params);
+        IntParam result = new IntParam();
+        result.param = Response.SUCCESS;
+        return result;
     }
 }

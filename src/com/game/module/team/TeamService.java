@@ -5,9 +5,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.game.data.MonsterConfig;
 import com.game.module.group.Group;
 import com.game.module.group.GroupTeam;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.worldboss.MonsterHurtVO;
+import com.google.common.collect.Maps;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -45,7 +49,7 @@ public class TeamService implements InitHandler {
 	@Autowired
 	private CopyService copyService;
 	@Autowired
-	private WorldBossService worldBossService;
+	private TaskService taskService;
 
 	private volatile int maxTeamId = 1000;
 	private Map<Integer, Team> teams = new ConcurrentHashMap<Integer, Team>();
@@ -207,6 +211,12 @@ public class TeamService implements InitHandler {
 			ret.type = 1;
 			sceneService.brocastToSceneCurLine(player, CMD_MONSTER_INFO, ret, null);
 			if (monster.curHp <= 0) {
+				MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, monster.monsterId);
+				Map<Integer, int[]> condParams = Maps.newHashMap();
+				condParams.put(Task.FINISH_KILL, new int[]{monsterCfg.type, monster.monsterId, 1});
+				condParams.put(Task.TYPE_KILL, new int[]{monsterCfg.type,1});
+				condParams.put(Task.TYPE_KILL, new int[]{0,1});
+				taskService.doTask(player.getPlayerId(), condParams);
 				monsters.remove(hurtVO.targetId);
 				if(copy.isOver()){
 					//副本胜利
@@ -216,6 +226,7 @@ public class TeamService implements InitHandler {
 					// 更新次数,星级
 					copyService.updateCopy(player.getPlayerId(), copy, result);
 					sceneService.brocastToSceneCurLine(player, CopyExtension.TAKE_COPY_REWARDS, result, null);
+					taskService.doTask(team.getLeader(), Task.TYPE_LEADER_PASS, copy.getCopyId());
 					for(TMember tm : team.getMembers().values()){
 						// 清除
 						copyService.removeCopy(tm.getPlayerId());

@@ -2,650 +2,982 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>6001101</id>
-	<name>宠物1主动技能lv1</name>
-	<describe>宠物1主动技能lv1</describe>
+	<name>绷带缠绕</name>
+	<describe>甩出绷带,羁绊范围区内敌人。</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6001101</skillId>
+	<fight>20</fight>
 </config>
 <config>
 	<id>6001201</id>
-	<name>宠物1主动技能lv2</name>
-	<describe>宠物1主动技能lv2</describe>
+	<name>绷带缠绕</name>
+	<describe>甩出绷带,羁绊范围区内敌人。</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6001201</skillId>
+	<fight>21</fight>
 </config>
 <config>
 	<id>6001301</id>
-	<name>宠物1主动技能lv3</name>
-	<describe>宠物1主动技能lv3</describe>
+	<name>绷带缠绕</name>
+	<describe>甩出绷带,羁绊范围区内敌人。</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6001301</skillId>
+	<fight>22</fight>
 </config>
 <config>
 	<id>6001401</id>
-	<name>宠物1主动技能lv4</name>
-	<describe>宠物1主动技能lv4</describe>
+	<name>绷带缠绕</name>
+	<describe>甩出绷带,羁绊范围区内敌人。</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6001401</skillId>
+	<fight>23</fight>
 </config>
 <config>
 	<id>6001501</id>
-	<name>宠物1主动技能lv5</name>
-	<describe>宠物1主动技能lv5</describe>
+	<name>绷带缠绕</name>
+	<describe>甩出绷带,羁绊范围区内敌人。</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6001501</skillId>
+	<fight>24</fight>
 </config>
 <config>
 	<id>6001601</id>
-	<name>宠物1主动技能lv6</name>
-	<describe>宠物1主动技能lv6</describe>
+	<name>绷带缠绕</name>
+	<describe>甩出绷带,羁绊范围区内敌人。</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6001601</skillId>
+	<fight>25</fight>
 </config>
 <config>
 	<id>6001701</id>
-	<name>宠物1主动技能lv7</name>
-	<describe>宠物1主动技能lv7</describe>
+	<name>绷带缠绕</name>
+	<describe>甩出绷带,羁绊范围区内敌人。</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6001701</skillId>
+	<fight>26</fight>
 </config>
 <config>
 	<id>6002101</id>
-	<name>宠物2主动技能lv1</name>
-	<describe>宠物2主动技能lv1</describe>
+	<name>毒牙之雾</name>
+	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6002101</skillId>
+	<fight>27</fight>
 </config>
 <config>
 	<id>6002201</id>
-	<name>宠物2主动技能lv2</name>
-	<describe>宠物2主动技能lv2</describe>
+	<name>毒牙之雾</name>
+	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6002201</skillId>
+	<fight>28</fight>
 </config>
 <config>
 	<id>6002301</id>
-	<name>宠物2主动技能lv3</name>
-	<describe>宠物2主动技能lv3</describe>
+	<name>毒牙之雾</name>
+	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6002301</skillId>
+	<fight>29</fight>
 </config>
 <config>
 	<id>6002401</id>
-	<name>宠物2主动技能lv4</name>
-	<describe>宠物2主动技能lv4</describe>
+	<name>毒牙之雾</name>
+	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6002401</skillId>
+	<fight>30</fight>
 </config>
 <config>
 	<id>6002501</id>
-	<name>宠物2主动技能lv5</name>
-	<describe>宠物2主动技能lv5</describe>
+	<name>毒牙之雾</name>
+	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6002501</skillId>
+	<fight>31</fight>
 </config>
 <config>
 	<id>6002601</id>
-	<name>宠物2主动技能lv6</name>
-	<describe>宠物2主动技能lv6</describe>
+	<name>毒牙之雾</name>
+	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6002601</skillId>
+	<fight>32</fight>
 </config>
 <config>
 	<id>6002701</id>
-	<name>宠物2主动技能lv7</name>
-	<describe>宠物2主动技能lv7</describe>
+	<name>毒牙之雾</name>
+	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6002701</skillId>
+	<fight>33</fight>
 </config>
 <config>
 	<id>6003101</id>
-	<name>宠物3主动技能lv1</name>
-	<describe>宠物3主动技能lv1</describe>
+	<name>穿心</name>
+	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6003101</skillId>
+	<fight>34</fight>
 </config>
 <config>
 	<id>6003201</id>
-	<name>宠物3主动技能lv2</name>
-	<describe>宠物3主动技能lv2</describe>
+	<name>穿心</name>
+	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6003201</skillId>
+	<fight>35</fight>
 </config>
 <config>
 	<id>6003301</id>
-	<name>宠物3主动技能lv3</name>
-	<describe>宠物3主动技能lv3</describe>
+	<name>穿心</name>
+	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6003301</skillId>
+	<fight>36</fight>
 </config>
 <config>
 	<id>6003401</id>
-	<name>宠物3主动技能lv4</name>
-	<describe>宠物3主动技能lv4</describe>
+	<name>穿心</name>
+	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6003401</skillId>
+	<fight>37</fight>
 </config>
 <config>
 	<id>6003501</id>
-	<name>宠物3主动技能lv5</name>
-	<describe>宠物3主动技能lv5</describe>
+	<name>穿心</name>
+	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6003501</skillId>
+	<fight>38</fight>
 </config>
 <config>
 	<id>6003601</id>
-	<name>宠物3主动技能lv6</name>
-	<describe>宠物3主动技能lv6</describe>
+	<name>穿心</name>
+	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6003601</skillId>
+	<fight>39</fight>
 </config>
 <config>
 	<id>6003701</id>
-	<name>宠物3主动技能lv7</name>
-	<describe>宠物3主动技能lv7</describe>
+	<name>穿心</name>
+	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6003701</skillId>
+	<fight>40</fight>
 </config>
 <config>
 	<id>6004101</id>
-	<name>宠物4主动技能lv1</name>
-	<describe>宠物4主动技能lv1</describe>
+	<name>刺骨</name>
+	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6004101</skillId>
+	<fight>41</fight>
 </config>
 <config>
 	<id>6004201</id>
-	<name>宠物4主动技能lv2</name>
-	<describe>宠物4主动技能lv2</describe>
+	<name>刺骨</name>
+	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6004201</skillId>
+	<fight>42</fight>
 </config>
 <config>
 	<id>6004301</id>
-	<name>宠物4主动技能lv3</name>
-	<describe>宠物4主动技能lv3</describe>
+	<name>刺骨</name>
+	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6004301</skillId>
+	<fight>43</fight>
 </config>
 <config>
 	<id>6004401</id>
-	<name>宠物4主动技能lv4</name>
-	<describe>宠物4主动技能lv4</describe>
+	<name>刺骨</name>
+	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6004401</skillId>
+	<fight>44</fight>
 </config>
 <config>
 	<id>6004501</id>
-	<name>宠物4主动技能lv5</name>
-	<describe>宠物4主动技能lv5</describe>
+	<name>刺骨</name>
+	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6004501</skillId>
+	<fight>45</fight>
 </config>
 <config>
 	<id>6004601</id>
-	<name>宠物4主动技能lv6</name>
-	<describe>宠物4主动技能lv6</describe>
+	<name>刺骨</name>
+	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6004601</skillId>
+	<fight>46</fight>
 </config>
 <config>
 	<id>6004701</id>
-	<name>宠物4主动技能lv7</name>
-	<describe>宠物4主动技能lv7</describe>
+	<name>刺骨</name>
+	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6004701</skillId>
+	<fight>47</fight>
 </config>
 <config>
 	<id>6005101</id>
-	<name>宠物5主动技能lv1</name>
-	<describe>宠物5主动技能lv1</describe>
+	<name>鬼魂术</name>
+	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6005101</skillId>
+	<fight>48</fight>
 </config>
 <config>
 	<id>6005201</id>
-	<name>宠物5主动技能lv2</name>
-	<describe>宠物5主动技能lv2</describe>
+	<name>鬼魂术</name>
+	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6005201</skillId>
+	<fight>49</fight>
 </config>
 <config>
 	<id>6005301</id>
-	<name>宠物5主动技能lv3</name>
-	<describe>宠物5主动技能lv3</describe>
+	<name>鬼魂术</name>
+	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6005301</skillId>
+	<fight>50</fight>
 </config>
 <config>
 	<id>6005401</id>
-	<name>宠物5主动技能lv4</name>
-	<describe>宠物5主动技能lv4</describe>
+	<name>鬼魂术</name>
+	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6005401</skillId>
+	<fight>51</fight>
 </config>
 <config>
 	<id>6005501</id>
-	<name>宠物5主动技能lv5</name>
-	<describe>宠物5主动技能lv5</describe>
+	<name>鬼魂术</name>
+	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6005501</skillId>
+	<fight>52</fight>
 </config>
 <config>
 	<id>6005601</id>
-	<name>宠物5主动技能lv6</name>
-	<describe>宠物5主动技能lv6</describe>
+	<name>鬼魂术</name>
+	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6005601</skillId>
+	<fight>53</fight>
 </config>
 <config>
 	<id>6005701</id>
-	<name>宠物5主动技能lv7</name>
-	<describe>宠物5主动技能lv7</describe>
+	<name>鬼魂术</name>
+	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6005701</skillId>
+	<fight>54</fight>
 </config>
 <config>
 	<id>6006101</id>
-	<name>宠物6主动技能lv1</name>
-	<describe>宠物6主动技能lv1</describe>
+	<name>灼心</name>
+	<describe>灯芯之火,可以燎原,可以灼心。</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6006101</skillId>
+	<fight>55</fight>
 </config>
 <config>
 	<id>6006201</id>
-	<name>宠物6主动技能lv2</name>
-	<describe>宠物6主动技能lv2</describe>
+	<name>灼心</name>
+	<describe>灯芯之火,可以燎原,可以灼心。</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6006201</skillId>
+	<fight>56</fight>
 </config>
 <config>
 	<id>6006301</id>
-	<name>宠物6主动技能lv3</name>
-	<describe>宠物6主动技能lv3</describe>
+	<name>灼心</name>
+	<describe>灯芯之火,可以燎原,可以灼心。</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6006301</skillId>
+	<fight>57</fight>
 </config>
 <config>
 	<id>6006401</id>
-	<name>宠物6主动技能lv4</name>
-	<describe>宠物6主动技能lv4</describe>
+	<name>灼心</name>
+	<describe>灯芯之火,可以燎原,可以灼心。</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6006401</skillId>
+	<fight>58</fight>
 </config>
 <config>
 	<id>6006501</id>
-	<name>宠物6主动技能lv5</name>
-	<describe>宠物6主动技能lv5</describe>
+	<name>灼心</name>
+	<describe>灯芯之火,可以燎原,可以灼心。</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6006501</skillId>
+	<fight>59</fight>
 </config>
 <config>
 	<id>6006601</id>
-	<name>宠物6主动技能lv6</name>
-	<describe>宠物6主动技能lv6</describe>
+	<name>灼心</name>
+	<describe>灯芯之火,可以燎原,可以灼心。</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6006601</skillId>
+	<fight>60</fight>
 </config>
 <config>
 	<id>6006701</id>
-	<name>宠物6主动技能lv7</name>
-	<describe>宠物6主动技能lv7</describe>
+	<name>灼心</name>
+	<describe>灯芯之火,可以燎原,可以灼心。</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6006701</skillId>
+	<fight>61</fight>
 </config>
 <config>
 	<id>6007101</id>
-	<name>宠物7主动技能lv1</name>
-	<describe>宠物7主动技能lv1</describe>
+	<name>霹雳</name>
+	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6007101</skillId>
+	<fight>62</fight>
 </config>
 <config>
 	<id>6007201</id>
-	<name>宠物7主动技能lv2</name>
-	<describe>宠物7主动技能lv2</describe>
+	<name>霹雳</name>
+	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6007201</skillId>
+	<fight>63</fight>
 </config>
 <config>
 	<id>6007301</id>
-	<name>宠物7主动技能lv3</name>
-	<describe>宠物7主动技能lv3</describe>
+	<name>霹雳</name>
+	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6007301</skillId>
+	<fight>64</fight>
 </config>
 <config>
 	<id>6007401</id>
-	<name>宠物7主动技能lv4</name>
-	<describe>宠物7主动技能lv4</describe>
+	<name>霹雳</name>
+	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6007401</skillId>
+	<fight>65</fight>
 </config>
 <config>
 	<id>6007501</id>
-	<name>宠物7主动技能lv5</name>
-	<describe>宠物7主动技能lv5</describe>
+	<name>霹雳</name>
+	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6007501</skillId>
+	<fight>66</fight>
 </config>
 <config>
 	<id>6007601</id>
-	<name>宠物7主动技能lv6</name>
-	<describe>宠物7主动技能lv6</describe>
+	<name>霹雳</name>
+	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6007601</skillId>
+	<fight>67</fight>
 </config>
 <config>
 	<id>6007701</id>
-	<name>宠物7主动技能lv7</name>
-	<describe>宠物7主动技能lv7</describe>
+	<name>霹雳</name>
+	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6007701</skillId>
+	<fight>68</fight>
 </config>
 <config>
 	<id>6008101</id>
-	<name>宠物8主动技能lv1</name>
-	<describe>宠物8主动技能lv1</describe>
+	<name>星陨</name>
+	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
 	<type>1</type>
 	<quality>1</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6008101</skillId>
+	<fight>69</fight>
 </config>
 <config>
 	<id>6008201</id>
-	<name>宠物8主动技能lv2</name>
-	<describe>宠物8主动技能lv2</describe>
+	<name>星陨</name>
+	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
 	<type>1</type>
 	<quality>2</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6008201</skillId>
+	<fight>70</fight>
 </config>
 <config>
 	<id>6008301</id>
-	<name>宠物8主动技能lv3</name>
-	<describe>宠物8主动技能lv3</describe>
+	<name>星陨</name>
+	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
 	<type>1</type>
 	<quality>3</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6008301</skillId>
+	<fight>71</fight>
 </config>
 <config>
 	<id>6008401</id>
-	<name>宠物8主动技能lv4</name>
-	<describe>宠物8主动技能lv4</describe>
+	<name>星陨</name>
+	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
 	<type>1</type>
 	<quality>4</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6008401</skillId>
+	<fight>72</fight>
 </config>
 <config>
 	<id>6008501</id>
-	<name>宠物8主动技能lv5</name>
-	<describe>宠物8主动技能lv5</describe>
+	<name>星陨</name>
+	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
 	<type>1</type>
 	<quality>5</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6008501</skillId>
+	<fight>73</fight>
 </config>
 <config>
 	<id>6008601</id>
-	<name>宠物8主动技能lv6</name>
-	<describe>宠物8主动技能lv6</describe>
+	<name>星陨</name>
+	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
 	<type>1</type>
 	<quality>6</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6008601</skillId>
+	<fight>74</fight>
 </config>
 <config>
 	<id>6008701</id>
-	<name>宠物8主动技能lv7</name>
-	<describe>宠物8主动技能lv7</describe>
+	<name>星陨</name>
+	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
 	<type>1</type>
 	<quality>7</quality>
 	<swallowPercents></swallowPercents>
 	<skillId>6008701</skillId>
+	<fight>75</fight>
 </config>
 <config>
-	<id>100</id>
-	<name>被动技能lv1</name>
-	<describe>被动技能lv1</describe>
+	<id>1100</id>
+	<name>擎鼎</name>
+	<describe>提升威力值</describe>
 	<type>2</type>
 	<quality>1</quality>
 	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13101025</skillId>
+	<fight>76</fight>
 </config>
 <config>
-	<id>101</id>
-	<name>被动技能lv2</name>
-	<describe>被动技能lv2</describe>
+	<id>1101</id>
+	<name>擎鼎</name>
+	<describe>提升威力值</describe>
 	<type>2</type>
 	<quality>2</quality>
 	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13101025</skillId>
+	<fight>77</fight>
 </config>
 <config>
-	<id>103</id>
-	<name>被动技能lv3</name>
-	<describe>被动技能lv3</describe>
+	<id>1102</id>
+	<name>擎鼎</name>
+	<describe>提升威力值</describe>
 	<type>2</type>
 	<quality>3</quality>
 	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13101025</skillId>
+	<fight>78</fight>
 </config>
 <config>
-	<id>104</id>
-	<name>被动技能lv4</name>
-	<describe>被动技能lv4</describe>
+	<id>1103</id>
+	<name>擎鼎</name>
+	<describe>提升威力值</describe>
 	<type>2</type>
 	<quality>4</quality>
 	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13101025</skillId>
+	<fight>79</fight>
 </config>
 <config>
-	<id>105</id>
-	<name>被动技能lv5</name>
-	<describe>被动技能lv5</describe>
+	<id>1104</id>
+	<name>擎鼎</name>
+	<describe>提升威力值</describe>
 	<type>2</type>
 	<quality>5</quality>
 	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13101025</skillId>
+	<fight>80</fight>
 </config>
 <config>
-	<id>106</id>
-	<name>被动技能lv6</name>
-	<describe>被动技能lv6</describe>
+	<id>1105</id>
+	<name>擎鼎</name>
+	<describe>提升威力值</describe>
 	<type>2</type>
 	<quality>6</quality>
 	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13101025</skillId>
+	<fight>81</fight>
 </config>
 <config>
-	<id>107</id>
-	<name>被动技能lv7</name>
-	<describe>被动技能lv7</describe>
+	<id>1106</id>
+	<name>擎鼎</name>
+	<describe>提升威力值</describe>
 	<type>2</type>
 	<quality>7</quality>
 	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13101025</skillId>
+	<fight>82</fight>
 </config>
 <config>
-	<id>108</id>
-	<name>被动技能lv8</name>
-	<describe>被动技能lv8</describe>
-	<type>2</type>
-	<quality>7</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId>13101025</skillId>
-</config>
-<config>
-	<id>1001</id>
-	<name>超级被动技能lv1</name>
-	<describe>超级被动技能lv1</describe>
+	<id>1110</id>
+	<name>重击</name>
+	<describe>狂飙暴击值</describe>
 	<type>2</type>
 	<quality>1</quality>
-	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13104042</skillId>
+	<fight>76</fight>
 </config>
 <config>
-	<id>1002</id>
-	<name>超级被动技能lv2</name>
-	<describe>超级被动技能lv2</describe>
+	<id>1111</id>
+	<name>重击</name>
+	<describe>狂飙暴击值</describe>
 	<type>2</type>
 	<quality>2</quality>
-	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13104042</skillId>
+	<fight>77</fight>
 </config>
 <config>
-	<id>1003</id>
-	<name>超级被动技能lv3</name>
-	<describe>超级被动技能lv3</describe>
+	<id>1112</id>
+	<name>重击</name>
+	<describe>狂飙暴击值</describe>
 	<type>2</type>
 	<quality>3</quality>
-	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13104042</skillId>
+	<fight>78</fight>
 </config>
 <config>
-	<id>1004</id>
-	<name>超级被动技能lv4</name>
-	<describe>超级被动技能lv4</describe>
+	<id>1113</id>
+	<name>重击</name>
+	<describe>狂飙暴击值</describe>
 	<type>2</type>
 	<quality>4</quality>
-	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13104042</skillId>
+	<fight>79</fight>
 </config>
 <config>
-	<id>1005</id>
-	<name>超级被动技能lv5</name>
-	<describe>超级被动技能lv5</describe>
+	<id>1114</id>
+	<name>重击</name>
+	<describe>狂飙暴击值</describe>
 	<type>2</type>
 	<quality>5</quality>
-	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13104042</skillId>
+	<fight>80</fight>
 </config>
 <config>
-	<id>1006</id>
-	<name>超级被动技能lv6</name>
-	<describe>超级被动技能lv6</describe>
+	<id>1115</id>
+	<name>重击</name>
+	<describe>狂飙暴击值</describe>
 	<type>2</type>
 	<quality>6</quality>
-	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13104042</skillId>
+	<fight>81</fight>
 </config>
 <config>
-	<id>1007</id>
-	<name>超级被动技能lv7</name>
-	<describe>超级被动技能lv7</describe>
+	<id>1116</id>
+	<name>重击</name>
+	<describe>狂飙暴击值</describe>
 	<type>2</type>
 	<quality>7</quality>
-	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
 	<skillId>13104042</skillId>
+	<fight>82</fight>
 </config>
 <config>
-	<id>1008</id>
-	<name>超级被动技能lv8</name>
-	<describe>超级被动技能lv8</describe>
+	<id>1120</id>
+	<name>护佑</name>
+	<describe>提高防御值</describe>
+	<type>2</type>
+	<quality>1</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>76</fight>
+</config>
+<config>
+	<id>1121</id>
+	<name>护佑</name>
+	<describe>提高防御值</describe>
+	<type>2</type>
+	<quality>2</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>77</fight>
+</config>
+<config>
+	<id>1122</id>
+	<name>护佑</name>
+	<describe>提高防御值</describe>
+	<type>2</type>
+	<quality>3</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>78</fight>
+</config>
+<config>
+	<id>1123</id>
+	<name>护佑</name>
+	<describe>提高防御值</describe>
+	<type>2</type>
+	<quality>4</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>79</fight>
+</config>
+<config>
+	<id>1124</id>
+	<name>护佑</name>
+	<describe>提高防御值</describe>
+	<type>2</type>
+	<quality>5</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>80</fight>
+</config>
+<config>
+	<id>1125</id>
+	<name>护佑</name>
+	<describe>提高防御值</describe>
+	<type>2</type>
+	<quality>6</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>81</fight>
+</config>
+<config>
+	<id>1126</id>
+	<name>护佑</name>
+	<describe>提高防御值</describe>
 	<type>2</type>
 	<quality>7</quality>
-	<swallowPercents>[0,0,0,5,10,40,70]</swallowPercents>
-	<skillId>13104042</skillId>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>82</fight>
+</config>
+<config>
+	<id>1130</id>
+	<name>祝福</name>
+	<describe>增加抗性值</describe>
+	<type>2</type>
+	<quality>1</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>76</fight>
+</config>
+<config>
+	<id>1131</id>
+	<name>祝福</name>
+	<describe>增加抗性值</describe>
+	<type>2</type>
+	<quality>2</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>77</fight>
+</config>
+<config>
+	<id>1132</id>
+	<name>祝福</name>
+	<describe>增加抗性值</describe>
+	<type>2</type>
+	<quality>3</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>78</fight>
+</config>
+<config>
+	<id>1133</id>
+	<name>祝福</name>
+	<describe>增加抗性值</describe>
+	<type>2</type>
+	<quality>4</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>79</fight>
+</config>
+<config>
+	<id>1134</id>
+	<name>祝福</name>
+	<describe>增加抗性值</describe>
+	<type>2</type>
+	<quality>5</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>80</fight>
+</config>
+<config>
+	<id>1135</id>
+	<name>祝福</name>
+	<describe>增加抗性值</describe>
+	<type>2</type>
+	<quality>6</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>81</fight>
+</config>
+<config>
+	<id>1136</id>
+	<name>祝福</name>
+	<describe>增加抗性值</describe>
+	<type>2</type>
+	<quality>7</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>82</fight>
+</config>
+<config>
+	<id>1140</id>
+	<name>禅露</name>
+	<describe>恢复生命值</describe>
+	<type>2</type>
+	<quality>1</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>76</fight>
+</config>
+<config>
+	<id>1141</id>
+	<name>禅露</name>
+	<describe>恢复生命值</describe>
+	<type>2</type>
+	<quality>2</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>77</fight>
+</config>
+<config>
+	<id>1142</id>
+	<name>禅露</name>
+	<describe>恢复生命值</describe>
+	<type>2</type>
+	<quality>3</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>78</fight>
+</config>
+<config>
+	<id>1143</id>
+	<name>禅露</name>
+	<describe>恢复生命值</describe>
+	<type>2</type>
+	<quality>4</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>79</fight>
+</config>
+<config>
+	<id>1144</id>
+	<name>禅露</name>
+	<describe>恢复生命值</describe>
+	<type>2</type>
+	<quality>5</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>80</fight>
+</config>
+<config>
+	<id>1145</id>
+	<name>禅露</name>
+	<describe>恢复生命值</describe>
+	<type>2</type>
+	<quality>6</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>81</fight>
+</config>
+<config>
+	<id>1146</id>
+	<name>禅露</name>
+	<describe>恢复生命值</describe>
+	<type>2</type>
+	<quality>7</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>82</fight>
+</config>
+<config>
+	<id>1150</id>
+	<name>涣神</name>
+	<describe>提高异常值</describe>
+	<type>2</type>
+	<quality>1</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>76</fight>
+</config>
+<config>
+	<id>1151</id>
+	<name>涣神</name>
+	<describe>提高异常值</describe>
+	<type>2</type>
+	<quality>2</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>77</fight>
+</config>
+<config>
+	<id>1152</id>
+	<name>涣神</name>
+	<describe>提高异常值</describe>
+	<type>2</type>
+	<quality>3</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>78</fight>
+</config>
+<config>
+	<id>1153</id>
+	<name>涣神</name>
+	<describe>提高异常值</describe>
+	<type>2</type>
+	<quality>4</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>79</fight>
+</config>
+<config>
+	<id>1154</id>
+	<name>涣神</name>
+	<describe>提高异常值</describe>
+	<type>2</type>
+	<quality>5</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>80</fight>
+</config>
+<config>
+	<id>1155</id>
+	<name>涣神</name>
+	<describe>提高异常值</describe>
+	<type>2</type>
+	<quality>6</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>81</fight>
+</config>
+<config>
+	<id>1156</id>
+	<name>涣神</name>
+	<describe>提高异常值</describe>
+	<type>2</type>
+	<quality>7</quality>
+	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
+	<skillId></skillId>
+	<fight>82</fight>
 </config>
 </root>

@@ -78,6 +78,8 @@ public class SkillService {
 			data.getCurSkills().set(index, cfg.nextId);
 		}
 		taskService.doTask(playerId, Task.FINISH_SKILL);
+		taskService.doTask(playerId, Task.TYPE_SKILL_LEVEL,cfg.nextId);
+
 		updateSkill2Client(playerId);
 		return Response.SUCCESS;
 	}

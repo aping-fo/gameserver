@@ -11,6 +11,8 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerCalculator;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.FashionInfo;
 import com.game.params.FashionVO;
 import com.game.params.TakeFashionVO;
@@ -44,6 +46,8 @@ public class FashionService {
     private GoodsService goodsServices;
     @Autowired
     private PlayerCalculator calculator;
+    @Autowired
+    private TaskService taskService;
 
     // 获得时装接口
     public void addFashion(int playerId, int fashionId, int limitTime) {
@@ -68,6 +72,7 @@ public class FashionService {
         data.getFashions().add(fashionId);
         data.getFashionMap().put(fashionId, new Fashion(fashionId, System.currentTimeMillis(), cfg.timeLimit));
 
+        taskService.doTask(playerId, Task.TYPE_FASH_COUNT,data.getFashionMap().size());
         calculator.calculate(player);
         // 推送前端
         SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);

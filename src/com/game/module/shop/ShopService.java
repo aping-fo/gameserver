@@ -10,6 +10,8 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.serial.SerialDataService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.BuyShopVO;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
@@ -61,6 +63,8 @@ public class ShopService {
 	private GoodsService goodsService;
 	@Autowired
 	private FameService fameService;
+	@Autowired
+	private TaskService taskService;
 
 	// 获取商城信息
 	public ShopInfo getInfo(int playerId, int type) {
@@ -253,6 +257,8 @@ public class ShopService {
 		}
 		goodsService.addRewrad(playerId, cfg.goodsId, cfg.count * count, LogConsume.SHOP_BUY_ADD, id);
 
+		data.setBuyCount(data.getBuyCount() + 1);
+		taskService.doTask(playerId, Task.TYPE_SHOP_BUY_COUNT,data.getBuyCount());
 		vo.errCode = Response.SUCCESS;
 		vo.id = id;
 		vo.count = count;

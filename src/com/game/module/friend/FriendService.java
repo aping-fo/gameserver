@@ -1,25 +1,11 @@
 package com.game.module.friend;
 
-import io.netty.channel.Channel;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.game.data.Response;
 import com.game.event.Dispose;
 import com.game.event.ILogin;
 import com.game.event.InitHandler;
 import com.game.module.chat.ChatExtension;
 import com.game.module.chat.ChatService;
-import com.game.module.daily.DailyService;
 import com.game.module.gang.GangService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerDao;
@@ -28,6 +14,8 @@ import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
 import com.game.module.serial.SerialData;
 import com.game.module.serial.SerialDataService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.Int2Param;
 import com.game.params.ListParam;
 import com.game.params.chat.ChatVo;
@@ -35,6 +23,12 @@ import com.game.params.friend.FriendInfo;
 import com.game.params.friend.FriendVo;
 import com.game.util.ConfigData;
 import com.server.SessionManager;
+import io.netty.channel.Channel;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class FriendService implements InitHandler, ILogin, Dispose {
@@ -44,7 +38,7 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 	@Autowired
 	private PlayerService playerService;
 	@Autowired
-	private DailyService dailyService;
+	private TaskService taskService;
 	@Autowired
 	private SceneService sceneService;
 	@Autowired
@@ -199,6 +193,8 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 			}
 			
 		}
+
+		taskService.doTask(playerId, Task.TYPE_FRIEND_COUNT,data.getFriends().size());
 		return result;
 	}
 

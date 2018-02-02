@@ -6,7 +6,10 @@ import com.game.module.player.Player;
 import com.game.module.rank.vo.EndlessRankEntity;
 import com.game.module.rank.vo.FightingRankEntity;
 import com.game.module.rank.vo.LevelRankEntity;
-import com.game.module.title.TitleService;
+import com.game.module.serial.PlayerView;
+import com.game.module.serial.SerialDataService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.util.CompressUtil;
 import com.game.util.JsonUtils;
 import com.game.util.TimeUtil;
@@ -27,13 +30,16 @@ public class RankService implements InitHandler {
 	public static final int TYPE_ENDLESS = 4;
 	public static final int TYPE_AI_ARENA = 5;
 	public static final int TYPE_PK_ARENA = 6;
-	
+	public static final int TYPE_ACHIEVEMENT = 7;
+
 	@Autowired
 	private RankingDao dao;
 	@Autowired
 	private LadderService ladderService;
 	@Autowired
-	private TitleService titleService;
+	private SerialDataService serialDataService;
+	@Autowired
+	private TaskService taskService;
 
 	private final Map<Integer, RankingList<? extends IRankCA>> rankings = new ConcurrentHashMap<Integer, RankingList<? extends IRankCA>>();
 	
@@ -42,6 +48,7 @@ public class RankService implements InitHandler {
 		register(TYPE_FIGHTING, 50, (int)TimeUtil.ONE_HOUR, FightingRankEntity.class);
 		register(TYPE_LEVEL, 50, (int)TimeUtil.ONE_HOUR, LevelRankEntity.class);
 		register(TYPE_ENDLESS, 50, (int)TimeUtil.ONE_HOUR, EndlessRankEntity.class);
+		register(TYPE_ACHIEVEMENT, 50, (int)TimeUtil.ONE_HOUR, EndlessRankEntity.class);
 		sort();
 	}
 	
@@ -86,9 +93,16 @@ public class RankService implements InitHandler {
 		synchronized (fightingList) {
 			fightingList.clear();
 			Map<Integer, FightingRankEntity> fightingEntities = new ConcurrentHashMap<Integer, FightingRankEntity>();
+			int i = 1;
 			for(Player player : players){
 				fightingEntities.put(player.getPlayerId(), new FightingRankEntity(player.getFight()));
-				//titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING,player.getFight(), ActivityConsts.UpdateType.T_VALUE);
+				if(serialDataService.getData() != null){
+					PlayerView playerView = serialDataService.getData().getPlayerView(player.getPlayerId());
+					playerView.setFightMaxRank(i);
+
+					taskService.doTask(player.getPlayerId(), Task.TYPE_FIGHT_RANK,i);
+					i ++;
+				}
 			}
 			fightingList.putAll(fightingEntities);
 		}
@@ -98,11 +112,30 @@ public class RankService implements InitHandler {
 		RankingList<LevelRankEntity> levelList = getRankingList(TYPE_LEVEL);
 		synchronized (fightingList) {
 			levelList.clear();
-			Map<Integer, LevelRankEntity> levelEntities = new ConcurrentHashMap<Integer, LevelRankEntity>();
+			Map<Integer, LevelRankEntity> levelEntities = new ConcurrentHashMap<>();
 			for(Player player : players){
 				levelEntities.put(player.getPlayerId(), new LevelRankEntity(player.getLev(), player.getExp()));
 			}
 			levelList.putAll(levelEntities);
+		}
+
+		players = dao.selectAchievementRanking();
+		RankingList<LevelRankEntity> achievementList = getRankingList(TYPE_ACHIEVEMENT);
+		synchronized (achievementList) {
+			achievementList.clear();
+			Map<Integer, LevelRankEntity> achievementEntities = new ConcurrentHashMap<>();
+			int i = 1;
+			for(Player player : players){
+				achievementEntities.put(player.getPlayerId(), new LevelRankEntity(player.getLev(), player.getExp()));
+
+				/*if(serialDataService.getData() != null){
+					PlayerView playerView = serialDataService.getData().getPlayerView(player.getPlayerId());
+					playerView.setAchievementMaxRank(i);
+					taskService.doTask(player.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK,i);
+					i ++;
+				}*/
+			}
+			achievementList.putAll(achievementEntities);
 		}
 
 		ladderService.ladderSort();

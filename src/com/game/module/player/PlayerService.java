@@ -18,6 +18,8 @@ import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
 import com.game.module.pet.PetService;
 import com.game.module.scene.Scene;
+import com.game.module.serial.PlayerView;
+import com.game.module.serial.SerialDataService;
 import com.game.module.skill.SkillCard;
 import com.game.module.skill.SkillService;
 import com.game.module.task.Task;
@@ -31,6 +33,7 @@ import com.game.params.player.CRegVo;
 import com.game.params.player.PlayerVo;
 import com.game.util.*;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -76,6 +79,8 @@ public class PlayerService implements InitHandler {
     private TitleService titleService;
     @Autowired
     private DefaultLogoutHandler logoutHandler;
+    @Autowired
+    private SerialDataService serialDataService;
 
     private static volatile int maxPlayerId = 0;
 
@@ -341,6 +346,29 @@ public class PlayerService implements InitHandler {
         //活动检测
         activityService.onLogin(playerId);
         titleService.onLogin(playerId);
+
+        PlayerView playerView = serialDataService.getData().getPlayerView(playerId);
+        Map<Integer,int[]> condParam = Maps.newHashMap();
+        if(playerView.getGangMaxRank() != 0){
+            condParam.put(Task.TYPE_GANG_RANK,new int[]{playerView.getGangMaxRank()});
+        }
+        if(playerView.getFightMaxRank() != 0){
+            condParam.put(Task.TYPE_FIGHT_RANK,new int[]{playerView.getFightMaxRank()});
+        }
+        if(playerView.getLadderMaxRank() != 0){
+            condParam.put(Task.TYPE_LADDER_RANK,new int[]{playerView.getLadderMaxRank()});
+        }
+        if(playerView.getWorldBossMaxRank() != 0){
+            condParam.put(Task.TYPE_WB_RANK,new int[]{playerView.getWorldBossMaxRank()});
+        }
+        if(playerView.getGangMaxLevel() != 0){
+            condParam.put(Task.TYPE_GANG_LEVEL,new int[]{playerView.getGangMaxLevel()});
+        }
+        if(playerView.getAchievementMaxRank() != 0){
+            condParam.put(Task.TYPE_ACHIEVEMENT_RANK,new int[]{playerView.getAchievementMaxRank()});
+        }
+        taskService.doTask(playerId,condParam);
+
         nameCaches.put(player.getName(), player.getPlayerId());
     }
 
@@ -496,7 +524,38 @@ public class PlayerService implements InitHandler {
         taskService.doTask(playerId, Task.FINISH_CONSUME, Goods.COIN, dec);
         return true;
     }
+    public boolean decAchievement(int playerId, int dec, LogConsume actionType, Object... params) {
+        Player player = getPlayer(playerId);
+        synchronized (player) {
+            if (dec <= 0 || player.getAchievement() < dec) {
+                return false;
+            }
+            player.setAchievement(player.getAchievement() - dec);
+        }
 
+        // 通知前端
+        updateAttrsToClient(playerId, Player.ACHIEVEMENT, player.getCoin());
+        // 记录日志
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getAchievement(), false, dec, actionType,
+                Goods.ACHIEVEMENT, Goods.ACHIEVEMENT, params);
+        return true;
+    }
+    // 加成就
+    public boolean addAchievement(int playerId, int add, LogConsume actionType, Object... params) {
+        if (add <= 0) {
+            return false;
+        }
+        Player player = getPlayer(playerId);
+        synchronized (player) {
+            player.setAchievement(player.getAchievement() + add);
+        }
+        // 通知前端
+        updateAttrsToClient(playerId, Player.ACHIEVEMENT, player.getCoin());
+        // 记录日志
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getAchievement(), true, add, actionType,
+                Goods.ACHIEVEMENT, Goods.ACHIEVEMENT, params);
+        return true;
+    }
     // 加金币
     public boolean addCoin(int playerId, int add, LogConsume actionType, Object... params) {
         if (add <= 0) {
@@ -573,6 +632,7 @@ public class PlayerService implements InitHandler {
                     player.setVip(newVIP);
                     //VIP称号
                     titleService.complete(playerId, TitleConsts.VIP, newVIP, ActivityConsts.UpdateType.T_VALUE);
+                    taskService.doTask(playerId,Task.ACHIEVEMENT_VIP,newVIP);
                 }
                 break;
             }
@@ -618,6 +678,7 @@ public class PlayerService implements InitHandler {
                     ActivityConsts.ActivityTaskCondType.T_LEVEL_UP, player.getLev(), ActivityConsts.UpdateType.T_VALUE, true);
             //等级称号
             titleService.complete(playerId, TitleConsts.LEVEL, player.getLev(), ActivityConsts.UpdateType.T_VALUE);
+            taskService.doTask(playerId,Task.TYPE_LEVEL,player.getLev());
         }
         // 发送到前端
         updateAttrsToClient(playerId, Player.EXP, player.getExp(), Player.LEV, player.getLev());
@@ -861,6 +922,9 @@ public class PlayerService implements InitHandler {
         for (int i = 0; i < count; i++) {
             addSkillCard(playerId, skillCardId);
         }
+
+        PlayerData data = getPlayerData(playerId);
+        taskService.doTask(playerId,Task.TYPE_SKILL_CARD_COUNT,data.getSkillCards().size());
         skillService.updateSkill2Client(playerId);
     }
 

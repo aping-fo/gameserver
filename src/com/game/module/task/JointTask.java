@@ -8,8 +8,8 @@ public class JointTask extends Task {
 		super();
 	}
 
-	public JointTask(int taskId, int partnerId) {
-		super(taskId, Task.STATE_ACCEPTED);
+	public JointTask(int taskId, int partnerId,int type) {
+		super(taskId, Task.STATE_ACCEPTED,type);
 		this.parnterId = partnerId;
 	}
 

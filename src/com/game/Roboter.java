@@ -75,7 +75,7 @@ public class Roboter {
                 dos.write(dataBytes);
                 dos.writeInt(dis.readInt());
                 dos.flush();
-                Thread.sleep(20);
+                Thread.sleep(500);
                 return true;
             }
         } catch (Exception e) {

@@ -10,10 +10,13 @@ import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.rank.RankService;
 import com.game.module.scene.SceneService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.TitleVO;
+import com.game.params.goods.AttrItem;
 import com.game.util.ConfigData;
 import com.game.util.JsonUtils;
 import com.google.common.collect.Lists;
@@ -25,6 +28,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by lucky on 2017/12/26.
@@ -37,7 +41,7 @@ public class TitleService {
     @Autowired
     private PlayerService playerService;
     @Autowired
-    private RankService rankService;
+    private TaskService taskService;
     @Autowired
     private LadderService ladderService;
     @Autowired
@@ -135,6 +139,10 @@ public class TitleService {
                 }
             }
         }
+
+        if (titles != null && !titles.isEmpty()) {
+            taskService.doTask(playerId, Task.TYPE_TITLE, data.getTitles().size());
+        }
     }
 
     /**
@@ -207,5 +215,31 @@ public class TitleService {
         param.param1 = Response.SUCCESS;
         param.param2 = titleId;
         return param;
+    }
+
+    public ListParam<AttrItem> getThreeTypesRed(int playerId) {
+        PlayerData data = playerService.getPlayerData(playerId);
+
+        ListParam<AttrItem> result = new ListParam<>();
+        result.params = Lists.newArrayList();
+
+        for (Map.Entry<Integer, Integer> s : data.getTitleRead().entrySet()) {
+            AttrItem attrItem = new AttrItem();
+            attrItem.type = s.getKey();
+            attrItem.value = s.getValue();
+
+            result.params.add(attrItem);
+        }
+
+        return result;
+    }
+
+    public IntParam getSingleTypesRed(int playerId, Int2Param param) {
+        PlayerData data = playerService.getPlayerData(playerId);
+
+        data.getTitleRead().put(param.param1, param.param2);
+        IntParam result = new IntParam();
+        result.param = Response.SUCCESS;
+        return result;
     }
 }

@@ -20,398 +20,498 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 @Service
 public class PlayerCalculator {
-	
-	@Autowired
-	private PlayerService playerService;
-	@Autowired
-	private GoodsService goodsService;
 
-	@Autowired
-	private GroupService groupService;
-	@Autowired
-	private TeamService teamService;
-	@Autowired
-	private PetService petService;
-	@Autowired
-	private TitleService titleService;
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private GoodsService goodsService;
 
-	// 重新计算人物属性
-	public void calculate(int playerId) {
-		calculate(playerService.getPlayer(playerId));
-	}
+    @Autowired
+    private GroupService groupService;
+    @Autowired
+    private TeamService teamService;
+    @Autowired
+    private PetService petService;
+    @Autowired
+    private TitleService titleService;
 
-	// 重新计算人物的属性
-	public void calculate(Player player) {
-		synchronized (player) {
-			initPlayer(player);
-			updateAttr(player);
-			// 通知前端
-			playerService.refreshPlayerToClient(player.getPlayerId());
-		}
-	}
+    // 重新计算人物属性
+    public void calculate(int playerId) {
+        calculate(playerService.getPlayer(playerId));
+    }
 
-	// 初始化人物的各种属性
-	public void initPlayer(Player player) {
-		PlayerUpgradeCfg attr = ConfigData.getConfig(PlayerUpgradeCfg.class, player.getLev());
-		player.setHp(attr.hp);
-		player.setAttack(attr.attack);
-		player.setDefense(attr.defense);
-		player.setSymptom(attr.symptom);
-		player.setFu(attr.symptom);
-		player.setCrit(attr.crit);
+    // 重新计算人物的属性
+    public void calculate(Player player) {
+        synchronized (player) {
+            initPlayer(player);
+            updateAttr(player);
+            // 通知前端
+            playerService.refreshPlayerToClient(player.getPlayerId());
+        }
+    }
 
-		//初始化宝石
-		initJewel(player.getPlayerId());
-	}
+    // 初始化人物的各种属性
+    public void initPlayer(Player player) {
+        PlayerUpgradeCfg attr = ConfigData.getConfig(PlayerUpgradeCfg.class, player.getLev());
+        player.setHp(attr.hp);
+        player.setAttack(attr.attack);
+        player.setDefense(attr.defense);
+        player.setSymptom(attr.symptom);
+        player.setFu(attr.symptom);
+        player.setCrit(attr.crit);
 
-	public void initJewel(int playerId) {
-		PlayerData data = playerService.getPlayerData(playerId);
-		for(int type:ConfigData.globalParam().equipTypes){
-			Jewel jewel = data.getJewels().get(type);
-			if(jewel==null){
-				jewel = new Jewel();
-				jewel.setLev(1);
-				data.getJewels().put(type, jewel);
-			}
-		}
-	}
+        //初始化宝石
+        initJewel(player.getPlayerId());
+    }
+
+    public void initJewel(int playerId) {
+        PlayerData data = playerService.getPlayerData(playerId);
+        for (int type : ConfigData.globalParam().equipTypes) {
+            Jewel jewel = data.getJewels().get(type);
+            if (jewel == null) {
+                jewel = new Jewel();
+                jewel.setLev(1);
+                data.getJewels().put(type, jewel);
+            }
+        }
+    }
 
 
-	// 计算属性加成
-	public void updateAttr(Player player) {
-		int oldFight = player.getFight();
+    // 计算属性加成
+    public void updateAttr(Player player) {
+        int oldFight = player.getFight();
+        addEquip(player);
+        addJewel(player);
+        addArtifact(player);
+        AddFashion(player);
+        //公会科技加成
+        addGuildAttr(player);
+        //称号加成
+        addTitleAttr(player);
+        //宠物加成
+        addPet(player);
+        //百分比保持最后
+        addPercent(player);
 
-		addEquip(player);
-		addJewel(player);
-		addArtifact(player);
-		AddFashion(player);
-		//百分比保持最后
-		addPercent(player);
-		//公会科技加成
-		addGuildAttr(player);
-		//称号加成
-		addTitleAttr(player);
-		//宠物加成
-		AddPet(player);
-		// 更新战斗力
-		float[] fightParams = ConfigData.globalParam().fightParams;
-		float fight = player.getHp()*fightParams[0]+player.getAttack()*fightParams[1]+player.getDefense()*fightParams[2]+player.getFu()*fightParams[3]+player.getSymptom()*fightParams[4]+
-				player.getCrit()*fightParams[5]; 
-		player.setFight((int)fight);
+        // 更新战斗力
+        float[] fightParams = ConfigData.globalParam().fightParams;
+        float fight = player.getHp() * fightParams[0] + player.getAttack() * fightParams[1] + player.getDefense() * fightParams[2] + player.getFu() * fightParams[3] + player.getSymptom() * fightParams[4] +
+                player.getCrit() * fightParams[5];
+        player.setFight((int) fight);
 
-		if(fight > oldFight){
-			titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING,(int)fight, ActivityConsts.UpdateType.T_VALUE);
-		}
-		groupService.updateAttr(player.getPlayerId());
-		teamService.updateAttr(player.getPlayerId());
-		playerService.refreshPlayerToClient(player.getPlayerId());
-	}
+        if (fight > oldFight) {
+            titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING, (int) fight, ActivityConsts.UpdateType.T_VALUE);
+        }
+        groupService.updateAttr(player.getPlayerId());
+        teamService.updateAttr(player.getPlayerId());
+        playerService.refreshPlayerToClient(player.getPlayerId());
+    }
 
-	/**
-	 * 加成公会属性
-	 * @param player
-	 */
-	private void addGuildAttr(PlayerAddition player) {
-		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		for(int techId : data.getTechnologys()) {
-			GangScienceCfg conf = ConfigData.getConfig(GangScienceCfg.class,techId);
-			if(conf.type == 1) { //威力
-				player.addAttack(conf.param);
-			} else if(conf.type == 2) {
-				player.addDefense(conf.param);
-			} else if(conf.type == 3) {
-				player.addHp(conf.param);
-			} else if(conf.type == 4) {
-				player.addCrit(conf.param);
-			} else if(conf.type == 5) {
-				player.addSymptom(conf.param);
-			} else if(conf.type == 6) {
-				player.addFu(conf.param);
-			}
-		}
-	}
+    /**
+     * 加成公会属性
+     *
+     * @param player
+     */
+    private void addGuildAttr(PlayerAddition player) {
+        PlayerData data = playerService.getPlayerData(player.getPlayerId());
+        for (int techId : data.getTechnologys()) {
+            GangScienceCfg conf = ConfigData.getConfig(GangScienceCfg.class, techId);
+            if (conf.type == 1) { //威力
+                player.addAttack(conf.param);
+            } else if (conf.type == 2) {
+                player.addDefense(conf.param);
+            } else if (conf.type == 3) {
+                player.addHp(conf.param);
+            } else if (conf.type == 4) {
+                player.addCrit(conf.param);
+            } else if (conf.type == 5) {
+                player.addSymptom(conf.param);
+            } else if (conf.type == 6) {
+                player.addFu(conf.param);
+            }
+        }
+    }
 
-	// 增加装备属性
-	private void addEquip(PlayerAddition player) {
-		PlayerBag bag = goodsService.getPlayerBag(player.getPlayerId());
-		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		
-		for(Goods g:bag.getAllGoods().values()){
-			if(g.isInBag()){
-				continue;
-			}
-			GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, g.getGoodsId());
-			if(!CommonUtil.contain(ConfigData.globalParam().equipTypes, cfg.type)){
-				continue;
-			}
-			int hp = cfg.hp;
-			int attack = cfg.attack;
-			int defense = cfg.defense;
-			int crit = cfg.crit;
-			int fu = cfg.fu;
-			int symptom = cfg.symptom;
-			int starId = cfg.type*100000+cfg.level*100+g.getStar();
-			EquipStarCfg star = ConfigData.getConfig(EquipStarCfg.class, starId);
-			if(star!=null){
-				hp+=star.hp;
-				attack+=star.attack;
-				defense +=star.defense;
-				crit +=star.crit;
-				fu +=star.fu;
-				symptom +=star.symptom;
-			}
-			Integer strengthLev = data.getStrengths().get(cfg.type);
-			if(strengthLev==null){
-				strengthLev = 0;
-			}
-			EquipStrengthCfg strength = ConfigData.getConfig(EquipStrengthCfg.class, cfg.type*1000+strengthLev);
-			if(strength!=null){
-				hp+=(int)(hp*strength.add*0.01f);
-				attack+=(int)(attack*strength.add*0.01f);
-				defense+=(int)(defense*strength.add*0.01f);
-				crit+=(int)(crit*strength.add*0.01f);
-				fu+=(int)(fu*strength.add*0.01f);
-				symptom+=(int)(symptom*strength.add*0.01f);
-			}
-			player.addAttack(attack);
-			player.addCrit(crit);
-			player.addDefense(defense);
-			player.addFu(fu);
-			player.addHp(hp);
-			player.addSymptom(symptom);
-		}
-	}
-	
-	//宝石
-	private  void addJewel(PlayerAddition player){
-		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		for(Entry<Integer, Jewel> entry:data.getJewels().entrySet()){
-			Jewel jewel = entry.getValue();
-			int type = entry.getKey();
-			/*if(jewel.getLev()==0){
-				continue;
+    // 增加装备属性
+    private void addEquip(PlayerAddition player) {
+        PlayerBag bag = goodsService.getPlayerBag(player.getPlayerId());
+        PlayerData data = playerService.getPlayerData(player.getPlayerId());
+
+        for (Goods g : bag.getAllGoods().values()) {
+            if (g.isInBag()) {
+                continue;
+            }
+            GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, g.getGoodsId());
+            if (!CommonUtil.contain(ConfigData.globalParam().equipTypes, cfg.type)) {
+                continue;
+            }
+            int hp = cfg.hp;
+            int attack = cfg.attack;
+            int defense = cfg.defense;
+            int crit = cfg.crit;
+            int fu = cfg.fu;
+            int symptom = cfg.symptom;
+            int starId = cfg.type * 100000 + cfg.level * 100 + g.getStar();
+            EquipStarCfg star = ConfigData.getConfig(EquipStarCfg.class, starId);
+            if (star != null) {
+                hp += star.hp;
+                attack += star.attack;
+                defense += star.defense;
+                crit += star.crit;
+                fu += star.fu;
+                symptom += star.symptom;
+            }
+            Integer strengthLev = data.getStrengths().get(cfg.type);
+            if (strengthLev == null) {
+                strengthLev = 0;
+            }
+            EquipStrengthCfg strength = ConfigData.getConfig(EquipStrengthCfg.class, cfg.type * 1000 + strengthLev);
+            if (strength != null) {
+                hp += (int) (hp * strength.add * 0.01f);
+                attack += (int) (attack * strength.add * 0.01f);
+                defense += (int) (defense * strength.add * 0.01f);
+                crit += (int) (crit * strength.add * 0.01f);
+                fu += (int) (fu * strength.add * 0.01f);
+                symptom += (int) (symptom * strength.add * 0.01f);
+            }
+            player.addAttack(attack);
+            player.addCrit(crit);
+            player.addDefense(defense);
+            player.addFu(fu);
+            player.addHp(hp);
+            player.addSymptom(symptom);
+        }
+
+        for (Map.Entry<Integer, Set<Integer>> s : data.getSuitMap().entrySet()) {
+            SuitConfig config = ConfigData.getConfig(SuitConfig.class, s.getKey());
+            if (s.getValue().size() >= 2) {
+                addSuit(player, config.twoAdd);
+            } else if (s.getValue().size() >= 3) {
+                addSuit(player, config.threeAdd);
+            } else if (s.getValue().size() >= 4) {
+                addSuit(player, config.fourAdd);
+            } else if (s.getValue().size() >= 5) {
+                addSuit(player, config.fiveAdd);
+            } else if (s.getValue().size() >= 6) {
+                addSuit(player, config.sixAdd);
+            }
+        }
+    }
+
+    /**
+     * 套装值加成
+     * @param player
+     * @param map
+     */
+    private void addSuit(PlayerAddition player, Map<Integer, int[]> map) {
+        if (map == null) {
+            return;
+        }
+        for (Map.Entry<Integer, int[]> s1 : map.entrySet()) {
+            if (s1.getKey() == 2) {
+                int[] arr = s1.getValue();
+                if (arr[0] == 1) {
+                    player.addHp(arr[1]);
+                } else if (arr[0] == 2) {
+                    player.addAttack(arr[1]);
+                } else if (arr[0] == 3) {
+                    player.addDefense(arr[1]);
+                } else if (arr[0] == 4) {
+                    player.addFu(arr[1]);
+                } else if (arr[0] == 5) {
+                    player.addSymptom(arr[1]);
+                } else if (arr[0] == 6) {
+                    player.addCrit(arr[1]);
+                }
+            }
+        }
+    }
+
+    //宝石
+    private void addJewel(PlayerAddition player) {
+        PlayerData data = playerService.getPlayerData(player.getPlayerId());
+        for (Entry<Integer, Jewel> entry : data.getJewels().entrySet()) {
+            Jewel jewel = entry.getValue();
+            int type = entry.getKey();
+            /*if(jewel.getLev()==0){
+                continue;
 			}*/
-			int id = type*1000+jewel.getLev();
-			EquipJewelCfg cfg = ConfigData.getConfig(EquipJewelCfg.class, id);
-			if(cfg == null){
-				continue;
-			}
-			player.addAttack(cfg.attack);
-			player.addCrit(cfg.crit);
-			player.addDefense(cfg.defense);
-			player.addFu(cfg.fu);
-			player.addHp(cfg.hp);
-			player.addSymptom(cfg.symptom);
-		}
-	}
+            int id = type * 1000 + jewel.getLev();
+            EquipJewelCfg cfg = ConfigData.getConfig(EquipJewelCfg.class, id);
+            if (cfg == null) {
+                continue;
+            }
+            player.addAttack(cfg.attack);
+            player.addCrit(cfg.crit);
+            player.addDefense(cfg.defense);
+            player.addFu(cfg.fu);
+            player.addHp(cfg.hp);
+            player.addSymptom(cfg.symptom);
+        }
+    }
 
 
-	//加称号属性
-	private void addTitleAttr(PlayerAddition player) {
-		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		Player p = (Player) player;
-		//装备称号加成
-		TitleConfig config = ConfigData.getConfig(TitleConfig.class, p.getTitle());
-		if (config != null) {
-			player.addAttack(config.attack);
-			player.addCrit(config.crit);
-			player.addDefense(config.defense);
-			player.addFu(config.fu);
-			player.addSymptom(config.symptom);
-			player.addHp(config.hp);
-		}
-		//套装加成
-		int size = data.getTitles().size();
+    //加称号属性
+    private void addTitleAttr(PlayerAddition player) {
+        PlayerData data = playerService.getPlayerData(player.getPlayerId());
+        Player p = (Player) player;
+        //装备称号加成
+        TitleConfig config = ConfigData.getConfig(TitleConfig.class, p.getTitle());
+        if (config != null) {
+            player.addAttack(config.attack);
+            player.addCrit(config.crit);
+            player.addDefense(config.defense);
+            player.addFu(config.fu);
+            player.addSymptom(config.symptom);
+            player.addHp(config.hp);
+        }
+        //套装加成
+        int size = data.getTitles().size();
 
-		TitleSelectConfig titleSelectConfig = ConfigData.getConfig(TitleSelectConfig.class, size);
-		if (titleSelectConfig != null) {
-			player.addAttack(titleSelectConfig.srvAttack);
-			player.addCrit(titleSelectConfig.srvCrit);
-			player.addDefense(titleSelectConfig.srvDefense);
-			player.addFu(titleSelectConfig.srvFu);
-			player.addSymptom(titleSelectConfig.srvSymptom);
-			player.addHp(titleSelectConfig.srvHp);
-		}
-	}
+        TitleSelectConfig titleSelectConfig = ConfigData.getConfig(TitleSelectConfig.class, size);
+        if (titleSelectConfig != null) {
+            player.addAttack(titleSelectConfig.srvAttack);
+            player.addCrit(titleSelectConfig.srvCrit);
+            player.addDefense(titleSelectConfig.srvDefense);
+            player.addFu(titleSelectConfig.srvFu);
+            player.addSymptom(titleSelectConfig.srvSymptom);
+            player.addHp(titleSelectConfig.srvHp);
+        }
+    }
 
-	//加时装战力，非百分比的部分
-	private void AddPet(PlayerAddition player){
-		PetBag petBag = petService.getPetBag(player.getPlayerId());
-		if (petBag == null) {
-			return;
-		}
-		Player p = (Player) player;
-		PetConfig config = ConfigData.getConfig(PetConfig.class,petBag.getFightPetId());
-		if (config == null) {
-			return;
-		}
+    //加时装战力，非百分比的部分
+    private void addPet(PlayerAddition player) {
+        PetBag petBag = petService.getPetBag(player.getPlayerId());
+        if (petBag == null) {
+            return;
+        }
+        Player p = (Player) player;
+        PetConfig config = ConfigData.getConfig(PetConfig.class, petBag.getFightPetId());
+        if (config == null) {
+            return;
+        }
 
 
-		player.addAttack(config.attack);
-		player.addCrit(config.crit);
-		player.addDefense(config.defense);
-		player.addFu(config.fu);
-		player.addSymptom(config.symptom);
-		player.addHp(config.hp);
-	}
+        player.addAttack(config.attack);
+        player.addCrit(config.crit);
+        player.addDefense(config.defense);
+        player.addFu(config.fu);
+        player.addSymptom(config.symptom);
+        player.addHp(config.hp);
+    }
 
-	//加时装战力，非百分比的部分
-	private void AddFashion(PlayerAddition player){
-		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		Player p = (Player) player;
-		int count = data.getFashionMap().size();
-		FashionCollectCfg cfg = ConfigData.getConfig(FashionCollectCfg.class, count);
-		if(cfg==null){
-			return;
-		}
-		player.addAttack(cfg.srvAttack);
-		player.addCrit(cfg.srvCrit);
-		player.addDefense(cfg.srvDefense);
-		player.addFu(cfg.srvFu);
-		player.addSymptom(cfg.srvSymptom);
-		player.addHp(cfg.srvHp);
+    //加时装战力，非百分比的部分
+    private void AddFashion(PlayerAddition player) {
+        PlayerData data = playerService.getPlayerData(player.getPlayerId());
+        Player p = (Player) player;
+        int count = data.getFashionMap().size();
+        FashionCollectCfg cfg = ConfigData.getConfig(FashionCollectCfg.class, count);
+        if (cfg == null) {
+            return;
+        }
+        player.addAttack(cfg.srvAttack);
+        player.addCrit(cfg.srvCrit);
+        player.addDefense(cfg.srvDefense);
+        player.addFu(cfg.srvFu);
+        player.addSymptom(cfg.srvSymptom);
+        player.addHp(cfg.srvHp);
 
-		addFashionAttr(player,p.getFashionId());
-		addFashionAttr(player,p.getWeaponId());
-		addFashionAttr(player,data.getCurHead());
-	}
+        addFashionAttr(player, p.getFashionId());
+        addFashionAttr(player, p.getWeaponId());
+        addFashionAttr(player, data.getCurHead());
+    }
 
-	private void addFashionAttr(PlayerAddition player,int id) {
-		FashionCfg fashionCfg = ConfigData.getConfig(FashionCfg.class, id);
-		if(fashionCfg==null){
-			return;
-		}
-		player.addAttack(fashionCfg.attack);
-		player.addCrit(fashionCfg.crit);
-		player.addDefense(fashionCfg.defense);
-		player.addFu(fashionCfg.fu);
-		player.addSymptom(fashionCfg.symptom);
-		player.addHp(fashionCfg.hp);
-	}
-	
-	//处理神器
-	private void addArtifact(PlayerAddition player){
-		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		if(data.getArtifacts().isEmpty()){
-			return;
-		}
-		for(Entry<Integer,int[]> artifact:data.getArtifacts().entrySet()){
-			int id = artifact.getKey();
-			int[] components = artifact.getValue();
-			int activeCount = 0;
-			for(int c:components){
-				if(c==1){
-					activeCount++;
-				}
-			}
-			if(activeCount==0){
-				continue;
-			}
-			ArtifactCfg cfg = ConfigData.getConfig(ArtifactCfg.class, id);
-			for(int i=0;i<activeCount;i++){
-				addAttrValue(player, cfg.attrs[i][0], cfg.attrs[i][1]);
-			}
-		}
+    private void addFashionAttr(PlayerAddition player, int id) {
+        FashionCfg fashionCfg = ConfigData.getConfig(FashionCfg.class, id);
+        if (fashionCfg == null) {
+            return;
+        }
+        player.addAttack(fashionCfg.attack);
+        player.addCrit(fashionCfg.crit);
+        player.addDefense(fashionCfg.defense);
+        player.addFu(fashionCfg.fu);
+        player.addSymptom(fashionCfg.symptom);
+        player.addHp(fashionCfg.hp);
+    }
 
-		for(Entry<Integer,Integer> s : data.getArtifactsLevelUp().entrySet()) {
-			ArtifactLevelUpCfg conf = ConfigData.getArtifactLevelUpCfgs().get(s.getKey() + "_" + s.getValue());
-			for(int[] attr : conf.attrs){
-				addAttrValue(player, attr[0], attr[1]);
-			}
-		}
-	}
-	
-	//百分比的（要统一放在这里处理，先累加所有的百分比，再计算原始值+原始值%)
-	public void addPercent(PlayerAddition player){
-		//装备的特殊属性
-		HashMap<Integer, Integer> percentAttrs = new HashMap<Integer, Integer>();
-		PlayerBag bag = goodsService.getPlayerBag(player.getPlayerId());
-		for(Goods g:bag.getAllGoods().values()){
-			if(g.isInBag()){
-				continue;
-			}
-			for(AttrItem attr:g.getAddAttrList()){
-				if(attr.type>6){
-					continue;
-				}
-				addPercentAttr(percentAttrs, attr.type, attr.value);
-			}
-		}
-		//时装的百分比
-		PlayerData data = playerService.getPlayerData(player.getPlayerId());
-		FashionCollectCfg collect = ConfigData.getConfig(FashionCollectCfg.class, data.getFashionMap().size());
-		if(collect!=null){
-			addPercentAttr(percentAttrs, Goods.ATK, collect.srvattackPercent);
-			addPercentAttr(percentAttrs, Goods.DEF, collect.srvDefensePercent);
-			addPercentAttr(percentAttrs, Goods.CRIT, collect.srvCritPercent);
-			addPercentAttr(percentAttrs, Goods.SYMPTOM, collect.srvSymptomPercent);
-			addPercentAttr(percentAttrs, Goods.FU, collect.srvFuPercent);
-			addPercentAttr(percentAttrs, Goods.HP, collect.srvHpPercent);
-		}
-		
-		for(Entry<Integer, Integer> attr:percentAttrs.entrySet()){
-			addAttrValuePercent(player, attr.getKey(), attr.getValue());
-		}
-	}
-	
-	private void addPercentAttr(Map<Integer,Integer> data,int type,int value){
-		Integer curPercent = data.get(type);
-		if(curPercent==null){
-			curPercent = 0;
-		}
-		curPercent += value;
-		data.put(type, curPercent);
-	}
-	
-	private void addAttrValuePercent(PlayerAddition player, int type, int valuePercent) {
-		switch (type) {
-		case Goods.HP:
-			player.addHp((int) (player.getHp() * valuePercent * 0.01));
-			break;
-		case Goods.ATK:
-			player.addAttack((int) (player.getAttack() * valuePercent * 0.01));
-			break;
-		case Goods.DEF:
-			player.addDefense((int) (player.getDefense() * valuePercent * 0.01));
-			break;
-		case Goods.CRIT:
-			player.addCrit((int) (player.getCrit() * valuePercent * 0.01));
-			break;
-		case Goods.FU:
-			player.addFu((int) (player.getFu() * valuePercent * 0.01));
-			break;
-		case Goods.SYMPTOM:
-			player.addSymptom((int) (player.getSymptom() * valuePercent * 0.01));
-			break;
-		default:
-		}
-	}
-	
-	private void addAttrValue(PlayerAddition player,int type,int value){
-		switch (type) {
-		case Goods.HP:
-			player.addHp(value);
-			break;
-		case Goods.ATK:
-			player.addAttack(value);
-			break;
-		case Goods.DEF:
-			player.addDefense(value);
-			break;
-		case Goods.CRIT:
-			player.addCrit(value);
-			break;
-		case Goods.FU:
-			player.addFu(value);
-			break;
-		case Goods.SYMPTOM:
-			player.addSymptom(value);
-			break;
-		default:
-		}
-	}
+    //处理神器
+    private void addArtifact(PlayerAddition player) {
+        PlayerData data = playerService.getPlayerData(player.getPlayerId());
+        if (data.getArtifacts().isEmpty()) {
+            return;
+        }
+        for (Entry<Integer, int[]> artifact : data.getArtifacts().entrySet()) {
+            int id = artifact.getKey();
+            int[] components = artifact.getValue();
+            int activeCount = 0;
+            for (int c : components) {
+                if (c == 1) {
+                    activeCount++;
+                }
+            }
+            if (activeCount == 0) {
+                continue;
+            }
+            ArtifactCfg cfg = ConfigData.getConfig(ArtifactCfg.class, id);
+            for (int i = 0; i < activeCount; i++) {
+                addAttrValue(player, cfg.attrs[i][0], cfg.attrs[i][1]);
+            }
+        }
+
+        for (Entry<Integer, Integer> s : data.getArtifactsLevelUp().entrySet()) {
+            ArtifactLevelUpCfg conf = ConfigData.getArtifactLevelUpCfgs().get(s.getKey() + "_" + s.getValue());
+            for (int[] attr : conf.attrs) {
+                addAttrValue(player, attr[0], attr[1]);
+            }
+        }
+    }
+
+    //百分比的（要统一放在这里处理，先累加所有的百分比，再计算原始值+原始值%)
+    public void addPercent(PlayerAddition player) {
+        //装备的特殊属性
+        HashMap<Integer, Integer> percentAttrs = new HashMap<Integer, Integer>();
+        PlayerBag bag = goodsService.getPlayerBag(player.getPlayerId());
+        for (Goods g : bag.getAllGoods().values()) {
+            if (g.isInBag()) {
+                continue;
+            }
+            for (AttrItem attr : g.getAddAttrList()) {
+                if (attr.type > 6) {
+                    continue;
+                }
+                addPercentAttr(percentAttrs, attr.type, attr.value);
+            }
+        }
+        //时装的百分比
+        PlayerData data = playerService.getPlayerData(player.getPlayerId());
+        FashionCollectCfg collect = ConfigData.getConfig(FashionCollectCfg.class, data.getFashionMap().size());
+        if (collect != null) {
+            addPercentAttr(percentAttrs, Goods.ATK, collect.srvattackPercent);
+            addPercentAttr(percentAttrs, Goods.DEF, collect.srvDefensePercent);
+            addPercentAttr(percentAttrs, Goods.CRIT, collect.srvCritPercent);
+            addPercentAttr(percentAttrs, Goods.SYMPTOM, collect.srvSymptomPercent);
+            addPercentAttr(percentAttrs, Goods.FU, collect.srvFuPercent);
+            addPercentAttr(percentAttrs, Goods.HP, collect.srvHpPercent);
+        }
+
+        //宠物百分比
+        PetBag petBag = petService.getPetBag(player.getPlayerId());
+        if (petBag != null) {
+            PetConfig petConfig = ConfigData.getConfig(PetConfig.class, petBag.getFightPetId());
+            if (petConfig != null) {
+                addPercentAttr(percentAttrs, Goods.ATK, petConfig.attack);
+                addPercentAttr(percentAttrs, Goods.DEF, petConfig.defense);
+                addPercentAttr(percentAttrs, Goods.CRIT, petConfig.crit);
+                addPercentAttr(percentAttrs, Goods.SYMPTOM, petConfig.symptom);
+                addPercentAttr(percentAttrs, Goods.FU, petConfig.fu);
+                addPercentAttr(percentAttrs, Goods.HP, petConfig.hp);
+            }
+        }
+
+        //套装百分比
+        for (Map.Entry<Integer, Set<Integer>> s : data.getSuitMap().entrySet()) {
+            SuitConfig config = ConfigData.getConfig(SuitConfig.class, s.getKey());
+            if (s.getValue().size() >= 2) {
+                addSuitPercent(percentAttrs, config.twoAdd);
+            } else if (s.getValue().size() >= 3) {
+                addSuitPercent(percentAttrs, config.threeAdd);
+            } else if (s.getValue().size() >= 4) {
+                addSuitPercent(percentAttrs, config.fourAdd);
+            } else if (s.getValue().size() >= 5) {
+                addSuitPercent(percentAttrs, config.fiveAdd);
+            } else if (s.getValue().size() >= 6) {
+                addSuitPercent(percentAttrs, config.sixAdd);
+            }
+        }
+
+        for (Entry<Integer, Integer> attr : percentAttrs.entrySet()) {
+            addAttrValuePercent(player, attr.getKey(), attr.getValue());
+        }
+    }
+
+    private void addSuitPercent(Map<Integer, Integer> percentAttrs, Map<Integer, int[]> map) {
+        if (map == null) {
+            return;
+        }
+        for (Map.Entry<Integer, int[]> s1 : map.entrySet()) {
+            if (s1.getKey() == 1) {
+                int[] arr = s1.getValue();
+                if (arr[0] == 1) {
+                    addPercentAttr(percentAttrs, Goods.HP, (arr[1]));
+                } else if (arr[0] == 2) {
+                    addPercentAttr(percentAttrs, Goods.ATK, (arr[1]));
+                } else if (arr[0] == 3) {
+                    addPercentAttr(percentAttrs, Goods.DEF, (arr[1]));
+                } else if (arr[0] == 4) {
+                    addPercentAttr(percentAttrs, Goods.FU, (arr[1]));
+                } else if (arr[0] == 5) {
+                    addPercentAttr(percentAttrs, Goods.SYMPTOM, (arr[1]));
+                } else if (arr[0] == 6) {
+                    addPercentAttr(percentAttrs, Goods.CRIT, (arr[1]));
+                }
+            }
+        }
+    }
+
+    private void addPercentAttr(Map<Integer, Integer> data, int type, int value) {
+        Integer curPercent = data.get(type);
+        if (curPercent == null) {
+            curPercent = 0;
+        }
+        curPercent += value;
+        data.put(type, curPercent);
+    }
+
+    private void addAttrValuePercent(PlayerAddition player, int type, int valuePercent) {
+        switch (type) {
+            case Goods.HP:
+                player.addHp((int) (player.getHp() * valuePercent * 0.01));
+                break;
+            case Goods.ATK:
+                player.addAttack((int) (player.getAttack() * valuePercent * 0.01));
+                break;
+            case Goods.DEF:
+                player.addDefense((int) (player.getDefense() * valuePercent * 0.01));
+                break;
+            case Goods.CRIT:
+                player.addCrit((int) (player.getCrit() * valuePercent * 0.01));
+                break;
+            case Goods.FU:
+                player.addFu((int) (player.getFu() * valuePercent * 0.01));
+                break;
+            case Goods.SYMPTOM:
+                player.addSymptom((int) (player.getSymptom() * valuePercent * 0.01));
+                break;
+            default:
+        }
+    }
+
+    private void addAttrValue(PlayerAddition player, int type, int value) {
+        switch (type) {
+            case Goods.HP:
+                player.addHp(value);
+                break;
+            case Goods.ATK:
+                player.addAttack(value);
+                break;
+            case Goods.DEF:
+                player.addDefense(value);
+                break;
+            case Goods.CRIT:
+                player.addCrit(value);
+                break;
+            case Goods.FU:
+                player.addFu(value);
+                break;
+            case Goods.SYMPTOM:
+                player.addSymptom(value);
+                break;
+            default:
+        }
+    }
 
 }

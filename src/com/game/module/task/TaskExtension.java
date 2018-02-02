@@ -3,6 +3,7 @@ package com.game.module.task;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.game.params.AchievementSyncVo;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.Response;
@@ -145,4 +146,9 @@ public class TaskExtension {
 	
 	//有玩家接受了已方的任务
 	public static final int ACCEPTED_JOINT = 1308;//
+
+	@Command(10001)
+	public Object achievementTask(int playerId, AchievementSyncVo param){
+		return taskService.achievementTask(playerId,param);
+	}
 }

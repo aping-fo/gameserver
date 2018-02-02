@@ -25,7 +25,7 @@ public interface PlayerDao {
 	@SQL("select playerId from player where name = :name limit 1")
 	public Integer selectIdByName(@SQLParam("name")String name);
 	
-	@SQL("update player set exp=:p.exp,coin=:p.coin,diamond=:p.diamond,chargeDiamond=:p.chargeDiamond,vip=:p.vip,energy=:p.energy,serverId=:p.serverId,lastLoginTime=:p.lastLoginTime,lastLogoutTime=:p.lastLogoutTime,ip=:p.ip,sceneId=:p.sceneId,x=:p.x,y=:p.y,lastSceneId=:p.lastSceneId,lev=:p.lev,crit=:p.crit,hp=:p.hp,symptom=:p.symptom,fu=:p.fu,fight=:p.fight,z=:p.z,fashionId=:p.fashionId,gangId=:p.gangId,totalCoin=:p.totalCoin,weaponId=:p.weaponId,energyTime=:p.energyTime,totalDiamond=:p.totalDiamond,channel=:p.channel,attack=:p.attack,defense=:p.defense,title=:p.title where playerId=:p.playerId")
+	@SQL("update player set exp=:p.exp,coin=:p.coin,diamond=:p.diamond,chargeDiamond=:p.chargeDiamond,vip=:p.vip,energy=:p.energy,serverId=:p.serverId,lastLoginTime=:p.lastLoginTime,lastLogoutTime=:p.lastLogoutTime,ip=:p.ip,sceneId=:p.sceneId,x=:p.x,y=:p.y,lastSceneId=:p.lastSceneId,lev=:p.lev,crit=:p.crit,hp=:p.hp,symptom=:p.symptom,fu=:p.fu,fight=:p.fight,z=:p.z,fashionId=:p.fashionId,gangId=:p.gangId,totalCoin=:p.totalCoin,weaponId=:p.weaponId,energyTime=:p.energyTime,totalDiamond=:p.totalDiamond,channel=:p.channel,attack=:p.attack,defense=:p.defense,title=:p.title,achievement=:p.achievement where playerId=:p.playerId")
 	public void update(@SQLParam("p")Player player);
 	
 	//player_data

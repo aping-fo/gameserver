@@ -8,6 +8,8 @@ import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
 import com.game.params.Int2Param;
@@ -32,6 +34,9 @@ public class SignService {
     private GoodsService goodsService;
     @Autowired
     private TitleService titleService;
+    @Autowired
+    private TaskService taskService;
+
     public Int2Param sign(int playerId) {
         Int2Param ret = new Int2Param();
         ret.param1 = Response.ERR_PARAM;
@@ -63,6 +68,9 @@ public class SignService {
         //签到称号
         titleService.complete(playerId, TitleConsts.SIGN,data.getSign(), ActivityConsts.UpdateType.T_VALUE);
         data.setSignFlag(SIGN_DONE);
+
+        data.setSignTotal(data.getSignTotal() + 1);
+        taskService.doTask(playerId, Task.TYPE_SIGN,data.getSignTotal());
         // 奖励
         goodsService.addRewards(playerId, rewards, LogConsume.SIGN_REWARD, data.getSign());
         ret.param1 = Response.SUCCESS;

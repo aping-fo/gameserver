@@ -9,6 +9,8 @@ import com.game.module.mail.MailService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.serial.SerialDataService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.gang.*;
@@ -16,6 +18,7 @@ import com.game.params.scene.SkillHurtVO;
 import com.game.params.worldboss.MonsterHurtVO;
 import com.game.util.ConfigData;
 import com.game.util.JsonUtils;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -37,6 +40,7 @@ public class GangDungeonService implements InitHandler {
     private static final int T_DONT_OPEN = 0; //副本未开启
     private static final int T_OPEN = 1; //副本开启
     private static final int T_PASS = 2; //副本通关
+    private static final int CMD_GANG_COPY_INFO = 2528;
 
     @Autowired
     private GangService gangService;
@@ -46,6 +50,8 @@ public class GangDungeonService implements InitHandler {
     private PlayerService playerService;
     @Autowired
     private MailService mailService;
+    @Autowired
+    private TaskService taskService;
 
     private Map<Integer, List<MonsterRefreshConfig>> monsterMap = new HashMap<>();
 
@@ -157,6 +163,11 @@ public class GangDungeonService implements InitHandler {
             gangDungeon.getMonsterMap().put(conf.id, m);
         }
 
+        GangCopyVO vo = getGangCopyInfo(playerId);
+        for (int pid : gang.getMembers().keySet()) {
+            SessionManager.getInstance().sendMsg(CMD_GANG_COPY_INFO, vo, pid);
+        }
+
         param.param = Response.SUCCESS;
         return param;
     }
@@ -258,6 +269,14 @@ public class GangDungeonService implements InitHandler {
                 return;
             }
             int hp = m.getCurrentHp() - hurtVO.hurtValue > 0 ? m.getCurrentHp() - hurtVO.hurtValue : 0;
+            if(hp == 0){
+                MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, m.getId());
+                Map<Integer, int[]> condParams = Maps.newHashMap();
+                condParams.put(Task.FINISH_KILL, new int[]{monsterCfg.type, m.getId(), 1});
+                condParams.put(Task.TYPE_KILL, new int[]{monsterCfg.type,1});
+                condParams.put(Task.TYPE_KILL, new int[]{0,1});
+                taskService.doTask(player.getPlayerId(), condParams);
+            }
             m.setCurrentHp(hp);
             MonsterHurtVO vo = new MonsterHurtVO();
             vo.actorId = hurtVO.targetId;
@@ -323,6 +342,7 @@ public class GangDungeonService implements InitHandler {
             hurt = new GangHurt(player.getPlayerId(), player.getName(), player.getVocation());
             hurt.setLevel(player.getLev());
             hurt.setVip(player.getVip());
+            hurt.setHurt(member.hurt);
             gangDungeon.getHurtMap().put(player.getPlayerId(), hurt);
         } else {
             hurt.setLevel(player.getLev());

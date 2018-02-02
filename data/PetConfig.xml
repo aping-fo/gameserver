@@ -18,9 +18,9 @@
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
-	<activeSkillId>6001101</activeSkillId>
+	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>1</hp>
 	<attack></attack>
 	<defense></defense>
@@ -28,7 +28,7 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60012</id>
@@ -50,7 +50,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6001201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>2</hp>
 	<attack></attack>
 	<defense></defense>
@@ -58,7 +58,7 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60013</id>
@@ -80,7 +80,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6001301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>3</hp>
 	<attack></attack>
 	<defense></defense>
@@ -88,7 +88,7 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60014</id>
@@ -110,7 +110,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6001401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>4</hp>
 	<attack></attack>
 	<defense></defense>
@@ -118,7 +118,7 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60015</id>
@@ -140,7 +140,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6001501</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>5</hp>
 	<attack></attack>
 	<defense></defense>
@@ -148,13 +148,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60016</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>木乃伊</name>
+	<name>木木</name>
 	<property>1</property>
 	<monsterId>50102</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -178,13 +178,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60017</id>
 	<type>1</type>
 	<quality>6</quality>
-	<name>木乃伊</name>
+	<name>木木</name>
 	<property>1</property>
 	<monsterId>50102</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -208,13 +208,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60021</id>
 	<type>1</type>
 	<quality>1</quality>
-	<name>小蛇</name>
+	<name>蛇宝宝</name>
 	<property>1</property>
 	<monsterId>50104</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -228,9 +228,9 @@
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
-	<activeSkillId>6002101</activeSkillId>
+	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack>1</attack>
 	<defense></defense>
@@ -238,13 +238,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60022</id>
 	<type>1</type>
 	<quality>2</quality>
-	<name>小蛇</name>
+	<name>蛇宝宝</name>
 	<property>1</property>
 	<monsterId>50104</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -260,7 +260,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6002201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack>2</attack>
 	<defense></defense>
@@ -268,13 +268,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60023</id>
 	<type>1</type>
 	<quality>3</quality>
-	<name>小蛇</name>
+	<name>蛇宝宝</name>
 	<property>1</property>
 	<monsterId>50104</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -290,7 +290,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6002301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack>3</attack>
 	<defense></defense>
@@ -298,13 +298,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60024</id>
 	<type>1</type>
 	<quality>4</quality>
-	<name>小蛇</name>
+	<name>蛇宝宝</name>
 	<property>1</property>
 	<monsterId>50104</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -320,7 +320,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6002401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack>4</attack>
 	<defense></defense>
@@ -328,13 +328,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60025</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>小蛇</name>
+	<name>蛇宝宝</name>
 	<property>1</property>
 	<monsterId>50104</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -350,7 +350,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6002501</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack>5</attack>
 	<defense></defense>
@@ -358,7 +358,7 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60026</id>
@@ -388,7 +388,7 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60027</id>
@@ -418,13 +418,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60031</id>
 	<type>1</type>
 	<quality>1</quality>
-	<name>小树桩</name>
+	<name>萌萌树</name>
 	<property>1</property>
 	<monsterId>50106</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -438,9 +438,9 @@
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
-	<activeSkillId>6003101</activeSkillId>
+	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense>1</defense>
@@ -448,13 +448,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60032</id>
 	<type>1</type>
 	<quality>2</quality>
-	<name>小树桩</name>
+	<name>萌萌树</name>
 	<property>1</property>
 	<monsterId>50106</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -470,7 +470,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6003201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense>2</defense>
@@ -478,13 +478,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60033</id>
 	<type>1</type>
 	<quality>3</quality>
-	<name>小树桩</name>
+	<name>萌萌树</name>
 	<property>1</property>
 	<monsterId>50106</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -500,7 +500,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6003301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense>3</defense>
@@ -508,13 +508,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60034</id>
 	<type>1</type>
 	<quality>4</quality>
-	<name>小树桩</name>
+	<name>萌萌树</name>
 	<property>1</property>
 	<monsterId>50106</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -530,7 +530,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6003401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense>4</defense>
@@ -538,13 +538,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60035</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>小树桩</name>
+	<name>萌萌树</name>
 	<property>1</property>
 	<monsterId>50106</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -560,7 +560,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6003501</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense>5</defense>
@@ -568,13 +568,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60036</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>大树</name>
+	<name>忧郁树</name>
 	<property>1</property>
 	<monsterId>50105</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -598,13 +598,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60037</id>
 	<type>1</type>
 	<quality>6</quality>
-	<name>大树</name>
+	<name>忧郁树</name>
 	<property>1</property>
 	<monsterId>50105</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -628,13 +628,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60041</id>
 	<type>1</type>
 	<quality>1</quality>
-	<name>小蘑菇</name>
+	<name>鱼骨菇</name>
 	<property>1</property>
 	<monsterId>50108</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -648,9 +648,9 @@
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
-	<activeSkillId>6004101</activeSkillId>
+	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -658,13 +658,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60042</id>
 	<type>1</type>
 	<quality>2</quality>
-	<name>小蘑菇</name>
+	<name>鱼骨菇</name>
 	<property>1</property>
 	<monsterId>50108</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -680,7 +680,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6004201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -688,13 +688,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60043</id>
 	<type>1</type>
 	<quality>3</quality>
-	<name>小蘑菇</name>
+	<name>鱼骨菇</name>
 	<property>1</property>
 	<monsterId>50108</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -710,7 +710,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6004301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -718,13 +718,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60044</id>
 	<type>1</type>
 	<quality>4</quality>
-	<name>小蘑菇</name>
+	<name>鱼骨菇</name>
 	<property>1</property>
 	<monsterId>50108</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -740,7 +740,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6004401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -748,13 +748,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60045</id>
-	<type>2</type>
+	<type>1</type>
 	<quality>5</quality>
-	<name>小蘑菇</name>
+	<name>鱼骨菇</name>
 	<property>1</property>
 	<monsterId>50108</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -770,7 +770,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6004501</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -778,13 +778,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60046</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>蘑菇</name>
+	<name>大魔菇</name>
 	<property>1</property>
 	<monsterId>50107</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -808,13 +808,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60047</id>
 	<type>1</type>
 	<quality>6</quality>
-	<name>蘑菇</name>
+	<name>大魔菇</name>
 	<property>1</property>
 	<monsterId>50107</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -838,13 +838,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60051</id>
 	<type>1</type>
 	<quality>1</quality>
-	<name>小僵尸</name>
+	<name>僵尸宝宝</name>
 	<property>1</property>
 	<monsterId>50110</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -858,9 +858,9 @@
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
-	<activeSkillId>6005101</activeSkillId>
+	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -868,13 +868,13 @@
 	<symptom>1</symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60052</id>
 	<type>1</type>
 	<quality>2</quality>
-	<name>小僵尸</name>
+	<name>僵尸宝宝</name>
 	<property>1</property>
 	<monsterId>50110</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -890,7 +890,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6005201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -898,13 +898,13 @@
 	<symptom>2</symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60053</id>
 	<type>1</type>
 	<quality>3</quality>
-	<name>小僵尸</name>
+	<name>僵尸宝宝</name>
 	<property>1</property>
 	<monsterId>50110</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -920,7 +920,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6005301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -928,13 +928,13 @@
 	<symptom>3</symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60054</id>
 	<type>1</type>
 	<quality>4</quality>
-	<name>小僵尸</name>
+	<name>僵尸宝宝</name>
 	<property>1</property>
 	<monsterId>50110</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -950,7 +950,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6005401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -958,13 +958,13 @@
 	<symptom>4</symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60055</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>小僵尸</name>
+	<name>僵尸宝宝</name>
 	<property>1</property>
 	<monsterId>50110</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -980,7 +980,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6005501</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -988,13 +988,13 @@
 	<symptom>5</symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60056</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>僵尸</name>
+	<name>僵尸道长</name>
 	<property>1</property>
 	<monsterId>50109</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1018,13 +1018,13 @@
 	<symptom>6</symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60057</id>
 	<type>1</type>
 	<quality>6</quality>
-	<name>僵尸</name>
+	<name>僵尸道长</name>
 	<property>1</property>
 	<monsterId>50109</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1048,13 +1048,13 @@
 	<symptom>7</symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60061</id>
 	<type>1</type>
 	<quality>1</quality>
-	<name>小兔子</name>
+	<name>灯兔子</name>
 	<property>1</property>
 	<monsterId>50112</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1068,9 +1068,9 @@
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
-	<activeSkillId>6006101</activeSkillId>
+	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1078,13 +1078,13 @@
 	<symptom></symptom>
 	<fu>1</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60062</id>
 	<type>1</type>
 	<quality>2</quality>
-	<name>小兔子</name>
+	<name>灯兔子</name>
 	<property>1</property>
 	<monsterId>50112</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1100,7 +1100,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6006201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1108,13 +1108,13 @@
 	<symptom></symptom>
 	<fu>2</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60063</id>
 	<type>1</type>
 	<quality>3</quality>
-	<name>小兔子</name>
+	<name>灯兔子</name>
 	<property>1</property>
 	<monsterId>50112</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1130,7 +1130,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6006301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1138,13 +1138,13 @@
 	<symptom></symptom>
 	<fu>3</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60064</id>
 	<type>1</type>
 	<quality>4</quality>
-	<name>小兔子</name>
+	<name>灯兔子</name>
 	<property>1</property>
 	<monsterId>50112</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1160,7 +1160,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6006401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1168,13 +1168,13 @@
 	<symptom></symptom>
 	<fu>4</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60065</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>小兔子</name>
+	<name>灯兔子</name>
 	<property>1</property>
 	<monsterId>50112</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1190,7 +1190,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6006501</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1198,13 +1198,13 @@
 	<symptom></symptom>
 	<fu>5</fu>
 	<scale>3</scale>
-	<rotate>-9</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60066</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>兔子</name>
+	<name>万圣兔</name>
 	<property>1</property>
 	<monsterId>50111</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1228,13 +1228,13 @@
 	<symptom></symptom>
 	<fu>6</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60067</id>
 	<type>1</type>
 	<quality>6</quality>
-	<name>兔子</name>
+	<name>万圣兔</name>
 	<property>1</property>
 	<monsterId>50111</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1258,13 +1258,13 @@
 	<symptom></symptom>
 	<fu>7</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60071</id>
 	<type>1</type>
 	<quality>1</quality>
-	<name>小猫咪</name>
+	<name>小狐喵</name>
 	<property>1</property>
 	<monsterId>50113</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1278,9 +1278,9 @@
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
-	<activeSkillId>6007101</activeSkillId>
+	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>1</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1288,13 +1288,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60072</id>
 	<type>1</type>
 	<quality>2</quality>
-	<name>小猫咪</name>
+	<name>小狐喵</name>
 	<property>1</property>
 	<monsterId>50113</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1310,7 +1310,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6007201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>2</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1318,13 +1318,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60073</id>
 	<type>1</type>
 	<quality>3</quality>
-	<name>小猫咪</name>
+	<name>小狐喵</name>
 	<property>1</property>
 	<monsterId>50113</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1340,7 +1340,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6007301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>3</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1348,13 +1348,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60074</id>
 	<type>1</type>
 	<quality>4</quality>
-	<name>小猫咪</name>
+	<name>小狐喵</name>
 	<property>1</property>
 	<monsterId>50113</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1370,7 +1370,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6007401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>4</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1378,13 +1378,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60075</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>小猫咪</name>
+	<name>小狐喵</name>
 	<property>1</property>
 	<monsterId>50113</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1400,7 +1400,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6007501</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp>5</hp>
 	<attack></attack>
 	<defense></defense>
@@ -1408,13 +1408,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60076</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>猫咪</name>
+	<name>喵太仙</name>
 	<property>1</property>
 	<monsterId>50114</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1438,13 +1438,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60077</id>
 	<type>1</type>
 	<quality>6</quality>
-	<name>猫咪</name>
+	<name>喵太仙</name>
 	<property>1</property>
 	<monsterId>50114</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1468,7 +1468,7 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60081</id>
@@ -1483,14 +1483,14 @@
 	<nextQualityId>60082</nextQualityId>
 	<mutateId></mutateId>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
-	<nextQualityCost>[[103,1000],[65061,10]]</nextQualityCost>
+	<nextQualityCost>[[103,1000],[65081,10]]</nextQualityCost>
 	<nextQualityMaterialCount>10</nextQualityMaterialCount>
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
-	<activeSkillId>6008101</activeSkillId>
+	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1498,7 +1498,7 @@
 	<symptom></symptom>
 	<fu>1</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60082</id>
@@ -1513,14 +1513,14 @@
 	<nextQualityId>60083</nextQualityId>
 	<mutateId></mutateId>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
-	<nextQualityCost>[[103,1000],[65061,11]]</nextQualityCost>
+	<nextQualityCost>[[103,1000],[65081,11]]</nextQualityCost>
 	<nextQualityMaterialCount>10</nextQualityMaterialCount>
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6008201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1528,7 +1528,7 @@
 	<symptom></symptom>
 	<fu>2</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60083</id>
@@ -1543,14 +1543,14 @@
 	<nextQualityId>60084</nextQualityId>
 	<mutateId></mutateId>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
-	<nextQualityCost>[[103,1000],[65061,12]]</nextQualityCost>
+	<nextQualityCost>[[103,1000],[65081,12]]</nextQualityCost>
 	<nextQualityMaterialCount>10</nextQualityMaterialCount>
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6008301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1558,7 +1558,7 @@
 	<symptom></symptom>
 	<fu>3</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60084</id>
@@ -1573,14 +1573,14 @@
 	<nextQualityId>60085</nextQualityId>
 	<mutateId></mutateId>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
-	<nextQualityCost>[[103,1000],[65061,13]]</nextQualityCost>
+	<nextQualityCost>[[103,1000],[65081,13]]</nextQualityCost>
 	<nextQualityMaterialCount>10</nextQualityMaterialCount>
 	<variationCost></variationCost>
 	<variationNeedMaterialCount></variationNeedMaterialCount>
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6008401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1588,7 +1588,7 @@
 	<symptom></symptom>
 	<fu>4</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60085</id>
@@ -1610,7 +1610,7 @@
 	<decomposeGoods></decomposeGoods>
 	<activeSkillId>6008501</activeSkillId>
 	<passiveSkillId></passiveSkillId>
-	<passiveSkillCount></passiveSkillCount>
+	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
 	<attack></attack>
 	<defense></defense>
@@ -1618,13 +1618,13 @@
 	<symptom></symptom>
 	<fu>5</fu>
 	<scale>3</scale>
-	<rotate>-9</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60086</id>
 	<type>1</type>
 	<quality>5</quality>
-	<name>龟兔</name>
+	<name>赛跑冤家</name>
 	<property>1</property>
 	<monsterId>50115</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1648,13 +1648,13 @@
 	<symptom></symptom>
 	<fu>6</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>60087</id>
 	<type>1</type>
 	<quality>6</quality>
-	<name>龟兔</name>
+	<name>赛跑冤家</name>
 	<property>1</property>
 	<monsterId>50115</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1678,7 +1678,7 @@
 	<symptom></symptom>
 	<fu>7</fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>65011</id>
@@ -1708,13 +1708,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>65021</id>
 	<type>2</type>
 	<quality>1</quality>
-	<name>小蛇碎片</name>
+	<name>蛇宝宝碎片</name>
 	<property>1</property>
 	<monsterId>50104</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1738,13 +1738,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>65031</id>
 	<type>2</type>
 	<quality>1</quality>
-	<name>小树桩碎片</name>
+	<name>萌萌树碎片</name>
 	<property>1</property>
 	<monsterId>50106</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1768,13 +1768,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>65041</id>
 	<type>2</type>
 	<quality>1</quality>
-	<name>小蘑菇碎片</name>
+	<name>鱼骨菇碎片</name>
 	<property>1</property>
 	<monsterId>50108</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1798,13 +1798,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>65051</id>
 	<type>2</type>
 	<quality>1</quality>
-	<name>小僵尸碎片</name>
+	<name>僵尸宝宝碎片</name>
 	<property>1</property>
 	<monsterId>50110</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1828,13 +1828,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>65061</id>
 	<type>2</type>
 	<quality>1</quality>
-	<name>小兔子碎片</name>
+	<name>灯兔子碎片</name>
 	<property>1</property>
 	<monsterId>50112</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1858,13 +1858,13 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>65071</id>
 	<type>2</type>
 	<quality>1</quality>
-	<name>小猫咪碎片</name>
+	<name>小狐喵碎片</name>
 	<property>1</property>
 	<monsterId>50113</monsterId>
 	<mutateMonsterId></mutateMonsterId>
@@ -1888,7 +1888,7 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 <config>
 	<id>65081</id>
@@ -1918,6 +1918,6 @@
 	<symptom></symptom>
 	<fu></fu>
 	<scale>3</scale>
-	<rotate>-10</rotate>
+	<rotate>10</rotate>
 </config>
 </root>

@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -52,7 +51,6 @@ public final class JsonUtils {
 	 */
 	public static String object2String(Object object) {
 		try {
-			//return JSON.toJSONString(object);
 			return mapper.writeValueAsString(object);
 		} catch (Exception e) {
 			ServerLogger.err(e, String.format("将对象%s转换为JSON字符串时发生异常",object.getClass()));
@@ -83,7 +81,8 @@ public final class JsonUtils {
 
 	/**
 	 * 将 JSON 格式的字符串转换为集合
-	 *
+	 * 
+	 * @param <T>
 	 * @param content
 	 *            字符串
 	 * @param collectionType
@@ -183,7 +182,6 @@ public final class JsonUtils {
 		JavaType type = typeFactory.constructType(clz);
 		try {
 			return (T) mapper.readValue(content, type);
-			//return JSON.parseObject(content,clz);
 		} catch (Exception e) {
 			ServerLogger.err(e, String.format("将字符串%s转换为对象%s时出现异常",content,clz.getName()));
 			return null;

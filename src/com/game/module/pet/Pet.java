@@ -17,9 +17,9 @@ public class Pet {
     public Pet() {
     }
 
-    public Pet(int id, int configId, int skillID) {
+    public Pet(int id, int configId, int passiveSkillId) {
         this.id = id;
-        this.skillID = skillID;
+        this.passiveSkillId = passiveSkillId;
         this.configId = configId;
         this.mutateFlag = false;
         this.playFlag = false;

@@ -7,9 +7,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 import com.game.module.activity.ActivityConsts;
 import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
+import com.game.module.player.PlayerData;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
-import com.server.util.ServerLogger;
+import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,7 +33,6 @@ import com.game.params.Reward;
 import com.game.params.arena.ArenaReportVO;
 import com.game.params.arena.ArenaResultVO;
 import com.game.util.ConfigData;
-import com.game.util.RandomUtil;
 import com.server.SessionManager;
 
 @Service
@@ -169,7 +169,10 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 		Player player = playerService.getPlayer(playerId);
 		ArenaPlayer opponent = getArenaPlayerByUniqueId(opponentId);
 		Player oppPlayer = playerService.getPlayer(opponent.getPlayerId());
+		PlayerData data = playerService.getPlayerData(playerId);
 		Map<Integer, Integer> rewards;
+
+		Map<Integer,int[]> condParams = Maps.newHashMap();
 		if(isWin){
 			//win
 			if(record <= 0){
@@ -178,7 +181,8 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 				record++;
 			}
 			rewards = config.arenaWinReward;
-			
+			data.setArenaWins(data.getArenaWins() + 1);
+			condParams.put(Task.TYPE_ARENA_WINS,new int[]{data.getArenaWins()});
 			int meRank = me.getRank();
 			if(meRank > opponent.getRank()){ //交换排名,此处会不会有线程安全问题,造成同名?
 				int oldOppo = opponent.getRank();
@@ -195,10 +199,13 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 				}
 				//称号
 				titleService.complete(playerId, TitleConsts.ARENA,meRank, ActivityConsts.UpdateType.T_VALUE);
+				//taskService.doTask(playerId,Task.TYPE_ARENA_RANK,meRank);
+				condParams.put(Task.TYPE_ARENA_RANK,new int[]{meRank});
 			}else{
 				sendReport(playerId, ARENA_WIN, oppPlayer.getName(), 0);
 			}
 		}else{
+			data.setArenaWins(0);
 			//lost
 			if(record >= 0){
 				record = -1;
@@ -221,7 +228,11 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 		attach.commitSync();
 		goodsService.addRewards(playerId, rewards, LogConsume.ARENA_REWARD, isWin);
 		vo.currRank = me.getRank();
-		taskService.doTask(playerId, Task.FINISH_JOIN_PK, 1,1);
+
+		condParams.put(Task.FINISH_JOIN_PK,new int[]{1,1});
+		condParams.put(Task.TYPE_ARENA_TIMES,new int[]{1});
+		taskService.doTask(playerId, condParams);
+		//taskService.doTask(playerId, Task.FINISH_JOIN_PK, 1,1);
 		return vo;
 	}
 

@@ -49,6 +49,11 @@ public class SysConfig {
     public static int mixPort;// 跨服端口
     public static int cacheCount;//缓存的数量
 
+    public static int gameId;
+    public static String eratingHost;
+    public static int gatewayId;
+
+
     public static void init() throws Exception {
         Properties properties = new Properties();
         try (FileInputStream fis = new FileInputStream(new File("config/sys.properties"))) {
@@ -96,6 +101,10 @@ public class SysConfig {
             checkVersion = Boolean.parseBoolean(properties.getProperty("checkVersion"));
 
             cacheCount = Integer.parseInt(properties.getProperty("cacheCount"));
+
+            gameId = Integer.parseInt(properties.getProperty("game_id"));
+            gatewayId = Integer.parseInt(properties.getProperty("game_way_id"));
+            eratingHost = properties.getProperty("sdk_host");
 
             Profile.setOpen(Boolean.parseBoolean(properties.getProperty("profile")));
 

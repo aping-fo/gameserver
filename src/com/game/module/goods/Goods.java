@@ -21,6 +21,7 @@ public class Goods {
 	public final static int EXPERIENCE_HP = 123;//英雄试练HP
 	public final static int TRAVERSING_ENERGY = 124;//穿越仪能量
 	public final static int HONOR_POINT = 112;//荣誉点
+	public final static int ACHIEVEMENT = 113;//成就点
 	public final static int HORN_ID = 12600;//小喇叭
 
 	public final static int ARTIFACT_COMPONENT = 401;//神器部件

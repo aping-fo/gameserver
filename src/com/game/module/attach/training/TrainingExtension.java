@@ -5,6 +5,8 @@ import java.util.List;
 
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.ladder.TrainingResultVO;
 import com.game.params.training.TrainingFighterVO;
 import com.game.util.JsonUtils;
@@ -31,6 +33,8 @@ public class TrainingExtension {
     private RandomRewardService rewardService;
     @Autowired
     private PlayerService playerService;
+    @Autowired
+    private TaskService taskService;
 
     //获取相关信息
     @Command(3901)
@@ -86,6 +90,8 @@ public class TrainingExtension {
         result.name = player.getName();
         result.level = player.getLev();
         result.vocation = player.getVocation();
+
+        taskService.doTask(playerId, Task.TYPE_TRAIN_TIMES,1);
         return result;
 
     }
@@ -95,6 +101,7 @@ public class TrainingExtension {
     public IntParam challengeWin(int playerId, TrainingResultVO param) {
         IntParam result = new IntParam();
         TrainAttach attach = logic.getAttach(playerId);
+        taskService.doTask(playerId, Task.TYPE_TRAIN_WIN_TIMES,1);
         if (param.index >= logic.getMaxLevel() || param.index != attach.getIndex()/* || attach.getHp() < param.hp*/) {
             result.param = Response.ERR_PARAM;
         } else {

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<name>战士套</name>
+	<equips>[20112001,20212001,20312001,20412001,20512001,20612001]</equips>
+	<twoAdd>1:[1,10];2:[2,500]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:10%
+威力:500</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd></fourAdd>
+	<fourDesc>【4】套装效果:
+战斗时,防御力提升30%,持续5分钟</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[3000001],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>2</id>
+	<name>刺客套</name>
+	<equips>[20122001,20222001,20322001,20422001,20522001,20622001]</equips>
+	<twoAdd>1:[1,10];2:[2,500]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:10%
+威力:500</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd></fourAdd>
+	<fourDesc>【4】套装效果:
+战斗时,防御力提升30%,持续5分钟</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[3000001],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>3</id>
+	<name>法师套</name>
+	<equips>[20132001,20232001,20332001,20432001,20532001,20632001]</equips>
+	<twoAdd>1:[1,10];2:[2,500]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:10%
+威力:500</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd></fourAdd>
+	<fourDesc>【4】套装效果:
+战斗时,防御力提升30%,持续5分钟</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[3000001],[0],[3000002]]</buffAdd>
+</config>
+</root>

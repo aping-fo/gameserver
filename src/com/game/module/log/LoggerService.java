@@ -256,7 +256,7 @@ public class LoggerService  implements InitHandler {
 	 * 消耗日志
 	 */
 	public void logConsume(int playerId,int lev,int vipLev,boolean add,int count,LogConsume log,int goodsId,int goodsType,Object...params){
-		if(log==null){
+		/*if(log==null){
 			return;
 		}
 		Object p[] = new Object[]{playerId,lev,vipLev,add?ADD:DEC,count,goodsType,goodsId,log.actionId,System.currentTimeMillis(),0,0,0,0};
@@ -270,7 +270,7 @@ public class LoggerService  implements InitHandler {
 				p[9+i]=params[i];
 			}
 		}
-		log(TYPE_CONSUME, p);
+		log(TYPE_CONSUME, p);*/
 	}
 	
 	
