@@ -1,6 +1,5 @@
 package com.game.module.sct;
 
-import com.game.data.SkillCardTrainCfg;
 import com.game.data.TrialFieldCfg;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -16,7 +15,7 @@ import java.util.Map;
 
 @Service
 public class SkillCardTrainService {
-    private static final int CMD_GET_TRAIN = 1;
+    private static final int CMD_GET_TRAIN = 1927;
 
     @Autowired
     private PlayerService playerService;
@@ -50,8 +49,8 @@ public class SkillCardTrainService {
         count += consumeCount;
         playerData.getTrain().getGroupTimes().put(cfg.type, count);
         playerData.getTrain().getChallengeIds().add(copyId);
-        TrainVo vo = getTrainInfo(playerId);
-        SessionManager.getInstance().sendMsg(CMD_GET_TRAIN, vo, playerId);
+        //TrainVo vo = getTrainInfo(playerId);
+        //SessionManager.getInstance().sendMsg(CMD_GET_TRAIN, vo, playerId);
     }
 
     public void dailyRest(int playerId) {

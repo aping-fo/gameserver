@@ -1,33 +1,20 @@
 package com.game.module.player;
 
-import com.game.module.fashion.FashionService;
-import com.game.params.Int2Param;
-import io.netty.channel.Channel;
-import io.netty.util.AttributeKey;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.game.SysConfig;
 import com.game.data.Response;
 import com.game.event.DefaultLogoutHandler;
 import com.game.event.LoginHandler;
-import com.game.module.activity.ActivityService;
 import com.game.module.admin.ManagerService;
 import com.game.module.admin.UserManager;
+import com.game.module.fashion.FashionService;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
-import com.game.module.log.LoggerService;
+import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.StringParam;
-import com.game.params.player.CLoginVo;
-import com.game.params.player.CRegVo;
-import com.game.params.player.PlayerVo;
-import com.game.params.player.SRoleVo;
+import com.game.params.player.*;
+import com.game.sdk.erating.ERatingService;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
 import com.server.SessionManager;
@@ -35,6 +22,14 @@ import com.server.anotation.Command;
 import com.server.anotation.Extension;
 import com.server.anotation.UnLogin;
 import com.server.util.ServerLogger;
+import io.netty.channel.Channel;
+import io.netty.util.AttributeKey;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import java.time.DayOfWeek;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Extension
 public class PlayerExtension {
@@ -45,15 +40,13 @@ public class PlayerExtension {
 	@Autowired
 	private ManagerService managerService;
 	@Autowired
-	private LoggerService loggerService;
-	@Autowired
-	private ActivityService activityService;
-	@Autowired
 	private LoginHandler loginHandler;
 	@Autowired
 	private GangService gangService;
 	@Autowired
 	private FashionService fashionService;
+	@Autowired
+	private ERatingService ratingService;
 
 	private static final AttributeKey<String> CHANNEL = AttributeKey.valueOf("channel");
 
@@ -63,6 +56,7 @@ public class PlayerExtension {
 		if (playerService.getPlayers().size() > SysConfig.maxCon) {
 			IntParam result = new IntParam();
 			SessionManager.sendDataInner(channel, 1010, result);
+			channel.close();
 			return null;
 		}
 
@@ -112,46 +106,46 @@ public class PlayerExtension {
 	@Command(1002)
 	public Object createRole(int playerId, CRegVo param, Channel channel) {
 		// 连接数太多
-		IntParam result = new IntParam();
+		RegResuleVo result = new RegResuleVo();
 		if (SessionManager.getInstance().getOnlineCount() > SysConfig.maxCon) {
-			result.param = Response.TOO_MANY_CON;
+			result.code = Response.TOO_MANY_CON;
 			return result;
 		}
 		// 关闭注册
 		if (!SysConfig.reg) {
-			result.param = Response.CLOSE_REG;
+			result.code = Response.CLOSE_REG;
 			return result;
 		}
 		// 版本检测
 		if (!playerService.checkVersion(param.version)) {
-			result.param = Response.LOW_VERSION;
+			result.code = Response.LOW_VERSION;
 			return result;
 		}
 
 		// 登录验证
 		int auth = playerService.auth();
 		if (auth != 0) {
-			result.param = auth;
+			result.code = auth;
 			return result;
 		}
 		// 参数错误
 		if (!playerService.checkRegParam(param)) {
-			result.param = Response.ERR_PARAM;
+			result.code = Response.ERR_PARAM;
 			return result;
 		}
 		// 同名
 		if (playerService.getPlayerIdByName(param.name) > 0) {
-			result.param = Response.SAME_NAME;
+			result.code = Response.SAME_NAME;
 			return result;
 		}
 		// 角色数量上限
 		if (playerService.getPlayersByAccName(param.accName).size() >= ConfigData.globalParam().maxRoleCount) {
-			result.param = Response.TOO_MANY_ROLE;
+			result.code = Response.TOO_MANY_ROLE;
 			return result;
 		}
-		Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName,param.channel);
+		Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName,param.channel,param.serverId,param.serverName);
 		if (player == null) {
-			result.param = Response.SAME_NAME;
+			result.code = Response.SAME_NAME;
 			return result;
 		}
 		CLoginVo loginVo = new CLoginVo();
@@ -159,8 +153,19 @@ public class PlayerExtension {
 		loginVo.version = ConfigData.globalParam().version;// 版本
 		// 直接返回登录结果
 		PlayerVo loginResult = login(0, loginVo, channel);
+
+		result.serverId = String.valueOf(param.serverId);
+		result.serverName = param.serverName;
+		result.userName = param.accName;
+		result.roleId = String.valueOf(player.getPlayerId());
+		result.roleName = player.getName();
+		result.createTime = String.valueOf(player.getRegTime().getTime()/1000);
+
 		SessionManager.sendDataInner(channel, 1003, loginResult);
-		return null;
+
+		//report create log
+		ratingService.reportCreateRole(player);
+		return result;
 	}
 
 	@UnLogin
@@ -229,10 +234,23 @@ public class PlayerExtension {
 		if (ban != null && ban.getBanChat() > 0) {
 			result.banChat = true;
 		}
-		
+		PlayerData data = playerService.getPlayerData(playerId);
+		result.userName = accName;
+		result.serverName = data.getServerName();
+		result.serverId = player.getServerId();
 		player.setRefresh(true);
+
+		String host = channel.remoteAddress().toString();
+		String[] arr = host.split(":");
+		player.clientPort = Integer.parseInt(arr[1]);
+		String[] hostArr = arr[0].substring(1).split("\\.");
+		player.clientIp = Integer.parseInt(hostArr[0])*2563+Integer.parseInt(hostArr[1])*2562+Integer.parseInt(hostArr[2])*256+Integer.parseInt(hostArr[3]);
+		//report login log
+		ratingService.reportRoleEnter(player);
 		// 设置session等级
 		SessionManager.getInstance().setPlayerLev(playerId, player.getLev());
+
+		//System.out.println("=============" + playerService.getPlayers().size());
 		return result;
 	}
 
@@ -276,5 +294,12 @@ public class PlayerExtension {
 	public Object selectRole(int playerId, Object param){
 		playerService.selectRole(playerId);
 		return null;
+	}
+
+	@Command(101)
+	public Object feedback(int playerId, StringParam param){
+		IntParam result = new IntParam();
+		result.param = Response.SUCCESS;
+		return result;
 	}
 }

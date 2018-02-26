@@ -44300,14 +44300,14 @@
 </config>
 <config>
 	<id>31663</id>
-	<model>20305</model>
+	<model>20306</model>
 	<type>3</type>
-	<AI>20305001</AI>
+	<AI>10000</AI>
 	<AppointAI></AppointAI>
-	<icon>20305</icon>
-	<name>精绝女王</name>
+	<icon>20306</icon>
+	<name>太阳神鹰</name>
 	<desc>x</desc>
-	<scale>1</scale>
+	<scale>1.2</scale>
 	<lev>864</lev>
 	<showName></showName>
 	<hp>1432131</hp>
@@ -44326,12 +44326,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20305001,20305002,20305003]</skillId>
+	<skillId>[20306001,20306002,20306003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20305101,20305102]</behitAction>
-	<flyAction>20305201</flyAction>
-	<downAction>20305202</downAction>
-	<getupAction>20305301</getupAction>
+	<behitAction>[20306101,20306102]</behitAction>
+	<flyAction>20306201</flyAction>
+	<downAction>20306202</downAction>
+	<getupAction>20306301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102,2131601,2131602]</bornBuff>
 	<skillBuff></skillBuff>
@@ -44719,7 +44719,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物1</name>
+	<name>小木乃伊</name>
 	<desc>x</desc>
 	<scale>1.3</scale>
 	<lev>1</lev>
@@ -44765,7 +44765,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物2</name>
+	<name>木木</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -44811,7 +44811,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物3</name>
+	<name>大蛇丸</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -44857,7 +44857,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物4</name>
+	<name>蛇宝宝</name>
 	<desc>x</desc>
 	<scale>1.1000000000000001</scale>
 	<lev>1</lev>
@@ -44903,7 +44903,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物5</name>
+	<name>忧郁树</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -44949,7 +44949,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物6</name>
+	<name>萌萌树</name>
 	<desc>x</desc>
 	<scale>1.3</scale>
 	<lev>1</lev>
@@ -44995,7 +44995,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物7</name>
+	<name>大魔菇</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -45041,7 +45041,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物8</name>
+	<name>鱼骨菇</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -45087,7 +45087,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物9</name>
+	<name>僵尸道长</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -45133,7 +45133,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物10</name>
+	<name>僵尸宝宝</name>
 	<desc>x</desc>
 	<scale>0.9</scale>
 	<lev>1</lev>
@@ -45179,7 +45179,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物11</name>
+	<name>万圣兔</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -45225,7 +45225,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物12</name>
+	<name>灯兔子</name>
 	<desc>x</desc>
 	<scale>1.4</scale>
 	<lev>1</lev>
@@ -45271,7 +45271,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物13</name>
+	<name>喵太仙</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -45317,7 +45317,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物14</name>
+	<name>小狐喵</name>
 	<desc>x</desc>
 	<scale>1.4</scale>
 	<lev>1</lev>
@@ -45363,7 +45363,7 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物15</name>
+	<name>赛跑冤家</name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>
@@ -45409,7 +45409,467 @@
 	<AI>50101001</AI>
 	<AppointAI></AppointAI>
 	<icon></icon>
-	<name>宠物16</name>
+	<name>小龟兔</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50117</id>
+	<model>50117</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>小蛤蟆</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50118</id>
+	<model>50118</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name></name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50119</id>
+	<model>50119</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>小浣熊</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50120</id>
+	<model>50120</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name></name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50121</id>
+	<model>50121</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>小狮子</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50122</id>
+	<model>50122</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name></name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50123</id>
+	<model>50123</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>小羊驼</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50124</id>
+	<model>50124</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name></name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50125</id>
+	<model>50125</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>小狐狸</name>
+	<desc>x</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>1</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>1</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>50126</id>
+	<model>50126</model>
+	<type>4</type>
+	<AI>50101001</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name></name>
 	<desc>x</desc>
 	<scale>1</scale>
 	<lev>1</lev>

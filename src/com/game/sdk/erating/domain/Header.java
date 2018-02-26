@@ -1,5 +1,7 @@
 package com.game.sdk.erating.domain;
 
+import com.game.SysConfig;
+
 /**
  * Created by lucky on 2018/2/1.
  * 包含协议头拼装
@@ -10,10 +12,10 @@ public class Header extends Report {
     public final int gateway_id;
     private final StringBuilder sb;
 
-    public Header(int command_id, int game_id, int gateway_id) {
+    public Header(int command_id) {
         this.commandId = command_id;
-        this.game_id = game_id;
-        this.gateway_id = gateway_id;
+        this.game_id = SysConfig.gameId;
+        this.gateway_id = SysConfig.gatewayId;
         sb = new StringBuilder("<agip>");
         sb.append("<header>");
         sb.append("<command_id>").append(command_id).append("</command_id>");

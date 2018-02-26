@@ -10,6 +10,7 @@ public class PetVO implements IProtocol {
 	public boolean hasMutate;//是否变异过
 	public int configId;//宠物配置ID
 	public int passiveSkillId2;//宠物被动技能2ID
+	public String name;//宠物名字
 
 
 	public void decode(BufferBuilder bb) {
@@ -19,6 +20,7 @@ public class PetVO implements IProtocol {
 		this.hasMutate = bb.getBoolean();
 		this.configId = bb.getInt();
 		this.passiveSkillId2 = bb.getInt();
+		this.name = bb.getString();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -28,5 +30,6 @@ public class PetVO implements IProtocol {
 		bb.putBoolean(this.hasMutate);
 		bb.putInt(this.configId);
 		bb.putInt(this.passiveSkillId2);
+		bb.putString(this.name);
 	}
 }

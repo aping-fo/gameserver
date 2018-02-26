@@ -146,7 +146,7 @@ public class LotteryExtension {
 		record.count += time;
 		record.curCount += time;
 		attach.commitSync();
-		taskService.doTask(playerId, Task.FINISH_LOTTERY,param.param1, time);
+		taskService.doTask(playerId, Task.FINISH_LOTTERY, time);
 		return result;
 	}
 }

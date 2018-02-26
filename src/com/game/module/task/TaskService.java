@@ -59,6 +59,9 @@ import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 
+/**
+ * TODO 优化方案，按任务类型分组存储，减少遍历次数
+ */
 @Service
 public class TaskService implements Dispose {
     @Autowired
@@ -222,8 +225,14 @@ public class TaskService implements Dispose {
     public void initTask(int playerId) {
         PlayerTask task = new PlayerTask();
         tasks.put(playerId, task);
-        for (int id : ConfigData.globalParam().firstTask) {
+       /* for (int id : ConfigData.globalParam().firstTask) {
             addNewTask(playerId, id, false);
+        }*/
+        for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
+            TaskConfig taskConfig = (TaskConfig) config;
+            if(taskConfig.level <= 1) {
+                addNewTask(playerId, taskConfig.id, false);
+            }
         }
         updateDailyTasks(playerId);
         updateWeeklyTasks(playerId);
@@ -231,6 +240,18 @@ public class TaskService implements Dispose {
         taskDao.insert(playerId);
     }
 
+    public void onLogin(int playerId){
+        PlayerTask task = new PlayerTask();
+        Map<Integer, Task> taskMap = getPlayerTask(playerId).getTasks();
+        for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
+            TaskConfig taskConfig = (TaskConfig) config;
+            if(!taskMap.containsKey(taskConfig.id)){
+                if(taskConfig.level <= 1) {
+                    addNewTask(playerId, taskConfig.id, false);
+                }
+            }
+        }
+    }
     public Task addNewTask(int playerId, int taskId) {
         return addNewTask(playerId, taskId, true);
     }
@@ -262,17 +283,26 @@ public class TaskService implements Dispose {
                 || config.finishType == Task.TYPE_ARENA_RANK
                 || config.finishType == Task.TYPE_FIGHT_RANK
                 || config.finishType == Task.TYPE_LADDER_RANK
+                || config.finishType == Task.TYPE_WB_RANK
                 || config.finishType == Task.TYPE_ACHIEVEMENT_RANK) {
-            if (task.getCount() <= count) {
+            if (task.getCount() !=0 && task.getCount() <= count) {
                 task.setState(Task.STATE_FINISHED);
                 return true;
             }
-        } else {
+        } else if(config.finishType == Task.TYPE_HIT) {
+            if(task.getCount() <= count){
+                task.setState(Task.STATE_FINISHED);
+                return true;
+            }
+        }
+        else {
             if (task.getCount() >= count) {
                 task.setCount(count);
                 task.setState(Task.STATE_FINISHED);
-                //任务称号
-                titleService.complete(playerId, TitleConsts.TASK, task.getTaskId(), ActivityConsts.UpdateType.T_VALUE);
+                if(config.taskType < 6) { //除开成就任务
+                    //任务称号
+                    titleService.complete(playerId, TitleConsts.TASK, task.getTaskId(), ActivityConsts.UpdateType.T_VALUE);
+                }
                 return true;
             }
         }
@@ -476,15 +506,14 @@ public class TaskService implements Dispose {
                     }
                     task.alterCount(curCount);
                 }
-            } else if (config.finishType == Task.TYPE_ARENA_WINS) {
-                if (task.getCount() < data.getArenaWins()) {
-                    task.setCount(data.getArenaWins());
-                }
-            } else if (config.finishType == Task.TYPE_SQ_UP) {
-                if (task.getCount() < params[0]) {
-                    task.setCount(params[0]);
-                }
-            } else if (config.finishType == Task.TYPE_GANG_LEVEL) {
+            } else if (config.finishType == Task.TYPE_SQ_UP
+                    || config.finishType == Task.TYPE_LEVEL
+                    || config.finishType == Task.TYPE_ARENA_WINS
+                    || config.finishType == Task.TYPE_MUTATE_PET
+                    || config.finishType == Task.TYPE_FIGHT
+                    || config.finishType == Task.ACHIEVEMENT_VIP
+                    || config.finishType == Task.TYPE_GANG_TEC
+                    || config.finishType == Task.TYPE_GANG_LEVEL) {
                 if (task.getCount() < params[0]) {
                     task.setCount(params[0]);
                 }
@@ -492,11 +521,9 @@ public class TaskService implements Dispose {
                     || config.finishType == Task.TYPE_WB_RANK
                     || config.finishType == Task.TYPE_ARENA_RANK
                     || config.finishType == Task.TYPE_LADDER_RANK
-                    || config.finishType == Task.TYPE_PASS_TIME
                     || config.finishType == Task.TYPE_FIGHT_RANK
-                    || config.finishType == Task.TYPE_LEVEL
                     || config.finishType == Task.TYPE_ACHIEVEMENT_RANK) {
-                if (task.getCount() > params[0]) {
+                if (task.getCount() == 0 || task.getCount() > params[0]) {
                     task.setCount(params[0]);
                 }
             } else {
@@ -512,24 +539,32 @@ public class TaskService implements Dispose {
                 if (i >= 0) {
                     return false;
                 }
-                task.alterCount(params[count - 1]);
+
+                if(config.finishType == Task.TYPE_PASS_TIME
+                        || config.finishType == Task.TYPE_HIT){
+                    task.setCount(params[count - 1]);
+                }else {
+                    task.alterCount(params[count - 1]);
+                }
             }
 
             checkFinished(task, playerId);
             if (task.getState() == Task.STATE_FINISHED) {
-                if (task.getType() < 20) {
-                    data.setFinishTaskCount(data.getFinishTaskCount() + 1);
+                if(config.taskType < 6) { //除开成就任务
+                    data.setFinishTaskCount(1);
                     doTask(playerId, Task.TYPE_TASK_COUNT, data.getFinishTaskCount());
                 }
             }
 
             if (task.getCount() != oldCount || task.getState() != oldState) {
                 if (config.taskType == Task.TYPE_GANG) {
-                    GMember gMember = gang.getMembers().get(playerId);
-                    gMember.alterTaskContribution(1);
-                    if (task.getState() == Task.STATE_FINISHED) {
-                        gangService.sendTaskReward(player.getGangId(), config);
-                        task.setState(Task.STATE_SUBMITED);
+                    if(gang != null) {
+                        GMember gMember = gang.getMembers().get(playerId);
+                        gMember.alterTaskContribution(1);
+                        if (task.getState() == Task.STATE_FINISHED) {
+                            gangService.sendTaskReward(player.getGangId(), config);
+                            task.setState(Task.STATE_SUBMITED);
+                        }
                     }
                 }
                 // 发送到前端
@@ -582,7 +617,11 @@ public class TaskService implements Dispose {
         }
         if (player.getGangId() > 0) {
             Gang gang = gangService.getGang(player.getGangId());
-            tasks.addAll(gang.getTasks().values());
+            if(gang != null) {
+                tasks.addAll(gang.getTasks().values());
+            }else {
+                player.setGangId(0);
+            }
         }
 
         List<Task> updateTasks = Lists.newArrayList();
@@ -738,43 +777,6 @@ public class TaskService implements Dispose {
         playerTask.getLiveBox().clear();
         SessionManager.getInstance().sendMsg(TaskExtension.TASK_LIST_INFO,
                 getCurTasks(playerId), playerId);
-
-
-        /////成就
-        RankingList<FightingRankEntity> fightRank = rankService.getRankingList(RankService.TYPE_FIGHTING);
-        int i = 1;
-        for (RankEntity rankEntity : fightRank.getOrderList()) {
-            PlayerView playerView = serialDataService.getData().getPlayerView(rankEntity.getPlayerId());
-            playerView.setLadderMaxRank(i);
-            doTask(rankEntity.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK, i);
-            i++;
-        }
-        i = 1;
-        RankingList<AchievementRankEntity> achievementRank = rankService.getRankingList(RankService.TYPE_ACHIEVEMENT);
-        for (RankEntity rankEntity : achievementRank.getOrderList()) {
-            PlayerView playerView = serialDataService.getData().getPlayerView(rankEntity.getPlayerId());
-            playerView.setAchievementMaxRank(i);
-            doTask(rankEntity.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK, i);
-            i++;
-        }
-
-        for (i = 1; i <= 50; i++) {
-            ArenaPlayer player = arenaLogic.getArenaPlayerByRank(i);
-            if (serialDataService.getData() != null) {
-                PlayerView playerView = serialDataService.getData().getPlayerView(player.getPlayerId());
-                playerView.setAchievementMaxRank(i);
-                doTask(player.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK, i);
-            }
-        }
-
-        ListParam<LadderRankVO> ladderRank = ladderService.getLadderRank();
-        i = 1;
-        for(LadderRankVO vo : ladderRank.params){
-            PlayerView playerView = serialDataService.getData().getPlayerView(vo.playerId);
-            playerView.setAchievementMaxRank(i);
-            doTask(vo.playerId, Task.TYPE_ACHIEVEMENT_RANK, i);
-            i ++;
-        }
     }
 
     public void updateDailyTasks(int playerId) {
@@ -829,7 +831,7 @@ public class TaskService implements Dispose {
             if (player.getLev() < cfg.level) {
                 continue;
             }
-/*            if (finishTypes.contains(cfg.finishType)) {
+            /*if (finishTypes.contains(cfg.finishType)) {
                 continue;
             }*/
             playerTask.getTasks().remove(taskId);
@@ -931,5 +933,44 @@ public class TaskService implements Dispose {
         IntParam result = new IntParam();
         result.param = Response.SUCCESS;
         return result;
+    }
+
+    public void dailyAchievement(){
+        ServerLogger.warn("achievement.............");
+        /////成就
+        RankingList<FightingRankEntity> fightRank = rankService.getRankingList(RankService.TYPE_FIGHTING);
+        int i = 1;
+        for (RankEntity rankEntity : fightRank.getOrderList()) {
+            PlayerView playerView = serialDataService.getData().getPlayerView(rankEntity.getPlayerId());
+            playerView.setLadderMaxRank(i);
+            doTask(rankEntity.getPlayerId(), Task.TYPE_FIGHT_RANK, i);
+            i++;
+        }
+        i = 1;
+        RankingList<AchievementRankEntity> achievementRank = rankService.getRankingList(RankService.TYPE_ACHIEVEMENT);
+        for (RankEntity rankEntity : achievementRank.getOrderList()) {
+            PlayerView playerView = serialDataService.getData().getPlayerView(rankEntity.getPlayerId());
+            playerView.setAchievementMaxRank(i);
+            doTask(rankEntity.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK, i);
+            i++;
+        }
+
+        for (i = 1; i <= 50; i++) {
+            ArenaPlayer player = arenaLogic.getArenaPlayerByRank(i);
+            if (serialDataService.getData() != null) {
+                PlayerView playerView = serialDataService.getData().getPlayerView(player.getPlayerId());
+                playerView.setAchievementMaxRank(i);
+                doTask(player.getPlayerId(), Task.TYPE_ARENA_RANK, i);
+            }
+        }
+
+        ListParam<LadderRankVO> ladderRank = ladderService.getLadderRank();
+        i = 1;
+        for(LadderRankVO vo : ladderRank.params){
+            PlayerView playerView = serialDataService.getData().getPlayerView(vo.playerId);
+            playerView.setAchievementMaxRank(i);
+            doTask(vo.playerId, Task.TYPE_LADDER_RANK, i);
+            i ++;
+        }
     }
 }

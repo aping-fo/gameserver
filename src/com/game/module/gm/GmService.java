@@ -11,6 +11,7 @@ import com.game.module.attach.endless.EndlessAttach;
 import com.game.module.attach.endless.EndlessLogic;
 import com.game.module.attach.lottery.LotteryExtension;
 import com.game.module.attach.training.TrainingExtension;
+import com.game.module.attach.training.trainingLogic;
 import com.game.module.chat.ChatExtension;
 import com.game.module.copy.Copy;
 import com.game.module.copy.CopyExtension;
@@ -459,6 +460,9 @@ public class GmService {
     public void openWorld(int playerId, String... params) {
         worldBossService.gmReset();
     }
+    public void sendAward(int playerId, String... params) {
+        worldBossService.sendAward1();
+    }
 
     @Autowired
     private FameService fameService;
@@ -530,6 +534,10 @@ public class GmService {
     public void addPet(int playerId, String... params) {
         int petId = Integer.valueOf(params[0]);
         petService.addPet(playerId, petId);
+    }
+
+    public void addAllPet(int playerId, String... params) {
+        petService.addAllPet(playerId);
     }
 
     public void getPetActivity(int playerId, String... params) {
@@ -670,5 +678,15 @@ public class GmService {
         int id = Integer.valueOf(params[0]);
         int count = Integer.valueOf(params[1]);
         vipService.addCharge(playerId, id, count);
+    }
+
+    public void taskRank(int playerId, String... params){
+        taskService.dailyReset(playerId);
+    }
+
+    @Autowired
+    trainingLogic trainin;
+    public void resetOpponent(int playerId, String... params){
+        trainin.resetOpponent();
     }
 }

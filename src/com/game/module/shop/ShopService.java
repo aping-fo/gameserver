@@ -337,7 +337,7 @@ public class ShopService {
 	private static final int _sweep = 2;//扫荡
 	private static final int _special = 3;//特殊关卡
 	
-	public boolean triggerMysteryShop(int playerId, int copyId, CopyResult result){
+	public boolean triggerMysteryShop(int playerId, int copyId, int times,CopyResult result){
 		boolean show = false;
 		Player player = playerService.getPlayer(playerId);
 		PlayerData data = playerService.getPlayerData(playerId);
@@ -346,7 +346,7 @@ public class ShopService {
 		if(cfg.type == CopyInstance.TYPE_TRAVERSING || cfg.needEnergy == 0){
 			return false;
 		}
-		data.setPower4Mystery(data.getPower4Mystery() + cfg.needEnergy);
+		data.setPower4Mystery(data.getPower4Mystery() + cfg.needEnergy * times);
 
 		GlobalConfig global = ConfigData.globalParam();
 		if(System.currentTimeMillis() - data.getMysteryShopTime() < global.mysteryShopTime * TimeUtil.ONE_MIN){

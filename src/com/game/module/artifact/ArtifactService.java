@@ -50,6 +50,10 @@ public class ArtifactService {
 		int rateIndex = RandomUtil.getRandomIndex(rates);
 		PlayerData data = playerService.getPlayerData(playerId);
 		int[] components = data.getArtifacts().get(cfg.id);
+		if(components == null) {
+			components = new int[6];
+			data.getArtifacts().put(cfg.id,components);
+		}
 		int count = cfg.clip[1];
 		if(goodsService.checkHasEnough(playerId, Arrays.asList(new GoodsEntry(cfg.clip[0], count))) > 0){
 			return Response.NO_MATERIAL;

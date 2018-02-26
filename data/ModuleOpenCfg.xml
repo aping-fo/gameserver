@@ -177,6 +177,17 @@
 	<position></position>
 </config>
 <config>
+	<id>1841</id>
+	<uID>184</uID>
+	<name>成就</name>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<subtype></subtype>
+	<position></position>
+</config>
+<config>
 	<id>1081</id>
 	<uID>108</uID>
 	<name>任务</name>
@@ -371,7 +382,7 @@
 	<openType>2</openType>
 	<param>2</param>
 	<icon>resourcescopy</icon>
-	<subtype></subtype>
+	<subtype>[[1,2,4],[2,2,4],[3,2,4],[4,2,4],[5,2,4]]</subtype>
 	<position></position>
 </config>
 </root>

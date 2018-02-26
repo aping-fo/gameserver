@@ -6,18 +6,18 @@ import com.game.params.*;
 public class PetChangeVO implements IProtocol {
 	public int playerId;//玩家ID
 	public int petId;//宠物ID
-	public boolean hasMutate;//是否变异过
+	public String name;//名字
 
 
 	public void decode(BufferBuilder bb) {
 		this.playerId = bb.getInt();
 		this.petId = bb.getInt();
-		this.hasMutate = bb.getBoolean();
+		this.name = bb.getString();
 	}
 
 	public void encode(BufferBuilder bb) {
 		bb.putInt(this.playerId);
 		bb.putInt(this.petId);
-		bb.putBoolean(this.hasMutate);
+		bb.putString(this.name);
 	}
 }

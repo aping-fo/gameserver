@@ -27,8 +27,8 @@ public class Start {
 
 	private void init() {
 		try {
-			DOMConfigurator.configure("config/log4j.xml");
 			SysConfig.init();
+			DOMConfigurator.configure("config/log4j.xml");
 			ServerLogger.info("begin init server...");
 			
 			ServerLogger.info("load game config...");
@@ -44,7 +44,8 @@ public class Start {
 			
 			Runtime.getRuntime().addShutdownHook(new ShutdownHandler());
 			StartHandler.start(); // 公共的初始化
-			
+
+			//ResourceLeakDetector.setLevel(ResourceLeakDetector.Level.PARANOID);
 			if(SysConfig.debug){
 				ResourceLeakDetector.setLevel(Level.PARANOID);
 			}

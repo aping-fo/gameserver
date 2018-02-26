@@ -104,6 +104,9 @@ public class PetBag {
 
         for (Pet pet : petMap.values()) {
             vo.pets.add(pet.toProto());
+            if (pet.getId() == showPetId) {
+                vo.showPetConfigId = pet.getShowConfigID();
+            }
         }
 
         return vo;

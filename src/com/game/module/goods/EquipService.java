@@ -87,6 +87,14 @@ public class EquipService implements InitHandler {
         if (curEquip != null) {
             curEquip.setStoreType(Goods.BAG);
             vo.add(goodsService.toVO(curEquip));
+
+            Integer suitId2 = suitMap.get(curEquip.getGoodsId());
+            if (suitId2 != null) {
+                Set<Integer> suit = data.getSuitMap().get(suitId2);
+                if (suit != null) {
+                    suit.remove(curEquip.getGoodsId());
+                }
+            }
         }
         goods.setStoreType(Goods.EQUIP);
 
@@ -377,7 +385,7 @@ public class EquipService implements InitHandler {
             }
         }
         //扣除消耗
-        if (!playerService.decCoin(playerId, ConfigData.globalParam().clearCostCoin, LogConsume.CLEAR_COST, goods.getGoodsId())) {
+        if (!goodsService.decGoodsFromBag(playerId, Goods.CLEAR_ITEM,ConfigData.globalParam().clearCostCoin, LogConsume.CLEAR_COST, goods.getGoodsId())) {
             return Response.NO_COIN;
         }
         //重新随机

@@ -68,6 +68,7 @@ public class SystemExtension {
 
 	@Autowired
 	private RandomRewardService randomRewardService;
+	@Autowired
 	private EquipService equipService;
 	@Autowired
 	private PetService petService;

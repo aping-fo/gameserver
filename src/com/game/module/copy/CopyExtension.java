@@ -127,7 +127,7 @@ public class CopyExtension {
         // 清除
         copyService.removeCopy(playerId);
         //触发神秘商店
-        result.showMystery = shopService.triggerMysteryShop(playerId, copyId, result);
+        result.showMystery = shopService.triggerMysteryShop(playerId, copyId,1, result);
 
         return result;
     }

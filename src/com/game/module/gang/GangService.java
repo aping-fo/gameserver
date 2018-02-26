@@ -1,23 +1,7 @@
 package com.game.module.gang;
 
-import java.nio.charset.Charset;
-import java.text.MessageFormat;
-import java.util.*;
-import java.util.Map.Entry;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
-
-import com.game.data.*;
-import com.game.module.serial.PlayerView;
-import com.game.params.*;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.server.util.ServerLogger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
 import com.game.SysConfig;
+import com.game.data.*;
 import com.game.event.InitHandler;
 import com.game.module.admin.ManagerService;
 import com.game.module.chat.ChatExtension;
@@ -30,29 +14,31 @@ import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerCalculator;
-import com.game.module.player.PlayerDao;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.serial.PlayerView;
 import com.game.module.serial.SerialDataService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.params.*;
 import com.game.params.chat.ChatVo;
-import com.game.params.gang.GangApply;
-import com.game.params.gang.GangBuild;
-import com.game.params.gang.GangInfo;
-import com.game.params.gang.GangLimit;
-import com.game.params.gang.GangList;
-import com.game.params.gang.GangMember;
-import com.game.params.gang.MyGangInfo;
-import com.game.util.BeanManager;
-import com.game.util.CompressUtil;
-import com.game.util.ConfigData;
-import com.game.util.Context;
-import com.game.util.JsonUtils;
-import com.game.util.RandomUtil;
-import com.game.util.TimeUtil;
+import com.game.params.gang.*;
+import com.game.util.*;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
+import com.server.util.ServerLogger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.nio.charset.Charset;
+import java.text.MessageFormat;
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class GangService implements InitHandler {
@@ -74,14 +60,14 @@ public class GangService implements InitHandler {
     @Autowired
     private ManagerService managerService;
     @Autowired
-    private PlayerDao playerDao;
-    @Autowired
     private ChatService chatService;
     @Autowired
     private SerialDataService serialService;
+    @Autowired
+    private SerialDataService serialDataService;
 
-    private Map<Integer, Gang> gangs = new ConcurrentHashMap<Integer, Gang>();
-    private Map<String, Integer> gangNames = new ConcurrentHashMap<String, Integer>();
+    private Map<Integer, Gang> gangs = new ConcurrentHashMap<>();
+    private Map<String, Integer> gangNames = new ConcurrentHashMap<>();
     private List<Gang> orderGangs = null;
 
     private static volatile int maxGangId = 0;
@@ -89,7 +75,7 @@ public class GangService implements InitHandler {
 
     @Override
     public void handleInit() {
-        donateCfg = new HashMap<Integer, int[]>();
+        donateCfg = new HashMap<>();
         GlobalConfig global = ConfigData.globalParam();
         for (int[] arr : global.donateParams) {
             donateCfg.put(arr[4], arr);
@@ -250,6 +236,10 @@ public class GangService implements InitHandler {
                 gang.getTechnologys().add(cfg.id);
             }
         }
+
+        String str = JsonUtils.object2String(gang);
+        byte[] dbData = str.getBytes(Charset.forName("utf-8"));
+        gangDao.insert(gang.getId(),dbData);
         return Response.SUCCESS;
     }
 
@@ -495,6 +485,29 @@ public class GangService implements InitHandler {
 
         calculator.calculate(applyer);
 
+        //公会成就
+        Map<Integer,int[]> condParam = Maps.newHashMap();
+        int openLv = 0;
+        for(int technologyId : gang.getTechnologys()){
+            GangScienceCfg conf = ConfigData.getConfig(GangScienceCfg.class, technologyId);
+            if(openLv < conf.NeedLevel){
+                openLv = conf.NeedLevel;
+            }
+        }
+        condParam.put(Task.TYPE_GANG_TEC,new int[]{openLv});
+        condParam.put(Task.TYPE_GANG_LEVEL,new int[]{gang.getLev()});
+        condParam.put(Task.TYPE_GANG_RANK,new int[]{gang.getRank()});
+        GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
+        if(gangDungeon != null) {
+            int layer;
+            if(gangDungeon.getHasOpen() == GangDungeonService.T_PASS) {
+                layer = gangDungeon.getLayer() ;
+            }else {
+                layer = gangDungeon.getLayer() - 1;
+            }
+            condParam.put(Task.TYPE_GUILD_COPY,new int[]{layer});
+        }
+        taskService.doTask(applyId, condParam);
         return Response.SUCCESS;
     }
 
@@ -838,6 +851,16 @@ public class GangService implements InitHandler {
             gang.setMaxNum(nextBuild.memberCount);
             SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
                     getMyGang(playerId), playerId);
+
+            Map<Integer,int[]> condParam = Maps.newHashMap();
+            condParam.put(Task.TYPE_GANG_TEC,new int[]{gang.getLev()});
+            condParam.put(Task.TYPE_GANG_LEVEL,new int[]{gang.getLev()});
+            for (int receiveId : gang.getMembers().keySet()) {
+                PlayerView playerView = serialService.getData().getPlayerView(receiveId);
+                playerView.setGangMaxLevel(gang.getLev());
+
+                taskService.doTask(receiveId,condParam);
+            }
         }
     }
 
@@ -1343,6 +1366,8 @@ public class GangService implements InitHandler {
             ret.param1 = Response.ERR_PARAM;
             return ret;
         }
+
+        taskService.doTask(playerId,Task.TYPE_GANG_TEC,conf.NeedLevel);
         gang.setAsset(gang.getAsset() - conf.Price);
         gang.getTechnologys().add(technologyId);
         ret.param1 = Response.SUCCESS;
@@ -1390,7 +1415,6 @@ public class GangService implements InitHandler {
             ret.param = Response.NO_GANG_ASSET;
             return ret;
         }
-
 
         data.getTechnologys().remove(technologyId);
         data.getTechnologys().add(conf.NextID);

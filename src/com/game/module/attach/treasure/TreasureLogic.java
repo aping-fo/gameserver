@@ -1,7 +1,11 @@
 package com.game.module.attach.treasure;
 
 import java.util.ArrayList;
+import java.util.Map;
 
+import com.game.module.goods.GoodsEntry;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -110,9 +114,10 @@ public class TreasureLogic extends AttachLogic<TreasureAttach> {
 		}
 		
 		RewardList list = new RewardList();
-		list.rewards = copyService.swipeCopyInner(playerId, copyId);
+		Map<Integer,GoodsEntry> map = Maps.newHashMap();
+		list.rewards = copyService.swipeCopyInner(playerId, copyId,map);
 		result.reward.add(list);
-		
+		goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
 		attach.alterChallenge(-1);
 		attach.commitSync();
 		

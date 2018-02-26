@@ -9,7 +9,7 @@ import java.util.List;
 public class PetActivity {
     private int id;//配置ID
     private long startTime; //开始时间
-    private List<PetKV> pets = new ArrayList<>();
+    private List<PetKV> pets = new ArrayList<>(); //为啥这么傻擦的设计
     private boolean bAward;
 
     public boolean isbAward() {

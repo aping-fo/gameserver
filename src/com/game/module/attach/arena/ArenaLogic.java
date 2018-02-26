@@ -198,7 +198,7 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 					messageService.sendSysMsg(MessageConsts.MSG_AREA,player.getName(),oppPlayer.getName());
 				}
 				//称号
-				titleService.complete(playerId, TitleConsts.ARENA,meRank, ActivityConsts.UpdateType.T_VALUE);
+				titleService.complete(playerId, TitleConsts.ARENA,me.getRank(), ActivityConsts.UpdateType.T_VALUE);
 				//taskService.doTask(playerId,Task.TYPE_ARENA_RANK,meRank);
 				condParams.put(Task.TYPE_ARENA_RANK,new int[]{meRank});
 			}else{

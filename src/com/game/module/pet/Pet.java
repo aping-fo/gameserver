@@ -8,21 +8,41 @@ import com.game.params.pet.PetVO;
 public class Pet {
     private int id;
     private int configId;
+    private int showConfigID;
     private int skillID;
     private int passiveSkillId;
     private int passiveSkillId2;
     private boolean mutateFlag;
     private boolean playFlag;
+    private String name;
 
     public Pet() {
     }
 
-    public Pet(int id, int configId, int passiveSkillId) {
+    public Pet(int id, int configId, int passiveSkillId, String name) {
         this.id = id;
         this.passiveSkillId = passiveSkillId;
         this.configId = configId;
         this.mutateFlag = false;
         this.playFlag = false;
+        this.name = name;
+        this.showConfigID = configId;
+    }
+
+    public int getShowConfigID() {
+        return showConfigID;
+    }
+
+    public void setShowConfigID(int showConfigID) {
+        this.showConfigID = showConfigID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public boolean isPlayFlag() {
@@ -81,6 +101,7 @@ public class Pet {
         vo.hasMutate = mutateFlag;
         vo.configId = configId;
         vo.passiveSkillId2 = passiveSkillId2;
+        vo.name = name;
         return vo;
     }
 

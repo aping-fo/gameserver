@@ -39,6 +39,7 @@ public class ChatExtension {
 	public static final int GANG = 3;
 	public static final int SYS = 4;
 	public static final int TEAM =5;
+	public static final int LABA =6;
 
 	@Autowired
 	private GmService gmService;
@@ -112,6 +113,7 @@ public class ChatExtension {
 				return null;
 			}
 			if(vo.broadcast) {
+				chatType = LABA;
 				boolean ret = goodsService.decGoodsFromBag(playerId, Goods.HORN_ID,1, LogConsume.WORLD_HORN,Goods.HORN_ID);
 				if(!ret) {
 					return null;
@@ -178,7 +180,7 @@ public class ChatExtension {
 				}
 			}
 		}
-		taskService.doTask(playerId, Task.TYPE_CHAT,chatType);
+		taskService.doTask(playerId, Task.TYPE_CHAT,chatType,1);
 		return null;
 	}
 	

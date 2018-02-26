@@ -1,30 +1,31 @@
 package com.game.event;
-import java.util.Date;
-
-import com.game.module.gang.GangDungeonService;
-import com.game.module.group.GroupService;
-import com.game.module.ladder.LadderService;
-import com.game.module.pet.PetService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import com.game.data.SceneConfig;
 import com.game.module.attach.arena.ArenaLogic;
 import com.game.module.copy.CopyService;
+import com.game.module.friend.FriendService;
+import com.game.module.gang.GangDungeonService;
 import com.game.module.goods.GoodsService;
-import com.game.module.log.LoggerService;
+import com.game.module.group.GroupService;
+import com.game.module.ladder.LadderService;
+import com.game.module.pet.PetService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.Scene;
 import com.game.module.scene.SceneService;
 import com.game.module.task.TaskService;
 import com.game.module.team.TeamService;
+import com.game.sdk.erating.ERatingService;
 import com.game.util.ConfigData;
 import com.game.util.Context;
 import com.server.LogoutHandler;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import com.server.validate.AntiCheatService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.Date;
 
 @Service
 public class DefaultLogoutHandler implements LogoutHandler{
@@ -36,8 +37,6 @@ public class DefaultLogoutHandler implements LogoutHandler{
 	private CopyService copyService;
 	@Autowired
 	private TaskService taskService;
-	@Autowired
-	private LoggerService loggerService;
 	@Autowired
 	private GoodsService goodsService;
 	@Autowired
@@ -52,6 +51,10 @@ public class DefaultLogoutHandler implements LogoutHandler{
 	private GangDungeonService gangDungeonService;
 	@Autowired
 	private PetService petService;
+	@Autowired
+	private FriendService friendService;
+	@Autowired
+	private ERatingService ratingService;
 	public void handleLogout(final int playerId) {
 		Context.getThreadService().execute(new Runnable() {
 			@Override
@@ -101,14 +104,17 @@ public class DefaultLogoutHandler implements LogoutHandler{
 			ladderService.onLogout(playerId);
 			groupService.onLogout(playerId);
 			gangDungeonService.onLogout(playerId);
-
+			friendService.onLogout(playerId);
+			//report logout log
+			ratingService.reportRoleLogout(player);
 			SessionManager.getInstance().removeSession(playerId);
 			AntiCheatService.getInstance().clear(playerId);
 
 			DisposeHandler.dispose(playerId);// 清除缓存
 			
 			AntiCheatService.getInstance().clear(playerId);
-			
+			playerService.removeCache(playerId);
+			player.online = false;
 		} catch (Exception e) {
 			ServerLogger.err(e, "handle logout err!");
 		}

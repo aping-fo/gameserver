@@ -32,8 +32,8 @@ public class Task{
 	public static final int FINISH_LOTTERY = 19;//抽奖[类型,次数]
 
 	//=================成就
-	public static final int TYPE_PASS_COPY_TEAM = 20; //通关副本[副本id,次数] m表示个人还是组队，
-	public static final int TYPE_PASS_COPY_SINGLE = 21; //通关副本[副本id,次数] m表示个人还是组队，个人为
+	public static final int TYPE_PASS_COPY_SINGLE = 20; //通关副本[副本id,次数] m表示个人还是组队，个人为
+	public static final int TYPE_PASS_COPY_TEAM = 21; //通关副本[副本id,次数] m表示个人还是组队，
 	public static final int TYPE_SWIPE_COPY = 22; //扫荡副本[副本id,次数]
 	public static final int TYPE_HIT= 23; //副本受击次数[副本id,受击次数]  表示在副本受击次数小于给定值
 	public static final int TYPE_PASS_TIME = 24; //通关时间[副本id,时间] 时间单位是秒，表示通关时间小于给定值
@@ -57,7 +57,7 @@ public class Task{
 	public static final int TYPE_SKILL_CARD_COUNT = 42;//获得卡片[数量]
 	public static final int TYPE_SKILL_LEVEL = 43;//技能升级[技能id,级数]
 	public static final int TYPE_FASH_COUNT = 44;//拥有时装[时装数量]
-	public static final int TYPE_TAOZHUANG = 45;//拥有时装[时装数量]
+	public static final int TYPE_SUIT = 45;//拥有时装[时装数量]
 	public static final int TYPE_BS_LEVEL = 46;//宝石升阶[部位id，阶数]
 	public static final int TYPE_FIGHT = 47;//宝石升阶[部位id，阶数]
 	public static final int TYPE_TITLE = 48;//收集称号[数量] 称号收集数量大于给定值可以获得成就
@@ -78,6 +78,7 @@ public class Task{
 	public static final int ACHIEVEMENT_WB_LAST = 63;//世界BOSS最后一击[等级]
 	public static final int ACHIEVEMENT_VIP = 64;//VIP等级[等级]
 	public static final int TYPE_KILL= 65;//击杀怪物[怪物类型，只数]
+	public static final int TYPE_GUILD_COPY= 66;//公会副本
 	public static final int TYPE_INVITATE= 66;//发送世界频道邀请玩家通关副本[副本id]
 
 
@@ -100,6 +101,10 @@ public class Task{
 		this.taskId = taskId;
 		this.state = state;
 		this.type = type;
+
+		if(type == TYPE_HIT) {
+			count = Integer.MAX_VALUE;
+		}
 	}
 
 	public int getType() {

@@ -4,6 +4,7 @@ import com.game.data.Response;
 import com.game.data.SkillCardConfig;
 import com.game.data.SkillConfig;
 import com.game.module.log.LogConsume;
+import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
@@ -55,16 +56,37 @@ public class SkillService {
 	}
 	
 	//升级技能
-	public int upgradeSkill(int playerId,int skillId){
+	public int upgradeSkill(int playerId,int skillId,int onKey){
 		//是否已经满级
 		SkillConfig cfg = ConfigData.getConfig(SkillConfig.class, skillId);
 		if(cfg.nextId==0){
 			return Response.MAX_LEV;
 		}
-		//扣除金币
-		if(!playerService.decCoin(playerId, cfg.coin, LogConsume.SKILL_UPGRADE)){
+		Player player = playerService.getPlayer(playerId);
+		int coin = player.getCoin();
+		int consume = 0;
+		int nextId = skillId;
+		do {
+			if (coin < cfg.coin) {
+				break;
+			}
+			consume += cfg.coin;
+			coin -= cfg.coin;
+			nextId = cfg.nextId;
+			cfg = ConfigData.getConfig(SkillConfig.class, nextId);
+			if (onKey == 0) { //一次升级一次
+				break;
+			}
+		} while (cfg.nextId != 0 && coin > 0 && player.getLev() > cfg.lev);
+
+		if(nextId == skillId) {
 			return Response.NO_COIN;
 		}
+		playerService.decCoin(playerId, consume, LogConsume.SKILL_UPGRADE);
+		//扣除金币
+		/*if(!playerService.decCoin(playerId, cfg.coin, LogConsume.SKILL_UPGRADE)){
+			return Response.NO_COIN;
+		}*/
 		//设置id
 		PlayerData data = playerService.getPlayerData(playerId);
 		int index = data.getSkills().indexOf(skillId);
@@ -72,13 +94,13 @@ public class SkillService {
 			ServerLogger.warn("skill not found ,skillId ==>" + skillId);
 			return Response.ERR_PARAM;
 		}
-		data.getSkills().set(index, cfg.nextId);
+		data.getSkills().set(index, nextId);
 		index = data.getCurSkills().indexOf(skillId);
 		if(index>=0){
-			data.getCurSkills().set(index, cfg.nextId);
+			data.getCurSkills().set(index, nextId);
 		}
 		taskService.doTask(playerId, Task.FINISH_SKILL);
-		taskService.doTask(playerId, Task.TYPE_SKILL_LEVEL,cfg.nextId);
+		taskService.doTask(playerId, Task.TYPE_SKILL_LEVEL,nextId);
 
 		updateSkill2Client(playerId);
 		return Response.SUCCESS;

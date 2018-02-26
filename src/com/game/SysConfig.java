@@ -117,6 +117,8 @@ public class SysConfig {
             openDate = dataFormat.parse(startUpDate);
 
             updateOpenDays();
+        }catch (Exception e){
+            e.printStackTrace();
         }
 
         try (FileInputStream fis = new FileInputStream(new File("config/mix.properties"))) {
@@ -130,6 +132,8 @@ public class SysConfig {
             MixSupportor.setIncludeSection(properties.getProperty("includeSection"));
             MixSupportor.setExcludeCmd(properties.getProperty("excludeCmd"));
             MixSupportor.setShiftSwitch(Boolean.parseBoolean(properties.getProperty("open")));
+        }catch (Exception e){
+            e.printStackTrace();
         }
     }
 

@@ -6,7 +6,6 @@ import com.game.event.InitHandler;
 import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
 import com.game.module.copy.CopyExtension;
-import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -218,6 +217,7 @@ public class WorldBossService implements InitHandler {
                 selfRank.setCurHurt(hr.getCurHurt());
                 selfRank.setHurt(hr.getHurt());
                 selfRank.setRank(rank);
+                selfRank.setPlayerId(hr.getPlayerId());
                 rankMap.put(hr.getPlayerId(), selfRank);
 
                 if (rank <= 10) { //缓存前10名
@@ -289,7 +289,11 @@ public class WorldBossService implements InitHandler {
         if (boss.getCurHp() <= 0) { //死亡
             ServerLogger.info("boss go die....... boss id ==" + boss.getId());
             worldBossData.getKillMap().put(bossId, playerId);
-            taskService.doTask(playerId, Task.ACHIEVEMENT_WB_LAST, 1);
+            Map<Integer,int[]> condParam = Maps.newHashMap();
+            condParam.put(Task.ACHIEVEMENT_WB_LAST,new int[]{1});
+            condParam.put(Task.TYPE_KILL,new int[]{3,1});
+
+            taskService.doTask(playerId, condParam);
             //boss死亡，广播
             Int2Param param = new Int2Param();
             param.param1 = playerId;
@@ -420,17 +424,17 @@ public class WorldBossService implements InitHandler {
     /**
      * 发奖励，活动结束或者所有boss打死
      */
-    private void sendAward() {
+    public void sendAward() {
         try {
             awardLock.lock();
             if (worldBossData.isbAward()) {
                 return;
             }
             //活动结束，清理相关数据
-
             worldBossData.setbAward(true);
             messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_END);
             multiService.clearGroup(Scene.WORLD_BOSS_PVE);
+            hurtRank();
             for (HurtRecord hr : worldBossData.getRankMap().values()) {
                 PlayerView playerView = serialDataService.getData().getPlayerView(hr.getPlayerId());
                 if (playerView.getWorldBossMaxRank() == 0 || playerView.getWorldBossMaxRank() > hr.getRank()) {
@@ -853,7 +857,7 @@ public class WorldBossService implements InitHandler {
         worldBossData.getTop10().clear();
         worldBossData.getRankMap().clear();
         worldBossData.getHurtMap().clear();
-
+        worldBossData.setbAward(false);
         for (WorldBoss worldBoss : worldBossData.getWorldBossMap().values()) {
             worldBoss.setCurHp(worldBoss.getHp());
         }
@@ -862,6 +866,10 @@ public class WorldBossService implements InitHandler {
         treeMap.clear();
         players.clear();
         ServerLogger.warn("gm reset world boss activity .........");
+    }
+
+    public void sendAward1(){
+        sendAward();
     }
 
     /*public void onLogin(int playerId) {

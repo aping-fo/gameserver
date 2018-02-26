@@ -51,6 +51,8 @@ public class PlayerVo implements IProtocol {
 	public int signFlag;//当前天是否已签到,0表示未签到，1表示已签到
 	public List<Integer> modules;//已经开启的功能
 	public List<Integer> newHandleSteps;//引导步骤
+	public String userName;//渠道唯一标志
+	public String serverName;//区服名
 
 
 	public void decode(BufferBuilder bb) {
@@ -100,6 +102,8 @@ public class PlayerVo implements IProtocol {
 		this.signFlag = bb.getInt();
 		this.modules = bb.getIntList();
 		this.newHandleSteps = bb.getIntList();
+		this.userName = bb.getString();
+		this.serverName = bb.getString();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -149,5 +153,7 @@ public class PlayerVo implements IProtocol {
 		bb.putInt(this.signFlag);
 		bb.putIntList(this.modules);
 		bb.putIntList(this.newHandleSteps);
+		bb.putString(this.userName);
+		bb.putString(this.serverName);
 	}
 }

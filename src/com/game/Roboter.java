@@ -69,13 +69,18 @@ public class Roboter {
                 int len = dis.readShort();
                 byte[] dataBytes = new byte[len - 4];
                 dis.read(dataBytes);
-                System.out.println(name + " send data,data len = " + len);
+                int cmd = Util.bytesToShort(dataBytes, 4);
+                if(cmd == 2002){
+                    dis.readInt();
+                    return true;
+                }
                 DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
                 dos.writeShort(len);
                 dos.write(dataBytes);
                 dos.writeInt(dis.readInt());
+                System.out.println(name + " send data,data len = " + len + " cmd = " + cmd);
                 dos.flush();
-                Thread.sleep(500);
+                Thread.sleep(100);
                 return true;
             }
         } catch (Exception e) {

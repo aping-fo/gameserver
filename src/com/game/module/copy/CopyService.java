@@ -44,6 +44,7 @@ import com.game.params.scene.SMonsterVo;
 import com.game.util.ConfigData;
 import com.game.util.RandomUtil;
 import com.game.util.TimeUtil;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
@@ -495,15 +496,10 @@ public class CopyService {
 
         Map<Integer, int[]> condParams = Maps.newHashMap();
         condParams.put(Task.FINISH_TRANSIT, new int[]{copyId, cfg.type, result.star, 1});
-        condParams.put(Task.TYPE_PASS_COPY_TEAM, new int[]{copyId, 1});
+        //condParams.put(Task.TYPE_PASS_COPY_TEAM, new int[]{copyId, 1});
         condParams.put(Task.TYPE_PASS_COPY_SINGLE, new int[]{copyId, 1});
-        //condParams.put(Task.TYPE_PASS_TIME,new int[]{copyId, result.time});
 
         taskService.doTask(playerId, condParams);
-        /*taskService.doTask(playerId, Task.FINISH_TRANSIT, copyId, cfg.type, result.star, 1);
-        taskService.doTask(playerId, Task.TYPE_PASS_COPY, copyId, Task.TYPE_PASS_COPY_SIGNLE,1);
-        taskService.doTask(playerId, Task.TYPE_PASS_COPY, copyId, Task.TYPE_PASS_COPY_TEAM,1);
-        taskService.doTask(playerId, Task.TYPE_PASS_TIME, copyId, result.time);*/
     }
 
     /**
@@ -847,19 +843,20 @@ public class CopyService {
                 result.code = Response.NO_MATERIAL;
                 return result;
             }
-            boolean show = shopService.triggerMysteryShop(playerId, copyId, null);
+            boolean show = shopService.triggerMysteryShop(playerId, copyId, times,null);
             if (show) {
                 result.showMystery = true;
             }
             // 更新副本次数
             updateCopyTimes(copyId, playerData, cfg, times);
         }
-
+        Map<Integer,GoodsEntry> map = Maps.newHashMap();
         for (int i = 0; i < times; i++) {
             RewardList list = new RewardList();
-            list.rewards = swipeCopyInner(playerId, copyId);
+            list.rewards = swipeCopyInner(playerId, copyId,map);
             result.reward.add(list);
         }
+        goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
         taskService.doTask(playerId, Task.TYPE_SWIPE_COPY, copyId, times);
         refreshCopyInfo(playerId, copyId, playerData);
         return result;
@@ -867,7 +864,7 @@ public class CopyService {
 
 
     // 扫荡副本
-    public List<Reward> swipeCopyInner(int playerId, int copyId) {
+    public List<Reward> swipeCopyInner(int playerId, int copyId,Map<Integer,GoodsEntry> map) {
         createCopyInstance(playerId, copyId, copyId);
         int star = 1;
         Copy copy = playerService.getPlayerData(playerId).getCopys().get(copyId);
@@ -879,8 +876,16 @@ public class CopyService {
             return null;
         }
         List<GoodsEntry> copyRewards = calculateCopyReward(playerId, copyId, star);
+        for(GoodsEntry goodsEntry : copyRewards){
+            GoodsEntry goodsEntryTmp = map.get(goodsEntry.id);
+            if(goodsEntryTmp == null){
+                map.put(goodsEntry.id,goodsEntry);
+            }else {
+                goodsEntryTmp.count = goodsEntryTmp.count + goodsEntry.count;
+            }
+        }
 
-        goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
+        //goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
 
         List<Reward> rewards = new ArrayList<>(copyRewards.size());
         for (GoodsEntry item : copyRewards) {

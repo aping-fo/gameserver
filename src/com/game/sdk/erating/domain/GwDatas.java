@@ -13,8 +13,8 @@ public class GwDatas extends Header {
     @NodeName(name = "data_info_list", object = true)
     private final List<GwData> gwData;
 
-    public GwDatas(int command_id, int game_id, int gateway_id) {
-        super(command_id, game_id, gateway_id);
+    public GwDatas(int command_id) {
+        super(command_id);
         gwData = Lists.newArrayList();
     }
 

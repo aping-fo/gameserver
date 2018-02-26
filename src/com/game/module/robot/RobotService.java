@@ -103,6 +103,7 @@ public class RobotService implements InitHandler {
         int weaponId = globalParam.weaponId[player.getVocation() - 1];
         player.setWeaponId(weaponId);
         playerData.getFashions().add(weaponId);
+        playerData.setRobotFlag(true);
         //初始化技能
         int[] skills = globalParam.playerDefaultSkill[player.getVocation() - 1];
         for (int skill : skills) {

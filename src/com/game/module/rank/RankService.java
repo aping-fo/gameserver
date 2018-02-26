@@ -93,16 +93,16 @@ public class RankService implements InitHandler {
 		synchronized (fightingList) {
 			fightingList.clear();
 			Map<Integer, FightingRankEntity> fightingEntities = new ConcurrentHashMap<Integer, FightingRankEntity>();
-			int i = 1;
+			//int i = 1;
 			for(Player player : players){
 				fightingEntities.put(player.getPlayerId(), new FightingRankEntity(player.getFight()));
-				if(serialDataService.getData() != null){
+				/*if(serialDataService.getData() != null){
 					PlayerView playerView = serialDataService.getData().getPlayerView(player.getPlayerId());
 					playerView.setFightMaxRank(i);
 
 					taskService.doTask(player.getPlayerId(), Task.TYPE_FIGHT_RANK,i);
 					i ++;
-				}
+				}*/
 			}
 			fightingList.putAll(fightingEntities);
 		}

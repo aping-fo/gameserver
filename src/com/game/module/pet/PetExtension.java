@@ -2,6 +2,7 @@ package com.game.module.pet;
 
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
+import com.game.params.IntStringParam;
 import com.game.params.pet.MutateVO;
 import com.game.params.pet.StartPetActivityVO;
 import com.server.anotation.Command;
@@ -52,8 +53,8 @@ public class PetExtension {
     }
 
     @Command(7010)
-    public Object toShow(int playerId, IntParam param) {
-        return petService.toShow(playerId, param.param);
+    public Object toShow(int playerId, Int2Param param) {
+        return petService.toShow(playerId, param.param1, param.param2);
     }
 
     @Command(7011)
@@ -74,5 +75,11 @@ public class PetExtension {
     @Command(7014)
     public Object getPetActivityRewards(int playerId, IntParam param) {
         return petService.getPetActivityRewards(playerId, param.param);
+    }
+
+    @Command(7015)
+    public Object changeName(int playerId, IntStringParam param) {
+        petService.changeName(playerId, param.param1, param.param2);
+        return null;
     }
 }

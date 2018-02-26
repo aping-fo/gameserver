@@ -49,7 +49,7 @@ public class ThreadService {
 	public void shutdown(){
 		scheduExec.shutdown();
 		try {
-			scheduExec.awaitTermination(60, TimeUnit.SECONDS);
+			scheduExec.awaitTermination(Integer.MAX_VALUE, TimeUnit.SECONDS);
 		} catch (InterruptedException e) {
 			ServerLogger.err(e, "shutdown thread err!");
 		}

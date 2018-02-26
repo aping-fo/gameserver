@@ -20,6 +20,7 @@ import com.game.params.goods.AttrItem;
 import com.game.util.ConfigData;
 import com.game.util.JsonUtils;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -53,12 +54,18 @@ public class TitleService {
         PlayerData data = playerService.getPlayerData(playerId);
         for (Object obj : GameData.getConfigs(TitleConfig.class)) {
             TitleConfig cfg = (TitleConfig) obj;
-            if (!data.getTitleMap().containsKey(cfg.id)) {
+            Map<Integer, Title> map = data.getTitleTypeMap().get(cfg.titleSubType);
+            if (map == null) {
+                map = Maps.newHashMap();
+                data.getTitleTypeMap().put(cfg.titleSubType, map);
+            }
+
+            if (!map.containsKey(cfg.id)) {
                 Title title = new Title();
                 title.setId(cfg.id);
                 title.setOpenFlag(false);
                 title.setCondType(cfg.titleSubType);
-                data.getTitleMap().put(cfg.id, title);
+                map.put(cfg.id, title);
             }
         }
     }
@@ -93,6 +100,8 @@ public class TitleService {
             intParam.param = title;
             listParam.params.add(intParam);
         }
+        Player player = playerService.getPlayer(playerId);
+        calculator.calculate(player);
         ServerLogger.info("add new titles " + JsonUtils.object2String(listParam));
         SessionManager.getInstance().sendMsg(CMD_ADD, listParam, playerId);
     }
@@ -116,7 +125,11 @@ public class TitleService {
 
     private void checkTitle(int playerId, int type, int value, int updateType, List<Integer> titles) {
         PlayerData data = playerService.getPlayerData(playerId);
-        for (Title title : data.getTitleMap().values()) {
+        Map<Integer, Title> map = data.getTitleTypeMap().get(type);
+        if (map == null) {
+            return;
+        }
+        for (Title title : map.values()) {
             if (title.getCondType() == type) {
                 if (data.getTitles().contains(title.getId())) continue;
                 if (ActivityConsts.UpdateType.T_ADD == updateType) {
@@ -160,6 +173,7 @@ public class TitleService {
             param.param1 = Response.TITLE_EQUIP;
             return param;
         }
+
         if (titleId != 0 && !data.getTitles().contains(titleId)) {
             param.param1 = Response.TITLE_NOT_GET;
             return param;
@@ -195,8 +209,7 @@ public class TitleService {
             if (config.period != 0) {
                 param.time = 7 - localDate.getDayOfWeek().getValue();
             }
-
-            param.openFlag = data.getTitleMap().get(titleId).isOpenFlag();
+            data.getTitleTypeMap().get(config.titleSubType).get(titleId).isOpenFlag();
             listParam.params.add(param);
         }
         return listParam;
@@ -205,8 +218,8 @@ public class TitleService {
     public Int2Param openTitle(int playerId, int titleId) {
         PlayerData data = playerService.getPlayerData(playerId);
         Int2Param param = new Int2Param();
-
-        Title title = data.getTitleMap().get(titleId);
+        TitleConfig config = ConfigData.getConfig(TitleConfig.class, titleId);
+        Title title = data.getTitleTypeMap().get(config.titleSubType).get(titleId);
         if (title == null) {
             param.param1 = Response.TITLE_NOT_GET;
             return param;

@@ -17,20 +17,21 @@ public class RobotManager {
     public static void main(String[] args) throws Exception {
         SysConfig.init();
         DOMConfigurator.configure("config/log4j.xml");
-        final String host = "192.168.7.102";
-        final int port = 10012;
+        final String host = "111.230.210.206";
+        //final String host = "192.168.6.223";
+        final int port = 10010;
 
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 30; i++) {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
                     String pfx = Thread.currentThread().getName();
                     List<Roboter> list = Lists.newArrayList();
                     try {
-                        for (int i = 0; i < 60; i++) {
-                            Roboter roboter = new Roboter(pfx + "_AF_" + i, host, port);
+                        for (int i = 0; i < 64; i++) {
+                            Roboter roboter = new Roboter(pfx + "_AN1Q_" + i, host, port);
                             list.add(roboter);
-                            Thread.sleep(10);
+                            Thread.sleep(200);
                         }
                     } catch (Exception e) {
 

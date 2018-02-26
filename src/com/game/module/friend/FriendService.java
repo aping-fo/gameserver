@@ -397,7 +397,11 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 	public void playerLogined(int playerId) {
 		stateChange(playerId, 1);
 	}
-	
+
+	public void onLogout(int playerId) {
+		stateChange(playerId, 0);
+	}
+
 	@Override
 	public void removeCache(int playerId) {
 		// 又重新登录了

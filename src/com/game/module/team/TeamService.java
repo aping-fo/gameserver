@@ -220,13 +220,15 @@ public class TeamService implements InitHandler {
 				monsters.remove(hurtVO.targetId);
 				if(copy.isOver()){
 					//副本胜利
-
+					condParams.put(Task.TYPE_PASS_COPY_TEAM, new int[]{copy.getCopyId(), 1});
 					CopyResult result = new CopyResult();
 					copyService.getRewards(player.getPlayerId(), copy.getCopyId(), result);
 					// 更新次数,星级
-					copyService.updateCopy(player.getPlayerId(), copy, result);
+					//copyService.updateCopy(player.getPlayerId(), copy, result);
 					sceneService.brocastToSceneCurLine(player, CopyExtension.TAKE_COPY_REWARDS, result, null);
-					taskService.doTask(team.getLeader(), Task.TYPE_LEADER_PASS, copy.getCopyId());
+					condParams.put(Task.TYPE_LEADER_PASS,new int[]{copy.getCopyId()});
+					taskService.doTask(team.getLeader(), condParams);
+					//taskService.doTask(team.getLeader(), Task.TYPE_LEADER_PASS, copy.getCopyId());
 					for(TMember tm : team.getMembers().values()){
 						// 清除
 						copyService.removeCopy(tm.getPlayerId());

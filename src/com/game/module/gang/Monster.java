@@ -7,6 +7,15 @@ public class Monster {
     private int id;
     private int currentHp;
     private int hp;
+    private int monsterId;
+
+    public int getMonsterId() {
+        return monsterId;
+    }
+
+    public void setMonsterId(int monsterId) {
+        this.monsterId = monsterId;
+    }
 
     public int getId() {
         return id;

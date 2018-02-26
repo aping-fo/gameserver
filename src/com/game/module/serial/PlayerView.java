@@ -11,6 +11,16 @@ public class PlayerView {
     private int gangMaxTech;
     private int gangMaxLevel;
     private int achievementMaxRank;
+    //公会副本挑战层数
+    private int guildLayer;
+
+    public int getGuildLayer() {
+        return guildLayer;
+    }
+
+    public void setGuildLayer(int guildLayer) {
+        this.guildLayer = guildLayer;
+    }
 
     public int getAchievementMaxRank() {
         return achievementMaxRank;

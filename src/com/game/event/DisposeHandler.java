@@ -27,7 +27,7 @@ public class DisposeHandler implements InitHandler {
 	private static List<Dispose> disposeHandlers = new ArrayList<Dispose>();
 
 	public static void dispose() {
-		scheduExec.shutdown();;
+		scheduExec.shutdown();
 	}
 
 	public static void dispose(final int playerId) {

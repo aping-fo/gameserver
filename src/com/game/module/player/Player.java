@@ -18,6 +18,20 @@ public class Player implements PlayerAddition{
 	public final static int TRAVERSING_ENERGY = 11;//穿越仪能量
 	public final static int ACHIEVEMENT = 12;//成就
 
+	public int clientType;
+	public String clientMac;
+	public String hardwarSn1;
+	public String hardwarSn2;
+	public String uddi;
+	public String modelVersion;
+	public String ldid;
+	public String adid;
+	public int clientIp;
+	public int clientPort;
+	public String token;
+	public String openId;
+	public boolean online;
+
 	private int playerId;
 	private String name;
 	private String accName;// 平台账号

@@ -24,9 +24,9 @@ public class SScenePlayerVo implements IProtocol {
 	public String gang;//公会
 	public int roomTeam;//组队玩法队伍ID
 	public int fightPetConfigId;//出战宠物配置ID
-	public boolean fightPetHasMutate;//出战宠物是否变异
 	public int showPetConfigId;//展示宠物配置ID
-	public boolean showPetHasMutate;//展示宠物是否变异
+	public String fightPetName;//出战宠物名字
+	public String showPetName;//展示宠物名字
 
 
 	public void decode(BufferBuilder bb) {
@@ -50,9 +50,9 @@ public class SScenePlayerVo implements IProtocol {
 		this.gang = bb.getString();
 		this.roomTeam = bb.getInt();
 		this.fightPetConfigId = bb.getInt();
-		this.fightPetHasMutate = bb.getBoolean();
 		this.showPetConfigId = bb.getInt();
-		this.showPetHasMutate = bb.getBoolean();
+		this.fightPetName = bb.getString();
+		this.showPetName = bb.getString();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -76,8 +76,8 @@ public class SScenePlayerVo implements IProtocol {
 		bb.putString(this.gang);
 		bb.putInt(this.roomTeam);
 		bb.putInt(this.fightPetConfigId);
-		bb.putBoolean(this.fightPetHasMutate);
 		bb.putInt(this.showPetConfigId);
-		bb.putBoolean(this.showPetHasMutate);
+		bb.putString(this.fightPetName);
+		bb.putString(this.showPetName);
 	}
 }

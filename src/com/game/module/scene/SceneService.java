@@ -40,462 +40,462 @@ import com.server.util.ServerLogger;
 
 @Service
 public class SceneService implements InitHandler {
-	private static final Logger logger = Logger.getLogger(SceneService.class);
+    private static final Logger logger = Logger.getLogger(SceneService.class);
 
-	@Autowired
-	private PlayerService playerService;
-	@Autowired
-	private CopyService copyService;
-	@Autowired
-	private TeamService teamService;
-	@Autowired
-	private WorldBossService worldBossService;
-	@Autowired
-	private GangService gangService;
-	@Autowired
-	private MultiService multiService;
-	@Autowired
-	private LadderService ladderService;
-	@Autowired
-	private GroupService groupService;
-	@Autowired
-	private GangDungeonService gangDungeonService;
-	@Autowired
-	private PetService petService;
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private CopyService copyService;
+    @Autowired
+    private TeamService teamService;
+    @Autowired
+    private WorldBossService worldBossService;
+    @Autowired
+    private GangService gangService;
+    @Autowired
+    private MultiService multiService;
+    @Autowired
+    private LadderService ladderService;
+    @Autowired
+    private GroupService groupService;
+    @Autowired
+    private GangDungeonService gangDungeonService;
+    @Autowired
+    private PetService petService;
 
-	private Map<Integer, Scene> scenes = new ConcurrentHashMap<Integer, Scene>();
+    private Map<Integer, Scene> scenes = new ConcurrentHashMap<Integer, Scene>();
 
-	private Map<String, Integer> useSkills = new ConcurrentHashMap<String, Integer>();
+    private Map<String, Integer> useSkills = new ConcurrentHashMap<String, Integer>();
 
-	@Override
-	public void handleInit() {
-		for (Object scene : GameData.getConfigs(SceneConfig.class)) {
-			SceneConfig cfg = (SceneConfig) scene;
-			Scene s = new Scene();
-			s.setId(cfg.id);
-			scenes.put(cfg.id, s);
-		}
-	}
+    @Override
+    public void handleInit() {
+        for (Object scene : GameData.getConfigs(SceneConfig.class)) {
+            SceneConfig cfg = (SceneConfig) scene;
+            Scene s = new Scene();
+            s.setId(cfg.id);
+            scenes.put(cfg.id, s);
+        }
+    }
 
-	// 获取场景配置
-	public Scene getScene(int sceneId) {
-		return scenes.get(sceneId);
-	}
+    // 获取场景配置
+    public Scene getScene(int sceneId) {
+        return scenes.get(sceneId);
+    }
 
-	// 获得场景group key,感觉会把人份到不同组
-	public String getGroupKey(Player player) {
-		int sceneId = player.getSceneId();
-		int subLine = player.getSubLine();
+    // 获得场景group key,感觉会把人份到不同组
+    public String getGroupKey(Player player) {
+        int sceneId = player.getSceneId();
+        int subLine = player.getSubLine();
 
-		SceneConfig cfg = ConfigData.getConfig(SceneConfig.class, sceneId);
-		if (cfg.sceneSubType == Scene.MULTI_GANG) {
-			return String.format("%d_%d_%d", sceneId, player.getGangId(),
-					player.getSubLine());
-		} else if (cfg.sceneSubType == Scene.MULTI_TEAM || cfg.sceneSubType == Scene.MULTI_PVE) {
-			return String.format("%d_%d_%d", sceneId, player.getTeamId(),
-					player.getSubLine());
-		} else if(cfg.sceneSubType == Scene.MULTI_GROUP_ROOM) { //团队副本房间，不需要subline
-			return String.format("%d_%d", sceneId, player.getGroupId());
-		}else if(cfg.sceneSubType == Scene.MULTI_GROUP) { //团队副本，不需要subline
-			return String.format("%d_%d_%d", sceneId, player.getGroupId(),player.getGroupTeamId());
-		} else if(cfg.sceneSubType == Scene.MULTI_LADDER) {
-			return String.format("%d_%d", sceneId, player.getRoomId());
-		} else if(cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
-			return String.format("%d_%d", sceneId, player.getPlayerId());
-		}
+        SceneConfig cfg = ConfigData.getConfig(SceneConfig.class, sceneId);
+        if (cfg.sceneSubType == Scene.MULTI_GANG) {
+            return String.format("%d_%d_%d", sceneId, player.getGangId(),
+                    player.getSubLine());
+        } else if (cfg.sceneSubType == Scene.MULTI_TEAM || cfg.sceneSubType == Scene.MULTI_PVE) {
+            return String.format("%d_%d_%d", sceneId, player.getTeamId(),
+                    player.getSubLine());
+        } else if (cfg.sceneSubType == Scene.MULTI_GROUP_ROOM) { //团队副本房间，不需要subline
+            return String.format("%d_%d", sceneId, player.getGroupId());
+        } else if (cfg.sceneSubType == Scene.MULTI_GROUP) { //团队副本，不需要subline
+            return String.format("%d_%d_%d", sceneId, player.getGroupId(), player.getGroupTeamId());
+        } else if (cfg.sceneSubType == Scene.MULTI_LADDER) {
+            return String.format("%d_%d", sceneId, player.getRoomId());
+        } else if (cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
+            return String.format("%d_%d", sceneId, player.getPlayerId());
+        } else {
+            return String.format("%d_%d", sceneId, subLine);
+        }
+    }
 
-		else {
-			return String.format("%d_%d", sceneId, subLine);
-		}
-	}
+    // 推送场景广播
+    public void brocastToSceneCurLine(Player player, int cmd, IProtocol param) {
+        brocastToSceneCurLine(player, cmd, param, SessionManager.getInstance().getChannel(player.getPlayerId()));
+    }
 
-	// 推送场景广播
-	public void brocastToSceneCurLine(Player player, int cmd, IProtocol param) {
-		brocastToSceneCurLine(player, cmd, param,SessionManager.getInstance().getChannel(player.getPlayerId()));
-	}
+    // 推送场景广播
+    public void brocastToSceneCurLine(Player player, int cmd, IProtocol param,
+                                      Channel me) {
+        int sceneId = player.getSceneId();
+        Scene scene = getScene(sceneId);
+        if (scene == null) {
+            return;
+        }
 
-	// 推送场景广播
-	public void brocastToSceneCurLine(Player player, int cmd, IProtocol param,
-			Channel me) {
-		int sceneId = player.getSceneId();
-		Scene scene = getScene(sceneId);
-		if (scene == null) {
-			return;
-		}
+        String key = getGroupKey(player); // 副本的,不处理 SceneConfig cfg =
+        SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
+        if (cfg.type != Scene.MULTI) {
+            return;
+        }
 
-		String key = getGroupKey(player); // 副本的,不处理 SceneConfig cfg =
-		SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
-		if (cfg.type != Scene.MULTI) {
-			return;
-		}
+        SessionManager.getInstance().sendMsgToGroup(key, cmd, param, me);
+    }
 
-		SessionManager.getInstance().sendMsgToGroup(key, cmd, param, me);
-	}
+    // 离开场景
+    public void exitScene(Player player) {
+        if (player.getSubLine() == 0 || player.getSceneId() == 0) {
+            return;
+        }
 
-	// 离开场景
-	public void exitScene(Player player) {
-		if (player.getSubLine() == 0 || player.getSceneId() == 0) {
-			return;
-		}
-		int playerId = player.getPlayerId();
-		int sceneId = player.getSceneId();
-		Scene lastScene = getScene(sceneId);
-		String key = getGroupKey(player);
+        int playerId = player.getPlayerId();
+        int sceneId = player.getSceneId();
+        Scene lastScene = getScene(sceneId);
+        String key = getGroupKey(player);
 
-		//退出世界boss场景
-		SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, sceneId);
-		if(lastCfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
-			worldBossService.removePlayer(player.getPlayerId());
-		}  else if(lastCfg.sceneSubType == Scene.MULTI_PVE
-				|| lastCfg.sceneSubType == Scene.MULTI_GROUP) { // 其他多人本 PVE，
-			multiService.onExit(player.getPlayerId());
-		}
+        //退出世界boss场景
+        SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, sceneId);
+        if (lastCfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
+            worldBossService.removePlayer(player.getPlayerId());
+        } else if (lastCfg.sceneSubType == Scene.MULTI_PVE
+                || lastCfg.sceneSubType == Scene.MULTI_GROUP) { // 其他多人本 PVE，
+            multiService.onExit(player.getPlayerId());
+        }
 
-		if(lastCfg.sceneSubType == Scene.MULTI_GROUP) {
+        if (lastCfg.sceneSubType == Scene.MULTI_GROUP) {
             groupService.onExitBattle(playerId);
-        } else if(lastCfg.sceneSubType == Scene.MULTI_LADDER) {
-			ladderService.onLogout(playerId);
-		} else if(lastCfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
-			gangDungeonService.onLogout(playerId);
-		}
+        } else if (lastCfg.sceneSubType == Scene.MULTI_LADDER) {
+            ladderService.onLogout(playerId);
+        } else if (lastCfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
+            gangDungeonService.onLogout(playerId);
+        }
 
 		/*if(lastCfg.sceneSubType == Scene.MULTI_GROUP
-				|| lastCfg.sceneSubType == Scene.MULTI_GROUP_ROOM) {
+                || lastCfg.sceneSubType == Scene.MULTI_GROUP_ROOM) {
 			//清理下数据
 			groupService.memberExit(playerId);
 		}*/
 
-		SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
+        SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
 
-		Int2Param param = new Int2Param();
-		param.param1 = sceneId;
-		param.param2 = playerId;
+        Int2Param param = new Int2Param();
+        param.param1 = sceneId;
+        param.param2 = playerId;
 
-		Channel channel = SessionManager.getInstance().getChannel(
-				player.getPlayerId());
-		brocastToSceneCurLine(player, SceneExtension.EXIT_SCENE, param, channel);
+        Channel channel = SessionManager.getInstance().getChannel(
+                player.getPlayerId());
+        brocastToSceneCurLine(player, SceneExtension.EXIT_SCENE, param, channel);
 
-		lastScene.exitSubLine(player.getSubLine());
-		player.setSubLine(0);
-
-
-		ServerLogger.info("...exit", playerId, player.getSceneId());
-	}
+        lastScene.exitSubLine(player.getSubLine());
+        player.setSubLine(0);
 
 
+        ServerLogger.info("...exit", playerId, player.getSceneId());
+    }
 
-	// 进入场景
-	public void enterScene(Player player, int sceneId, float x, float z) {
-		Scene scene = getScene(sceneId);
-		if(scene == null) {
-			ServerLogger.warn("scene is null , sceneId = " + sceneId);
-			return;
-		}
-		int curScene = player.getSceneId();
-		if (curScene == scene.getId() && player.getSubLine() > 0) {// 同一个场景
-			return;
-		}
 
-		SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, curScene);
-		if (lastCfg.type == Scene.CITY || lastCfg.sceneSubType == Scene.MULTI_CITY
-				|| lastCfg.sceneSubType == Scene.MULTI_GANG || lastCfg.sceneSubType == Scene.MULTI_MAIN_CITY) {
-			player.setLastSceneId(curScene);
-			player.setLastPos(new float[] { player.getX(), player.getY(),
-					player.getZ() });
+    // 进入场景
+    public void enterScene(Player player, int sceneId, float x, float z) {
+        Scene scene = getScene(sceneId);
+        if (scene == null) {
+            ServerLogger.warn("scene is null , sceneId = " + sceneId);
+            return;
+        }
+        int curScene = player.getSceneId();
+        if (curScene == scene.getId() && player.getSubLine() > 0) {// 同一个场景
+            return;
+        }
 
-		}
-		SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
-		if (cfg.type == Scene.CITY || cfg.sceneSubType == Scene.MULTI_CITY
-				|| cfg.sceneSubType == Scene.MULTI_GANG || cfg.sceneSubType == Scene.MULTI_MAIN_CITY
-				|| cfg.sceneSubType == Scene.MULTI_GROUP_ROOM) {
-			// 清除副本实例
-			teamService.quit(player.getPlayerId());
-			copyService.removeCopy(player.getPlayerId());
-		}
+        SceneConfig lastCfg = GameData.getConfig(SceneConfig.class, curScene);
+        if (lastCfg.type == Scene.CITY || lastCfg.sceneSubType == Scene.MULTI_CITY
+                || lastCfg.sceneSubType == Scene.MULTI_GANG || lastCfg.sceneSubType == Scene.MULTI_MAIN_CITY) {
+            player.setLastSceneId(curScene);
+            player.setLastPos(new float[]{player.getX(), player.getY(),
+                    player.getZ()});
 
-		player.setSceneId(sceneId);
-		player.setX(x);
-		player.setZ(z);
-		player.sethMoveDir(0);
-		player.setvMoveDir(0);
+        }
+        SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
+        if (cfg.type == Scene.CITY || cfg.sceneSubType == Scene.MULTI_CITY
+                || cfg.sceneSubType == Scene.MULTI_GANG || cfg.sceneSubType == Scene.MULTI_MAIN_CITY
+                || cfg.sceneSubType == Scene.MULTI_GROUP_ROOM) {
+            // 清除副本实例
+            teamService.quit(player.getPlayerId());
+            copyService.removeCopy(player.getPlayerId());
+        }
 
-		int subLine = scene.getNewSubLine();
-		scene.enterSubLine(subLine);
-		player.setSubLine(subLine);
+        player.setSceneId(sceneId);
+        player.setX(x);
+        player.setZ(z);
+        player.sethMoveDir(0);
+        player.setvMoveDir(0);
 
-		String key = getGroupKey(player);
-		Channel channel = SessionManager.getInstance().getChannel(
-				player.getPlayerId());
-		SessionManager.getInstance().addToGroup(key, channel);
+        int subLine = scene.getNewSubLine();
+        scene.enterSubLine(subLine);
+        player.setSubLine(subLine);
 
-		if(cfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
-			worldBossService.addPlayer(player.getPlayerId());
-		} else if( cfg.sceneSubType ==Scene.MULTI_GROUP
-				|| cfg.sceneSubType == Scene.MULTI_PVE) {
+        String key = getGroupKey(player);
+        Channel channel = SessionManager.getInstance().getChannel(
+                player.getPlayerId());
+        SessionManager.getInstance().addToGroup(key, channel);
+        ServerLogger.info("line ==========" + key);
+        if (cfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
+            worldBossService.addPlayer(player.getPlayerId());
+        } else if (cfg.sceneSubType == Scene.MULTI_GROUP
+                || cfg.sceneSubType == Scene.MULTI_PVE) {
             multiService.onEnter(player.getPlayerId());
         }
 		/*else if(lastCfg.sceneSubType == Scene.MULTI_PVE) { //TODO 其他多人本TVE
 			multiService.onEnter(player.getPlayerId());
 		}*/
-		// 广播消息
-		brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player), channel);
-	}
+        // 广播消息
+        brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player), channel);
+    }
 
-	// 转成vo
-	public SScenePlayerVo toVo(Player player) {
-		SScenePlayerVo vo = new SScenePlayerVo();
-		vo.playerId = player.getPlayerId();
-		vo.name = player.getName();
-		vo.hp = player.getHp();
-		vo.lev = player.getLev();
-		vo.sex = player.getSex();
-		vo.vocation = player.getVocation();
-		vo.x = player.getX();
-		vo.z = player.getZ();
-		vo.hMoveDir = player.gethMoveDir();
-		vo.vMoveDir = player.getvMoveDir();
-		vo.fashionId = player.getFashionId();
-		vo.weapon = player.getWeaponId();
-		vo.fight = player.getFight();
-		vo.title = player.getTitle();
-		vo.roomTeam = player.roomTeamId;
-		vo.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
-		Pet pet = petService.getFightPet(player.getPlayerId());
-		if(pet != null) {
-			vo.fightPetConfigId = pet.getConfigId();
-			vo.fightPetHasMutate = pet.isMutate();
-		}
-		Pet showPet = petService.getShowPet(player.getPlayerId());
-		if(showPet != null) {
-			vo.showPetConfigId = showPet.getConfigId();
-			vo.showPetHasMutate = showPet.isMutate();
-		}
-		if(player.getGangId() > 0){
-			vo.gang = gangService.getGang(player.getGangId()).getName();
-		}
-		return vo;
-	}
+    // 转成vo
+    public SScenePlayerVo toVo(Player player) {
+        SScenePlayerVo vo = new SScenePlayerVo();
+        vo.playerId = player.getPlayerId();
+        vo.name = player.getName();
+        vo.hp = player.getHp();
+        vo.lev = player.getLev();
+        vo.sex = player.getSex();
+        vo.vocation = player.getVocation();
+        vo.x = player.getX();
+        vo.z = player.getZ();
+        vo.hMoveDir = player.gethMoveDir();
+        vo.vMoveDir = player.getvMoveDir();
+        vo.fashionId = player.getFashionId();
+        vo.weapon = player.getWeaponId();
+        vo.fight = player.getFight();
+        vo.title = player.getTitle();
+        vo.roomTeam = player.roomTeamId;
+        vo.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
+        Pet pet = petService.getFightPet(player.getPlayerId());
+        if (pet != null) {
+            vo.fightPetConfigId = pet.getConfigId();
+            vo.fightPetName = pet.getName();
+        }
+        Pet showPet = petService.getShowPet(player.getPlayerId());
+        if (showPet != null) {
+            vo.showPetConfigId = showPet.getShowConfigID();
+            vo.showPetName = showPet.getName();
+        }
+        if (player.getGangId() > 0) {
+            vo.gang = gangService.getGang(player.getGangId()).getName();
+        }
+        return vo;
+    }
 
-	// 获取场景玩家
-	public SSceneInfo getSceneInfo(Player player, int sceneId) {
-		SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
-		SSceneInfo sceneInfo = genMonster(cfg, player);// 生成怪物信息
-		sceneInfo.players = new ArrayList<SScenePlayerVo>();
-		sceneInfo.sceneId = sceneId;
-		if (cfg.type == Scene.COPY) {
-			if (sceneInfo.monsters == null || sceneInfo.monsters.isEmpty()) {
-				ServerLogger.warn("err enter copy:" + sceneId + " playerId:"
-						+ player.getPlayerId());
-			}
-		}
+    // 获取场景玩家
+    public SSceneInfo getSceneInfo(Player player, int sceneId) {
+        SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
+        SSceneInfo sceneInfo = genMonster(cfg, player);// 生成怪物信息
+        sceneInfo.players = new ArrayList<SScenePlayerVo>();
+        sceneInfo.sceneId = sceneId;
+        if (cfg.type == Scene.COPY) {
+            if (sceneInfo.monsters == null || sceneInfo.monsters.isEmpty()) {
+                ServerLogger.warn("err enter copy:" + sceneId + " playerId:"
+                        + player.getPlayerId());
+            }
+        }
 
-		if (cfg.type != Scene.MULTI) {// 副本的只返回自己的
-			sceneInfo.players.add(toVo(player));
-			return sceneInfo;
-		}
+        if (cfg.type != Scene.MULTI) {// 副本的只返回自己的
+            sceneInfo.players.add(toVo(player));
+            return sceneInfo;
+        }
 
-		String key = getGroupKey(player);
+        String key = getGroupKey(player);
 
-		Collection<Channel> channels = SessionManager.getInstance()
-				.getGroupChannels(key);
+        Collection<Channel> channels = SessionManager.getInstance()
+                .getGroupChannels(key);
 
-		//List<Integer> ids = new ArrayList<Integer>(10);
-		for (Channel channel : channels) {
-			int playerId = SessionManager.getInstance().getPlayerId(channel);
-			if (playerId == 0 || playerId == player.getPlayerId()) {
-				continue;
-			}
-			Player p = playerService.getPlayer(playerId);
+        //List<Integer> ids = new ArrayList<Integer>(10);
+        for (Channel channel : channels) {
+            int playerId = SessionManager.getInstance().getPlayerId(channel);
+            if (playerId == 0 || playerId == player.getPlayerId()) {
+                continue;
+            }
+            Player p = playerService.getPlayer(playerId);
 
-			sceneInfo.players.add(toVo(p));
-			//ids.add(playerId);
-		}
+            sceneInfo.players.add(toVo(p));
+            //ids.add(playerId);
+        }
 
-		return sceneInfo;
-	}
+        return sceneInfo;
+    }
 
-	// 生成怪物
-	public SSceneInfo genMonster(SceneConfig cfg, Player player) {
-		SSceneInfo sceneInfo = new SSceneInfo();
-		try {
-			List<SMonsterVo> monsters = new ArrayList<SMonsterVo>();
-			if (cfg.type == Scene.COPY
-					|| (cfg.type == Scene.MULTI &&
-					(cfg.sceneSubType == Scene.MULTI_PVE || cfg.sceneSubType == Scene.WORLD_BOSS_PVE
-							|| cfg.sceneSubType == Scene.MULTI_GROUP || cfg.sceneSubType == Scene.MULTI_GANG_BOSS))) {// 普通副本，多人PVE
-				int copyInstance = player.getCopyId();
-				CopyInstance copy = copyService.getCopyInstance(copyInstance);
-				monsters.addAll(copy.getMonsters().get(cfg.id).values());
+    // 生成怪物
+    public SSceneInfo genMonster(SceneConfig cfg, Player player) {
+        SSceneInfo sceneInfo = new SSceneInfo();
+        try {
+            List<SMonsterVo> monsters = new ArrayList<SMonsterVo>();
+            if (cfg.type == Scene.COPY
+                    || (cfg.type == Scene.MULTI &&
+                    (cfg.sceneSubType == Scene.MULTI_PVE || cfg.sceneSubType == Scene.WORLD_BOSS_PVE
+                            || cfg.sceneSubType == Scene.MULTI_GROUP || cfg.sceneSubType == Scene.MULTI_GANG_BOSS))) {// 普通副本，多人PVE
+                int copyInstance = player.getCopyId();
+                CopyInstance copy = copyService.getCopyInstance(copyInstance);
+                monsters.addAll(copy.getMonsters().get(cfg.id).values());
 
-				if(cfg.sceneSubType == Scene.MULTI_GANG_BOSS) { //公会副本怪物信息处理
-					monsters.clear();
-					for(SMonsterVo vo : copy.getMonsters().get(cfg.id).values()) {
-						if(!gangDungeonService.checkDeath(player,vo.id)) {
-							monsters.add(vo);
-						}
-					}
-				}
+                if (cfg.sceneSubType == Scene.MULTI_GANG_BOSS) { //公会副本怪物信息处理
+                    monsters.clear();
+                    for (SMonsterVo vo : copy.getMonsters().get(cfg.id).values()) {
+                        if (!gangDungeonService.checkDeath(player, vo.id)) {
+                            monsters.add(vo);
+                        }
+                    }
+                }
 
-				if (copy.getTraverseMap() != null) {
-					int[] affixs = copy.getTraverseMap().getAffixs();
-					ServerLogger.info("Traverse length: " + affixs.length);
-					if (affixs != null) {
-						sceneInfo.affixs = new ArrayList<Integer>();
-						for (int id : affixs) {
-							sceneInfo.affixs.add(id);
-						}
-					}
-				}
-			}
-			sceneInfo.monsters = monsters;
-		}catch (Exception e){
-			logger.error("create monster",e);
-			throw new RuntimeException(e);
-		}
-		return sceneInfo;
-	}
+                if (copy.getTraverseMap() != null) {
+                    int[] affixs = copy.getTraverseMap().getAffixs();
+                    ServerLogger.info("Traverse length: " + affixs.length);
+                    if (affixs != null) {
+                        sceneInfo.affixs = new ArrayList<Integer>();
+                        for (int id : affixs) {
+                            sceneInfo.affixs.add(id);
+                        }
+                    }
+                }
+            }
+            sceneInfo.monsters = monsters;
+        } catch (Exception e) {
+            logger.error("create monster", e);
+            throw new RuntimeException(e);
+        }
+        return sceneInfo;
+    }
 
-	// 场景移动
-	public void walk(int playerId, MoveStart vo) {
-		Player player = playerService.getPlayer(playerId);
-		player.setvMoveDir(vo.vMoveDir);
-		player.sethMoveDir(vo.hMoveDir);
-		player.setX(vo.x);
-		player.setZ(vo.z);
-		Channel me = SessionManager.getInstance().getChannel(playerId);
-		brocastToSceneCurLine(player, SceneExtension.WALK_SCENE, vo, me);
-	}
+    // 场景移动
+    public void walk(int playerId, MoveStart vo) {
+        Player player = playerService.getPlayer(playerId);
+        player.setvMoveDir(vo.vMoveDir);
+        player.sethMoveDir(vo.hMoveDir);
+        player.setX(vo.x);
+        player.setZ(vo.z);
+        Channel me = SessionManager.getInstance().getChannel(playerId);
+        brocastToSceneCurLine(player, SceneExtension.WALK_SCENE, vo, me);
+    }
 
-	// 场景停止移动
-	public void stop(int playerId, MoveStop vo) {
-		Player player = playerService.getPlayer(playerId);
-		if(vo.type == 0) {
-			player.setvMoveDir(0);
-			player.sethMoveDir(0);
-			player.setX(vo.x);
-			player.setZ(vo.z);
-		}
-		Channel me = SessionManager.getInstance().getChannel(playerId);
-		brocastToSceneCurLine(player, SceneExtension.STOP_WALK_SCENE, vo, me);
-	}
+    // 场景停止移动
+    public void stop(int playerId, MoveStop vo) {
+        Player player = playerService.getPlayer(playerId);
+        if (vo.type == 0) {
+            player.setvMoveDir(0);
+            player.sethMoveDir(0);
+            player.setX(vo.x);
+            player.setZ(vo.z);
+        }
+        Channel me = SessionManager.getInstance().getChannel(playerId);
+        brocastToSceneCurLine(player, SceneExtension.STOP_WALK_SCENE, vo, me);
+    }
 
-	// 怪物移动
-	public void npcMove(int playerId, NpcMoveStart vo) {
-		Player player = playerService.getPlayer(playerId);
-		Channel me = SessionManager.getInstance().getChannel(playerId);
-		brocastToSceneCurLine(player, SceneExtension.NPC_MOVE, vo, me);
-	}
-
-
-	// 怪物方向
-	public void monsterDir(int playerId, Int2Param vo) {
-		Player player = playerService.getPlayer(playerId);
-		Channel me = SessionManager.getInstance().getChannel(playerId);
-		brocastToSceneCurLine(player, SceneExtension.NPC_DIR, vo, me);
-	}
-
-	// 怪物方向
-	public void changeState(int playerId, ChangeFSMState vo) {
-		Player player = playerService.getPlayer(playerId);
-		Channel me = SessionManager.getInstance().getChannel(playerId);
-		brocastToSceneCurLine(player, SceneExtension.NPC_STATE, vo, me);
-	}
-
-	public void handlerUseSkill(int playerId, UseSkillVO skillVO){
-		if(!SysConfig.debug){
-			//非调试状态下需要检验伤害,CD
-		}
-		useSkills.put(String.format("%d_%d", skillVO.attackId, skillVO.skillId), skillVO.type);
-		//ServerLogger.warn("handler skill" + String.format("%d_%d", skillVO.attackId, skillVO.skillId));
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.USE_SKILL, skillVO);
-	}
-
-	public void adBuffToActor(int playerId, AddBuffVO vo){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.ADD_BUFF, vo);
-	}
-
-	public void delBuffFromActor(int playerId, DelBuffVO vo){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.DEL_BUFF, vo);
-	}
-
-	/**
-	 * 同步位置信息
-	 * @param playerId
-	 * @param vo
-	 */
-	public void actorPos(int playerId, ActorWaitState vo){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.ACTOR_POS, vo);
-	}
-
-	public void actorMove(int playerId, ActorMoveState vo){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.ACTOR_MOVE, vo);
-	}
-
-	public void actorStrick(int playerId, ActorStrickenState vo){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.ACTOR_STRICK, vo);
-	}
-
-	public void actorDead(int playerId, IntParam vo){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.ACTOR_DEAD, vo);
-	}
-
-	public void actorActorSkill(int playerId, ActorSkillVO vo){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.ACTOR_SKILL, vo);
-	}
-
-	public void actorActorSkillCard(int playerId, SkillCardEffectVO vo){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.ACTOR_CARD, vo);
-	}
-
-	/**
-	 * 停止使用技能
-	 * @param playerId
-	 * @param skillVO
-	 */
-	public void handlerStopSkill(int playerId, StopSkillVO skillVO){
-		Player player = playerService.getPlayer(playerId);
-		brocastToSceneCurLine(player, SceneExtension.SKILL_STOP, skillVO,SessionManager.getInstance().getChannel(player.getPlayerId()));
-	}
-
-	// 玩家技能处理
-	public void handleSkillHurt(int playerId, SkillHurtVO hurtVO) {
-		Player player = playerService.getPlayer(playerId);
-		Integer type = useSkills.get(String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
-		if (type == null) {
-			//ServerLogger.warn("handler skill hurt,there is no use skill record!" + String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
-			//return;
-		}
-		if (!SysConfig.debug) {
-			//非调试状态下需要检验伤害
-		}
-
-		SceneConfig cfg = GameData.getConfig(SceneConfig.class, player.getSceneId());
-		if(cfg.sceneSubType == Scene.MULTI_GROUP) {
-			groupService.handleSkillHurt(player,hurtVO);
-		} else if(cfg.sceneSubType == Scene.WORLD_BOSS_PVE){
-            worldBossService.handleSkillHurt(player,hurtVO);
-        } else if(cfg.sceneSubType == Scene.MULTI_LADDER) {
-			ladderService.handleSkillHurt(player,hurtVO);
-		} else if (cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
-			brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
-			gangDungeonService.handleSkillHurt(player,hurtVO);
-		}
+    // 怪物移动
+    public void npcMove(int playerId, NpcMoveStart vo) {
+        Player player = playerService.getPlayer(playerId);
+        Channel me = SessionManager.getInstance().getChannel(playerId);
+        brocastToSceneCurLine(player, SceneExtension.NPC_MOVE, vo, me);
+    }
 
 
-		if (player.getTeamId() > 0) {
-			teamService.handleSkillHurt(player, hurtVO);
-		} else {
-			//worldBossService.handleSkillHurt(player,hurtVO);
-			brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
-		}
-	}
+    // 怪物方向
+    public void monsterDir(int playerId, Int2Param vo) {
+        Player player = playerService.getPlayer(playerId);
+        Channel me = SessionManager.getInstance().getChannel(playerId);
+        brocastToSceneCurLine(player, SceneExtension.NPC_DIR, vo, me);
+    }
+
+    // 怪物方向
+    public void changeState(int playerId, ChangeFSMState vo) {
+        Player player = playerService.getPlayer(playerId);
+        Channel me = SessionManager.getInstance().getChannel(playerId);
+        brocastToSceneCurLine(player, SceneExtension.NPC_STATE, vo, me);
+    }
+
+    public void handlerUseSkill(int playerId, UseSkillVO skillVO) {
+        if (!SysConfig.debug) {
+            //非调试状态下需要检验伤害,CD
+        }
+        useSkills.put(String.format("%d_%d", skillVO.attackId, skillVO.skillId), skillVO.type);
+        //ServerLogger.warn("handler skill" + String.format("%d_%d", skillVO.attackId, skillVO.skillId));
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.USE_SKILL, skillVO);
+    }
+
+    public void adBuffToActor(int playerId, AddBuffVO vo) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.ADD_BUFF, vo);
+    }
+
+    public void delBuffFromActor(int playerId, DelBuffVO vo) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.DEL_BUFF, vo);
+    }
+
+    /**
+     * 同步位置信息
+     *
+     * @param playerId
+     * @param vo
+     */
+    public void actorPos(int playerId, ActorWaitState vo) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.ACTOR_POS, vo);
+    }
+
+    public void actorMove(int playerId, ActorMoveState vo) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.ACTOR_MOVE, vo);
+    }
+
+    public void actorStrick(int playerId, ActorStrickenState vo) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.ACTOR_STRICK, vo);
+    }
+
+    public void actorDead(int playerId, IntParam vo) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.ACTOR_DEAD, vo);
+    }
+
+    public void actorActorSkill(int playerId, ActorSkillVO vo) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.ACTOR_SKILL, vo);
+    }
+
+    public void actorActorSkillCard(int playerId, SkillCardEffectVO vo) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.ACTOR_CARD, vo);
+    }
+
+    /**
+     * 停止使用技能
+     *
+     * @param playerId
+     * @param skillVO
+     */
+    public void handlerStopSkill(int playerId, StopSkillVO skillVO) {
+        Player player = playerService.getPlayer(playerId);
+        brocastToSceneCurLine(player, SceneExtension.SKILL_STOP, skillVO, SessionManager.getInstance().getChannel(player.getPlayerId()));
+    }
+
+    // 玩家技能处理
+    public void handleSkillHurt(int playerId, SkillHurtVO hurtVO) {
+        Player player = playerService.getPlayer(playerId);
+        Integer type = useSkills.get(String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
+        if (type == null) {
+            //ServerLogger.warn("handler skill hurt,there is no use skill record!" + String.format("%d_%d", hurtVO.attackId, hurtVO.skillId));
+            //return;
+        }
+        if (!SysConfig.debug) {
+            //非调试状态下需要检验伤害
+        }
+
+        SceneConfig cfg = GameData.getConfig(SceneConfig.class, player.getSceneId());
+        if (cfg.sceneSubType == Scene.MULTI_GROUP) {
+            groupService.handleSkillHurt(player, hurtVO);
+        } else if (cfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
+            worldBossService.handleSkillHurt(player, hurtVO);
+        } else if (cfg.sceneSubType == Scene.MULTI_LADDER) {
+            ladderService.handleSkillHurt(player, hurtVO);
+        } else if (cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
+            brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
+            gangDungeonService.handleSkillHurt(player, hurtVO);
+        }
+
+
+        if (player.getTeamId() > 0) {
+            teamService.handleSkillHurt(player, hurtVO);
+        } else {
+            //worldBossService.handleSkillHurt(player,hurtVO);
+            brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
+        }
+    }
 }

@@ -10,6 +10,7 @@ public class PetBagVO implements IProtocol {
 	public List<Int2Param> materials;//随便列表(id，数量)
 	public int fightPetId;//出战宠物ID
 	public int showPetId;//展示宠物ID
+	public int showPetConfigId;//展示宠物ConfigId
 
 
 	public void decode(BufferBuilder bb) {
@@ -65,6 +66,7 @@ public class PetBagVO implements IProtocol {
         }
 		this.fightPetId = bb.getInt();
 		this.showPetId = bb.getInt();
+		this.showPetConfigId = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -72,5 +74,6 @@ public class PetBagVO implements IProtocol {
 		bb.putProtocolVoList(this.materials);
 		bb.putInt(this.fightPetId);
 		bb.putInt(this.showPetId);
+		bb.putInt(this.showPetConfigId);
 	}
 }

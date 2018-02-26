@@ -144,6 +144,7 @@ public class DailyService implements InitHandler {
 			SessionManager.getInstance().sendMsg(VipExtension.GET_DAILY_INFO, getDailyInfo(playerId), playerId);
 		}
 		gangService.dailyReset();
+		taskService.dailyAchievement();
 	}
 
 	// 重置

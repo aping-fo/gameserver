@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.game.util.JsonUtils;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -84,7 +85,10 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
                 opponent.setFashionId(player.getFashionId());
                 opponent.setWeaponId(player.getWeaponId());
                 PlayerData playerData = playerService.getPlayerData(id);
-                //if(playerData == null) continue;
+                if(playerData == null) {
+                    ServerLogger.warn("player data is null ? playerId = " + id);
+                    continue;
+                }
                 opponent.setCurCards(playerData.getCurrCardIds());
                 opponent.setCurSkills(playerData.getCurSkills());
                 opponents.put(id, opponent);

@@ -45,6 +45,7 @@ import org.springframework.stereotype.Service;
 import java.nio.charset.Charset;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class PlayerService implements InitHandler {
@@ -81,14 +82,15 @@ public class PlayerService implements InitHandler {
     private DefaultLogoutHandler logoutHandler;
     @Autowired
     private SerialDataService serialDataService;
+    @Autowired
+    private TimerService timerService;
 
     private static volatile int maxPlayerId = 0;
 
-    private volatile Map<Integer, Player> players = new ConcurrentHashMap<Integer, Player>();
-    private volatile Map<Integer, PlayerData> playerDatas = new ConcurrentHashMap<Integer, PlayerData>();
-    private volatile Map<String, Integer> nameCaches = new ConcurrentHashMap<String, Integer>();
+    private volatile Map<Integer, Player> players = new ConcurrentHashMap<>();
+    private volatile Map<Integer, PlayerData> playerDatas = new ConcurrentHashMap<>();
+    private volatile Map<String, Integer> nameCaches = new ConcurrentHashMap<>();
     private volatile Map<String, User> userMap = new ConcurrentHashMap<>();
-
     public static final String ROBOT = "sys";
 
     @Override
@@ -98,6 +100,34 @@ public class PlayerService implements InitHandler {
             curMaxPlayerId = 0;
         }
         maxPlayerId = (curMaxPlayerId / 1000);
+
+
+        timerService.scheduleAtFixedRate(new Runnable() { //每分钟检测一次，活动开关
+            @Override
+            public void run() {
+                try {
+                    doCheckTimeOut();
+                } catch (Exception e) {
+                    ServerLogger.err(e, "活动定时器异常");
+                }
+            }
+        }, 1, 5 * 60, TimeUnit.SECONDS);
+    }
+
+    private void doCheckTimeOut(){
+        for(Player player : players.values()){
+            if(player.online){
+                continue;
+            }
+            //TODO 分发
+            PlayerData playerData = getPlayerData(player.getPlayerId());
+            if(!playerData.isRobotFlag() && System.currentTimeMillis() - player.getLastLogoutTime().getTime() > 5 * 60 * 1000){
+                updatePlayerData(player.getPlayerId());
+                update(player);
+                playerDatas.remove(player.getPlayerId());
+                players.remove(player.getPlayerId());
+            }
+        }
     }
 
     // 获取一个新的UserId
@@ -113,6 +143,10 @@ public class PlayerService implements InitHandler {
             player = playerDao.select(playerId);
             if (player != null) {
                 players.put(playerId, player);
+                //add new
+                if(!player.online) {
+                    player.setLastLogoutTime(new Date());
+                }
             }
         }
         return player;
@@ -142,7 +176,7 @@ public class PlayerService implements InitHandler {
     }
 
     // 增加新用户
-    public Player addNewPlayer(String name, int sex, int vocation, String accName, String channel) {
+    public Player addNewPlayer(String name, int sex, int vocation, String accName, String channel,String serverId,String serverName) {
         // 初始属性
         final int playerId = getNextPlayerId();
         final Player player = new Player();
@@ -169,13 +203,8 @@ public class PlayerService implements InitHandler {
 
         // 新增用户
         players.put(playerId, player);
-        // 数据库插入失败
-        try {
-            playerDao.insert(player);
-        } catch (Exception e) {
-            ServerLogger.err(e, "insert player err!");
-            return null;
-        }
+        // 数据库插入失败//优化下这个登录
+        //playerDao.insert(player);
         // 初始化用户数据
         PlayerData playerData = initPlayerData(playerId, false);
         // 初始化时装和武器
@@ -229,14 +258,16 @@ public class PlayerService implements InitHandler {
         for (int[] itemArr : globalParam.InitPets) {
             petService.addPetMaterial(playerId, itemArr[0], itemArr[1], false);
         }
-
+        playerData.setServerId(serverId);
+        playerData.setServerName(serverName);
         // 计算属性
         playerCalculator.calculate(player);
 
-        // 保存数据
+        // 保存数据,优化下
         Context.getThreadService().execute(new Runnable() {
             @Override
             public void run() {
+                playerDao.insert(player);
                 updatePlayerData(playerId);
                 update(player);
             }
@@ -370,6 +401,9 @@ public class PlayerService implements InitHandler {
         taskService.doTask(playerId,condParam);
 
         nameCaches.put(player.getName(), player.getPlayerId());
+        player.online = true;
+        //players.put(playerId,player);
+        //playerDatas.put(playerId,data);
     }
 
     public PlayerVo toSLoginVo(int playerId) {
@@ -399,6 +433,7 @@ public class PlayerService implements InitHandler {
         vo.playerId = player.getPlayerId();
         vo.sceneId = player.getSceneId();
         vo.serverId = player.getServerId();
+        vo.serverName = data.getServerName();
         vo.sex = player.getSex();
         vo.x = player.getX();
         vo.y = player.getY();
@@ -1012,5 +1047,10 @@ public class PlayerService implements InitHandler {
         if(user!= null && user.channel == channel){
             userMap.remove(name);
         }
+    }
+
+    public void removeCache(int playerId) {
+        players.remove(playerId);
+        playerDatas.remove(playerId);
     }
 }

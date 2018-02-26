@@ -113,8 +113,8 @@ public class HttpClient {
         CloseableHttpClient httpclient = HttpClients.custom().setDefaultRequestConfig(requestConfig).build();
         CloseableHttpResponse response = null;
         try {
-            String url = "http://" + SysConfig.eratingHost+"/agip";
-            HttpPost httpPost = new HttpPost(url);
+            String url = "http://" + SysConfig.eratingHost + "/agip";
+            HttpPost httpPost = new HttpPost(url); //"http://113.208.129.53:14820/agip"
             httpPost.setHeader("Pragma", "no-cache");
             httpPost.setHeader("Accept", "*/*");
             StringEntity entity = new StringEntity(content, "UTF-8");
@@ -125,9 +125,6 @@ public class HttpClient {
             ServerLogger.info(json);
             EntityUtils.consume(httpEntity);
             return json;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return "";
         } finally {
             if (response != null)
                 response.close();
@@ -203,7 +200,8 @@ public class HttpClient {
         params.put("startTime", System.currentTimeMillis() + 10 + "");
         params.put("endTime", System.currentTimeMillis() + 100 + "");
         params.put("serverId", "1");
-        HttpClient.sendPostRequest("http://192.168.7.200:20010/admin/notice", params);
+        HttpClient.sendPostRequest("http://192.168.7.200:20010/admin/notice", params); // ,"000000000".getBytes()
+        //HttpClient.sendPostRequest("http://113.208.129.53:14820/agip"); // ,"000000000".getBytes()  // ,
         // params,b.build().toByteArray()
     }
 }

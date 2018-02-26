@@ -33,9 +33,9 @@ public class SkillExtension {
 	}
 	
 	@Command(2002)
-	public Object upgradeSkill(int playerId,IntParam id){
+	public Object upgradeSkill(int playerId,Int2Param param){
 		IntParam result = new IntParam();
-		result.param = skillService.upgradeSkill(playerId, id.param);
+		result.param = skillService.upgradeSkill(playerId, param.param1,param.param2);
 		return result;
 	}
 	

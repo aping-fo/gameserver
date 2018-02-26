@@ -2,62 +2,1142 @@
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
 	<id>1</id>
-	<name>战士套</name>
-	<equips>[20112001,20212001,20312001,20412001,20512001,20612001]</equips>
-	<twoAdd>1:[1,10];2:[2,500]</twoAdd>
+	<name>圣殿套装</name>
+	<equips>[30114010,30214010,30314010,30414010,30514010,30614010]</equips>
+	<twoAdd>2:[3,100]</twoAdd>
 	<twoDesc>【2】套装效果:
-生命:10%
-威力:500</twoDesc>
+防御:100</twoDesc>
 	<threeAdd></threeAdd>
 	<threeDesc></threeDesc>
-	<fourAdd></fourAdd>
+	<fourAdd>2:[1,1000]</fourAdd>
 	<fourDesc>【4】套装效果:
-战斗时,防御力提升30%,持续5分钟</fourDesc>
+生命:1000</fourDesc>
 	<fiveAdd></fiveAdd>
 	<fiveDesc></fiveDesc>
 	<sixAdd></sixAdd>
 	<sixDesc>【6】套装效果:
 战斗时,攻击力提升30%,持续5分钟</sixDesc>
-	<buffAdd>[[0],[0],[0],[3000001],[0],[3000002]]</buffAdd>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
 </config>
 <config>
 	<id>2</id>
-	<name>刺客套</name>
-	<equips>[20122001,20222001,20322001,20422001,20522001,20622001]</equips>
-	<twoAdd>1:[1,10];2:[2,500]</twoAdd>
+	<name>月冕套装</name>
+	<equips>[30114020,30214020,30314020,30414020,30514020,30614020]</equips>
+	<twoAdd>2:[1,1500]</twoAdd>
 	<twoDesc>【2】套装效果:
-生命:10%
-威力:500</twoDesc>
+生命:1500</twoDesc>
 	<threeAdd></threeAdd>
 	<threeDesc></threeDesc>
-	<fourAdd></fourAdd>
+	<fourAdd>2:[2,220]</fourAdd>
 	<fourDesc>【4】套装效果:
-战斗时,防御力提升30%,持续5分钟</fourDesc>
+威力:220</fourDesc>
 	<fiveAdd></fiveAdd>
 	<fiveDesc></fiveDesc>
 	<sixAdd></sixAdd>
 	<sixDesc>【6】套装效果:
 战斗时,攻击力提升30%,持续5分钟</sixDesc>
-	<buffAdd>[[0],[0],[0],[3000001],[0],[3000002]]</buffAdd>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
 </config>
 <config>
 	<id>3</id>
-	<name>法师套</name>
-	<equips>[20132001,20232001,20332001,20432001,20532001,20632001]</equips>
-	<twoAdd>1:[1,10];2:[2,500]</twoAdd>
+	<name>西塞套装</name>
+	<equips>[30114030,30214030,30314030,30414030,30514030,30614030]</equips>
+	<twoAdd>1:[4,5]</twoAdd>
 	<twoDesc>【2】套装效果:
-生命:10%
-威力:500</twoDesc>
+抗性:5%</twoDesc>
 	<threeAdd></threeAdd>
 	<threeDesc></threeDesc>
-	<fourAdd></fourAdd>
+	<fourAdd>1:[6,7]</fourAdd>
 	<fourDesc>【4】套装效果:
-战斗时,防御力提升30%,持续5分钟</fourDesc>
+暴击:7%</fourDesc>
 	<fiveAdd></fiveAdd>
 	<fiveDesc></fiveDesc>
 	<sixAdd></sixAdd>
 	<sixDesc>【6】套装效果:
 战斗时,攻击力提升30%,持续5分钟</sixDesc>
-	<buffAdd>[[0],[0],[0],[3000001],[0],[3000002]]</buffAdd>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>4</id>
+	<name>死灵套装</name>
+	<equips>[30114040,30214040,30314040,30414040,30514040,30614040]</equips>
+	<twoAdd>1:[3,7]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:7%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,9]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:9%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>5</id>
+	<name>潮汐套装</name>
+	<equips>[30114050,30214050,30314050,30414050,30514050,30614050]</equips>
+	<twoAdd>1:[1,9]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:9%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,11]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:11%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>6</id>
+	<name>雪怒套装</name>
+	<equips>[30114060,30214060,30314060,30414060,30514060,30614060]</equips>
+	<twoAdd>1:[4,11]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:11%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,13]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:13%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>7</id>
+	<name>风暴套装</name>
+	<equips>[30114070,30214070,30314070,30414070,30514070,30614070]</equips>
+	<twoAdd>1:[3,13]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:13%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,15]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:15%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>8</id>
+	<name>龙息套装</name>
+	<equips>[30114080,30214080,30314080,30414080,30514080,30614080]</equips>
+	<twoAdd>1:[1,15]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:15%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,17]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:17%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>9</id>
+	<name>狂徒套装</name>
+	<equips>[30114090,30214090,30314090,30414090,30514090,30614090]</equips>
+	<twoAdd>1:[4,17]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:17%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,19]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:19%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>10</id>
+	<name>海印套装</name>
+	<equips>[30114100,30214100,30314100,30414100,30514100,30614100]</equips>
+	<twoAdd>1:[1,20]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:20%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,20]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:20%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>11</id>
+	<name>圣殿套装</name>
+	<equips>[30115010,30215010,30315010,30415010,30515010,30615010]</equips>
+	<twoAdd>2:[3,130]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:130</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[1,1250]</fourAdd>
+	<fourDesc>【4】套装效果:
+生命:1250</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>12</id>
+	<name>月冕套装</name>
+	<equips>[30115020,30215020,30315020,30415020,30515020,30615020]</equips>
+	<twoAdd>2:[1,1800]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:1800</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[2,290]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:290</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>13</id>
+	<name>西塞套装</name>
+	<equips>[30115030,30215030,30315030,30415030,30515030,30615030]</equips>
+	<twoAdd>1:[4,7]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:7%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,9]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:9%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>14</id>
+	<name>死灵套装</name>
+	<equips>[30115040,30215040,30315040,30415040,30515040,30615040]</equips>
+	<twoAdd>1:[3,9]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:9%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,11]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:11%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>15</id>
+	<name>潮汐套装</name>
+	<equips>[30115050,30215050,30315050,30415050,30515050,30615050]</equips>
+	<twoAdd>1:[1,11]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:11%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,13]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:13%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>16</id>
+	<name>雪怒套装</name>
+	<equips>[30115060,30215060,30315060,30415060,30515060,30615060]</equips>
+	<twoAdd>1:[4,13]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:13%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,15]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:15%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>17</id>
+	<name>风暴套装</name>
+	<equips>[30115070,30215070,30315070,30415070,30515070,30615070]</equips>
+	<twoAdd>1:[3,15]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:15%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,17]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:17%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>18</id>
+	<name>龙息套装</name>
+	<equips>[30115080,30215080,30315080,30415080,30515080,30615080]</equips>
+	<twoAdd>1:[1,17]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:17%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,19]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:19%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>19</id>
+	<name>狂徒套装</name>
+	<equips>[30115090,30215090,30315090,30415090,30515090,30615090]</equips>
+	<twoAdd>1:[4,19]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:19%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,21]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:21%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>20</id>
+	<name>海印套装</name>
+	<equips>[30115100,30215100,30315100,30415100,30515100,30615100]</equips>
+	<twoAdd>1:[1,22]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:22%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,23]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:23%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>21</id>
+	<name>圣殿套装</name>
+	<equips>[30124010,30224010,30324010,30424010,30524010,30624010]</equips>
+	<twoAdd>2:[3,100]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:100</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[1,1000]</fourAdd>
+	<fourDesc>【4】套装效果:
+生命:1000</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>22</id>
+	<name>月冕套装</name>
+	<equips>[30124020,30224020,30324020,30424020,30524020,30624020]</equips>
+	<twoAdd>2:[1,1500]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:1500</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[2,220]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:220</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>23</id>
+	<name>西塞套装</name>
+	<equips>[30124030,30224030,30324030,30424030,30524030,30624030]</equips>
+	<twoAdd>1:[4,5]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:5%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,7]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:7%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>24</id>
+	<name>死灵套装</name>
+	<equips>[30124040,30224040,30324040,30424040,30524040,30624040]</equips>
+	<twoAdd>1:[3,7]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:7%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,9]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:9%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>25</id>
+	<name>潮汐套装</name>
+	<equips>[30124050,30224050,30324050,30424050,30524050,30624050]</equips>
+	<twoAdd>1:[1,9]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:9%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,11]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:11%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>26</id>
+	<name>雪怒套装</name>
+	<equips>[30124060,30224060,30324060,30424060,30524060,30624060]</equips>
+	<twoAdd>1:[4,11]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:11%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,13]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:13%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>27</id>
+	<name>风暴套装</name>
+	<equips>[30124070,30224070,30324070,30424070,30524070,30624070]</equips>
+	<twoAdd>1:[3,13]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:13%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,15]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:15%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>28</id>
+	<name>龙息套装</name>
+	<equips>[30124080,30224080,30324080,30424080,30524080,30624080]</equips>
+	<twoAdd>1:[1,15]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:15%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,17]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:17%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>29</id>
+	<name>狂徒套装</name>
+	<equips>[30124090,30224090,30324090,30424090,30524090,30624090]</equips>
+	<twoAdd>1:[4,17]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:17%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,19]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:19%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>30</id>
+	<name>海印套装</name>
+	<equips>[30124100,30224100,30324100,30424100,30524100,30624100]</equips>
+	<twoAdd>1:[1,20]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:20%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,20]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:20%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>31</id>
+	<name>圣殿套装</name>
+	<equips>[30125010,30225010,30325010,30425010,30525010,30625010]</equips>
+	<twoAdd>2:[3,130]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:130</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[1,1250]</fourAdd>
+	<fourDesc>【4】套装效果:
+生命:1250</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>32</id>
+	<name>月冕套装</name>
+	<equips>[30125020,30225020,30325020,30425020,30525020,30625020]</equips>
+	<twoAdd>2:[1,1800]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:1800</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[2,290]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:290</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>33</id>
+	<name>西塞套装</name>
+	<equips>[30125030,30225030,30325030,30425030,30525030,30625030]</equips>
+	<twoAdd>1:[4,7]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:7%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,9]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:9%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>34</id>
+	<name>死灵套装</name>
+	<equips>[30125040,30225040,30325040,30425040,30525040,30625040]</equips>
+	<twoAdd>1:[3,9]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:9%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,11]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:11%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>35</id>
+	<name>潮汐套装</name>
+	<equips>[30125050,30225050,30325050,30425050,30525050,30625050]</equips>
+	<twoAdd>1:[1,11]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:11%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,13]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:13%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>36</id>
+	<name>雪怒套装</name>
+	<equips>[30125060,30225060,30325060,30425060,30525060,30625060]</equips>
+	<twoAdd>1:[4,13]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:13%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,15]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:15%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>37</id>
+	<name>风暴套装</name>
+	<equips>[30125070,30225070,30325070,30425070,30525070,30625070]</equips>
+	<twoAdd>1:[3,15]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:15%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,17]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:17%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>38</id>
+	<name>龙息套装</name>
+	<equips>[30125080,30225080,30325080,30425080,30525080,30625080]</equips>
+	<twoAdd>1:[1,17]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:17%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,19]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:19%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>39</id>
+	<name>狂徒套装</name>
+	<equips>[30125090,30225090,30325090,30425090,30525090,30625090]</equips>
+	<twoAdd>1:[4,19]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:19%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,21]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:21%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>40</id>
+	<name>海印套装</name>
+	<equips>[30125100,30225100,30325100,30425100,30525100,30625100]</equips>
+	<twoAdd>1:[1,22]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:22%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,23]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:23%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>41</id>
+	<name>圣殿套装</name>
+	<equips>[30134010,30234010,30334010,30434010,30534010,30634010]</equips>
+	<twoAdd>2:[3,100]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:100</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[1,1000]</fourAdd>
+	<fourDesc>【4】套装效果:
+生命:1000</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>42</id>
+	<name>月冕套装</name>
+	<equips>[30134020,30234020,30334020,30434020,30534020,30634020]</equips>
+	<twoAdd>2:[1,1500]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:1500</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[2,220]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:220</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>43</id>
+	<name>西塞套装</name>
+	<equips>[30134030,30234030,30334030,30434030,30534030,30634030]</equips>
+	<twoAdd>1:[4,5]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:5%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,7]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:7%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>44</id>
+	<name>死灵套装</name>
+	<equips>[30134040,30234040,30334040,30434040,30534040,30634040]</equips>
+	<twoAdd>1:[3,7]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:7%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,9]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:9%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>45</id>
+	<name>潮汐套装</name>
+	<equips>[30134050,30234050,30334050,30434050,30534050,30634050]</equips>
+	<twoAdd>1:[1,9]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:9%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,11]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:11%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>46</id>
+	<name>雪怒套装</name>
+	<equips>[30134060,30234060,30334060,30434060,30534060,30634060]</equips>
+	<twoAdd>1:[4,11]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:11%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,13]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:13%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>47</id>
+	<name>风暴套装</name>
+	<equips>[30134070,30234070,30334070,30434070,30534070,30634070]</equips>
+	<twoAdd>1:[3,13]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:13%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,15]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:15%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>48</id>
+	<name>龙息套装</name>
+	<equips>[30134080,30234080,30334080,30434080,30534080,30634080]</equips>
+	<twoAdd>1:[1,15]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:15%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,17]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:17%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>49</id>
+	<name>狂徒套装</name>
+	<equips>[30134090,30234090,30334090,30434090,30534090,30634090]</equips>
+	<twoAdd>1:[4,17]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:17%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,19]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:19%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>50</id>
+	<name>海印套装</name>
+	<equips>[30134100,30234100,30334100,30434100,30534100,30634100]</equips>
+	<twoAdd>1:[1,20]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:20%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,20]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:20%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>51</id>
+	<name>圣殿套装</name>
+	<equips>[30135010,30235010,30335010,30435010,30535010,30635010]</equips>
+	<twoAdd>2:[3,130]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:130</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[1,1250]</fourAdd>
+	<fourDesc>【4】套装效果:
+生命:1250</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>52</id>
+	<name>月冕套装</name>
+	<equips>[30135020,30235020,30335020,30435020,30535020,30635020]</equips>
+	<twoAdd>2:[1,1800]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:1800</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>2:[2,290]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:290</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>53</id>
+	<name>西塞套装</name>
+	<equips>[30135030,30235030,30335030,30435030,30535030,30635030]</equips>
+	<twoAdd>1:[4,7]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:7%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,9]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:9%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>54</id>
+	<name>死灵套装</name>
+	<equips>[30135040,30235040,30335040,30435040,30535040,30635040]</equips>
+	<twoAdd>1:[3,9]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:9%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,11]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:11%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>55</id>
+	<name>潮汐套装</name>
+	<equips>[30135050,30235050,30335050,30435050,30535050,30635050]</equips>
+	<twoAdd>1:[1,11]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:11%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,13]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:13%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>56</id>
+	<name>雪怒套装</name>
+	<equips>[30135060,30235060,30335060,30435060,30535060,30635060]</equips>
+	<twoAdd>1:[4,13]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:13%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,15]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:15%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>57</id>
+	<name>风暴套装</name>
+	<equips>[30135070,30235070,30335070,30435070,30535070,30635070]</equips>
+	<twoAdd>1:[3,15]</twoAdd>
+	<twoDesc>【2】套装效果:
+防御:15%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,17]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:17%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>58</id>
+	<name>龙息套装</name>
+	<equips>[30135080,30235080,30335080,30435080,30535080,30635080]</equips>
+	<twoAdd>1:[1,17]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:17%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[6,19]</fourAdd>
+	<fourDesc>【4】套装效果:
+暴击:19%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>59</id>
+	<name>狂徒套装</name>
+	<equips>[30135090,30235090,30335090,30435090,30535090,30635090]</equips>
+	<twoAdd>1:[4,19]</twoAdd>
+	<twoDesc>【2】套装效果:
+抗性:19%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[5,21]</fourAdd>
+	<fourDesc>【4】套装效果:
+异常:21%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
+</config>
+<config>
+	<id>60</id>
+	<name>海印套装</name>
+	<equips>[30135100,30235100,30335100,30435100,30535100,30635100]</equips>
+	<twoAdd>1:[1,22]</twoAdd>
+	<twoDesc>【2】套装效果:
+生命:22%</twoDesc>
+	<threeAdd></threeAdd>
+	<threeDesc></threeDesc>
+	<fourAdd>1:[2,23]</fourAdd>
+	<fourDesc>【4】套装效果:
+威力:23%</fourDesc>
+	<fiveAdd></fiveAdd>
+	<fiveDesc></fiveDesc>
+	<sixAdd></sixAdd>
+	<sixDesc>【6】套装效果:
+战斗时,攻击力提升30%,持续5分钟</sixDesc>
+	<buffAdd>[[0],[0],[0],[0],[0],[3000002]]</buffAdd>
 </config>
 </root>

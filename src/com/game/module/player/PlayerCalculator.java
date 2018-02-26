@@ -8,6 +8,8 @@ import com.game.module.goods.PlayerBag;
 import com.game.module.group.GroupService;
 import com.game.module.pet.PetBag;
 import com.game.module.pet.PetService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.module.team.TeamService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
@@ -38,6 +40,8 @@ public class PlayerCalculator {
     private PetService petService;
     @Autowired
     private TitleService titleService;
+    @Autowired
+    private TaskService taskService;
 
     // 重新计算人物属性
     public void calculate(int playerId) {
@@ -105,6 +109,7 @@ public class PlayerCalculator {
 
         if (fight > oldFight) {
             titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING, (int) fight, ActivityConsts.UpdateType.T_VALUE);
+            taskService.doTask(player.getPlayerId(), Task.TYPE_FIGHT, (int) fight);
         }
         groupService.updateAttr(player.getPlayerId());
         teamService.updateAttr(player.getPlayerId());
@@ -188,16 +193,26 @@ public class PlayerCalculator {
 
         for (Map.Entry<Integer, Set<Integer>> s : data.getSuitMap().entrySet()) {
             SuitConfig config = ConfigData.getConfig(SuitConfig.class, s.getKey());
+            boolean bSuitFlag = false;
             if (s.getValue().size() >= 2) {
                 addSuit(player, config.twoAdd);
+                bSuitFlag |= config.twoAdd != null;
             } else if (s.getValue().size() >= 3) {
                 addSuit(player, config.threeAdd);
+                bSuitFlag |= config.threeAdd != null;
             } else if (s.getValue().size() >= 4) {
                 addSuit(player, config.fourAdd);
+                bSuitFlag |= config.fourAdd != null;
             } else if (s.getValue().size() >= 5) {
                 addSuit(player, config.fiveAdd);
+                bSuitFlag |= config.fiveAdd != null;
             } else if (s.getValue().size() >= 6) {
                 addSuit(player, config.sixAdd);
+                bSuitFlag |= config.sixAdd != null;
+            }
+
+            if(bSuitFlag) {
+                //taskService.doTask(player.getPlayerId(), Task.TYPE_SUIT, config.id);
             }
         }
     }

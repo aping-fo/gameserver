@@ -72,6 +72,7 @@ public class ActivityService implements InitHandler {
             public void run() {
                 try {
                     doScheduleCheckActivity();
+                    System.out.println("---------------" + playerService.getPlayers().size());
                 } catch (Exception e) {
                     ServerLogger.err(e, "活动定时器异常");
                 }

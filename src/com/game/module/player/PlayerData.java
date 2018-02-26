@@ -129,18 +129,64 @@ public class PlayerData {
 	private WelfareCard welfareCard = new WelfareCard();
 	private Train train = new Train();
 	private int sevenDays = 1; // 7次领奖活动
-	private Map<Integer,Title> titleMap = Maps.newHashMap();
+	//所有称号
+	private Map<Integer,Map<Integer,Title>> titleTypeMap = Maps.newHashMap();
+	//拥有的称号
 	private Set<Integer> titles = new HashSet<>();
-	private int arenaWins; //连胜次数
+	private int arenaWins; //竞技场连胜次数
+	//商城累计购买次数
 	private int buyCount;
+	//任务累计完成
 	private int finishTaskCount;
+	//累计签到次数
 	private int signTotal;
+	//体力购买次数
 	private int energyCount;
+	//称号状态
 	private Map<Integer,Integer> titleRead = Maps.newHashMap();
+	//套装
 	private Map<Integer, Set<Integer>> suitMap = Maps.newHashMap();
+
+	private String serverId;
+	private String  serverName;
+
+	private boolean robotFlag;
+
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+	public boolean isRobotFlag() {
+		return robotFlag;
+	}
+
+	public void setRobotFlag(boolean robotFlag) {
+		this.robotFlag = robotFlag;
+	}
+
+	public String getServerId() {
+		return serverId;
+	}
+
+	public void setServerId(String serverId) {
+		this.serverId = serverId;
+	}
+
+	public String getServerName() {
+		return serverName;
+	}
+
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
+	}
+
+	public Map<Integer, Map<Integer, Title>> getTitleTypeMap() {
+		return titleTypeMap;
+	}
+
+	public void setTitleTypeMap(Map<Integer, Map<Integer, Title>> titleTypeMap) {
+		this.titleTypeMap = titleTypeMap;
 	}
 
 	public Map<Integer, Set<Integer>> getSuitMap() {
@@ -205,14 +251,6 @@ public class PlayerData {
 
 	public void setTitles(Set<Integer> titles) {
 		this.titles = titles;
-	}
-
-	public Map<Integer, Title> getTitleMap() {
-		return titleMap;
-	}
-
-	public void setTitleMap(Map<Integer, Title> titleMap) {
-		this.titleMap = titleMap;
 	}
 
 	public Train getTrain() {

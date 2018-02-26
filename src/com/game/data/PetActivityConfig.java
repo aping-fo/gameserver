@@ -18,4 +18,5 @@ public class PetActivityConfig {
 	public int dropId;//随机奖励
 	public int dropCount;//随机次数
 	public int[] rate;//获取随机奖励权重
+	public String icon;//图片
 }

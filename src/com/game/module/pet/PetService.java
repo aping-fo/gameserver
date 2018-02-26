@@ -175,7 +175,7 @@ public class PetService implements InitHandler {
         List<Int2Param> updateIds = Lists.newArrayList();
         List<Integer> skills = passiveSkills.get(newPetConfig.quality);
         int passiveSkillId = skills.get(RandomUtil.randInt(skills.size()));
-        Pet pet = new Pet(bag.idGen.incrementAndGet(), newPetConfig.id, passiveSkillId);
+        Pet pet = new Pet(bag.idGen.incrementAndGet(), newPetConfig.id, passiveSkillId, newPetConfig.name);
         bag.getPetMap().put(pet.getId(), pet);
         pets.add(pet);
         pushUpdateBag(playerId, pets, updateIds);
@@ -482,9 +482,7 @@ public class PetService implements InitHandler {
                 mutate++;
             }
         }
-
         taskService.doTask(playerId, Task.TYPE_MUTATE_PET, mutate);
-
         List<Pet> addPets = Lists.newArrayList(mutatePet);
         pushUpdateBag(playerId, addPets, updateIds);
         cli.param2 = mutateID;
@@ -591,19 +589,17 @@ public class PetService implements InitHandler {
         Player player = playerService.getPlayer(playerId);
         bag.setFightPetId(petId);
         if (bag.getShowPetId() == 0) {
-
             bag.setShowPetId(petId);
             PetChangeVO vo = new PetChangeVO();
             vo.playerId = playerId;
-            int fightId = toFightPet == null ? 0 : toFightPet.getConfigId();
-            vo.petId = fightId;
-            boolean bMutate = toFightPet == null ? false : toFightPet.isMutate();
-            vo.hasMutate = bMutate;
             Int2Param cli1 = new Int2Param();
-            cli1.param1 = Response.SUCCESS;
-            cli1.param2 = petId;
+            cli1.param1 = petId;
+            if (toFightPet != null) {
+                vo.name = toFightPet.getName();
+                vo.petId =  toFightPet.getShowConfigID();
+                cli1.param2 = toFightPet.getShowConfigID();
+            }
             SessionManager.getInstance().sendMsg(CMD_SHOW, cli1, playerId);
-
             sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
         }
         calculator.calculate(player);
@@ -620,7 +616,7 @@ public class PetService implements InitHandler {
      * @param playerId
      * @param petId
      */
-    public Int2Param toShow(int playerId, int petId) {
+    public Int2Param toShow(int playerId, int petId, int configId) {
         Int2Param cli = new Int2Param();
         PetBag bag = getPetBag(playerId);
         Pet toShowPet = bag.getPetMap().get(petId);
@@ -631,16 +627,17 @@ public class PetService implements InitHandler {
 
         bag.setShowPetId(petId);
         bag.updateFlag = true;
-        cli.param1 = Response.SUCCESS;
-        cli.param2 = petId;
+        cli.param1 = petId;
+        cli.param2 = configId;
 
         Player player = playerService.getPlayer(playerId);
         PetChangeVO vo = new PetChangeVO();
         vo.playerId = playerId;
-        int fightId = toShowPet == null ? 0 : toShowPet.getConfigId();
-        vo.petId = fightId;
-        boolean bMutate = toShowPet == null ? false : toShowPet.isMutate();
-        vo.hasMutate = bMutate;
+        if (toShowPet != null) {
+            toShowPet.setShowConfigID(configId);
+            vo.name = toShowPet.getName();
+            vo.petId = configId;
+        }
         sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
         return cli;
     }
@@ -675,7 +672,45 @@ public class PetService implements InitHandler {
         return bag.getPetMap().get(bag.getShowPetId());
     }
 
+    /**
+     * 宠物更名
+     *
+     * @param playerId
+     * @param petId
+     * @param name
+     * @return
+     */
+    public void changeName(int playerId, int petId, String name) {
+        PetBag bag = getPetBag(playerId);
+        Pet pet = bag.getPetMap().get(petId);
+        if (pet == null) {
+            return;
+        }
+        if ("".equals(name)) {
+            return;
+        }
+        pet.setName(name);
 
+        List<Pet> addPets = Lists.newArrayList(pet);
+        pushUpdateBag(playerId, addPets, Collections.EMPTY_LIST);
+
+        PetChangeVO vo = new PetChangeVO();
+        vo.playerId = playerId;
+        vo.petId = petId;
+        pet.setShowConfigID(pet.getShowConfigID());
+        vo.name = pet.getName();
+        Player player = playerService.getPlayer(playerId);
+        sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
+    }
+
+    public void addAllPet(int playerId) {
+        for (Object obj : GameData.getConfigs(PetConfig.class)) {
+            PetConfig cfg = (PetConfig) obj;
+            if (cfg.type == 1) {
+                addPet(playerId, cfg.id);
+            }
+        }
+    }
     ///////////////////////宠物玩法
 
     /**

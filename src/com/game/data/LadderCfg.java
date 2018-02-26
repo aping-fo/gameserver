@@ -12,4 +12,5 @@ public class LadderCfg {
 	public int[] PkReward;//每次战斗奖励
 	public int[] FinalReward;//最终排名奖励
 	public int grading;//段位
+	public String gradingName;//段位名称
 }
