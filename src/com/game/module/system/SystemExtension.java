@@ -1,6 +1,7 @@
 package com.game.module.system;
 
 import com.game.module.RandomReward.RandomRewardService;
+import com.game.module.activity.ActivityService;
 import com.game.module.goods.EquipService;
 import com.game.module.pet.PetService;
 import com.game.util.ConfigData;
@@ -72,6 +73,8 @@ public class SystemExtension {
 	private EquipService equipService;
 	@Autowired
 	private PetService petService;
+	@Autowired
+	private ActivityService activityService;
 	// 设置性能监控的
 	@UnLogin
 	@Command(9904)
@@ -84,6 +87,7 @@ public class SystemExtension {
 		ConfigData.init();
 		randomRewardService.handleInit();
 		equipService.handleInit();
+		activityService.reloadConfig();
         ServerLogger.warn("reload finish....");
 		return null;
 	}

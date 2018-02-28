@@ -112,4 +112,20 @@
 	<des></des>
 	<viewname>SignView</viewname>
 </config>
+<config>
+	<id>8</id>
+	<name>在线时长奖励</name>
+	<Conds></Conds>
+	<ActivityType>7</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>7</sort>
+	<des></des>
+	<viewname>OnlineTiemRewardView</viewname>
+</config>
 </root>

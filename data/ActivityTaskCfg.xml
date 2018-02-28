@@ -407,4 +407,37 @@
 	<Param0></Param0>
 	<des>达到90级可以领取</des>
 </config>
+<config>
+	<id>50</id>
+	<name>5分钟在线奖励</name>
+	<ActivityId>8</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[8,60]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>51</id>
+	<name>10分钟在线奖励</name>
+	<ActivityId>8</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[8,120]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>52</id>
+	<name>15分钟在线奖励</name>
+	<ActivityId>8</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[8,180]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
 </root>

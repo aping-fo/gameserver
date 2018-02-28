@@ -4,18 +4,19 @@
 	<id>1</id>
 	<name>龙图腾</name>
 	<clip>[900001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrsInfo>
+	<attrs>[[1,640],[1,1280],[1,1920],[1,2560],[1,3200],[1,3840]]</attrs>
+	<attrsInfo>[[1,640],[1,1280],[1,1920],[1,2560],[1,3200],[1,3840]]</attrsInfo>
 	<components>[[9011001,1],[9011002,1],[9011003,1],[9011004,1],[9011005,1],[9011006,1]]</components>
 	<decompose>[[10,10,10,10,10,10],[9011001,9011002,9011003,9011004,9011005,9011006]]</decompose>
 	<partIcon>[9000,9001,9002,9003,9004,9005,9006]</partIcon>
-	<desc>碎了</desc>
+	<desc>以玉石加玄黄所制巨龙图腾,确立了遥远东方秘土上永恒的精神支柱。
+据说,拥有便能得到支配万物心灵之神秘力量。</desc>
 	<model>31106</model>
 	<renderer>Artifact</renderer>
 	<effectPath>Bone001</effectPath>
 	<modelSize>[284,284,284]</modelSize>
 	<modelRotate>[50,200,15]</modelRotate>
-	<modelPos>[-8,8,458]</modelPos>
+	<modelPos>[-8,8,200]</modelPos>
 	<icon>dragon</icon>
 	<imgTitle>dragon3</imgTitle>
 	<bgName>Artifact4_Bg.jpg</bgName>
@@ -24,8 +25,8 @@
 	<id>2</id>
 	<name>镇魂灯</name>
 	<clip>[700001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,103]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,103]]</attrsInfo>
+	<attrs>[[2,27],[2,53],[2,80],[2,107],[2,133],[2,160]]</attrs>
+	<attrsInfo>[[2,27],[2,53],[2,80],[2,107],[2,133],[2,160]]</attrsInfo>
 	<components>[[7011001,1],[7011002,1],[7011003,1],[7011004,1],[7011005,1],[7011006,1]]</components>
 	<decompose>[[10,10,10,10,10,10],[7011001,7011002,7011003,7011004,7011005,7011006]]</decompose>
 	<partIcon>[7000,7001,7002,7003,7004,7005,7006]</partIcon>
@@ -36,7 +37,7 @@
 	<effectPath>31104/Dummy001</effectPath>
 	<modelSize>[467,467,467]</modelSize>
 	<modelRotate>[325,0,330]</modelRotate>
-	<modelPos>[-238,-228,330]</modelPos>
+	<modelPos>[-238,-228,200]</modelPos>
 	<icon>lamp</icon>
 	<imgTitle>lamp3</imgTitle>
 	<bgName>Artifact4_Bg.jpg</bgName>
@@ -45,8 +46,8 @@
 	<id>3</id>
 	<name>月牙石</name>
 	<clip>[600001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,102]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,102]]</attrsInfo>
+	<attrs>[[3,20],[3,40],[3,60],[3,80],[3,100],[3,120]]</attrs>
+	<attrsInfo>[[3,20],[3,40],[3,60],[3,80],[3,100],[3,120]]</attrsInfo>
 	<components>[[6011001,1],[6011002,1],[6011003,1],[6011004,1],[6011005,1],[6011006,1]]</components>
 	<decompose>[[10,10,10,10,10,10],[6011001,6011002,6011003,6011004,6011005,6011006]]</decompose>
 	<partIcon>[6000,6001,6002,6003,6004,6005,6006]</partIcon>
@@ -58,7 +59,7 @@
 	<effectPath>31102/Dummy001</effectPath>
 	<modelSize>[412,412,412]</modelSize>
 	<modelRotate>[0,0,0]</modelRotate>
-	<modelPos>[-112,-62,330]</modelPos>
+	<modelPos>[-112,-62,200]</modelPos>
 	<icon>stone</icon>
 	<imgTitle>stone3</imgTitle>
 	<bgName>Artifact3_Bg.jpg</bgName>
@@ -67,18 +68,19 @@
 	<id>4</id>
 	<name>魔眼螺</name>
 	<clip>[1000001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrsInfo>
+	<attrs>[[4,17],[4,33],[4,50],[4,67],[4,83],[4,100]]</attrs>
+	<attrsInfo>[[4,17],[4,33],[4,50],[4,67],[4,83],[4,100]]</attrsInfo>
 	<components>[[10011001,1],[10011002,1],[10011003,1],[10011004,1],[10011005,1],[10011006,1]]</components>
 	<decompose>[[10,10,10,10,10,10],[10011001,10011002,10011003,10011004,10011005,10011006]]</decompose>
 	<partIcon>[10000,10001,10002,10003,10004,10005,10006]</partIcon>
-	<desc>你为什么不问问神奇海螺呢</desc>
+	<desc>蓝色的魔眼,生长在风谷海螺中。
+拥有侦查能力,可以轻易洞悉人内心的喜怒哀乐等情绪,并迷惑人的神智。</desc>
 	<model>31107</model>
 	<renderer>Artifact</renderer>
 	<effectPath>Bone001</effectPath>
 	<modelSize>[435,435,435]</modelSize>
 	<modelRotate>[345,180,0]</modelRotate>
-	<modelPos>[-104,-247,327]</modelPos>
+	<modelPos>[-104,-247,200]</modelPos>
 	<icon>conch</icon>
 	<imgTitle>conch3</imgTitle>
 	<bgName>Artifact3_Bg.jpg</bgName>
@@ -87,8 +89,8 @@
 	<id>5</id>
 	<name>蝎子王</name>
 	<clip>[500001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,101]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,101]]</attrsInfo>
+	<attrs>[[5,30],[5,60],[5,90],[5,120],[5,150],[5,180]]</attrs>
+	<attrsInfo>[[5,30],[5,60],[5,90],[5,120],[5,150],[5,180]]</attrsInfo>
 	<components>[[5011001,1],[5011002,1],[5011003,1],[5011004,1],[5011005,1],[5011006,1]]</components>
 	<decompose>[[10,10,10,10,10,10],[5011001,5011002,5011003,5011004,5011005,5011006]]</decompose>
 	<partIcon>[5000,5001,5002,5003,5004,5005,5006]</partIcon>
@@ -99,7 +101,7 @@
 	<effectPath>31103/Dummy001</effectPath>
 	<modelSize>[535,535,535]</modelSize>
 	<modelRotate>[22,125,342]</modelRotate>
-	<modelPos>[-107,-175,412]</modelPos>
+	<modelPos>[-107,-175,200]</modelPos>
 	<icon>scorpion</icon>
 	<imgTitle>scorpion3</imgTitle>
 	<bgName>Artifact2_Bg.jpg</bgName>
@@ -108,8 +110,8 @@
 	<id>6</id>
 	<name>亡灵皿</name>
 	<clip>[800001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrsInfo>
+	<attrs>[[6,30],[6,60],[6,90],[6,120],[6,150],[6,180]]</attrs>
+	<attrsInfo>[[6,30],[6,60],[6,90],[6,120],[6,150],[6,180]]</attrsInfo>
 	<components>[[8011001,1],[8011002,1],[8011003,1],[8011004,1],[8011005,1],[8011006,1]]</components>
 	<decompose>[[10,10,10,10,10,10],[8011001,8011002,8011003,8011004,8011005,8011006]]</decompose>
 	<partIcon>[8000,8001,8002,8003,8004,8005,8006]</partIcon>
@@ -121,7 +123,7 @@
 	<effectPath>Bone001</effectPath>
 	<modelSize>[467,467,467]</modelSize>
 	<modelRotate>[340,0,0]</modelRotate>
-	<modelPos>[-98,-226,330]</modelPos>
+	<modelPos>[-98,-226,200]</modelPos>
 	<icon>wanqimin</icon>
 	<imgTitle>wanqimin3</imgTitle>
 	<bgName>Artifact2_Bg.jpg</bgName>
@@ -130,8 +132,8 @@
 	<id>7</id>
 	<name>摸金符</name>
 	<clip>[400001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrsInfo>
+	<attrs>[[2,27],[2,53],[2,80],[2,107],[2,133],[2,160]]</attrs>
+	<attrsInfo>[[2,27],[2,53],[2,80],[2,107],[2,133],[2,160]]</attrsInfo>
 	<components>[[4011001,1],[4011002,1],[4011003,1],[4011004,1],[4011005,1],[4011006,1]]</components>
 	<decompose>[[10,10,10,10,10,10],[4011001,4011002,4011003,4011004,4011005,4011006]]</decompose>
 	<partIcon>[4000,4001,4002,4003,4004,4005,4006]</partIcon>
@@ -141,7 +143,7 @@
 	<effectPath>pendant_1</effectPath>
 	<modelSize>[270,270,270]</modelSize>
 	<modelRotate>[8,211,4]</modelRotate>
-	<modelPos>[-149,-268,330]</modelPos>
+	<modelPos>[-149,-268,200]</modelPos>
 	<icon>mojinfu</icon>
 	<imgTitle>mojinfu3</imgTitle>
 	<bgName>Artifact1_Bg.jpg</bgName>
@@ -150,18 +152,19 @@
 	<id>8</id>
 	<name>搬山印</name>
 	<clip>[1100001,100]</clip>
-	<attrs>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrs>
-	<attrsInfo>[[1,100],[2,100],[3,100],[4,100],[5,100],[6,100]]</attrsInfo>
+	<attrs>[[3,20],[3,40],[3,60],[3,80],[3,100],[3,120]]</attrs>
+	<attrsInfo>[[3,20],[3,40],[3,60],[3,80],[3,100],[3,120]]</attrsInfo>
 	<components>[[11011001,1],[11011002,1],[11011003,1],[11011004,1],[11011005,1],[11011006,1]]</components>
 	<decompose>[[10,10,10,10,10,10],[11011001,11011002,11011003,11011004,11011005,11011006]]</decompose>
 	<partIcon>[11000,11001,11002,11003,11004,11005,11006]</partIcon>
-	<desc>合格</desc>
+	<desc>为精绝之地争夺重宝,内蕴浩大无俦之力,同时也有惊人的毁灭之力。
+据说既能降除一切妖魔,也能轻易毁掉持有之人。</desc>
 	<model>31108</model>
 	<renderer>Artifact</renderer>
 	<effectPath>Bone001</effectPath>
 	<modelSize>[353,353,353]</modelSize>
 	<modelRotate>[340,0,0]</modelRotate>
-	<modelPos>[-98,-137,300]</modelPos>
+	<modelPos>[-98,-137,200]</modelPos>
 	<icon>mark</icon>
 	<imgTitle>mark3</imgTitle>
 	<bgName>Artifact1_Bg.jpg</bgName>

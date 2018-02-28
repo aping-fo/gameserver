@@ -209,7 +209,7 @@ public class TitleService {
             if (config.period != 0) {
                 param.time = 7 - localDate.getDayOfWeek().getValue();
             }
-            data.getTitleTypeMap().get(config.titleSubType).get(titleId).isOpenFlag();
+            param.openFlag = data.getTitleTypeMap().get(config.titleSubType).get(titleId).isOpenFlag();
             listParam.params.add(param);
         }
         return listParam;

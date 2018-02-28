@@ -553,6 +553,190 @@
 	<isPosAboveGround>0</isPosAboveGround>
 </config>
 <config>
+	<id>352011</id>
+	<model>30202</model>
+	<type></type>
+	<AI>352011</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>展示场景左传送门</name>
+	<desc>近战</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>4000000</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>300</physicDefense>
+	<crit>30</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed></logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>0</isPosAboveGround>
+</config>
+<config>
+	<id>352012</id>
+	<model>30202</model>
+	<type></type>
+	<AI>352012</AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>展示场景右传送门</name>
+	<desc>近战</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>4000000</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>300</physicDefense>
+	<crit>30</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed></logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>0</isPosAboveGround>
+</config>
+<config>
+	<id>352013</id>
+	<model>30214</model>
+	<type></type>
+	<AI></AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>酒保</name>
+	<desc>近战</desc>
+	<scale>1.39</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>4000000</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>300</physicDefense>
+	<crit>30</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed></logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>0</isPosAboveGround>
+</config>
+<config>
+	<id>352014</id>
+	<model>30215</model>
+	<type></type>
+	<AI></AI>
+	<AppointAI></AppointAI>
+	<icon></icon>
+	<name>纤夫</name>
+	<desc>近战</desc>
+	<scale>1</scale>
+	<lev>1</lev>
+	<showName></showName>
+	<hp>4000000</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>300</physicDefense>
+	<crit>30</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed></logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>1</banStrickenFly>
+	<lyingDownBuffId></lyingDownBuffId>
+	<forbitCameraShake></forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam></hurtProtectParam>
+	<controlProtectParam></controlProtectParam>
+	<skillId></skillId>
+	<skillIdEx></skillIdEx>
+	<behitAction></behitAction>
+	<flyAction></flyAction>
+	<downAction></downAction>
+	<getupAction></getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>0</isPosAboveGround>
+</config>
+<config>
 	<id>350011</id>
 	<model>30202</model>
 	<type></type>
@@ -3405,52 +3589,6 @@
 	<isPosAboveGround>1</isPosAboveGround>
 </config>
 <config>
-	<id>139999</id>
-	<model>20303</model>
-	<type>3</type>
-	<AI>20303001</AI>
-	<AppointAI></AppointAI>
-	<icon>20303</icon>
-	<name>红吼怪</name>
-	<desc>近战</desc>
-	<scale>1</scale>
-	<lev>1</lev>
-	<showName></showName>
-	<hp>100000</hp>
-	<physicAttack>1</physicAttack>
-	<physicDefense>90000</physicDefense>
-	<crit>1</crit>
-	<symptom>1</symptom>
-	<resistanceProps></resistanceProps>
-	<logicBaseSpeed>2</logicBaseSpeed>
-	<dropGoods></dropGoods>
-	<banStrickenFly>0</banStrickenFly>
-	<lyingDownBuffId></lyingDownBuffId>
-	<forbitCameraShake></forbitCameraShake>
-	<hasDeadSkill></hasDeadSkill>
-	<deadRocketID></deadRocketID>
-	<duelCameraAnimID>11101111</duelCameraAnimID>
-	<hurtProtectParam></hurtProtectParam>
-	<controlProtectParam></controlProtectParam>
-	<skillId>[20303001,20303002,20303003]</skillId>
-	<skillIdEx></skillIdEx>
-	<behitAction>[20303101,20303102]</behitAction>
-	<flyAction>20303201</flyAction>
-	<downAction>20303202</downAction>
-	<getupAction>20303301</getupAction>
-	<hudOffset></hudOffset>
-	<bornBuff></bornBuff>
-	<skillBuff></skillBuff>
-	<frozonBuff></frozonBuff>
-	<giddyBuff></giddyBuff>
-	<fossilBuff></fossilBuff>
-	<poisonBuff></poisonBuff>
-	<flareBuff></flareBuff>
-	<bloodedBuff></bloodedBuff>
-	<leadawayParam></leadawayParam>
-	<isPosAboveGround>1</isPosAboveGround>
-</config>
-<config>
 	<id>170031</id>
 	<model>20904</model>
 	<type>1</type>
@@ -3876,9 +4014,9 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>172131</hp>
-	<physicAttack>2928</physicAttack>
-	<physicDefense>836</physicDefense>
+	<hp>68852</hp>
+	<physicAttack>6147</physicAttack>
+	<physicDefense>1757</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -3922,9 +4060,9 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>172131</hp>
-	<physicAttack>3904</physicAttack>
-	<physicDefense>1115</physicDefense>
+	<hp>137705</hp>
+	<physicAttack>6454</physicAttack>
+	<physicDefense>1845</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -3968,9 +4106,9 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>172131</hp>
-	<physicAttack>3904</physicAttack>
-	<physicDefense>1115</physicDefense>
+	<hp>206557</hp>
+	<physicAttack>6777</physicAttack>
+	<physicDefense>1937</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -4014,9 +4152,9 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>172131</hp>
-	<physicAttack>3904</physicAttack>
-	<physicDefense>1115</physicDefense>
+	<hp>275410</hp>
+	<physicAttack>7116</physicAttack>
+	<physicDefense>2034</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -4060,9 +4198,9 @@
 	<scale>1</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>172131</hp>
-	<physicAttack>3904</physicAttack>
-	<physicDefense>1115</physicDefense>
+	<hp>344262</hp>
+	<physicAttack>7472</physicAttack>
+	<physicDefense>2136</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -4382,9 +4520,9 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>344262</hp>
-	<physicAttack>2928</physicAttack>
-	<physicDefense>836</physicDefense>
+	<hp>306010</hp>
+	<physicAttack>7806</physicAttack>
+	<physicDefense>2230</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -4428,9 +4566,9 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>344262</hp>
-	<physicAttack>2928</physicAttack>
-	<physicDefense>836</physicDefense>
+	<hp>306010</hp>
+	<physicAttack>7806</physicAttack>
+	<physicDefense>2230</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -4474,9 +4612,9 @@
 	<scale>1</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>344262</hp>
-	<physicAttack>2928</physicAttack>
-	<physicDefense>836</physicDefense>
+	<hp>306010</hp>
+	<physicAttack>7806</physicAttack>
+	<physicDefense>2230</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -4520,9 +4658,9 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>344262</hp>
-	<physicAttack>2928</physicAttack>
-	<physicDefense>836</physicDefense>
+	<hp>306010</hp>
+	<physicAttack>7806</physicAttack>
+	<physicDefense>2230</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -4566,9 +4704,9 @@
 	<scale>1</scale>
 	<lev>1</lev>
 	<showName></showName>
-	<hp>344262</hp>
-	<physicAttack>2928</physicAttack>
-	<physicDefense>836</physicDefense>
+	<hp>306010</hp>
+	<physicAttack>7806</physicAttack>
+	<physicDefense>2230</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -44300,14 +44438,14 @@
 </config>
 <config>
 	<id>31663</id>
-	<model>20306</model>
+	<model>20305</model>
 	<type>3</type>
-	<AI>10000</AI>
+	<AI>20305001</AI>
 	<AppointAI></AppointAI>
-	<icon>20306</icon>
-	<name>太阳神鹰</name>
+	<icon>20305</icon>
+	<name>精绝女王</name>
 	<desc>x</desc>
-	<scale>1.2</scale>
+	<scale>1</scale>
 	<lev>864</lev>
 	<showName></showName>
 	<hp>1432131</hp>
@@ -44326,12 +44464,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20306001,20306002,20306003]</skillId>
+	<skillId>[20305001,20305002,20305003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20306101,20306102]</behitAction>
-	<flyAction>20306201</flyAction>
-	<downAction>20306202</downAction>
-	<getupAction>20306301</getupAction>
+	<behitAction>[20305101,20305102]</behitAction>
+	<flyAction>20305201</flyAction>
+	<downAction>20305202</downAction>
+	<getupAction>20305301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102,2131601,2131602]</bornBuff>
 	<skillBuff></skillBuff>
@@ -44409,7 +44547,7 @@
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
 	<logicBaseSpeed>500</logicBaseSpeed>
-	<dropGoods>[1001]</dropGoods>
+	<dropGoods>[1002]</dropGoods>
 	<banStrickenFly>1</banStrickenFly>
 	<lyingDownBuffId></lyingDownBuffId>
 	<forbitCameraShake></forbitCameraShake>
@@ -44455,7 +44593,7 @@
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
 	<logicBaseSpeed>500</logicBaseSpeed>
-	<dropGoods>[1001]</dropGoods>
+	<dropGoods>[1003]</dropGoods>
 	<banStrickenFly>1</banStrickenFly>
 	<lyingDownBuffId></lyingDownBuffId>
 	<forbitCameraShake></forbitCameraShake>
@@ -44501,7 +44639,7 @@
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
 	<logicBaseSpeed>500</logicBaseSpeed>
-	<dropGoods>[1001]</dropGoods>
+	<dropGoods>[1004]</dropGoods>
 	<banStrickenFly>1</banStrickenFly>
 	<lyingDownBuffId></lyingDownBuffId>
 	<forbitCameraShake></forbitCameraShake>

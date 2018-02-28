@@ -53,6 +53,8 @@ public class PlayerVo implements IProtocol {
 	public List<Integer> newHandleSteps;//引导步骤
 	public String userName;//渠道唯一标志
 	public String serverName;//区服名
+	public int onlineTime;//在线时长(秒)
+	public int gatewayId;//gatewayId
 
 
 	public void decode(BufferBuilder bb) {
@@ -104,6 +106,8 @@ public class PlayerVo implements IProtocol {
 		this.newHandleSteps = bb.getIntList();
 		this.userName = bb.getString();
 		this.serverName = bb.getString();
+		this.onlineTime = bb.getInt();
+		this.gatewayId = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -155,5 +159,7 @@ public class PlayerVo implements IProtocol {
 		bb.putIntList(this.newHandleSteps);
 		bb.putString(this.userName);
 		bb.putString(this.serverName);
+		bb.putInt(this.onlineTime);
+		bb.putInt(this.gatewayId);
 	}
 }

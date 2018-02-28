@@ -1025,4 +1025,17 @@ public class GoodsService {
         //goodsService.refreshGoodsToClient(playerId, goodsService.toVO(goods));
 		return ret;
 	}
+
+	public ListParam<SGoodsVo> getOtherEquips(int playerId,int otherId) {
+		ListParam<SGoodsVo> result = new ListParam<SGoodsVo>();
+		Collection<Goods> all = getPlayerBag(otherId).getAllGoods().values();
+		int index = 0;
+		result.params = new ArrayList<>(all.size());
+		for (Goods g : all) {
+			if(g.getStoreType() == Goods.EQUIP) {
+				result.params.add(toVO(g));
+			}
+		}
+		return result;
+	}
  }

@@ -26,7 +26,6 @@ import io.netty.channel.Channel;
 import io.netty.util.AttributeKey;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.time.DayOfWeek;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -106,7 +105,7 @@ public class PlayerExtension {
 	@Command(1002)
 	public Object createRole(int playerId, CRegVo param, Channel channel) {
 		// 连接数太多
-		RegResuleVo result = new RegResuleVo();
+		RegResultVo result = new RegResultVo();
 		if (SessionManager.getInstance().getOnlineCount() > SysConfig.maxCon) {
 			result.code = Response.TOO_MANY_CON;
 			return result;
@@ -160,7 +159,9 @@ public class PlayerExtension {
 		result.roleId = String.valueOf(player.getPlayerId());
 		result.roleName = player.getName();
 		result.createTime = String.valueOf(player.getRegTime().getTime()/1000);
-
+		result.roleCareer = player.getVocation();
+		result.gatewayId = SysConfig.gatewayId;
+		
 		SessionManager.sendDataInner(channel, 1003, loginResult);
 
 		//report create log
@@ -296,7 +297,7 @@ public class PlayerExtension {
 		return null;
 	}
 
-	@Command(101)
+	@Command(10101)
 	public Object feedback(int playerId, StringParam param){
 		IntParam result = new IntParam();
 		result.param = Response.SUCCESS;

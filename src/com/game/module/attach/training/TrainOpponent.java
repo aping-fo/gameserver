@@ -14,8 +14,26 @@ public class TrainOpponent {
 	private int vocation;
 	private int fashionId;
 	private int weaponId;
+	private int fight;
+	private int title;
 	private List<Integer> curSkills;// 当前技能
 	private List<Integer> curCards;// 当前技能卡id
+
+	public int getFight() {
+		return fight;
+	}
+
+	public void setFight(int fight) {
+		this.fight = fight;
+	}
+
+	public int getTitle() {
+		return title;
+	}
+
+	public void setTitle(int title) {
+		this.title = title;
+	}
 
 	public int getPlayerId() {
 		return playerId;

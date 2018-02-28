@@ -151,10 +151,20 @@ public class PlayerData {
 	private String  serverName;
 
 	private boolean robotFlag;
+	//在线时长
+	private int onlineTime;
 
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+	public int getOnlineTime() {
+		return onlineTime;
+	}
+
+	public void setOnlineTime(int onlineTime) {
+		this.onlineTime = onlineTime;
 	}
 
 	public boolean isRobotFlag() {

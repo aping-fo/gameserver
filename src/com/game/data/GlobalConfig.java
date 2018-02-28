@@ -54,7 +54,7 @@ public class GlobalConfig {
 	public int strengthTicketAdd;//强化券增加概率
 	public Map<Integer,int[]> jewelCost;//宝石升级消耗道具类型
 	public Map<Integer,int[]> jewelOpenLev;//宝石孔开启等级
-	public int clearCostCoin;//洗练单次消耗金币
+	public int clearCostCoin;//洗练单次消耗洗练石id16000
 	public int clearCostDiamond;//洗练单次锁定钻石
 	public float[] fightParams;//战力参数
 	public int reviveCount;//单次副本复活次数
@@ -166,4 +166,5 @@ public class GlobalConfig {
 	public int[][] cardLvUpPrice;//技能卡合成价格
 	public float[] mainCityMapParas;//主城功能地图移动参数(移动速度/左边X限制/右边X限制)
 	public Map<Integer,Integer> petMutateItemRate;//宠物变异概率加成物品及加成概率
+	public float killedTimesFactor;//死亡次数因子
 }

@@ -230,7 +230,7 @@ public class TaskService implements Dispose {
         }*/
         for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
             TaskConfig taskConfig = (TaskConfig) config;
-            if(taskConfig.level <= 1) {
+            if (taskConfig.level <= 1) {
                 addNewTask(playerId, taskConfig.id, false);
             }
         }
@@ -240,18 +240,19 @@ public class TaskService implements Dispose {
         taskDao.insert(playerId);
     }
 
-    public void onLogin(int playerId){
+    public void onLogin(int playerId) {
         PlayerTask task = new PlayerTask();
         Map<Integer, Task> taskMap = getPlayerTask(playerId).getTasks();
         for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
             TaskConfig taskConfig = (TaskConfig) config;
-            if(!taskMap.containsKey(taskConfig.id)){
-                if(taskConfig.level <= 1) {
+            if (!taskMap.containsKey(taskConfig.id)) {
+                if (taskConfig.level <= 1) {
                     addNewTask(playerId, taskConfig.id, false);
                 }
             }
         }
     }
+
     public Task addNewTask(int playerId, int taskId) {
         return addNewTask(playerId, taskId, true);
     }
@@ -285,21 +286,20 @@ public class TaskService implements Dispose {
                 || config.finishType == Task.TYPE_LADDER_RANK
                 || config.finishType == Task.TYPE_WB_RANK
                 || config.finishType == Task.TYPE_ACHIEVEMENT_RANK) {
-            if (task.getCount() !=0 && task.getCount() <= count) {
+            if (task.getCount() != 0 && task.getCount() <= count) {
                 task.setState(Task.STATE_FINISHED);
                 return true;
             }
-        } else if(config.finishType == Task.TYPE_HIT) {
-            if(task.getCount() <= count){
+        } else if (config.finishType == Task.TYPE_HIT) {
+            if (task.getCount() <= count) {
                 task.setState(Task.STATE_FINISHED);
                 return true;
             }
-        }
-        else {
+        } else {
             if (task.getCount() >= count) {
                 task.setCount(count);
                 task.setState(Task.STATE_FINISHED);
-                if(config.taskType < 6) { //除开成就任务
+                if (config.taskType < 6) { //除开成就任务
                     //任务称号
                     titleService.complete(playerId, TitleConsts.TASK, task.getTaskId(), ActivityConsts.UpdateType.T_VALUE);
                 }
@@ -540,17 +540,17 @@ public class TaskService implements Dispose {
                     return false;
                 }
 
-                if(config.finishType == Task.TYPE_PASS_TIME
-                        || config.finishType == Task.TYPE_HIT){
+                if (config.finishType == Task.TYPE_PASS_TIME
+                        || config.finishType == Task.TYPE_HIT) {
                     task.setCount(params[count - 1]);
-                }else {
+                } else {
                     task.alterCount(params[count - 1]);
                 }
             }
 
             checkFinished(task, playerId);
             if (task.getState() == Task.STATE_FINISHED) {
-                if(config.taskType < 6) { //除开成就任务
+                if (config.taskType < 6) { //除开成就任务
                     data.setFinishTaskCount(1);
                     doTask(playerId, Task.TYPE_TASK_COUNT, data.getFinishTaskCount());
                 }
@@ -558,7 +558,7 @@ public class TaskService implements Dispose {
 
             if (task.getCount() != oldCount || task.getState() != oldState) {
                 if (config.taskType == Task.TYPE_GANG) {
-                    if(gang != null) {
+                    if (gang != null) {
                         GMember gMember = gang.getMembers().get(playerId);
                         gMember.alterTaskContribution(1);
                         if (task.getState() == Task.STATE_FINISHED) {
@@ -600,7 +600,7 @@ public class TaskService implements Dispose {
     }
 
     public void doTask(int playerId, Map<Integer, int[]> condParams) {
-        if(condParams.isEmpty()){
+        if (condParams.isEmpty()) {
             return;
         }
         if (!SessionManager.getInstance().getAllSessions().containsKey(playerId)) {
@@ -617,9 +617,9 @@ public class TaskService implements Dispose {
         }
         if (player.getGangId() > 0) {
             Gang gang = gangService.getGang(player.getGangId());
-            if(gang != null) {
+            if (gang != null) {
                 tasks.addAll(gang.getTasks().values());
-            }else {
+            } else {
                 player.setGangId(0);
             }
         }
@@ -935,7 +935,7 @@ public class TaskService implements Dispose {
         return result;
     }
 
-    public void dailyAchievement(){
+    public void dailyAchievement() {
         ServerLogger.warn("achievement.............");
         /////成就
         RankingList<FightingRankEntity> fightRank = rankService.getRankingList(RankService.TYPE_FIGHTING);
@@ -966,11 +966,36 @@ public class TaskService implements Dispose {
 
         ListParam<LadderRankVO> ladderRank = ladderService.getLadderRank();
         i = 1;
-        for(LadderRankVO vo : ladderRank.params){
+        for (LadderRankVO vo : ladderRank.params) {
             PlayerView playerView = serialDataService.getData().getPlayerView(vo.playerId);
             playerView.setAchievementMaxRank(i);
             doTask(vo.playerId, Task.TYPE_LADDER_RANK, i);
-            i ++;
+            i++;
         }
+    }
+
+    public IntParam getAllReward(int playerId) {
+        PlayerTask playerTask = getPlayerTask(playerId);
+        List<Task> tasks = new ArrayList<>(playerTask.getTasks().values());
+        List<GoodsEntry> reward = Lists.newArrayList();
+        List<Task> updateTasks = Lists.newArrayList();
+        for (Task task : tasks) {
+            if (task.getType() >= 6) {
+                if (task.getState() == Task.STATE_FINISHED) {
+                    task.setState(Task.STATE_SUBMITED);
+                    updateTasks.add(task);
+                    TaskConfig config = ConfigData.getConfig(TaskConfig.class, task.getTaskId());
+                    for (int[] arr : config.rewards) {
+                        reward.add(new GoodsEntry(arr[0], arr[1]));
+                    }
+                }
+            }
+        }
+
+        goodsService.addRewards(playerId, reward, LogConsume.ACHIEVEMENT_GET_ALL);
+        updateTaskToClient(playerId,updateTasks);
+        IntParam param = new IntParam();
+        param.param = Response.SUCCESS;
+        return param;
     }
 }

@@ -5,6 +5,7 @@ import com.game.data.GangTrainingCfg;
 import com.game.module.activity.ActivityService;
 import com.game.module.activity.WelfareCardService;
 import com.game.module.admin.MessageService;
+import com.game.module.artifact.ArtifactService;
 import com.game.module.attach.arena.ArenaExtension;
 import com.game.module.attach.arena.ArenaLogic;
 import com.game.module.attach.endless.EndlessAttach;
@@ -688,5 +689,11 @@ public class GmService {
     trainingLogic trainin;
     public void resetOpponent(int playerId, String... params){
         trainin.resetOpponent();
+    }
+
+    @Autowired
+    ArtifactService artifactService;
+    public void artifact(int playerId, String... params){
+        artifactService.gmArtifact(playerId);
     }
 }

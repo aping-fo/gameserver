@@ -130,4 +130,9 @@ public class BagExtension {
 	public Object lockItem(int playerId,Int2Param param){
 		return  goodsService.lockItem(playerId, param.param1,param.param2);
 	}
+
+	@Command(1216)
+	public Object getOtherEquips(int playerId,IntParam param){
+		return  goodsService.getOtherEquips(playerId, param.param);
+	}
 }

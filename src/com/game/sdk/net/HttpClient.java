@@ -1,6 +1,7 @@
 package com.game.sdk.net;
 
 import com.game.SysConfig;
+import com.game.sdk.utils.EncoderHandler;
 import com.server.util.ServerLogger;
 import org.apache.http.HttpEntity;
 import org.apache.http.NameValuePair;
@@ -114,9 +115,11 @@ public class HttpClient {
         CloseableHttpResponse response = null;
         try {
             String url = "http://" + SysConfig.eratingHost + "/agip";
+            //String url = "http://127.0.0.1:9801";
             HttpPost httpPost = new HttpPost(url); //"http://113.208.129.53:14820/agip"
             httpPost.setHeader("Pragma", "no-cache");
             httpPost.setHeader("Accept", "*/*");
+
             StringEntity entity = new StringEntity(content, "UTF-8");
             httpPost.setEntity(entity);
             response = httpclient.execute(httpPost);

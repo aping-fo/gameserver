@@ -2,10 +2,7 @@ package com.game.module.admin;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +29,13 @@ import com.game.util.StringUtil;
 import com.game.util.TimeUtil;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 
 @Service
 public class ManagerService implements InitHandler{
@@ -97,7 +101,37 @@ public class ManagerService implements InitHandler{
 		}
 		return "command format err!";
 	}
-	
+
+	public void recharge(String content) {
+		try {
+			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder db = factory.newDocumentBuilder();
+			Document doc = db.parse(content);
+			Element root = doc.getDocumentElement();
+
+			NodeList nodes = root.getChildNodes();
+			for (int i = 0; i < nodes.getLength(); i++) {
+				Node data = nodes.item(i);
+				if (data.getNodeType() == Node.ELEMENT_NODE) {
+					Map<String, String> item = new HashMap<String, String>();
+					int key = 0;
+					NodeList contents = data.getChildNodes();
+					for (int j = 0; j < contents.getLength(); j++) {
+						Node n = contents.item(j);
+						if (n.getNodeType() == Node.ELEMENT_NODE) {
+							if (n.getNodeName().startsWith("id")) {
+								key = Integer.valueOf(n.getTextContent().trim());
+							}
+							item.put(n.getNodeName().trim(), n.getTextContent().trim());
+						}
+					}
+				}
+			}
+		}catch (Exception e){
+
+		}
+
+	}
 	/**
 	 * 充值
 	 */

@@ -13,8 +13,7 @@ public class ActivityConsts {
         public static final int T_SEVEN_DAYS = 3; //7日登录
         public static final int T_NEW_ROLE = 4; //新手礼包
         public static final int T_LEVEL_UP = 5; //冲级
-        public static final int T_WEEKLY_CARD = 6; //周卡
-        public static final int T_MONTHLY_CARD = 7; //月卡
+        public static final int T_ONLINE_TIME = 7; //在线活动
     }
 
     /**

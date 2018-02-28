@@ -18,7 +18,7 @@ public class Report {
         StringBuilder sb = new StringBuilder();
         NodeName parentNode = this.getClass().getAnnotation(NodeName.class);
         if (parentNode != null) {
-            sb.append("&lt;").append(parentNode.name()).append("&gt;");
+            sb.append("<").append(parentNode.name()).append(">");
         }
         Field[] bodyFields = this.getClass().getDeclaredFields();
         for (Field field : bodyFields) {
@@ -26,7 +26,7 @@ public class Report {
             field.setAccessible(true);
             NodeName childNode = field.getAnnotation(NodeName.class);
             String name = childNode.name();
-            sb.append("lt;").append(name).append("&gt;");
+            sb.append("<").append(name).append(">");
             if (field.getType() == List.class) {
                 List<Object> objects = (List<Object>) field.get(this);
                 for (Object o : objects) {
@@ -40,11 +40,11 @@ public class Report {
             } else {
                 sb.append(field.get(this));
             }
-            sb.append("lt;/").append(name).append("&gt;");
+            sb.append("</").append(name).append(">");
             field.setAccessible(flag);
         }
         if (parentNode != null) {
-            sb.append("lt;/").append(parentNode.name()).append("&gt;");
+            sb.append("</").append(parentNode.name()).append(">");
         }
         return sb.toString();
     }

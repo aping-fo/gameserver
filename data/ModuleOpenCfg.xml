@@ -5,10 +5,10 @@
 	<uID>132</uID>
 	<name>背包</name>
 	<type>1</type>
-	<openType>1</openType>
-	<param></param>
+	<openType>3</openType>
+	<param>110101</param>
 	<icon></icon>
-	<subtype></subtype>
+	<subtype>[[1,3,110101],[2,3,110101],[3,2,20]]</subtype>
 	<position></position>
 </config>
 <config>
@@ -60,10 +60,10 @@
 	<uID>145</uID>
 	<name>装备</name>
 	<type>1</type>
-	<openType>2</openType>
-	<param>2</param>
+	<openType>3</openType>
+	<param>110102</param>
 	<icon>equip</icon>
-	<subtype>[[1,2,2],[2,2,20],[3,2,5],[4,2,11]]</subtype>
+	<subtype>[[1,3,110102],[2,2,20],[3,2,16],[4,2,28]]</subtype>
 	<position>[503,-308]</position>
 </config>
 <config>
@@ -71,8 +71,8 @@
 	<uID>149</uID>
 	<name>时装</name>
 	<type>1</type>
-	<openType>2</openType>
-	<param>9</param>
+	<openType>3</openType>
+	<param>110203</param>
 	<icon>fashion</icon>
 	<subtype></subtype>
 	<position>[394,-308]</position>
@@ -82,10 +82,10 @@
 	<uID>128</uID>
 	<name>技能</name>
 	<type>1</type>
-	<openType>2</openType>
-	<param>3</param>
+	<openType>3</openType>
+	<param>110103</param>
 	<icon>skill</icon>
-	<subtype>[[1,2,4]]</subtype>
+	<subtype>[[1,3,110105]]</subtype>
 	<position>[287,-308]</position>
 </config>
 <config>
@@ -93,8 +93,8 @@
 	<uID>129</uID>
 	<name>卡包</name>
 	<type>1</type>
-	<openType>2</openType>
-	<param>4</param>
+	<openType>3</openType>
+	<param>110105</param>
 	<icon>skillcard</icon>
 	<subtype></subtype>
 	<position>[178,-308]</position>
@@ -105,7 +105,7 @@
 	<name>神器</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>21</param>
+	<param>25</param>
 	<icon>fumo</icon>
 	<subtype></subtype>
 	<position>[-41,-308]</position>
@@ -116,7 +116,7 @@
 	<name>阵营</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>21</param>
+	<param>7</param>
 	<icon>mingge</icon>
 	<subtype></subtype>
 	<position>[-151,-308]</position>
@@ -127,9 +127,9 @@
 	<name>排行榜</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>11</param>
+	<param>15</param>
 	<icon>top2</icon>
-	<subtype>[[1,2,11],[2,2,11],[3,2,11],[4,2,12],[5,2,13],[6,2,23]]</subtype>
+	<subtype>[[1,2,15],[2,2,15],[3,3,110406],[4,2,12],[5,2,13],[6,2,23]]</subtype>
 	<position>[-624,165]</position>
 </config>
 <config>
@@ -159,8 +159,8 @@
 	<uID>122</uID>
 	<name>抽奖</name>
 	<type>1</type>
-	<openType>2</openType>
-	<param>7</param>
+	<openType>3</openType>
+	<param>110202</param>
 	<icon>card2</icon>
 	<subtype></subtype>
 	<position>[630,82]</position>
@@ -203,8 +203,8 @@
 	<uID>137</uID>
 	<name>资源副本</name>
 	<type>3</type>
-	<openType>2</openType>
-	<param>15</param>
+	<openType>3</openType>
+	<param>110301</param>
 	<icon>resourcescopy</icon>
 	<subtype></subtype>
 	<position>[11,0,-20]</position>
@@ -215,7 +215,7 @@
 	<name>世界BOSS</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>14</param>
+	<param>30</param>
 	<icon>worldboss</icon>
 	<subtype></subtype>
 	<position>[23,0,-20]</position>
@@ -226,7 +226,7 @@
 	<name>无尽漩涡</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>12</param>
+	<param>28</param>
 	<icon>infinitevortex</icon>
 	<subtype></subtype>
 	<position>[11,0,-20]</position>
@@ -236,8 +236,8 @@
 	<uID>101</uID>
 	<name>竞技场</name>
 	<type>3</type>
-	<openType>2</openType>
-	<param>10</param>
+	<openType>3</openType>
+	<param>110406</param>
 	<icon>arena</icon>
 	<subtype></subtype>
 	<position>[11,0,-20]</position>
@@ -247,8 +247,8 @@
 	<uID>104</uID>
 	<name>公会</name>
 	<type>3</type>
-	<openType>2</openType>
-	<param>13</param>
+	<openType>3</openType>
+	<param>110506</param>
 	<icon>guild</icon>
 	<subtype></subtype>
 	<position>[23,0,-20]</position>
@@ -258,8 +258,8 @@
 	<uID></uID>
 	<name>多人场景</name>
 	<type>3</type>
-	<openType>2</openType>
-	<param>4</param>
+	<openType>3</openType>
+	<param>110105</param>
 	<icon>collectively</icon>
 	<subtype></subtype>
 	<position>[23,0,-20]</position>
@@ -270,7 +270,7 @@
 	<name>时空仪</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>20</param>
+	<param>35</param>
 	<icon>spaceinstrument</icon>
 	<subtype></subtype>
 	<position></position>
@@ -281,7 +281,7 @@
 	<name>团队副本</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>25</param>
+	<param>40</param>
 	<icon>teamcopy</icon>
 	<subtype></subtype>
 	<position></position>
@@ -291,8 +291,8 @@
 	<uID>170</uID>
 	<name>宠物</name>
 	<type>1</type>
-	<openType>2</openType>
-	<param>8</param>
+	<openType>3</openType>
+	<param>110305</param>
 	<icon>pet</icon>
 	<subtype></subtype>
 	<position>[69,-308]</position>
@@ -303,7 +303,7 @@
 	<name>排位赛</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>23</param>
+	<param>22</param>
 	<icon>qualifying</icon>
 	<subtype></subtype>
 	<position>[11,0,-20]</position>
@@ -314,7 +314,7 @@
 	<name>英雄试炼</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>22</param>
+	<param>38</param>
 	<icon>herotrial</icon>
 	<subtype></subtype>
 	<position>[23,0,-20]</position>
@@ -325,7 +325,7 @@
 	<name>极限躲避</name>
 	<type>0</type>
 	<openType>2</openType>
-	<param>19</param>
+	<param>33</param>
 	<icon>resourcescopy</icon>
 	<subtype></subtype>
 	<position></position>
@@ -336,7 +336,7 @@
 	<name>疯狂宝箱</name>
 	<type>0</type>
 	<openType>2</openType>
-	<param>19</param>
+	<param>25</param>
 	<icon>resourcescopy</icon>
 	<subtype></subtype>
 	<position></position>
@@ -346,8 +346,8 @@
 	<uID></uID>
 	<name>顺手牵羊</name>
 	<type>0</type>
-	<openType>2</openType>
-	<param>15</param>
+	<openType>3</openType>
+	<param>110502</param>
 	<icon>resourcescopy</icon>
 	<subtype></subtype>
 	<position></position>
@@ -357,8 +357,8 @@
 	<uID></uID>
 	<name>金币副本</name>
 	<type>0</type>
-	<openType>2</openType>
-	<param>15</param>
+	<openType>3</openType>
+	<param>110301</param>
 	<icon>resourcescopy</icon>
 	<subtype></subtype>
 	<position></position>
@@ -369,9 +369,9 @@
 	<name>试炼场</name>
 	<type>3</type>
 	<openType>2</openType>
-	<param>4</param>
+	<param>110105</param>
 	<icon>trial</icon>
-	<subtype>[[1,2,4],[2,2,4],[3,2,4],[4,2,4],[5,2,4],[6,2,16],[7,2,16],[8,2,16],[9,2,16],[10,2,16]]</subtype>
+	<subtype>[[1,3,110105],[2,3,110105],[3,3,110105],[4,3,110105],[5,3,110105],[6,2,16],[7,2,16],[8,2,16],[9,2,16],[10,2,16]]</subtype>
 	<position></position>
 </config>
 <config>
@@ -379,10 +379,10 @@
 	<uID>181</uID>
 	<name>宠物活动</name>
 	<type>3</type>
-	<openType>2</openType>
-	<param>2</param>
+	<openType>3</openType>
+	<param>110305</param>
 	<icon>resourcescopy</icon>
-	<subtype>[[1,2,4],[2,2,4],[3,2,4],[4,2,4],[5,2,4]]</subtype>
+	<subtype>[[1,3,110305],[2,3,110305],[3,3,110305],[4,3,110305],[5,3,110305]]</subtype>
 	<position></position>
 </config>
 </root>

@@ -28,6 +28,10 @@ public class BeanManager {
 		return actx.getBean(clazz);
 	}
 
+	public static <T> T getBean(String clazz) {
+		return (T)actx.getBean(clazz);
+	}
+
 	public static void handleInit() {
 		for (InitHandler handler : initHandlers) {
 			handler.handleInit();

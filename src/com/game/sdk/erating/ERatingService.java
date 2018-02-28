@@ -59,7 +59,9 @@ public class ERatingService implements InitHandler {
             @Override
             public void run() {
                 try {
-                    //HttpClient.sendPostRequest(report.toProto());
+                    if(!SysConfig.debug) {
+                        HttpClient.sendPostRequest(report.toProto());
+                    }
                 } catch (Exception e) {
                     ServerLogger.err(e, "日志上报异常 cmd = " + report.getCommandId());
                 }

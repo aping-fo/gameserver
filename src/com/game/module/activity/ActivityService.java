@@ -57,6 +57,7 @@ public class ActivityService implements InitHandler {
     private TitleService titleService;
     @Autowired
     private TaskService taskService;
+
     @Override
     public void handleInit() {
         try {
@@ -72,7 +73,6 @@ public class ActivityService implements InitHandler {
             public void run() {
                 try {
                     doScheduleCheckActivity();
-                    System.out.println("---------------" + playerService.getPlayers().size());
                 } catch (Exception e) {
                     ServerLogger.err(e, "活动定时器异常");
                 }
@@ -91,6 +91,11 @@ public class ActivityService implements InitHandler {
             }
         }, 120, 60, TimeUnit.SECONDS);
 
+        reloadConfig();
+
+    }
+
+    public void reloadConfig(){
         for (Object obj1 : GameData.getConfigs(ActivityTaskCfg.class)) {
             ActivityTaskCfg conf = (ActivityTaskCfg) obj1;
             List<ActivityTaskCfg> list = ActivityTasks.get(conf.ActivityId);
@@ -101,7 +106,6 @@ public class ActivityService implements InitHandler {
             list.add(conf);
         }
     }
-
     /**
      * 定时检测活动任务状态
      *
@@ -301,7 +305,7 @@ public class ActivityService implements InitHandler {
                 if (at.getCond().checkComplete()) {
                     at.setState(ActivityConsts.ActivityState.T_FINISH);
                     //活动称号
-                    titleService.complete(playerId, TitleConsts.ACTIVITY,at.getActivityId(), ActivityConsts.UpdateType.T_VALUE);
+                    titleService.complete(playerId, TitleConsts.ACTIVITY, at.getActivityId(), ActivityConsts.UpdateType.T_VALUE);
                 }
                 tasks.add(at);
             }
@@ -390,6 +394,7 @@ public class ActivityService implements InitHandler {
      */
     public void dailyRest(int playerId) {
         PlayerData data = playerService.getPlayerData(playerId);
+        data.setOnlineTime(0);
         List<ActivityTask> list = Lists.newArrayList();
         for (ActivityTask at : data.getActivityTasks().values()) {
             if (at.getResetType() == ActivityConsts.ActivityTaskResetType.T_DAILY) {
@@ -457,15 +462,25 @@ public class ActivityService implements InitHandler {
         Player player = playerService.getPlayer(playerId);
         ActivityTask task = data.getActivityTasks().get(taskId);
         IntParam result = new IntParam();
+        ActivityTaskCfg config = ConfigData.getConfig(ActivityTaskCfg.class, taskId);
+        ActivityCfg activityCfg = ConfigData.getConfig(ActivityCfg.class, config.ActivityId);
+        if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_ONLINE_TIME) { //在线活动奖励领取，状态设置
+            long loginTime = player.getLastLoginTime().getTime();
+            int passTime = (int) ((System.currentTimeMillis() - loginTime) / 1000);
+            task.getCond().setValue(passTime + data.getOnlineTime());
+            if(task.getCond().checkComplete()) {
+                task.setState(ActivityConsts.ActivityState.T_FINISH);
+            }
+        }
+
         if (task.getState() != ActivityConsts.ActivityState.T_FINISH) {
             result.param = Response.ERR_PARAM;
             return result;
         }
 
-
         task.setState(ActivityConsts.ActivityState.T_AWARD);
         task.setRewardFlag(true);
-        ActivityTaskCfg config = ConfigData.getConfig(ActivityTaskCfg.class, taskId);
+
         List<GoodsEntry> itemList = Lists.newArrayList();
         for (int[] arr : config.Rewards) {
             if (arr.length == 2) {
@@ -480,14 +495,14 @@ public class ActivityService implements InitHandler {
         }
         goodsService.addRewards(playerId, itemList, LogConsume.ACTIVITY_REWARD);
 
-        ActivityCfg activityCfg = ConfigData.getConfig(ActivityCfg.class, config.ActivityId);
+
         if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_SEVEN_DAYS) {
             data.setSevenDays(data.getSevenDays() + 1);
         }
 
-        if(activityCfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY){
+        if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) {
             data.setEnergyCount(data.getEnergyCount() + 1);
-            taskService.doTask(playerId, Task.TYPE_ENERGY,data.getEnergyCount());
+            taskService.doTask(playerId, Task.TYPE_ENERGY, data.getEnergyCount());
         }
 
         ActivityCfg cfg = ConfigData.getConfig(ActivityCfg.class, task.getActivityId());
@@ -525,9 +540,9 @@ public class ActivityService implements InitHandler {
         goodsService.addRewards(playerId, config.Rewards, LogConsume.ACTIVITY_REWARD);
 
         ActivityCfg activityCfg = ConfigData.getConfig(ActivityCfg.class, config.ActivityId);
-        if(activityCfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY){
+        if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) {
             data.setEnergyCount(data.getEnergyCount() + 1);
-            taskService.doTask(playerId, Task.TYPE_ENERGY,data.getEnergyCount());
+            taskService.doTask(playerId, Task.TYPE_ENERGY, data.getEnergyCount());
         }
         pushActivityUpdate(playerId, Lists.newArrayList(task));
         result.param = Response.SUCCESS;

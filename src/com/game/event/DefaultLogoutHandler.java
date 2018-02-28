@@ -10,6 +10,7 @@ import com.game.module.group.GroupService;
 import com.game.module.ladder.LadderService;
 import com.game.module.pet.PetService;
 import com.game.module.player.Player;
+import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.Scene;
 import com.game.module.scene.SceneService;
@@ -72,12 +73,15 @@ public class DefaultLogoutHandler implements LogoutHandler{
 
 			ServerLogger.info(".....user logout:" + playerId);
 			Player player = playerService.getPlayer(playerId);
+			PlayerData playerData = playerService.getPlayerData(playerId);
+			int passTime = (int)((System.currentTimeMillis() - player.getLastLoginTime().getTime())/1000);
+			playerData.setOnlineTime(playerData.getOnlineTime() + passTime);
+
 			player.setLastLogoutTime(new Date());
 			playerService.removeChannel(player.getAccName(),SessionManager.getInstance().getChannel(playerId));
 
 			//清除副本实例
 			copyService.removeCopy(playerId);
-			
 			// 退出场景
 			sceneService.exitScene(player);
 			teamService.quit(playerId);
@@ -90,12 +94,7 @@ public class DefaultLogoutHandler implements LogoutHandler{
 				player.setY(pos[1]);
 				player.setZ(pos[2]);
 			}
-			
-			
-			// 保证以下的代码在最后
-			// 清除session
-			playerService.update(player);
-			playerService.updatePlayerData(playerId);
+
 			taskService.updateTask(playerId);
 			goodsService.updateBag(playerId);
 			petService.onLogout(playerId);
@@ -105,13 +104,16 @@ public class DefaultLogoutHandler implements LogoutHandler{
 			groupService.onLogout(playerId);
 			gangDungeonService.onLogout(playerId);
 			friendService.onLogout(playerId);
+
+			// 保证以下的代码在最后
+			// 清除session
+			playerService.update(player);
+			playerService.updatePlayerData(playerId);
 			//report logout log
 			ratingService.reportRoleLogout(player);
 			SessionManager.getInstance().removeSession(playerId);
 			AntiCheatService.getInstance().clear(playerId);
-
 			DisposeHandler.dispose(playerId);// 清除缓存
-			
 			AntiCheatService.getInstance().clear(playerId);
 			playerService.removeCache(playerId);
 			player.online = false;

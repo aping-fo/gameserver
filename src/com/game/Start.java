@@ -1,5 +1,6 @@
 package com.game;
 
+import com.game.sdk.SdkServer;
 import io.netty.util.ResourceLeakDetector;
 import io.netty.util.ResourceLeakDetector.Level;
 
@@ -57,9 +58,8 @@ public class Start {
 			
 			//管理后台的webservice 
 			ManagerServer.start();
-
-			ServerLogger.warn("server init successfully...port:"
-					+ SysConfig.port);
+			SdkServer.start();
+			ServerLogger.warn("server init successfully...port:" + SysConfig.port);
 		} catch (Exception e) {
 			ServerLogger.err(e, "start server err!");
 			System.exit(-1);

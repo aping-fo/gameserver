@@ -151,4 +151,9 @@ public class TaskExtension {
 	public Object achievementTask(int playerId, AchievementSyncVo param){
 		return taskService.achievementTask(playerId,param);
 	}
+
+	@Command(10002)
+	public Object getAllReward (int playerId, Object param){
+		return taskService.getAllReward(playerId);
+	}
 }

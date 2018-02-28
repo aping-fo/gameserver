@@ -89,6 +89,8 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
                     ServerLogger.warn("player data is null ? playerId = " + id);
                     continue;
                 }
+                opponent.setFight(player.getFight());
+                opponent.setTitle(player.getTitle());
                 opponent.setCurCards(playerData.getCurrCardIds());
                 opponent.setCurSkills(playerData.getCurSkills());
                 opponents.put(id, opponent);

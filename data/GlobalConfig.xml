@@ -51,7 +51,7 @@
 	<strengthTicketAdd>10</strengthTicketAdd>
 	<jewelCost>201:[303001];202:[304001];203:[305001];204:[306001];205:[307001];206:[308001]</jewelCost>
 	<jewelOpenLev>201:[1,1,1,1,1,1];202:[1,1,1,1,1,1];203:[1,1,1,1,1,1];204:[1,1,1,1,1,1];205:[1,1,1,1,1,1];206:[1,1,1,1,1,1];</jewelOpenLev>
-	<clearCostCoin>100</clearCostCoin>
+	<clearCostCoin>1</clearCostCoin>
 	<clearCostDiamond>10</clearCostDiamond>
 	<fightParams>[0.11,2.76,3.86,10.39,5.1,5.1]</fightParams>
 	<reviveCount>3</reviveCount>
@@ -96,7 +96,7 @@
 	<extremeEvasionHitCtrlParam>1</extremeEvasionHitCtrlParam>
 	<crazyChestHitCtrlParam>1</crazyChestHitCtrlParam>
 	<crazyChestHitPercent>20</crazyChestHitPercent>
-	<taskLivenessReward>20:[[102,5],[103,10000]];50:[[102,10],[103,100000]];80:[[102,20],[103,100000]];100:[[102,30],[103,200000]]</taskLivenessReward>
+	<taskLivenessReward>20:[[102,5],[103,1000]];50:[[102,10],[103,2000]];80:[[102,20],[103,3000]];100:[[102,30],[103,4000]]</taskLivenessReward>
 	<restoreTraversingEnergy>[10,5]</restoreTraversingEnergy>
 	<copyBackgroundIds>[8,8,7,7,6,6,5,5,3,3,4,4,2,2,1,1]</copyBackgroundIds>
 	<copyBackgroundEffects>1:3008001;2:3008001;3:3008003;4:3008004;5:3008005;6:3008006;7:3008007;8:3008008</copyBackgroundEffects>
@@ -163,5 +163,6 @@
 	<cardLvUpPrice>[[103,100],[103,1000],[103,5000],[103,10000]]</cardLvUpPrice>
 	<mainCityMapParas>[0.3,0.3,23.7]</mainCityMapParas>
 	<petMutateItemRate>68001:10;68002:20;68003:30;68004:40;68005:50</petMutateItemRate>
+	<killedTimesFactor>0.3</killedTimesFactor>
 </config>
 </root>

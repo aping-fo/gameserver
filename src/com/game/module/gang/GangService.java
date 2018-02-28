@@ -413,6 +413,9 @@ public class GangService implements InitHandler {
 
         // 退出时间
         PlayerData data = playerService.getPlayerData(playerId);
+        if(!data.getModules().contains(1041)){ //公会功能未开启
+            return Response.GUILD_DONT_OPEN;
+        }
         if (data.getLastQuitGang() > 0) {
             if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR
                     * global.quitPunish) {

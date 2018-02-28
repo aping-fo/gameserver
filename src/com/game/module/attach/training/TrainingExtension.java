@@ -64,6 +64,8 @@ public class TrainingExtension {
             opp.weapon = opponent.getWeaponId();
             opp.curCards = opponent.getCurCards();
             opp.curSkills = opponent.getCurSkills();
+            opp.chenghao = opponent.getTitle();
+            opp.zhanli = opponent.getFight();
             list.add(opp);
             if (list.size() >= 10) break;
         }

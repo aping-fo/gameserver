@@ -197,16 +197,20 @@ public class PlayerCalculator {
             if (s.getValue().size() >= 2) {
                 addSuit(player, config.twoAdd);
                 bSuitFlag |= config.twoAdd != null;
-            } else if (s.getValue().size() >= 3) {
+            }
+            if (s.getValue().size() >= 3) {
                 addSuit(player, config.threeAdd);
                 bSuitFlag |= config.threeAdd != null;
-            } else if (s.getValue().size() >= 4) {
+            }
+            if (s.getValue().size() >= 4) {
                 addSuit(player, config.fourAdd);
                 bSuitFlag |= config.fourAdd != null;
-            } else if (s.getValue().size() >= 5) {
+            }
+            if (s.getValue().size() >= 5) {
                 addSuit(player, config.fiveAdd);
                 bSuitFlag |= config.fiveAdd != null;
-            } else if (s.getValue().size() >= 6) {
+            }
+            if (s.getValue().size() >= 6) {
                 addSuit(player, config.sixAdd);
                 bSuitFlag |= config.sixAdd != null;
             }
@@ -432,13 +436,17 @@ public class PlayerCalculator {
             SuitConfig config = ConfigData.getConfig(SuitConfig.class, s.getKey());
             if (s.getValue().size() >= 2) {
                 addSuitPercent(percentAttrs, config.twoAdd);
-            } else if (s.getValue().size() >= 3) {
+            }
+            if (s.getValue().size() >= 3) {
                 addSuitPercent(percentAttrs, config.threeAdd);
-            } else if (s.getValue().size() >= 4) {
+            }
+            if (s.getValue().size() >= 4) {
                 addSuitPercent(percentAttrs, config.fourAdd);
-            } else if (s.getValue().size() >= 5) {
+            }
+            if (s.getValue().size() >= 5) {
                 addSuitPercent(percentAttrs, config.fiveAdd);
-            } else if (s.getValue().size() >= 6) {
+            }
+            if (s.getValue().size() >= 6) {
                 addSuitPercent(percentAttrs, config.sixAdd);
             }
         }

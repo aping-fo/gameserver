@@ -5,17 +5,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
-import com.game.data.ArtifactLevelUpCfg;
+import com.game.data.*;
 import com.game.params.ArtifactLevelUpVO;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
+import com.server.util.GameData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.game.data.ArtifactCfg;
-import com.game.data.GoodsConfig;
-import com.game.data.Response;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -84,7 +82,17 @@ public class ArtifactService {
 			return Response.SUCCESS;
 		}
 	}
-	
+
+
+	public void gmArtifact(int playerId){
+		for (Object obj : GameData.getConfigs(ArtifactCfg.class)) {
+			ArtifactCfg cfg = (ArtifactCfg) obj;
+			for(int[] arr : cfg.components) {
+				goodsService.addGoodsToBag(playerId, arr[0], 1, LogConsume.COMPOSE_ARTIFACT);
+			}
+		}
+	}
+
 	//分解掉多余的部件
 	public int decompose(int playerId,int id){
 		//计算多余的部位的分解碎片数量

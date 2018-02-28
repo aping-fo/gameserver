@@ -52,6 +52,7 @@ public class SysConfig {
     public static int gameId;
     public static String eratingHost;
     public static int gatewayId;
+    public static int sdkPort;
 
 
     public static void init() throws Exception {
@@ -104,6 +105,7 @@ public class SysConfig {
 
             gameId = Integer.parseInt(properties.getProperty("game_id"));
             gatewayId = Integer.parseInt(properties.getProperty("game_way_id"));
+            sdkPort = Integer.parseInt(properties.getProperty("sdk_port"));
             eratingHost = properties.getProperty("sdk_host");
 
             Profile.setOpen(Boolean.parseBoolean(properties.getProperty("profile")));

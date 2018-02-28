@@ -124,8 +124,7 @@ public class PlayerService implements InitHandler {
             if(!playerData.isRobotFlag() && System.currentTimeMillis() - player.getLastLogoutTime().getTime() > 5 * 60 * 1000){
                 updatePlayerData(player.getPlayerId());
                 update(player);
-                playerDatas.remove(player.getPlayerId());
-                players.remove(player.getPlayerId());
+                removeCache(player.getPlayerId());
             }
         }
     }
@@ -452,6 +451,9 @@ public class PlayerService implements InitHandler {
             if (gang == null) {
                 player.setGangId(0);
                 vo.gangId = 0;
+            }else {
+                vo.gangId = gang.getId();
+                vo.gang = gang.getName();
             }
         }
 
@@ -467,9 +469,10 @@ public class PlayerService implements InitHandler {
         vo.defense = player.getDefense();
         vo.fu = player.getFu();
         vo.symptom = player.getSymptom();
-
+        vo.onlineTime = data.getOnlineTime();
         vo.curSkills = new ArrayList<>(data.getCurSkills());
         vo.curCards = new ArrayList<>(data.getCurrCard().size());
+        vo.gatewayId = SysConfig.gatewayId;
         for (int card : data.getCurrCard()) {
             if (card == 0) {
                 vo.curCards.add(0);

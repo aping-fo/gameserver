@@ -84,6 +84,7 @@ public class EquipService implements InitHandler {
                 }
             }
         }
+
         if (curEquip != null) {
             curEquip.setStoreType(Goods.BAG);
             vo.add(goodsService.toVO(curEquip));
@@ -154,6 +155,7 @@ public class EquipService implements InitHandler {
         int goodsId = 0;
         int count = 0;
         boolean bUpdate = false;
+        PlayerData data = playerService.getPlayerData(playerId);
         for (long id : ids) {
             int equipMaterials = 0;
             Goods goods = goodsService.getGoods(playerId, id);
@@ -178,6 +180,14 @@ public class EquipService implements InitHandler {
             goodsService.addRewrad(playerId, cfg.decompose[0][0], equipMaterials, LogConsume.DECOMPOSE_DEC);
             if (goods.getStoreType() == Goods.EQUIP) { //goods.setStoreType(Goods.EQUIP);
                 bUpdate = true;
+            }
+
+            Integer suitId = suitMap.get(goods.getGoodsId());
+            if (suitId != null) {
+                Set<Integer> suit = data.getSuitMap().get(suitId);
+                if (suit != null) {
+                    suit.remove(goods.getGoodsId());
+                }
             }
         }
         if (bUpdate) {

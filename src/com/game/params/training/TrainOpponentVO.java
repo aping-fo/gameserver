@@ -18,6 +18,8 @@ public class TrainOpponentVO implements IProtocol {
 	public List<Integer> curCards;//当前装载的技能卡[技能卡配置表id,技能id,技能id,技能id]技能id为0表示该位置没有技能卡
 	public int head;//头部
 	public String gang;//公会
+	public int zhanli;//战斗力
+	public int chenghao;//称号ID
 
 
 	public void decode(BufferBuilder bb) {
@@ -34,6 +36,8 @@ public class TrainOpponentVO implements IProtocol {
 		this.curCards = bb.getIntList();
 		this.head = bb.getInt();
 		this.gang = bb.getString();
+		this.zhanli = bb.getInt();
+		this.chenghao = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -50,5 +54,7 @@ public class TrainOpponentVO implements IProtocol {
 		bb.putIntList(this.curCards);
 		bb.putInt(this.head);
 		bb.putString(this.gang);
+		bb.putInt(this.zhanli);
+		bb.putInt(this.chenghao);
 	}
 }
