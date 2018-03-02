@@ -1,18 +1,16 @@
 package com.game.util;
 
 import com.game.data.*;
-import com.google.common.collect.Range;
-import com.google.common.collect.RangeMap;
-import com.google.common.collect.TreeRangeMap;
+import com.game.module.copy.CopyInstance;
+import com.game.module.shop.ShopService;
+import com.game.module.task.Task;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
+import com.server.util.GameData;
 import io.netty.util.internal.ConcurrentSet;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-
-import com.game.module.copy.CopyInstance;
-import com.game.module.shop.ShopService;
-import com.game.module.task.Task;
-import com.server.util.GameData;
 
 /**
  * 一些不是唯一key的配置，可以在这里定义一些辅助函数操作
@@ -62,6 +60,15 @@ public class ConfigData {
     public static final Set<String> accountSet = new HashSet<>();
     public static Map<Integer, Integer> trainCount = new HashMap<>();
     public static Map<Integer, TrialFieldCfg> trainCopy = new HashMap<>();
+    public static Map<Integer, List<ActivityTaskCfg>> ActivityTasks = Maps.newConcurrentMap();
+    //主动技能
+    public static Map<Integer, List<Integer>> PassiveSkills = Maps.newHashMap();
+    //套装
+    public static Map<Integer, Integer> SuitMap = Maps.newHashMap();
+    //公会副本
+    public static Map<Integer, List<MonsterRefreshConfig>> GangMonsters = new HashMap<>();
+
+    public static Map<Integer, int[]> DonateCfg = new HashMap<>();
 
     // 获取充值配置
     public static List<ChargeConfig> getCharges() {
@@ -297,5 +304,71 @@ public class ConfigData {
             trainCount.put(cfg.type, cfg.count);
             trainCopy.put(cfg.copyId, cfg);
         }
+
+        //活动数据预加载
+        Map<Integer, List<ActivityTaskCfg>> ActivityTasksTmp = Maps.newConcurrentMap();
+        for (Object obj1 : GameData.getConfigs(ActivityTaskCfg.class)) {
+            ActivityTaskCfg conf = (ActivityTaskCfg) obj1;
+            List<ActivityTaskCfg> list = ActivityTasksTmp.get(conf.ActivityId);
+            if (list == null) {
+                list = Lists.newArrayList();
+                ActivityTasksTmp.put(conf.ActivityId, list);
+            }
+            list.add(conf);
+        }
+        ActivityTasks = ActivityTasksTmp;
+
+        //宠物技能
+        Map<Integer, List<Integer>> passiveSkillsTmp = Maps.newHashMap();
+        for (Object obj : GameData.getConfigs(PetSkillConfig.class)) {
+            PetSkillConfig cfg = (PetSkillConfig) obj;
+            if (cfg.type == 1) {
+                continue;
+            }
+
+            List<Integer> skills = passiveSkillsTmp.get(cfg.quality);
+            if (skills == null) {
+                skills = Lists.newArrayList();
+                passiveSkillsTmp.put(cfg.quality, skills);
+            }
+            skills.add(cfg.id);
+        }
+        PassiveSkills = passiveSkillsTmp;
+
+        //套装预加载
+        Map<Integer, Integer> suitTmp = Maps.newHashMap();
+        for (Object obj : GameData.getConfigs(SuitConfig.class)) {
+            SuitConfig cfg = (SuitConfig) obj;
+            for (int itemId : cfg.equips) {
+                suitTmp.put(itemId, cfg.id);
+            }
+        }
+        SuitMap = suitTmp;
+
+        //公会副本怪物
+        Map<Integer, List<MonsterRefreshConfig>> monsterMapTmp = new HashMap<>();
+        for (Object obj : GameData.getConfigs(GangCopyCfg.class)) {
+            GangCopyCfg cfg = (GangCopyCfg) obj;
+            List<MonsterRefreshConfig> list = monsterMapTmp.get(cfg.copyId);
+            if (list == null) {
+                list = new ArrayList<>();
+                monsterMapTmp.put(cfg.copyId, list);
+            }
+
+            for (Object obj1 : GameData.getConfigs(MonsterRefreshConfig.class)) {
+                MonsterRefreshConfig conf = (MonsterRefreshConfig) obj1;
+                if (cfg.copyId == conf.copyId) {
+                    list.add(conf);
+                }
+            }
+        }
+        GangMonsters = monsterMapTmp;
+
+        //公会捐献
+        Map<Integer, int[]> donateCfgTmp = new HashMap<>();
+        for (int[] arr : ConfigData.globalParam().donateParams) {
+            donateCfgTmp.put(arr[4], arr);
+        }
+        DonateCfg = donateCfgTmp;
     }
 }

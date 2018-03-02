@@ -3,12 +3,17 @@ package com.game.sdk.erating;
 import com.game.SysConfig;
 import com.game.event.InitHandler;
 import com.game.module.player.Player;
+import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.params.IntParam;
 import com.game.sdk.erating.consts.ERatingType;
 import com.game.sdk.erating.domain.*;
 import com.game.sdk.net.HttpClient;
+import com.game.sdk.utils.XmlParser;
 import com.game.util.TimerService;
+import com.server.SessionManager;
 import com.server.util.ServerLogger;
+import io.netty.channel.Channel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,7 +33,7 @@ public class ERatingService implements InitHandler {
     @Autowired
     private PlayerService playerService;
 
-    ExecutorService executor = new ThreadPoolExecutor(2, 4, 0, TimeUnit.SECONDS, new LinkedBlockingQueue<>(12000), new DiscardPolicy());
+    ExecutorService executor = new ThreadPoolExecutor(4, 8, 0, TimeUnit.SECONDS, new LinkedBlockingQueue<>(120000), new DiscardPolicy());
 
 
     @Override
@@ -36,37 +41,92 @@ public class ERatingService implements InitHandler {
         GwDatas gwDatas = new GwDatas(ERatingType.CMD_GW_DATA_REPORT);
         GwData data = new GwData(ERatingType.ER_SERVER_START, 0);
         gwDatas.getGwData().add(data);
-        sendReport(gwDatas);
+        sendReport(gwDatas, 0);
 
-        timerService.scheduleAtFixedRate(new Runnable() { //每5分钟提交一次日志
+        timerService.scheduleAtFixedRate(new Runnable() { //每15s提交一次日志
             @Override
             public void run() {
                 try {
                     GwDatas gwDatas = new GwDatas(ERatingType.CMD_GW_DATA_REPORT);
                     GwData data = new GwData(ERatingType.ER_ONLINE_COUNT, playerService.getPlayers().size());
                     gwDatas.getGwData().add(data);
-                    sendReport(gwDatas);
-                } catch (Exception e) {
+                    sendReport(gwDatas, 0);
+                } catch (Throwable e) {
                     ServerLogger.err(e, "玩家活动定时器异常");
                 }
             }
-        }, 120, 15, TimeUnit.MINUTES);
+        }, 120, 30, TimeUnit.SECONDS);
     }
 
 
-    private void sendReport(final Report report) {
+    private void sendReport(final Report report, int playerId) {
         executor.submit(new Runnable() {
             @Override
             public void run() {
                 try {
-                    if(!SysConfig.debug) {
-                        HttpClient.sendPostRequest(report.toProto());
+                    if (!SysConfig.debug) {
+                        ServerLogger.warn("send report,xml data \r\n" + report.toProto());
+                        String xmlData = HttpClient.sendPostRequest(report.toProto());
+                        int cmdId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_HEAD, XmlParser.FIELD_CMD);
+                        if (cmdId == ERatingType.CMD_CREATE_ROLE_RESP) { //创建角色，获取roleId
+                            PlayerData data = playerService.getPlayerData(playerId);
+                            int roleId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_ROLE_ID);
+                            data.setRoleId(roleId);
+                            Player player = playerService.getPlayer(playerId);
+                            reportRoleEnter(player, roleId);
+                        }
                     }
-                } catch (Exception e) {
-                    ServerLogger.err(e, "日志上报异常 cmd = " + report.getCommandId());
+                } catch (Throwable e) {
+                    try {
+                        ServerLogger.err(e, "日志上报异常 xml data \r\n" + report.toProto());
+                    } catch (Exception e1) {
+                        ServerLogger.warn("send report,xml data \r\n" + report.getCommand_id());
+                    }
                 }
             }
         });
+    }
+
+    private void sendReport(final Report report, String user, Channel channel) {
+        executor.submit(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    if (!SysConfig.debug) { //帐号认证获取userId
+                        ServerLogger.warn("send report,xml data \r\n" + report.toProto());
+                        String xmlData = HttpClient.sendPostRequest(report.toProto());
+                        int userId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_USER_ID);
+                        IntParam param = new IntParam();
+                        playerService.addSdkUser(user, userId);
+                        param.param = userId;
+                        SessionManager.sendDataInner(channel, 1012, param);
+                    }
+                } catch (Throwable e) {
+                    try {
+                        ServerLogger.err(e, "日志上报异常 xml data => " + report.toProto());
+                    } catch (Exception e1) {
+                        ServerLogger.warn("send report,xml data => " + report.getCommand_id());
+                    }
+                }
+            }
+        });
+    }
+
+
+    //登录认证
+    public void reportAuthen(String user, String token, int clientIp, int clientPort, String clientMac
+            , int clientType, String sdkVersion, Channel channel) {
+        UserAuthenData data = new UserAuthenData(ERatingType.CMD_JOINT_AUTHEN_EX);
+        data.setUn(user);
+        data.setToken(token);
+        data.setUserIP(clientIp);
+        data.setPort(clientPort);
+        data.setMac(clientMac);
+        data.setClientType(clientType);
+        data.setSdkVersion(sdkVersion);
+        data.setUnixTime((int) (System.currentTimeMillis() / 1000));
+        data.setAdid("" + 0);
+        sendReport(data, user, channel);
     }
 
     /**
@@ -76,20 +136,22 @@ public class ERatingService implements InitHandler {
      */
     public void reportCreateRole(Player player) {
         RoleData role = new RoleData(ERatingType.CMD_CREATE_ROLE);
-        role.setUserId(player.getPlayerId());
+        role.setUserId(player.userId);
         role.setRoleName(player.getName());
         role.setRoleGender(player.getSex());
         role.setRoleOccupation(player.getVocation());
         role.setInitialLevel(player.getLev());
-
-        sendReport(role);
+        role.setUserIp(player.clientIp);
+        role.setUserPort(player.clientPort);
+        sendReport(role, player.getPlayerId());
     }
 
-    public void reportRoleEnter(Player player) {
+    //角色登录
+    public void reportRoleEnter(Player player, int roleId) {
         RoleEnterData data = new RoleEnterData(ERatingType.CMD_ROLE_ENTER_GAME_EX5);
         data.setServerId(SysConfig.serverId);
-        data.setUserId(player.getPlayerId());
-        data.setRoleId(player.getPlayerId());
+        data.setUserId(player.userId);
+        data.setRoleId(roleId);
         data.setLevel(player.getLev());
         data.setGender(player.getSex());
         data.setOccupationId(player.getVocation());
@@ -102,36 +164,19 @@ public class ERatingService implements InitHandler {
         data.setUddi(player.uddi);
         data.setLdid(player.ldid);
         data.setModelVersion(player.modelVersion);
-
-        sendReport(data);
-        reportAuthen(player);
+        sendReport(data, player.getPlayerId());
     }
 
-    public void reportAuthen(Player player) {
-        UserAuthenData data = new UserAuthenData(ERatingType.CMD_JOINT_AUTHEN_EX);
-        data.setUn(player.openId);
-        data.setToken(player.token);
-        data.setUserIP(player.clientIp);
-        data.setPort(player.clientPort);
-        data.setMac(player.clientMac);
-        data.setClientType(player.clientType);
-        data.setSdkVersion(player.modelVersion);
-        data.setUnixTime((int)(System.currentTimeMillis() / 1000));
-        data.setCpId(SysConfig.gameId);
-        data.setAdid(player.adid);
-        data.setUid(SysConfig.gameId+"");
-        sendReport(data);
-    }
 
     /**
      * 角色登出日志
      *
      * @param player
      */
-    public void reportRoleLogout(Player player) {
+    public void reportRoleLogout(Player player, int roleId) {
         RoleLogoutData data = new RoleLogoutData(ERatingType.CMD_USER_LOGOUT);
-        data.setUserId(player.getPlayerId());
-        data.setRoleId(player.getPlayerId());
+        data.setUserId(player.userId);
+        data.setRoleId(roleId);
         data.setLogoutFlag(1);
         data.setOccupationId(player.getVocation());
         data.setRoleLevel(player.getLev());
@@ -139,16 +184,21 @@ public class ERatingService implements InitHandler {
         data.setMoney1(player.getDiamond());
         data.setMoney2(0);
         data.setExperience(player.getExp());
-        sendReport(data);
+        sendReport(data, player.getPlayerId());
     }
 
     public static void main(String[] args) throws Exception {
         SysConfig.init();
-        GwDatas gwDatas = new GwDatas(ERatingType.CMD_GW_DATA_REPORT);
-        GwData data = new GwData(ERatingType.ER_SERVER_START, 0);
-        gwDatas.getGwData().add(data);
-        data = new GwData(ERatingType.ER_SERVER_START, 1);
-        gwDatas.getGwData().add(data);
-        HttpClient.sendPostRequest(gwDatas.toProto());
+        UserAuthenData data = new UserAuthenData(ERatingType.CMD_JOINT_AUTHEN_EX);
+        data.setUn("shulouxifeng");
+        data.setToken("2523IrM686tR90mi");
+        data.setUserIP(906511);
+        data.setPort(52996);
+        data.setMac("");
+        data.setClientType(3);
+        data.setSdkVersion("");
+        data.setUnixTime((int) (System.currentTimeMillis() / 1000));
+        data.setAdid("" + 0);
+        HttpClient.sendPostRequest(data.toProto());
     }
 }

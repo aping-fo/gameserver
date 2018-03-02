@@ -29,97 +29,100 @@ import org.springframework.stereotype.Service;
 import java.util.Date;
 
 @Service
-public class DefaultLogoutHandler implements LogoutHandler{
-	@Autowired
-	private PlayerService playerService;
-	@Autowired
-	private SceneService sceneService;
-	@Autowired
-	private CopyService copyService;
-	@Autowired
-	private TaskService taskService;
-	@Autowired
-	private GoodsService goodsService;
-	@Autowired
-	private ArenaLogic arenaLogic;
-	@Autowired
-	private TeamService teamService;
-	@Autowired
-	private LadderService ladderService;
-	@Autowired
-	private GroupService groupService;
-	@Autowired
-	private GangDungeonService gangDungeonService;
-	@Autowired
-	private PetService petService;
-	@Autowired
-	private FriendService friendService;
-	@Autowired
-	private ERatingService ratingService;
-	public void handleLogout(final int playerId) {
-		Context.getThreadService().execute(new Runnable() {
-			@Override
-			public void run() {
-				logout(playerId);
-			}
-		});
-	}
+public class DefaultLogoutHandler implements LogoutHandler {
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private SceneService sceneService;
+    @Autowired
+    private CopyService copyService;
+    @Autowired
+    private TaskService taskService;
+    @Autowired
+    private GoodsService goodsService;
+    @Autowired
+    private ArenaLogic arenaLogic;
+    @Autowired
+    private TeamService teamService;
+    @Autowired
+    private LadderService ladderService;
+    @Autowired
+    private GroupService groupService;
+    @Autowired
+    private GangDungeonService gangDungeonService;
+    @Autowired
+    private PetService petService;
+    @Autowired
+    private FriendService friendService;
+    @Autowired
+    private ERatingService ratingService;
 
-	/**
-	 * 下线处理 要处理下线，就实现LogoutListener 接口， 不要在这边直接调用模块代码
-	 */
-	public void logout(int playerId) {
-		try {
+    public void handleLogout(final int playerId) {
+        Context.getThreadService().execute(new Runnable() {
+            @Override
+            public void run() {
+                logout(playerId);
+            }
+        });
+    }
 
-			ServerLogger.info(".....user logout:" + playerId);
-			Player player = playerService.getPlayer(playerId);
-			PlayerData playerData = playerService.getPlayerData(playerId);
-			int passTime = (int)((System.currentTimeMillis() - player.getLastLoginTime().getTime())/1000);
-			playerData.setOnlineTime(playerData.getOnlineTime() + passTime);
+    /**
+     * 下线处理 要处理下线，就实现LogoutListener 接口， 不要在这边直接调用模块代码
+     */
+    public void logout(int playerId) {
+        try {
 
-			player.setLastLogoutTime(new Date());
-			playerService.removeChannel(player.getAccName(),SessionManager.getInstance().getChannel(playerId));
+            ServerLogger.info(".....user logout:" + playerId);
+            Player player = playerService.getPlayer(playerId);
+            PlayerData playerData = playerService.getPlayerData(playerId);
+            if (player.onlineTime != 0) {
+                int passTime = (int) ((System.currentTimeMillis() - player.onlineTime) / 1000);
+                playerData.setOnlineTime(playerData.getOnlineTime() + passTime);
+            }
 
-			//清除副本实例
-			copyService.removeCopy(playerId);
-			// 退出场景
-			sceneService.exitScene(player);
-			teamService.quit(playerId);
-			// 退出副本场景
-			SceneConfig scene = ConfigData.getConfig(SceneConfig.class, player.getSceneId());
-			if(player.getLastSceneId()>0&&scene.type !=Scene.CITY){
-				player.setSceneId(player.getLastSceneId());
-				float[]pos = player.getLastPos();
-				player.setX(pos[0]);
-				player.setY(pos[1]);
-				player.setZ(pos[2]);
-			}
+            player.setLastLogoutTime(new Date());
+            playerService.removeChannel(player.getAccName(), SessionManager.getInstance().getChannel(playerId));
 
-			taskService.updateTask(playerId);
-			goodsService.updateBag(playerId);
-			petService.onLogout(playerId);
-			arenaLogic.quit(playerId);
+            //清除副本实例
+            copyService.removeCopy(playerId);
+            // 退出场景
+            sceneService.exitScene(player);
+            teamService.quit(playerId);
+            // 退出副本场景
+            SceneConfig scene = ConfigData.getConfig(SceneConfig.class, player.getSceneId());
+            if (player.getLastSceneId() > 0 && scene.type != Scene.CITY) {
+                player.setSceneId(player.getLastSceneId());
+                float[] pos = player.getLastPos();
+                player.setX(pos[0]);
+                player.setY(pos[1]);
+                player.setZ(pos[2]);
+            }
 
-			ladderService.onLogout(playerId);
-			groupService.onLogout(playerId);
-			gangDungeonService.onLogout(playerId);
-			friendService.onLogout(playerId);
+            taskService.updateTask(playerId);
+            goodsService.updateBag(playerId);
+            petService.onLogout(playerId);
+            arenaLogic.quit(playerId);
 
-			// 保证以下的代码在最后
-			// 清除session
-			playerService.update(player);
-			playerService.updatePlayerData(playerId);
-			//report logout log
-			ratingService.reportRoleLogout(player);
-			SessionManager.getInstance().removeSession(playerId);
-			AntiCheatService.getInstance().clear(playerId);
-			DisposeHandler.dispose(playerId);// 清除缓存
-			AntiCheatService.getInstance().clear(playerId);
-			playerService.removeCache(playerId);
-			player.online = false;
-		} catch (Exception e) {
-			ServerLogger.err(e, "handle logout err!");
-		}
-	}
+            ladderService.onLogout(playerId);
+            groupService.onLogout(playerId);
+            gangDungeonService.onLogout(playerId);
+            friendService.onLogout(playerId);
+
+            // 保证以下的代码在最后
+            // 清除session
+            playerService.update(player);
+            playerService.updatePlayerData(playerId);
+            //report logout log
+            ratingService.reportRoleLogout(player, playerData.getRoleId());
+            SessionManager.getInstance().removeSession(playerId);
+            AntiCheatService.getInstance().clear(playerId);
+            DisposeHandler.dispose(playerId);// 清除缓存
+            AntiCheatService.getInstance().clear(playerId);
+            playerService.removeCache(playerId);
+            player.online = false;
+        } catch (Exception e) {
+            ServerLogger.err(e, "handle logout err!");
+        }
+    }
 
 }

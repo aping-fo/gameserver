@@ -1,7 +1,6 @@
 package com.game.module.gang;
 
 import com.game.data.*;
-import com.game.event.InitHandler;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.log.LogConsume;
@@ -19,7 +18,6 @@ import com.game.params.gang.*;
 import com.game.params.scene.SkillHurtVO;
 import com.game.params.worldboss.MonsterHurtVO;
 import com.game.util.ConfigData;
-import com.game.util.JsonUtils;
 import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
@@ -28,7 +26,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -38,7 +35,7 @@ import java.util.Map;
  * 公会副本
  */
 @Service
-public class GangDungeonService implements InitHandler {
+public class GangDungeonService {
     private static final int T_DONT_OPEN = 0; //副本未开启
     public static final int T_OPEN = 1; //副本开启
     public static final int T_PASS = 2; //副本通关
@@ -56,26 +53,6 @@ public class GangDungeonService implements InitHandler {
     private TaskService taskService;
     @Autowired
     private SceneService sceneService;
-    private Map<Integer, List<MonsterRefreshConfig>> monsterMap = new HashMap<>();
-
-    @Override
-    public void handleInit() {
-        for (Object obj : GameData.getConfigs(GangCopyCfg.class)) {
-            GangCopyCfg cfg = (GangCopyCfg) obj;
-            List<MonsterRefreshConfig> list = monsterMap.get(cfg.copyId);
-            if (list == null) {
-                list = new ArrayList<>();
-                monsterMap.put(cfg.copyId, list);
-            }
-
-            for (Object obj1 : GameData.getConfigs(MonsterRefreshConfig.class)) {
-                MonsterRefreshConfig conf = (MonsterRefreshConfig) obj1;
-                if (cfg.copyId == conf.copyId) {
-                    list.add(conf);
-                }
-            }
-        }
-    }
 
     /**
      * 获取公会副本信息
@@ -156,7 +133,7 @@ public class GangDungeonService implements InitHandler {
         gangDungeon.getMonsterMap().clear();
         gangDungeon.getAwardStep().clear();
 
-        List<MonsterRefreshConfig> monsters = monsterMap.get(cfg.copyId);
+        List<MonsterRefreshConfig> monsters = ConfigData.GangMonsters.get(cfg.copyId);
         for (MonsterRefreshConfig conf : monsters) {
             MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
             Monster m = new Monster();

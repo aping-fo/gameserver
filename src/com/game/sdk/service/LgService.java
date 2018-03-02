@@ -40,13 +40,13 @@ public class LgService implements SdkService {
                 stringBuilder.append("\r\n");
             }
             String content = stringBuilder.toString();
-            ServerLogger.warn(content);
-            int cmd = XmlParser.xmlCmdParser(content);
+            ServerLogger.warn("\r\n" + content);
+            int cmd = XmlParser.xmlCmdParser(content, XmlParser.XML_HEAD, XmlParser.FIELD_CMD);
 
-            ServerLogger.warn("cmd_id =>" + cmd);
+            ServerLogger.warn("command id =>" + cmd);
             if (cmd == ERatingType.CMD_BIND) {
                 result.setResultCode(ERatingType.CMD_BIND_RESP);
-                result.setResultCode(1);
+                result.setResultCode(ERatingType.ErrorCode.S_SUCCESS);
                 ServerLogger.warn("resp xml data =>" + result.toProto());
                 resp.getWriter().write(result.toProto());
                 return;
@@ -55,9 +55,9 @@ public class LgService implements SdkService {
             RechargeData data = new RechargeData();
             XmlParser.xmlParser(content, data);
             if (orders.contains(data.getDetail_id())) {
-                result.setResultCode(-1472);
+                result.setResultCode(ERatingType.ErrorCode.E_CHARGE_DUPLICATE);
                 resp.getWriter().write(result.toProto());
-                ServerLogger.warn("订单重复");
+                ServerLogger.warn("order duplicate,order sn = " + data.getDetail_id());
                 return;
             }
 
@@ -65,10 +65,10 @@ public class LgService implements SdkService {
             int playerId = Integer.parseInt(arr[0]);
             int id = Integer.parseInt(arr[1]);
             int count = Integer.parseInt(arr[2]);
-            ServerLogger.warn("Attach_code =>" + data.getAttach_code());
+            ServerLogger.warn("Attach code =>" + data.getAttach_code());
             ChargeConfig charge = ConfigData.getConfig(ChargeConfig.class, id);
             if (charge.rmb != data.getAmount()) {
-                result.setResultCode(-100);
+                result.setResultCode(ERatingType.ErrorCode.E_PARAMETER_ERROR);
                 ServerLogger.warn("resp xml data =>" + result.toProto());
                 resp.getWriter().write(result.toProto());
                 return;
@@ -78,9 +78,10 @@ public class LgService implements SdkService {
             result.setResultCode(1);
             orders.add(String.valueOf(data.getDetail_id()));
             ServerLogger.warn("resp xml data =>" + result.toProto());
+            result.setResultCode(ERatingType.ErrorCode.S_SUCCESS);
             resp.getWriter().write(result.toProto());
         } catch (Exception e) {
-            result.setResultCode(-100);
+            result.setResultCode(ERatingType.ErrorCode.E_PARAMETER_ERROR);
             ServerLogger.warn("resp xml data =>" + result.toProto());
             resp.getWriter().write(result.toProto());
             ServerLogger.err(e, "充值异常");

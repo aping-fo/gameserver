@@ -7,7 +7,6 @@ import com.game.params.activity.ActivityTaskVO;
  */
 public class ActivityTask {
     private int id;
-    private int resetType;
     private boolean rewardFlag;
     private int activityId;
     private int state;
@@ -16,12 +15,11 @@ public class ActivityTask {
     public ActivityTask() {
     }
 
-    public ActivityTask(int id, int resetType, int activityId, int targetCount, int condType) {
+    public ActivityTask(int id, int activityId,int targetValue, int condType) {
         this.id = id;
-        this.resetType = resetType;
         this.activityId = activityId;
         this.state = ActivityConsts.ActivityState.T_UN_FINISH;
-        cond = new ActivityTaskCdt(targetCount, condType);
+        cond = new ActivityTaskCdt(targetValue, condType);
     }
 
     public int getState() {
@@ -38,14 +36,6 @@ public class ActivityTask {
 
     public void setActivityId(int activityId) {
         this.activityId = activityId;
-    }
-
-    public int getResetType() {
-        return resetType;
-    }
-
-    public void setResetType(int resetType) {
-        this.resetType = resetType;
     }
 
     public boolean isRewardFlag() {

@@ -41,7 +41,6 @@ public class ActivityService implements InitHandler {
     //开启的活动
     public static final Map<Integer, ActivityCfg> OpenActivitys = Maps.newConcurrentMap();
     //活动对任务
-    public static final Map<Integer, List<ActivityTaskCfg>> ActivityTasks = Maps.newConcurrentMap();
 
     private static final int CMD_ACTIVITY_OPEN = 8004; //活动开启
     private static final int CMD_ACTIVITY_TASK_UPDATE = 8006; //任务更新
@@ -90,22 +89,8 @@ public class ActivityService implements InitHandler {
                 }
             }
         }, 120, 60, TimeUnit.SECONDS);
-
-        reloadConfig();
-
     }
 
-    public void reloadConfig(){
-        for (Object obj1 : GameData.getConfigs(ActivityTaskCfg.class)) {
-            ActivityTaskCfg conf = (ActivityTaskCfg) obj1;
-            List<ActivityTaskCfg> list = ActivityTasks.get(conf.ActivityId);
-            if (list == null) {
-                list = Lists.newArrayList();
-                ActivityTasks.put(conf.ActivityId, list);
-            }
-            list.add(conf);
-        }
-    }
     /**
      * 定时检测活动任务状态
      *
@@ -238,12 +223,14 @@ public class ActivityService implements InitHandler {
         if (at.isRewardFlag()) { //已经奖励完，则不检测
             return bUpdate;
         }
+        ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
         if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_ENERGY) { //体力时间区间类型单独处理
             bUpdate = checkTimeActivityUpdate(at);
         } else { //其他类型
             if (at.getState() == ActivityConsts.ActivityState.T_FINISH) { //已经完成的，则不检测
                 return bUpdate;
             }
+            at.getCond().setTargetValue(taskCfg.Conds[0][1]);
             if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_LEVEL_UP
                     || at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_GROW_FUND) { //等级类型
                 Player player = playerService.getPlayer(data.getPlayerId());
@@ -270,7 +257,7 @@ public class ActivityService implements InitHandler {
     private ActivityTask createActivityTask(ActivityTaskCfg taskCfg) {
         int taskType = taskCfg.Conds[0][0];
         int targetCount = taskCfg.Conds[0][1];
-        return new ActivityTask(taskCfg.id, taskCfg.ResetType, taskCfg.ActivityId, targetCount, taskType);
+        return new ActivityTask(taskCfg.id, taskCfg.ActivityId, targetCount, taskType);
     }
 
     private void closeActivity(int id, List<Integer> closeActivitys) {
@@ -302,6 +289,10 @@ public class ActivityService implements InitHandler {
                 } else if (updateType == ActivityConsts.UpdateType.T_VALUE) {
                     at.getCond().setValue(value);
                 }
+                //条件读表
+                ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+                at.getCond().setTargetValue(taskCfg.Conds[0][1]);
+
                 if (at.getCond().checkComplete()) {
                     at.setState(ActivityConsts.ActivityState.T_FINISH);
                     //活动称号
@@ -360,7 +351,7 @@ public class ActivityService implements InitHandler {
 
             if (cfg.OpenType == ActivityConsts.ActivityOpenType.T_HANDLE)
                 continue;
-            List<ActivityTaskCfg> list = ActivityTasks.get(cfg.id);
+            List<ActivityTaskCfg> list = ConfigData.ActivityTasks.get(cfg.id);
             for (ActivityTaskCfg taskCfg : list) {
                 if (cfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) { //体力活动，登录检测
                     ActivityTask at = data.getActivityTasks().get(taskCfg.id);
@@ -397,7 +388,8 @@ public class ActivityService implements InitHandler {
         data.setOnlineTime(0);
         List<ActivityTask> list = Lists.newArrayList();
         for (ActivityTask at : data.getActivityTasks().values()) {
-            if (at.getResetType() == ActivityConsts.ActivityTaskResetType.T_DAILY) {
+            ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+            if (cfg.ResetType == ActivityConsts.ActivityTaskResetType.T_DAILY) {
                 at.cleanup();
                 list.add(at);
             }
@@ -427,7 +419,7 @@ public class ActivityService implements InitHandler {
             } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_NEW_ROLE   //新手礼包
                     || cfg.ActivityType == ActivityConsts.ActivityType.T_LEVEL_UP   //冲级活动
                     || cfg.ActivityType == ActivityConsts.ActivityType.T_GROW_FUND) { //成长基金
-                List<ActivityTaskCfg> list = ActivityTasks.get(cfg.id);
+                List<ActivityTaskCfg> list = ConfigData.ActivityTasks.get(cfg.id);
                 boolean bClose = true;
                 for (ActivityTaskCfg taskCfg : list) {
                     ActivityTask task = data.getActivityTasks().get(taskCfg.id);
@@ -444,6 +436,9 @@ public class ActivityService implements InitHandler {
 
         for (ActivityTask at : data.getActivityTasks().values()) {
             if (result.id.contains(at.getActivityId())) {
+                ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+                at.getCond().setCondType(taskCfg.Conds[0][0]);
+                at.getCond().setTargetValue(taskCfg.Conds[0][1]);
                 result.tasks.add(at.toProto());
             }
         }
@@ -464,11 +459,13 @@ public class ActivityService implements InitHandler {
         IntParam result = new IntParam();
         ActivityTaskCfg config = ConfigData.getConfig(ActivityTaskCfg.class, taskId);
         ActivityCfg activityCfg = ConfigData.getConfig(ActivityCfg.class, config.ActivityId);
+        task.getCond().setTargetValue(config.Conds[0][1]); //条件读取配置
+
         if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_ONLINE_TIME) { //在线活动奖励领取，状态设置
-            long loginTime = player.getLastLoginTime().getTime();
+            long loginTime = player.onlineTime;
             int passTime = (int) ((System.currentTimeMillis() - loginTime) / 1000);
             task.getCond().setValue(passTime + data.getOnlineTime());
-            if(task.getCond().checkComplete()) {
+            if (task.getCond().checkComplete()) {
                 task.setState(ActivityConsts.ActivityState.T_FINISH);
             }
         }
@@ -480,6 +477,11 @@ public class ActivityService implements InitHandler {
 
         task.setState(ActivityConsts.ActivityState.T_AWARD);
         task.setRewardFlag(true);
+
+        if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_ONLINE_TIME) {
+            player.onlineTime = System.currentTimeMillis();
+            data.setOnlineTime(0);
+        }
 
         List<GoodsEntry> itemList = Lists.newArrayList();
         for (int[] arr : config.Rewards) {
@@ -588,7 +590,7 @@ public class ActivityService implements InitHandler {
         List<Integer> openActivity = Lists.newArrayList(activityId);
         List<ActivityTask> openActivityTasks = Lists.newArrayList();
 
-        List<ActivityTaskCfg> taskCfgs = ActivityTasks.get(activityId);
+        List<ActivityTaskCfg> taskCfgs = ConfigData.ActivityTasks.get(activityId);
         if (taskCfgs == null) {
             logger.error("活动配置有错误~~~~~~ 活动ID = " + activityId);
             result.param = Response.ERR_PARAM;
@@ -648,7 +650,6 @@ public class ActivityService implements InitHandler {
         if (playerId == 0) {
             SessionManager.getInstance().sendMsgToAll(CMD_ACTIVITY_CLOSE, listParam);
         } else {
-
             SessionManager.getInstance().sendMsg(CMD_ACTIVITY_CLOSE, listParam, playerId);
         }
     }

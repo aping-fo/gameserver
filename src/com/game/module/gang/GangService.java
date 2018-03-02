@@ -71,16 +71,9 @@ public class GangService implements InitHandler {
     private List<Gang> orderGangs = null;
 
     private static volatile int maxGangId = 0;
-    private Map<Integer, int[]> donateCfg;
 
     @Override
     public void handleInit() {
-        donateCfg = new HashMap<>();
-        GlobalConfig global = ConfigData.globalParam();
-        for (int[] arr : global.donateParams) {
-            donateCfg.put(arr[4], arr);
-        }
-
         Integer curMaxGangId = gangDao.selectMaxGangId();
         if (curMaxGangId == null) {
             curMaxGangId = 0;
@@ -761,7 +754,7 @@ public class GangService implements InitHandler {
         Gang gang = gangs.get(player.getGangId());
         GMember member = gang.getMembers().get(playerId);
 
-        int[] param = donateCfg.get(index);// [货币,货币数量,贡献,次数]
+        int[] param = ConfigData.DonateCfg.get(index);// [货币,货币数量,贡献,次数]
 
         // 检验次数
         int time = member.getDonationRecord().getOrDefault(index, 0);

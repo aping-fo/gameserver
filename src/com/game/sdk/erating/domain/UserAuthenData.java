@@ -82,20 +82,20 @@ public class UserAuthenData extends Header {
     private String sdkVersion;
     @NodeName(name = "UnixTime")
     private int unixTime;
-    @NodeName(name = "CP_ID")
+/*    @NodeName(name = "CP_ID")
     private int cpId;
     @NodeName(name = "Pad")
-    private int pad;
+    private int pad;*/
     @NodeName(name = "ADID")
     private String adid;
-    @NodeName(name = "UID")
+ /*   @NodeName(name = "UID")
     private String uid;
     @NodeName(name = "AdultState")
     private int adultState;
     @NodeName(name = "Password")
     private String password;
     @NodeName(name = "PasswordType")
-    private int passwordType;
+    private int passwordType;*/
 
     public UserAuthenData(int command_id) {
         super(command_id);
@@ -165,7 +165,7 @@ public class UserAuthenData extends Header {
         this.unixTime = unixTime;
     }
 
-    public int getCpId() {
+/*    public int getCpId() {
         return cpId;
     }
 
@@ -179,7 +179,7 @@ public class UserAuthenData extends Header {
 
     public void setPad(int pad) {
         this.pad = pad;
-    }
+    }*/
 
     public String getAdid() {
         return adid;
@@ -189,7 +189,7 @@ public class UserAuthenData extends Header {
         this.adid = adid;
     }
 
-    public String getUid() {
+    /*public String getUid() {
         return uid;
     }
 
@@ -219,5 +219,5 @@ public class UserAuthenData extends Header {
 
     public void setPasswordType(int passwordType) {
         this.passwordType = passwordType;
-    }
+    }*/
 }

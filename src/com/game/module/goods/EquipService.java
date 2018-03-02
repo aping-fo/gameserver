@@ -1,7 +1,6 @@
 package com.game.module.goods;
 
 import com.game.data.*;
-import com.game.event.InitHandler;
 import com.game.module.log.LogConsume;
 import com.game.module.player.*;
 import com.game.module.task.Task;
@@ -16,7 +15,6 @@ import com.game.util.RandomUtil;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.server.SessionManager;
-import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -25,7 +23,7 @@ import java.util.*;
 import java.util.Map.Entry;
 
 @Service
-public class EquipService implements InitHandler {
+public class EquipService {
 
     @Autowired
     private PlayerService playerService;
@@ -35,20 +33,6 @@ public class EquipService implements InitHandler {
     private PlayerCalculator playerCalculator;
     @Autowired
     private TaskService taskService;
-
-    private Map<Integer, Integer> suitMap = Maps.newHashMap();
-
-    @Override
-    public void handleInit() {
-        Map<Integer, Integer> suitTmp = Maps.newHashMap();
-        for (Object obj : GameData.getConfigs(SuitConfig.class)) {
-            SuitConfig cfg = (SuitConfig) obj;
-            for (int itemId : cfg.equips) {
-                suitTmp.put(itemId, cfg.id);
-            }
-        }
-        suitMap = suitTmp;
-    }
 
     // 穿装备
     public int wear(int playerId, long id) {
@@ -89,7 +73,7 @@ public class EquipService implements InitHandler {
             curEquip.setStoreType(Goods.BAG);
             vo.add(goodsService.toVO(curEquip));
 
-            Integer suitId2 = suitMap.get(curEquip.getGoodsId());
+            Integer suitId2 = ConfigData.SuitMap.get(curEquip.getGoodsId());
             if (suitId2 != null) {
                 Set<Integer> suit = data.getSuitMap().get(suitId2);
                 if (suit != null) {
@@ -99,12 +83,12 @@ public class EquipService implements InitHandler {
         }
         goods.setStoreType(Goods.EQUIP);
 
-        Integer suitId = suitMap.get(goods.getGoodsId());
+        Integer suitId = ConfigData.SuitMap.get(goods.getGoodsId());
         if (suitId != null) {
             Set<Integer> suit = data.getSuitMap().get(suitId);
             if (suit == null) {
                 suit = Sets.newHashSet();
-                data.getSuitMap().put(suitId,suit);
+                data.getSuitMap().put(suitId, suit);
             }
             suit.add(goods.getGoodsId());
         }
@@ -132,7 +116,7 @@ public class EquipService implements InitHandler {
 
         goods.setStoreType(Goods.BAG);
         PlayerData data = playerService.getPlayerData(playerId);
-        Integer suitId = suitMap.get(goods.getGoodsId());
+        Integer suitId = ConfigData.SuitMap.get(goods.getGoodsId());
         if (suitId != null) {
             Set<Integer> suit = data.getSuitMap().get(suitId);
             if (suit != null) {
@@ -182,7 +166,7 @@ public class EquipService implements InitHandler {
                 bUpdate = true;
             }
 
-            Integer suitId = suitMap.get(goods.getGoodsId());
+            Integer suitId = ConfigData.SuitMap.get(goods.getGoodsId());
             if (suitId != null) {
                 Set<Integer> suit = data.getSuitMap().get(suitId);
                 if (suit != null) {
@@ -395,7 +379,7 @@ public class EquipService implements InitHandler {
             }
         }
         //扣除消耗
-        if (!goodsService.decGoodsFromBag(playerId, Goods.CLEAR_ITEM,ConfigData.globalParam().clearCostCoin, LogConsume.CLEAR_COST, goods.getGoodsId())) {
+        if (!goodsService.decGoodsFromBag(playerId, Goods.CLEAR_ITEM, ConfigData.globalParam().clearCostCoin, LogConsume.CLEAR_COST, goods.getGoodsId())) {
             return Response.NO_COIN;
         }
         //重新随机

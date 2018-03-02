@@ -10,7 +10,7 @@ import java.util.List;
  * 协议提拼装
  */
 public class Report {
-    public int getCommandId() {
+    public Integer getCommand_id() {
         return 0;
     }
 
@@ -45,6 +45,37 @@ public class Report {
         }
         if (parentNode != null) {
             sb.append("</").append(parentNode.name()).append(">");
+        }
+        return sb.toString();
+    }
+
+    public String toProto1() throws Exception {
+        StringBuilder sb = new StringBuilder();
+        NodeName parentNode = this.getClass().getAnnotation(NodeName.class);
+        if (parentNode != null) {
+            sb.append("&lt;").append(parentNode.name()).append("&gt;");
+        }
+        Field[] bodyFields = this.getClass().getDeclaredFields();
+        for (Field field : bodyFields) {
+            boolean flag = field.isAccessible();
+            field.setAccessible(true);
+            NodeName childNode = field.getAnnotation(NodeName.class);
+            String name = childNode.name();
+            sb.append("&lt;").append(name).append("&gt;");
+            if (field.getType() == List.class) {
+                List<Object> objects = (List<Object>) field.get(this);
+                for (Object o : objects) {
+                    if (childNode.object()) {
+                        String subProto = (String) o.getClass().getMethod("toProto1").invoke(o);
+                        sb.append(subProto);
+                    } else {
+                        sb.append(o.toString());
+                    }
+                }
+            } else {
+                sb.append(field.get(this));
+            }
+            field.setAccessible(flag);
         }
         return sb.toString();
     }

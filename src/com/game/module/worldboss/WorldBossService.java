@@ -287,11 +287,17 @@ public class WorldBossService implements InitHandler {
         broadcast(CMD_MONSTER_INFO, ret);
 
         if (boss.getCurHp() <= 0) { //死亡
+            Integer times = serialDataService.getData().getBossKillTimes().get(bossId);
+            if (times == null) {
+                times = 0;
+            }
+            serialDataService.getData().getBossKillTimes().put(bossId, times + 1);
+
             ServerLogger.info("boss go die....... boss id ==" + boss.getId());
             worldBossData.getKillMap().put(bossId, playerId);
-            Map<Integer,int[]> condParam = Maps.newHashMap();
-            condParam.put(Task.ACHIEVEMENT_WB_LAST,new int[]{1});
-            condParam.put(Task.TYPE_KILL,new int[]{3,1});
+            Map<Integer, int[]> condParam = Maps.newHashMap();
+            condParam.put(Task.ACHIEVEMENT_WB_LAST, new int[]{1});
+            condParam.put(Task.TYPE_KILL, new int[]{3, 1});
 
             taskService.doTask(playerId, condParam);
             //boss死亡，广播
@@ -398,7 +404,12 @@ public class WorldBossService implements InitHandler {
                     int bossId = copyArr[i + 1];
                     MonsterRefreshConfig refreshConfig = ConfigData.getConfig(MonsterRefreshConfig.class, bossId);
                     MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class, refreshConfig.monsterId);
-                    WorldBoss boss = WorldBoss.newInstance(bossId, index++, monsterConfig.hp, copyId);
+                    Integer killTimes = serialDataService.getData().getBossKillTimes().get(bossId);
+                    if (killTimes == null) {
+                        killTimes = 0;
+                    }
+
+                    WorldBoss boss = WorldBoss.newInstance(bossId, index++, (int)(monsterConfig.hp*(1 + killTimes*ConfigData.globalParam().killedTimesFactor)), copyId);
                     worldBossData.getWorldBossMap().put(bossId, boss);
 
                     if (i == len - 2) { //记录最后一个boss
@@ -440,7 +451,7 @@ public class WorldBossService implements InitHandler {
                 if (playerView.getWorldBossMaxRank() == 0 || playerView.getWorldBossMaxRank() > hr.getRank()) {
                     playerView.setWorldBossMaxRank(hr.getRank());
                 }
-                taskService.doTask(hr.getPlayerId(), Task.TYPE_WB_RANK,hr.getRank());
+                taskService.doTask(hr.getPlayerId(), Task.TYPE_WB_RANK, hr.getRank());
             }
 
             //排序
@@ -663,6 +674,7 @@ public class WorldBossService implements InitHandler {
             times = 0;
         }
 
+
         HurtRecord hr = worldBossData.getHurtMap().get(playerId);
         cleanupHurt(hr, worldBoss.getId());
 
@@ -680,6 +692,11 @@ public class WorldBossService implements InitHandler {
         bossVo.hp = worldBoss.getHp();
         bossVo.monsterId = worldBoss.getId();
 
+        Integer killTimes = serialDataService.getData().getBossKillTimes().get(worldBoss.getId());
+        if (killTimes == null) {
+            killTimes = 0;
+        }
+        bossVo.killTimes = killTimes;
         vo.boss = bossVo;
         return vo;
     }
@@ -868,7 +885,7 @@ public class WorldBossService implements InitHandler {
         ServerLogger.warn("gm reset world boss activity .........");
     }
 
-    public void sendAward1(){
+    public void sendAward1() {
         sendAward();
     }
 

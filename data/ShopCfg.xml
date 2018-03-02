@@ -643,7 +643,7 @@
 	<shopType>1</shopType>
 	<name>强化材料</name>
 	<goodsId>109</goodsId>
-	<count>1</count>
+	<count>10</count>
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
@@ -863,7 +863,7 @@
 	<shopType>1</shopType>
 	<name>强化材料</name>
 	<goodsId>109</goodsId>
-	<count>1</count>
+	<count>10</count>
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
@@ -1120,7 +1120,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>52</id>
@@ -1142,7 +1142,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>53</id>
@@ -1164,7 +1164,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>54</id>
@@ -1186,7 +1186,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>55</id>
@@ -1208,7 +1208,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>56</id>
@@ -1230,7 +1230,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>57</id>
@@ -1252,7 +1252,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>58</id>
@@ -1274,7 +1274,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>59</id>
@@ -1296,7 +1296,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>60</id>
@@ -1318,21 +1318,21 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>61</id>
 	<shopType>10</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20001</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>134</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -1340,7 +1340,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[4,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>62</id>
@@ -1362,7 +1362,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>63</id>
@@ -1384,7 +1384,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>64</id>
@@ -1406,7 +1406,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>65</id>
@@ -1428,7 +1428,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>66</id>
@@ -1450,7 +1450,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>67</id>
@@ -1472,7 +1472,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>68</id>
@@ -1494,7 +1494,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>69</id>
@@ -1516,7 +1516,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>70</id>
@@ -1538,7 +1538,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>71</id>
@@ -1560,21 +1560,21 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>72</id>
 	<shopType>9</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20002</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>133</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -1582,7 +1582,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[3,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>73</id>
@@ -1604,7 +1604,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>74</id>
@@ -1626,7 +1626,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>75</id>
@@ -1648,7 +1648,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>76</id>
@@ -1670,7 +1670,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>77</id>
@@ -1692,7 +1692,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>78</id>
@@ -1714,7 +1714,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>79</id>
@@ -1736,7 +1736,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>80</id>
@@ -1758,7 +1758,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>81</id>
@@ -1780,7 +1780,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>82</id>
@@ -1802,21 +1802,21 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>83</id>
 	<shopType>12</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20003</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>136</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -1824,7 +1824,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[8,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>84</id>
@@ -1846,7 +1846,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>85</id>
@@ -1868,7 +1868,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>86</id>
@@ -1890,7 +1890,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>87</id>
@@ -1912,7 +1912,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>88</id>
@@ -1934,7 +1934,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>89</id>
@@ -1956,7 +1956,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>90</id>
@@ -1978,7 +1978,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>91</id>
@@ -2000,7 +2000,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>92</id>
@@ -2022,7 +2022,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>93</id>
@@ -2044,21 +2044,21 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>94</id>
 	<shopType>11</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20004</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>135</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -2066,7 +2066,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[7,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>95</id>
@@ -2088,7 +2088,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>96</id>
@@ -2110,7 +2110,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>97</id>
@@ -2132,7 +2132,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>98</id>
@@ -2154,7 +2154,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>99</id>
@@ -2176,7 +2176,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>100</id>
@@ -2198,7 +2198,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>101</id>
@@ -2220,7 +2220,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>102</id>
@@ -2242,7 +2242,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>103</id>
@@ -2264,7 +2264,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>104</id>
@@ -2286,21 +2286,21 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>105</id>
 	<shopType>13</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20005</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>137</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>10000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -2308,7 +2308,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[5,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>106</id>
@@ -2330,7 +2330,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>107</id>
@@ -2352,7 +2352,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>108</id>
@@ -2374,7 +2374,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>109</id>
@@ -2396,7 +2396,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>110</id>
@@ -2418,7 +2418,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>111</id>
@@ -2440,7 +2440,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>112</id>
@@ -2462,7 +2462,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>113</id>
@@ -2484,7 +2484,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>114</id>
@@ -2506,7 +2506,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>115</id>
@@ -2528,21 +2528,21 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>116</id>
 	<shopType>14</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20006</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>138</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -2550,7 +2550,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[6,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>117</id>
@@ -2572,7 +2572,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>118</id>
@@ -2594,7 +2594,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>119</id>
@@ -2616,7 +2616,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>120</id>
@@ -2638,7 +2638,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>121</id>
@@ -2660,7 +2660,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>122</id>
@@ -2682,7 +2682,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>123</id>
@@ -2704,7 +2704,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>124</id>
@@ -2726,7 +2726,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>125</id>
@@ -2748,7 +2748,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>126</id>
@@ -2770,21 +2770,21 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>127</id>
 	<shopType>8</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20007</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>132</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -2792,7 +2792,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[2,1]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>128</id>
@@ -2814,7 +2814,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>129</id>
@@ -2836,7 +2836,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>130</id>
@@ -2858,7 +2858,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>131</id>
@@ -2880,7 +2880,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>132</id>
@@ -2902,7 +2902,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>133</id>
@@ -2924,7 +2924,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>134</id>
@@ -2946,7 +2946,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>135</id>
@@ -2968,7 +2968,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>136</id>
@@ -2990,7 +2990,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>137</id>
@@ -3012,21 +3012,21 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>138</id>
 	<shopType>7</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20008</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>131</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -3034,7 +3034,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit>[1,0]</fameLevLimit>
+	<fameLevLimit></fameLevLimit>
 </config>
 <config>
 	<id>139</id>
@@ -3523,9 +3523,9 @@
 <config>
 	<id>161</id>
 	<shopType>6</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20009</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
@@ -3721,9 +3721,9 @@
 <config>
 	<id>170</id>
 	<shopType>15</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>时装券</name>
+	<goodsId>20010</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>

@@ -21,6 +21,7 @@ public class CRegVo implements IProtocol {
 	public String un;//合作运营方用来标识其用户的唯一ID，一般情况下为第三方的用户ID
 	public String serverId;//服ID
 	public String serverName;//区服名
+	public int userId;//平台唯一ID
 
 
 	public void decode(BufferBuilder bb) {
@@ -41,6 +42,7 @@ public class CRegVo implements IProtocol {
 		this.un = bb.getString();
 		this.serverId = bb.getString();
 		this.serverName = bb.getString();
+		this.userId = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -61,5 +63,6 @@ public class CRegVo implements IProtocol {
 		bb.putString(this.un);
 		bb.putString(this.serverId);
 		bb.putString(this.serverName);
+		bb.putInt(this.userId);
 	}
 }

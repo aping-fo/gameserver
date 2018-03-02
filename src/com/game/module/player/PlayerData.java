@@ -154,9 +154,19 @@ public class PlayerData {
 	//在线时长
 	private int onlineTime;
 
+	private int roleId;
+
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+	public int getRoleId() {
+		return roleId;
+	}
+
+	public void setRoleId(int roleId) {
+		this.roleId = roleId;
 	}
 
 	public int getOnlineTime() {

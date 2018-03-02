@@ -2,9 +2,7 @@ package com.game.module.pet;
 
 import com.game.data.PetActivityConfig;
 import com.game.data.PetConfig;
-import com.game.data.PetSkillConfig;
 import com.game.data.Response;
-import com.game.event.InitHandler;
 import com.game.module.RandomReward.RandomRewardService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
@@ -21,7 +19,6 @@ import com.game.params.Reward;
 import com.game.params.pet.*;
 import com.game.util.*;
 import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.server.SessionManager;
 import com.server.util.GameData;
@@ -38,7 +35,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * 宠物
  */
 @Service
-public class PetService implements InitHandler {
+public class PetService {
     private static final int CMD_IMPROVE = 7007;
     private static final int CMD_TO_FIGHT = 7008;
     private static final int CMD_UPDATE_BAG = 7003;
@@ -60,28 +57,6 @@ public class PetService implements InitHandler {
     private TaskService taskService;
 
     private Map<Integer, PetBag> petBags = new ConcurrentHashMap<>();
-    //主动技能
-    private Map<Integer, List<Integer>> passiveSkills = Maps.newHashMap();
-
-    @Override
-    public void handleInit() {
-        Map<Integer, List<Integer>> passiveSkillsTmp = Maps.newHashMap();
-        for (Object obj : GameData.getConfigs(PetSkillConfig.class)) {
-            PetSkillConfig cfg = (PetSkillConfig) obj;
-            if (cfg.type == 1) {
-                continue;
-            }
-
-            List<Integer> skills = passiveSkillsTmp.get(cfg.quality);
-            if (skills == null) {
-                skills = Lists.newArrayList();
-                passiveSkillsTmp.put(cfg.quality, skills);
-            }
-            skills.add(cfg.id);
-        }
-
-        passiveSkills = passiveSkillsTmp;
-    }
 
     //初始化背包
     public void initBag(int playerId) {
@@ -173,7 +148,7 @@ public class PetService implements InitHandler {
         PetConfig newPetConfig = ConfigData.getConfig(PetConfig.class, configID);
         List<Pet> pets = new ArrayList<>();
         List<Int2Param> updateIds = Lists.newArrayList();
-        List<Integer> skills = passiveSkills.get(newPetConfig.quality);
+        List<Integer> skills = ConfigData.PassiveSkills.get(newPetConfig.quality);
         int passiveSkillId = skills.get(RandomUtil.randInt(skills.size()));
         Pet pet = new Pet(bag.idGen.incrementAndGet(), newPetConfig.id, passiveSkillId, newPetConfig.name);
         bag.getPetMap().put(pet.getId(), pet);
@@ -466,7 +441,7 @@ public class PetService implements InitHandler {
             cli.param1 = Response.SUCCESS;
             mutatePet.setConfigId(petConfig.mutateId);
             if (mutatePet.isMutateFlag()) {
-                List<Integer> list = passiveSkills.get(petConfig.quality);
+                List<Integer> list = ConfigData.PassiveSkills.get(petConfig.quality);
                 int newSkillId = list.get(RandomUtil.randInt(list.size()));
                 mutatePet.setPassiveSkillId2(newSkillId);
                 ServerLogger.info(JsonUtils.object2String(mutatePet));
@@ -596,7 +571,7 @@ public class PetService implements InitHandler {
             cli1.param1 = petId;
             if (toFightPet != null) {
                 vo.name = toFightPet.getName();
-                vo.petId =  toFightPet.getShowConfigID();
+                vo.petId = toFightPet.getShowConfigID();
                 cli1.param2 = toFightPet.getShowConfigID();
             }
             SessionManager.getInstance().sendMsg(CMD_SHOW, cli1, playerId);

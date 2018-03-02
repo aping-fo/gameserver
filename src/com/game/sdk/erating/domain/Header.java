@@ -1,6 +1,7 @@
 package com.game.sdk.erating.domain;
 
 import com.game.SysConfig;
+import com.game.sdk.erating.consts.ERatingType;
 
 /**
  * Created by lucky on 2018/2/1.
@@ -49,7 +50,13 @@ public class Header extends Report {
         sb.append("<gateway_id>").append(gateway_id).append("</gateway_id>");
         sb.append("</header>");
         sb.append("<body>");
-        sb.append(super.toProto());
+        if(command_id == ERatingType.CMD_JOINT_AUTHEN_EX){
+            sb.append("<data>");
+            sb.append(super.toProto1());
+            sb.append("</data>");
+        }else {
+            sb.append(super.toProto());
+        }
         sb.append("</body>");
         sb.append("</agip>");
         return sb.toString();

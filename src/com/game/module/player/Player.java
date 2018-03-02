@@ -31,6 +31,9 @@ public class Player implements PlayerAddition{
 	public String token;
 	public String openId;
 	public boolean online;
+	public int userId = 0;
+	public long onlineTime;
+	public boolean bCrateRole;
 
 	private int playerId;
 	private String name;

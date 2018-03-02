@@ -48,6 +48,7 @@ public class ManagerHandler extends ChannelInboundHandlerAdapter {
 			return;
 		}
 		HttpRequest request = (HttpRequest) msg;
+
 		String url=null;
 		try {
 			url = URLDecoder.decode(request.getUri(), "UTF-8");
@@ -84,18 +85,14 @@ public class ManagerHandler extends ChannelInboundHandlerAdapter {
 //			}
 //		}
 
-		String content = "";//url.substring(indexEnd + 1);
+		String content = url.substring(indexEnd + 1);
 		// 兼容post和get
-
 		if (request.getMethod() == HttpMethod.POST) {
 			HttpPostRequestDecoder decoder = new HttpPostRequestDecoder(factory, request, Charset.forName("UTF-8"));
-			System.out.println(decoder.getBodyHttpDatas());
 			StringBuilder post = new StringBuilder();
 			for (InterfaceHttpData data : decoder.getBodyHttpDatas()) {
 				if (data.getHttpDataType() == HttpDataType.Attribute) {
 					Attribute attribute = (Attribute) data;
-					Context.getManagerService().recharge(attribute.getName());
-
 					String key = attribute.getName();
 					String value = "";
 					try {

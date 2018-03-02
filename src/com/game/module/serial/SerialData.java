@@ -38,9 +38,18 @@ public class SerialData {
 
     //玩家相关数据最高排名缓存
     private Map<Integer, PlayerView> playerViews = new ConcurrentHashMap<>();
+    private Map<Integer, Integer> bossKillTimes = new ConcurrentHashMap<>();
 
     public SerialData() {
 
+    }
+
+    public Map<Integer, Integer> getBossKillTimes() {
+        return bossKillTimes;
+    }
+
+    public void setBossKillTimes(Map<Integer, Integer> bossKillTimes) {
+        this.bossKillTimes = bossKillTimes;
     }
 
     public Map<Integer, PlayerView> getPlayerViews() {
