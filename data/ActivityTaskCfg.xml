@@ -412,7 +412,7 @@
 	<name>5分钟在线奖励</name>
 	<ActivityId>8</ActivityId>
 	<ResetType>1</ResetType>
-	<Conds>[[8,60]]</Conds>
+	<Conds>[[8,300]]</Conds>
 	<Rewards>[[102,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -423,7 +423,7 @@
 	<name>10分钟在线奖励</name>
 	<ActivityId>8</ActivityId>
 	<ResetType>1</ResetType>
-	<Conds>[[8,120]]</Conds>
+	<Conds>[[8,300]]</Conds>
 	<Rewards>[[102,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -434,7 +434,7 @@
 	<name>15分钟在线奖励</name>
 	<ActivityId>8</ActivityId>
 	<ResetType>1</ResetType>
-	<Conds>[[8,180]]</Conds>
+	<Conds>[[8,300]]</Conds>
 	<Rewards>[[102,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>

@@ -725,7 +725,9 @@ public class GroupService {
                 sceneService.brocastToSceneCurLine(player, CopyExtension.COPY_FAIL, null);
                 group.removeCopyState(team.getId());
                 team.setbFight(false);
+                team.clearReady();
                 broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
+                broadcastGroup(group);
             }
         } else {
             SMonsterVo monster = monsters.get(hurtVO.targetId);
@@ -741,20 +743,20 @@ public class GroupService {
             broadcastGroupTeam(team, CMD_MONSTER_INFO, ret);
 
             if (monster.curHp <= 0) {
-                MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class,monster.monsterId);
+                MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class, monster.monsterId);
                 Map<Integer, int[]> condParams = Maps.newHashMap();
                 condParams.put(Task.FINISH_KILL, new int[]{monsterConfig.type, monster.monsterId, 1});
-                condParams.put(Task.TYPE_KILL, new int[]{monsterConfig.type,1});
-                condParams.put(Task.TYPE_KILL, new int[]{0,1});
+                condParams.put(Task.TYPE_KILL, new int[]{monsterConfig.type, 1});
+                condParams.put(Task.TYPE_KILL, new int[]{0, 1});
                 taskService.doTask(player.getPlayerId(), condParams);
 
                 monsters.remove(hurtVO.targetId);
-                if (copy.isOver()) {
+                if (copy.isOver()) { //战斗结束
                     group.removeCopyState(team.getId());
                     group.addPassCopy(copy.getCopyId());
 
                     team.setbFight(false);
-
+                    team.clearReady();
                     //副本胜利
                     CopyResult result = new CopyResult();
                     GroupCopyCfg cfg = ConfigData.getConfig(GroupCopyCfg.class, group.groupCopyId);
@@ -813,7 +815,6 @@ public class GroupService {
                         }
                         if (group.stage <= 3) {
                             group.stageBeginTime = System.currentTimeMillis();
-                            broadcastGroup(group);
                             if (!group.awardStage.contains(group.stage)) {
                                 group.awardStage.add(group.stage);
                                 broadcastGroupAward(group, awardParam, items);
@@ -823,6 +824,7 @@ public class GroupService {
                             }
                         }
                     }
+                    broadcastGroup(group);
                 }
             }
         }

@@ -148,6 +148,14 @@ public class GroupTeam {
         return member;
     }
 
+    public void clearReady() {
+        for (GroupTeamMember teamMember : members.values()) {
+            if (teamMember.getPlayerId() != leader) {
+                teamMember.setReadyFlag(false);
+            }
+        }
+    }
+
     public void clear() {
         members.clear();
     }

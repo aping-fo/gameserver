@@ -89,4 +89,22 @@ public class RechargeData extends Header {
     public void setAttach_code(String attach_code) {
         this.attach_code = attach_code;
     }
+
+    @Override
+    public String toString() {
+        return "RechargeData{" +
+                "detail_id=" + detail_id +
+                ", command_id=" + command_id +
+                ", user_id=" + user_id +
+                ", game_id=" + game_id +
+                ", subject_id=" + subject_id +
+                ", gateway_id=" + gateway_id +
+                ", amount=" + amount +
+                ", Pad=" + Pad +
+                ", charge_time=" + charge_time +
+                ", total_amount=" + total_amount +
+                ", balance=" + balance +
+                ", attach_code='" + attach_code + '\'' +
+                '}';
+    }
 }

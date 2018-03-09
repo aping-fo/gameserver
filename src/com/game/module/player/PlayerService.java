@@ -111,10 +111,10 @@ public class PlayerService implements InitHandler {
                 try {
                     doCheckTimeOut();
                 } catch (Exception e) {
-                    ServerLogger.err(e, "活动定时器异常");
+                    ServerLogger.err(e, "内存检测异常");
                 }
             }
-        }, 1, 5 * 60, TimeUnit.SECONDS);
+        }, 300, 5 * 60, TimeUnit.SECONDS);
     }
 
     private void doCheckTimeOut() {
@@ -122,12 +122,18 @@ public class PlayerService implements InitHandler {
             if (player.online) {
                 continue;
             }
-            //TODO 分发
-            PlayerData playerData = getPlayerData(player.getPlayerId());
-            if (!playerData.isRobotFlag() && System.currentTimeMillis() - player.getLastLogoutTime().getTime() > 5 * 60 * 1000) {
-                updatePlayerData(player.getPlayerId());
-                update(player);
-                removeCache(player.getPlayerId());
+            try {
+                PlayerData playerData = getPlayerData(player.getPlayerId());
+                if (player.getLastLogoutTime() == null) {
+                    continue;
+                }
+                if (!playerData.isRobotFlag() && System.currentTimeMillis() - player.getLastLogoutTime().getTime() > 5 * 60 * 1000) {
+                    updatePlayerData(player.getPlayerId());
+                    update(player);
+                    removeCache(player.getPlayerId());
+                }
+            } catch (Exception e) {
+                ServerLogger.err(e, "检查异常");
             }
         }
     }
@@ -204,7 +210,7 @@ public class PlayerService implements InitHandler {
         player.setZ(globalParam.defaultPos[2]);
 
         Integer userId = SdkUser.get(accName);
-        if(userId == null) {
+        if (userId == null) {
             userId = 0;
         }
         player.userId = userId;
@@ -212,8 +218,12 @@ public class PlayerService implements InitHandler {
         players.put(playerId, player);
         // 数据库插入失败//优化下这个登录
         //playerDao.insert(player);
-        // 初始化用户数据
-        PlayerData playerData = initPlayerData(playerId, false);
+        // 初始化用户数据 PlayerData
+        //PlayerData playerData = initPlayerData(playerId, false);
+        PlayerData playerData = new PlayerData();
+        playerData.setPlayerId(playerId);
+        playerDatas.put(playerId, playerData);
+
         // 初始化时装和武器
         int fashionId = globalParam.fashionId[player.getVocation() - 1];
         player.setFashionId(fashionId);
@@ -274,9 +284,16 @@ public class PlayerService implements InitHandler {
         Context.getThreadService().execute(new Runnable() {
             @Override
             public void run() {
-                playerDao.insert(player);
-                updatePlayerData(playerId);
-                update(player);
+                try {
+                    playerDao.insert(player);
+                    savePlayerData(playerData);
+                    update(player);
+                } catch (Throwable e) {
+                    ServerLogger.err(e, "入库失败，再来一次.....");
+                    playerDao.insert(player);
+                    savePlayerData(playerData);
+                    update(player);
+                }
             }
         });
         return player;
@@ -814,11 +831,28 @@ public class PlayerService implements InitHandler {
             Context.getThreadService().execute(new Runnable() {
                 @Override
                 public void run() {
-                    playerDao.insertPlayerData(playerId, zipData);
+                    try {
+                        playerDao.insertPlayerData(playerId, zipData);
+                    } catch (Throwable e) {
+                        ServerLogger.err(e, "player data 入库失败,再来一次");
+                        playerDao.insertPlayerData(playerId, zipData);
+                    }
+
                 }
             });
         }
         return data;
+    }
+
+    public void savePlayerData(PlayerData data) {
+        String jsonStr = JsonUtils.object2String(data);
+        if (jsonStr == null) {
+            ServerLogger.warn("player data serial err:", data.getPlayerId());
+            return;
+        }
+        byte[] byteData = jsonStr.getBytes(Charset.forName("utf-8"));
+        final byte[] zipData = CompressUtil.compressBytes(byteData);
+        playerDao.insertPlayerData(data.getPlayerId(), zipData);
     }
 
     public void saveData(final int playerId) {
@@ -1077,5 +1111,21 @@ public class PlayerService implements InitHandler {
 
     public boolean hasAuthen(String user) {
         return SdkUser.containsKey(user);
+    }
+
+    public Int2Param moduleOpen(int playerId, int moduleId) {
+        PlayerData playerData = getPlayerData(playerId);
+        if (!playerData.getModules().contains(moduleId)) {
+            playerData.getModules().add(moduleId);
+        }
+        Int2Param int2Param = new Int2Param();
+        int2Param.param1 = Response.SUCCESS;
+        int2Param.param2 = moduleId;
+
+        if(moduleId == 1) {
+            playerCalculator.calculate(playerId);
+        }
+
+        return int2Param;
     }
 }

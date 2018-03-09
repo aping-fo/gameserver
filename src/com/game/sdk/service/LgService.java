@@ -61,6 +61,7 @@ public class LgService implements SdkService {
                 return;
             }
 
+            ServerLogger.warn("order info = " + data.toString());
             String[] arr = data.getAttach_code().split("_");
             int playerId = Integer.parseInt(arr[0]);
             int id = Integer.parseInt(arr[1]);
@@ -80,6 +81,7 @@ public class LgService implements SdkService {
             ServerLogger.warn("resp xml data =>" + result.toProto());
             result.setResultCode(ERatingType.ErrorCode.S_SUCCESS);
             resp.getWriter().write(result.toProto());
+            resp.getWriter().flush();
         } catch (Exception e) {
             result.setResultCode(ERatingType.ErrorCode.E_PARAMETER_ERROR);
             ServerLogger.warn("resp xml data =>" + result.toProto());

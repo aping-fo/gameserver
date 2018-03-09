@@ -236,6 +236,7 @@ public class PlayerExtension {
             playerService.handleFirstLogin(playerId);
         }
         player.setLastLoginTime(new Date());
+        player.setLastLogoutTime(new Date());
         player.onlineTime = System.currentTimeMillis();
 
         player.setIp(CommonUtil.getIp(channel.remoteAddress()));
@@ -265,12 +266,15 @@ public class PlayerExtension {
         player.token = param.token;
         player.userId = param.userId;
 
-        String host = channel.remoteAddress().toString();
-        ServerLogger.warn("client host = " + channel.remoteAddress().toString());
-        String[] arr = host.split(":");
-        player.clientPort = Integer.parseInt(arr[1]);
-        String[] hostArr = arr[0].substring(1).split("\\.");
-        player.clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
+        try {
+            String host = channel.remoteAddress().toString();
+            String[] arr = host.split(":");
+            player.clientPort = Integer.parseInt(arr[1]);
+            String[] hostArr = arr[0].substring(1).split("\\.");
+            player.clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
+        } catch (Exception e) {
+            ServerLogger.err(e, "ip 解析失败");
+        }
 
         if (!player.bCrateRole) {
             ratingService.reportRoleEnter(player, data.getRoleId());
@@ -298,15 +302,7 @@ public class PlayerExtension {
 
     @Command(1008)
     public Object openModule(int playerId, IntParam param) {
-        PlayerData playerData = playerService.getPlayerData(playerId);
-        if (!playerData.getModules().contains(param.param)) {
-            playerData.getModules().add(param.param);
-        }
-        Int2Param int2Param = new Int2Param();
-        int2Param.param1 = Response.SUCCESS;
-        int2Param.param2 = param.param;
-
-        return int2Param;
+        return playerService.moduleOpen(playerId, param.param);
     }
 
     @Command(1009)

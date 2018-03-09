@@ -69,6 +69,8 @@ public class ConfigData {
     public static Map<Integer, List<MonsterRefreshConfig>> GangMonsters = new HashMap<>();
 
     public static Map<Integer, int[]> DonateCfg = new HashMap<>();
+    //声望
+    public static Map<Integer, Integer> FameMap = new HashMap<>();
 
     // 获取充值配置
     public static List<ChargeConfig> getCharges() {
@@ -206,6 +208,10 @@ public class ConfigData {
             GoodsConfig g = (GoodsConfig) cfg;
             if (g.maxStack >= 9) {
                 g.maxStack = 9999;
+            }
+
+            if (g.type == 122) { //
+                FameMap.put(g.param1[0], g.id);
             }
         }
 

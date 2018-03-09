@@ -9,6 +9,9 @@ public class FameRankVO implements IProtocol {
 	public int vocation;//职业
 	public String gang;//公会
 	public int fame;//声望
+	public int playerId;//玩家ID
+	public int fightingValue;//战力
+	public int vip;//vip
 
 
 	public void decode(BufferBuilder bb) {
@@ -17,6 +20,9 @@ public class FameRankVO implements IProtocol {
 		this.vocation = bb.getInt();
 		this.gang = bb.getString();
 		this.fame = bb.getInt();
+		this.playerId = bb.getInt();
+		this.fightingValue = bb.getInt();
+		this.vip = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -25,5 +31,8 @@ public class FameRankVO implements IProtocol {
 		bb.putInt(this.vocation);
 		bb.putString(this.gang);
 		bb.putInt(this.fame);
+		bb.putInt(this.playerId);
+		bb.putInt(this.fightingValue);
+		bb.putInt(this.vip);
 	}
 }

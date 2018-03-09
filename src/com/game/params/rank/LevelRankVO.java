@@ -8,6 +8,9 @@ public class LevelRankVO implements IProtocol {
 	public int vocation;//职业
 	public String gang;//公会
 	public int level;//等级
+	public int playerId;//玩家ID
+	public int fightingValue;//战力
+	public int vip;//vip
 
 
 	public void decode(BufferBuilder bb) {
@@ -15,6 +18,9 @@ public class LevelRankVO implements IProtocol {
 		this.vocation = bb.getInt();
 		this.gang = bb.getString();
 		this.level = bb.getInt();
+		this.playerId = bb.getInt();
+		this.fightingValue = bb.getInt();
+		this.vip = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -22,5 +28,8 @@ public class LevelRankVO implements IProtocol {
 		bb.putInt(this.vocation);
 		bb.putString(this.gang);
 		bb.putInt(this.level);
+		bb.putInt(this.playerId);
+		bb.putInt(this.fightingValue);
+		bb.putInt(this.vip);
 	}
 }

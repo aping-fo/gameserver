@@ -10,7 +10,7 @@
 	<playerDefaultProperty>[1000000,30,100,20,30,10,10,10]</playerDefaultProperty>
 	<playerDefaultSkill>[[11100001,11101001,11102001,11103001,11104001],[12100001,12101001,12102001,12103001,12104001],[13100001,13101001,13102001,13103001,13104001]]</playerDefaultSkill>
 	<defaultVocation>1</defaultVocation>
-	<reducePercentParamA>697</reducePercentParamA>
+	<reducePercentParamA>2855</reducePercentParamA>
 	<reducePercentParamB>1.1499999999999999</reducePercentParamB>
 	<critFactor>2</critFactor>
 	<critParamA>0.81</critParamA>
@@ -117,7 +117,7 @@
 	<mainCityCameraInfo>[-0.01,0.06,-0.2,0.11]</mainCityCameraInfo>
 	<attackMinThreshold>[3.6,3.6,2,2]</attackMinThreshold>
 	<attackSafeThreshold>[8,8,2,2]</attackSafeThreshold>
-	<fameAddRate>0.2</fameAddRate>
+	<fameAddRate>12</fameAddRate>
 	<MultiHitMaxInterval>4</MultiHitMaxInterval>
 	<BeHitMaxInterval>1</BeHitMaxInterval>
 	<groupCopyOpenTime>[9,10,11,12,13,14]</groupCopyOpenTime>
@@ -129,9 +129,6 @@
 	<LeadawayChallengeCount>2</LeadawayChallengeCount>
 	<LeadawayGoldAppearTime>[0.4,1]</LeadawayGoldAppearTime>
 	<LeadawayGoldCount>60</LeadawayGoldCount>
-	<LeadawayPlayerPosition>[0,-186,172]</LeadawayPlayerPosition>
-	<LeadawayPlayerScale>[300,300,300]</LeadawayPlayerScale>
-	<LeadawayPlayerRotate>[0,180,0]</LeadawayPlayerRotate>
 	<CatchGoldRocketMapping>304010:[[500000015,50],[500000016,100],[500000025,50],[500000026,100],[500000035,50],[500000036,100]];304011:[[500000015,60],[500000016,120],[500000025,60],[500000026,120],[500000035,60],[500000036,120]];304012:[[500000015,70],[500000016,140],[500000025,70],[500000026,140],[500000035,70],[500000036,140]];304013:[[500000015,80],[500000016,160],[500000025,80],[500000026,160],[500000035,80],[500000036,160]];</CatchGoldRocketMapping>
 	<CatchGoldDelTime>30</CatchGoldDelTime>
 	<quickCatchGoldCopy>102:10</quickCatchGoldCopy>
@@ -160,7 +157,7 @@
 	<coinPrice>[25,50,75,100,125,150,175,200]</coinPrice>
 	<coinBuy>5000</coinBuy>
 	<buffStrikenEffectPriority>1:6;2:4;3:5;4:1;5:2;6:3</buffStrikenEffectPriority>
-	<cardLvUpPrice>[[103,100],[103,1000],[103,5000],[103,10000]]</cardLvUpPrice>
+	<cardLvUpPrice>[[103,100],[103,5000],[103,2000],[103,50000]]</cardLvUpPrice>
 	<mainCityMapParas>[0.3,0.3,23.7]</mainCityMapParas>
 	<petMutateItemRate>68001:10;68002:20;68003:30;68004:40;68005:50</petMutateItemRate>
 	<killedTimesFactor>0.3</killedTimesFactor>

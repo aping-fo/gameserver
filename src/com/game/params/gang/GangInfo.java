@@ -20,6 +20,8 @@ public class GangInfo implements IProtocol {
 	public boolean isFightLimit;//是否战斗力限制
 	public int rank;//排名
 	public boolean apply;//是否有申请加入公会
+	public int ownerId;//会长id
+	public int ownerFightValue;//会长战斗力
 
 
 	public void decode(BufferBuilder bb) {
@@ -39,6 +41,8 @@ public class GangInfo implements IProtocol {
 		this.isFightLimit = bb.getBoolean();
 		this.rank = bb.getInt();
 		this.apply = bb.getBoolean();
+		this.ownerId = bb.getInt();
+		this.ownerFightValue = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -58,5 +62,7 @@ public class GangInfo implements IProtocol {
 		bb.putBoolean(this.isFightLimit);
 		bb.putInt(this.rank);
 		bb.putBoolean(this.apply);
+		bb.putInt(this.ownerId);
+		bb.putInt(this.ownerFightValue);
 	}
 }

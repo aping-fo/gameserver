@@ -52,6 +52,8 @@ public class RankExtension {
 				vo.gang = gangService.getGang(player.getGangId()).getName();
 			}
 			vo.fightingValue = rEntity.getFight();
+			vo.playerId = player.getPlayerId();
+			vo.vip = player.getVip();
 			return vo;
 		}
 	};
@@ -83,6 +85,9 @@ public class RankExtension {
 				}
 			}
 			vo.level = rEntity.getLevel();
+			vo.playerId = player.getPlayerId();
+			vo.fightingValue = player.getFight();
+			vo.vip = player.getVip();
 			return vo;
 		}
 	};
@@ -123,6 +128,9 @@ public class RankExtension {
 			}
 			vo.maxLayer = rEntity.getLayer();
 			vo.time = rEntity.getTime();
+			vo.playerId = player.getPlayerId();
+			vo.fightingValue = player.getFight();
+			vo.vip = player.getVip();
 			return vo;
 		}
 	};
@@ -152,6 +160,8 @@ public class RankExtension {
 				vo.gang = gangService.getGang(player.getGangId()).getName();
 			}
 			vo.fightingValue = player.getFight();
+			vo.playerId = player.getPlayerId();
+			vo.vip = player.getVip();
 			list.add(vo);
 		}
 		result.params = list;

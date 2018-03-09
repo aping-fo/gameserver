@@ -1425,7 +1425,7 @@
 	<type>0</type>
 	<itemId>50105</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1436,7 +1436,7 @@
 	<type>0</type>
 	<itemId>50205</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1447,7 +1447,7 @@
 	<type>0</type>
 	<itemId>50305</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1458,7 +1458,7 @@
 	<type>0</type>
 	<itemId>50805</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1469,7 +1469,7 @@
 	<type>0</type>
 	<itemId>50815</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1480,7 +1480,7 @@
 	<type>0</type>
 	<itemId>50825</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1491,7 +1491,7 @@
 	<type>0</type>
 	<itemId>50835</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1502,7 +1502,7 @@
 	<type>0</type>
 	<itemId>50845</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1513,7 +1513,7 @@
 	<type>0</type>
 	<itemId>50605</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1524,7 +1524,7 @@
 	<type>0</type>
 	<itemId>50405</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1535,13 +1535,134 @@
 	<type>0</type>
 	<itemId>50505</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>141</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50104</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>142</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50204</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>143</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50304</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>144</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50404</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>145</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50504</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>146</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50604</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>147</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50804</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>148</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50814</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>149</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50824</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>150</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50834</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>151</id>
+	<group>10005</group>
+	<type>0</type>
+	<itemId>50844</itemId>
+	<count>1</count>
+	<weight>60</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>152</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>103</itemId>
@@ -1552,7 +1673,7 @@
 	<day></day>
 </config>
 <config>
-	<id>142</id>
+	<id>153</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>103</itemId>
@@ -1563,7 +1684,7 @@
 	<day></day>
 </config>
 <config>
-	<id>143</id>
+	<id>154</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>103</itemId>
@@ -1574,131 +1695,10 @@
 	<day></day>
 </config>
 <config>
-	<id>144</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>108</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>145</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>108</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>146</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>108</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>147</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>109</itemId>
-	<count>2</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>148</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>109</itemId>
-	<count>3</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>149</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>109</itemId>
-	<count>5</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>150</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>12600</itemId>
-	<count>2</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>151</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>12600</itemId>
-	<count>3</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>152</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>303001</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>153</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>303001</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>154</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>303001</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
 	<id>155</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>304001</itemId>
+	<itemId>108</itemId>
 	<count>20</count>
 	<weight>300</weight>
 	<level></level>
@@ -1709,7 +1709,7 @@
 	<id>156</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>304001</itemId>
+	<itemId>108</itemId>
 	<count>30</count>
 	<weight>200</weight>
 	<level></level>
@@ -1720,7 +1720,7 @@
 	<id>157</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>304001</itemId>
+	<itemId>108</itemId>
 	<count>40</count>
 	<weight>100</weight>
 	<level></level>
@@ -1731,8 +1731,8 @@
 	<id>158</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>305001</itemId>
-	<count>20</count>
+	<itemId>109</itemId>
+	<count>2</count>
 	<weight>300</weight>
 	<level></level>
 	<vip></vip>
@@ -1742,8 +1742,8 @@
 	<id>159</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>305001</itemId>
-	<count>30</count>
+	<itemId>109</itemId>
+	<count>3</count>
 	<weight>200</weight>
 	<level></level>
 	<vip></vip>
@@ -1753,8 +1753,8 @@
 	<id>160</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>305001</itemId>
-	<count>40</count>
+	<itemId>109</itemId>
+	<count>5</count>
 	<weight>100</weight>
 	<level></level>
 	<vip></vip>
@@ -1764,9 +1764,9 @@
 	<id>161</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>306001</itemId>
-	<count>20</count>
-	<weight>300</weight>
+	<itemId>12600</itemId>
+	<count>2</count>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1775,9 +1775,9 @@
 	<id>162</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>306001</itemId>
-	<count>30</count>
-	<weight>200</weight>
+	<itemId>12600</itemId>
+	<count>3</count>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1786,9 +1786,9 @@
 	<id>163</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>306001</itemId>
-	<count>40</count>
-	<weight>100</weight>
+	<itemId>303001</itemId>
+	<count>20</count>
+	<weight>300</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1797,9 +1797,9 @@
 	<id>164</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>307001</itemId>
-	<count>20</count>
-	<weight>300</weight>
+	<itemId>303001</itemId>
+	<count>30</count>
+	<weight>200</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -1808,6 +1808,127 @@
 	<id>165</id>
 	<group>10006</group>
 	<type>0</type>
+	<itemId>303001</itemId>
+	<count>40</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>166</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>304001</itemId>
+	<count>20</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>167</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>304001</itemId>
+	<count>30</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>168</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>304001</itemId>
+	<count>40</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>169</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>305001</itemId>
+	<count>20</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>170</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>305001</itemId>
+	<count>30</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>171</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>305001</itemId>
+	<count>40</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>172</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>306001</itemId>
+	<count>20</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>173</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>306001</itemId>
+	<count>30</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>174</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>306001</itemId>
+	<count>40</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>175</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>307001</itemId>
+	<count>20</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>176</id>
+	<group>10006</group>
+	<type>0</type>
 	<itemId>307001</itemId>
 	<count>30</count>
 	<weight>200</weight>
@@ -1816,7 +1937,7 @@
 	<day></day>
 </config>
 <config>
-	<id>166</id>
+	<id>177</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>307001</itemId>
@@ -1827,7 +1948,7 @@
 	<day></day>
 </config>
 <config>
-	<id>167</id>
+	<id>178</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>308001</itemId>
@@ -1838,7 +1959,7 @@
 	<day></day>
 </config>
 <config>
-	<id>168</id>
+	<id>179</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>308001</itemId>
@@ -1849,7 +1970,7 @@
 	<day></day>
 </config>
 <config>
-	<id>169</id>
+	<id>180</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>308001</itemId>
@@ -1860,131 +1981,10 @@
 	<day></day>
 </config>
 <config>
-	<id>170</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>75</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>171</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>90</count>
-	<weight>275</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>172</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>105</count>
-	<weight>250</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>173</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>120</count>
-	<weight>225</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>174</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>135</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>175</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>150</count>
-	<weight>175</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>176</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>165</count>
-	<weight>150</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>177</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>180</count>
-	<weight>125</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>178</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>195</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>179</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>210</count>
-	<weight>75</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>180</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>225</count>
-	<weight>50</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
 	<id>181</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>75</count>
 	<weight>300</weight>
 	<level></level>
@@ -1995,7 +1995,7 @@
 	<id>182</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>90</count>
 	<weight>275</weight>
 	<level></level>
@@ -2006,7 +2006,7 @@
 	<id>183</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>105</count>
 	<weight>250</weight>
 	<level></level>
@@ -2017,7 +2017,7 @@
 	<id>184</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>120</count>
 	<weight>225</weight>
 	<level></level>
@@ -2028,7 +2028,7 @@
 	<id>185</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>135</count>
 	<weight>200</weight>
 	<level></level>
@@ -2039,7 +2039,7 @@
 	<id>186</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>150</count>
 	<weight>175</weight>
 	<level></level>
@@ -2050,7 +2050,7 @@
 	<id>187</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>165</count>
 	<weight>150</weight>
 	<level></level>
@@ -2061,7 +2061,7 @@
 	<id>188</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>180</count>
 	<weight>125</weight>
 	<level></level>
@@ -2072,7 +2072,7 @@
 	<id>189</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>195</count>
 	<weight>100</weight>
 	<level></level>
@@ -2083,7 +2083,7 @@
 	<id>190</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>210</count>
 	<weight>75</weight>
 	<level></level>
@@ -2094,7 +2094,7 @@
 	<id>191</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>500001</itemId>
+	<itemId>400001</itemId>
 	<count>225</count>
 	<weight>50</weight>
 	<level></level>
@@ -2105,7 +2105,7 @@
 	<id>192</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>75</count>
 	<weight>300</weight>
 	<level></level>
@@ -2116,7 +2116,7 @@
 	<id>193</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>90</count>
 	<weight>275</weight>
 	<level></level>
@@ -2127,7 +2127,7 @@
 	<id>194</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>105</count>
 	<weight>250</weight>
 	<level></level>
@@ -2138,7 +2138,7 @@
 	<id>195</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>120</count>
 	<weight>225</weight>
 	<level></level>
@@ -2149,7 +2149,7 @@
 	<id>196</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>135</count>
 	<weight>200</weight>
 	<level></level>
@@ -2160,7 +2160,7 @@
 	<id>197</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>150</count>
 	<weight>175</weight>
 	<level></level>
@@ -2171,7 +2171,7 @@
 	<id>198</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>165</count>
 	<weight>150</weight>
 	<level></level>
@@ -2182,7 +2182,7 @@
 	<id>199</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>180</count>
 	<weight>125</weight>
 	<level></level>
@@ -2193,7 +2193,7 @@
 	<id>200</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>195</count>
 	<weight>100</weight>
 	<level></level>
@@ -2204,7 +2204,7 @@
 	<id>201</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>210</count>
 	<weight>75</weight>
 	<level></level>
@@ -2215,7 +2215,7 @@
 	<id>202</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>600001</itemId>
+	<itemId>500001</itemId>
 	<count>225</count>
 	<weight>50</weight>
 	<level></level>
@@ -2226,6 +2226,127 @@
 	<id>203</id>
 	<group>10006</group>
 	<type>0</type>
+	<itemId>600001</itemId>
+	<count>75</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>204</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>90</count>
+	<weight>275</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>205</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>105</count>
+	<weight>250</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>206</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>120</count>
+	<weight>225</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>207</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>135</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>208</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>150</count>
+	<weight>175</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>209</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>165</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>210</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>180</count>
+	<weight>125</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>211</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>195</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>212</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>210</count>
+	<weight>75</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>213</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>225</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>214</id>
+	<group>10006</group>
+	<type>0</type>
 	<itemId>50101</itemId>
 	<count>1</count>
 	<weight>100</weight>
@@ -2234,7 +2355,7 @@
 	<day></day>
 </config>
 <config>
-	<id>204</id>
+	<id>215</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>50201</itemId>
@@ -2245,7 +2366,7 @@
 	<day></day>
 </config>
 <config>
-	<id>205</id>
+	<id>216</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>50301</itemId>
@@ -2256,7 +2377,7 @@
 	<day></day>
 </config>
 <config>
-	<id>206</id>
+	<id>217</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>50801</itemId>
@@ -2267,7 +2388,7 @@
 	<day></day>
 </config>
 <config>
-	<id>207</id>
+	<id>218</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>50811</itemId>
@@ -2278,7 +2399,7 @@
 	<day></day>
 </config>
 <config>
-	<id>208</id>
+	<id>219</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>50821</itemId>
@@ -2289,7 +2410,7 @@
 	<day></day>
 </config>
 <config>
-	<id>209</id>
+	<id>220</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>50831</itemId>
@@ -2300,7 +2421,7 @@
 	<day></day>
 </config>
 <config>
-	<id>210</id>
+	<id>221</id>
 	<group>10006</group>
 	<type>0</type>
 	<itemId>50841</itemId>
@@ -2311,131 +2432,10 @@
 	<day></day>
 </config>
 <config>
-	<id>211</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50601</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>212</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50401</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>213</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50501</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>214</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50102</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>215</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50202</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>216</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50302</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>217</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50802</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>218</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50812</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>219</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50822</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>220</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50832</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>221</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50842</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
 	<id>222</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>50602</itemId>
+	<itemId>50601</itemId>
 	<count>1</count>
 	<weight>34</weight>
 	<level></level>
@@ -2446,7 +2446,7 @@
 	<id>223</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>50402</itemId>
+	<itemId>50401</itemId>
 	<count>1</count>
 	<weight>34</weight>
 	<level></level>
@@ -2457,7 +2457,7 @@
 	<id>224</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>50502</itemId>
+	<itemId>50501</itemId>
 	<count>1</count>
 	<weight>34</weight>
 	<level></level>
@@ -2468,1282 +2468,6 @@
 	<id>225</id>
 	<group>10006</group>
 	<type>0</type>
-	<itemId>50103</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>226</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50203</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>227</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50303</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>228</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50803</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>229</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50813</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>230</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50823</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>231</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50833</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>232</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50843</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>233</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50603</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>234</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50403</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>235</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50503</itemId>
-	<count>1</count>
-	<weight>12</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>236</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50104</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>237</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50204</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>238</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50304</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>239</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50804</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>240</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50814</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>241</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50824</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>242</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50834</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>243</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50844</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>244</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50604</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>245</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50404</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>246</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50504</itemId>
-	<count>1</count>
-	<weight>4</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>247</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50105</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>248</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50205</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>249</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50305</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>250</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50805</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>251</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50815</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>252</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50825</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>253</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50835</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>254</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50845</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>255</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50605</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>256</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50405</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>257</id>
-	<group>10006</group>
-	<type>0</type>
-	<itemId>50505</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>258</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>51305</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>259</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>51205</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>260</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>50855</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>261</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>51005</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>262</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>50905</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>263</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>51305</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>264</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>51205</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>265</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>50855</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>266</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>51005</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>267</id>
-	<group>10007</group>
-	<type>0</type>
-	<itemId>50905</itemId>
-	<count>1</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>268</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>103</itemId>
-	<count>15000</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>269</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>103</itemId>
-	<count>30000</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>270</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>103</itemId>
-	<count>45000</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>271</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>108</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>272</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>108</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>273</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>108</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>274</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>109</itemId>
-	<count>2</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>275</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>109</itemId>
-	<count>3</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>276</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>109</itemId>
-	<count>5</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>277</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>12600</itemId>
-	<count>2</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>278</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>12600</itemId>
-	<count>3</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>279</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>303001</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>280</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>303001</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>281</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>303001</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>282</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>304001</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>283</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>304001</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>284</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>304001</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>285</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>305001</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>286</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>305001</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>287</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>305001</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>288</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>306001</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>289</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>306001</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>290</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>306001</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>291</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>307001</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>292</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>307001</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>293</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>307001</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>294</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>308001</itemId>
-	<count>20</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>295</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>308001</itemId>
-	<count>30</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>296</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>308001</itemId>
-	<count>40</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>297</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>75</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>298</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>90</count>
-	<weight>275</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>299</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>105</count>
-	<weight>250</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>300</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>120</count>
-	<weight>225</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>301</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>135</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>302</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>150</count>
-	<weight>175</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>303</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>165</count>
-	<weight>150</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>304</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>180</count>
-	<weight>125</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>305</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>195</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>306</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>210</count>
-	<weight>75</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>307</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>400001</itemId>
-	<count>225</count>
-	<weight>50</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>308</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>75</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>309</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>90</count>
-	<weight>275</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>310</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>105</count>
-	<weight>250</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>311</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>120</count>
-	<weight>225</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>312</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>135</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>313</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>150</count>
-	<weight>175</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>314</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>165</count>
-	<weight>150</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>315</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>180</count>
-	<weight>125</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>316</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>195</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>317</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>210</count>
-	<weight>75</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>318</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>500001</itemId>
-	<count>225</count>
-	<weight>50</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>319</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>75</count>
-	<weight>300</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>320</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>90</count>
-	<weight>275</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>321</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>105</count>
-	<weight>250</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>322</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>120</count>
-	<weight>225</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>323</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>135</count>
-	<weight>200</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>324</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>150</count>
-	<weight>175</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>325</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>165</count>
-	<weight>150</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>326</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>180</count>
-	<weight>125</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>327</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>195</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>328</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>210</count>
-	<weight>75</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>329</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>600001</itemId>
-	<count>225</count>
-	<weight>50</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>330</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50101</itemId>
-	<count>1</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>331</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50201</itemId>
-	<count>1</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>332</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50301</itemId>
-	<count>1</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>333</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50801</itemId>
-	<count>1</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>334</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50811</itemId>
-	<count>1</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>335</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50821</itemId>
-	<count>1</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>336</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50831</itemId>
-	<count>1</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>337</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50841</itemId>
-	<count>1</count>
-	<weight>100</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>338</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50601</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>339</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50401</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>340</id>
-	<group>10008</group>
-	<type>0</type>
-	<itemId>50501</itemId>
-	<count>1</count>
-	<weight>34</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>341</id>
-	<group>10008</group>
-	<type>0</type>
 	<itemId>50102</itemId>
 	<count>1</count>
 	<weight>34</weight>
@@ -3752,8 +2476,8 @@
 	<day></day>
 </config>
 <config>
-	<id>342</id>
-	<group>10008</group>
+	<id>226</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50202</itemId>
 	<count>1</count>
@@ -3763,8 +2487,8 @@
 	<day></day>
 </config>
 <config>
-	<id>343</id>
-	<group>10008</group>
+	<id>227</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50302</itemId>
 	<count>1</count>
@@ -3774,8 +2498,8 @@
 	<day></day>
 </config>
 <config>
-	<id>344</id>
-	<group>10008</group>
+	<id>228</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50802</itemId>
 	<count>1</count>
@@ -3785,8 +2509,8 @@
 	<day></day>
 </config>
 <config>
-	<id>345</id>
-	<group>10008</group>
+	<id>229</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50812</itemId>
 	<count>1</count>
@@ -3796,8 +2520,8 @@
 	<day></day>
 </config>
 <config>
-	<id>346</id>
-	<group>10008</group>
+	<id>230</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50822</itemId>
 	<count>1</count>
@@ -3807,8 +2531,8 @@
 	<day></day>
 </config>
 <config>
-	<id>347</id>
-	<group>10008</group>
+	<id>231</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50832</itemId>
 	<count>1</count>
@@ -3818,8 +2542,8 @@
 	<day></day>
 </config>
 <config>
-	<id>348</id>
-	<group>10008</group>
+	<id>232</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50842</itemId>
 	<count>1</count>
@@ -3829,8 +2553,8 @@
 	<day></day>
 </config>
 <config>
-	<id>349</id>
-	<group>10008</group>
+	<id>233</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50602</itemId>
 	<count>1</count>
@@ -3840,8 +2564,8 @@
 	<day></day>
 </config>
 <config>
-	<id>350</id>
-	<group>10008</group>
+	<id>234</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50402</itemId>
 	<count>1</count>
@@ -3851,8 +2575,8 @@
 	<day></day>
 </config>
 <config>
-	<id>351</id>
-	<group>10008</group>
+	<id>235</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50502</itemId>
 	<count>1</count>
@@ -3862,8 +2586,8 @@
 	<day></day>
 </config>
 <config>
-	<id>352</id>
-	<group>10008</group>
+	<id>236</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50103</itemId>
 	<count>1</count>
@@ -3873,8 +2597,8 @@
 	<day></day>
 </config>
 <config>
-	<id>353</id>
-	<group>10008</group>
+	<id>237</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50203</itemId>
 	<count>1</count>
@@ -3884,8 +2608,8 @@
 	<day></day>
 </config>
 <config>
-	<id>354</id>
-	<group>10008</group>
+	<id>238</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50303</itemId>
 	<count>1</count>
@@ -3895,8 +2619,8 @@
 	<day></day>
 </config>
 <config>
-	<id>355</id>
-	<group>10008</group>
+	<id>239</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50803</itemId>
 	<count>1</count>
@@ -3906,8 +2630,8 @@
 	<day></day>
 </config>
 <config>
-	<id>356</id>
-	<group>10008</group>
+	<id>240</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50813</itemId>
 	<count>1</count>
@@ -3917,8 +2641,8 @@
 	<day></day>
 </config>
 <config>
-	<id>357</id>
-	<group>10008</group>
+	<id>241</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50823</itemId>
 	<count>1</count>
@@ -3928,8 +2652,8 @@
 	<day></day>
 </config>
 <config>
-	<id>358</id>
-	<group>10008</group>
+	<id>242</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50833</itemId>
 	<count>1</count>
@@ -3939,8 +2663,8 @@
 	<day></day>
 </config>
 <config>
-	<id>359</id>
-	<group>10008</group>
+	<id>243</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50843</itemId>
 	<count>1</count>
@@ -3950,8 +2674,8 @@
 	<day></day>
 </config>
 <config>
-	<id>360</id>
-	<group>10008</group>
+	<id>244</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50603</itemId>
 	<count>1</count>
@@ -3961,8 +2685,8 @@
 	<day></day>
 </config>
 <config>
-	<id>361</id>
-	<group>10008</group>
+	<id>245</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50403</itemId>
 	<count>1</count>
@@ -3972,8 +2696,8 @@
 	<day></day>
 </config>
 <config>
-	<id>362</id>
-	<group>10008</group>
+	<id>246</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50503</itemId>
 	<count>1</count>
@@ -3983,12 +2707,1288 @@
 	<day></day>
 </config>
 <config>
-	<id>363</id>
-	<group>10008</group>
+	<id>247</id>
+	<group>10006</group>
 	<type>0</type>
 	<itemId>50104</itemId>
 	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>248</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50204</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>249</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50304</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>250</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50804</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>251</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50814</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>252</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50824</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>253</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50834</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>254</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50844</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>255</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50604</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>256</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50404</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>257</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50504</itemId>
+	<count>1</count>
+	<weight>9</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>258</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50105</itemId>
+	<count>1</count>
 	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>259</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50205</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>260</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50305</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>261</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50805</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>262</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50815</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>263</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50825</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>264</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50835</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>265</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50845</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>266</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50605</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>267</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50405</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>268</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>50505</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>269</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65011</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>270</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65021</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>271</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65031</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>272</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65041</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>273</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65051</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>274</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65061</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>275</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65071</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>276</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65081</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>277</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65091</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>278</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65101</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>279</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65111</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>280</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65121</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>281</id>
+	<group>10006</group>
+	<type>0</type>
+	<itemId>65131</itemId>
+	<count>5</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>282</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>51305</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>283</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>51205</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>284</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>50855</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>285</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>51005</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>286</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>50905</itemId>
+	<count>1</count>
+	<weight>4</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>287</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>51304</itemId>
+	<count>1</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>288</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>51204</itemId>
+	<count>1</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>289</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>50854</itemId>
+	<count>1</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>290</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>51004</itemId>
+	<count>1</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>291</id>
+	<group>10007</group>
+	<type>0</type>
+	<itemId>50904</itemId>
+	<count>1</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>292</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>103</itemId>
+	<count>50000</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>293</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>103</itemId>
+	<count>80000</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>294</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>103</itemId>
+	<count>100000</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>295</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>108</itemId>
+	<count>40</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>296</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>108</itemId>
+	<count>60</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>297</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>108</itemId>
+	<count>80</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>298</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>109</itemId>
+	<count>4</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>299</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>109</itemId>
+	<count>6</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>300</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>109</itemId>
+	<count>10</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>301</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>12600</itemId>
+	<count>4</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>302</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>12600</itemId>
+	<count>6</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>303</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>303001</itemId>
+	<count>40</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>304</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>303001</itemId>
+	<count>60</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>305</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>303001</itemId>
+	<count>80</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>306</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>304001</itemId>
+	<count>40</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>307</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>304001</itemId>
+	<count>60</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>308</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>304001</itemId>
+	<count>80</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>309</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>305001</itemId>
+	<count>40</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>310</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>305001</itemId>
+	<count>60</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>311</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>305001</itemId>
+	<count>80</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>312</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>306001</itemId>
+	<count>40</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>313</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>306001</itemId>
+	<count>60</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>314</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>306001</itemId>
+	<count>80</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>315</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>307001</itemId>
+	<count>40</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>316</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>307001</itemId>
+	<count>60</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>317</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>307001</itemId>
+	<count>80</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>318</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>308001</itemId>
+	<count>40</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>319</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>308001</itemId>
+	<count>60</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>320</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>308001</itemId>
+	<count>80</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>321</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>150</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>322</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>180</count>
+	<weight>275</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>323</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>210</count>
+	<weight>250</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>324</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>240</count>
+	<weight>225</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>325</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>270</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>326</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>300</count>
+	<weight>175</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>327</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>330</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>328</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>360</count>
+	<weight>125</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>329</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>390</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>330</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>420</count>
+	<weight>75</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>331</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>450</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>332</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>150</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>333</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>180</count>
+	<weight>275</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>334</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>210</count>
+	<weight>250</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>335</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>240</count>
+	<weight>225</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>336</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>270</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>337</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>300</count>
+	<weight>175</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>338</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>330</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>339</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>360</count>
+	<weight>125</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>340</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>390</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>341</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>420</count>
+	<weight>75</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>342</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>450</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>343</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>150</count>
+	<weight>300</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>344</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>180</count>
+	<weight>275</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>345</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>210</count>
+	<weight>250</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>346</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>240</count>
+	<weight>225</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>347</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>270</count>
+	<weight>200</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>348</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>300</count>
+	<weight>175</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>349</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>330</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>350</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>360</count>
+	<weight>125</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>351</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>390</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>352</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>420</count>
+	<weight>75</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>353</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>450</count>
+	<weight>50</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>354</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50102</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>355</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50202</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>356</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50302</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>357</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50802</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>358</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50812</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>359</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50822</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>360</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50832</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>361</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50842</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>362</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50602</itemId>
+	<count>1</count>
+	<weight>150</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>363</id>
+	<group>10008</group>
+	<type>0</type>
+	<itemId>50402</itemId>
+	<count>1</count>
+	<weight>150</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -3997,9 +3997,9 @@
 	<id>364</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50204</itemId>
+	<itemId>50502</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>150</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4008,9 +4008,9 @@
 	<id>365</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50304</itemId>
+	<itemId>51302</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>150</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4019,9 +4019,9 @@
 	<id>366</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50804</itemId>
+	<itemId>51202</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>150</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4030,9 +4030,9 @@
 	<id>367</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50814</itemId>
+	<itemId>50852</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>150</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4041,9 +4041,9 @@
 	<id>368</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50824</itemId>
+	<itemId>51002</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>150</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4052,9 +4052,9 @@
 	<id>369</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50834</itemId>
+	<itemId>50902</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>150</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4063,9 +4063,9 @@
 	<id>370</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50844</itemId>
+	<itemId>50103</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4074,9 +4074,9 @@
 	<id>371</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50604</itemId>
+	<itemId>50203</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4085,9 +4085,9 @@
 	<id>372</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50404</itemId>
+	<itemId>50303</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4096,9 +4096,9 @@
 	<id>373</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50504</itemId>
+	<itemId>50803</itemId>
 	<count>1</count>
-	<weight>4</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4107,9 +4107,9 @@
 	<id>374</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51301</itemId>
+	<itemId>50813</itemId>
 	<count>1</count>
-	<weight>30</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4118,9 +4118,9 @@
 	<id>375</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51201</itemId>
+	<itemId>50823</itemId>
 	<count>1</count>
-	<weight>30</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4129,9 +4129,9 @@
 	<id>376</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50851</itemId>
+	<itemId>50833</itemId>
 	<count>1</count>
-	<weight>30</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4140,9 +4140,9 @@
 	<id>377</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51001</itemId>
+	<itemId>50843</itemId>
 	<count>1</count>
-	<weight>30</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4151,9 +4151,9 @@
 	<id>378</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50901</itemId>
+	<itemId>50603</itemId>
 	<count>1</count>
-	<weight>30</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4162,9 +4162,9 @@
 	<id>379</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51302</itemId>
+	<itemId>50403</itemId>
 	<count>1</count>
-	<weight>10</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4173,9 +4173,9 @@
 	<id>380</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51202</itemId>
+	<itemId>50503</itemId>
 	<count>1</count>
-	<weight>10</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4184,9 +4184,9 @@
 	<id>381</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50852</itemId>
+	<itemId>51303</itemId>
 	<count>1</count>
-	<weight>10</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4195,9 +4195,9 @@
 	<id>382</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51002</itemId>
+	<itemId>51203</itemId>
 	<count>1</count>
-	<weight>10</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4206,9 +4206,9 @@
 	<id>383</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50902</itemId>
+	<itemId>50853</itemId>
 	<count>1</count>
-	<weight>10</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4217,9 +4217,9 @@
 	<id>384</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51303</itemId>
+	<itemId>51003</itemId>
 	<count>1</count>
-	<weight>3</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4228,9 +4228,9 @@
 	<id>385</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51203</itemId>
+	<itemId>50903</itemId>
 	<count>1</count>
-	<weight>3</weight>
+	<weight>100</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4239,9 +4239,9 @@
 	<id>386</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50853</itemId>
+	<itemId>50104</itemId>
 	<count>1</count>
-	<weight>3</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4250,9 +4250,9 @@
 	<id>387</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51003</itemId>
+	<itemId>50204</itemId>
 	<count>1</count>
-	<weight>3</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4261,9 +4261,9 @@
 	<id>388</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50903</itemId>
+	<itemId>50304</itemId>
 	<count>1</count>
-	<weight>3</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4272,9 +4272,9 @@
 	<id>389</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51304</itemId>
+	<itemId>50804</itemId>
 	<count>1</count>
-	<weight>2</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4283,9 +4283,9 @@
 	<id>390</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51204</itemId>
+	<itemId>50814</itemId>
 	<count>1</count>
-	<weight>2</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4294,9 +4294,9 @@
 	<id>391</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50854</itemId>
+	<itemId>50824</itemId>
 	<count>1</count>
-	<weight>2</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4305,9 +4305,9 @@
 	<id>392</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51004</itemId>
+	<itemId>50834</itemId>
 	<count>1</count>
-	<weight>2</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4316,9 +4316,9 @@
 	<id>393</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50904</itemId>
+	<itemId>50844</itemId>
 	<count>1</count>
-	<weight>2</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4327,9 +4327,9 @@
 	<id>394</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51304</itemId>
+	<itemId>50604</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4338,9 +4338,9 @@
 	<id>395</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51204</itemId>
+	<itemId>50404</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4349,9 +4349,9 @@
 	<id>396</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50854</itemId>
+	<itemId>50504</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4360,9 +4360,9 @@
 	<id>397</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51004</itemId>
+	<itemId>51304</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4371,9 +4371,9 @@
 	<id>398</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50904</itemId>
+	<itemId>51204</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4382,9 +4382,9 @@
 	<id>399</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51305</itemId>
+	<itemId>50854</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4393,9 +4393,9 @@
 	<id>400</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51205</itemId>
+	<itemId>51004</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4404,9 +4404,9 @@
 	<id>401</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50855</itemId>
+	<itemId>50904</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>6</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4415,9 +4415,9 @@
 	<id>402</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51005</itemId>
+	<itemId>50105</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4426,9 +4426,9 @@
 	<id>403</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50904</itemId>
+	<itemId>50205</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4437,9 +4437,9 @@
 	<id>404</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51305</itemId>
+	<itemId>50305</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4448,9 +4448,9 @@
 	<id>405</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51205</itemId>
+	<itemId>50805</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4459,9 +4459,9 @@
 	<id>406</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>50855</itemId>
+	<itemId>50815</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4470,119 +4470,119 @@
 	<id>407</id>
 	<group>10008</group>
 	<type>0</type>
-	<itemId>51005</itemId>
+	<itemId>50825</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>408</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65011</itemId>
+	<itemId>50835</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>409</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65011</itemId>
+	<itemId>50845</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>410</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65021</itemId>
+	<itemId>50605</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>411</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65031</itemId>
+	<itemId>50405</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>412</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65041</itemId>
+	<itemId>50505</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>413</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65051</itemId>
+	<itemId>51305</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>414</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65061</itemId>
+	<itemId>51205</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>415</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65071</itemId>
+	<itemId>50855</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>416</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65081</itemId>
-	<count>2</count>
-	<weight>1</weight>
+	<itemId>51005</itemId>
+	<count>1</count>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
 	<id>417</id>
-	<group>20001</group>
+	<group>10008</group>
 	<type>0</type>
-	<itemId>65091</itemId>
-	<count>2</count>
-	<weight>1</weight>
+	<itemId>50905</itemId>
+	<count>1</count>
+	<weight>2</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
@@ -4591,7 +4591,7 @@
 	<id>418</id>
 	<group>20001</group>
 	<type>0</type>
-	<itemId>65101</itemId>
+	<itemId>65011</itemId>
 	<count>2</count>
 	<weight>1</weight>
 	<level></level>
@@ -4602,7 +4602,7 @@
 	<id>419</id>
 	<group>20001</group>
 	<type>0</type>
-	<itemId>65111</itemId>
+	<itemId>65021</itemId>
 	<count>2</count>
 	<weight>1</weight>
 	<level></level>
@@ -4613,7 +4613,7 @@
 	<id>420</id>
 	<group>20001</group>
 	<type>0</type>
-	<itemId>65121</itemId>
+	<itemId>65031</itemId>
 	<count>2</count>
 	<weight>1</weight>
 	<level></level>
@@ -4624,7 +4624,7 @@
 	<id>421</id>
 	<group>20001</group>
 	<type>0</type>
-	<itemId>65131</itemId>
+	<itemId>65041</itemId>
 	<count>2</count>
 	<weight>1</weight>
 	<level></level>
@@ -4633,6 +4633,391 @@
 </config>
 <config>
 	<id>422</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65051</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>423</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65061</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>424</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65071</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>425</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65081</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>426</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65091</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>427</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65101</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>428</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65111</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>429</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65121</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>430</id>
+	<group>20001</group>
+	<type>0</type>
+	<itemId>65131</itemId>
+	<count>2</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>431</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65011</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>432</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65021</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>433</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65031</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>434</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65041</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>435</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65051</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>436</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65061</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>437</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65071</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>438</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65081</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>439</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65091</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>440</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65101</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>441</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65111</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>442</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65121</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>443</id>
+	<group>20002</group>
+	<type>0</type>
+	<itemId>65131</itemId>
+	<count>4</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>444</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65011</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>445</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65021</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>446</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65031</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>447</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65041</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>448</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65051</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>449</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65061</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>450</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65071</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>451</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65081</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>452</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65091</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>453</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65101</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>454</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65111</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>455</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65121</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>456</id>
+	<group>20003</group>
+	<type>0</type>
+	<itemId>65131</itemId>
+	<count>6</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>457</id>
 	<group>20004</group>
 	<type>0</type>
 	<itemId>303001</itemId>
@@ -4643,7 +5028,7 @@
 	<day></day>
 </config>
 <config>
-	<id>423</id>
+	<id>458</id>
 	<group>20004</group>
 	<type>0</type>
 	<itemId>304001</itemId>
@@ -4654,7 +5039,7 @@
 	<day></day>
 </config>
 <config>
-	<id>424</id>
+	<id>459</id>
 	<group>20004</group>
 	<type>0</type>
 	<itemId>305001</itemId>
@@ -4665,7 +5050,7 @@
 	<day></day>
 </config>
 <config>
-	<id>425</id>
+	<id>460</id>
 	<group>20004</group>
 	<type>0</type>
 	<itemId>306001</itemId>
@@ -4676,7 +5061,7 @@
 	<day></day>
 </config>
 <config>
-	<id>426</id>
+	<id>461</id>
 	<group>20004</group>
 	<type>0</type>
 	<itemId>307001</itemId>
@@ -4687,7 +5072,7 @@
 	<day></day>
 </config>
 <config>
-	<id>427</id>
+	<id>462</id>
 	<group>20004</group>
 	<type>0</type>
 	<itemId>308001</itemId>
@@ -4698,7 +5083,139 @@
 	<day></day>
 </config>
 <config>
-	<id>428</id>
+	<id>463</id>
+	<group>20005</group>
+	<type>0</type>
+	<itemId>303001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>464</id>
+	<group>20005</group>
+	<type>0</type>
+	<itemId>304001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>465</id>
+	<group>20005</group>
+	<type>0</type>
+	<itemId>305001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>466</id>
+	<group>20005</group>
+	<type>0</type>
+	<itemId>306001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>467</id>
+	<group>20005</group>
+	<type>0</type>
+	<itemId>307001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>468</id>
+	<group>20005</group>
+	<type>0</type>
+	<itemId>308001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>469</id>
+	<group>20006</group>
+	<type>0</type>
+	<itemId>303001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>470</id>
+	<group>20006</group>
+	<type>0</type>
+	<itemId>304001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>471</id>
+	<group>20006</group>
+	<type>0</type>
+	<itemId>305001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>472</id>
+	<group>20006</group>
+	<type>0</type>
+	<itemId>306001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>473</id>
+	<group>20006</group>
+	<type>0</type>
+	<itemId>307001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>474</id>
+	<group>20006</group>
+	<type>0</type>
+	<itemId>308001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>475</id>
 	<group>20007</group>
 	<type>0</type>
 	<itemId>108</itemId>
@@ -4709,7 +5226,7 @@
 	<day></day>
 </config>
 <config>
-	<id>429</id>
+	<id>476</id>
 	<group>20007</group>
 	<type>0</type>
 	<itemId>109</itemId>
@@ -4720,7 +5237,7 @@
 	<day></day>
 </config>
 <config>
-	<id>430</id>
+	<id>477</id>
 	<group>20007</group>
 	<type>0</type>
 	<itemId>10901</itemId>
@@ -4731,32 +5248,21 @@
 	<day></day>
 </config>
 <config>
-	<id>431</id>
+	<id>478</id>
 	<group>20007</group>
 	<type>0</type>
 	<itemId>10902</itemId>
 	<count>1</count>
-	<weight>10</weight>
+	<weight>8</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>432</id>
-	<group>20008</group>
+	<id>479</id>
+	<group>20007</group>
 	<type>0</type>
 	<itemId>10903</itemId>
-	<count>1</count>
-	<weight>5</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-</config>
-<config>
-	<id>433</id>
-	<group>20008</group>
-	<type>0</type>
-	<itemId>10904</itemId>
 	<count>1</count>
 	<weight>3</weight>
 	<level></level>
@@ -4764,29 +5270,117 @@
 	<day></day>
 </config>
 <config>
-	<id>434</id>
+	<id>480</id>
+	<group>20008</group>
+	<type>0</type>
+	<itemId>108</itemId>
+	<count>20</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>481</id>
+	<group>20008</group>
+	<type>0</type>
+	<itemId>109</itemId>
+	<count>10</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>482</id>
+	<group>20008</group>
+	<type>0</type>
+	<itemId>10904</itemId>
+	<count>1</count>
+	<weight>20</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>483</id>
 	<group>20008</group>
 	<type>0</type>
 	<itemId>10905</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>8</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>435</id>
+	<id>484</id>
 	<group>20008</group>
 	<type>0</type>
 	<itemId>10906</itemId>
 	<count>1</count>
-	<weight>1</weight>
+	<weight>3</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>436</id>
+	<id>485</id>
+	<group>20009</group>
+	<type>0</type>
+	<itemId>108</itemId>
+	<count>30</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>486</id>
+	<group>20009</group>
+	<type>0</type>
+	<itemId>109</itemId>
+	<count>15</count>
+	<weight>100</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>487</id>
+	<group>20009</group>
+	<type>0</type>
+	<itemId>10907</itemId>
+	<count>1</count>
+	<weight>20</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>488</id>
+	<group>20009</group>
+	<type>0</type>
+	<itemId>10908</itemId>
+	<count>1</count>
+	<weight>8</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>489</id>
+	<group>20009</group>
+	<type>0</type>
+	<itemId>10909</itemId>
+	<count>1</count>
+	<weight>3</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>490</id>
 	<group>20010</group>
 	<type>0</type>
 	<itemId>131</itemId>
@@ -4797,7 +5391,7 @@
 	<day></day>
 </config>
 <config>
-	<id>437</id>
+	<id>491</id>
 	<group>20010</group>
 	<type>0</type>
 	<itemId>132</itemId>
@@ -4808,7 +5402,7 @@
 	<day></day>
 </config>
 <config>
-	<id>438</id>
+	<id>492</id>
 	<group>20010</group>
 	<type>0</type>
 	<itemId>133</itemId>
@@ -4819,30 +5413,30 @@
 	<day></day>
 </config>
 <config>
-	<id>439</id>
+	<id>493</id>
 	<group>20010</group>
 	<type>0</type>
 	<itemId>134</itemId>
 	<count>100</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>440</id>
+	<id>494</id>
 	<group>20010</group>
 	<type>0</type>
 	<itemId>135</itemId>
 	<count>100</count>
-	<weight>1</weight>
+	<weight>5</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>441</id>
-	<group>20011</group>
+	<id>495</id>
+	<group>20010</group>
 	<type>0</type>
 	<itemId>136</itemId>
 	<count>100</count>
@@ -4852,8 +5446,8 @@
 	<day></day>
 </config>
 <config>
-	<id>442</id>
-	<group>20011</group>
+	<id>496</id>
+	<group>20010</group>
 	<type>0</type>
 	<itemId>137</itemId>
 	<count>100</count>
@@ -4863,8 +5457,8 @@
 	<day></day>
 </config>
 <config>
-	<id>443</id>
-	<group>20011</group>
+	<id>497</id>
+	<group>20010</group>
 	<type>0</type>
 	<itemId>138</itemId>
 	<count>100</count>
@@ -4874,88 +5468,440 @@
 	<day></day>
 </config>
 <config>
-	<id>444</id>
+	<id>498</id>
+	<group>20011</group>
+	<type>0</type>
+	<itemId>131</itemId>
+	<count>150</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>499</id>
+	<group>20011</group>
+	<type>0</type>
+	<itemId>132</itemId>
+	<count>150</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>500</id>
+	<group>20011</group>
+	<type>0</type>
+	<itemId>133</itemId>
+	<count>150</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>501</id>
+	<group>20011</group>
+	<type>0</type>
+	<itemId>134</itemId>
+	<count>150</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>502</id>
+	<group>20011</group>
+	<type>0</type>
+	<itemId>135</itemId>
+	<count>150</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>503</id>
+	<group>20011</group>
+	<type>0</type>
+	<itemId>136</itemId>
+	<count>150</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>504</id>
+	<group>20011</group>
+	<type>0</type>
+	<itemId>137</itemId>
+	<count>150</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>505</id>
+	<group>20011</group>
+	<type>0</type>
+	<itemId>138</itemId>
+	<count>150</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>506</id>
+	<group>20012</group>
+	<type>0</type>
+	<itemId>131</itemId>
+	<count>200</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>507</id>
+	<group>20012</group>
+	<type>0</type>
+	<itemId>132</itemId>
+	<count>200</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>508</id>
+	<group>20012</group>
+	<type>0</type>
+	<itemId>133</itemId>
+	<count>200</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>509</id>
+	<group>20012</group>
+	<type>0</type>
+	<itemId>134</itemId>
+	<count>200</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>510</id>
+	<group>20012</group>
+	<type>0</type>
+	<itemId>135</itemId>
+	<count>200</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>511</id>
+	<group>20012</group>
+	<type>0</type>
+	<itemId>136</itemId>
+	<count>200</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>512</id>
+	<group>20012</group>
+	<type>0</type>
+	<itemId>137</itemId>
+	<count>200</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>513</id>
+	<group>20012</group>
+	<type>0</type>
+	<itemId>138</itemId>
+	<count>200</count>
+	<weight>5</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>514</id>
 	<group>20013</group>
 	<type>0</type>
 	<itemId>400001</itemId>
-	<count>100</count>
+	<count>10</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>445</id>
+	<id>515</id>
 	<group>20013</group>
 	<type>0</type>
 	<itemId>500001</itemId>
-	<count>100</count>
+	<count>10</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>446</id>
+	<id>516</id>
 	<group>20013</group>
 	<type>0</type>
 	<itemId>600001</itemId>
-	<count>100</count>
+	<count>10</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>447</id>
+	<id>517</id>
 	<group>20013</group>
 	<type>0</type>
 	<itemId>700001</itemId>
-	<count>100</count>
+	<count>10</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>448</id>
+	<id>518</id>
 	<group>20013</group>
 	<type>0</type>
 	<itemId>800001</itemId>
-	<count>100</count>
+	<count>10</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>449</id>
+	<id>519</id>
 	<group>20013</group>
 	<type>0</type>
 	<itemId>900001</itemId>
-	<count>100</count>
+	<count>10</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>450</id>
+	<id>520</id>
 	<group>20013</group>
 	<type>0</type>
 	<itemId>1000001</itemId>
-	<count>100</count>
+	<count>10</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>
 	<day></day>
 </config>
 <config>
-	<id>451</id>
+	<id>521</id>
+	<group>20013</group>
+	<type>0</type>
+	<itemId>1100001</itemId>
+	<count>10</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>522</id>
+	<group>20014</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>523</id>
+	<group>20014</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>524</id>
+	<group>20014</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>525</id>
+	<group>20014</group>
+	<type>0</type>
+	<itemId>700001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>526</id>
+	<group>20014</group>
+	<type>0</type>
+	<itemId>800001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>527</id>
+	<group>20014</group>
+	<type>0</type>
+	<itemId>900001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>528</id>
+	<group>20014</group>
+	<type>0</type>
+	<itemId>1000001</itemId>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>529</id>
 	<group>20014</group>
 	<type>0</type>
 	<itemId>1100001</itemId>
-	<count>100</count>
+	<count>20</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>530</id>
+	<group>20015</group>
+	<type>0</type>
+	<itemId>400001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>531</id>
+	<group>20015</group>
+	<type>0</type>
+	<itemId>500001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>532</id>
+	<group>20015</group>
+	<type>0</type>
+	<itemId>600001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>533</id>
+	<group>20015</group>
+	<type>0</type>
+	<itemId>700001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>534</id>
+	<group>20015</group>
+	<type>0</type>
+	<itemId>800001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>535</id>
+	<group>20015</group>
+	<type>0</type>
+	<itemId>900001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>536</id>
+	<group>20015</group>
+	<type>0</type>
+	<itemId>1000001</itemId>
+	<count>30</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+</config>
+<config>
+	<id>537</id>
+	<group>20015</group>
+	<type>0</type>
+	<itemId>1100001</itemId>
+	<count>30</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>

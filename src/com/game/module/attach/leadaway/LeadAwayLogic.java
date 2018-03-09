@@ -124,9 +124,7 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
         //随机奖励
         RewardList list = new RewardList();
         list.rewards = new ArrayList<>();
-        //int weight = ConfigData.leadawayAwardsWeight.get(copyId);
         List<GoodsEntry> copyRewards = new ArrayList<>();
-        //RangeMap<Integer, Integer> map = ConfigData.leadawayAwardsMap.get(copyId);
         int dropId = ConfigData.leadawayAwardsDrop.get(copyId);
         DropGoods dropGoods = ConfigData.getConfig(DropGoods.class, dropId);
         int weight = 0;
@@ -136,7 +134,16 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
 
         for (int i = 0; i < 30; i++) {
             int index = RandomUtil.randInt(weight);
-            int[] award = dropGoods.rewards[index];
+            int k = 0;
+            int w = 0;
+            for (int n = 0; n < dropGoods.rate.length; n++) {
+                w += dropGoods.rate[n];
+                if (index <= w) {
+                    break;
+                }
+                k++;
+            }
+            int[] award = dropGoods.rewards[k];
 
             Reward reward = new Reward();
             reward.id = award[0];

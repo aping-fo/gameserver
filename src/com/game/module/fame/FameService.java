@@ -59,9 +59,9 @@ public class FameService {
             return;
         }
         PlayerData data = playerService.getPlayerData(playerId);
-        if (data.getActivityCamp() != 0) { //代表
+        /*if (data.getActivityCamp() != 0) { //代表
             camp = data.getActivityCamp();
-        }
+        }*/
         Upgrade fameData = data.getFames().get(camp);
         if (fameData == null) {
             fameData = new Upgrade();

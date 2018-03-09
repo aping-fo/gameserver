@@ -33,7 +33,8 @@ public class ERatingService implements InitHandler {
     @Autowired
     private PlayerService playerService;
 
-    ExecutorService executor = new ThreadPoolExecutor(4, 8, 0, TimeUnit.SECONDS, new LinkedBlockingQueue<>(120000), new DiscardPolicy());
+    //sint size = Runtime.getRuntime().availableProcessors();
+    private ExecutorService executor = new ThreadPoolExecutor(4, 8, 0, TimeUnit.SECONDS, new LinkedBlockingQueue<>(120000), new DiscardPolicy());
 
 
     @Override
@@ -67,6 +68,7 @@ public class ERatingService implements InitHandler {
                     if (!SysConfig.debug) {
                         ServerLogger.warn("send report,xml data \r\n" + report.toProto());
                         String xmlData = HttpClient.sendPostRequest(report.toProto());
+                        ServerLogger.warn("receive xml data \r\n" + xmlData);
                         int cmdId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_HEAD, XmlParser.FIELD_CMD);
                         if (cmdId == ERatingType.CMD_CREATE_ROLE_RESP) { //创建角色，获取roleId
                             PlayerData data = playerService.getPlayerData(playerId);
@@ -95,6 +97,7 @@ public class ERatingService implements InitHandler {
                     if (!SysConfig.debug) { //帐号认证获取userId
                         ServerLogger.warn("send report,xml data \r\n" + report.toProto());
                         String xmlData = HttpClient.sendPostRequest(report.toProto());
+                        ServerLogger.warn("receive xml data \r\n" + xmlData);
                         int userId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_USER_ID);
                         IntParam param = new IntParam();
                         playerService.addSdkUser(user, userId);

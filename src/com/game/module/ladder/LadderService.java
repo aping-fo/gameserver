@@ -755,6 +755,9 @@ public class LadderService implements InitHandler {
                 vo.vocation = player.getVocation();
                 vo.score = ladder.getScore();
                 vo.levNum = ladder.getLevel();
+                vo.playerId = ladder.getPlayerId();
+                vo.fightingValue = player.getFight();
+                vo.vip = player.getVip();
                 LADDER_RANK.params.add(vo);
             }
 

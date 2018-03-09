@@ -395,7 +395,13 @@ public class CopyService {
 
         //声望加成
         PlayerData data = playerService.getPlayerData(playerId);
-        boolean bCamp = (cfg.camp != 0 && cfg.camp == data.getActivityCamp());
+        if (data.getActivityCamp() != 0) {
+            int itemId = ConfigData.FameMap.get(data.getActivityCamp());
+            GoodsEntry g = new GoodsEntry(itemId, (int) ConfigData.globalParam().fameAddRate);
+            items.add(g);
+        }
+
+        /*boolean bCamp = (cfg.camp != 0 && cfg.camp == data.getActivityCamp());
         if (bCamp) { //代表阵营==当前阵营，加成
             float rate = ConfigData.globalParam().fameAddRate;
             for (GoodsEntry g : items) {
@@ -415,7 +421,7 @@ public class CopyService {
                     }
                 }
             }
-        }
+        }*/
 
         //公会科技加成
         if (player.getGangId() > 0) {
@@ -437,7 +443,6 @@ public class CopyService {
                 }
             }
         }
-
         return items;
     }
 
@@ -713,8 +718,8 @@ public class CopyService {
         MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, monster.monsterId);
         Map<Integer, int[]> condParams = Maps.newHashMap();
         condParams.put(Task.FINISH_KILL, new int[]{monsterCfg.type, monster.monsterId, 1});
-        condParams.put(Task.TYPE_KILL, new int[]{monsterCfg.type,1});
-        condParams.put(Task.TYPE_KILL, new int[]{0,1});
+        condParams.put(Task.TYPE_KILL, new int[]{monsterCfg.type, 1});
+        condParams.put(Task.TYPE_KILL, new int[]{0, 1});
         taskService.doTask(playerId, condParams);
 
         if (m.reward == 0) {// 不需要奖励
@@ -843,17 +848,17 @@ public class CopyService {
                 result.code = Response.NO_MATERIAL;
                 return result;
             }
-            boolean show = shopService.triggerMysteryShop(playerId, copyId, times,null);
+            boolean show = shopService.triggerMysteryShop(playerId, copyId, times, null);
             if (show) {
                 result.showMystery = true;
             }
             // 更新副本次数
             updateCopyTimes(copyId, playerData, cfg, times);
         }
-        Map<Integer,GoodsEntry> map = Maps.newHashMap();
+        Map<Integer, GoodsEntry> map = Maps.newHashMap();
         for (int i = 0; i < times; i++) {
             RewardList list = new RewardList();
-            list.rewards = swipeCopyInner(playerId, copyId,map);
+            list.rewards = swipeCopyInner(playerId, copyId, map);
             result.reward.add(list);
         }
         goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
@@ -864,7 +869,7 @@ public class CopyService {
 
 
     // 扫荡副本
-    public List<Reward> swipeCopyInner(int playerId, int copyId,Map<Integer,GoodsEntry> map) {
+    public List<Reward> swipeCopyInner(int playerId, int copyId, Map<Integer, GoodsEntry> map) {
         createCopyInstance(playerId, copyId, copyId);
         int star = 1;
         Copy copy = playerService.getPlayerData(playerId).getCopys().get(copyId);
@@ -876,11 +881,11 @@ public class CopyService {
             return null;
         }
         List<GoodsEntry> copyRewards = calculateCopyReward(playerId, copyId, star);
-        for(GoodsEntry goodsEntry : copyRewards){
+        for (GoodsEntry goodsEntry : copyRewards) {
             GoodsEntry goodsEntryTmp = map.get(goodsEntry.id);
-            if(goodsEntryTmp == null){
-                map.put(goodsEntry.id,goodsEntry);
-            }else {
+            if (goodsEntryTmp == null) {
+                map.put(goodsEntry.id, goodsEntry);
+            } else {
                 goodsEntryTmp.count = goodsEntryTmp.count + goodsEntry.count;
             }
         }

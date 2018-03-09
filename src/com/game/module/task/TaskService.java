@@ -980,11 +980,11 @@ public class TaskService implements Dispose {
         List<GoodsEntry> reward = Lists.newArrayList();
         List<Task> updateTasks = Lists.newArrayList();
         for (Task task : tasks) {
-            if (task.getType() >= 6) {
+            TaskConfig config = ConfigData.getConfig(TaskConfig.class, task.getTaskId());
+            if (config.taskType >= 6) {
                 if (task.getState() == Task.STATE_FINISHED) {
                     task.setState(Task.STATE_SUBMITED);
                     updateTasks.add(task);
-                    TaskConfig config = ConfigData.getConfig(TaskConfig.class, task.getTaskId());
                     for (int[] arr : config.rewards) {
                         reward.add(new GoodsEntry(arr[0], arr[1]));
                     }
@@ -993,7 +993,7 @@ public class TaskService implements Dispose {
         }
 
         goodsService.addRewards(playerId, reward, LogConsume.ACHIEVEMENT_GET_ALL);
-        updateTaskToClient(playerId,updateTasks);
+        updateTaskToClient(playerId, updateTasks);
         IntParam param = new IntParam();
         param.param = Response.SUCCESS;
         return param;

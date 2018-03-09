@@ -25,11 +25,17 @@ public class PetConfig {
 	public int passiveSkillId;//被动技能ID
 	public int passiveSkillCount;//被动技能数量
 	public int hp;//生命加成
+	public int hpFix;//生命固定加成
 	public int attack;//威力加成
+	public int attackFix;//威力固定加成
 	public int defense;//防御加成
+	public int defenseFix;//防御固定加成
 	public int crit;//暴击加成
+	public int critFix;//暴击固定加成
 	public int symptom;//异常加成
+	public int symptomFix;//异常固定加成
 	public int fu;//抗性加成
+	public int fuFix;//抗性固定加成
 	public float scale;//缩放比例
 	public float rotate;//旋转角度
 }

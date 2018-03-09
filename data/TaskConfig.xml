@@ -48,7 +48,7 @@
 	<finishType>1</finishType>
 	<finishParam>[0,1,0,3]</finishParam>
 	<rewards>[[102,50],[109101,2]]</rewards>
-	<liveness>20</liveness>
+	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
 </config>
@@ -61,7 +61,7 @@
 	<finishType>1</finishType>
 	<finishParam>[0,1,0,5]</finishParam>
 	<rewards>[[102,50],[103,500]]</rewards>
-	<liveness>20</liveness>
+	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
 </config>
@@ -74,7 +74,7 @@
 	<finishType>9</finishType>
 	<finishParam>[103,500]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
-	<liveness>20</liveness>
+	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,112,1,1]</functionType>
 </config>
@@ -87,7 +87,7 @@
 	<finishType>9</finishType>
 	<finishParam>[102,10]</finishParam>
 	<rewards>[[102,50],[103,500]]</rewards>
-	<liveness>20</liveness>
+	<liveness>10</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,112,1,1]</functionType>
 </config>
@@ -200,7 +200,7 @@
 	<group>184</group>
 	<taskType>2</taskType>
 	<taskName>每日-公会捐献</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>17</finishType>
 	<finishParam>[1,3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -213,7 +213,7 @@
 	<group>185</group>
 	<taskType>2</taskType>
 	<taskName>每日-公会捐献</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>17</finishType>
 	<finishParam>[2,3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -226,7 +226,7 @@
 	<group>186</group>
 	<taskType>2</taskType>
 	<taskName>每日-公会捐献</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>17</finishType>
 	<finishParam>[3,3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -595,7 +595,7 @@
 	<finishParam>[3,1]</finishParam>
 	<rewards>[[103,500]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14019</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType></functionType>
 </config>
 <config>
@@ -608,7 +608,7 @@
 	<finishParam>[4,1]</finishParam>
 	<rewards>[[103,500]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14020</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType></functionType>
 </config>
 <config>
@@ -621,7 +621,7 @@
 	<finishParam>[4,2]</finishParam>
 	<rewards>[[103,500]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14021</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType></functionType>
 </config>
 <config>
@@ -634,7 +634,7 @@
 	<finishParam>[5,1]</finishParam>
 	<rewards>[[103,500]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14022</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType></functionType>
 </config>
 <config>
@@ -1661,7 +1661,7 @@
 	<finishParam>[2,1]</finishParam>
 	<rewards>[[103,500]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14101</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType></functionType>
 </config>
 <config>
@@ -1674,7 +1674,7 @@
 	<finishParam>[3,1]</finishParam>
 	<rewards>[[103,500]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14102</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType></functionType>
 </config>
 <config>
@@ -1687,7 +1687,7 @@
 	<finishParam>[4,1]</finishParam>
 	<rewards>[[103,500]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14103</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType></functionType>
 </config>
 <config>
@@ -2088,7 +2088,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2101,7 +2101,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2114,7 +2114,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2127,7 +2127,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2140,7 +2140,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2153,7 +2153,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2166,7 +2166,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110706,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2179,7 +2179,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110806,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2192,7 +2192,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[110906,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2205,7 +2205,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[111006,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2218,7 +2218,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[111106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2231,7 +2231,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[111206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2244,7 +2244,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[111306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2257,7 +2257,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[111406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2270,7 +2270,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[111506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2283,7 +2283,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[111606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2296,7 +2296,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2309,7 +2309,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2322,7 +2322,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2335,7 +2335,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2348,7 +2348,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2361,7 +2361,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2374,7 +2374,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120706,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2387,7 +2387,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120806,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2400,7 +2400,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[120906,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2413,7 +2413,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[121006,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2426,7 +2426,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[121106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2439,7 +2439,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[121206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2452,7 +2452,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[121306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2465,7 +2465,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[121406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2478,7 +2478,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[121506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2491,7 +2491,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[121606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2504,7 +2504,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2517,7 +2517,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2530,7 +2530,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2543,7 +2543,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2556,7 +2556,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2569,7 +2569,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2582,7 +2582,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130706,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2595,7 +2595,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130806,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2608,7 +2608,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[130906,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2621,7 +2621,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[131006,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2634,7 +2634,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[131106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2647,7 +2647,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[131206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2660,7 +2660,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[131306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2673,7 +2673,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[131406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2686,7 +2686,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[131506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2699,7 +2699,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[131606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2712,7 +2712,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2725,7 +2725,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2738,7 +2738,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2751,7 +2751,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2764,7 +2764,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2777,7 +2777,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2790,7 +2790,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110706,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2803,7 +2803,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110806,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2816,7 +2816,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[110906,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2829,7 +2829,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[111006,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2842,7 +2842,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[111106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2855,7 +2855,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[111206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2868,7 +2868,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[111306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2881,7 +2881,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[111406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2894,7 +2894,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[111506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2907,7 +2907,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[111606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2920,7 +2920,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2933,7 +2933,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2946,7 +2946,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2959,7 +2959,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2972,7 +2972,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2985,7 +2985,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -2998,7 +2998,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120706,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3011,7 +3011,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120806,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3024,7 +3024,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[120906,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3037,7 +3037,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[121006,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3050,7 +3050,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[121106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3063,7 +3063,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[121206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3076,7 +3076,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[121306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3089,7 +3089,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[121406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3102,7 +3102,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[121506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3115,7 +3115,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[121606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3128,7 +3128,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3141,7 +3141,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3154,7 +3154,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3167,7 +3167,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3180,7 +3180,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3193,7 +3193,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3206,7 +3206,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130706,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3219,7 +3219,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130806,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3232,7 +3232,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[130906,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3245,7 +3245,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[131006,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3258,7 +3258,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[131106,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3271,7 +3271,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[131206,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3284,7 +3284,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[131306,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3297,7 +3297,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[131406,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3310,7 +3310,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[131506,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3323,7 +3323,7 @@
 	<level></level>
 	<finishType>22</finishType>
 	<finishParam>[131606,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3336,7 +3336,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[1,0,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3349,7 +3349,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[1,0,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3362,7 +3362,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[1,0,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3375,7 +3375,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[1,0,200]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3388,7 +3388,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[2,0,500]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3401,7 +3401,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[2,0,500]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3414,7 +3414,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[2,0,500]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3427,7 +3427,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[2,10111,500]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3440,7 +3440,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110106,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3453,7 +3453,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110206,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3466,7 +3466,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110306,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3479,7 +3479,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110406,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3492,7 +3492,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110506,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3505,7 +3505,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110606,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3518,7 +3518,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110706,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3531,7 +3531,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110806,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3544,7 +3544,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[110906,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3557,7 +3557,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[111006,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3570,7 +3570,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[111106,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3583,7 +3583,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[111206,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3596,7 +3596,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[111306,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3609,7 +3609,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[111406,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3622,7 +3622,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[111506,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3635,7 +3635,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[111606,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3648,7 +3648,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120106,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3661,7 +3661,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120206,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3674,7 +3674,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120306,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3687,7 +3687,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120406,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3700,7 +3700,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120506,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3713,7 +3713,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120606,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3726,7 +3726,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120706,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3739,7 +3739,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120806,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3752,7 +3752,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[120906,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3765,7 +3765,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[121006,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3778,7 +3778,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[121106,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3791,7 +3791,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[121206,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3804,7 +3804,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[121306,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3817,7 +3817,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[121406,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3830,7 +3830,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[121506,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3843,7 +3843,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[121606,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3856,7 +3856,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130106,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3869,7 +3869,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130206,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3882,7 +3882,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130306,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3895,7 +3895,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130406,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3908,7 +3908,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130506,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3921,7 +3921,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130606,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3934,7 +3934,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130706,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3947,7 +3947,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130806,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3960,7 +3960,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[130906,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3973,7 +3973,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[131006,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3986,7 +3986,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[131106,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -3999,7 +3999,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[131206,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4012,7 +4012,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[131306,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4025,7 +4025,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[131406,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4038,7 +4038,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[131506,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4051,7 +4051,7 @@
 	<level></level>
 	<finishType>23</finishType>
 	<finishParam>[131606,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4064,7 +4064,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110106,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4077,7 +4077,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110206,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4090,7 +4090,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110306,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4103,7 +4103,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110406,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4116,7 +4116,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110506,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4129,7 +4129,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110606,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4142,7 +4142,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110706,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4155,7 +4155,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110806,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4168,7 +4168,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[110906,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4181,7 +4181,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[111006,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4194,7 +4194,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[111106,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4207,7 +4207,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[111206,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4220,7 +4220,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[111306,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4233,7 +4233,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[111406,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4246,7 +4246,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[111506,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4259,7 +4259,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[111606,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4272,7 +4272,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120106,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4285,7 +4285,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120206,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4298,7 +4298,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120306,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4311,7 +4311,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120406,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4324,7 +4324,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120506,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4337,7 +4337,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120606,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4350,7 +4350,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120706,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4363,7 +4363,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120806,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4376,7 +4376,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[120906,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4389,7 +4389,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[121006,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4402,7 +4402,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[121106,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4415,7 +4415,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[121206,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4428,7 +4428,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[121306,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4441,7 +4441,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[121406,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4454,7 +4454,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[121506,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4467,7 +4467,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[121606,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4480,7 +4480,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130106,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4493,7 +4493,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130206,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4506,7 +4506,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130306,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4519,7 +4519,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130406,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4532,7 +4532,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130506,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4545,7 +4545,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130606,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4558,7 +4558,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130706,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4571,7 +4571,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130806,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4584,7 +4584,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[130906,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4597,7 +4597,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[131006,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4610,7 +4610,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[131106,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4623,7 +4623,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[131206,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4636,7 +4636,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[131306,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4649,7 +4649,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[131406,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4662,7 +4662,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[131506,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4675,7 +4675,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[131606,30]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4688,7 +4688,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[800111,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4701,7 +4701,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[800112,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4714,7 +4714,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[800113,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4727,7 +4727,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[800114,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4740,7 +4740,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[800115,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4753,7 +4753,7 @@
 	<level></level>
 	<finishType>21</finishType>
 	<finishParam>[800111,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4766,7 +4766,7 @@
 	<level></level>
 	<finishType>21</finishType>
 	<finishParam>[800112,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4779,7 +4779,7 @@
 	<level></level>
 	<finishType>21</finishType>
 	<finishParam>[800113,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4792,7 +4792,7 @@
 	<level></level>
 	<finishType>21</finishType>
 	<finishParam>[800114,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4805,7 +4805,7 @@
 	<level></level>
 	<finishType>21</finishType>
 	<finishParam>[800115,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4818,7 +4818,7 @@
 	<level></level>
 	<finishType>21</finishType>
 	<finishParam>[1000115,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4831,7 +4831,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1000115,50,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4844,7 +4844,7 @@
 	<level></level>
 	<finishType>25</finishType>
 	<finishParam>[1000115,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4857,7 +4857,7 @@
 	<level></level>
 	<finishType>26</finishType>
 	<finishParam>[800111,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4870,7 +4870,7 @@
 	<level></level>
 	<finishType>26</finishType>
 	<finishParam>[800115,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4883,7 +4883,7 @@
 	<level></level>
 	<finishType>26</finishType>
 	<finishParam>[1000111,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4896,7 +4896,7 @@
 	<level></level>
 	<finishType>26</finishType>
 	<finishParam>[1000115,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4909,7 +4909,7 @@
 	<level></level>
 	<finishType>27</finishType>
 	<finishParam>[800111,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4922,7 +4922,7 @@
 	<level></level>
 	<finishType>27</finishType>
 	<finishParam>[800115,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4935,7 +4935,7 @@
 	<level></level>
 	<finishType>27</finishType>
 	<finishParam>[1000111,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4948,7 +4948,7 @@
 	<level></level>
 	<finishType>27</finishType>
 	<finishParam>[1000115,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4961,7 +4961,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[304010,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4974,7 +4974,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[304013,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -4987,7 +4987,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[303010,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5000,7 +5000,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[303013,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5013,7 +5013,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[300101,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5026,7 +5026,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[300104,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5039,7 +5039,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[302011,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5052,7 +5052,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[302014,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5065,7 +5065,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5078,7 +5078,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500104,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5091,7 +5091,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500204,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5104,7 +5104,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500304,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5117,7 +5117,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500404,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5130,7 +5130,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500504,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5143,7 +5143,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500604,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5156,7 +5156,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500704,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5169,7 +5169,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500804,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5182,7 +5182,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1500904,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5195,7 +5195,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1501004,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5208,7 +5208,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500104,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5221,7 +5221,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500204,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5234,7 +5234,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500304,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5247,7 +5247,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500404,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5260,7 +5260,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500504,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5273,7 +5273,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500604,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5286,7 +5286,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500704,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5299,7 +5299,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500804,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5312,7 +5312,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1500904,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5325,7 +5325,7 @@
 	<level></level>
 	<finishType>24</finishType>
 	<finishParam>[1501004,30,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5338,7 +5338,7 @@
 	<level></level>
 	<finishType>18</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5351,7 +5351,7 @@
 	<level></level>
 	<finishType>18</finishType>
 	<finishParam>[50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5364,7 +5364,7 @@
 	<level></level>
 	<finishType>18</finishType>
 	<finishParam>[100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5377,7 +5377,7 @@
 	<level></level>
 	<finishType>18</finishType>
 	<finishParam>[200]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5390,7 +5390,7 @@
 	<level></level>
 	<finishType>65</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5403,7 +5403,7 @@
 	<level></level>
 	<finishType>65</finishType>
 	<finishParam>[20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5416,7 +5416,7 @@
 	<level></level>
 	<finishType>29</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5429,7 +5429,7 @@
 	<level></level>
 	<finishType>29</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5442,7 +5442,7 @@
 	<level></level>
 	<finishType>30</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5455,7 +5455,7 @@
 	<level></level>
 	<finishType>30</finishType>
 	<finishParam>[50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5468,7 +5468,7 @@
 	<level></level>
 	<finishType>30</finishType>
 	<finishParam>[100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5481,7 +5481,7 @@
 	<level></level>
 	<finishType>31</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5494,7 +5494,7 @@
 	<level></level>
 	<finishType>31</finishType>
 	<finishParam>[4]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5507,7 +5507,7 @@
 	<level></level>
 	<finishType>31</finishType>
 	<finishParam>[7]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5520,7 +5520,7 @@
 	<level></level>
 	<finishType>31</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5533,7 +5533,7 @@
 	<level></level>
 	<finishType>31</finishType>
 	<finishParam>[13]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5546,7 +5546,7 @@
 	<level></level>
 	<finishType>31</finishType>
 	<finishParam>[16]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5559,7 +5559,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1300101,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5572,7 +5572,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1300101,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5585,7 +5585,7 @@
 	<level></level>
 	<finishType>20</finishType>
 	<finishParam>[1300101,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5598,7 +5598,7 @@
 	<level></level>
 	<finishType>32</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5611,7 +5611,7 @@
 	<level></level>
 	<finishType>32</finishType>
 	<finishParam>[50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5624,7 +5624,7 @@
 	<level></level>
 	<finishType>33</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5637,7 +5637,7 @@
 	<level></level>
 	<finishType>33</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5650,7 +5650,7 @@
 	<level></level>
 	<finishType>34</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5663,7 +5663,7 @@
 	<level></level>
 	<finishType>34</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5676,7 +5676,7 @@
 	<level></level>
 	<finishType>34</finishType>
 	<finishParam>[50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5689,7 +5689,7 @@
 	<level></level>
 	<finishType>35</finishType>
 	<finishParam>[1,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5702,7 +5702,7 @@
 	<level></level>
 	<finishType>35</finishType>
 	<finishParam>[6,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5715,7 +5715,7 @@
 	<level></level>
 	<finishType>35</finishType>
 	<finishParam>[3,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5728,7 +5728,7 @@
 	<level></level>
 	<finishType>35</finishType>
 	<finishParam>[5,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5741,7 +5741,7 @@
 	<level></level>
 	<finishType>36</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5754,7 +5754,7 @@
 	<level></level>
 	<finishType>36</finishType>
 	<finishParam>[2]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5767,7 +5767,7 @@
 	<level></level>
 	<finishType>36</finishType>
 	<finishParam>[3]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5780,7 +5780,7 @@
 	<level></level>
 	<finishType>36</finishType>
 	<finishParam>[4]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5793,7 +5793,7 @@
 	<level></level>
 	<finishType>36</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5806,7 +5806,7 @@
 	<level></level>
 	<finishType>37</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5819,7 +5819,7 @@
 	<level></level>
 	<finishType>38</finishType>
 	<finishParam>[1004,0]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5832,7 +5832,7 @@
 	<level></level>
 	<finishType>38</finishType>
 	<finishParam>[2004,0]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5845,7 +5845,7 @@
 	<level></level>
 	<finishType>38</finishType>
 	<finishParam>[4004,0]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5858,7 +5858,7 @@
 	<level></level>
 	<finishType>38</finishType>
 	<finishParam>[3004,0]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5871,7 +5871,7 @@
 	<level></level>
 	<finishType>38</finishType>
 	<finishParam>[8004,0]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5884,7 +5884,7 @@
 	<level></level>
 	<finishType>38</finishType>
 	<finishParam>[7004,0]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5897,7 +5897,7 @@
 	<level></level>
 	<finishType>38</finishType>
 	<finishParam>[5004,0]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5910,7 +5910,7 @@
 	<level></level>
 	<finishType>38</finishType>
 	<finishParam>[6004,0]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5923,7 +5923,7 @@
 	<level></level>
 	<finishType>39</finishType>
 	<finishParam>[1,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5936,7 +5936,7 @@
 	<level></level>
 	<finishType>39</finishType>
 	<finishParam>[10,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5949,7 +5949,7 @@
 	<level></level>
 	<finishType>39</finishType>
 	<finishParam>[1,5]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5962,7 +5962,7 @@
 	<level></level>
 	<finishType>39</finishType>
 	<finishParam>[10,5]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5975,7 +5975,7 @@
 	<level></level>
 	<finishType>40</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -5988,7 +5988,7 @@
 	<level></level>
 	<finishType>40</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6001,7 +6001,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[41,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6014,7 +6014,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[31,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6027,7 +6027,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[21,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6040,7 +6040,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[1,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6053,7 +6053,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[11,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6066,7 +6066,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[43,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6079,7 +6079,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[33,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6092,7 +6092,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[23,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6105,7 +6105,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[3,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6118,7 +6118,7 @@
 	<level></level>
 	<finishType>41</finishType>
 	<finishParam>[13,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6131,7 +6131,7 @@
 	<level></level>
 	<finishType>42</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6144,7 +6144,7 @@
 	<level></level>
 	<finishType>42</finishType>
 	<finishParam>[50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6157,7 +6157,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[11101050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6170,7 +6170,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[11101100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6183,7 +6183,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[11102050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6196,7 +6196,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[11102100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6209,7 +6209,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[11103050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6222,7 +6222,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[11103100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6235,7 +6235,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[11104050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6248,7 +6248,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[11104100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6261,7 +6261,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[12101050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6274,7 +6274,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[12101100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6287,7 +6287,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[12102050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6300,7 +6300,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[12102100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6313,7 +6313,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[12103050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6326,7 +6326,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[12103100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6339,7 +6339,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[12104050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6352,7 +6352,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[12104100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6365,7 +6365,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[13101050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6378,7 +6378,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[13101100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6391,7 +6391,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[13102050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6404,7 +6404,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[13102100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6417,7 +6417,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[13103050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6430,7 +6430,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[13103100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6443,7 +6443,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[13104050,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6456,7 +6456,7 @@
 	<level></level>
 	<finishType>43</finishType>
 	<finishParam>[13104100,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6469,7 +6469,7 @@
 	<level></level>
 	<finishType>44</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6482,7 +6482,7 @@
 	<level></level>
 	<finishType>44</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6495,7 +6495,7 @@
 	<level></level>
 	<finishType>44</finishType>
 	<finishParam>[15]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6508,7 +6508,7 @@
 	<level></level>
 	<finishType>45</finishType>
 	<finishParam>[0,1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6521,7 +6521,7 @@
 	<level></level>
 	<finishType>13</finishType>
 	<finishParam>[20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6534,7 +6534,7 @@
 	<level></level>
 	<finishType>4</finishType>
 	<finishParam>[20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6547,7 +6547,7 @@
 	<level></level>
 	<finishType>46</finishType>
 	<finishParam>[201,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6560,7 +6560,7 @@
 	<level></level>
 	<finishType>46</finishType>
 	<finishParam>[202,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6573,7 +6573,7 @@
 	<level></level>
 	<finishType>46</finishType>
 	<finishParam>[203,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6586,7 +6586,7 @@
 	<level></level>
 	<finishType>46</finishType>
 	<finishParam>[204,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6599,7 +6599,7 @@
 	<level></level>
 	<finishType>46</finishType>
 	<finishParam>[205,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6612,7 +6612,7 @@
 	<level></level>
 	<finishType>46</finishType>
 	<finishParam>[206,20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6625,7 +6625,7 @@
 	<level></level>
 	<finishType>47</finishType>
 	<finishParam>[10000]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6638,7 +6638,7 @@
 	<level></level>
 	<finishType>47</finishType>
 	<finishParam>[100000]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6651,7 +6651,7 @@
 	<level></level>
 	<finishType>48</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6664,7 +6664,7 @@
 	<level></level>
 	<finishType>48</finishType>
 	<finishParam>[20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6677,7 +6677,7 @@
 	<level></level>
 	<finishType>49</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6690,7 +6690,7 @@
 	<level></level>
 	<finishType>49</finishType>
 	<finishParam>[50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6703,7 +6703,7 @@
 	<level></level>
 	<finishType>50</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6716,7 +6716,7 @@
 	<level></level>
 	<finishType>50</finishType>
 	<finishParam>[100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6729,7 +6729,7 @@
 	<level></level>
 	<finishType>19</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6742,7 +6742,7 @@
 	<level></level>
 	<finishType>19</finishType>
 	<finishParam>[100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6755,7 +6755,7 @@
 	<level></level>
 	<finishType>51</finishType>
 	<finishParam>[5,5]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6768,7 +6768,7 @@
 	<level></level>
 	<finishType>51</finishType>
 	<finishParam>[5,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6781,7 +6781,7 @@
 	<level></level>
 	<finishType>52</finishType>
 	<finishParam>[25]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6794,7 +6794,7 @@
 	<level></level>
 	<finishType>53</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6807,7 +6807,7 @@
 	<level></level>
 	<finishType>64</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6820,7 +6820,7 @@
 	<level></level>
 	<finishType>64</finishType>
 	<finishParam>[15]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6833,7 +6833,7 @@
 	<level></level>
 	<finishType>54</finishType>
 	<finishParam>[5]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6846,7 +6846,7 @@
 	<level></level>
 	<finishType>66</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6859,7 +6859,7 @@
 	<level></level>
 	<finishType>66</finishType>
 	<finishParam>[7]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6872,7 +6872,7 @@
 	<level></level>
 	<finishType>55</finishType>
 	<finishParam>[6]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6885,7 +6885,7 @@
 	<level></level>
 	<finishType>56</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6898,7 +6898,7 @@
 	<level></level>
 	<finishType>57</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6911,7 +6911,7 @@
 	<level></level>
 	<finishType>58</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6924,7 +6924,7 @@
 	<level></level>
 	<finishType>59</finishType>
 	<finishParam>[20]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6937,7 +6937,7 @@
 	<level></level>
 	<finishType>59</finishType>
 	<finishParam>[50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6950,7 +6950,7 @@
 	<level></level>
 	<finishType>59</finishType>
 	<finishParam>[100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6963,7 +6963,7 @@
 	<level></level>
 	<finishType>60</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6976,7 +6976,7 @@
 	<level></level>
 	<finishType>61</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -6989,7 +6989,7 @@
 	<level></level>
 	<finishType>62</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -7002,7 +7002,7 @@
 	<level></level>
 	<finishType>63</finishType>
 	<finishParam>[1]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -7015,7 +7015,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -7028,7 +7028,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,100]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>
@@ -7041,7 +7041,7 @@
 	<level></level>
 	<finishType>2</finishType>
 	<finishParam>[3,0,50]</finishParam>
-	<rewards>[[113,50]]</rewards>
+	<rewards>[[113,50],[103,100]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType></functionType>

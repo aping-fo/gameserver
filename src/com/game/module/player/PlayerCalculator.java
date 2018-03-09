@@ -215,7 +215,7 @@ public class PlayerCalculator {
                 bSuitFlag |= config.sixAdd != null;
             }
 
-            if(bSuitFlag) {
+            if (bSuitFlag) {
                 //taskService.doTask(player.getPlayerId(), Task.TYPE_SUIT, config.id);
             }
         }
@@ -223,6 +223,7 @@ public class PlayerCalculator {
 
     /**
      * 套装值加成
+     *
      * @param player
      * @param map
      */
@@ -277,6 +278,9 @@ public class PlayerCalculator {
     //加称号属性
     private void addTitleAttr(PlayerAddition player) {
         PlayerData data = playerService.getPlayerData(player.getPlayerId());
+        if (!data.getTitles().contains(1)) { //功能还未开启
+            return;
+        }
         Player p = (Player) player;
         //装备称号加成
         TitleConfig config = ConfigData.getConfig(TitleConfig.class, p.getTitle());
@@ -302,25 +306,23 @@ public class PlayerCalculator {
         }
     }
 
-    //加时装战力，非百分比的部分
+    //加宠物战力，非百分比的部分
     private void addPet(PlayerAddition player) {
         PetBag petBag = petService.getPetBag(player.getPlayerId());
         if (petBag == null) {
             return;
         }
-        Player p = (Player) player;
         PetConfig config = ConfigData.getConfig(PetConfig.class, petBag.getFightPetId());
         if (config == null) {
             return;
         }
 
-
-        player.addAttack(config.attack);
-        player.addCrit(config.crit);
-        player.addDefense(config.defense);
-        player.addFu(config.fu);
-        player.addSymptom(config.symptom);
-        player.addHp(config.hp);
+        player.addAttack(config.attackFix);
+        player.addCrit(config.critFix);
+        player.addDefense(config.defenseFix);
+        player.addFu(config.fuFix);
+        player.addSymptom(config.symptomFix);
+        player.addHp(config.hpFix);
     }
 
     //加时装战力，非百分比的部分

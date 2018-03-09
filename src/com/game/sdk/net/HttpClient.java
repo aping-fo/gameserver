@@ -125,7 +125,7 @@ public class HttpClient {
             response = httpclient.execute(httpPost);
             HttpEntity httpEntity = response.getEntity();
             String json = EntityUtils.toString(httpEntity,"UTF-8");
-            ServerLogger.warn("\r\n"+json);
+            //ServerLogger.warn("\r\n"+json);
             EntityUtils.consume(httpEntity);
             return json;
         } finally {

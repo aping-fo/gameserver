@@ -289,6 +289,8 @@ public class GangService implements InitHandler {
         vo.isLevLimit = gang.isLimitLev();
         vo.isFightLimit = gang.isLimitFight();
         vo.rank = gang.getRank();
+        vo.ownerId = player.getPlayerId();
+        vo.ownerFightValue = player.getFight();
         return vo;
     }
 
@@ -305,6 +307,7 @@ public class GangService implements InitHandler {
         vo.asset = myGang.getAsset();
         vo.totalAsset = myGang.getTotalAsset();
         vo.rank = myGang.getRank();
+
         GMember my = myGang.getMembers().get(playerId);
         if (my == null) {
             return vo;

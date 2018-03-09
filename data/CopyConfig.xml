@@ -527,7 +527,7 @@
 	<recommendFight>5080</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward></firstReward>
+	<firstReward>[[109101,1]]</firstReward>
 	<rewards>[[134,60],[101,60],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -8858,7 +8858,7 @@
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[10,10,10,25,25,25]</randomRates>
-	<randomRewards>[[127114001,2],[127124001,2],[127134001,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
+	<randomRewards>[[127114010,2],[127124010,2],[127134010,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
 	<getstarbytime>80</getstarbytime>
 	<getstarbyhit>100</getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -8904,7 +8904,7 @@
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[10,10,10,25,25,25]</randomRates>
-	<randomRewards>[[127114001,2],[127124001,2],[127134001,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
+	<randomRewards>[[127114010,2],[127124010,2],[127134010,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
 	<getstarbytime>80</getstarbytime>
 	<getstarbyhit>100</getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -8950,7 +8950,7 @@
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[10,10,10,25,25,25]</randomRates>
-	<randomRewards>[[127214001,2],[127224001,2],[127234001,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
+	<randomRewards>[[127214010,2],[127224010,2],[127234010,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
 	<getstarbytime>60</getstarbytime>
 	<getstarbyhit>100</getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -8996,7 +8996,7 @@
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[10,10,10,25,25,25]</randomRates>
-	<randomRewards>[[127214001,2],[127224001,2],[127234001,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
+	<randomRewards>[[127214010,2],[127224010,2],[127234010,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
 	<getstarbytime>80</getstarbytime>
 	<getstarbyhit>100</getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -9042,7 +9042,7 @@
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[10,10,10,25,25,25]</randomRates>
-	<randomRewards>[[127314001,2],[127324001,2],[127334001,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
+	<randomRewards>[[127314010,2],[127324010,2],[127334010,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
 	<getstarbytime>80</getstarbytime>
 	<getstarbyhit>100</getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -9088,7 +9088,7 @@
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[10,10,10,25,25,25]</randomRates>
-	<randomRewards>[[127314001,2],[127324001,2],[127334001,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
+	<randomRewards>[[127314010,2],[127324010,2],[127334010,2],[900001,5],[900001,6],[900001,7]]</randomRewards>
 	<getstarbytime>60</getstarbytime>
 	<getstarbyhit>100</getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -14693,7 +14693,7 @@
 	<timeLimit>60</timeLimit>
 	<needEnergy>0</needEnergy>
 	<recommendFight>-1</recommendFight>
-	<lev>5</lev>
+	<lev>10</lev>
 	<count>0</count>
 	<firstReward></firstReward>
 	<rewards>[[103,5000]]</rewards>
@@ -14739,7 +14739,7 @@
 	<timeLimit>60</timeLimit>
 	<needEnergy>0</needEnergy>
 	<recommendFight>-1</recommendFight>
-	<lev>10</lev>
+	<lev>20</lev>
 	<count>0</count>
 	<firstReward></firstReward>
 	<rewards>[[103,8000]]</rewards>
@@ -14785,7 +14785,7 @@
 	<timeLimit>60</timeLimit>
 	<needEnergy>0</needEnergy>
 	<recommendFight>-1</recommendFight>
-	<lev>20</lev>
+	<lev>30</lev>
 	<count>0</count>
 	<firstReward></firstReward>
 	<rewards>[[103,11000]]</rewards>
@@ -14831,7 +14831,7 @@
 	<timeLimit>60</timeLimit>
 	<needEnergy>0</needEnergy>
 	<recommendFight>-1</recommendFight>
-	<lev>30</lev>
+	<lev>40</lev>
 	<count>0</count>
 	<firstReward></firstReward>
 	<rewards>[[103,14000]]</rewards>

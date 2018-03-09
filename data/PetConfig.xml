@@ -21,13 +21,19 @@
 	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>1</hp>
+	<hp></hp>
+	<hpFix>50</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -51,13 +57,19 @@
 	<activeSkillId>6001201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>2</hp>
+	<hp></hp>
+	<hpFix>100</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -81,13 +93,19 @@
 	<activeSkillId>6001301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>3</hp>
+	<hp></hp>
+	<hpFix>150</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -111,13 +129,19 @@
 	<activeSkillId>6001401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>4</hp>
+	<hp></hp>
+	<hpFix>200</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -142,12 +166,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>5</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -172,12 +202,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>6</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.85</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -202,12 +238,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp>7</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.85</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -232,12 +274,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
-	<attack>1</attack>
+	<hpFix></hpFix>
+	<attack></attack>
+	<attackFix>50</attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -262,12 +310,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
-	<attack>2</attack>
+	<hpFix></hpFix>
+	<attack></attack>
+	<attackFix>100</attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -292,12 +346,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
-	<attack>3</attack>
+	<hpFix></hpFix>
+	<attack></attack>
+	<attackFix>150</attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -322,12 +382,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
-	<attack>4</attack>
+	<hpFix></hpFix>
+	<attack></attack>
+	<attackFix>200</attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -352,12 +418,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack>5</attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -382,12 +454,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack>6</attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -412,12 +490,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack>7</attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -442,12 +526,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
-	<defense>1</defense>
+	<attackFix></attackFix>
+	<defense></defense>
+	<defenseFix>50</defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -472,12 +562,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
-	<defense>2</defense>
+	<attackFix></attackFix>
+	<defense></defense>
+	<defenseFix>100</defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -502,12 +598,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
-	<defense>3</defense>
+	<attackFix></attackFix>
+	<defense></defense>
+	<defenseFix>150</defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -532,12 +634,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
-	<defense>4</defense>
+	<attackFix></attackFix>
+	<defense></defense>
+	<defenseFix>200</defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -562,12 +670,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense>5</defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -592,12 +706,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense>6</defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -622,12 +742,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense>7</defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -652,12 +778,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
-	<crit>1</crit>
+	<defenseFix></defenseFix>
+	<crit></crit>
+	<critFix>50</critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -682,12 +814,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
-	<crit>2</crit>
+	<defenseFix></defenseFix>
+	<crit></crit>
+	<critFix>100</critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -712,12 +850,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
-	<crit>3</crit>
+	<defenseFix></defenseFix>
+	<crit></crit>
+	<critFix>150</critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -742,12 +886,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
-	<crit>4</crit>
+	<defenseFix></defenseFix>
+	<crit></crit>
+	<critFix>200</critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -772,12 +922,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit>5</crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -802,12 +958,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit>6</crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -832,12 +994,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit>7</crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -862,12 +1030,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
-	<symptom>1</symptom>
+	<critFix></critFix>
+	<symptom></symptom>
+	<symptomFix>50</symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -892,12 +1066,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
-	<symptom>2</symptom>
+	<critFix></critFix>
+	<symptom></symptom>
+	<symptomFix>100</symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -922,12 +1102,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
-	<symptom>3</symptom>
+	<critFix></critFix>
+	<symptom></symptom>
+	<symptomFix>150</symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -952,12 +1138,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
-	<symptom>4</symptom>
+	<critFix></critFix>
+	<symptom></symptom>
+	<symptomFix>200</symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -982,12 +1174,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom>5</symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1012,12 +1210,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom>6</symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1042,12 +1246,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom>7</symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1072,12 +1282,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>1</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>50</fuFix>
+	<scale>1.2</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1102,12 +1318,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>2</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>100</fuFix>
+	<scale>1.2</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1132,12 +1354,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>3</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>150</fuFix>
+	<scale>1.2</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1162,12 +1390,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>4</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>200</fuFix>
+	<scale>1.2</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1192,12 +1426,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>5</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1.2</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1222,12 +1462,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>6</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1252,12 +1498,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>7</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1281,13 +1533,19 @@
 	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>1</hp>
+	<hp></hp>
+	<hpFix>50</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1311,13 +1569,19 @@
 	<activeSkillId>6007201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>2</hp>
+	<hp></hp>
+	<hpFix>100</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1341,13 +1605,19 @@
 	<activeSkillId>6007301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>3</hp>
+	<hp></hp>
+	<hpFix>150</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1371,13 +1641,19 @@
 	<activeSkillId>6007401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>4</hp>
+	<hp></hp>
+	<hpFix>200</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1402,12 +1678,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>5</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1432,12 +1714,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>6</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1.2</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1462,12 +1750,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp>7</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1.2</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1492,12 +1786,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>1</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>50</fuFix>
+	<scale>0.75</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1522,12 +1822,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>2</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>100</fuFix>
+	<scale>0.75</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1552,12 +1858,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>3</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>150</fuFix>
+	<scale>0.75</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1582,12 +1894,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>4</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>200</fuFix>
+	<scale>0.75</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1612,12 +1930,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>5</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.75</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1642,12 +1966,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>6</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1672,12 +2002,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>7</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.8</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1701,13 +2037,19 @@
 	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>1</hp>
+	<hp></hp>
+	<hpFix>50</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1731,13 +2073,19 @@
 	<activeSkillId>6009201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>2</hp>
+	<hp></hp>
+	<hpFix>100</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1761,13 +2109,19 @@
 	<activeSkillId>6009301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>3</hp>
+	<hp></hp>
+	<hpFix>150</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1791,13 +2145,19 @@
 	<activeSkillId>6009401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>4</hp>
+	<hp></hp>
+	<hpFix>200</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1822,12 +2182,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>5</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1852,12 +2218,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>6</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1882,12 +2254,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp>7</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1912,12 +2290,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>1</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>50</fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1942,12 +2326,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>2</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>100</fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -1972,12 +2362,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>3</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>150</fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2002,12 +2398,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>4</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>200</fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2032,12 +2434,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>5</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2062,12 +2470,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>6</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2092,12 +2506,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>7</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2121,13 +2541,19 @@
 	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>1</hp>
+	<hp></hp>
+	<hpFix>50</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2151,13 +2577,19 @@
 	<activeSkillId>6011201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>2</hp>
+	<hp></hp>
+	<hpFix>100</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2181,13 +2613,19 @@
 	<activeSkillId>6011301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>3</hp>
+	<hp></hp>
+	<hpFix>150</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2211,13 +2649,19 @@
 	<activeSkillId>6011401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>4</hp>
+	<hp></hp>
+	<hpFix>200</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2242,12 +2686,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>5</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2272,12 +2722,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>6</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2302,12 +2758,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp>7</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2332,12 +2794,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>1</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>50</fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2362,12 +2830,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>2</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>100</fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2392,12 +2866,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>3</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>150</fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2422,12 +2902,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
-	<fu>4</fu>
-	<scale>3</scale>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix>200</fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2452,12 +2938,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>5</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>0.9</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2482,12 +2974,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>6</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2512,12 +3010,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu>7</fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2541,13 +3045,19 @@
 	<activeSkillId></activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>1</hp>
+	<hp></hp>
+	<hpFix>50</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2571,13 +3081,19 @@
 	<activeSkillId>6013201</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>2</hp>
+	<hp></hp>
+	<hpFix>100</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2601,13 +3117,19 @@
 	<activeSkillId>6013301</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>3</hp>
+	<hp></hp>
+	<hpFix>150</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2631,13 +3153,19 @@
 	<activeSkillId>6013401</activeSkillId>
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
-	<hp>4</hp>
+	<hp></hp>
+	<hpFix>200</hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2662,12 +3190,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>5</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2692,12 +3226,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>1</passiveSkillCount>
 	<hp>6</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2722,12 +3262,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount>2</passiveSkillCount>
 	<hp>7</hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2752,12 +3298,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2782,12 +3334,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2812,12 +3370,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2842,12 +3406,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2872,12 +3442,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2902,12 +3478,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2932,12 +3514,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2962,12 +3550,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -2992,12 +3586,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -3022,12 +3622,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -3052,12 +3658,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -3082,12 +3694,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 <config>
@@ -3112,12 +3730,18 @@
 	<passiveSkillId></passiveSkillId>
 	<passiveSkillCount></passiveSkillCount>
 	<hp></hp>
+	<hpFix></hpFix>
 	<attack></attack>
+	<attackFix></attackFix>
 	<defense></defense>
+	<defenseFix></defenseFix>
 	<crit></crit>
+	<critFix></critFix>
 	<symptom></symptom>
+	<symptomFix></symptomFix>
 	<fu></fu>
-	<scale>3</scale>
+	<fuFix></fuFix>
+	<scale>1</scale>
 	<rotate>10</rotate>
 </config>
 </root>

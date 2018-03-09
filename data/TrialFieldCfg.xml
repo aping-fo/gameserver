@@ -8,8 +8,8 @@
 	<weakness>[[3058,受到500%的中毒伤害]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20201</role>
-	<pos>[-40,0,0]</pos>
-	<spriteSize>[410.4,528.3]</spriteSize>
+	<pos>[-10,33,0]</pos>
+	<spriteSize>[410,528]</spriteSize>
 	<copyId>1500101</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -22,8 +22,8 @@
 	<weakness>[[3058,受到400%的中毒伤害]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20207</role>
-	<pos>[-13,-7,0]</pos>
-	<spriteSize>[392,442]</spriteSize>
+	<pos>[-15,7,0]</pos>
+	<spriteSize>[420,477]</spriteSize>
 	<copyId>1500102</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -36,8 +36,8 @@
 	<weakness>[[3058,受到300%的中毒伤害]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20205</role>
-	<pos>[-13,-7,1]</pos>
-	<spriteSize>[392,443]</spriteSize>
+	<pos>[-15,-14,0]</pos>
+	<spriteSize>[420,435]</spriteSize>
 	<copyId>1500103</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -50,8 +50,8 @@
 	<weakness>[[3058,受到200%的中毒伤害]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20307</role>
-	<pos>[-15,2,0]</pos>
-	<spriteSize>[385.7,456.7]</spriteSize>
+	<pos>[2,42,0]</pos>
+	<spriteSize>[386,547]</spriteSize>
 	<copyId>1500104</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -64,8 +64,8 @@
 	<weakness>[[2016,冰冻后受到防御降低100%]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20101</role>
-	<pos>[-40,0,0]</pos>
-	<spriteSize>[410.4,528.3]</spriteSize>
+	<pos>[-30,-15,0]</pos>
+	<spriteSize>[450,434]</spriteSize>
 	<copyId>1500201</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -78,8 +78,8 @@
 	<weakness>[[2016,冰冻后受到防御降低95%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20109</role>
-	<pos>[-61,-2,0]</pos>
-	<spriteSize>[480.1,462.3]</spriteSize>
+	<pos>[-45,24,0]</pos>
+	<spriteSize>[480,511]</spriteSize>
 	<copyId>1500202</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -92,8 +92,8 @@
 	<weakness>[[2016,冰冻后受到防御降低90%]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20208</role>
-	<pos>[-77,0,0]</pos>
-	<spriteSize>[485,456.7]</spriteSize>
+	<pos>[-23,8,0]</pos>
+	<spriteSize>[435,478]</spriteSize>
 	<copyId>1500203</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -106,8 +106,8 @@
 	<weakness>[[2016,冰冻后受到防御降低85%]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20309</role>
-	<pos>[-38,0,0]</pos>
-	<spriteSize>[446,457]</spriteSize>
+	<pos>[-55,14,0]</pos>
+	<spriteSize>[500,491]</spriteSize>
 	<copyId>1500204</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -120,8 +120,8 @@
 	<weakness>[[2018,防御特性触发几率提升100%],[2018,防御加成效果提升200%]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20115</role>
-	<pos>[-30,-6,0]</pos>
-	<spriteSize>[392.4,501.5]</spriteSize>
+	<pos>[-1,61,0]</pos>
+	<spriteSize>[392,585]</spriteSize>
 	<copyId>1500301</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -134,8 +134,8 @@
 	<weakness>[[2018,防御特性触发几率提升100%],[2018,防御加成效果提升180%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20303</role>
-	<pos>[-120,0,0]</pos>
-	<spriteSize>[464,494]</spriteSize>
+	<pos>[-63,-3,0]</pos>
+	<spriteSize>[515,458]</spriteSize>
 	<copyId>1500302</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -148,8 +148,8 @@
 	<weakness>[[2018,防御特性触发几率提升100%],[2018,防御加成效果提升160%]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20206</role>
-	<pos>[-40,0,0]</pos>
-	<spriteSize>[410.4,528.3]</spriteSize>
+	<pos>[-30,-12,0]</pos>
+	<spriteSize>[450,439]</spriteSize>
 	<copyId>1500303</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -162,8 +162,8 @@
 	<weakness>[[2018,防御特性触发几率提升100%],[2018,防御加成效果提升140%]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20302</role>
-	<pos>[-120,0,0]</pos>
-	<spriteSize>[612.7,557]</spriteSize>
+	<pos>[-112,46,0]</pos>
+	<spriteSize>[613,554]</spriteSize>
 	<copyId>1500304</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -176,8 +176,8 @@
 	<weakness>[[3064,受到500%的流血伤害]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20117</role>
-	<pos>[-13,-7,0]</pos>
-	<spriteSize>[392,442]</spriteSize>
+	<pos>[31,-13,0]</pos>
+	<spriteSize>[328,437]</spriteSize>
 	<copyId>1500401</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -190,8 +190,8 @@
 	<weakness>[[3064,受到400%的流血伤害]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20116</role>
-	<pos>[-37,0,0]</pos>
-	<spriteSize>[391,457.8]</spriteSize>
+	<pos>[-20,7,0]</pos>
+	<spriteSize>[430,476]</spriteSize>
 	<copyId>1500402</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -204,8 +204,8 @@
 	<weakness>[[3064,受到300%的流血伤害]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20203</role>
-	<pos>[-34,-6,0]</pos>
-	<spriteSize>[425.3,443.3]</spriteSize>
+	<pos>[-55,-6,0]</pos>
+	<spriteSize>[500,451]</spriteSize>
 	<copyId>1500403</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -218,8 +218,8 @@
 	<weakness>[[3064,受到200%的流血伤害]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20304</role>
-	<pos>[-61,-2,0]</pos>
-	<spriteSize>[480.1,462.3]</spriteSize>
+	<pos>[-45,12,0]</pos>
+	<spriteSize>[480,486]</spriteSize>
 	<copyId>1500404</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -232,8 +232,8 @@
 	<weakness>[[2019,生命特性触发几率提升100%],[2027,生命加成效果提升200%]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20106</role>
-	<pos>[-77,0,0]</pos>
-	<spriteSize>[485,456.7]</spriteSize>
+	<pos>[-48,-1,0]</pos>
+	<spriteSize>[485,461]</spriteSize>
 	<copyId>1500501</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -246,8 +246,8 @@
 	<weakness>[[2019,生命特性触发几率提升100%],[2027,生命加成效果提升180%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20118</role>
-	<pos>[-37,0,0]</pos>
-	<spriteSize>[391,457.8]</spriteSize>
+	<pos>[-1,37,0]</pos>
+	<spriteSize>[391,537]</spriteSize>
 	<copyId>1500502</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -260,8 +260,8 @@
 	<weakness>[[2019,生命特性触发几率提升100%],[2027,生命加成效果提升160%]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20201</role>
-	<pos>[-40,0,0]</pos>
-	<spriteSize>[410.4,528.3]</spriteSize>
+	<pos>[-10,33,0]</pos>
+	<spriteSize>[410,528]</spriteSize>
 	<copyId>1500503</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -274,8 +274,8 @@
 	<weakness>[[2019,生命特性触发几率提升100%],[2027,生命加成效果提升140%]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20303</role>
-	<pos>[-95,0,0]</pos>
-	<spriteSize>[464,494]</spriteSize>
+	<pos>[-63,-3,0]</pos>
+	<spriteSize>[515,458]</spriteSize>
 	<copyId>1500504</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -288,8 +288,8 @@
 	<weakness>[[2016,石化后受到防御降低100%]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20105</role>
-	<pos>[-37,0,0]</pos>
-	<spriteSize>[391,457.8]</spriteSize>
+	<pos>[-1,17,0]</pos>
+	<spriteSize>[391,496]</spriteSize>
 	<copyId>1500601</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -302,8 +302,8 @@
 	<weakness>[[2016,石化后受到防御降低95%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20120</role>
-	<pos>[-30,-6,0]</pos>
-	<spriteSize>[392.4,501.5]</spriteSize>
+	<pos>[-17,53,0]</pos>
+	<spriteSize>[423,568]</spriteSize>
 	<copyId>1500602</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -316,8 +316,8 @@
 	<weakness>[[2016,石化后受到防御降低90%]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20204</role>
-	<pos>[11,0,0]</pos>
-	<spriteSize>[349,548]</spriteSize>
+	<pos>[21,41,0]</pos>
+	<spriteSize>[349,544]</spriteSize>
 	<copyId>1500603</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -330,8 +330,8 @@
 	<weakness>[[2016,石化后受到防御降低85%]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20305</role>
-	<pos>[0,0,0]</pos>
-	<spriteSize>[373,585]</spriteSize>
+	<pos>[9,71,0]</pos>
+	<spriteSize>[373,605]</spriteSize>
 	<copyId>1500604</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -344,8 +344,8 @@
 	<weakness>[[3039,受到120%的普通伤害]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20110</role>
-	<pos>[17,0,0]</pos>
-	<spriteSize>[333,438]</spriteSize>
+	<pos>[29,-13,0]</pos>
+	<spriteSize>[333,437]</spriteSize>
 	<copyId>1500701</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -358,8 +358,8 @@
 	<weakness>[[3039,受到115%的普通伤害]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20111</role>
-	<pos>[3,0,0]</pos>
-	<spriteSize>[364,491]</spriteSize>
+	<pos>[13,25,0]</pos>
+	<spriteSize>[364,512]</spriteSize>
 	<copyId>1500702</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -372,7 +372,7 @@
 	<weakness>[[3039,受到110%的普通伤害]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20202</role>
-	<pos>[0,0,0]</pos>
+	<pos>[16,-3,0]</pos>
 	<spriteSize>[359,458]</spriteSize>
 	<copyId>1500703</copyId>
 	<count>3</count>
@@ -386,8 +386,8 @@
 	<weakness>[[3039,受到105%的普通伤害]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20306</role>
-	<pos>[-34,0,0]</pos>
-	<spriteSize>[423,532]</spriteSize>
+	<pos>[-17,34,0]</pos>
+	<spriteSize>[423,531]</spriteSize>
 	<copyId>1500704</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -400,8 +400,8 @@
 	<weakness>[[2016,眩晕后受到防御降低100%]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20309</role>
-	<pos>[-38,0,0]</pos>
-	<spriteSize>[446,457]</spriteSize>
+	<pos>[-55,14,0]</pos>
+	<spriteSize>[500,491]</spriteSize>
 	<copyId>1500801</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -414,8 +414,8 @@
 	<weakness>[[2016,眩晕后受到防御降低95%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20304</role>
-	<pos>[-61,-2,0]</pos>
-	<spriteSize>[480.1,462.3]</spriteSize>
+	<pos>[-45,12,0]</pos>
+	<spriteSize>[480,486]</spriteSize>
 	<copyId>1500802</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -428,8 +428,8 @@
 	<weakness>[[2016,眩晕后受到防御降低90%]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20207</role>
-	<pos>[-13,-7,0]</pos>
-	<spriteSize>[392,442]</spriteSize>
+	<pos>[-1,-9,0]</pos>
+	<spriteSize>[392,445]</spriteSize>
 	<copyId>1500803</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -442,7 +442,7 @@
 	<weakness>[[2016,眩晕后受到防御降低85%]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20308</role>
-	<pos>[-50,0,0]</pos>
+	<pos>[-37,16,0]</pos>
 	<spriteSize>[464,494]</spriteSize>
 	<copyId>1500804</copyId>
 	<count>3</count>
@@ -456,8 +456,8 @@
 	<weakness>[[3062,受到500%的灼烧伤害]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20108</role>
-	<pos>[-77,89,0]</pos>
-	<spriteSize>[513,639]</spriteSize>
+	<pos>[-62,99,0]</pos>
+	<spriteSize>[513,660]</spriteSize>
 	<copyId>1500901</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -470,8 +470,8 @@
 	<weakness>[[3062,受到400%的灼烧伤害]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20303</role>
-	<pos>[-50,0,0]</pos>
-	<spriteSize>[464,494]</spriteSize>
+	<pos>[-63,-3,0]</pos>
+	<spriteSize>[515,458]</spriteSize>
 	<copyId>1500902</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -484,8 +484,8 @@
 	<weakness>[[3062,受到300%的灼烧伤害]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20205</role>
-	<pos>[-13,-7,1]</pos>
-	<spriteSize>[392,443]</spriteSize>
+	<pos>[-15,-14,0]</pos>
+	<spriteSize>[420,435]</spriteSize>
 	<copyId>1500903</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -498,8 +498,8 @@
 	<weakness>[[3062,受到200%的灼烧伤害]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20307</role>
-	<pos>[-15,2,0]</pos>
-	<spriteSize>[385.7,456.7]</spriteSize>
+	<pos>[2,42,0]</pos>
+	<spriteSize>[386,547]</spriteSize>
 	<copyId>1500904</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
@@ -512,8 +512,8 @@
 	<weakness>[[3063,吸血效果提升100%]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20202</role>
-	<pos>[-61,-2,0]</pos>
-	<spriteSize>[480.1,462.3]</spriteSize>
+	<pos>[16,-3,0]</pos>
+	<spriteSize>[359,458]</spriteSize>
 	<copyId>1501001</copyId>
 	<count>3</count>
 	<background>Artifact1_Bg.jpg</background>
@@ -526,8 +526,8 @@
 	<weakness>[[3063,吸血效果提升80%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20120</role>
-	<pos>[-77,0,0]</pos>
-	<spriteSize>[423,569]</spriteSize>
+	<pos>[-17,53,0]</pos>
+	<spriteSize>[423,568]</spriteSize>
 	<copyId>1501002</copyId>
 	<count>3</count>
 	<background>Artifact2_Bg.jpg</background>
@@ -540,8 +540,8 @@
 	<weakness>[[3063,吸血效果提升60%]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20208</role>
-	<pos>[-34,-6,0]</pos>
-	<spriteSize>[425.3,443.3]</spriteSize>
+	<pos>[-23,8,0]</pos>
+	<spriteSize>[435,478]</spriteSize>
 	<copyId>1501003</copyId>
 	<count>3</count>
 	<background>Artifact3_Bg.jpg</background>
@@ -554,8 +554,8 @@
 	<weakness>[[3063,吸血效果提升40%]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20309</role>
-	<pos>[-38,0,0]</pos>
-	<spriteSize>[446,457]</spriteSize>
+	<pos>[-55,14,0]</pos>
+	<spriteSize>[500,491]</spriteSize>
 	<copyId>1501004</copyId>
 	<count>3</count>
 	<background>Artifact4_Bg.jpg</background>
