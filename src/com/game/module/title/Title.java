@@ -9,6 +9,15 @@ public class Title {
     private int condType; //条件类型
     private int value; //当前值
     private boolean openFlag;
+    private long recvTime; //获取时间
+
+    public long getRecvTime() {
+        return recvTime;
+    }
+
+    public void setRecvTime(long recvTime) {
+        this.recvTime = recvTime;
+    }
 
     public boolean isOpenFlag() {
         return openFlag;

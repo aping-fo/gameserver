@@ -9,7 +9,6 @@ import com.game.module.admin.UserManager;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
-import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.StringParam;
@@ -51,7 +50,7 @@ public class PlayerExtension {
 
     @UnLogin
     @Command(1001)
-    public Object getRoleList(int playerId, StringParam param, Channel channel) {
+    public Object getRoleList(int playerId, CRegRoleListVo param, Channel channel) {
         if (playerService.getPlayers().size() > SysConfig.maxCon) {
             IntParam result = new IntParam();
             SessionManager.sendDataInner(channel, 1010, result);
@@ -59,9 +58,15 @@ public class PlayerExtension {
             return null;
         }
 
-        String accName = param.param;
-        channel.attr(CHANNEL).set(accName);
+        //兼容新老账号
+        String accName = param.accName;
         List<Player> roleList = playerService.getPlayersByAccName(accName);
+        if(roleList.size()==0){
+            accName = param.userId;
+            roleList = playerService.getPlayersByAccName(accName);
+        }
+
+        channel.attr(CHANNEL).set(accName);
 
         ListParam<SRoleVo> vo = new ListParam<SRoleVo>();
         vo.params = new ArrayList<SRoleVo>(roleList.size());
@@ -142,7 +147,7 @@ public class PlayerExtension {
             result.code = Response.TOO_MANY_ROLE;
             return result;
         }
-        Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName, param.channel, param.serverId, param.serverName);
+        Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName, param.channel, param.serverId, param.serverName,param.userId);
         if (player == null) {
             result.code = Response.SAME_NAME;
             return result;
@@ -163,7 +168,6 @@ public class PlayerExtension {
         result.gatewayId = SysConfig.gatewayId;
 
         String host = channel.remoteAddress().toString();
-        ServerLogger.warn("client host = " + channel.remoteAddress().toString());
         String[] arr = host.split(":");
         player.clientPort = Integer.parseInt(arr[1]);
         String[] hostArr = arr[0].substring(1).split("\\.");
@@ -305,6 +309,16 @@ public class PlayerExtension {
         return playerService.moduleOpen(playerId, param.param);
     }
 
+    @Command(1013)
+    public Object hitModule(int playerId, IntParam param) {
+        return playerService.hitModule(playerId, param.param);
+    }
+
+    @Command(1014)
+    public Object getModules(int playerId, Object param) {
+        return playerService.getModule(playerId);
+    }
+
     @Command(1009)
     public Object newHandleStep(int playerId, IntParam param) {
         PlayerData playerData = playerService.getPlayerData(playerId);
@@ -324,10 +338,20 @@ public class PlayerExtension {
     @Command(1012)
     public Object userAuth(int playerId, UserAuth param, Channel channel) {
         String host = channel.remoteAddress().toString();
-        ServerLogger.warn("client host = " + channel.remoteAddress().toString());
         String[] arr = host.split(":");
         int clientPort = Integer.parseInt(arr[1]);
-        String[] hostArr = arr[0].substring(1).split("\\.");
+        String hostIp = arr[0].substring(1).trim();
+        Date date = new Date();
+        if (date.before(SysConfig.openDate)) { //还没到开服时间
+            ServerLogger.warn("client ip = " + hostIp);
+            if (!ConfigData.accountSet.contains(hostIp)) { //非白名单
+                ServerLogger.warn("client ip ---------- " + hostIp);
+                IntParam param1 = new IntParam();
+                param1.param = -1;
+                return param1;
+            }
+        }
+        String[] hostArr = hostIp.split("\\.");
         int clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
         ratingService.reportAuthen(param.un, param.token, clientIp, clientPort, param.clientMac, param.clientType, param.modelVersion, channel);
         return null;

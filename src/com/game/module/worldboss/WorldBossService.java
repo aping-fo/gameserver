@@ -6,6 +6,7 @@ import com.game.event.InitHandler;
 import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
 import com.game.module.copy.CopyExtension;
+import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -162,7 +163,7 @@ public class WorldBossService implements InitHandler {
                     ServerLogger.err(e, "保存数据异常");
                 }
             }
-        }, 1, 1, TimeUnit.MINUTES);
+        }, 5, 5, TimeUnit.MINUTES);
     }
 
     private int getNextId() {
@@ -252,6 +253,12 @@ public class WorldBossService implements InitHandler {
         }
 
         Player player = playerService.getPlayer(playerId);
+        int maxHurt = (int) (player.getFight() * 0.06 * 1.65 * 3 * 2.05 + 4185);
+        if (hurt > maxHurt) {
+            ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
+            return;
+        }
+
         HurtRecord hr = worldBossData.getHurtMap().get(playerId);
         if (hr == null) {
             hr = new HurtRecord(playerId, player.getName());
@@ -304,7 +311,7 @@ public class WorldBossService implements InitHandler {
             Int2Param param = new Int2Param();
             param.param1 = playerId;
             param.param2 = bossId;
-            broadcast(WorldBossExtension.BOSS_DEAD, param);
+            SessionManager.getInstance().sendMsgToAll(WorldBossExtension.BOSS_DEAD, param);
 
             MonsterRefreshConfig conf = ConfigData.getConfig(MonsterRefreshConfig.class, bossId);
             MonsterConfig conf1 = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
@@ -409,7 +416,7 @@ public class WorldBossService implements InitHandler {
                         killTimes = 0;
                     }
 
-                    WorldBoss boss = WorldBoss.newInstance(bossId, index++, (int)(monsterConfig.hp*(1 + killTimes*ConfigData.globalParam().killedTimesFactor)), copyId);
+                    WorldBoss boss = WorldBoss.newInstance(bossId, index++, (int) (monsterConfig.hp * (1 + killTimes * ConfigData.globalParam().killedTimesFactor)), copyId);
                     worldBossData.getWorldBossMap().put(bossId, boss);
 
                     if (i == len - 2) { //记录最后一个boss
@@ -524,14 +531,15 @@ public class WorldBossService implements InitHandler {
                     }
                 }
                 //伤害兑换金币
-                int itemId = ConfigData.globalParam().worldBossHurtReward[0];
-                int num = ConfigData.globalParam().worldBossHurtReward[1];
-                rewards.add(new GoodsEntry(itemId, num));
+                int num = Math.round(hr.getHurt() / (worldBossData.getTotalHp() * 1.0f)) * ConfigData.globalParam().worldBossHurtReward;
+                if (num != 0) {
+                    rewards.add(new GoodsEntry(Goods.COIN, num));
 
-                Reward reward = new Reward();
-                reward.count = itemId;
-                reward.id = num;
-                rewardCli.hurtReward.add(reward);
+                    Reward reward = new Reward();
+                    reward.count = Goods.COIN;
+                    reward.id = num;
+                    rewardCli.hurtReward.add(reward);
+                }
 
                 String killTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_TITLE).tips;
                 String killContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_CONTENT).tips;

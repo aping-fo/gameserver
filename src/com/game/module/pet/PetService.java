@@ -141,11 +141,12 @@ public class PetService {
      */
     public void addPet(int playerId, int configID) {
         PetBag bag = getPetBag(playerId);
+        PetConfig newPetConfig = ConfigData.getConfig(PetConfig.class, configID);
         if (checkSamePet(playerId, configID)) { //分解碎片
-            addPetMaterial(playerId, configID, 1, true);
+            addPetMaterial(playerId, newPetConfig.materialId, newPetConfig.gainNeedMaterialCount, true);
             return;
         }
-        PetConfig newPetConfig = ConfigData.getConfig(PetConfig.class, configID);
+
         List<Pet> pets = new ArrayList<>();
         List<Int2Param> updateIds = Lists.newArrayList();
         List<Integer> skills = ConfigData.PassiveSkills.get(newPetConfig.quality);
@@ -154,6 +155,9 @@ public class PetService {
         bag.getPetMap().put(pet.getId(), pet);
         pets.add(pet);
         pushUpdateBag(playerId, pets, updateIds);
+
+        //重新计算人物属性
+        calculator.calculate(playerId);
 
         int count = getQualityCount(newPetConfig.quality, bag.getPetMap());
         taskService.doTask(playerId, Task.TYPE_PET, newPetConfig.quality, count);
@@ -207,6 +211,7 @@ public class PetService {
             updateList.add(idParam);
         }
         bag.updateFlag = true;
+        pushUpdateBag(playerId, Lists.newArrayList(), updateList);
         return updateList;
     }
 
@@ -251,8 +256,13 @@ public class PetService {
         if (currentCount == null) {
             currentCount = 0;
         }
-
         PetConfig petConfig = ConfigData.getConfig(PetConfig.class, id);
+        PetConfig newPetConfig = ConfigData.getConfig(PetConfig.class, petConfig.petId);
+        if (checkSamePet(playerId, newPetConfig.id)) {
+            cli.param = Response.PET_HAS_SAME_TYPE;
+            return cli;
+        }
+
         //数量不够
         int remainCount = currentCount - petConfig.gainNeedMaterialCount;
         if (remainCount < 0) {
@@ -265,19 +275,15 @@ public class PetService {
             bag.getMaterialMap().put(id, remainCount);
         }
 
-        PetConfig newPetConfig = ConfigData.getConfig(PetConfig.class, petConfig.petId);
         addPet(playerId, newPetConfig.id);
-        /*Pet pet = new Pet(bag.idGen.incrementAndGet(), newPetConfig.id, newPetConfig.activeSkillId);
-        bag.getPetMap().put(pet.getId(), pet);
-        List<Pet> pets = Lists.newArrayList(pet);
-
+        List<Pet> pets = Lists.newArrayList();
         List<Int2Param> updateIds = Lists.newArrayList();
         Int2Param idParam = new Int2Param();
         idParam.param1 = id;
         idParam.param2 = remainCount;
         updateIds.add(idParam);
 
-        pushUpdateBag(playerId, pets, updateIds);*/
+        pushUpdateBag(playerId, pets, updateIds);
         cli.param = Response.SUCCESS;
         return cli;
     }
@@ -434,7 +440,7 @@ public class PetService {
             return cli;
         }
 
-        List<Int2Param> updateIds = consume(playerId, consume);
+        consume(playerId, consume);
 
         int rand = RandomUtil.randInt(100);
         if (rand <= defaultRnd) { //变异成功
@@ -447,6 +453,8 @@ public class PetService {
                 ServerLogger.info(JsonUtils.object2String(mutatePet));
             }
             mutatePet.setMutateFlag(true);
+
+            calculator.calculate(playerId);
         } else {
             cli.param1 = 1;
         }
@@ -459,7 +467,7 @@ public class PetService {
         }
         taskService.doTask(playerId, Task.TYPE_MUTATE_PET, mutate);
         List<Pet> addPets = Lists.newArrayList(mutatePet);
-        pushUpdateBag(playerId, addPets, updateIds);
+        pushUpdateBag(playerId, addPets, Lists.newArrayList());
         cli.param2 = mutateID;
         return cli;
     }
@@ -485,10 +493,10 @@ public class PetService {
             currentCount = 0;
         }
 
-        if (currentCount < petConfig.nextQualityMaterialCount) {
+        /*if (currentCount < petConfig.nextQualityMaterialCount) {
             cli.param1 = Response.PET_MATERIAL_NOT_ENOUGH;
             return cli;
-        }
+        }*/
 
         //是否升到最大阶
         if (petConfig.nextQualityId == 0) {
@@ -518,6 +526,8 @@ public class PetService {
         int count = getQualityCount(nextPet.quality, bag.getPetMap());
         taskService.doTask(playerId, Task.TYPE_PET, nextPet.quality, count);
 
+        calculator.calculate(playerId);
+
         if (pet.getPassiveSkillId() != 0) {
             pet.setPassiveSkillId(pet.getPassiveSkillId() + 1);
         }
@@ -528,16 +538,17 @@ public class PetService {
 
         pet.setSkillID(nextPet.activeSkillId);
 
-        bag.getMaterialMap().put(petConfig.materialId, currentCount - petConfig.nextQualityMaterialCount);
+
+        /*bag.getMaterialMap().put(petConfig.materialId, currentCount - petConfig.nextQualityMaterialCount);
         if (currentCount == petConfig.nextQualityMaterialCount) {
             bag.getMaterialMap().remove(petConfig.materialId);
-        }
+        }*/
 
         //减少的
-        Int2Param delId = new Int2Param();
+        /*Int2Param delId = new Int2Param();
         delId.param1 = petConfig.materialId;
         delId.param2 = currentCount - petConfig.nextQualityMaterialCount;
-        updateIds.add(delId);
+        updateIds.add(delId);*/
 
         addPets.add(pet);
         pushUpdateBag(playerId, addPets, updateIds);
@@ -577,7 +588,7 @@ public class PetService {
             SessionManager.getInstance().sendMsg(CMD_SHOW, cli1, playerId);
             sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
         }
-        calculator.calculate(player);
+        //calculator.calculate(player);
         bag.updateFlag = true;
         cli.param1 = Response.SUCCESS;
         cli.param2 = petId;
@@ -624,6 +635,9 @@ public class PetService {
      * @param addPets  宠物列表
      */
     private void pushUpdateBag(int playerId, List<Pet> addPets, List<Int2Param> updateIds) {
+        if (addPets.isEmpty() && updateIds.isEmpty()) {
+            return;
+        }
         UpdatePetBagVO vo = new UpdatePetBagVO();
         vo.pets = Lists.newArrayList();
         vo.updateIds = Lists.newArrayList(updateIds);
@@ -685,6 +699,16 @@ public class PetService {
                 addPet(playerId, cfg.id);
             }
         }
+
+        List<Pet> pets = new ArrayList<>();
+        List<Int2Param> updateIds = Lists.newArrayList();
+        PetBag bag = getPetBag(playerId);
+        for (Pet pet : bag.getPetMap().values()) {
+            PetConfig config = ConfigData.getConfig(PetConfig.class, pet.getConfigId());
+            pet.setSkillID(config.activeSkillId);
+            pets.add(pet);
+        }
+        pushUpdateBag(playerId, pets, updateIds);
     }
     ///////////////////////宠物玩法
 

@@ -228,7 +228,6 @@ public class GangDungeonService {
         if (player.getGangId() == 0) {
             return;
         }
-
         Gang gang = gangService.getGang(player.getGangId());
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
         GMember member = gang.getMembers().get(player.getPlayerId());
@@ -241,6 +240,12 @@ public class GangDungeonService {
                 onBattleEnd(player);
             }
         } else { //怪物
+            int maxHurt = (int) (player.getFight() * 0.06 * 1.65 * 3 * 2.05 + 4185);
+            if (hurtVO.hurtValue > maxHurt) {
+                ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
+                return;
+            }
+
             Monster m = gangDungeon.getMonsterMap().get(hurtVO.targetId);
             if (m.getCurrentHp() <= 0) {
                 ServerLogger.info("==================== Monster Die，Monster Id = " + m.getId());
@@ -344,7 +349,7 @@ public class GangDungeonService {
         vo.totalHurt = hurt.getHurt();
         vo.progress = gangDungeon.getProgress();
         vo.gangContribution = Math.round(member.hurt / (gangDungeon.getTotalHp() * 1.0f) * ConfigData.globalParam().guildRewardRate);
-
+        gangService.addContribute(player.getPlayerId(),vo.gangContribution);
         int rank = 0;
         for (GangHurt gh : gangDungeon.hurtRankMap.values()) {
             if (gh.getPlayerId() == player.getPlayerId()) {
@@ -355,8 +360,6 @@ public class GangDungeonService {
         vo.rank = rank;
 
         SessionManager.getInstance().sendMsg(CMD_BATTLE_END, vo, player.getPlayerId());
-        //折算
-        playerService.addCurrency(player.getPlayerId(), Goods.CONTRIBUTE, vo.gangContribution, LogConsume.GUILD_POINT);
         member.hp = 0;
         member.hurt = 0;
     }

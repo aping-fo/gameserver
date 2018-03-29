@@ -10,8 +10,8 @@
 	<plotNum>1</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>5</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,30],[103,1000]]</rewards>
 	<dropId>20001</dropId>
 	<dropCount>2</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -27,8 +27,8 @@
 	<plotNum>2</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>10</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,50],[103,3000]]</rewards>
 	<dropId>20002</dropId>
 	<dropCount>2</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -44,8 +44,8 @@
 	<plotNum>3</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,80],[103,5000]]</rewards>
 	<dropId>20003</dropId>
 	<dropCount>2</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -61,8 +61,8 @@
 	<plotNum>2</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>5</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,30],[103,1000]]</rewards>
 	<dropId>20004</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -78,8 +78,8 @@
 	<plotNum>2</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>10</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,50],[103,3000]]</rewards>
 	<dropId>20005</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -95,8 +95,8 @@
 	<plotNum>2</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,80],[103,5000]]</rewards>
 	<dropId>20006</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -112,8 +112,8 @@
 	<plotNum>1</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>5</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,30],[103,1000]]</rewards>
 	<dropId>20007</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -129,8 +129,8 @@
 	<plotNum>1</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>10</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,50],[103,3000]]</rewards>
 	<dropId>20008</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -146,8 +146,8 @@
 	<plotNum>1</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,80],[103,5000]]</rewards>
 	<dropId>20009</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -163,8 +163,8 @@
 	<plotNum>1</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>5</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,30],[103,1000]]</rewards>
 	<dropId>20010</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -180,8 +180,8 @@
 	<plotNum>2</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>10</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,50],[103,3000]]</rewards>
 	<dropId>20011</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -197,8 +197,8 @@
 	<plotNum>3</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,80],[103,5000]]</rewards>
 	<dropId>20012</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -214,8 +214,8 @@
 	<plotNum>2</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>5</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,30],[103,1000]]</rewards>
 	<dropId>20013</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -231,8 +231,8 @@
 	<plotNum>2</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>10</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,50],[103,3000]]</rewards>
 	<dropId>20014</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>
@@ -248,8 +248,8 @@
 	<plotNum>2</plotNum>
 	<plotAcclerate>[400,800,1200,1600,2000,2400,2800]</plotAcclerate>
 	<levelUpCondition>0</levelUpCondition>
-	<finishCostPerMins>[103,2]</finishCostPerMins>
-	<rewards>[[102,100],[103,100]]</rewards>
+	<finishCostPerMins>[102,1]</finishCostPerMins>
+	<rewards>[[102,80],[103,5000]]</rewards>
 	<dropId>20015</dropId>
 	<dropCount>1</dropCount>
 	<rate>[10,20,30,40,50,60,70]</rate>

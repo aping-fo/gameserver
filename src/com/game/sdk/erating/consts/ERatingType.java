@@ -29,6 +29,9 @@ public class ERatingType {
     public static final int CMD_CHARGE = 10003413; //充值
     public static final int CMD_CHARGE_RESP = 20003413; //充值回应
 
+    public static final int CMD_MONEY_COST = 10003717; //money消耗
+    public static final int CMD_MONEY_ADD = 10003412; //money产出
+
 
 
     public static class ErrorCode {

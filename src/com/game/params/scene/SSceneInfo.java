@@ -11,6 +11,7 @@ public class SSceneInfo implements IProtocol {
 	public List<SScenePlayerVo> players;//场景玩家
 	public List<SMonsterVo> monsters;//场景怪物信息
 	public List<Integer> affixs;//特性副本词缀
+	public List<Integer> bufferList;//套装buffer列表
 
 
 	public void decode(BufferBuilder bb) {
@@ -67,6 +68,7 @@ public class SSceneInfo implements IProtocol {
             }
         }
 		this.affixs = bb.getIntList();
+		this.bufferList = bb.getIntList();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -75,5 +77,6 @@ public class SSceneInfo implements IProtocol {
 		bb.putProtocolVoList(this.players);
 		bb.putProtocolVoList(this.monsters);
 		bb.putIntList(this.affixs);
+		bb.putIntList(this.bufferList);
 	}
 }

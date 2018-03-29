@@ -6,7 +6,7 @@
 	<buffTick>1</buffTick>
 	<buffType>24</buffType>
 	<buffSubType>0</buffSubType>
-	<name>主角起身保护</name>
+	<name>主角起身霸体</name>
 	<description>霸体1级</description>
 	<duration>1</duration>
 	<takeEffectParam>[1]</takeEffectParam>
@@ -27,7 +27,7 @@
 	<buffTick>1</buffTick>
 	<buffType>26</buffType>
 	<buffSubType>0</buffSubType>
-	<name>主角复活保护</name>
+	<name>主角复活无敌</name>
 	<description>无敌1级</description>
 	<duration>3</duration>
 	<takeEffectParam>[1]</takeEffectParam>
@@ -43,13 +43,34 @@
 	<extraEffectParam>[[3000],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
 </config>
 <config>
+	<id>1103</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>2</buffType>
+	<buffSubType>0</buffSubType>
+	<name>主角行走保护</name>
+	<description>保护1级</description>
+	<duration>0</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam>[[1000],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
 	<id>1201</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
 	<buffType>24</buffType>
 	<buffSubType>0</buffSubType>
-	<name>怪物起身保护</name>
-	<description>霸体1级</description>
+	<name>怪物起身霸体</name>
+	<description>保护1级</description>
 	<duration>0.5</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -90,8 +111,8 @@
 	<buffTick>1</buffTick>
 	<buffType>24</buffType>
 	<buffSubType>0</buffSubType>
-	<name>连击保护</name>
-	<description>血量保护1级</description>
+	<name>连击霸体</name>
+	<description>霸体1级</description>
 	<duration>3</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -256,10 +277,10 @@
 	<id>2101</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>3</buffType>
+	<buffType>26</buffType>
 	<buffSubType>0</buffSubType>
 	<name>共用无敌</name>
-	<description>免伤1级</description>
+	<description>无敌1级</description>
 	<duration>0</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -279,8 +300,8 @@
 	<buffTick>1</buffTick>
 	<buffType>2</buffType>
 	<buffSubType></buffSubType>
-	<name>共用霸体</name>
-	<description>霸体1级</description>
+	<name>共用保护</name>
+	<description>保护1级</description>
 	<duration>0</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -356,6 +377,27 @@
 	<conflictType></conflictType>
 	<addEfectIndex></addEfectIndex>
 	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>2106</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>24</buffType>
+	<buffSubType></buffSubType>
+	<name>共用霸体</name>
+	<description>霸体1级</description>
+	<duration>0</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam>[[0],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
 </config>
 <config>
 	<id>6101</id>
@@ -447,8 +489,8 @@
 	<buffTick>1</buffTick>
 	<buffType>2</buffType>
 	<buffSubType></buffSubType>
-	<name>特性副本霸体1级</name>
-	<description>霸体</description>
+	<name>特性副本保护1级</name>
+	<description>保护</description>
 	<duration>0</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -571,11 +613,11 @@
 	<id>801001</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
-	<buffType>1</buffType>
+	<buffType>23</buffType>
 	<buffSubType>0</buffSubType>
 	<name>特性副本中毒1级</name>
 	<description>中毒1级</description>
-	<duration>10</duration>
+	<duration>0</duration>
 	<takeEffectParam>[0.9,9,1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
@@ -592,11 +634,11 @@
 	<id>801101</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
-	<buffType>1</buffType>
+	<buffType>28</buffType>
 	<buffSubType>1</buffSubType>
 	<name>特性副本灼烧1级</name>
 	<description>灼烧1级</description>
-	<duration>10</duration>
+	<duration>0</duration>
 	<takeEffectParam>[0.9,9,1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -613,11 +655,11 @@
 	<id>801201</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
-	<buffType>1</buffType>
+	<buffType>27</buffType>
 	<buffSubType>2</buffSubType>
 	<name>特性副本流血1级</name>
 	<description>流血1级</description>
-	<duration>10</duration>
+	<duration>0</duration>
 	<takeEffectParam>[0.9,9,1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
@@ -636,9 +678,9 @@
 	<buffTick>1</buffTick>
 	<buffType>2</buffType>
 	<buffSubType></buffSubType>
-	<name>特性副本霸体1级</name>
-	<description>霸体1级</description>
-	<duration>5</duration>
+	<name>特性副本保护1级</name>
+	<description>保护1级</description>
+	<duration>0</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2022</icon>
@@ -655,11 +697,11 @@
 	<id>801401</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
-	<buffType>1</buffType>
+	<buffType>28</buffType>
 	<buffSubType>1</buffSubType>
 	<name>特性副本灼烧1级</name>
 	<description>灼烧1级</description>
-	<duration>10</duration>
+	<duration>0</duration>
 	<takeEffectParam>[0.9,9,1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -676,11 +718,11 @@
 	<id>801501</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
-	<buffType>1</buffType>
+	<buffType>27</buffType>
 	<buffSubType>2</buffSubType>
 	<name>特性副本流血1级</name>
 	<description>流血1级</description>
-	<duration>10</duration>
+	<duration>0</duration>
 	<takeEffectParam>[0.9,9,1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
@@ -699,9 +741,9 @@
 	<buffTick>1</buffTick>
 	<buffType>2</buffType>
 	<buffSubType></buffSubType>
-	<name>特性副本霸体1级</name>
-	<description>霸体1级</description>
-	<duration>5</duration>
+	<name>特性副本保护1级</name>
+	<description>保护1级</description>
+	<duration>0</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2022</icon>
@@ -909,8 +951,8 @@
 	<buffTick>1</buffTick>
 	<buffType>2</buffType>
 	<buffSubType></buffSubType>
-	<name>霸体1级</name>
-	<description>霸体1级</description>
+	<name>保护1级</name>
+	<description>保护1级</description>
 	<duration>5</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -1266,8 +1308,8 @@
 	<buffTick>1</buffTick>
 	<buffType>2</buffType>
 	<buffSubType></buffSubType>
-	<name>红吼怪定时霸体</name>
-	<description>霸体1级</description>
+	<name>红吼怪定时保护</name>
+	<description>保护1级</description>
 	<duration>12</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -1329,8 +1371,8 @@
 	<buffTick>1</buffTick>
 	<buffType>2</buffType>
 	<buffSubType></buffSubType>
-	<name>精绝女王定时霸体</name>
-	<description>霸体1级</description>
+	<name>精绝女王定时保护</name>
+	<description>保护1级</description>
 	<duration>10</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -1752,7 +1794,7 @@
 	<name>普通本第十一章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,4.5]</takeEffectParam>
+	<takeEffectParam>[1,300,1.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -1794,7 +1836,7 @@
 	<name>普通本第十二章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,4.5]</takeEffectParam>
+	<takeEffectParam>[1,300,1.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -1836,7 +1878,7 @@
 	<name>普通本第十三章怪物特性</name>
 	<description>反伤</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.15]</takeEffectParam>
+	<takeEffectParam>[0.01]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100019</attachEffect>
@@ -1857,7 +1899,7 @@
 	<name>普通本第十三章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,4.5]</takeEffectParam>
+	<takeEffectParam>[1,300,1.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -1878,7 +1920,7 @@
 	<name>普通本第十四章怪物特性</name>
 	<description>反伤</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.15]</takeEffectParam>
+	<takeEffectParam>[0.02]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100019</attachEffect>
@@ -2382,7 +2424,7 @@
 	<name>困难本第十一章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,12]</takeEffectParam>
+	<takeEffectParam>[1,300,2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -2424,7 +2466,7 @@
 	<name>困难本第十二章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,12]</takeEffectParam>
+	<takeEffectParam>[1,300,2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -2466,7 +2508,7 @@
 	<name>困难本第十三章怪物特性</name>
 	<description>反伤</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.4]</takeEffectParam>
+	<takeEffectParam>[0.04]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100019</attachEffect>
@@ -2487,7 +2529,7 @@
 	<name>困难本第十三章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,12]</takeEffectParam>
+	<takeEffectParam>[1,300,2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -2508,7 +2550,7 @@
 	<name>困难本第十四章怪物特性</name>
 	<description>反伤</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.4]</takeEffectParam>
+	<takeEffectParam>[0.04]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100019</attachEffect>
@@ -2529,7 +2571,7 @@
 	<name>困难本第十四章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,12]</takeEffectParam>
+	<takeEffectParam>[1,300,2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -3012,7 +3054,7 @@
 	<name>噩梦本第十一章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,19.5]</takeEffectParam>
+	<takeEffectParam>[1,300,2.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -3054,7 +3096,7 @@
 	<name>噩梦本第十二章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,19.5]</takeEffectParam>
+	<takeEffectParam>[1,300,2.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -3096,7 +3138,7 @@
 	<name>噩梦本第十三章怪物特性</name>
 	<description>反伤</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.65]</takeEffectParam>
+	<takeEffectParam>[0.06]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100019</attachEffect>
@@ -3117,7 +3159,7 @@
 	<name>噩梦本第十三章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,19.5]</takeEffectParam>
+	<takeEffectParam>[1,300,2.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -3138,7 +3180,7 @@
 	<name>噩梦本第十四章怪物特性</name>
 	<description>反伤</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.65]</takeEffectParam>
+	<takeEffectParam>[0.06]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100019</attachEffect>
@@ -3159,7 +3201,7 @@
 	<name>噩梦本第十四章怪物特性</name>
 	<description>治疗</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,300,19.5]</takeEffectParam>
+	<takeEffectParam>[1,300,2.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100018</attachEffect>
@@ -55759,7 +55801,7 @@
 	<id>1090101</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体1级</description>
@@ -55780,7 +55822,7 @@
 	<id>1090102</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体2级</description>
@@ -55801,7 +55843,7 @@
 	<id>1090103</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体3级</description>
@@ -55822,7 +55864,7 @@
 	<id>1090104</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体4级</description>
@@ -55843,7 +55885,7 @@
 	<id>1090105</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体5级</description>
@@ -55864,7 +55906,7 @@
 	<id>1090106</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体6级</description>
@@ -55885,7 +55927,7 @@
 	<id>1090107</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体7级</description>
@@ -55906,7 +55948,7 @@
 	<id>1090108</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体8级</description>
@@ -55927,7 +55969,7 @@
 	<id>1090109</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体9级</description>
@@ -55948,7 +55990,7 @@
 	<id>1090110</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体10级</description>
@@ -55969,7 +56011,7 @@
 	<id>1090111</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体11级</description>
@@ -55990,7 +56032,7 @@
 	<id>1090112</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体12级</description>
@@ -56011,7 +56053,7 @@
 	<id>1090113</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体13级</description>
@@ -56032,7 +56074,7 @@
 	<id>1090114</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体14级</description>
@@ -56053,7 +56095,7 @@
 	<id>1090115</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体15级</description>
@@ -56074,7 +56116,7 @@
 	<id>1090116</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体16级</description>
@@ -56095,7 +56137,7 @@
 	<id>1090117</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体17级</description>
@@ -56116,7 +56158,7 @@
 	<id>1090118</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体18级</description>
@@ -56137,7 +56179,7 @@
 	<id>1090119</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体19级</description>
@@ -56158,7 +56200,7 @@
 	<id>1090120</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体20级</description>
@@ -56179,7 +56221,7 @@
 	<id>1090121</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体21级</description>
@@ -56200,7 +56242,7 @@
 	<id>1090122</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体22级</description>
@@ -56221,7 +56263,7 @@
 	<id>1090123</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体23级</description>
@@ -56242,7 +56284,7 @@
 	<id>1090124</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体24级</description>
@@ -56263,7 +56305,7 @@
 	<id>1090125</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体25级</description>
@@ -56284,7 +56326,7 @@
 	<id>1090126</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体26级</description>
@@ -56305,7 +56347,7 @@
 	<id>1090127</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体27级</description>
@@ -56326,7 +56368,7 @@
 	<id>1090128</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体28级</description>
@@ -56347,7 +56389,7 @@
 	<id>1090129</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体29级</description>
@@ -56368,7 +56410,7 @@
 	<id>1090130</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体30级</description>
@@ -56389,7 +56431,7 @@
 	<id>1090131</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体31级</description>
@@ -56410,7 +56452,7 @@
 	<id>1090132</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体32级</description>
@@ -56431,7 +56473,7 @@
 	<id>1090133</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体33级</description>
@@ -56452,7 +56494,7 @@
 	<id>1090134</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体34级</description>
@@ -56473,7 +56515,7 @@
 	<id>1090135</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体35级</description>
@@ -56494,7 +56536,7 @@
 	<id>1090136</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体36级</description>
@@ -56515,7 +56557,7 @@
 	<id>1090137</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体37级</description>
@@ -56536,7 +56578,7 @@
 	<id>1090138</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体38级</description>
@@ -56557,7 +56599,7 @@
 	<id>1090139</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体39级</description>
@@ -56578,7 +56620,7 @@
 	<id>1090140</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体40级</description>
@@ -56599,7 +56641,7 @@
 	<id>1090141</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体41级</description>
@@ -56620,7 +56662,7 @@
 	<id>1090142</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体42级</description>
@@ -56641,7 +56683,7 @@
 	<id>1090143</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体43级</description>
@@ -56662,7 +56704,7 @@
 	<id>1090144</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体44级</description>
@@ -56683,7 +56725,7 @@
 	<id>1090145</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体45级</description>
@@ -56704,7 +56746,7 @@
 	<id>1090146</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体46级</description>
@@ -56725,7 +56767,7 @@
 	<id>1090147</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体47级</description>
@@ -56746,7 +56788,7 @@
 	<id>1090148</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体48级</description>
@@ -56767,7 +56809,7 @@
 	<id>1090149</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体49级</description>
@@ -56788,7 +56830,7 @@
 	<id>1090150</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体D级</name>
 	<description>霸体50级</description>
@@ -56809,7 +56851,7 @@
 	<id>1090201</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体1级</description>
@@ -56830,7 +56872,7 @@
 	<id>1090202</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体2级</description>
@@ -56851,7 +56893,7 @@
 	<id>1090203</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体3级</description>
@@ -56872,7 +56914,7 @@
 	<id>1090204</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体4级</description>
@@ -56893,7 +56935,7 @@
 	<id>1090205</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体5级</description>
@@ -56914,7 +56956,7 @@
 	<id>1090206</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体6级</description>
@@ -56935,7 +56977,7 @@
 	<id>1090207</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体7级</description>
@@ -56956,7 +56998,7 @@
 	<id>1090208</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体8级</description>
@@ -56977,7 +57019,7 @@
 	<id>1090209</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体9级</description>
@@ -56998,7 +57040,7 @@
 	<id>1090210</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体10级</description>
@@ -57019,7 +57061,7 @@
 	<id>1090211</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体11级</description>
@@ -57040,7 +57082,7 @@
 	<id>1090212</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体12级</description>
@@ -57061,7 +57103,7 @@
 	<id>1090213</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体13级</description>
@@ -57082,7 +57124,7 @@
 	<id>1090214</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体14级</description>
@@ -57103,7 +57145,7 @@
 	<id>1090215</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体15级</description>
@@ -57124,7 +57166,7 @@
 	<id>1090216</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体16级</description>
@@ -57145,7 +57187,7 @@
 	<id>1090217</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体17级</description>
@@ -57166,7 +57208,7 @@
 	<id>1090218</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体18级</description>
@@ -57187,7 +57229,7 @@
 	<id>1090219</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体19级</description>
@@ -57208,7 +57250,7 @@
 	<id>1090220</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体20级</description>
@@ -57229,7 +57271,7 @@
 	<id>1090221</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体21级</description>
@@ -57250,7 +57292,7 @@
 	<id>1090222</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体22级</description>
@@ -57271,7 +57313,7 @@
 	<id>1090223</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体23级</description>
@@ -57292,7 +57334,7 @@
 	<id>1090224</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体24级</description>
@@ -57313,7 +57355,7 @@
 	<id>1090225</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体25级</description>
@@ -57334,7 +57376,7 @@
 	<id>1090226</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体26级</description>
@@ -57355,7 +57397,7 @@
 	<id>1090227</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体27级</description>
@@ -57376,7 +57418,7 @@
 	<id>1090228</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体28级</description>
@@ -57397,7 +57439,7 @@
 	<id>1090229</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体29级</description>
@@ -57418,7 +57460,7 @@
 	<id>1090230</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体30级</description>
@@ -57439,7 +57481,7 @@
 	<id>1090231</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体31级</description>
@@ -57460,7 +57502,7 @@
 	<id>1090232</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体32级</description>
@@ -57481,7 +57523,7 @@
 	<id>1090233</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体33级</description>
@@ -57502,7 +57544,7 @@
 	<id>1090234</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体34级</description>
@@ -57523,7 +57565,7 @@
 	<id>1090235</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体35级</description>
@@ -57544,7 +57586,7 @@
 	<id>1090236</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体36级</description>
@@ -57565,7 +57607,7 @@
 	<id>1090237</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体37级</description>
@@ -57586,7 +57628,7 @@
 	<id>1090238</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体38级</description>
@@ -57607,7 +57649,7 @@
 	<id>1090239</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体39级</description>
@@ -57628,7 +57670,7 @@
 	<id>1090240</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体40级</description>
@@ -57649,7 +57691,7 @@
 	<id>1090241</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体41级</description>
@@ -57670,7 +57712,7 @@
 	<id>1090242</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体42级</description>
@@ -57691,7 +57733,7 @@
 	<id>1090243</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体43级</description>
@@ -57712,7 +57754,7 @@
 	<id>1090244</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体44级</description>
@@ -57733,7 +57775,7 @@
 	<id>1090245</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体45级</description>
@@ -57754,7 +57796,7 @@
 	<id>1090246</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体46级</description>
@@ -57775,7 +57817,7 @@
 	<id>1090247</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体47级</description>
@@ -57796,7 +57838,7 @@
 	<id>1090248</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体48级</description>
@@ -57817,7 +57859,7 @@
 	<id>1090249</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体49级</description>
@@ -57838,7 +57880,7 @@
 	<id>1090250</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体C级</name>
 	<description>霸体50级</description>
@@ -57859,7 +57901,7 @@
 	<id>1090301</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体1级</description>
@@ -57880,7 +57922,7 @@
 	<id>1090302</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体2级</description>
@@ -57901,7 +57943,7 @@
 	<id>1090303</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体3级</description>
@@ -57922,7 +57964,7 @@
 	<id>1090304</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体4级</description>
@@ -57943,7 +57985,7 @@
 	<id>1090305</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体5级</description>
@@ -57964,7 +58006,7 @@
 	<id>1090306</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体6级</description>
@@ -57985,7 +58027,7 @@
 	<id>1090307</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体7级</description>
@@ -58006,7 +58048,7 @@
 	<id>1090308</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体8级</description>
@@ -58027,7 +58069,7 @@
 	<id>1090309</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体9级</description>
@@ -58048,7 +58090,7 @@
 	<id>1090310</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体10级</description>
@@ -58069,7 +58111,7 @@
 	<id>1090311</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体11级</description>
@@ -58090,7 +58132,7 @@
 	<id>1090312</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体12级</description>
@@ -58111,7 +58153,7 @@
 	<id>1090313</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体13级</description>
@@ -58132,7 +58174,7 @@
 	<id>1090314</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体14级</description>
@@ -58153,7 +58195,7 @@
 	<id>1090315</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体15级</description>
@@ -58174,7 +58216,7 @@
 	<id>1090316</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体16级</description>
@@ -58195,7 +58237,7 @@
 	<id>1090317</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体17级</description>
@@ -58216,7 +58258,7 @@
 	<id>1090318</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体18级</description>
@@ -58237,7 +58279,7 @@
 	<id>1090319</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体19级</description>
@@ -58258,7 +58300,7 @@
 	<id>1090320</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体20级</description>
@@ -58279,7 +58321,7 @@
 	<id>1090321</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体21级</description>
@@ -58300,7 +58342,7 @@
 	<id>1090322</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体22级</description>
@@ -58321,7 +58363,7 @@
 	<id>1090323</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体23级</description>
@@ -58342,7 +58384,7 @@
 	<id>1090324</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体24级</description>
@@ -58363,7 +58405,7 @@
 	<id>1090325</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体25级</description>
@@ -58384,7 +58426,7 @@
 	<id>1090326</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体26级</description>
@@ -58405,7 +58447,7 @@
 	<id>1090327</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体27级</description>
@@ -58426,7 +58468,7 @@
 	<id>1090328</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体28级</description>
@@ -58447,7 +58489,7 @@
 	<id>1090329</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体29级</description>
@@ -58468,7 +58510,7 @@
 	<id>1090330</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体30级</description>
@@ -58489,7 +58531,7 @@
 	<id>1090331</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体31级</description>
@@ -58510,7 +58552,7 @@
 	<id>1090332</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体32级</description>
@@ -58531,7 +58573,7 @@
 	<id>1090333</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体33级</description>
@@ -58552,7 +58594,7 @@
 	<id>1090334</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体34级</description>
@@ -58573,7 +58615,7 @@
 	<id>1090335</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体35级</description>
@@ -58594,7 +58636,7 @@
 	<id>1090336</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体36级</description>
@@ -58615,7 +58657,7 @@
 	<id>1090337</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体37级</description>
@@ -58636,7 +58678,7 @@
 	<id>1090338</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体38级</description>
@@ -58657,7 +58699,7 @@
 	<id>1090339</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体39级</description>
@@ -58678,7 +58720,7 @@
 	<id>1090340</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体40级</description>
@@ -58699,7 +58741,7 @@
 	<id>1090341</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体41级</description>
@@ -58720,7 +58762,7 @@
 	<id>1090342</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体42级</description>
@@ -58741,7 +58783,7 @@
 	<id>1090343</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体43级</description>
@@ -58762,7 +58804,7 @@
 	<id>1090344</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体44级</description>
@@ -58783,7 +58825,7 @@
 	<id>1090345</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体45级</description>
@@ -58804,7 +58846,7 @@
 	<id>1090346</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体46级</description>
@@ -58825,7 +58867,7 @@
 	<id>1090347</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体47级</description>
@@ -58846,7 +58888,7 @@
 	<id>1090348</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体48级</description>
@@ -58867,7 +58909,7 @@
 	<id>1090349</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体49级</description>
@@ -58888,7 +58930,7 @@
 	<id>1090350</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体B级</name>
 	<description>霸体50级</description>
@@ -58909,7 +58951,7 @@
 	<id>1090401</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体1级</description>
@@ -58930,7 +58972,7 @@
 	<id>1090402</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体2级</description>
@@ -58951,7 +58993,7 @@
 	<id>1090403</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体3级</description>
@@ -58972,7 +59014,7 @@
 	<id>1090404</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体4级</description>
@@ -58993,7 +59035,7 @@
 	<id>1090405</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体5级</description>
@@ -59014,7 +59056,7 @@
 	<id>1090406</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体6级</description>
@@ -59035,7 +59077,7 @@
 	<id>1090407</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体7级</description>
@@ -59056,7 +59098,7 @@
 	<id>1090408</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体8级</description>
@@ -59077,7 +59119,7 @@
 	<id>1090409</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体9级</description>
@@ -59098,7 +59140,7 @@
 	<id>1090410</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体10级</description>
@@ -59119,7 +59161,7 @@
 	<id>1090411</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体11级</description>
@@ -59140,7 +59182,7 @@
 	<id>1090412</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体12级</description>
@@ -59161,7 +59203,7 @@
 	<id>1090413</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体13级</description>
@@ -59182,7 +59224,7 @@
 	<id>1090414</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体14级</description>
@@ -59203,7 +59245,7 @@
 	<id>1090415</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体15级</description>
@@ -59224,7 +59266,7 @@
 	<id>1090416</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体16级</description>
@@ -59245,7 +59287,7 @@
 	<id>1090417</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体17级</description>
@@ -59266,7 +59308,7 @@
 	<id>1090418</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体18级</description>
@@ -59287,7 +59329,7 @@
 	<id>1090419</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体19级</description>
@@ -59308,7 +59350,7 @@
 	<id>1090420</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体20级</description>
@@ -59329,7 +59371,7 @@
 	<id>1090421</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体21级</description>
@@ -59350,7 +59392,7 @@
 	<id>1090422</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体22级</description>
@@ -59371,7 +59413,7 @@
 	<id>1090423</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体23级</description>
@@ -59392,7 +59434,7 @@
 	<id>1090424</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体24级</description>
@@ -59413,7 +59455,7 @@
 	<id>1090425</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体25级</description>
@@ -59434,7 +59476,7 @@
 	<id>1090426</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体26级</description>
@@ -59455,7 +59497,7 @@
 	<id>1090427</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体27级</description>
@@ -59476,7 +59518,7 @@
 	<id>1090428</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体28级</description>
@@ -59497,7 +59539,7 @@
 	<id>1090429</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体29级</description>
@@ -59518,7 +59560,7 @@
 	<id>1090430</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体30级</description>
@@ -59539,7 +59581,7 @@
 	<id>1090431</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体31级</description>
@@ -59560,7 +59602,7 @@
 	<id>1090432</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体32级</description>
@@ -59581,7 +59623,7 @@
 	<id>1090433</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体33级</description>
@@ -59602,7 +59644,7 @@
 	<id>1090434</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体34级</description>
@@ -59623,7 +59665,7 @@
 	<id>1090435</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体35级</description>
@@ -59644,7 +59686,7 @@
 	<id>1090436</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体36级</description>
@@ -59665,7 +59707,7 @@
 	<id>1090437</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体37级</description>
@@ -59686,7 +59728,7 @@
 	<id>1090438</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体38级</description>
@@ -59707,7 +59749,7 @@
 	<id>1090439</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体39级</description>
@@ -59728,7 +59770,7 @@
 	<id>1090440</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体40级</description>
@@ -59749,7 +59791,7 @@
 	<id>1090441</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体41级</description>
@@ -59770,7 +59812,7 @@
 	<id>1090442</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体42级</description>
@@ -59791,7 +59833,7 @@
 	<id>1090443</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体43级</description>
@@ -59812,7 +59854,7 @@
 	<id>1090444</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体44级</description>
@@ -59833,7 +59875,7 @@
 	<id>1090445</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体45级</description>
@@ -59854,7 +59896,7 @@
 	<id>1090446</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体46级</description>
@@ -59875,7 +59917,7 @@
 	<id>1090447</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体47级</description>
@@ -59896,7 +59938,7 @@
 	<id>1090448</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体48级</description>
@@ -59917,7 +59959,7 @@
 	<id>1090449</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体49级</description>
@@ -59938,7 +59980,7 @@
 	<id>1090450</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体A级</name>
 	<description>霸体50级</description>
@@ -59959,7 +60001,7 @@
 	<id>1090501</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体1级</description>
@@ -59980,7 +60022,7 @@
 	<id>1090502</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体2级</description>
@@ -60001,7 +60043,7 @@
 	<id>1090503</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体3级</description>
@@ -60022,7 +60064,7 @@
 	<id>1090504</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体4级</description>
@@ -60043,7 +60085,7 @@
 	<id>1090505</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体5级</description>
@@ -60064,7 +60106,7 @@
 	<id>1090506</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体6级</description>
@@ -60085,7 +60127,7 @@
 	<id>1090507</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体7级</description>
@@ -60106,7 +60148,7 @@
 	<id>1090508</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体8级</description>
@@ -60127,7 +60169,7 @@
 	<id>1090509</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体9级</description>
@@ -60148,7 +60190,7 @@
 	<id>1090510</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体10级</description>
@@ -60169,7 +60211,7 @@
 	<id>1090511</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体11级</description>
@@ -60190,7 +60232,7 @@
 	<id>1090512</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体12级</description>
@@ -60211,7 +60253,7 @@
 	<id>1090513</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体13级</description>
@@ -60232,7 +60274,7 @@
 	<id>1090514</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体14级</description>
@@ -60253,7 +60295,7 @@
 	<id>1090515</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体15级</description>
@@ -60274,7 +60316,7 @@
 	<id>1090516</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体16级</description>
@@ -60295,7 +60337,7 @@
 	<id>1090517</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体17级</description>
@@ -60316,7 +60358,7 @@
 	<id>1090518</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体18级</description>
@@ -60337,7 +60379,7 @@
 	<id>1090519</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体19级</description>
@@ -60358,7 +60400,7 @@
 	<id>1090520</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体20级</description>
@@ -60379,7 +60421,7 @@
 	<id>1090521</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体21级</description>
@@ -60400,7 +60442,7 @@
 	<id>1090522</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体22级</description>
@@ -60421,7 +60463,7 @@
 	<id>1090523</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体23级</description>
@@ -60442,7 +60484,7 @@
 	<id>1090524</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体24级</description>
@@ -60463,7 +60505,7 @@
 	<id>1090525</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体25级</description>
@@ -60484,7 +60526,7 @@
 	<id>1090526</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体26级</description>
@@ -60505,7 +60547,7 @@
 	<id>1090527</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体27级</description>
@@ -60526,7 +60568,7 @@
 	<id>1090528</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体28级</description>
@@ -60547,7 +60589,7 @@
 	<id>1090529</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体29级</description>
@@ -60568,7 +60610,7 @@
 	<id>1090530</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体30级</description>
@@ -60589,7 +60631,7 @@
 	<id>1090531</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体31级</description>
@@ -60610,7 +60652,7 @@
 	<id>1090532</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体32级</description>
@@ -60631,7 +60673,7 @@
 	<id>1090533</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体33级</description>
@@ -60652,7 +60694,7 @@
 	<id>1090534</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体34级</description>
@@ -60673,7 +60715,7 @@
 	<id>1090535</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体35级</description>
@@ -60694,7 +60736,7 @@
 	<id>1090536</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体36级</description>
@@ -60715,7 +60757,7 @@
 	<id>1090537</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体37级</description>
@@ -60736,7 +60778,7 @@
 	<id>1090538</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体38级</description>
@@ -60757,7 +60799,7 @@
 	<id>1090539</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体39级</description>
@@ -60778,7 +60820,7 @@
 	<id>1090540</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体40级</description>
@@ -60799,7 +60841,7 @@
 	<id>1090541</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体41级</description>
@@ -60820,7 +60862,7 @@
 	<id>1090542</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体42级</description>
@@ -60841,7 +60883,7 @@
 	<id>1090543</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体43级</description>
@@ -60862,7 +60904,7 @@
 	<id>1090544</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体44级</description>
@@ -60883,7 +60925,7 @@
 	<id>1090545</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体45级</description>
@@ -60904,7 +60946,7 @@
 	<id>1090546</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体46级</description>
@@ -60925,7 +60967,7 @@
 	<id>1090547</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体47级</description>
@@ -60946,7 +60988,7 @@
 	<id>1090548</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体48级</description>
@@ -60967,7 +61009,7 @@
 	<id>1090549</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体49级</description>
@@ -60988,7 +61030,7 @@
 	<id>1090550</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
 	<name>霸体S级</name>
 	<description>霸体50级</description>
@@ -87621,7 +87663,7 @@
 	<name>套装:防御增益</name>
 	<description>套装:防御增益</description>
 	<duration>300</duration>
-	<takeEffectParam>[1,1.3]</takeEffectParam>
+	<takeEffectParam>[1,0.3]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>
@@ -87642,7 +87684,7 @@
 	<name>套装:威力增益</name>
 	<description>套装:威力增益</description>
 	<duration>300</duration>
-	<takeEffectParam>[0,1.3]</takeEffectParam>
+	<takeEffectParam>[0,0.3]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2024</icon>
 	<attachEffect>7000013</attachEffect>

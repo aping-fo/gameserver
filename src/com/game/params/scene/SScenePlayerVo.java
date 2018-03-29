@@ -1,5 +1,6 @@
 package com.game.params.scene;
 
+import java.util.List;
 import com.game.params.*;
 
 //场景玩家信息(工具自动生成，请勿手动修改！）
@@ -27,6 +28,7 @@ public class SScenePlayerVo implements IProtocol {
 	public int showPetConfigId;//展示宠物配置ID
 	public String fightPetName;//出战宠物名字
 	public String showPetName;//展示宠物名字
+	public List<Integer> buffList;//套装bufffer列表
 
 
 	public void decode(BufferBuilder bb) {
@@ -53,6 +55,7 @@ public class SScenePlayerVo implements IProtocol {
 		this.showPetConfigId = bb.getInt();
 		this.fightPetName = bb.getString();
 		this.showPetName = bb.getString();
+		this.buffList = bb.getIntList();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -79,5 +82,6 @@ public class SScenePlayerVo implements IProtocol {
 		bb.putInt(this.showPetConfigId);
 		bb.putString(this.fightPetName);
 		bb.putString(this.showPetName);
+		bb.putIntList(this.buffList);
 	}
 }

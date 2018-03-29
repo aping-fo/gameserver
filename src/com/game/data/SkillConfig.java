@@ -53,4 +53,5 @@ public class SkillConfig {
 	public int setPainting;//立绘特效
 	public int duelBossEffect;//砍杀Boss特效
 	public int[] duleCameraAnimId;//触发死亡镜头动画ID
+	public int skillType;//技能类型
 }

@@ -18,7 +18,7 @@
 	<stage3Name>第三阶:勇气试炼</stage3Name>
 	<stage3Copy>[1000115]</stage3Copy>
 	<stage3Mission>[[2,1000115,1]]</stage3Mission>
-	<stage3Reward>[[20011,2]]</stage3Reward>
+	<stage3Reward>[[20011,2],[301100,1]]</stage3Reward>
 </config>
 <config>
 	<id>2</id>
@@ -37,8 +37,8 @@
 	<stage2Reward>[[108,200],[10905,5]]</stage2Reward>
 	<stage3Name>第三阶:英雄修仙</stage3Name>
 	<stage3Copy>[1000115]</stage3Copy>
-	<stage3Mission>[[2,1000115,2]]</stage3Mission>
-	<stage3Reward>[[20011,3]]</stage3Reward>
+	<stage3Mission>[[2,1000115,1]]</stage3Mission>
+	<stage3Reward>[[20011,3],[301101,1]]</stage3Reward>
 </config>
 <config>
 	<id>3</id>
@@ -57,7 +57,7 @@
 	<stage2Reward>[[108,300],[10906,5]]</stage2Reward>
 	<stage3Name>第三阶:大神修仙</stage3Name>
 	<stage3Copy>[1000115]</stage3Copy>
-	<stage3Mission>[[2,1000115,3]]</stage3Mission>
-	<stage3Reward>[[20011,5]]</stage3Reward>
+	<stage3Mission>[[2,1000115,1]]</stage3Mission>
+	<stage3Reward>[[20011,5],[301102,1]]</stage3Reward>
 </config>
 </root>

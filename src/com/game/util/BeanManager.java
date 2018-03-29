@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.game.module.serial.SerialDataService;
 import org.springframework.context.ApplicationContext;
 
 import com.game.event.InitHandler;
@@ -34,7 +35,14 @@ public class BeanManager {
 
 	public static void handleInit() {
 		for (InitHandler handler : initHandlers) {
-			handler.handleInit();
+			if(handler instanceof SerialDataService) { //先加载基础数据
+				handler.handleInit();
+			}
+		}
+		for (InitHandler handler : initHandlers) {
+			if(!(handler instanceof SerialDataService)) {
+				handler.handleInit();
+			}
 		}
 	}
 

@@ -11,17 +11,17 @@ import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.attach.lottery.LotteryLogic;
 import com.game.module.attach.training.trainingLogic;
 import com.game.module.attach.treasure.TreasureLogic;
-import com.game.module.copy.CopyService;
-import com.game.module.gang.GangDungeonService;
 import com.game.module.gang.GangService;
+import com.game.module.ladder.LadderService;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.sct.SkillCardTrainService;
 import com.game.module.shop.ShopService;
 import com.game.module.sign.SignService;
 import com.game.module.task.TaskService;
+import com.game.module.title.Title;
+import com.game.module.title.TitleService;
 import com.game.module.vip.VipExtension;
-import com.game.module.vip.VipService;
 import com.game.params.DailyVo;
 import com.game.params.Int2Param;
 import com.game.util.ConfigData;
@@ -42,10 +42,6 @@ public class DailyService implements InitHandler {
 
 	@Autowired
 	private PlayerService playerService;
-	@Autowired
-	private CopyService copyService;
-	@Autowired
-	private VipService vipService;
 	@Autowired
 	private TaskService taskService;
 	@Autowired
@@ -76,6 +72,10 @@ public class DailyService implements InitHandler {
 	private WelfareCardService welfareCardService;
 	@Autowired
 	private SkillCardTrainService skillCardTrainService;
+	@Autowired
+	private TitleService titleService;
+	@Autowired
+	private LadderService ladderService;
 	public static long FIVE_CLOCK = 0;
 	public static long MONDAY_FIVE_CLOCK = 0;
 
@@ -150,6 +150,7 @@ public class DailyService implements InitHandler {
 	// 重置
 	public void resetWeekly() {
 		for (int id:SessionManager.getInstance().getAllSessions().keySet()) {
+			titleService.updateWeekly(id);
 			PlayerData data = playerService.getPlayerData(id);
 			resetDailyData(data);
 			// 通知前端更新副本
@@ -157,6 +158,7 @@ public class DailyService implements InitHandler {
 			// 更新每日数据
 			SessionManager.getInstance().sendMsg(VipExtension.GET_DAILY_INFO, getDailyInfo(playerId), playerId);
 		}
+		ladderService.weeklyAward();
 	}
 
 
@@ -209,6 +211,7 @@ public class DailyService implements InitHandler {
 	}
 
 	public void resetWeeklyData(PlayerData data){
+
 		int playerId = data.getPlayerId();
 		taskService.updateWeeklyTasks(playerId);
 
@@ -240,6 +243,7 @@ public class DailyService implements InitHandler {
 
 	// 更新每日数据到前端
 	public void refreshDailyVo(int playerId) {
+
 		SessionManager.getInstance().sendMsg(VipExtension.GET_DAILY_INFO, getDailyInfo(playerId), playerId);
 	}
 }

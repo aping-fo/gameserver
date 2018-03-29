@@ -13,9 +13,11 @@ import com.game.module.gang.GangService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
+import com.game.module.goods.PlayerBag;
 import com.game.module.group.GroupService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
+import com.game.module.pet.PetBag;
 import com.game.module.pet.PetService;
 import com.game.module.scene.Scene;
 import com.game.module.serial.PlayerView;
@@ -31,6 +33,7 @@ import com.game.params.Int2Param;
 import com.game.params.ListParam;
 import com.game.params.player.CRegVo;
 import com.game.params.player.PlayerVo;
+import com.game.sdk.erating.ERatingService;
 import com.game.util.*;
 import com.google.common.collect.BiMap;
 import com.google.common.collect.HashBiMap;
@@ -51,6 +54,8 @@ import java.util.concurrent.TimeUnit;
 
 @Service
 public class PlayerService implements InitHandler {
+
+    public static final int MODULE_TITLE = 1323;
 
     @Autowired
     private PlayerDao playerDao;
@@ -86,6 +91,8 @@ public class PlayerService implements InitHandler {
     private SerialDataService serialDataService;
     @Autowired
     private TimerService timerService;
+    @Autowired
+    private ERatingService eRatingService;
 
     private static volatile int maxPlayerId = 0;
 
@@ -94,7 +101,7 @@ public class PlayerService implements InitHandler {
     private volatile Map<String, Integer> nameCaches = new ConcurrentHashMap<>();
     private volatile Map<String, User> userMap = new ConcurrentHashMap<>();
     public static final String ROBOT = "sys";
-    private BiMap<String, Integer> SdkUser = Maps.synchronizedBiMap(HashBiMap.create());
+    //private BiMap<String, Integer> SdkUser = Maps.synchronizedBiMap(HashBiMap.create());
 
     @Override
     public void handleInit() {
@@ -127,6 +134,10 @@ public class PlayerService implements InitHandler {
                 if (player.getLastLogoutTime() == null) {
                     continue;
                 }
+                if (playerData == null) { //重新生成一次
+                    ServerLogger.warn("player data == null , playerId = " + player.getPlayerId());
+                    playerData = initPlayerData(player.getPlayerId(), false);
+                }
                 if (!playerData.isRobotFlag() && System.currentTimeMillis() - player.getLastLogoutTime().getTime() > 5 * 60 * 1000) {
                     updatePlayerData(player.getPlayerId());
                     update(player);
@@ -154,6 +165,19 @@ public class PlayerService implements InitHandler {
                 //add new
                 if (!player.online) {
                     player.setLastLogoutTime(new Date());
+                }
+                PlayerData data = getPlayerData(playerId);
+                if (data.isRobotFlag()) {
+                    int minFight = ConfigData.globalParam().robotFight[0];
+                    int maxFight = ConfigData.globalParam().robotFight[1];
+                    int fightRate = RandomUtil.randInt(minFight, maxFight);
+                    player.setHp(Math.round(fightRate * ConfigData.globalParam().RobotParas[0]));
+                    player.setAttack(Math.round(fightRate * ConfigData.globalParam().RobotParas[1]));
+                    player.setDefense(Math.round(fightRate * ConfigData.globalParam().RobotParas[2]));
+                    player.setSymptom(Math.round(fightRate * ConfigData.globalParam().RobotParas[3]));
+                    player.setFu(Math.round(fightRate * ConfigData.globalParam().RobotParas[4]));
+                    player.setCrit(Math.round(fightRate * ConfigData.globalParam().RobotParas[5]));
+                    player.setFight(fightRate);
                 }
             }
         }
@@ -184,7 +208,7 @@ public class PlayerService implements InitHandler {
     }
 
     // 增加新用户
-    public Player addNewPlayer(String name, int sex, int vocation, String accName, String channel, String serverId, String serverName) {
+    public Player addNewPlayer(String name, int sex, int vocation, String accName, String channel, String serverId, String serverName, int sdkUserId) {
         // 初始属性
         final int playerId = getNextPlayerId();
         final Player player = new Player();
@@ -209,11 +233,7 @@ public class PlayerService implements InitHandler {
         player.setY(globalParam.defaultPos[1]);
         player.setZ(globalParam.defaultPos[2]);
 
-        Integer userId = SdkUser.get(accName);
-        if (userId == null) {
-            userId = 0;
-        }
-        player.userId = userId;
+        player.userId = sdkUserId;
         // 新增用户
         players.put(playerId, player);
         // 数据库插入失败//优化下这个登录
@@ -285,6 +305,7 @@ public class PlayerService implements InitHandler {
             @Override
             public void run() {
                 try {
+                    //player 和 player data 同时落库
                     playerDao.insert(player);
                     savePlayerData(playerData);
                     update(player);
@@ -386,6 +407,7 @@ public class PlayerService implements InitHandler {
 
         if (!dailyService.isSameDate(data.getDailyTime())) {
             dailyService.resetDailyData(data);
+            titleService.onLogin(playerId);
         }
 
         if (!dailyService.isSameWeek(data.getWeeklyTime())) {
@@ -400,7 +422,46 @@ public class PlayerService implements InitHandler {
         updateCurrencyToClient(playerId);
         //活动检测
         activityService.onLogin(playerId);
-        titleService.onLogin(playerId);
+
+        //特殊处理
+        /*if (player.getDiamond() > 10000 || player.getDiamond() < 0
+                || player.getFight() > 55000) {
+
+            try {
+                ServerLogger.warn("clear data begin ..... playerId = " + playerId);
+                PlayerBag bag = goodsService.getPlayerBag(playerId);
+                bag.getAllGoods().clear(); //背包
+
+                //宝石
+                data.getJewels().clear();
+                //神器
+                data.getArtifacts().clear();
+                data.getArtifactsLevelUp().clear();
+
+                //宠物材料
+                PetBag petBag = petService.getPetBag(playerId);
+                petBag.getMaterialMap().clear();
+
+                //技能卡
+                data.getSkillCards().clear();
+                data.getSkillCardSets().clear();
+                data.getSkillCardSets();
+                //钻石
+                player.setDiamond(0);
+                player.setCoin(0);
+
+                List<GoodsEntry> newbieRewards = new ArrayList<>();
+                newbieRewards.add(new GoodsEntry(102, 30000));
+                String mailTitle = "角色异常数据补偿处理";
+                String mailContent = "亲爱的玩家，您的角色由于数据异常，我们进行了紧急处理，给您带来了不便，敬请谅解，在这里补偿您3W钻。有任何异议，请添加QQ群：646392375，进行咨询。";
+                mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);
+
+                ServerLogger.warn("clear data end ..... playerId = " + playerId);
+            } catch (Exception e) {
+                ServerLogger.err(e, "clear data end ..... playerId = " + playerId);
+            }
+        }*/
+
 
         PlayerView playerView = serialDataService.getData().getPlayerView(playerId);
         Map<Integer, int[]> condParam = Maps.newHashMap();
@@ -409,9 +470,6 @@ public class PlayerService implements InitHandler {
         }
         if (playerView.getFightMaxRank() != 0) {
             condParam.put(Task.TYPE_FIGHT_RANK, new int[]{playerView.getFightMaxRank()});
-        }
-        if (playerView.getLadderMaxRank() != 0) {
-            condParam.put(Task.TYPE_LADDER_RANK, new int[]{playerView.getLadderMaxRank()});
         }
         if (playerView.getWorldBossMaxRank() != 0) {
             condParam.put(Task.TYPE_WB_RANK, new int[]{playerView.getWorldBossMaxRank()});
@@ -508,13 +566,6 @@ public class PlayerService implements InitHandler {
                 }
             }
         }
-
-        //开启功能列表
-        vo.modules = new ArrayList<>();
-        for (int moduleId : data.getModules()) {
-            vo.modules.add(moduleId);
-        }
-
         vo.newHandleSteps = Lists.newArrayList();
         for (int step : data.getGuideSteps()) {
             vo.newHandleSteps.add(step);
@@ -539,7 +590,8 @@ public class PlayerService implements InitHandler {
         if (actionType == null) {
             actionType = LogConsume.GM;
         }
-
+        PlayerData data = getPlayerData(playerId);
+        eRatingService.reportAddMoney(player, data.getRoleId(), 6, add, actionType.desc);
         Context.getLoggerService().logDiamond(playerId, add, actionType.actionId, true, params);
         taskService.doTask(playerId, Task.FINISH_CURRENCY, Goods.DIAMOND, add);
         return true;
@@ -565,6 +617,8 @@ public class PlayerService implements InitHandler {
         }
         Context.getLoggerService().logDiamond(playerId, dec, actionType.actionId, false, params);
         taskService.doTask(playerId, Task.FINISH_CONSUME, Goods.DIAMOND, dec);
+        PlayerData data = getPlayerData(playerId);
+        eRatingService.reportMoneyCost(player, data.getRoleId(), actionType.desc, 1, dec, dec, 6, dec);
         return true;
     }
 
@@ -1101,16 +1155,6 @@ public class PlayerService implements InitHandler {
         Player player = players.get(playerId);
         players.remove(playerId);
         playerDatas.remove(playerId);
-        String user = SdkUser.inverse().get(player.userId);
-        SdkUser.remove(user);
-    }
-
-    public void addSdkUser(String user, int userId) {
-        SdkUser.put(user, userId);
-    }
-
-    public boolean hasAuthen(String user) {
-        return SdkUser.containsKey(user);
     }
 
     public Int2Param moduleOpen(int playerId, int moduleId) {
@@ -1122,10 +1166,37 @@ public class PlayerService implements InitHandler {
         int2Param.param1 = Response.SUCCESS;
         int2Param.param2 = moduleId;
 
-        if(moduleId == 1) {
+        if (moduleId == MODULE_TITLE) { //1323 功能开启称号ID
             playerCalculator.calculate(playerId);
         }
 
         return int2Param;
+    }
+
+    public Int2Param hitModule(int playerId, int moduleId) {
+        PlayerData playerData = getPlayerData(playerId);
+        if (!playerData.getHitModules().contains(moduleId)) {
+            playerData.getHitModules().add(moduleId);
+        }
+        Int2Param int2Param = new Int2Param();
+        int2Param.param1 = Response.SUCCESS;
+        int2Param.param2 = moduleId;
+        return int2Param;
+    }
+
+    public ListParam<Int2Param> getModule(int playerId) {
+        PlayerData data = getPlayerData(playerId);
+        ListParam<Int2Param> result = new ListParam<>();
+        result.params = Lists.newArrayList();
+        for (int moduleId : data.getModules()) {
+            Int2Param param = new Int2Param();
+            param.param1 = moduleId;
+            if (data.getHitModules().contains(moduleId)) {
+                param.param2 = 1;
+            }
+            result.params.add(param);
+        }
+
+        return result;
     }
 }

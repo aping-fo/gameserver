@@ -77,6 +77,9 @@ public class ConfigData {
         return charges;
     }
 
+    //礼包
+    public static Map<String, CdkeyConfig> giftBagMap = new HashMap<>();
+
     // 获取章节副本
     public static List<Integer> getChapterCopys(int chapter, int difficult) {
         Map<Integer, List<Integer>> chapterCopys = copys.get(chapter);
@@ -207,7 +210,7 @@ public class ConfigData {
         for (Object cfg : GameData.getConfigs(GoodsConfig.class)) {
             GoodsConfig g = (GoodsConfig) cfg;
             if (g.maxStack >= 9) {
-                g.maxStack = 9999;
+                g.maxStack = 99999999;
             }
 
             if (g.type == 122) { //
@@ -376,5 +379,13 @@ public class ConfigData {
             donateCfgTmp.put(arr[4], arr);
         }
         DonateCfg = donateCfgTmp;
+
+        //加载礼包激活码
+        Map<String, CdkeyConfig> giftBagMapTmp = new HashMap<>();
+        for (Object cfg : GameData.getConfigs(CdkeyConfig.class)) {
+            CdkeyConfig conf = (CdkeyConfig) cfg;
+            giftBagMapTmp.put(conf.cdkey, conf);
+        }
+        giftBagMap = giftBagMapTmp;
     }
 }

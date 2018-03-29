@@ -17,6 +17,7 @@ import io.netty.channel.Channel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -32,9 +33,7 @@ public class ERatingService implements InitHandler {
     private TimerService timerService;
     @Autowired
     private PlayerService playerService;
-
-    //sint size = Runtime.getRuntime().availableProcessors();
-    private ExecutorService executor = new ThreadPoolExecutor(4, 8, 0, TimeUnit.SECONDS, new LinkedBlockingQueue<>(120000), new DiscardPolicy());
+    private final ExecutorService executor = new ThreadPoolExecutor(2, 4, 0, TimeUnit.SECONDS, new LinkedBlockingQueue<>(120000), new DiscardPolicy());
 
 
     @Override
@@ -56,7 +55,7 @@ public class ERatingService implements InitHandler {
                     ServerLogger.err(e, "玩家活动定时器异常");
                 }
             }
-        }, 120, 30, TimeUnit.SECONDS);
+        }, 120, 45, TimeUnit.SECONDS);
     }
 
 
@@ -66,11 +65,14 @@ public class ERatingService implements InitHandler {
             public void run() {
                 try {
                     if (!SysConfig.debug) {
-                        ServerLogger.warn("send report,xml data \r\n" + report.toProto());
+                        //ServerLogger.warn("send report,xml data \r\n" + report.toProto());
                         String xmlData = HttpClient.sendPostRequest(report.toProto());
-                        ServerLogger.warn("receive xml data \r\n" + xmlData);
-                        int cmdId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_HEAD, XmlParser.FIELD_CMD);
-                        if (cmdId == ERatingType.CMD_CREATE_ROLE_RESP) { //创建角色，获取roleId
+                        //ServerLogger.warn("receive xml data \r\n" + xmlData);
+                        int[] arr = XmlParser.cmdAndResultParser(xmlData);
+                        if (arr[1] != 1) { //
+                            //ServerLogger.warn("receive xml data exception \r\n" + xmlData);
+                        }
+                        if (arr[0] == ERatingType.CMD_CREATE_ROLE_RESP) { //创建角色，获取roleId
                             PlayerData data = playerService.getPlayerData(playerId);
                             int roleId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_ROLE_ID);
                             data.setRoleId(roleId);
@@ -95,17 +97,41 @@ public class ERatingService implements InitHandler {
             public void run() {
                 try {
                     if (!SysConfig.debug) { //帐号认证获取userId
-                        ServerLogger.warn("send report,xml data \r\n" + report.toProto());
+                        //ServerLogger.warn("send report,xml data \r\n" + report.toProto());
                         String xmlData = HttpClient.sendPostRequest(report.toProto());
-                        ServerLogger.warn("receive xml data \r\n" + xmlData);
-                        int userId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_USER_ID);
+                        //ServerLogger.warn("receive xml data \r\n" + xmlData);
+                        int resultCode = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_RESULT_CODE);
                         IntParam param = new IntParam();
-                        playerService.addSdkUser(user, userId);
-                        param.param = userId;
+                        int userId = 0;
+
+                        //登录失败
+                        if (resultCode != 1) {
+                            param.param = -4;
+                            ServerLogger.warn("resultCode => " + resultCode);
+                        } else {
+                            userId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_USER_ID);
+                            param.param = userId;
+                        }
+
+                        //用户id为0
+                        if (userId == 0) {
+                            param.param = -4;
+                            ServerLogger.warn("userId == 0 => " + xmlData);
+                        }
+
+                        //是否新用户
+                        List<Player> roleList = playerService.getPlayersByAccName(user);
+                        //TODO 要删除的临时代码
+                        if (SysConfig.serverId == 20 && roleList.size() == 0) {
+                            param.param = -3;
+                        }
                         SessionManager.sendDataInner(channel, 1012, param);
                     }
                 } catch (Throwable e) {
                     try {
+                        IntParam param = new IntParam();
+                        param.param = -4;
+                        SessionManager.sendDataInner(channel, 1012, param);
                         ServerLogger.err(e, "日志上报异常 xml data => " + report.toProto());
                     } catch (Exception e1) {
                         ServerLogger.warn("send report,xml data => " + report.getCommand_id());
@@ -183,10 +209,49 @@ public class ERatingService implements InitHandler {
         data.setLogoutFlag(1);
         data.setOccupationId(player.getVocation());
         data.setRoleLevel(player.getLev());
-        data.setRatingId(ERatingType.CMD_USER_LOGOUT);
+        data.setRatingId(SysConfig.gatewayId);
         data.setMoney1(player.getDiamond());
         data.setMoney2(0);
         data.setExperience(player.getExp());
+        sendReport(data, player.getPlayerId());
+    }
+
+
+    public void reportMoneyCost(Player player, int roleId,
+                                String name,
+                                int count, int price,
+                                int lkDiscountPrice,
+                                int subjectId, int subAmout) {
+        ItemDetailData data = new ItemDetailData(ERatingType.CMD_MONEY_COST);
+        data.setDetailId(System.nanoTime() / 10);
+        data.setUserId(player.userId);
+        data.setRoleId(roleId);
+        data.setRoleGender(player.getSex());
+        data.setRoleLevel(player.getLev());
+        data.setRatingId(SysConfig.gatewayId);
+        data.setIbCode(name);
+        data.setUserIp(player.clientIp);
+        data.setPackageFlag(1);
+        data.setCount(count);
+        data.setDiscountPrice(lkDiscountPrice);
+        data.setPayTime(System.currentTimeMillis() / 1000);
+        data.setPrice(price);
+        SubjectInfo info = new SubjectInfo(subjectId, subAmout);
+        data.getInfoList().add(info);
+        sendReport(data, player.getPlayerId());
+    }
+
+
+    public void reportAddMoney(Player player, int roleId,
+                               int subjectId, int amount, String source) {
+        MoneyData data = new MoneyData(ERatingType.CMD_MONEY_ADD);
+        data.setDetailId(System.nanoTime() / 10);
+        data.setUserId(player.userId);
+        data.setRoleId(roleId);
+        data.setAddTime(System.currentTimeMillis() / 1000);
+        data.setSubjectId(subjectId);
+        data.setSource(source);
+        data.setAmount(amount);
         sendReport(data, player.getPlayerId());
     }
 

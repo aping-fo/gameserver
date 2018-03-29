@@ -77,7 +77,7 @@ public class ArtifactService {
 			}
 
 			if(ret){
-				taskService.doTask(playerId,Task.TYPE_SQ,id);
+				taskService.doTask(playerId,Task.TYPE_SQ,id,1);
 			}
 			return Response.SUCCESS;
 		}

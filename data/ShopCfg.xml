@@ -9,7 +9,7 @@
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -31,7 +31,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>100</moneyCount>
@@ -53,7 +53,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -75,7 +75,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -97,7 +97,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -119,7 +119,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -141,7 +141,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -163,7 +163,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -185,7 +185,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -207,7 +207,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -229,7 +229,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>10</moneyCount>
@@ -251,7 +251,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>10</moneyCount>
@@ -273,7 +273,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>10</moneyCount>
@@ -295,7 +295,7 @@
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
-	<limitCount>1</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>10</moneyCount>
@@ -311,8 +311,8 @@
 <config>
 	<id>15</id>
 	<shopType>1</shopType>
-	<name>小木乃伊</name>
-	<goodsId>60011</goodsId>
+	<name>小木乃伊碎片</name>
+	<goodsId>65011</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -333,8 +333,8 @@
 <config>
 	<id>16</id>
 	<shopType>1</shopType>
-	<name>小蛇</name>
-	<goodsId>60021</goodsId>
+	<name>小蛇碎片</name>
+	<goodsId>65021</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -355,8 +355,8 @@
 <config>
 	<id>17</id>
 	<shopType>1</shopType>
-	<name>小树桩</name>
-	<goodsId>60031</goodsId>
+	<name>小树桩碎片</name>
+	<goodsId>65031</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -377,8 +377,8 @@
 <config>
 	<id>18</id>
 	<shopType>1</shopType>
-	<name>小蘑菇</name>
-	<goodsId>60041</goodsId>
+	<name>小蘑菇碎片</name>
+	<goodsId>65041</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -399,8 +399,8 @@
 <config>
 	<id>19</id>
 	<shopType>1</shopType>
-	<name>小僵尸</name>
-	<goodsId>60051</goodsId>
+	<name>小僵尸碎片</name>
+	<goodsId>65051</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -421,8 +421,8 @@
 <config>
 	<id>20</id>
 	<shopType>1</shopType>
-	<name>小兔子</name>
-	<goodsId>60061</goodsId>
+	<name>小兔子碎片</name>
+	<goodsId>65061</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -443,8 +443,8 @@
 <config>
 	<id>21</id>
 	<shopType>1</shopType>
-	<name>小木乃伊</name>
-	<goodsId>65011</goodsId>
+	<name>小猫咪碎片</name>
+	<goodsId>65071</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -465,8 +465,8 @@
 <config>
 	<id>22</id>
 	<shopType>1</shopType>
-	<name>小蛇</name>
-	<goodsId>65021</goodsId>
+	<name>小猫兔碎片</name>
+	<goodsId>65081</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -487,8 +487,8 @@
 <config>
 	<id>23</id>
 	<shopType>1</shopType>
-	<name>小树桩</name>
-	<goodsId>65031</goodsId>
+	<name>小木乃伊碎片</name>
+	<goodsId>65011</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -509,8 +509,8 @@
 <config>
 	<id>24</id>
 	<shopType>1</shopType>
-	<name>小蘑菇</name>
-	<goodsId>65041</goodsId>
+	<name>小蛇碎片</name>
+	<goodsId>65021</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -531,8 +531,8 @@
 <config>
 	<id>25</id>
 	<shopType>1</shopType>
-	<name>小僵尸</name>
-	<goodsId>65051</goodsId>
+	<name>小树桩碎片</name>
+	<goodsId>65031</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -553,8 +553,8 @@
 <config>
 	<id>26</id>
 	<shopType>1</shopType>
-	<name>小兔子</name>
-	<goodsId>65061</goodsId>
+	<name>小蘑菇碎片</name>
+	<goodsId>65041</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
@@ -581,7 +581,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -603,7 +603,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>100</moneyCount>
@@ -625,7 +625,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -643,11 +643,11 @@
 	<shopType>1</shopType>
 	<name>强化材料</name>
 	<goodsId>109</goodsId>
-	<count>10</count>
+	<count>1</count>
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -669,7 +669,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -691,7 +691,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -713,7 +713,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -735,7 +735,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -757,7 +757,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -779,7 +779,7 @@
 	<tab>2</tab>
 	<vip>0</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -801,7 +801,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -823,7 +823,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>100</moneyCount>
@@ -845,7 +845,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -863,11 +863,11 @@
 	<shopType>1</shopType>
 	<name>强化材料</name>
 	<goodsId>109</goodsId>
-	<count>10</count>
+	<count>1</count>
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -889,7 +889,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -911,7 +911,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -933,7 +933,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -955,7 +955,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -977,7 +977,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -999,7 +999,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>50</moneyCount>
@@ -1021,7 +1021,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>10</moneyCount>
@@ -1043,7 +1043,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>10</moneyCount>
@@ -1065,7 +1065,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>10</moneyCount>
@@ -1087,7 +1087,7 @@
 	<tab>3</tab>
 	<vip>3</vip>
 	<limitType>1</limitType>
-	<limitCount>3</limitCount>
+	<limitCount>10</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
 	<moneyCount>10</moneyCount>
@@ -2388,7 +2388,7 @@
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>137</moneyType>
-	<moneyCount>10000</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -4139,16 +4139,16 @@
 <config>
 	<id>189</id>
 	<shopType>5</shopType>
-	<name>补给卷</name>
-	<goodsId>125</goodsId>
-	<count>1</count>
+	<name>洗练材料</name>
+	<goodsId>16000</goodsId>
+	<count>2</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>121</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>100</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>

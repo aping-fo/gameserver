@@ -111,7 +111,7 @@ public class GlobalConfig {
 	public int[] worldBossCost;//世界Boss购买消耗
 	public int[] worldBossBuyAttackCost;//世界Boss攻击力购买消耗
 	public int[] worldBossCopy;//世界Boss副本ID-BOSSID
-	public int[] worldBossHurtReward;//世界Boss伤害兑换奖励
+	public int worldBossHurtReward;//世界Boss伤害兑换奖励
 	public int[] worldBossOpenTime;//世界Boss活动时间
 	public Map<Integer,Integer> teamLimit;//队伍人数上限
 	public int[] skillCardGroupOpenVip;//技能卡卡组开启的VIP等级
@@ -164,4 +164,5 @@ public class GlobalConfig {
 	public float[] mainCityMapParas;//主城功能地图移动参数(移动速度/左边X限制/右边X限制)
 	public Map<Integer,Integer> petMutateItemRate;//宠物变异概率加成物品及加成概率
 	public float killedTimesFactor;//死亡次数因子
+	public float[] RobotParas;//机器人属性参数
 }

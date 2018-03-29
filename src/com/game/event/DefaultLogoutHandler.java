@@ -74,6 +74,9 @@ public class DefaultLogoutHandler implements LogoutHandler {
 
             ServerLogger.info(".....user logout:" + playerId);
             Player player = playerService.getPlayer(playerId);
+            if (player == null) {
+                return;
+            }
             PlayerData playerData = playerService.getPlayerData(playerId);
             if (player.onlineTime != 0) {
                 int passTime = (int) ((System.currentTimeMillis() - player.onlineTime) / 1000);

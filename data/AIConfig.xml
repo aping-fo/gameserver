@@ -127,6 +127,33 @@
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20001001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[5,5,2,2]</AlertThreshold>
+	<BattleThreshold>[4,4,2,2]</BattleThreshold>
+	<InAlert_PursuitRage>0.2</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20001002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[10,10,3,3]</AlertThreshold>
+	<BattleThreshold>[8,8,3,3]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20001003</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20101001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
@@ -134,6 +161,15 @@
 	<BattleThreshold>[4,4,2,2]</BattleThreshold>
 	<InAlert_PursuitRage>0.2</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20101002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20102001</id>
@@ -145,6 +181,15 @@
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20102002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20105001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
@@ -152,6 +197,15 @@
 	<BattleThreshold>[4,4,2,2]</BattleThreshold>
 	<InAlert_PursuitRage>0.2</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20105002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20106001</id>
@@ -163,6 +217,15 @@
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20106002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20107001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>4</AiStateLogicId>
@@ -170,6 +233,15 @@
 	<BattleThreshold>[8,8,3,3]</BattleThreshold>
 	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20107002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20108001</id>
@@ -181,6 +253,15 @@
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20108002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20109001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>4</AiStateLogicId>
@@ -188,6 +269,15 @@
 	<BattleThreshold>[8,8,3,3]</BattleThreshold>
 	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20109002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20110001</id>
@@ -199,6 +289,15 @@
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20110002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20111001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
@@ -206,6 +305,15 @@
 	<BattleThreshold>[4,4,2,2]</BattleThreshold>
 	<InAlert_PursuitRage>0.2</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20111002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20112001</id>
@@ -217,6 +325,15 @@
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20112002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20113001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
@@ -224,6 +341,15 @@
 	<BattleThreshold>[4,4,2,2]</BattleThreshold>
 	<InAlert_PursuitRage>0.2</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20113002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20114001</id>
@@ -235,6 +361,15 @@
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20114002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20115001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>4</AiStateLogicId>
@@ -242,6 +377,15 @@
 	<BattleThreshold>[8,8,3,3]</BattleThreshold>
 	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20115002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20116001</id>
@@ -253,6 +397,15 @@
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20116002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20117001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
@@ -260,6 +413,15 @@
 	<BattleThreshold>[4,4,2,2]</BattleThreshold>
 	<InAlert_PursuitRage>0.2</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.1</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20117002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20118001</id>
@@ -271,6 +433,15 @@
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20118002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20119001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>4</AiStateLogicId>
@@ -278,6 +449,15 @@
 	<BattleThreshold>[8,8,3,3]</BattleThreshold>
 	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20119002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20120001</id>
@@ -289,6 +469,15 @@
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20120002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20121001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>4</AiStateLogicId>
@@ -296,6 +485,15 @@
 	<BattleThreshold>[8,8,3,3]</BattleThreshold>
 	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20121002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20122001</id>
@@ -307,6 +505,15 @@
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20122002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20123001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>4</AiStateLogicId>
@@ -314,6 +521,15 @@
 	<BattleThreshold>[8,8,3,3]</BattleThreshold>
 	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20123002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20124001</id>
@@ -325,6 +541,15 @@
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20124002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20125001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>4</AiStateLogicId>
@@ -332,6 +557,15 @@
 	<BattleThreshold>[8,8,3,3]</BattleThreshold>
 	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20125002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
 	<id>20126001</id>
@@ -343,7 +577,25 @@
 	<OutAlert_PursuitRage>0.2</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20126002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20201001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20201002</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[20,20,5,5]</AlertThreshold>
@@ -361,7 +613,25 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20202002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20203001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20203002</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[20,20,5,5]</AlertThreshold>
@@ -379,7 +649,25 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20204002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20205001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20205002</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[20,20,5,5]</AlertThreshold>
@@ -397,7 +685,25 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20206002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20207001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20207002</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[20,20,5,5]</AlertThreshold>
@@ -415,7 +721,25 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20208002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20302001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20302002</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[20,20,5,5]</AlertThreshold>
@@ -433,7 +757,25 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20303002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20304001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20304002</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[20,20,5,5]</AlertThreshold>
@@ -451,7 +793,25 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20305002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20306001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20306002</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[20,20,5,5]</AlertThreshold>
@@ -469,6 +829,15 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20307002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20308001</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
@@ -478,7 +847,25 @@
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>
 <config>
+	<id>20308002</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
 	<id>20309001</id>
+	<url>Assets/Data/Designer/Npc_General.prefab</url>
+	<AiStateLogicId>3</AiStateLogicId>
+	<AlertThreshold>[20,20,5,5]</AlertThreshold>
+	<BattleThreshold>[20,20,5,5]</BattleThreshold>
+	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
+	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
+</config>
+<config>
+	<id>20309002</id>
 	<url>Assets/Data/Designer/Npc_General.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[20,20,5,5]</AlertThreshold>
@@ -608,7 +995,7 @@
 	<url>Assets/Data/Designer/50000001.prefab</url>
 	<AiStateLogicId>3</AiStateLogicId>
 	<AlertThreshold>[0,0,0,0]</AlertThreshold>
-	<BattleThreshold>[1.5,1.5,1,1]</BattleThreshold>
+	<BattleThreshold>[15,15,1,1]</BattleThreshold>
 	<InAlert_PursuitRage>0.3</InAlert_PursuitRage>
 	<OutAlert_PursuitRage>0.3</OutAlert_PursuitRage>
 </config>

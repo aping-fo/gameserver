@@ -4,63 +4,63 @@
 	<id>1</id>
 	<copyId>1400101</copyId>
 	<name>1</name>
-	<needCredit>100</needCredit>
+	<needCredit>1000</needCredit>
 	<hurtRewards>[104,1]</hurtRewards>
-	<progressRewards>1:[[102,5],[103,100]];2:[[102,10],[103,200]];3:[[102,20],[103,300]];4:[[102,30],[103,400]];5:[[102,40],[103,500]]</progressRewards>
+	<progressRewards>1:[[102,50],[104,50]];2:[[102,100],[104,100]];3:[[102,150],[104,150]];4:[[102,200],[104,200]];5:[[102,200],[104,200]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
 	<id>2</id>
 	<copyId>1400102</copyId>
 	<name>1</name>
-	<needCredit>100</needCredit>
-	<hurtRewards>[104,2]</hurtRewards>
-	<progressRewards>1:[[102,10],[103,200]];2:[[102,20],[103,300]];3:[[102,30],[103,400]];4:[[102,40],[103,500]];5:[[102,50],[103,600]]</progressRewards>
+	<needCredit>2000</needCredit>
+	<hurtRewards>[104,1]</hurtRewards>
+	<progressRewards>1:[[102,50],[104,50]];2:[[102,100],[104,100]];3:[[102,150],[104,150]];4:[[102,200],[104,200]];5:[[102,200],[104,200]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
 	<id>3</id>
 	<copyId>1400103</copyId>
 	<name>1</name>
-	<needCredit>100</needCredit>
-	<hurtRewards>[104,3]</hurtRewards>
-	<progressRewards>1:[[102,20],[103,300]];2:[[102,30],[103,400]];3:[[102,40],[103,500]];4:[[102,50],[103,600]];5:[[102,60],[103,700]]</progressRewards>
+	<needCredit>3000</needCredit>
+	<hurtRewards>[104,1]</hurtRewards>
+	<progressRewards>1:[[102,50],[104,50]];2:[[102,100],[104,100]];3:[[102,150],[104,150]];4:[[102,200],[104,200]];5:[[102,200],[104,200]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
 	<id>4</id>
 	<copyId>1400104</copyId>
 	<name>1</name>
-	<needCredit>100</needCredit>
-	<hurtRewards>[104,4]</hurtRewards>
-	<progressRewards>1:[[102,30],[103,400]];2:[[102,40],[103,500]];3:[[102,50],[103,600]];4:[[102,60],[103,700]];5:[[102,70],[103,800]]</progressRewards>
+	<needCredit>4000</needCredit>
+	<hurtRewards>[104,1]</hurtRewards>
+	<progressRewards>1:[[102,50],[104,50]];2:[[102,100],[104,100]];3:[[102,150],[104,150]];4:[[102,200],[104,200]];5:[[102,200],[104,200]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
 	<id>5</id>
 	<copyId>1400105</copyId>
 	<name>1</name>
-	<needCredit>100</needCredit>
-	<hurtRewards>[104,5]</hurtRewards>
-	<progressRewards>1:[[102,40],[103,500]];2:[[102,50],[103,600]];3:[[102,60],[103,700]];4:[[102,70],[103,800]];5:[[102,80],[103,900]]</progressRewards>
+	<needCredit>5000</needCredit>
+	<hurtRewards>[104,1]</hurtRewards>
+	<progressRewards>1:[[102,50],[104,50]];2:[[102,100],[104,100]];3:[[102,150],[104,150]];4:[[102,200],[104,200]];5:[[102,200],[104,200]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
 	<id>6</id>
 	<copyId>1400106</copyId>
 	<name>1</name>
-	<needCredit>100</needCredit>
-	<hurtRewards>[104,6]</hurtRewards>
-	<progressRewards>1:[[102,50],[103,600]];2:[[102,60],[103,700]];3:[[102,70],[103,800]];4:[[102,80],[103,900]];5:[[102,90],[103,1000]]</progressRewards>
+	<needCredit>6000</needCredit>
+	<hurtRewards>[104,1]</hurtRewards>
+	<progressRewards>1:[[102,50],[104,50]];2:[[102,100],[104,100]];3:[[102,150],[104,150]];4:[[102,200],[104,200]];5:[[102,200],[104,200]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 <config>
 	<id>7</id>
 	<copyId>1400107</copyId>
 	<name>1</name>
-	<needCredit>100</needCredit>
-	<hurtRewards>[104,7]</hurtRewards>
-	<progressRewards>1:[[102,60],[103,700]];2:[[102,70],[103,800]];3:[[102,80],[103,900]];4:[[102,90],[103,1000]];5:[[102,100],[103,1100]]</progressRewards>
+	<needCredit>7000</needCredit>
+	<hurtRewards>[104,1]</hurtRewards>
+	<progressRewards>1:[[102,50],[104,50]];2:[[102,100],[104,100]];3:[[102,150],[104,150]];4:[[102,200],[104,200]];5:[[102,200],[104,200]]</progressRewards>
 	<progress>[20,40,60,80,100]</progress>
 </config>
 </root>

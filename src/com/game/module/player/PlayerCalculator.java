@@ -8,6 +8,7 @@ import com.game.module.goods.PlayerBag;
 import com.game.module.group.GroupService;
 import com.game.module.pet.PetBag;
 import com.game.module.pet.PetService;
+import com.game.module.pet.Pet;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.module.team.TeamService;
@@ -278,10 +279,10 @@ public class PlayerCalculator {
     //加称号属性
     private void addTitleAttr(PlayerAddition player) {
         PlayerData data = playerService.getPlayerData(player.getPlayerId());
-        if (!data.getTitles().contains(1)) { //功能还未开启
+        Player p = (Player) player;
+        if(!data.getModules().contains(PlayerService.MODULE_TITLE)){
             return;
         }
-        Player p = (Player) player;
         //装备称号加成
         TitleConfig config = ConfigData.getConfig(TitleConfig.class, p.getTitle());
         if (config != null) {
@@ -312,17 +313,43 @@ public class PlayerCalculator {
         if (petBag == null) {
             return;
         }
-        PetConfig config = ConfigData.getConfig(PetConfig.class, petBag.getFightPetId());
-        if (config == null) {
-            return;
-        }
 
-        player.addAttack(config.attackFix);
-        player.addCrit(config.critFix);
-        player.addDefense(config.defenseFix);
-        player.addFu(config.fuFix);
-        player.addSymptom(config.symptomFix);
-        player.addHp(config.hpFix);
+        for (Pet pet : petBag.getPetMap().values()) {
+            PetConfig config = ConfigData.getConfig(PetConfig.class, pet.getConfigId());
+
+            if(config == null)
+                continue;
+
+            player.addAttack(config.attackFix);
+            player.addCrit(config.critFix);
+            player.addDefense(config.defenseFix);
+            player.addFu(config.fuFix);
+            player.addSymptom(config.symptomFix);
+            player.addHp(config.hpFix);
+
+            if(pet.isMutateFlag())
+            {
+                //没变异前的宠加成
+                int configId = 0;
+                PetConfig needConfig = null;
+                do{
+                    configId = config.id - 1;
+                    config = ConfigData.getConfig(PetConfig.class, configId);
+
+                    if(config.mutateId != 0)
+                    {
+                        needConfig = config;
+                    }
+                }while(config.mutateId != 0);
+
+                player.addAttack(needConfig.attackFix);
+                player.addCrit(needConfig.critFix);
+                player.addDefense(needConfig.defenseFix);
+                player.addFu(needConfig.fuFix);
+                player.addSymptom(needConfig.symptomFix);
+                player.addHp(needConfig.hpFix);
+            }
+        }
     }
 
     //加时装战力，非百分比的部分

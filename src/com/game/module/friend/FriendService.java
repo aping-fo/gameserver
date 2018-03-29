@@ -183,6 +183,7 @@ public class FriendService implements InitHandler, ILogin, Dispose {
 				playerService.updatePlayerData(id);
 				// 通知对方
 				SessionManager.getInstance().sendMsg(FriendExtension.AGREE_REQUEST, getVo(playerId), id);
+				taskService.doTask(id, Task.TYPE_FRIEND_COUNT,friend.getFriends().size());
 			}
 			
 

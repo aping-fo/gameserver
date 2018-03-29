@@ -16,6 +16,7 @@ public class MonsterRefreshConfig {
 	public boolean hideShadow;//是否隐藏阴影
 	public boolean containAI;//是否带有简单AI
 	public String animation;//出场动画
+	public int showskillID;//出场技能ID
 	public int appearType;//出场方式
 	public float[] param;//参数
 	public int showUpEffect;//出场特效

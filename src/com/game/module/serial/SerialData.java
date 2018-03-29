@@ -2,6 +2,7 @@ package com.game.module.serial;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.module.attach.arena.ArenaPlayer;
@@ -10,6 +11,7 @@ import com.game.module.copy.CopyRank;
 import com.game.module.gang.GangDungeon;
 import com.game.module.ladder.Ladder;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
 
 /**
  * 全局的序列化数据
@@ -39,9 +41,17 @@ public class SerialData {
     //玩家相关数据最高排名缓存
     private Map<Integer, PlayerView> playerViews = new ConcurrentHashMap<>();
     private Map<Integer, Integer> bossKillTimes = new ConcurrentHashMap<>();
-
+    private Set<Integer> cdkSet = Sets.newHashSet();
     public SerialData() {
 
+    }
+
+    public Set<Integer> getCdkSet() {
+        return cdkSet;
+    }
+
+    public void setCdkSet(Set<Integer> cdkSet) {
+        this.cdkSet = cdkSet;
     }
 
     public Map<Integer, Integer> getBossKillTimes() {

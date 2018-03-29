@@ -1,6 +1,7 @@
 package com.game.module.scene;
 
 import com.game.module.gang.GangDungeonService;
+import com.game.module.goods.EquipService;
 import com.game.module.group.GroupService;
 import com.game.module.ladder.LadderService;
 import com.game.module.multi.MultiService;
@@ -9,6 +10,7 @@ import com.game.module.pet.PetBag;
 import com.game.module.pet.PetService;
 import com.game.params.IntParam;
 import com.game.params.scene.*;
+import com.google.common.collect.Lists;
 import io.netty.channel.Channel;
 
 import java.util.ArrayList;
@@ -62,6 +64,8 @@ public class SceneService implements InitHandler {
     private GangDungeonService gangDungeonService;
     @Autowired
     private PetService petService;
+    @Autowired
+    private EquipService equipService;
 
     private Map<Integer, Scene> scenes = new ConcurrentHashMap<Integer, Scene>();
 
@@ -232,8 +236,8 @@ public class SceneService implements InitHandler {
                 || cfg.sceneSubType == Scene.MULTI_PVE) {
             multiService.onEnter(player.getPlayerId());
         }
-		/*else if(lastCfg.sceneSubType == Scene.MULTI_PVE) { //TODO 其他多人本TVE
-			multiService.onEnter(player.getPlayerId());
+        /*else if(lastCfg.sceneSubType == Scene.MULTI_PVE) { //TODO 其他多人本TVE
+            multiService.onEnter(player.getPlayerId());
 		}*/
         // 广播消息
         brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player), channel);
@@ -271,6 +275,8 @@ public class SceneService implements InitHandler {
         if (player.getGangId() > 0) {
             vo.gang = gangService.getGang(player.getGangId()).getName();
         }
+        List<Integer> list = equipService.getBufferList(player.getPlayerId());
+        vo.buffList = Lists.newArrayList(list);
         return vo;
     }
 
@@ -287,8 +293,10 @@ public class SceneService implements InitHandler {
             }
         }
 
+        List<Integer> list = equipService.getBufferList(player.getPlayerId());
+        sceneInfo.bufferList = Lists.newArrayList(list);
         if (cfg.type != Scene.MULTI) {// 副本的只返回自己的
-            sceneInfo.players.add(toVo(player));
+            //sceneInfo.players.add(toVo(player));
             return sceneInfo;
         }
 

@@ -40,6 +40,7 @@ public class ChatExtension {
 	public static final int SYS = 4;
 	public static final int TEAM =5;
 	public static final int LABA =6;
+	public static final int INVIT =7;
 
 	@Autowired
 	private GmService gmService;
@@ -108,7 +109,7 @@ public class ChatExtension {
 		vo.fight = sender.getFight();
 		int chatType = 0;
 		//世界
-		if(vo.channel==WORLD || vo.channel == SYS){
+		if(vo.channel==WORLD || vo.channel == SYS || vo.channel == INVIT){
 			if(vo.channel==WORLD && sender.getLev()<ConfigData.globalParam().worldChatLevel){
 				return null;
 			}

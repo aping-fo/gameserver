@@ -1,63 +1,51 @@
 package com.game.module.task;
 
-import java.nio.charset.Charset;
-import java.util.*;
-import java.util.concurrent.ConcurrentHashMap;
-
+import com.game.data.*;
+import com.game.event.Dispose;
 import com.game.module.activity.ActivityConsts;
 import com.game.module.attach.arena.ArenaLogic;
 import com.game.module.attach.arena.ArenaPlayer;
-import com.game.module.ladder.LadderService;
-import com.game.module.rank.RankEntity;
-import com.game.module.rank.RankService;
-import com.game.module.rank.RankingList;
-import com.game.module.rank.vo.AchievementRankEntity;
-import com.game.module.rank.vo.FightingRankEntity;
-import com.game.module.rank.vo.LevelRankEntity;
-import com.game.module.serial.PlayerView;
-import com.game.module.serial.SerialDataService;
-import com.game.module.title.TitleConsts;
-import com.game.module.title.TitleService;
-import com.game.params.AchievementSyncVo;
-import com.game.params.rank.AIArenaRankVO;
-import com.game.params.rank.LadderRankVO;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.game.data.GoodsConfig;
-import com.game.data.Response;
-import com.game.data.SkillCardConfig;
-import com.game.data.SkillConfig;
-import com.game.data.TaskConfig;
-import com.game.event.Dispose;
 import com.game.module.gang.GMember;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
+import com.game.module.ladder.LadderService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Jewel;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.rank.RankEntity;
+import com.game.module.rank.RankService;
+import com.game.module.rank.RankingList;
+import com.game.module.rank.vo.AchievementRankEntity;
+import com.game.module.rank.vo.FightingRankEntity;
+import com.game.module.serial.PlayerView;
+import com.game.module.serial.SerialDataService;
 import com.game.module.skill.SkillCard;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
+import com.game.params.AchievementSyncVo;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.task.SJointTaskVo;
 import com.game.params.task.STaskVo;
 import com.game.params.task.TaskListInfo;
-import com.game.util.CommonUtil;
-import com.game.util.CompressUtil;
-import com.game.util.ConfigData;
-import com.game.util.JsonUtils;
-import com.game.util.RandomUtil;
+import com.game.util.*;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.nio.charset.Charset;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * TODO 优化方案，按任务类型分组存储，减少遍历次数
@@ -225,12 +213,9 @@ public class TaskService implements Dispose {
     public void initTask(int playerId) {
         PlayerTask task = new PlayerTask();
         tasks.put(playerId, task);
-       /* for (int id : ConfigData.globalParam().firstTask) {
-            addNewTask(playerId, id, false);
-        }*/
         for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
             TaskConfig taskConfig = (TaskConfig) config;
-            if (taskConfig.level <= 1) {
+            if (taskConfig.level <= 1 && taskConfig.taskType != Task.TYPE_JOINT) {
                 addNewTask(playerId, taskConfig.id, false);
             }
         }
@@ -241,7 +226,6 @@ public class TaskService implements Dispose {
     }
 
     public void onLogin(int playerId) {
-        PlayerTask task = new PlayerTask();
         Map<Integer, Task> taskMap = getPlayerTask(playerId).getTasks();
         for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
             TaskConfig taskConfig = (TaskConfig) config;
@@ -362,7 +346,7 @@ public class TaskService implements Dispose {
 
             int oldCount = task.getCount();
 
-            if (config.finishType == Task.FINISH_WEAR) {
+            /*if (config.finishType == Task.FINISH_WEAR) {
                 int request = targets[0];
                 int curCount = 0;
                 Collection<Goods> goods = goodsService.getPlayerBag(playerId)
@@ -376,13 +360,14 @@ public class TaskService implements Dispose {
                                 goodsCfg.type)) {
                             continue;
                         }
-                        if (goodsCfg.color >= request) {
+                        if (goodsCfg.color == request) {
                             curCount++;
                         }
                     }
                 }
                 task.setCount(curCount);
-            } else if (config.finishType == Task.FINISH_STONE) {
+            } else*/
+                if (config.finishType == Task.FINISH_STONE) {
                 if (count == 1) {
                     task.alterCount(params[params.length - 1]);
                 } else {
@@ -513,6 +498,8 @@ public class TaskService implements Dispose {
                     || config.finishType == Task.TYPE_FIGHT
                     || config.finishType == Task.ACHIEVEMENT_VIP
                     || config.finishType == Task.TYPE_GANG_TEC
+                    || config.finishType == Task.TYPE_TITLE
+                    || config.finishType == Task.TYPE_FRIEND_COUNT
                     || config.finishType == Task.TYPE_GANG_LEVEL) {
                 if (task.getCount() < params[0]) {
                     task.setCount(params[0]);
@@ -626,16 +613,17 @@ public class TaskService implements Dispose {
 
         List<Task> updateTasks = Lists.newArrayList();
         for (Task task : tasks) {
+            TaskConfig config = getConfig(task.getTaskId());
             if (task.getState() == Task.STATE_FINISHED ||
                     task.getState() == Task.STATE_SUBMITED) {
                 continue;
             }
-            int[] params = condParams.get(task.getType());
+            int[] params = condParams.get(config.finishType);
             if (params == null) {
                 continue;
             }
 
-            boolean result = doTasks(playerId, task.getType(), task, params);
+            boolean result = doTasks(playerId, config.finishType, task, params);
             if (result) {
                 updateTasks.add(task);
             }
@@ -749,18 +737,18 @@ public class TaskService implements Dispose {
 
     // 人物升级时检查是否完成
     public void checkTaskWhenLevUp(int playerId) {
-        Collection<Task> tasks = getPlayerTask(playerId).getTasks().values();
         int lev = playerService.getPlayer(playerId).getLev();
         List<Task> updateList = new ArrayList<>();
-        for (Task task : tasks) {
-            if (task.getState() != Task.STATE_INIT) {
-                continue;
-            }
-            TaskConfig config = getConfig(task.getTaskId());
-            if (lev >= config.level) {
-                task.setState(Task.STATE_ACCEPTED);
-                // 发送到前端
-                updateList.add(task);
+        Map<Integer, Task> taskMap = getPlayerTask(playerId).getTasks();
+
+        for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
+            TaskConfig taskConfig = (TaskConfig) config;
+            if (!taskMap.containsKey(taskConfig.id)
+                    && taskConfig.taskType != Task.TYPE_JOINT) {
+                if (taskConfig.level <= lev) {
+                    Task task = addNewTask(playerId, taskConfig.id, false);
+                    updateList.add(task);
+                }
             }
         }
         updateTaskToClient(playerId, updateList);
@@ -790,11 +778,18 @@ public class TaskService implements Dispose {
     private void updateTasks(int playerId, List<Integer> tasks) {
         ListParam<STaskVo> newTasks = new ListParam<STaskVo>();
         newTasks.params = new ArrayList<STaskVo>();
-
+        Player player = playerService.getPlayer(playerId);
+        if (player == null) {
+            return;
+        }
         Map<Integer, Task> playerTasks = getPlayerTask(playerId).getTasks();
         for (int taskId : tasks) {
             Task task = playerTasks.get(taskId);
             if (task == null) {
+                TaskConfig config = ConfigData.getConfig(TaskConfig.class, taskId);
+                if (player.getLev() < config.level) {
+                    continue;
+                }
                 task = addNewTask(playerId, taskId, false);
             } else {
                 task.setCount(0);
@@ -935,6 +930,9 @@ public class TaskService implements Dispose {
         return result;
     }
 
+    /**
+     * 每天排行榜类成就发放
+     */
     public void dailyAchievement() {
         ServerLogger.warn("achievement.............");
         /////成就
@@ -963,7 +961,7 @@ public class TaskService implements Dispose {
                 doTask(player.getPlayerId(), Task.TYPE_ARENA_RANK, i);
             }
         }
-
+/*
         ListParam<LadderRankVO> ladderRank = ladderService.getLadderRank();
         i = 1;
         for (LadderRankVO vo : ladderRank.params) {
@@ -971,7 +969,7 @@ public class TaskService implements Dispose {
             playerView.setAchievementMaxRank(i);
             doTask(vo.playerId, Task.TYPE_LADDER_RANK, i);
             i++;
-        }
+        }*/
     }
 
     public IntParam getAllReward(int playerId) {

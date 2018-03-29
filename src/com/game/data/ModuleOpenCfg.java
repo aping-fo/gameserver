@@ -11,6 +11,9 @@ public class ModuleOpenCfg {
 	public int openType;//开放类型
 	public int param;//生效参数
 	public String icon;//图标
-	public int[][] subtype;//功能页签
+	public String buildingName;//建筑名称
+	public String effectName;//建筑特效
+	public float timeSet;//特效时长
 	public int[] position;//主界面坐标
+	public String describe;//未解锁描述
 }

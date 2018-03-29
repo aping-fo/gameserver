@@ -20,6 +20,7 @@ public class XmlParser {
     public static final String FIELD_CMD = "command_id";
     public static final String FIELD_USER_ID = "user_id";
     public static final String FIELD_ROLE_ID = "role_id";
+    public static final String FIELD_RESULT_CODE = "result_code";
 
     public static void main(String[] args) {
         String str = "<?xml version=\"1.0\" encoding=\"utf-8\" ?>\n" +
@@ -59,6 +60,23 @@ public class XmlParser {
             ServerLogger.err(e, "");
         }
         return 0;
+    }
+
+    public static int[] cmdAndResultParser(String content) {
+        int[] arr = new int[]{0, 0}; //[cmd,result_code]
+        try (InputStream inputStream = new ByteArrayInputStream(content.trim().getBytes("UTF-8"))) {
+            SAXReader reader = new SAXReader();
+            Document doc = reader.read(inputStream);
+            Element tag = (Element) doc.selectSingleNode(XML_HEAD);
+            arr[0] = Integer.parseInt(tag.elementTextTrim(FIELD_CMD));
+
+            tag = (Element) doc.selectSingleNode(XML_BODY);
+            arr[1] = Integer.parseInt(tag.elementTextTrim(FIELD_RESULT_CODE));
+            return arr;
+        } catch (Throwable e) {
+            ServerLogger.err(e, "");
+        }
+        return arr;
     }
 
     public static <T> void xmlParser(String content, T object) {

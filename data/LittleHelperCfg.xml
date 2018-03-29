@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1001</id>
+	<name>主线副本</name>
+	<icon>head7</icon>
+	<type>9</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<description>可获得大量经验</description>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1002</id>
+	<name>金币购买</name>
+	<icon>head5</icon>
+	<type>7</type>
+	<viewname>BuyCoinsView</viewname>
+	<openCondition></openCondition>
+	<description>可快速获得金币</description>
+	<lockID>0</lockID>
+	<param>1</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1003</id>
+	<name>主线副本</name>
+	<icon>head7</icon>
+	<type>7</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<description>可获得大量经验</description>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1004</id>
+	<name>召唤</name>
+	<icon>head1</icon>
+	<type>7</type>
+	<viewname>LotteryView</viewname>
+	<openCondition>通关主线副本2-2开启</openCondition>
+	<description>可获得大量金币</description>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1005</id>
+	<name>金币副本</name>
+	<icon>head6</icon>
+	<type>7</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>通关主线副本3-1开启</openCondition>
+	<description>产出大量金币</description>
+	<lockID>1375</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1006</id>
+	<name>顺手牵羊</name>
+	<icon>head9</icon>
+	<type>7</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>通关主线副本5-2开启</openCondition>
+	<description>产出大量金币</description>
+	<lockID>1374</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1007</id>
+	<name>世界boss</name>
+	<icon>head10</icon>
+	<type>7</type>
+	<viewname>WorldBossView</viewname>
+	<openCondition>30级开启</openCondition>
+	<description>产出大量金币</description>
+	<lockID>1361</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1008</id>
+	<name>主线副本</name>
+	<icon>head7</icon>
+	<type>4</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<description>可获得大量装备</description>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1009</id>
+	<name>召唤</name>
+	<icon>head1</icon>
+	<type>4</type>
+	<viewname>LotteryView</viewname>
+	<openCondition>通关主线副本2-2开启</openCondition>
+	<description>可获得大量装备</description>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1010</id>
+	<name>时空仪</name>
+	<icon>head12</icon>
+	<type>4</type>
+	<viewname>TraversingView</viewname>
+	<openCondition>35级开启</openCondition>
+	<description>产出稀有装备</description>
+	<lockID>1131</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1011</id>
+	<name>团队副本</name>
+	<icon>head14</icon>
+	<type>4</type>
+	<viewname>GroupInfoView</viewname>
+	<openCondition>40级开启</openCondition>
+	<description>产出极品装备</description>
+	<lockID>1571</lockID>
+	<param></param>
+	<limit>1</limit>
+</config>
+<config>
+	<id>1012</id>
+	<name>普通商店</name>
+	<icon>head5</icon>
+	<type>1</type>
+	<viewname>AllShopView</viewname>
+	<openCondition></openCondition>
+	<description>可以购买强化材料</description>
+	<lockID>0</lockID>
+	<param>1</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1013</id>
+	<name>阵营声望商店</name>
+	<icon>head5</icon>
+	<type>1</type>
+	<viewname>FameView</viewname>
+	<openCondition>7级开启</openCondition>
+	<description>可以购买强化材料</description>
+	<lockID>1511</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1014</id>
+	<name>召唤</name>
+	<icon>head1</icon>
+	<type>1</type>
+	<viewname>LotteryView</viewname>
+	<openCondition>通关主线副本2-2开启</openCondition>
+	<description>可获得强化材料</description>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1015</id>
+	<name>顺手牵羊</name>
+	<icon>head9</icon>
+	<type>1</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>通关主线副本5-2开启</openCondition>
+	<description>产出强化材料</description>
+	<lockID>1374</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1016</id>
+	<name>竞技场商店</name>
+	<icon>head5</icon>
+	<type>1</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本4-6开启</openCondition>
+	<description>可以购买强化材料</description>
+	<lockID>1011</lockID>
+	<param>6</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1017</id>
+	<name>公会商店</name>
+	<icon>head5</icon>
+	<type>1</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本5-6开启</openCondition>
+	<description>可以购买强化材料</description>
+	<lockID>1041</lockID>
+	<param>4</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1018</id>
+	<name>排位赛商店</name>
+	<icon>head5</icon>
+	<type>1</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>19级开启</openCondition>
+	<description>可以购买强化材料</description>
+	<lockID>1601</lockID>
+	<param>15</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1019</id>
+	<name>大漩涡</name>
+	<icon>head13</icon>
+	<type>1</type>
+	<viewname>InfiniteVortexView</viewname>
+	<openCondition>28级开启</openCondition>
+	<description>产出强化材料</description>
+	<lockID>1211</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1020</id>
+	<name>英雄试炼商店</name>
+	<icon>head5</icon>
+	<type>1</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>38级开启</openCondition>
+	<description>可以购买强化材料</description>
+	<lockID>1061</lockID>
+	<param>5</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1021</id>
+	<name>主线副本</name>
+	<icon>head7</icon>
+	<type>3</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<description>可获得大量神器碎片</description>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1022</id>
+	<name>普通商店</name>
+	<icon>head5</icon>
+	<type>3</type>
+	<viewname>AllShopView</viewname>
+	<openCondition></openCondition>
+	<description>可以购买神器碎片</description>
+	<lockID>0</lockID>
+	<param>1</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1023</id>
+	<name>召唤</name>
+	<icon>head1</icon>
+	<type>3</type>
+	<viewname>LotteryView</viewname>
+	<openCondition>通关主线副本2-2开启</openCondition>
+	<description>可获得神器碎片</description>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1024</id>
+	<name>公会商店</name>
+	<icon>head5</icon>
+	<type>3</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本5-6开启</openCondition>
+	<description>可以购买神器碎片</description>
+	<lockID>1041</lockID>
+	<param>4</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1025</id>
+	<name>精绝宝藏</name>
+	<icon>head11</icon>
+	<type>3</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>25级开启</openCondition>
+	<description>产出神器碎片</description>
+	<lockID>1373</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1026</id>
+	<name>漩涡商店</name>
+	<icon>head5</icon>
+	<type>3</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>28级开启</openCondition>
+	<description>可以购买神器碎片</description>
+	<lockID>1211</lockID>
+	<param>3</param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1027</id>
+	<name>英雄试练商店</name>
+	<icon>head5</icon>
+	<type>3</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>38级开启</openCondition>
+	<description>可以购买神器碎片</description>
+	<lockID>1061</lockID>
+	<param>5</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1028</id>
+	<name>阵营声望商店</name>
+	<icon>head5</icon>
+	<type>6</type>
+	<viewname>FameView</viewname>
+	<openCondition>7级开启</openCondition>
+	<description>可以购买时装券</description>
+	<lockID>1511</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1029</id>
+	<name>竞技场商店</name>
+	<icon>head5</icon>
+	<type>6</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本4-6开启</openCondition>
+	<description>可以购买时装券</description>
+	<lockID>1011</lockID>
+	<param>6</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1030</id>
+	<name>排位赛商店</name>
+	<icon>head5</icon>
+	<type>6</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>19级开启</openCondition>
+	<description>可以购买时装券</description>
+	<lockID>1601</lockID>
+	<param>15</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1031</id>
+	<name>召唤</name>
+	<icon>head1</icon>
+	<type>2</type>
+	<viewname>LotteryView</viewname>
+	<openCondition>通关主线副本2-2开启</openCondition>
+	<description>可获得技能卡</description>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1032</id>
+	<name>阵营声望商店</name>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>FameView</viewname>
+	<openCondition>7级开启</openCondition>
+	<description>可以购买技能卡</description>
+	<lockID>1511</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1033</id>
+	<name>竞技场商店</name>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本4-6开启</openCondition>
+	<description>可以购买技能卡</description>
+	<lockID>1011</lockID>
+	<param>6</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1034</id>
+	<name>试练场</name>
+	<icon>head13</icon>
+	<type>2</type>
+	<viewname>TrialFieldView</viewname>
+	<openCondition>17级开启</openCondition>
+	<description>产出技能卡</description>
+	<lockID>1781</lockID>
+	<param></param>
+	<limit>3</limit>
+</config>
+<config>
+	<id>1035</id>
+	<name>排位赛商店</name>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>19级开启</openCondition>
+	<description>可以购买技能卡</description>
+	<lockID>1601</lockID>
+	<param>15</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1036</id>
+	<name>漩涡商店</name>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>28级开启</openCondition>
+	<description>可以购买技能卡</description>
+	<lockID>1211</lockID>
+	<param>3</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1037</id>
+	<name>英雄试练商店</name>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>38级开启</openCondition>
+	<description>可以购买技能卡</description>
+	<lockID>1061</lockID>
+	<param>5</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1038</id>
+	<name>阵营声望商店</name>
+	<icon>head5</icon>
+	<type>5</type>
+	<viewname>FameView</viewname>
+	<openCondition>7级开启</openCondition>
+	<description>可以购买宠物碎片</description>
+	<lockID>1511</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1039</id>
+	<name>竞技场商店</name>
+	<icon>head5</icon>
+	<type>5</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本4-6开启</openCondition>
+	<description>可以购买宠物碎片</description>
+	<lockID>1011</lockID>
+	<param>6</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1040</id>
+	<name>公会商店</name>
+	<icon>head5</icon>
+	<type>5</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本5-6开启</openCondition>
+	<description>可以购买宠物碎片</description>
+	<lockID>1041</lockID>
+	<param>4</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1041</id>
+	<name>排位赛商店</name>
+	<icon>head5</icon>
+	<type>5</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>19级开启</openCondition>
+	<description>可以购买宠物碎片</description>
+	<lockID>1601</lockID>
+	<param>15</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1042</id>
+	<name>漩涡商店</name>
+	<icon>head5</icon>
+	<type>5</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>28级开启</openCondition>
+	<description>可以购买宠物碎片</description>
+	<lockID>1211</lockID>
+	<param>3</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1043</id>
+	<name>英雄试练商店</name>
+	<icon>head5</icon>
+	<type>5</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>38级开启</openCondition>
+	<description>可以购买宠物碎片</description>
+	<lockID>1061</lockID>
+	<param>5</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1044</id>
+	<name>召唤</name>
+	<icon>head1</icon>
+	<type>8</type>
+	<viewname>LotteryView</viewname>
+	<openCondition>通关主线副本2-2开启</openCondition>
+	<description>可获得声望点</description>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1045</id>
+	<name>极限躲避</name>
+	<icon>head12</icon>
+	<type>8</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>33级开启</openCondition>
+	<description>产出大量声望点</description>
+	<lockID>1372</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+</root>

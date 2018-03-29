@@ -8,8 +8,39 @@
 	<openType>3</openType>
 	<param>110101</param>
 	<icon>bag</icon>
-	<subtype>[[1,3,110101],[2,3,110101],[3,2,10]]</subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
 	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1322</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110102</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1323</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>10</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1251</id>
@@ -19,19 +50,25 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1711</id>
 	<uID>171</uID>
 	<name>活动</name>
 	<type>1</type>
-	<openType>1</openType>
-	<param></param>
+	<openType>3</openType>
+	<param>110104</param>
 	<icon></icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1401</id>
@@ -41,8 +78,11 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1006</id>
@@ -52,8 +92,11 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1451</id>
@@ -63,8 +106,53 @@
 	<openType>3</openType>
 	<param>110102</param>
 	<icon>equip</icon>
-	<subtype>[[1,3,110102],[2,2,19],[3,2,16],[4,2,28]]</subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.4</timeSet>
 	<position>[503,-308]</position>
+	<describe></describe>
+</config>
+<config>
+	<id>1452</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>120101</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1453</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>16</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1454</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>28</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1491</id>
@@ -74,8 +162,11 @@
 	<openType>3</openType>
 	<param>110203</param>
 	<icon>fashion</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.4</timeSet>
 	<position>[394,-308]</position>
+	<describe></describe>
 </config>
 <config>
 	<id>1281</id>
@@ -85,8 +176,11 @@
 	<openType>3</openType>
 	<param>110103</param>
 	<icon>skill</icon>
-	<subtype>[[1,3,110105]]</subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.4</timeSet>
 	<position>[287,-308]</position>
+	<describe></describe>
 </config>
 <config>
 	<id>1291</id>
@@ -96,8 +190,11 @@
 	<openType>3</openType>
 	<param>110105</param>
 	<icon>skillcard</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position>[178,-308]</position>
+	<describe></describe>
 </config>
 <config>
 	<id>1241</id>
@@ -105,10 +202,13 @@
 	<name>神器</name>
 	<type>1</type>
 	<openType>2</openType>
-	<param>25</param>
+	<param>11</param>
 	<icon>fumo</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position>[-41,-308]</position>
+	<describe></describe>
 </config>
 <config>
 	<id>1511</id>
@@ -118,8 +218,11 @@
 	<openType>2</openType>
 	<param>7</param>
 	<icon>mingge</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position>[-151,-308]</position>
+	<describe></describe>
 </config>
 <config>
 	<id>1171</id>
@@ -129,8 +232,81 @@
 	<openType>2</openType>
 	<param>15</param>
 	<icon>top2</icon>
-	<subtype>[[1,2,15],[2,2,15],[3,3,110406],[4,2,12],[5,2,13],[6,2,23]]</subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
 	<position>[-624,165]</position>
+	<describe></describe>
+</config>
+<config>
+	<id>1172</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>15</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1173</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110406</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1174</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>12</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1175</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>13</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1176</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>23</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1331</id>
@@ -140,8 +316,11 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1411</id>
@@ -151,8 +330,11 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1221</id>
@@ -162,8 +344,11 @@
 	<openType>3</openType>
 	<param>110202</param>
 	<icon>card2</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
 	<position>[630,82]</position>
+	<describe></describe>
 </config>
 <config>
 	<id>1121</id>
@@ -173,8 +358,11 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1841</id>
@@ -184,8 +372,11 @@
 	<openType>1</openType>
 	<param></param>
 	<icon></icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1081</id>
@@ -195,8 +386,11 @@
 	<openType>1</openType>
 	<param></param>
 	<icon>task2</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1371</id>
@@ -204,10 +398,13 @@
 	<name>资源副本</name>
 	<type>3</type>
 	<openType>3</openType>
-	<param>110301</param>
+	<param>110105</param>
 	<icon>resourcescopy</icon>
-	<subtype></subtype>
+	<buildingName>ResourceCopy</buildingName>
+	<effectName>zyfb</effectName>
+	<timeSet>0.3</timeSet>
 	<position>[11,0,-20]</position>
+	<describe>推进主线副本解锁</describe>
 </config>
 <config>
 	<id>1361</id>
@@ -217,8 +414,11 @@
 	<openType>2</openType>
 	<param>30</param>
 	<icon>worldboss</icon>
-	<subtype></subtype>
+	<buildingName>WorldBoss</buildingName>
+	<effectName>sjboss</effectName>
+	<timeSet>0.3</timeSet>
 	<position>[23,0,-20]</position>
+	<describe>等级达到30级解锁</describe>
 </config>
 <config>
 	<id>1211</id>
@@ -228,8 +428,11 @@
 	<openType>2</openType>
 	<param>28</param>
 	<icon>infinitevortex</icon>
-	<subtype></subtype>
+	<buildingName>Main_Mission</buildingName>
+	<effectName>Dxw</effectName>
+	<timeSet>0.3</timeSet>
 	<position>[11,0,-20]</position>
+	<describe>等级达到28级解锁</describe>
 </config>
 <config>
 	<id>1011</id>
@@ -239,8 +442,11 @@
 	<openType>3</openType>
 	<param>110406</param>
 	<icon>arena</icon>
-	<subtype></subtype>
+	<buildingName>AiArena</buildingName>
+	<effectName>jjc</effectName>
+	<timeSet>0.3</timeSet>
 	<position>[11,0,-20]</position>
+	<describe>推进主线副本解锁</describe>
 </config>
 <config>
 	<id>1041</id>
@@ -250,41 +456,53 @@
 	<openType>3</openType>
 	<param>110506</param>
 	<icon>guild</icon>
-	<subtype></subtype>
+	<buildingName>Guild</buildingName>
+	<effectName>gh</effectName>
+	<timeSet>0.3</timeSet>
 	<position>[23,0,-20]</position>
+	<describe>推进主线副本解锁</describe>
 </config>
 <config>
 	<id>1035</id>
 	<uID></uID>
 	<name>多人场景</name>
 	<type>3</type>
-	<openType>3</openType>
-	<param>110105</param>
+	<openType>2</openType>
+	<param>17</param>
 	<icon>collectively</icon>
-	<subtype></subtype>
+	<buildingName>Multiple</buildingName>
+	<effectName>jjd</effectName>
+	<timeSet>0.3</timeSet>
 	<position>[23,0,-20]</position>
+	<describe>等级达到17级解锁</describe>
 </config>
 <config>
 	<id>1131</id>
 	<uID>113</uID>
 	<name>时空仪</name>
-	<type>3</type>
+	<type>0</type>
 	<openType>2</openType>
 	<param>35</param>
 	<icon>spaceinstrument</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe>等级达到35级解锁</describe>
 </config>
 <config>
 	<id>1571</id>
 	<uID>157</uID>
 	<name>团队副本</name>
-	<type>3</type>
+	<type>0</type>
 	<openType>2</openType>
 	<param>40</param>
 	<icon>teamcopy</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe>等级达到40级解锁</describe>
 </config>
 <config>
 	<id>1701</id>
@@ -294,8 +512,11 @@
 	<openType>3</openType>
 	<param>110305</param>
 	<icon>pet</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position>[69,-308]</position>
+	<describe></describe>
 </config>
 <config>
 	<id>1601</id>
@@ -305,8 +526,11 @@
 	<openType>2</openType>
 	<param>19</param>
 	<icon>qualifying</icon>
-	<subtype></subtype>
+	<buildingName>PVPArena</buildingName>
+	<effectName>pws</effectName>
+	<timeSet>0.3</timeSet>
 	<position>[11,0,-20]</position>
+	<describe>等级达到19级解锁</describe>
 </config>
 <config>
 	<id>1061</id>
@@ -316,19 +540,25 @@
 	<openType>2</openType>
 	<param>38</param>
 	<icon>herotrial</icon>
-	<subtype></subtype>
+	<buildingName>HeroesTrial</buildingName>
+	<effectName>yxsl</effectName>
+	<timeSet>0.3</timeSet>
 	<position>[23,0,-20]</position>
+	<describe>等级达到38级解锁</describe>
 </config>
 <config>
 	<id>1372</id>
 	<uID></uID>
 	<name>极限躲避</name>
 	<type>0</type>
-	<openType>2</openType>
-	<param>33</param>
+	<openType>3</openType>
+	<param>110105</param>
 	<icon>resourcescopy</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe>推进主线副本解锁</describe>
 </config>
 <config>
 	<id>1373</id>
@@ -338,8 +568,11 @@
 	<openType>2</openType>
 	<param>25</param>
 	<icon>resourcescopy</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe>等级达到25级解锁</describe>
 </config>
 <config>
 	<id>1374</id>
@@ -349,8 +582,11 @@
 	<openType>3</openType>
 	<param>110502</param>
 	<icon>resourcescopy</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe>推进主线副本解锁</describe>
 </config>
 <config>
 	<id>1375</id>
@@ -360,30 +596,221 @@
 	<openType>3</openType>
 	<param>110301</param>
 	<icon>resourcescopy</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe>推进主线副本解锁</describe>
 </config>
 <config>
 	<id>1781</id>
 	<uID>178</uID>
 	<name>试炼场</name>
-	<type>3</type>
+	<type>0</type>
+	<openType>2</openType>
+	<param>17</param>
+	<icon>trial</icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>等级达到17级解锁</describe>
+</config>
+<config>
+	<id>1782</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
 	<openType>3</openType>
 	<param>110105</param>
-	<icon>trial</icon>
-	<subtype>[[1,3,110105],[2,3,110105],[3,3,110105],[4,3,110105],[5,3,110105],[6,2,16],[7,2,16],[8,2,16],[9,2,16],[10,2,16]]</subtype>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1783</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110105</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1784</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110105</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1785</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110105</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1786</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>16</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1787</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>16</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1788</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>16</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1789</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>16</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1790</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>16</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1811</id>
 	<uID>181</uID>
 	<name>宠物活动</name>
-	<type>3</type>
+	<type>0</type>
 	<openType>3</openType>
 	<param>110305</param>
 	<icon>resourcescopy</icon>
-	<subtype>[[1,3,110305],[2,3,110305],[3,3,110305],[4,3,110305],[5,3,110305]]</subtype>
+	<buildingName>Activities</buildingName>
+	<effectName>cwhb</effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe>推进主线副本解锁</describe>
+</config>
+<config>
+	<id>1812</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>16</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1813</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>2</openType>
+	<param>28</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1814</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>1815</id>
+	<uID></uID>
+	<name></name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
 </config>
 <config>
 	<id>1861</id>
@@ -393,7 +820,94 @@
 	<openType>1</openType>
 	<param></param>
 	<icon>resourcescopy</icon>
-	<subtype></subtype>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
 	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>10001</id>
+	<uID></uID>
+	<name>技能1</name>
+	<type>4</type>
+	<openType>5</openType>
+	<param>1101011</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>10002</id>
+	<uID></uID>
+	<name>技能2</name>
+	<type>4</type>
+	<openType>5</openType>
+	<param>1101012</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>10003</id>
+	<uID></uID>
+	<name>技能3</name>
+	<type>4</type>
+	<openType>5</openType>
+	<param>1101021</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>10004</id>
+	<uID></uID>
+	<name>技能4</name>
+	<type>4</type>
+	<openType>5</openType>
+	<param>1101022</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+</config>
+<config>
+	<id>20001</id>
+	<uID></uID>
+	<name>困难副本</name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110503</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe>通关简单难度主线副本5-3解锁</describe>
+</config>
+<config>
+	<id>20002</id>
+	<uID></uID>
+	<name>噩梦副本</name>
+	<type>0</type>
+	<openType>3</openType>
+	<param>120106</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe>通关困难难度主线副本1-6解锁</describe>
 </config>
 </root>

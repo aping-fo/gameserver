@@ -13,4 +13,5 @@ public class RewardItemCfg {
 	public int level;//等级
 	public int vip;//vip
 	public int day;//开服天数
+	public int vocation;//职业
 }

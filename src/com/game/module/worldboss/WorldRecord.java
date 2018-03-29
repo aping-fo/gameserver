@@ -52,7 +52,7 @@ public class WorldRecord {
     private boolean bAward;
 
     private List<HurtRecord> top10 = new ArrayList<>();
-    private Map<Integer,HurtRecord> rankMap = new ConcurrentHashMap<>();
+    private Map<Integer, HurtRecord> rankMap = new ConcurrentHashMap<>();
 
     @JsonIgnore
     private AtomicBoolean bUpdate = new AtomicBoolean(false);
@@ -99,6 +99,14 @@ public class WorldRecord {
         setbUpdate(true);
     }
 
+    public int getTotalHp() {
+        int hp = 0;
+        for (WorldBoss wb : worldBossMap.values()) {
+            hp += wb.getHp();
+        }
+        return hp;
+    }
+
     public boolean isbStart() {
         return bStart;
     }
@@ -128,7 +136,7 @@ public class WorldRecord {
     }
 
     public void setbUpdate(boolean bUpdate) {
-        this.bUpdate.compareAndSet(this.bUpdate.get(),bUpdate);
+        this.bUpdate.compareAndSet(this.bUpdate.get(), bUpdate);
     }
 
     public long getStartTime() {

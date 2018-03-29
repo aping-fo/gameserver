@@ -196,6 +196,8 @@ public class Response {
 	public static final int WEEKLY_CARD_CONTENT=4207;//周卡邮件内容
 	public static final int MONTHLYLY_CARD_TITLE=4208;//月卡邮件标题
 	public static final int MONTHLYLY_CARD_CONTENT=4209;//月卡邮件内容
+	public static final int ACTIVATION_CODE_INVALID=4210;//激活码无效
+	public static final int HAS_RECEIVE_GIFTBAG=4211;//已经领取过该礼包
 	//称号
 	public static final int TITLE_NOT_GET=4301;//未获得该称号
 	public static final int TITLE_EQUIP=4302;//称号已装备
@@ -204,5 +206,9 @@ public class Response {
 	public static final int PET_ACTIVITY_DOING=4352;//该活动正在进行中
 	public static final int PET_ACTIVITY_NOT_OPEN=4353;//活动未开启
 	public static final int PET_ACTIVITY_SAME=4354;//宠物重复
+	//弹幕
+	public static final int SCENE_NOT_EXIST=4360;//场景不存在
+	public static final int BULLETSCREEN_NOT_SET=4361;//弹幕上限未设置
+	public static final int LOCALBULLETSCREEN_ALL_ACCESS=4362;//本地弹幕已全部获取
 
 }

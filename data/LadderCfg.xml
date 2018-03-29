@@ -5,9 +5,9 @@
 	<name>青铜1段</name>
 	<score>100</score>
 	<addScore>10</addScore>
-	<decScore>10</decScore>
+	<decScore>0</decScore>
 	<PkReward>[112,10]</PkReward>
-	<FinalReward>[112,2000]</FinalReward>
+	<FinalReward>[112,100]</FinalReward>
 	<grading>11</grading>
 	<gradingName>青铜段位</gradingName>
 </config>
@@ -16,9 +16,9 @@
 	<name>青铜2段</name>
 	<score>200</score>
 	<addScore>15</addScore>
-	<decScore>15</decScore>
+	<decScore>0</decScore>
 	<PkReward>[112,10]</PkReward>
-	<FinalReward>[112,2000]</FinalReward>
+	<FinalReward>[112,150]</FinalReward>
 	<grading>12</grading>
 	<gradingName>青铜段位</gradingName>
 </config>
@@ -27,9 +27,9 @@
 	<name>青铜3段</name>
 	<score>300</score>
 	<addScore>20</addScore>
-	<decScore>20</decScore>
+	<decScore>0</decScore>
 	<PkReward>[112,10]</PkReward>
-	<FinalReward>[112,2000]</FinalReward>
+	<FinalReward>[112,200]</FinalReward>
 	<grading>13</grading>
 	<gradingName>青铜段位</gradingName>
 </config>
@@ -40,7 +40,7 @@
 	<addScore>25</addScore>
 	<decScore>25</decScore>
 	<PkReward>[112,15]</PkReward>
-	<FinalReward>[112,3000]</FinalReward>
+	<FinalReward>[112,250]</FinalReward>
 	<grading>21</grading>
 	<gradingName>白银段位</gradingName>
 </config>
@@ -51,7 +51,7 @@
 	<addScore>30</addScore>
 	<decScore>30</decScore>
 	<PkReward>[112,15]</PkReward>
-	<FinalReward>[112,3000]</FinalReward>
+	<FinalReward>[112,300]</FinalReward>
 	<grading>22</grading>
 	<gradingName>白银段位</gradingName>
 </config>
@@ -62,7 +62,7 @@
 	<addScore>40</addScore>
 	<decScore>40</decScore>
 	<PkReward>[112,15]</PkReward>
-	<FinalReward>[112,3000]</FinalReward>
+	<FinalReward>[112,350]</FinalReward>
 	<grading>23</grading>
 	<gradingName>白银段位</gradingName>
 </config>
@@ -73,7 +73,7 @@
 	<addScore>50</addScore>
 	<decScore>50</decScore>
 	<PkReward>[112,20]</PkReward>
-	<FinalReward>[112,4000]</FinalReward>
+	<FinalReward>[112,400]</FinalReward>
 	<grading>31</grading>
 	<gradingName>黄金段位</gradingName>
 </config>
@@ -84,7 +84,7 @@
 	<addScore>60</addScore>
 	<decScore>60</decScore>
 	<PkReward>[112,20]</PkReward>
-	<FinalReward>[112,4000]</FinalReward>
+	<FinalReward>[112,450]</FinalReward>
 	<grading>32</grading>
 	<gradingName>黄金段位</gradingName>
 </config>
@@ -95,7 +95,7 @@
 	<addScore>70</addScore>
 	<decScore>70</decScore>
 	<PkReward>[112,20]</PkReward>
-	<FinalReward>[112,4000]</FinalReward>
+	<FinalReward>[112,500]</FinalReward>
 	<grading>33</grading>
 	<gradingName>黄金段位</gradingName>
 </config>
@@ -106,7 +106,7 @@
 	<addScore>80</addScore>
 	<decScore>80</decScore>
 	<PkReward>[112,25]</PkReward>
-	<FinalReward>[112,5000]</FinalReward>
+	<FinalReward>[112,550]</FinalReward>
 	<grading>41</grading>
 	<gradingName>铂金段位</gradingName>
 </config>
@@ -117,7 +117,7 @@
 	<addScore>90</addScore>
 	<decScore>90</decScore>
 	<PkReward>[112,25]</PkReward>
-	<FinalReward>[112,5000]</FinalReward>
+	<FinalReward>[112,600]</FinalReward>
 	<grading>42</grading>
 	<gradingName>铂金段位</gradingName>
 </config>
@@ -128,7 +128,7 @@
 	<addScore>100</addScore>
 	<decScore>100</decScore>
 	<PkReward>[112,25]</PkReward>
-	<FinalReward>[112,5000]</FinalReward>
+	<FinalReward>[112,650]</FinalReward>
 	<grading>43</grading>
 	<gradingName>铂金段位</gradingName>
 </config>
@@ -139,7 +139,7 @@
 	<addScore>110</addScore>
 	<decScore>110</decScore>
 	<PkReward>[112,35]</PkReward>
-	<FinalReward>[112,7000]</FinalReward>
+	<FinalReward>[112,700]</FinalReward>
 	<grading>51</grading>
 	<gradingName>钻石段位</gradingName>
 </config>
@@ -150,7 +150,7 @@
 	<addScore>120</addScore>
 	<decScore>120</decScore>
 	<PkReward>[112,35]</PkReward>
-	<FinalReward>[112,7000]</FinalReward>
+	<FinalReward>[112,750]</FinalReward>
 	<grading>52</grading>
 	<gradingName>钻石段位</gradingName>
 </config>
@@ -161,7 +161,7 @@
 	<addScore>130</addScore>
 	<decScore>130</decScore>
 	<PkReward>[112,35]</PkReward>
-	<FinalReward>[112,7000]</FinalReward>
+	<FinalReward>[112,800]</FinalReward>
 	<grading>53</grading>
 	<gradingName>钻石段位</gradingName>
 </config>
@@ -172,7 +172,7 @@
 	<addScore>150</addScore>
 	<decScore>150</decScore>
 	<PkReward>[112,40]</PkReward>
-	<FinalReward>[112,10000]</FinalReward>
+	<FinalReward>[112,850]</FinalReward>
 	<grading>60</grading>
 	<gradingName>最强王者</gradingName>
 </config>

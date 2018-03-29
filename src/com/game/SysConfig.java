@@ -21,7 +21,7 @@ public class SysConfig {
     public static int subLineCount;// 每个场景的分线人数
     public static String startUpDate;// 服务器开服时间 yyyy-MM-dd HH:mm:ss
 
-    private static Date openDate;// 开服时间Date
+    public static Date openDate;// 开服时间Date
     private static int openDays;// 开服时长
 
     public volatile static boolean gm;// 是否启用gm
@@ -53,6 +53,8 @@ public class SysConfig {
     public static String eratingHost;
     public static int gatewayId;
     public static int sdkPort;
+    public static String gatewayCode;
+    public static String gatewayPwd;
 
 
     public static void init() throws Exception {
@@ -107,6 +109,8 @@ public class SysConfig {
             gatewayId = Integer.parseInt(properties.getProperty("game_way_id"));
             sdkPort = Integer.parseInt(properties.getProperty("sdk_port"));
             eratingHost = properties.getProperty("sdk_host");
+            gatewayCode = properties.getProperty("gateway_code");
+            gatewayPwd = properties.getProperty("gateway_pwd");
 
             Profile.setOpen(Boolean.parseBoolean(properties.getProperty("profile")));
 

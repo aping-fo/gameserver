@@ -72,7 +72,7 @@ public class FashionService {
         data.getFashions().add(fashionId);
         data.getFashionMap().put(fashionId, new Fashion(fashionId, System.currentTimeMillis(), cfg.timeLimit));
 
-        taskService.doTask(playerId, Task.TYPE_FASH_COUNT,data.getFashionMap().size());
+        taskService.doTask(playerId, Task.TYPE_FASH_COUNT, data.getFashionMap().size());
         calculator.calculate(player);
         // 推送前端
         SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
@@ -214,6 +214,7 @@ public class FashionService {
 
     /**
      * 检测并移除过期时装
+     *
      * @param playerId
      * @param needNotify
      */
@@ -223,7 +224,7 @@ public class FashionService {
         Player player = playerService.getPlayer(playerId);
         List<Integer> dels = new ArrayList<>();
         long now = System.currentTimeMillis();
-        if(data == null) {
+        if (data == null) {
             return;
         }
         for (Fashion fashion : data.getFashionMap().values()) {
@@ -251,6 +252,14 @@ public class FashionService {
         if (!dels.isEmpty() && needNotify) {
             // 推送前端
             SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
+        }
+    }
+
+    public void getAllFashion(int playerId) {
+
+        for (Object o : ConfigData.getConfigs(FashionCfg.class)) {
+            FashionCfg cfg = (FashionCfg) o;
+            addFashion(playerId, cfg.id, cfg.timeLimit);
         }
     }
 }

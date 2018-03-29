@@ -14,7 +14,6 @@ import com.game.module.mail.MailService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
-import com.game.module.serial.PlayerView;
 import com.game.module.serial.SerialDataService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
@@ -148,9 +147,19 @@ public class LadderService implements InitHandler {
                 Room room = allRooms.get(s.getKey());
                 if (room != null) {
                     list.addAll(room.roomPlayers.values());
+                    if (list.size() < 2) { //保护
+                        IntParam param = new IntParam();
+                        param.param = Response.SUCCESS;
+                        for (RoomPlayer roomPlayer : list) {
+                            SessionManager.getInstance().sendMsg(CMD_GAME_OVER, param, roomPlayer.getPlayerId());
+                        }
+                        ServerLogger.warn("ladder time out ====" + s.getKey());
+                        FightTimes.remove(s.getKey());
+                        return;
+                    }
+
                     RoomPlayer rp1 = list.get(0);
                     RoomPlayer rp2 = list.get(1);
-
                     Player winPlayer = playerService.getPlayer(rp1.getPlayerId());
                     Player failPlayer = playerService.getPlayer(rp2.getPlayerId());
                     float rate1 = rp1.getHp() / (winPlayer.getHp() * 1.0f);
@@ -729,23 +738,21 @@ public class LadderService implements InitHandler {
             List<Ladder> list = new ArrayList<>(serialDataService.getData().getLadderMap().values());
             Collections.sort(list, COMPARATOR);
             LADDER_RANK.params = new ArrayList<>();
-            int i = 0;
+            // int i = 0;
             for (Ladder ladder : list) {
                 Player player = playerService.getPlayer(ladder.getPlayerId());
                 if (player == null) {
                     continue;
                 }
-                i++;
-                if (i < MAX_RANK) {
-                    titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER, i, ActivityConsts.UpdateType.T_VALUE);
-                    ladderRank.put(ladder.getPlayerId(), i);
-                }
-
+                //i++;
+                //if (i < MAX_RANK) {
+                //titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER, i, ActivityConsts.UpdateType.T_VALUE);
+                //ladderRank.put(ladder.getPlayerId(), i);
+                //}
                 /*PlayerView playerView = serialDataService.getData().getPlayerView(ladder.getPlayerId());
                 if (playerView.getLadderMaxRank() == 0 || playerView.getLadderMaxRank() > i) {
                     playerView.setLadderMaxRank(i);
                 }
-
                 taskService.doTask(ladder.getPlayerId(), Task.TYPE_LADDER_RANK,i);*/
 
                 LadderRankVO vo = new LadderRankVO();
@@ -840,7 +847,9 @@ public class LadderService implements InitHandler {
         String awardContent = ConfigData.getConfig(ErrCode.class, Response.LADDER_MAIL_CONTENT).tips;
         List<GoodsEntry> rewards = new ArrayList<>();
         List<Ladder> list = ladderSort();
+        ladderRank.clear();
         if (list != null) {
+            int k = 0;
             for (Ladder ladder : list) {
                 LadderCfg cfg = ConfigData.getConfig(LadderCfg.class, ladder.getLevel());
                 if (cfg == null) {
@@ -863,6 +872,11 @@ public class LadderService implements InitHandler {
                 ladder.setMaxContinuityWinTimes(0);
                 ladder.setFightTimes(0);
                 ladder.getRecords().clear();
+                k++;
+                if (k < MAX_RANK) {
+                    titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER, k, ActivityConsts.UpdateType.T_VALUE);
+                    ladderRank.put(ladder.getPlayerId(), k);
+                }
                 mailService.sendSysMail(awardTitle, content, rewards, ladder.getPlayerId(), LogConsume.LADDER_AWARD);
             }
         }

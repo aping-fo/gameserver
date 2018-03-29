@@ -709,6 +709,14 @@
 	<tips>月卡邮件内容</tips>
 </config>
 <config>
+	<id>4210</id>
+	<tips>激活码无效</tips>
+</config>
+<config>
+	<id>4211</id>
+	<tips>已经领取过该礼包</tips>
+</config>
+<config>
 	<id>4301</id>
 	<tips>未获得该称号</tips>
 </config>
@@ -731,5 +739,17 @@
 <config>
 	<id>4354</id>
 	<tips>宠物重复</tips>
+</config>
+<config>
+	<id>4360</id>
+	<tips>场景不存在</tips>
+</config>
+<config>
+	<id>4361</id>
+	<tips>弹幕上限未设置</tips>
+</config>
+<config>
+	<id>4362</id>
+	<tips>本地弹幕已全部获取</tips>
 </config>
 </root>

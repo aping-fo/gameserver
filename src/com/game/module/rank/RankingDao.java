@@ -20,7 +20,7 @@ public interface RankingDao {
 	@SQL("SELECT playerId, fight FROM player ORDER BY fight DESC LIMIT 50")
 	public List<Player> selectFightRanking();
 	
-	@SQL("SELECT playerId, lev, exp FROM player ORDER BY lev DESC, exp DESC LIMIT 50")
+	@SQL("SELECT playerId, lev, exp FROM player where accName != 'sys' ORDER BY lev DESC, exp DESC LIMIT 50")
 	public List<Player> selectLevelRanking();
 
 	@SQL("SELECT playerId, lev, achievement FROM player ORDER BY achievement DESC LIMIT 50")

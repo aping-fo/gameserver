@@ -100,7 +100,7 @@ public class SkillService {
 			data.getCurSkills().set(index, nextId);
 		}
 		taskService.doTask(playerId, Task.FINISH_SKILL);
-		taskService.doTask(playerId, Task.TYPE_SKILL_LEVEL,nextId);
+		taskService.doTask(playerId, Task.TYPE_SKILL_LEVEL,cfg.skillType,cfg.lev);
 
 		updateSkill2Client(playerId);
 		return Response.SUCCESS;
@@ -129,10 +129,10 @@ public class SkillService {
 		for(int i=1;i<ids.size();i++){
 			SkillCard del = data.getSkillCards().get(ids.get(i));
 			SkillCardConfig delCfg = ConfigData.getConfig(SkillCardConfig.class, del.getCardId());
-			card.setExp(card.getExp()+delCfg.decompose);
+			card.setExp(card.getExp()+delCfg.decompose + del.getExp());
 			//判断升级
 			while(card.getExp()>=cfg.exp){
-				card.setLev(card.getLev()+1);
+				card.setLev(cfg.lv + 1);
 				card.setExp(card.getExp()-cfg.exp);
 				card.setCardId(cfg.nextCard);
 				

@@ -96,7 +96,7 @@ public class CopyService {
     @Autowired
     private TaskService taskService;
     private AtomicInteger uniId = new AtomicInteger(100);
-    private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<Integer, CopyInstance>();
+    private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<>();
 
     // 获取所有副本信息
     public CopyInfo getCopys(int playerId) {
@@ -134,7 +134,7 @@ public class CopyService {
     public CopyInfo getCopyInfo(int playerId) {
         CopyInfo copyInfo = new CopyInfo();
         PlayerData data = playerService.getPlayerData(playerId);
-        copyInfo.threeStars = new ArrayList<Integer>(data.getThreeStars());
+        copyInfo.threeStars = new ArrayList<>(data.getThreeStars());
         return copyInfo;
     }
 
@@ -187,7 +187,8 @@ public class CopyService {
             }
         }
 
-        if (cfg.needEnergy > 0) {
+        //去除时空仪的体力判断
+        if (cfg.type != CopyInstance.TYPE_TRAVERSING && cfg.needEnergy > 0) {
             if (player.getEnergy() < cfg.needEnergy) {
                 return Response.NO_ENERGY;
             }
@@ -262,6 +263,7 @@ public class CopyService {
         // 掉落
         CopyInstance copy = instances.get(playerService.getPlayer(playerId).getCopyId());
         List<GoodsEntry> items = calculateCopyReward(playerId, copyId, star);
+        //List<GoodsEntry> items = calculateCopyRewardOccupation(playerId, copyId, star);
 
         if (cfg.type == CopyInstance.TYPE_LEADAWAY
                 || cfg.type == CopyInstance.TYPE_GOLD) { //顺手牵羊,金币，奖励
@@ -270,12 +272,12 @@ public class CopyService {
             }
         }
 
-        result.rewards = new ArrayList<Reward>();
+        result.rewards = new ArrayList<>();
         // 构造奖励
         if (cfg.type == CopyInstance.TYPE_ENDLESS) {
             EndlessAttach attach = endlessLogic.getAttach(playerId);
             EndlessCfg eCfg = endlessLogic.getConfig();
-            int multiple = (int) ((attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.sectionMultiple);
+            int multiple =  (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.sectionMultiple;
 
             for (GoodsEntry g : items) {
                 g.count *= multiple;
@@ -314,9 +316,9 @@ public class CopyService {
     public List<GoodsEntry> calculateCopyReward(int playerId, int copyId, int star) {
         Player player = playerService.getPlayer(playerId);
         CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
-        Map<Integer, Integer> totalRewards = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> totalRewards = new HashMap<>();
         // 构造奖励
-        List<GoodsEntry> items = new ArrayList<GoodsEntry>();
+        List<GoodsEntry> items = new ArrayList<>();
 
         if (cfg.type == CopyInstance.TYPE_LEADAWAY ||
                 cfg.type == CopyInstance.TYPE_GOLD) {
@@ -343,18 +345,33 @@ public class CopyService {
         }
         // 随机奖励
         if (cfg.randomRates != null) {
-            int index = RandomUtil.getRandomIndex(cfg.randomRates);
-            int id = cfg.randomRewards[index][0];
-            int count = cfg.randomRewards[index][1];
+            int id;
+            int count;
+            if (cfg.type == CopyInstance.TYPE_TRAVERSING) { //时空仪奖励
+                List<int[]> rewardsList = new ArrayList<>();
+                List<Integer> rateList = Lists.newArrayListWithCapacity(cfg.randomRates.length);
+                for (int i = 0; i < cfg.randomRewards.length; i++) {
+                    if (ConfigData.getConfig(GoodsConfig.class, cfg.randomRewards[i][0]).vocation == player.getVocation()) {
+                        rewardsList.add(cfg.randomRewards[i]);
+                        rateList.add(cfg.randomRates[i]);
+                    }
+                }
+                int index = RandomUtil.getRandomIndex(rateList);
+                int[] itemArr = rewardsList.get(index);
+                id = itemArr[0];
+                count = itemArr[1];
+            } else {
+                int index = RandomUtil.getRandomIndex(cfg.randomRates);
+                id = cfg.randomRewards[index][0];
+                count = cfg.randomRewards[index][1];
+            }
+
             if (ConfigData.getConfig(GoodsConfig.class, id) == null) {
                 ServerLogger.warn("goods don't exist id = " + id);
             }
-            //int vocation = ConfigData.getConfig(GoodsConfig.class, id).vocation;
-            //if (vocation == 0 || vocation == player.getVocation()) { //去掉职业限制
             if (id > 0 && count > 0) {
                 addItem(totalRewards, id, count);
             }
-            //}
         }
         // 3星奖励
         if (cfg.starRewards != null) {
@@ -400,28 +417,6 @@ public class CopyService {
             GoodsEntry g = new GoodsEntry(itemId, (int) ConfigData.globalParam().fameAddRate);
             items.add(g);
         }
-
-        /*boolean bCamp = (cfg.camp != 0 && cfg.camp == data.getActivityCamp());
-        if (bCamp) { //代表阵营==当前阵营，加成
-            float rate = ConfigData.globalParam().fameAddRate;
-            for (GoodsEntry g : items) {
-                GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class, g.id);
-                if (conf == null) {
-                    ServerLogger.warn("goods don't exist id = " + g.id);
-                    continue;
-                }
-                if (conf.type == Goods.FAME) {
-                    g.count = Math.round((1 + rate) * g.count);
-
-                    for (int techId : data.getTechnologys()) {
-                        GangScienceCfg config = ConfigData.getConfig(GangScienceCfg.class, techId);
-                        if (config.type == 9) { //科技声望加成
-                            g.count = Math.round(g.count * (1 + config.param / 100.0f));
-                        }
-                    }
-                }
-            }
-        }*/
 
         //公会科技加成
         if (player.getGangId() > 0) {
@@ -948,6 +943,4 @@ public class CopyService {
         SessionManager.getInstance().sendMsg(CopyExtension.CMD_REFRESH, info, playerId);
         return Response.SUCCESS;
     }
-
-
 }

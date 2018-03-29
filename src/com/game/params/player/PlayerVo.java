@@ -49,7 +49,7 @@ public class PlayerVo implements IProtocol {
 	public int head;//头部
 	public int signDay;//签到天数
 	public int signFlag;//当前天是否已签到,0表示未签到，1表示已签到
-	public List<Integer> modules;//已经开启的功能
+	public List<Integer> modules;//已经开启的功能id,相应功能若是在场景中特效是否播放（0播 1不播）
 	public List<Integer> newHandleSteps;//引导步骤
 	public String userName;//渠道唯一标志
 	public String serverName;//区服名

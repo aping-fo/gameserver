@@ -1,5 +1,6 @@
 package com.game.module.system;
 
+import com.game.SysConfig;
 import com.game.module.RandomReward.RandomRewardService;
 import com.game.module.goods.EquipService;
 import com.game.params.IntParam;
@@ -75,6 +76,7 @@ public class SystemExtension {
             return null;
         }
         ServerLogger.warn("reload begin....");
+        SysConfig.init();
         GameData.loadConfigData();
         ConfigData.init();
         randomRewardService.handleInit();

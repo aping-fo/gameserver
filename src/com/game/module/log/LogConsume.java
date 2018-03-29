@@ -81,7 +81,9 @@ public enum LogConsume {
 	ACTIVITY_OPEN(1074, "活动开启"),
 	PET_ACTIVITY(1075, "宠物玩法立即完成"),
 	PET_ACTIVITY_REWARD(1076, "宠物玩法奖励领取"),
-	ACHIEVEMENT_GET_ALL(1077, "成就一键领取")
+	ACHIEVEMENT_GET_ALL(1077, "成就一键领取"),
+	OPEN_BOX(1078, "开箱子"),
+	ACTIVATIONCODE_GIFTBAG(1079, "激活码礼包")
 	;
 	public int actionId;// id
 	public String desc;

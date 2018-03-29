@@ -74,7 +74,7 @@ public class ServerTimer implements InitHandler {
 		timers.add(new TimerObject("0 * * * * *", "rankService", "sort"));
 
 		// 凌晨0检测
-		timers.add(new TimerObject("0 0 * * 2 *", "ladderService", "weeklyAward"));
+		//timers.add(new TimerObject("0 0 * * 2 *", "ladderService", "weeklyAward"));
 		// 凌晨0检测
 		timers.add(new TimerObject("0 0 * * 2 *", "gangDungeonService", "weekly"));
 		updateTimeStr();

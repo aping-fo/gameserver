@@ -48,7 +48,6 @@ import com.game.params.chat.ChatVo;
 import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
 import com.game.params.ladder.TrainingResultVO;
-import com.game.params.pet.PetGardenVO;
 import com.game.params.pet.StartPetActivityVO;
 import com.game.util.ConfigData;
 import com.game.util.JsonUtils;
@@ -248,6 +247,7 @@ public class GmService {
         PlayerData data = playerService.getPlayerData(playerId);
         dailyService.resetDailyData(data);
         dailyService.refreshDailyVo(playerId);
+        playerService.addEnergy(playerId, 120, LogConsume.BUY_ENERGY);
     }
 
     // 重启更新服务器
@@ -461,6 +461,7 @@ public class GmService {
     public void openWorld(int playerId, String... params) {
         worldBossService.gmReset();
     }
+
     public void sendAward(int playerId, String... params) {
         worldBossService.sendAward1();
     }
@@ -681,19 +682,29 @@ public class GmService {
         vipService.addCharge(playerId, id, count);
     }
 
-    public void taskRank(int playerId, String... params){
+    public void taskRank(int playerId, String... params) {
         taskService.dailyReset(playerId);
     }
 
     @Autowired
     trainingLogic trainin;
-    public void resetOpponent(int playerId, String... params){
+
+    public void resetOpponent(int playerId, String... params) {
         trainin.resetOpponent();
     }
 
     @Autowired
     ArtifactService artifactService;
-    public void artifact(int playerId, String... params){
+
+    public void artifact(int playerId, String... params) {
         artifactService.gmArtifact(playerId);
+    }
+
+    public void clearGuildTime(int playerId, String... params) {
+        gangService.clearGuildTime(playerId);
+    }
+
+    public void getAllFashion(int playerId, String... params) {
+        fashionService.getAllFashion(playerId);
     }
 }

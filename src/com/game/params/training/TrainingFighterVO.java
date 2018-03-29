@@ -1,5 +1,6 @@
 package com.game.params.training;
 
+import java.util.List;
 import com.game.params.*;
 
 //英雄试炼对战玩家信息(工具自动生成，请勿手动修改！）
@@ -15,6 +16,7 @@ public class TrainingFighterVO implements IProtocol {
 	public String name;//玩家名称
 	public int level;//等级
 	public int vocation;//职业
+	public List<Integer> bufferList;//套装buffer列表
 
 
 	public void decode(BufferBuilder bb) {
@@ -29,6 +31,7 @@ public class TrainingFighterVO implements IProtocol {
 		this.name = bb.getString();
 		this.level = bb.getInt();
 		this.vocation = bb.getInt();
+		this.bufferList = bb.getIntList();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -43,5 +46,6 @@ public class TrainingFighterVO implements IProtocol {
 		bb.putString(this.name);
 		bb.putInt(this.level);
 		bb.putInt(this.vocation);
+		bb.putIntList(this.bufferList);
 	}
 }

@@ -11,4 +11,5 @@ public class SceneConfig {
 	public float[] defaultPos;//出生点位置
 	public float[] transNpcPos;//过图传送门位置
 	public int isSceneFading;//是否判断遮挡半透
+	public int maxBulletScreenNumber;//场景最大弹幕数量
 }

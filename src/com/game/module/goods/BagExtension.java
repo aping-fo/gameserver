@@ -60,9 +60,7 @@ public class BagExtension {
 	//使用物品
 	@Command(1206)
 	public Object use(int playerId, CTool tool) {
-		IntParam result = new IntParam();
-		result.param = goodsService.useTool(playerId, tool.id, tool.count);
-		return result;
+		return goodsService.useTool(playerId, tool.id, tool.count);
 	}
 	
 	//分解

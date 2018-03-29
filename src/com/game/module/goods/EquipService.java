@@ -12,6 +12,7 @@ import com.game.params.goods.SGoodsVo;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
 import com.game.util.RandomUtil;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.server.SessionManager;
@@ -96,7 +97,7 @@ public class EquipService {
 
         vo.add(goodsService.toVO(goods));
         goodsService.refreshGoodsToClient(playerId, vo);
-        taskService.doTask(playerId, Task.FINISH_WEAR, config.color);
+        //taskService.doTask(playerId, Task.FINISH_WEAR, config.color);
         return Response.SUCCESS;
     }
 
@@ -143,6 +144,10 @@ public class EquipService {
         for (long id : ids) {
             int equipMaterials = 0;
             Goods goods = goodsService.getGoods(playerId, id);
+            if (goods == null) {
+                ServerLogger.warn("goods don't exist id = " + id);
+                continue;
+            }
             GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
             if (cfg == null) {
                 ServerLogger.warn("goods don't exist id = " + id);
@@ -372,15 +377,23 @@ public class EquipService {
             ServerLogger.warn("goods don't exist id = " + id);
             return Response.ERR_PARAM;
         }
+
+        Player player = playerService.getPlayer(playerId);
         //扣除锁定
         if (lock > 0) {
-            if (!playerService.decDiamond(playerId, ConfigData.globalParam().clearCostDiamond, LogConsume.CLEAR_LOCK, goods.getGoodsId())) {
+            if (player.getDiamond() < ConfigData.globalParam().clearCostDiamond) {
                 return Response.NO_DIAMOND;
             }
+            /*if (!playerService.decDiamond(playerId, ConfigData.globalParam().clearCostDiamond, LogConsume.CLEAR_LOCK, goods.getGoodsId())) {
+                return Response.NO_DIAMOND;
+            }*/
         }
         //扣除消耗
         if (!goodsService.decGoodsFromBag(playerId, Goods.CLEAR_ITEM, ConfigData.globalParam().clearCostCoin, LogConsume.CLEAR_COST, goods.getGoodsId())) {
-            return Response.NO_COIN;
+            return Response.NO_MATERIAL;
+        }
+        if (lock > 0) {
+            playerService.decDiamond(playerId, ConfigData.globalParam().clearCostDiamond, LogConsume.CLEAR_LOCK, goods.getGoodsId());
         }
         //重新随机
         int addId = cfg.level * 1000 + cfg.color;
@@ -453,10 +466,51 @@ public class EquipService {
             jewel.lev = j.getValue().getLev();
             equip.jewels.add(jewel);
         }
-
-
         return equip;
     }
 
 
+    public List<Integer> getBufferList(int playerId) {
+        PlayerData data = playerService.getPlayerData(playerId);
+        List<Integer> bufferList = Lists.newArrayList();
+        for (Map.Entry<Integer, Set<Integer>> s : data.getSuitMap().entrySet()) {
+            SuitConfig config = ConfigData.getConfig(SuitConfig.class, s.getKey());
+            if (s.getValue().size() >= 2) {
+                for (int id : config.buffAdd[1]) {
+                    if (id != 0) {
+                        bufferList.add(id);
+                    }
+                }
+            }
+            if (s.getValue().size() >= 3) {
+                for (int id : config.buffAdd[2]) {
+                    if (id != 0) {
+                        bufferList.add(id);
+                    }
+                }
+            }
+            if (s.getValue().size() >= 4) {
+                for (int id : config.buffAdd[3]) {
+                    if (id != 0) {
+                        bufferList.add(id);
+                    }
+                }
+            }
+            if (s.getValue().size() >= 5) {
+                for (int id : config.buffAdd[4]) {
+                    if (id != 0) {
+                        bufferList.add(id);
+                    }
+                }
+            }
+            if (s.getValue().size() >= 6) {
+                for (int id : config.buffAdd[5]) {
+                    if (id != 0) {
+                        bufferList.add(id);
+                    }
+                }
+            }
+        }
+        return bufferList;
+    }
 }

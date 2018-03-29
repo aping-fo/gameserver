@@ -8,7 +8,6 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerCalculator;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
-import com.game.module.rank.RankService;
 import com.game.module.scene.SceneService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
@@ -19,6 +18,7 @@ import com.game.params.TitleVO;
 import com.game.params.goods.AttrItem;
 import com.game.util.ConfigData;
 import com.game.util.JsonUtils;
+import com.game.util.TimeUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.server.SessionManager;
@@ -70,13 +70,30 @@ public class TitleService {
         }
     }
 
+    public void updateWeekly(int playerId) {
+        PlayerData data = playerService.getPlayerData(playerId);
+        List<Integer> deleteList = Lists.newArrayList();
+        for (int id : data.getTitles()) {
+            TitleConfig cfg = GameData.getConfig(TitleConfig.class, id);
+            Map<Integer, Title> map = data.getTitleTypeMap().get(cfg.titleSubType);
+            if (map != null) {
+                Title title = map.get(cfg.id);
+                if (cfg.period != 0) {
+                    if (System.currentTimeMillis() - title.getRecvTime() > cfg.period * TimeUtil.ONE_DAY) {
+                        deleteList.add(id);
+                    }
+                }
+            }
+        }
+
+        for (int id : deleteList) {
+            data.getTitles().remove(id);
+        }
+    }
+
     public void onLogin(int playerId) {
         doInit(playerId);
-        /*RankingList<FightingRankEntity> rank = rankService.getRankingList(RankService.TYPE_FIGHTING);
-        int position = rank.getRank(playerId);
-        if (position != -1) { //战斗力称号更新
-            checkTitle(playerId, TitleConsts.FIGHTING, position, ActivityConsts.UpdateType.T_VALUE, null);
-        }*/
+        updateWeekly(playerId);
         int ladderLevel = ladderService.getRank(playerId);
         if (ladderLevel != 0) { //排位赛
             checkTitle(playerId, TitleConsts.LADDER, ladderLevel, ActivityConsts.UpdateType.T_VALUE, null);
@@ -143,11 +160,13 @@ public class TitleService {
                     if (title.getValue() >= config.cond[1] && title.getValue() <= config.cond[2]) {
                         if (titles != null) titles.add(title.getId());
                         data.getTitles().add(title.getId());
+                        title.setRecvTime(TimeUtil.getTodayBeginTime());
                     }
                 } else {
                     if (title.getValue() >= config.cond[1]) {
                         if (titles != null) titles.add(title.getId());
                         data.getTitles().add(title.getId());
+                        title.setRecvTime(TimeUtil.getTodayBeginTime());
                     }
                 }
             }

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50173
 File Encoding         : 65001
 
-Date: 2017-07-13 11:32:32
+Date: 2018-03-19 11:31:58
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -76,7 +76,7 @@ CREATE TABLE `mail` (
   `type` int(10) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `Index_playerId` (`receiveId`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=18332 DEFAULT CHARSET=utf8 COMMENT='é‚®ä»¶';
+) ENGINE=InnoDB AUTO_INCREMENT=156066 DEFAULT CHARSET=utf8 COMMENT='邮件表';
 
 -- ----------------------------
 -- Table structure for manager
@@ -89,7 +89,17 @@ CREATE TABLE `manager` (
   `banChatEnd` datetime DEFAULT NULL,
   `banLoginEnd` datetime DEFAULT NULL,
   PRIMARY KEY (`playerId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='ç”¨æˆ·ç®¡ç†';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='角色管理，如禁言等';
+
+-- ----------------------------
+-- Table structure for pet
+-- ----------------------------
+DROP TABLE IF EXISTS `pet`;
+CREATE TABLE `pet` (
+  `playerId` int(11) NOT NULL,
+  `data` blob,
+  PRIMARY KEY (`playerId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for player
@@ -133,6 +143,7 @@ CREATE TABLE `player` (
   `attack` int(10) unsigned NOT NULL DEFAULT '0',
   `defense` int(10) unsigned NOT NULL DEFAULT '0',
   `title` int(10) unsigned NOT NULL DEFAULT '0',
+  `achievement` int(11) DEFAULT '0' COMMENT '成就点',
   PRIMARY KEY (`playerId`),
   KEY `Index_accName` (`accName`) USING BTREE,
   KEY `Index_name` (`name`) USING BTREE,
@@ -147,7 +158,7 @@ CREATE TABLE `player_data` (
   `playerId` int(10) unsigned NOT NULL,
   `data` longblob,
   PRIMARY KEY (`playerId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='ç”¨æˆ·æ•°æ®è¡¨';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='玩家相关数据';
 
 -- ----------------------------
 -- Table structure for rank
@@ -167,7 +178,18 @@ CREATE TABLE `serial_data` (
   `id` int(10) unsigned NOT NULL,
   `data` longblob,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='åºåˆ—åŒ–';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='服务器全局数据表';
+
+-- ----------------------------
+-- Table structure for serverparam
+-- ----------------------------
+DROP TABLE IF EXISTS `serverparam`;
+CREATE TABLE `serverparam` (
+  `paramvalue` text NOT NULL,
+  `text` varchar(255) DEFAULT NULL,
+  `paramkey` varchar(255) NOT NULL,
+  `serverid` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for task
@@ -177,7 +199,7 @@ CREATE TABLE `task` (
   `playerId` int(10) unsigned NOT NULL COMMENT 'çŽ©å®¶id',
   `data` longblob COMMENT 'æ•°æ®',
   PRIMARY KEY (`playerId`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='ä»»åŠ¡è¡¨';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='任务表';
 
 -- ----------------------------
 -- Table structure for wb_data

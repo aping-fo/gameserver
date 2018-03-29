@@ -1,21 +1,21 @@
 package com.game.module.player;
 
-import java.util.*;
-import java.util.Map.Entry;
-import java.util.concurrent.ConcurrentHashMap;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.game.module.activity.ActivityTask;
 import com.game.module.activity.WelfareCard;
 import com.game.module.copy.Copy;
 import com.game.module.copy.TraverseMap;
 import com.game.module.fashion.Fashion;
-import com.game.module.pet.PetActivity;
 import com.game.module.sct.Train;
 import com.game.module.skill.SkillCard;
 import com.game.module.title.Title;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Sets;
+
+import java.util.*;
+import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 本对象存储一些业务系统的数据 最终将系列化成json字节，压缩后存入数据库
@@ -110,6 +110,7 @@ public class PlayerData {
 	private int honorPoint;
 
 	private List<Integer> modules =new ArrayList<>();// 开通的模块
+	private Set<Integer> hitModules = Sets.newHashSet();// 点击过的
 	//公会科技
 	private Set<Integer> technologys = new HashSet<>();
 
@@ -156,9 +157,37 @@ public class PlayerData {
 
 	private int roleId;
 
+	//是否领取激活码礼包
+	private  boolean receiveGiftBag;
+	private Set<Integer> giftBagSet = new HashSet<>();
+
+	public Set<Integer> getGiftBagSet() {
+		return giftBagSet;
+	}
+
+	public void setGiftBagSet(Set<Integer> giftBagSet) {
+		this.giftBagSet = giftBagSet;
+	}
+
+	public boolean isReceiveGiftBag() {
+		return receiveGiftBag;
+	}
+
+	public void setReceiveGiftBag(boolean receiveGiftBag) {
+		this.receiveGiftBag = receiveGiftBag;
+	}
+
 	public PlayerData(){
 		dailyTime = System.currentTimeMillis();
 		weeklyTime = System.currentTimeMillis();
+	}
+
+	public Set<Integer> getHitModules() {
+		return hitModules;
+	}
+
+	public void setHitModules(Set<Integer> hitModules) {
+		this.hitModules = hitModules;
 	}
 
 	public int getRoleId() {
@@ -622,17 +651,27 @@ public class PlayerData {
 
 	public List<List<Integer>> getSkillCardSets() {
 		if(skillCardSets.isEmpty()){
+			curCardId = 0;
 			List<Integer> first = Arrays.asList(0,0,0,0);
 			skillCardSets.add(first);
 		}
+
+		if(curCardId > 0 && skillCardSets.size() == 1) {
+		    curCardId = 0;
+        }
 		return skillCardSets;
 	}
 
 	@JsonIgnore
 	public List<Integer> getCurrCard(){
 		List<Integer> set = getSkillCardSets().get(curCardId);
-		if(set == null)
+		if(set == null) {
+			if(skillCardSets.isEmpty()){
+				List<Integer> first = Arrays.asList(0,0,0,0);
+				skillCardSets.add(first);
+			}
 			set = skillCardSets.get(0);
+		}
 		return set;
 	}
 

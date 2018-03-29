@@ -28,7 +28,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>3</sort>
+	<sort></sort>
 	<des>15级之后每升5级,即可领取海量钻石！</des>
 	<viewname>FundView</viewname>
 </config>
@@ -92,7 +92,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>6</sort>
+	<sort></sort>
 	<des></des>
 	<viewname>WeekMonthCardView</viewname>
 </config>
@@ -114,7 +114,7 @@
 </config>
 <config>
 	<id>8</id>
-	<name>乐起在线红包</name>
+	<name>在线红包</name>
 	<Conds></Conds>
 	<ActivityType>7</ActivityType>
 	<OpenType>1</OpenType>

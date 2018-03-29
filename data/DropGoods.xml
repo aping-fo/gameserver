@@ -24,29 +24,29 @@
 <config>
 	<id>1001</id>
 	<type>1</type>
-	<rewards>[[108,10],[109,1],[103,100],[10901,1],[10902,1]]</rewards>
-	<rate>[100,100,100,10,2]</rate>
+	<rewards>[[108,10],[109,1],[103,1000]]</rewards>
+	<rate>[100,50,100]</rate>
 	<goodsId></goodsId>
 </config>
 <config>
 	<id>1002</id>
 	<type>1</type>
-	<rewards>[[108,20],[109,2],[103,200],[10903,1],[10904,1]]</rewards>
-	<rate>[100,100,100,10,2]</rate>
+	<rewards>[[108,20],[109,2],[103,2000]]</rewards>
+	<rate>[100,50,100]</rate>
 	<goodsId></goodsId>
 </config>
 <config>
 	<id>1003</id>
 	<type>1</type>
-	<rewards>[[108,30],[109,3],[103,300],[10905,1],[10906,1]]</rewards>
-	<rate>[100,100,100,10,2]</rate>
+	<rewards>[[108,30],[109,3],[103,3000]]</rewards>
+	<rate>[100,50,100]</rate>
 	<goodsId></goodsId>
 </config>
 <config>
 	<id>1004</id>
 	<type>1</type>
-	<rewards>[[108,40],[109,4],[103,400],[10907,1],[10908,1]]</rewards>
-	<rate>[100,100,100,10,2]</rate>
+	<rewards>[[108,40],[109,4],[103,4000]]</rewards>
+	<rate>[100,50,100]</rate>
 	<goodsId></goodsId>
 </config>
 <config>

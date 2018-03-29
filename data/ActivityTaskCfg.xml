@@ -8,7 +8,7 @@
 	<Conds>[[1,11,12]]</Conds>
 	<Rewards>[[107,40]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0>99</Param0>
+	<Param0>20</Param0>
 	<des>11点到12点可领取</des>
 </config>
 <config>
@@ -16,10 +16,10 @@
 	<name>体力</name>
 	<ActivityId>1</ActivityId>
 	<ResetType>1</ResetType>
-	<Conds>[[1,17,18]]</Conds>
+	<Conds>[[1,16,17]]</Conds>
 	<Rewards>[[107,40]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0>99</Param0>
+	<Param0>20</Param0>
 	<des>17点到18点可领取</des>
 </config>
 <config>
@@ -30,7 +30,7 @@
 	<Conds>[[1,20,21]]</Conds>
 	<Rewards>[[107,40]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0>99</Param0>
+	<Param0>20</Param0>
 	<des>20点到21点可领取</des>
 </config>
 <config>
@@ -38,7 +38,7 @@
 	<name>成长基金</name>
 	<ActivityId>2</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[2,0]]</Conds>
+	<Conds>[[2,15]]</Conds>
 	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -149,7 +149,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,1]]</Conds>
-	<Rewards>[[103,1000],[102,50],[302002,10]]</Rewards>
+	<Rewards>[[102,1000],[103,10000],[108,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -160,7 +160,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,2]]</Conds>
-	<Rewards>[[103,2000],[102,100],[60041,30]]</Rewards>
+	<Rewards>[[20012,30],[102,1000],[65041,100]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -171,7 +171,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,3]]</Conds>
-	<Rewards>[[103,3000],[102,150],[125,1]]</Rewards>
+	<Rewards>[[102,1000],[103,10000],[51604,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -182,7 +182,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,4]]</Conds>
-	<Rewards>[[103,4000],[102,200],[51904,1]]</Rewards>
+	<Rewards>[[20011,30],[102,1000],[51904,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -193,7 +193,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,5]]</Conds>
-	<Rewards>[[103,5000],[102,250],[60021,30]]</Rewards>
+	<Rewards>[[65021,180],[103,10000],[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -204,7 +204,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,6]]</Conds>
-	<Rewards>[[103,6000],[102,300],[51601,1]]</Rewards>
+	<Rewards>[[20011,60],[102,1000],[51004,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -215,7 +215,7 @@
 	<ActivityId>3</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[3,7]]</Conds>
-	<Rewards>[[103,7000],[102,350],[50905,1]]</Rewards>
+	<Rewards>[[50905,1],[102,1000],[103,10000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -413,7 +413,7 @@
 	<ActivityId>8</ActivityId>
 	<ResetType>1</ResetType>
 	<Conds>[[8,300]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[103,10000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -424,7 +424,7 @@
 	<ActivityId>8</ActivityId>
 	<ResetType>1</ResetType>
 	<Conds>[[8,300]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[103,20000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -435,7 +435,40 @@
 	<ActivityId>8</ActivityId>
 	<ResetType>1</ResetType>
 	<Conds>[[8,300]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Rewards>[[103,30000]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>53</id>
+	<name>30分钟在线奖励</name>
+	<ActivityId>8</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[8,900]]</Conds>
+	<Rewards>[[102,25]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>54</id>
+	<name>45分钟在线奖励</name>
+	<ActivityId>8</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[8,900]]</Conds>
+	<Rewards>[[102,35]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+</config>
+<config>
+	<id>55</id>
+	<name>60分钟在线奖励</name>
+	<ActivityId>8</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[8,900]]</Conds>
+	<Rewards>[[102,45]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>

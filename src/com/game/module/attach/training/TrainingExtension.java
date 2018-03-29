@@ -3,6 +3,7 @@ package com.game.module.attach.training;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.game.module.goods.EquipService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
@@ -10,6 +11,7 @@ import com.game.module.task.TaskService;
 import com.game.params.ladder.TrainingResultVO;
 import com.game.params.training.TrainingFighterVO;
 import com.game.util.JsonUtils;
+import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.Response;
@@ -35,7 +37,8 @@ public class TrainingExtension {
     private PlayerService playerService;
     @Autowired
     private TaskService taskService;
-
+    @Autowired
+    private EquipService equipService;
     //获取相关信息
     @Command(3901)
     public TrainingVO getInfo(int playerId, Object param) {
@@ -92,7 +95,8 @@ public class TrainingExtension {
         result.name = player.getName();
         result.level = player.getLev();
         result.vocation = player.getVocation();
-
+        List<Integer> bufferList = equipService.getBufferList(playerId);
+        result.bufferList = Lists.newArrayList(bufferList);
         taskService.doTask(playerId, Task.TYPE_TRAIN_TIMES,1);
         return result;
 

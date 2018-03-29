@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.module.goods.EquipService;
+import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.Response;
@@ -40,6 +42,8 @@ public class ArenaExtension {
     private PlayerService playerService;
     @Autowired
     private GoodsService goodsService;
+    @Autowired
+    private EquipService equipService;
 
     @Command(3801)
     public ArenaVO getInfo(int playerId, Object param) {
@@ -175,6 +179,8 @@ public class ArenaExtension {
         vo.lv = player.getLev();
         vo.name = player.getName();
         vo.vocation = player.getVocation();
+        List<Integer> bufferList = equipService.getBufferList(playerId);
+        vo.bufferList = Lists.newArrayList(bufferList);
         return vo;
     }
 

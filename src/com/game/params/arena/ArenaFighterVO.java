@@ -18,6 +18,7 @@ public class ArenaFighterVO implements IProtocol {
 	public List<Integer> curCards;//当前装载的技能卡[技能卡配置表id,技能id,技能id,技能id]技能id为0表示该位置没有技能卡
 	public String name;//玩家名称
 	public int vocation;//职业
+	public List<Integer> bufferList;//套装buffer列表
 
 
 	public void decode(BufferBuilder bb) {
@@ -34,6 +35,7 @@ public class ArenaFighterVO implements IProtocol {
 		this.curCards = bb.getIntList();
 		this.name = bb.getString();
 		this.vocation = bb.getInt();
+		this.bufferList = bb.getIntList();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -50,5 +52,6 @@ public class ArenaFighterVO implements IProtocol {
 		bb.putIntList(this.curCards);
 		bb.putString(this.name);
 		bb.putInt(this.vocation);
+		bb.putIntList(this.bufferList);
 	}
 }

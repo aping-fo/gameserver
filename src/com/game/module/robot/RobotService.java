@@ -85,12 +85,12 @@ public class RobotService implements InitHandler {
         int minFight = ConfigData.globalParam().robotFight[0];
         int maxFight = ConfigData.globalParam().robotFight[1];
         int fightRate = RandomUtil.randInt(minFight, maxFight);
-        player.setHp(Math.round(fightRate * 3.32f));
-        player.setAttack(Math.round(fightRate * 0.18f));
-        player.setDefense(Math.round(fightRate * 0.13f));
-        player.setSymptom(Math.round(fightRate * 0.05f));
-        player.setFu(Math.round(fightRate * 0.1f));
-        player.setCrit(Math.round(fightRate * 0.1f));
+        player.setHp(Math.round(fightRate * ConfigData.globalParam().RobotParas[0]));
+        player.setAttack(Math.round(fightRate * ConfigData.globalParam().RobotParas[1]));
+        player.setDefense(Math.round(fightRate * ConfigData.globalParam().RobotParas[2]));
+        player.setSymptom(Math.round(fightRate * ConfigData.globalParam().RobotParas[3]));
+        player.setFu(Math.round(fightRate * ConfigData.globalParam().RobotParas[4]));
+        player.setCrit(Math.round(fightRate * ConfigData.globalParam().RobotParas[5]));
         player.setFight(fightRate);
 
         // 初始化用户数据
