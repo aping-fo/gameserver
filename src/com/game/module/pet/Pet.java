@@ -96,11 +96,11 @@ public class Pet {
     public PetVO toProto() {
         PetVO vo = new PetVO();
         vo.id = id;
-        vo.skillId = skillID;
+        //vo.skillId = skillID;
         vo.passiveSkillId = passiveSkillId;
-        vo.hasMutate = mutateFlag;
+        //.hasMutate = mutateFlag;
         vo.configId = configId;
-        vo.passiveSkillId2 = passiveSkillId2;
+        //vo.passiveSkillId2 = passiveSkillId2;
         vo.name = name;
         return vo;
     }

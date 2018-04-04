@@ -2,14 +2,12 @@ package com.game.module.giftbag;
 
 import com.game.data.CdkeyConfig;
 import com.game.data.Response;
-import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.serial.SerialDataService;
 import com.game.params.CDKRewardVo;
-import com.game.params.IntParam;
 import com.game.params.Reward;
 import com.game.params.StringParam;
 import com.game.util.ConfigData;
@@ -65,10 +63,10 @@ public class GiftBagService {
 
         //返回礼包物品信息
         int[][] rewards = config.item;
-        for(int i=0;i<rewards.length;i++){
-            Reward reward=new Reward();
-            reward.id=rewards[i][0];
-            reward.count=rewards[i][1];
+        for (int[] reward1 : rewards) {
+            Reward reward = new Reward();
+            reward.id = reward1[0];
+            reward.count = reward1[1];
             param.rewards.add(reward);
         }
 

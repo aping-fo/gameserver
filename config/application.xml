@@ -5,62 +5,115 @@
        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd                                                                                                                             http://www.springframework.org/schema/context                         http://www.springframework.org/schema/context/spring-context-2.5.xsd">
 
 
-	<!-- 主连接池属性暂定 -->
-	<bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url">
-		 <value><![CDATA[jdbc:mysql://127.0.0.1:3306/game1?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
-		</property>
-		<property name="username" value="root"/>
-		<property name="password" value="root"/>
-		 
-		<property name="maxActive" value="60"/>
-		<property name="maxIdle" value="45"/>
-		<property name="maxWait" value="3000"/>
-		<property name="initialSize" value="3"/>
-
-		<property name="testWhileIdle" value="true" />  
-		<property name="testOnBorrow" value="false" />  
-		<property name="testOnReturn" value="false" />  
-		<property name="validationQuery" value="select curdate()" />  
-		<property name="validationQueryTimeout" value="1" />  
-		<property name="timeBetweenEvictionRunsMillis" value="300000" />  
-		<property name="numTestsPerEvictionRun" value="20" />
+    <!-- 主连接池属性暂定 -->
+    <bean class="com.zaxxer.hikari.HikariDataSource" destroy-method="close" id="dataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl">
+            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/game1?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
+        </property>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="maximumPoolSize" value="32"/>
+        <property name="minimumIdle" value="4"/>
+        <property name="connectionTimeout" value="30000"/>
+        <property name="idleTimeout" value="300000"/>
+        <property name="maxLifetime" value="1814400"/>
     </bean>
-    
+
+
+
+    <bean class="com.zaxxer.hikari.HikariDataSource" destroy-method="close" id="logerDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbcUrl">
+            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/log1?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
+        </property>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+        <property name="maximumPoolSize" value="32"/>
+        <property name="minimumIdle" value="4"/>
+        <property name="connectionTimeout" value="30000"/>
+        <property name="idleTimeout" value="300000"/>
+        <property name="maxLifetime" value="1814400"/>
+    </bean>
+
+    <bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="dataSource2">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url">
+            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/game1?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
+        </property>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+
+        <property name="maxActive" value="60"/>
+        <property name="maxIdle" value="45"/>
+        <property name="maxWait" value="3000"/>
+        <property name="initialSize" value="3"/>
+
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+        <property name="validationQuery" value="select curdate()"/>
+        <property name="validationQueryTimeout" value="1"/>
+        <property name="timeBetweenEvictionRunsMillis" value="300000"/>
+        <property name="numTestsPerEvictionRun" value="20"/>
+    </bean>
+
     <!-- 日志库数据源 -->
-    <bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="logerDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url">
-		 <value><![CDATA[jdbc:mysql://127.0.0.1:3306/log1?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
-		</property>
-		<property name="username" value="root"/>
-		<property name="password" value="root"/>
-		 
-		<property name="maxActive" value="5"/>
-		<property name="maxIdle" value="3"/>
-		<property name="maxWait" value="3000"/>
-		<property name="initialSize" value="3"/>
+    <bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="logerDataSource2">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url">
+            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/log1?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
+        </property>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
 
-		<property name="testWhileIdle" value="true" />  
-		<property name="testOnBorrow" value="false" />  
-		<property name="testOnReturn" value="false" />  
-		<property name="validationQuery" value="select curdate()" />  
-		<property name="validationQueryTimeout" value="1" />  
-		<property name="timeBetweenEvictionRunsMillis" value="300000" />  
-		<property name="numTestsPerEvictionRun" value="5" />
+        <property name="maxActive" value="5"/>
+        <property name="maxIdle" value="3"/>
+        <property name="maxWait" value="3000"/>
+        <property name="initialSize" value="3"/>
+
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+        <property name="validationQuery" value="select curdate()"/>
+        <property name="validationQueryTimeout" value="1"/>
+        <property name="timeBetweenEvictionRunsMillis" value="300000"/>
+        <property name="numTestsPerEvictionRun" value="5"/>
     </bean>
-    
+
+    <!-- 日志库数据源 -->
+    <bean class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" id="eventDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url">
+            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/game_log_61?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
+        </property>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
+
+        <property name="maxActive" value="5"/>
+        <property name="maxIdle" value="3"/>
+        <property name="maxWait" value="3000"/>
+        <property name="initialSize" value="3"/>
+
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+        <property name="validationQuery" value="select curdate()"/>
+        <property name="validationQueryTimeout" value="1"/>
+        <property name="timeBetweenEvictionRunsMillis" value="300000"/>
+        <property name="numTestsPerEvictionRun" value="5"/>
+    </bean>
     <bean class="net.paoding.rose.jade.core.JadeDaoProcessor" id="jade.daoProcessor"/>
 
-	<bean class="net.paoding.rose.jade.provider.jdbctemplate.JdbcTemplateDataAccessProvider" id="jada.dataAccessProvider"/>
+    <bean class="net.paoding.rose.jade.provider.jdbctemplate.JdbcTemplateDataAccessProvider"
+          id="jada.dataAccessProvider"/>
 
-	<bean class="net.paoding.rose.jade.provider.jdbctemplate.ExpressSQLInterpreter" id="jade.expressSQLInterpreter"/>
+    <bean class="net.paoding.rose.jade.provider.jdbctemplate.ExpressSQLInterpreter" id="jade.expressSQLInterpreter"/>
 
-	<context:component-scan base-package="com.game,com.server">
-    	<context:include-filter expression="com.server.anotation.Extension" type="annotation"/>
-    	<!-- 排除指定类 -->
-    	<!-- context:exclude-filter type="assignable" expression="com.xxx.XXClass"/-->
+    <context:component-scan base-package="com.game,com.server">
+        <context:include-filter expression="com.server.anotation.Extension" type="annotation"/>
+        <!-- 排除指定类 -->
+        <!-- context:exclude-filter type="assignable" expression="com.xxx.XXClass"/-->
     </context:component-scan>
 
 </beans>

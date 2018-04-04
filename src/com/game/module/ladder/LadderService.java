@@ -88,7 +88,6 @@ public class LadderService implements InitHandler {
     @Autowired
     private TaskService taskService;
 
-    private final Map<Integer, Integer> FightTimes = new ConcurrentHashMap<>();
     //玩家ID -- rank
     private final Map<Integer, Integer> ladderRank = new ConcurrentHashMap<>();
     private final static int MAX_RANK = 200;
@@ -100,6 +99,10 @@ public class LadderService implements InitHandler {
      * 匹配房间,玩家ID 对房间
      */
     private final Map<Integer, Room> allRooms = new ConcurrentHashMap<>();
+    /**
+     * 需要检查是否超时的房间，战斗超时，加载超时等
+     */
+    private final Map<Integer, Room> checkTimeoutRooms = new ConcurrentHashMap<>();
     /**
      * 房间类型--- <房间人数---房间>
      */
@@ -138,14 +141,26 @@ public class LadderService implements InitHandler {
         }, 1, 1, TimeUnit.SECONDS);
     }
 
+    private void removeRoom(int roomId) {
+        checkTimeoutRooms.remove(roomId);
+        allRooms.remove(roomId);
+
+        ServerLogger.info("allRooms's size = " + allRooms.size());
+        ServerLogger.info("checkTimeoutRooms's size = " + checkTimeoutRooms.size());
+    }
+
     private void doCheckTimeOut() {
-        int currentTime = (int) (System.currentTimeMillis() / 1000);
         List<RoomPlayer> list = new ArrayList<>();
-        for (Map.Entry<Integer, Integer> s : FightTimes.entrySet()) {
-            if (currentTime >= s.getValue()) {
-                list.clear();
-                Room room = allRooms.get(s.getKey());
-                if (room != null) {
+        CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, LADDER_COPY);
+        for (Room room : checkTimeoutRooms.values()) {
+            int currentTime = (int) (System.currentTimeMillis() / 1000);
+            if (!room.fightFlag) { //加载超时匹配
+                if (currentTime >= room.startLoadTime + 30) {
+                    gameOver(room);
+                }
+            } else { //战斗时间检查
+                if (currentTime >= room.startFightTime + cfg.timeLimit) {
+                    list.clear();
                     list.addAll(room.roomPlayers.values());
                     if (list.size() < 2) { //保护
                         IntParam param = new IntParam();
@@ -153,8 +168,9 @@ public class LadderService implements InitHandler {
                         for (RoomPlayer roomPlayer : list) {
                             SessionManager.getInstance().sendMsg(CMD_GAME_OVER, param, roomPlayer.getPlayerId());
                         }
-                        ServerLogger.warn("ladder time out ====" + s.getKey());
-                        FightTimes.remove(s.getKey());
+
+                        removeRoom(room.id);
+                        ServerLogger.warn("ladder time out ====" + room.id);
                         return;
                     }
 
@@ -176,6 +192,7 @@ public class LadderService implements InitHandler {
                     }
                 }
             }
+
         }
     }
 
@@ -184,15 +201,17 @@ public class LadderService implements InitHandler {
      */
     private void doMatching() {
         for (Room source : allRooms.values()) {
-            if (source.matchFlag
-                    || source.exitFlag || source.fightFlag) { //check source room
+            if (source.matchFlag //已经匹配成功
+                    || source.exitFlag  //玩家退出游戏
+                    || source.fightFlag) { //房间正在战斗，check source room
                 continue;
             }
 
             for (int i = 0; i < MATCH_TIMES; i++) {
                 for (Room target : allRooms.values()) {
-                    if (source.matchFlag
-                            || source.exitFlag || source.fightFlag) { // check source room again
+                    if (source.matchFlag //已经匹配成功
+                            || source.exitFlag //玩家退出游戏
+                            || source.fightFlag) { // 房间正在战斗，check source room again
                         break;
                     }
 
@@ -200,8 +219,9 @@ public class LadderService implements InitHandler {
                         continue;
                     }
 
-                    if (target.exitFlag
-                            || target.matchFlag || target.fightFlag) { //check target room
+                    if (target.exitFlag //玩家退出游戏
+                            || target.matchFlag  //已经匹配成功
+                            || target.fightFlag) { //房间正在战斗，check target room
                         continue;
                     }
 
@@ -243,7 +263,6 @@ public class LadderService implements InitHandler {
 
     /**
      * 匹配失败
-     * TODO 机器人
      *
      * @param source
      */
@@ -257,6 +276,20 @@ public class LadderService implements InitHandler {
         }
     }
 
+    /**
+     * 匹配失败，进行机器人匹配
+     *
+     * @param source
+     */
+    private void matchingRobot(Room source) {
+        allRooms.remove(source.id);
+        IntParam param = new IntParam();
+        for (int playerId : source.roomPlayers.keySet()) {
+            Player player = playerService.getPlayer(playerId);
+            player.setRoomId(0);
+            SessionManager.getInstance().sendMsg(CMD_MATCHING_FAIL, param, playerId);
+        }
+    }
 
     /**
      * 开始游戏
@@ -312,6 +345,14 @@ public class LadderService implements InitHandler {
         for (int playerId : source.roomPlayers.keySet()) {
             SessionManager.getInstance().sendMsg(CMD_START_GAME, listParam, playerId);
         }
+
+        if (source.startLoadTime == 0) {
+            //开始加载
+            source.startLoadTime = (int) (System.currentTimeMillis() / 1000);
+            if (!checkTimeoutRooms.containsKey(source.id)) {
+                checkTimeoutRooms.put(source.id, source);
+            }
+        }
     }
 
     /**
@@ -337,18 +378,6 @@ public class LadderService implements InitHandler {
         vo.honorPoint = data.getHonorPoint();
         vo.fightTimes = ladder.getFightTimes();
         return vo;
-    }
-
-    public void addHonor(int playerId, int honor) {
-        PlayerData data = playerService.getPlayerData(playerId);
-        data.setHonorPoint(data.getHonorPoint() + honor);
-        refresh(playerId);
-    }
-
-    public void decHonor(int playerId, int honor) {
-        PlayerData data = playerService.getPlayerData(playerId);
-        data.setHonorPoint(data.getHonorPoint() - honor);
-        refresh(playerId);
     }
 
     // 刷新数据
@@ -382,6 +411,7 @@ public class LadderService implements InitHandler {
             ServerLogger.info("loading over fail ,,,roomId == " + player.getRoomId());
             return;
         }
+
         if (room.loadingCount.incrementAndGet() >= room.roomPlayers.size()) {
             IntParam param = new IntParam();
             param.param = Response.SUCCESS;
@@ -389,9 +419,12 @@ public class LadderService implements InitHandler {
             for (int id : room.roomPlayers.keySet()) {
                 SessionManager.getInstance().sendMsg(CMD_LOAD_OVER, param, id);
             }
-            CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, LADDER_COPY);
-            int ladderEndTime = (int) (System.currentTimeMillis() / 1000 + cfg.timeLimit);
-            FightTimes.put(player.getRoomId(), ladderEndTime);
+            //开始战斗
+            room.startFightTime = (int) (System.currentTimeMillis() / 1000);
+        }
+
+        if (!checkTimeoutRooms.containsKey(room.id)) {
+            checkTimeoutRooms.put(room.id, room);
         }
     }
 
@@ -414,13 +447,12 @@ public class LadderService implements InitHandler {
             serialDataService.getData().getLadderMap().put(playerId, ladder);
         }
         Player player = playerService.getPlayer(playerId);
-        if (player.getRoomId() != 0) {
-            Room room = allRooms.remove(player.getRoomId());
-            if (room != null) {
-                room.exitFlag = true;
-            }
-            player.setRoomId(0);
+
+        if (player.getRoomId() != 0 && allRooms.containsKey(player.getRoomId())) { //连续请求?正在匹配中
+            param.param = Response.ERR_PARAM;
+            return param;
         }
+
         Room room = new Room(IdGen.getAndIncrement(), ladder.getScore(), 0);
         room.roomPlayers.put(playerId, new RoomPlayer(player.getHp(), player.getPlayerId()));
         allRooms.put(room.id, room);
@@ -443,7 +475,6 @@ public class LadderService implements InitHandler {
         player.setRoomId(0);
         if (room != null) {
             room.exitFlag = true;
-            room.remove(playerId);
         }
         IntParam param = new IntParam();
         param.param = Response.SUCCESS;
@@ -461,8 +492,7 @@ public class LadderService implements InitHandler {
         if (room.checkHasRward()) { //检测是否领取奖励
             return;
         }
-        FightTimes.remove(room.id);
-        allRooms.remove(room.id);
+        removeRoom(room.id);
         ServerLogger.info("fight over, room size === " + allRooms.size());
         failPlayer1.setRoomId(0);
         failPlayer2.setRoomId(0);
@@ -529,8 +559,7 @@ public class LadderService implements InitHandler {
         if (room.checkHasRward()) { //检测是否领取奖励
             return;
         }
-        FightTimes.remove(room.id);
-        allRooms.remove(room.id);
+        removeRoom(room.id);
         ServerLogger.info("fight over, room size === " + allRooms.size());
         winPlayer.setRoomId(0);
         failPlayer.setRoomId(0);
@@ -690,6 +719,17 @@ public class LadderService implements InitHandler {
     }
 
 
+    private void gameOver(Room room) {
+        IntParam param = new IntParam();
+        param.param = Response.SUCCESS;
+        for (int id : room.roomPlayers.keySet()) {
+            SessionManager.getInstance().sendMsg(CMD_GAME_OVER, param, id);
+            Player p = playerService.getPlayer(id);
+            p.setRoomId(0);
+        }
+        removeRoom(room.id);
+    }
+
     /**
      * 掉线，退出处理
      *
@@ -702,15 +742,9 @@ public class LadderService implements InitHandler {
             if (room == null) {
                 return;
             }
+            room.exitFlag = true;
             if (!room.fightFlag) {
-                IntParam param = new IntParam();
-                param.param = Response.SUCCESS;
-                for (int id : room.roomPlayers.keySet()) {
-                    SessionManager.getInstance().sendMsg(CMD_GAME_OVER, param, id);
-                    Player p = playerService.getPlayer(id);
-                    p.setRoomId(0);
-                }
-                allRooms.remove(failPlayer.getRoomId());
+                gameOver(room);
                 return;
             }
 
@@ -721,8 +755,7 @@ public class LadderService implements InitHandler {
                 }
             }
             if (winPlayer == null) {
-                FightTimes.remove(failPlayer.getRoomId());
-                allRooms.remove(failPlayer.getRoomId());
+                removeRoom(room.id);
                 return;
             }
             onGameOver(room, winPlayer, failPlayer);
@@ -734,26 +767,14 @@ public class LadderService implements InitHandler {
     public List<Ladder> ladderSort() {
         if (serialDataService.getData() != null) {
             ladderRank.clear();
-            //ServerLogger.warn("ladder sort ...........");
             List<Ladder> list = new ArrayList<>(serialDataService.getData().getLadderMap().values());
             Collections.sort(list, COMPARATOR);
             LADDER_RANK.params = new ArrayList<>();
-            // int i = 0;
             for (Ladder ladder : list) {
                 Player player = playerService.getPlayer(ladder.getPlayerId());
                 if (player == null) {
                     continue;
                 }
-                //i++;
-                //if (i < MAX_RANK) {
-                //titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER, i, ActivityConsts.UpdateType.T_VALUE);
-                //ladderRank.put(ladder.getPlayerId(), i);
-                //}
-                /*PlayerView playerView = serialDataService.getData().getPlayerView(ladder.getPlayerId());
-                if (playerView.getLadderMaxRank() == 0 || playerView.getLadderMaxRank() > i) {
-                    playerView.setLadderMaxRank(i);
-                }
-                taskService.doTask(ladder.getPlayerId(), Task.TYPE_LADDER_RANK,i);*/
 
                 LadderRankVO vo = new LadderRankVO();
                 vo.playerId = ladder.getPlayerId();
@@ -776,14 +797,6 @@ public class LadderService implements InitHandler {
     public ListParam getLadderRank() {
         return LADDER_RANK;
     }
-
-   /* private void onLogin(int playerId) {
-        Integer rank = serialDataService.getData().getLadderRank().get(playerId);
-        if (rank == null) {
-            return;
-        }
-        taskService.doTask(playerId, Task.TYPE_LADDER_RANK, rank.intValue());
-    }*/
 
     public int getRank(int playerId) {
         Integer rank = ladderRank.get(playerId);

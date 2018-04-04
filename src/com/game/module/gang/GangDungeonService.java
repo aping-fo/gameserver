@@ -1,7 +1,6 @@
 package com.game.module.gang;
 
 import com.game.data.*;
-import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
@@ -12,6 +11,7 @@ import com.game.module.serial.PlayerView;
 import com.game.module.serial.SerialDataService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.module.worldboss.WorldBossExtension;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.gang.*;
@@ -77,6 +77,7 @@ public class GangDungeonService {
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
         if (gangDungeon == null) {
             gangDungeon = new GangDungeon();
+            gangDungeon.setHasOpen(T_OPEN);
             gangDungeon.setLayer(1);
             serialDataService.getData().getGangMap().putIfAbsent(player.getGangId(), gangDungeon);
         }
@@ -170,10 +171,10 @@ public class GangDungeonService {
         }
 
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
-        if (gangDungeon.getHasOpen() == T_DONT_OPEN) {
+        /*if (gangDungeon.getHasOpen() == T_DONT_OPEN) {
             vo.errCode = Response.GUILD_COPY_DO_NOT_OPEN;
             return vo;
-        }
+        }*/
 
         if (gangDungeon.getHasOpen() == T_PASS) {
             vo.errCode = Response.ERR_PARAM;
@@ -186,18 +187,30 @@ public class GangDungeonService {
             vo.errCode = Response.NO_LEV;
             return vo;
         }
-        if (!gangDungeon.checkAndSet(playerId)) {
-            vo.errCode = Response.GUILD_COPY_FIGHTING;
-            return vo;
+
+        if (gangDungeon.getMonsterMap().isEmpty()) {
+            gangDungeon.getAwardStep().clear();
+            List<MonsterRefreshConfig> monsters = ConfigData.GangMonsters.get(cfg.copyId);
+            for (MonsterRefreshConfig conf : monsters) {
+                MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
+                Monster m = new Monster();
+                m.setId(conf.id);
+                m.setMonsterId(conf.monsterId);
+                m.setHp(monsterConfig.hp);
+                m.setCurrentHp(monsterConfig.hp);
+                gangDungeon.getMonsterMap().put(conf.id, m);
+            }
         }
 
         gangDungeon.hasOver = false;
         member.setChallengeTimes(member.getChallengeTimes() - 1);
         member.hp = player.getHp();
         member.hurt = 0;
+        member.bFight = true;
         vo.errCode = Response.SUCCESS;
         vo.monsters = new ArrayList<>();
         for (Monster m : gangDungeon.getMonsterMap().values()) {
+            //m.setCurrentHp(m.getHp());
             if (m.getCurrentHp() <= 0) {
                 continue;
             }
@@ -238,57 +251,68 @@ public class GangDungeonService {
             member.hp = member.hp - hurtVO.hurtValue;
             if (member.hp <= 0) { //屎了?
                 onBattleEnd(player);
+                IntParam param = new IntParam();
+                param.param = player.getPlayerId();
+                sceneService.brocastToSceneCurLine(player, WorldBossExtension.PLAYER_DEAD, param);
             }
         } else { //怪物
-            int maxHurt = (int) (player.getFight() * 0.06 * 1.65 * 3 * 2.05 + 4185);
-            if (hurtVO.hurtValue > maxHurt) {
+            if (!player.checkHurt(hurtVO.hurtValue)) {
                 ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
                 return;
             }
 
-            Monster m = gangDungeon.getMonsterMap().get(hurtVO.targetId);
-            if (m.getCurrentHp() <= 0) {
-                ServerLogger.info("==================== Monster Die，Monster Id = " + m.getId());
-                return;
-            }
-            int hp = m.getCurrentHp() - hurtVO.hurtValue > 0 ? m.getCurrentHp() - hurtVO.hurtValue : 0;
-            if (hp == 0) {
-                MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, m.getMonsterId());
-                Map<Integer, int[]> condParams = Maps.newHashMap();
-                condParams.put(Task.FINISH_KILL, new int[]{monsterCfg.type, m.getMonsterId(), 1});
-                condParams.put(Task.TYPE_KILL, new int[]{monsterCfg.type, 1});
-                condParams.put(Task.TYPE_KILL, new int[]{0, 1});
-                taskService.doTask(player.getPlayerId(), condParams);
-            }
-            m.setCurrentHp(hp);
-            MonsterHurtVO vo = new MonsterHurtVO();
-            vo.actorId = hurtVO.targetId;
-            vo.curHp = hp;
-            vo.hurt = hurtVO.hurtValue;
-            vo.isCrit = hurtVO.isCrit;
-            vo.type = 1;
-            //SessionManager.getInstance().sendMsg(CMD_MONSTER_INFO, vo, player.getPlayerId());
-            sceneService.brocastToSceneCurLine(player, CMD_MONSTER_INFO, vo, null);
-
-            member.hurt += hurtVO.hurtValue;
-            if (gangDungeon.checkDeath()) { //怪死了
-                ServerLogger.info("====================>>>>>>  All Monster Die,Begin To Send Fight Over");
-                int maxLayer = ConfigData.getConfigs(GangCopyCfg.class).size();
-                if (gangDungeon.getLayer() < maxLayer) {
-                    for (int pid : gang.getMembers().keySet()) { //成就
-                        PlayerView playerView = serialDataService.getData().getPlayerView(pid);
-                        if (playerView.getGuildLayer() < gangDungeon.getLayer()) {
-                            playerView.setGuildLayer(gangDungeon.getLayer());
-                        }
-                        taskService.doTask(pid, Task.TYPE_GUILD_COPY, gangDungeon.getLayer());
-                    }
-
-                    gangDungeon.setHasOpen(T_DONT_OPEN); //怪物全死了，重置
-                    gangDungeon.setLayer(gangDungeon.getLayer() + 1);
-                } else {
-                    gangDungeon.setHasOpen(T_PASS);
+            try {
+                gangDungeon.getLock().lock();
+                Monster m = gangDungeon.getMonsterMap().get(hurtVO.targetId);
+                if (m == null || m.getCurrentHp() <= 0) {
+                    ServerLogger.info("==================== Monster Die，Monster Id = " + (m != null ? m.getId() : 0));
+                    return;
                 }
-                onBattleEnd(player);
+
+                int hp = m.getCurrentHp() - hurtVO.hurtValue > 0 ? m.getCurrentHp() - hurtVO.hurtValue : 0;
+                if (hp == 0) {
+                    MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, m.getMonsterId());
+                    Map<Integer, int[]> condParams = Maps.newHashMap();
+                    condParams.put(Task.FINISH_KILL, new int[]{monsterCfg.type, m.getMonsterId(), 1});
+                    condParams.put(Task.TYPE_KILL, new int[]{monsterCfg.type, 1});
+                    condParams.put(Task.TYPE_KILL, new int[]{0, 1});
+                    taskService.doTask(player.getPlayerId(), condParams);
+                }
+                m.setCurrentHp(hp);
+                MonsterHurtVO vo = new MonsterHurtVO();
+                vo.actorId = hurtVO.targetId;
+                vo.curHp = hp;
+                vo.hurt = hurtVO.hurtValue;
+                vo.isCrit = hurtVO.isCrit;
+                vo.type = 1;
+                //SessionManager.getInstance().sendMsg(CMD_MONSTER_INFO, vo, player.getPlayerId());
+                sceneService.brocastToSceneCurLine(player, CMD_MONSTER_INFO, vo, null);
+
+                member.hurt += hurtVO.hurtValue;
+                if (gangDungeon.checkDeath()) { //怪死了
+                    ServerLogger.info("====================>>>>>>  All Monster Die,Begin To Send Fight Over");
+                    int maxLayer = ConfigData.getConfigs(GangCopyCfg.class).size();
+                    if (gangDungeon.getLayer() <= maxLayer) {
+                        for (int pid : gang.getMembers().keySet()) { //成就
+                            PlayerView playerView = serialDataService.getData().getPlayerView(pid);
+                            if (playerView.getGuildLayer() < gangDungeon.getLayer()) {
+                                playerView.setGuildLayer(gangDungeon.getLayer());
+                            }
+                            taskService.doTask(pid, Task.TYPE_GUILD_COPY, gangDungeon.getLayer());
+                            Player p = playerService.getPlayer(pid);
+                            onBattleEnd(p);
+                        }
+
+                        int layer = gangDungeon.getLayer() + 1;
+                        if(gangDungeon.getLayer() + 1 > maxLayer) {
+                            gangDungeon.setHasOpen(T_PASS);
+                            layer = maxLayer;
+                        }
+                        gangDungeon.setLayer(layer);
+                    }
+                }
+            } finally {
+                gangDungeon.getLock().unlock();
             }
         }
 
@@ -298,6 +322,9 @@ public class GangDungeonService {
             if (progress >= cfg.progress[i]) {
                 int step = i + 1;
                 if (gangDungeon.checkAndAdd(step)) {
+                    if (step == cfg.progress.length) {
+                        gangDungeon.getMonsterMap().clear();
+                    }
                     ServerLogger.info("============ send guild copy step award" + cfg.progress[i] + "   progress = " + progress);
                     List<GoodsEntry> rewards = new ArrayList<>();
                     int[][] itemArr = cfg.progressRewards.get(step);
@@ -310,24 +337,22 @@ public class GangDungeonService {
                     for (int pid : gang.getMembers().keySet()) {
                         mailService.sendSysMail(title, content, rewards, pid, LogConsume.GUILD_COPY_REWARD);
                     }
-                    break;
                 }
             }
         }
+
     }
 
     private void onBattleEnd(Player player) {
         Gang gang = gangService.getGang(player.getGangId());
         GMember member = gang.getMembers().get(player.getPlayerId());
-
+        if (member == null || !member.bFight) {
+            return;
+        }
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(gang.getId());
         if (gangDungeon == null) {
             return;
         }
-        if (gangDungeon.hasOver) {
-            return;
-        }
-        gangDungeon.hasOver = true;
         GangHurt hurt = gangDungeon.getHurtMap().get(player.getPlayerId());
         if (hurt == null) {
             hurt = new GangHurt(player.getPlayerId(), player.getName(), player.getVocation());
@@ -343,13 +368,12 @@ public class GangDungeonService {
         }
         gangDungeon.hurtRankMap.put(hurt, hurt);
 
-
         GangCopyEndVO vo = new GangCopyEndVO();
         vo.currentHurt = member.hurt;
         vo.totalHurt = hurt.getHurt();
         vo.progress = gangDungeon.getProgress();
         vo.gangContribution = Math.round(member.hurt / (gangDungeon.getTotalHp() * 1.0f) * ConfigData.globalParam().guildRewardRate);
-        gangService.addContribute(player.getPlayerId(),vo.gangContribution);
+        gangService.addContribute(player.getPlayerId(), vo.gangContribution);
         int rank = 0;
         for (GangHurt gh : gangDungeon.hurtRankMap.values()) {
             if (gh.getPlayerId() == player.getPlayerId()) {
@@ -362,6 +386,7 @@ public class GangDungeonService {
         SessionManager.getInstance().sendMsg(CMD_BATTLE_END, vo, player.getPlayerId());
         member.hp = 0;
         member.hurt = 0;
+        member.bFight = false;
     }
 
     /**

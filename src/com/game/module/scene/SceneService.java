@@ -105,7 +105,7 @@ public class SceneService implements InitHandler {
         } else if (cfg.sceneSubType == Scene.MULTI_LADDER) {
             return String.format("%d_%d", sceneId, player.getRoomId());
         } else if (cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
-            return String.format("%d_%d", sceneId, player.getPlayerId());
+            return String.format("%d_%d_%d", sceneId, player.getGangId(), player.getSubLine());
         } else {
             return String.format("%d_%d", sceneId, subLine);
         }
@@ -233,7 +233,8 @@ public class SceneService implements InitHandler {
         if (cfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
             worldBossService.addPlayer(player.getPlayerId());
         } else if (cfg.sceneSubType == Scene.MULTI_GROUP
-                || cfg.sceneSubType == Scene.MULTI_PVE) {
+                || cfg.sceneSubType == Scene.MULTI_PVE
+                || cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
             multiService.onEnter(player.getPlayerId());
         }
         /*else if(lastCfg.sceneSubType == Scene.MULTI_PVE) { //TODO 其他多人本TVE

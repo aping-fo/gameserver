@@ -58,15 +58,8 @@ public class PlayerExtension {
             return null;
         }
 
-        //兼容新老账号
-        String accName = param.accName;
-        List<Player> roleList = playerService.getPlayersByAccName(accName);
-        if(roleList.size()==0){
-            accName = param.userId;
-            roleList = playerService.getPlayersByAccName(accName);
-        }
-
-        channel.attr(CHANNEL).set(accName);
+        List<Player> roleList = playerService.getPlayersByAccName(param.userId);
+        channel.attr(CHANNEL).set(param.userId);
 
         ListParam<SRoleVo> vo = new ListParam<SRoleVo>();
         vo.params = new ArrayList<SRoleVo>(roleList.size());

@@ -44,6 +44,14 @@ public class Room {
     public final AtomicInteger loadingCount;
     public volatile boolean rewardFlag = false;
     private final ReentrantLock lock = new ReentrantLock();
+    /**
+     * 开始战斗时间，用于检查战斗时间是否超时
+     */
+    public int startFightTime;
+    /**
+     * 客户端开始加载资源时间
+     */
+    public int startLoadTime;
 
     public Room(int id, int score, int type) {
         this.id = id;
@@ -72,6 +80,7 @@ public class Room {
 
     /**
      * 检测是否结算奖励
+     *
      * @return
      */
     public boolean checkHasRward() {

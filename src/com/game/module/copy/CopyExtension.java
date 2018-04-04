@@ -163,9 +163,7 @@ public class CopyExtension {
     // 星级宝箱
     @Command(1909)
     public Object getStarRewards(int playerId, IntParam id) {
-        IntParam code = new IntParam();
-        code.param = copyService.get3starReward(playerId, id.param);
-        return code;
+        return copyService.get3starReward(playerId, id.param);
     }
 
     //结束无尽漩涡

@@ -253,8 +253,7 @@ public class WorldBossService implements InitHandler {
         }
 
         Player player = playerService.getPlayer(playerId);
-        int maxHurt = (int) (player.getFight() * 0.06 * 1.65 * 3 * 2.05 + 4185);
-        if (hurt > maxHurt) {
+        if (!player.checkHurt(hurt)) {
             ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
             return;
         }

@@ -8,6 +8,7 @@ import com.game.module.player.PlayerService;
 import com.game.params.IntParam;
 import com.game.sdk.erating.consts.ERatingType;
 import com.game.sdk.erating.domain.*;
+import com.game.sdk.erating.domain.base.Report;
 import com.game.sdk.net.HttpClient;
 import com.game.sdk.utils.XmlParser;
 import com.game.util.TimerService;
@@ -17,7 +18,6 @@ import io.netty.channel.Channel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -38,8 +38,8 @@ public class ERatingService implements InitHandler {
 
     @Override
     public void handleInit() {
-        GwDatas gwDatas = new GwDatas(ERatingType.CMD_GW_DATA_REPORT);
-        GwData data = new GwData(ERatingType.ER_SERVER_START, 0);
+        GatewayReqInfos gwDatas = new GatewayReqInfos(ERatingType.CMD_GW_DATA_REPORT);
+        GatewayInfo data = new GatewayInfo(ERatingType.ER_SERVER_START, 0);
         gwDatas.getGwData().add(data);
         sendReport(gwDatas, 0);
 
@@ -47,8 +47,8 @@ public class ERatingService implements InitHandler {
             @Override
             public void run() {
                 try {
-                    GwDatas gwDatas = new GwDatas(ERatingType.CMD_GW_DATA_REPORT);
-                    GwData data = new GwData(ERatingType.ER_ONLINE_COUNT, playerService.getPlayers().size());
+                    GatewayReqInfos gwDatas = new GatewayReqInfos(ERatingType.CMD_GW_DATA_REPORT);
+                    GatewayInfo data = new GatewayInfo(ERatingType.ER_ONLINE_COUNT, playerService.getPlayers().size());
                     gwDatas.getGwData().add(data);
                     sendReport(gwDatas, 0);
                 } catch (Throwable e) {
@@ -65,9 +65,9 @@ public class ERatingService implements InitHandler {
             public void run() {
                 try {
                     if (!SysConfig.debug) {
-                        //ServerLogger.warn("send report,xml data \r\n" + report.toProto());
+                        ServerLogger.warn("send report,xml data \r\n" + report.toProto());
                         String xmlData = HttpClient.sendPostRequest(report.toProto());
-                        //ServerLogger.warn("receive xml data \r\n" + xmlData);
+                        ServerLogger.warn("receive xml data \r\n" + xmlData);
                         int[] arr = XmlParser.cmdAndResultParser(xmlData);
                         if (arr[1] != 1) { //
                             //ServerLogger.warn("receive xml data exception \r\n" + xmlData);
@@ -112,18 +112,10 @@ public class ERatingService implements InitHandler {
                             userId = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_USER_ID);
                             param.param = userId;
                         }
-
                         //用户id为0
                         if (userId == 0) {
                             param.param = -4;
                             ServerLogger.warn("userId == 0 => " + xmlData);
-                        }
-
-                        //是否新用户
-                        List<Player> roleList = playerService.getPlayersByAccName(user);
-                        //TODO 要删除的临时代码
-                        if (SysConfig.serverId == 20 && roleList.size() == 0) {
-                            param.param = -3;
                         }
                         SessionManager.sendDataInner(channel, 1012, param);
                     }
@@ -145,7 +137,7 @@ public class ERatingService implements InitHandler {
     //登录认证
     public void reportAuthen(String user, String token, int clientIp, int clientPort, String clientMac
             , int clientType, String sdkVersion, Channel channel) {
-        UserAuthenData data = new UserAuthenData(ERatingType.CMD_JOINT_AUTHEN_EX);
+        UserAuthenInfo data = new UserAuthenInfo(ERatingType.CMD_JOINT_AUTHEN_EX);
         data.setUn(user);
         data.setToken(token);
         data.setUserIP(clientIp);
@@ -164,7 +156,7 @@ public class ERatingService implements InitHandler {
      * @param player
      */
     public void reportCreateRole(Player player) {
-        RoleData role = new RoleData(ERatingType.CMD_CREATE_ROLE);
+        RoleInfo role = new RoleInfo(ERatingType.CMD_CREATE_ROLE);
         role.setUserId(player.userId);
         role.setRoleName(player.getName());
         role.setRoleGender(player.getSex());
@@ -177,7 +169,7 @@ public class ERatingService implements InitHandler {
 
     //角色登录
     public void reportRoleEnter(Player player, int roleId) {
-        RoleEnterData data = new RoleEnterData(ERatingType.CMD_ROLE_ENTER_GAME_EX5);
+        RoleEnterInfo data = new RoleEnterInfo(ERatingType.CMD_ROLE_ENTER_GAME_EX5);
         data.setServerId(SysConfig.serverId);
         data.setUserId(player.userId);
         data.setRoleId(roleId);
@@ -203,7 +195,7 @@ public class ERatingService implements InitHandler {
      * @param player
      */
     public void reportRoleLogout(Player player, int roleId) {
-        RoleLogoutData data = new RoleLogoutData(ERatingType.CMD_USER_LOGOUT);
+        RoleLogoutInfo data = new RoleLogoutInfo(ERatingType.CMD_USER_LOGOUT);
         data.setUserId(player.userId);
         data.setRoleId(roleId);
         data.setLogoutFlag(1);
@@ -222,7 +214,7 @@ public class ERatingService implements InitHandler {
                                 int count, int price,
                                 int lkDiscountPrice,
                                 int subjectId, int subAmout) {
-        ItemDetailData data = new ItemDetailData(ERatingType.CMD_MONEY_COST);
+        ItemDetailInfo data = new ItemDetailInfo(ERatingType.CMD_MONEY_COST);
         data.setDetailId(System.nanoTime() / 10);
         data.setUserId(player.userId);
         data.setRoleId(roleId);
@@ -244,7 +236,7 @@ public class ERatingService implements InitHandler {
 
     public void reportAddMoney(Player player, int roleId,
                                int subjectId, int amount, String source) {
-        MoneyData data = new MoneyData(ERatingType.CMD_MONEY_ADD);
+        MoneyInfo data = new MoneyInfo(ERatingType.CMD_MONEY_ADD);
         data.setDetailId(System.nanoTime() / 10);
         data.setUserId(player.userId);
         data.setRoleId(roleId);
@@ -257,7 +249,7 @@ public class ERatingService implements InitHandler {
 
     public static void main(String[] args) throws Exception {
         SysConfig.init();
-        UserAuthenData data = new UserAuthenData(ERatingType.CMD_JOINT_AUTHEN_EX);
+        UserAuthenInfo data = new UserAuthenInfo(ERatingType.CMD_JOINT_AUTHEN_EX);
         data.setUn("shulouxifeng");
         data.setToken("2523IrM686tR90mi");
         data.setUserIP(906511);
@@ -267,6 +259,17 @@ public class ERatingService implements InitHandler {
         data.setSdkVersion("");
         data.setUnixTime((int) (System.currentTimeMillis() / 1000));
         data.setAdid("" + 0);
-        HttpClient.sendPostRequest(data.toProto());
+        //HttpClient.sendPostRequest(data.toProto());
+
+        MoneyInfo data1 = new MoneyInfo(ERatingType.CMD_MONEY_ADD);
+        data1.setDetailId(System.nanoTime() / 10);
+        data1.setUserId(1);
+        data1.setRoleId(1);
+        data1.setAddTime(System.currentTimeMillis() / 1000);
+        data1.setSubjectId(1);
+        data1.setSource("111");
+        data1.setAmount(1);
+        data1.test();
+        System.out.println(data1.toProto());
     }
 }

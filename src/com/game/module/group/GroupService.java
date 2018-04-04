@@ -730,6 +730,11 @@ public class GroupService {
                 broadcastGroup(group);
             }
         } else {
+            if (!player.checkHurt(hurtVO.hurtValue)) {
+                ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
+                return;
+            }
+
             SMonsterVo monster = monsters.get(hurtVO.targetId);
             monster.curHp -= hurtVO.hurtValue;
             int hp = monster.curHp > 0 ? monster.curHp : 0;

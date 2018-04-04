@@ -32,10 +32,7 @@ import com.game.module.team.TeamService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
 import com.game.module.traversing.TraversingService;
-import com.game.params.CopyReward;
-import com.game.params.DropReward;
-import com.game.params.Reward;
-import com.game.params.RewardList;
+import com.game.params.*;
 import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
 import com.game.params.copy.CopyVo;
@@ -926,11 +923,13 @@ public class CopyService {
     }
 
     // 获得三星奖励
-    public int get3starReward(int playerId, int id) {
+    public Int2Param get3starReward(int playerId, int id) {
+        Int2Param param = new Int2Param();
         // 有无领取过
         PlayerData data = playerService.getPlayerData(playerId);
         if (data.getThreeStars().contains(id)) {
-            return Response.SYS_ERR;
+            param.param1 = Response.SYS_ERR;
+            return param;
         }
         // 验证条件
         // 设置已经领取
@@ -939,8 +938,8 @@ public class CopyService {
         ThreeStarRewardCfg cfg = ConfigData.getConfig(ThreeStarRewardCfg.class, id);
         // 更新
         goodsService.addRewards(playerId, cfg.rewards, LogConsume.THREE_STAR);
-        CopyInfo info = getCopyInfo(playerId);
-        SessionManager.getInstance().sendMsg(CopyExtension.CMD_REFRESH, info, playerId);
-        return Response.SUCCESS;
+        param.param1 = Response.SUCCESS;
+        param.param2 = id;
+        return param;
     }
 }

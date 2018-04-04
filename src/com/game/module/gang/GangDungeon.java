@@ -32,13 +32,18 @@ public class GangDungeon {
     /**
      * 0：未开启，1：已开启，2：已通关
      */
-    private int hasOpen = 0;
+    private int hasOpen = 1;
     @JsonIgnore
-    public boolean hasOver; //战斗是否结束并结算
+    public volatile boolean hasOver; //战斗是否结束并结算
     /**
      * 公会BOSS 伤害
      */
     private Map<Integer, GangHurt> hurtMap = new ConcurrentHashMap<>();
+
+    public ReentrantLock getLock() {
+        return lock;
+    }
+
     /**
      * 公会BOSS 伤害排名
      */
@@ -169,7 +174,7 @@ public class GangDungeon {
 
     public void reset() {
         layer = 1;
-        hasOpen = 0;
+        hasOpen = 1;
         hasOver = false;
         monsterMap.clear();
         awardStep.clear();

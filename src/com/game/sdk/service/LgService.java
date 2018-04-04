@@ -3,8 +3,8 @@ package com.game.sdk.service;
 import com.game.data.ChargeConfig;
 import com.game.module.vip.VipService;
 import com.game.sdk.erating.consts.ERatingType;
-import com.game.sdk.erating.domain.CommonRespData;
-import com.game.sdk.erating.domain.RechargeData;
+import com.game.sdk.erating.domain.CommonRespInfo;
+import com.game.sdk.erating.domain.RechargeInfo;
 import com.game.sdk.utils.XmlParser;
 import com.game.util.ConfigData;
 import com.server.util.ServerLogger;
@@ -31,7 +31,7 @@ public class LgService implements SdkService {
     public void recharge(HttpServletRequest req, HttpServletResponse resp) throws Exception {
         resp.addHeader("Pragma", "no-cache");
         resp.addHeader("Accept", "*/*");
-        CommonRespData result = new CommonRespData(ERatingType.CMD_CHARGE_RESP);
+        CommonRespInfo result = new CommonRespInfo(ERatingType.CMD_CHARGE_RESP);
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(req.getInputStream(), "utf-8"))) {
             StringBuilder stringBuilder = new StringBuilder();
             String ln;
@@ -52,7 +52,7 @@ public class LgService implements SdkService {
                 return;
             }
 
-            RechargeData data = new RechargeData();
+            RechargeInfo data = new RechargeInfo();
             XmlParser.xmlParser(content, data);
             if (orders.contains(data.getDetail_id())) {
                 result.setResultCode(ERatingType.ErrorCode.E_CHARGE_DUPLICATE);

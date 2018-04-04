@@ -81,7 +81,7 @@ public class SceneExtension {
 	public Object exit(int playerId, Object param) {
 		Player player = playerService.getPlayer(playerId);
 		CEnterScene scene = new CEnterScene();
-		scene.sceneId = 10014;//player.getLastSceneId();
+		scene.sceneId = player.getLastSceneId();
 		ServerLogger.debug("exit and return to scene:" + scene.sceneId);
 		scene.x = player.getLastPos()[0];
 		scene.z = player.getLastPos()[2];

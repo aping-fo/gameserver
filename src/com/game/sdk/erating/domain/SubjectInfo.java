@@ -1,6 +1,7 @@
 package com.game.sdk.erating.domain;
 
-import com.game.sdk.erating.NodeName;
+import com.game.sdk.erating.domain.base.NodeName;
+import com.game.sdk.erating.domain.base.Report;
 
 /**
  * Created by lucky on 2018/2/1.

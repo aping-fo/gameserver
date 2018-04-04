@@ -7,6 +7,7 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
 
 import com.game.SysConfig;
@@ -29,6 +30,7 @@ public class ManagerServer {
 	            		ChannelPipeline p = ch.pipeline();
 	            		p.addLast(new HttpServerCodec());
 						p.addLast(new ManagerHandler());
+						p.addLast(new HttpObjectAggregator(65535));
 	            		
 	            	}
 				});
