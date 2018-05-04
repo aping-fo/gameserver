@@ -141,7 +141,9 @@ public class EquipService {
         int count = 0;
         boolean bUpdate = false;
         PlayerData data = playerService.getPlayerData(playerId);
+        List<GoodsEntry> list = Lists.newArrayList();
         for (long id : ids) {
+            list.clear();
             int equipMaterials = 0;
             Goods goods = goodsService.getGoods(playerId, id);
             if (goods == null) {
@@ -156,17 +158,24 @@ public class EquipService {
             goodsId = cfg.decompose[0][0];
             equipMaterials += cfg.decompose[0][1];
 
+            GoodsEntry goodsEntry = new GoodsEntry(cfg.decompose[0][0],cfg.decompose[0][1]);
+            list.add(goodsEntry);
             //升星返还
             if (goods.getStar() > 0) {
                 EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type * 100000 + cfg.level * 100 + goods.getStar());
                 if (nextCfg != null) {
-                    equipMaterials += nextCfg.decompose;
+                    if(goodsId == Goods.EQUIP_TOOL) {
+                        goodsEntry.count += nextCfg.decompose;
+                    }else {
+                        GoodsEntry goodsEntry1 = new GoodsEntry(Goods.EQUIP_TOOL,nextCfg.decompose);
+                        list.add(goodsEntry1);
+                    }
                 }
             }
             count += equipMaterials;
             //扣除物品
             goodsService.decSpecGoods(goods, goods.getStackNum(), LogConsume.DECOMPOSE_DEC);
-            goodsService.addRewrad(playerId, cfg.decompose[0][0], equipMaterials, LogConsume.DECOMPOSE_DEC);
+            goodsService.addRewards(playerId, list, LogConsume.DECOMPOSE_DEC);
             if (goods.getStoreType() == Goods.EQUIP) { //goods.setStoreType(Goods.EQUIP);
                 bUpdate = true;
             }

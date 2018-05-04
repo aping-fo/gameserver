@@ -111,7 +111,7 @@ public class GmService {
         try {
             String[] params = gm.substring(1).split(" ");
             String methodName = params[0].replace("_", "").toLowerCase();
-            Method[] methods = this.getClass().getMethods();
+            Method[] methods = this.getClass().getDeclaredMethods();
             boolean find = false;
             for (Method method : methods) {
                 if (method.getName().toLowerCase().equals(methodName)) {
@@ -157,6 +157,11 @@ public class GmService {
         chats.params = new ArrayList<ChatVo>();
         chats.params.add(vo);
         SessionManager.getInstance().sendMsgToAll(ChatExtension.CHAT, chats);
+    }
+
+    public void refreshShop(int playerId, String... params)
+    {
+        shopService.refreshCommon();
     }
 
     // 加经验
@@ -572,29 +577,30 @@ public class GmService {
 
     public void improveQuality(int playerId, String... params) {
         int petId = Integer.valueOf(params[0]);
-        petService.improveQuality(playerId, petId);
+        petService.improveQuality(playerId, petId, 0);
     }
 
-    public void mutate(int playerId, String... params) {
-        int mutateID = Integer.valueOf(params[0]);
-        int consumeID = Integer.valueOf(params[1]);
-        int count = Integer.valueOf(params[2]);
-        Int2Param p = new Int2Param();
-        int itemId = Integer.valueOf(params[3]);
-        petService.mutate(playerId, mutateID, Lists.newArrayList(p), itemId);
-    }
-
-    public void decompose(int playerId, String... params) {
-        int petId = Integer.valueOf(params[0]);
-        petService.decompose(playerId, petId);
-    }
-
-    public void compound(int playerId, String... params) {
-        int petId = Integer.valueOf(params[0]);
-        int count = Integer.valueOf(params[1]);
-        petService.compound(playerId, petId, count);
-    }
-
+    /**
+     * public void mutate(int playerId, String... params) {
+     * int mutateID = Integer.valueOf(params[0]);
+     * int consumeID = Integer.valueOf(params[1]);
+     * int count = Integer.valueOf(params[2]);
+     * Int2Param p = new Int2Param();
+     * int itemId = Integer.valueOf(params[3]);
+     * petService.mutate(playerId, mutateID, Lists.newArrayList(p), itemId);
+     * }
+     * <p>
+     * public void decompose(int playerId, String... params) {
+     * int petId = Integer.valueOf(params[0]);
+     * petService.decompose(playerId, petId);
+     * }
+     * <p>
+     * public void compound(int playerId, String... params) {
+     * int petId = Integer.valueOf(params[0]);
+     * int count = Integer.valueOf(params[1]);
+     * petService.compound(playerId, petId, count);
+     * }
+     **/
     public void gainPet(int playerId, String... params) {
         int petId = Integer.valueOf(params[0]);
         petService.gainPet(playerId, petId);
@@ -676,10 +682,26 @@ public class GmService {
         }
     }
 
+    // 重置服务器时间
+    public void datetime(int playerId, String... params) {
+        Runtime rt = Runtime.getRuntime();
+        String date = params[0] + " " + params[1];
+        try {
+            String os = System.getProperty("os.name");
+            if (os.toLowerCase().contains("win")) {
+            } else {
+                String[] stopCmd = new String[]{"/bin/sh", "-c", "nohup ./datetime.sh " + date};
+                Runtime.getRuntime().exec(stopCmd);
+            }
+        } catch (IOException e) {
+            ServerLogger.err(e, "restart err!");
+        }
+    }
+
     public void vip(int playerId, String... params) {
         int id = Integer.valueOf(params[0]);
         int count = Integer.valueOf(params[1]);
-        vipService.addCharge(playerId, id, count);
+        vipService.addCharge(playerId, id, 1, "aliapy", "CNY", System.currentTimeMillis() + "");
     }
 
     public void taskRank(int playerId, String... params) {
@@ -702,6 +724,10 @@ public class GmService {
 
     public void clearGuildTime(int playerId, String... params) {
         gangService.clearGuildTime(playerId);
+    }
+
+    public void gangUpgrade(int playerId, String... params) {
+        gangService.addGangPoint(playerId);
     }
 
     public void getAllFashion(int playerId, String... params) {

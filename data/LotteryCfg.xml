@@ -4,11 +4,11 @@
 	<id>10000</id>
 	<singleId>10004</singleId>
 	<multiId>10003</multiId>
-	<singlePrice>[125,1]</singlePrice>
-	<multiPrice>[125,10]</multiPrice>
+	<singlePrice>[102,100]</singlePrice>
+	<multiPrice>[102,900]</multiPrice>
 	<limit>999</limit>
-	<freePeriod>0</freePeriod>
-	<freeLimit>0</freeLimit>
+	<freePeriod>24</freePeriod>
+	<freeLimit>1</freeLimit>
 	<vipLimit></vipLimit>
 </config>
 <config>
@@ -26,8 +26,8 @@
 	<id>10002</id>
 	<singleId>10008</singleId>
 	<multiId>10007</multiId>
-	<singlePrice>[102,200]</singlePrice>
-	<multiPrice>[102,1800]</multiPrice>
+	<singlePrice>[102,150]</singlePrice>
+	<multiPrice>[102,1350]</multiPrice>
 	<limit>999</limit>
 	<freePeriod>48</freePeriod>
 	<freeLimit>1</freeLimit>

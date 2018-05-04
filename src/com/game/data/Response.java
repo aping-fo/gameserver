@@ -35,6 +35,7 @@ public class Response {
 	public static final int SYS=99;//系统
 	public static final int WELCOME_MAIL_TITLE=100;//欢迎您来到《我守护的世界》
 	public static final int WELCOME_MAIL_CONTENT=101;//尊敬的玩家，感谢您对游戏的支持！有问题可以随时联系我们
+	public static final int RE_LOGIN=102;//重复登录
 	//角色系统
 	public static final int SAME_NAME=1001;//该名字已被使用
 	public static final int NO_USER=1002;//不存在的角色
@@ -210,5 +211,7 @@ public class Response {
 	public static final int SCENE_NOT_EXIST=4360;//场景不存在
 	public static final int BULLETSCREEN_NOT_SET=4361;//弹幕上限未设置
 	public static final int LOCALBULLETSCREEN_ALL_ACCESS=4362;//本地弹幕已全部获取
+	//任务提交
+	public static final int OPERATION_TOO_FAST=4370;//您操作太频繁了
 
 }

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.game.module.traversing.TraversingService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.CopyConfig;
@@ -24,6 +25,8 @@ import com.game.util.ConfigData;
 import com.server.SessionManager;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
+import com.game.module.log.LogConsume;
+import com.game.module.goods.Goods;
 
 @Extension
 public class TeamExtension {
@@ -42,6 +45,8 @@ public class TeamExtension {
 	private CopyExtension copyExtension;
 	@Autowired
 	private CopyService copyService;
+	@Autowired
+	private TraversingService traversingService;
 	
 	@Command(3402)
 	public Object getTeamList(int playerId, IntParam param){
@@ -231,6 +236,15 @@ public class TeamExtension {
 				if(id != playerId){
 					copyIns.getMembers().getAndIncrement();
 				}
+
+				//进入副本扣除玩家体力
+				playerService.decCurrency(id, Goods.TRAVERSING_ENERGY, copyConfig.needEnergy, LogConsume.TRAVERSING_COPY, copyConfig.id);
+				//扣除券
+				if(id == team.getLeader())
+				{
+					traversingService.remvoeMap(id, team.getMapId());
+				}
+
 				SessionManager.getInstance().sendMsg(CopyExtension.ENTER_COPY, result, id);
 			}
 		}

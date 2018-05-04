@@ -4,7 +4,7 @@
 	<id>1001</id>
 	<name>主线副本</name>
 	<icon>head7</icon>
-	<type>9</type>
+	<type>10</type>
 	<viewname>MainCopyView</viewname>
 	<openCondition></openCondition>
 	<description>可获得大量经验</description>
@@ -206,6 +206,18 @@
 </config>
 <config>
 	<id>1018</id>
+	<name>试练场</name>
+	<icon>head13</icon>
+	<type>1</type>
+	<viewname>TrialFieldView</viewname>
+	<openCondition>17级开启</openCondition>
+	<description>产出强化材料</description>
+	<lockID>1781</lockID>
+	<param></param>
+	<limit>3</limit>
+</config>
+<config>
+	<id>1019</id>
 	<name>排位赛商店</name>
 	<icon>head5</icon>
 	<type>1</type>
@@ -217,7 +229,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1019</id>
+	<id>1020</id>
 	<name>大漩涡</name>
 	<icon>head13</icon>
 	<type>1</type>
@@ -229,7 +241,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1020</id>
+	<id>1021</id>
 	<name>英雄试炼商店</name>
 	<icon>head5</icon>
 	<type>1</type>
@@ -241,7 +253,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1021</id>
+	<id>1022</id>
 	<name>主线副本</name>
 	<icon>head7</icon>
 	<type>3</type>
@@ -253,7 +265,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1022</id>
+	<id>1023</id>
 	<name>普通商店</name>
 	<icon>head5</icon>
 	<type>3</type>
@@ -265,7 +277,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1023</id>
+	<id>1024</id>
 	<name>召唤</name>
 	<icon>head1</icon>
 	<type>3</type>
@@ -277,7 +289,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1024</id>
+	<id>1025</id>
 	<name>公会商店</name>
 	<icon>head5</icon>
 	<type>3</type>
@@ -289,7 +301,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1025</id>
+	<id>1026</id>
 	<name>精绝宝藏</name>
 	<icon>head11</icon>
 	<type>3</type>
@@ -301,7 +313,7 @@
 	<limit>2</limit>
 </config>
 <config>
-	<id>1026</id>
+	<id>1027</id>
 	<name>漩涡商店</name>
 	<icon>head5</icon>
 	<type>3</type>
@@ -313,7 +325,7 @@
 	<limit>2</limit>
 </config>
 <config>
-	<id>1027</id>
+	<id>1028</id>
 	<name>英雄试练商店</name>
 	<icon>head5</icon>
 	<type>3</type>
@@ -325,7 +337,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1028</id>
+	<id>1029</id>
 	<name>阵营声望商店</name>
 	<icon>head5</icon>
 	<type>6</type>
@@ -337,7 +349,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1029</id>
+	<id>1030</id>
 	<name>竞技场商店</name>
 	<icon>head5</icon>
 	<type>6</type>
@@ -349,7 +361,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1030</id>
+	<id>1031</id>
 	<name>排位赛商店</name>
 	<icon>head5</icon>
 	<type>6</type>
@@ -361,7 +373,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1031</id>
+	<id>1032</id>
 	<name>召唤</name>
 	<icon>head1</icon>
 	<type>2</type>
@@ -373,7 +385,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1032</id>
+	<id>1033</id>
 	<name>阵营声望商店</name>
 	<icon>head5</icon>
 	<type>2</type>
@@ -385,7 +397,7 @@
 	<limit>0</limit>
 </config>
 <config>
-	<id>1033</id>
+	<id>1034</id>
 	<name>竞技场商店</name>
 	<icon>head5</icon>
 	<type>2</type>
@@ -395,18 +407,6 @@
 	<lockID>1011</lockID>
 	<param>6</param>
 	<limit>0</limit>
-</config>
-<config>
-	<id>1034</id>
-	<name>试练场</name>
-	<icon>head13</icon>
-	<type>2</type>
-	<viewname>TrialFieldView</viewname>
-	<openCondition>17级开启</openCondition>
-	<description>产出技能卡</description>
-	<lockID>1781</lockID>
-	<param></param>
-	<limit>3</limit>
 </config>
 <config>
 	<id>1035</id>
@@ -539,5 +539,17 @@
 	<lockID>1372</lockID>
 	<param></param>
 	<limit>2</limit>
+</config>
+<config>
+	<id>1046</id>
+	<name>三星宝箱</name>
+	<icon>head1</icon>
+	<type>9</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<description>可以获得觉醒材料</description>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
 </config>
 </root>

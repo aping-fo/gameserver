@@ -9,7 +9,7 @@ public class ShopCfg {
 	public String name;//名称
 	public int goodsId;//物品id
 	public int count;//物品数量
-	public int tab;//页签
+	public int tab;//物品是否由服务器下发
 	public int vip;//vip限制
 	public int limitType;//限购类型
 	public int limitCount;//限购数量
@@ -24,4 +24,5 @@ public class ShopCfg {
 	public boolean isCanAddBuy;//是否可加购
 	public int tabLayoutType;//页UI布局类型
 	public int[] fameLevLimit;//阵营及等级限制
+	public int rechargeId;//充值ID
 }

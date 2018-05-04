@@ -1,5 +1,6 @@
 package com.game.module.vip;
 
+import com.game.SysConfig;
 import com.game.data.ChargeConfig;
 import com.game.data.Response;
 import com.game.data.VIPConfig;
@@ -14,13 +15,15 @@ import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
-import com.game.module.task.TaskService;
+import com.game.module.shop.ShopService;
 import com.game.params.Int2Param;
-import com.game.params.IntList;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
+import com.game.params.RechargeRespVO;
+import com.game.sdk.talkdata.TalkDataService;
 import com.game.util.ConfigData;
-import com.game.util.TimeUtil;
+import com.game.util.Context;
+import com.game.util.RandomUtil;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +31,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 @Service
 public class VipService {
@@ -37,12 +39,15 @@ public class VipService {
     public static final int TYPE_WEEKLY = 6;// 周卡
     public static final int TYPE_NEW = 5;// 新手礼包
     public static final int TYPE_SPEC = 2;// 特殊的
+    public static final int TYPE_TIMED = 7;// 限时礼包
+    public static final int TYPE_SPECIAL = 9;// 特价礼包
     @SuppressWarnings("unused")
     private static final int TYPE_COMMON = 3;// 普通的
     public static final int TYPE_FUND = 4;// 基金
 
     private static final int MONTH_CARD_ID = 11;// 月卡充值id
     private static final int FUND_ID = 41;// 基金id
+    public static final int KEY = 0xef;
 
     @Autowired
     private PlayerService playerService;
@@ -51,13 +56,16 @@ public class VipService {
     @Autowired
     private DailyService dailyService;
     @Autowired
-    private TaskService taskService;
+    private TalkDataService talkDataService;
     @Autowired
     private ChargeActivityLogic chargeActivityLogic;
     @Autowired
     private ActivityService activityService;
     @Autowired
     private WelfareCardService welfareCardService;
+    @Autowired
+    private ShopService shopService;
+
     // 获取vip奖励
     public int getVipReward(int playerId, int vipLev) {
         PlayerData data = playerService.getPlayerData(playerId);
@@ -169,8 +177,7 @@ public class VipService {
     }
 
     // 充值
-    public void addCharge(int playerId, int id, int count) {
-        int realCount = count;
+    public void addCharge(int playerId, int id, int cpId, String paymentType, String currentType, String orderId) {
         ChargeConfig charge = ConfigData.getConfig(ChargeConfig.class, id);
         int type = charge.type;
         PlayerData data = playerService.getPlayerData(playerId);
@@ -183,30 +190,61 @@ public class VipService {
         } else if (type == TYPE_FUND) {
             data.setFundActive(1);
         }
-        if (charge.total != count) {
-            return;
+
+        cpId = cpId ^ KEY; //解密
+        if (!SysConfig.gm) {
+            if (!data.getCpIdSet().contains(cpId)) { //不包含此订单
+                ServerLogger.warn("Err charge cpId:" + cpId, playerId);
+                return;
+            }
+
+            if (data.getDealCpIdSet().contains(cpId)) { //已经处理过的订单
+                ServerLogger.warn("order has done ,id:" + cpId, playerId);
+                return;
+            }
         }
 
-        playerService.addVipExp(playerId, count);
+        Context.getThreadService().execute(new Runnable() {
+            @Override
+            public void run() {
+                talkDataService.talkGameRecharge(playerId, orderId, charge.rmb, charge.total + charge.add, "CNY");
+            }
+        });
 
-        playerService.addDiamond(playerId, count, LogConsume.CHARGE);
+
+        playerService.addVipExp(playerId, charge.total);
+        playerService.addDiamond(playerId, charge.total, LogConsume.CHARGE);
         playerService.addDiamond(playerId, charge.add, LogConsume.CHARGE);
-
-        chargeActivityLogic.updateCharge(playerId, count);
+        data.getDealCpIdSet().add(cpId);
+        data.getCpIdSet().remove(cpId);
+        chargeActivityLogic.updateCharge(playerId, charge.total);
         // 每日数据更新
         dailyService.refreshDailyVo(playerId);
         // 通知前端
-        Int2Param result = new Int2Param();
-        result.param1 = realCount;
-        result.param2 = count + charge.add;
+        RechargeRespVO result = new RechargeRespVO();
+        result.amount = (int) charge.rmb;
+        result.totalAmout = charge.total + charge.add;
+        result.paymentType = "alipay";
+        result.currentType = "CNY";
+        result.orderId = orderId;
         SessionManager.getInstance().sendMsg(VipExtension.CHARGE, result, playerId);
 
-        welfareCardService.buyWelfareCard(playerId,charge.type,id);
+        welfareCardService.buyWelfareCard(playerId, charge.type, id);
         if (!data.isFirstRechargeFlag() && charge.type == TYPE_NEW) {
             data.setFirstRechargeFlag(true);
-            activityService.completeActivityTask(playerId,
-                    ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE,1, ActivityConsts.UpdateType.T_VALUE,true);
+
         }
+
+        if(type!=TYPE_TIMED&&type!=TYPE_SPECIAL){//限时礼包和特价礼包不计入累计充值
+            activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//累充礼包
+        }
+
+        activityService.getAwardsByRechargeId(playerId, id);//限时礼包和特价礼包
+
+        if (charge.shopGoodsId != 0) {
+            shopService.buy(playerId, charge.shopGoodsId, 1);
+        }
+        ServerLogger.warn("success,rechargeId = " + id + " encode order = " + cpId + " , order = " + (cpId ^ KEY));
     }
 
     /**
@@ -268,5 +306,24 @@ public class VipService {
             result.params.add(param);
         }
         return result;
+    }
+
+    /**
+     * 获取CP订单号
+     *
+     * @param playerId
+     * @return
+     */
+    public Int2Param getCpId(int playerId, int rechargeId) {
+        PlayerData data = playerService.getPlayerData(playerId);
+        int orderID = data.getCpId();
+        orderID += (RandomUtil.randInt(20) + 1); //随机ID
+        data.setCpId(orderID);
+        data.getCpIdSet().add(orderID);
+        Int2Param param = new Int2Param();
+        param.param1 = orderID ^ KEY;
+        param.param2 = rechargeId;
+        ServerLogger.warn("rechargeId = " + rechargeId + " order = " + orderID + " ,encode order = " + (orderID ^ KEY));
+        return param;
     }
 }

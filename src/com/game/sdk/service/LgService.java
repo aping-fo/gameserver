@@ -43,15 +43,24 @@ public class LgService implements SdkService {
             ServerLogger.warn("\r\n" + content);
             int cmd = XmlParser.xmlCmdParser(content, XmlParser.XML_HEAD, XmlParser.FIELD_CMD);
 
+            if (cmd == 0) {
+                result.setCommand_id(ERatingType.CMD_BIND_RESP);
+                result.setResultCode(ERatingType.ErrorCode.E_ERROR);
+                ServerLogger.warn("resp xml data =>" + result.toProto());
+                resp.getWriter().write(result.toProto());
+                return;
+            }
+
             ServerLogger.warn("command id =>" + cmd);
             if (cmd == ERatingType.CMD_BIND) {
-                result.setResultCode(ERatingType.CMD_BIND_RESP);
+                result.setCommand_id(ERatingType.CMD_BIND_RESP);
                 result.setResultCode(ERatingType.ErrorCode.S_SUCCESS);
                 ServerLogger.warn("resp xml data =>" + result.toProto());
                 resp.getWriter().write(result.toProto());
                 return;
             }
 
+            ServerLogger.warn("callback param = " + content);
             RechargeInfo data = new RechargeInfo();
             XmlParser.xmlParser(content, data);
             if (orders.contains(data.getDetail_id())) {
@@ -62,20 +71,23 @@ public class LgService implements SdkService {
             }
 
             ServerLogger.warn("order info = " + data.toString());
-            String[] arr = data.getAttach_code().split("_");
-            int playerId = Integer.parseInt(arr[0]);
-            int id = Integer.parseInt(arr[1]);
-            int count = Integer.parseInt(arr[2]);
             ServerLogger.warn("Attach code =>" + data.getAttach_code());
+            String[] arr = data.getAttach_code().split("_");
+            int playerId = Integer.parseInt(arr[0]); //角色ID
+            int id = Integer.parseInt(arr[1]); //充值配置ID
+            int cpId = Integer.parseInt(arr[2]);
+            String paymentType = arr[3];
+            String currentType = arr[4];
             ChargeConfig charge = ConfigData.getConfig(ChargeConfig.class, id);
-            if (charge.rmb != data.getAmount()) {
-                result.setResultCode(ERatingType.ErrorCode.E_PARAMETER_ERROR);
+            int amount = data.getAmount() / 10;
+            if (charge.rmb != amount) {
+                result.setResultCode(ERatingType.ErrorCode.S_SUCCESS);
                 ServerLogger.warn("resp xml data =>" + result.toProto());
                 resp.getWriter().write(result.toProto());
                 return;
             }
             //金额判断
-            vipService.addCharge(playerId, id, count);
+            vipService.addCharge(playerId, id, cpId, paymentType, currentType, data.getDetail_id() + "");
             result.setResultCode(1);
             orders.add(String.valueOf(data.getDetail_id()));
             ServerLogger.warn("resp xml data =>" + result.toProto());

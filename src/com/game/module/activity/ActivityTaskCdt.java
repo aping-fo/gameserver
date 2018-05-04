@@ -34,6 +34,9 @@ public class ActivityTaskCdt {
     }
 
     public boolean checkComplete() {
+        if (condType == ActivityConsts.ActivityTaskCondType.T_TIMED_BAG) {
+            return value == targetValue;
+        }
         return value >= targetValue;
     }
 

@@ -250,8 +250,13 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
 			ListParam<ArenaReportVO> msg = new ListParam<ArenaReportVO>();
 			msg.params = Arrays.asList(vo);
 			SessionManager.getInstance().sendMsg(ArenaExtension.REPORT, msg, playerId);
-		}else{
-			ArenaAttach attach = getAttach(playerId);
+		}
+
+		//保留最近15条战报记录
+		ArenaAttach attach = getAttach(playerId);
+		if(attach.getReport().size()>=15){
+			attach.getReport().set(14,vo);
+		}else {
 			attach.getReport().add(vo);
 		}
 	}

@@ -7,8 +7,8 @@
 	<taskName>合作-击杀怪物</taskName>
 	<level>1</level>
 	<finishType>2</finishType>
-	<finishParam>[0,0,20]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[0,0,100]</finishParam>
+	<rewards>[[102,50],[103,5000]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
@@ -21,7 +21,7 @@
 	<level>1</level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,200]</finishParam>
-	<rewards>[[102,200],[103,10000]]</rewards>
+	<rewards>[[102,100],[103,10000]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
@@ -33,8 +33,8 @@
 	<taskName>合作-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
-	<finishParam>[0,1,0,3]</finishParam>
-	<rewards>[[102,50],[103,500]]</rewards>
+	<finishParam>[0,1,0,20]</finishParam>
+	<rewards>[[102,50],[103,5000]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
@@ -44,7 +44,7 @@
 	<group>27</group>
 	<taskType>2</taskType>
 	<taskName>每日-通关副本</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>1</finishType>
 	<finishParam>[0,1,0,3]</finishParam>
 	<rewards>[[102,50],[109101,2]]</rewards>
@@ -57,7 +57,7 @@
 	<group>28</group>
 	<taskType>2</taskType>
 	<taskName>每日-通关副本</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>1</finishType>
 	<finishParam>[0,1,0,5]</finishParam>
 	<rewards>[[102,50],[103,500]]</rewards>
@@ -70,7 +70,7 @@
 	<group>29</group>
 	<taskType>2</taskType>
 	<taskName>每日-金币消耗</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>9</finishType>
 	<finishParam>[103,500]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -83,7 +83,7 @@
 	<group>31</group>
 	<taskType>2</taskType>
 	<taskName>每日-钻石消耗</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>9</finishType>
 	<finishParam>[102,10]</finishParam>
 	<rewards>[[102,50],[103,500]]</rewards>
@@ -96,7 +96,7 @@
 	<group>32</group>
 	<taskType>2</taskType>
 	<taskName>每日-强化装备</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>4</finishType>
 	<finishParam>[1]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -122,7 +122,7 @@
 	<group>34</group>
 	<taskType>2</taskType>
 	<taskName>每日-合成卡牌</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>14</finishType>
 	<finishParam>[3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -135,7 +135,7 @@
 	<group>35</group>
 	<taskType>2</taskType>
 	<taskName>每日-装备升星</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>12</finishType>
 	<finishParam>[0,3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -148,7 +148,7 @@
 	<group>36</group>
 	<taskType>2</taskType>
 	<taskName>每日-装备洗练</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>13</finishType>
 	<finishParam>[3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -161,7 +161,7 @@
 	<group>37</group>
 	<taskType>2</taskType>
 	<taskName>每日-参加竞技场</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>15</finishType>
 	<finishParam>[1,3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -174,7 +174,7 @@
 	<group>39</group>
 	<taskType>2</taskType>
 	<taskName>每日-卡片升级</taskName>
-	<level>1</level>
+	<level>999</level>
 	<finishType>8</finishType>
 	<finishParam>[3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -187,7 +187,7 @@
 	<group>183</group>
 	<taskType>2</taskType>
 	<taskName>每日-公会捐献</taskName>
-	<level>20</level>
+	<level>999</level>
 	<finishType>17</finishType>
 	<finishParam>[0,3]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
@@ -235,6 +235,175 @@
 	<functionType>[1,104,1,1]</functionType>
 </config>
 <config>
+	<id>12017</id>
+	<group>800</group>
+	<taskType>2</taskType>
+	<taskName>排位赛</taskName>
+	<level>1</level>
+	<finishType>15</finishType>
+	<finishParam>[2,3]</finishParam>
+	<rewards>[[102,10],[101,5250]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,160,1,1]</functionType>
+</config>
+<config>
+	<id>12018</id>
+	<group>801</group>
+	<taskType>2</taskType>
+	<taskName>极限躲避</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[7,2]</finishParam>
+	<rewards>[[102,10],[101,1750]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,137,0,0]</functionType>
+</config>
+<config>
+	<id>12019</id>
+	<group>802</group>
+	<taskType>2</taskType>
+	<taskName>金币副本</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[12,2]</finishParam>
+	<rewards>[[102,10],[101,1750]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,137,0,0]</functionType>
+</config>
+<config>
+	<id>12020</id>
+	<group>803</group>
+	<taskType>2</taskType>
+	<taskName>顺手牵羊</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[11,2]</finishParam>
+	<rewards>[[102,10],[101,1750]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,137,0,0]</functionType>
+</config>
+<config>
+	<id>12021</id>
+	<group>804</group>
+	<taskType>2</taskType>
+	<taskName>精绝宝藏</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[3,2]</finishParam>
+	<rewards>[[102,10],[101,1750]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,137,0,0]</functionType>
+</config>
+<config>
+	<id>12022</id>
+	<group>805</group>
+	<taskType>2</taskType>
+	<taskName>英雄试炼</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[5,1]</finishParam>
+	<rewards>[[102,10],[101,5250]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,106,0,0]</functionType>
+</config>
+<config>
+	<id>12023</id>
+	<group>806</group>
+	<taskType>2</taskType>
+	<taskName>世界boss</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[9,1]</finishParam>
+	<rewards>[[102,10],[101,5250]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,136,0,0]</functionType>
+</config>
+<config>
+	<id>12024</id>
+	<group>807</group>
+	<taskType>2</taskType>
+	<taskName>公会副本</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[14,1]</finishParam>
+	<rewards>[[102,10],[101,5250]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType></functionType>
+</config>
+<config>
+	<id>12025</id>
+	<group>808</group>
+	<taskType>2</taskType>
+	<taskName>时空仪</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[8,1]</finishParam>
+	<rewards>[[102,10],[101,5250]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,113,0,0]</functionType>
+</config>
+<config>
+	<id>12026</id>
+	<group>809</group>
+	<taskType>2</taskType>
+	<taskName>团队副本</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[10,1]</finishParam>
+	<rewards>[[102,10],[101,5250]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,156,0,0]</functionType>
+</config>
+<config>
+	<id>12027</id>
+	<group>810</group>
+	<taskType>2</taskType>
+	<taskName>试炼场</taskName>
+	<level>1</level>
+	<finishType>67</finishType>
+	<finishParam>[15,3]</finishParam>
+	<rewards>[[102,10],[101,1750]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,178,0,0]</functionType>
+</config>
+<config>
+	<id>12028</id>
+	<group>811</group>
+	<taskType>2</taskType>
+	<taskName>宠物农场</taskName>
+	<level>1</level>
+	<finishType>41</finishType>
+	<finishParam>[1,1]</finishParam>
+	<rewards>[[102,10],[101,1750]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType></functionType>
+</config>
+<config>
+	<id>12029</id>
+	<group>812</group>
+	<taskType>2</taskType>
+	<taskName>通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[0,1,0,10]</finishParam>
+	<rewards>[[102,10],[101,3500]]</rewards>
+	<liveness>10</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
 	<id>13000</id>
 	<group>40</group>
 	<taskType>3</taskType>
@@ -242,7 +411,7 @@
 	<level>1</level>
 	<finishType>1</finishType>
 	<finishParam>[0,1,0,10]</finishParam>
-	<rewards>[[102,50],[103,500],[50101,1],[107,50]]</rewards>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
@@ -255,7 +424,7 @@
 	<level>1</level>
 	<finishType>2</finishType>
 	<finishParam>[0,0,100]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
@@ -268,7 +437,7 @@
 	<level>16</level>
 	<finishType>4</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,145,3,0]</functionType>
@@ -281,7 +450,7 @@
 	<level>100</level>
 	<finishType>5</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,132,1,2]</functionType>
@@ -294,7 +463,7 @@
 	<level>5</level>
 	<finishType>14</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,129,0,3]</functionType>
@@ -307,7 +476,7 @@
 	<level>10</level>
 	<finishType>12</finishType>
 	<finishParam>[0,10]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,145,1,0]</functionType>
@@ -320,7 +489,7 @@
 	<level>20</level>
 	<finishType>13</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,145,2,0]</functionType>
@@ -332,8 +501,8 @@
 	<taskName>挑战-参加竞技场</taskName>
 	<level>15</level>
 	<finishType>15</finishType>
-	<finishParam>[1,8]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[1,10]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,101,1,1]</functionType>
@@ -346,7 +515,7 @@
 	<level>5</level>
 	<finishType>8</finishType>
 	<finishParam>[10]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,129,1,1]</functionType>
@@ -358,8 +527,8 @@
 	<taskName>支线-金币消耗</taskName>
 	<level>1</level>
 	<finishType>9</finishType>
-	<finishParam>[103,500]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[103,10000]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14001</nextTaskId>
 	<functionType>[1,128,0,0]</functionType>
@@ -371,8 +540,8 @@
 	<taskName>支线-金币消耗</taskName>
 	<level>1</level>
 	<finishType>9</finishType>
-	<finishParam>[103,50000]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[103,30000]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14002</nextTaskId>
 	<functionType>[1,128,0,0]</functionType>
@@ -384,8 +553,8 @@
 	<taskName>支线-金币消耗</taskName>
 	<level>1</level>
 	<finishType>9</finishType>
-	<finishParam>[103,500000]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[103,50000]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,128,0,0]</functionType>
@@ -397,8 +566,8 @@
 	<taskName>支线-金币累积</taskName>
 	<level>2</level>
 	<finishType>10</finishType>
-	<finishParam>[103,500000]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[103,70000]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14004</nextTaskId>
 	<functionType>[1,137,0,0]</functionType>
@@ -410,8 +579,8 @@
 	<taskName>支线-金币累积</taskName>
 	<level>2</level>
 	<finishType>10</finishType>
-	<finishParam>[103,2000000]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[103,90000]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14005</nextTaskId>
 	<functionType>[1,137,0,0]</functionType>
@@ -423,8 +592,8 @@
 	<taskName>支线-金币累积</taskName>
 	<level>2</level>
 	<finishType>10</finishType>
-	<finishParam>[103,10000000]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[103,110000]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,137,0,0]</functionType>
@@ -436,8 +605,8 @@
 	<taskName>支线-击杀怪物</taskName>
 	<level>3</level>
 	<finishType>2</finishType>
-	<finishParam>[0,0,10]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[0,0,100]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14007</nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
@@ -449,8 +618,8 @@
 	<taskName>支线-击杀怪物</taskName>
 	<level>3</level>
 	<finishType>2</finishType>
-	<finishParam>[0,0,20]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[0,0,200]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14008</nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
@@ -462,8 +631,8 @@
 	<taskName>支线-击杀怪物</taskName>
 	<level>3</level>
 	<finishType>2</finishType>
-	<finishParam>[0,0,50]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[0,0,500]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
@@ -475,8 +644,8 @@
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
 	<finishType>4</finishType>
-	<finishParam>[1]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[10]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14010</nextTaskId>
 	<functionType>[1,145,3,0]</functionType>
@@ -488,8 +657,8 @@
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
 	<finishType>4</finishType>
-	<finishParam>[3]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[30]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId>14011</nextTaskId>
 	<functionType>[1,145,3,0]</functionType>
@@ -501,93 +670,483 @@
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
 	<finishType>4</finishType>
-	<finishParam>[5]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<finishParam>[50]</finishParam>
+	<rewards>[[102,5],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>14012</id>
-	<group>62</group>
+	<group>60</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
 	<finishType>1</finishType>
 	<finishParam>[110101,1,0,1]</finishParam>
-	<rewards>[[103,500]]</rewards>
+	<rewards>[[103,500],[101,120]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14013</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>14013</id>
-	<group>63</group>
+	<group>61</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>2</level>
 	<finishType>1</finishType>
 	<finishParam>[110102,1,0,1]</finishParam>
-	<rewards>[[103,500]]</rewards>
+	<rewards>[[103,500],[101,192]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14014</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>14014</id>
-	<group>64</group>
+	<group>62</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>3</level>
 	<finishType>1</finishType>
 	<finishParam>[110103,1,0,1]</finishParam>
-	<rewards>[[103,500]]</rewards>
+	<rewards>[[103,500],[101,264]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14015</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>14015</id>
-	<group>65</group>
+	<group>63</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>4</level>
 	<finishType>1</finishType>
 	<finishParam>[110104,1,0,1]</finishParam>
-	<rewards>[[103,500]]</rewards>
+	<rewards>[[103,500],[101,336]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14016</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>14016</id>
-	<group>66</group>
+	<group>64</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>5</level>
 	<finishType>1</finishType>
 	<finishParam>[110105,1,0,1]</finishParam>
-	<rewards>[[103,500]]</rewards>
+	<rewards>[[103,500],[101,408]]</rewards>
 	<liveness>0</liveness>
-	<nextTaskId>14017</nextTaskId>
+	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>14017</id>
-	<group>67</group>
+	<group>65</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>6</level>
 	<finishType>1</finishType>
 	<finishParam>[110106,1,0,1]</finishParam>
-	<rewards>[[103,500]]</rewards>
+	<rewards>[[103,500],[101,480]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>14018</id>
+	<group>66</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[110201,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,552]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14019</id>
+	<group>67</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>2</level>
+	<finishType>1</finishType>
+	<finishParam>[110202,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,624]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14020</id>
 	<group>68</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>3</level>
+	<finishType>1</finishType>
+	<finishParam>[110203,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,696]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14021</id>
+	<group>69</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>4</level>
+	<finishType>1</finishType>
+	<finishParam>[110204,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,768]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14022</id>
+	<group>70</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>5</level>
+	<finishType>1</finishType>
+	<finishParam>[110205,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,840]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14023</id>
+	<group>71</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>6</level>
+	<finishType>1</finishType>
+	<finishParam>[110206,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,912]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14024</id>
+	<group>72</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[110301,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,984]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14025</id>
+	<group>73</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>2</level>
+	<finishType>1</finishType>
+	<finishParam>[110302,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1056]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14026</id>
+	<group>74</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>3</level>
+	<finishType>1</finishType>
+	<finishParam>[110303,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1128]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14027</id>
+	<group>75</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>4</level>
+	<finishType>1</finishType>
+	<finishParam>[110304,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1200]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14028</id>
+	<group>76</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>5</level>
+	<finishType>1</finishType>
+	<finishParam>[110305,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1272]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14029</id>
+	<group>77</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>6</level>
+	<finishType>1</finishType>
+	<finishParam>[110306,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1344]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14030</id>
+	<group>78</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[110401,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1416]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14031</id>
+	<group>79</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>2</level>
+	<finishType>1</finishType>
+	<finishParam>[110402,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1488]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14032</id>
+	<group>80</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>3</level>
+	<finishType>1</finishType>
+	<finishParam>[110403,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1560]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14033</id>
+	<group>81</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>4</level>
+	<finishType>1</finishType>
+	<finishParam>[110404,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1632]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14034</id>
+	<group>82</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>5</level>
+	<finishType>1</finishType>
+	<finishParam>[110405,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1704]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14035</id>
+	<group>83</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>6</level>
+	<finishType>1</finishType>
+	<finishParam>[110406,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1776]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14036</id>
+	<group>84</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[110501,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1848]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14037</id>
+	<group>85</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>2</level>
+	<finishType>1</finishType>
+	<finishParam>[110502,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1920]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14038</id>
+	<group>86</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>3</level>
+	<finishType>1</finishType>
+	<finishParam>[110503,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,1992]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14039</id>
+	<group>87</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>4</level>
+	<finishType>1</finishType>
+	<finishParam>[110504,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2064]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14040</id>
+	<group>88</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>5</level>
+	<finishType>1</finishType>
+	<finishParam>[110505,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2136]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14041</id>
+	<group>89</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>6</level>
+	<finishType>1</finishType>
+	<finishParam>[110506,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2208]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14042</id>
+	<group>90</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>1</level>
+	<finishType>1</finishType>
+	<finishParam>[110601,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2280]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14043</id>
+	<group>91</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>2</level>
+	<finishType>1</finishType>
+	<finishParam>[110602,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2352]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14044</id>
+	<group>92</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>3</level>
+	<finishType>1</finishType>
+	<finishParam>[110603,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2424]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14045</id>
+	<group>93</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>4</level>
+	<finishType>1</finishType>
+	<finishParam>[110604,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2496]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14046</id>
+	<group>94</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>5</level>
+	<finishType>1</finishType>
+	<finishParam>[110605,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2568]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14047</id>
+	<group>95</group>
+	<taskType>3</taskType>
+	<taskName>支线-通关副本</taskName>
+	<level>6</level>
+	<finishType>1</finishType>
+	<finishParam>[110606,1,0,1]</finishParam>
+	<rewards>[[103,500],[101,2640]]</rewards>
+	<liveness>0</liveness>
+	<nextTaskId></nextTaskId>
+	<functionType>[1,139,1,1]</functionType>
+</config>
+<config>
+	<id>14048</id>
+	<group>96</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备获得</taskName>
 	<level>10</level>
@@ -599,8 +1158,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14019</id>
-	<group>69</group>
+	<id>14049</id>
+	<group>97</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备获得</taskName>
 	<level>10</level>
@@ -612,8 +1171,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14020</id>
-	<group>69</group>
+	<id>14050</id>
+	<group>98</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备获得</taskName>
 	<level>10</level>
@@ -625,8 +1184,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14021</id>
-	<group>71</group>
+	<id>14051</id>
+	<group>99</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备获得</taskName>
 	<level>10</level>
@@ -638,8 +1197,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14022</id>
-	<group>71</group>
+	<id>14052</id>
+	<group>100</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备获得</taskName>
 	<level>10</level>
@@ -651,8 +1210,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14023</id>
-	<group>73</group>
+	<id>14053</id>
+	<group>101</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备分解</taskName>
 	<level>100</level>
@@ -664,8 +1223,8 @@
 	<functionType>[1,132,1,2]</functionType>
 </config>
 <config>
-	<id>14024</id>
-	<group>73</group>
+	<id>14054</id>
+	<group>102</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备分解</taskName>
 	<level>100</level>
@@ -677,8 +1236,8 @@
 	<functionType>[1,132,1,2]</functionType>
 </config>
 <config>
-	<id>14025</id>
-	<group>73</group>
+	<id>14055</id>
+	<group>103</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备分解</taskName>
 	<level>100</level>
@@ -690,8 +1249,8 @@
 	<functionType>[1,132,1,2]</functionType>
 </config>
 <config>
-	<id>14026</id>
-	<group>73</group>
+	<id>14056</id>
+	<group>104</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备分解</taskName>
 	<level>100</level>
@@ -703,8 +1262,8 @@
 	<functionType>[1,132,1,2]</functionType>
 </config>
 <config>
-	<id>14027</id>
-	<group>77</group>
+	<id>14057</id>
+	<group>105</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -716,8 +1275,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14028</id>
-	<group>78</group>
+	<id>14058</id>
+	<group>106</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -729,8 +1288,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14029</id>
-	<group>79</group>
+	<id>14059</id>
+	<group>107</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -742,8 +1301,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14030</id>
-	<group>80</group>
+	<id>14060</id>
+	<group>108</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -755,8 +1314,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14031</id>
-	<group>81</group>
+	<id>14061</id>
+	<group>109</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -768,8 +1327,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14032</id>
-	<group>82</group>
+	<id>14062</id>
+	<group>110</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -781,8 +1340,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14033</id>
-	<group>83</group>
+	<id>14063</id>
+	<group>111</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -794,8 +1353,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14034</id>
-	<group>84</group>
+	<id>14064</id>
+	<group>112</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -807,8 +1366,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14035</id>
-	<group>85</group>
+	<id>14065</id>
+	<group>113</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -820,8 +1379,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14036</id>
-	<group>86</group>
+	<id>14066</id>
+	<group>114</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -833,8 +1392,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14037</id>
-	<group>87</group>
+	<id>14067</id>
+	<group>115</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -846,8 +1405,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14038</id>
-	<group>88</group>
+	<id>14068</id>
+	<group>116</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -859,8 +1418,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14039</id>
-	<group>89</group>
+	<id>14069</id>
+	<group>117</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -872,8 +1431,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14040</id>
-	<group>90</group>
+	<id>14070</id>
+	<group>118</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -885,8 +1444,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14041</id>
-	<group>91</group>
+	<id>14071</id>
+	<group>119</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -898,8 +1457,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14042</id>
-	<group>92</group>
+	<id>14072</id>
+	<group>120</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -911,8 +1470,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14043</id>
-	<group>93</group>
+	<id>14073</id>
+	<group>121</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -924,8 +1483,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14044</id>
-	<group>94</group>
+	<id>14074</id>
+	<group>122</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -937,8 +1496,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14045</id>
-	<group>95</group>
+	<id>14075</id>
+	<group>123</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -950,8 +1509,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14046</id>
-	<group>96</group>
+	<id>14076</id>
+	<group>124</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -963,8 +1522,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14047</id>
-	<group>97</group>
+	<id>14077</id>
+	<group>125</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备强化</taskName>
 	<level>16</level>
@@ -976,8 +1535,8 @@
 	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
-	<id>14048</id>
-	<group>98</group>
+	<id>14078</id>
+	<group>126</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -989,8 +1548,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14049</id>
-	<group>99</group>
+	<id>14079</id>
+	<group>127</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1002,8 +1561,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14050</id>
-	<group>100</group>
+	<id>14080</id>
+	<group>128</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1015,8 +1574,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14051</id>
-	<group>101</group>
+	<id>14081</id>
+	<group>129</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1028,8 +1587,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14052</id>
-	<group>102</group>
+	<id>14082</id>
+	<group>130</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1041,8 +1600,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14053</id>
-	<group>103</group>
+	<id>14083</id>
+	<group>131</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1054,8 +1613,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14054</id>
-	<group>104</group>
+	<id>14084</id>
+	<group>132</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1067,8 +1626,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14055</id>
-	<group>105</group>
+	<id>14085</id>
+	<group>133</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1080,8 +1639,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14056</id>
-	<group>106</group>
+	<id>14086</id>
+	<group>134</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1093,8 +1652,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14057</id>
-	<group>107</group>
+	<id>14087</id>
+	<group>135</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1106,8 +1665,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14058</id>
-	<group>108</group>
+	<id>14088</id>
+	<group>136</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1119,8 +1678,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14059</id>
-	<group>109</group>
+	<id>14089</id>
+	<group>137</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1132,8 +1691,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14060</id>
-	<group>110</group>
+	<id>14090</id>
+	<group>138</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1145,8 +1704,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14061</id>
-	<group>111</group>
+	<id>14091</id>
+	<group>139</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1158,8 +1717,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14062</id>
-	<group>112</group>
+	<id>14092</id>
+	<group>140</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1171,8 +1730,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14063</id>
-	<group>113</group>
+	<id>14093</id>
+	<group>141</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1184,8 +1743,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14064</id>
-	<group>114</group>
+	<id>14094</id>
+	<group>142</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1197,8 +1756,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14065</id>
-	<group>115</group>
+	<id>14095</id>
+	<group>143</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1210,8 +1769,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14066</id>
-	<group>116</group>
+	<id>14096</id>
+	<group>144</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1223,8 +1782,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14067</id>
-	<group>117</group>
+	<id>14097</id>
+	<group>145</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1236,8 +1795,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14068</id>
-	<group>118</group>
+	<id>14098</id>
+	<group>146</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1249,8 +1808,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14069</id>
-	<group>119</group>
+	<id>14099</id>
+	<group>147</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1262,8 +1821,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14070</id>
-	<group>120</group>
+	<id>14100</id>
+	<group>148</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1275,8 +1834,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14071</id>
-	<group>121</group>
+	<id>14101</id>
+	<group>149</group>
 	<taskType>3</taskType>
 	<taskName>支线-宝石进阶</taskName>
 	<level>30</level>
@@ -1288,8 +1847,8 @@
 	<functionType>[1,145,4,0]</functionType>
 </config>
 <config>
-	<id>14072</id>
-	<group>122</group>
+	<id>14102</id>
+	<group>150</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能升级</taskName>
 	<level>40</level>
@@ -1301,8 +1860,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14073</id>
-	<group>123</group>
+	<id>14103</id>
+	<group>151</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能升级</taskName>
 	<level>40</level>
@@ -1314,8 +1873,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14074</id>
-	<group>124</group>
+	<id>14104</id>
+	<group>152</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能升级</taskName>
 	<level>40</level>
@@ -1327,8 +1886,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14075</id>
-	<group>125</group>
+	<id>14105</id>
+	<group>153</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能升级</taskName>
 	<level>40</level>
@@ -1340,8 +1899,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14076</id>
-	<group>126</group>
+	<id>14106</id>
+	<group>154</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能升级</taskName>
 	<level>40</level>
@@ -1353,8 +1912,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14077</id>
-	<group>127</group>
+	<id>14107</id>
+	<group>155</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能升级</taskName>
 	<level>40</level>
@@ -1366,8 +1925,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14078</id>
-	<group>128</group>
+	<id>14108</id>
+	<group>156</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
 	<level>40</level>
@@ -1379,8 +1938,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14079</id>
-	<group>129</group>
+	<id>14109</id>
+	<group>157</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
 	<level>40</level>
@@ -1392,8 +1951,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14080</id>
-	<group>130</group>
+	<id>14110</id>
+	<group>158</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
 	<level>40</level>
@@ -1405,8 +1964,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14081</id>
-	<group>131</group>
+	<id>14111</id>
+	<group>159</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
 	<level>40</level>
@@ -1418,8 +1977,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14082</id>
-	<group>132</group>
+	<id>14112</id>
+	<group>160</group>
 	<taskType>3</taskType>
 	<taskName>支线-技能卡牌镶嵌</taskName>
 	<level>40</level>
@@ -1431,8 +1990,8 @@
 	<functionType>[1,128,1,1]</functionType>
 </config>
 <config>
-	<id>14083</id>
-	<group>133</group>
+	<id>14113</id>
+	<group>161</group>
 	<taskType>3</taskType>
 	<taskName>支线-卡片升级</taskName>
 	<level>50</level>
@@ -1444,8 +2003,8 @@
 	<functionType>[1,129,1,1]</functionType>
 </config>
 <config>
-	<id>14084</id>
-	<group>133</group>
+	<id>14114</id>
+	<group>162</group>
 	<taskType>3</taskType>
 	<taskName>支线-卡片升级</taskName>
 	<level>50</level>
@@ -1457,8 +2016,8 @@
 	<functionType>[1,129,1,1]</functionType>
 </config>
 <config>
-	<id>14085</id>
-	<group>133</group>
+	<id>14115</id>
+	<group>163</group>
 	<taskType>3</taskType>
 	<taskName>支线-卡片升级</taskName>
 	<level>50</level>
@@ -1470,8 +2029,8 @@
 	<functionType>[1,129,1,1]</functionType>
 </config>
 <config>
-	<id>14086</id>
-	<group>136</group>
+	<id>14116</id>
+	<group>164</group>
 	<taskType>3</taskType>
 	<taskName>支线-卡片升级</taskName>
 	<level>50</level>
@@ -1483,8 +2042,8 @@
 	<functionType>[1,129,1,1]</functionType>
 </config>
 <config>
-	<id>14087</id>
-	<group>136</group>
+	<id>14117</id>
+	<group>165</group>
 	<taskType>3</taskType>
 	<taskName>支线-卡片升级</taskName>
 	<level>50</level>
@@ -1496,8 +2055,8 @@
 	<functionType>[1,129,1,1]</functionType>
 </config>
 <config>
-	<id>14088</id>
-	<group>136</group>
+	<id>14118</id>
+	<group>166</group>
 	<taskType>3</taskType>
 	<taskName>支线-卡片升级</taskName>
 	<level>50</level>
@@ -1509,8 +2068,8 @@
 	<functionType>[1,129,1,1]</functionType>
 </config>
 <config>
-	<id>14089</id>
-	<group>136</group>
+	<id>14119</id>
+	<group>167</group>
 	<taskType>3</taskType>
 	<taskName>支线-卡片升级</taskName>
 	<level>50</level>
@@ -1522,8 +2081,8 @@
 	<functionType>[1,129,1,1]</functionType>
 </config>
 <config>
-	<id>14090</id>
-	<group>140</group>
+	<id>14120</id>
+	<group>168</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备升星</taskName>
 	<level>50</level>
@@ -1535,8 +2094,8 @@
 	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
-	<id>14091</id>
-	<group>140</group>
+	<id>14121</id>
+	<group>169</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备升星</taskName>
 	<level>50</level>
@@ -1548,8 +2107,8 @@
 	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
-	<id>14092</id>
-	<group>142</group>
+	<id>14122</id>
+	<group>170</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备洗练</taskName>
 	<level>50</level>
@@ -1561,8 +2120,8 @@
 	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
-	<id>14093</id>
-	<group>142</group>
+	<id>14123</id>
+	<group>171</group>
 	<taskType>3</taskType>
 	<taskName>支线-装备洗练</taskName>
 	<level>50</level>
@@ -1574,8 +2133,8 @@
 	<functionType>[1,145,1,0]</functionType>
 </config>
 <config>
-	<id>14094</id>
-	<group>144</group>
+	<id>14124</id>
+	<group>172</group>
 	<taskType>3</taskType>
 	<taskName>支线-参加竞技场</taskName>
 	<level>50</level>
@@ -1587,8 +2146,8 @@
 	<functionType>[1,101,1,1]</functionType>
 </config>
 <config>
-	<id>14095</id>
-	<group>144</group>
+	<id>14125</id>
+	<group>173</group>
 	<taskType>3</taskType>
 	<taskName>支线-参加竞技场</taskName>
 	<level>50</level>
@@ -1600,8 +2159,8 @@
 	<functionType>[1,101,1,1]</functionType>
 </config>
 <config>
-	<id>14096</id>
-	<group>146</group>
+	<id>14126</id>
+	<group>174</group>
 	<taskType>3</taskType>
 	<taskName>支线-参加排位赛</taskName>
 	<level>50</level>
@@ -1613,8 +2172,8 @@
 	<functionType>[1,160,1,1]</functionType>
 </config>
 <config>
-	<id>14097</id>
-	<group>146</group>
+	<id>14127</id>
+	<group>175</group>
 	<taskType>3</taskType>
 	<taskName>支线-参加排位赛</taskName>
 	<level>50</level>
@@ -1626,8 +2185,8 @@
 	<functionType>[1,160,1,1]</functionType>
 </config>
 <config>
-	<id>14098</id>
-	<group>148</group>
+	<id>14128</id>
+	<group>176</group>
 	<taskType>3</taskType>
 	<taskName>支线-合成卡牌</taskName>
 	<level>50</level>
@@ -1639,8 +2198,8 @@
 	<functionType>[1,129,0,3]</functionType>
 </config>
 <config>
-	<id>14099</id>
-	<group>148</group>
+	<id>14129</id>
+	<group>177</group>
 	<taskType>3</taskType>
 	<taskName>支线-合成卡牌</taskName>
 	<level>50</level>
@@ -1652,8 +2211,8 @@
 	<functionType>[1,129,0,3]</functionType>
 </config>
 <config>
-	<id>14100</id>
-	<group>150</group>
+	<id>14130</id>
+	<group>178</group>
 	<taskType>3</taskType>
 	<taskName>支线-获得卡牌</taskName>
 	<level>50</level>
@@ -1665,8 +2224,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14101</id>
-	<group>151</group>
+	<id>14131</id>
+	<group>179</group>
 	<taskType>3</taskType>
 	<taskName>支线-获得卡牌</taskName>
 	<level>50</level>
@@ -1678,8 +2237,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14102</id>
-	<group>152</group>
+	<id>14132</id>
+	<group>180</group>
 	<taskType>3</taskType>
 	<taskName>支线-获得卡牌</taskName>
 	<level>50</level>
@@ -1691,8 +2250,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14103</id>
-	<group>153</group>
+	<id>14133</id>
+	<group>181</group>
 	<taskType>3</taskType>
 	<taskName>支线-获得卡牌</taskName>
 	<level>50</level>
@@ -1704,8 +2263,8 @@
 	<functionType></functionType>
 </config>
 <config>
-	<id>14104</id>
-	<group>154</group>
+	<id>14134</id>
+	<group>182</group>
 	<taskType>3</taskType>
 	<taskName>支线-神器解密</taskName>
 	<level>50</level>
@@ -1717,8 +2276,8 @@
 	<functionType>[1,124,1,1]</functionType>
 </config>
 <config>
-	<id>14105</id>
-	<group>154</group>
+	<id>14135</id>
+	<group>183</group>
 	<taskType>3</taskType>
 	<taskName>支线-神器解密</taskName>
 	<level>50</level>
@@ -1730,8 +2289,8 @@
 	<functionType>[1,124,1,1]</functionType>
 </config>
 <config>
-	<id>14106</id>
-	<group>154</group>
+	<id>14136</id>
+	<group>184</group>
 	<taskType>3</taskType>
 	<taskName>支线-神器解密</taskName>
 	<level>50</level>
@@ -1743,21 +2302,21 @@
 	<functionType>[1,124,1,1]</functionType>
 </config>
 <config>
-	<id>14107</id>
-	<group>170</group>
+	<id>14137</id>
+	<group>185</group>
 	<taskType>3</taskType>
 	<taskName>支线-击杀单眼灵猴</taskName>
 	<level>1</level>
 	<finishType>2</finishType>
 	<finishParam>[0,10111,10]</finishParam>
-	<rewards>[[102,50],[103,50]]</rewards>
+	<rewards>[[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
 	<functionType>[1,139,0,110101]</functionType>
 </config>
 <config>
-	<id>14108</id>
-	<group>171</group>
+	<id>14138</id>
+	<group>186</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
@@ -1769,8 +2328,8 @@
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
-	<id>14109</id>
-	<group>172</group>
+	<id>14139</id>
+	<group>187</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
@@ -1782,8 +2341,8 @@
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
-	<id>14110</id>
-	<group>173</group>
+	<id>14140</id>
+	<group>188</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
@@ -1795,8 +2354,8 @@
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
-	<id>14111</id>
-	<group>174</group>
+	<id>14141</id>
+	<group>189</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
@@ -1808,8 +2367,8 @@
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
-	<id>14112</id>
-	<group>175</group>
+	<id>14142</id>
+	<group>190</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
@@ -1821,8 +2380,8 @@
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
-	<id>14113</id>
-	<group>176</group>
+	<id>14143</id>
+	<group>191</group>
 	<taskType>3</taskType>
 	<taskName>支线-通关副本</taskName>
 	<level>1</level>
@@ -1834,8 +2393,8 @@
 	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
-	<id>14114</id>
-	<group>177</group>
+	<id>14144</id>
+	<group>192</group>
 	<taskType>3</taskType>
 	<taskName>支线-无尽漩涡</taskName>
 	<level>60</level>
@@ -1847,8 +2406,8 @@
 	<functionType>[1,121,1,1]</functionType>
 </config>
 <config>
-	<id>14115</id>
-	<group>178</group>
+	<id>14145</id>
+	<group>193</group>
 	<taskType>3</taskType>
 	<taskName>支线-无尽漩涡</taskName>
 	<level>60</level>
@@ -1860,8 +2419,8 @@
 	<functionType>[1,121,1,1]</functionType>
 </config>
 <config>
-	<id>14116</id>
-	<group>179</group>
+	<id>14146</id>
+	<group>194</group>
 	<taskType>3</taskType>
 	<taskName>支线-无尽漩涡</taskName>
 	<level>60</level>
@@ -1873,8 +2432,8 @@
 	<functionType>[1,121,1,1]</functionType>
 </config>
 <config>
-	<id>14117</id>
-	<group>180</group>
+	<id>14147</id>
+	<group>195</group>
 	<taskType>3</taskType>
 	<taskName>支线-无尽漩涡</taskName>
 	<level>60</level>
@@ -1886,8 +2445,8 @@
 	<functionType>[1,121,1,1]</functionType>
 </config>
 <config>
-	<id>14118</id>
-	<group>181</group>
+	<id>14148</id>
+	<group>196</group>
 	<taskType>3</taskType>
 	<taskName>支线-无尽漩涡</taskName>
 	<level>60</level>
@@ -1899,8 +2458,8 @@
 	<functionType>[1,121,1,1]</functionType>
 </config>
 <config>
-	<id>14119</id>
-	<group>182</group>
+	<id>14149</id>
+	<group>197</group>
 	<taskType>3</taskType>
 	<taskName>支线-无尽漩涡</taskName>
 	<level>60</level>
@@ -1913,7 +2472,7 @@
 </config>
 <config>
 	<id>15001</id>
-	<group>157</group>
+	<group>198</group>
 	<taskType>5</taskType>
 	<taskName>公会-金币消耗</taskName>
 	<level>1</level>
@@ -1922,11 +2481,11 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,128,0,0]</functionType>
 </config>
 <config>
 	<id>15002</id>
-	<group>158</group>
+	<group>199</group>
 	<taskType>5</taskType>
 	<taskName>公会-击杀怪物</taskName>
 	<level>1</level>
@@ -1935,11 +2494,11 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>15003</id>
-	<group>159</group>
+	<group>200</group>
 	<taskType>5</taskType>
 	<taskName>公会-累积金币</taskName>
 	<level>1</level>
@@ -1952,7 +2511,7 @@
 </config>
 <config>
 	<id>15004</id>
-	<group>160</group>
+	<group>201</group>
 	<taskType>5</taskType>
 	<taskName>公会-通关副本</taskName>
 	<level>1</level>
@@ -1961,11 +2520,11 @@
 	<rewards>[[102,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>15005</id>
-	<group>161</group>
+	<group>202</group>
 	<taskType>5</taskType>
 	<taskName>公会-强化装备</taskName>
 	<level>1</level>
@@ -1974,24 +2533,24 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>15006</id>
-	<group>162</group>
+	<group>203</group>
 	<taskType>5</taskType>
 	<taskName>公会-分解装备</taskName>
-	<level>999</level>
+	<level>1</level>
 	<finishType>5</finishType>
 	<finishParam>[10]</finishParam>
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,132,1,2]</functionType>
 </config>
 <config>
 	<id>15007</id>
-	<group>163</group>
+	<group>204</group>
 	<taskType>5</taskType>
 	<taskName>公会-合成卡牌</taskName>
 	<level>1</level>
@@ -2000,11 +2559,11 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,129,0,3]</functionType>
 </config>
 <config>
 	<id>15009</id>
-	<group>165</group>
+	<group>205</group>
 	<taskType>5</taskType>
 	<taskName>公会-累积金币</taskName>
 	<level>1</level>
@@ -2017,7 +2576,7 @@
 </config>
 <config>
 	<id>15010</id>
-	<group>166</group>
+	<group>206</group>
 	<taskType>5</taskType>
 	<taskName>公会-通关副本</taskName>
 	<level>1</level>
@@ -2026,11 +2585,11 @@
 	<rewards>[[102,50],[103,500]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,139,1,1]</functionType>
 </config>
 <config>
 	<id>15011</id>
-	<group>167</group>
+	<group>207</group>
 	<taskType>5</taskType>
 	<taskName>公会-强化装备</taskName>
 	<level>1</level>
@@ -2039,11 +2598,11 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,145,3,0]</functionType>
 </config>
 <config>
 	<id>15012</id>
-	<group>168</group>
+	<group>208</group>
 	<taskType>5</taskType>
 	<taskName>公会-分解装备</taskName>
 	<level>1</level>
@@ -2052,11 +2611,11 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,132,1,2]</functionType>
 </config>
 <config>
 	<id>15013</id>
-	<group>169</group>
+	<group>209</group>
 	<taskType>5</taskType>
 	<taskName>公会-合成卡牌</taskName>
 	<level>1</level>
@@ -2065,11 +2624,11 @@
 	<rewards>[[102,50],[103,50]]</rewards>
 	<liveness>0</liveness>
 	<nextTaskId></nextTaskId>
-	<functionType></functionType>
+	<functionType>[1,129,0,3]</functionType>
 </config>
 <config>
 	<id>15014</id>
-	<group>170</group>
+	<group>210</group>
 	<taskType>5</taskType>
 	<taskName>公会-公会捐献</taskName>
 	<level>1</level>
@@ -2082,7 +2641,7 @@
 </config>
 <config>
 	<id>16001</id>
-	<group>200</group>
+	<group>211</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本1-6</taskName>
 	<level></level>
@@ -2095,7 +2654,7 @@
 </config>
 <config>
 	<id>16002</id>
-	<group>201</group>
+	<group>212</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本2-6</taskName>
 	<level></level>
@@ -2108,7 +2667,7 @@
 </config>
 <config>
 	<id>16003</id>
-	<group>202</group>
+	<group>213</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本3-6</taskName>
 	<level></level>
@@ -2121,7 +2680,7 @@
 </config>
 <config>
 	<id>16004</id>
-	<group>203</group>
+	<group>214</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本4-6</taskName>
 	<level></level>
@@ -2134,7 +2693,7 @@
 </config>
 <config>
 	<id>16005</id>
-	<group>204</group>
+	<group>215</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本5-6</taskName>
 	<level></level>
@@ -2147,7 +2706,7 @@
 </config>
 <config>
 	<id>16006</id>
-	<group>205</group>
+	<group>216</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本6-6</taskName>
 	<level></level>
@@ -2160,7 +2719,7 @@
 </config>
 <config>
 	<id>16007</id>
-	<group>206</group>
+	<group>217</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本7-6</taskName>
 	<level></level>
@@ -2173,7 +2732,7 @@
 </config>
 <config>
 	<id>16008</id>
-	<group>207</group>
+	<group>218</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本8-6</taskName>
 	<level></level>
@@ -2186,7 +2745,7 @@
 </config>
 <config>
 	<id>16009</id>
-	<group>208</group>
+	<group>219</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本9-6</taskName>
 	<level></level>
@@ -2199,7 +2758,7 @@
 </config>
 <config>
 	<id>16010</id>
-	<group>209</group>
+	<group>220</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本10-6</taskName>
 	<level></level>
@@ -2212,7 +2771,7 @@
 </config>
 <config>
 	<id>16011</id>
-	<group>210</group>
+	<group>221</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本11-6</taskName>
 	<level></level>
@@ -2225,7 +2784,7 @@
 </config>
 <config>
 	<id>16012</id>
-	<group>211</group>
+	<group>222</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本12-6</taskName>
 	<level></level>
@@ -2238,7 +2797,7 @@
 </config>
 <config>
 	<id>16013</id>
-	<group>212</group>
+	<group>223</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本13-6</taskName>
 	<level></level>
@@ -2251,7 +2810,7 @@
 </config>
 <config>
 	<id>16014</id>
-	<group>213</group>
+	<group>224</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本14-6</taskName>
 	<level></level>
@@ -2264,7 +2823,7 @@
 </config>
 <config>
 	<id>16015</id>
-	<group>214</group>
+	<group>225</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本15-6</taskName>
 	<level></level>
@@ -2277,7 +2836,7 @@
 </config>
 <config>
 	<id>16016</id>
-	<group>215</group>
+	<group>226</group>
 	<taskType>6</taskType>
 	<taskName>通关简单副本16-6</taskName>
 	<level></level>
@@ -2290,7 +2849,7 @@
 </config>
 <config>
 	<id>16017</id>
-	<group>216</group>
+	<group>227</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本1-6</taskName>
 	<level></level>
@@ -2303,7 +2862,7 @@
 </config>
 <config>
 	<id>16018</id>
-	<group>217</group>
+	<group>228</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本2-6</taskName>
 	<level></level>
@@ -2316,7 +2875,7 @@
 </config>
 <config>
 	<id>16019</id>
-	<group>218</group>
+	<group>229</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本3-6</taskName>
 	<level></level>
@@ -2329,7 +2888,7 @@
 </config>
 <config>
 	<id>16020</id>
-	<group>219</group>
+	<group>230</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本4-6</taskName>
 	<level></level>
@@ -2342,7 +2901,7 @@
 </config>
 <config>
 	<id>16021</id>
-	<group>220</group>
+	<group>231</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本5-6</taskName>
 	<level></level>
@@ -2355,7 +2914,7 @@
 </config>
 <config>
 	<id>16022</id>
-	<group>221</group>
+	<group>232</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本6-6</taskName>
 	<level></level>
@@ -2368,7 +2927,7 @@
 </config>
 <config>
 	<id>16023</id>
-	<group>222</group>
+	<group>233</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本7-6</taskName>
 	<level></level>
@@ -2381,7 +2940,7 @@
 </config>
 <config>
 	<id>16024</id>
-	<group>223</group>
+	<group>234</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本8-6</taskName>
 	<level></level>
@@ -2394,7 +2953,7 @@
 </config>
 <config>
 	<id>16025</id>
-	<group>224</group>
+	<group>235</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本9-6</taskName>
 	<level></level>
@@ -2407,7 +2966,7 @@
 </config>
 <config>
 	<id>16026</id>
-	<group>225</group>
+	<group>236</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本10-6</taskName>
 	<level></level>
@@ -2420,7 +2979,7 @@
 </config>
 <config>
 	<id>16027</id>
-	<group>226</group>
+	<group>237</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本11-6</taskName>
 	<level></level>
@@ -2433,7 +2992,7 @@
 </config>
 <config>
 	<id>16028</id>
-	<group>227</group>
+	<group>238</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本12-6</taskName>
 	<level></level>
@@ -2446,7 +3005,7 @@
 </config>
 <config>
 	<id>16029</id>
-	<group>228</group>
+	<group>239</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本13-6</taskName>
 	<level></level>
@@ -2459,7 +3018,7 @@
 </config>
 <config>
 	<id>16030</id>
-	<group>229</group>
+	<group>240</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本14-6</taskName>
 	<level></level>
@@ -2472,7 +3031,7 @@
 </config>
 <config>
 	<id>16031</id>
-	<group>230</group>
+	<group>241</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本15-6</taskName>
 	<level></level>
@@ -2485,7 +3044,7 @@
 </config>
 <config>
 	<id>16032</id>
-	<group>231</group>
+	<group>242</group>
 	<taskType>6</taskType>
 	<taskName>通关困难副本16-6</taskName>
 	<level></level>
@@ -2498,7 +3057,7 @@
 </config>
 <config>
 	<id>16033</id>
-	<group>232</group>
+	<group>243</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本1-6</taskName>
 	<level></level>
@@ -2511,7 +3070,7 @@
 </config>
 <config>
 	<id>16034</id>
-	<group>233</group>
+	<group>244</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本2-6</taskName>
 	<level></level>
@@ -2524,7 +3083,7 @@
 </config>
 <config>
 	<id>16035</id>
-	<group>234</group>
+	<group>245</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本3-6</taskName>
 	<level></level>
@@ -2537,7 +3096,7 @@
 </config>
 <config>
 	<id>16036</id>
-	<group>235</group>
+	<group>246</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本4-6</taskName>
 	<level></level>
@@ -2550,7 +3109,7 @@
 </config>
 <config>
 	<id>16037</id>
-	<group>236</group>
+	<group>247</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本5-6</taskName>
 	<level></level>
@@ -2563,7 +3122,7 @@
 </config>
 <config>
 	<id>16038</id>
-	<group>237</group>
+	<group>248</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本6-6</taskName>
 	<level></level>
@@ -2576,7 +3135,7 @@
 </config>
 <config>
 	<id>16039</id>
-	<group>238</group>
+	<group>249</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本7-6</taskName>
 	<level></level>
@@ -2589,7 +3148,7 @@
 </config>
 <config>
 	<id>16040</id>
-	<group>239</group>
+	<group>250</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本8-6</taskName>
 	<level></level>
@@ -2602,7 +3161,7 @@
 </config>
 <config>
 	<id>16041</id>
-	<group>240</group>
+	<group>251</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本9-6</taskName>
 	<level></level>
@@ -2615,7 +3174,7 @@
 </config>
 <config>
 	<id>16042</id>
-	<group>241</group>
+	<group>252</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本10-6</taskName>
 	<level></level>
@@ -2628,7 +3187,7 @@
 </config>
 <config>
 	<id>16043</id>
-	<group>242</group>
+	<group>253</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本11-6</taskName>
 	<level></level>
@@ -2641,7 +3200,7 @@
 </config>
 <config>
 	<id>16044</id>
-	<group>243</group>
+	<group>254</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本12-6</taskName>
 	<level></level>
@@ -2654,7 +3213,7 @@
 </config>
 <config>
 	<id>16045</id>
-	<group>244</group>
+	<group>255</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本13-6</taskName>
 	<level></level>
@@ -2667,7 +3226,7 @@
 </config>
 <config>
 	<id>16046</id>
-	<group>245</group>
+	<group>256</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本14-6</taskName>
 	<level></level>
@@ -2680,7 +3239,7 @@
 </config>
 <config>
 	<id>16047</id>
-	<group>246</group>
+	<group>257</group>
 	<taskType>6</taskType>
 	<taskName>通关噩梦副本15-6</taskName>
 	<level></level>
@@ -2693,7 +3252,7 @@
 </config>
 <config>
 	<id>16048</id>
-	<group>247</group>
+	<group>258</group>
 	<taskType>6</taskType>
 	<taskName>通关副本16-6</taskName>
 	<level></level>
@@ -2706,7 +3265,7 @@
 </config>
 <config>
 	<id>16049</id>
-	<group>248</group>
+	<group>259</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本1-6</taskName>
 	<level></level>
@@ -2719,7 +3278,7 @@
 </config>
 <config>
 	<id>16050</id>
-	<group>249</group>
+	<group>260</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本2-6</taskName>
 	<level></level>
@@ -2732,7 +3291,7 @@
 </config>
 <config>
 	<id>16051</id>
-	<group>250</group>
+	<group>261</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本3-6</taskName>
 	<level></level>
@@ -2745,7 +3304,7 @@
 </config>
 <config>
 	<id>16052</id>
-	<group>251</group>
+	<group>262</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本4-6</taskName>
 	<level></level>
@@ -2758,7 +3317,7 @@
 </config>
 <config>
 	<id>16053</id>
-	<group>252</group>
+	<group>263</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本5-6</taskName>
 	<level></level>
@@ -2771,7 +3330,7 @@
 </config>
 <config>
 	<id>16054</id>
-	<group>253</group>
+	<group>264</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本6-6</taskName>
 	<level></level>
@@ -2784,7 +3343,7 @@
 </config>
 <config>
 	<id>16055</id>
-	<group>254</group>
+	<group>265</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本7-6</taskName>
 	<level></level>
@@ -2797,7 +3356,7 @@
 </config>
 <config>
 	<id>16056</id>
-	<group>255</group>
+	<group>266</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本8-6</taskName>
 	<level></level>
@@ -2810,7 +3369,7 @@
 </config>
 <config>
 	<id>16057</id>
-	<group>256</group>
+	<group>267</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本9-6</taskName>
 	<level></level>
@@ -2823,7 +3382,7 @@
 </config>
 <config>
 	<id>16058</id>
-	<group>257</group>
+	<group>268</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本10-6</taskName>
 	<level></level>
@@ -2836,7 +3395,7 @@
 </config>
 <config>
 	<id>16059</id>
-	<group>258</group>
+	<group>269</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本11-6</taskName>
 	<level></level>
@@ -2849,7 +3408,7 @@
 </config>
 <config>
 	<id>16060</id>
-	<group>259</group>
+	<group>270</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本12-6</taskName>
 	<level></level>
@@ -2862,7 +3421,7 @@
 </config>
 <config>
 	<id>16061</id>
-	<group>260</group>
+	<group>271</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本13-6</taskName>
 	<level></level>
@@ -2875,7 +3434,7 @@
 </config>
 <config>
 	<id>16062</id>
-	<group>261</group>
+	<group>272</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本14-6</taskName>
 	<level></level>
@@ -2888,7 +3447,7 @@
 </config>
 <config>
 	<id>16063</id>
-	<group>262</group>
+	<group>273</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本15-6</taskName>
 	<level></level>
@@ -2901,7 +3460,7 @@
 </config>
 <config>
 	<id>16064</id>
-	<group>263</group>
+	<group>274</group>
 	<taskType>6</taskType>
 	<taskName>扫荡简单副本16-6</taskName>
 	<level></level>
@@ -2914,7 +3473,7 @@
 </config>
 <config>
 	<id>16065</id>
-	<group>264</group>
+	<group>275</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本1-6</taskName>
 	<level></level>
@@ -2927,7 +3486,7 @@
 </config>
 <config>
 	<id>16066</id>
-	<group>265</group>
+	<group>276</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本2-6</taskName>
 	<level></level>
@@ -2940,7 +3499,7 @@
 </config>
 <config>
 	<id>16067</id>
-	<group>266</group>
+	<group>277</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本3-6</taskName>
 	<level></level>
@@ -2953,7 +3512,7 @@
 </config>
 <config>
 	<id>16068</id>
-	<group>267</group>
+	<group>278</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本4-6</taskName>
 	<level></level>
@@ -2966,7 +3525,7 @@
 </config>
 <config>
 	<id>16069</id>
-	<group>268</group>
+	<group>279</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本5-6</taskName>
 	<level></level>
@@ -2979,7 +3538,7 @@
 </config>
 <config>
 	<id>16070</id>
-	<group>269</group>
+	<group>280</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本6-6</taskName>
 	<level></level>
@@ -2992,7 +3551,7 @@
 </config>
 <config>
 	<id>16071</id>
-	<group>270</group>
+	<group>281</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本7-6</taskName>
 	<level></level>
@@ -3005,7 +3564,7 @@
 </config>
 <config>
 	<id>16072</id>
-	<group>271</group>
+	<group>282</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本8-6</taskName>
 	<level></level>
@@ -3018,7 +3577,7 @@
 </config>
 <config>
 	<id>16073</id>
-	<group>272</group>
+	<group>283</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本9-6</taskName>
 	<level></level>
@@ -3031,7 +3590,7 @@
 </config>
 <config>
 	<id>16074</id>
-	<group>273</group>
+	<group>284</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本10-6</taskName>
 	<level></level>
@@ -3044,7 +3603,7 @@
 </config>
 <config>
 	<id>16075</id>
-	<group>274</group>
+	<group>285</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本11-6</taskName>
 	<level></level>
@@ -3057,7 +3616,7 @@
 </config>
 <config>
 	<id>16076</id>
-	<group>275</group>
+	<group>286</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本12-6</taskName>
 	<level></level>
@@ -3070,7 +3629,7 @@
 </config>
 <config>
 	<id>16077</id>
-	<group>276</group>
+	<group>287</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本13-6</taskName>
 	<level></level>
@@ -3083,7 +3642,7 @@
 </config>
 <config>
 	<id>16078</id>
-	<group>277</group>
+	<group>288</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本14-6</taskName>
 	<level></level>
@@ -3096,7 +3655,7 @@
 </config>
 <config>
 	<id>16079</id>
-	<group>278</group>
+	<group>289</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本15-6</taskName>
 	<level></level>
@@ -3109,7 +3668,7 @@
 </config>
 <config>
 	<id>16080</id>
-	<group>279</group>
+	<group>290</group>
 	<taskType>6</taskType>
 	<taskName>扫荡困难副本16-6</taskName>
 	<level></level>
@@ -3122,7 +3681,7 @@
 </config>
 <config>
 	<id>16081</id>
-	<group>280</group>
+	<group>291</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本1-6</taskName>
 	<level></level>
@@ -3135,7 +3694,7 @@
 </config>
 <config>
 	<id>16082</id>
-	<group>281</group>
+	<group>292</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本2-6</taskName>
 	<level></level>
@@ -3148,7 +3707,7 @@
 </config>
 <config>
 	<id>16083</id>
-	<group>282</group>
+	<group>293</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本3-6</taskName>
 	<level></level>
@@ -3161,7 +3720,7 @@
 </config>
 <config>
 	<id>16084</id>
-	<group>283</group>
+	<group>294</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本4-6</taskName>
 	<level></level>
@@ -3174,7 +3733,7 @@
 </config>
 <config>
 	<id>16085</id>
-	<group>284</group>
+	<group>295</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本5-6</taskName>
 	<level></level>
@@ -3187,7 +3746,7 @@
 </config>
 <config>
 	<id>16086</id>
-	<group>285</group>
+	<group>296</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本6-6</taskName>
 	<level></level>
@@ -3200,7 +3759,7 @@
 </config>
 <config>
 	<id>16087</id>
-	<group>286</group>
+	<group>297</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本7-6</taskName>
 	<level></level>
@@ -3213,7 +3772,7 @@
 </config>
 <config>
 	<id>16088</id>
-	<group>287</group>
+	<group>298</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本8-6</taskName>
 	<level></level>
@@ -3226,7 +3785,7 @@
 </config>
 <config>
 	<id>16089</id>
-	<group>288</group>
+	<group>299</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本9-6</taskName>
 	<level></level>
@@ -3239,7 +3798,7 @@
 </config>
 <config>
 	<id>16090</id>
-	<group>289</group>
+	<group>300</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本10-6</taskName>
 	<level></level>
@@ -3252,7 +3811,7 @@
 </config>
 <config>
 	<id>16091</id>
-	<group>290</group>
+	<group>301</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本11-6</taskName>
 	<level></level>
@@ -3265,7 +3824,7 @@
 </config>
 <config>
 	<id>16092</id>
-	<group>291</group>
+	<group>302</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本12-6</taskName>
 	<level></level>
@@ -3278,7 +3837,7 @@
 </config>
 <config>
 	<id>16093</id>
-	<group>292</group>
+	<group>303</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本13-6</taskName>
 	<level></level>
@@ -3291,7 +3850,7 @@
 </config>
 <config>
 	<id>16094</id>
-	<group>293</group>
+	<group>304</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本14-6</taskName>
 	<level></level>
@@ -3304,7 +3863,7 @@
 </config>
 <config>
 	<id>16095</id>
-	<group>294</group>
+	<group>305</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本15-6</taskName>
 	<level></level>
@@ -3317,7 +3876,7 @@
 </config>
 <config>
 	<id>16096</id>
-	<group>295</group>
+	<group>306</group>
 	<taskType>6</taskType>
 	<taskName>扫荡噩梦副本16-6</taskName>
 	<level></level>
@@ -3330,7 +3889,7 @@
 </config>
 <config>
 	<id>16097</id>
-	<group>296</group>
+	<group>307</group>
 	<taskType>6</taskType>
 	<taskName>击杀20个怪物</taskName>
 	<level></level>
@@ -3343,7 +3902,7 @@
 </config>
 <config>
 	<id>16098</id>
-	<group>297</group>
+	<group>308</group>
 	<taskType>6</taskType>
 	<taskName>击杀50个怪物</taskName>
 	<level></level>
@@ -3356,7 +3915,7 @@
 </config>
 <config>
 	<id>16099</id>
-	<group>298</group>
+	<group>309</group>
 	<taskType>6</taskType>
 	<taskName>击杀100个怪物</taskName>
 	<level></level>
@@ -3369,7 +3928,7 @@
 </config>
 <config>
 	<id>16100</id>
-	<group>299</group>
+	<group>310</group>
 	<taskType>6</taskType>
 	<taskName>击杀200个怪物</taskName>
 	<level></level>
@@ -3382,7 +3941,7 @@
 </config>
 <config>
 	<id>16101</id>
-	<group>300</group>
+	<group>311</group>
 	<taskType>6</taskType>
 	<taskName>击杀500个怪物</taskName>
 	<level></level>
@@ -3395,7 +3954,7 @@
 </config>
 <config>
 	<id>16102</id>
-	<group>301</group>
+	<group>312</group>
 	<taskType>6</taskType>
 	<taskName>击杀1000个怪物</taskName>
 	<level></level>
@@ -3408,7 +3967,7 @@
 </config>
 <config>
 	<id>16103</id>
-	<group>302</group>
+	<group>313</group>
 	<taskType>6</taskType>
 	<taskName>击杀1500个怪物</taskName>
 	<level></level>
@@ -3421,7 +3980,7 @@
 </config>
 <config>
 	<id>16104</id>
-	<group>303</group>
+	<group>314</group>
 	<taskType>6</taskType>
 	<taskName>击杀2000个怪物</taskName>
 	<level></level>
@@ -3434,7 +3993,7 @@
 </config>
 <config>
 	<id>16105</id>
-	<group>304</group>
+	<group>315</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通1-6</taskName>
 	<level></level>
@@ -3447,7 +4006,7 @@
 </config>
 <config>
 	<id>16106</id>
-	<group>305</group>
+	<group>316</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通2-6</taskName>
 	<level></level>
@@ -3460,7 +4019,7 @@
 </config>
 <config>
 	<id>16107</id>
-	<group>306</group>
+	<group>317</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通3-6</taskName>
 	<level></level>
@@ -3473,7 +4032,7 @@
 </config>
 <config>
 	<id>16108</id>
-	<group>307</group>
+	<group>318</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通4-6</taskName>
 	<level></level>
@@ -3486,7 +4045,7 @@
 </config>
 <config>
 	<id>16109</id>
-	<group>308</group>
+	<group>319</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通5-6</taskName>
 	<level></level>
@@ -3499,7 +4058,7 @@
 </config>
 <config>
 	<id>16110</id>
-	<group>309</group>
+	<group>320</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通6-6</taskName>
 	<level></level>
@@ -3512,7 +4071,7 @@
 </config>
 <config>
 	<id>16111</id>
-	<group>310</group>
+	<group>321</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通7-6</taskName>
 	<level></level>
@@ -3525,7 +4084,7 @@
 </config>
 <config>
 	<id>16112</id>
-	<group>311</group>
+	<group>322</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通8-6</taskName>
 	<level></level>
@@ -3538,7 +4097,7 @@
 </config>
 <config>
 	<id>16113</id>
-	<group>312</group>
+	<group>323</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通9-6</taskName>
 	<level></level>
@@ -3551,7 +4110,7 @@
 </config>
 <config>
 	<id>16114</id>
-	<group>313</group>
+	<group>324</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通10-6</taskName>
 	<level></level>
@@ -3564,7 +4123,7 @@
 </config>
 <config>
 	<id>16115</id>
-	<group>314</group>
+	<group>325</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通11-6</taskName>
 	<level></level>
@@ -3577,7 +4136,7 @@
 </config>
 <config>
 	<id>16116</id>
-	<group>315</group>
+	<group>326</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通12-6</taskName>
 	<level></level>
@@ -3590,7 +4149,7 @@
 </config>
 <config>
 	<id>16117</id>
-	<group>316</group>
+	<group>327</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通13-6</taskName>
 	<level></level>
@@ -3603,7 +4162,7 @@
 </config>
 <config>
 	<id>16118</id>
-	<group>317</group>
+	<group>328</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通14-6</taskName>
 	<level></level>
@@ -3616,7 +4175,7 @@
 </config>
 <config>
 	<id>16119</id>
-	<group>318</group>
+	<group>329</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通15-6</taskName>
 	<level></level>
@@ -3629,7 +4188,7 @@
 </config>
 <config>
 	<id>16120</id>
-	<group>319</group>
+	<group>330</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关普通16-6</taskName>
 	<level></level>
@@ -3642,7 +4201,7 @@
 </config>
 <config>
 	<id>16121</id>
-	<group>320</group>
+	<group>331</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难1-6</taskName>
 	<level></level>
@@ -3655,7 +4214,7 @@
 </config>
 <config>
 	<id>16122</id>
-	<group>321</group>
+	<group>332</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难2-6</taskName>
 	<level></level>
@@ -3668,7 +4227,7 @@
 </config>
 <config>
 	<id>16123</id>
-	<group>322</group>
+	<group>333</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难3-6</taskName>
 	<level></level>
@@ -3681,7 +4240,7 @@
 </config>
 <config>
 	<id>16124</id>
-	<group>323</group>
+	<group>334</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难4-6</taskName>
 	<level></level>
@@ -3694,7 +4253,7 @@
 </config>
 <config>
 	<id>16125</id>
-	<group>324</group>
+	<group>335</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难5-6</taskName>
 	<level></level>
@@ -3707,7 +4266,7 @@
 </config>
 <config>
 	<id>16126</id>
-	<group>325</group>
+	<group>336</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难6-6</taskName>
 	<level></level>
@@ -3720,7 +4279,7 @@
 </config>
 <config>
 	<id>16127</id>
-	<group>326</group>
+	<group>337</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难7-6</taskName>
 	<level></level>
@@ -3733,7 +4292,7 @@
 </config>
 <config>
 	<id>16128</id>
-	<group>327</group>
+	<group>338</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难8-6</taskName>
 	<level></level>
@@ -3746,7 +4305,7 @@
 </config>
 <config>
 	<id>16129</id>
-	<group>328</group>
+	<group>339</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难9-6</taskName>
 	<level></level>
@@ -3759,7 +4318,7 @@
 </config>
 <config>
 	<id>16130</id>
-	<group>329</group>
+	<group>340</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难10-6</taskName>
 	<level></level>
@@ -3772,7 +4331,7 @@
 </config>
 <config>
 	<id>16131</id>
-	<group>330</group>
+	<group>341</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难11-6</taskName>
 	<level></level>
@@ -3785,7 +4344,7 @@
 </config>
 <config>
 	<id>16132</id>
-	<group>331</group>
+	<group>342</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难12-6</taskName>
 	<level></level>
@@ -3798,7 +4357,7 @@
 </config>
 <config>
 	<id>16133</id>
-	<group>332</group>
+	<group>343</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难13-6</taskName>
 	<level></level>
@@ -3811,7 +4370,7 @@
 </config>
 <config>
 	<id>16134</id>
-	<group>333</group>
+	<group>344</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难14-6</taskName>
 	<level></level>
@@ -3824,7 +4383,7 @@
 </config>
 <config>
 	<id>16135</id>
-	<group>334</group>
+	<group>345</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难15-6</taskName>
 	<level></level>
@@ -3837,7 +4396,7 @@
 </config>
 <config>
 	<id>16136</id>
-	<group>335</group>
+	<group>346</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关困难16-6</taskName>
 	<level></level>
@@ -3850,7 +4409,7 @@
 </config>
 <config>
 	<id>16137</id>
-	<group>336</group>
+	<group>347</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦1-6</taskName>
 	<level></level>
@@ -3863,7 +4422,7 @@
 </config>
 <config>
 	<id>16138</id>
-	<group>337</group>
+	<group>348</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦2-6</taskName>
 	<level></level>
@@ -3876,7 +4435,7 @@
 </config>
 <config>
 	<id>16139</id>
-	<group>338</group>
+	<group>349</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦3-6</taskName>
 	<level></level>
@@ -3889,7 +4448,7 @@
 </config>
 <config>
 	<id>16140</id>
-	<group>339</group>
+	<group>350</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦4-6</taskName>
 	<level></level>
@@ -3902,7 +4461,7 @@
 </config>
 <config>
 	<id>16141</id>
-	<group>340</group>
+	<group>351</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦5-6</taskName>
 	<level></level>
@@ -3915,7 +4474,7 @@
 </config>
 <config>
 	<id>16142</id>
-	<group>341</group>
+	<group>352</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦6-6</taskName>
 	<level></level>
@@ -3928,7 +4487,7 @@
 </config>
 <config>
 	<id>16143</id>
-	<group>342</group>
+	<group>353</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦7-6</taskName>
 	<level></level>
@@ -3941,7 +4500,7 @@
 </config>
 <config>
 	<id>16144</id>
-	<group>343</group>
+	<group>354</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦8-6</taskName>
 	<level></level>
@@ -3954,7 +4513,7 @@
 </config>
 <config>
 	<id>16145</id>
-	<group>344</group>
+	<group>355</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦9-6</taskName>
 	<level></level>
@@ -3967,7 +4526,7 @@
 </config>
 <config>
 	<id>16146</id>
-	<group>345</group>
+	<group>356</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦10-6</taskName>
 	<level></level>
@@ -3980,7 +4539,7 @@
 </config>
 <config>
 	<id>16147</id>
-	<group>346</group>
+	<group>357</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦11-6</taskName>
 	<level></level>
@@ -3993,7 +4552,7 @@
 </config>
 <config>
 	<id>16148</id>
-	<group>347</group>
+	<group>358</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦12-6</taskName>
 	<level></level>
@@ -4006,7 +4565,7 @@
 </config>
 <config>
 	<id>16149</id>
-	<group>348</group>
+	<group>359</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦13-6</taskName>
 	<level></level>
@@ -4019,7 +4578,7 @@
 </config>
 <config>
 	<id>16150</id>
-	<group>349</group>
+	<group>360</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦14-6</taskName>
 	<level></level>
@@ -4032,7 +4591,7 @@
 </config>
 <config>
 	<id>16151</id>
-	<group>350</group>
+	<group>361</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦15-6</taskName>
 	<level></level>
@@ -4045,7 +4604,7 @@
 </config>
 <config>
 	<id>16152</id>
-	<group>351</group>
+	<group>362</group>
 	<taskType>6</taskType>
 	<taskName>受击少于100次通关噩梦16-6</taskName>
 	<level></level>
@@ -4058,7 +4617,7 @@
 </config>
 <config>
 	<id>16153</id>
-	<group>352</group>
+	<group>363</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4071,7 +4630,7 @@
 </config>
 <config>
 	<id>16154</id>
-	<group>353</group>
+	<group>364</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4084,7 +4643,7 @@
 </config>
 <config>
 	<id>16155</id>
-	<group>354</group>
+	<group>365</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4097,7 +4656,7 @@
 </config>
 <config>
 	<id>16156</id>
-	<group>355</group>
+	<group>366</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4110,7 +4669,7 @@
 </config>
 <config>
 	<id>16157</id>
-	<group>356</group>
+	<group>367</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4123,7 +4682,7 @@
 </config>
 <config>
 	<id>16158</id>
-	<group>357</group>
+	<group>368</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4136,7 +4695,7 @@
 </config>
 <config>
 	<id>16159</id>
-	<group>358</group>
+	<group>369</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4149,7 +4708,7 @@
 </config>
 <config>
 	<id>16160</id>
-	<group>359</group>
+	<group>370</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4162,7 +4721,7 @@
 </config>
 <config>
 	<id>16161</id>
-	<group>360</group>
+	<group>371</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4175,7 +4734,7 @@
 </config>
 <config>
 	<id>16162</id>
-	<group>361</group>
+	<group>372</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4188,7 +4747,7 @@
 </config>
 <config>
 	<id>16163</id>
-	<group>362</group>
+	<group>373</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4201,7 +4760,7 @@
 </config>
 <config>
 	<id>16164</id>
-	<group>363</group>
+	<group>374</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4214,7 +4773,7 @@
 </config>
 <config>
 	<id>16165</id>
-	<group>364</group>
+	<group>375</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4227,7 +4786,7 @@
 </config>
 <config>
 	<id>16166</id>
-	<group>365</group>
+	<group>376</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4240,7 +4799,7 @@
 </config>
 <config>
 	<id>16167</id>
-	<group>366</group>
+	<group>377</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4253,7 +4812,7 @@
 </config>
 <config>
 	<id>16168</id>
-	<group>367</group>
+	<group>378</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4266,7 +4825,7 @@
 </config>
 <config>
 	<id>16169</id>
-	<group>368</group>
+	<group>379</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4279,7 +4838,7 @@
 </config>
 <config>
 	<id>16170</id>
-	<group>369</group>
+	<group>380</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4292,7 +4851,7 @@
 </config>
 <config>
 	<id>16171</id>
-	<group>370</group>
+	<group>381</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4305,7 +4864,7 @@
 </config>
 <config>
 	<id>16172</id>
-	<group>371</group>
+	<group>382</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4318,7 +4877,7 @@
 </config>
 <config>
 	<id>16173</id>
-	<group>372</group>
+	<group>383</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4331,7 +4890,7 @@
 </config>
 <config>
 	<id>16174</id>
-	<group>373</group>
+	<group>384</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4344,7 +4903,7 @@
 </config>
 <config>
 	<id>16175</id>
-	<group>374</group>
+	<group>385</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4357,7 +4916,7 @@
 </config>
 <config>
 	<id>16176</id>
-	<group>375</group>
+	<group>386</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4370,7 +4929,7 @@
 </config>
 <config>
 	<id>16177</id>
-	<group>376</group>
+	<group>387</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4383,7 +4942,7 @@
 </config>
 <config>
 	<id>16178</id>
-	<group>377</group>
+	<group>388</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4396,7 +4955,7 @@
 </config>
 <config>
 	<id>16179</id>
-	<group>378</group>
+	<group>389</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4409,7 +4968,7 @@
 </config>
 <config>
 	<id>16180</id>
-	<group>379</group>
+	<group>390</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4422,7 +4981,7 @@
 </config>
 <config>
 	<id>16181</id>
-	<group>380</group>
+	<group>391</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4435,7 +4994,7 @@
 </config>
 <config>
 	<id>16182</id>
-	<group>381</group>
+	<group>392</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4448,7 +5007,7 @@
 </config>
 <config>
 	<id>16183</id>
-	<group>382</group>
+	<group>393</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4461,7 +5020,7 @@
 </config>
 <config>
 	<id>16184</id>
-	<group>383</group>
+	<group>394</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4474,7 +5033,7 @@
 </config>
 <config>
 	<id>16185</id>
-	<group>384</group>
+	<group>395</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4487,7 +5046,7 @@
 </config>
 <config>
 	<id>16186</id>
-	<group>385</group>
+	<group>396</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4500,7 +5059,7 @@
 </config>
 <config>
 	<id>16187</id>
-	<group>386</group>
+	<group>397</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4513,7 +5072,7 @@
 </config>
 <config>
 	<id>16188</id>
-	<group>387</group>
+	<group>398</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4526,7 +5085,7 @@
 </config>
 <config>
 	<id>16189</id>
-	<group>388</group>
+	<group>399</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4539,7 +5098,7 @@
 </config>
 <config>
 	<id>16190</id>
-	<group>389</group>
+	<group>400</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4552,7 +5111,7 @@
 </config>
 <config>
 	<id>16191</id>
-	<group>390</group>
+	<group>401</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4565,7 +5124,7 @@
 </config>
 <config>
 	<id>16192</id>
-	<group>391</group>
+	<group>402</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4578,7 +5137,7 @@
 </config>
 <config>
 	<id>16193</id>
-	<group>392</group>
+	<group>403</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4591,7 +5150,7 @@
 </config>
 <config>
 	<id>16194</id>
-	<group>393</group>
+	<group>404</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4604,7 +5163,7 @@
 </config>
 <config>
 	<id>16195</id>
-	<group>394</group>
+	<group>405</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4617,7 +5176,7 @@
 </config>
 <config>
 	<id>16196</id>
-	<group>395</group>
+	<group>406</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4630,7 +5189,7 @@
 </config>
 <config>
 	<id>16197</id>
-	<group>396</group>
+	<group>407</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4643,7 +5202,7 @@
 </config>
 <config>
 	<id>16198</id>
-	<group>397</group>
+	<group>408</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4656,7 +5215,7 @@
 </config>
 <config>
 	<id>16199</id>
-	<group>398</group>
+	<group>409</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4669,7 +5228,7 @@
 </config>
 <config>
 	<id>16200</id>
-	<group>399</group>
+	<group>410</group>
 	<taskType>6</taskType>
 	<taskName>通关时间小于30秒</taskName>
 	<level></level>
@@ -4682,7 +5241,7 @@
 </config>
 <config>
 	<id>16201</id>
-	<group>400</group>
+	<group>411</group>
 	<taskType>6</taskType>
 	<taskName>个人通关时空仪-死亡沼泽</taskName>
 	<level></level>
@@ -4695,7 +5254,7 @@
 </config>
 <config>
 	<id>16202</id>
-	<group>401</group>
+	<group>412</group>
 	<taskType>6</taskType>
 	<taskName>个人通关时空仪-魔云之巅</taskName>
 	<level></level>
@@ -4708,7 +5267,7 @@
 </config>
 <config>
 	<id>16203</id>
-	<group>402</group>
+	<group>413</group>
 	<taskType>6</taskType>
 	<taskName>个人通关时空仪-幽冥神殿</taskName>
 	<level></level>
@@ -4721,7 +5280,7 @@
 </config>
 <config>
 	<id>16204</id>
-	<group>403</group>
+	<group>414</group>
 	<taskType>6</taskType>
 	<taskName>个人通关时空仪-厄运地牢</taskName>
 	<level></level>
@@ -4734,7 +5293,7 @@
 </config>
 <config>
 	<id>16205</id>
-	<group>404</group>
+	<group>415</group>
 	<taskType>6</taskType>
 	<taskName>个人通关时空仪-熔火之洲</taskName>
 	<level></level>
@@ -4747,7 +5306,7 @@
 </config>
 <config>
 	<id>16206</id>
-	<group>405</group>
+	<group>416</group>
 	<taskType>6</taskType>
 	<taskName>组队通关时空仪-死亡沼泽</taskName>
 	<level></level>
@@ -4760,7 +5319,7 @@
 </config>
 <config>
 	<id>16207</id>
-	<group>406</group>
+	<group>417</group>
 	<taskType>6</taskType>
 	<taskName>组队通关时空仪-魔云之巅</taskName>
 	<level></level>
@@ -4773,7 +5332,7 @@
 </config>
 <config>
 	<id>16208</id>
-	<group>407</group>
+	<group>418</group>
 	<taskType>6</taskType>
 	<taskName>组队通关时空仪-幽冥神殿</taskName>
 	<level></level>
@@ -4786,7 +5345,7 @@
 </config>
 <config>
 	<id>16209</id>
-	<group>408</group>
+	<group>419</group>
 	<taskType>6</taskType>
 	<taskName>组队通关时空仪-厄运地牢</taskName>
 	<level></level>
@@ -4799,7 +5358,7 @@
 </config>
 <config>
 	<id>16210</id>
-	<group>409</group>
+	<group>420</group>
 	<taskType>6</taskType>
 	<taskName>组队通关时空仪-熔火之洲</taskName>
 	<level></level>
@@ -4812,7 +5371,7 @@
 </config>
 <config>
 	<id>16211</id>
-	<group>410</group>
+	<group>421</group>
 	<taskType>6</taskType>
 	<taskName>通关团队副本</taskName>
 	<level></level>
@@ -4825,7 +5384,7 @@
 </config>
 <config>
 	<id>16212</id>
-	<group>411</group>
+	<group>422</group>
 	<taskType>6</taskType>
 	<taskName>通关团队副本时间小于50秒</taskName>
 	<level></level>
@@ -4838,7 +5397,7 @@
 </config>
 <config>
 	<id>16213</id>
-	<group>412</group>
+	<group>423</group>
 	<taskType>6</taskType>
 	<taskName>作为团长带领成员通关</taskName>
 	<level></level>
@@ -4851,7 +5410,7 @@
 </config>
 <config>
 	<id>16214</id>
-	<group>413</group>
+	<group>424</group>
 	<taskType>6</taskType>
 	<taskName>邀请好友通关死亡沼泽</taskName>
 	<level></level>
@@ -4864,7 +5423,7 @@
 </config>
 <config>
 	<id>16215</id>
-	<group>414</group>
+	<group>425</group>
 	<taskType>6</taskType>
 	<taskName>邀请好友通关熔火之洲</taskName>
 	<level></level>
@@ -4877,7 +5436,7 @@
 </config>
 <config>
 	<id>16216</id>
-	<group>415</group>
+	<group>426</group>
 	<taskType>6</taskType>
 	<taskName>邀请好友通关希望试练</taskName>
 	<level></level>
@@ -4890,7 +5449,7 @@
 </config>
 <config>
 	<id>16217</id>
-	<group>416</group>
+	<group>427</group>
 	<taskType>6</taskType>
 	<taskName>邀请好友通关勇气试练</taskName>
 	<level></level>
@@ -4903,7 +5462,7 @@
 </config>
 <config>
 	<id>16218</id>
-	<group>417</group>
+	<group>428</group>
 	<taskType>6</taskType>
 	<taskName>邀请帮会成员通关死亡沼泽</taskName>
 	<level></level>
@@ -4916,7 +5475,7 @@
 </config>
 <config>
 	<id>16219</id>
-	<group>418</group>
+	<group>429</group>
 	<taskType>6</taskType>
 	<taskName>邀请帮会成员通关熔火之洲</taskName>
 	<level></level>
@@ -4929,7 +5488,7 @@
 </config>
 <config>
 	<id>16220</id>
-	<group>419</group>
+	<group>430</group>
 	<taskType>6</taskType>
 	<taskName>邀请帮会成员通关希望试练</taskName>
 	<level></level>
@@ -4942,7 +5501,7 @@
 </config>
 <config>
 	<id>16221</id>
-	<group>420</group>
+	<group>431</group>
 	<taskType>6</taskType>
 	<taskName>邀请帮会成员通关勇气试练</taskName>
 	<level></level>
@@ -4955,7 +5514,7 @@
 </config>
 <config>
 	<id>16222</id>
-	<group>421</group>
+	<group>432</group>
 	<taskType>6</taskType>
 	<taskName>通关简单难度金币副本</taskName>
 	<level></level>
@@ -4968,7 +5527,7 @@
 </config>
 <config>
 	<id>16223</id>
-	<group>422</group>
+	<group>433</group>
 	<taskType>6</taskType>
 	<taskName>通关地狱难度金币副本</taskName>
 	<level></level>
@@ -4981,7 +5540,7 @@
 </config>
 <config>
 	<id>16224</id>
-	<group>423</group>
+	<group>434</group>
 	<taskType>6</taskType>
 	<taskName>通关简单难度顺手牵羊</taskName>
 	<level></level>
@@ -4994,7 +5553,7 @@
 </config>
 <config>
 	<id>16225</id>
-	<group>424</group>
+	<group>435</group>
 	<taskType>6</taskType>
 	<taskName>通关地狱难度顺手牵羊</taskName>
 	<level></level>
@@ -5007,7 +5566,7 @@
 </config>
 <config>
 	<id>16226</id>
-	<group>425</group>
+	<group>436</group>
 	<taskType>6</taskType>
 	<taskName>通关简单难度精绝宝藏</taskName>
 	<level></level>
@@ -5020,7 +5579,7 @@
 </config>
 <config>
 	<id>16227</id>
-	<group>426</group>
+	<group>437</group>
 	<taskType>6</taskType>
 	<taskName>通关地狱难度精绝宝藏</taskName>
 	<level></level>
@@ -5033,7 +5592,7 @@
 </config>
 <config>
 	<id>16228</id>
-	<group>427</group>
+	<group>438</group>
 	<taskType>6</taskType>
 	<taskName>通关简单难度极限躲避</taskName>
 	<level></level>
@@ -5046,7 +5605,7 @@
 </config>
 <config>
 	<id>16229</id>
-	<group>428</group>
+	<group>439</group>
 	<taskType>6</taskType>
 	<taskName>通关地狱难度极限躲避</taskName>
 	<level></level>
@@ -5059,7 +5618,7 @@
 </config>
 <config>
 	<id>16230</id>
-	<group>429</group>
+	<group>440</group>
 	<taskType>6</taskType>
 	<taskName>地狱难度极限躲避未被击中</taskName>
 	<level></level>
@@ -5072,7 +5631,7 @@
 </config>
 <config>
 	<id>16231</id>
-	<group>430</group>
+	<group>441</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关剧毒噩梦难度</taskName>
 	<level></level>
@@ -5085,7 +5644,7 @@
 </config>
 <config>
 	<id>16232</id>
-	<group>431</group>
+	<group>442</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关冻结噩梦难度</taskName>
 	<level></level>
@@ -5098,7 +5657,7 @@
 </config>
 <config>
 	<id>16233</id>
-	<group>432</group>
+	<group>443</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关坚韧噩梦难度</taskName>
 	<level></level>
@@ -5111,7 +5670,7 @@
 </config>
 <config>
 	<id>16234</id>
-	<group>433</group>
+	<group>444</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关流血噩梦难度</taskName>
 	<level></level>
@@ -5124,7 +5683,7 @@
 </config>
 <config>
 	<id>16235</id>
-	<group>434</group>
+	<group>445</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关生命噩梦难度</taskName>
 	<level></level>
@@ -5137,7 +5696,7 @@
 </config>
 <config>
 	<id>16236</id>
-	<group>435</group>
+	<group>446</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关石化噩梦难度</taskName>
 	<level></level>
@@ -5150,7 +5709,7 @@
 </config>
 <config>
 	<id>16237</id>
-	<group>436</group>
+	<group>447</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关威力噩梦难度</taskName>
 	<level></level>
@@ -5163,7 +5722,7 @@
 </config>
 <config>
 	<id>16238</id>
-	<group>437</group>
+	<group>448</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关眩晕噩梦难度</taskName>
 	<level></level>
@@ -5176,7 +5735,7 @@
 </config>
 <config>
 	<id>16239</id>
-	<group>438</group>
+	<group>449</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关灼烧噩梦难度</taskName>
 	<level></level>
@@ -5189,7 +5748,7 @@
 </config>
 <config>
 	<id>16240</id>
-	<group>439</group>
+	<group>450</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关吸血噩梦难度</taskName>
 	<level></level>
@@ -5202,7 +5761,7 @@
 </config>
 <config>
 	<id>16241</id>
-	<group>440</group>
+	<group>451</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关剧毒噩梦难度</taskName>
 	<level></level>
@@ -5215,7 +5774,7 @@
 </config>
 <config>
 	<id>16242</id>
-	<group>441</group>
+	<group>452</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关冻结噩梦难度</taskName>
 	<level></level>
@@ -5228,7 +5787,7 @@
 </config>
 <config>
 	<id>16243</id>
-	<group>442</group>
+	<group>453</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关坚韧噩梦难度</taskName>
 	<level></level>
@@ -5241,7 +5800,7 @@
 </config>
 <config>
 	<id>16244</id>
-	<group>443</group>
+	<group>454</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关流血噩梦难度</taskName>
 	<level></level>
@@ -5254,7 +5813,7 @@
 </config>
 <config>
 	<id>16245</id>
-	<group>444</group>
+	<group>455</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关生命噩梦难度</taskName>
 	<level></level>
@@ -5267,7 +5826,7 @@
 </config>
 <config>
 	<id>16246</id>
-	<group>445</group>
+	<group>456</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关石化噩梦难度</taskName>
 	<level></level>
@@ -5280,7 +5839,7 @@
 </config>
 <config>
 	<id>16247</id>
-	<group>446</group>
+	<group>457</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关威力噩梦难度</taskName>
 	<level></level>
@@ -5293,7 +5852,7 @@
 </config>
 <config>
 	<id>16248</id>
-	<group>447</group>
+	<group>458</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关眩晕噩梦难度</taskName>
 	<level></level>
@@ -5306,7 +5865,7 @@
 </config>
 <config>
 	<id>16249</id>
-	<group>448</group>
+	<group>459</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关灼烧噩梦难度</taskName>
 	<level></level>
@@ -5319,7 +5878,7 @@
 </config>
 <config>
 	<id>16250</id>
-	<group>449</group>
+	<group>460</group>
 	<taskType>6</taskType>
 	<taskName>试练场通关吸血噩梦难度</taskName>
 	<level></level>
@@ -5332,7 +5891,7 @@
 </config>
 <config>
 	<id>16251</id>
-	<group>450</group>
+	<group>461</group>
 	<taskType>6</taskType>
 	<taskName>通关无尽漩涡10层</taskName>
 	<level></level>
@@ -5345,7 +5904,7 @@
 </config>
 <config>
 	<id>16252</id>
-	<group>451</group>
+	<group>462</group>
 	<taskType>6</taskType>
 	<taskName>通关无尽漩涡50层</taskName>
 	<level></level>
@@ -5358,7 +5917,7 @@
 </config>
 <config>
 	<id>16253</id>
-	<group>452</group>
+	<group>463</group>
 	<taskType>6</taskType>
 	<taskName>通关无尽漩涡100层</taskName>
 	<level></level>
@@ -5371,7 +5930,7 @@
 </config>
 <config>
 	<id>16254</id>
-	<group>453</group>
+	<group>464</group>
 	<taskType>6</taskType>
 	<taskName>通关无尽漩涡200层</taskName>
 	<level></level>
@@ -5384,7 +5943,7 @@
 </config>
 <config>
 	<id>16255</id>
-	<group>454</group>
+	<group>465</group>
 	<taskType>6</taskType>
 	<taskName>参与击杀1次世界boss</taskName>
 	<level></level>
@@ -5397,7 +5956,7 @@
 </config>
 <config>
 	<id>16256</id>
-	<group>455</group>
+	<group>466</group>
 	<taskType>6</taskType>
 	<taskName>参与击杀20次世界boss</taskName>
 	<level></level>
@@ -5410,7 +5969,7 @@
 </config>
 <config>
 	<id>16257</id>
-	<group>456</group>
+	<group>467</group>
 	<taskType>7</taskType>
 	<taskName>竞技场获得3连胜</taskName>
 	<level></level>
@@ -5423,7 +5982,7 @@
 </config>
 <config>
 	<id>16258</id>
-	<group>457</group>
+	<group>468</group>
 	<taskType>7</taskType>
 	<taskName>竞技场获得10连胜</taskName>
 	<level></level>
@@ -5436,7 +5995,7 @@
 </config>
 <config>
 	<id>16259</id>
-	<group>458</group>
+	<group>469</group>
 	<taskType>7</taskType>
 	<taskName>挑战竞技场1次</taskName>
 	<level></level>
@@ -5449,7 +6008,7 @@
 </config>
 <config>
 	<id>16260</id>
-	<group>459</group>
+	<group>470</group>
 	<taskType>7</taskType>
 	<taskName>挑战竞技场50次</taskName>
 	<level></level>
@@ -5462,7 +6021,7 @@
 </config>
 <config>
 	<id>16261</id>
-	<group>460</group>
+	<group>471</group>
 	<taskType>7</taskType>
 	<taskName>挑战竞技场100次</taskName>
 	<level></level>
@@ -5475,7 +6034,7 @@
 </config>
 <config>
 	<id>16262</id>
-	<group>461</group>
+	<group>472</group>
 	<taskType>7</taskType>
 	<taskName>排位赛获得青铜段位</taskName>
 	<level></level>
@@ -5488,7 +6047,7 @@
 </config>
 <config>
 	<id>16263</id>
-	<group>462</group>
+	<group>473</group>
 	<taskType>7</taskType>
 	<taskName>排位赛获得白银段位</taskName>
 	<level></level>
@@ -5501,7 +6060,7 @@
 </config>
 <config>
 	<id>16264</id>
-	<group>463</group>
+	<group>474</group>
 	<taskType>7</taskType>
 	<taskName>排位赛获得黄金段位</taskName>
 	<level></level>
@@ -5514,7 +6073,7 @@
 </config>
 <config>
 	<id>16265</id>
-	<group>464</group>
+	<group>475</group>
 	<taskType>7</taskType>
 	<taskName>排位赛获得铂金段位</taskName>
 	<level></level>
@@ -5527,7 +6086,7 @@
 </config>
 <config>
 	<id>16266</id>
-	<group>465</group>
+	<group>476</group>
 	<taskType>7</taskType>
 	<taskName>排位赛获得钻石段位</taskName>
 	<level></level>
@@ -5540,7 +6099,7 @@
 </config>
 <config>
 	<id>16267</id>
-	<group>466</group>
+	<group>477</group>
 	<taskType>7</taskType>
 	<taskName>排位赛获得王者段位</taskName>
 	<level></level>
@@ -5553,7 +6112,7 @@
 </config>
 <config>
 	<id>16268</id>
-	<group>467</group>
+	<group>478</group>
 	<taskType>7</taskType>
 	<taskName>挑战排位赛1次</taskName>
 	<level></level>
@@ -5566,7 +6125,7 @@
 </config>
 <config>
 	<id>16269</id>
-	<group>468</group>
+	<group>479</group>
 	<taskType>7</taskType>
 	<taskName>挑战排位赛50次</taskName>
 	<level></level>
@@ -5579,7 +6138,7 @@
 </config>
 <config>
 	<id>16270</id>
-	<group>469</group>
+	<group>480</group>
 	<taskType>7</taskType>
 	<taskName>挑战排位赛100次</taskName>
 	<level></level>
@@ -5592,7 +6151,7 @@
 </config>
 <config>
 	<id>16271</id>
-	<group>470</group>
+	<group>481</group>
 	<taskType>7</taskType>
 	<taskName>英雄试练挑战1次</taskName>
 	<level></level>
@@ -5605,7 +6164,7 @@
 </config>
 <config>
 	<id>16272</id>
-	<group>471</group>
+	<group>482</group>
 	<taskType>7</taskType>
 	<taskName>英雄试练挑战50次</taskName>
 	<level></level>
@@ -5618,7 +6177,7 @@
 </config>
 <config>
 	<id>16273</id>
-	<group>472</group>
+	<group>483</group>
 	<taskType>7</taskType>
 	<taskName>英雄试练通关1次</taskName>
 	<level></level>
@@ -5631,7 +6190,7 @@
 </config>
 <config>
 	<id>16274</id>
-	<group>473</group>
+	<group>484</group>
 	<taskType>7</taskType>
 	<taskName>英雄试练通关10次</taskName>
 	<level></level>
@@ -5644,7 +6203,7 @@
 </config>
 <config>
 	<id>16275</id>
-	<group>474</group>
+	<group>485</group>
 	<taskType>8</taskType>
 	<taskName>拥有1个好友</taskName>
 	<level></level>
@@ -5657,7 +6216,7 @@
 </config>
 <config>
 	<id>16276</id>
-	<group>475</group>
+	<group>486</group>
 	<taskType>8</taskType>
 	<taskName>拥有10个好友</taskName>
 	<level></level>
@@ -5670,7 +6229,7 @@
 </config>
 <config>
 	<id>16277</id>
-	<group>476</group>
+	<group>487</group>
 	<taskType>8</taskType>
 	<taskName>拥有50个好友</taskName>
 	<level></level>
@@ -5683,7 +6242,7 @@
 </config>
 <config>
 	<id>16278</id>
-	<group>477</group>
+	<group>488</group>
 	<taskType>8</taskType>
 	<taskName>世界频道发言1次</taskName>
 	<level></level>
@@ -5696,7 +6255,7 @@
 </config>
 <config>
 	<id>16279</id>
-	<group>479</group>
+	<group>489</group>
 	<taskType>8</taskType>
 	<taskName>公会频道发言1次</taskName>
 	<level></level>
@@ -5709,7 +6268,7 @@
 </config>
 <config>
 	<id>16280</id>
-	<group>480</group>
+	<group>490</group>
 	<taskType>8</taskType>
 	<taskName>队伍频道发言1次</taskName>
 	<level></level>
@@ -5722,7 +6281,7 @@
 </config>
 <config>
 	<id>16281</id>
-	<group>481</group>
+	<group>491</group>
 	<taskType>8</taskType>
 	<taskName>完整解锁神器-龙图腾</taskName>
 	<level></level>
@@ -5735,7 +6294,7 @@
 </config>
 <config>
 	<id>16282</id>
-	<group>481</group>
+	<group>492</group>
 	<taskType>8</taskType>
 	<taskName>完整解锁神器-镇魂灯</taskName>
 	<level></level>
@@ -5748,7 +6307,7 @@
 </config>
 <config>
 	<id>16283</id>
-	<group>481</group>
+	<group>493</group>
 	<taskType>8</taskType>
 	<taskName>完整解锁神器-魔眼螺</taskName>
 	<level></level>
@@ -5761,7 +6320,7 @@
 </config>
 <config>
 	<id>16284</id>
-	<group>481</group>
+	<group>494</group>
 	<taskType>8</taskType>
 	<taskName>完整解锁神器-搬山印</taskName>
 	<level></level>
@@ -5774,7 +6333,7 @@
 </config>
 <config>
 	<id>16285</id>
-	<group>482</group>
+	<group>495</group>
 	<taskType>8</taskType>
 	<taskName>完整解锁神器-月牙石</taskName>
 	<level></level>
@@ -5787,7 +6346,7 @@
 </config>
 <config>
 	<id>16286</id>
-	<group>483</group>
+	<group>496</group>
 	<taskType>8</taskType>
 	<taskName>完整解锁神器-蝎子王</taskName>
 	<level></level>
@@ -5800,7 +6359,7 @@
 </config>
 <config>
 	<id>16287</id>
-	<group>484</group>
+	<group>497</group>
 	<taskType>8</taskType>
 	<taskName>完整解锁神器-摸金符</taskName>
 	<level></level>
@@ -5813,7 +6372,7 @@
 </config>
 <config>
 	<id>16288</id>
-	<group>485</group>
+	<group>498</group>
 	<taskType>8</taskType>
 	<taskName>完整解锁神器-亡灵皿</taskName>
 	<level></level>
@@ -5826,7 +6385,7 @@
 </config>
 <config>
 	<id>16289</id>
-	<group>486</group>
+	<group>499</group>
 	<taskType>8</taskType>
 	<taskName>升阶1个神器到10阶</taskName>
 	<level></level>
@@ -5839,7 +6398,7 @@
 </config>
 <config>
 	<id>16290</id>
-	<group>487</group>
+	<group>500</group>
 	<taskType>8</taskType>
 	<taskName>精绝遗迹声望达到尊敬</taskName>
 	<level></level>
@@ -5852,7 +6411,7 @@
 </config>
 <config>
 	<id>16291</id>
-	<group>488</group>
+	<group>501</group>
 	<taskType>8</taskType>
 	<taskName>鬼面盗墓者声望达到尊敬</taskName>
 	<level></level>
@@ -5865,7 +6424,7 @@
 </config>
 <config>
 	<id>16292</id>
-	<group>489</group>
+	<group>502</group>
 	<taskType>8</taskType>
 	<taskName>丢雷魔云窟声望达到尊敬</taskName>
 	<level></level>
@@ -5878,7 +6437,7 @@
 </config>
 <config>
 	<id>16293</id>
-	<group>490</group>
+	<group>503</group>
 	<taskType>8</taskType>
 	<taskName>兜率宫声望达到尊敬</taskName>
 	<level></level>
@@ -5891,7 +6450,7 @@
 </config>
 <config>
 	<id>16294</id>
-	<group>491</group>
+	<group>504</group>
 	<taskType>8</taskType>
 	<taskName>暗之守护者声望达到尊敬</taskName>
 	<level></level>
@@ -5904,7 +6463,7 @@
 </config>
 <config>
 	<id>16295</id>
-	<group>492</group>
+	<group>505</group>
 	<taskType>8</taskType>
 	<taskName>光之守护者声望达到尊敬</taskName>
 	<level></level>
@@ -5917,7 +6476,7 @@
 </config>
 <config>
 	<id>16296</id>
-	<group>493</group>
+	<group>506</group>
 	<taskType>8</taskType>
 	<taskName>神权之鹰声望达到尊敬</taskName>
 	<level></level>
@@ -5930,7 +6489,7 @@
 </config>
 <config>
 	<id>16297</id>
-	<group>494</group>
+	<group>507</group>
 	<taskType>8</taskType>
 	<taskName>亡灵审判声望达到尊敬</taskName>
 	<level></level>
@@ -5943,7 +6502,7 @@
 </config>
 <config>
 	<id>16298</id>
-	<group>495</group>
+	<group>508</group>
 	<taskType>8</taskType>
 	<taskName>获得1个宠物</taskName>
 	<level></level>
@@ -5956,7 +6515,7 @@
 </config>
 <config>
 	<id>16299</id>
-	<group>496</group>
+	<group>509</group>
 	<taskType>8</taskType>
 	<taskName>获得10个宠物</taskName>
 	<level></level>
@@ -5969,7 +6528,7 @@
 </config>
 <config>
 	<id>16300</id>
-	<group>497</group>
+	<group>510</group>
 	<taskType>8</taskType>
 	<taskName>获得1个s级宠物</taskName>
 	<level></level>
@@ -5982,7 +6541,7 @@
 </config>
 <config>
 	<id>16301</id>
-	<group>498</group>
+	<group>511</group>
 	<taskType>8</taskType>
 	<taskName>获得10个s级宠物</taskName>
 	<level></level>
@@ -5995,7 +6554,7 @@
 </config>
 <config>
 	<id>16302</id>
-	<group>499</group>
+	<group>512</group>
 	<taskType>8</taskType>
 	<taskName>变异1个宠物</taskName>
 	<level></level>
@@ -6008,7 +6567,7 @@
 </config>
 <config>
 	<id>16303</id>
-	<group>500</group>
+	<group>513</group>
 	<taskType>8</taskType>
 	<taskName>变异10个宠物</taskName>
 	<level></level>
@@ -6021,7 +6580,7 @@
 </config>
 <config>
 	<id>16304</id>
-	<group>501</group>
+	<group>514</group>
 	<taskType>8</taskType>
 	<taskName>完成1次宠物探险</taskName>
 	<level></level>
@@ -6034,7 +6593,7 @@
 </config>
 <config>
 	<id>16305</id>
-	<group>502</group>
+	<group>515</group>
 	<taskType>8</taskType>
 	<taskName>完成1次宠物烹饪</taskName>
 	<level></level>
@@ -6047,7 +6606,7 @@
 </config>
 <config>
 	<id>16306</id>
-	<group>503</group>
+	<group>516</group>
 	<taskType>8</taskType>
 	<taskName>完成1次宠物手工锻造</taskName>
 	<level></level>
@@ -6060,7 +6619,7 @@
 </config>
 <config>
 	<id>16307</id>
-	<group>504</group>
+	<group>517</group>
 	<taskType>8</taskType>
 	<taskName>完成1次宠物召唤</taskName>
 	<level></level>
@@ -6073,7 +6632,7 @@
 </config>
 <config>
 	<id>16308</id>
-	<group>505</group>
+	<group>518</group>
 	<taskType>8</taskType>
 	<taskName>完成1次宠物挖矿</taskName>
 	<level></level>
@@ -6086,7 +6645,7 @@
 </config>
 <config>
 	<id>16309</id>
-	<group>506</group>
+	<group>519</group>
 	<taskType>8</taskType>
 	<taskName>完成20次宠物3级探险</taskName>
 	<level></level>
@@ -6099,7 +6658,7 @@
 </config>
 <config>
 	<id>16310</id>
-	<group>507</group>
+	<group>520</group>
 	<taskType>8</taskType>
 	<taskName>完成20次宠物3级烹饪</taskName>
 	<level></level>
@@ -6112,7 +6671,7 @@
 </config>
 <config>
 	<id>16311</id>
-	<group>508</group>
+	<group>521</group>
 	<taskType>8</taskType>
 	<taskName>完成20次宠物水利锻造</taskName>
 	<level></level>
@@ -6125,7 +6684,7 @@
 </config>
 <config>
 	<id>16312</id>
-	<group>509</group>
+	<group>522</group>
 	<taskType>8</taskType>
 	<taskName>完成20次宠物高级召唤</taskName>
 	<level></level>
@@ -6138,7 +6697,7 @@
 </config>
 <config>
 	<id>16313</id>
-	<group>510</group>
+	<group>523</group>
 	<taskType>8</taskType>
 	<taskName>完成20次宠物3级挖矿</taskName>
 	<level></level>
@@ -6151,7 +6710,7 @@
 </config>
 <config>
 	<id>16314</id>
-	<group>511</group>
+	<group>524</group>
 	<taskType>8</taskType>
 	<taskName>获得1张卡片</taskName>
 	<level></level>
@@ -6164,7 +6723,7 @@
 </config>
 <config>
 	<id>16315</id>
-	<group>512</group>
+	<group>525</group>
 	<taskType>8</taskType>
 	<taskName>获得50张卡片</taskName>
 	<level></level>
@@ -6177,7 +6736,7 @@
 </config>
 <config>
 	<id>16316</id>
-	<group>513</group>
+	<group>526</group>
 	<taskType>8</taskType>
 	<taskName>终极冲击升至50级</taskName>
 	<level></level>
@@ -6190,7 +6749,7 @@
 </config>
 <config>
 	<id>16317</id>
-	<group>514</group>
+	<group>527</group>
 	<taskType>8</taskType>
 	<taskName>终极冲击升至100级</taskName>
 	<level></level>
@@ -6203,7 +6762,7 @@
 </config>
 <config>
 	<id>16318</id>
-	<group>515</group>
+	<group>528</group>
 	<taskType>8</taskType>
 	<taskName>崩山击升至50</taskName>
 	<level></level>
@@ -6216,7 +6775,7 @@
 </config>
 <config>
 	<id>16319</id>
-	<group>516</group>
+	<group>529</group>
 	<taskType>8</taskType>
 	<taskName>崩山击升至100</taskName>
 	<level></level>
@@ -6229,7 +6788,7 @@
 </config>
 <config>
 	<id>16320</id>
-	<group>517</group>
+	<group>530</group>
 	<taskType>8</taskType>
 	<taskName>幻影剑舞升至50</taskName>
 	<level></level>
@@ -6242,7 +6801,7 @@
 </config>
 <config>
 	<id>16321</id>
-	<group>518</group>
+	<group>531</group>
 	<taskType>8</taskType>
 	<taskName>幻影剑舞升至100</taskName>
 	<level></level>
@@ -6255,7 +6814,7 @@
 </config>
 <config>
 	<id>16322</id>
-	<group>519</group>
+	<group>532</group>
 	<taskType>8</taskType>
 	<taskName>拔刀斩升至50</taskName>
 	<level></level>
@@ -6268,7 +6827,7 @@
 </config>
 <config>
 	<id>16323</id>
-	<group>520</group>
+	<group>533</group>
 	<taskType>8</taskType>
 	<taskName>拔刀斩升至100</taskName>
 	<level></level>
@@ -6281,7 +6840,7 @@
 </config>
 <config>
 	<id>16324</id>
-	<group>521</group>
+	<group>534</group>
 	<taskType>8</taskType>
 	<taskName>流风刃升至50</taskName>
 	<level></level>
@@ -6294,7 +6853,7 @@
 </config>
 <config>
 	<id>16325</id>
-	<group>522</group>
+	<group>535</group>
 	<taskType>8</taskType>
 	<taskName>流风刃升至100</taskName>
 	<level></level>
@@ -6307,7 +6866,7 @@
 </config>
 <config>
 	<id>16326</id>
-	<group>523</group>
+	<group>536</group>
 	<taskType>8</taskType>
 	<taskName>狂舞升至50</taskName>
 	<level></level>
@@ -6320,7 +6879,7 @@
 </config>
 <config>
 	<id>16327</id>
-	<group>524</group>
+	<group>537</group>
 	<taskType>8</taskType>
 	<taskName>狂舞升至100</taskName>
 	<level></level>
@@ -6333,7 +6892,7 @@
 </config>
 <config>
 	<id>16328</id>
-	<group>525</group>
+	<group>538</group>
 	<taskType>8</taskType>
 	<taskName>放逐之刃升至50</taskName>
 	<level></level>
@@ -6346,7 +6905,7 @@
 </config>
 <config>
 	<id>16329</id>
-	<group>526</group>
+	<group>539</group>
 	<taskType>8</taskType>
 	<taskName>放逐之刃升至100</taskName>
 	<level></level>
@@ -6359,7 +6918,7 @@
 </config>
 <config>
 	<id>16330</id>
-	<group>527</group>
+	<group>540</group>
 	<taskType>8</taskType>
 	<taskName>乱影升至50</taskName>
 	<level></level>
@@ -6372,7 +6931,7 @@
 </config>
 <config>
 	<id>16331</id>
-	<group>528</group>
+	<group>541</group>
 	<taskType>8</taskType>
 	<taskName>乱影升至100</taskName>
 	<level></level>
@@ -6385,7 +6944,7 @@
 </config>
 <config>
 	<id>16332</id>
-	<group>529</group>
+	<group>542</group>
 	<taskType>8</taskType>
 	<taskName>灵魂一击升至50</taskName>
 	<level></level>
@@ -6398,7 +6957,7 @@
 </config>
 <config>
 	<id>16333</id>
-	<group>530</group>
+	<group>543</group>
 	<taskType>8</taskType>
 	<taskName>灵魂一击升至100</taskName>
 	<level></level>
@@ -6411,7 +6970,7 @@
 </config>
 <config>
 	<id>16334</id>
-	<group>531</group>
+	<group>544</group>
 	<taskType>8</taskType>
 	<taskName>奥义之光升至50</taskName>
 	<level></level>
@@ -6424,7 +6983,7 @@
 </config>
 <config>
 	<id>16335</id>
-	<group>532</group>
+	<group>545</group>
 	<taskType>8</taskType>
 	<taskName>奥义之光升至100</taskName>
 	<level></level>
@@ -6437,7 +6996,7 @@
 </config>
 <config>
 	<id>16336</id>
-	<group>533</group>
+	<group>546</group>
 	<taskType>8</taskType>
 	<taskName>星雨降临升至50</taskName>
 	<level></level>
@@ -6450,7 +7009,7 @@
 </config>
 <config>
 	<id>16337</id>
-	<group>534</group>
+	<group>547</group>
 	<taskType>8</taskType>
 	<taskName>星雨降临升至100</taskName>
 	<level></level>
@@ -6463,7 +7022,7 @@
 </config>
 <config>
 	<id>16338</id>
-	<group>535</group>
+	<group>548</group>
 	<taskType>8</taskType>
 	<taskName>暗蚀之球升至50</taskName>
 	<level></level>
@@ -6476,7 +7035,7 @@
 </config>
 <config>
 	<id>16339</id>
-	<group>536</group>
+	<group>549</group>
 	<taskType>8</taskType>
 	<taskName>暗蚀之球升至100</taskName>
 	<level></level>
@@ -6489,7 +7048,7 @@
 </config>
 <config>
 	<id>16340</id>
-	<group>537</group>
+	<group>550</group>
 	<taskType>8</taskType>
 	<taskName>收集1件时装</taskName>
 	<level></level>
@@ -6502,7 +7061,7 @@
 </config>
 <config>
 	<id>16341</id>
-	<group>538</group>
+	<group>551</group>
 	<taskType>8</taskType>
 	<taskName>收集5件时装</taskName>
 	<level></level>
@@ -6515,7 +7074,7 @@
 </config>
 <config>
 	<id>16342</id>
-	<group>539</group>
+	<group>552</group>
 	<taskType>8</taskType>
 	<taskName>收集15件时装</taskName>
 	<level></level>
@@ -6528,7 +7087,7 @@
 </config>
 <config>
 	<id>16343</id>
-	<group>541</group>
+	<group>553</group>
 	<taskType>8</taskType>
 	<taskName>洗练20次</taskName>
 	<level></level>
@@ -6541,7 +7100,7 @@
 </config>
 <config>
 	<id>16344</id>
-	<group>542</group>
+	<group>554</group>
 	<taskType>8</taskType>
 	<taskName>强化20次</taskName>
 	<level></level>
@@ -6554,7 +7113,7 @@
 </config>
 <config>
 	<id>16345</id>
-	<group>543</group>
+	<group>555</group>
 	<taskType>8</taskType>
 	<taskName>武器镶嵌宝石升到20阶</taskName>
 	<level></level>
@@ -6567,7 +7126,7 @@
 </config>
 <config>
 	<id>16346</id>
-	<group>544</group>
+	<group>556</group>
 	<taskType>8</taskType>
 	<taskName>头盔镶嵌宝石升到20阶</taskName>
 	<level></level>
@@ -6580,7 +7139,7 @@
 </config>
 <config>
 	<id>16347</id>
-	<group>545</group>
+	<group>557</group>
 	<taskType>8</taskType>
 	<taskName>手套镶嵌宝石升到20阶</taskName>
 	<level></level>
@@ -6593,7 +7152,7 @@
 </config>
 <config>
 	<id>16348</id>
-	<group>546</group>
+	<group>558</group>
 	<taskType>8</taskType>
 	<taskName>衣服镶嵌宝石升到20阶</taskName>
 	<level></level>
@@ -6606,7 +7165,7 @@
 </config>
 <config>
 	<id>16349</id>
-	<group>547</group>
+	<group>559</group>
 	<taskType>8</taskType>
 	<taskName>裤子镶嵌宝石升到20阶</taskName>
 	<level></level>
@@ -6619,7 +7178,7 @@
 </config>
 <config>
 	<id>16350</id>
-	<group>548</group>
+	<group>560</group>
 	<taskType>8</taskType>
 	<taskName>鞋子镶嵌宝石升到20阶</taskName>
 	<level></level>
@@ -6632,7 +7191,7 @@
 </config>
 <config>
 	<id>16351</id>
-	<group>549</group>
+	<group>561</group>
 	<taskType>8</taskType>
 	<taskName>战力值达到10000</taskName>
 	<level></level>
@@ -6645,7 +7204,7 @@
 </config>
 <config>
 	<id>16352</id>
-	<group>550</group>
+	<group>562</group>
 	<taskType>8</taskType>
 	<taskName>战力值达到100000</taskName>
 	<level></level>
@@ -6658,7 +7217,7 @@
 </config>
 <config>
 	<id>16353</id>
-	<group>551</group>
+	<group>563</group>
 	<taskType>8</taskType>
 	<taskName>收集10个称号</taskName>
 	<level></level>
@@ -6671,7 +7230,7 @@
 </config>
 <config>
 	<id>16354</id>
-	<group>552</group>
+	<group>564</group>
 	<taskType>8</taskType>
 	<taskName>收集20个称号</taskName>
 	<level></level>
@@ -6684,7 +7243,7 @@
 </config>
 <config>
 	<id>16355</id>
-	<group>553</group>
+	<group>565</group>
 	<taskType>8</taskType>
 	<taskName>购买5次商品</taskName>
 	<level></level>
@@ -6697,7 +7256,7 @@
 </config>
 <config>
 	<id>16356</id>
-	<group>554</group>
+	<group>566</group>
 	<taskType>8</taskType>
 	<taskName>购买50次商品</taskName>
 	<level></level>
@@ -6710,7 +7269,7 @@
 </config>
 <config>
 	<id>16357</id>
-	<group>555</group>
+	<group>567</group>
 	<taskType>8</taskType>
 	<taskName>完成10个任务</taskName>
 	<level></level>
@@ -6723,7 +7282,7 @@
 </config>
 <config>
 	<id>16358</id>
-	<group>556</group>
+	<group>568</group>
 	<taskType>8</taskType>
 	<taskName>完成100个任务</taskName>
 	<level></level>
@@ -6736,7 +7295,7 @@
 </config>
 <config>
 	<id>16359</id>
-	<group>557</group>
+	<group>569</group>
 	<taskType>8</taskType>
 	<taskName>完成召唤5次</taskName>
 	<level></level>
@@ -6749,7 +7308,7 @@
 </config>
 <config>
 	<id>16360</id>
-	<group>558</group>
+	<group>570</group>
 	<taskType>8</taskType>
 	<taskName>完成召唤100次</taskName>
 	<level></level>
@@ -6762,7 +7321,7 @@
 </config>
 <config>
 	<id>16361</id>
-	<group>559</group>
+	<group>571</group>
 	<taskType>8</taskType>
 	<taskName>召唤出S级物品5次</taskName>
 	<level></level>
@@ -6775,7 +7334,7 @@
 </config>
 <config>
 	<id>16362</id>
-	<group>560</group>
+	<group>572</group>
 	<taskType>8</taskType>
 	<taskName>召唤出S级物品50次</taskName>
 	<level></level>
@@ -6788,7 +7347,7 @@
 </config>
 <config>
 	<id>16363</id>
-	<group>561</group>
+	<group>573</group>
 	<taskType>8</taskType>
 	<taskName>签到25次</taskName>
 	<level></level>
@@ -6801,7 +7360,7 @@
 </config>
 <config>
 	<id>16364</id>
-	<group>562</group>
+	<group>574</group>
 	<taskType>8</taskType>
 	<taskName>领取体力10次</taskName>
 	<level></level>
@@ -6814,7 +7373,7 @@
 </config>
 <config>
 	<id>16365</id>
-	<group>563</group>
+	<group>575</group>
 	<taskType>11</taskType>
 	<taskName>VIP等级达到10级</taskName>
 	<level></level>
@@ -6827,7 +7386,7 @@
 </config>
 <config>
 	<id>16366</id>
-	<group>564</group>
+	<group>576</group>
 	<taskType>11</taskType>
 	<taskName>VIP等级达到15级</taskName>
 	<level></level>
@@ -6840,7 +7399,7 @@
 </config>
 <config>
 	<id>16367</id>
-	<group>565</group>
+	<group>577</group>
 	<taskType>9</taskType>
 	<taskName>公会等级达到5级</taskName>
 	<level></level>
@@ -6853,7 +7412,7 @@
 </config>
 <config>
 	<id>16368</id>
-	<group>566</group>
+	<group>578</group>
 	<taskType>9</taskType>
 	<taskName>公会副本通关1层</taskName>
 	<level></level>
@@ -6866,7 +7425,7 @@
 </config>
 <config>
 	<id>16369</id>
-	<group>567</group>
+	<group>579</group>
 	<taskType>9</taskType>
 	<taskName>公会副本通关7层</taskName>
 	<level></level>
@@ -6879,7 +7438,7 @@
 </config>
 <config>
 	<id>16370</id>
-	<group>568</group>
+	<group>580</group>
 	<taskType>9</taskType>
 	<taskName>公会科技解锁第6级</taskName>
 	<level></level>
@@ -6892,7 +7451,7 @@
 </config>
 <config>
 	<id>16371</id>
-	<group>569</group>
+	<group>581</group>
 	<taskType>9</taskType>
 	<taskName>公会战力排名第一</taskName>
 	<level></level>
@@ -6905,7 +7464,7 @@
 </config>
 <config>
 	<id>16372</id>
-	<group>570</group>
+	<group>582</group>
 	<taskType>10</taskType>
 	<taskName>成就点排名第一</taskName>
 	<level></level>
@@ -6918,7 +7477,7 @@
 </config>
 <config>
 	<id>16373</id>
-	<group>571</group>
+	<group>583</group>
 	<taskType>10</taskType>
 	<taskName>战力排名第一</taskName>
 	<level></level>
@@ -6931,7 +7490,7 @@
 </config>
 <config>
 	<id>16374</id>
-	<group>572</group>
+	<group>584</group>
 	<taskType>10</taskType>
 	<taskName>等级达到20级</taskName>
 	<level></level>
@@ -6944,7 +7503,7 @@
 </config>
 <config>
 	<id>16375</id>
-	<group>573</group>
+	<group>585</group>
 	<taskType>10</taskType>
 	<taskName>等级达到50级</taskName>
 	<level></level>
@@ -6957,7 +7516,7 @@
 </config>
 <config>
 	<id>16376</id>
-	<group>574</group>
+	<group>586</group>
 	<taskType>10</taskType>
 	<taskName>等级达到100级</taskName>
 	<level></level>
@@ -6970,7 +7529,7 @@
 </config>
 <config>
 	<id>16377</id>
-	<group>575</group>
+	<group>587</group>
 	<taskType>10</taskType>
 	<taskName>竞技场排名第一</taskName>
 	<level></level>
@@ -6983,7 +7542,7 @@
 </config>
 <config>
 	<id>16378</id>
-	<group>576</group>
+	<group>588</group>
 	<taskType>10</taskType>
 	<taskName>排位赛排名第一</taskName>
 	<level></level>
@@ -6996,7 +7555,7 @@
 </config>
 <config>
 	<id>16379</id>
-	<group>577</group>
+	<group>589</group>
 	<taskType>10</taskType>
 	<taskName>世界boss总伤害排名第一</taskName>
 	<level></level>
@@ -7009,7 +7568,7 @@
 </config>
 <config>
 	<id>16380</id>
-	<group>578</group>
+	<group>590</group>
 	<taskType>10</taskType>
 	<taskName>完成世界boss最后一击</taskName>
 	<level></level>
@@ -7022,7 +7581,7 @@
 </config>
 <config>
 	<id>16381</id>
-	<group>579</group>
+	<group>591</group>
 	<taskType>6</taskType>
 	<taskName>击杀小怪100次</taskName>
 	<level></level>
@@ -7035,7 +7594,7 @@
 </config>
 <config>
 	<id>16382</id>
-	<group>580</group>
+	<group>592</group>
 	<taskType>6</taskType>
 	<taskName>击杀小怪200次</taskName>
 	<level></level>
@@ -7048,7 +7607,7 @@
 </config>
 <config>
 	<id>16383</id>
-	<group>581</group>
+	<group>593</group>
 	<taskType>6</taskType>
 	<taskName>击杀boss50次</taskName>
 	<level></level>

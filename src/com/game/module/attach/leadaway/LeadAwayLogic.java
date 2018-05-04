@@ -6,28 +6,25 @@ import com.game.data.Response;
 import com.game.data.VIPConfig;
 import com.game.module.attach.AttachLogic;
 import com.game.module.attach.AttachType;
-import com.game.module.attach.treasure.TreasureAttach;
 import com.game.module.copy.CopyInstance;
-import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.params.CopyReward;
 import com.game.params.Reward;
 import com.game.params.RewardList;
 import com.game.params.copy.CopyResult;
 import com.game.util.ConfigData;
 import com.game.util.RandomUtil;
-import com.google.common.collect.RangeMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Map;
 
 /**
  * 顺手牵羊活动玩法
@@ -40,7 +37,7 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
     @Autowired
     private GoodsService goodsService;
     @Autowired
-    private CopyService copyService;
+    private TaskService taskService;
 
     @Override
     public byte getType() {
@@ -156,6 +153,7 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
         attach.alterChallenge(-1);
         attach.commitSync();
         goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
+        taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, cfg.type, 1);
         return result;
     }
 

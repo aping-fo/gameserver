@@ -1,11 +1,11 @@
 package com.game.module.worldboss;
 
-import com.game.SysConfig;
 import com.game.data.*;
 import com.game.event.InitHandler;
 import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
 import com.game.module.copy.CopyExtension;
+import com.game.module.copy.CopyInstance;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
@@ -44,11 +44,10 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 世界BOSS
  * 重置类活动
+ * //放到全局表里也是可行的
  */
 @Service
 public class WorldBossService implements InitHandler {
-
-    private int size;
     private static final int RECV_TYPE = 2; //购买复活
     private static final int RECV_TIMES = 10; //购买复活次数
     private boolean gmOpen = false;
@@ -75,11 +74,13 @@ public class WorldBossService implements InitHandler {
     private WorldBossDao worldBossDao;
     @Autowired
     private SerialDataService serialDataService;
-    private int maxId = 0;
+
+    private final static int WB_ID = 8888;
+    private final static int SIZE = 10;
     /**
      * 数据记录
      */
-    private WorldRecord worldBossData = new WorldRecord();
+    private WorldRecord worldBossData;
 
     ExecutorService executors = Executors.newSingleThreadExecutor();
     /**
@@ -107,32 +108,21 @@ public class WorldBossService implements InitHandler {
 
     @Override
     public void handleInit() {
-        size = 10; //TODO 加载配置
-        Integer curMaxId = worldBossDao.selectMaxId();
-        if (curMaxId == null) {
-            curMaxId = 1;
-        } else {
-            byte[] data = worldBossDao.selectWorldBossRecords(curMaxId);
-            if (data != null) {
-                worldBossData = JsonUtils.string2Object(
-                        new String(CompressUtil.decompressBytes(data), Charset.forName("utf-8")), WorldRecord.class);
-                List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
-                Collections.sort(list, SORT);
-                int n = list.size() > size ? size : list.size();
-                for (int i = 0; i < n; i++) {
-                    treeMap.put(list.get(i), list.get(i));
-                }
+        byte[] data = worldBossDao.selectWorldBossRecords(WB_ID);
+        if (data != null) {
+            worldBossData = JsonUtils.string2Object(
+                    new String(CompressUtil.decompressBytes(data), Charset.forName("utf-8")), WorldRecord.class);
+            List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
+            Collections.sort(list, SORT);
+            int n = list.size() > SIZE ? SIZE : list.size();
+            for (int i = 0; i < n; i++) {
+                treeMap.put(list.get(i), list.get(i));
             }
         }
+
         if (worldBossData == null) {
             worldBossData = new WorldRecord();
-        }
-
-        try {
-            wbLock.lock();
-            maxId = (curMaxId / 1000);
-        } finally {
-            wbLock.unlock();
+            worldBossData.setId(WB_ID);
         }
 
         checkActivity();
@@ -164,16 +154,6 @@ public class WorldBossService implements InitHandler {
                 }
             }
         }, 5, 5, TimeUnit.MINUTES);
-    }
-
-    private int getNextId() {
-        try {
-            wbLock.lock();
-            maxId++;
-            return maxId * 1000 + SysConfig.serverId;
-        } finally {
-            wbLock.unlock();
-        }
     }
 
     /**
@@ -254,6 +234,7 @@ public class WorldBossService implements InitHandler {
 
         Player player = playerService.getPlayer(playerId);
         if (!player.checkHurt(hurt)) {
+            SessionManager.getInstance().kick(player.getPlayerId());
             ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
             return;
         }
@@ -272,7 +253,7 @@ public class WorldBossService implements InitHandler {
             hr.setName(player.getName());  //在这里同步下昵称，因为有改名功能
             //更新排名
             treeMap.put(hr, hr);
-            if (treeMap.size() > size) {
+            if (treeMap.size() > SIZE) {
                 treeMap.pollLastEntry();
             }
             worldBossData.setbUpdate(true);
@@ -394,7 +375,7 @@ public class WorldBossService implements InitHandler {
                 return;
             } else { //新开一活动
                 worldBossData = new WorldRecord();
-                worldBossData.setId(getNextId());
+                worldBossData.setId(WB_ID);
                 worldBossData.setOpenHour(openHour);
                 worldBossData.setEndHour(endHour);
                 worldBossData.setDay(c.get(Calendar.DAY_OF_YEAR));
@@ -460,10 +441,6 @@ public class WorldBossService implements InitHandler {
                 taskService.doTask(hr.getPlayerId(), Task.TYPE_WB_RANK, hr.getRank());
             }
 
-            //排序
-            //List<HurtRecord> list = new ArrayList<>(worldBossData.getHurtMap().values());
-            //Collections.sort(list, SORT);
-
             List<GoodsEntry> killRewards = new ArrayList<>(); //击杀BOSS奖励
             //最后一击奖励
             Map<Integer, int[]> lastBeatReward = ConfigData.globalParam().worldBossLastFightReward;
@@ -489,6 +466,7 @@ public class WorldBossService implements InitHandler {
                     killRewards.add(goodsEntry);
                 }
             }
+
             String lastTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_LAST_BEAT_TITLE).tips;
             String lastContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_LAST_BEAT_CONTENT).tips;
             //最后一击奖励邮件
@@ -550,11 +528,13 @@ public class WorldBossService implements InitHandler {
                 mailService.sendSysMail(rankTitle, rankContent, rewards, hr.getPlayerId(), LogConsume.WORLD_BOSS_REWARD);
                 if (!killRewards.isEmpty()) {
                     //发送击杀奖励邮件
-                    mailService.sendSysMail(killTitle, killContent, killRewards, hr.getPlayerId(), LogConsume.WORLD_BOSS_KILL);
+                    List<GoodsEntry> reward=new ArrayList<>();
+                    for(GoodsEntry goodsEntry : killRewards){
+                        GoodsEntry good=new GoodsEntry(goodsEntry.id,goodsEntry.count);
+                        reward.add(good);
+                    }
+                    mailService.sendSysMail(killTitle, killContent, reward, hr.getPlayerId(), LogConsume.WORLD_BOSS_KILL);
                 }
-
-                //推送结算奖励
-                //SessionManager.getInstance().sendMsg(CMD_REWARD, rewardCli, hr.getPlayerId());
             }
             saveData();
         } finally {
@@ -705,6 +685,8 @@ public class WorldBossService implements InitHandler {
         }
         bossVo.killTimes = killTimes;
         vo.boss = bossVo;
+
+        taskService.doTask(playerId,Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_WORLD_BOSS,1);
         return vo;
     }
 
@@ -765,7 +747,14 @@ public class WorldBossService implements InitHandler {
      * 获取实时伤害排名
      */
     public Object getRealTimeHurtList(int playerId) {
-        List<HurtRecord> listTmp = new ArrayList<>(treeMap.values());
+        List<HurtRecord> listTmp;
+        try {
+            lock.lock();
+            listTmp = new ArrayList<>(treeMap.values());
+        } finally {
+            lock.unlock();
+        }
+
         WorldBossHurtRankVO vo = toRankProto(listTmp);
         listTmp.clear();
         listTmp = null;

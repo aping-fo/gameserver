@@ -9,6 +9,7 @@ public class ActivityTaskVO implements IProtocol {
 	public int value;//当前值
 	public int targetValue;//目标值
 	public int state;//当前状态，1：未完成，2：已完成未领奖，3：已领奖，4：补领
+	public int remainingTime;//剩余时间
 
 
 	public void decode(BufferBuilder bb) {
@@ -17,6 +18,7 @@ public class ActivityTaskVO implements IProtocol {
 		this.value = bb.getInt();
 		this.targetValue = bb.getInt();
 		this.state = bb.getInt();
+		this.remainingTime = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -25,5 +27,6 @@ public class ActivityTaskVO implements IProtocol {
 		bb.putInt(this.value);
 		bb.putInt(this.targetValue);
 		bb.putInt(this.state);
+		bb.putInt(this.remainingTime);
 	}
 }

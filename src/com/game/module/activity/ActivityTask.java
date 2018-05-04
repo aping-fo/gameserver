@@ -1,6 +1,8 @@
 package com.game.module.activity;
 
+import com.game.data.ActivityCfg;
 import com.game.params.activity.ActivityTaskVO;
+import com.game.util.ConfigData;
 
 /**
  * Created by lucky on 2017/11/17.
@@ -11,15 +13,25 @@ public class ActivityTask {
     private int activityId;
     private int state;
     private ActivityTaskCdt cond;
+    private long timedBag;//限时礼包时间
 
     public ActivityTask() {
     }
 
-    public ActivityTask(int id, int activityId,int targetValue, int condType) {
+    public ActivityTask(int id, int activityId, int targetValue, int condType) {
         this.id = id;
         this.activityId = activityId;
         this.state = ActivityConsts.ActivityState.T_UN_FINISH;
         cond = new ActivityTaskCdt(targetValue, condType);
+        timedBag = System.currentTimeMillis();
+    }
+
+    public long getTimedBag() {
+        return timedBag;
+    }
+
+    public void setTimedBag(long timedBag) {
+        this.timedBag = timedBag;
     }
 
     public int getState() {
@@ -75,6 +87,16 @@ public class ActivityTask {
         vo.targetValue = cond.getTargetValue();
         vo.value = cond.getValue();
         vo.state = state;
+
+        //剩余时间
+        ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, activityId);
+        if(config!=null&&config.ActivityType==ActivityConsts.ActivityType.T_TIMED_BAG){
+            long l = config.Param0 * 60 - (System.currentTimeMillis() - timedBag) / 1000;//剩余时间（秒）
+            if(l<0){
+                l=0;
+            }
+            vo.remainingTime= (int) l;
+        }
         return vo;
     }
 }

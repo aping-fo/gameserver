@@ -125,6 +125,10 @@
 	<tips>尊敬的玩家,感谢您对游戏的支持！有问题可以随时联系我们</tips>
 </config>
 <config>
+	<id>102</id>
+	<tips>重复登录</tips>
+</config>
+<config>
 	<id>1001</id>
 	<tips>该名字已被使用</tips>
 </config>
@@ -751,5 +755,9 @@
 <config>
 	<id>4362</id>
 	<tips>本地弹幕已全部获取</tips>
+</config>
+<config>
+	<id>4370</id>
+	<tips>您操作太频繁了</tips>
 </config>
 </root>

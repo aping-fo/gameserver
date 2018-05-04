@@ -3,7 +3,7 @@
 <config>
 	<id>1</id>
 	<layoutType>1</layoutType>
-	<tabs>[1,2,3]</tabs>
+	<tabs></tabs>
 	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
 	<illustrated></illustrated>
@@ -11,7 +11,7 @@
 	<refreshTime>5:00</refreshTime>
 	<refreshPrice>[102,0,0,100,200,300]</refreshPrice>
 	<currencyInfo>[102,103,107]</currencyInfo>
-	<tips>2</tips>
+	<tips>0</tips>
 </config>
 <config>
 	<id>2</id>
@@ -80,7 +80,7 @@
 </config>
 <config>
 	<id>7</id>
-	<layoutType>2</layoutType>
+	<layoutType>0</layoutType>
 	<tabs></tabs>
 	<titleIcon>fameshop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
@@ -93,7 +93,7 @@
 </config>
 <config>
 	<id>8</id>
-	<layoutType>2</layoutType>
+	<layoutType>0</layoutType>
 	<tabs></tabs>
 	<titleIcon>fameshop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
@@ -106,7 +106,7 @@
 </config>
 <config>
 	<id>9</id>
-	<layoutType>2</layoutType>
+	<layoutType>0</layoutType>
 	<tabs></tabs>
 	<titleIcon>fameshop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
@@ -119,7 +119,7 @@
 </config>
 <config>
 	<id>10</id>
-	<layoutType>2</layoutType>
+	<layoutType>0</layoutType>
 	<tabs></tabs>
 	<titleIcon>fameshop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
@@ -132,7 +132,7 @@
 </config>
 <config>
 	<id>11</id>
-	<layoutType>2</layoutType>
+	<layoutType>0</layoutType>
 	<tabs></tabs>
 	<titleIcon>fameshop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
@@ -145,7 +145,7 @@
 </config>
 <config>
 	<id>12</id>
-	<layoutType>2</layoutType>
+	<layoutType>0</layoutType>
 	<tabs></tabs>
 	<titleIcon>fameshop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
@@ -158,7 +158,7 @@
 </config>
 <config>
 	<id>13</id>
-	<layoutType>2</layoutType>
+	<layoutType>0</layoutType>
 	<tabs></tabs>
 	<titleIcon>fameshop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
@@ -171,7 +171,7 @@
 </config>
 <config>
 	<id>14</id>
-	<layoutType>2</layoutType>
+	<layoutType>0</layoutType>
 	<tabs></tabs>
 	<titleIcon>fameshop</titleIcon>
 	<bgIcon>Skill2_Bg</bgIcon>
@@ -194,5 +194,18 @@
 	<refreshPrice>[112,10,20]</refreshPrice>
 	<currencyInfo>[112]</currencyInfo>
 	<tips>27</tips>
+</config>
+<config>
+	<id>16</id>
+	<layoutType>3</layoutType>
+	<tabs>[40,50,60,70]</tabs>
+	<titleIcon>chuanqi</titleIcon>
+	<bgIcon>Skill2_Bg</bgIcon>
+	<illustrated></illustrated>
+	<existTime>0</existTime>
+	<refreshTime></refreshTime>
+	<refreshPrice></refreshPrice>
+	<currencyInfo>[17000,17001]</currencyInfo>
+	<tips>41</tips>
 </config>
 </root>

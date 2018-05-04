@@ -1,44 +1,42 @@
 package com.game.module.scene;
 
+import com.game.SysConfig;
+import com.game.data.AwakeningSkillCfg;
+import com.game.data.SceneConfig;
+import com.game.event.InitHandler;
+import com.game.module.copy.CopyInstance;
+import com.game.module.copy.CopyService;
 import com.game.module.gang.GangDungeonService;
+import com.game.module.gang.GangService;
 import com.game.module.goods.EquipService;
 import com.game.module.group.GroupService;
 import com.game.module.ladder.LadderService;
 import com.game.module.multi.MultiService;
 import com.game.module.pet.Pet;
-import com.game.module.pet.PetBag;
 import com.game.module.pet.PetService;
-import com.game.params.IntParam;
-import com.game.params.scene.*;
-import com.google.common.collect.Lists;
-import io.netty.channel.Channel;
-
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-
-import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.game.SysConfig;
-import com.game.data.SceneConfig;
-import com.game.event.InitHandler;
-import com.game.module.copy.CopyInstance;
-import com.game.module.copy.CopyService;
-import com.game.module.gang.GangService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.team.TeamService;
 import com.game.module.worldboss.WorldBossService;
 import com.game.params.IProtocol;
 import com.game.params.Int2Param;
+import com.game.params.IntParam;
+import com.game.params.scene.*;
 import com.game.util.ConfigData;
+import com.google.common.collect.Lists;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
+import io.netty.channel.Channel;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class SceneService implements InitHandler {
@@ -150,6 +148,7 @@ public class SceneService implements InitHandler {
         if (lastCfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
             worldBossService.removePlayer(player.getPlayerId());
         } else if (lastCfg.sceneSubType == Scene.MULTI_PVE
+                || lastCfg.sceneSubType == Scene.MULTI_GANG_BOSS
                 || lastCfg.sceneSubType == Scene.MULTI_GROUP) { // 其他多人本 PVE，
             multiService.onExit(player.getPlayerId());
         }
@@ -238,7 +237,7 @@ public class SceneService implements InitHandler {
             multiService.onEnter(player.getPlayerId());
         }
         /*else if(lastCfg.sceneSubType == Scene.MULTI_PVE) { //TODO 其他多人本TVE
-            multiService.onEnter(player.getPlayerId());
+            multiService.onEnter(player.gedtPlayerId());
 		}*/
         // 广播消息
         brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player), channel);
@@ -261,6 +260,12 @@ public class SceneService implements InitHandler {
         vo.weapon = player.getWeaponId();
         vo.fight = player.getFight();
         vo.title = player.getTitle();
+        vo.attack = player.getAttack();
+        vo.defense = player.getDefense();
+        vo.crit = player.getCrit();
+        vo.symptom = player.getSymptom();
+        vo.fu = player.getFu();
+
         vo.roomTeam = player.roomTeamId;
         vo.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
         Pet pet = petService.getFightPet(player.getPlayerId());
@@ -278,12 +283,28 @@ public class SceneService implements InitHandler {
         }
         List<Integer> list = equipService.getBufferList(player.getPlayerId());
         vo.buffList = Lists.newArrayList(list);
+
+        //觉醒技能
+        Map<Integer, Integer> awakeningSkillMap = playerService.getPlayerData(player.getPlayerId()).getAwakeningSkillMap();
+        if (awakeningSkillMap != null) {
+            vo.awakenSkillList = new ArrayList<>();
+            for (int key : awakeningSkillMap.keySet()) {
+                AwakeningSkillCfg config = ConfigData.getConfig(AwakeningSkillCfg.class, key);
+                if (config != null && (config.type == 1 || config.type == 3)&&awakeningSkillMap.get(key)>=1) {
+                    vo.awakenSkillList.add(key);
+                }
+            }
+        }
+
         return vo;
     }
 
     // 获取场景玩家
     public SSceneInfo getSceneInfo(Player player, int sceneId) {
         SceneConfig cfg = GameData.getConfig(SceneConfig.class, sceneId);
+        if (cfg == null) {
+            ServerLogger.warn("SceneConfig is null, SceneConfig id =" + sceneId);
+        }
         SSceneInfo sceneInfo = genMonster(cfg, player);// 生成怪物信息
         sceneInfo.players = new ArrayList<SScenePlayerVo>();
         sceneInfo.sceneId = sceneId;

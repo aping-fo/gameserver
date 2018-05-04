@@ -29,6 +29,12 @@ public class SScenePlayerVo implements IProtocol {
 	public String fightPetName;//出战宠物名字
 	public String showPetName;//展示宠物名字
 	public List<Integer> buffList;//套装bufffer列表
+	public List<Integer> awakenSkillList;//觉醒技能列表
+	public int attack;//攻击
+	public int defense;//防守
+	public int crit;//暴击
+	public int symptom;//症状
+	public int fu;//符能
 
 
 	public void decode(BufferBuilder bb) {
@@ -56,6 +62,12 @@ public class SScenePlayerVo implements IProtocol {
 		this.fightPetName = bb.getString();
 		this.showPetName = bb.getString();
 		this.buffList = bb.getIntList();
+		this.awakenSkillList = bb.getIntList();
+		this.attack = bb.getInt();
+		this.defense = bb.getInt();
+		this.crit = bb.getInt();
+		this.symptom = bb.getInt();
+		this.fu = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -83,5 +95,11 @@ public class SScenePlayerVo implements IProtocol {
 		bb.putString(this.fightPetName);
 		bb.putString(this.showPetName);
 		bb.putIntList(this.buffList);
+		bb.putIntList(this.awakenSkillList);
+		bb.putInt(this.attack);
+		bb.putInt(this.defense);
+		bb.putInt(this.crit);
+		bb.putInt(this.symptom);
+		bb.putInt(this.fu);
 	}
 }

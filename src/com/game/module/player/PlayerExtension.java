@@ -9,6 +9,7 @@ import com.game.module.admin.UserManager;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
+import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.StringParam;
@@ -140,7 +141,7 @@ public class PlayerExtension {
             result.code = Response.TOO_MANY_ROLE;
             return result;
         }
-        Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName, param.channel, param.serverId, param.serverName,param.userId);
+        Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName, param.channel, param.serverId, param.serverName, param.userId);
         if (player == null) {
             result.code = Response.SAME_NAME;
             return result;
@@ -149,7 +150,14 @@ public class PlayerExtension {
         CLoginVo loginVo = new CLoginVo();
         loginVo.playerId = player.getPlayerId();
         loginVo.version = ConfigData.globalParam().version;// 版本
-
+        loginVo.clientMac = param.clientMac;
+        loginVo.clientType = param.clientType;
+        loginVo.hardwarSn1 = param.hardwarSn1;
+        loginVo.hardwarSn2 = param.hardwarSn2;
+        loginVo.modelVersion = param.modelVersion;
+        loginVo.ldid = param.ldid;
+        loginVo.uddi = param.uddi;
+        loginVo.un = param.un;
 
         result.serverId = String.valueOf(param.serverId);
         result.serverName = param.serverName;
@@ -167,14 +175,16 @@ public class PlayerExtension {
         player.clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
         //player.userId = param.userId;
 
-        //report create log
-        ratingService.reportCreateRole(player);
-        player.bCrateRole = true;
+
         // 直接返回登录结果
         loginVo.userId = player.userId;
         PlayerVo loginResult = login(0, loginVo, channel);
         SessionManager.sendDataInner(channel, 1003, loginResult);
-        return result;
+
+        //report create log
+        ratingService.reportCreateRole(player);
+        player.bCrateRole = true;
+        return null;
     }
 
     @UnLogin
@@ -221,6 +231,9 @@ public class PlayerExtension {
         if (user != null) {
             ServerLogger.debug("duplicated login:", user.playerId);
             SessionManager.getInstance().removePlayerAttr(user.channel);
+            IntParam param1 = new IntParam();
+            param1.param = Response.RE_LOGIN;
+            SessionManager.sendDataInner(user.channel, 1015, param1);
             user.channel.close();
             logoutHandler.logout(user.playerId);
         }
@@ -303,13 +316,24 @@ public class PlayerExtension {
     }
 
     @Command(1013)
-    public Object hitModule(int playerId, IntParam param) {
-        return playerService.hitModule(playerId, param.param);
+    public Object hitModule(int playerId, Int2Param type) {
+        return playerService.hitModule(playerId, type.param1, type.param2);
     }
 
     @Command(1014)
     public Object getModules(int playerId, Object param) {
         return playerService.getModule(playerId);
+    }
+
+    @Command(10502)
+    public Object actionModule(int playerId, IntParam param) {
+        playerService.actionModule(playerId, param.param);
+        return null;
+    }
+
+    @Command(10501)
+    public Object getActionModule(int playerId, Object param) {
+        return playerService.getActionModule(playerId);
     }
 
     @Command(1009)

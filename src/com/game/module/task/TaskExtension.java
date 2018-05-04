@@ -48,9 +48,14 @@ public class TaskExtension {
 		PlayerTask playerTask = taskService.getPlayerTask(playerId);
 		Task task = param.param2 == 0 ?playerTask.getTasks().get(taskId) : playerTask.getCurrJointedTask();
 		if (task == null || task.getState() != Task.STATE_FINISHED) {
-			result.param1 = Response.ERR_PARAM;
+			if(task != null && Task.STATE_SUBMITED==task.getState()){
+				result.param1 = Response.OPERATION_TOO_FAST;
+			}else{
+				result.param1 = Response.ERR_PARAM;
+			}
 			return result;
 		}
+
 		// 设置状态
 		task.setState(Task.STATE_SUBMITED);
 		TaskConfig taskCfg = taskService.getConfig(taskId); // 奖励物品

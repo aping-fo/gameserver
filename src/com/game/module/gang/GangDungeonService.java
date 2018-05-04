@@ -1,6 +1,7 @@
 package com.game.module.gang;
 
 import com.game.data.*;
+import com.game.module.copy.CopyInstance;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
@@ -22,10 +23,12 @@ import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
+import io.netty.channel.Channel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
@@ -171,11 +174,6 @@ public class GangDungeonService {
         }
 
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
-        /*if (gangDungeon.getHasOpen() == T_DONT_OPEN) {
-            vo.errCode = Response.GUILD_COPY_DO_NOT_OPEN;
-            return vo;
-        }*/
-
         if (gangDungeon.getHasOpen() == T_PASS) {
             vo.errCode = Response.ERR_PARAM;
             return vo;
@@ -188,21 +186,25 @@ public class GangDungeonService {
             return vo;
         }
 
-        if (gangDungeon.getMonsterMap().isEmpty()) {
-            gangDungeon.getAwardStep().clear();
-            List<MonsterRefreshConfig> monsters = ConfigData.GangMonsters.get(cfg.copyId);
-            for (MonsterRefreshConfig conf : monsters) {
-                MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
-                Monster m = new Monster();
-                m.setId(conf.id);
-                m.setMonsterId(conf.monsterId);
-                m.setHp(monsterConfig.hp);
-                m.setCurrentHp(monsterConfig.hp);
-                gangDungeon.getMonsterMap().put(conf.id, m);
+        try {
+            gangDungeon.getLock().lock();
+            if (gangDungeon.getMonsterMap().isEmpty()) {
+                gangDungeon.getAwardStep().clear();
+                gangDungeon.hasOver = false;
+                List<MonsterRefreshConfig> monsters = ConfigData.GangMonsters.get(cfg.copyId);
+                for (MonsterRefreshConfig conf : monsters) {
+                    MonsterConfig monsterConfig = ConfigData.getConfig(MonsterConfig.class, conf.monsterId);
+                    Monster m = new Monster();
+                    m.setId(conf.id);
+                    m.setMonsterId(conf.monsterId);
+                    m.setHp(monsterConfig.hp);
+                    m.setCurrentHp(monsterConfig.hp);
+                    gangDungeon.getMonsterMap().put(conf.id, m);
+                }
             }
+        } finally {
+            gangDungeon.getLock().unlock();
         }
-
-        gangDungeon.hasOver = false;
         member.setChallengeTimes(member.getChallengeTimes() - 1);
         member.hp = player.getHp();
         member.hurt = 0;
@@ -210,7 +212,6 @@ public class GangDungeonService {
         vo.errCode = Response.SUCCESS;
         vo.monsters = new ArrayList<>();
         for (Monster m : gangDungeon.getMonsterMap().values()) {
-            //m.setCurrentHp(m.getHp());
             if (m.getCurrentHp() <= 0) {
                 continue;
             }
@@ -221,6 +222,7 @@ public class GangDungeonService {
             vo.monsters.add(svo);
         }
         broadcastState(playerId, gang);
+        taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_GANG_COPY, 1);
         return vo;
     }
 
@@ -257,6 +259,7 @@ public class GangDungeonService {
             }
         } else { //怪物
             if (!player.checkHurt(hurtVO.hurtValue)) {
+                SessionManager.getInstance().kick(player.getPlayerId());
                 ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
                 return;
             }
@@ -304,12 +307,26 @@ public class GangDungeonService {
                         }
 
                         int layer = gangDungeon.getLayer() + 1;
-                        if(gangDungeon.getLayer() + 1 > maxLayer) {
+                        if (gangDungeon.getLayer() + 1 > maxLayer) {
                             gangDungeon.setHasOpen(T_PASS);
                             layer = maxLayer;
                         }
                         gangDungeon.setLayer(layer);
                     }
+
+                    String key = sceneService.getGroupKey(player);
+                    Collection<Channel> channels = SessionManager.getInstance().getGroupChannels(key);
+                    gangDungeon.hasOver = true;
+                    if (gangDungeon.hasOver) {
+                        for (Channel c : channels) { //次数返还
+                            int playerId = SessionManager.getInstance().getPlayerId(c);
+                            GMember gMember = gang.getMembers().get(playerId);
+                            if (gMember != null) {
+                                gMember.setChallengeTimes(gMember.getChallengeTimes() + 1);
+                            }
+                        }
+                    }
+                    broadcastState(player.getPlayerId(), gang);
                 }
             } finally {
                 gangDungeon.getLock().unlock();
@@ -429,15 +446,13 @@ public class GangDungeonService {
         if (gangDungeon == null) {
             return;
         }
-        if (!gangDungeon.clearFighter(playerId)) {
-            return;
-        }
+
         Gang gang = gangService.getGang(player.getGangId());
         if (gang == null) {
             ServerLogger.warn("guild == null? guild id = " + player.getGangId());
             return;
         }
-        broadcastState(playerId, gang);
+        //broadcastState(playerId, gang);
         GMember member = gang.getMembers().get(playerId);
         if (member == null || member.hurt < 1) {
             return;
@@ -498,7 +513,7 @@ public class GangDungeonService {
     private void broadcastState(int playerId, Gang gang) {
         GangCopyVO vo = getGangCopyInfo(playerId);
         if (gang == null || vo == null) {
-            ServerLogger.info("gang = " + gang + " copy = " + vo);
+            ServerLogger.info("gang = null || copy = null");
             return;
         }
         for (GMember member : gang.getMembers().values()) {

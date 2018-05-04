@@ -27,7 +27,6 @@ import com.game.module.serial.SerialDataService;
 import com.game.module.shop.ShopService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
-import com.game.module.team.Team;
 import com.game.module.team.TeamService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
@@ -93,6 +92,7 @@ public class CopyService {
     @Autowired
     private TaskService taskService;
     private AtomicInteger uniId = new AtomicInteger(100);
+    private int LEARN_ID = 110001;
     private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<>();
 
     // 获取所有副本信息
@@ -225,6 +225,16 @@ public class CopyService {
 
         }
 
+        if (cfg.type == CopyInstance.TYPE_LEADAWAY
+                || cfg.type == CopyInstance.TYPE_GOLD
+                || cfg.type == CopyInstance.TYPE_ENDLESS
+                || cfg.type == CopyInstance.TYPE_TREASURE
+                || cfg.type == CopyInstance.TYPE_TRAIN
+                || cfg.type == CopyInstance.TYPE_TRAVERSING
+                || cfg.type == CopyInstance.TYPE_EXPERIENCE) {
+            taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, cfg.type, 1);
+        }
+
         int passId = cfg.id;
         try {
             createCopyInstance(playerId, copyId, passId);
@@ -244,11 +254,14 @@ public class CopyService {
         // 扣除体力
         if (cfg.needEnergy > 0) {
             if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
-                playerService.decCurrency(playerId, Goods.TRAVERSING_ENERGY, cfg.needEnergy, LogConsume.TRAVERSING_COPY, cfg.id);
+                //移到进入副本时候扣除
+                //playerService.decCurrency(playerId, Goods.TRAVERSING_ENERGY, cfg.needEnergy, LogConsume.TRAVERSING_COPY, cfg.id);
             } else {
                 playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId);
             }
         }
+        //在进入副本就扣除
+        /**
         if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
             Team team = teamService.getTeam(player.getTeamId());
             int leaderId = team.getLeader();
@@ -256,9 +269,13 @@ public class CopyService {
                 traversingService.remvoeMap(playerId, team.getMapId());
             }
         }
+         **/
 
         // 掉落
         CopyInstance copy = instances.get(playerService.getPlayer(playerId).getCopyId());
+        if(copy == null) {
+            return null;
+        }
         List<GoodsEntry> items = calculateCopyReward(playerId, copyId, star);
         //List<GoodsEntry> items = calculateCopyRewardOccupation(playerId, copyId, star);
 
@@ -274,7 +291,7 @@ public class CopyService {
         if (cfg.type == CopyInstance.TYPE_ENDLESS) {
             EndlessAttach attach = endlessLogic.getAttach(playerId);
             EndlessCfg eCfg = endlessLogic.getConfig();
-            int multiple =  (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.sectionMultiple;
+            int multiple = (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.sectionMultiple;
 
             for (GoodsEntry g : items) {
                 g.count *= multiple;
@@ -432,6 +449,16 @@ public class CopyService {
                             g.count = Math.round(g.count * (1 + conf.param / 100.0f));
                         }
                     }
+                } else {
+                    GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class, g.id);
+                    if (conf.type == Goods.FAME) { //科技声望加成
+                        for (int techId : data.getTechnologys()) {
+                            GangScienceCfg config = ConfigData.getConfig(GangScienceCfg.class, techId);
+                            if (config.type == 9) { //科技声望加成
+                                g.count = Math.round(g.count * (1 + config.param / 100.0f));
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -479,17 +506,20 @@ public class CopyService {
         } else if (cfg.type == CopyInstance.TYPE_GOLD) {
             catchGoldLogic.updateCopy(playerId, result);
         }
-        Copy copy = playerData.getCopys().get(copyId);
-        if (copy == null) {//组队时,普通队员没有copy对象
-            copy = new Copy();
-            playerData.getCopys().putIfAbsent(copyId, copy);
+
+        if(copyId != LEARN_ID) {
+            Copy copy = playerData.getCopys().get(copyId);
+            if (copy == null) {//组队时,普通队员没有copy对象
+                copy = new Copy();
+                playerData.getCopys().putIfAbsent(copyId, copy);
+            }
+            if (copy.getState() < result.star) {
+                copy.setState(result.star);
+            }
+            playerData.getCopys().put(copyId, copy);
+            // 更新数据到前端
+            refreshCopyInfo(playerId, copyId, playerData);
         }
-        if (copy.getState() < result.star) {
-            copy.setState(result.star);
-        }
-        playerData.getCopys().put(copyId, copy);
-        // 更新数据到前端
-        refreshCopyInfo(playerId, copyId, playerData);
 
         Map<Integer, int[]> condParams = Maps.newHashMap();
         condParams.put(Task.FINISH_TRANSIT, new int[]{copyId, cfg.type, result.star, 1});
@@ -815,7 +845,7 @@ public class CopyService {
                 if (count == null) {
                     count = 0;
                 }
-                if (count + times >= cfg.count) {
+                if (count + times > cfg.count) {
                     result.code = Response.NO_TODAY_TIMES;
                     return result;
                 }
@@ -854,7 +884,18 @@ public class CopyService {
             result.reward.add(list);
         }
         goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
-        taskService.doTask(playerId, Task.TYPE_SWIPE_COPY, copyId, times);
+        Map<Integer, int[]> condParams = Maps.newHashMapWithExpectedSize(2);
+        if (cfg.type == CopyInstance.TYPE_LEADAWAY
+                || cfg.type == CopyInstance.TYPE_GOLD
+                || cfg.type == CopyInstance.TYPE_ENDLESS
+                || cfg.type == CopyInstance.TYPE_TREASURE
+                || cfg.type == CopyInstance.TYPE_TRAIN
+                || cfg.type == CopyInstance.TYPE_TRAVERSING
+                || cfg.type == CopyInstance.TYPE_EXPERIENCE) {
+            condParams.put(Task.TYPE_PASS_TYPE_COPY, new int[]{cfg.type, times});
+        }
+        condParams.put(Task.TYPE_SWIPE_COPY, new int[]{copyId, times});
+        taskService.doTask(playerId, condParams);
         refreshCopyInfo(playerId, copyId, playerData);
         return result;
     }

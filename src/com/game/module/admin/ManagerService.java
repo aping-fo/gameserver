@@ -1,5 +1,26 @@
 package com.game.module.admin;
 
+import com.game.data.ErrCode;
+import com.game.data.GoodsConfig;
+import com.game.data.Response;
+import com.game.event.InitHandler;
+import com.game.module.chat.ChatExtension;
+import com.game.module.log.LogConsume;
+import com.game.module.mail.Mail;
+import com.game.module.mail.MailService;
+import com.game.module.player.Player;
+import com.game.module.player.PlayerDao;
+import com.game.module.player.PlayerService;
+import com.game.module.serial.SerialDataService;
+import com.game.module.vip.VipService;
+import com.game.params.StringParam;
+import com.game.params.player.PlayerVo;
+import com.game.util.*;
+import com.server.SessionManager;
+import com.server.util.ServerLogger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -7,31 +28,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import com.game.data.ErrCode;
-import com.game.data.GoodsConfig;
-import com.game.data.Response;
-import com.game.event.InitHandler;
-import com.game.module.chat.ChatExtension;
-import com.game.module.gm.GmService;
-import com.game.module.log.LogConsume;
-import com.game.module.mail.MailService;
-import com.game.module.player.Player;
-import com.game.module.player.PlayerDao;
-import com.game.module.player.PlayerService;
-import com.game.module.vip.VipService;
-import com.game.params.StringParam;
-import com.game.params.player.PlayerVo;
-import com.game.util.ConfigData;
-import com.game.util.Context;
-import com.game.util.JsonUtils;
-import com.game.util.StringUtil;
-import com.game.util.TimeUtil;
-import com.server.SessionManager;
-import com.server.util.ServerLogger;
 
 @Service
 public class ManagerService implements InitHandler{
@@ -58,16 +54,13 @@ public class ManagerService implements InitHandler{
 	private VipService vipsService;	
 	@Autowired
 	private PlayerDao playerDao;
-	@Autowired
-	private MessageService messageService;
-	@Autowired
-	private GmService gmService;
-	
+
+
 	private Map<Integer, UserManager> bans;
 	
 	@Override
 	public void handleInit() {
-		bans = new ConcurrentHashMap<Integer, UserManager>();
+		bans = new ConcurrentHashMap<>();
 		for(UserManager u:managerDao.all()){
 			bans.put(u.getPlayerId(), u);
 		}
@@ -112,7 +105,7 @@ public class ManagerService implements InitHandler{
 			return RETURN_FAILED;
 		}
 		//记录日志
-		vipsService.addCharge(playerId, id,chargeCount);
+		vipsService.addCharge(playerId, id,1,"ALIPAY","CNY",System.currentTimeMillis()+"");
 		return RETURN_SUCCESS;
 	}
 	
@@ -172,6 +165,9 @@ public class ManagerService implements InitHandler{
 			int playerId =  Integer.parseInt(String.valueOf(result.get("playerId")));
 			playerIds.add(playerId);
 		}
+
+
+
 		//发邮件
 		sendMail(title, content, rewards, playerIds);
 		return RETURN_SUCCESS;

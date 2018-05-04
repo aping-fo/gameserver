@@ -96,10 +96,10 @@ public class ERatingService implements InitHandler {
             @Override
             public void run() {
                 try {
-                    if (!SysConfig.debug) { //帐号认证获取userId
-                        //ServerLogger.warn("send report,xml data \r\n" + report.toProto());
+                    if (!SysConfig.debug) { //帐号认s证获取userId
+                        ServerLogger.warn("send report,xml data \r\n" + report.toProto());
                         String xmlData = HttpClient.sendPostRequest(report.toProto());
-                        //ServerLogger.warn("receive xml data \r\n" + xmlData);
+                        ServerLogger.warn("receive xml data \r\n" + xmlData);
                         int resultCode = XmlParser.xmlCmdParser(xmlData, XmlParser.XML_BODY, XmlParser.FIELD_RESULT_CODE);
                         IntParam param = new IntParam();
                         int userId = 0;
@@ -269,7 +269,6 @@ public class ERatingService implements InitHandler {
         data1.setSubjectId(1);
         data1.setSource("111");
         data1.setAmount(1);
-        data1.test();
         System.out.println(data1.toProto());
     }
 }

@@ -10,6 +10,7 @@ import com.game.module.attach.training.TrainOpponent;
 import com.game.module.copy.CopyRank;
 import com.game.module.gang.GangDungeon;
 import com.game.module.ladder.Ladder;
+import com.game.module.mail.Mail;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 
@@ -40,10 +41,21 @@ public class SerialData {
 
     //玩家相关数据最高排名缓存
     private Map<Integer, PlayerView> playerViews = new ConcurrentHashMap<>();
+    //全局邮件
+    private Map<Long, Mail> globalMail = new ConcurrentHashMap<>();
     private Map<Integer, Integer> bossKillTimes = new ConcurrentHashMap<>();
     private Set<Integer> cdkSet = Sets.newHashSet();
+
     public SerialData() {
 
+    }
+
+    public Map<Long, Mail> getGlobalMail() {
+        return globalMail;
+    }
+
+    public void setGlobalMail(Map<Long, Mail> globalMail) {
+        this.globalMail = globalMail;
     }
 
     public Set<Integer> getCdkSet() {

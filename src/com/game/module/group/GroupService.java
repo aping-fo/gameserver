@@ -15,7 +15,10 @@ import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
-import com.game.params.*;
+import com.game.params.IProtocol;
+import com.game.params.Int2Param;
+import com.game.params.IntParam;
+import com.game.params.ListParam;
 import com.game.params.copy.CopyResult;
 import com.game.params.group.GroupStageVO;
 import com.game.params.group.GroupVO;
@@ -696,6 +699,7 @@ public class GroupService {
         param.param2 = copyId;
         broadcastGroupTeam(team, CMD_START_GAME, param);
         broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
+        taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_GROUP, 1);
         //TODO 判断 当前副本已经通关，无法进入该副本。
 
         //TODO 判断 当前副本所属的阶段未开启，无法进入该副本。
@@ -731,12 +735,21 @@ public class GroupService {
             }
         } else {
             if (!player.checkHurt(hurtVO.hurtValue)) {
+                SessionManager.getInstance().kick(player.getPlayerId());
                 ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
                 return;
             }
-
             SMonsterVo monster = monsters.get(hurtVO.targetId);
-            monster.curHp -= hurtVO.hurtValue;
+            try {
+                group.getLock().lock();
+                if (monster.curHp <= 0) {
+                    return;
+                }
+                monster.curHp -= hurtVO.hurtValue;
+            } finally {
+                group.getLock().unlock();
+            }
+
             int hp = monster.curHp > 0 ? monster.curHp : 0;
             MonsterHurtVO ret = new MonsterHurtVO();
             ret.actorId = hurtVO.targetId;
@@ -744,7 +757,6 @@ public class GroupService {
             ret.hurt = hurtVO.hurtValue;
             ret.isCrit = hurtVO.isCrit;
             ret.type = 1;
-
             broadcastGroupTeam(team, CMD_MONSTER_INFO, ret);
 
             if (monster.curHp <= 0) {
@@ -754,7 +766,6 @@ public class GroupService {
                 condParams.put(Task.TYPE_KILL, new int[]{monsterConfig.type, 1});
                 condParams.put(Task.TYPE_KILL, new int[]{0, 1});
                 taskService.doTask(player.getPlayerId(), condParams);
-
                 monsters.remove(hurtVO.targetId);
                 if (copy.isOver()) { //战斗结束
                     group.removeCopyState(team.getId());
@@ -809,10 +820,6 @@ public class GroupService {
                             }
                         }
                         for (int[] arr : stageReward) {
-                            Reward reward = new Reward();
-                            reward.id = arr[0];
-                            reward.count = Math.round(arr[1] * (1 + rate / 100f));
-                            //vo.rewards.add(reward);
                             items.add(new GoodsEntry(arr[0], arr[1]));
                         }
                         if (group.stage == 3) {

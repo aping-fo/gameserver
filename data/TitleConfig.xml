@@ -364,7 +364,7 @@
 	<icon>501</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,10]</cond>
+	<cond>[5,9]</cond>
 	<period>0</period>
 	<hp>1434</hp>
 	<attack>0</attack>
@@ -381,7 +381,7 @@
 	<icon>502</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,20]</cond>
+	<cond>[5,19]</cond>
 	<period>0</period>
 	<hp>1673</hp>
 	<attack>0</attack>
@@ -398,7 +398,7 @@
 	<icon>503</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,30]</cond>
+	<cond>[5,29]</cond>
 	<period>0</period>
 	<hp>1912</hp>
 	<attack>0</attack>
@@ -415,7 +415,7 @@
 	<icon>504</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,40]</cond>
+	<cond>[5,39]</cond>
 	<period>0</period>
 	<hp>2151</hp>
 	<attack>0</attack>
@@ -432,7 +432,7 @@
 	<icon>505</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,50]</cond>
+	<cond>[5,49]</cond>
 	<period>0</period>
 	<hp>2390</hp>
 	<attack>0</attack>
@@ -611,5 +611,22 @@
 	<symptom>0</symptom>
 	<fu>50</fu>
 	<gainPath>签到20天获得</gainPath>
+</config>
+<config>
+	<id>37</id>
+	<name>以你之名</name>
+	<titleType>3</titleType>
+	<icon>801</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>10</titleSubType>
+	<cond>[10,9]</cond>
+	<period>0</period>
+	<hp>1000</hp>
+	<attack>0</attack>
+	<defense>100</defense>
+	<crit>0</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<gainPath>首充奖励获得</gainPath>
 </config>
 </root>

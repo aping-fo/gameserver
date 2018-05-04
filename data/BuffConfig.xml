@@ -253,6 +253,27 @@
 	<extraEffectParam></extraEffectParam>
 </config>
 <config>
+	<id>1501</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>24</buffType>
+	<buffSubType>0</buffSubType>
+	<name>主角共用觉醒技能保护</name>
+	<description>霸体1级</description>
+	<duration>1.5</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam>[[500],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
 	<id>2100</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
@@ -400,18 +421,879 @@
 	<extraEffectParam>[[0],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
 </config>
 <config>
-	<id>6101</id>
+	<id>60011</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
 	<buffType>4</buffType>
-	<buffSubType>0</buffSubType>
-	<name>逃跑的精绝女王闪现BUFF</name>
-	<description>闪现</description>
-	<duration>1</duration>
-	<takeEffectParam>[0,1]</takeEffectParam>
+	<buffSubType></buffSubType>
+	<name>被动技能—生命</name>
+	<description>被动技能—生命</description>
+	<duration>5</duration>
+	<takeEffectParam>[2,0.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
-	<attachEffect>710102</attachEffect>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60012</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—生命</name>
+	<description>被动技能—生命</description>
+	<duration>5</duration>
+	<takeEffectParam>[2,0.6]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60013</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—生命</name>
+	<description>被动技能—生命</description>
+	<duration>5</duration>
+	<takeEffectParam>[2,0.7]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60014</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—生命</name>
+	<description>被动技能—生命</description>
+	<duration>5</duration>
+	<takeEffectParam>[2,0.8]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60015</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—生命</name>
+	<description>被动技能—生命</description>
+	<duration>5</duration>
+	<takeEffectParam>[2,0.9]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60016</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—生命</name>
+	<description>被动技能—生命</description>
+	<duration>5</duration>
+	<takeEffectParam>[2,0.10]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60017</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—生命</name>
+	<description>被动技能—生命</description>
+	<duration>5</duration>
+	<takeEffectParam>[2,0.11]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60021</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—威力</name>
+	<description>被动技能—威力</description>
+	<duration>5</duration>
+	<takeEffectParam>[0,0.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60022</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—威力</name>
+	<description>被动技能—威力</description>
+	<duration>5</duration>
+	<takeEffectParam>[0,0.6]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60023</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—威力</name>
+	<description>被动技能—威力</description>
+	<duration>5</duration>
+	<takeEffectParam>[0,0.7]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60024</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—威力</name>
+	<description>被动技能—威力</description>
+	<duration>5</duration>
+	<takeEffectParam>[0,0.8]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60025</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—威力</name>
+	<description>被动技能—威力</description>
+	<duration>5</duration>
+	<takeEffectParam>[0,0.9]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60026</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—威力</name>
+	<description>被动技能—威力</description>
+	<duration>5</duration>
+	<takeEffectParam>[0,0.10]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60027</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—威力</name>
+	<description>被动技能—威力</description>
+	<duration>5</duration>
+	<takeEffectParam>[0,0.11]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60031</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—防御</name>
+	<description>被动技能—防御</description>
+	<duration>5</duration>
+	<takeEffectParam>[1,0.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60032</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—防御</name>
+	<description>被动技能—防御</description>
+	<duration>5</duration>
+	<takeEffectParam>[1,0.6]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60033</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—防御</name>
+	<description>被动技能—防御</description>
+	<duration>5</duration>
+	<takeEffectParam>[1,0.7]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60034</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—防御</name>
+	<description>被动技能—防御</description>
+	<duration>5</duration>
+	<takeEffectParam>[1,0.8]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60035</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—防御</name>
+	<description>被动技能—防御</description>
+	<duration>5</duration>
+	<takeEffectParam>[1,0.9]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60036</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—防御</name>
+	<description>被动技能—防御</description>
+	<duration>5</duration>
+	<takeEffectParam>[1,0.10]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60037</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—防御</name>
+	<description>被动技能—防御</description>
+	<duration>5</duration>
+	<takeEffectParam>[1,0.11]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60041</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—暴击</name>
+	<description>被动技能—暴击</description>
+	<duration>5</duration>
+	<takeEffectParam>[3,0.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60042</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—暴击</name>
+	<description>被动技能—暴击</description>
+	<duration>5</duration>
+	<takeEffectParam>[3,0.6]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60043</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—暴击</name>
+	<description>被动技能—暴击</description>
+	<duration>5</duration>
+	<takeEffectParam>[3,0.7]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60044</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—暴击</name>
+	<description>被动技能—暴击</description>
+	<duration>5</duration>
+	<takeEffectParam>[3,0.8]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60045</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—暴击</name>
+	<description>被动技能—暴击</description>
+	<duration>5</duration>
+	<takeEffectParam>[3,0.9]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60046</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—暴击</name>
+	<description>被动技能—暴击</description>
+	<duration>5</duration>
+	<takeEffectParam>[3,0.10]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60047</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—暴击</name>
+	<description>被动技能—暴击</description>
+	<duration>5</duration>
+	<takeEffectParam>[3,0.11]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60051</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—异常</name>
+	<description>被动技能—异常</description>
+	<duration>5</duration>
+	<takeEffectParam>[4,0.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60052</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—异常</name>
+	<description>被动技能—异常</description>
+	<duration>5</duration>
+	<takeEffectParam>[4,0.6]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60053</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—异常</name>
+	<description>被动技能—异常</description>
+	<duration>5</duration>
+	<takeEffectParam>[4,0.7]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60054</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—异常</name>
+	<description>被动技能—异常</description>
+	<duration>5</duration>
+	<takeEffectParam>[4,0.8]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60055</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—异常</name>
+	<description>被动技能—异常</description>
+	<duration>5</duration>
+	<takeEffectParam>[4,0.9]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60056</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—异常</name>
+	<description>被动技能—异常</description>
+	<duration>5</duration>
+	<takeEffectParam>[4,0.10]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60057</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—异常</name>
+	<description>被动技能—异常</description>
+	<duration>5</duration>
+	<takeEffectParam>[4,0.11]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60061</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—抗性</name>
+	<description>被动技能—抗性</description>
+	<duration>5</duration>
+	<takeEffectParam>[7,0.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60062</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—抗性</name>
+	<description>被动技能—抗性</description>
+	<duration>5</duration>
+	<takeEffectParam>[7,0.6]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60063</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—抗性</name>
+	<description>被动技能—抗性</description>
+	<duration>5</duration>
+	<takeEffectParam>[7,0.7]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60064</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—抗性</name>
+	<description>被动技能—抗性</description>
+	<duration>5</duration>
+	<takeEffectParam>[7,0.8]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60065</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—抗性</name>
+	<description>被动技能—抗性</description>
+	<duration>5</duration>
+	<takeEffectParam>[7,0.9]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60066</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—抗性</name>
+	<description>被动技能—抗性</description>
+	<duration>5</duration>
+	<takeEffectParam>[7,0.10]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>60067</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>被动技能—抗性</name>
+	<description>被动技能—抗性</description>
+	<duration>5</duration>
+	<takeEffectParam>[7,0.11]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>

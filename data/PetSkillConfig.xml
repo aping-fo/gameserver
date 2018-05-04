@@ -3,1821 +3,4621 @@
 <config>
 	<id>6001101</id>
 	<name>绷带缠绕</name>
-	<describe>甩出绷带,羁绊范围区内敌人。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6001201</nextQualityId>
 	<skillId>6001101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent>1</attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6001201</id>
 	<name>绷带缠绕</name>
-	<describe>甩出绷带,羁绊范围区内敌人。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6001301</nextQualityId>
 	<skillId>6001201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent>2</attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6001301</id>
 	<name>绷带缠绕</name>
-	<describe>甩出绷带,羁绊范围区内敌人。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6001401</nextQualityId>
 	<skillId>6001301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent>3</attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6001401</id>
 	<name>绷带缠绕</name>
-	<describe>甩出绷带,羁绊范围区内敌人。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6001501</nextQualityId>
 	<skillId>6001401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent>4</attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6001501</id>
 	<name>绷带缠绕</name>
-	<describe>甩出绷带,羁绊范围区内敌人。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6001601</nextQualityId>
 	<skillId>6001501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent>5</attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6001601</id>
 	<name>绷带缠绕</name>
-	<describe>甩出绷带,羁绊范围区内敌人。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6001701</nextQualityId>
 	<skillId>6001601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent>6</attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6001701</id>
 	<name>绷带缠绕</name>
-	<describe>甩出绷带,羁绊范围区内敌人。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6001701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent>7</attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6002101</id>
 	<name>毒牙之雾</name>
-	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6002201</nextQualityId>
 	<skillId>6002101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix>500</attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6002201</id>
 	<name>毒牙之雾</name>
-	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6002301</nextQualityId>
 	<skillId>6002201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix>501</attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6002301</id>
 	<name>毒牙之雾</name>
-	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6002401</nextQualityId>
 	<skillId>6002301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix>502</attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6002401</id>
 	<name>毒牙之雾</name>
-	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6002501</nextQualityId>
 	<skillId>6002401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix>503</attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6002501</id>
 	<name>毒牙之雾</name>
-	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6002601</nextQualityId>
 	<skillId>6002501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix>504</attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6002601</id>
 	<name>毒牙之雾</name>
-	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6002701</nextQualityId>
 	<skillId>6002601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix>505</attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6002701</id>
 	<name>毒牙之雾</name>
-	<describe>毒液喷洒,形成至炫至幻的迷雾,迷幻敌人。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6002701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix>506</attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6003101</id>
 	<name>穿心</name>
-	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6003201</nextQualityId>
 	<skillId>6003101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>1</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6003201</id>
 	<name>穿心</name>
-	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6003301</nextQualityId>
 	<skillId>6003201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>2</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6003301</id>
 	<name>穿心</name>
-	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6003401</nextQualityId>
 	<skillId>6003301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>3</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6003401</id>
 	<name>穿心</name>
-	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6003501</nextQualityId>
 	<skillId>6003401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>4</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6003501</id>
 	<name>穿心</name>
-	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6003601</nextQualityId>
 	<skillId>6003501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>5</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6003601</id>
 	<name>穿心</name>
-	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6003701</nextQualityId>
 	<skillId>6003601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>6</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6003701</id>
 	<name>穿心</name>
-	<describe>以念力驱使绿叶穿透攻击敌人,万叶穿心。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6003701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>7</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6004101</id>
 	<name>刺骨</name>
-	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6004201</nextQualityId>
 	<skillId>6004101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>400</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6004201</id>
 	<name>刺骨</name>
-	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6004301</nextQualityId>
 	<skillId>6004201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>401</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6004301</id>
 	<name>刺骨</name>
-	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6004401</nextQualityId>
 	<skillId>6004301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>402</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6004401</id>
 	<name>刺骨</name>
-	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6004501</nextQualityId>
 	<skillId>6004401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>403</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6004501</id>
 	<name>刺骨</name>
-	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6004601</nextQualityId>
 	<skillId>6004501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>404</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6004601</id>
 	<name>刺骨</name>
-	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6004701</nextQualityId>
 	<skillId>6004601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>405</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6004701</id>
 	<name>刺骨</name>
-	<describe>召唤鱼骨头,进击冲撞前方敌人。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6004701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>406</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6005101</id>
 	<name>鬼魂术</name>
-	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6005201</nextQualityId>
 	<skillId>6005101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>3</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6005201</id>
 	<name>鬼魂术</name>
-	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6005301</nextQualityId>
 	<skillId>6005201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>4</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6005301</id>
 	<name>鬼魂术</name>
-	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6005401</nextQualityId>
 	<skillId>6005301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>5</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6005401</id>
 	<name>鬼魂术</name>
-	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6005501</nextQualityId>
 	<skillId>6005401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>6</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6005501</id>
 	<name>鬼魂术</name>
-	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6005601</nextQualityId>
 	<skillId>6005501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>7</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6005601</id>
 	<name>鬼魂术</name>
-	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6005701</nextQualityId>
 	<skillId>6005601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>8</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6005701</id>
 	<name>鬼魂术</name>
-	<describe>念诵亡灵之书,召唤地下亡灵助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6005701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>9</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6006101</id>
 	<name>灼心</name>
-	<describe>灯芯之火,可以燎原,可以灼心。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6006201</nextQualityId>
 	<skillId>6006101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>500</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6006201</id>
 	<name>灼心</name>
-	<describe>灯芯之火,可以燎原,可以灼心。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6006301</nextQualityId>
 	<skillId>6006201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>501</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6006301</id>
 	<name>灼心</name>
-	<describe>灯芯之火,可以燎原,可以灼心。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6006401</nextQualityId>
 	<skillId>6006301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>502</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6006401</id>
 	<name>灼心</name>
-	<describe>灯芯之火,可以燎原,可以灼心。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6006501</nextQualityId>
 	<skillId>6006401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>503</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6006501</id>
 	<name>灼心</name>
-	<describe>灯芯之火,可以燎原,可以灼心。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6006601</nextQualityId>
 	<skillId>6006501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>504</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6006601</id>
 	<name>灼心</name>
-	<describe>灯芯之火,可以燎原,可以灼心。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6006701</nextQualityId>
 	<skillId>6006601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>505</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6006701</id>
 	<name>灼心</name>
-	<describe>灯芯之火,可以燎原,可以灼心。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6006701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>506</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6007101</id>
 	<name>霹雳</name>
-	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6007201</nextQualityId>
 	<skillId>6007101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>1</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6007201</id>
 	<name>霹雳</name>
-	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6007301</nextQualityId>
 	<skillId>6007201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>2</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6007301</id>
 	<name>霹雳</name>
-	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6007401</nextQualityId>
 	<skillId>6007301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>3</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6007401</id>
 	<name>霹雳</name>
-	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6007501</nextQualityId>
 	<skillId>6007401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>4</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6007501</id>
 	<name>霹雳</name>
-	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6007601</nextQualityId>
 	<skillId>6007501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>5</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6007601</id>
 	<name>霹雳</name>
-	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6007701</nextQualityId>
 	<skillId>6007601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>6</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6007701</id>
 	<name>霹雳</name>
-	<describe>划出一张引雷符咒,可落下天雷持续轰击敌人。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6007701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>7</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6008101</id>
 	<name>万壳奔腾</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6008201</nextQualityId>
 	<skillId>6008101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>401</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6008201</id>
 	<name>万壳奔腾</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6008301</nextQualityId>
 	<skillId>6008201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>402</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6008301</id>
 	<name>万壳奔腾</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6008401</nextQualityId>
 	<skillId>6008301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>403</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6008401</id>
 	<name>万壳奔腾</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6008501</nextQualityId>
 	<skillId>6008401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>404</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6008501</id>
 	<name>万壳奔腾</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6008601</nextQualityId>
 	<skillId>6008501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>405</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6008601</id>
 	<name>万壳奔腾</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6008701</nextQualityId>
 	<skillId>6008601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>406</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6008701</id>
 	<name>万壳奔腾</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6008701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>407</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6009101</id>
 	<name>一掷千金</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6009201</nextQualityId>
 	<skillId>6009101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent>1</fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6009201</id>
 	<name>一掷千金</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6009301</nextQualityId>
 	<skillId>6009201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent>2</fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6009301</id>
 	<name>一掷千金</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6009401</nextQualityId>
 	<skillId>6009301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent>3</fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6009401</id>
 	<name>一掷千金</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6009501</nextQualityId>
 	<skillId>6009401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent>4</fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6009501</id>
 	<name>一掷千金</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6009601</nextQualityId>
 	<skillId>6009501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent>5</fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6009601</id>
 	<name>一掷千金</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6009701</nextQualityId>
 	<skillId>6009601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent>6</fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6009701</id>
 	<name>一掷千金</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6009701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent>7</fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6010101</id>
-	<name>纸精葫芦</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
+	<name>纸巾葫芦</name>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6010201</nextQualityId>
 	<skillId>6010101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix>400</fuFix>
 </config>
 <config>
 	<id>6010201</id>
-	<name>纸精葫芦</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
+	<name>纸巾葫芦</name>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6010301</nextQualityId>
 	<skillId>6010201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix>401</fuFix>
 </config>
 <config>
 	<id>6010301</id>
-	<name>纸精葫芦</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
+	<name>纸巾葫芦</name>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6010401</nextQualityId>
 	<skillId>6010301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix>402</fuFix>
 </config>
 <config>
 	<id>6010401</id>
-	<name>纸精葫芦</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
+	<name>纸巾葫芦</name>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6010501</nextQualityId>
 	<skillId>6010401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix>403</fuFix>
 </config>
 <config>
 	<id>6010501</id>
-	<name>纸精葫芦</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
+	<name>纸巾葫芦</name>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6010601</nextQualityId>
 	<skillId>6010501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix>404</fuFix>
 </config>
 <config>
 	<id>6010601</id>
-	<name>纸精葫芦</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
+	<name>纸巾葫芦</name>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6010701</nextQualityId>
 	<skillId>6010601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix>405</fuFix>
 </config>
 <config>
 	<id>6010701</id>
-	<name>纸精葫芦</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
+	<name>纸巾葫芦</name>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6010701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix>406</fuFix>
 </config>
 <config>
 	<id>6011101</id>
 	<name>一千响</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6011201</nextQualityId>
 	<skillId>6011101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>1</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6011201</id>
 	<name>一千响</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6011301</nextQualityId>
 	<skillId>6011201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>2</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6011301</id>
 	<name>一千响</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6011401</nextQualityId>
 	<skillId>6011301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>3</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6011401</id>
 	<name>一千响</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6011501</nextQualityId>
 	<skillId>6011401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>4</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6011501</id>
 	<name>一千响</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6011601</nextQualityId>
 	<skillId>6011501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>5</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6011601</id>
 	<name>一千响</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6011701</nextQualityId>
 	<skillId>6011601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>6</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6011701</id>
 	<name>一千响</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6011701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent>7</defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6012101</id>
 	<name>码勒戈壁</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6012201</nextQualityId>
 	<skillId>6012101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>400</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6012201</id>
 	<name>码勒戈壁</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6012301</nextQualityId>
 	<skillId>6012201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>401</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6012301</id>
 	<name>码勒戈壁</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6012401</nextQualityId>
 	<skillId>6012301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>402</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6012401</id>
 	<name>码勒戈壁</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6012501</nextQualityId>
 	<skillId>6012401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>403</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6012501</id>
 	<name>码勒戈壁</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6012601</nextQualityId>
 	<skillId>6012501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>404</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6012601</id>
 	<name>码勒戈壁</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6012701</nextQualityId>
 	<skillId>6012601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>405</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6012701</id>
 	<name>码勒戈壁</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6012701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix>406</defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6013101</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6013201</nextQualityId>
 	<skillId>6013101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>1</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6013201</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6013301</nextQualityId>
 	<skillId>6013201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>2</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6013301</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6013401</nextQualityId>
 	<skillId>6013301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>3</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6013401</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6013501</nextQualityId>
 	<skillId>6013401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>4</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6013501</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6013601</nextQualityId>
 	<skillId>6013501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>5</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6013601</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6013701</nextQualityId>
 	<skillId>6013601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>6</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6013701</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6013701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent>7</critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6014101</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6014201</nextQualityId>
 	<skillId>6014101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>401</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6014201</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6014301</nextQualityId>
 	<skillId>6014201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>402</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6014301</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6014401</nextQualityId>
 	<skillId>6014301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>403</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6014401</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6014501</nextQualityId>
 	<skillId>6014401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>404</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6014501</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6014601</nextQualityId>
 	<skillId>6014501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>405</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6014601</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6014701</nextQualityId>
 	<skillId>6014601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>406</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6014701</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6014701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix>407</critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6015101</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6015201</nextQualityId>
 	<skillId>6015101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>1</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6015201</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6015301</nextQualityId>
 	<skillId>6015201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>2</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6015301</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6015401</nextQualityId>
 	<skillId>6015301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>3</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6015401</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6015501</nextQualityId>
 	<skillId>6015401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>4</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6015501</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6015601</nextQualityId>
 	<skillId>6015501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>5</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6015601</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6015701</nextQualityId>
 	<skillId>6015601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>6</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6015701</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6015701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent>7</symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6016101</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6016201</nextQualityId>
 	<skillId>6016101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>400</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6016201</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6016301</nextQualityId>
 	<skillId>6016201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>401</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6016301</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6016401</nextQualityId>
 	<skillId>6016301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>402</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6016401</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6016501</nextQualityId>
 	<skillId>6016401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>403</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6016501</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6016601</nextQualityId>
 	<skillId>6016501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>404</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6016601</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6016701</nextQualityId>
 	<skillId>6016601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>405</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6016701</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6016701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix>406</symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6017101</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6017201</nextQualityId>
 	<skillId>6017101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6017201</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6017301</nextQualityId>
 	<skillId>6017201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6017301</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6017401</nextQualityId>
 	<skillId>6017301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6017401</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6017501</nextQualityId>
 	<skillId>6017401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6017501</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6017601</nextQualityId>
 	<skillId>6017501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6017601</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6017701</nextQualityId>
 	<skillId>6017601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6017701</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6017701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6018101</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6018201</nextQualityId>
 	<skillId>6018101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6018201</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6018301</nextQualityId>
 	<skillId>6018201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6018301</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6018401</nextQualityId>
 	<skillId>6018301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6018401</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6018501</nextQualityId>
 	<skillId>6018401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6018501</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6018601</nextQualityId>
 	<skillId>6018501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6018601</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6018701</nextQualityId>
 	<skillId>6018601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6018701</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6018701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6019101</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6019201</nextQualityId>
 	<skillId>6019101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6019201</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6019301</nextQualityId>
 	<skillId>6019201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6019301</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6019401</nextQualityId>
 	<skillId>6019301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6019401</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6019501</nextQualityId>
 	<skillId>6019401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6019501</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6019601</nextQualityId>
 	<skillId>6019501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6019601</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6019701</nextQualityId>
 	<skillId>6019601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6019701</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6019701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6020101</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>1</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6020201</nextQualityId>
 	<skillId>6020101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6020201</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>2</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6020301</nextQualityId>
 	<skillId>6020201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6020301</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>3</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6020401</nextQualityId>
 	<skillId>6020301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6020401</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>4</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6020501</nextQualityId>
 	<skillId>6020401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6020501</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>5</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6020601</nextQualityId>
 	<skillId>6020501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6020601</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>6</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId>6020701</nextQualityId>
 	<skillId>6020601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
 	<id>6020701</id>
 	<name>星陨</name>
-	<describe>与万物产生共鸣,由此,可随心所欲召唤星陨助战。</describe>
-	<type>1</type>
 	<quality>7</quality>
-	<swallowPercents></swallowPercents>
+	<nextQualityId></nextQualityId>
 	<skillId>6020701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1100</id>
-	<name>擎鼎</name>
-	<describe>提升威力值</describe>
-	<type>2</type>
+	<id>6021101</id>
+	<name>星陨</name>
 	<quality>1</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6021201</nextQualityId>
+	<skillId>6021101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1101</id>
-	<name>擎鼎</name>
-	<describe>提升威力值</describe>
-	<type>2</type>
+	<id>6021201</id>
+	<name>星陨</name>
 	<quality>2</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6021301</nextQualityId>
+	<skillId>6021201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1102</id>
-	<name>擎鼎</name>
-	<describe>提升威力值</describe>
-	<type>2</type>
+	<id>6021301</id>
+	<name>星陨</name>
 	<quality>3</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6021401</nextQualityId>
+	<skillId>6021301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1103</id>
-	<name>擎鼎</name>
-	<describe>提升威力值</describe>
-	<type>2</type>
+	<id>6021401</id>
+	<name>星陨</name>
 	<quality>4</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6021501</nextQualityId>
+	<skillId>6021401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1104</id>
-	<name>擎鼎</name>
-	<describe>提升威力值</describe>
-	<type>2</type>
+	<id>6021501</id>
+	<name>星陨</name>
 	<quality>5</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6021601</nextQualityId>
+	<skillId>6021501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1105</id>
-	<name>擎鼎</name>
-	<describe>提升威力值</describe>
-	<type>2</type>
+	<id>6021601</id>
+	<name>星陨</name>
 	<quality>6</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6021701</nextQualityId>
+	<skillId>6021601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1106</id>
-	<name>擎鼎</name>
-	<describe>提升威力值</describe>
-	<type>2</type>
+	<id>6021701</id>
+	<name>星陨</name>
 	<quality>7</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId></nextQualityId>
+	<skillId>6021701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1110</id>
-	<name>重击</name>
-	<describe>狂飙暴击值</describe>
-	<type>2</type>
+	<id>6022101</id>
+	<name>星陨</name>
 	<quality>1</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6022201</nextQualityId>
+	<skillId>6022101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1111</id>
-	<name>重击</name>
-	<describe>狂飙暴击值</describe>
-	<type>2</type>
+	<id>6022201</id>
+	<name>星陨</name>
 	<quality>2</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6022301</nextQualityId>
+	<skillId>6022201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1112</id>
-	<name>重击</name>
-	<describe>狂飙暴击值</describe>
-	<type>2</type>
+	<id>6022301</id>
+	<name>星陨</name>
 	<quality>3</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6022401</nextQualityId>
+	<skillId>6022301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1113</id>
-	<name>重击</name>
-	<describe>狂飙暴击值</describe>
-	<type>2</type>
+	<id>6022401</id>
+	<name>星陨</name>
 	<quality>4</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6022501</nextQualityId>
+	<skillId>6022401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1114</id>
-	<name>重击</name>
-	<describe>狂飙暴击值</describe>
-	<type>2</type>
+	<id>6022501</id>
+	<name>星陨</name>
 	<quality>5</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6022601</nextQualityId>
+	<skillId>6022501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1115</id>
-	<name>重击</name>
-	<describe>狂飙暴击值</describe>
-	<type>2</type>
+	<id>6022601</id>
+	<name>星陨</name>
 	<quality>6</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6022701</nextQualityId>
+	<skillId>6022601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1116</id>
-	<name>重击</name>
-	<describe>狂飙暴击值</describe>
-	<type>2</type>
+	<id>6022701</id>
+	<name>星陨</name>
 	<quality>7</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId></nextQualityId>
+	<skillId>6022701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1120</id>
-	<name>护佑</name>
-	<describe>提高防御值</describe>
-	<type>2</type>
+	<id>6023101</id>
+	<name>星陨</name>
 	<quality>1</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6023201</nextQualityId>
+	<skillId>6023101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1121</id>
-	<name>护佑</name>
-	<describe>提高防御值</describe>
-	<type>2</type>
+	<id>6023201</id>
+	<name>星陨</name>
 	<quality>2</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6023301</nextQualityId>
+	<skillId>6023201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1122</id>
-	<name>护佑</name>
-	<describe>提高防御值</describe>
-	<type>2</type>
+	<id>6023301</id>
+	<name>星陨</name>
 	<quality>3</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6023401</nextQualityId>
+	<skillId>6023301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1123</id>
-	<name>护佑</name>
-	<describe>提高防御值</describe>
-	<type>2</type>
+	<id>6023401</id>
+	<name>星陨</name>
 	<quality>4</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6023501</nextQualityId>
+	<skillId>6023401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1124</id>
-	<name>护佑</name>
-	<describe>提高防御值</describe>
-	<type>2</type>
+	<id>6023501</id>
+	<name>星陨</name>
 	<quality>5</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6023601</nextQualityId>
+	<skillId>6023501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1125</id>
-	<name>护佑</name>
-	<describe>提高防御值</describe>
-	<type>2</type>
+	<id>6023601</id>
+	<name>星陨</name>
 	<quality>6</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6023701</nextQualityId>
+	<skillId>6023601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1126</id>
-	<name>护佑</name>
-	<describe>提高防御值</describe>
-	<type>2</type>
+	<id>6023701</id>
+	<name>星陨</name>
 	<quality>7</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId></nextQualityId>
+	<skillId>6023701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1130</id>
-	<name>祝福</name>
-	<describe>增加抗性值</describe>
-	<type>2</type>
+	<id>6024101</id>
+	<name>星陨</name>
 	<quality>1</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6024201</nextQualityId>
+	<skillId>6024101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1131</id>
-	<name>祝福</name>
-	<describe>增加抗性值</describe>
-	<type>2</type>
+	<id>6024201</id>
+	<name>星陨</name>
 	<quality>2</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6024301</nextQualityId>
+	<skillId>6024201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1132</id>
-	<name>祝福</name>
-	<describe>增加抗性值</describe>
-	<type>2</type>
+	<id>6024301</id>
+	<name>星陨</name>
 	<quality>3</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6024401</nextQualityId>
+	<skillId>6024301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1133</id>
-	<name>祝福</name>
-	<describe>增加抗性值</describe>
-	<type>2</type>
+	<id>6024401</id>
+	<name>星陨</name>
 	<quality>4</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6024501</nextQualityId>
+	<skillId>6024401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1134</id>
-	<name>祝福</name>
-	<describe>增加抗性值</describe>
-	<type>2</type>
+	<id>6024501</id>
+	<name>星陨</name>
 	<quality>5</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6024601</nextQualityId>
+	<skillId>6024501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1135</id>
-	<name>祝福</name>
-	<describe>增加抗性值</describe>
-	<type>2</type>
+	<id>6024601</id>
+	<name>星陨</name>
 	<quality>6</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6024701</nextQualityId>
+	<skillId>6024601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1136</id>
-	<name>祝福</name>
-	<describe>增加抗性值</describe>
-	<type>2</type>
+	<id>6024701</id>
+	<name>星陨</name>
 	<quality>7</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId></nextQualityId>
+	<skillId>6024701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1140</id>
-	<name>禅露</name>
-	<describe>恢复生命值</describe>
-	<type>2</type>
+	<id>6025101</id>
+	<name>星陨</name>
 	<quality>1</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6025201</nextQualityId>
+	<skillId>6025101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1141</id>
-	<name>禅露</name>
-	<describe>恢复生命值</describe>
-	<type>2</type>
+	<id>6025201</id>
+	<name>星陨</name>
 	<quality>2</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6025301</nextQualityId>
+	<skillId>6025201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1142</id>
-	<name>禅露</name>
-	<describe>恢复生命值</describe>
-	<type>2</type>
+	<id>6025301</id>
+	<name>星陨</name>
 	<quality>3</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6025401</nextQualityId>
+	<skillId>6025301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1143</id>
-	<name>禅露</name>
-	<describe>恢复生命值</describe>
-	<type>2</type>
+	<id>6025401</id>
+	<name>星陨</name>
 	<quality>4</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6025501</nextQualityId>
+	<skillId>6025401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1144</id>
-	<name>禅露</name>
-	<describe>恢复生命值</describe>
-	<type>2</type>
+	<id>6025501</id>
+	<name>星陨</name>
 	<quality>5</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6025601</nextQualityId>
+	<skillId>6025501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1145</id>
-	<name>禅露</name>
-	<describe>恢复生命值</describe>
-	<type>2</type>
+	<id>6025601</id>
+	<name>星陨</name>
 	<quality>6</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6025701</nextQualityId>
+	<skillId>6025601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1146</id>
-	<name>禅露</name>
-	<describe>恢复生命值</describe>
-	<type>2</type>
+	<id>6025701</id>
+	<name>星陨</name>
 	<quality>7</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId></nextQualityId>
+	<skillId>6025701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1150</id>
-	<name>涣神</name>
-	<describe>提高异常值</describe>
-	<type>2</type>
+	<id>6026101</id>
+	<name>星陨</name>
 	<quality>1</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6026201</nextQualityId>
+	<skillId>6026101</skillId>
 	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1151</id>
-	<name>涣神</name>
-	<describe>提高异常值</describe>
-	<type>2</type>
+	<id>6026201</id>
+	<name>星陨</name>
 	<quality>2</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6026301</nextQualityId>
+	<skillId>6026201</skillId>
 	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1152</id>
-	<name>涣神</name>
-	<describe>提高异常值</describe>
-	<type>2</type>
+	<id>6026301</id>
+	<name>星陨</name>
 	<quality>3</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6026401</nextQualityId>
+	<skillId>6026301</skillId>
 	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1153</id>
-	<name>涣神</name>
-	<describe>提高异常值</describe>
-	<type>2</type>
+	<id>6026401</id>
+	<name>星陨</name>
 	<quality>4</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6026501</nextQualityId>
+	<skillId>6026401</skillId>
 	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1154</id>
-	<name>涣神</name>
-	<describe>提高异常值</describe>
-	<type>2</type>
+	<id>6026501</id>
+	<name>星陨</name>
 	<quality>5</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6026601</nextQualityId>
+	<skillId>6026501</skillId>
 	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1155</id>
-	<name>涣神</name>
-	<describe>提高异常值</describe>
-	<type>2</type>
+	<id>6026601</id>
+	<name>星陨</name>
 	<quality>6</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId>6026701</nextQualityId>
+	<skillId>6026601</skillId>
 	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 <config>
-	<id>1156</id>
-	<name>涣神</name>
-	<describe>提高异常值</describe>
-	<type>2</type>
+	<id>6026701</id>
+	<name>星陨</name>
 	<quality>7</quality>
-	<swallowPercents>[100,70,50,1,0,0,0]</swallowPercents>
-	<skillId></skillId>
+	<nextQualityId></nextQualityId>
+	<skillId>6026701</skillId>
 	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6027101</id>
+	<name>星陨</name>
+	<quality>1</quality>
+	<nextQualityId>6027201</nextQualityId>
+	<skillId>6027101</skillId>
+	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6027201</id>
+	<name>星陨</name>
+	<quality>2</quality>
+	<nextQualityId>6027301</nextQualityId>
+	<skillId>6027201</skillId>
+	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6027301</id>
+	<name>星陨</name>
+	<quality>3</quality>
+	<nextQualityId>6027401</nextQualityId>
+	<skillId>6027301</skillId>
+	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6027401</id>
+	<name>星陨</name>
+	<quality>4</quality>
+	<nextQualityId>6027501</nextQualityId>
+	<skillId>6027401</skillId>
+	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6027501</id>
+	<name>星陨</name>
+	<quality>5</quality>
+	<nextQualityId>6027601</nextQualityId>
+	<skillId>6027501</skillId>
+	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6027601</id>
+	<name>星陨</name>
+	<quality>6</quality>
+	<nextQualityId>6027701</nextQualityId>
+	<skillId>6027601</skillId>
+	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6027701</id>
+	<name>星陨</name>
+	<quality>7</quality>
+	<nextQualityId></nextQualityId>
+	<skillId>6027701</skillId>
+	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000101</id>
+	<name>被动技能—生命</name>
+	<quality>1</quality>
+	<nextQualityId>6000102</nextQualityId>
+	<skillId>6000101</skillId>
+	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000102</id>
+	<name>被动技能—生命</name>
+	<quality>2</quality>
+	<nextQualityId>6000103</nextQualityId>
+	<skillId>6000102</skillId>
+	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000103</id>
+	<name>被动技能—生命</name>
+	<quality>3</quality>
+	<nextQualityId>6000104</nextQualityId>
+	<skillId>6000103</skillId>
+	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000104</id>
+	<name>被动技能—生命</name>
+	<quality>4</quality>
+	<nextQualityId>6000105</nextQualityId>
+	<skillId>6000104</skillId>
+	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000105</id>
+	<name>被动技能—生命</name>
+	<quality>5</quality>
+	<nextQualityId>6000106</nextQualityId>
+	<skillId>6000105</skillId>
+	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000106</id>
+	<name>被动技能—生命</name>
+	<quality>6</quality>
+	<nextQualityId>6000107</nextQualityId>
+	<skillId>6000106</skillId>
+	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000107</id>
+	<name>被动技能—生命</name>
+	<quality>7</quality>
+	<nextQualityId></nextQualityId>
+	<skillId>6000107</skillId>
+	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000201</id>
+	<name>被动技能—威力</name>
+	<quality>1</quality>
+	<nextQualityId>6000202</nextQualityId>
+	<skillId>6000201</skillId>
+	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000202</id>
+	<name>被动技能—威力</name>
+	<quality>2</quality>
+	<nextQualityId>6000203</nextQualityId>
+	<skillId>6000202</skillId>
+	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000203</id>
+	<name>被动技能—威力</name>
+	<quality>3</quality>
+	<nextQualityId>6000204</nextQualityId>
+	<skillId>6000203</skillId>
+	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000204</id>
+	<name>被动技能—威力</name>
+	<quality>4</quality>
+	<nextQualityId>6000205</nextQualityId>
+	<skillId>6000204</skillId>
+	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000205</id>
+	<name>被动技能—威力</name>
+	<quality>5</quality>
+	<nextQualityId>6000206</nextQualityId>
+	<skillId>6000205</skillId>
+	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000206</id>
+	<name>被动技能—威力</name>
+	<quality>6</quality>
+	<nextQualityId>6000207</nextQualityId>
+	<skillId>6000206</skillId>
+	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000207</id>
+	<name>被动技能—威力</name>
+	<quality>7</quality>
+	<nextQualityId></nextQualityId>
+	<skillId>6000207</skillId>
+	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000301</id>
+	<name>被动技能—防御</name>
+	<quality>1</quality>
+	<nextQualityId>6000302</nextQualityId>
+	<skillId>6000301</skillId>
+	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000302</id>
+	<name>被动技能—防御</name>
+	<quality>2</quality>
+	<nextQualityId>6000303</nextQualityId>
+	<skillId>6000302</skillId>
+	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000303</id>
+	<name>被动技能—防御</name>
+	<quality>3</quality>
+	<nextQualityId>6000304</nextQualityId>
+	<skillId>6000303</skillId>
+	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000304</id>
+	<name>被动技能—防御</name>
+	<quality>4</quality>
+	<nextQualityId>6000305</nextQualityId>
+	<skillId>6000304</skillId>
+	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000305</id>
+	<name>被动技能—防御</name>
+	<quality>5</quality>
+	<nextQualityId>6000306</nextQualityId>
+	<skillId>6000305</skillId>
+	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000306</id>
+	<name>被动技能—防御</name>
+	<quality>6</quality>
+	<nextQualityId>6000307</nextQualityId>
+	<skillId>6000306</skillId>
+	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000307</id>
+	<name>被动技能—防御</name>
+	<quality>7</quality>
+	<nextQualityId></nextQualityId>
+	<skillId>6000307</skillId>
+	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000401</id>
+	<name>被动技能—暴击</name>
+	<quality>1</quality>
+	<nextQualityId>6000402</nextQualityId>
+	<skillId>6000401</skillId>
+	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000402</id>
+	<name>被动技能—暴击</name>
+	<quality>2</quality>
+	<nextQualityId>6000403</nextQualityId>
+	<skillId>6000402</skillId>
+	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000403</id>
+	<name>被动技能—暴击</name>
+	<quality>3</quality>
+	<nextQualityId>6000404</nextQualityId>
+	<skillId>6000403</skillId>
+	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000404</id>
+	<name>被动技能—暴击</name>
+	<quality>4</quality>
+	<nextQualityId>6000405</nextQualityId>
+	<skillId>6000404</skillId>
+	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000405</id>
+	<name>被动技能—暴击</name>
+	<quality>5</quality>
+	<nextQualityId>6000406</nextQualityId>
+	<skillId>6000405</skillId>
+	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000406</id>
+	<name>被动技能—暴击</name>
+	<quality>6</quality>
+	<nextQualityId>6000407</nextQualityId>
+	<skillId>6000406</skillId>
+	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000407</id>
+	<name>被动技能—暴击</name>
+	<quality>7</quality>
+	<nextQualityId></nextQualityId>
+	<skillId>6000407</skillId>
+	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000501</id>
+	<name>被动技能—异常</name>
+	<quality>1</quality>
+	<nextQualityId>6000502</nextQualityId>
+	<skillId>6000501</skillId>
+	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000502</id>
+	<name>被动技能—异常</name>
+	<quality>2</quality>
+	<nextQualityId>6000503</nextQualityId>
+	<skillId>6000502</skillId>
+	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000503</id>
+	<name>被动技能—异常</name>
+	<quality>3</quality>
+	<nextQualityId>6000504</nextQualityId>
+	<skillId>6000503</skillId>
+	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000504</id>
+	<name>被动技能—异常</name>
+	<quality>4</quality>
+	<nextQualityId>6000505</nextQualityId>
+	<skillId>6000504</skillId>
+	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000505</id>
+	<name>被动技能—异常</name>
+	<quality>5</quality>
+	<nextQualityId>6000506</nextQualityId>
+	<skillId>6000505</skillId>
+	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000506</id>
+	<name>被动技能—异常</name>
+	<quality>6</quality>
+	<nextQualityId>6000507</nextQualityId>
+	<skillId>6000506</skillId>
+	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000507</id>
+	<name>被动技能—异常</name>
+	<quality>7</quality>
+	<nextQualityId></nextQualityId>
+	<skillId>6000507</skillId>
+	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000601</id>
+	<name>被动技能—抗性</name>
+	<quality>1</quality>
+	<nextQualityId>6000602</nextQualityId>
+	<skillId>6000601</skillId>
+	<fight>20</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000602</id>
+	<name>被动技能—抗性</name>
+	<quality>2</quality>
+	<nextQualityId>6000603</nextQualityId>
+	<skillId>6000602</skillId>
+	<fight>21</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000603</id>
+	<name>被动技能—抗性</name>
+	<quality>3</quality>
+	<nextQualityId>6000604</nextQualityId>
+	<skillId>6000603</skillId>
+	<fight>22</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000604</id>
+	<name>被动技能—抗性</name>
+	<quality>4</quality>
+	<nextQualityId>6000605</nextQualityId>
+	<skillId>6000604</skillId>
+	<fight>23</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000605</id>
+	<name>被动技能—抗性</name>
+	<quality>5</quality>
+	<nextQualityId>6000606</nextQualityId>
+	<skillId>6000605</skillId>
+	<fight>24</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000606</id>
+	<name>被动技能—抗性</name>
+	<quality>6</quality>
+	<nextQualityId>6000607</nextQualityId>
+	<skillId>6000606</skillId>
+	<fight>25</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
+</config>
+<config>
+	<id>6000607</id>
+	<name>被动技能—抗性</name>
+	<quality>7</quality>
+	<nextQualityId></nextQualityId>
+	<skillId>6000607</skillId>
+	<fight>26</fight>
+	<hpPercent></hpPercent>
+	<hpFix></hpFix>
+	<attackPercent></attackPercent>
+	<attackFix></attackFix>
+	<defensePercent></defensePercent>
+	<defenseFix></defenseFix>
+	<critPercent></critPercent>
+	<critFix></critFix>
+	<symptomPercent></symptomPercent>
+	<symptomFix></symptomFix>
+	<fuPercent></fuPercent>
+	<fuFix></fuFix>
 </config>
 </root>

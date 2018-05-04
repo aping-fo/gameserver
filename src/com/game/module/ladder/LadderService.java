@@ -30,8 +30,10 @@ import com.game.params.rank.LadderRankVO;
 import com.game.params.scene.SkillHurtVO;
 import com.game.params.worldboss.MonsterHurtVO;
 import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
 import com.game.util.TimeUtil;
 import com.game.util.TimerService;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -54,6 +56,7 @@ public class LadderService implements InitHandler {
     private final static int TYPE_3 = 3; //战斗胜利而且段位提升
     private final static int TYPE_4 = 4; //战斗失败并且段位下降
     private final static int TYPE_5 = 5; //战斗失败但不扣除积分
+    private final static int TYPE_6 = 6; //战斗失败但不扣除积分
     private final static int MATCH_TIMES = 5;
 
     private final static int LADDER_COPY = 1300101;
@@ -185,7 +188,7 @@ public class LadderService implements InitHandler {
                         failPlayer = playerService.getPlayer(rp1.getPlayerId());
                     }
 
-                    if (rate1 == rate2) { //判定2个都失败
+                    if (Math.abs(rate1 - rate2) < 0.0001) { // 误差小于这么多，就判断2个相等，判定2个都失败
                         onAllFail(room, winPlayer, failPlayer);
                     } else { //有输赢
                         onGameOver(room, winPlayer, failPlayer);
@@ -230,8 +233,10 @@ public class LadderService implements InitHandler {
                         break;
                     }
 
-                    int minScore = (int) (source.score - ((source.score + 100) * (0.1 + 0.05 * i)));
-                    int maxScore = (int) (source.score + ((source.score + 100) * (0.1 + 0.05 * i)));
+                    //int minScore = (int) (source.score - ((source.score + 100) * (0.1 + 0.05 * i)));
+                    //int maxScore = (int) (source.score + ((source.score + 100) * (0.1 + 0.05 * i)));
+                    int minScore = (int) (source.score - (source.level * 100 * (0.4 + 0.2 * i)));
+                    int maxScore = (int) (source.score + (source.level * 100 * (0.4 + 0.2 * i)));
                     if (target.score >= minScore && target.score <= maxScore) {
                         startGame(source, target);
                         break;
@@ -418,6 +423,10 @@ public class LadderService implements InitHandler {
             room.fightFlag = true;
             for (int id : room.roomPlayers.keySet()) {
                 SessionManager.getInstance().sendMsg(CMD_LOAD_OVER, param, id);
+                Map<Integer, int[]> condParams = Maps.newHashMap();
+                condParams.put(Task.FINISH_JOIN_PK, new int[]{2, 1});
+                condParams.put(Task.TYPE_PASS_COPY_SINGLE, new int[]{1300101, 1});
+                taskService.doTask(id, condParams);
             }
             //开始战斗
             room.startFightTime = (int) (System.currentTimeMillis() / 1000);
@@ -453,7 +462,7 @@ public class LadderService implements InitHandler {
             return param;
         }
 
-        Room room = new Room(IdGen.getAndIncrement(), ladder.getScore(), 0);
+        Room room = new Room(IdGen.getAndIncrement(), ladder.getScore(), 0, ladder.getLevel());
         room.roomPlayers.put(playerId, new RoomPlayer(player.getHp(), player.getPlayerId()));
         allRooms.put(room.id, room);
 
@@ -537,9 +546,12 @@ public class LadderService implements InitHandler {
         calcLadderLevelUp(failPlayer1, failLadderInfo1, failRecord1, oldFailScore1);
         calcLadderLevelUp(failPlayer2, failLadderInfo2, failRecord2, oldFailScore2);
 
-        if (failScore1 == 0) {
+        if (failCfg1.decScore == 0) {
+            failRecord1.setType(TYPE_6);
+        } else if (failScore1 == 0) {
             failRecord1.setType(TYPE_5);
         }
+
         if (failLadderInfo1.getRecords().size() > 15) {
             failLadderInfo1.getRecords().remove(0);
         }
@@ -583,15 +595,6 @@ public class LadderService implements InitHandler {
         LadderCfg winCfg = ConfigData.getConfig(LadderCfg.class, winLadderInfo.getLevel());
         LadderCfg failCfg = ConfigData.getConfig(LadderCfg.class, failLadderInfo.getLevel());
 
-        /*List<GoodsEntry> winRewards = new ArrayList<>();
-        for (int i = 0; i < winCfg.PkReward.length; i += 2) {
-            winRewards.add(new GoodsEntry(winCfg.PkReward[i], winCfg.PkReward[i + 1]));
-        }
-        List<GoodsEntry> failRewards = new ArrayList<>();
-        for (int i = 0; i < failCfg.PkReward.length; i += 2) {
-            winRewards.add(new GoodsEntry(failCfg.PkReward[i], Math.round(failCfg.PkReward[i + 1] * 0.5f)));
-        }*/
-
         int winScore = winCfg.addScore;
         int failScore = failCfg.decScore;
         if (winStage - failStage >= ConfigData.globalParam().PkProtect) { //段位保护
@@ -601,9 +604,6 @@ public class LadderService implements InitHandler {
             winScore = Math.round(winScore * (1 + ConfigData.globalParam().PkAdd));
             failScore = Math.round(failScore * (1 + ConfigData.globalParam().PkDec));
         }
-
-        /*goodsService.addRewards(winPlayer.getPlayerId(), winRewards, LogConsume.LADDER_AWARD);
-        goodsService.addRewards(failPlayer.getPlayerId(), failRewards, LogConsume.LADDER_AWARD);*/
 
         int oldWinScore = winLadderInfo.getScore();
         int oldFailScore = failLadderInfo.getScore();
@@ -625,7 +625,9 @@ public class LadderService implements InitHandler {
         calcLadderLevelUp(winPlayer, winLadderInfo, winRecord, oldWinScore);
         calcLadderLevelUp(failPlayer, failLadderInfo, failRecord, oldFailScore);
 
-        if (failScore == 0) {
+        if (failCfg.decScore == 0) {
+            failRecord.setType(TYPE_6);
+        } else if (failScore == 0) {
             failRecord.setType(TYPE_5);
         }
 
@@ -835,11 +837,15 @@ public class LadderService implements InitHandler {
                 SessionManager.getInstance().sendMsg(CMD_MONSTER_INFO, vo, playerId);
             }
             if (roomPlayer.checkDeath()) { //屎了?
-                Player winPlayer = player;
+                ServerLogger.info("death = " + JsonUtils.object2String(roomPlayer));
+                ServerLogger.info("win = " + player.getPlayerId());
+                Player winPlayer = null;
                 Player failPlayer = null;
                 for (int id : room.roomPlayers.keySet()) {
-                    if (id != player.getPlayerId()) {
+                    if (id == roomPlayer.getPlayerId()) {
                         failPlayer = playerService.getPlayer(id);
+                    } else {
+                        winPlayer = playerService.getPlayer(id);
                     }
                 }
                 if (failPlayer == null) {

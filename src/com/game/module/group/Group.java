@@ -43,7 +43,7 @@ public class Group {
         this.groupCopyId = groupCopyId;
         this.beginStageId = beginStageId;
 
-        for (int i = 1; i <= 6; i++) {
+        for (int i = 1; i <= 3; i++) {
             GroupTeam team = new GroupTeam(i);
             teamMap.put(i, team);
         }
@@ -373,5 +373,9 @@ public class Group {
         } finally {
             lock.unlock();
         }
+    }
+
+    public ReentrantLock getLock() {
+        return lock;
     }
 }

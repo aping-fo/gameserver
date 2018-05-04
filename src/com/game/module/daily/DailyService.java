@@ -11,6 +11,7 @@ import com.game.module.attach.leadaway.LeadAwayLogic;
 import com.game.module.attach.lottery.LotteryLogic;
 import com.game.module.attach.training.trainingLogic;
 import com.game.module.attach.treasure.TreasureLogic;
+import com.game.module.gang.GangDungeonService;
 import com.game.module.gang.GangService;
 import com.game.module.ladder.LadderService;
 import com.game.module.player.PlayerData;
@@ -19,7 +20,6 @@ import com.game.module.sct.SkillCardTrainService;
 import com.game.module.shop.ShopService;
 import com.game.module.sign.SignService;
 import com.game.module.task.TaskService;
-import com.game.module.title.Title;
 import com.game.module.title.TitleService;
 import com.game.module.vip.VipExtension;
 import com.game.params.DailyVo;
@@ -76,6 +76,8 @@ public class DailyService implements InitHandler {
 	private TitleService titleService;
 	@Autowired
 	private LadderService ladderService;
+	@Autowired
+	private GangDungeonService gangDungeonService;
 	public static long FIVE_CLOCK = 0;
 	public static long MONDAY_FIVE_CLOCK = 0;
 
@@ -159,6 +161,7 @@ public class DailyService implements InitHandler {
 			SessionManager.getInstance().sendMsg(VipExtension.GET_DAILY_INFO, getDailyInfo(playerId), playerId);
 		}
 		ladderService.weeklyAward();
+		gangDungeonService.weekly();
 	}
 
 

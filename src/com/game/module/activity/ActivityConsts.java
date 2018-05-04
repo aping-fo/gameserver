@@ -14,6 +14,9 @@ public class ActivityConsts {
         public static final int T_NEW_ROLE = 4; //新手礼包
         public static final int T_LEVEL_UP = 5; //冲级
         public static final int T_ONLINE_TIME = 7; //在线活动
+        public static final int T_FIRST_RECHARGE = 9; //累计充值
+        public static final int T_TIMED_BAG = 10; //限时礼包
+        public static final int T_SPECIAL_BAG = 11; //特价礼包
     }
 
     /**
@@ -23,8 +26,10 @@ public class ActivityConsts {
         public static final int T_ENERGY = 1; //时间区间类型
         public static final int T_GROW_FUND = 2; //成长基金
         public static final int T_SEVEN_DAYS = 3; //7日登录
-        public static final int T_FIRST_RECHARGE = 4; //首充
+        public static final int T_FIRST_RECHARGE = 4; //累计充值
         public static final int T_LEVEL_UP = 5; //冲级活动
+        public static final int T_TIMED_BAG = 9; //限时礼包
+        public static final int T_SPECIAL_BAG = 13; //特价礼包
     }
 
     /**
@@ -43,6 +48,7 @@ public class ActivityConsts {
     public static class ActivityCondType {
         public static final int T_VIP = 1; //vip等级
         public static final int T_ITEM = 2; //道具消耗
+        public static final int T_LEVEL = 3; //开启等级
     }
 
     /**

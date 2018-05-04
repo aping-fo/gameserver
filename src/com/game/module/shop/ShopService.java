@@ -21,6 +21,7 @@ import com.game.params.copy.CopyResult;
 import com.game.util.ConfigData;
 import com.game.util.RandomUtil;
 import com.game.util.TimeUtil;
+import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,8 +50,9 @@ public class ShopService {
     public static final int FAME_12 = 12;
     public static final int FAME_13 = 13;
     public static final int FAME_14 = 14;
+    public static final int CQ = 16;
 
-    private static final int[] SHOP_TYPES = {COMMON, ENDLESS, GANG, TRAINING, AI_ARENA, FAME_7, FAME_8, FAME_9, FAME_10, FAME_11, FAME_12, FAME_13, FAME_14};
+    private static final int[] SHOP_TYPES = {COMMON, ENDLESS, GANG, TRAINING, AI_ARENA, FAME_7, FAME_8, FAME_9, FAME_10, FAME_11, FAME_12, FAME_13, FAME_14,CQ};
     public static final int LIMIT_DAILY = 1;
     public static final int LIMIT_REFRESH = 2;
 
@@ -78,23 +80,26 @@ public class ShopService {
         ShopInfo shop = new ShopInfo();
         shop.type = type;
 
-        // 刷新商品
-        ConcurrentHashMap<Integer, List<Integer>> refreshes = serial.getData().getPlayerRefreshShops().get(type);
-        if (refreshes == null) {
-            refreshes = new ConcurrentHashMap<>();
-            refreshes = serial.getData().getPlayerRefreshShops().putIfAbsent(type, refreshes);
+        if(ConfigData.RefreshIds.containsKey(type)) {
+            // 刷新商品
+            ConcurrentHashMap<Integer, List<Integer>> refreshes = serial.getData().getPlayerRefreshShops().get(type);
             if (refreshes == null) {
-                refreshes = serial.getData().getPlayerRefreshShops().get(type);
+                refreshes = new ConcurrentHashMap<>();
+                refreshes = serial.getData().getPlayerRefreshShops().putIfAbsent(type, refreshes);
+                if (refreshes == null) {
+                    refreshes = serial.getData().getPlayerRefreshShops().get(type);
+                }
             }
+            List<Integer> myRefreshes = refreshes.get(playerId);
+            if (myRefreshes == null) {
+                myRefreshes = genRefreshs(playerId, type);
+                refreshes.put(playerId, myRefreshes);
+                //同时清除购买记录
+                refreshBuyRecord(playerId, type, LIMIT_REFRESH);
+            }
+            shop.refreshShopIds = new ArrayList<>(myRefreshes);
         }
-        List<Integer> myRefreshes = refreshes.get(playerId);
-        if (myRefreshes == null) {
-            myRefreshes = genRefreshs(playerId, type);
-            refreshes.put(playerId, myRefreshes);
-            //同时清除购买记录
-            refreshBuyRecord(playerId, type, LIMIT_REFRESH);
-        }
-        shop.refreshShopIds = new ArrayList<Integer>(myRefreshes);
+
         // 刷新次数
         if (data.getShopRefreshCount().containsKey(type)) {
             shop.refreshCount = data.getShopRefreshCount().get(type);
@@ -134,7 +139,11 @@ public class ShopService {
         int n = 6;
         if (type == COMMON) {
             n = 10;
+        }else if(type == FAME_7 || type == FAME_8 || type == FAME_9 || type == FAME_10 || type == FAME_11 || type == FAME_12 || type == FAME_13 || type == FAME_14)
+        {
+            n = 8;
         }
+
         if (result.size() < n) {
             for (int i = 0; i < 60; i++) {
                 int index = RandomUtil.getRandomIndex(rates);
@@ -195,6 +204,7 @@ public class ShopService {
                 return vo;
             }
         }
+
         // 限购数量
         if (cfg.limitCount > 0) {
             Integer buyCount = data.getShopBuyRecords().get(id);
@@ -240,16 +250,18 @@ public class ShopService {
             price = (int) (price * discount / 100.0f);
         }
 
-        int lkPrice = cfg.moneyCount;
-        int lkDiscountPrice = price;
+        //int lkPrice = cfg.moneyCount;
+        //int lkDiscountPrice = price;
 
-        price *= count;
-        // 扣钱
-        int code = goodsService.decConsume(playerId, Arrays.asList(new GoodsEntry(cfg.moneyType, price)),
-                LogConsume.SHOP_BUY_COST, id);
-        if (code != Response.SUCCESS) {
-            vo.errCode = code;
-            return vo;
+        if(cfg.moneyType != -1) {
+            price *= count;
+            // 扣钱
+            int code = goodsService.decConsume(playerId, Arrays.asList(new GoodsEntry(cfg.moneyType, price)),
+                    LogConsume.SHOP_BUY_COST, id);
+            if (code != Response.SUCCESS) {
+                vo.errCode = code;
+                return vo;
+            }
         }
 
         if (cfg.limitCount > 0) {
@@ -262,12 +274,17 @@ public class ShopService {
         }
         goodsService.addRewrad(playerId, cfg.goodsId, cfg.count * count, LogConsume.SHOP_BUY_ADD, id);
 
-        int subjectId = cfg.goodsId == Goods.DIAMOND ? 5 : 4;
+       // int subjectId = cfg.goodsId == Goods.DIAMOND ? 5 : 4;
         data.setBuyCount(data.getBuyCount() + 1);
         taskService.doTask(playerId, Task.TYPE_SHOP_BUY_COUNT, data.getBuyCount());
         vo.errCode = Response.SUCCESS;
         vo.id = id;
         vo.count = count;
+
+        if(cfg.moneyType == -1) {
+            ShopInfo shopInfo = getInfo(playerId,COMMON);
+            SessionManager.getInstance().sendMsg(1701,shopInfo,playerId);
+        }
         return vo;
     }
 

@@ -42,7 +42,7 @@
 	<fashionId>[111012,121012,131012]</fashionId>
 	<weaponId>[111013,121013,131013]</weaponId>
 	<initEquips>[[20111001,20211001,20311001,20411001,20511001,20611001],[20121001,20221001,20321001,20421001,20521001,20621001],[20131001,20231001,20331001,20431001,20531001,20631001]]</initEquips>
-	<newbieMailReward>[[102,1800],[120,5000]]</newbieMailReward>
+	<newbieMailReward>[[102,88]]</newbieMailReward>
 	<InitPets>[[65011,30]]</InitPets>
 	<newbieskillCard>[[1040206,5],[1050206,5]]</newbieskillCard>
 	<GuideEquip></GuideEquip>
@@ -79,8 +79,8 @@
 	<cameraDistV>7.5228068629625753</cameraDistV>
 	<cameraFixedYaw>38.729999999999997</cameraFixedYaw>
 	<buyTreasurePrice>102:10</buyTreasurePrice>
-	<treasureDelTime>30</treasureDelTime>
-	<quickTreasureCopy>102:10</quickTreasureCopy>
+	<treasureDelTime>180</treasureDelTime>
+	<quickTreasureCopy>102:50</quickTreasureCopy>
 	<sweepNeedGoods>302002:1</sweepNeedGoods>
 	<crazyChestChallengeCount>2</crazyChestChallengeCount>
 	<crazyChestLightningIntervalTime>1</crazyChestLightningIntervalTime>
@@ -90,19 +90,19 @@
 	<sceneFadeDistance>1</sceneFadeDistance>
 	<guildBroadcastPrice>100</guildBroadcastPrice>
 	<buyExtremeEvasionPrice>102:10</buyExtremeEvasionPrice>
-	<extremeEvasionDelTime>30</extremeEvasionDelTime>
-	<quickExtremeEvasionCopy>102:10</quickExtremeEvasionCopy>
+	<extremeEvasionDelTime>180</extremeEvasionDelTime>
+	<quickExtremeEvasionCopy>102:50</quickExtremeEvasionCopy>
 	<extremeEvasionChallengeCount>2</extremeEvasionChallengeCount>
 	<extremeEvasionHitCtrlParam>3</extremeEvasionHitCtrlParam>
 	<crazyChestHitCtrlParam>1</crazyChestHitCtrlParam>
 	<crazyChestHitPercent>20</crazyChestHitPercent>
-	<taskLivenessReward>20:[[102,5],[103,1000]];50:[[102,10],[103,2000]];80:[[102,20],[103,3000]];100:[[102,30],[103,4000]]</taskLivenessReward>
+	<taskLivenessReward>20:[[102,5],[103,1000],[109101,3]];50:[[102,10],[103,2000]];80:[[102,20],[103,3000]];100:[[102,30],[103,4000]]</taskLivenessReward>
 	<restoreTraversingEnergy>[120,10]</restoreTraversingEnergy>
-	<copyBackgroundIds>[8,8,7,7,6,6,5,5,3,3,4,4,2,2,1,1]</copyBackgroundIds>
+	<copyBackgroundIds>[4,7,2,8,3,5,1,6,4,7,2,8,3,5,1,6]</copyBackgroundIds>
 	<copyBackgroundEffects>1:3008001;2:3008001;3:3008003;4:3008004;5:3008005;6:3008006;7:3008007;8:3008008</copyBackgroundEffects>
-	<noCurrencyTips>104:14;108:24;109:24;110:28;111:29;121:30;125:31</noCurrencyTips>
-	<worldBossReward>[[102,100],[102,50],[102,30]]</worldBossReward>
-	<worldBossRewardRank>[[1,10],[11,50],[51,200]]</worldBossRewardRank>
+	<noCurrencyTips>104:14;108:24;109:24;110:28;111:29;121:30;125:31;181:31</noCurrencyTips>
+	<worldBossReward>[[301104,50],[301104,30],[301104,10]]</worldBossReward>
+	<worldBossRewardRank>[[1,5],[6,20],[21,200]]</worldBossRewardRank>
 	<worldBossLastFightReward>80010101:[103,100000];80010102:[103,100000];80010103:[103,100000]</worldBossLastFightReward>
 	<worldBossKillReward>80010101:[102,30];80010102:[102,30];80010103:[102,30]</worldBossKillReward>
 	<worldBossCost>[102,10]</worldBossCost>
@@ -123,15 +123,15 @@
 	<groupCopyOpenTime>[9,10,11,12,13,14]</groupCopyOpenTime>
 	<groupRewardRate>[300,40,600,30,900,20,1200,10]</groupRewardRate>
 	<groupTimes>1</groupTimes>
-	<LeadawayCopyDelTime>30</LeadawayCopyDelTime>
-	<quickLeadawayCopy>102:10</quickLeadawayCopy>
+	<LeadawayCopyDelTime>180</LeadawayCopyDelTime>
+	<quickLeadawayCopy>102:50</quickLeadawayCopy>
 	<buyLeadawayPrice>102:10</buyLeadawayPrice>
 	<LeadawayChallengeCount>2</LeadawayChallengeCount>
 	<LeadawayGoldAppearTime>[0.4,1]</LeadawayGoldAppearTime>
 	<LeadawayGoldCount>60</LeadawayGoldCount>
 	<CatchGoldRocketMapping>304010:[[500000015,40],[500000016,80],[500000025,40],[500000026,80],[500000035,40],[500000036,80]];304011:[[500000015,100],[500000016,200],[500000025,100],[500000026,200],[500000035,100],[500000036,200]];304012:[[500000015,200],[500000016,400],[500000025,200],[500000026,400],[500000035,200],[500000036,400]];304013:[[500000015,350],[500000016,700],[500000025,350],[500000026,700],[500000035,350],[500000036,700]];</CatchGoldRocketMapping>
-	<CatchGoldDelTime>30</CatchGoldDelTime>
-	<quickCatchGoldCopy>102:10</quickCatchGoldCopy>
+	<CatchGoldDelTime>180</CatchGoldDelTime>
+	<quickCatchGoldCopy>102:50</quickCatchGoldCopy>
 	<catchGoldPrice>102:10</catchGoldPrice>
 	<catchGoldChallengeCount>2</catchGoldChallengeCount>
 	<PkProtect>2</PkProtect>
@@ -143,13 +143,13 @@
 	<PKTime>[0,23]</PKTime>
 	<PKBeginDate>周一 00:00</PKBeginDate>
 	<PKEndDate>周日 24:00</PKEndDate>
-	<robotFight>[500,8000]</robotFight>
+	<robotFight>[5000,50000]</robotFight>
 	<QualifyingRankReward>[100,250,400,550,700,850]</QualifyingRankReward>
 	<QualifyingMatchingPredictTime>30</QualifyingMatchingPredictTime>
 	<joyActionTimeMini>50</joyActionTimeMini>
 	<joyActionTimeMax>65</joyActionTimeMax>
-	<petJoyActionIntervalMin>6</petJoyActionIntervalMin>
-	<petJoyActionIntervalMax>12</petJoyActionIntervalMax>
+	<petJoyActionIntervalMin>3</petJoyActionIntervalMin>
+	<petJoyActionIntervalMax>5</petJoyActionIntervalMax>
 	<guildCopyTimes>3</guildCopyTimes>
 	<guildRewardRate>2500</guildRewardRate>
 	<energyPrice>[25,50,75,100,125,150,175,200]</energyPrice>
@@ -157,9 +157,9 @@
 	<coinPrice>[25,50,75,100,125,150,175,200]</coinPrice>
 	<coinBuy>5000</coinBuy>
 	<buffStrikenEffectPriority>1:6;2:4;3:5;4:1;5:2;6:3</buffStrikenEffectPriority>
-	<cardLvUpPrice>[[103,100],[103,5000],[103,2000],[103,50000]]</cardLvUpPrice>
+	<cardLvUpPrice>[[103,100],[103,5000],[103,20000],[103,50000]]</cardLvUpPrice>
 	<mainCityMapParas>[0.3,0.3,23.7]</mainCityMapParas>
-	<petMutateItemRate>68001:10;68002:20;68003:30;68004:40;68005:50</petMutateItemRate>
+	<petMutateItemRate>68001:50</petMutateItemRate>
 	<killedTimesFactor>0.3</killedTimesFactor>
 	<RobotParas>[1.49,0.06,0.043,0.032,0.032,0.016]</RobotParas>
 </config>

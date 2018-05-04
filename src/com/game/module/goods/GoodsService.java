@@ -934,7 +934,7 @@ public class GoodsService {
 
         int[] totalCounts = playerService.getPlayerData(playerId).getBlankGrids();
         if (totalCounts == null) {
-            ServerLogger.info("totalCounts is null = " + totalCounts);
+            ServerLogger.info("totalCounts is null");
         }
         int[] leftCounts = new int[6];
         for (int i = 0; i < 3; i++) {

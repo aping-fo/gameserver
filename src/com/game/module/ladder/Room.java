@@ -36,7 +36,7 @@ public class Room {
     public volatile boolean exitFlag;
 
     public final int score;
-
+    public final int level;
     public volatile boolean fightFlag;
 
     public final Map<Integer, RoomPlayer> roomPlayers;
@@ -53,14 +53,14 @@ public class Room {
      */
     public int startLoadTime;
 
-    public Room(int id, int score, int type) {
+    public Room(int id, int score, int type,int level) {
         this.id = id;
         this.score = score;
         this.matchFlag = false;
         this.exitFlag = false;
         this.roomPlayers = new ConcurrentHashMap<>();
         this.loadingCount = new AtomicInteger(0);
-
+        this.level = level;
         //this.type = type;
         //this.blueArr = new ConcurrentHashMap<>();
         //this.redArr = new ConcurrentHashMap<>();

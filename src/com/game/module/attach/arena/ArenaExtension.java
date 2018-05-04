@@ -75,8 +75,8 @@ public class ArenaExtension {
         int minRank = logic.getMinRank();
         int meRank = me.getRank();
         Set<Integer> ranks = new HashSet<>(4);
-        if (meRank < 6) {
-            for (int i = 1; i < 6; i++) {
+        if (meRank < 7) {
+            for (int i = 1; i < 7; i++) {
                 if (i != meRank) {
                     ranks.add(i);
                 }
@@ -84,7 +84,7 @@ public class ArenaExtension {
         } else {
             int min;
             int max;
-            int delta = Math.round(meRank * 0.1f);
+            int delta = Math.round(meRank * 0.5f);
             if (delta < 3) {
                 delta = 4;
             }
@@ -98,6 +98,7 @@ public class ArenaExtension {
 
             min = meRank - 1;
             max = meRank - delta;
+
             List<Integer> rankList = new ArrayList<>();
             for (int i = max; i <= min; i++) {
                 rankList.add(i);
@@ -236,7 +237,6 @@ public class ArenaExtension {
         }
         ListParam<ArenaReportVO> msg = new ListParam<ArenaReportVO>();
         msg.params = new ArrayList<>(reports);
-        reports.clear();
         return msg;
     }
 }

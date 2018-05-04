@@ -123,15 +123,14 @@ public class TaskService implements Dispose {
         Player player = playerService.getPlayer(playerId);
         PlayerTask playerTask = getPlayerTask(playerId);
         List<Task> tasks = new ArrayList<>(playerTask.getTasks().values());
-        if (player.getGangId() > 0) {
-            Gang gang = gangService.getGang(player.getGangId());
-            tasks.addAll(gang.getTasks().values());
-        }
+//        if (player.getGangId() > 0) {
+//            Gang gang = gangService.getGang(player.getGangId());
+//            tasks.addAll(gang.getTasks().values());
+//        }
         for (Task task : tasks) {
             TaskConfig config = getConfig(task.getTaskId());
             if (!(config.taskType == 3 || config.taskType == 4)) {
-                if (task.getState() == Task.STATE_INIT
-                        || (task.getState() == Task.STATE_SUBMITED && config.nextTaskId != 0))
+                if (task.getState() == Task.STATE_INIT || (task.getState() == Task.STATE_SUBMITED && config.nextTaskId != 0))
                     continue;
             }
             STaskVo vo = new STaskVo();
@@ -206,6 +205,7 @@ public class TaskService implements Dispose {
                 result.livebox.add(param);
             }
         }
+
         return result;
     }
 
@@ -215,7 +215,7 @@ public class TaskService implements Dispose {
         tasks.put(playerId, task);
         for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
             TaskConfig taskConfig = (TaskConfig) config;
-            if (taskConfig.level <= 1 && taskConfig.taskType != Task.TYPE_JOINT) {
+            if (taskConfig.level <= 1 && taskConfig.taskType != Task.TYPE_JOINT&&taskConfig.taskType!= Task.TYPE_GANG) {
                 addNewTask(playerId, taskConfig.id, false);
             }
         }
@@ -367,7 +367,7 @@ public class TaskService implements Dispose {
                 }
                 task.setCount(curCount);
             } else*/
-                if (config.finishType == Task.FINISH_STONE) {
+            if (config.finishType == Task.FINISH_STONE) {
                 if (count == 1) {
                     task.alterCount(params[params.length - 1]);
                 } else {
@@ -528,6 +528,7 @@ public class TaskService implements Dispose {
                 }
 
                 if (config.finishType == Task.TYPE_PASS_TIME
+                        || config.finishType == Task.TYPE_SKILL_LEVEL
                         || config.finishType == Task.TYPE_HIT) {
                     task.setCount(params[count - 1]);
                 } else {
@@ -756,9 +757,6 @@ public class TaskService implements Dispose {
 
     public void dailyReset(int playerId) {
         PlayerTask playerTask = getPlayerTask(playerId);
-        if (playerTask == null) {
-            return;
-        }
         updateDailyTasks(playerId);
         updateJointTasks(playerId);
         playerTask.setLiveness(0);

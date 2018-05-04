@@ -227,11 +227,11 @@
 </config>
 <config>
 	<id>30001</id>
-	<type>1</type>
+	<type>0</type>
 	<totalWeight>0</totalWeight>
 	<count>1</count>
 	<repeat>1</repeat>
-	<desc>20级套装宝箱紫色</desc>
+	<desc>20级随机套装宝箱紫色</desc>
 	<items></items>
 </config>
 <config>
@@ -268,6 +268,15 @@
 	<count>1</count>
 	<repeat>1</repeat>
 	<desc>团本3套装宝箱</desc>
+	<items></items>
+</config>
+<config>
+	<id>32003</id>
+	<type>1</type>
+	<totalWeight>1</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>40级紫色套装</desc>
 	<items></items>
 </config>
 <config>
@@ -367,6 +376,195 @@
 	<count>1</count>
 	<repeat>1</repeat>
 	<desc>等级礼包Lv.50</desc>
+	<items></items>
+</config>
+<config>
+	<id>33021</id>
+	<type>0</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>世界boss随机宝箱</desc>
+	<items></items>
+</config>
+<config>
+	<id>40101</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>固定礼包A</desc>
+	<items></items>
+</config>
+<config>
+	<id>40102</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>固定礼包B</desc>
+	<items></items>
+</config>
+<config>
+	<id>40103</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>固定礼包C</desc>
+	<items></items>
+</config>
+<config>
+	<id>40111</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>技能卡礼包A</desc>
+	<items></items>
+</config>
+<config>
+	<id>40112</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>技能卡礼包B</desc>
+	<items></items>
+</config>
+<config>
+	<id>40113</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>技能卡礼包C</desc>
+	<items></items>
+</config>
+<config>
+	<id>40114</id>
+	<type>0</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>技能卡C级随机</desc>
+	<items></items>
+</config>
+<config>
+	<id>40115</id>
+	<type>0</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>技能卡D级随机</desc>
+	<items></items>
+</config>
+<config>
+	<id>40121</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>神器礼包A</desc>
+	<items></items>
+</config>
+<config>
+	<id>40122</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>神器礼包B</desc>
+	<items></items>
+</config>
+<config>
+	<id>40123</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>神器礼包C</desc>
+	<items></items>
+</config>
+<config>
+	<id>40124</id>
+	<type>0</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>神器碎片随机</desc>
+	<items></items>
+</config>
+<config>
+	<id>40131</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>宝石礼包A</desc>
+	<items></items>
+</config>
+<config>
+	<id>40132</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>宝石礼包B</desc>
+	<items></items>
+</config>
+<config>
+	<id>40133</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>宝石礼包C</desc>
+	<items></items>
+</config>
+<config>
+	<id>40134</id>
+	<type>0</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>宝石随机</desc>
+	<items></items>
+</config>
+<config>
+	<id>40201</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>1元礼包</desc>
+	<items></items>
+</config>
+<config>
+	<id>40202</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>3元礼包</desc>
+	<items></items>
+</config>
+<config>
+	<id>40203</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>8元礼包</desc>
+	<items></items>
+</config>
+<config>
+	<id>40204</id>
+	<type>0</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>宠物碎片</desc>
 	<items></items>
 </config>
 </root>

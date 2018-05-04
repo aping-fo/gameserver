@@ -12,7 +12,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>2</sort>
+	<sort>7</sort>
 	<des></des>
 	<viewname>GettiliView</viewname>
 </config>
@@ -28,7 +28,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort></sort>
+	<sort>4</sort>
 	<des>15级之后每升5级,即可领取海量钻石！</des>
 	<viewname>FundView</viewname>
 </config>
@@ -44,7 +44,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0>7</Param0>
-	<sort>4</sort>
+	<sort>3</sort>
 	<des></des>
 	<viewname>SevenDaysRewardView</viewname>
 </config>
@@ -76,7 +76,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>5</sort>
+	<sort>6</sort>
 	<des></des>
 	<viewname>LevRewardsView</viewname>
 </config>
@@ -92,7 +92,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort></sort>
+	<sort>5</sort>
 	<des></des>
 	<viewname>WeekMonthCardView</viewname>
 </config>
@@ -108,7 +108,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>1</sort>
+	<sort>2</sort>
 	<des></des>
 	<viewname>SignView</viewname>
 </config>
@@ -124,8 +124,88 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>7</sort>
+	<sort>8</sort>
 	<des>玩的越久,奖励越多哦！乐起红包！爽！爽！爽！</des>
 	<viewname>OnlineTiemRewardView</viewname>
+</config>
+<config>
+	<id>9</id>
+	<name>首充</name>
+	<Conds></Conds>
+	<ActivityType>9</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>1</sort>
+	<des>快点首充啊</des>
+	<viewname>RechargeactivityView</viewname>
+</config>
+<config>
+	<id>10</id>
+	<name>限时大礼</name>
+	<Conds>[[3,10,11]]</Conds>
+	<ActivityType>10</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>360</Param0>
+	<sort></sort>
+	<des>限时折扣快来买啊</des>
+	<viewname>TimegiftView</viewname>
+</config>
+<config>
+	<id>11</id>
+	<name>限时大礼</name>
+	<Conds>[[3,11,12]]</Conds>
+	<ActivityType>10</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>360</Param0>
+	<sort></sort>
+	<des>限时折扣快来买啊</des>
+	<viewname>TimegiftView</viewname>
+</config>
+<config>
+	<id>12</id>
+	<name>限时大礼</name>
+	<Conds>[[3,12,13]]</Conds>
+	<ActivityType>10</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>360</Param0>
+	<sort></sort>
+	<des>限时折扣快来买啊</des>
+	<viewname>TimegiftView</viewname>
+</config>
+<config>
+	<id>13</id>
+	<name>特价礼包</name>
+	<Conds>[[3,40,999]]</Conds>
+	<ActivityType>11</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<viewname></viewname>
 </config>
 </root>

@@ -7,6 +7,7 @@ public class MonsterConfig {
 	public int id;//key
 	public int model;//模型
 	public int type;//类型
+	public int dutyType;//功能类型
 	public int AI;//主机ai
 	public int AppointAI;//托管ai
 	public String icon;//图标

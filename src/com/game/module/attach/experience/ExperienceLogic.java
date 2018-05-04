@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import com.game.module.goods.GoodsEntry;
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +36,8 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 	private GoodsService goodsService;
 	@Autowired
 	private CopyService copyService;
+	@Autowired
+	private TaskService taskService;
 	@Override
 	public byte getType() {
 		return AttachType.EXPERIENCE;
@@ -120,7 +124,7 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 		goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
 		attach.alterChallenge(-1);
 		attach.commitSync();
-		
+		taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY,cfg.type,1);
 		return result;
 	}
 	

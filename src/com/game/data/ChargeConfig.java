@@ -19,4 +19,6 @@ public class ChargeConfig {
 	public String icon;//图标
 	public String name;//名字
 	public int[][] rewards;//奖励
+	public int shopGoodsId;//商城物品id
+	public int isShow;//是否显示
 }

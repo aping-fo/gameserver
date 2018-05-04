@@ -174,6 +174,15 @@ public class GangService implements InitHandler {
         return gangs.get(id);
     }
 
+    public GangInfo getSpecialGang(int playerId,int id) {
+        Gang gang = gangs.get(id);
+        if(gang!= null) {
+            GangInfo info = toGangVo(gang);
+            info.apply = gang.getApplys().containsKey(playerId);
+            return info;
+        }
+        return null;
+    }
     // 获取一个新的帮派id
     private synchronized int getNextGangId() {
         maxGangId++;
@@ -265,8 +274,9 @@ public class GangService implements InitHandler {
         if (gangs.size() % pageSize != 0) {
             list.page++;
         }
+        if (page == 0) page = 1;
         list.curPage = page;
-        list.gangs = new ArrayList<GangInfo>(pageSize);
+        list.gangs = new ArrayList<>(pageSize);
 
         int begin = (page - 1) * pageSize;
         int end = Math.min(begin + pageSize, orderGangs.size());
@@ -450,10 +460,19 @@ public class GangService implements InitHandler {
         } else {
             // 加入申请列表
             gang.getApplys().put(playerId, System.currentTimeMillis());
+            ListParam<GangApply> applys = new ListParam<GangApply>();
+            applys.params = getApplys(gang.getOwnerId());
+            for (GMember member : gang.getMembers().values()) {
+                if(member.getPosition() == Gang.ADMIN) {
+                    SessionManager.getInstance().sendMsg(2517, applys, member.getPlayerId());
+                }
+            }
             return Response.JOIN_SUCESS_TITLE;
         }
         gang.setUpdated(true);
         dailyService.alterCount(playerId, DailyService.APPLY_GANG, 1);
+
+
         return Response.SUCCESS;
     }
 
@@ -472,6 +491,17 @@ public class GangService implements InitHandler {
             gang.getApplys().remove(applyId);
             return Response.APPLY_OUTDATED;
         }
+
+        PlayerData playerData = playerService.getPlayerData(applyId);
+        if (playerData.getLastQuitGang() > 0) {
+            if ((System.currentTimeMillis() - playerData.getLastQuitGang()) <= TimeUtil.ONE_HOUR
+                    * ConfigData.globalParam().quitPunish) {
+                gang.getApplys().remove(applyId);
+                gang.setUpdated(true);
+                return Response.QUIT_GANG_LAST;
+            }
+        }
+
         synchronized (gang) {
             // 本帮人员已满
             if (gang.getMembers().size() >= gang.getMaxNum()) {
@@ -480,6 +510,7 @@ public class GangService implements InitHandler {
             gang.getMembers().put(applyId, new GMember(applyId, ConfigData.globalParam().guildCopyTimes));
 
         }
+
         // 更新对方
         synchronized (applyer) {
             if (applyer.getGangId() == 0) {
@@ -494,15 +525,13 @@ public class GangService implements InitHandler {
 
         gang.setUpdated(true);
         // 发送邮件
-        String title = ConfigData.getConfig(ErrCode.class,
-                Response.JOIN_SUCESS_TITLE).tips;
-        String content = ConfigData.getConfig(ErrCode.class,
-                Response.JOIN_SUCESS_CONTENT).tips;
-        mailService.sendSysMail(title, String.format(content, gang.getName()),
-                null, applyId, null);
+        String title = ConfigData.getConfig(ErrCode.class, Response.JOIN_SUCESS_TITLE).tips;
+        String content = ConfigData.getConfig(ErrCode.class, Response.JOIN_SUCESS_CONTENT).tips;
+        mailService.sendSysMail(title, String.format(content, gang.getName()), null, applyId, null);
 
-        SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
-                getMyGang(applyId), applyId);
+        IntParam param = new IntParam();
+        SessionManager.getInstance().sendMsg(2505, param, applyId);
+        SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG, getMyGang(applyId), applyId);
 
         calculator.calculate(applyer);
 
@@ -1043,7 +1072,7 @@ public class GangService implements InitHandler {
                 if (serialService.getData() != null) {
                     taskService.doTask(id, Task.TYPE_GANG_RANK, rank);
                     PlayerView playerView = serialService.getData().getPlayerView(id);
-                    if (playerView == null || playerView.getGangMaxRank() > rank) {
+                    if (playerView.getGangMaxRank() > rank) {
                         playerView.setGangMaxRank(rank);
                     }
                 }
@@ -1301,7 +1330,7 @@ public class GangService implements InitHandler {
     public int[][] calculateReward(GMember member, GTRoom room, float plus) {
         try {
             GangTrainingCfg cfg = GameData.getConfig(GangTrainingCfg.class, room.getId());
-            float passHour = ((System.currentTimeMillis() - member.getStartTraining()) / TimeUtil.ONE_HOUR);
+            long passHour = ((System.currentTimeMillis() - member.getStartTraining()) / TimeUtil.ONE_HOUR);
             int hour = (int) passHour;
             if (hour < 1) { //小于1小时，不给奖励
                 member.alterTrainingTime(passHour);
@@ -1499,5 +1528,16 @@ public class GangService implements InitHandler {
     public void clearGuildTime(int playerId) {
         PlayerData playerData = playerService.getPlayerData(playerId);
         playerData.setLastQuitGang(0);
+    }
+
+    public void addGangPoint(int playerId) {
+        Player player = playerService.getPlayer(playerId);
+        Gang gang = getGang(player.getGangId());
+        gang.setAsset(10000000);
+        gang.setTotalAsset(10000000);
+        gang.setUpdated(true);
+        gang.setLev(10);
+        SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
+                getMyGang(playerId), playerId);
     }
 }

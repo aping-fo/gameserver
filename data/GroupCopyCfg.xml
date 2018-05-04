@@ -4,8 +4,8 @@
 	<id>1</id>
 	<level>40</level>
 	<name>勇气试炼</name>
-	<icon>100014_2</icon>
-	<atlas>Skillcardgongneng</atlas>
+	<icon>Assets/UI/Texture/Image_Boss/yongqi.png</icon>
+	<atlas></atlas>
 	<stageCount>3</stageCount>
 	<stage1Name>第一阶:希望试炼</stage1Name>
 	<stage1Copy>[1000111,1000112]</stage1Copy>
@@ -24,8 +24,8 @@
 	<id>2</id>
 	<level>50</level>
 	<name>地底之城</name>
-	<icon>100001_2</icon>
-	<atlas>Skillcardgongneng</atlas>
+	<icon>Assets/UI/Texture/Image_Boss/didi.png</icon>
+	<atlas></atlas>
 	<stageCount>3</stageCount>
 	<stage1Name>第一阶:英雄试炼</stage1Name>
 	<stage1Copy>[1000111,1000112]</stage1Copy>
@@ -44,8 +44,8 @@
 	<id>3</id>
 	<level>60</level>
 	<name>无尽深渊</name>
-	<icon>100008_2</icon>
-	<atlas>Skillcardzengyi</atlas>
+	<icon>Assets/UI/Texture/Image_Boss/wujin.png</icon>
+	<atlas></atlas>
 	<stageCount>3</stageCount>
 	<stage1Name>第一阶:大神试炼</stage1Name>
 	<stage1Copy>[1000111,1000112]</stage1Copy>

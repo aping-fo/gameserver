@@ -14,6 +14,8 @@ public class ModuleOpenCfg {
 	public String buildingName;//建筑名称
 	public String effectName;//建筑特效
 	public float timeSet;//特效时长
-	public int[] position;//主界面坐标
-	public String describe;//未解锁描述
+	public float[][] position;//主界面坐标
+	public String describe;//描述
+	public int order;//排序
+	public String path;//路径
 }

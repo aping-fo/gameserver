@@ -4,7 +4,7 @@
 	<id>1</id>
 	<name>青铜1段</name>
 	<score>100</score>
-	<addScore>10</addScore>
+	<addScore>50</addScore>
 	<decScore>0</decScore>
 	<PkReward>[112,10]</PkReward>
 	<FinalReward>[112,100]</FinalReward>
@@ -15,7 +15,7 @@
 	<id>2</id>
 	<name>青铜2段</name>
 	<score>200</score>
-	<addScore>15</addScore>
+	<addScore>80</addScore>
 	<decScore>0</decScore>
 	<PkReward>[112,10]</PkReward>
 	<FinalReward>[112,150]</FinalReward>
@@ -26,7 +26,7 @@
 	<id>3</id>
 	<name>青铜3段</name>
 	<score>300</score>
-	<addScore>20</addScore>
+	<addScore>110</addScore>
 	<decScore>0</decScore>
 	<PkReward>[112,10]</PkReward>
 	<FinalReward>[112,200]</FinalReward>
@@ -37,8 +37,8 @@
 	<id>4</id>
 	<name>白银1段</name>
 	<score>400</score>
-	<addScore>25</addScore>
-	<decScore>25</decScore>
+	<addScore>150</addScore>
+	<decScore>30</decScore>
 	<PkReward>[112,15]</PkReward>
 	<FinalReward>[112,250]</FinalReward>
 	<grading>21</grading>
@@ -48,8 +48,8 @@
 	<id>5</id>
 	<name>白银2段</name>
 	<score>500</score>
-	<addScore>30</addScore>
-	<decScore>30</decScore>
+	<addScore>190</addScore>
+	<decScore>40</decScore>
 	<PkReward>[112,15]</PkReward>
 	<FinalReward>[112,300]</FinalReward>
 	<grading>22</grading>
@@ -59,8 +59,8 @@
 	<id>6</id>
 	<name>白银3段</name>
 	<score>600</score>
-	<addScore>40</addScore>
-	<decScore>40</decScore>
+	<addScore>200</addScore>
+	<decScore>50</decScore>
 	<PkReward>[112,15]</PkReward>
 	<FinalReward>[112,350]</FinalReward>
 	<grading>23</grading>
@@ -70,8 +70,8 @@
 	<id>7</id>
 	<name>黄金1段</name>
 	<score>700</score>
-	<addScore>50</addScore>
-	<decScore>50</decScore>
+	<addScore>200</addScore>
+	<decScore>60</decScore>
 	<PkReward>[112,20]</PkReward>
 	<FinalReward>[112,400]</FinalReward>
 	<grading>31</grading>
@@ -81,8 +81,8 @@
 	<id>8</id>
 	<name>黄金2段</name>
 	<score>800</score>
-	<addScore>60</addScore>
-	<decScore>60</decScore>
+	<addScore>200</addScore>
+	<decScore>70</decScore>
 	<PkReward>[112,20]</PkReward>
 	<FinalReward>[112,450]</FinalReward>
 	<grading>32</grading>
@@ -92,8 +92,8 @@
 	<id>9</id>
 	<name>黄金3段</name>
 	<score>900</score>
-	<addScore>70</addScore>
-	<decScore>70</decScore>
+	<addScore>200</addScore>
+	<decScore>80</decScore>
 	<PkReward>[112,20]</PkReward>
 	<FinalReward>[112,500]</FinalReward>
 	<grading>33</grading>
@@ -103,8 +103,8 @@
 	<id>10</id>
 	<name>铂金1段</name>
 	<score>1000</score>
-	<addScore>80</addScore>
-	<decScore>80</decScore>
+	<addScore>200</addScore>
+	<decScore>90</decScore>
 	<PkReward>[112,25]</PkReward>
 	<FinalReward>[112,550]</FinalReward>
 	<grading>41</grading>
@@ -114,8 +114,8 @@
 	<id>11</id>
 	<name>铂金2段</name>
 	<score>1100</score>
-	<addScore>90</addScore>
-	<decScore>90</decScore>
+	<addScore>200</addScore>
+	<decScore>100</decScore>
 	<PkReward>[112,25]</PkReward>
 	<FinalReward>[112,600]</FinalReward>
 	<grading>42</grading>
@@ -125,8 +125,8 @@
 	<id>12</id>
 	<name>铂金3段</name>
 	<score>1200</score>
-	<addScore>100</addScore>
-	<decScore>100</decScore>
+	<addScore>200</addScore>
+	<decScore>110</decScore>
 	<PkReward>[112,25]</PkReward>
 	<FinalReward>[112,650]</FinalReward>
 	<grading>43</grading>
@@ -136,8 +136,8 @@
 	<id>13</id>
 	<name>钻石1段</name>
 	<score>1300</score>
-	<addScore>110</addScore>
-	<decScore>110</decScore>
+	<addScore>200</addScore>
+	<decScore>120</decScore>
 	<PkReward>[112,35]</PkReward>
 	<FinalReward>[112,700]</FinalReward>
 	<grading>51</grading>
@@ -147,8 +147,8 @@
 	<id>14</id>
 	<name>钻石2段</name>
 	<score>1400</score>
-	<addScore>120</addScore>
-	<decScore>120</decScore>
+	<addScore>200</addScore>
+	<decScore>130</decScore>
 	<PkReward>[112,35]</PkReward>
 	<FinalReward>[112,750]</FinalReward>
 	<grading>52</grading>
@@ -158,8 +158,8 @@
 	<id>15</id>
 	<name>钻石3段</name>
 	<score>1500</score>
-	<addScore>130</addScore>
-	<decScore>130</decScore>
+	<addScore>200</addScore>
+	<decScore>140</decScore>
 	<PkReward>[112,35]</PkReward>
 	<FinalReward>[112,800]</FinalReward>
 	<grading>53</grading>
@@ -169,7 +169,7 @@
 	<id>16</id>
 	<name>最强王者</name>
 	<score>0</score>
-	<addScore>150</addScore>
+	<addScore>200</addScore>
 	<decScore>150</decScore>
 	<PkReward>[112,40]</PkReward>
 	<FinalReward>[112,850]</FinalReward>

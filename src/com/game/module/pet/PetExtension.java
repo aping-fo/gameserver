@@ -27,6 +27,7 @@ public class PetExtension {
         return petService.gainPet(playerId, param.param);
     }
 
+    /**
     @Command(7004)
     public Object compound(int playerId, Int2Param param) {
         return petService.compound(playerId, param.param1, param.param2);
@@ -41,10 +42,10 @@ public class PetExtension {
     public Object mutate(int playerId, MutateVO param) {
         return petService.mutate(playerId, param.mutateID, param.consume, param.itemId);
     }
-
+    **/
     @Command(7007)
-    public Object improveQuality(int playerId, IntParam param) {
-        return petService.improveQuality(playerId, param.param);
+    public Object improveQuality(int playerId, Int2Param param) {
+        return petService.improveQuality(playerId, param.param1, param.param2);
     }
 
     @Command(7008)

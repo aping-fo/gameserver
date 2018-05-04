@@ -97,6 +97,15 @@ public class Player implements PlayerAddition {
     private int groupTeamId;
     private int roomId;
     public int roomTeamId;
+    private int totalChargeMoney;//累计充值金额
+
+    public int getTotalChargeMoney() {
+        return totalChargeMoney;
+    }
+
+    public void setTotalChargeMoney(int totalChargeMoney) {
+        this.totalChargeMoney = totalChargeMoney;
+    }
 
     public int getAchievement() {
         return achievement;

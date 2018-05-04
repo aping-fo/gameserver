@@ -111,6 +111,8 @@ public class PlayerData {
 
 	private List<Integer> modules =new ArrayList<>();// 开通的模块
 	private Set<Integer> hitModules = Sets.newHashSet();// 点击过的
+	private Map<Integer, Integer> hitModulesState = new ConcurrentHashMap<>();
+	private Set<Integer> actionModules = Sets.newHashSet();//
 	//公会科技
 	private Set<Integer> technologys = new HashSet<>();
 
@@ -160,6 +162,70 @@ public class PlayerData {
 	//是否领取激活码礼包
 	private  boolean receiveGiftBag;
 	private Set<Integer> giftBagSet = new HashSet<>();
+
+	private Set<Long> globalMailIDSet = new HashSet<>();
+
+	private int cpId; //订单号自增ID
+	private Set<Integer> CpIdSet = new HashSet<>(); //生成订单号
+	private Set<Integer> dealCpIdSet = new HashSet<>(); //已经处理过的订单号
+	public Set<Long> getGlobalMailIDSet() {
+		return globalMailIDSet;
+	}
+
+	public Set<Integer> getCpIdSet() {
+		return CpIdSet;
+	}
+
+	public void setCpIdSet(Set<Integer> cpIdSet) {
+		CpIdSet = cpIdSet;
+	}
+
+	public int getCpId() {
+		return cpId;
+	}
+
+	public void setCpId(int cpId) {
+		this.cpId = cpId;
+	}
+
+	public Set<Integer> getDealCpIdSet() {
+		return dealCpIdSet;
+	}
+
+	public void setDealCpIdSet(Set<Integer> dealCpIdSet) {
+		this.dealCpIdSet = dealCpIdSet;
+	}
+
+	public void setGlobalMailIDSet(Set<Long> globalMailIDSet) {
+		this.globalMailIDSet = globalMailIDSet;
+	}
+
+	public Map<Integer, Integer> getHitModulesState() {
+		return hitModulesState;
+	}
+
+	public void setHitModulesState(Map<Integer, Integer> hitModulesState) {
+		this.hitModulesState = hitModulesState;
+	}
+
+	public Set<Integer> getActionModules() {
+		return actionModules;
+	}
+
+	public void setActionModules(Set<Integer> actionModules) {
+		this.actionModules = actionModules;
+	}
+
+	//觉醒技能
+	private Map<Integer, Integer> awakeningSkillMap = new ConcurrentHashMap<>();
+
+	public Map<Integer, Integer> getAwakeningSkillMap() {
+		return awakeningSkillMap;
+	}
+
+	public void setAwakeningSkillMap(Map<Integer, Integer> awakeningSkillMap) {
+		this.awakeningSkillMap = awakeningSkillMap;
+	}
 
 	public Set<Integer> getGiftBagSet() {
 		return giftBagSet;

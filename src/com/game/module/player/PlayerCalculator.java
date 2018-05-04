@@ -99,6 +99,8 @@ public class PlayerCalculator {
         addTitleAttr(player);
         //宠物加成
         addPet(player);
+        //觉醒技能加成
+        addAwakeningSkill(player);
         //百分比保持最后
         addPercent(player);
 
@@ -326,28 +328,20 @@ public class PlayerCalculator {
             player.addFu(config.fuFix);
             player.addSymptom(config.symptomFix);
             player.addHp(config.hpFix);
+        }
 
-            if(pet.isMutateFlag())
+        Pet fightPet = petService.getFightPet(player.getPlayerId());
+        if(fightPet != null)
+        {
+            PetSkillConfig config  = ConfigData.getConfig(PetSkillConfig.class, fightPet.getPassiveSkillId());
+            if(config != null)
             {
-                //没变异前的宠加成
-                int configId = 0;
-                PetConfig needConfig = null;
-                do{
-                    configId = config.id - 1;
-                    config = ConfigData.getConfig(PetConfig.class, configId);
-
-                    if(config.mutateId != 0)
-                    {
-                        needConfig = config;
-                    }
-                }while(config.mutateId != 0);
-
-                player.addAttack(needConfig.attackFix);
-                player.addCrit(needConfig.critFix);
-                player.addDefense(needConfig.defenseFix);
-                player.addFu(needConfig.fuFix);
-                player.addSymptom(needConfig.symptomFix);
-                player.addHp(needConfig.hpFix);
+                player.addAttack(config.attackFix);
+                player.addCrit(config.critFix);
+                player.addDefense(config.defenseFix);
+                player.addFu(config.fuFix);
+                player.addSymptom(config.symptomFix);
+                player.addHp(config.hpFix);
             }
         }
     }
@@ -418,6 +412,44 @@ public class PlayerCalculator {
         }
     }
 
+    //加觉醒技能，非百分比的部分
+    private void addAwakeningSkill(PlayerAddition player) {
+        PlayerData playerData = playerService.getPlayerData(player.getPlayerId());
+
+        Map<Integer, Integer> awakeningSkillMap = playerData.getAwakeningSkillMap();
+        if (awakeningSkillMap.size() == 0) {
+            return;
+        }
+
+        for (int key : awakeningSkillMap.keySet()) {
+            AwakenAttributeCfg awakenAttributeCfg = ConfigData.getConfig(AwakenAttributeCfg.class, awakeningSkillMap.get(key));
+            if (awakenAttributeCfg != null) {
+                switch (awakenAttributeCfg.Attribute ){
+                    case 7:
+                        player.addHp(awakenAttributeCfg.value);
+                        break;
+                    case 8:
+                        player.addAttack(awakenAttributeCfg.value);
+                        break;
+                    case 9:
+                        player.addDefense(awakenAttributeCfg.value);
+                        break;
+                    case 10:
+                        player.addCrit(awakenAttributeCfg.value);
+                        break;
+                    case 11:
+                        player.addSymptom(awakenAttributeCfg.value);
+                        break;
+                    case 12:
+                        player.addFu(awakenAttributeCfg.value);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+    }
+
     //百分比的（要统一放在这里处理，先累加所有的百分比，再计算原始值+原始值%)
     public void addPercent(PlayerAddition player) {
         //装备的特殊属性
@@ -446,17 +478,17 @@ public class PlayerCalculator {
             addPercentAttr(percentAttrs, Goods.HP, collect.srvHpPercent);
         }
 
-        //宠物百分比
-        PetBag petBag = petService.getPetBag(player.getPlayerId());
-        if (petBag != null) {
-            PetConfig petConfig = ConfigData.getConfig(PetConfig.class, petBag.getFightPetId());
-            if (petConfig != null) {
-                addPercentAttr(percentAttrs, Goods.ATK, petConfig.attack);
-                addPercentAttr(percentAttrs, Goods.DEF, petConfig.defense);
-                addPercentAttr(percentAttrs, Goods.CRIT, petConfig.crit);
-                addPercentAttr(percentAttrs, Goods.SYMPTOM, petConfig.symptom);
-                addPercentAttr(percentAttrs, Goods.FU, petConfig.fu);
-                addPercentAttr(percentAttrs, Goods.HP, petConfig.hp);
+        //出战宠物百分比
+        Pet pet = petService.getFightPet(player.getPlayerId());
+        if (pet != null) {
+            PetSkillConfig skillConfig = ConfigData.getConfig(PetSkillConfig.class, pet.getPassiveSkillId());
+            if(skillConfig != null) {
+                addPercentAttr(percentAttrs, Goods.ATK, skillConfig.attackPercent);
+                addPercentAttr(percentAttrs, Goods.DEF, skillConfig.defensePercent);
+                addPercentAttr(percentAttrs, Goods.CRIT, skillConfig.critPercent);
+                addPercentAttr(percentAttrs, Goods.SYMPTOM, skillConfig.symptomPercent);
+                addPercentAttr(percentAttrs, Goods.FU, skillConfig.fuPercent);
+                addPercentAttr(percentAttrs, Goods.HP, skillConfig.hpPercent);
             }
         }
 
@@ -477,6 +509,14 @@ public class PlayerCalculator {
             }
             if (s.getValue().size() >= 6) {
                 addSuitPercent(percentAttrs, config.sixAdd);
+            }
+        }
+
+        //觉醒技能百分比
+        for (int key : data.getAwakeningSkillMap().keySet()) {
+            AwakenAttributeCfg awakenAttributeCfg = ConfigData.getConfig(AwakenAttributeCfg.class, data.getAwakeningSkillMap().get(key));
+            if (awakenAttributeCfg != null && awakenAttributeCfg.Attribute < 7) {
+                addPercentAttr(percentAttrs, awakenAttributeCfg.Attribute, awakenAttributeCfg.value);
             }
         }
 

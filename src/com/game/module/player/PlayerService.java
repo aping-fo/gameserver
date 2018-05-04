@@ -13,11 +13,9 @@ import com.game.module.gang.GangService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
-import com.game.module.goods.PlayerBag;
 import com.game.module.group.GroupService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
-import com.game.module.pet.PetBag;
 import com.game.module.pet.PetService;
 import com.game.module.scene.Scene;
 import com.game.module.serial.PlayerView;
@@ -30,13 +28,12 @@ import com.game.module.team.TeamService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
 import com.game.params.Int2Param;
+import com.game.params.IntList;
 import com.game.params.ListParam;
 import com.game.params.player.CRegVo;
 import com.game.params.player.PlayerVo;
 import com.game.sdk.erating.ERatingService;
 import com.game.util.*;
-import com.google.common.collect.BiMap;
-import com.google.common.collect.HashBiMap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.server.SessionManager;
@@ -157,6 +154,9 @@ public class PlayerService implements InitHandler {
 
     // 获取Player对象
     public Player getPlayer(int playerId) {
+        if (playerId == 0) {
+            return null;
+        }
         Player player = players.get(playerId);
         if (player == null) {
             player = playerDao.select(playerId);
@@ -166,19 +166,19 @@ public class PlayerService implements InitHandler {
                 if (!player.online) {
                     player.setLastLogoutTime(new Date());
                 }
-                PlayerData data = getPlayerData(playerId);
-                if (data.isRobotFlag()) {
-                    int minFight = ConfigData.globalParam().robotFight[0];
-                    int maxFight = ConfigData.globalParam().robotFight[1];
-                    int fightRate = RandomUtil.randInt(minFight, maxFight);
-                    player.setHp(Math.round(fightRate * ConfigData.globalParam().RobotParas[0]));
-                    player.setAttack(Math.round(fightRate * ConfigData.globalParam().RobotParas[1]));
-                    player.setDefense(Math.round(fightRate * ConfigData.globalParam().RobotParas[2]));
-                    player.setSymptom(Math.round(fightRate * ConfigData.globalParam().RobotParas[3]));
-                    player.setFu(Math.round(fightRate * ConfigData.globalParam().RobotParas[4]));
-                    player.setCrit(Math.round(fightRate * ConfigData.globalParam().RobotParas[5]));
-                    player.setFight(fightRate);
-                }
+//                PlayerData data = getPlayerData(playerId);
+//                if (data.isRobotFlag()) {
+//                    int minFight = ConfigData.globalParam().robotFight[0];
+//                    int maxFight = ConfigData.globalParam().robotFight[1];
+//                    int fightRate = RandomUtil.randInt(minFight, maxFight);
+//                    player.setHp(Math.round(fightRate * ConfigData.globalParam().RobotParas[0]));
+//                    player.setAttack(Math.round(fightRate * ConfigData.globalParam().RobotParas[1]));
+//                    player.setDefense(Math.round(fightRate * ConfigData.globalParam().RobotParas[2]));
+//                    player.setSymptom(Math.round(fightRate * ConfigData.globalParam().RobotParas[3]));
+//                    player.setFu(Math.round(fightRate * ConfigData.globalParam().RobotParas[4]));
+//                    player.setCrit(Math.round(fightRate * ConfigData.globalParam().RobotParas[5]));
+//                    player.setFight(fightRate);
+//                }
             }
         }
         return player;
@@ -719,6 +719,7 @@ public class PlayerService implements InitHandler {
         if (add <= 0) {
             return false;
         }
+
         Player player = getPlayer(playerId);
         synchronized (player) {
             player.setEnergy(player.getEnergy() + add);
@@ -727,7 +728,7 @@ public class PlayerService implements InitHandler {
         updateAttrsToClient(playerId, Player.ENERGY, player.getEnergy());
         // 记录日志
         Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, add, actionType, 0,
-                Goods.COIN, params);
+                Goods.ENERGY, params);
         return true;
     }
 
@@ -799,6 +800,8 @@ public class PlayerService implements InitHandler {
             //等级称号
             titleService.complete(playerId, TitleConsts.LEVEL, player.getLev(), ActivityConsts.UpdateType.T_VALUE);
             taskService.doTask(playerId, Task.TYPE_LEVEL, player.getLev());
+
+            activityService.startBagByLevel(playerId);//限时礼包和特价礼包
         }
         // 发送到前端
         updateAttrsToClient(playerId, Player.EXP, player.getExp(), Player.LEV, player.getLev());
@@ -1165,22 +1168,19 @@ public class PlayerService implements InitHandler {
         Int2Param int2Param = new Int2Param();
         int2Param.param1 = Response.SUCCESS;
         int2Param.param2 = moduleId;
-
         if (moduleId == MODULE_TITLE) { //1323 功能开启称号ID
             playerCalculator.calculate(playerId);
         }
-
         return int2Param;
     }
 
-    public Int2Param hitModule(int playerId, int moduleId) {
+    Int2Param hitModule(int playerId, int moduleId, int isOn) {
         PlayerData playerData = getPlayerData(playerId);
-        if (!playerData.getHitModules().contains(moduleId)) {
-            playerData.getHitModules().add(moduleId);
-        }
+        playerData.getHitModulesState().put(moduleId, isOn);
+
         Int2Param int2Param = new Int2Param();
-        int2Param.param1 = Response.SUCCESS;
-        int2Param.param2 = moduleId;
+        int2Param.param1 = moduleId;
+        int2Param.param2 = isOn;
         return int2Param;
     }
 
@@ -1191,12 +1191,27 @@ public class PlayerService implements InitHandler {
         for (int moduleId : data.getModules()) {
             Int2Param param = new Int2Param();
             param.param1 = moduleId;
-            if (data.getHitModules().contains(moduleId)) {
-                param.param2 = 1;
-            }
+            Integer state = data.getHitModulesState().get(moduleId);
+            if (state == null) state = 0;
+            param.param2 = state;
             result.params.add(param);
         }
 
+        return result;
+    }
+
+    public void actionModule(int playerId, int moduleId) {
+        PlayerData playerData = getPlayerData(playerId);
+        if (!playerData.getActionModules().contains(moduleId)) {
+            playerData.getHitModules().add(moduleId);
+        }
+    }
+
+    public IntList getActionModule(int playerId) {
+        PlayerData data = getPlayerData(playerId);
+        IntList result = new IntList();
+        result.iList = Lists.newArrayList();
+        result.iList.addAll(data.getActionModules());
         return result;
     }
 }

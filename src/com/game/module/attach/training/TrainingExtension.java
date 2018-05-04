@@ -3,6 +3,7 @@ package com.game.module.attach.training;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.game.module.copy.CopyInstance;
 import com.game.module.goods.EquipService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
@@ -98,6 +99,7 @@ public class TrainingExtension {
         List<Integer> bufferList = equipService.getBufferList(playerId);
         result.bufferList = Lists.newArrayList(bufferList);
         taskService.doTask(playerId, Task.TYPE_TRAIN_TIMES,1);
+        taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, 5, 1); //竞技场
         return result;
 
     }

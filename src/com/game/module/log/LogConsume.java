@@ -83,7 +83,9 @@ public enum LogConsume {
 	PET_ACTIVITY_REWARD(1076, "宠物玩法奖励领取"),
 	ACHIEVEMENT_GET_ALL(1077, "成就一键领取"),
 	OPEN_BOX(1078, "开箱子"),
-	ACTIVATIONCODE_GIFTBAG(1079, "激活码礼包")
+	ACTIVATIONCODE_GIFTBAG(1079, "激活码礼包"),
+	SKILL_CARD_MAKE(1080, "技能卡合成"),
+	AWAKENING_SKILL(1081, "觉醒技能升级")
 	;
 	public int actionId;// id
 	public String desc;

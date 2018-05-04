@@ -9,10 +9,7 @@ public class Pet {
     private int id;
     private int configId;
     private int showConfigID;
-    private int skillID;
     private int passiveSkillId;
-    private int passiveSkillId2;
-    private boolean mutateFlag;
     private boolean playFlag;
     private String name;
 
@@ -23,7 +20,6 @@ public class Pet {
         this.id = id;
         this.passiveSkillId = passiveSkillId;
         this.configId = configId;
-        this.mutateFlag = false;
         this.playFlag = false;
         this.name = name;
         this.showConfigID = configId;
@@ -61,28 +57,12 @@ public class Pet {
         this.configId = configId;
     }
 
-    public boolean isMutateFlag() {
-        return mutateFlag;
-    }
-
-    public void setMutateFlag(boolean mutateFlag) {
-        this.mutateFlag = mutateFlag;
-    }
-
     public int getPassiveSkillId() {
         return passiveSkillId;
     }
 
     public void setPassiveSkillId(int passiveSkillId) {
         this.passiveSkillId = passiveSkillId;
-    }
-
-    public int getSkillID() {
-        return skillID;
-    }
-
-    public void setSkillID(int skillID) {
-        this.skillID = skillID;
     }
 
     public int getId() {
@@ -96,24 +76,9 @@ public class Pet {
     public PetVO toProto() {
         PetVO vo = new PetVO();
         vo.id = id;
-        //vo.skillId = skillID;
         vo.passiveSkillId = passiveSkillId;
-        //.hasMutate = mutateFlag;
         vo.configId = configId;
-        //vo.passiveSkillId2 = passiveSkillId2;
         vo.name = name;
         return vo;
-    }
-
-    public int getPassiveSkillId2() {
-        return passiveSkillId2;
-    }
-
-    public void setPassiveSkillId2(int passiveSkillId2) {
-        this.passiveSkillId2 = passiveSkillId2;
-    }
-
-    public boolean isMutate() {
-        return this.passiveSkillId != 0;
     }
 }

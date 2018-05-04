@@ -14,7 +14,7 @@ public class RechargeInfo extends Header {
     private Integer user_id;
     private Integer subject_id;
     private Integer amount;
-    private Integer Pad;
+    private Integer charge_money;
     private Integer charge_time;
     private Integer total_amount;
     private Integer balance;
@@ -52,12 +52,12 @@ public class RechargeInfo extends Header {
         this.amount = amount;
     }
 
-    public Integer getPad() {
-        return Pad;
+    public Integer getCharge_money() {
+        return charge_money;
     }
 
-    public void setPad(Integer pad) {
-        Pad = pad;
+    public void setCharge_money(Integer charge_money) {
+        this.charge_money = charge_money;
     }
 
     public Integer getCharge_time() {
@@ -102,7 +102,7 @@ public class RechargeInfo extends Header {
                 ", subject_id=" + subject_id +
                 ", gateway_id=" + gateway_id +
                 ", amount=" + amount +
-                ", Pad=" + Pad +
+                ", charge_money=" + charge_money +
                 ", charge_time=" + charge_time +
                 ", total_amount=" + total_amount +
                 ", balance=" + balance +

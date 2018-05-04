@@ -198,8 +198,8 @@ public class TeamService implements InitHandler {
                 }
             }
         } else {
-            int maxHurt = (int) (player.getFight() * 0.06 * 1.65 * 3 * 2.05 + 4185);
-            if (hurtVO.hurtValue > maxHurt) {
+            if (!player.checkHurt(hurtVO.hurtValue)) {
+                SessionManager.getInstance().kick(player.getPlayerId());
                 ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
                 return;
             }
@@ -234,6 +234,7 @@ public class TeamService implements InitHandler {
                     }
                     dissolve(team);
                 }
+
             }
         }
     }

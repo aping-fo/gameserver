@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1001</id>
+	<name>咣当斩</name>
+	<describe>以身为力,以刃开道,召唤雷霆重击敌人。</describe>
+	<vocation>1</vocation>
+	<type>1</type>
+	<locklv>10</locklv>
+	<lockID>1001</lockID>
+	<Icon>105</Icon>
+	<skillID>11100501</skillID>
+	<effectID>111005011</effectID>
+</config>
+<config>
+	<id>1002</id>
+	<name>勇冠</name>
+	<describe>觉醒后可为玩家提供威力值属性的提升</describe>
+	<vocation>1</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>1006</lockID>
+	<Icon>405</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>1003</id>
+	<name>护佑</name>
+	<describe>觉醒后可为玩家提供防御值属性的提升</describe>
+	<vocation>1</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>1011</lockID>
+	<Icon>406</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>1004</id>
+	<name>战魂</name>
+	<describe>觉醒后可为玩家提供生命值属性的提升</describe>
+	<vocation>1</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>1016</lockID>
+	<Icon>408</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>1005</id>
+	<name>破军</name>
+	<describe>觉醒后可为玩家提供异常值属性的提升</describe>
+	<vocation>1</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>1021</lockID>
+	<Icon>407</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>1006</id>
+	<name>战士二觉醒主动技能</name>
+	<describe>造成伤害</describe>
+	<vocation>1</vocation>
+	<type>3</type>
+	<locklv>50</locklv>
+	<lockID>1026</lockID>
+	<Icon>105</Icon>
+	<skillID>11100502</skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>1007</id>
+	<name>战士二觉醒被动技能1</name>
+	<describe>增加生命</describe>
+	<vocation>1</vocation>
+	<type>4</type>
+	<locklv>60</locklv>
+	<lockID>1031</lockID>
+	<Icon>105</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>1008</id>
+	<name>战士二觉醒被动技能2</name>
+	<describe>增加生命</describe>
+	<vocation>1</vocation>
+	<type>4</type>
+	<locklv>70</locklv>
+	<lockID>1036</lockID>
+	<Icon>105</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>1009</id>
+	<name>战士二觉醒被动技能3</name>
+	<describe>增加生命</describe>
+	<vocation>1</vocation>
+	<type>4</type>
+	<locklv>80</locklv>
+	<lockID>1041</lockID>
+	<Icon>105</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>1010</id>
+	<name>战士二觉醒被动技能4</name>
+	<describe>增加异常</describe>
+	<vocation>1</vocation>
+	<type>4</type>
+	<locklv>85</locklv>
+	<lockID>1046</lockID>
+	<Icon>105</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2001</id>
+	<name>魍魉之刺</name>
+	<describe>暗影之刺,藏我隐伤,试刃锋芒,攻击近身敌人。</describe>
+	<vocation>2</vocation>
+	<type>1</type>
+	<locklv>10</locklv>
+	<lockID>2001</lockID>
+	<Icon>305</Icon>
+	<skillID>12100501</skillID>
+	<effectID>121005011</effectID>
+</config>
+<config>
+	<id>2002</id>
+	<name>夜弑</name>
+	<describe>觉醒后可为玩家提供暴击值属性的提升</describe>
+	<vocation>2</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>2006</lockID>
+	<Icon>409</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2003</id>
+	<name>致命</name>
+	<describe>觉醒后可为玩家提供暴击伤害值属性的提升</describe>
+	<vocation>2</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>2011</lockID>
+	<Icon>404</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2004</id>
+	<name>鬼步</name>
+	<describe>觉醒后可为玩家提供战斗中能移动速度的提升</describe>
+	<vocation>2</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>2016</lockID>
+	<Icon>402</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2005</id>
+	<name>猎守本能</name>
+	<describe>觉醒后可为玩家提供防御值属性的提升</describe>
+	<vocation>2</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>2021</lockID>
+	<Icon>405</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2006</id>
+	<name>刺客二觉醒主动技能</name>
+	<describe>造成伤害</describe>
+	<vocation>2</vocation>
+	<type>3</type>
+	<locklv>50</locklv>
+	<lockID>2026</lockID>
+	<Icon>205</Icon>
+	<skillID>12100502</skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2007</id>
+	<name>刺客二觉醒被动技能1</name>
+	<describe>增加生命</describe>
+	<vocation>2</vocation>
+	<type>4</type>
+	<locklv>60</locklv>
+	<lockID>2031</lockID>
+	<Icon>205</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2008</id>
+	<name>刺客二觉醒被动技能2</name>
+	<describe>增加生命</describe>
+	<vocation>2</vocation>
+	<type>4</type>
+	<locklv>70</locklv>
+	<lockID>2036</lockID>
+	<Icon>205</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2009</id>
+	<name>刺客二觉醒被动技能3</name>
+	<describe>增加生命</describe>
+	<vocation>2</vocation>
+	<type>4</type>
+	<locklv>80</locklv>
+	<lockID>2041</lockID>
+	<Icon>205</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>2010</id>
+	<name>刺客二觉醒被动技能4</name>
+	<describe>增加异常</describe>
+	<vocation>2</vocation>
+	<type>4</type>
+	<locklv>85</locklv>
+	<lockID>2046</lockID>
+	<Icon>205</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3001</id>
+	<name>萝比之怒</name>
+	<describe>召唤邪恶疯兔,疯兔萝比带着地狱烈焰咆哮而出,灼烧附近的敌人,肆意破坏。</describe>
+	<vocation>3</vocation>
+	<type>1</type>
+	<locklv>10</locklv>
+	<lockID>3001</lockID>
+	<Icon>205</Icon>
+	<skillID>13100501</skillID>
+	<effectID>131005011</effectID>
+</config>
+<config>
+	<id>3002</id>
+	<name>时间发条</name>
+	<describe>觉醒后可为玩家提供战斗中技能CD缩短效果</describe>
+	<vocation>3</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>3006</lockID>
+	<Icon>403</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3003</id>
+	<name>迸发</name>
+	<describe>觉醒后可为玩家提供威力值属性的提升</describe>
+	<vocation>3</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>3011</lockID>
+	<Icon>405</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3004</id>
+	<name>告诫</name>
+	<describe>觉醒后可为玩家提供异常值属性的提升</describe>
+	<vocation>3</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>3016</lockID>
+	<Icon>401</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3005</id>
+	<name>庇护</name>
+	<describe>觉醒后可为玩家提供防御值属性的提升</describe>
+	<vocation>3</vocation>
+	<type>2</type>
+	<locklv>10</locklv>
+	<lockID>3021</lockID>
+	<Icon>406</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3006</id>
+	<name>法师二觉醒主动技能</name>
+	<describe>造成伤害</describe>
+	<vocation>3</vocation>
+	<type>3</type>
+	<locklv>50</locklv>
+	<lockID>3026</lockID>
+	<Icon>305</Icon>
+	<skillID>13100502</skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3007</id>
+	<name>法师二觉醒被动技能1</name>
+	<describe>增加生命</describe>
+	<vocation>3</vocation>
+	<type>4</type>
+	<locklv>60</locklv>
+	<lockID>3031</lockID>
+	<Icon>305</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3008</id>
+	<name>法师二觉醒被动技能2</name>
+	<describe>增加生命</describe>
+	<vocation>3</vocation>
+	<type>4</type>
+	<locklv>70</locklv>
+	<lockID>3036</lockID>
+	<Icon>305</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3009</id>
+	<name>法师二觉醒被动技能3</name>
+	<describe>增加生命</describe>
+	<vocation>3</vocation>
+	<type>4</type>
+	<locklv>80</locklv>
+	<lockID>3041</lockID>
+	<Icon>305</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+<config>
+	<id>3010</id>
+	<name>法师二觉醒被动技能4</name>
+	<describe>增加异常</describe>
+	<vocation>3</vocation>
+	<type>4</type>
+	<locklv>85</locklv>
+	<lockID>3046</lockID>
+	<Icon>305</Icon>
+	<skillID></skillID>
+	<effectID></effectID>
+</config>
+</root>

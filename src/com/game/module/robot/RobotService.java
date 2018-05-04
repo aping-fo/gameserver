@@ -1,10 +1,6 @@
 package com.game.module.robot;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,15 +20,19 @@ import com.game.util.RandomUtil;
 
 @Service
 public class RobotService implements InitHandler {
+    public List<Integer> getRobots() {
+        return new ArrayList<Integer>(robots);
+    }
 
     @Autowired
     private PlayerService playerService;
     @Autowired
     private SerialDataService serialDataService;
+
     @Autowired
     private PlayerDao playerDao;
+    private List<Integer> robots;
 
-    private Set<Integer> robots;
     private GlobalConfig globalParam;
 
     @Override
@@ -41,22 +41,34 @@ public class RobotService implements InitHandler {
     }
 
     public void addRobot() throws Exception {
-        robots = new HashSet<Integer>();
+        robots = new ArrayList<>();
         if (!serialDataService.getData().isInitRobot()) {
             RobotNames.init();
             List<String> names = RobotNames.getRobotNames();
             int total = names.size();
+
+            int minFight = ConfigData.globalParam().robotFight[0];
+            int maxFight = ConfigData.globalParam().robotFight[1];
+            int tempMaxFight=(maxFight-minFight)/total;//递减最大值
+
             for (int i = 0; i < total; i++) {
-                robots.add(addRobot("sys", names.get(i % total), RandomUtil.randInt(1, 3), RandomUtil.randInt(20, 50)));
+                robots.add(addRobot(maxFight,"sys", names.get(i % total), RandomUtil.randInt(1, 3), RandomUtil.randInt(20, 50)));
+
+                //战力递减
+                maxFight=maxFight-RandomUtil.randInt(1,tempMaxFight);
+                System.out.println(maxFight);
+                if(maxFight<minFight){
+                    maxFight=minFight;
+                }
             }
             serialDataService.getData().setInitRobot(true);
         } else {
             robots.addAll(playerDao.selectRobots());
         }
     }
-
     // 增加机器人
-    private int addRobot(String accName, String name, int vocation, int lev) {
+
+    private int addRobot(int fightRate,String accName, String name, int vocation, int lev) {
         // 基本属性
         int playerId = playerService.getNextPlayerId();
         Player player = new Player();
@@ -82,9 +94,9 @@ public class RobotService implements InitHandler {
 		float fight = player.getHp()*fightParams[0]+player.getAttack()*fightParams[1]+player.getDefense()*fightParams[2]+player.getFu()*fightParams[3]+player.getSymptom()*fightParams[4]+
 				player.getCrit()*fightParams[5]; */
 
-        int minFight = ConfigData.globalParam().robotFight[0];
-        int maxFight = ConfigData.globalParam().robotFight[1];
-        int fightRate = RandomUtil.randInt(minFight, maxFight);
+        //int minFight = ConfigData.globalParam().robotFight[0];
+        //int maxFight = ConfigData.globalParam().robotFight[1];
+        //int fightRate = RandomUtil.randInt(minFight, maxFight);
         player.setHp(Math.round(fightRate * ConfigData.globalParam().RobotParas[0]));
         player.setAttack(Math.round(fightRate * ConfigData.globalParam().RobotParas[1]));
         player.setDefense(Math.round(fightRate * ConfigData.globalParam().RobotParas[2]));
@@ -116,10 +128,6 @@ public class RobotService implements InitHandler {
         playerDao.update(player);
         playerService.updatePlayerData(playerId);
         return playerId;
-    }
-
-    public List<Integer> getRobots() {
-        return new ArrayList<Integer>(robots);
     }
 
     public boolean isRobot(int playerId) {
