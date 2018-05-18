@@ -1,5 +1,6 @@
 package com.game.module.ladder;
 
+import com.game.params.IntParam;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,5 +37,11 @@ public class LadderExtension {
     @Command(6009)
     public Object getRecords(int playerId, Object param) {
         return ladderService.getRecords(playerId);
+    }
+
+    @Command(6011)
+    public Object aiResult(int playerId, IntParam param) {
+        ladderService.aiResult(playerId, param.param);
+        return null;
     }
 }

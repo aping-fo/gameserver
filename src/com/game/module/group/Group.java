@@ -17,6 +17,7 @@ public class Group {
     private final int level; //等级
     private int leader; //团长
     private boolean openFlag; //是否开放
+    private boolean isStart;  //是否开始
     private final ReentrantLock lock = new ReentrantLock();
     //队伍列表
     private Map<Integer, GroupTeam> teamMap = new LinkedHashMap<>(); //组队列表
@@ -40,6 +41,7 @@ public class Group {
         this.leader = leader;
         this.level = level;
         this.openFlag = false;
+        this.isStart  = false;
         this.groupCopyId = groupCopyId;
         this.beginStageId = beginStageId;
 
@@ -59,6 +61,14 @@ public class Group {
 
     public void setOpenFlag(boolean openFlag) {
         this.openFlag = openFlag;
+    }
+
+    public boolean isStart() {
+        return isStart;
+    }
+
+    public void setStart(boolean isStart) {
+        this.isStart = isStart;
     }
 
     public int getId() {
@@ -249,6 +259,7 @@ public class Group {
         vo.stage = stage;
         vo.groupCopyId = groupCopyId;
         vo.openFlag = openFlag;
+        vo.isStart = isStart;
         try {
             lock.lock();
             for (GroupTeam team : teamMap.values()) {

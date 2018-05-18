@@ -5,6 +5,7 @@ package com.game.module.log;
  */
 public enum LogConsume {
 	
+	CHARGE_ADD(1000,"充值赠送"),
 	CHARGE(1001,"充值"),
 	GM(1002,"GM"),
 	TASK_REWARD(1003,"任务奖励"),
@@ -85,7 +86,8 @@ public enum LogConsume {
 	OPEN_BOX(1078, "开箱子"),
 	ACTIVATIONCODE_GIFTBAG(1079, "激活码礼包"),
 	SKILL_CARD_MAKE(1080, "技能卡合成"),
-	AWAKENING_SKILL(1081, "觉醒技能升级")
+	AWAKENING_SKILL(1081, "觉醒技能升级"),
+	BUY_COPY_TIMES(1082, "购买主线副本")
 	;
 	public int actionId;// id
 	public String desc;

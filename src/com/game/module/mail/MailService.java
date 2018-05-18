@@ -28,7 +28,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 @Service
-public class MailService {
+public class
+MailService {
 
     public static final int ENDLESS_RANK = 10000;//无尽漩涡排行榜奖励邮件
     public static final int ARENA_RANK = 10001;//AI竞技场

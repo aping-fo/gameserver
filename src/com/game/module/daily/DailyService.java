@@ -214,9 +214,8 @@ public class DailyService implements InitHandler {
 	}
 
 	public void resetWeeklyData(PlayerData data){
-
-		int playerId = data.getPlayerId();
-		taskService.updateWeeklyTasks(playerId);
+		//int playerId = data.getPlayerId();
+		//taskService.updateWeeklyTasks(playerId);
 
 		//更新重置时间，放最后一行
 		data.setWeeklyTime(MONDAY_FIVE_CLOCK);

@@ -93,16 +93,8 @@ public class RankService implements InitHandler {
 		synchronized (fightingList) {
 			fightingList.clear();
 			Map<Integer, FightingRankEntity> fightingEntities = new ConcurrentHashMap<Integer, FightingRankEntity>();
-			//int i = 1;
 			for(Player player : players){
 				fightingEntities.put(player.getPlayerId(), new FightingRankEntity(player.getFight()));
-				/*if(serialDataService.getData() != null){
-					PlayerView playerView = serialDataService.getData().getPlayerView(player.getPlayerId());
-					playerView.setFightMaxRank(i);
-
-					taskService.doTask(player.getPlayerId(), Task.TYPE_FIGHT_RANK,i);
-					i ++;
-				}*/
 			}
 			fightingList.putAll(fightingEntities);
 		}
@@ -124,16 +116,8 @@ public class RankService implements InitHandler {
 		synchronized (achievementList) {
 			achievementList.clear();
 			Map<Integer, LevelRankEntity> achievementEntities = new ConcurrentHashMap<>();
-			int i = 1;
 			for(Player player : players){
 				achievementEntities.put(player.getPlayerId(), new LevelRankEntity(player.getLev(), player.getExp()));
-
-				/*if(serialDataService.getData() != null){
-					PlayerView playerView = serialDataService.getData().getPlayerView(player.getPlayerId());
-					playerView.setAchievementMaxRank(i);
-					taskService.doTask(player.getPlayerId(), Task.TYPE_ACHIEVEMENT_RANK,i);
-					i ++;
-				}*/
 			}
 			achievementList.putAll(achievementEntities);
 		}

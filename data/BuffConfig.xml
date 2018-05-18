@@ -421,6 +421,27 @@
 	<extraEffectParam>[[0],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
 </config>
 <config>
+	<id>3101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>新手关卡专用超级力量</name>
+	<description>增益A</description>
+	<duration>0</duration>
+	<takeEffectParam>[0,100]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7100013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
 	<id>60011</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
@@ -1437,7 +1458,7 @@
 	<name>特性副本衰减威力1级</name>
 	<description>衰减威力</description>
 	<duration>0</duration>
-	<takeEffectParam>[0,0.5]</takeEffectParam>
+	<takeEffectParam>[0,-0.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2025</icon>
 	<attachEffect>7100013</attachEffect>
@@ -1458,7 +1479,7 @@
 	<name>特性副本衰减防御1级</name>
 	<description>衰减防御</description>
 	<duration>0</duration>
-	<takeEffectParam>[1,0.5]</takeEffectParam>
+	<takeEffectParam>[1,-0.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2016</icon>
 	<attachEffect>7100013</attachEffect>
@@ -1479,7 +1500,7 @@
 	<name>特性副本衰减速度1级</name>
 	<description>衰减移动速度</description>
 	<duration>0</duration>
-	<takeEffectParam>[-0.2]</takeEffectParam>
+	<takeEffectParam>[-0.3]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2011</icon>
 	<attachEffect>7100013</attachEffect>
@@ -1495,12 +1516,12 @@
 	<id>801001</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
-	<buffType>23</buffType>
+	<buffType>1</buffType>
 	<buffSubType>0</buffSubType>
 	<name>特性副本中毒1级</name>
 	<description>中毒1级</description>
-	<duration>0</duration>
-	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>7100009</attachEffect>
@@ -1516,12 +1537,12 @@
 	<id>801101</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
-	<buffType>28</buffType>
+	<buffType>1</buffType>
 	<buffSubType>1</buffSubType>
 	<name>特性副本灼烧1级</name>
 	<description>灼烧1级</description>
-	<duration>0</duration>
-	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7100010</attachEffect>
@@ -1537,12 +1558,12 @@
 	<id>801201</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>2</buffTick>
-	<buffType>27</buffType>
+	<buffType>1</buffType>
 	<buffSubType>2</buffSubType>
 	<name>特性副本流血1级</name>
 	<description>流血1级</description>
-	<duration>0</duration>
-	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<duration>8</duration>
+	<takeEffectParam>[1,8,0.2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
 	<attachEffect>7100011</attachEffect>
@@ -1557,23 +1578,23 @@
 <config>
 	<id>801301</id>
 	<buffConflict>0</buffConflict>
-	<buffTick>1</buffTick>
-	<buffType>2</buffType>
-	<buffSubType></buffSubType>
-	<name>特性副本保护1级</name>
-	<description>保护1级</description>
-	<duration>0</duration>
-	<takeEffectParam>[1]</takeEffectParam>
+	<buffTick>2</buffTick>
+	<buffType>1</buffType>
+	<buffSubType>0</buffSubType>
+	<name>特性副本猛毒1级</name>
+	<description>中毒1级</description>
+	<duration>24</duration>
+	<takeEffectParam>[1,24,0.5]</takeEffectParam>
 	<showTips>0</showTips>
-	<icon>2022</icon>
-	<attachEffect>0</attachEffect>
-	<overlayType>1</overlayType>
+	<icon>2013</icon>
+	<attachEffect>7100009</attachEffect>
+	<overlayType>5</overlayType>
 	<addMaxCount>0</addMaxCount>
-	<addTimeParas></addTimeParas>
-	<addEfectParas></addEfectParas>
+	<addTimeParas>[1,1]</addTimeParas>
+	<addEfectParas>[1,1]</addEfectParas>
 	<conflictType></conflictType>
-	<addEfectIndex></addEfectIndex>
-	<extraEffectParam>[[0],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+	<addEfectIndex>[2]</addEfectIndex>
+	<extraEffectParam></extraEffectParam>
 </config>
 <config>
 	<id>801401</id>
@@ -1584,7 +1605,7 @@
 	<name>特性副本灼烧1级</name>
 	<description>灼烧1级</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<takeEffectParam>[0.3,801101]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
 	<attachEffect>7100010</attachEffect>
@@ -1605,7 +1626,7 @@
 	<name>特性副本流血1级</name>
 	<description>流血1级</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.9,9,1]</takeEffectParam>
+	<takeEffectParam>[0.3,801201]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2014</icon>
 	<attachEffect>7100011</attachEffect>
@@ -1621,10 +1642,10 @@
 	<id>801601</id>
 	<buffConflict>0</buffConflict>
 	<buffTick>1</buffTick>
-	<buffType>2</buffType>
+	<buffType>24</buffType>
 	<buffSubType></buffSubType>
-	<name>特性副本保护1级</name>
-	<description>保护1级</description>
+	<name>特性副本霸体1级</name>
+	<description>霸体1级</description>
 	<duration>0</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
@@ -1710,10 +1731,52 @@
 	<name>特性副本中毒</name>
 	<description>中毒</description>
 	<duration>0</duration>
-	<takeEffectParam>[0.3,2110101]</takeEffectParam>
+	<takeEffectParam>[0.3,801001]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2013</icon>
 	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>802101</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>23</buffType>
+	<buffSubType>0</buffSubType>
+	<name>特性副本猛毒</name>
+	<description>猛毒</description>
+	<duration>0</duration>
+	<takeEffectParam>[1,801301]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon>2013</icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>802201</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>16</buffType>
+	<buffSubType></buffSubType>
+	<name>特性副本百分比吸血量</name>
+	<description>百分比吸血量</description>
+	<duration>1</duration>
+	<takeEffectParam>[0.5]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7100020</attachEffect>
 	<overlayType>1</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>

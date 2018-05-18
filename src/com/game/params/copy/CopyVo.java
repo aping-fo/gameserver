@@ -8,6 +8,7 @@ public class CopyVo implements IProtocol {
 	public short state;//状态(0未通关,其他的是星级)
 	public short count;//通关次数
 	public short reset;//重置次数
+	public short buyTimes;//购买次数
 
 
 	public void decode(BufferBuilder bb) {
@@ -15,6 +16,7 @@ public class CopyVo implements IProtocol {
 		this.state = bb.getShort();
 		this.count = bb.getShort();
 		this.reset = bb.getShort();
+		this.buyTimes = bb.getShort();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -22,5 +24,6 @@ public class CopyVo implements IProtocol {
 		bb.putShort(this.state);
 		bb.putShort(this.count);
 		bb.putShort(this.reset);
+		bb.putShort(this.buyTimes);
 	}
 }

@@ -81,6 +81,7 @@ public class Task{
 	public static final int TYPE_GUILD_COPY= 66;//公会副本
 	public static final int TYPE_INVITATE= 66;//发送世界频道邀请玩家通关副本[副本id]
 	public static final int TYPE_PASS_TYPE_COPY = 67; //通关一类型副本[副本类型,次数]
+	public static final int TYPE_PET_ANY_ACTIVITY = 68; //参加任意活动
 
 	public static final int STATE_INIT = 0;//未接(等级不够)
 	public static final int STATE_ACCEPTED = 1;//已接

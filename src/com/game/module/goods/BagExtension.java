@@ -96,9 +96,7 @@ public class BagExtension {
 	//洗练
 	@Command(1211)
 	public Object clear(int playerId,Long2Param goods){
-		IntParam result = new IntParam();
-		result.param = equipService.clear(playerId, goods.param1,(int)goods.param2);
-		return result;
+		return equipService.clear(playerId, goods.param1,(int)goods.param2);
 	}
 	
 	//替换

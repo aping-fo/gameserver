@@ -17,7 +17,7 @@ public class PlayerTask {
 	//完成被邀请任务次数
 	private int jointedCount = 0;
 	//当前被邀请任务
-	private JointTask currJointedTask;;
+	private JointTask currJointedTask;
 	//被邀请的任务列表[任务ID:邀请人ID]
 	private List<String> jointedTasks = new ArrayList<String>();
 	//活跃度

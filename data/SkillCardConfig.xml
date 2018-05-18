@@ -76492,7 +76492,7 @@
 	<effectType>8</effectType>
 	<desc>50%概率在10秒内恢复60%的生命值</desc>
 	<nextCard></nextCard>
-	<param>[0,1088550]</param>
+	<param>[0.5,1088550]</param>
 	<exp>0</exp>
 	<icon></icon>
 	<quality>5</quality>
@@ -79142,7 +79142,7 @@
 	<lv>6</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人16%防御值,持续10秒</desc>
+	<desc>降低敌人15%防御值,持续10秒</desc>
 	<nextCard>1190407</nextCard>
 	<param>[1,1190406]</param>
 	<exp>270</exp>
@@ -79159,7 +79159,7 @@
 	<lv>7</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人18%防御值,持续10秒</desc>
+	<desc>降低敌人17%防御值,持续10秒</desc>
 	<nextCard>1190408</nextCard>
 	<param>[1,1190407]</param>
 	<exp>300</exp>
@@ -79176,7 +79176,7 @@
 	<lv>8</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人20%防御值,持续10秒</desc>
+	<desc>降低敌人18%防御值,持续10秒</desc>
 	<nextCard>1190409</nextCard>
 	<param>[1,1190408]</param>
 	<exp>330</exp>
@@ -79193,7 +79193,7 @@
 	<lv>9</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人22%防御值,持续10秒</desc>
+	<desc>降低敌人20%防御值,持续10秒</desc>
 	<nextCard>1190410</nextCard>
 	<param>[1,1190409]</param>
 	<exp>360</exp>
@@ -79210,7 +79210,7 @@
 	<lv>10</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人24%防御值,持续10秒</desc>
+	<desc>降低敌人21%防御值,持续10秒</desc>
 	<nextCard>1190411</nextCard>
 	<param>[1,1190410]</param>
 	<exp>420</exp>
@@ -79227,7 +79227,7 @@
 	<lv>11</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人26%防御值,持续10秒</desc>
+	<desc>降低敌人24%防御值,持续10秒</desc>
 	<nextCard>1190412</nextCard>
 	<param>[1,1190411]</param>
 	<exp>450</exp>
@@ -79244,7 +79244,7 @@
 	<lv>12</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人27%防御值,持续10秒</desc>
+	<desc>降低敌人25%防御值,持续10秒</desc>
 	<nextCard>1190413</nextCard>
 	<param>[1,1190412]</param>
 	<exp>480</exp>
@@ -79261,7 +79261,7 @@
 	<lv>13</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人29%防御值,持续10秒</desc>
+	<desc>降低敌人27%防御值,持续10秒</desc>
 	<nextCard>1190414</nextCard>
 	<param>[1,1190413]</param>
 	<exp>510</exp>
@@ -79278,7 +79278,7 @@
 	<lv>14</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人31%防御值,持续10秒</desc>
+	<desc>降低敌人28%防御值,持续10秒</desc>
 	<nextCard>1190415</nextCard>
 	<param>[1,1190414]</param>
 	<exp>540</exp>
@@ -79295,7 +79295,7 @@
 	<lv>15</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人33%防御值,持续10秒</desc>
+	<desc>降低敌人30%防御值,持续10秒</desc>
 	<nextCard>1190416</nextCard>
 	<param>[1,1190415]</param>
 	<exp>600</exp>
@@ -79312,7 +79312,7 @@
 	<lv>16</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人35%防御值,持续10秒</desc>
+	<desc>降低敌人31%防御值,持续10秒</desc>
 	<nextCard>1190417</nextCard>
 	<param>[1,1190416]</param>
 	<exp>630</exp>
@@ -79329,7 +79329,7 @@
 	<lv>17</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人37%防御值,持续10秒</desc>
+	<desc>降低敌人33%防御值,持续10秒</desc>
 	<nextCard>1190418</nextCard>
 	<param>[1,1190417]</param>
 	<exp>660</exp>
@@ -79346,7 +79346,7 @@
 	<lv>18</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人39%防御值,持续10秒</desc>
+	<desc>降低敌人35%防御值,持续10秒</desc>
 	<nextCard>1190419</nextCard>
 	<param>[1,1190418]</param>
 	<exp>690</exp>
@@ -79363,7 +79363,7 @@
 	<lv>19</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人41%防御值,持续10秒</desc>
+	<desc>降低敌人36%防御值,持续10秒</desc>
 	<nextCard>1190420</nextCard>
 	<param>[1,1190419]</param>
 	<exp>720</exp>
@@ -79380,7 +79380,7 @@
 	<lv>20</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人42%防御值,持续10秒</desc>
+	<desc>降低敌人39%防御值,持续10秒</desc>
 	<nextCard>1190421</nextCard>
 	<param>[1,1190420]</param>
 	<exp>780</exp>
@@ -79397,7 +79397,7 @@
 	<lv>21</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人44%防御值,持续10秒</desc>
+	<desc>降低敌人40%防御值,持续10秒</desc>
 	<nextCard>1190422</nextCard>
 	<param>[1,1190421]</param>
 	<exp>810</exp>
@@ -79414,7 +79414,7 @@
 	<lv>22</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人46%防御值,持续10秒</desc>
+	<desc>降低敌人42%防御值,持续10秒</desc>
 	<nextCard>1190423</nextCard>
 	<param>[1,1190422]</param>
 	<exp>840</exp>
@@ -79431,7 +79431,7 @@
 	<lv>23</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人48%防御值,持续10秒</desc>
+	<desc>降低敌人43%防御值,持续10秒</desc>
 	<nextCard>1190424</nextCard>
 	<param>[1,1190423]</param>
 	<exp>870</exp>
@@ -79448,7 +79448,7 @@
 	<lv>24</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人50%防御值,持续10秒</desc>
+	<desc>降低敌人45%防御值,持续10秒</desc>
 	<nextCard>1190425</nextCard>
 	<param>[1,1190424]</param>
 	<exp>900</exp>
@@ -79465,7 +79465,7 @@
 	<lv>25</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人52%防御值,持续10秒</desc>
+	<desc>降低敌人46%防御值,持续10秒</desc>
 	<nextCard>1190426</nextCard>
 	<param>[1,1190425]</param>
 	<exp>960</exp>
@@ -79482,7 +79482,7 @@
 	<lv>26</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人54%防御值,持续10秒</desc>
+	<desc>降低敌人48%防御值,持续10秒</desc>
 	<nextCard>1190427</nextCard>
 	<param>[1,1190426]</param>
 	<exp>990</exp>
@@ -79499,7 +79499,7 @@
 	<lv>27</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人55%防御值,持续10秒</desc>
+	<desc>降低敌人49%防御值,持续10秒</desc>
 	<nextCard>1190428</nextCard>
 	<param>[1,1190427]</param>
 	<exp>1020</exp>
@@ -79516,7 +79516,7 @@
 	<lv>28</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人57%防御值,持续10秒</desc>
+	<desc>降低敌人51%防御值,持续10秒</desc>
 	<nextCard>1190429</nextCard>
 	<param>[1,1190428]</param>
 	<exp>1050</exp>
@@ -79533,7 +79533,7 @@
 	<lv>29</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人59%防御值,持续10秒</desc>
+	<desc>降低敌人52%防御值,持续10秒</desc>
 	<nextCard>1190430</nextCard>
 	<param>[1,1190429]</param>
 	<exp>1080</exp>
@@ -79550,7 +79550,7 @@
 	<lv>30</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人61%防御值,持续10秒</desc>
+	<desc>降低敌人55%防御值,持续10秒</desc>
 	<nextCard>1190431</nextCard>
 	<param>[1,1190430]</param>
 	<exp>1140</exp>
@@ -79567,7 +79567,7 @@
 	<lv>31</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人63%防御值,持续10秒</desc>
+	<desc>降低敌人56%防御值,持续10秒</desc>
 	<nextCard>1190432</nextCard>
 	<param>[1,1190431]</param>
 	<exp>1170</exp>
@@ -79584,7 +79584,7 @@
 	<lv>32</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人65%防御值,持续10秒</desc>
+	<desc>降低敌人58%防御值,持续10秒</desc>
 	<nextCard>1190433</nextCard>
 	<param>[1,1190432]</param>
 	<exp>1200</exp>
@@ -79601,7 +79601,7 @@
 	<lv>33</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人67%防御值,持续10秒</desc>
+	<desc>降低敌人59%防御值,持续10秒</desc>
 	<nextCard>1190434</nextCard>
 	<param>[1,1190433]</param>
 	<exp>1230</exp>
@@ -79618,7 +79618,7 @@
 	<lv>34</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人69%防御值,持续10秒</desc>
+	<desc>降低敌人61%防御值,持续10秒</desc>
 	<nextCard>1190435</nextCard>
 	<param>[1,1190434]</param>
 	<exp>1260</exp>
@@ -79635,7 +79635,7 @@
 	<lv>35</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人70%防御值,持续10秒</desc>
+	<desc>降低敌人63%防御值,持续10秒</desc>
 	<nextCard>1190436</nextCard>
 	<param>[1,1190435]</param>
 	<exp>1320</exp>
@@ -79652,7 +79652,7 @@
 	<lv>36</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人72%防御值,持续10秒</desc>
+	<desc>降低敌人64%防御值,持续10秒</desc>
 	<nextCard>1190437</nextCard>
 	<param>[1,1190436]</param>
 	<exp>1350</exp>
@@ -79669,7 +79669,7 @@
 	<lv>37</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人74%防御值,持续10秒</desc>
+	<desc>降低敌人66%防御值,持续10秒</desc>
 	<nextCard>1190438</nextCard>
 	<param>[1,1190437]</param>
 	<exp>1380</exp>
@@ -79686,7 +79686,7 @@
 	<lv>38</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人76%防御值,持续10秒</desc>
+	<desc>降低敌人67%防御值,持续10秒</desc>
 	<nextCard>1190439</nextCard>
 	<param>[1,1190438]</param>
 	<exp>1410</exp>
@@ -79703,7 +79703,7 @@
 	<lv>39</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人78%防御值,持续10秒</desc>
+	<desc>降低敌人70%防御值,持续10秒</desc>
 	<nextCard>1190440</nextCard>
 	<param>[1,1190439]</param>
 	<exp>1440</exp>
@@ -79720,7 +79720,7 @@
 	<lv>40</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人80%防御值,持续10秒</desc>
+	<desc>降低敌人71%防御值,持续10秒</desc>
 	<nextCard>1190441</nextCard>
 	<param>[1,1190440]</param>
 	<exp>1500</exp>
@@ -79737,7 +79737,7 @@
 	<lv>41</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人82%防御值,持续10秒</desc>
+	<desc>降低敌人73%防御值,持续10秒</desc>
 	<nextCard>1190442</nextCard>
 	<param>[1,1190441]</param>
 	<exp>1530</exp>
@@ -79754,7 +79754,7 @@
 	<lv>42</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人84%防御值,持续10秒</desc>
+	<desc>降低敌人74%防御值,持续10秒</desc>
 	<nextCard>1190443</nextCard>
 	<param>[1,1190442]</param>
 	<exp>1560</exp>
@@ -79771,7 +79771,7 @@
 	<lv>43</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人85%防御值,持续10秒</desc>
+	<desc>降低敌人76%防御值,持续10秒</desc>
 	<nextCard>1190444</nextCard>
 	<param>[1,1190443]</param>
 	<exp>1590</exp>
@@ -79788,7 +79788,7 @@
 	<lv>44</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人87%防御值,持续10秒</desc>
+	<desc>降低敌人77%防御值,持续10秒</desc>
 	<nextCard>1190445</nextCard>
 	<param>[1,1190444]</param>
 	<exp>1620</exp>
@@ -79805,7 +79805,7 @@
 	<lv>45</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人89%防御值,持续10秒</desc>
+	<desc>降低敌人79%防御值,持续10秒</desc>
 	<nextCard>1190446</nextCard>
 	<param>[1,1190445]</param>
 	<exp>1680</exp>
@@ -79822,7 +79822,7 @@
 	<lv>46</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人91%防御值,持续10秒</desc>
+	<desc>降低敌人80%防御值,持续10秒</desc>
 	<nextCard>1190447</nextCard>
 	<param>[1,1190446]</param>
 	<exp>1710</exp>
@@ -79839,7 +79839,7 @@
 	<lv>47</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人93%防御值,持续10秒</desc>
+	<desc>降低敌人82%防御值,持续10秒</desc>
 	<nextCard>1190448</nextCard>
 	<param>[1,1190447]</param>
 	<exp>1740</exp>
@@ -79856,7 +79856,7 @@
 	<lv>48</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人95%防御值,持续10秒</desc>
+	<desc>降低敌人83%防御值,持续10秒</desc>
 	<nextCard>1190449</nextCard>
 	<param>[1,1190448]</param>
 	<exp>1770</exp>
@@ -79873,7 +79873,7 @@
 	<lv>49</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人97%防御值,持续10秒</desc>
+	<desc>降低敌人86%防御值,持续10秒</desc>
 	<nextCard>1190450</nextCard>
 	<param>[1,1190449]</param>
 	<exp>1800</exp>
@@ -79890,7 +79890,7 @@
 	<lv>50</lv>
 	<type>19</type>
 	<effectType>19</effectType>
-	<desc>降低敌人99%防御值,持续10秒</desc>
+	<desc>降低敌人88%防御值,持续10秒</desc>
 	<nextCard></nextCard>
 	<param>[1,1190450]</param>
 	<exp>0</exp>
@@ -83392,7 +83392,7 @@
 	<lv>6</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低16%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低15%,持续10秒</desc>
 	<nextCard>1160407</nextCard>
 	<param>[1,1160406]</param>
 	<exp>270</exp>
@@ -83409,7 +83409,7 @@
 	<lv>7</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低18%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低17%,持续10秒</desc>
 	<nextCard>1160408</nextCard>
 	<param>[1,1160407]</param>
 	<exp>300</exp>
@@ -83426,7 +83426,7 @@
 	<lv>8</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低20%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低18%,持续10秒</desc>
 	<nextCard>1160409</nextCard>
 	<param>[1,1160408]</param>
 	<exp>330</exp>
@@ -83443,7 +83443,7 @@
 	<lv>9</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低22%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低20%,持续10秒</desc>
 	<nextCard>1160410</nextCard>
 	<param>[1,1160409]</param>
 	<exp>360</exp>
@@ -83460,7 +83460,7 @@
 	<lv>10</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低24%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低21%,持续10秒</desc>
 	<nextCard>1160411</nextCard>
 	<param>[1,1160410]</param>
 	<exp>420</exp>
@@ -83477,7 +83477,7 @@
 	<lv>11</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低26%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低24%,持续10秒</desc>
 	<nextCard>1160412</nextCard>
 	<param>[1,1160411]</param>
 	<exp>450</exp>
@@ -83494,7 +83494,7 @@
 	<lv>12</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低27%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低25%,持续10秒</desc>
 	<nextCard>1160413</nextCard>
 	<param>[1,1160412]</param>
 	<exp>480</exp>
@@ -83511,7 +83511,7 @@
 	<lv>13</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低29%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低27%,持续10秒</desc>
 	<nextCard>1160414</nextCard>
 	<param>[1,1160413]</param>
 	<exp>510</exp>
@@ -83528,7 +83528,7 @@
 	<lv>14</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低31%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低28%,持续10秒</desc>
 	<nextCard>1160415</nextCard>
 	<param>[1,1160414]</param>
 	<exp>540</exp>
@@ -83545,7 +83545,7 @@
 	<lv>15</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低33%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低30%,持续10秒</desc>
 	<nextCard>1160416</nextCard>
 	<param>[1,1160415]</param>
 	<exp>600</exp>
@@ -83562,7 +83562,7 @@
 	<lv>16</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低35%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低31%,持续10秒</desc>
 	<nextCard>1160417</nextCard>
 	<param>[1,1160416]</param>
 	<exp>630</exp>
@@ -83579,7 +83579,7 @@
 	<lv>17</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低37%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低33%,持续10秒</desc>
 	<nextCard>1160418</nextCard>
 	<param>[1,1160417]</param>
 	<exp>660</exp>
@@ -83596,7 +83596,7 @@
 	<lv>18</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低39%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低35%,持续10秒</desc>
 	<nextCard>1160419</nextCard>
 	<param>[1,1160418]</param>
 	<exp>690</exp>
@@ -83613,7 +83613,7 @@
 	<lv>19</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低41%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低36%,持续10秒</desc>
 	<nextCard>1160420</nextCard>
 	<param>[1,1160419]</param>
 	<exp>720</exp>
@@ -83630,7 +83630,7 @@
 	<lv>20</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低42%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低39%,持续10秒</desc>
 	<nextCard>1160421</nextCard>
 	<param>[1,1160420]</param>
 	<exp>780</exp>
@@ -83647,7 +83647,7 @@
 	<lv>21</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低44%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低40%,持续10秒</desc>
 	<nextCard>1160422</nextCard>
 	<param>[1,1160421]</param>
 	<exp>810</exp>
@@ -83664,7 +83664,7 @@
 	<lv>22</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低46%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低42%,持续10秒</desc>
 	<nextCard>1160423</nextCard>
 	<param>[1,1160422]</param>
 	<exp>840</exp>
@@ -83681,7 +83681,7 @@
 	<lv>23</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低48%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低43%,持续10秒</desc>
 	<nextCard>1160424</nextCard>
 	<param>[1,1160423]</param>
 	<exp>870</exp>
@@ -83698,7 +83698,7 @@
 	<lv>24</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低50%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低45%,持续10秒</desc>
 	<nextCard>1160425</nextCard>
 	<param>[1,1160424]</param>
 	<exp>900</exp>
@@ -83715,7 +83715,7 @@
 	<lv>25</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低52%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低46%,持续10秒</desc>
 	<nextCard>1160426</nextCard>
 	<param>[1,1160425]</param>
 	<exp>960</exp>
@@ -83732,7 +83732,7 @@
 	<lv>26</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低54%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低48%,持续10秒</desc>
 	<nextCard>1160427</nextCard>
 	<param>[1,1160426]</param>
 	<exp>990</exp>
@@ -83749,7 +83749,7 @@
 	<lv>27</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低55%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低49%,持续10秒</desc>
 	<nextCard>1160428</nextCard>
 	<param>[1,1160427]</param>
 	<exp>1020</exp>
@@ -83766,7 +83766,7 @@
 	<lv>28</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低57%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低51%,持续10秒</desc>
 	<nextCard>1160429</nextCard>
 	<param>[1,1160428]</param>
 	<exp>1050</exp>
@@ -83783,7 +83783,7 @@
 	<lv>29</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低59%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低52%,持续10秒</desc>
 	<nextCard>1160430</nextCard>
 	<param>[1,1160429]</param>
 	<exp>1080</exp>
@@ -83800,7 +83800,7 @@
 	<lv>30</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低61%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低55%,持续10秒</desc>
 	<nextCard>1160431</nextCard>
 	<param>[1,1160430]</param>
 	<exp>1140</exp>
@@ -83817,7 +83817,7 @@
 	<lv>31</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低63%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低56%,持续10秒</desc>
 	<nextCard>1160432</nextCard>
 	<param>[1,1160431]</param>
 	<exp>1170</exp>
@@ -83834,7 +83834,7 @@
 	<lv>32</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低65%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低58%,持续10秒</desc>
 	<nextCard>1160433</nextCard>
 	<param>[1,1160432]</param>
 	<exp>1200</exp>
@@ -83851,7 +83851,7 @@
 	<lv>33</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低67%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低59%,持续10秒</desc>
 	<nextCard>1160434</nextCard>
 	<param>[1,1160433]</param>
 	<exp>1230</exp>
@@ -83868,7 +83868,7 @@
 	<lv>34</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低69%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低61%,持续10秒</desc>
 	<nextCard>1160435</nextCard>
 	<param>[1,1160434]</param>
 	<exp>1260</exp>
@@ -83885,7 +83885,7 @@
 	<lv>35</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低70%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低63%,持续10秒</desc>
 	<nextCard>1160436</nextCard>
 	<param>[1,1160435]</param>
 	<exp>1320</exp>
@@ -83902,7 +83902,7 @@
 	<lv>36</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低72%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低64%,持续10秒</desc>
 	<nextCard>1160437</nextCard>
 	<param>[1,1160436]</param>
 	<exp>1350</exp>
@@ -83919,7 +83919,7 @@
 	<lv>37</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低74%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低66%,持续10秒</desc>
 	<nextCard>1160438</nextCard>
 	<param>[1,1160437]</param>
 	<exp>1380</exp>
@@ -83936,7 +83936,7 @@
 	<lv>38</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低76%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低67%,持续10秒</desc>
 	<nextCard>1160439</nextCard>
 	<param>[1,1160438]</param>
 	<exp>1410</exp>
@@ -83953,7 +83953,7 @@
 	<lv>39</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低78%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低70%,持续10秒</desc>
 	<nextCard>1160440</nextCard>
 	<param>[1,1160439]</param>
 	<exp>1440</exp>
@@ -83970,7 +83970,7 @@
 	<lv>40</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低80%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低71%,持续10秒</desc>
 	<nextCard>1160441</nextCard>
 	<param>[1,1160440]</param>
 	<exp>1500</exp>
@@ -83987,7 +83987,7 @@
 	<lv>41</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低82%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低73%,持续10秒</desc>
 	<nextCard>1160442</nextCard>
 	<param>[1,1160441]</param>
 	<exp>1530</exp>
@@ -84004,7 +84004,7 @@
 	<lv>42</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低84%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低74%,持续10秒</desc>
 	<nextCard>1160443</nextCard>
 	<param>[1,1160442]</param>
 	<exp>1560</exp>
@@ -84021,7 +84021,7 @@
 	<lv>43</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低85%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低76%,持续10秒</desc>
 	<nextCard>1160444</nextCard>
 	<param>[1,1160443]</param>
 	<exp>1590</exp>
@@ -84038,7 +84038,7 @@
 	<lv>44</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低87%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低77%,持续10秒</desc>
 	<nextCard>1160445</nextCard>
 	<param>[1,1160444]</param>
 	<exp>1620</exp>
@@ -84055,7 +84055,7 @@
 	<lv>45</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低89%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低79%,持续10秒</desc>
 	<nextCard>1160446</nextCard>
 	<param>[1,1160445]</param>
 	<exp>1680</exp>
@@ -84072,7 +84072,7 @@
 	<lv>46</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低91%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低80%,持续10秒</desc>
 	<nextCard>1160447</nextCard>
 	<param>[1,1160446]</param>
 	<exp>1710</exp>
@@ -84089,7 +84089,7 @@
 	<lv>47</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低93%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低82%,持续10秒</desc>
 	<nextCard>1160448</nextCard>
 	<param>[1,1160447]</param>
 	<exp>1740</exp>
@@ -84106,7 +84106,7 @@
 	<lv>48</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低95%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低83%,持续10秒</desc>
 	<nextCard>1160449</nextCard>
 	<param>[1,1160448]</param>
 	<exp>1770</exp>
@@ -84123,7 +84123,7 @@
 	<lv>49</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低97%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低86%,持续10秒</desc>
 	<nextCard>1160450</nextCard>
 	<param>[1,1160449]</param>
 	<exp>1800</exp>
@@ -84140,7 +84140,7 @@
 	<lv>50</lv>
 	<type>16</type>
 	<effectType>16</effectType>
-	<desc>使敌人受到的治疗效果降低99%,持续10秒</desc>
+	<desc>使敌人受到的治疗效果降低88%,持续10秒</desc>
 	<nextCard></nextCard>
 	<param>[1,1160450]</param>
 	<exp>0</exp>

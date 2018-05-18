@@ -586,19 +586,18 @@ public class GoodsService {
 
     public SGoodsVo toVO(Goods g) {
         SGoodsVo vo = new SGoodsVo();
-
         vo.id = g.getId();
         vo.goodsId = g.getGoodsId();
         vo.stackNum = g.getStackNum();
         vo.storeType = (byte) g.getStoreType();
         vo.star = (byte) g.getStar();
         vo.bLock = g.isLock();
-        vo.addAttrs = new ArrayList<AttrItem>(2);
+        vo.addAttrs = new ArrayList<>(2);
         if (!g.getAddAttrList().isEmpty()) {
             vo.addAttrs.addAll(g.getAddAttrList());
         }
 
-        vo.lastAttrs = new ArrayList<AttrItem>(2);
+        vo.lastAttrs = new ArrayList<>(2);
         if (!g.getLastAttrs().isEmpty()) {
             vo.lastAttrs.addAll(g.getLastAttrs());
         }
@@ -1028,6 +1027,11 @@ public class GoodsService {
         Int2Param ret = new Int2Param();
         Goods goods = getGoods(playerId, bagId);
         GoodsConfig config = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
+        if (!checkCanAdd(playerId, config.param2[0][0], 1)) {
+            ret.param1 = Response.BAG_FULL;
+            return ret;
+        }
+
         if (!decGoodsFromBagById(playerId, bagId, config.param1[0], LogConsume.ITEM_COMPOUND)) {
             ret.param1 = Response.NO_MATERIAL;
             return ret;

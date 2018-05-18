@@ -90,7 +90,7 @@ public class GroupService {
         ListParam<GroupVO> result = new ListParam();
         result.params = new ArrayList();
         for (Group group : groupMap.values()) {
-            if (group.isOpenFlag() && !group.hasFightTeam()) {
+            if (group.isOpenFlag() && !group.hasFightTeam() && !group.isStart()) {
                 result.params.add(groupToProto(group));
             }
         }
@@ -205,6 +205,8 @@ public class GroupService {
         Player player = playerService.getPlayer(playerId);
         Group group = groupMap.remove(player.getGroupId());
         if (group == null) {
+            String key = sceneService.getGroupKey(player);
+            SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
             player.setGroupId(0);
             player.setGroupTeamId(0);
             ServerLogger.info("groupId = " + player.getGroupId());
@@ -231,6 +233,8 @@ public class GroupService {
         for (GroupTeam team : teamMap.values()) {
             for (int playerId : team.getMembers().keySet()) {
                 Player player = playerService.getPlayer(playerId);
+                String key = sceneService.getGroupKey(player);
+                SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
                 player.setGroupId(0);
                 player.setGroupTeamId(0);
                 SessionManager.getInstance().sendMsg(CMD_DISMISS, param, playerId);
@@ -309,6 +313,7 @@ public class GroupService {
         GroupVO vo = group.toProto();
         Player player = playerService.getPlayer(group.getLeader());
         vo.leaderVocation = player.getVocation();
+        vo.leaderLevel = player.getLev();
         vo.groupName = player.getName();
         return vo;
     }
@@ -351,6 +356,8 @@ public class GroupService {
                     team.setCostTimes(playerId);
                     PlayerData data = playerService.getPlayerData(playerId);
                     data.setGroupTimes(data.getGroupTimes() - 1);
+
+
                 }
             }
         }
@@ -494,6 +501,9 @@ public class GroupService {
         if (group.size() == 1) { //如果本来只有一个，解散掉
             group.clear();
             groupMap.remove(group.getId());
+
+            String key = sceneService.getGroupKey(player);
+            SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
             player.setGroupId(0);
             player.setGroupTeamId(0);
             param.param = Response.SUCCESS;
@@ -501,6 +511,9 @@ public class GroupService {
         }
 
         group.memberExit(player.getGroupTeamId(), playerId);
+
+        String key = sceneService.getGroupKey(player);
+        SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
         player.setGroupId(0);
         player.setGroupTeamId(0);
         broadcastGroup(group);
@@ -539,10 +552,17 @@ public class GroupService {
             return param;
         }
 
-        if (!group.isOpenFlag()) {
-            param.param = Response.TEAM_NO_OPEN;
+        //团队已经开始不能加入
+        if(group.isStart())
+        {
+            param.param = Response.GROUP_ALREADY_START;
             return param;
         }
+
+//        if (!group.isOpenFlag()) {
+//            param.param = Response.TEAM_NO_OPEN;
+//            return param;
+//        }
 
         int groupTeamId = group.addTeamMember(playerId, player.getHp(),
                 player.getVocation(), player.getFight(), player.getLev(), player.getName());
@@ -584,6 +604,9 @@ public class GroupService {
         Player targetPlayer = playerService.getPlayer(targetId);
         sceneService.exitScene(targetPlayer);
         group.memberExit(targetPlayer.getGroupTeamId(), targetId);
+
+        String key = sceneService.getGroupKey(player);
+        SessionManager.getInstance().removeFromGroup(key, targetPlayer.getPlayerId());
         targetPlayer.setGroupTeamId(0);
         targetPlayer.setGroupId(0);
 
@@ -675,6 +698,13 @@ public class GroupService {
             return param;
         }
 
+        //如果团队还没开始，则只能是团长才能开战
+        if(!group.isStart() && group.getLeader() != playerId)
+        {
+            param.param1 = Response.GROUP_LEADER_HAS_NOT_FIGHT;
+            return param;
+        }
+
         GroupTeam team = group.getGroupTeam(player.getGroupTeamId());
         if (team.isbFight()) {
             param.param1 = Response.TEAM_FIGHT;
@@ -693,13 +723,18 @@ public class GroupService {
 
         team.setbFight(true);
         group.addCopyState(team.getId(), copyId);
-
+        group.setStart(true);
 
         param.param1 = Response.SUCCESS;
         param.param2 = copyId;
         broadcastGroupTeam(team, CMD_START_GAME, param);
         broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
-        taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_GROUP, 1);
+        broadcastGroup(group);
+
+        for (int id : team.getMembers().keySet()) {
+            taskService.doTask(id, Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_GROUP, 1);
+        }
+
         //TODO 判断 当前副本已经通关，无法进入该副本。
 
         //TODO 判断 当前副本所属的阶段未开启，无法进入该副本。
@@ -930,7 +965,6 @@ public class GroupService {
         if (group == null) {
             return 0;
         }
-
 
         if (copyId == group.beginStageId && group.stageBeginTime == 0) {
             group.stageBeginTime = System.currentTimeMillis();

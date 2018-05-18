@@ -18,24 +18,24 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ConfigData {
 
     // [场景id_难度:怪]
-    private static Map<String, Map<Integer, MonsterRefreshConfig>> monsterRefreshs = new HashMap<>();
+    private static Map<String, Map<Integer, MonsterRefreshConfig>> monsterRefreshs;
 
     private static GlobalConfig globalCfg;
 
     // 副本，按章节，难度归类
-    private static Map<Integer, Map<Integer, List<Integer>>> copys = new HashMap<>();
+    private static Map<Integer, Map<Integer, List<Integer>>> copys;
     // 无尽漩涡副本
-    public static int[] endlessCopys = new int[2];
+    public static int[] endlessCopys;
 
     // 充值配置
-    private static List<ChargeConfig> charges = new ArrayList<>();
+    private static List<ChargeConfig> charges;
 
     // 所有任务
-    private static Map<Integer, List<Integer>> tasks = new HashMap<>();
+    private static Map<Integer, List<Integer>> tasks = new ConcurrentHashMap<Integer, List<Integer>>();
 
     // 技能卡合成
-    private static Map<String, List<Integer>> skillCardRates = new HashMap<>();
-    private static Map<String, List<Integer>> skillCardIds = new HashMap<>();
+    private static Map<String, List<Integer>> skillCardRates = new ConcurrentHashMap<>();
+    private static Map<String, List<Integer>> skillCardIds = new ConcurrentHashMap<>();
 
     private static Map<String, ArtifactLevelUpCfg> artifactLevelUpCfgs = new ConcurrentHashMap<>();
     private static Map<Integer, Integer> artifactMaxLevel = new ConcurrentHashMap<>();
@@ -49,15 +49,15 @@ public class ConfigData {
                 type, quality)));
     }
 
-    public static Map<Integer, List<Integer>> RefreshIds = new HashMap<>();
-    public static Map<Integer, List<Integer>> RefreshRates = new HashMap<>();
+    public static Map<Integer, List<Integer>> RefreshIds = new ConcurrentHashMap<Integer, List<Integer>>();
+    public static Map<Integer, List<Integer>> RefreshRates = new ConcurrentHashMap<Integer, List<Integer>>();
 
-    public static Set<Integer> copy4Mystery = new ConcurrentSet<>();
+    public static Set<Integer> copy4Mystery = new ConcurrentSet<Integer>();
 
-    public static Map<Integer, List<RewardMailCfg>> rewardMails = new ConcurrentHashMap<>();
+    public static Map<Integer, List<RewardMailCfg>> rewardMails = new ConcurrentHashMap<Integer, List<RewardMailCfg>>();
     public static Map<String, Integer> guildTechnology = new HashMap<>();
     public static Map<Integer, Integer> leadawayAwardsDrop = new HashMap<>();
-    public static Set<String> accountSet = new HashSet<>();
+    public static final Set<String> accountSet = new HashSet<>();
     public static Map<Integer, Integer> trainCount = new HashMap<>();
     public static Map<Integer, TrialFieldCfg> trainCopy = new HashMap<>();
     public static Map<Integer, List<ActivityTaskCfg>> ActivityTasks = Maps.newConcurrentMap();
@@ -82,6 +82,10 @@ public class ConfigData {
 
     public static Map<Integer, List<String>> FirstNameList = Maps.newHashMap();
     public static Map<Integer, List<String>> SecondNameList = Maps.newHashMap();
+
+    public static Map<Integer, List<Integer>> headList = Maps.newHashMap();
+    public static Map<Integer, List<Integer>> weaponList = Maps.newHashMap();
+    public static Map<Integer, List<Integer>> clothList = Maps.newHashMap();
 
     // 获取章节副本
     public static List<Integer> getChapterCopys(int chapter, int difficult) {
@@ -141,35 +145,34 @@ public class ConfigData {
     public static void init() {
 
         globalCfg = GameData.getConfig(GlobalConfig.class, 1);
-
-        Map<String, Map<Integer, MonsterRefreshConfig>> monsterRefreshsTmp = new HashMap<>();
+        monsterRefreshs = new HashMap<String, Map<Integer, MonsterRefreshConfig>>();
         for (Object monster : GameData.getConfigs(MonsterRefreshConfig.class)) {
             MonsterRefreshConfig m = (MonsterRefreshConfig) monster;
             String key = String.format("%d_%d", m.copyId, m.group);
-            Map<Integer, MonsterRefreshConfig> monsters = monsterRefreshsTmp.get(key);
+            Map<Integer, MonsterRefreshConfig> monsters = monsterRefreshs
+                    .get(key);
             if (monsters == null) {
                 monsters = new HashMap<Integer, MonsterRefreshConfig>();
-                monsterRefreshsTmp.put(key, monsters);
+                monsterRefreshs.put(key, monsters);
             }
             monsters.put(m.id, m);
         }
-        monsterRefreshs = monsterRefreshsTmp;
-
 
         // 副本章节难度归类
-        Map<Integer, Map<Integer, List<Integer>>> copysTmp = new HashMap<Integer, Map<Integer, List<Integer>>>();
-        int[] endlessCopysTmp = new int[2];
-
+        copys = new HashMap<Integer, Map<Integer, List<Integer>>>();
+        endlessCopys = new int[2];
         for (Object cfg : GameData.getConfigs(CopyConfig.class)) {
             CopyConfig copy = (CopyConfig) cfg;
 
             if (copy.type == CopyInstance.TYPE_COMMON) {
-                Map<Integer, List<Integer>> chapterCopys = copysTmp.get(copy.chapterId);
+                Map<Integer, List<Integer>> chapterCopys = copys
+                        .get(copy.chapterId);
                 if (chapterCopys == null) {
                     chapterCopys = new HashMap<Integer, List<Integer>>();
-                    copysTmp.put(copy.chapterId, chapterCopys);
+                    copys.put(copy.chapterId, chapterCopys);
                 }
-                List<Integer> difficultCopys = chapterCopys.get(copy.difficulty);
+                List<Integer> difficultCopys = chapterCopys
+                        .get(copy.difficulty);
                 if (difficultCopys == null) {
                     difficultCopys = new ArrayList<Integer>();
                     chapterCopys.put(copy.difficulty, difficultCopys);
@@ -178,33 +181,29 @@ public class ConfigData {
                     difficultCopys.add(copy.id);
                 }
             } else if (copy.type == CopyInstance.TYPE_ENDLESS) {
-                endlessCopysTmp[copy.difficulty - 1] = copy.id;
+                endlessCopys[copy.difficulty - 1] = copy.id;
             }
-        }
-        copys = copysTmp;
-        endlessCopys = endlessCopysTmp;
 
+        }
 
         // 每日任务
-        Map<Integer, List<Integer>> tasksTmp = new HashMap<>();
         for (Object cfg : GameData.getConfigs(TaskConfig.class)) {
             TaskConfig task = (TaskConfig) cfg;
-            List<Integer> list = tasksTmp.get(task.taskType);
+            List<Integer> list = tasks.get(task.taskType);
             if (list == null) {
-                list = new ArrayList<>();
-                tasksTmp.put(task.taskType, list);
+                list = new ArrayList<Integer>();
+                tasks.put(task.taskType, list);
             }
             list.add(task.id);
         }
-        tasks = tasksTmp;
 
         // 充值排序
-        List<ChargeConfig> chargesTmp = new ArrayList<>();
+        charges = new ArrayList<ChargeConfig>();
         for (Object cfg : GameData.getConfigs(ChargeConfig.class)) {
             ChargeConfig charge = (ChargeConfig) cfg;
-            chargesTmp.add(charge);
+            charges.add(charge);
         }
-        Collections.sort(chargesTmp, new Comparator<ChargeConfig>() {
+        Collections.sort(charges, new Comparator<ChargeConfig>() {
             @Override
             public int compare(ChargeConfig o1, ChargeConfig o2) {
                 if (o1.rmb != o2.rmb) {
@@ -213,10 +212,8 @@ public class ConfigData {
                 return o1.type - o2.type;
             }
         });
-        charges = chargesTmp;
 
         // 设置一下物品的最大叠加数量
-        Map<Integer, Integer> fameMapTmp = new HashMap<>();
         for (Object cfg : GameData.getConfigs(GoodsConfig.class)) {
             GoodsConfig g = (GoodsConfig) cfg;
             if (g.maxStack >= 9) {
@@ -224,75 +221,63 @@ public class ConfigData {
             }
 
             if (g.type == 122) { //
-                fameMapTmp.put(g.param1[0], g.id);
+                FameMap.put(g.param1[0], g.id);
             }
         }
-        FameMap = fameMapTmp;
 
         // 技能卡合成
-        Map<String, List<Integer>> skillCardRatesTmp = new HashMap<>();
-        Map<String, List<Integer>> skillCardIdsTmp = new HashMap<>();
         for (Object cfg : GameData.getConfigs(SkillCardComposeCfg.class)) {
             SkillCardComposeCfg g = (SkillCardComposeCfg) cfg;
             String key = String.format("%d_%d", g.type, g.quality);
-            List<Integer> ids = skillCardIdsTmp.get(key);
+            List<Integer> ids = skillCardIds.get(key);
             if (ids == null) {
                 ids = new ArrayList<Integer>();
-                skillCardIdsTmp.put(key, ids);
+                skillCardIds.put(key, ids);
             }
             ids.add(g.id);
-            List<Integer> rates = skillCardRatesTmp.get(key);
+            List<Integer> rates = skillCardRates.get(key);
             if (rates == null) {
                 rates = new ArrayList<Integer>();
-                skillCardRatesTmp.put(key, rates);
+                skillCardRates.put(key, rates);
             }
             rates.add(g.rate);
         }
-        skillCardIds = skillCardIdsTmp;
-        skillCardIds = skillCardIdsTmp;
 
         // 刷新商店
-        Map<Integer, List<Integer>> RefreshIdsTmp = new HashMap<>();
-        Map<Integer, List<Integer>> RefreshRatesTmp = new HashMap<>();
         for (Object cfg : GameData.getConfigs(ShopCfg.class)) {
             ShopCfg g = (ShopCfg) cfg;
             if (g.tab != ShopService.REFRESH) {
                 continue;
             }
-            List<Integer> ids = RefreshIdsTmp.get(g.shopType);
+            List<Integer> ids = RefreshIds.get(g.shopType);
             if (ids == null) {
-                ids = new ArrayList<>();
-                RefreshIdsTmp.put(g.shopType, ids);
+                ids = new ArrayList<Integer>();
+                RefreshIds.put(g.shopType, ids);
             }
-            List<Integer> rates = RefreshRatesTmp.get(g.shopType);
+            List<Integer> rates = RefreshRates.get(g.shopType);
             if (rates == null) {
-                rates = new ArrayList<>();
-                RefreshRatesTmp.put(g.shopType, rates);
+                rates = new ArrayList<Integer>();
+                RefreshRates.put(g.shopType, rates);
             }
             ids.add(g.id);
             rates.add(g.refreshRate);
         }
-        RefreshRates = RefreshRatesTmp;
-        RefreshIds = RefreshIdsTmp;
 
         // 神秘商店的特殊副本
-        Set<Integer> copy4MysteryTmp = new ConcurrentSet<>();
         for (int id : globalCfg.mysterySpecialCopyIds) {
-            copy4MysteryTmp.add(id);
+            copy4Mystery.add(id);
         }
-        copy4Mystery = copy4MysteryTmp;
 
-        Map<Integer, List<RewardMailCfg>> rewardMailsTmp = new ConcurrentHashMap<>();
+        rewardMails.clear();
         for (Object obj : GameData.getConfigs(RewardMailCfg.class)) {
             RewardMailCfg cfg = (RewardMailCfg) obj;
             List<RewardMailCfg> list = rewardMails.get(cfg.group);
             if (list == null) {
-                list = new ArrayList<>();
+                list = new ArrayList<RewardMailCfg>();
                 rewardMails.put(cfg.group, list);
             }
             list.add(cfg);
         }
-        rewardMails = rewardMailsTmp;
 
         Map<String, ArtifactLevelUpCfg> artifactLevelUpCfgsTmp = new ConcurrentHashMap<>();
         Map<Integer, Integer> artifactMaxLevelTmp = new ConcurrentHashMap<>();
@@ -304,7 +289,6 @@ public class ConfigData {
         artifactLevelUpCfgs = artifactLevelUpCfgsTmp;
         artifactMaxLevel = artifactMaxLevelTmp;
 
-        Map<Integer, Integer> leadawayAwardsDropTmp = new HashMap<>();
         for (Object obj : GameData.getConfigs(CopyConfig.class)) {
             CopyConfig cfg = (CopyConfig) obj;
             if (cfg.type == 11) {
@@ -313,40 +297,29 @@ public class ConfigData {
                     if (cfg.id == conf.copyId) {
                         MonsterConfig monsterConfig = getConfig(MonsterConfig.class, conf.monsterId);
                         int dropId = monsterConfig.dropGoods[0];
-                        leadawayAwardsDropTmp.put(cfg.id, dropId);
+                        leadawayAwardsDrop.put(cfg.id, dropId);
                     }
                 }
             }
         }
-        leadawayAwardsDrop = leadawayAwardsDropTmp;
 
-        Map<String, Integer> guildTechnologyTmp = new HashMap<>();
         for (Object obj : GameData.getConfigs(GangScienceCfg.class)) {
             GangScienceCfg cfg = (GangScienceCfg) obj;
             if (cfg.lv == 0) {
-                guildTechnologyTmp.put(cfg.type + "_" + cfg.NeedLevel, cfg.id);
+                guildTechnology.put(cfg.type + "_" + cfg.NeedLevel, cfg.id);
             }
         }
-        guildTechnology = guildTechnologyTmp;
 
-        Set<String> accountSetTmp = new HashSet<>();
         for (Object obj : GameData.getConfigs(AccountCfg.class)) {
             AccountCfg cfg = (AccountCfg) obj;
-            accountSetTmp.add(cfg.name);
+            accountSet.add(cfg.name);
         }
-        accountSet = accountSetTmp;
 
-
-        Map<Integer, Integer> trainCountTmp = new HashMap<>();
-        Map<Integer, TrialFieldCfg> trainCopyTmp = new HashMap<>();
         for (Object obj : GameData.getConfigs(TrialFieldCfg.class)) {
             TrialFieldCfg cfg = (TrialFieldCfg) obj;
-            trainCountTmp.put(cfg.type, cfg.count);
-            trainCopyTmp.put(cfg.copyId, cfg);
+            trainCount.put(cfg.type, cfg.count);
+            trainCopy.put(cfg.copyId, cfg);
         }
-        trainCount = trainCountTmp;
-        trainCopy = trainCopyTmp;
-
 
         //活动数据预加载
         Map<Integer, List<ActivityTaskCfg>> ActivityTasksTmp = Maps.newConcurrentMap();
@@ -431,14 +404,14 @@ public class ConfigData {
         secondNameListTemp.put(2, femaleSecond);
         for (Object cfg : GameData.getConfigs(RobotNameCfg.class)) {
             RobotNameCfg conf = (RobotNameCfg) cfg;
-            if (conf.manSingle != null) {
+            if (conf.manSingle != null && !"".equals(conf.manSingle)) {
                 manFirst.add(conf.manSingle);
             }
             if (conf.manDouble != null) {
                 manSecond.add(conf.manDouble);
             }
 
-            if (conf.womanSingle != null) {
+            if (conf.womanSingle != null && !"".equals(conf.womanSingle)) {
                 femaleFirst.add(conf.womanSingle);
             }
             if (conf.womanDouble != null) {
@@ -447,5 +420,37 @@ public class ConfigData {
         }
         FirstNameList = firstNameListTemp;
         SecondNameList = secondNameListTemp;
+
+        Map<Integer, List<Integer>> headListTmp = Maps.newHashMap();
+        Map<Integer, List<Integer>> clothListTmp = Maps.newHashMap();
+        Map<Integer, List<Integer>> weaponListTmp = Maps.newHashMap();
+        for (Object cfg : GameData.getConfigs(FashionCfg.class)) {
+            FashionCfg conf = (FashionCfg) cfg;
+            if (conf.type == 1) {
+                List<Integer> list = headListTmp.get(conf.vocation);
+                if (list == null) {
+                    list = Lists.newArrayList();
+                    headListTmp.put(conf.vocation, list);
+                }
+                list.add(conf.id);
+            } else if (conf.type == 2) {
+                List<Integer> list = clothListTmp.get(conf.vocation);
+                if (list == null) {
+                    list = Lists.newArrayList();
+                    clothListTmp.put(conf.vocation, list);
+                }
+                list.add(conf.id);
+            } else {
+                List<Integer> list = weaponListTmp.get(conf.vocation);
+                if (list == null) {
+                    list = Lists.newArrayList();
+                    weaponListTmp.put(conf.vocation, list);
+                }
+                list.add(conf.id);
+            }
+        }
+        headList = headListTmp;
+        clothList = clothListTmp;
+        weaponList = weaponListTmp;
     }
 }

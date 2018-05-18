@@ -42,7 +42,7 @@
 	<icon>head1</icon>
 	<type>7</type>
 	<viewname>LotteryView</viewname>
-	<openCondition>通关主线副本2-2开启</openCondition>
+	<openCondition>通关主线副本2-3开启</openCondition>
 	<description>可获得大量金币</description>
 	<lockID>1221</lockID>
 	<param></param>
@@ -54,7 +54,7 @@
 	<icon>head6</icon>
 	<type>7</type>
 	<viewname>ResourceCopyView</viewname>
-	<openCondition>通关主线副本3-1开启</openCondition>
+	<openCondition>通关主线副本3-3开启</openCondition>
 	<description>产出大量金币</description>
 	<lockID>1375</lockID>
 	<param></param>
@@ -78,7 +78,7 @@
 	<icon>head10</icon>
 	<type>7</type>
 	<viewname>WorldBossView</viewname>
-	<openCondition>30级开启</openCondition>
+	<openCondition>33级开启</openCondition>
 	<description>产出大量金币</description>
 	<lockID>1361</lockID>
 	<param></param>
@@ -102,7 +102,7 @@
 	<icon>head1</icon>
 	<type>4</type>
 	<viewname>LotteryView</viewname>
-	<openCondition>通关主线副本2-2开启</openCondition>
+	<openCondition>通关主线副本2-3开启</openCondition>
 	<description>可获得大量装备</description>
 	<lockID>1221</lockID>
 	<param></param>
@@ -114,7 +114,7 @@
 	<icon>head12</icon>
 	<type>4</type>
 	<viewname>TraversingView</viewname>
-	<openCondition>35级开启</openCondition>
+	<openCondition>40级开启</openCondition>
 	<description>产出稀有装备</description>
 	<lockID>1131</lockID>
 	<param></param>
@@ -126,7 +126,7 @@
 	<icon>head14</icon>
 	<type>4</type>
 	<viewname>GroupInfoView</viewname>
-	<openCondition>40级开启</openCondition>
+	<openCondition>45级开启</openCondition>
 	<description>产出极品装备</description>
 	<lockID>1571</lockID>
 	<param></param>
@@ -150,7 +150,7 @@
 	<icon>head5</icon>
 	<type>1</type>
 	<viewname>FameView</viewname>
-	<openCondition>7级开启</openCondition>
+	<openCondition>通关主线副本2-6开启</openCondition>
 	<description>可以购买强化材料</description>
 	<lockID>1511</lockID>
 	<param></param>
@@ -162,7 +162,7 @@
 	<icon>head1</icon>
 	<type>1</type>
 	<viewname>LotteryView</viewname>
-	<openCondition>通关主线副本2-2开启</openCondition>
+	<openCondition>通关主线副本2-3开启</openCondition>
 	<description>可获得强化材料</description>
 	<lockID>1221</lockID>
 	<param></param>
@@ -186,7 +186,7 @@
 	<icon>head5</icon>
 	<type>1</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>通关主线副本4-6开启</openCondition>
+	<openCondition>通关主线副本3-6开启</openCondition>
 	<description>可以购买强化材料</description>
 	<lockID>1011</lockID>
 	<param>6</param>
@@ -198,7 +198,7 @@
 	<icon>head5</icon>
 	<type>1</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>通关主线副本5-6开启</openCondition>
+	<openCondition>通关主线副本4-6开启</openCondition>
 	<description>可以购买强化材料</description>
 	<lockID>1041</lockID>
 	<param>4</param>
@@ -206,39 +206,39 @@
 </config>
 <config>
 	<id>1018</id>
-	<name>试练场</name>
-	<icon>head13</icon>
-	<type>1</type>
-	<viewname>TrialFieldView</viewname>
-	<openCondition>17级开启</openCondition>
-	<description>产出强化材料</description>
-	<lockID>1781</lockID>
-	<param></param>
-	<limit>3</limit>
-</config>
-<config>
-	<id>1019</id>
 	<name>排位赛商店</name>
 	<icon>head5</icon>
 	<type>1</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>19级开启</openCondition>
+	<openCondition>28级开启</openCondition>
 	<description>可以购买强化材料</description>
 	<lockID>1601</lockID>
 	<param>15</param>
 	<limit>0</limit>
 </config>
 <config>
-	<id>1020</id>
+	<id>1019</id>
 	<name>大漩涡</name>
 	<icon>head13</icon>
 	<type>1</type>
 	<viewname>InfiniteVortexView</viewname>
-	<openCondition>28级开启</openCondition>
+	<openCondition>30级开启</openCondition>
 	<description>产出强化材料</description>
 	<lockID>1211</lockID>
 	<param></param>
 	<limit>0</limit>
+</config>
+<config>
+	<id>1020</id>
+	<name>试练场</name>
+	<icon>head13</icon>
+	<type>1</type>
+	<viewname>TrialFieldView</viewname>
+	<openCondition>42级开启</openCondition>
+	<description>产出强化材料</description>
+	<lockID>1781</lockID>
+	<param></param>
+	<limit>3</limit>
 </config>
 <config>
 	<id>1021</id>
@@ -246,7 +246,7 @@
 	<icon>head5</icon>
 	<type>1</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>38级开启</openCondition>
+	<openCondition>44级开启</openCondition>
 	<description>可以购买强化材料</description>
 	<lockID>1061</lockID>
 	<param>5</param>
@@ -282,7 +282,7 @@
 	<icon>head1</icon>
 	<type>3</type>
 	<viewname>LotteryView</viewname>
-	<openCondition>通关主线副本2-2开启</openCondition>
+	<openCondition>通关主线副本2-3开启</openCondition>
 	<description>可获得神器碎片</description>
 	<lockID>1221</lockID>
 	<param></param>
@@ -294,7 +294,7 @@
 	<icon>head5</icon>
 	<type>3</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>通关主线副本5-6开启</openCondition>
+	<openCondition>通关主线副本4-6开启</openCondition>
 	<description>可以购买神器碎片</description>
 	<lockID>1041</lockID>
 	<param>4</param>
@@ -306,7 +306,7 @@
 	<icon>head11</icon>
 	<type>3</type>
 	<viewname>ResourceCopyView</viewname>
-	<openCondition>25级开启</openCondition>
+	<openCondition>通关主线副本6-3开启</openCondition>
 	<description>产出神器碎片</description>
 	<lockID>1373</lockID>
 	<param></param>
@@ -318,7 +318,7 @@
 	<icon>head5</icon>
 	<type>3</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>28级开启</openCondition>
+	<openCondition>30级开启</openCondition>
 	<description>可以购买神器碎片</description>
 	<lockID>1211</lockID>
 	<param>3</param>
@@ -330,7 +330,7 @@
 	<icon>head5</icon>
 	<type>3</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>38级开启</openCondition>
+	<openCondition>44级开启</openCondition>
 	<description>可以购买神器碎片</description>
 	<lockID>1061</lockID>
 	<param>5</param>
@@ -342,7 +342,7 @@
 	<icon>head5</icon>
 	<type>6</type>
 	<viewname>FameView</viewname>
-	<openCondition>7级开启</openCondition>
+	<openCondition>通关主线副本2-6开启</openCondition>
 	<description>可以购买时装券</description>
 	<lockID>1511</lockID>
 	<param></param>
@@ -354,7 +354,7 @@
 	<icon>head5</icon>
 	<type>6</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>通关主线副本4-6开启</openCondition>
+	<openCondition>通关主线副本3-6开启</openCondition>
 	<description>可以购买时装券</description>
 	<lockID>1011</lockID>
 	<param>6</param>
@@ -366,7 +366,7 @@
 	<icon>head5</icon>
 	<type>6</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>19级开启</openCondition>
+	<openCondition>28级开启</openCondition>
 	<description>可以购买时装券</description>
 	<lockID>1601</lockID>
 	<param>15</param>
@@ -378,7 +378,7 @@
 	<icon>head1</icon>
 	<type>2</type>
 	<viewname>LotteryView</viewname>
-	<openCondition>通关主线副本2-2开启</openCondition>
+	<openCondition>通关主线副本2-3开启</openCondition>
 	<description>可获得技能卡</description>
 	<lockID>1221</lockID>
 	<param></param>
@@ -390,7 +390,7 @@
 	<icon>head5</icon>
 	<type>2</type>
 	<viewname>FameView</viewname>
-	<openCondition>7级开启</openCondition>
+	<openCondition>通关主线副本2-6开启</openCondition>
 	<description>可以购买技能卡</description>
 	<lockID>1511</lockID>
 	<param></param>
@@ -402,7 +402,7 @@
 	<icon>head5</icon>
 	<type>2</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>通关主线副本4-6开启</openCondition>
+	<openCondition>通关主线副本3-6开启</openCondition>
 	<description>可以购买技能卡</description>
 	<lockID>1011</lockID>
 	<param>6</param>
@@ -414,7 +414,7 @@
 	<icon>head5</icon>
 	<type>2</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>19级开启</openCondition>
+	<openCondition>28级开启</openCondition>
 	<description>可以购买技能卡</description>
 	<lockID>1601</lockID>
 	<param>15</param>
@@ -426,7 +426,7 @@
 	<icon>head5</icon>
 	<type>2</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>28级开启</openCondition>
+	<openCondition>30级开启</openCondition>
 	<description>可以购买技能卡</description>
 	<lockID>1211</lockID>
 	<param>3</param>
@@ -438,7 +438,7 @@
 	<icon>head5</icon>
 	<type>2</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>38级开启</openCondition>
+	<openCondition>44级开启</openCondition>
 	<description>可以购买技能卡</description>
 	<lockID>1061</lockID>
 	<param>5</param>
@@ -450,7 +450,7 @@
 	<icon>head5</icon>
 	<type>5</type>
 	<viewname>FameView</viewname>
-	<openCondition>7级开启</openCondition>
+	<openCondition>通关主线副本2-6开启</openCondition>
 	<description>可以购买宠物碎片</description>
 	<lockID>1511</lockID>
 	<param></param>
@@ -462,7 +462,7 @@
 	<icon>head5</icon>
 	<type>5</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>通关主线副本4-6开启</openCondition>
+	<openCondition>通关主线副本3-6开启</openCondition>
 	<description>可以购买宠物碎片</description>
 	<lockID>1011</lockID>
 	<param>6</param>
@@ -474,7 +474,7 @@
 	<icon>head5</icon>
 	<type>5</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>通关主线副本5-6开启</openCondition>
+	<openCondition>通关主线副本4-6开启</openCondition>
 	<description>可以购买宠物碎片</description>
 	<lockID>1041</lockID>
 	<param>4</param>
@@ -486,7 +486,7 @@
 	<icon>head5</icon>
 	<type>5</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>19级开启</openCondition>
+	<openCondition>28级开启</openCondition>
 	<description>可以购买宠物碎片</description>
 	<lockID>1601</lockID>
 	<param>15</param>
@@ -498,7 +498,7 @@
 	<icon>head5</icon>
 	<type>5</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>28级开启</openCondition>
+	<openCondition>30级开启</openCondition>
 	<description>可以购买宠物碎片</description>
 	<lockID>1211</lockID>
 	<param>3</param>
@@ -510,7 +510,7 @@
 	<icon>head5</icon>
 	<type>5</type>
 	<viewname>AllShopView</viewname>
-	<openCondition>38级开启</openCondition>
+	<openCondition>44级开启</openCondition>
 	<description>可以购买宠物碎片</description>
 	<lockID>1061</lockID>
 	<param>5</param>
@@ -522,7 +522,7 @@
 	<icon>head1</icon>
 	<type>8</type>
 	<viewname>LotteryView</viewname>
-	<openCondition>通关主线副本2-2开启</openCondition>
+	<openCondition>通关主线副本2-3开启</openCondition>
 	<description>可获得声望点</description>
 	<lockID>1221</lockID>
 	<param></param>

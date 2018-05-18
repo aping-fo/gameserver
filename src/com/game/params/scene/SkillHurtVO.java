@@ -14,6 +14,7 @@ public class SkillHurtVO implements IProtocol {
 	public int faceDir;//释放技能时的朝向
 	public int hurtValue;//伤害
 	public boolean isCrit;//是否是暴击
+	public int subType;//自定义子类型，1：增加HP上限
 
 
 	public void decode(BufferBuilder bb) {
@@ -27,6 +28,7 @@ public class SkillHurtVO implements IProtocol {
 		this.faceDir = bb.getInt();
 		this.hurtValue = bb.getInt();
 		this.isCrit = bb.getBoolean();
+		this.subType = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -40,5 +42,6 @@ public class SkillHurtVO implements IProtocol {
 		bb.putInt(this.faceDir);
 		bb.putInt(this.hurtValue);
 		bb.putBoolean(this.isCrit);
+		bb.putInt(this.subType);
 	}
 }

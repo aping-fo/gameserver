@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.game.module.task.Task;
+import com.game.module.task.TaskService;
 import com.game.module.traversing.TraversingService;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -47,6 +49,8 @@ public class TeamExtension {
 	private CopyService copyService;
 	@Autowired
 	private TraversingService traversingService;
+	@Autowired
+	private TaskService taskService;
 	
 	@Command(3402)
 	public Object getTeamList(int playerId, IntParam param){
@@ -126,7 +130,12 @@ public class TeamExtension {
 		}
 		Int2Param msg = new Int2Param();
 		msg.param2 = REASON_DISSOLVE;
-		sceneService.brocastToSceneCurLine(player, LEAVE, msg, SessionManager.getInstance().getChannel(playerId));
+		//sceneService.brocastToSceneCurLine(player, LEAVE, msg, SessionManager.getInstance().getChannel(playerId));
+		for(int id : team.getMembers().keySet()){
+			if(team.getLeader() != id) {
+				SessionManager.getInstance().sendMsg(LEAVE, msg, id);
+			}
+		}
 		teamService.dissolve(team);
 		return result;
 		
@@ -229,9 +238,11 @@ public class TeamExtension {
 			}
 			for(Map.Entry<Integer, TMember> entry : team.getMembers().entrySet()){
 				int id = entry.getKey();
+				taskService.doTask(id, Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_TRAVERSING, 1);
 				TMember member = entry.getValue();
 				Player otherPlayer = playerService.getPlayer(id);
 				member.setCurHp(otherPlayer.getHp());
+				member.setTotalHp(otherPlayer.getHp());
 				otherPlayer.setCopyId(copyInstanceId);
 				if(id != playerId){
 					copyIns.getMembers().getAndIncrement();

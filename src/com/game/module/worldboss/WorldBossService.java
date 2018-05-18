@@ -466,7 +466,6 @@ public class WorldBossService implements InitHandler {
                     killRewards.add(goodsEntry);
                 }
             }
-
             String lastTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_LAST_BEAT_TITLE).tips;
             String lastContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_LAST_BEAT_CONTENT).tips;
             //最后一击奖励邮件

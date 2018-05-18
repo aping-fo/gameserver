@@ -16,6 +16,7 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerCalculator;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.scene.SceneService;
 import com.game.module.serial.PlayerView;
 import com.game.module.serial.SerialDataService;
 import com.game.module.task.Task;
@@ -67,6 +68,8 @@ public class GangService implements InitHandler {
     private SerialDataService serialDataService;
     @Autowired
     private TimerService timerService;
+    @Autowired
+    private SceneService sceneService;
 
     private Map<Integer, Gang> gangs = new ConcurrentHashMap<>();
     private Map<String, Integer> gangNames = new ConcurrentHashMap<>();
@@ -596,8 +599,10 @@ public class GangService implements InitHandler {
             gang.getAdmins().remove(kickId);
         }
         synchronized (kicker) {
-            if (kicker.getGangId() == gangId) {
-                kicker.setGangId(0);
+            if (kicker.getGangId() == gangId) {           
+                String key = sceneService.getGroupKey(player);
+                SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
+				kicker.setGangId(0);
                 playerService.update(player);
             }
         }
@@ -640,6 +645,8 @@ public class GangService implements InitHandler {
 
         synchronized (player) {
             if (player.getGangId() == gangId) {
+                String key = sceneService.getGroupKey(player);
+                SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
                 player.setGangId(0);
             }
         }
@@ -777,6 +784,9 @@ public class GangService implements InitHandler {
 
         // 删除帮派数据
         gangs.remove(gangId);
+
+        String key = sceneService.getGroupKey(player);
+        SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
         player.setGangId(0);
         gangDao.del(gangId);
         orderGangs.remove(gang);

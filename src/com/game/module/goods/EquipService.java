@@ -6,6 +6,8 @@ import com.game.module.player.*;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.params.GainGoodNotify;
+import com.game.params.Int2Param;
+import com.game.params.IntParam;
 import com.game.params.goods.AttrItem;
 import com.game.params.goods.EquipInfo;
 import com.game.params.goods.SGoodsVo;
@@ -158,16 +160,16 @@ public class EquipService {
             goodsId = cfg.decompose[0][0];
             equipMaterials += cfg.decompose[0][1];
 
-            GoodsEntry goodsEntry = new GoodsEntry(cfg.decompose[0][0],cfg.decompose[0][1]);
+            GoodsEntry goodsEntry = new GoodsEntry(cfg.decompose[0][0], cfg.decompose[0][1]);
             list.add(goodsEntry);
             //升星返还
             if (goods.getStar() > 0) {
                 EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type * 100000 + cfg.level * 100 + goods.getStar());
                 if (nextCfg != null) {
-                    if(goodsId == Goods.EQUIP_TOOL) {
+                    if (goodsId == Goods.EQUIP_TOOL) {
                         goodsEntry.count += nextCfg.decompose;
-                    }else {
-                        GoodsEntry goodsEntry1 = new GoodsEntry(Goods.EQUIP_TOOL,nextCfg.decompose);
+                    } else {
+                        GoodsEntry goodsEntry1 = new GoodsEntry(Goods.EQUIP_TOOL, nextCfg.decompose);
                         list.add(goodsEntry1);
                     }
                 }
@@ -379,27 +381,28 @@ public class EquipService {
 
 
     //洗练
-    public int clear(int playerId, long id, int lock) {
+    public IntParam clear(int playerId, long id, int lock) {
         Goods goods = goodsService.getGoods(playerId, id);
         GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
+        IntParam param = new IntParam();
         if (cfg == null) {
             ServerLogger.warn("goods don't exist id = " + id);
-            return Response.ERR_PARAM;
+            param.param = Response.ERR_PARAM;
+            return param;
         }
 
         Player player = playerService.getPlayer(playerId);
         //扣除锁定
         if (lock > 0) {
             if (player.getDiamond() < ConfigData.globalParam().clearCostDiamond) {
-                return Response.NO_DIAMOND;
+                param.param = Response.NO_DIAMOND;
+                return param;
             }
-            /*if (!playerService.decDiamond(playerId, ConfigData.globalParam().clearCostDiamond, LogConsume.CLEAR_LOCK, goods.getGoodsId())) {
-                return Response.NO_DIAMOND;
-            }*/
         }
         //扣除消耗
         if (!goodsService.decGoodsFromBag(playerId, Goods.CLEAR_ITEM, ConfigData.globalParam().clearCostCoin, LogConsume.CLEAR_COST, goods.getGoodsId())) {
-            return Response.NO_MATERIAL;
+            param.param = Response.NO_MATERIAL;
+            return param;
         }
         if (lock > 0) {
             playerService.decDiamond(playerId, ConfigData.globalParam().clearCostDiamond, LogConsume.CLEAR_LOCK, goods.getGoodsId());
@@ -423,10 +426,12 @@ public class EquipService {
                 goods.getLastAttrs().add(attr);
             }
         }
+
+        taskService.doTask(playerId, Task.FINISH_CLEAR, 1);
         //更新vo
         goodsService.refreshGoodsToClient(playerId, goodsService.toVO(goods));
-        taskService.doTask(playerId, Task.FINISH_CLEAR, 1);
-        return Response.SUCCESS;
+        param.param = Response.SUCCESS;
+        return param;
     }
 
     //替换

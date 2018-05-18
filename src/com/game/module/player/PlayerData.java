@@ -57,6 +57,7 @@ public class PlayerData {
 
 	private ConcurrentHashMap<Integer, Copy> copys = new ConcurrentHashMap<Integer, Copy>();//副本
 	private ConcurrentHashMap<Integer, Integer> copyTimes = new ConcurrentHashMap<Integer, Integer>();//副本次数ResetCopy
+	private Map<Integer,Integer> copyBuyTimes = Maps.newHashMap(); //副本购买次数
 	private ConcurrentHashMap<Integer, Integer> resetCopy = new ConcurrentHashMap<Integer, Integer>();//副本重置次数
 	private List<Integer> threeStars= new ArrayList<Integer>();//三星奖励
 
@@ -168,6 +169,17 @@ public class PlayerData {
 	private int cpId; //订单号自增ID
 	private Set<Integer> CpIdSet = new HashSet<>(); //生成订单号
 	private Set<Integer> dealCpIdSet = new HashSet<>(); //已经处理过的订单号
+
+	private int dramaOrder; //剧情进度
+
+	public Map<Integer, Integer> getCopyBuyTimes() {
+		return copyBuyTimes;
+	}
+
+	public void setCopyBuyTimes(Map<Integer, Integer> copyBuyTimes) {
+		this.copyBuyTimes = copyBuyTimes;
+	}
+
 	public Set<Long> getGlobalMailIDSet() {
 		return globalMailIDSet;
 	}
@@ -914,4 +926,8 @@ public class PlayerData {
 	public void setActivityCamp(int activityCamp) {
 		this.activityCamp = activityCamp;
 	}
+
+	public int getDramaOrder() { return this.dramaOrder; }
+
+	public void setDramaOrder(int dramaOrder) { this.dramaOrder = dramaOrder; }
 }

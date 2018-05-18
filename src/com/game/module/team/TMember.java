@@ -5,8 +5,16 @@ public class TMember {
 	private int playerId;
 	private boolean ready;
 	private int curHp;
-
+	private int totalHp;
 	public TMember() {
+	}
+
+	public int getTotalHp() {
+		return totalHp;
+	}
+
+	public void setTotalHp(int totalHp) {
+		this.totalHp = totalHp;
 	}
 
 	public TMember(int playerId) {

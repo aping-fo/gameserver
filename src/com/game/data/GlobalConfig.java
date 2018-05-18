@@ -165,4 +165,5 @@ public class GlobalConfig {
 	public Map<Integer,Integer> petMutateItemRate;//宠物变异概率加成物品及加成概率
 	public float killedTimesFactor;//死亡次数因子
 	public float[] RobotParas;//机器人属性参数
+	public Map<Integer,Integer> buyMainCopyPrice;//主线副本次数购买价格
 }

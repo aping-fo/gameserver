@@ -15,6 +15,8 @@ public class GroupVO implements IProtocol {
 	public int stage;//阶段
 	public int groupCopyId;//副本id
 	public List<GroupTeamVO> teams;//队伍列表
+	public boolean isStart;//是否团本已经开始
+	public int leaderLevel;//团长等级
 
 
 	public void decode(BufferBuilder bb) {
@@ -51,6 +53,8 @@ public class GroupVO implements IProtocol {
 
             }
         }
+		this.isStart = bb.getBoolean();
+		this.leaderLevel = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -63,5 +67,7 @@ public class GroupVO implements IProtocol {
 		bb.putInt(this.stage);
 		bb.putInt(this.groupCopyId);
 		bb.putProtocolVoList(this.teams);
+		bb.putBoolean(this.isStart);
+		bb.putInt(this.leaderLevel);
 	}
 }

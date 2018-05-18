@@ -20,6 +20,7 @@ public class Scene {
 	public static final int MULTI_GROUP_ROOM = 50;//团队副本房间
 	public static final int MULTI_GROUP = 51;//团队副本
 	public static final int MULTI_LADDER = 61;//排位赛
+	public static final int MULTI_LADDER_AI = 81;//排位赛
 	public static final int MULTI_GANG_BOSS = 71;//公会BOSS
 
 	private int id;// 场景ID
@@ -57,8 +58,9 @@ public class Scene {
 			return 1;
 		}*/
 		//无需做人数控制
-		if(config.sceneSubType == Scene.MULTI_TEAM || config.sceneSubType == Scene.MULTI_PVE
-				|| config.sceneSubType == Scene.WORLD_BOSS_PVE || config.sceneSubType == Scene.MULTI_GROUP
+		if(config.sceneSubType == Scene.MULTI_TEAM
+				|| config.sceneSubType == Scene.MULTI_PVE
+				|| config.sceneSubType == Scene.MULTI_GROUP
 				|| config.sceneSubType == Scene.MULTI_GROUP_ROOM) {
 			return 1;
 		}

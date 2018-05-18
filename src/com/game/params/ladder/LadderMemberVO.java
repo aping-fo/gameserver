@@ -19,6 +19,9 @@ public class LadderMemberVO implements IProtocol {
 	public int fu;//符能
 	public int hp;//血量
 	public int lv;//等级
+	public int head;//时装头
+	public int fashionId;//时装衣服
+	public int weapon;//时装武器
 	public List<Integer> curSkills;//当前装载的技能[技能id,技能id,技能id,技能id]技能id为0表示该位置没有技能
 	public List<Integer> curCards;//当前装载的技能卡[技能卡配置表id,技能id,技能id,技能id]技能id为0表示该位置没有技能卡
 	public List<Integer> bufferList;//套装buffer列表
@@ -39,6 +42,9 @@ public class LadderMemberVO implements IProtocol {
 		this.fu = bb.getInt();
 		this.hp = bb.getInt();
 		this.lv = bb.getInt();
+		this.head = bb.getInt();
+		this.fashionId = bb.getInt();
+		this.weapon = bb.getInt();
 		this.curSkills = bb.getIntList();
 		this.curCards = bb.getIntList();
 		this.bufferList = bb.getIntList();
@@ -59,6 +65,9 @@ public class LadderMemberVO implements IProtocol {
 		bb.putInt(this.fu);
 		bb.putInt(this.hp);
 		bb.putInt(this.lv);
+		bb.putInt(this.head);
+		bb.putInt(this.fashionId);
+		bb.putInt(this.weapon);
 		bb.putIntList(this.curSkills);
 		bb.putIntList(this.curCards);
 		bb.putIntList(this.bufferList);

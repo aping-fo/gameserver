@@ -61,7 +61,7 @@ public class Goods {
 	private int storeType;// 存储位置 0背包1角色身上
 	private boolean lock; //是否锁定
 	private int star;//星级
-	
+
 	private List<AttrItem> addAttrList;//附加属性
 	private List<AttrItem> lastAttrs;//上次洗练出来的
 	

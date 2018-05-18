@@ -59,6 +59,15 @@ public class PlayerCalculator {
         }
     }
 
+    public int getNewFight(int playerId) {
+        Player player = playerService.getPlayer(playerId);
+        synchronized (player) {
+            initPlayer(player);
+            updateAttr(player);
+        }
+        return player.getFight();
+    }
+
     // 初始化人物的各种属性
     public void initPlayer(Player player) {
         PlayerUpgradeCfg attr = ConfigData.getConfig(PlayerUpgradeCfg.class, player.getLev());
@@ -116,7 +125,7 @@ public class PlayerCalculator {
         }
         groupService.updateAttr(player.getPlayerId());
         teamService.updateAttr(player.getPlayerId());
-        playerService.refreshPlayerToClient(player.getPlayerId());
+        //playerService.refreshPlayerToClient(player.getPlayerId());
     }
 
     /**
@@ -282,7 +291,7 @@ public class PlayerCalculator {
     private void addTitleAttr(PlayerAddition player) {
         PlayerData data = playerService.getPlayerData(player.getPlayerId());
         Player p = (Player) player;
-        if(!data.getModules().contains(PlayerService.MODULE_TITLE)){
+        if (!data.getModules().contains(PlayerService.MODULE_TITLE)) {
             return;
         }
         //装备称号加成
@@ -319,7 +328,7 @@ public class PlayerCalculator {
         for (Pet pet : petBag.getPetMap().values()) {
             PetConfig config = ConfigData.getConfig(PetConfig.class, pet.getConfigId());
 
-            if(config == null)
+            if (config == null)
                 continue;
 
             player.addAttack(config.attackFix);
@@ -331,11 +340,9 @@ public class PlayerCalculator {
         }
 
         Pet fightPet = petService.getFightPet(player.getPlayerId());
-        if(fightPet != null)
-        {
-            PetSkillConfig config  = ConfigData.getConfig(PetSkillConfig.class, fightPet.getPassiveSkillId());
-            if(config != null)
-            {
+        if (fightPet != null) {
+            PetSkillConfig config = ConfigData.getConfig(PetSkillConfig.class, fightPet.getPassiveSkillId());
+            if (config != null) {
                 player.addAttack(config.attackFix);
                 player.addCrit(config.critFix);
                 player.addDefense(config.defenseFix);
@@ -424,7 +431,7 @@ public class PlayerCalculator {
         for (int key : awakeningSkillMap.keySet()) {
             AwakenAttributeCfg awakenAttributeCfg = ConfigData.getConfig(AwakenAttributeCfg.class, awakeningSkillMap.get(key));
             if (awakenAttributeCfg != null) {
-                switch (awakenAttributeCfg.Attribute ){
+                switch (awakenAttributeCfg.Attribute) {
                     case 7:
                         player.addHp(awakenAttributeCfg.value);
                         break;
@@ -482,7 +489,7 @@ public class PlayerCalculator {
         Pet pet = petService.getFightPet(player.getPlayerId());
         if (pet != null) {
             PetSkillConfig skillConfig = ConfigData.getConfig(PetSkillConfig.class, pet.getPassiveSkillId());
-            if(skillConfig != null) {
+            if (skillConfig != null) {
                 addPercentAttr(percentAttrs, Goods.ATK, skillConfig.attackPercent);
                 addPercentAttr(percentAttrs, Goods.DEF, skillConfig.defensePercent);
                 addPercentAttr(percentAttrs, Goods.CRIT, skillConfig.critPercent);

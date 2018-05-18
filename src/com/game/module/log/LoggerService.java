@@ -1,15 +1,23 @@
 package com.game.module.log;
 
+import com.game.SysConfig;
+import com.game.event.InitHandler;
+import com.game.module.player.PlayerService;
+import com.server.util.MyTheadFactory;
+import com.server.util.ServerLogger;
+import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import javax.sql.DataSource;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Executors;
@@ -17,30 +25,18 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import javax.annotation.Resource;
-import javax.sql.DataSource;
-
-import com.game.module.log.domain.AbstractDb;
-import org.apache.commons.lang.StringUtils;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
-import org.springframework.stereotype.Service;
-
-import com.game.SysConfig;
-import com.game.event.InitHandler;
-import com.game.module.player.PlayerService;
-import com.server.util.MyTheadFactory;
-import com.server.util.ServerLogger;
+//import com.game.module.log.domain.AbstractDb;
 
 @Service
 public class LoggerService implements InitHandler {
 
     public static final String INS_DIAMOND_LOG = "insert into players_diamond_logs(player_id,item_id,op_type,param,count,create_time) values(?,?,?,?,?,now())";
+    public static final String ITEM_LOG = "insert into item_log(playerId,op,count,type,goodsId,goodsType,createTime) values(?,?,?,?,?,?,now())";
 
 
     private SimpleJdbcTemplate loggerTemplate;//日志库
     private SimpleJdbcTemplate mainTemplate;//主库
-    private SimpleJdbcTemplate eventTemplate;//事件库
+    //private SimpleJdbcTemplate eventTemplate;//事件库
 
     @Autowired
     private PlayerService playerService;
@@ -59,19 +55,19 @@ public class LoggerService implements InitHandler {
         this.mainTemplate = new SimpleJdbcTemplate(dataSource);
     }
 
-    @Resource(name = "eventDataSource")
-    public void setEventTemplate(DataSource dataSource) {
-        this.eventTemplate = new SimpleJdbcTemplate(dataSource);
-    }
+    //@Resource(name = "eventDataSource")
+    //public void setEventTemplate(DataSource dataSource) {
+    //this.eventTemplate = new SimpleJdbcTemplate(dataSource);
+    //}
 
-    public SimpleJdbcTemplate getEventTemplate() {
+    /*public SimpleJdbcTemplate getEventTemplate() {
         return eventTemplate;
-    }
+    }*/
 
     private static final ScheduledExecutorService dbLogScheduExec = Executors.newScheduledThreadPool(SysConfig.loggerThread, new MyTheadFactory("LogerDb"));
 
     private static ConcurrentLinkedQueue<SQLWrapper> dbLoggers = new ConcurrentLinkedQueue<SQLWrapper>();
-    private static ConcurrentLinkedQueue<AbstractDb> eventLoggers = new ConcurrentLinkedQueue<>();
+    //private static ConcurrentLinkedQueue<AbstractDb> eventLoggers = new ConcurrentLinkedQueue<>();
 
 
     private static final int count = 100000;
@@ -139,7 +135,7 @@ public class LoggerService implements InitHandler {
                     ServerLogger.err(e, "log db err");
                 }
             }
-        }, 1, 1, TimeUnit.SECONDS);
+        }, 1, 5, TimeUnit.SECONDS);
 
     }
 
@@ -153,7 +149,7 @@ public class LoggerService implements InitHandler {
     }
 
     //根据不同的表归类批量插入
-    private void handleLogEvent(boolean isShutDown) {
+    /*private void handleLogEvent(boolean isShutDown) {
         Map<String, List<Object[]>> logs = new HashMap<String, List<Object[]>>();
         for (int i = 0; i < SysConfig.loggerBatchCount; i++) {
             AbstractDb log = eventLoggers.poll();
@@ -170,7 +166,7 @@ public class LoggerService implements InitHandler {
         for (Entry<String, List<Object[]>> entry : logs.entrySet()) {
             eventTemplate.batchUpdate(entry.getKey(), entry.getValue());
         }
-    }
+    }*/
 
     //根据不同的表归类批量插入
     private void handleLogDb(boolean isShutDown) {
@@ -208,7 +204,7 @@ public class LoggerService implements InitHandler {
 
     //写入文件
     public void handleLogFile(boolean dispose) throws Exception {
-        if(!FILE_LOG) {
+        if (!FILE_LOG) {
             return;
         }
         String now = getDateStr();
@@ -238,7 +234,7 @@ public class LoggerService implements InitHandler {
 
     //初始化FileWriter
     private void initFileWriter() {
-        if(!FILE_LOG) {
+        if (!FILE_LOG) {
             return;
         }
         try {
@@ -300,21 +296,24 @@ public class LoggerService implements InitHandler {
      * 消耗日志
      */
     public void logConsume(int playerId, int lev, int vipLev, boolean add, int count, LogConsume log, int goodsId, int goodsType, Object... params) {
-        /*if(log==null){
-			return;
-		}
-		Object p[] = new Object[]{playerId,lev,vipLev,add?ADD:DEC,count,goodsType,goodsId,log.actionId,System.currentTimeMillis(),0,0,0,0};
-		if(params!=null&&params.length>0){
-			int len = params.length;
-			if(params.length>4){
-				ServerLogger.warn("err logger param count.must be less than 4");
-				len = 4;
-			}
-			for(int i=0;i<len;i++){
-				p[9+i]=params[i];
-			}
-		}
-		log(TYPE_CONSUME, p);*/
+        /*if (log == null) {
+            return;
+        }
+        Object p[] = new Object[]{playerId, lev, vipLev, add ? ADD : DEC, count, goodsType, goodsId, log.actionId, System.currentTimeMillis(), 0, 0, 0, 0};
+        if (params != null && params.length > 0) {
+            int len = params.length;
+            if (params.length > 4) {
+                ServerLogger.warn("err logger param count.must be less than 4");
+                len = 4;
+            }
+            for (int i = 0; i < len; i++) {
+                p[9 + i] = params[i];
+            }
+        }
+        log(TYPE_CONSUME, p);*/
+        if (dbLoggers.size() < count) {
+            addDbLogger(ITEM_LOG, playerId, add ? ADD : DEC, count, log.actionId, goodsId, goodsType);
+        }
     }
 
 
@@ -323,8 +322,9 @@ public class LoggerService implements InitHandler {
         dbLoggers.add(new SQLWrapper(sql, params));
     }
 
+
     //插入数据库日志
-    public void addDbEvent(AbstractDb log) {
+    /*public void addDbEvent(AbstractDb log) {
         eventLoggers.add(log);
-    }
+    }*/
 }

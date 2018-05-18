@@ -82,7 +82,7 @@ public class TaskExtension {
 			JointTask myJointedTask = playerTask.getCurrJointedTask();
 			if (myJointedTask == task) {
 				playerTask.setCurrJointedTask(null);
-				playerTask.alterJointedCount(1);
+				//playerTask.alterJointedCount(1);
 			}
 		}
 		if(taskCfg.liveness > 0){
@@ -119,8 +119,7 @@ public class TaskExtension {
 	public Object acceptJoint(int playerId, Int2Param param) {
 		int taskId = param.param1;
 		Int2Param result = new Int2Param();
-		result.param1 = taskService.acceptJoint(playerId, taskId,
-				param.param2);
+		result.param1 = taskService.acceptJoint(playerId, taskId, param.param2);
 		result.param2 = taskId;
 		return result;
 	}

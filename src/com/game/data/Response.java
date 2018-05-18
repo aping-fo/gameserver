@@ -185,6 +185,9 @@ public class Response {
 	public static final int GUILD_SKILL_UNLOCK=4131;//该科技未解锁
 	public static final int GUILD_SKILL_MAX_LV=4132;//公会科技到最大等级了
 	public static final int GUILD_DONT_OPEN=4133;//公会功能未开启
+	//团队副本
+	public static final int GROUP_LEADER_HAS_NOT_FIGHT=4160;//需要等待团长出战
+	public static final int GROUP_ALREADY_START=4161;//副本已经开始，无法加入
 	//宠物
 	public static final int PET_HAS_SAME_TYPE=4200;//拥有同类型宠物
 	public static final int PET_MATERIAL_NOT_ENOUGH=4201;//宠物碎片不够

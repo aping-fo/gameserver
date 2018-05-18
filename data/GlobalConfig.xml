@@ -53,7 +53,7 @@
 	<jewelOpenLev>201:[1,1,1,1,1,1];202:[1,1,1,1,1,1];203:[1,1,1,1,1,1];204:[1,1,1,1,1,1];205:[1,1,1,1,1,1];206:[1,1,1,1,1,1];</jewelOpenLev>
 	<clearCostCoin>1</clearCostCoin>
 	<clearCostDiamond>100</clearCostDiamond>
-	<fightParams>[0.11,2.76,3.86,10.39,5.1,5.1]</fightParams>
+	<fightParams>[0.11,2.76,3.86,5.1,5.1,10.39]</fightParams>
 	<reviveCount>3</reviveCount>
 	<roleMoveFactor>6</roleMoveFactor>
 	<magicClipId>400001</magicClipId>
@@ -162,5 +162,6 @@
 	<petMutateItemRate>68001:50</petMutateItemRate>
 	<killedTimesFactor>0.3</killedTimesFactor>
 	<RobotParas>[1.49,0.06,0.043,0.032,0.032,0.016]</RobotParas>
+	<buyMainCopyPrice>102:10</buyMainCopyPrice>
 </config>
 </root>

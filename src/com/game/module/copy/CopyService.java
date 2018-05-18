@@ -98,7 +98,7 @@ public class CopyService {
     // 获取所有副本信息
     public CopyInfo getCopys(int playerId) {
         PlayerData data = playerService.getPlayerData(playerId);
-        List<CopyVo> copys = new ArrayList<CopyVo>();
+        List<CopyVo> copys = new ArrayList<>();
         for (Entry<Integer, Copy> copy : data.getCopys().entrySet()) {
             int copyId = copy.getKey();
             CopyVo vo = new CopyVo();
@@ -113,6 +113,9 @@ public class CopyService {
             if (cfg.count > 0) {
                 Integer count = data.getCopyTimes().get(copyId);
                 vo.count = (short) (count == null ? 0 : count);
+
+                Integer mainCopyTime = data.getCopyBuyTimes().get(copyId);
+                vo.buyTimes = (short) (mainCopyTime == null ? 0 : mainCopyTime);
 
                 Integer reset = data.getResetCopy().get(copyId);
                 vo.reset = (short) (reset == null ? 0 : reset);
@@ -178,7 +181,13 @@ public class CopyService {
                 if (curCount == null) {
                     curCount = 0;
                 }
-                if (curCount >= cfg.count) {
+
+                Integer buyTimes = playerData.getCopyBuyTimes().get(copyId);
+                if (buyTimes == null) {
+                    buyTimes = 0;
+                }
+
+                if (curCount >= cfg.count + buyTimes) {
                     return Response.NO_TODAY_TIMES;
                 }
             }
@@ -230,7 +239,7 @@ public class CopyService {
                 || cfg.type == CopyInstance.TYPE_ENDLESS
                 || cfg.type == CopyInstance.TYPE_TREASURE
                 || cfg.type == CopyInstance.TYPE_TRAIN
-                || cfg.type == CopyInstance.TYPE_TRAVERSING
+                //|| cfg.type == CopyInstance.TYPE_TRAVERSING
                 || cfg.type == CopyInstance.TYPE_EXPERIENCE) {
             taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, cfg.type, 1);
         }
@@ -262,18 +271,18 @@ public class CopyService {
         }
         //在进入副本就扣除
         /**
-        if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
-            Team team = teamService.getTeam(player.getTeamId());
-            int leaderId = team.getLeader();
-            if (playerId == leaderId) {
-                traversingService.remvoeMap(playerId, team.getMapId());
-            }
-        }
+         if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
+         Team team = teamService.getTeam(player.getTeamId());
+         int leaderId = team.getLeader();
+         if (playerId == leaderId) {
+         traversingService.remvoeMap(playerId, team.getMapId());
+         }
+         }
          **/
 
         // 掉落
         CopyInstance copy = instances.get(playerService.getPlayer(playerId).getCopyId());
-        if(copy == null) {
+        if (copy == null) {
             return null;
         }
         List<GoodsEntry> items = calculateCopyReward(playerId, copyId, star);
@@ -507,7 +516,7 @@ public class CopyService {
             catchGoldLogic.updateCopy(playerId, result);
         }
 
-        if(copyId != LEARN_ID) {
+        if (copyId != LEARN_ID) {
             Copy copy = playerData.getCopys().get(copyId);
             if (copy == null) {//组队时,普通队员没有copy对象
                 copy = new Copy();
@@ -588,6 +597,9 @@ public class CopyService {
         vo.state = (short) copy.getState();
         Integer count = playerData.getCopyTimes().get(copyId);
         vo.count = (short) (count == null ? 0 : count);
+
+        Integer copyBuyTime = playerData.getCopyBuyTimes().get(copyId);
+        vo.buyTimes = (short) (copyBuyTime == null ? 0 : copyBuyTime);
 
         Integer reset = playerData.getResetCopy().get(copyId);
         vo.reset = (short) (reset == null ? 0 : reset);
@@ -845,7 +857,13 @@ public class CopyService {
                 if (count == null) {
                     count = 0;
                 }
-                if (count + times > cfg.count) {
+
+                Integer buyTimes = playerData.getCopyBuyTimes().get(copyId);
+                if (buyTimes == null) {
+                    buyTimes = 0;
+                }
+
+                if (count + times > cfg.count + buyTimes) {
                     result.code = Response.NO_TODAY_TIMES;
                     return result;
                 }
@@ -982,5 +1000,36 @@ public class CopyService {
         param.param1 = Response.SUCCESS;
         param.param2 = id;
         return param;
+    }
+
+    /**
+     * 购买主线副本次数
+     * @param playerId
+     * @param copyId
+     */
+    public void buyMainCopyTimes(int playerId, int copyId) {
+        Player player = playerService.getPlayer(playerId);
+        PlayerData data = playerService.getPlayerData(playerId);
+
+        VIPConfig config = ConfigData.getConfig(VIPConfig.class, player.getVip());
+        Integer count = data.getCopyBuyTimes().get(copyId);
+        if (count == null) count = 0;
+
+        if (count >= config.buyMainCopy) {
+            return;
+        }
+
+        Integer price = ConfigData.globalParam().buyMainCopyPrice.get(Goods.DIAMOND);
+        if (price == null) {
+            return;
+        }
+
+        if (!playerService.decDiamond(playerId, price, LogConsume.BUY_COPY_TIMES)) {
+            return;
+        }
+
+        data.getCopyBuyTimes().put(copyId, count + 1);
+
+        refreshCopyInfo(playerId, copyId, data);
     }
 }

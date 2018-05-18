@@ -119,14 +119,14 @@ public class TaskService implements Dispose {
     // 获取当前的所有任务
     public TaskListInfo getCurTasks(int playerId) {
         TaskListInfo result = new TaskListInfo();
-        result.task = new ArrayList<STaskVo>();
+        result.task = new ArrayList<>();
         Player player = playerService.getPlayer(playerId);
         PlayerTask playerTask = getPlayerTask(playerId);
         List<Task> tasks = new ArrayList<>(playerTask.getTasks().values());
-//        if (player.getGangId() > 0) {
-//            Gang gang = gangService.getGang(player.getGangId());
-//            tasks.addAll(gang.getTasks().values());
-//        }
+        if (player.getGangId() > 0) {
+            Gang gang = gangService.getGang(player.getGangId());
+            tasks.addAll(gang.getTasks().values());
+        }
         for (Task task : tasks) {
             TaskConfig config = getConfig(task.getTaskId());
             if (!(config.taskType == 3 || config.taskType == 4)) {
@@ -139,7 +139,8 @@ public class TaskService implements Dispose {
             vo.count = task.getCount();
             result.task.add(vo);
         }
-        result.myJoint = new ArrayList<SJointTaskVo>();
+
+        result.myJoint = new ArrayList<>();
         for (Map.Entry<Integer, Integer> entry : playerTask.getMyJointTasks()
                 .entrySet()) {
             SJointTaskVo param = new SJointTaskVo();
@@ -205,7 +206,6 @@ public class TaskService implements Dispose {
                 result.livebox.add(param);
             }
         }
-
         return result;
     }
 
@@ -215,7 +215,7 @@ public class TaskService implements Dispose {
         tasks.put(playerId, task);
         for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
             TaskConfig taskConfig = (TaskConfig) config;
-            if (taskConfig.level <= 1 && taskConfig.taskType != Task.TYPE_JOINT&&taskConfig.taskType!= Task.TYPE_GANG) {
+            if (taskConfig.level <= 1 && taskConfig.taskType != Task.TYPE_JOINT && taskConfig.taskType != Task.TYPE_GANG) {
                 addNewTask(playerId, taskConfig.id, false);
             }
         }
@@ -500,6 +500,7 @@ public class TaskService implements Dispose {
                     || config.finishType == Task.TYPE_GANG_TEC
                     || config.finishType == Task.TYPE_TITLE
                     || config.finishType == Task.TYPE_FRIEND_COUNT
+                    || config.finishType == Task.TYPE_PET_ANY_ACTIVITY
                     || config.finishType == Task.TYPE_GANG_LEVEL) {
                 if (task.getCount() < params[0]) {
                     task.setCount(params[0]);
@@ -745,7 +746,7 @@ public class TaskService implements Dispose {
         for (Object config : ConfigData.getConfigs(TaskConfig.class)) {
             TaskConfig taskConfig = (TaskConfig) config;
             if (!taskMap.containsKey(taskConfig.id)
-                    && taskConfig.taskType != Task.TYPE_JOINT) {
+                    && taskConfig.taskType != Task.TYPE_JOINT && taskConfig.taskType != Task.TYPE_GANG) {
                 if (taskConfig.level <= lev) {
                     Task task = addNewTask(playerId, taskConfig.id, false);
                     updateList.add(task);
@@ -775,7 +776,7 @@ public class TaskService implements Dispose {
 
     private void updateTasks(int playerId, List<Integer> tasks) {
         ListParam<STaskVo> newTasks = new ListParam<STaskVo>();
-        newTasks.params = new ArrayList<STaskVo>();
+        newTasks.params = new ArrayList<>();
         Player player = playerService.getPlayer(playerId);
         if (player == null) {
             return;
@@ -884,7 +885,7 @@ public class TaskService implements Dispose {
         if (!jointedTasks.contains(key)) {
             return Response.ERR_PARAM;
         }
-        JointTask myCurrJointedTask = playerTask.getCurrJointedTask();
+                                                                                                                                                                                                                      JointTask myCurrJointedTask = playerTask.getCurrJointedTask();
         if (myCurrJointedTask != null) {
             return Response.TASK_JOINTED;
         }
@@ -897,6 +898,9 @@ public class TaskService implements Dispose {
             // 已经有人接了
             return Response.TASK_PERFORMING;
         }
+
+        playerTask.alterJointedCount(1);
+
         jointedTasks.remove(key);
         TaskConfig cfg = ConfigData.getConfig(TaskConfig.class, taskId);
         myCurrJointedTask = new JointTask(taskId, partnerId, cfg.taskType);

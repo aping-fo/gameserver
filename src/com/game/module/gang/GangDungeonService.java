@@ -207,6 +207,7 @@ public class GangDungeonService {
         }
         member.setChallengeTimes(member.getChallengeTimes() - 1);
         member.hp = player.getHp();
+        member.totalHp = player.getHp();
         member.hurt = 0;
         member.bFight = true;
         vo.errCode = Response.SUCCESS;
@@ -249,8 +250,28 @@ public class GangDungeonService {
         if (member == null) {
             return;
         }
+
         if (hurtVO.targetType == 0) { //角色
-            member.hp = member.hp - hurtVO.hurtValue;
+            if (hurtVO.subType == 1) {
+                member.totalHp -= hurtVO.hurtValue;
+                if (hurtVO.hurtValue > 0) {
+                    if (member.hp > member.totalHp) {
+                        member.hp = member.totalHp;
+                    }
+                } else {
+                    member.hp = member.hp - hurtVO.hurtValue;
+                    if (member.hp > member.totalHp) {
+                        member.hp = member.totalHp;
+                    }
+                }
+            } else {
+                member.hp = member.hp - hurtVO.hurtValue;
+                if (member.hp > member.totalHp) {
+                    member.hp = member.totalHp;
+                }
+            }
+
+
             if (member.hp <= 0) { //屎了?
                 onBattleEnd(player);
                 IntParam param = new IntParam();
@@ -288,6 +309,9 @@ public class GangDungeonService {
                 vo.hurt = hurtVO.hurtValue;
                 vo.isCrit = hurtVO.isCrit;
                 vo.type = 1;
+                if (hurtVO.subType == 1) {
+                    vo.hurt = 0;
+                }
                 //SessionManager.getInstance().sendMsg(CMD_MONSTER_INFO, vo, player.getPlayerId());
                 sceneService.brocastToSceneCurLine(player, CMD_MONSTER_INFO, vo, null);
 
@@ -454,7 +478,7 @@ public class GangDungeonService {
         }
         //broadcastState(playerId, gang);
         GMember member = gang.getMembers().get(playerId);
-        if (member == null || member.hurt < 1) {
+        if (member == null) {
             return;
         }
         onBattleEnd(player);

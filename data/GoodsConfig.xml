@@ -1132,7 +1132,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[151,1]]</openId>
+	<openId>[[151,15]]</openId>
 </config>
 <config>
 	<id>20002</id>
@@ -1159,7 +1159,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[151,2]]</openId>
+	<openId>[[151,11]]</openId>
 </config>
 <config>
 	<id>20003</id>
@@ -1186,7 +1186,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[151,5]]</openId>
+	<openId>[[151,13]]</openId>
 </config>
 <config>
 	<id>20004</id>
@@ -1213,7 +1213,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[151,6]]</openId>
+	<openId>[[151,9]]</openId>
 </config>
 <config>
 	<id>20005</id>
@@ -1240,7 +1240,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[151,3]]</openId>
+	<openId>[[151,10]]</openId>
 </config>
 <config>
 	<id>20006</id>
@@ -1267,7 +1267,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[151,4]]</openId>
+	<openId>[[151,12]]</openId>
 </config>
 <config>
 	<id>20007</id>
@@ -1294,7 +1294,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[151,7]]</openId>
+	<openId>[[151,14]]</openId>
 </config>
 <config>
 	<id>20008</id>
@@ -1321,7 +1321,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[112,8]]</openId>
+	<openId>[[151,16]]</openId>
 </config>
 <config>
 	<id>20009</id>
@@ -1750,7 +1750,7 @@
 	<crit></crit>
 	<fu></fu>
 	<param1>[800111]</param1>
-	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,10,14,15,17,18,19,20]]</param2>
+	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,14,15,16,17,18,19,20]]</param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
 	<openId></openId>
@@ -1777,7 +1777,7 @@
 	<crit></crit>
 	<fu></fu>
 	<param1>[800112]</param1>
-	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,10,14,15,17,18,19,20]]</param2>
+	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,14,15,16,17,18,19,20]]</param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
 	<openId></openId>
@@ -1804,7 +1804,7 @@
 	<crit></crit>
 	<fu></fu>
 	<param1>[800113]</param1>
-	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,10,14,15,17,18,19,20]]</param2>
+	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,14,15,16,17,18,19,20]]</param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
 	<openId></openId>
@@ -1831,7 +1831,7 @@
 	<crit></crit>
 	<fu></fu>
 	<param1>[800114]</param1>
-	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,10,14,15,17,18,19,20]]</param2>
+	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,14,15,16,17,18,19,20]]</param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
 	<openId></openId>
@@ -1858,7 +1858,34 @@
 	<crit></crit>
 	<fu></fu>
 	<param1>[800115]</param1>
-	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,10,14,15,17,18,19,20]]</param2>
+	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,14,15,16,17,18,19,20]]</param2>
+	<rare></rare>
+	<tipsType>2</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>109601</id>
+	<atlas>Spaceinstrument</atlas>
+	<name>不进攻就吔屎</name>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice></buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>109</type>
+	<level>20</level>
+	<vocation>0</vocation>
+	<color>2</color>
+	<maxStack></maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1>[800116]</param1>
+	<param2>[[1,1],[21,22]]</param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
 	<openId></openId>
@@ -2034,7 +2061,7 @@
 	<buyPrice></buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>301</type>
-	<level>40</level>
+	<level>1</level>
 	<vocation>0</vocation>
 	<color>5</color>
 	<maxStack>9999</maxStack>
@@ -2061,7 +2088,7 @@
 	<buyPrice></buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>301</type>
-	<level>50</level>
+	<level>1</level>
 	<vocation>0</vocation>
 	<color>5</color>
 	<maxStack>9999</maxStack>
@@ -2088,7 +2115,7 @@
 	<buyPrice></buyPrice>
 	<sellPrice>100</sellPrice>
 	<type>301</type>
-	<level>60</level>
+	<level>1</level>
 	<vocation>0</vocation>
 	<color>5</color>
 	<maxStack>9999</maxStack>
@@ -85483,6 +85510,141 @@
 	<openId></openId>
 </config>
 <config>
+	<id>40215001</id>
+	<atlas>Equip_1</atlas>
+	<name>守护者之冠</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>202</type>
+	<level>1</level>
+	<vocation>1</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>10217</hp>
+	<attack>0</attack>
+	<defense>128</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40315001</id>
+	<atlas>Equip_1</atlas>
+	<name>守护者之铠</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>203</type>
+	<level>1</level>
+	<vocation>1</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>4379</hp>
+	<attack>0</attack>
+	<defense>298</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40415001</id>
+	<atlas>Equip_1</atlas>
+	<name>守护者手套</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>204</type>
+	<level>1</level>
+	<vocation>1</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>235</attack>
+	<defense>0</defense>
+	<symptom>101</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40515001</id>
+	<atlas>Equip_1</atlas>
+	<name>守护者护腿</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>205</type>
+	<level>1</level>
+	<vocation>1</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>222</crit>
+	<fu>97</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40615001</id>
+	<atlas>Equip_1</atlas>
+	<name>守护者之靴</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>206</type>
+	<level>1</level>
+	<vocation>1</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>43</symptom>
+	<crit>0</crit>
+	<fu>226</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
 	<id>40125001</id>
 	<atlas>Equip_2</atlas>
 	<name>守护者之刃</name>
@@ -85510,6 +85672,141 @@
 	<openId></openId>
 </config>
 <config>
+	<id>40225001</id>
+	<atlas>Equip_2</atlas>
+	<name>守护者之冠</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>202</type>
+	<level>1</level>
+	<vocation>2</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>8824</hp>
+	<attack>0</attack>
+	<defense>99</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40325001</id>
+	<atlas>Equip_2</atlas>
+	<name>守护者之铠</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>203</type>
+	<level>1</level>
+	<vocation>2</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>3782</hp>
+	<attack>0</attack>
+	<defense>230</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40425001</id>
+	<atlas>Equip_2</atlas>
+	<name>守护者手套</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>204</type>
+	<level>1</level>
+	<vocation>2</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>274</attack>
+	<defense>0</defense>
+	<symptom>106</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40525001</id>
+	<atlas>Equip_2</atlas>
+	<name>守护者护腿</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>205</type>
+	<level>1</level>
+	<vocation>2</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>305</crit>
+	<fu>88</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40625001</id>
+	<atlas>Equip_2</atlas>
+	<name>守护者之靴</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>206</type>
+	<level>1</level>
+	<vocation>2</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>45</symptom>
+	<crit>0</crit>
+	<fu>205</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
 	<id>40135001</id>
 	<atlas>Equip_3</atlas>
 	<name>守护者之杖</name>
@@ -85530,6 +85827,141 @@
 	<symptom>0</symptom>
 	<crit>121</crit>
 	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40235001</id>
+	<atlas>Equip_3</atlas>
+	<name>守护者之冠</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>202</type>
+	<level>1</level>
+	<vocation>3</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>8359</hp>
+	<attack>0</attack>
+	<defense>93</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40335001</id>
+	<atlas>Equip_3</atlas>
+	<name>守护者之铠</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>203</type>
+	<level>1</level>
+	<vocation>3</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>3583</hp>
+	<attack>0</attack>
+	<defense>217</defense>
+	<symptom>0</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40435001</id>
+	<atlas>Equip_3</atlas>
+	<name>守护者手套</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>204</type>
+	<level>1</level>
+	<vocation>3</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>300</attack>
+	<defense>0</defense>
+	<symptom>111</symptom>
+	<crit>0</crit>
+	<fu>0</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40535001</id>
+	<atlas>Equip_3</atlas>
+	<name>守护者护腿</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>205</type>
+	<level>1</level>
+	<vocation>3</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>0</symptom>
+	<crit>277</crit>
+	<fu>92</fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>1</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>40635001</id>
+	<atlas>Equip_3</atlas>
+	<name>守护者之靴</name>
+	<decompose>[[17001,4],[108,0]]</decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>206</type>
+	<level>1</level>
+	<vocation>3</vocation>
+	<color>5</color>
+	<maxStack>1</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<symptom>47</symptom>
+	<crit>0</crit>
+	<fu>215</fu>
 	<param1></param1>
 	<param2></param2>
 	<rare>1</rare>

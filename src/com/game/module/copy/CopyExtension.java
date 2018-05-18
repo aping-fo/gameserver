@@ -127,7 +127,7 @@ public class CopyExtension {
         // 清除
         copyService.removeCopy(playerId);
         //触发神秘商店
-        result.showMystery = shopService.triggerMysteryShop(playerId, copyId,1, result);
+        result.showMystery = shopService.triggerMysteryShop(playerId, copyId, 1, result);
 
         return result;
     }
@@ -303,5 +303,13 @@ public class CopyExtension {
         info.buyTime = attach.getBuyTime();
         info.lastChallengeTime = attach.getLastChallengeTime();
         return info;
+    }
+
+    //获取金币副本信息
+    @Command(1928)
+    public Object buyCopyTimes(int playerId, IntParam param) {
+        copyService.buyMainCopyTimes(playerId, param.param);
+        IntParam p = new IntParam();
+        return p;
     }
 }

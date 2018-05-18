@@ -50,7 +50,7 @@ public class MultiService implements InitHandler {
                 try {
                     for (Map.Entry<Integer, Long> s : heartBeatMap.asMap().entrySet()) {
                         if (System.currentTimeMillis() - s.getValue() > 40000) {
-                            ServerLogger.info("time out remove playerId ===>" + s.getKey());
+                            ServerLogger.info("heart time out remove playerId ===>" + s.getKey());
                             onExit(s.getKey());
                             heartBeatMap.invalidate(s.getKey());
                         }

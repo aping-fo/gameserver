@@ -300,6 +300,9 @@ public class PlayerService implements InitHandler {
         // 计算属性
         playerCalculator.calculate(player);
 
+        //剧情进度
+        playerData.setDramaOrder(0);
+
         // 保存数据,优化下
         Context.getThreadService().execute(new Runnable() {
             @Override
@@ -591,7 +594,11 @@ public class PlayerService implements InitHandler {
             actionType = LogConsume.GM;
         }
         PlayerData data = getPlayerData(playerId);
-        eRatingService.reportAddMoney(player, data.getRoleId(), 6, add, actionType.desc);
+        int subjectId = 6;
+        if(actionType == LogConsume.CHARGE) {
+            subjectId = 5;
+        }
+        eRatingService.reportAddMoney(player, data.getRoleId(), subjectId, add, actionType.desc);
         Context.getLoggerService().logDiamond(playerId, add, actionType.actionId, true, params);
         taskService.doTask(playerId, Task.FINISH_CURRENCY, Goods.DIAMOND, add);
         return true;

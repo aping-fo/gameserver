@@ -522,7 +522,6 @@ public class ActivityService implements InitHandler {
                 }
             }
         }
-
         goodsService.addRewards(playerId, itemList, LogConsume.ACTIVITY_REWARD);
 
 

@@ -73,7 +73,7 @@ public class WelfareCard {
         Instant instant = Instant.ofEpochMilli(time);
         LocalDateTime beginDateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
         LocalDateTime nowDate = LocalDateTime.now();
-        int passDay = (int) nowDate.until(beginDateTime, ChronoUnit.DAYS);
+        int passDay = (int) beginDateTime.until(nowDate, ChronoUnit.DAYS);
         int remain = day - passDay > 0 ? day - passDay : 0;
         return remain;
     }

@@ -82,7 +82,7 @@ public class LgService implements SdkService {
             int amount = data.getAmount() / 10;
             if (charge.rmb != amount) {
                 result.setResultCode(ERatingType.ErrorCode.S_SUCCESS);
-                ServerLogger.warn("resp xml data =>" + result.toProto());
+                ServerLogger.warn("error,resp xml data =>" + result.toProto());
                 resp.getWriter().write(result.toProto());
                 return;
             }

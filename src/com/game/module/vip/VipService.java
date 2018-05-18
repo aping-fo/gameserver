@@ -214,7 +214,7 @@ public class VipService {
 
         playerService.addVipExp(playerId, charge.total);
         playerService.addDiamond(playerId, charge.total, LogConsume.CHARGE);
-        playerService.addDiamond(playerId, charge.add, LogConsume.CHARGE);
+        playerService.addDiamond(playerId, charge.add, LogConsume.CHARGE_ADD);
         data.getDealCpIdSet().add(cpId);
         data.getCpIdSet().remove(cpId);
         chargeActivityLogic.updateCharge(playerId, charge.total);

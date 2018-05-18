@@ -175,13 +175,13 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
 
             layer = max + 1;
         } else {
-            layer = (int)((System.currentTimeMillis() - attach.getClearTime()) / (30 * TimeUtil.ONE_SECOND));
-			if(layer < 1){
-				attach.setClearTime(0L);
-				attach.commitSync();
-				return result;
-			}
-			layer = Math.min(max + 1, attach.getCurrLayer() + layer);
+            layer = (int) ((System.currentTimeMillis() - attach.getClearTime()) / (30 * TimeUtil.ONE_SECOND));
+            if (layer < 1) {
+                attach.setClearTime(0L);
+                attach.commitSync();
+                return result;
+            }
+            layer = Math.min(max + 1, attach.getCurrLayer() + layer);
         }
         result.params = new ArrayList<>();
         for (int i = attach.getCurrLayer(); i < layer; i++) {
@@ -239,7 +239,12 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
         RankingList<EndlessRankEntity> ranking = rankService.getRankingList(RankService.TYPE_ENDLESS);
         List<RankEntity> list = ranking.getOrderList();
         int rank = 1;
+
         for (RankEntity entity : list) {
+            //TODO  临时代码，去除排行榜
+            if (entity.getPlayerId() == 7825020 || entity.getPlayerId() == 4796020) {
+                continue;
+            }
             mailService.sendRewardMail(entity.getPlayerId(), MailService.ENDLESS_RANK, rank, LogConsume.ENDLESS_RANK_REWARD, rank);
             rank++;
         }

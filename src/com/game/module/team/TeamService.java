@@ -74,16 +74,21 @@ public class TeamService implements InitHandler {
         Player player = playerService.getPlayer(playerId);
         if (player.getTeamId() > 0) {
             Team team = teams.get(player.getTeamId());
+
             if (team.getMembers().size() > 1) {
                 kick(team, playerId);
             } else {
                 dissolve(team);
             }
+
+            this.checkAndSendLost(team);
         }
     }
 
     public void kick(Team team, int playerId) {
         Player player = playerService.getPlayer(playerId);
+        String key = sceneService.getGroupKey(player);
+        SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
         player.setTeamId(0);
         team.getMembers().remove(playerId);
     }
@@ -92,7 +97,6 @@ public class TeamService implements InitHandler {
         int teamId = maxTeamId++;
         Team team = new Team(teamId, type, name, playerId);
         team.setCopyId(copyId);
-        ;
         team.addMember(new TMember(playerId));
         teams.put(teamId, team);
         Player player = playerService.getPlayer(playerId);
@@ -180,22 +184,28 @@ public class TeamService implements InitHandler {
         Map<Integer, SMonsterVo> monsters = copy.getMonsters().get(sceneId);
         if (hurtVO.targetType == 0) {
             TMember member = team.getMembers().get(hurtVO.targetId);
-            member.decHp(hurtVO.hurtValue);
+            if (hurtVO.subType == 1) {
+                member.setTotalHp(member.getTotalHp() - hurtVO.hurtValue);
+                if (hurtVO.hurtValue > 0) {
+                    if (member.getCurHp() > member.getTotalHp()) {
+                        member.setCurHp(member.getTotalHp());
+                    }
+                } else {
+                    member.decHp(hurtVO.hurtValue);
+                    if (member.getCurHp() > member.getTotalHp()) {
+                        member.setCurHp(member.getTotalHp());
+                    }
+                }
+            } else {
+                member.decHp(hurtVO.hurtValue);
+                if (member.getCurHp() > member.getTotalHp()) {
+                    member.setCurHp(member.getTotalHp());
+                }
+            }
+
+
             if (member.getCurHp() <= 0) {
-                boolean isLost = true;
-                for (TMember tm : team.getMembers().values()) {
-                    if (tm.getCurHp() > 0) {
-                        isLost = false;
-                        break;
-                    }
-                }
-                if (isLost) {
-                    IntParam param = new IntParam();
-                    //副本失败
-                    for (TMember tm : team.getMembers().values()) {
-                        SessionManager.getInstance().sendMsg(CopyExtension.COPY_FAIL, param, tm.getPlayerId());
-                    }
-                }
+                this.checkAndSendLost(team);
             }
         } else {
             if (!player.checkHurt(hurtVO.hurtValue)) {
@@ -211,6 +221,9 @@ public class TeamService implements InitHandler {
             ret.hurt = hurtVO.hurtValue;
             ret.isCrit = hurtVO.isCrit;
             ret.type = 1;
+            if (hurtVO.subType == 1) {
+                ret.hurt = 0;
+            }
             sceneService.brocastToSceneCurLine(player, CMD_MONSTER_INFO, ret, null);
             if (monster.curHp <= 0) {
                 MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, monster.monsterId);
@@ -259,5 +272,22 @@ public class TeamService implements InitHandler {
         }
         MyTeamVO vo = wrapTeam(team);
         sceneService.brocastToSceneCurLine(player, TeamExtension.MY_TEAM_INFO, vo, null);
+    }
+
+    private void checkAndSendLost(Team team) {
+        boolean isLost = true;
+        for (TMember tm : team.getMembers().values()) {
+            if (tm.getCurHp() > 0) {
+                isLost = false;
+                break;
+            }
+        }
+        if (isLost) {
+            IntParam param = new IntParam();
+            //副本失败
+            for (TMember tm : team.getMembers().values()) {
+                SessionManager.getInstance().sendMsg(CopyExtension.COPY_FAIL, param, tm.getPlayerId());
+            }
+        }
     }
 }

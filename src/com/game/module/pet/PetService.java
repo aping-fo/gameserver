@@ -20,6 +20,7 @@ import com.game.params.Reward;
 import com.game.params.pet.*;
 import com.game.util.*;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.server.SessionManager;
 import com.server.util.GameData;
@@ -158,8 +159,7 @@ public class PetService {
         pets.add(pet);
         pushUpdateBag(playerId, pets, updateIds);
 
-        if(bag.getFightPetId() == 0)
-        {
+        if (bag.getFightPetId() == 0) {
             Int2Param cli1 = this.toFight(playerId, pet.getId());
             cli1.param1 = Response.SUCCESS;
             cli1.param2 = pet.getId();
@@ -846,6 +846,10 @@ public class PetService {
         }
         bag.updateFlag = true;
         param.param = Response.SUCCESS;
+
+        Map<Integer, int[]> condParams = Maps.newHashMapWithExpectedSize(1);
+        condParams.put(Task.TYPE_PET_ANY_ACTIVITY, new int[]{1});
+        taskService.doTask(playerId, condParams);
         return param;
     }
 
@@ -946,7 +950,10 @@ public class PetService {
         petActivity.getPets().clear();
         PetActivityData data = bag.getPetActivityData(config.type);
         data.setTotalCount(data.getTotalCount() + 1);
-        taskService.doTask(playerId, Task.TYPE_PET_ACTIVITY, activityId, data.getTotalCount());
+
+        Map<Integer, int[]> condParams = Maps.newHashMapWithExpectedSize(2);
+        condParams.put(Task.TYPE_PET_ACTIVITY, new int[]{activityId, data.getTotalCount()});
+        taskService.doTask(playerId, condParams);
        /* if (config.levelUpCondition != 0 && data.getTotalCount() >= config.levelUpCondition) {
             data.setLevel(config.level + 1);
             ServerLogger.info(JsonUtils.object2String(data));

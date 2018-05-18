@@ -24,4 +24,5 @@ public class VIPConfig {
 	public int traveringEnergy;//穿越仪能量上限
 	public Map<Integer,Integer> vipGift;//礼包
 	public int giftPrice;//礼包原价钱
+	public int buyMainCopy;//困难噩梦副本可购买次数
 }

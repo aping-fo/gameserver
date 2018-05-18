@@ -159,8 +159,7 @@ public class GmService {
         SessionManager.getInstance().sendMsgToAll(ChatExtension.CHAT, chats);
     }
 
-    public void refreshShop(int playerId, String... params)
-    {
+    public void refreshShop(int playerId, String... params) {
         shopService.refreshCommon();
     }
 
@@ -607,7 +606,8 @@ public class GmService {
     }
 
     public void ladderDebug(int playerId, String... params) {
-        ladderService.gmDebug();
+        int d = Integer.valueOf(params[0]);
+        ladderService.gmDebug(d);
     }
 
     @Autowired

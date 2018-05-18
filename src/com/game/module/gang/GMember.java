@@ -24,6 +24,8 @@ public class GMember {
 	@JsonIgnore
 	public int hp;
 	@JsonIgnore
+	public int totalHp;
+	@JsonIgnore
 	public int hurt;
 	@JsonIgnore
 	public boolean bFight;

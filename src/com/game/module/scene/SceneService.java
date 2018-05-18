@@ -91,8 +91,7 @@ public class SceneService implements InitHandler {
 
         SceneConfig cfg = ConfigData.getConfig(SceneConfig.class, sceneId);
         if (cfg.sceneSubType == Scene.MULTI_GANG) {
-            return String.format("%d_%d_%d", sceneId, player.getGangId(),
-                    player.getSubLine());
+            return String.format("%d_%d_%d", sceneId, player.getGangId(), player.getSubLine());
         } else if (cfg.sceneSubType == Scene.MULTI_TEAM || cfg.sceneSubType == Scene.MULTI_PVE) {
             return String.format("%d_%d_%d", sceneId, player.getTeamId(),
                     player.getSubLine());
@@ -155,7 +154,8 @@ public class SceneService implements InitHandler {
 
         if (lastCfg.sceneSubType == Scene.MULTI_GROUP) {
             groupService.onExitBattle(playerId);
-        } else if (lastCfg.sceneSubType == Scene.MULTI_LADDER) {
+        } else if (lastCfg.sceneSubType == Scene.MULTI_LADDER
+                || lastCfg.sceneSubType == Scene.MULTI_LADDER_AI) {
             ladderService.onLogout(playerId);
         } else if (lastCfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
             gangDungeonService.onLogout(playerId);
@@ -225,8 +225,7 @@ public class SceneService implements InitHandler {
         player.setSubLine(subLine);
 
         String key = getGroupKey(player);
-        Channel channel = SessionManager.getInstance().getChannel(
-                player.getPlayerId());
+        Channel channel = SessionManager.getInstance().getChannel(player.getPlayerId());
         SessionManager.getInstance().addToGroup(key, channel);
         ServerLogger.info("line ==========" + key);
         if (cfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
@@ -265,6 +264,7 @@ public class SceneService implements InitHandler {
         vo.crit = player.getCrit();
         vo.symptom = player.getSymptom();
         vo.fu = player.getFu();
+        vo.vip = player.getVip();
 
         vo.roomTeam = player.roomTeamId;
         vo.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
@@ -290,7 +290,7 @@ public class SceneService implements InitHandler {
             vo.awakenSkillList = new ArrayList<>();
             for (int key : awakeningSkillMap.keySet()) {
                 AwakeningSkillCfg config = ConfigData.getConfig(AwakeningSkillCfg.class, key);
-                if (config != null && (config.type == 1 || config.type == 3)&&awakeningSkillMap.get(key)>=1) {
+                if (config != null && (config.type == 1 || config.type == 3) && awakeningSkillMap.get(key) >= 1) {
                     vo.awakenSkillList.add(key);
                 }
             }
@@ -324,8 +324,7 @@ public class SceneService implements InitHandler {
 
         String key = getGroupKey(player);
 
-        Collection<Channel> channels = SessionManager.getInstance()
-                .getGroupChannels(key);
+        Collection<Channel> channels = SessionManager.getInstance().getGroupChannels(key);
 
         //List<Integer> ids = new ArrayList<Integer>(10);
         for (Channel channel : channels) {
@@ -516,7 +515,7 @@ public class SceneService implements InitHandler {
         } else if (cfg.sceneSubType == Scene.MULTI_LADDER) {
             ladderService.handleSkillHurt(player, hurtVO);
         } else if (cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
-            brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
+            //brocastToSceneCurLine(player, SceneExtension.SKILL_HURT, hurtVO);
             gangDungeonService.handleSkillHurt(player, hurtVO);
         }
 

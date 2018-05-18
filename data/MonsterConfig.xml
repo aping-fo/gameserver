@@ -2172,7 +2172,7 @@
 	<icon></icon>
 	<name>大耳猴</name>
 	<desc>近战</desc>
-	<scale>0.8</scale>
+	<scale>1</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>800000</hp>
@@ -2219,7 +2219,7 @@
 	<icon></icon>
 	<name>大钳蟹</name>
 	<desc>近战</desc>
-	<scale>2.2000000000000002</scale>
+	<scale>1</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>800000</hp>
@@ -2313,7 +2313,7 @@
 	<icon></icon>
 	<name>单眼灵猴</name>
 	<desc>远程</desc>
-	<scale>1.5</scale>
+	<scale>1</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>800000</hp>
@@ -2501,7 +2501,7 @@
 	<icon></icon>
 	<name>钓鱼老头</name>
 	<desc>远程</desc>
-	<scale>1.5</scale>
+	<scale>1</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>1800000</hp>
@@ -2755,7 +2755,7 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam></controlProtectParam>
-	<skillId>[20102001]</skillId>
+	<skillId>[20102001,20102002]</skillId>
 	<skillIdEx></skillIdEx>
 	<behitAction>[20102101,20102102]</behitAction>
 	<flyAction>20102201</flyAction>
@@ -3112,7 +3112,7 @@
 	<icon>20112</icon>
 	<name>大耳猴</name>
 	<desc>近战</desc>
-	<scale>1</scale>
+	<scale>1.3</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>4800000</hp>
@@ -3159,7 +3159,7 @@
 	<icon>20113</icon>
 	<name>大钳蟹</name>
 	<desc>近战</desc>
-	<scale>2.8</scale>
+	<scale>1.3</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>4800000</hp>
@@ -3253,7 +3253,7 @@
 	<icon>20115</icon>
 	<name>单眼灵猴</name>
 	<desc>远程</desc>
-	<scale>1.8</scale>
+	<scale>1.3</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>4800000</hp>
@@ -3441,7 +3441,7 @@
 	<icon>20201</icon>
 	<name>钓鱼老头</name>
 	<desc>远程</desc>
-	<scale>1.8</scale>
+	<scale>1.3</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>4800000</hp>
@@ -3676,7 +3676,7 @@
 	<icon>20302</icon>
 	<name>牛魔王</name>
 	<desc>近战</desc>
-	<scale>1.3</scale>
+	<scale>1.4</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>4800000</hp>
@@ -3723,7 +3723,7 @@
 	<icon>20303</icon>
 	<name>红吼怪</name>
 	<desc>近战</desc>
-	<scale>1</scale>
+	<scale>1.3</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>4800000</hp>
@@ -3770,7 +3770,7 @@
 	<icon>20304</icon>
 	<name>炼丹老头</name>
 	<desc>远程</desc>
-	<scale>1</scale>
+	<scale>1.3</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>4800000</hp>
@@ -3864,7 +3864,7 @@
 	<icon>20306</icon>
 	<name>太阳神鹰</name>
 	<desc>近战</desc>
-	<scale>1</scale>
+	<scale>1.2</scale>
 	<lev>1</lev>
 	<showName></showName>
 	<hp>4800000</hp>
@@ -4702,24 +4702,24 @@
 </config>
 <config>
 	<id>800006</id>
-	<model>20306</model>
+	<model>20304</model>
 	<type>3</type>
 	<dutyType></dutyType>
 	<AI>20001003</AI>
 	<AppointAI>10000</AppointAI>
-	<icon>20306</icon>
-	<name>光明神鹰</name>
+	<icon>20304</icon>
+	<name>炼丹老头</name>
 	<desc>近战</desc>
-	<scale>1</scale>
+	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>100000</hp>
-	<physicAttack>1</physicAttack>
-	<physicDefense>300</physicDefense>
+	<hp>137705</hp>
+	<physicAttack>6454</physicAttack>
+	<physicDefense>1845</physicDefense>
 	<crit>1</crit>
-	<symptom>1</symptom>
+	<symptom>1500</symptom>
 	<resistanceProps></resistanceProps>
-	<logicBaseSpeed>2</logicBaseSpeed>
+	<logicBaseSpeed>1.8</logicBaseSpeed>
 	<dropGoods></dropGoods>
 	<banStrickenFly>0</banStrickenFly>
 	<lyingDownBuffId></lyingDownBuffId>
@@ -4729,12 +4729,12 @@
 	<duelCameraAnimID>11101111</duelCameraAnimID>
 	<hurtProtectParam></hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
-	<skillId>[20306001,20306002,20306003]</skillId>
+	<skillId>[20304001,20304002,20304003]</skillId>
 	<skillIdEx></skillIdEx>
-	<behitAction>[20306101,20306102]</behitAction>
-	<flyAction>20306201</flyAction>
-	<downAction>20306202</downAction>
-	<getupAction>20306301</getupAction>
+	<behitAction>[20304101,20304102]</behitAction>
+	<flyAction>20304201</flyAction>
+	<downAction>20304202</downAction>
+	<getupAction>20304301</getupAction>
 	<hudOffset></hudOffset>
 	<bornBuff>[2102]</bornBuff>
 	<skillBuff></skillBuff>
@@ -4796,7 +4796,7 @@
 </config>
 <config>
 	<id>800008</id>
-	<model>20309</model>
+	<model>20208</model>
 	<type>3</type>
 	<dutyType></dutyType>
 	<AI>20001003</AI>
@@ -4854,7 +4854,7 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>500000</hp>
+	<hp>2000000</hp>
 	<physicAttack>14052</physicAttack>
 	<physicDefense>10000</physicDefense>
 	<crit>1</crit>
@@ -4867,7 +4867,7 @@
 	<forbitCameraShake></forbitCameraShake>
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
-	<duelCameraAnimID>11101111</duelCameraAnimID>
+	<duelCameraAnimID></duelCameraAnimID>
 	<hurtProtectParam>[1,0.3]</hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20208001,20208002,20208003]</skillId>
@@ -4901,7 +4901,7 @@
 	<scale>1.3</scale>
 	<lev>30</lev>
 	<showName></showName>
-	<hp>1000000</hp>
+	<hp>2000000</hp>
 	<physicAttack>28104</physicAttack>
 	<physicDefense>10000</physicDefense>
 	<crit>1</crit>
@@ -4914,7 +4914,7 @@
 	<forbitCameraShake></forbitCameraShake>
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
-	<duelCameraAnimID>11101111</duelCameraAnimID>
+	<duelCameraAnimID></duelCameraAnimID>
 	<hurtProtectParam>[1,0.3]</hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20309001,20309002,20309003]</skillId>
@@ -4961,7 +4961,7 @@
 	<forbitCameraShake></forbitCameraShake>
 	<hasDeadSkill></hasDeadSkill>
 	<deadRocketID></deadRocketID>
-	<duelCameraAnimID>11101111</duelCameraAnimID>
+	<duelCameraAnimID></duelCameraAnimID>
 	<hurtProtectParam>[1,0.3]</hurtProtectParam>
 	<controlProtectParam>[15,5]</controlProtectParam>
 	<skillId>[20401001,20401002,20401003]</skillId>
@@ -5373,7 +5373,7 @@
 	<showName></showName>
 	<hp>2000000</hp>
 	<physicAttack>300</physicAttack>
-	<physicDefense>10000</physicDefense>
+	<physicDefense>5</physicDefense>
 	<crit>1</crit>
 	<symptom>1</symptom>
 	<resistanceProps></resistanceProps>
@@ -50195,5 +50195,146 @@
 	<bloodedBuff></bloodedBuff>
 	<leadawayParam></leadawayParam>
 	<isPosAboveGround>40</isPosAboveGround>
+</config>
+<config>
+	<id>13001011</id>
+	<model>11101</model>
+	<type>3</type>
+	<dutyType></dutyType>
+	<AI>11101001</AI>
+	<AppointAI></AppointAI>
+	<icon>11101</icon>
+	<name>排位赛AI战士</name>
+	<desc>近战</desc>
+	<scale>1</scale>
+	<lev>30</lev>
+	<showName></showName>
+	<hp>2000000</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>300</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2.2000000000000002</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>0</banStrickenFly>
+	<lyingDownBuffId>1101</lyingDownBuffId>
+	<forbitCameraShake>1</forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam>[1,0.2]</hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
+	<skillId>[11100001,11101001,11102001,11103001,11104001]</skillId>
+	<skillIdEx>[11100002,11100003]</skillIdEx>
+	<behitAction>[11100101,11100102]</behitAction>
+	<flyAction>11100201</flyAction>
+	<downAction>11100202</downAction>
+	<getupAction>11100301</getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>13001012</id>
+	<model>12101</model>
+	<type>3</type>
+	<dutyType></dutyType>
+	<AI>12101001</AI>
+	<AppointAI></AppointAI>
+	<icon>12101</icon>
+	<name>排位赛AI刺客</name>
+	<desc>近战</desc>
+	<scale>1</scale>
+	<lev>30</lev>
+	<showName></showName>
+	<hp>2000000</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>300</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2.2000000000000002</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>0</banStrickenFly>
+	<lyingDownBuffId>1101</lyingDownBuffId>
+	<forbitCameraShake>1</forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam>[1,0.2]</hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
+	<skillId>[12100001,12101001,12102001,12103001,12104001]</skillId>
+	<skillIdEx>[12100002,12100003]</skillIdEx>
+	<behitAction>[12100101,12100102]</behitAction>
+	<flyAction>12100201</flyAction>
+	<downAction>12100202</downAction>
+	<getupAction>12100301</getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
+</config>
+<config>
+	<id>13001013</id>
+	<model>13101</model>
+	<type>3</type>
+	<dutyType></dutyType>
+	<AI>13101001</AI>
+	<AppointAI></AppointAI>
+	<icon>13101</icon>
+	<name>排位赛AI法师</name>
+	<desc>近战</desc>
+	<scale>1</scale>
+	<lev>30</lev>
+	<showName></showName>
+	<hp>2000000</hp>
+	<physicAttack>1</physicAttack>
+	<physicDefense>300</physicDefense>
+	<crit>1</crit>
+	<symptom>1</symptom>
+	<resistanceProps></resistanceProps>
+	<logicBaseSpeed>2.2000000000000002</logicBaseSpeed>
+	<dropGoods></dropGoods>
+	<banStrickenFly>0</banStrickenFly>
+	<lyingDownBuffId>1101</lyingDownBuffId>
+	<forbitCameraShake>1</forbitCameraShake>
+	<hasDeadSkill></hasDeadSkill>
+	<deadRocketID></deadRocketID>
+	<duelCameraAnimID></duelCameraAnimID>
+	<hurtProtectParam>[1,0.2]</hurtProtectParam>
+	<controlProtectParam>[15,5]</controlProtectParam>
+	<skillId>[13100001,13101001,13102001,13103001,13104001]</skillId>
+	<skillIdEx>[13100002,13100003]</skillIdEx>
+	<behitAction>[13100101,13100102]</behitAction>
+	<flyAction>13100201</flyAction>
+	<downAction>13100202</downAction>
+	<getupAction>13100301</getupAction>
+	<hudOffset></hudOffset>
+	<bornBuff></bornBuff>
+	<skillBuff></skillBuff>
+	<frozonBuff></frozonBuff>
+	<giddyBuff></giddyBuff>
+	<fossilBuff></fossilBuff>
+	<poisonBuff></poisonBuff>
+	<flareBuff></flareBuff>
+	<bloodedBuff></bloodedBuff>
+	<leadawayParam></leadawayParam>
+	<isPosAboveGround>1</isPosAboveGround>
 </config>
 </root>

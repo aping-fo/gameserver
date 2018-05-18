@@ -34,9 +34,12 @@ public class Room {
     public int selfMatchCount;
     //取消标记
     public volatile boolean exitFlag;
+    public volatile boolean timeoutExitFlag;
 
     public final int score;
+
     public final int level;
+    public boolean isRebot;
     public volatile boolean fightFlag;
 
     public final Map<Integer, RoomPlayer> roomPlayers;
@@ -58,9 +61,10 @@ public class Room {
         this.score = score;
         this.matchFlag = false;
         this.exitFlag = false;
+        this.level = level;
         this.roomPlayers = new ConcurrentHashMap<>();
         this.loadingCount = new AtomicInteger(0);
-        this.level = level;
+
         //this.type = type;
         //this.blueArr = new ConcurrentHashMap<>();
         //this.redArr = new ConcurrentHashMap<>();
