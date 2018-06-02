@@ -41,6 +41,7 @@ public class VipService {
     public static final int TYPE_SPEC = 2;// 特殊的
     public static final int TYPE_TIMED = 7;// 限时礼包
     public static final int TYPE_SPECIAL = 9;// 特价礼包
+    //public static final int TYPE_ONCE = 10;// 单笔充值
     @SuppressWarnings("unused")
     private static final int TYPE_COMMON = 3;// 普通的
     public static final int TYPE_FUND = 4;// 基金
@@ -238,8 +239,11 @@ public class VipService {
         if(type!=TYPE_TIMED&&type!=TYPE_SPECIAL){//限时礼包和特价礼包不计入累计充值
             activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//累充礼包
         }
-
-        activityService.getAwardsByRechargeId(playerId, id);//限时礼包和特价礼包
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//充了钱就算礼包
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_ONCE, (int) charge.rmb, ActivityConsts.UpdateType.T_VALUE, true);//单笔充值满足(取最大那个)
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
+        //activityService.onceRecharge(playerId,(int) charge.rmb);//单笔充值满足(取最大那个)
+        //activityService.getAwardsByRechargeId(playerId, id);//限时礼包和特价礼包
 
         if (charge.shopGoodsId != 0) {
             shopService.buy(playerId, charge.shopGoodsId, 1);

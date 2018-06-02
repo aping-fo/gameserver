@@ -527,9 +527,9 @@ public class WorldBossService implements InitHandler {
                 mailService.sendSysMail(rankTitle, rankContent, rewards, hr.getPlayerId(), LogConsume.WORLD_BOSS_REWARD);
                 if (!killRewards.isEmpty()) {
                     //发送击杀奖励邮件
-                    List<GoodsEntry> reward=new ArrayList<>();
-                    for(GoodsEntry goodsEntry : killRewards){
-                        GoodsEntry good=new GoodsEntry(goodsEntry.id,goodsEntry.count);
+                    List<GoodsEntry> reward = new ArrayList<>();
+                    for (GoodsEntry goodsEntry : killRewards) {
+                        GoodsEntry good = new GoodsEntry(goodsEntry.id, goodsEntry.count);
                         reward.add(good);
                     }
                     mailService.sendSysMail(killTitle, killContent, reward, hr.getPlayerId(), LogConsume.WORLD_BOSS_KILL);
@@ -585,14 +585,15 @@ public class WorldBossService implements InitHandler {
     }
 
     public void broadcast(final int cmd, final IProtocol param) {
-        executors.submit(new Runnable() {
+        SessionManager.getInstance().sendMsg(cmd, param, players);
+        /*executors.submit(new Runnable() {
             @Override
             public void run() {
                 for (int playerId : players) {
                     SessionManager.getInstance().sendMsg(cmd, param, playerId);
                 }
             }
-        });
+        });*/
     }
 
     /**
@@ -685,7 +686,7 @@ public class WorldBossService implements InitHandler {
         bossVo.killTimes = killTimes;
         vo.boss = bossVo;
 
-        taskService.doTask(playerId,Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_WORLD_BOSS,1);
+        taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_WORLD_BOSS, 1);
         return vo;
     }
 

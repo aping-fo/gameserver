@@ -2,7 +2,9 @@ package com.game.module.player;
 
 import com.game.SysConfig;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 public class Player implements PlayerAddition {
@@ -98,6 +100,16 @@ public class Player implements PlayerAddition {
     private int roomId;
     public int roomTeamId;
     private int totalChargeMoney;//累计充值金额
+
+    private List<Integer> attrList = new ArrayList<>(12);
+
+    public List<Integer> getAttrList() {
+        return attrList;
+    }
+
+    public void setAttrList(List<Integer> attrList) {
+        this.attrList = attrList;
+    }
 
     public int getTotalChargeMoney() {
         return totalChargeMoney;

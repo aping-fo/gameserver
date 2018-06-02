@@ -22,16 +22,19 @@ import com.game.util.TimeUtil;
 import com.game.util.TimerService;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.google.common.collect.Table;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.time.LocalDateTime;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -267,6 +270,34 @@ public class ActivityService implements InitHandler {
         }
     }
 
+
+    /**
+     * 活动完成接口，一次完成多个,暂时不用
+     *
+     * @param playerId
+     * @param paramTable <Integer,Integer,Integer> 活动类型，值，更新类型
+     * @param toCli
+     */
+    public List<ActivityTask> completeActivityTask(int playerId, Table<Integer, Integer, Integer> paramTable, boolean toCli) {
+        List<ActivityTask> tasks = Lists.newArrayList();
+        Set<Table.Cell<Integer, Integer, Integer>> cells = paramTable.cellSet();
+        for (Table.Cell<Integer, Integer, Integer> cell : cells) {
+            int taskCondType = cell.getRowKey();
+            int value = cell.getColumnKey();
+            int updateType = cell.getValue();
+
+            List<ActivityTask> tasksTmp = completeActivityTask(playerId, taskCondType, value, updateType, false);
+            if (!tasksTmp.isEmpty()) {
+                tasks.addAll(tasksTmp);
+            }
+        }
+
+        if (toCli) {
+            pushActivityUpdate(playerId, tasks);
+        }
+        return tasks;
+    }
+
     /**
      * 完成活动
      *
@@ -291,7 +322,7 @@ public class ActivityService implements InitHandler {
                 }
                 //条件读表
                 ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
-                if(taskCfg!=null){
+                if (taskCfg != null) {
                     at.getCond().setTargetValue(taskCfg.Conds[0][1]);
 
                     if (at.getCond().checkComplete()) {
@@ -300,7 +331,7 @@ public class ActivityService implements InitHandler {
                         titleService.complete(playerId, TitleConsts.ACTIVITY, at.getActivityId(), ActivityConsts.UpdateType.T_VALUE);
 
                         //自动领奖
-                        if(taskCfg.AutoReward==1){
+                        if (taskCfg.AutoReward == 1) {
                             at.setState(ActivityConsts.ActivityState.T_AWARD);
                             goodsService.addRewards(playerId, taskCfg.Rewards, LogConsume.ACTIVITY_REWARD);
                             at.setRewardFlag(true);
@@ -398,7 +429,7 @@ public class ActivityService implements InitHandler {
         List<ActivityTask> list = Lists.newArrayList();
         for (ActivityTask at : data.getActivityTasks().values()) {
             ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
-            if(cfg!=null){
+            if (cfg != null) {
                 if (cfg.ResetType == ActivityConsts.ActivityTaskResetType.T_DAILY) {
                     at.cleanup();
                     list.add(at);
@@ -442,11 +473,11 @@ public class ActivityService implements InitHandler {
                         if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && (System.currentTimeMillis() - task.getTimedBag()) / 1000 / 60 <= cfg.Param0) {
                             bClose = false;
                         }
-                    } else if(cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG){//特价礼包
-                        if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH&&player.getLev()>=cfg.Conds[0][1]&&player.getLev()<cfg.Conds[0][2]) {
+                    } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG) {//特价礼包
+                        if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && player.getLev() >= cfg.Conds[0][1] && player.getLev() < cfg.Conds[0][2]) {
                             bClose = false;
                         }
-                    }else{
+                    } else {
                         //检测是否有未领取奖励的或者未领取任务的活动(task == null)
                         bClose = task != null && bClose && task.getState() == ActivityConsts.ActivityState.T_AWARD;
                     }
@@ -462,7 +493,7 @@ public class ActivityService implements InitHandler {
         for (ActivityTask at : data.getActivityTasks().values()) {
             if (result.id.contains(at.getActivityId())) {
                 ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
-                if(taskCfg!=null){
+                if (taskCfg != null) {
                     at.getCond().setCondType(taskCfg.Conds[0][0]);
                     at.getCond().setTargetValue(taskCfg.Conds[0][1]);
                     result.tasks.add(at.toProto());
@@ -733,11 +764,7 @@ public class ActivityService implements InitHandler {
         for (Object config : configs) {
             ActivityCfg activityCfg = (ActivityCfg) config;
 
-            if(activityCfg.Conds!=null&&activityCfg.Conds[0][0] == ActivityConsts.ActivityCondType.T_LEVEL){
-                if(activityCfg.ActivityType==ActivityConsts.ActivityType.T_TIMED_BAG){
-                    continue;
-                }
-
+            if (activityCfg.Conds != null && activityCfg.Conds[0][0] == ActivityConsts.ActivityCondType.T_LEVEL) {
                 List<ActivityTaskCfg> taskCfgs = ConfigData.ActivityTasks.get(activityCfg.id);
                 //查找活动任务表
                 for (ActivityTaskCfg cfg : taskCfgs) {
@@ -774,13 +801,43 @@ public class ActivityService implements InitHandler {
         //活动表
         for (ActivityTask task : playerData.getActivityTasks().values()) {
             //验证是否完成
-            if ((task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_BAG||task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_SPECIAL_BAG)&&task.getCond().getTargetValue() == id && !task.isRewardFlag()) {
+            if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_BAG && task.getCond().getTargetValue() == id && !task.isRewardFlag()) {
                 ActivityTaskCfg config = ConfigData.getConfig(ActivityTaskCfg.class, task.getId());
                 task.setState(ActivityConsts.ActivityState.T_AWARD);
                 goodsService.addRewards(playerId, config.Rewards, LogConsume.ACTIVITY_REWARD);
                 task.setRewardFlag(true);
                 pushActivityUpdate(playerId, Lists.newArrayList(task));
+                break;
             }
         }
     }
+
+    /**
+     * 根据一次充值金额获取奖励
+     *
+     * @param playerId 玩家id
+     * @param rmb      充值金额
+     */
+    public void onceRecharge(int playerId, int rmb) {
+        //获取玩家信息
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            return;
+        }
+        //活动表
+        ActivityTask temp = null;
+        for (ActivityTask task : playerData.getActivityTasks().values()) {
+            if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_ONCE && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && task.getCond().getTargetValue() <= rmb) {
+                if (temp == null || temp.getCond().getTargetValue() < task.getCond().getTargetValue()) {
+                    temp = task;
+                }
+            }
+        }
+        if (temp != null) {
+            temp.getCond().setValue(rmb);
+            temp.setState(ActivityConsts.ActivityState.T_FINISH);
+            pushActivityUpdate(playerId, Lists.newArrayList(temp));
+        }
+    }
+
 }

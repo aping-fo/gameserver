@@ -3,10 +3,9 @@ package com.game.params;
 import java.util.List;
 import java.util.ArrayList;
 
-//神器升阶(工具自动生成，请勿手动修改！）
+//声望信息(工具自动生成，请勿手动修改！）
 public class FameListVO implements IProtocol {
 	public List<FameVo> fames;//声望信息列表
-	public int camp;//被激活的代表阵营
 
 
 	public void decode(BufferBuilder bb) {
@@ -35,11 +34,9 @@ public class FameListVO implements IProtocol {
 
             }
         }
-		this.camp = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
 		bb.putProtocolVoList(this.fames);
-		bb.putInt(this.camp);
 	}
 }

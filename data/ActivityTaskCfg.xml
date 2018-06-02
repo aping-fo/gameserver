@@ -539,4 +539,180 @@
 	<Param0></Param0>
 	<des>特价礼包</des>
 </config>
+<config>
+	<id>91</id>
+	<name>盛夏礼包1</name>
+	<ActivityId>14</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[9,30001]]</Conds>
+	<Rewards>[[102,10],[103,10],[109,10],[10901,10],[10902,10],[10903,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des>12元盛夏礼包</des>
+</config>
+<config>
+	<id>92</id>
+	<name>盛夏礼包1</name>
+	<ActivityId>14</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[9,30001]]</Conds>
+	<Rewards>[[102,10],[103,10],[109,10],[10901,10],[10902,10],[10903,11]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des>12元盛夏礼包</des>
+</config>
+<config>
+	<id>93</id>
+	<name>盛夏礼包2</name>
+	<ActivityId>14</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[9,30002]]</Conds>
+	<Rewards>[[102,10],[103,10],[109,10],[10901,10],[10902,10],[10903,12]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des>18元盛夏礼包</des>
+</config>
+<config>
+	<id>94</id>
+	<name>盛夏礼包2</name>
+	<ActivityId>14</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[9,30002]]</Conds>
+	<Rewards>[[102,10],[103,10],[109,10],[10901,10],[10902,10],[10903,13]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des>18元盛夏礼包</des>
+</config>
+<config>
+	<id>95</id>
+	<name>盛夏礼包3</name>
+	<ActivityId>14</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[9,30003]]</Conds>
+	<Rewards>[[102,10],[103,10],[109,10],[10901,10],[10902,10],[10903,14]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des>30元盛夏礼包</des>
+</config>
+<config>
+	<id>96</id>
+	<name>盛夏礼包3</name>
+	<ActivityId>14</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[9,30003]]</Conds>
+	<Rewards>[[102,10],[103,10],[109,10],[10901,10],[10902,10],[10903,15]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des>30元盛夏礼包</des>
+</config>
+<config>
+	<id>101</id>
+	<name>累计充值</name>
+	<ActivityId>15</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[11,1]]</Conds>
+	<Rewards>[[102,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累积充值1元</des>
+</config>
+<config>
+	<id>102</id>
+	<name>累计充值</name>
+	<ActivityId>15</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[11,2]]</Conds>
+	<Rewards>[[102,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累积充值2元</des>
+</config>
+<config>
+	<id>103</id>
+	<name>累计充值</name>
+	<ActivityId>15</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[11,3]]</Conds>
+	<Rewards>[[102,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累积充值3元</des>
+</config>
+<config>
+	<id>104</id>
+	<name>累计充值</name>
+	<ActivityId>15</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[11,4]]</Conds>
+	<Rewards>[[102,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累积充值4元</des>
+</config>
+<config>
+	<id>105</id>
+	<name>累计充值</name>
+	<ActivityId>15</ActivityId>
+	<ResetType>1</ResetType>
+	<Conds>[[11,5]]</Conds>
+	<Rewards>[[102,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累积充值5元</des>
+</config>
+<config>
+	<id>201</id>
+	<name>单笔充值</name>
+	<ActivityId>16</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[10,1]]</Conds>
+	<Rewards>[[102,12]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>单笔充值达1元</des>
+</config>
+<config>
+	<id>202</id>
+	<name>单笔充值</name>
+	<ActivityId>16</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[10,2]]</Conds>
+	<Rewards>[[102,13]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>单笔充值达2元</des>
+</config>
+<config>
+	<id>203</id>
+	<name>单笔充值</name>
+	<ActivityId>16</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[10,3]]</Conds>
+	<Rewards>[[102,14]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>单笔充值达3元</des>
+</config>
+<config>
+	<id>204</id>
+	<name>单笔充值</name>
+	<ActivityId>16</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[10,4]]</Conds>
+	<Rewards>[[102,15]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>单笔充值达4元</des>
+</config>
+<config>
+	<id>205</id>
+	<name>单笔充值</name>
+	<ActivityId>16</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[10,5]]</Conds>
+	<Rewards>[[102,16]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>单笔充值达5元</des>
+</config>
 </root>

@@ -561,6 +561,7 @@ public class PetService {
             cli.param2 = petId;
         } else {
             cli.param1 = 1;
+            cli.param2 = petId;
         }
 
         SessionManager.getInstance().sendMsg(CMD_IMPROVE, cli, playerId);

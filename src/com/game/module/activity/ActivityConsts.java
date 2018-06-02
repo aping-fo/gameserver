@@ -29,7 +29,8 @@ public class ActivityConsts {
         public static final int T_FIRST_RECHARGE = 4; //累计充值
         public static final int T_LEVEL_UP = 5; //冲级活动
         public static final int T_TIMED_BAG = 9; //限时礼包
-        public static final int T_SPECIAL_BAG = 13; //特价礼包
+        public static final int T_TIMED_ONCE = 10; //单笔充值
+        public static final int T_TIMED_MONEY = 11; //只要充了钱就算
     }
 
     /**

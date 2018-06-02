@@ -57,8 +57,8 @@
 	<background>Artifact4_Bg.jpg</background>
 </config>
 <config>
-	<id>13</id>
-	<type>4</type>
+	<id>101</id>
+	<type>2</type>
 	<title>[liuxue,流血]</title>
 	<features>[[3041,大幅度抵抗普通伤害]]</features>
 	<weakness>[[3064,受到500%的流血伤害]]</weakness>
@@ -71,8 +71,8 @@
 	<background>Artifact1_Bg.jpg</background>
 </config>
 <config>
-	<id>14</id>
-	<type>4</type>
+	<id>102</id>
+	<type>2</type>
 	<title>[liuxue,流血]</title>
 	<features>[[3041,大幅度抵抗普通伤害]]</features>
 	<weakness>[[3064,受到400%的流血伤害]]</weakness>
@@ -85,8 +85,8 @@
 	<background>Artifact2_Bg.jpg</background>
 </config>
 <config>
-	<id>15</id>
-	<type>4</type>
+	<id>103</id>
+	<type>2</type>
 	<title>[liuxue,流血]</title>
 	<features>[[3041,大幅度抵抗普通伤害]]</features>
 	<weakness>[[3064,受到300%的流血伤害]]</weakness>
@@ -99,8 +99,8 @@
 	<background>Artifact3_Bg.jpg</background>
 </config>
 <config>
-	<id>16</id>
-	<type>4</type>
+	<id>104</id>
+	<type>2</type>
 	<title>[liuxue,流血]</title>
 	<features>[[3041,大幅度抵抗普通伤害]]</features>
 	<weakness>[[3064,受到200%的流血伤害]]</weakness>
@@ -113,64 +113,8 @@
 	<background>Artifact4_Bg.jpg</background>
 </config>
 <config>
-	<id>25</id>
-	<type>7</type>
-	<title>[weili,威力]</title>
-	<features>[[3047,大幅度抵抗所有特性]]</features>
-	<weakness>[[3039,受到120%的普通伤害]]</weakness>
-	<difficulty>1</difficulty>
-	<role>20110</role>
-	<pos>[29,-13,0]</pos>
-	<spriteSize>[333,437]</spriteSize>
-	<copyId>1500701</copyId>
-	<count>3</count>
-	<background>Artifact1_Bg.jpg</background>
-</config>
-<config>
-	<id>26</id>
-	<type>7</type>
-	<title>[weili,威力]</title>
-	<features>[[3047,大幅度抵抗所有特性]]</features>
-	<weakness>[[3039,受到115%的普通伤害]]</weakness>
-	<difficulty>2</difficulty>
-	<role>20111</role>
-	<pos>[13,25,0]</pos>
-	<spriteSize>[364,512]</spriteSize>
-	<copyId>1500702</copyId>
-	<count>3</count>
-	<background>Artifact2_Bg.jpg</background>
-</config>
-<config>
-	<id>27</id>
-	<type>7</type>
-	<title>[weili,威力]</title>
-	<features>[[3047,大幅度抵抗所有特性]]</features>
-	<weakness>[[3039,受到110%的普通伤害]]</weakness>
-	<difficulty>3</difficulty>
-	<role>20202</role>
-	<pos>[16,-3,0]</pos>
-	<spriteSize>[359,458]</spriteSize>
-	<copyId>1500703</copyId>
-	<count>3</count>
-	<background>Artifact3_Bg.jpg</background>
-</config>
-<config>
-	<id>28</id>
-	<type>7</type>
-	<title>[weili,威力]</title>
-	<features>[[3047,大幅度抵抗所有特性]]</features>
-	<weakness>[[3039,受到105%的普通伤害]]</weakness>
-	<difficulty>4</difficulty>
-	<role>20306</role>
-	<pos>[-17,34,0]</pos>
-	<spriteSize>[423,531]</spriteSize>
-	<copyId>1500704</copyId>
-	<count>3</count>
-	<background>Artifact4_Bg.jpg</background>
-</config>
-<config>
-	<id>33</id>
-	<type>9</type>
+	<id>201</id>
+	<type>3</type>
 	<title>[zhuoshao,灼烧]</title>
 	<features>[[3041,大幅度抵抗普通伤害]]</features>
 	<weakness>[[3062,受到500%的灼烧伤害]]</weakness>
@@ -183,8 +127,8 @@
 	<background>Artifact1_Bg.jpg</background>
 </config>
 <config>
-	<id>34</id>
-	<type>9</type>
+	<id>202</id>
+	<type>3</type>
 	<title>[zhuoshao,灼烧]</title>
 	<features>[[3041,大幅度抵抗普通伤害]]</features>
 	<weakness>[[3062,受到400%的灼烧伤害]]</weakness>
@@ -197,8 +141,8 @@
 	<background>Artifact2_Bg.jpg</background>
 </config>
 <config>
-	<id>35</id>
-	<type>9</type>
+	<id>203</id>
+	<type>3</type>
 	<title>[zhuoshao,灼烧]</title>
 	<features>[[3041,大幅度抵抗普通伤害]]</features>
 	<weakness>[[3062,受到300%的灼烧伤害]]</weakness>
@@ -211,8 +155,8 @@
 	<background>Artifact3_Bg.jpg</background>
 </config>
 <config>
-	<id>36</id>
-	<type>9</type>
+	<id>204</id>
+	<type>3</type>
 	<title>[zhuoshao,灼烧]</title>
 	<features>[[3041,大幅度抵抗普通伤害]]</features>
 	<weakness>[[3062,受到200%的灼烧伤害]]</weakness>
@@ -225,11 +169,67 @@
 	<background>Artifact4_Bg.jpg</background>
 </config>
 <config>
-	<id>37</id>
-	<type>10</type>
-	<title>[zhiliao,吸血]</title>
-	<features>[[2017,造成的伤害提升30%]]</features>
-	<weakness>[[3063,吸血效果提升100%]]</weakness>
+	<id>301</id>
+	<type>4</type>
+	<title>[weili,全能]</title>
+	<features>[[3041,怪物具备超强属性]]</features>
+	<weakness>[[3053,技能卡触发几率提高200%]]</weakness>
+	<difficulty>1</difficulty>
+	<role>20110</role>
+	<pos>[29,-13,0]</pos>
+	<spriteSize>[333,437]</spriteSize>
+	<copyId>1500701</copyId>
+	<count>3</count>
+	<background>Artifact1_Bg.jpg</background>
+</config>
+<config>
+	<id>302</id>
+	<type>4</type>
+	<title>[weili,全能]</title>
+	<features>[[3041,怪物具备超强属性]]</features>
+	<weakness>[[3053,技能卡触发几率提高150%]]</weakness>
+	<difficulty>2</difficulty>
+	<role>20111</role>
+	<pos>[13,25,0]</pos>
+	<spriteSize>[364,512]</spriteSize>
+	<copyId>1500702</copyId>
+	<count>3</count>
+	<background>Artifact2_Bg.jpg</background>
+</config>
+<config>
+	<id>303</id>
+	<type>4</type>
+	<title>[weili,全能]</title>
+	<features>[[3041,怪物具备超强属性]]</features>
+	<weakness>[[3053,技能卡触发几率提高100%]]</weakness>
+	<difficulty>3</difficulty>
+	<role>20202</role>
+	<pos>[16,-3,0]</pos>
+	<spriteSize>[359,458]</spriteSize>
+	<copyId>1500703</copyId>
+	<count>3</count>
+	<background>Artifact3_Bg.jpg</background>
+</config>
+<config>
+	<id>304</id>
+	<type>4</type>
+	<title>[weili,全能]</title>
+	<features>[[3041,怪物具备超强属性]]</features>
+	<weakness>[[3053,技能卡触发几率提高50%]]</weakness>
+	<difficulty>4</difficulty>
+	<role>20306</role>
+	<pos>[-17,34,0]</pos>
+	<spriteSize>[423,531]</spriteSize>
+	<copyId>1500704</copyId>
+	<count>3</count>
+	<background>Artifact4_Bg.jpg</background>
+</config>
+<config>
+	<id>401</id>
+	<type>5</type>
+	<title>[zhiliao,重伤]</title>
+	<features>[[3036,每秒回复大量生命值]]</features>
+	<weakness>[[3060,重伤效果提升500%]]</weakness>
 	<difficulty>1</difficulty>
 	<role>20202</role>
 	<pos>[16,-3,0]</pos>
@@ -239,11 +239,11 @@
 	<background>Artifact1_Bg.jpg</background>
 </config>
 <config>
-	<id>38</id>
-	<type>10</type>
-	<title>[zhiliao,吸血]</title>
-	<features>[[2017,造成的伤害提升50%]]</features>
-	<weakness>[[3063,吸血效果提升80%]]</weakness>
+	<id>402</id>
+	<type>5</type>
+	<title>[zhiliao,重伤]</title>
+	<features>[[3036,每秒回复大量生命值]]</features>
+	<weakness>[[3060,重伤效果提升400%]]</weakness>
 	<difficulty>2</difficulty>
 	<role>20120</role>
 	<pos>[-17,53,0]</pos>
@@ -253,11 +253,11 @@
 	<background>Artifact2_Bg.jpg</background>
 </config>
 <config>
-	<id>39</id>
-	<type>10</type>
-	<title>[zhiliao,吸血]</title>
-	<features>[[2017,造成的伤害提升80%]]</features>
-	<weakness>[[3063,吸血效果提升60%]]</weakness>
+	<id>403</id>
+	<type>5</type>
+	<title>[zhiliao,重伤]</title>
+	<features>[[3036,每秒回复大量生命值]]</features>
+	<weakness>[[3060,重伤效果提升300%]]</weakness>
 	<difficulty>3</difficulty>
 	<role>20208</role>
 	<pos>[-23,8,0]</pos>
@@ -267,11 +267,11 @@
 	<background>Artifact3_Bg.jpg</background>
 </config>
 <config>
-	<id>40</id>
-	<type>10</type>
-	<title>[zhiliao,吸血]</title>
-	<features>[[2017,造成的伤害提升110%]]</features>
-	<weakness>[[3063,吸血效果提升40%]]</weakness>
+	<id>404</id>
+	<type>5</type>
+	<title>[zhiliao,重伤]</title>
+	<features>[[3036,每秒回复大量生命值]]</features>
+	<weakness>[[3060,重伤效果提升200%]]</weakness>
 	<difficulty>4</difficulty>
 	<role>20309</role>
 	<pos>[-55,14,0]</pos>

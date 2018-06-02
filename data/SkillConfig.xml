@@ -2342,18 +2342,18 @@
 </config>
 <config>
 	<id>6001101</id>
-	<name>绷带缠绕</name>
+	<name>异常之力</name>
 	<icon>petmainskill_1</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6001.dsl</logicDataFile>
 	<logicId>6001101</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60051</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2364,7 +2364,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60011111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -2394,18 +2394,18 @@
 </config>
 <config>
 	<id>6001201</id>
-	<name>绷带缠绕</name>
+	<name>异常之力</name>
 	<icon>petmainskill_1</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6001.dsl</logicDataFile>
 	<logicId>6001201</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60052</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2416,7 +2416,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60011111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -2446,18 +2446,18 @@
 </config>
 <config>
 	<id>6001301</id>
-	<name>绷带缠绕</name>
+	<name>异常之力</name>
 	<icon>petmainskill_1</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6001.dsl</logicDataFile>
 	<logicId>6001301</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60053</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2468,7 +2468,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60011111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -2498,18 +2498,18 @@
 </config>
 <config>
 	<id>6001401</id>
-	<name>绷带缠绕</name>
+	<name>异常之力</name>
 	<icon>petmainskill_1</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6001.dsl</logicDataFile>
 	<logicId>6001401</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60054</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2520,7 +2520,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60011111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -2550,18 +2550,18 @@
 </config>
 <config>
 	<id>6001501</id>
-	<name>绷带缠绕</name>
+	<name>异常之力</name>
 	<icon>petmainskill_1</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6001.dsl</logicDataFile>
 	<logicId>6001501</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60055</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2572,7 +2572,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60011111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -2602,18 +2602,18 @@
 </config>
 <config>
 	<id>6001601</id>
-	<name>绷带缠绕</name>
+	<name>异常之力</name>
 	<icon>petmainskill_1</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6001.dsl</logicDataFile>
 	<logicId>6001601</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60056</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2624,7 +2624,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60011111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -2654,18 +2654,18 @@
 </config>
 <config>
 	<id>6001701</id>
-	<name>绷带缠绕</name>
+	<name>异常之力</name>
 	<icon>petmainskill_1</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6001.dsl</logicDataFile>
 	<logicId>6001701</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60057</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2676,7 +2676,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60011111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -2717,7 +2717,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2769,7 +2769,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2821,7 +2821,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2873,7 +2873,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2925,7 +2925,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -2977,7 +2977,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3029,7 +3029,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3081,7 +3081,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3133,7 +3133,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3185,7 +3185,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3237,7 +3237,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3289,7 +3289,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3341,7 +3341,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3393,7 +3393,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3445,7 +3445,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3497,7 +3497,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3549,7 +3549,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3601,7 +3601,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3653,7 +3653,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3705,7 +3705,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3757,7 +3757,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3809,7 +3809,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3861,7 +3861,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3913,7 +3913,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -3965,7 +3965,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4017,7 +4017,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4069,7 +4069,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4121,7 +4121,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4162,18 +4162,18 @@
 </config>
 <config>
 	<id>6006101</id>
-	<name>灼心</name>
+	<name>野蛮之力</name>
 	<icon>petmainskill_6</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6006.dsl</logicDataFile>
 	<logicId>6006101</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60021</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4184,7 +4184,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60061111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4214,18 +4214,18 @@
 </config>
 <config>
 	<id>6006201</id>
-	<name>灼心</name>
+	<name>野蛮之力</name>
 	<icon>petmainskill_6</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6006.dsl</logicDataFile>
 	<logicId>6006201</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60022</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4236,7 +4236,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60061111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4266,18 +4266,18 @@
 </config>
 <config>
 	<id>6006301</id>
-	<name>灼心</name>
+	<name>野蛮之力</name>
 	<icon>petmainskill_6</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6006.dsl</logicDataFile>
 	<logicId>6006301</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60023</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4288,7 +4288,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60061111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4318,18 +4318,18 @@
 </config>
 <config>
 	<id>6006401</id>
-	<name>灼心</name>
+	<name>野蛮之力</name>
 	<icon>petmainskill_6</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6006.dsl</logicDataFile>
 	<logicId>6006401</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60024</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4340,7 +4340,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60061111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4370,18 +4370,18 @@
 </config>
 <config>
 	<id>6006501</id>
-	<name>灼心</name>
+	<name>野蛮之力</name>
 	<icon>petmainskill_6</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6006.dsl</logicDataFile>
 	<logicId>6006501</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60025</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4392,7 +4392,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60061111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4422,18 +4422,18 @@
 </config>
 <config>
 	<id>6006601</id>
-	<name>灼心</name>
+	<name>野蛮之力</name>
 	<icon>petmainskill_6</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6006.dsl</logicDataFile>
 	<logicId>6006601</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60026</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4444,7 +4444,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60061111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4474,18 +4474,18 @@
 </config>
 <config>
 	<id>6006701</id>
-	<name>灼心</name>
+	<name>野蛮之力</name>
 	<icon>petmainskill_6</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6006.dsl</logicDataFile>
 	<logicId>6006701</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60027</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4496,7 +4496,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60061111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4526,18 +4526,18 @@
 </config>
 <config>
 	<id>6007101</id>
-	<name>霹雳</name>
+	<name>抗性之力</name>
 	<icon>petmainskill_7</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6007.dsl</logicDataFile>
 	<logicId>6007101</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60061</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4548,7 +4548,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60071111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4578,18 +4578,18 @@
 </config>
 <config>
 	<id>6007201</id>
-	<name>霹雳</name>
+	<name>抗性之力</name>
 	<icon>petmainskill_7</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6007.dsl</logicDataFile>
 	<logicId>6007201</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60062</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4600,7 +4600,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60071111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4630,18 +4630,18 @@
 </config>
 <config>
 	<id>6007301</id>
-	<name>霹雳</name>
+	<name>抗性之力</name>
 	<icon>petmainskill_7</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6007.dsl</logicDataFile>
 	<logicId>6007301</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60063</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4652,7 +4652,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60071111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4682,18 +4682,18 @@
 </config>
 <config>
 	<id>6007401</id>
-	<name>霹雳</name>
+	<name>抗性之力</name>
 	<icon>petmainskill_7</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6007.dsl</logicDataFile>
 	<logicId>6007401</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60064</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4704,7 +4704,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60071111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4734,18 +4734,18 @@
 </config>
 <config>
 	<id>6007501</id>
-	<name>霹雳</name>
+	<name>抗性之力</name>
 	<icon>petmainskill_7</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6007.dsl</logicDataFile>
 	<logicId>6007501</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60065</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4756,7 +4756,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60071111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4786,18 +4786,18 @@
 </config>
 <config>
 	<id>6007601</id>
-	<name>霹雳</name>
+	<name>抗性之力</name>
 	<icon>petmainskill_7</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6007.dsl</logicDataFile>
 	<logicId>6007601</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60066</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4808,7 +4808,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60071111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4838,18 +4838,18 @@
 </config>
 <config>
 	<id>6007701</id>
-	<name>霹雳</name>
+	<name>抗性之力</name>
 	<icon>petmainskill_7</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6007.dsl</logicDataFile>
 	<logicId>6007701</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60067</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4860,7 +4860,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60071111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -4901,7 +4901,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -4953,7 +4953,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5005,7 +5005,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5057,7 +5057,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5109,7 +5109,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5161,7 +5161,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5213,7 +5213,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5265,7 +5265,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5317,7 +5317,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5369,7 +5369,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5421,7 +5421,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5473,7 +5473,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5525,7 +5525,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5577,7 +5577,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5629,7 +5629,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5681,7 +5681,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5733,7 +5733,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5785,7 +5785,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5837,7 +5837,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5889,7 +5889,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5941,7 +5941,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -5993,7 +5993,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6045,7 +6045,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6097,7 +6097,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6149,7 +6149,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6201,7 +6201,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6253,7 +6253,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6305,7 +6305,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6357,7 +6357,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6409,7 +6409,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6461,7 +6461,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6513,7 +6513,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6565,7 +6565,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6617,7 +6617,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6669,7 +6669,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6721,7 +6721,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6773,7 +6773,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6825,7 +6825,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6877,7 +6877,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6929,7 +6929,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -6981,7 +6981,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7033,7 +7033,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7085,7 +7085,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7137,7 +7137,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7189,7 +7189,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7241,7 +7241,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7293,7 +7293,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7345,7 +7345,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7397,7 +7397,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7449,7 +7449,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7501,7 +7501,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7553,7 +7553,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7605,7 +7605,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7657,7 +7657,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7709,7 +7709,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7761,7 +7761,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7813,7 +7813,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7865,7 +7865,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7917,7 +7917,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -7969,7 +7969,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8021,7 +8021,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8073,7 +8073,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8125,7 +8125,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8177,7 +8177,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8229,7 +8229,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8281,7 +8281,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8333,7 +8333,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8385,7 +8385,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8437,7 +8437,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8489,7 +8489,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8530,18 +8530,18 @@
 </config>
 <config>
 	<id>6018101</id>
-	<name>星陨</name>
+	<name>加攻</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6018.dsl</logicDataFile>
 	<logicId>6018101</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60021</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8552,7 +8552,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60181111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -8582,18 +8582,18 @@
 </config>
 <config>
 	<id>6018201</id>
-	<name>星陨</name>
+	<name>加攻</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6018.dsl</logicDataFile>
 	<logicId>6018201</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60022</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8604,7 +8604,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60181111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -8634,18 +8634,18 @@
 </config>
 <config>
 	<id>6018301</id>
-	<name>星陨</name>
+	<name>加攻</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6018.dsl</logicDataFile>
 	<logicId>6018301</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60023</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8656,7 +8656,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60181111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -8686,18 +8686,18 @@
 </config>
 <config>
 	<id>6018401</id>
-	<name>星陨</name>
+	<name>加攻</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6018.dsl</logicDataFile>
 	<logicId>6018401</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60024</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8708,7 +8708,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60181111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -8738,18 +8738,18 @@
 </config>
 <config>
 	<id>6018501</id>
-	<name>星陨</name>
+	<name>加攻</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6018.dsl</logicDataFile>
 	<logicId>6018501</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60025</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8760,7 +8760,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60181111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -8790,18 +8790,18 @@
 </config>
 <config>
 	<id>6018601</id>
-	<name>星陨</name>
+	<name>加攻</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6018.dsl</logicDataFile>
 	<logicId>6018601</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60026</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8812,7 +8812,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60181111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -8842,18 +8842,18 @@
 </config>
 <config>
 	<id>6018701</id>
-	<name>星陨</name>
+	<name>加攻</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6018.dsl</logicDataFile>
 	<logicId>6018701</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60027</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8864,7 +8864,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60181111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -8905,7 +8905,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -8957,7 +8957,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9009,7 +9009,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9061,7 +9061,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9113,7 +9113,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9165,7 +9165,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9217,7 +9217,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9269,7 +9269,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9321,7 +9321,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9373,7 +9373,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9425,7 +9425,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9477,7 +9477,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9529,7 +9529,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9581,7 +9581,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9622,18 +9622,18 @@
 </config>
 <config>
 	<id>6021101</id>
-	<name>星陨</name>
+	<name>加血</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6021.dsl</logicDataFile>
 	<logicId>6021101</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60011</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9644,7 +9644,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60211111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -9674,18 +9674,18 @@
 </config>
 <config>
 	<id>6021201</id>
-	<name>星陨</name>
+	<name>加血</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6021.dsl</logicDataFile>
 	<logicId>6021201</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60012</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9696,7 +9696,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60211111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -9726,18 +9726,18 @@
 </config>
 <config>
 	<id>6021301</id>
-	<name>星陨</name>
+	<name>加血</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6021.dsl</logicDataFile>
 	<logicId>6021301</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60013</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9748,7 +9748,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60211111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -9778,18 +9778,18 @@
 </config>
 <config>
 	<id>6021401</id>
-	<name>星陨</name>
+	<name>加血</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6021.dsl</logicDataFile>
 	<logicId>6021401</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60014</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9800,7 +9800,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60211111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -9830,18 +9830,18 @@
 </config>
 <config>
 	<id>6021501</id>
-	<name>星陨</name>
+	<name>加血</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6021.dsl</logicDataFile>
 	<logicId>6021501</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60015</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9852,7 +9852,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60211111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -9882,18 +9882,18 @@
 </config>
 <config>
 	<id>6021601</id>
-	<name>星陨</name>
+	<name>加血</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6021.dsl</logicDataFile>
 	<logicId>6021601</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60016</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9904,7 +9904,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60211111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -9934,18 +9934,18 @@
 </config>
 <config>
 	<id>6021701</id>
-	<name>星陨</name>
+	<name>加血</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6021.dsl</logicDataFile>
 	<logicId>6021701</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60017</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -9956,7 +9956,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60211111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -9986,18 +9986,18 @@
 </config>
 <config>
 	<id>6022101</id>
-	<name>星陨</name>
+	<name>加防</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6022.dsl</logicDataFile>
 	<logicId>6022101</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60031</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10008,7 +10008,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60221111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10038,18 +10038,18 @@
 </config>
 <config>
 	<id>6022201</id>
-	<name>星陨</name>
+	<name>加防</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6022.dsl</logicDataFile>
 	<logicId>6022201</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60032</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10060,7 +10060,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60221111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10090,18 +10090,18 @@
 </config>
 <config>
 	<id>6022301</id>
-	<name>星陨</name>
+	<name>加防</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6022.dsl</logicDataFile>
 	<logicId>6022301</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60033</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10112,7 +10112,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60221111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10142,18 +10142,18 @@
 </config>
 <config>
 	<id>6022401</id>
-	<name>星陨</name>
+	<name>加防</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6022.dsl</logicDataFile>
 	<logicId>6022401</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60034</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10164,7 +10164,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60221111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10194,18 +10194,18 @@
 </config>
 <config>
 	<id>6022501</id>
-	<name>星陨</name>
+	<name>加防</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6022.dsl</logicDataFile>
 	<logicId>6022501</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60035</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10216,7 +10216,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60221111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10246,18 +10246,18 @@
 </config>
 <config>
 	<id>6022601</id>
-	<name>星陨</name>
+	<name>加防</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6022.dsl</logicDataFile>
 	<logicId>6022601</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60036</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10268,7 +10268,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60221111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10298,18 +10298,18 @@
 </config>
 <config>
 	<id>6022701</id>
-	<name>星陨</name>
+	<name>加防</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6022.dsl</logicDataFile>
 	<logicId>6022701</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60037</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10320,7 +10320,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60221111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10350,18 +10350,18 @@
 </config>
 <config>
 	<id>6023101</id>
-	<name>星陨</name>
+	<name>加暴</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6023.dsl</logicDataFile>
 	<logicId>6023101</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60041</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10372,7 +10372,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60231111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10402,18 +10402,18 @@
 </config>
 <config>
 	<id>6023201</id>
-	<name>星陨</name>
+	<name>加暴</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6023.dsl</logicDataFile>
 	<logicId>6023201</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60042</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10424,7 +10424,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60231111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10454,18 +10454,18 @@
 </config>
 <config>
 	<id>6023301</id>
-	<name>星陨</name>
+	<name>加暴</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6023.dsl</logicDataFile>
 	<logicId>6023301</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60043</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10476,7 +10476,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60231111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10506,18 +10506,18 @@
 </config>
 <config>
 	<id>6023401</id>
-	<name>星陨</name>
+	<name>加暴</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6023.dsl</logicDataFile>
 	<logicId>6023401</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60044</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10528,7 +10528,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60231111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10558,18 +10558,18 @@
 </config>
 <config>
 	<id>6023501</id>
-	<name>星陨</name>
+	<name>加暴</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6023.dsl</logicDataFile>
 	<logicId>6023501</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60045</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10580,7 +10580,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60231111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10610,18 +10610,18 @@
 </config>
 <config>
 	<id>6023601</id>
-	<name>星陨</name>
+	<name>加暴</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6023.dsl</logicDataFile>
 	<logicId>6023601</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60046</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10632,7 +10632,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60231111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10662,18 +10662,18 @@
 </config>
 <config>
 	<id>6023701</id>
-	<name>星陨</name>
+	<name>加暴</name>
 	<icon>petskill</icon>
 	<vocation>5</vocation>
 	<lev>1</lev>
 	<desc>PETSKILL</desc>
 	<logicDataFile>6023.dsl</logicDataFile>
 	<logicId>6023701</logicId>
-	<attachedBuff></attachedBuff>
+	<attachedBuff>60047</attachedBuff>
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10684,7 +10684,7 @@
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
 	<actionId>excited</actionId>
-	<actionEffectId></actionEffectId>
+	<actionEffectId>[60231111]</actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
@@ -10725,7 +10725,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10777,7 +10777,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10829,7 +10829,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10881,7 +10881,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10933,7 +10933,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -10985,7 +10985,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11037,7 +11037,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11089,7 +11089,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11141,7 +11141,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11193,7 +11193,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11245,7 +11245,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11297,7 +11297,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11349,7 +11349,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11401,7 +11401,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11453,7 +11453,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11505,7 +11505,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11557,7 +11557,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11609,7 +11609,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11661,7 +11661,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11713,7 +11713,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11765,7 +11765,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11817,7 +11817,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11869,7 +11869,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11921,7 +11921,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -11973,7 +11973,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -12025,7 +12025,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -12077,7 +12077,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -12129,7 +12129,7 @@
 	<givedBuff></givedBuff>
 	<attackRange></attackRange>
 	<isRegular>0</isRegular>
-	<skillInteruptPriority>1</skillInteruptPriority>
+	<skillInteruptPriority>10</skillInteruptPriority>
 	<strickenInteruptPriority>5000</strickenInteruptPriority>
 	<hitFactor>300</hitFactor>
 	<attackCount>15</attackCount>
@@ -34197,17 +34197,17 @@
 	<isUltimateSkill>1</isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
-	<waiting></waiting>
-	<running></running>
-	<attack></attack>
-	<skillOnGround></skillOnGround>
-	<strickenGiddy></strickenGiddy>
-	<strickenFallback></strickenFallback>
-	<attackInAir></attackInAir>
-	<skillInAir></skillInAir>
-	<strickenFly></strickenFly>
-	<strickenShotdown></strickenShotdown>
-	<lyingDown></lyingDown>
+	<waiting>1210050111</waiting>
+	<running>1210050111</running>
+	<attack>1210050111</attack>
+	<skillOnGround>1210050111</skillOnGround>
+	<strickenGiddy>1210050111</strickenGiddy>
+	<strickenFallback>1210050111</strickenFallback>
+	<attackInAir>1210050112</attackInAir>
+	<skillInAir>1210050112</skillInAir>
+	<strickenFly>1210050112</strickenFly>
+	<strickenShotdown>1210050112</strickenShotdown>
+	<lyingDown>1210050113</lyingDown>
 	<skillParams></skillParams>
 	<coin></coin>
 	<nextId></nextId>
@@ -34249,17 +34249,17 @@
 	<isUltimateSkill>1</isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
-	<waiting></waiting>
-	<running></running>
-	<attack></attack>
-	<skillOnGround></skillOnGround>
-	<strickenGiddy></strickenGiddy>
-	<strickenFallback></strickenFallback>
-	<attackInAir></attackInAir>
-	<skillInAir></skillInAir>
-	<strickenFly></strickenFly>
-	<strickenShotdown></strickenShotdown>
-	<lyingDown></lyingDown>
+	<waiting>1210050111</waiting>
+	<running>1210050111</running>
+	<attack>1210050111</attack>
+	<skillOnGround>1210050111</skillOnGround>
+	<strickenGiddy>1210050111</strickenGiddy>
+	<strickenFallback>1210050111</strickenFallback>
+	<attackInAir>1210050112</attackInAir>
+	<skillInAir>1210050112</skillInAir>
+	<strickenFly>1210050112</strickenFly>
+	<strickenShotdown>1210050112</strickenShotdown>
+	<lyingDown>1210050113</lyingDown>
 	<skillParams></skillParams>
 	<coin></coin>
 	<nextId></nextId>
@@ -34301,17 +34301,17 @@
 	<isUltimateSkill>1</isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
-	<waiting></waiting>
-	<running></running>
-	<attack></attack>
-	<skillOnGround></skillOnGround>
-	<strickenGiddy></strickenGiddy>
-	<strickenFallback></strickenFallback>
-	<attackInAir></attackInAir>
-	<skillInAir></skillInAir>
-	<strickenFly></strickenFly>
-	<strickenShotdown></strickenShotdown>
-	<lyingDown></lyingDown>
+	<waiting>1210050111</waiting>
+	<running>1210050111</running>
+	<attack>1210050111</attack>
+	<skillOnGround>1210050111</skillOnGround>
+	<strickenGiddy>1210050111</strickenGiddy>
+	<strickenFallback>1210050111</strickenFallback>
+	<attackInAir>1210050112</attackInAir>
+	<skillInAir>1210050112</skillInAir>
+	<strickenFly>1210050112</strickenFly>
+	<strickenShotdown>1210050112</strickenShotdown>
+	<lyingDown>1210050113</lyingDown>
 	<skillParams></skillParams>
 	<coin></coin>
 	<nextId></nextId>
@@ -34353,17 +34353,17 @@
 	<isUltimateSkill>1</isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
-	<waiting></waiting>
-	<running></running>
-	<attack></attack>
-	<skillOnGround></skillOnGround>
-	<strickenGiddy></strickenGiddy>
-	<strickenFallback></strickenFallback>
-	<attackInAir></attackInAir>
-	<skillInAir></skillInAir>
-	<strickenFly></strickenFly>
-	<strickenShotdown></strickenShotdown>
-	<lyingDown></lyingDown>
+	<waiting>1210050111</waiting>
+	<running>1210050111</running>
+	<attack>1210050111</attack>
+	<skillOnGround>1210050111</skillOnGround>
+	<strickenGiddy>1210050111</strickenGiddy>
+	<strickenFallback>1210050111</strickenFallback>
+	<attackInAir>1210050112</attackInAir>
+	<skillInAir>1210050112</skillInAir>
+	<strickenFly>1210050112</strickenFly>
+	<strickenShotdown>1210050112</strickenShotdown>
+	<lyingDown>1210050113</lyingDown>
 	<skillParams></skillParams>
 	<coin></coin>
 	<nextId></nextId>
@@ -34405,17 +34405,277 @@
 	<isUltimateSkill>1</isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
-	<waiting></waiting>
-	<running></running>
-	<attack></attack>
-	<skillOnGround></skillOnGround>
-	<strickenGiddy></strickenGiddy>
-	<strickenFallback></strickenFallback>
-	<attackInAir></attackInAir>
-	<skillInAir></skillInAir>
-	<strickenFly></strickenFly>
-	<strickenShotdown></strickenShotdown>
-	<lyingDown></lyingDown>
+	<waiting>1210050111</waiting>
+	<running>1210050111</running>
+	<attack>1210050111</attack>
+	<skillOnGround>1210050111</skillOnGround>
+	<strickenGiddy>1210050111</strickenGiddy>
+	<strickenFallback>1210050111</strickenFallback>
+	<attackInAir>1210050112</attackInAir>
+	<skillInAir>1210050112</skillInAir>
+	<strickenFly>1210050112</strickenFly>
+	<strickenShotdown>1210050112</strickenShotdown>
+	<lyingDown>1210050113</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4121011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>12100601</id>
+	<name>刺客觉醒技能2</name>
+	<icon>305</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>刺客觉醒技能2</desc>
+	<logicDataFile>12101.dsl</logicDataFile>
+	<logicId>12100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[5,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>75</hitFactor>
+	<attackCount>7</attackCount>
+	<cd>40</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>1210060111</waiting>
+	<running>1210060111</running>
+	<attack>1210060111</attack>
+	<skillOnGround>1210060111</skillOnGround>
+	<strickenGiddy>1210060111</strickenGiddy>
+	<strickenFallback>1210060111</strickenFallback>
+	<attackInAir>1210060112</attackInAir>
+	<skillInAir>1210060112</skillInAir>
+	<strickenFly>1210060112</strickenFly>
+	<strickenShotdown>1210060112</strickenShotdown>
+	<lyingDown>1210060113</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4121011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>12100602</id>
+	<name>刺客觉醒技能2</name>
+	<icon>305</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>刺客觉醒技能2</desc>
+	<logicDataFile>12101.dsl</logicDataFile>
+	<logicId>12100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[5,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>80</hitFactor>
+	<attackCount>7</attackCount>
+	<cd>36</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>1210060111</waiting>
+	<running>1210060111</running>
+	<attack>1210060111</attack>
+	<skillOnGround>1210060111</skillOnGround>
+	<strickenGiddy>1210060111</strickenGiddy>
+	<strickenFallback>1210060111</strickenFallback>
+	<attackInAir>1210060112</attackInAir>
+	<skillInAir>1210060112</skillInAir>
+	<strickenFly>1210060112</strickenFly>
+	<strickenShotdown>1210060112</strickenShotdown>
+	<lyingDown>1210060113</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4121011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>12100603</id>
+	<name>刺客觉醒技能2</name>
+	<icon>305</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>刺客觉醒技能2</desc>
+	<logicDataFile>12101.dsl</logicDataFile>
+	<logicId>12100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[5,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>85</hitFactor>
+	<attackCount>7</attackCount>
+	<cd>32</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>1210060111</waiting>
+	<running>1210060111</running>
+	<attack>1210060111</attack>
+	<skillOnGround>1210060111</skillOnGround>
+	<strickenGiddy>1210060111</strickenGiddy>
+	<strickenFallback>1210060111</strickenFallback>
+	<attackInAir>1210060112</attackInAir>
+	<skillInAir>1210060112</skillInAir>
+	<strickenFly>1210060112</strickenFly>
+	<strickenShotdown>1210060112</strickenShotdown>
+	<lyingDown>1210060113</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4121011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>12100604</id>
+	<name>刺客觉醒技能2</name>
+	<icon>305</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>刺客觉醒技能2</desc>
+	<logicDataFile>12101.dsl</logicDataFile>
+	<logicId>12100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[5,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>90</hitFactor>
+	<attackCount>7</attackCount>
+	<cd>28</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>1210060111</waiting>
+	<running>1210060111</running>
+	<attack>1210060111</attack>
+	<skillOnGround>1210060111</skillOnGround>
+	<strickenGiddy>1210060111</strickenGiddy>
+	<strickenFallback>1210060111</strickenFallback>
+	<attackInAir>1210060112</attackInAir>
+	<skillInAir>1210060112</skillInAir>
+	<strickenFly>1210060112</strickenFly>
+	<strickenShotdown>1210060112</strickenShotdown>
+	<lyingDown>1210060113</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4121011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>12100605</id>
+	<name>刺客觉醒技能2</name>
+	<icon>305</icon>
+	<vocation>2</vocation>
+	<lev>1</lev>
+	<desc>刺客觉醒技能2</desc>
+	<logicDataFile>12101.dsl</logicDataFile>
+	<logicId>12100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[5,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>95</hitFactor>
+	<attackCount>7</attackCount>
+	<cd>24</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake2</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>1210060111</waiting>
+	<running>1210060111</running>
+	<attack>1210060111</attack>
+	<skillOnGround>1210060111</skillOnGround>
+	<strickenGiddy>1210060111</strickenGiddy>
+	<strickenFallback>1210060111</strickenFallback>
+	<attackInAir>1210060112</attackInAir>
+	<skillInAir>1210060112</skillInAir>
+	<strickenFly>1210060112</strickenFly>
+	<strickenShotdown>1210060112</strickenShotdown>
+	<lyingDown>1210060113</lyingDown>
 	<skillParams></skillParams>
 	<coin></coin>
 	<nextId></nextId>
@@ -55253,7 +55513,7 @@
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
-	<audioEffectId></audioEffectId>
+	<audioEffectId>1310101</audioEffectId>
 	<isUltimateSkill></isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
@@ -55305,7 +55565,7 @@
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
-	<audioEffectId></audioEffectId>
+	<audioEffectId>1310102</audioEffectId>
 	<isUltimateSkill></isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
@@ -55357,7 +55617,7 @@
 	<actionSoundEffect>0</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
-	<audioEffectId></audioEffectId>
+	<audioEffectId>1310103</audioEffectId>
 	<isUltimateSkill></isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
@@ -55715,7 +55975,7 @@
 	<successiveAttackProb>1</successiveAttackProb>
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
-	<actionId>awake2</actionId>
+	<actionId>awake1</actionId>
 	<actionEffectId></actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
@@ -55767,7 +56027,7 @@
 	<successiveAttackProb>1</successiveAttackProb>
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
-	<actionId>awake3</actionId>
+	<actionId>awake1</actionId>
 	<actionEffectId></actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
@@ -55819,7 +56079,7 @@
 	<successiveAttackProb>1</successiveAttackProb>
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
-	<actionId>awake4</actionId>
+	<actionId>awake1</actionId>
 	<actionEffectId></actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
@@ -55871,7 +56131,267 @@
 	<successiveAttackProb>1</successiveAttackProb>
 	<nextSkillId></nextSkillId>
 	<parentSkillId></parentSkillId>
-	<actionId>awake5</actionId>
+	<actionId>awake1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4131011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>13100601</id>
+	<name>法师觉醒技能2</name>
+	<icon>205</icon>
+	<vocation>3</vocation>
+	<lev>1</lev>
+	<desc>法师觉醒技能</desc>
+	<logicDataFile>13101.dsl</logicDataFile>
+	<logicId>13100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[4,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>75</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>40</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4131011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>13100602</id>
+	<name>法师觉醒技能2</name>
+	<icon>205</icon>
+	<vocation>3</vocation>
+	<lev>1</lev>
+	<desc>法师觉醒技能</desc>
+	<logicDataFile>13101.dsl</logicDataFile>
+	<logicId>13100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[4,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>80</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>36</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4131011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>13100603</id>
+	<name>法师觉醒技能2</name>
+	<icon>205</icon>
+	<vocation>3</vocation>
+	<lev>1</lev>
+	<desc>法师觉醒技能</desc>
+	<logicDataFile>13101.dsl</logicDataFile>
+	<logicId>13100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[4,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>85</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>32</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4131011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>13100604</id>
+	<name>法师觉醒技能2</name>
+	<icon>205</icon>
+	<vocation>3</vocation>
+	<lev>1</lev>
+	<desc>法师觉醒技能</desc>
+	<logicDataFile>13101.dsl</logicDataFile>
+	<logicId>13100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[4,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>90</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>28</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake1</actionId>
+	<actionEffectId></actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>0</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill>1</isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting>4131011</setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType>100</skillType>
+</config>
+<config>
+	<id>13100605</id>
+	<name>法师觉醒技能2</name>
+	<icon>205</icon>
+	<vocation>3</vocation>
+	<lev>1</lev>
+	<desc>法师觉醒技能</desc>
+	<logicDataFile>13101.dsl</logicDataFile>
+	<logicId>13100601</logicId>
+	<attachedBuff>1501</attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[4,1]</attackRange>
+	<isRegular></isRegular>
+	<skillInteruptPriority>10</skillInteruptPriority>
+	<strickenInteruptPriority>10000</strickenInteruptPriority>
+	<hitFactor>95</hitFactor>
+	<attackCount>1</attackCount>
+	<cd>24</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>awake1</actionId>
 	<actionEffectId></actionEffectId>
 	<attackDirection></attackDirection>
 	<actionSoundEffect>0</actionSoundEffect>
@@ -87334,7 +87854,7 @@
 	<actionId>skill1</actionId>
 	<actionEffectId>[202050011]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>139</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -87386,7 +87906,7 @@
 	<actionId>skill2</actionId>
 	<actionEffectId>[202050021]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>140</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -87438,7 +87958,7 @@
 	<actionId>skill3</actionId>
 	<actionEffectId>[202050031]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>141</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -87802,7 +88322,7 @@
 	<actionId>skill1</actionId>
 	<actionEffectId>[202060011]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>144</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -87854,7 +88374,7 @@
 	<actionId>skill2</actionId>
 	<actionEffectId>[202060021]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>145</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -87906,7 +88426,7 @@
 	<actionId>skill3</actionId>
 	<actionEffectId>[202060031,202060032,202060033]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>146</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -91692,7 +92212,7 @@
 	<skillInteruptPriority>1</skillInteruptPriority>
 	<strickenInteruptPriority>10</strickenInteruptPriority>
 	<hitFactor>80</hitFactor>
-	<attackCount>5</attackCount>
+	<attackCount>3</attackCount>
 	<cd>5</cd>
 	<offsetRefer>0</offsetRefer>
 	<followSpeed>0</followSpeed>
@@ -91761,17 +92281,17 @@
 	<isUltimateSkill></isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
-	<waiting>2030600211</waiting>
-	<running>2030600211</running>
-	<attack>2030600211</attack>
-	<skillOnGround>2030600211</skillOnGround>
-	<strickenGiddy>2030600211</strickenGiddy>
-	<strickenFallback>2030600211</strickenFallback>
-	<attackInAir>2030600212</attackInAir>
-	<skillInAir>2030600212</skillInAir>
-	<strickenFly>2030600212</strickenFly>
-	<strickenShotdown>2030600212</strickenShotdown>
-	<lyingDown>2030600213</lyingDown>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<skillParams></skillParams>
 	<coin></coin>
 	<nextId></nextId>
@@ -91917,17 +92437,17 @@
 	<isUltimateSkill></isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
-	<waiting>2030600211</waiting>
-	<running>2030600211</running>
-	<attack>2030600211</attack>
-	<skillOnGround>2030600211</skillOnGround>
-	<strickenGiddy>2030600211</strickenGiddy>
-	<strickenFallback>2030600211</strickenFallback>
-	<attackInAir>2030600212</attackInAir>
-	<skillInAir>2030600212</skillInAir>
-	<strickenFly>2030600212</strickenFly>
-	<strickenShotdown>2030600212</strickenShotdown>
-	<lyingDown>2030600213</lyingDown>
+	<waiting></waiting>
+	<running></running>
+	<attack></attack>
+	<skillOnGround></skillOnGround>
+	<strickenGiddy></strickenGiddy>
+	<strickenFallback></strickenFallback>
+	<attackInAir></attackInAir>
+	<skillInAir></skillInAir>
+	<strickenFly></strickenFly>
+	<strickenShotdown></strickenShotdown>
+	<lyingDown></lyingDown>
 	<skillParams></skillParams>
 	<coin></coin>
 	<nextId></nextId>
@@ -94042,7 +94562,7 @@
 	<actionId>skill1</actionId>
 	<actionEffectId>[204010011]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>147</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -94094,7 +94614,7 @@
 	<actionId>skill2</actionId>
 	<actionEffectId>[204010021]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>148</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -94146,7 +94666,59 @@
 	<actionId>skill3</actionId>
 	<actionEffectId>[204010031,204010032]</actionEffectId>
 	<attackDirection></attackDirection>
-	<actionSoundEffect>0</actionSoundEffect>
+	<actionSoundEffect>149</actionSoundEffect>
+	<enableMoving></enableMoving>
+	<forbidSwing></forbidSwing>
+	<audioEffectId></audioEffectId>
+	<isUltimateSkill></isUltimateSkill>
+	<isCrackSkill></isCrackSkill>
+	<isGravityField></isGravityField>
+	<waiting>2040100311</waiting>
+	<running>2040100311</running>
+	<attack>2040100311</attack>
+	<skillOnGround>2040100311</skillOnGround>
+	<strickenGiddy>2040100311</strickenGiddy>
+	<strickenFallback>2040100311</strickenFallback>
+	<attackInAir>2040100312</attackInAir>
+	<skillInAir>2040100312</skillInAir>
+	<strickenFly>2040100312</strickenFly>
+	<strickenShotdown>2040100312</strickenShotdown>
+	<lyingDown>2040100313</lyingDown>
+	<skillParams></skillParams>
+	<coin></coin>
+	<nextId></nextId>
+	<setPainting></setPainting>
+	<duelBossEffect></duelBossEffect>
+	<duleCameraAnimId></duleCameraAnimId>
+	<skillType></skillType>
+</config>
+<config>
+	<id>20401013</id>
+	<name>暗影之神新手战技能3</name>
+	<icon></icon>
+	<vocation></vocation>
+	<lev></lev>
+	<desc>暗影之神技能3</desc>
+	<logicDataFile>20401.dsl</logicDataFile>
+	<logicId>20401003</logicId>
+	<attachedBuff></attachedBuff>
+	<givedBuff></givedBuff>
+	<attackRange>[6,2]</attackRange>
+	<isRegular>0</isRegular>
+	<skillInteruptPriority>1</skillInteruptPriority>
+	<strickenInteruptPriority>3000</strickenInteruptPriority>
+	<hitFactor>120</hitFactor>
+	<attackCount>11</attackCount>
+	<cd>60</cd>
+	<offsetRefer>0</offsetRefer>
+	<followSpeed>0</followSpeed>
+	<successiveAttackProb>1</successiveAttackProb>
+	<nextSkillId></nextSkillId>
+	<parentSkillId></parentSkillId>
+	<actionId>skill3</actionId>
+	<actionEffectId>[204010031,204010032]</actionEffectId>
+	<attackDirection></attackDirection>
+	<actionSoundEffect>149</actionSoundEffect>
 	<enableMoving></enableMoving>
 	<forbidSwing></forbidSwing>
 	<audioEffectId></audioEffectId>
@@ -96614,7 +97186,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50101002</id>
@@ -96666,7 +97238,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50101003</id>
@@ -96718,7 +97290,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50101004</id>
@@ -96770,7 +97342,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50101005</id>
@@ -96822,7 +97394,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50101006</id>
@@ -96874,7 +97446,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50102001</id>
@@ -96926,7 +97498,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50102002</id>
@@ -96978,7 +97550,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50102003</id>
@@ -97030,7 +97602,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50102004</id>
@@ -97082,7 +97654,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50102005</id>
@@ -97134,7 +97706,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50102006</id>
@@ -97186,7 +97758,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50103001</id>
@@ -97238,7 +97810,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50103002</id>
@@ -97290,7 +97862,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50103003</id>
@@ -97342,7 +97914,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50103004</id>
@@ -97394,7 +97966,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50103005</id>
@@ -97446,7 +98018,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50103006</id>
@@ -97498,7 +98070,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50104001</id>
@@ -97550,7 +98122,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50104002</id>
@@ -97602,7 +98174,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50104003</id>
@@ -97654,7 +98226,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50104004</id>
@@ -97706,7 +98278,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50104005</id>
@@ -97758,7 +98330,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50104006</id>
@@ -97810,7 +98382,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50105001</id>
@@ -97862,7 +98434,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50105002</id>
@@ -97914,7 +98486,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50105003</id>
@@ -97966,7 +98538,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50105004</id>
@@ -98018,7 +98590,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50105005</id>
@@ -98070,7 +98642,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50105006</id>
@@ -98122,7 +98694,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50106001</id>
@@ -98174,7 +98746,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50106002</id>
@@ -98226,7 +98798,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50106003</id>
@@ -98278,7 +98850,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50106004</id>
@@ -98330,7 +98902,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50106005</id>
@@ -98382,7 +98954,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50106006</id>
@@ -98434,7 +99006,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50107001</id>
@@ -98486,7 +99058,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50107002</id>
@@ -98538,7 +99110,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50107003</id>
@@ -98590,7 +99162,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50107004</id>
@@ -98642,7 +99214,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50107005</id>
@@ -98694,7 +99266,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50107006</id>
@@ -98746,7 +99318,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50108001</id>
@@ -98798,7 +99370,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50108002</id>
@@ -98850,7 +99422,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50108003</id>
@@ -98902,7 +99474,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50108004</id>
@@ -98954,7 +99526,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50108005</id>
@@ -99006,7 +99578,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50108006</id>
@@ -99058,7 +99630,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50109001</id>
@@ -99110,7 +99682,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50109002</id>
@@ -99162,7 +99734,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50109003</id>
@@ -99214,7 +99786,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50109004</id>
@@ -99266,7 +99838,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50109005</id>
@@ -99318,7 +99890,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50109006</id>
@@ -99370,7 +99942,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50110001</id>
@@ -99422,7 +99994,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50110002</id>
@@ -99474,7 +100046,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50110003</id>
@@ -99526,7 +100098,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50110004</id>
@@ -99578,7 +100150,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50110005</id>
@@ -99630,7 +100202,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50110006</id>
@@ -99682,7 +100254,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50111001</id>
@@ -99734,7 +100306,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50111002</id>
@@ -99786,7 +100358,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50111003</id>
@@ -99838,7 +100410,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50111004</id>
@@ -99890,7 +100462,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50111005</id>
@@ -99942,7 +100514,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50111006</id>
@@ -99994,7 +100566,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50112001</id>
@@ -100046,7 +100618,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50112002</id>
@@ -100098,7 +100670,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50112003</id>
@@ -100150,7 +100722,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50112004</id>
@@ -100202,7 +100774,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50112005</id>
@@ -100254,7 +100826,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50112006</id>
@@ -100306,7 +100878,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50113001</id>
@@ -100358,7 +100930,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50113002</id>
@@ -100410,7 +100982,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50113003</id>
@@ -100462,7 +101034,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50113004</id>
@@ -100514,7 +101086,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50113005</id>
@@ -100566,7 +101138,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50113006</id>
@@ -100618,7 +101190,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50114001</id>
@@ -100670,7 +101242,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50114002</id>
@@ -100722,7 +101294,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50114003</id>
@@ -100774,7 +101346,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50114004</id>
@@ -100826,7 +101398,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50114005</id>
@@ -100878,7 +101450,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50114006</id>
@@ -100930,7 +101502,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50115001</id>
@@ -100982,7 +101554,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50115002</id>
@@ -101034,7 +101606,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50115003</id>
@@ -101086,7 +101658,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50115004</id>
@@ -101138,7 +101710,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50115005</id>
@@ -101190,7 +101762,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50115006</id>
@@ -101242,7 +101814,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50116001</id>
@@ -101294,7 +101866,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50116002</id>
@@ -101346,7 +101918,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50116003</id>
@@ -101398,7 +101970,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50116004</id>
@@ -101450,7 +102022,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50116005</id>
@@ -101502,7 +102074,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50116006</id>
@@ -101554,7 +102126,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50117001</id>
@@ -101606,7 +102178,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50117002</id>
@@ -101658,7 +102230,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50117003</id>
@@ -101710,7 +102282,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50117004</id>
@@ -101762,7 +102334,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50117005</id>
@@ -101814,7 +102386,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50117006</id>
@@ -101866,7 +102438,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50118001</id>
@@ -101918,7 +102490,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50118002</id>
@@ -101970,7 +102542,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50118003</id>
@@ -102022,7 +102594,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50118004</id>
@@ -102074,7 +102646,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50118005</id>
@@ -102126,7 +102698,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50118006</id>
@@ -102178,7 +102750,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50119001</id>
@@ -102230,7 +102802,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50119002</id>
@@ -102282,7 +102854,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50119003</id>
@@ -102334,7 +102906,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50119004</id>
@@ -102386,7 +102958,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50119005</id>
@@ -102438,7 +103010,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50119006</id>
@@ -102490,7 +103062,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50120001</id>
@@ -102542,7 +103114,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50120002</id>
@@ -102594,7 +103166,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50120003</id>
@@ -102646,7 +103218,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50120004</id>
@@ -102698,7 +103270,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50120005</id>
@@ -102750,7 +103322,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50120006</id>
@@ -102802,7 +103374,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50121001</id>
@@ -102854,7 +103426,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50121002</id>
@@ -102906,7 +103478,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50121003</id>
@@ -102958,7 +103530,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50121004</id>
@@ -103010,7 +103582,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50121005</id>
@@ -103062,7 +103634,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50121006</id>
@@ -103114,7 +103686,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50122001</id>
@@ -103166,7 +103738,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50122002</id>
@@ -103218,7 +103790,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50122003</id>
@@ -103270,7 +103842,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50122004</id>
@@ -103322,7 +103894,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50122005</id>
@@ -103374,7 +103946,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50122006</id>
@@ -103426,7 +103998,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50123001</id>
@@ -103478,7 +104050,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50123002</id>
@@ -103530,7 +104102,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50123003</id>
@@ -103582,7 +104154,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50123004</id>
@@ -103634,7 +104206,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50123005</id>
@@ -103686,7 +104258,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50123006</id>
@@ -103738,7 +104310,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50124001</id>
@@ -103790,7 +104362,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50124002</id>
@@ -103842,7 +104414,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50124003</id>
@@ -103894,7 +104466,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50124004</id>
@@ -103946,7 +104518,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50124005</id>
@@ -103998,7 +104570,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50124006</id>
@@ -104050,7 +104622,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50125001</id>
@@ -104102,7 +104674,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50125002</id>
@@ -104154,7 +104726,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50125003</id>
@@ -104206,7 +104778,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50125004</id>
@@ -104258,7 +104830,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50125005</id>
@@ -104310,7 +104882,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50125006</id>
@@ -104362,7 +104934,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50126001</id>
@@ -104414,7 +104986,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50126002</id>
@@ -104466,7 +105038,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50126003</id>
@@ -104518,7 +105090,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50126004</id>
@@ -104570,7 +105142,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50126005</id>
@@ -104622,7 +105194,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50126006</id>
@@ -104674,7 +105246,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50127001</id>
@@ -104726,7 +105298,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50127002</id>
@@ -104778,7 +105350,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50127003</id>
@@ -104830,7 +105402,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50127004</id>
@@ -104882,7 +105454,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50127005</id>
@@ -104934,7 +105506,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50127006</id>
@@ -104986,7 +105558,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50128001</id>
@@ -105038,7 +105610,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50128002</id>
@@ -105090,7 +105662,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50128003</id>
@@ -105142,7 +105714,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50128004</id>
@@ -105194,7 +105766,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50128005</id>
@@ -105246,7 +105818,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50128006</id>
@@ -105298,7 +105870,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50129001</id>
@@ -105350,7 +105922,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50129002</id>
@@ -105402,7 +105974,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50129003</id>
@@ -105454,7 +106026,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50129004</id>
@@ -105506,7 +106078,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50129005</id>
@@ -105558,7 +106130,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50129006</id>
@@ -105610,7 +106182,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50130001</id>
@@ -105662,7 +106234,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50130002</id>
@@ -105714,7 +106286,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50130003</id>
@@ -105766,7 +106338,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50130004</id>
@@ -105818,7 +106390,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50130005</id>
@@ -105870,7 +106442,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50130006</id>
@@ -105922,7 +106494,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50131001</id>
@@ -105974,7 +106546,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50131002</id>
@@ -106026,7 +106598,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50131003</id>
@@ -106078,7 +106650,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50131004</id>
@@ -106130,7 +106702,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50131005</id>
@@ -106182,7 +106754,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50131006</id>
@@ -106234,7 +106806,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50132001</id>
@@ -106286,7 +106858,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50132002</id>
@@ -106338,7 +106910,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50132003</id>
@@ -106390,7 +106962,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50132004</id>
@@ -106442,7 +107014,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50132005</id>
@@ -106494,7 +107066,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50132006</id>
@@ -106546,7 +107118,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50133001</id>
@@ -106598,7 +107170,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50133002</id>
@@ -106650,7 +107222,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50133003</id>
@@ -106702,7 +107274,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50133004</id>
@@ -106754,7 +107326,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50133005</id>
@@ -106806,7 +107378,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50133006</id>
@@ -106858,7 +107430,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50134001</id>
@@ -106910,7 +107482,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50134002</id>
@@ -106962,7 +107534,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50134003</id>
@@ -107014,7 +107586,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50134004</id>
@@ -107066,7 +107638,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50134005</id>
@@ -107118,7 +107690,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50134006</id>
@@ -107170,7 +107742,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50135001</id>
@@ -107222,7 +107794,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50135002</id>
@@ -107274,7 +107846,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50135003</id>
@@ -107326,7 +107898,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50135004</id>
@@ -107378,7 +107950,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50135005</id>
@@ -107430,7 +108002,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50135006</id>
@@ -107482,7 +108054,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50136001</id>
@@ -107534,7 +108106,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50136002</id>
@@ -107586,7 +108158,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50136003</id>
@@ -107638,7 +108210,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50136004</id>
@@ -107690,7 +108262,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50136005</id>
@@ -107742,7 +108314,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50136006</id>
@@ -107794,7 +108366,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50137001</id>
@@ -107846,7 +108418,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50137002</id>
@@ -107898,7 +108470,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50137003</id>
@@ -107950,7 +108522,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50137004</id>
@@ -108002,7 +108574,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50137005</id>
@@ -108054,7 +108626,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50137006</id>
@@ -108106,7 +108678,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50138001</id>
@@ -108158,7 +108730,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50138002</id>
@@ -108210,7 +108782,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50138003</id>
@@ -108262,7 +108834,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50138004</id>
@@ -108314,7 +108886,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50138005</id>
@@ -108366,7 +108938,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50138006</id>
@@ -108418,7 +108990,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50139001</id>
@@ -108470,7 +109042,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50139002</id>
@@ -108522,7 +109094,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50139003</id>
@@ -108574,7 +109146,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50139004</id>
@@ -108626,7 +109198,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50139005</id>
@@ -108678,7 +109250,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50139006</id>
@@ -108730,7 +109302,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50140001</id>
@@ -108782,7 +109354,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50140002</id>
@@ -108834,7 +109406,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50140003</id>
@@ -108886,7 +109458,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50140004</id>
@@ -108938,7 +109510,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50140005</id>
@@ -108990,7 +109562,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50140006</id>
@@ -109042,7 +109614,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50141001</id>
@@ -109094,7 +109666,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50141002</id>
@@ -109146,7 +109718,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50141003</id>
@@ -109198,7 +109770,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50141004</id>
@@ -109250,7 +109822,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50141005</id>
@@ -109302,7 +109874,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50141006</id>
@@ -109354,7 +109926,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50142001</id>
@@ -109406,7 +109978,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50142002</id>
@@ -109458,7 +110030,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50142003</id>
@@ -109510,7 +110082,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50142004</id>
@@ -109562,7 +110134,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50142005</id>
@@ -109614,7 +110186,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50142006</id>
@@ -109666,7 +110238,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50143001</id>
@@ -109718,7 +110290,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50143002</id>
@@ -109770,7 +110342,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50143003</id>
@@ -109822,7 +110394,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50143004</id>
@@ -109874,7 +110446,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50143005</id>
@@ -109926,7 +110498,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50143006</id>
@@ -109978,7 +110550,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50144001</id>
@@ -110030,7 +110602,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50144002</id>
@@ -110082,7 +110654,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50144003</id>
@@ -110134,7 +110706,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50144004</id>
@@ -110186,7 +110758,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50144005</id>
@@ -110238,7 +110810,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50144006</id>
@@ -110290,7 +110862,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50145001</id>
@@ -110342,7 +110914,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50145002</id>
@@ -110394,7 +110966,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50145003</id>
@@ -110446,7 +111018,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50145004</id>
@@ -110498,7 +111070,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50145005</id>
@@ -110550,7 +111122,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50145006</id>
@@ -110602,7 +111174,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50146001</id>
@@ -110654,7 +111226,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50146002</id>
@@ -110706,7 +111278,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50146003</id>
@@ -110758,7 +111330,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50146004</id>
@@ -110810,7 +111382,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50146005</id>
@@ -110862,7 +111434,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50146006</id>
@@ -110914,7 +111486,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50147001</id>
@@ -110966,7 +111538,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50147002</id>
@@ -111018,7 +111590,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50147003</id>
@@ -111070,7 +111642,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50147004</id>
@@ -111122,7 +111694,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50147005</id>
@@ -111174,7 +111746,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50147006</id>
@@ -111226,7 +111798,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50148001</id>
@@ -111278,7 +111850,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50148002</id>
@@ -111330,7 +111902,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50148003</id>
@@ -111382,7 +111954,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50148004</id>
@@ -111434,7 +112006,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50148005</id>
@@ -111486,7 +112058,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50148006</id>
@@ -111538,7 +112110,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50149001</id>
@@ -111590,7 +112162,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50149002</id>
@@ -111642,7 +112214,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50149003</id>
@@ -111694,7 +112266,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50149004</id>
@@ -111746,7 +112318,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50149005</id>
@@ -111798,7 +112370,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50149006</id>
@@ -111850,7 +112422,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50150001</id>
@@ -111902,7 +112474,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50150002</id>
@@ -111954,7 +112526,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50150003</id>
@@ -112006,7 +112578,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50150004</id>
@@ -112058,7 +112630,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50150005</id>
@@ -112110,7 +112682,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50150006</id>
@@ -112162,7 +112734,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50151001</id>
@@ -112214,7 +112786,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50151002</id>
@@ -112266,7 +112838,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50151003</id>
@@ -112318,7 +112890,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50151004</id>
@@ -112370,7 +112942,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50151005</id>
@@ -112422,7 +112994,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50151006</id>
@@ -112474,7 +113046,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50152001</id>
@@ -112526,7 +113098,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50152002</id>
@@ -112578,7 +113150,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50152003</id>
@@ -112630,7 +113202,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50152004</id>
@@ -112682,7 +113254,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50152005</id>
@@ -112734,7 +113306,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50152006</id>
@@ -112786,7 +113358,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50153001</id>
@@ -112838,7 +113410,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50153002</id>
@@ -112890,7 +113462,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50153003</id>
@@ -112942,7 +113514,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50153004</id>
@@ -112994,7 +113566,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50153005</id>
@@ -113046,7 +113618,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50153006</id>
@@ -113098,7 +113670,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50154001</id>
@@ -113150,7 +113722,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50154002</id>
@@ -113202,7 +113774,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50154003</id>
@@ -113254,7 +113826,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50154004</id>
@@ -113306,7 +113878,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50154005</id>
@@ -113358,7 +113930,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>50154006</id>
@@ -113410,7 +113982,7 @@
 	<setPainting></setPainting>
 	<duelBossEffect></duelBossEffect>
 	<duleCameraAnimId></duleCameraAnimId>
-	<skillType></skillType>
+	<skillType>200</skillType>
 </config>
 <config>
 	<id>5000001</id>
@@ -113705,12 +114277,12 @@
 	<isUltimateSkill></isUltimateSkill>
 	<isCrackSkill></isCrackSkill>
 	<isGravityField></isGravityField>
-	<waiting></waiting>
-	<running></running>
-	<attack></attack>
-	<skillOnGround></skillOnGround>
-	<strickenGiddy></strickenGiddy>
-	<strickenFallback></strickenFallback>
+	<waiting>2090500114</waiting>
+	<running>2090500114</running>
+	<attack>2090500114</attack>
+	<skillOnGround>2090500114</skillOnGround>
+	<strickenGiddy>2090500114</strickenGiddy>
+	<strickenFallback>2090500114</strickenFallback>
 	<attackInAir></attackInAir>
 	<skillInAir></skillInAir>
 	<strickenFly></strickenFly>

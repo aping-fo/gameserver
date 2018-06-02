@@ -51,6 +51,7 @@ public class PlayerVo implements IProtocol {
 	public int signFlag;//当前天是否已签到,0表示未签到，1表示已签到
 	public List<Integer> modules;//已经开启的功能id,相应功能若是在场景中特效是否播放（0播 1不播）
 	public List<Integer> newHandleSteps;//引导步骤
+	public List<Integer> attrList;//基础属性固定值[i],百分比从[i+6]开始
 	public String userName;//渠道唯一标志
 	public String serverName;//区服名
 	public int onlineTime;//在线时长(秒)
@@ -104,6 +105,7 @@ public class PlayerVo implements IProtocol {
 		this.signFlag = bb.getInt();
 		this.modules = bb.getIntList();
 		this.newHandleSteps = bb.getIntList();
+		this.attrList = bb.getIntList();
 		this.userName = bb.getString();
 		this.serverName = bb.getString();
 		this.onlineTime = bb.getInt();
@@ -157,6 +159,7 @@ public class PlayerVo implements IProtocol {
 		bb.putInt(this.signFlag);
 		bb.putIntList(this.modules);
 		bb.putIntList(this.newHandleSteps);
+		bb.putIntList(this.attrList);
 		bb.putString(this.userName);
 		bb.putString(this.serverName);
 		bb.putInt(this.onlineTime);

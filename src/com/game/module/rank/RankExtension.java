@@ -197,7 +197,11 @@ public class RankExtension {
 
 	// 排位赛
 	@Command(3707)
-	public ListParam<LadderRankVO> getLadderRankList(int playerId, Object param) {
-		return ladderService.getLadderRank();
+	public ListParam<LadderRankVO> getLadderRankList(int playerId, Object param) { return ladderService.getLadderRank(); }
+
+	// 排位第一模型
+	@Command(3708)
+	public ListParam<StateRankVO> stateRank(int playerId, Object param) {
+		return rankService.stateRank();
 	}
 }

@@ -156,7 +156,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0>360</Param0>
-	<sort></sort>
+	<sort>9</sort>
 	<des>限时折扣快来买啊</des>
 	<viewname>TimegiftView</viewname>
 </config>
@@ -172,7 +172,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0>360</Param0>
-	<sort></sort>
+	<sort>9</sort>
 	<des>限时折扣快来买啊</des>
 	<viewname>TimegiftView</viewname>
 </config>
@@ -188,7 +188,7 @@
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0>360</Param0>
-	<sort></sort>
+	<sort>9</sort>
 	<des>限时折扣快来买啊</des>
 	<viewname>TimegiftView</viewname>
 </config>
@@ -207,5 +207,53 @@
 	<sort></sort>
 	<des></des>
 	<viewname></viewname>
+</config>
+<config>
+	<id>14</id>
+	<name>盛夏礼包</name>
+	<Conds></Conds>
+	<ActivityType>12</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-05-28 12:00:00</BeginTime>
+	<EndTime>2018-06-28 12:00:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>10</sort>
+	<des>活动时间:2018.06.01-2018.06.05</des>
+	<viewname>SummergiftView</viewname>
+</config>
+<config>
+	<id>15</id>
+	<name>累计充值</name>
+	<Conds></Conds>
+	<ActivityType>13</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-05-28 12:00:01</BeginTime>
+	<EndTime>2018-06-28 12:00:01</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>11</sort>
+	<des>活动说明:活动期间,累计充值到以下对应金额即可领取一份回馈奖励注:如果累计充值达到以下档次中的最大额度,则可领取所有档次奖励</des>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>16</id>
+	<name>单笔充值</name>
+	<Conds></Conds>
+	<ActivityType>14</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-05-28 12:00:02</BeginTime>
+	<EndTime>2018-06-28 12:00:02</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>11</sort>
+	<des>活动说明:活动期间,累计充值到以下对应金额即可领取一份回馈奖励注:单笔充值的金额进度与其他单笔充值进度不共享</des>
+	<viewname>AccumulativeRechargeView</viewname>
 </config>
 </root>

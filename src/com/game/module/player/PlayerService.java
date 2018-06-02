@@ -154,9 +154,6 @@ public class PlayerService implements InitHandler {
 
     // 获取Player对象
     public Player getPlayer(int playerId) {
-        if (playerId == 0) {
-            return null;
-        }
         Player player = players.get(playerId);
         if (player == null) {
             player = playerDao.select(playerId);
@@ -558,6 +555,7 @@ public class PlayerService implements InitHandler {
         vo.onlineTime = data.getOnlineTime();
         vo.curSkills = new ArrayList<>(data.getCurSkills());
         vo.curCards = new ArrayList<>(data.getCurrCard().size());
+        vo.attrList = new ArrayList<>(player.getAttrList());
         vo.gatewayId = SysConfig.gatewayId;
         for (int card : data.getCurrCard()) {
             if (card == 0) {

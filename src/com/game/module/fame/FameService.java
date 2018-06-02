@@ -35,7 +35,7 @@ public class FameService {
     public FameListVO getInfo(int playerId) {
         PlayerData data = playerService.getPlayerData(playerId);
         FameListVO info = new FameListVO();
-        info.camp = data.getActivityCamp();
+//        info.camp = data.getActivityCamp();
         info.fames = new ArrayList<>(data.getFames().size());
         for (Entry<Integer, Upgrade> fame : data.getFames().entrySet()) {
             FameVo vo = new FameVo();
@@ -95,13 +95,13 @@ public class FameService {
      * @param camp
      * @return
      */
-    public IntParam activityAcmp(int playerId, int camp) {
-        PlayerData data = playerService.getPlayerData(playerId);
-        data.setActivityCamp(camp);
-        IntParam param = new IntParam();
-        param.param = camp;
-        return param;
-    }
+//    public IntParam activityAcmp(int playerId, int camp) {
+//        PlayerData data = playerService.getPlayerData(playerId);
+//        data.setActivityCamp(camp);
+//        IntParam param = new IntParam();
+//        param.param = camp;
+//        return param;
+//    }
 
     /**
      * 检测是否开放购买

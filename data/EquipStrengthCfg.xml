@@ -5,7 +5,7 @@
 	<type>201</type>
 	<lev>1</lev>
 	<add>1</add>
-	<costTools>[[109,1]]</costTools>
+	<costTools>[[109,1],[10901,2]]</costTools>
 	<costCoin>100</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -14,7 +14,7 @@
 	<type>201</type>
 	<lev>2</lev>
 	<add>2</add>
-	<costTools>[[109,2]]</costTools>
+	<costTools>[[109,2],[10901,4]]</costTools>
 	<costCoin>200</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -23,7 +23,7 @@
 	<type>201</type>
 	<lev>3</lev>
 	<add>3</add>
-	<costTools>[[109,3]]</costTools>
+	<costTools>[[109,3],[10901,6]]</costTools>
 	<costCoin>300</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -32,7 +32,7 @@
 	<type>201</type>
 	<lev>4</lev>
 	<add>4</add>
-	<costTools>[[109,4]]</costTools>
+	<costTools>[[109,4],[10901,8]]</costTools>
 	<costCoin>500</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -41,7 +41,7 @@
 	<type>201</type>
 	<lev>5</lev>
 	<add>5</add>
-	<costTools>[[109,5]]</costTools>
+	<costTools>[[109,5],[10901,10]]</costTools>
 	<costCoin>700</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -50,7 +50,7 @@
 	<type>201</type>
 	<lev>6</lev>
 	<add>6</add>
-	<costTools>[[109,6]]</costTools>
+	<costTools>[[109,6],[10901,12]]</costTools>
 	<costCoin>1000</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -59,7 +59,7 @@
 	<type>201</type>
 	<lev>7</lev>
 	<add>7</add>
-	<costTools>[[109,7]]</costTools>
+	<costTools>[[109,7],[10901,14]]</costTools>
 	<costCoin>1500</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -68,7 +68,7 @@
 	<type>201</type>
 	<lev>8</lev>
 	<add>8</add>
-	<costTools>[[109,8]]</costTools>
+	<costTools>[[109,8],[10901,16]]</costTools>
 	<costCoin>2000</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -77,7 +77,7 @@
 	<type>201</type>
 	<lev>9</lev>
 	<add>9</add>
-	<costTools>[[109,9]]</costTools>
+	<costTools>[[109,9],[10901,18]]</costTools>
 	<costCoin>3000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -86,7 +86,7 @@
 	<type>201</type>
 	<lev>10</lev>
 	<add>10</add>
-	<costTools>[[109,10],[10901,2]]</costTools>
+	<costTools>[[109,10],[10901,20]]</costTools>
 	<costCoin>5000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -95,7 +95,7 @@
 	<type>201</type>
 	<lev>11</lev>
 	<add>11</add>
-	<costTools>[[109,12]]</costTools>
+	<costTools>[[109,12],[10901,22]]</costTools>
 	<costCoin>7000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -104,7 +104,7 @@
 	<type>201</type>
 	<lev>12</lev>
 	<add>12</add>
-	<costTools>[[109,14]]</costTools>
+	<costTools>[[109,14],[10901,24]]</costTools>
 	<costCoin>9000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -113,7 +113,7 @@
 	<type>201</type>
 	<lev>13</lev>
 	<add>13</add>
-	<costTools>[[109,16]]</costTools>
+	<costTools>[[109,16],[10901,26]]</costTools>
 	<costCoin>11000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -122,7 +122,7 @@
 	<type>201</type>
 	<lev>14</lev>
 	<add>14</add>
-	<costTools>[[109,18]]</costTools>
+	<costTools>[[109,18],[10901,28]]</costTools>
 	<costCoin>13000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -131,7 +131,7 @@
 	<type>201</type>
 	<lev>15</lev>
 	<add>15</add>
-	<costTools>[[109,20]]</costTools>
+	<costTools>[[109,20],[10901,30]]</costTools>
 	<costCoin>15000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -140,7 +140,7 @@
 	<type>201</type>
 	<lev>16</lev>
 	<add>16</add>
-	<costTools>[[109,22]]</costTools>
+	<costTools>[[109,22],[10901,32]]</costTools>
 	<costCoin>17000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -149,7 +149,7 @@
 	<type>201</type>
 	<lev>17</lev>
 	<add>17</add>
-	<costTools>[[109,24]]</costTools>
+	<costTools>[[109,24],[10901,34]]</costTools>
 	<costCoin>19000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -158,7 +158,7 @@
 	<type>201</type>
 	<lev>18</lev>
 	<add>18</add>
-	<costTools>[[109,26]]</costTools>
+	<costTools>[[109,26],[10901,36]]</costTools>
 	<costCoin>21000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -167,7 +167,7 @@
 	<type>201</type>
 	<lev>19</lev>
 	<add>19</add>
-	<costTools>[[109,28]]</costTools>
+	<costTools>[[109,28],[10901,38]]</costTools>
 	<costCoin>23000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -176,7 +176,7 @@
 	<type>201</type>
 	<lev>20</lev>
 	<add>20</add>
-	<costTools>[[109,30],[10902,3]]</costTools>
+	<costTools>[[109,30],[10901,40]]</costTools>
 	<costCoin>25000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -185,7 +185,7 @@
 	<type>201</type>
 	<lev>21</lev>
 	<add>21</add>
-	<costTools>[[109,33]]</costTools>
+	<costTools>[[109,33],[10901,42]]</costTools>
 	<costCoin>27000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -194,7 +194,7 @@
 	<type>201</type>
 	<lev>22</lev>
 	<add>22</add>
-	<costTools>[[109,36]]</costTools>
+	<costTools>[[109,36],[10901,44]]</costTools>
 	<costCoin>29000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -203,7 +203,7 @@
 	<type>201</type>
 	<lev>23</lev>
 	<add>23</add>
-	<costTools>[[109,39]]</costTools>
+	<costTools>[[109,39],[10901,46]]</costTools>
 	<costCoin>31000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -212,7 +212,7 @@
 	<type>201</type>
 	<lev>24</lev>
 	<add>24</add>
-	<costTools>[[109,42]]</costTools>
+	<costTools>[[109,42],[10901,48]]</costTools>
 	<costCoin>33000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -221,7 +221,7 @@
 	<type>201</type>
 	<lev>25</lev>
 	<add>25</add>
-	<costTools>[[109,45]]</costTools>
+	<costTools>[[109,45],[10901,50]]</costTools>
 	<costCoin>35000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -230,7 +230,7 @@
 	<type>201</type>
 	<lev>26</lev>
 	<add>26</add>
-	<costTools>[[109,48]]</costTools>
+	<costTools>[[109,48],[10901,52]]</costTools>
 	<costCoin>37000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -239,7 +239,7 @@
 	<type>201</type>
 	<lev>27</lev>
 	<add>27</add>
-	<costTools>[[109,51]]</costTools>
+	<costTools>[[109,51],[10901,54]]</costTools>
 	<costCoin>39000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -248,7 +248,7 @@
 	<type>201</type>
 	<lev>28</lev>
 	<add>28</add>
-	<costTools>[[109,54]]</costTools>
+	<costTools>[[109,54],[10901,56]]</costTools>
 	<costCoin>41000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -257,7 +257,7 @@
 	<type>201</type>
 	<lev>29</lev>
 	<add>29</add>
-	<costTools>[[109,57]]</costTools>
+	<costTools>[[109,57],[10901,58]]</costTools>
 	<costCoin>43000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -266,7 +266,7 @@
 	<type>201</type>
 	<lev>30</lev>
 	<add>30</add>
-	<costTools>[[109,60],[10903,5]]</costTools>
+	<costTools>[[109,60],[10901,60]]</costTools>
 	<costCoin>45000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -275,7 +275,7 @@
 	<type>201</type>
 	<lev>31</lev>
 	<add>31</add>
-	<costTools>[[109,64]]</costTools>
+	<costTools>[[109,64],[10901,62]]</costTools>
 	<costCoin>47000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -284,7 +284,7 @@
 	<type>201</type>
 	<lev>32</lev>
 	<add>32</add>
-	<costTools>[[109,68]]</costTools>
+	<costTools>[[109,68],[10901,64]]</costTools>
 	<costCoin>49000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -293,7 +293,7 @@
 	<type>201</type>
 	<lev>33</lev>
 	<add>33</add>
-	<costTools>[[109,72]]</costTools>
+	<costTools>[[109,72],[10901,66]]</costTools>
 	<costCoin>51000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -302,7 +302,7 @@
 	<type>201</type>
 	<lev>34</lev>
 	<add>34</add>
-	<costTools>[[109,76]]</costTools>
+	<costTools>[[109,76],[10901,68]]</costTools>
 	<costCoin>53000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -311,7 +311,7 @@
 	<type>201</type>
 	<lev>35</lev>
 	<add>35</add>
-	<costTools>[[109,80]]</costTools>
+	<costTools>[[109,80],[10901,70]]</costTools>
 	<costCoin>55000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -320,7 +320,7 @@
 	<type>201</type>
 	<lev>36</lev>
 	<add>36</add>
-	<costTools>[[109,84]]</costTools>
+	<costTools>[[109,84],[10901,72]]</costTools>
 	<costCoin>57000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -329,7 +329,7 @@
 	<type>201</type>
 	<lev>37</lev>
 	<add>37</add>
-	<costTools>[[109,88]]</costTools>
+	<costTools>[[109,88],[10901,74]]</costTools>
 	<costCoin>59000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -338,7 +338,7 @@
 	<type>201</type>
 	<lev>38</lev>
 	<add>38</add>
-	<costTools>[[109,92]]</costTools>
+	<costTools>[[109,92],[10901,76]]</costTools>
 	<costCoin>61000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -347,7 +347,7 @@
 	<type>201</type>
 	<lev>39</lev>
 	<add>39</add>
-	<costTools>[[109,96]]</costTools>
+	<costTools>[[109,96],[10901,78]]</costTools>
 	<costCoin>63000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -356,7 +356,7 @@
 	<type>201</type>
 	<lev>40</lev>
 	<add>40</add>
-	<costTools>[[109,100],[10904,7]]</costTools>
+	<costTools>[[109,100],[10901,80]]</costTools>
 	<costCoin>65000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -365,7 +365,7 @@
 	<type>201</type>
 	<lev>41</lev>
 	<add>41</add>
-	<costTools>[[109,105]]</costTools>
+	<costTools>[[109,105],[10901,82]]</costTools>
 	<costCoin>67000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -374,7 +374,7 @@
 	<type>201</type>
 	<lev>42</lev>
 	<add>42</add>
-	<costTools>[[109,110]]</costTools>
+	<costTools>[[109,110],[10901,84]]</costTools>
 	<costCoin>69000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -383,7 +383,7 @@
 	<type>201</type>
 	<lev>43</lev>
 	<add>43</add>
-	<costTools>[[109,115]]</costTools>
+	<costTools>[[109,115],[10901,86]]</costTools>
 	<costCoin>71000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -392,7 +392,7 @@
 	<type>201</type>
 	<lev>44</lev>
 	<add>44</add>
-	<costTools>[[109,120]]</costTools>
+	<costTools>[[109,120],[10901,88]]</costTools>
 	<costCoin>73000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -401,7 +401,7 @@
 	<type>201</type>
 	<lev>45</lev>
 	<add>45</add>
-	<costTools>[[109,125]]</costTools>
+	<costTools>[[109,125],[10901,90]]</costTools>
 	<costCoin>75000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -410,7 +410,7 @@
 	<type>201</type>
 	<lev>46</lev>
 	<add>46</add>
-	<costTools>[[109,130]]</costTools>
+	<costTools>[[109,130],[10901,92]]</costTools>
 	<costCoin>77000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -419,7 +419,7 @@
 	<type>201</type>
 	<lev>47</lev>
 	<add>47</add>
-	<costTools>[[109,135]]</costTools>
+	<costTools>[[109,135],[10901,94]]</costTools>
 	<costCoin>79000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -428,7 +428,7 @@
 	<type>201</type>
 	<lev>48</lev>
 	<add>48</add>
-	<costTools>[[109,140]]</costTools>
+	<costTools>[[109,140],[10901,96]]</costTools>
 	<costCoin>81000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -437,7 +437,7 @@
 	<type>201</type>
 	<lev>49</lev>
 	<add>49</add>
-	<costTools>[[109,145]]</costTools>
+	<costTools>[[109,145],[10901,98]]</costTools>
 	<costCoin>83000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -446,7 +446,7 @@
 	<type>201</type>
 	<lev>50</lev>
 	<add>50</add>
-	<costTools>[[109,150],[10905,9]]</costTools>
+	<costTools>[[109,150],[10901,100]]</costTools>
 	<costCoin>85000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -455,7 +455,7 @@
 	<type>201</type>
 	<lev>51</lev>
 	<add>51</add>
-	<costTools>[[109,156]]</costTools>
+	<costTools>[[109,156],[10901,102]]</costTools>
 	<costCoin>87000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -464,7 +464,7 @@
 	<type>201</type>
 	<lev>52</lev>
 	<add>52</add>
-	<costTools>[[109,162]]</costTools>
+	<costTools>[[109,162],[10901,104]]</costTools>
 	<costCoin>89000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -473,7 +473,7 @@
 	<type>201</type>
 	<lev>53</lev>
 	<add>53</add>
-	<costTools>[[109,168]]</costTools>
+	<costTools>[[109,168],[10901,106]]</costTools>
 	<costCoin>91000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -482,7 +482,7 @@
 	<type>201</type>
 	<lev>54</lev>
 	<add>54</add>
-	<costTools>[[109,174]]</costTools>
+	<costTools>[[109,174],[10901,108]]</costTools>
 	<costCoin>93000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -491,7 +491,7 @@
 	<type>201</type>
 	<lev>55</lev>
 	<add>55</add>
-	<costTools>[[109,180]]</costTools>
+	<costTools>[[109,180],[10901,110]]</costTools>
 	<costCoin>95000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -500,7 +500,7 @@
 	<type>201</type>
 	<lev>56</lev>
 	<add>56</add>
-	<costTools>[[109,186]]</costTools>
+	<costTools>[[109,186],[10901,112]]</costTools>
 	<costCoin>97000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -509,7 +509,7 @@
 	<type>201</type>
 	<lev>57</lev>
 	<add>57</add>
-	<costTools>[[109,192]]</costTools>
+	<costTools>[[109,192],[10901,114]]</costTools>
 	<costCoin>99000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -518,7 +518,7 @@
 	<type>201</type>
 	<lev>58</lev>
 	<add>58</add>
-	<costTools>[[109,198]]</costTools>
+	<costTools>[[109,198],[10901,116]]</costTools>
 	<costCoin>101000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -527,7 +527,7 @@
 	<type>201</type>
 	<lev>59</lev>
 	<add>59</add>
-	<costTools>[[109,204]]</costTools>
+	<costTools>[[109,204],[10901,118]]</costTools>
 	<costCoin>103000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -536,7 +536,7 @@
 	<type>201</type>
 	<lev>60</lev>
 	<add>60</add>
-	<costTools>[[109,210],[10906,11]]</costTools>
+	<costTools>[[109,210],[10901,120]]</costTools>
 	<costCoin>105000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -545,7 +545,7 @@
 	<type>201</type>
 	<lev>61</lev>
 	<add>61</add>
-	<costTools>[[109,217]]</costTools>
+	<costTools>[[109,217],[10901,122]]</costTools>
 	<costCoin>107000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -554,7 +554,7 @@
 	<type>201</type>
 	<lev>62</lev>
 	<add>62</add>
-	<costTools>[[109,224]]</costTools>
+	<costTools>[[109,224],[10901,124]]</costTools>
 	<costCoin>109000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -563,7 +563,7 @@
 	<type>201</type>
 	<lev>63</lev>
 	<add>63</add>
-	<costTools>[[109,231]]</costTools>
+	<costTools>[[109,231],[10901,126]]</costTools>
 	<costCoin>111000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -572,7 +572,7 @@
 	<type>201</type>
 	<lev>64</lev>
 	<add>64</add>
-	<costTools>[[109,238]]</costTools>
+	<costTools>[[109,238],[10901,128]]</costTools>
 	<costCoin>113000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -581,7 +581,7 @@
 	<type>201</type>
 	<lev>65</lev>
 	<add>65</add>
-	<costTools>[[109,245]]</costTools>
+	<costTools>[[109,245],[10901,130]]</costTools>
 	<costCoin>115000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -590,7 +590,7 @@
 	<type>201</type>
 	<lev>66</lev>
 	<add>66</add>
-	<costTools>[[109,252]]</costTools>
+	<costTools>[[109,252],[10901,132]]</costTools>
 	<costCoin>117000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -599,7 +599,7 @@
 	<type>201</type>
 	<lev>67</lev>
 	<add>67</add>
-	<costTools>[[109,259]]</costTools>
+	<costTools>[[109,259],[10901,134]]</costTools>
 	<costCoin>119000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -608,7 +608,7 @@
 	<type>201</type>
 	<lev>68</lev>
 	<add>68</add>
-	<costTools>[[109,266]]</costTools>
+	<costTools>[[109,266],[10901,136]]</costTools>
 	<costCoin>121000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -617,7 +617,7 @@
 	<type>201</type>
 	<lev>69</lev>
 	<add>69</add>
-	<costTools>[[109,273]]</costTools>
+	<costTools>[[109,273],[10901,138]]</costTools>
 	<costCoin>123000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -626,7 +626,7 @@
 	<type>201</type>
 	<lev>70</lev>
 	<add>70</add>
-	<costTools>[[109,280],[10907,13]]</costTools>
+	<costTools>[[109,280],[10901,140]]</costTools>
 	<costCoin>125000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -635,7 +635,7 @@
 	<type>201</type>
 	<lev>71</lev>
 	<add>71</add>
-	<costTools>[[109,288]]</costTools>
+	<costTools>[[109,288],[10901,142]]</costTools>
 	<costCoin>127000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -644,7 +644,7 @@
 	<type>201</type>
 	<lev>72</lev>
 	<add>72</add>
-	<costTools>[[109,296]]</costTools>
+	<costTools>[[109,296],[10901,144]]</costTools>
 	<costCoin>129000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -653,7 +653,7 @@
 	<type>201</type>
 	<lev>73</lev>
 	<add>73</add>
-	<costTools>[[109,304]]</costTools>
+	<costTools>[[109,304],[10901,146]]</costTools>
 	<costCoin>131000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -662,7 +662,7 @@
 	<type>201</type>
 	<lev>74</lev>
 	<add>74</add>
-	<costTools>[[109,312]]</costTools>
+	<costTools>[[109,312],[10901,148]]</costTools>
 	<costCoin>133000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -671,7 +671,7 @@
 	<type>201</type>
 	<lev>75</lev>
 	<add>75</add>
-	<costTools>[[109,320]]</costTools>
+	<costTools>[[109,320],[10901,150]]</costTools>
 	<costCoin>135000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -680,7 +680,7 @@
 	<type>201</type>
 	<lev>76</lev>
 	<add>76</add>
-	<costTools>[[109,328]]</costTools>
+	<costTools>[[109,328],[10901,152]]</costTools>
 	<costCoin>137000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -689,7 +689,7 @@
 	<type>201</type>
 	<lev>77</lev>
 	<add>77</add>
-	<costTools>[[109,336]]</costTools>
+	<costTools>[[109,336],[10901,154]]</costTools>
 	<costCoin>139000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -698,7 +698,7 @@
 	<type>201</type>
 	<lev>78</lev>
 	<add>78</add>
-	<costTools>[[109,344]]</costTools>
+	<costTools>[[109,344],[10901,156]]</costTools>
 	<costCoin>141000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -707,7 +707,7 @@
 	<type>201</type>
 	<lev>79</lev>
 	<add>79</add>
-	<costTools>[[109,352]]</costTools>
+	<costTools>[[109,352],[10901,158]]</costTools>
 	<costCoin>143000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -716,7 +716,7 @@
 	<type>201</type>
 	<lev>80</lev>
 	<add>80</add>
-	<costTools>[[109,360],[10908,15]]</costTools>
+	<costTools>[[109,360],[10901,160]]</costTools>
 	<costCoin>145000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -725,7 +725,7 @@
 	<type>201</type>
 	<lev>81</lev>
 	<add>81</add>
-	<costTools>[[109,369]]</costTools>
+	<costTools>[[109,369],[10901,162]]</costTools>
 	<costCoin>147000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -734,7 +734,7 @@
 	<type>201</type>
 	<lev>82</lev>
 	<add>82</add>
-	<costTools>[[109,378]]</costTools>
+	<costTools>[[109,378],[10901,164]]</costTools>
 	<costCoin>149000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -743,7 +743,7 @@
 	<type>201</type>
 	<lev>83</lev>
 	<add>83</add>
-	<costTools>[[109,387]]</costTools>
+	<costTools>[[109,387],[10901,166]]</costTools>
 	<costCoin>151000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -752,7 +752,7 @@
 	<type>201</type>
 	<lev>84</lev>
 	<add>84</add>
-	<costTools>[[109,396]]</costTools>
+	<costTools>[[109,396],[10901,168]]</costTools>
 	<costCoin>153000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -761,7 +761,7 @@
 	<type>201</type>
 	<lev>85</lev>
 	<add>85</add>
-	<costTools>[[109,405]]</costTools>
+	<costTools>[[109,405],[10901,170]]</costTools>
 	<costCoin>155000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -770,7 +770,7 @@
 	<type>201</type>
 	<lev>86</lev>
 	<add>86</add>
-	<costTools>[[109,414]]</costTools>
+	<costTools>[[109,414],[10901,172]]</costTools>
 	<costCoin>157000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -779,7 +779,7 @@
 	<type>201</type>
 	<lev>87</lev>
 	<add>87</add>
-	<costTools>[[109,423]]</costTools>
+	<costTools>[[109,423],[10901,174]]</costTools>
 	<costCoin>159000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -788,7 +788,7 @@
 	<type>201</type>
 	<lev>88</lev>
 	<add>88</add>
-	<costTools>[[109,432]]</costTools>
+	<costTools>[[109,432],[10901,176]]</costTools>
 	<costCoin>161000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -797,7 +797,7 @@
 	<type>201</type>
 	<lev>89</lev>
 	<add>89</add>
-	<costTools>[[109,441]]</costTools>
+	<costTools>[[109,441],[10901,178]]</costTools>
 	<costCoin>163000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -806,7 +806,7 @@
 	<type>201</type>
 	<lev>90</lev>
 	<add>90</add>
-	<costTools>[[109,450],[10909,17]]</costTools>
+	<costTools>[[109,450],[10901,180]]</costTools>
 	<costCoin>165000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -815,7 +815,7 @@
 	<type>201</type>
 	<lev>91</lev>
 	<add>91</add>
-	<costTools>[[109,460]]</costTools>
+	<costTools>[[109,460],[10901,182]]</costTools>
 	<costCoin>167000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -824,7 +824,7 @@
 	<type>201</type>
 	<lev>92</lev>
 	<add>92</add>
-	<costTools>[[109,470]]</costTools>
+	<costTools>[[109,470],[10901,184]]</costTools>
 	<costCoin>169000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -833,7 +833,7 @@
 	<type>201</type>
 	<lev>93</lev>
 	<add>93</add>
-	<costTools>[[109,480]]</costTools>
+	<costTools>[[109,480],[10901,186]]</costTools>
 	<costCoin>171000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -842,7 +842,7 @@
 	<type>201</type>
 	<lev>94</lev>
 	<add>94</add>
-	<costTools>[[109,490]]</costTools>
+	<costTools>[[109,490],[10901,188]]</costTools>
 	<costCoin>173000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -851,7 +851,7 @@
 	<type>201</type>
 	<lev>95</lev>
 	<add>95</add>
-	<costTools>[[109,500]]</costTools>
+	<costTools>[[109,500],[10901,190]]</costTools>
 	<costCoin>175000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -860,7 +860,7 @@
 	<type>201</type>
 	<lev>96</lev>
 	<add>96</add>
-	<costTools>[[109,510]]</costTools>
+	<costTools>[[109,510],[10901,192]]</costTools>
 	<costCoin>177000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -869,7 +869,7 @@
 	<type>201</type>
 	<lev>97</lev>
 	<add>97</add>
-	<costTools>[[109,520]]</costTools>
+	<costTools>[[109,520],[10901,194]]</costTools>
 	<costCoin>179000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -878,7 +878,7 @@
 	<type>201</type>
 	<lev>98</lev>
 	<add>98</add>
-	<costTools>[[109,530]]</costTools>
+	<costTools>[[109,530],[10901,196]]</costTools>
 	<costCoin>181000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -887,7 +887,7 @@
 	<type>201</type>
 	<lev>99</lev>
 	<add>99</add>
-	<costTools>[[109,540]]</costTools>
+	<costTools>[[109,540],[10901,198]]</costTools>
 	<costCoin>183000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -896,7 +896,7 @@
 	<type>201</type>
 	<lev>100</lev>
 	<add>100</add>
-	<costTools>[[109,550]]</costTools>
+	<costTools>[[109,550],[10901,200]]</costTools>
 	<costCoin>185000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -905,7 +905,7 @@
 	<type>202</type>
 	<lev>1</lev>
 	<add>1</add>
-	<costTools>[[109,1]]</costTools>
+	<costTools>[[109,1],[10901,2]]</costTools>
 	<costCoin>100</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -914,7 +914,7 @@
 	<type>202</type>
 	<lev>2</lev>
 	<add>2</add>
-	<costTools>[[109,2]]</costTools>
+	<costTools>[[109,2],[10901,4]]</costTools>
 	<costCoin>200</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -923,7 +923,7 @@
 	<type>202</type>
 	<lev>3</lev>
 	<add>3</add>
-	<costTools>[[109,3]]</costTools>
+	<costTools>[[109,3],[10901,6]]</costTools>
 	<costCoin>300</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -932,7 +932,7 @@
 	<type>202</type>
 	<lev>4</lev>
 	<add>4</add>
-	<costTools>[[109,4]]</costTools>
+	<costTools>[[109,4],[10901,8]]</costTools>
 	<costCoin>500</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -941,7 +941,7 @@
 	<type>202</type>
 	<lev>5</lev>
 	<add>5</add>
-	<costTools>[[109,5]]</costTools>
+	<costTools>[[109,5],[10901,10]]</costTools>
 	<costCoin>700</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -950,7 +950,7 @@
 	<type>202</type>
 	<lev>6</lev>
 	<add>6</add>
-	<costTools>[[109,6]]</costTools>
+	<costTools>[[109,6],[10901,12]]</costTools>
 	<costCoin>1000</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -959,7 +959,7 @@
 	<type>202</type>
 	<lev>7</lev>
 	<add>7</add>
-	<costTools>[[109,7]]</costTools>
+	<costTools>[[109,7],[10901,14]]</costTools>
 	<costCoin>1500</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -968,7 +968,7 @@
 	<type>202</type>
 	<lev>8</lev>
 	<add>8</add>
-	<costTools>[[109,8]]</costTools>
+	<costTools>[[109,8],[10901,16]]</costTools>
 	<costCoin>2000</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -977,7 +977,7 @@
 	<type>202</type>
 	<lev>9</lev>
 	<add>9</add>
-	<costTools>[[109,9]]</costTools>
+	<costTools>[[109,9],[10901,18]]</costTools>
 	<costCoin>3000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -986,7 +986,7 @@
 	<type>202</type>
 	<lev>10</lev>
 	<add>10</add>
-	<costTools>[[109,10],[10901,2]]</costTools>
+	<costTools>[[109,10],[10901,20]]</costTools>
 	<costCoin>5000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -995,7 +995,7 @@
 	<type>202</type>
 	<lev>11</lev>
 	<add>11</add>
-	<costTools>[[109,12]]</costTools>
+	<costTools>[[109,12],[10901,22]]</costTools>
 	<costCoin>7000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -1004,7 +1004,7 @@
 	<type>202</type>
 	<lev>12</lev>
 	<add>12</add>
-	<costTools>[[109,14]]</costTools>
+	<costTools>[[109,14],[10901,24]]</costTools>
 	<costCoin>9000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -1013,7 +1013,7 @@
 	<type>202</type>
 	<lev>13</lev>
 	<add>13</add>
-	<costTools>[[109,16]]</costTools>
+	<costTools>[[109,16],[10901,26]]</costTools>
 	<costCoin>11000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -1022,7 +1022,7 @@
 	<type>202</type>
 	<lev>14</lev>
 	<add>14</add>
-	<costTools>[[109,18]]</costTools>
+	<costTools>[[109,18],[10901,28]]</costTools>
 	<costCoin>13000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -1031,7 +1031,7 @@
 	<type>202</type>
 	<lev>15</lev>
 	<add>15</add>
-	<costTools>[[109,20]]</costTools>
+	<costTools>[[109,20],[10901,30]]</costTools>
 	<costCoin>15000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1040,7 +1040,7 @@
 	<type>202</type>
 	<lev>16</lev>
 	<add>16</add>
-	<costTools>[[109,22]]</costTools>
+	<costTools>[[109,22],[10901,32]]</costTools>
 	<costCoin>17000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1049,7 +1049,7 @@
 	<type>202</type>
 	<lev>17</lev>
 	<add>17</add>
-	<costTools>[[109,24]]</costTools>
+	<costTools>[[109,24],[10901,34]]</costTools>
 	<costCoin>19000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1058,7 +1058,7 @@
 	<type>202</type>
 	<lev>18</lev>
 	<add>18</add>
-	<costTools>[[109,26]]</costTools>
+	<costTools>[[109,26],[10901,36]]</costTools>
 	<costCoin>21000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1067,7 +1067,7 @@
 	<type>202</type>
 	<lev>19</lev>
 	<add>19</add>
-	<costTools>[[109,28]]</costTools>
+	<costTools>[[109,28],[10901,38]]</costTools>
 	<costCoin>23000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1076,7 +1076,7 @@
 	<type>202</type>
 	<lev>20</lev>
 	<add>20</add>
-	<costTools>[[109,30],[10902,3]]</costTools>
+	<costTools>[[109,30],[10901,40]]</costTools>
 	<costCoin>25000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1085,7 +1085,7 @@
 	<type>202</type>
 	<lev>21</lev>
 	<add>21</add>
-	<costTools>[[109,33]]</costTools>
+	<costTools>[[109,33],[10901,42]]</costTools>
 	<costCoin>27000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1094,7 +1094,7 @@
 	<type>202</type>
 	<lev>22</lev>
 	<add>22</add>
-	<costTools>[[109,36]]</costTools>
+	<costTools>[[109,36],[10901,44]]</costTools>
 	<costCoin>29000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1103,7 +1103,7 @@
 	<type>202</type>
 	<lev>23</lev>
 	<add>23</add>
-	<costTools>[[109,39]]</costTools>
+	<costTools>[[109,39],[10901,46]]</costTools>
 	<costCoin>31000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1112,7 +1112,7 @@
 	<type>202</type>
 	<lev>24</lev>
 	<add>24</add>
-	<costTools>[[109,42]]</costTools>
+	<costTools>[[109,42],[10901,48]]</costTools>
 	<costCoin>33000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1121,7 +1121,7 @@
 	<type>202</type>
 	<lev>25</lev>
 	<add>25</add>
-	<costTools>[[109,45]]</costTools>
+	<costTools>[[109,45],[10901,50]]</costTools>
 	<costCoin>35000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1130,7 +1130,7 @@
 	<type>202</type>
 	<lev>26</lev>
 	<add>26</add>
-	<costTools>[[109,48]]</costTools>
+	<costTools>[[109,48],[10901,52]]</costTools>
 	<costCoin>37000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1139,7 +1139,7 @@
 	<type>202</type>
 	<lev>27</lev>
 	<add>27</add>
-	<costTools>[[109,51]]</costTools>
+	<costTools>[[109,51],[10901,54]]</costTools>
 	<costCoin>39000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1148,7 +1148,7 @@
 	<type>202</type>
 	<lev>28</lev>
 	<add>28</add>
-	<costTools>[[109,54]]</costTools>
+	<costTools>[[109,54],[10901,56]]</costTools>
 	<costCoin>41000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1157,7 +1157,7 @@
 	<type>202</type>
 	<lev>29</lev>
 	<add>29</add>
-	<costTools>[[109,57]]</costTools>
+	<costTools>[[109,57],[10901,58]]</costTools>
 	<costCoin>43000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1166,7 +1166,7 @@
 	<type>202</type>
 	<lev>30</lev>
 	<add>30</add>
-	<costTools>[[109,60],[10903,5]]</costTools>
+	<costTools>[[109,60],[10901,60]]</costTools>
 	<costCoin>45000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1175,7 +1175,7 @@
 	<type>202</type>
 	<lev>31</lev>
 	<add>31</add>
-	<costTools>[[109,64]]</costTools>
+	<costTools>[[109,64],[10901,62]]</costTools>
 	<costCoin>47000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1184,7 +1184,7 @@
 	<type>202</type>
 	<lev>32</lev>
 	<add>32</add>
-	<costTools>[[109,68]]</costTools>
+	<costTools>[[109,68],[10901,64]]</costTools>
 	<costCoin>49000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1193,7 +1193,7 @@
 	<type>202</type>
 	<lev>33</lev>
 	<add>33</add>
-	<costTools>[[109,72]]</costTools>
+	<costTools>[[109,72],[10901,66]]</costTools>
 	<costCoin>51000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1202,7 +1202,7 @@
 	<type>202</type>
 	<lev>34</lev>
 	<add>34</add>
-	<costTools>[[109,76]]</costTools>
+	<costTools>[[109,76],[10901,68]]</costTools>
 	<costCoin>53000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1211,7 +1211,7 @@
 	<type>202</type>
 	<lev>35</lev>
 	<add>35</add>
-	<costTools>[[109,80]]</costTools>
+	<costTools>[[109,80],[10901,70]]</costTools>
 	<costCoin>55000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1220,7 +1220,7 @@
 	<type>202</type>
 	<lev>36</lev>
 	<add>36</add>
-	<costTools>[[109,84]]</costTools>
+	<costTools>[[109,84],[10901,72]]</costTools>
 	<costCoin>57000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1229,7 +1229,7 @@
 	<type>202</type>
 	<lev>37</lev>
 	<add>37</add>
-	<costTools>[[109,88]]</costTools>
+	<costTools>[[109,88],[10901,74]]</costTools>
 	<costCoin>59000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1238,7 +1238,7 @@
 	<type>202</type>
 	<lev>38</lev>
 	<add>38</add>
-	<costTools>[[109,92]]</costTools>
+	<costTools>[[109,92],[10901,76]]</costTools>
 	<costCoin>61000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1247,7 +1247,7 @@
 	<type>202</type>
 	<lev>39</lev>
 	<add>39</add>
-	<costTools>[[109,96]]</costTools>
+	<costTools>[[109,96],[10901,78]]</costTools>
 	<costCoin>63000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1256,7 +1256,7 @@
 	<type>202</type>
 	<lev>40</lev>
 	<add>40</add>
-	<costTools>[[109,100],[10904,7]]</costTools>
+	<costTools>[[109,100],[10901,80]]</costTools>
 	<costCoin>65000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1265,7 +1265,7 @@
 	<type>202</type>
 	<lev>41</lev>
 	<add>41</add>
-	<costTools>[[109,105]]</costTools>
+	<costTools>[[109,105],[10901,82]]</costTools>
 	<costCoin>67000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1274,7 +1274,7 @@
 	<type>202</type>
 	<lev>42</lev>
 	<add>42</add>
-	<costTools>[[109,110]]</costTools>
+	<costTools>[[109,110],[10901,84]]</costTools>
 	<costCoin>69000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1283,7 +1283,7 @@
 	<type>202</type>
 	<lev>43</lev>
 	<add>43</add>
-	<costTools>[[109,115]]</costTools>
+	<costTools>[[109,115],[10901,86]]</costTools>
 	<costCoin>71000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1292,7 +1292,7 @@
 	<type>202</type>
 	<lev>44</lev>
 	<add>44</add>
-	<costTools>[[109,120]]</costTools>
+	<costTools>[[109,120],[10901,88]]</costTools>
 	<costCoin>73000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1301,7 +1301,7 @@
 	<type>202</type>
 	<lev>45</lev>
 	<add>45</add>
-	<costTools>[[109,125]]</costTools>
+	<costTools>[[109,125],[10901,90]]</costTools>
 	<costCoin>75000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1310,7 +1310,7 @@
 	<type>202</type>
 	<lev>46</lev>
 	<add>46</add>
-	<costTools>[[109,130]]</costTools>
+	<costTools>[[109,130],[10901,92]]</costTools>
 	<costCoin>77000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1319,7 +1319,7 @@
 	<type>202</type>
 	<lev>47</lev>
 	<add>47</add>
-	<costTools>[[109,135]]</costTools>
+	<costTools>[[109,135],[10901,94]]</costTools>
 	<costCoin>79000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1328,7 +1328,7 @@
 	<type>202</type>
 	<lev>48</lev>
 	<add>48</add>
-	<costTools>[[109,140]]</costTools>
+	<costTools>[[109,140],[10901,96]]</costTools>
 	<costCoin>81000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1337,7 +1337,7 @@
 	<type>202</type>
 	<lev>49</lev>
 	<add>49</add>
-	<costTools>[[109,145]]</costTools>
+	<costTools>[[109,145],[10901,98]]</costTools>
 	<costCoin>83000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1346,7 +1346,7 @@
 	<type>202</type>
 	<lev>50</lev>
 	<add>50</add>
-	<costTools>[[109,150],[10905,9]]</costTools>
+	<costTools>[[109,150],[10901,100]]</costTools>
 	<costCoin>85000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -1355,7 +1355,7 @@
 	<type>202</type>
 	<lev>51</lev>
 	<add>51</add>
-	<costTools>[[109,156]]</costTools>
+	<costTools>[[109,156],[10901,102]]</costTools>
 	<costCoin>87000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1364,7 +1364,7 @@
 	<type>202</type>
 	<lev>52</lev>
 	<add>52</add>
-	<costTools>[[109,162]]</costTools>
+	<costTools>[[109,162],[10901,104]]</costTools>
 	<costCoin>89000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1373,7 +1373,7 @@
 	<type>202</type>
 	<lev>53</lev>
 	<add>53</add>
-	<costTools>[[109,168]]</costTools>
+	<costTools>[[109,168],[10901,106]]</costTools>
 	<costCoin>91000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1382,7 +1382,7 @@
 	<type>202</type>
 	<lev>54</lev>
 	<add>54</add>
-	<costTools>[[109,174]]</costTools>
+	<costTools>[[109,174],[10901,108]]</costTools>
 	<costCoin>93000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1391,7 +1391,7 @@
 	<type>202</type>
 	<lev>55</lev>
 	<add>55</add>
-	<costTools>[[109,180]]</costTools>
+	<costTools>[[109,180],[10901,110]]</costTools>
 	<costCoin>95000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1400,7 +1400,7 @@
 	<type>202</type>
 	<lev>56</lev>
 	<add>56</add>
-	<costTools>[[109,186]]</costTools>
+	<costTools>[[109,186],[10901,112]]</costTools>
 	<costCoin>97000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1409,7 +1409,7 @@
 	<type>202</type>
 	<lev>57</lev>
 	<add>57</add>
-	<costTools>[[109,192]]</costTools>
+	<costTools>[[109,192],[10901,114]]</costTools>
 	<costCoin>99000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1418,7 +1418,7 @@
 	<type>202</type>
 	<lev>58</lev>
 	<add>58</add>
-	<costTools>[[109,198]]</costTools>
+	<costTools>[[109,198],[10901,116]]</costTools>
 	<costCoin>101000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1427,7 +1427,7 @@
 	<type>202</type>
 	<lev>59</lev>
 	<add>59</add>
-	<costTools>[[109,204]]</costTools>
+	<costTools>[[109,204],[10901,118]]</costTools>
 	<costCoin>103000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1436,7 +1436,7 @@
 	<type>202</type>
 	<lev>60</lev>
 	<add>60</add>
-	<costTools>[[109,210],[10906,11]]</costTools>
+	<costTools>[[109,210],[10901,120]]</costTools>
 	<costCoin>105000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1445,7 +1445,7 @@
 	<type>202</type>
 	<lev>61</lev>
 	<add>61</add>
-	<costTools>[[109,217]]</costTools>
+	<costTools>[[109,217],[10901,122]]</costTools>
 	<costCoin>107000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1454,7 +1454,7 @@
 	<type>202</type>
 	<lev>62</lev>
 	<add>62</add>
-	<costTools>[[109,224]]</costTools>
+	<costTools>[[109,224],[10901,124]]</costTools>
 	<costCoin>109000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1463,7 +1463,7 @@
 	<type>202</type>
 	<lev>63</lev>
 	<add>63</add>
-	<costTools>[[109,231]]</costTools>
+	<costTools>[[109,231],[10901,126]]</costTools>
 	<costCoin>111000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1472,7 +1472,7 @@
 	<type>202</type>
 	<lev>64</lev>
 	<add>64</add>
-	<costTools>[[109,238]]</costTools>
+	<costTools>[[109,238],[10901,128]]</costTools>
 	<costCoin>113000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1481,7 +1481,7 @@
 	<type>202</type>
 	<lev>65</lev>
 	<add>65</add>
-	<costTools>[[109,245]]</costTools>
+	<costTools>[[109,245],[10901,130]]</costTools>
 	<costCoin>115000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1490,7 +1490,7 @@
 	<type>202</type>
 	<lev>66</lev>
 	<add>66</add>
-	<costTools>[[109,252]]</costTools>
+	<costTools>[[109,252],[10901,132]]</costTools>
 	<costCoin>117000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1499,7 +1499,7 @@
 	<type>202</type>
 	<lev>67</lev>
 	<add>67</add>
-	<costTools>[[109,259]]</costTools>
+	<costTools>[[109,259],[10901,134]]</costTools>
 	<costCoin>119000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1508,7 +1508,7 @@
 	<type>202</type>
 	<lev>68</lev>
 	<add>68</add>
-	<costTools>[[109,266]]</costTools>
+	<costTools>[[109,266],[10901,136]]</costTools>
 	<costCoin>121000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1517,7 +1517,7 @@
 	<type>202</type>
 	<lev>69</lev>
 	<add>69</add>
-	<costTools>[[109,273]]</costTools>
+	<costTools>[[109,273],[10901,138]]</costTools>
 	<costCoin>123000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1526,7 +1526,7 @@
 	<type>202</type>
 	<lev>70</lev>
 	<add>70</add>
-	<costTools>[[109,280],[10907,13]]</costTools>
+	<costTools>[[109,280],[10901,140]]</costTools>
 	<costCoin>125000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -1535,7 +1535,7 @@
 	<type>202</type>
 	<lev>71</lev>
 	<add>71</add>
-	<costTools>[[109,288]]</costTools>
+	<costTools>[[109,288],[10901,142]]</costTools>
 	<costCoin>127000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1544,7 +1544,7 @@
 	<type>202</type>
 	<lev>72</lev>
 	<add>72</add>
-	<costTools>[[109,296]]</costTools>
+	<costTools>[[109,296],[10901,144]]</costTools>
 	<costCoin>129000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1553,7 +1553,7 @@
 	<type>202</type>
 	<lev>73</lev>
 	<add>73</add>
-	<costTools>[[109,304]]</costTools>
+	<costTools>[[109,304],[10901,146]]</costTools>
 	<costCoin>131000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1562,7 +1562,7 @@
 	<type>202</type>
 	<lev>74</lev>
 	<add>74</add>
-	<costTools>[[109,312]]</costTools>
+	<costTools>[[109,312],[10901,148]]</costTools>
 	<costCoin>133000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1571,7 +1571,7 @@
 	<type>202</type>
 	<lev>75</lev>
 	<add>75</add>
-	<costTools>[[109,320]]</costTools>
+	<costTools>[[109,320],[10901,150]]</costTools>
 	<costCoin>135000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1580,7 +1580,7 @@
 	<type>202</type>
 	<lev>76</lev>
 	<add>76</add>
-	<costTools>[[109,328]]</costTools>
+	<costTools>[[109,328],[10901,152]]</costTools>
 	<costCoin>137000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1589,7 +1589,7 @@
 	<type>202</type>
 	<lev>77</lev>
 	<add>77</add>
-	<costTools>[[109,336]]</costTools>
+	<costTools>[[109,336],[10901,154]]</costTools>
 	<costCoin>139000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1598,7 +1598,7 @@
 	<type>202</type>
 	<lev>78</lev>
 	<add>78</add>
-	<costTools>[[109,344]]</costTools>
+	<costTools>[[109,344],[10901,156]]</costTools>
 	<costCoin>141000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1607,7 +1607,7 @@
 	<type>202</type>
 	<lev>79</lev>
 	<add>79</add>
-	<costTools>[[109,352]]</costTools>
+	<costTools>[[109,352],[10901,158]]</costTools>
 	<costCoin>143000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1616,7 +1616,7 @@
 	<type>202</type>
 	<lev>80</lev>
 	<add>80</add>
-	<costTools>[[109,360],[10908,15]]</costTools>
+	<costTools>[[109,360],[10901,160]]</costTools>
 	<costCoin>145000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1625,7 +1625,7 @@
 	<type>202</type>
 	<lev>81</lev>
 	<add>81</add>
-	<costTools>[[109,369]]</costTools>
+	<costTools>[[109,369],[10901,162]]</costTools>
 	<costCoin>147000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1634,7 +1634,7 @@
 	<type>202</type>
 	<lev>82</lev>
 	<add>82</add>
-	<costTools>[[109,378]]</costTools>
+	<costTools>[[109,378],[10901,164]]</costTools>
 	<costCoin>149000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1643,7 +1643,7 @@
 	<type>202</type>
 	<lev>83</lev>
 	<add>83</add>
-	<costTools>[[109,387]]</costTools>
+	<costTools>[[109,387],[10901,166]]</costTools>
 	<costCoin>151000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1652,7 +1652,7 @@
 	<type>202</type>
 	<lev>84</lev>
 	<add>84</add>
-	<costTools>[[109,396]]</costTools>
+	<costTools>[[109,396],[10901,168]]</costTools>
 	<costCoin>153000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1661,7 +1661,7 @@
 	<type>202</type>
 	<lev>85</lev>
 	<add>85</add>
-	<costTools>[[109,405]]</costTools>
+	<costTools>[[109,405],[10901,170]]</costTools>
 	<costCoin>155000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1670,7 +1670,7 @@
 	<type>202</type>
 	<lev>86</lev>
 	<add>86</add>
-	<costTools>[[109,414]]</costTools>
+	<costTools>[[109,414],[10901,172]]</costTools>
 	<costCoin>157000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1679,7 +1679,7 @@
 	<type>202</type>
 	<lev>87</lev>
 	<add>87</add>
-	<costTools>[[109,423]]</costTools>
+	<costTools>[[109,423],[10901,174]]</costTools>
 	<costCoin>159000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1688,7 +1688,7 @@
 	<type>202</type>
 	<lev>88</lev>
 	<add>88</add>
-	<costTools>[[109,432]]</costTools>
+	<costTools>[[109,432],[10901,176]]</costTools>
 	<costCoin>161000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1697,7 +1697,7 @@
 	<type>202</type>
 	<lev>89</lev>
 	<add>89</add>
-	<costTools>[[109,441]]</costTools>
+	<costTools>[[109,441],[10901,178]]</costTools>
 	<costCoin>163000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1706,7 +1706,7 @@
 	<type>202</type>
 	<lev>90</lev>
 	<add>90</add>
-	<costTools>[[109,450],[10909,17]]</costTools>
+	<costTools>[[109,450],[10901,180]]</costTools>
 	<costCoin>165000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1715,7 +1715,7 @@
 	<type>202</type>
 	<lev>91</lev>
 	<add>91</add>
-	<costTools>[[109,460]]</costTools>
+	<costTools>[[109,460],[10901,182]]</costTools>
 	<costCoin>167000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1724,7 +1724,7 @@
 	<type>202</type>
 	<lev>92</lev>
 	<add>92</add>
-	<costTools>[[109,470]]</costTools>
+	<costTools>[[109,470],[10901,184]]</costTools>
 	<costCoin>169000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1733,7 +1733,7 @@
 	<type>202</type>
 	<lev>93</lev>
 	<add>93</add>
-	<costTools>[[109,480]]</costTools>
+	<costTools>[[109,480],[10901,186]]</costTools>
 	<costCoin>171000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1742,7 +1742,7 @@
 	<type>202</type>
 	<lev>94</lev>
 	<add>94</add>
-	<costTools>[[109,490]]</costTools>
+	<costTools>[[109,490],[10901,188]]</costTools>
 	<costCoin>173000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1751,7 +1751,7 @@
 	<type>202</type>
 	<lev>95</lev>
 	<add>95</add>
-	<costTools>[[109,500]]</costTools>
+	<costTools>[[109,500],[10901,190]]</costTools>
 	<costCoin>175000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1760,7 +1760,7 @@
 	<type>202</type>
 	<lev>96</lev>
 	<add>96</add>
-	<costTools>[[109,510]]</costTools>
+	<costTools>[[109,510],[10901,192]]</costTools>
 	<costCoin>177000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1769,7 +1769,7 @@
 	<type>202</type>
 	<lev>97</lev>
 	<add>97</add>
-	<costTools>[[109,520]]</costTools>
+	<costTools>[[109,520],[10901,194]]</costTools>
 	<costCoin>179000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1778,7 +1778,7 @@
 	<type>202</type>
 	<lev>98</lev>
 	<add>98</add>
-	<costTools>[[109,530]]</costTools>
+	<costTools>[[109,530],[10901,196]]</costTools>
 	<costCoin>181000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1787,7 +1787,7 @@
 	<type>202</type>
 	<lev>99</lev>
 	<add>99</add>
-	<costTools>[[109,540]]</costTools>
+	<costTools>[[109,540],[10901,198]]</costTools>
 	<costCoin>183000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1796,7 +1796,7 @@
 	<type>202</type>
 	<lev>100</lev>
 	<add>100</add>
-	<costTools>[[109,550]]</costTools>
+	<costTools>[[109,550],[10901,200]]</costTools>
 	<costCoin>185000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -1805,7 +1805,7 @@
 	<type>203</type>
 	<lev>1</lev>
 	<add>1</add>
-	<costTools>[[109,1]]</costTools>
+	<costTools>[[109,1],[10901,2]]</costTools>
 	<costCoin>100</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -1814,7 +1814,7 @@
 	<type>203</type>
 	<lev>2</lev>
 	<add>2</add>
-	<costTools>[[109,2]]</costTools>
+	<costTools>[[109,2],[10901,4]]</costTools>
 	<costCoin>200</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -1823,7 +1823,7 @@
 	<type>203</type>
 	<lev>3</lev>
 	<add>3</add>
-	<costTools>[[109,3]]</costTools>
+	<costTools>[[109,3],[10901,6]]</costTools>
 	<costCoin>300</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -1832,7 +1832,7 @@
 	<type>203</type>
 	<lev>4</lev>
 	<add>4</add>
-	<costTools>[[109,4]]</costTools>
+	<costTools>[[109,4],[10901,8]]</costTools>
 	<costCoin>500</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -1841,7 +1841,7 @@
 	<type>203</type>
 	<lev>5</lev>
 	<add>5</add>
-	<costTools>[[109,5]]</costTools>
+	<costTools>[[109,5],[10901,10]]</costTools>
 	<costCoin>700</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -1850,7 +1850,7 @@
 	<type>203</type>
 	<lev>6</lev>
 	<add>6</add>
-	<costTools>[[109,6]]</costTools>
+	<costTools>[[109,6],[10901,12]]</costTools>
 	<costCoin>1000</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -1859,7 +1859,7 @@
 	<type>203</type>
 	<lev>7</lev>
 	<add>7</add>
-	<costTools>[[109,7]]</costTools>
+	<costTools>[[109,7],[10901,14]]</costTools>
 	<costCoin>1500</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -1868,7 +1868,7 @@
 	<type>203</type>
 	<lev>8</lev>
 	<add>8</add>
-	<costTools>[[109,8]]</costTools>
+	<costTools>[[109,8],[10901,16]]</costTools>
 	<costCoin>2000</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -1877,7 +1877,7 @@
 	<type>203</type>
 	<lev>9</lev>
 	<add>9</add>
-	<costTools>[[109,9]]</costTools>
+	<costTools>[[109,9],[10901,18]]</costTools>
 	<costCoin>3000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -1886,7 +1886,7 @@
 	<type>203</type>
 	<lev>10</lev>
 	<add>10</add>
-	<costTools>[[109,10],[10901,2]]</costTools>
+	<costTools>[[109,10],[10901,20]]</costTools>
 	<costCoin>5000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -1895,7 +1895,7 @@
 	<type>203</type>
 	<lev>11</lev>
 	<add>11</add>
-	<costTools>[[109,12]]</costTools>
+	<costTools>[[109,12],[10901,22]]</costTools>
 	<costCoin>7000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -1904,7 +1904,7 @@
 	<type>203</type>
 	<lev>12</lev>
 	<add>12</add>
-	<costTools>[[109,14]]</costTools>
+	<costTools>[[109,14],[10901,24]]</costTools>
 	<costCoin>9000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -1913,7 +1913,7 @@
 	<type>203</type>
 	<lev>13</lev>
 	<add>13</add>
-	<costTools>[[109,16]]</costTools>
+	<costTools>[[109,16],[10901,26]]</costTools>
 	<costCoin>11000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -1922,7 +1922,7 @@
 	<type>203</type>
 	<lev>14</lev>
 	<add>14</add>
-	<costTools>[[109,18]]</costTools>
+	<costTools>[[109,18],[10901,28]]</costTools>
 	<costCoin>13000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -1931,7 +1931,7 @@
 	<type>203</type>
 	<lev>15</lev>
 	<add>15</add>
-	<costTools>[[109,20]]</costTools>
+	<costTools>[[109,20],[10901,30]]</costTools>
 	<costCoin>15000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1940,7 +1940,7 @@
 	<type>203</type>
 	<lev>16</lev>
 	<add>16</add>
-	<costTools>[[109,22]]</costTools>
+	<costTools>[[109,22],[10901,32]]</costTools>
 	<costCoin>17000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1949,7 +1949,7 @@
 	<type>203</type>
 	<lev>17</lev>
 	<add>17</add>
-	<costTools>[[109,24]]</costTools>
+	<costTools>[[109,24],[10901,34]]</costTools>
 	<costCoin>19000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1958,7 +1958,7 @@
 	<type>203</type>
 	<lev>18</lev>
 	<add>18</add>
-	<costTools>[[109,26]]</costTools>
+	<costTools>[[109,26],[10901,36]]</costTools>
 	<costCoin>21000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1967,7 +1967,7 @@
 	<type>203</type>
 	<lev>19</lev>
 	<add>19</add>
-	<costTools>[[109,28]]</costTools>
+	<costTools>[[109,28],[10901,38]]</costTools>
 	<costCoin>23000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1976,7 +1976,7 @@
 	<type>203</type>
 	<lev>20</lev>
 	<add>20</add>
-	<costTools>[[109,30],[10902,3]]</costTools>
+	<costTools>[[109,30],[10901,40]]</costTools>
 	<costCoin>25000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -1985,7 +1985,7 @@
 	<type>203</type>
 	<lev>21</lev>
 	<add>21</add>
-	<costTools>[[109,33]]</costTools>
+	<costTools>[[109,33],[10901,42]]</costTools>
 	<costCoin>27000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -1994,7 +1994,7 @@
 	<type>203</type>
 	<lev>22</lev>
 	<add>22</add>
-	<costTools>[[109,36]]</costTools>
+	<costTools>[[109,36],[10901,44]]</costTools>
 	<costCoin>29000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2003,7 +2003,7 @@
 	<type>203</type>
 	<lev>23</lev>
 	<add>23</add>
-	<costTools>[[109,39]]</costTools>
+	<costTools>[[109,39],[10901,46]]</costTools>
 	<costCoin>31000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2012,7 +2012,7 @@
 	<type>203</type>
 	<lev>24</lev>
 	<add>24</add>
-	<costTools>[[109,42]]</costTools>
+	<costTools>[[109,42],[10901,48]]</costTools>
 	<costCoin>33000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2021,7 +2021,7 @@
 	<type>203</type>
 	<lev>25</lev>
 	<add>25</add>
-	<costTools>[[109,45]]</costTools>
+	<costTools>[[109,45],[10901,50]]</costTools>
 	<costCoin>35000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2030,7 +2030,7 @@
 	<type>203</type>
 	<lev>26</lev>
 	<add>26</add>
-	<costTools>[[109,48]]</costTools>
+	<costTools>[[109,48],[10901,52]]</costTools>
 	<costCoin>37000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2039,7 +2039,7 @@
 	<type>203</type>
 	<lev>27</lev>
 	<add>27</add>
-	<costTools>[[109,51]]</costTools>
+	<costTools>[[109,51],[10901,54]]</costTools>
 	<costCoin>39000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2048,7 +2048,7 @@
 	<type>203</type>
 	<lev>28</lev>
 	<add>28</add>
-	<costTools>[[109,54]]</costTools>
+	<costTools>[[109,54],[10901,56]]</costTools>
 	<costCoin>41000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2057,7 +2057,7 @@
 	<type>203</type>
 	<lev>29</lev>
 	<add>29</add>
-	<costTools>[[109,57]]</costTools>
+	<costTools>[[109,57],[10901,58]]</costTools>
 	<costCoin>43000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2066,7 +2066,7 @@
 	<type>203</type>
 	<lev>30</lev>
 	<add>30</add>
-	<costTools>[[109,60],[10903,5]]</costTools>
+	<costTools>[[109,60],[10901,60]]</costTools>
 	<costCoin>45000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2075,7 +2075,7 @@
 	<type>203</type>
 	<lev>31</lev>
 	<add>31</add>
-	<costTools>[[109,64]]</costTools>
+	<costTools>[[109,64],[10901,62]]</costTools>
 	<costCoin>47000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2084,7 +2084,7 @@
 	<type>203</type>
 	<lev>32</lev>
 	<add>32</add>
-	<costTools>[[109,68]]</costTools>
+	<costTools>[[109,68],[10901,64]]</costTools>
 	<costCoin>49000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2093,7 +2093,7 @@
 	<type>203</type>
 	<lev>33</lev>
 	<add>33</add>
-	<costTools>[[109,72]]</costTools>
+	<costTools>[[109,72],[10901,66]]</costTools>
 	<costCoin>51000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2102,7 +2102,7 @@
 	<type>203</type>
 	<lev>34</lev>
 	<add>34</add>
-	<costTools>[[109,76]]</costTools>
+	<costTools>[[109,76],[10901,68]]</costTools>
 	<costCoin>53000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2111,7 +2111,7 @@
 	<type>203</type>
 	<lev>35</lev>
 	<add>35</add>
-	<costTools>[[109,80]]</costTools>
+	<costTools>[[109,80],[10901,70]]</costTools>
 	<costCoin>55000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2120,7 +2120,7 @@
 	<type>203</type>
 	<lev>36</lev>
 	<add>36</add>
-	<costTools>[[109,84]]</costTools>
+	<costTools>[[109,84],[10901,72]]</costTools>
 	<costCoin>57000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2129,7 +2129,7 @@
 	<type>203</type>
 	<lev>37</lev>
 	<add>37</add>
-	<costTools>[[109,88]]</costTools>
+	<costTools>[[109,88],[10901,74]]</costTools>
 	<costCoin>59000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2138,7 +2138,7 @@
 	<type>203</type>
 	<lev>38</lev>
 	<add>38</add>
-	<costTools>[[109,92]]</costTools>
+	<costTools>[[109,92],[10901,76]]</costTools>
 	<costCoin>61000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2147,7 +2147,7 @@
 	<type>203</type>
 	<lev>39</lev>
 	<add>39</add>
-	<costTools>[[109,96]]</costTools>
+	<costTools>[[109,96],[10901,78]]</costTools>
 	<costCoin>63000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2156,7 +2156,7 @@
 	<type>203</type>
 	<lev>40</lev>
 	<add>40</add>
-	<costTools>[[109,100],[10904,7]]</costTools>
+	<costTools>[[109,100],[10901,80]]</costTools>
 	<costCoin>65000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2165,7 +2165,7 @@
 	<type>203</type>
 	<lev>41</lev>
 	<add>41</add>
-	<costTools>[[109,105]]</costTools>
+	<costTools>[[109,105],[10901,82]]</costTools>
 	<costCoin>67000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2174,7 +2174,7 @@
 	<type>203</type>
 	<lev>42</lev>
 	<add>42</add>
-	<costTools>[[109,110]]</costTools>
+	<costTools>[[109,110],[10901,84]]</costTools>
 	<costCoin>69000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2183,7 +2183,7 @@
 	<type>203</type>
 	<lev>43</lev>
 	<add>43</add>
-	<costTools>[[109,115]]</costTools>
+	<costTools>[[109,115],[10901,86]]</costTools>
 	<costCoin>71000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2192,7 +2192,7 @@
 	<type>203</type>
 	<lev>44</lev>
 	<add>44</add>
-	<costTools>[[109,120]]</costTools>
+	<costTools>[[109,120],[10901,88]]</costTools>
 	<costCoin>73000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2201,7 +2201,7 @@
 	<type>203</type>
 	<lev>45</lev>
 	<add>45</add>
-	<costTools>[[109,125]]</costTools>
+	<costTools>[[109,125],[10901,90]]</costTools>
 	<costCoin>75000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2210,7 +2210,7 @@
 	<type>203</type>
 	<lev>46</lev>
 	<add>46</add>
-	<costTools>[[109,130]]</costTools>
+	<costTools>[[109,130],[10901,92]]</costTools>
 	<costCoin>77000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2219,7 +2219,7 @@
 	<type>203</type>
 	<lev>47</lev>
 	<add>47</add>
-	<costTools>[[109,135]]</costTools>
+	<costTools>[[109,135],[10901,94]]</costTools>
 	<costCoin>79000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2228,7 +2228,7 @@
 	<type>203</type>
 	<lev>48</lev>
 	<add>48</add>
-	<costTools>[[109,140]]</costTools>
+	<costTools>[[109,140],[10901,96]]</costTools>
 	<costCoin>81000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2237,7 +2237,7 @@
 	<type>203</type>
 	<lev>49</lev>
 	<add>49</add>
-	<costTools>[[109,145]]</costTools>
+	<costTools>[[109,145],[10901,98]]</costTools>
 	<costCoin>83000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2246,7 +2246,7 @@
 	<type>203</type>
 	<lev>50</lev>
 	<add>50</add>
-	<costTools>[[109,150],[10905,9]]</costTools>
+	<costTools>[[109,150],[10901,100]]</costTools>
 	<costCoin>85000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2255,7 +2255,7 @@
 	<type>203</type>
 	<lev>51</lev>
 	<add>51</add>
-	<costTools>[[109,156]]</costTools>
+	<costTools>[[109,156],[10901,102]]</costTools>
 	<costCoin>87000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2264,7 +2264,7 @@
 	<type>203</type>
 	<lev>52</lev>
 	<add>52</add>
-	<costTools>[[109,162]]</costTools>
+	<costTools>[[109,162],[10901,104]]</costTools>
 	<costCoin>89000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2273,7 +2273,7 @@
 	<type>203</type>
 	<lev>53</lev>
 	<add>53</add>
-	<costTools>[[109,168]]</costTools>
+	<costTools>[[109,168],[10901,106]]</costTools>
 	<costCoin>91000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2282,7 +2282,7 @@
 	<type>203</type>
 	<lev>54</lev>
 	<add>54</add>
-	<costTools>[[109,174]]</costTools>
+	<costTools>[[109,174],[10901,108]]</costTools>
 	<costCoin>93000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2291,7 +2291,7 @@
 	<type>203</type>
 	<lev>55</lev>
 	<add>55</add>
-	<costTools>[[109,180]]</costTools>
+	<costTools>[[109,180],[10901,110]]</costTools>
 	<costCoin>95000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2300,7 +2300,7 @@
 	<type>203</type>
 	<lev>56</lev>
 	<add>56</add>
-	<costTools>[[109,186]]</costTools>
+	<costTools>[[109,186],[10901,112]]</costTools>
 	<costCoin>97000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2309,7 +2309,7 @@
 	<type>203</type>
 	<lev>57</lev>
 	<add>57</add>
-	<costTools>[[109,192]]</costTools>
+	<costTools>[[109,192],[10901,114]]</costTools>
 	<costCoin>99000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2318,7 +2318,7 @@
 	<type>203</type>
 	<lev>58</lev>
 	<add>58</add>
-	<costTools>[[109,198]]</costTools>
+	<costTools>[[109,198],[10901,116]]</costTools>
 	<costCoin>101000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2327,7 +2327,7 @@
 	<type>203</type>
 	<lev>59</lev>
 	<add>59</add>
-	<costTools>[[109,204]]</costTools>
+	<costTools>[[109,204],[10901,118]]</costTools>
 	<costCoin>103000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2336,7 +2336,7 @@
 	<type>203</type>
 	<lev>60</lev>
 	<add>60</add>
-	<costTools>[[109,210],[10906,11]]</costTools>
+	<costTools>[[109,210],[10901,120]]</costTools>
 	<costCoin>105000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2345,7 +2345,7 @@
 	<type>203</type>
 	<lev>61</lev>
 	<add>61</add>
-	<costTools>[[109,217]]</costTools>
+	<costTools>[[109,217],[10901,122]]</costTools>
 	<costCoin>107000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2354,7 +2354,7 @@
 	<type>203</type>
 	<lev>62</lev>
 	<add>62</add>
-	<costTools>[[109,224]]</costTools>
+	<costTools>[[109,224],[10901,124]]</costTools>
 	<costCoin>109000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2363,7 +2363,7 @@
 	<type>203</type>
 	<lev>63</lev>
 	<add>63</add>
-	<costTools>[[109,231]]</costTools>
+	<costTools>[[109,231],[10901,126]]</costTools>
 	<costCoin>111000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2372,7 +2372,7 @@
 	<type>203</type>
 	<lev>64</lev>
 	<add>64</add>
-	<costTools>[[109,238]]</costTools>
+	<costTools>[[109,238],[10901,128]]</costTools>
 	<costCoin>113000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2381,7 +2381,7 @@
 	<type>203</type>
 	<lev>65</lev>
 	<add>65</add>
-	<costTools>[[109,245]]</costTools>
+	<costTools>[[109,245],[10901,130]]</costTools>
 	<costCoin>115000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2390,7 +2390,7 @@
 	<type>203</type>
 	<lev>66</lev>
 	<add>66</add>
-	<costTools>[[109,252]]</costTools>
+	<costTools>[[109,252],[10901,132]]</costTools>
 	<costCoin>117000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2399,7 +2399,7 @@
 	<type>203</type>
 	<lev>67</lev>
 	<add>67</add>
-	<costTools>[[109,259]]</costTools>
+	<costTools>[[109,259],[10901,134]]</costTools>
 	<costCoin>119000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2408,7 +2408,7 @@
 	<type>203</type>
 	<lev>68</lev>
 	<add>68</add>
-	<costTools>[[109,266]]</costTools>
+	<costTools>[[109,266],[10901,136]]</costTools>
 	<costCoin>121000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2417,7 +2417,7 @@
 	<type>203</type>
 	<lev>69</lev>
 	<add>69</add>
-	<costTools>[[109,273]]</costTools>
+	<costTools>[[109,273],[10901,138]]</costTools>
 	<costCoin>123000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2426,7 +2426,7 @@
 	<type>203</type>
 	<lev>70</lev>
 	<add>70</add>
-	<costTools>[[109,280],[10907,13]]</costTools>
+	<costTools>[[109,280],[10901,140]]</costTools>
 	<costCoin>125000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -2435,7 +2435,7 @@
 	<type>203</type>
 	<lev>71</lev>
 	<add>71</add>
-	<costTools>[[109,288]]</costTools>
+	<costTools>[[109,288],[10901,142]]</costTools>
 	<costCoin>127000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2444,7 +2444,7 @@
 	<type>203</type>
 	<lev>72</lev>
 	<add>72</add>
-	<costTools>[[109,296]]</costTools>
+	<costTools>[[109,296],[10901,144]]</costTools>
 	<costCoin>129000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2453,7 +2453,7 @@
 	<type>203</type>
 	<lev>73</lev>
 	<add>73</add>
-	<costTools>[[109,304]]</costTools>
+	<costTools>[[109,304],[10901,146]]</costTools>
 	<costCoin>131000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2462,7 +2462,7 @@
 	<type>203</type>
 	<lev>74</lev>
 	<add>74</add>
-	<costTools>[[109,312]]</costTools>
+	<costTools>[[109,312],[10901,148]]</costTools>
 	<costCoin>133000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2471,7 +2471,7 @@
 	<type>203</type>
 	<lev>75</lev>
 	<add>75</add>
-	<costTools>[[109,320]]</costTools>
+	<costTools>[[109,320],[10901,150]]</costTools>
 	<costCoin>135000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2480,7 +2480,7 @@
 	<type>203</type>
 	<lev>76</lev>
 	<add>76</add>
-	<costTools>[[109,328]]</costTools>
+	<costTools>[[109,328],[10901,152]]</costTools>
 	<costCoin>137000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2489,7 +2489,7 @@
 	<type>203</type>
 	<lev>77</lev>
 	<add>77</add>
-	<costTools>[[109,336]]</costTools>
+	<costTools>[[109,336],[10901,154]]</costTools>
 	<costCoin>139000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2498,7 +2498,7 @@
 	<type>203</type>
 	<lev>78</lev>
 	<add>78</add>
-	<costTools>[[109,344]]</costTools>
+	<costTools>[[109,344],[10901,156]]</costTools>
 	<costCoin>141000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2507,7 +2507,7 @@
 	<type>203</type>
 	<lev>79</lev>
 	<add>79</add>
-	<costTools>[[109,352]]</costTools>
+	<costTools>[[109,352],[10901,158]]</costTools>
 	<costCoin>143000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2516,7 +2516,7 @@
 	<type>203</type>
 	<lev>80</lev>
 	<add>80</add>
-	<costTools>[[109,360],[10908,15]]</costTools>
+	<costTools>[[109,360],[10901,160]]</costTools>
 	<costCoin>145000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2525,7 +2525,7 @@
 	<type>203</type>
 	<lev>81</lev>
 	<add>81</add>
-	<costTools>[[109,369]]</costTools>
+	<costTools>[[109,369],[10901,162]]</costTools>
 	<costCoin>147000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2534,7 +2534,7 @@
 	<type>203</type>
 	<lev>82</lev>
 	<add>82</add>
-	<costTools>[[109,378]]</costTools>
+	<costTools>[[109,378],[10901,164]]</costTools>
 	<costCoin>149000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2543,7 +2543,7 @@
 	<type>203</type>
 	<lev>83</lev>
 	<add>83</add>
-	<costTools>[[109,387]]</costTools>
+	<costTools>[[109,387],[10901,166]]</costTools>
 	<costCoin>151000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2552,7 +2552,7 @@
 	<type>203</type>
 	<lev>84</lev>
 	<add>84</add>
-	<costTools>[[109,396]]</costTools>
+	<costTools>[[109,396],[10901,168]]</costTools>
 	<costCoin>153000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2561,7 +2561,7 @@
 	<type>203</type>
 	<lev>85</lev>
 	<add>85</add>
-	<costTools>[[109,405]]</costTools>
+	<costTools>[[109,405],[10901,170]]</costTools>
 	<costCoin>155000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2570,7 +2570,7 @@
 	<type>203</type>
 	<lev>86</lev>
 	<add>86</add>
-	<costTools>[[109,414]]</costTools>
+	<costTools>[[109,414],[10901,172]]</costTools>
 	<costCoin>157000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2579,7 +2579,7 @@
 	<type>203</type>
 	<lev>87</lev>
 	<add>87</add>
-	<costTools>[[109,423]]</costTools>
+	<costTools>[[109,423],[10901,174]]</costTools>
 	<costCoin>159000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2588,7 +2588,7 @@
 	<type>203</type>
 	<lev>88</lev>
 	<add>88</add>
-	<costTools>[[109,432]]</costTools>
+	<costTools>[[109,432],[10901,176]]</costTools>
 	<costCoin>161000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2597,7 +2597,7 @@
 	<type>203</type>
 	<lev>89</lev>
 	<add>89</add>
-	<costTools>[[109,441]]</costTools>
+	<costTools>[[109,441],[10901,178]]</costTools>
 	<costCoin>163000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2606,7 +2606,7 @@
 	<type>203</type>
 	<lev>90</lev>
 	<add>90</add>
-	<costTools>[[109,450],[10909,17]]</costTools>
+	<costTools>[[109,450],[10901,180]]</costTools>
 	<costCoin>165000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2615,7 +2615,7 @@
 	<type>203</type>
 	<lev>91</lev>
 	<add>91</add>
-	<costTools>[[109,460]]</costTools>
+	<costTools>[[109,460],[10901,182]]</costTools>
 	<costCoin>167000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2624,7 +2624,7 @@
 	<type>203</type>
 	<lev>92</lev>
 	<add>92</add>
-	<costTools>[[109,470]]</costTools>
+	<costTools>[[109,470],[10901,184]]</costTools>
 	<costCoin>169000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2633,7 +2633,7 @@
 	<type>203</type>
 	<lev>93</lev>
 	<add>93</add>
-	<costTools>[[109,480]]</costTools>
+	<costTools>[[109,480],[10901,186]]</costTools>
 	<costCoin>171000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2642,7 +2642,7 @@
 	<type>203</type>
 	<lev>94</lev>
 	<add>94</add>
-	<costTools>[[109,490]]</costTools>
+	<costTools>[[109,490],[10901,188]]</costTools>
 	<costCoin>173000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2651,7 +2651,7 @@
 	<type>203</type>
 	<lev>95</lev>
 	<add>95</add>
-	<costTools>[[109,500]]</costTools>
+	<costTools>[[109,500],[10901,190]]</costTools>
 	<costCoin>175000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2660,7 +2660,7 @@
 	<type>203</type>
 	<lev>96</lev>
 	<add>96</add>
-	<costTools>[[109,510]]</costTools>
+	<costTools>[[109,510],[10901,192]]</costTools>
 	<costCoin>177000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2669,7 +2669,7 @@
 	<type>203</type>
 	<lev>97</lev>
 	<add>97</add>
-	<costTools>[[109,520]]</costTools>
+	<costTools>[[109,520],[10901,194]]</costTools>
 	<costCoin>179000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2678,7 +2678,7 @@
 	<type>203</type>
 	<lev>98</lev>
 	<add>98</add>
-	<costTools>[[109,530]]</costTools>
+	<costTools>[[109,530],[10901,196]]</costTools>
 	<costCoin>181000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2687,7 +2687,7 @@
 	<type>203</type>
 	<lev>99</lev>
 	<add>99</add>
-	<costTools>[[109,540]]</costTools>
+	<costTools>[[109,540],[10901,198]]</costTools>
 	<costCoin>183000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2696,7 +2696,7 @@
 	<type>203</type>
 	<lev>100</lev>
 	<add>100</add>
-	<costTools>[[109,550]]</costTools>
+	<costTools>[[109,550],[10901,200]]</costTools>
 	<costCoin>185000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -2705,7 +2705,7 @@
 	<type>204</type>
 	<lev>1</lev>
 	<add>1</add>
-	<costTools>[[109,1]]</costTools>
+	<costTools>[[109,1],[10901,2]]</costTools>
 	<costCoin>100</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -2714,7 +2714,7 @@
 	<type>204</type>
 	<lev>2</lev>
 	<add>2</add>
-	<costTools>[[109,2]]</costTools>
+	<costTools>[[109,2],[10901,4]]</costTools>
 	<costCoin>200</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -2723,7 +2723,7 @@
 	<type>204</type>
 	<lev>3</lev>
 	<add>3</add>
-	<costTools>[[109,3]]</costTools>
+	<costTools>[[109,3],[10901,6]]</costTools>
 	<costCoin>300</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -2732,7 +2732,7 @@
 	<type>204</type>
 	<lev>4</lev>
 	<add>4</add>
-	<costTools>[[109,4]]</costTools>
+	<costTools>[[109,4],[10901,8]]</costTools>
 	<costCoin>500</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -2741,7 +2741,7 @@
 	<type>204</type>
 	<lev>5</lev>
 	<add>5</add>
-	<costTools>[[109,5]]</costTools>
+	<costTools>[[109,5],[10901,10]]</costTools>
 	<costCoin>700</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -2750,7 +2750,7 @@
 	<type>204</type>
 	<lev>6</lev>
 	<add>6</add>
-	<costTools>[[109,6]]</costTools>
+	<costTools>[[109,6],[10901,12]]</costTools>
 	<costCoin>1000</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -2759,7 +2759,7 @@
 	<type>204</type>
 	<lev>7</lev>
 	<add>7</add>
-	<costTools>[[109,7]]</costTools>
+	<costTools>[[109,7],[10901,14]]</costTools>
 	<costCoin>1500</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -2768,7 +2768,7 @@
 	<type>204</type>
 	<lev>8</lev>
 	<add>8</add>
-	<costTools>[[109,8]]</costTools>
+	<costTools>[[109,8],[10901,16]]</costTools>
 	<costCoin>2000</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -2777,7 +2777,7 @@
 	<type>204</type>
 	<lev>9</lev>
 	<add>9</add>
-	<costTools>[[109,9]]</costTools>
+	<costTools>[[109,9],[10901,18]]</costTools>
 	<costCoin>3000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -2786,7 +2786,7 @@
 	<type>204</type>
 	<lev>10</lev>
 	<add>10</add>
-	<costTools>[[109,10],[10901,2]]</costTools>
+	<costTools>[[109,10],[10901,20]]</costTools>
 	<costCoin>5000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -2795,7 +2795,7 @@
 	<type>204</type>
 	<lev>11</lev>
 	<add>11</add>
-	<costTools>[[109,12]]</costTools>
+	<costTools>[[109,12],[10901,22]]</costTools>
 	<costCoin>7000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -2804,7 +2804,7 @@
 	<type>204</type>
 	<lev>12</lev>
 	<add>12</add>
-	<costTools>[[109,14]]</costTools>
+	<costTools>[[109,14],[10901,24]]</costTools>
 	<costCoin>9000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -2813,7 +2813,7 @@
 	<type>204</type>
 	<lev>13</lev>
 	<add>13</add>
-	<costTools>[[109,16]]</costTools>
+	<costTools>[[109,16],[10901,26]]</costTools>
 	<costCoin>11000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -2822,7 +2822,7 @@
 	<type>204</type>
 	<lev>14</lev>
 	<add>14</add>
-	<costTools>[[109,18]]</costTools>
+	<costTools>[[109,18],[10901,28]]</costTools>
 	<costCoin>13000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -2831,7 +2831,7 @@
 	<type>204</type>
 	<lev>15</lev>
 	<add>15</add>
-	<costTools>[[109,20]]</costTools>
+	<costTools>[[109,20],[10901,30]]</costTools>
 	<costCoin>15000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -2840,7 +2840,7 @@
 	<type>204</type>
 	<lev>16</lev>
 	<add>16</add>
-	<costTools>[[109,22]]</costTools>
+	<costTools>[[109,22],[10901,32]]</costTools>
 	<costCoin>17000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -2849,7 +2849,7 @@
 	<type>204</type>
 	<lev>17</lev>
 	<add>17</add>
-	<costTools>[[109,24]]</costTools>
+	<costTools>[[109,24],[10901,34]]</costTools>
 	<costCoin>19000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -2858,7 +2858,7 @@
 	<type>204</type>
 	<lev>18</lev>
 	<add>18</add>
-	<costTools>[[109,26]]</costTools>
+	<costTools>[[109,26],[10901,36]]</costTools>
 	<costCoin>21000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -2867,7 +2867,7 @@
 	<type>204</type>
 	<lev>19</lev>
 	<add>19</add>
-	<costTools>[[109,28]]</costTools>
+	<costTools>[[109,28],[10901,38]]</costTools>
 	<costCoin>23000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -2876,7 +2876,7 @@
 	<type>204</type>
 	<lev>20</lev>
 	<add>20</add>
-	<costTools>[[109,30],[10902,3]]</costTools>
+	<costTools>[[109,30],[10901,40]]</costTools>
 	<costCoin>25000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -2885,7 +2885,7 @@
 	<type>204</type>
 	<lev>21</lev>
 	<add>21</add>
-	<costTools>[[109,33]]</costTools>
+	<costTools>[[109,33],[10901,42]]</costTools>
 	<costCoin>27000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2894,7 +2894,7 @@
 	<type>204</type>
 	<lev>22</lev>
 	<add>22</add>
-	<costTools>[[109,36]]</costTools>
+	<costTools>[[109,36],[10901,44]]</costTools>
 	<costCoin>29000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2903,7 +2903,7 @@
 	<type>204</type>
 	<lev>23</lev>
 	<add>23</add>
-	<costTools>[[109,39]]</costTools>
+	<costTools>[[109,39],[10901,46]]</costTools>
 	<costCoin>31000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2912,7 +2912,7 @@
 	<type>204</type>
 	<lev>24</lev>
 	<add>24</add>
-	<costTools>[[109,42]]</costTools>
+	<costTools>[[109,42],[10901,48]]</costTools>
 	<costCoin>33000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2921,7 +2921,7 @@
 	<type>204</type>
 	<lev>25</lev>
 	<add>25</add>
-	<costTools>[[109,45]]</costTools>
+	<costTools>[[109,45],[10901,50]]</costTools>
 	<costCoin>35000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2930,7 +2930,7 @@
 	<type>204</type>
 	<lev>26</lev>
 	<add>26</add>
-	<costTools>[[109,48]]</costTools>
+	<costTools>[[109,48],[10901,52]]</costTools>
 	<costCoin>37000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2939,7 +2939,7 @@
 	<type>204</type>
 	<lev>27</lev>
 	<add>27</add>
-	<costTools>[[109,51]]</costTools>
+	<costTools>[[109,51],[10901,54]]</costTools>
 	<costCoin>39000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2948,7 +2948,7 @@
 	<type>204</type>
 	<lev>28</lev>
 	<add>28</add>
-	<costTools>[[109,54]]</costTools>
+	<costTools>[[109,54],[10901,56]]</costTools>
 	<costCoin>41000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2957,7 +2957,7 @@
 	<type>204</type>
 	<lev>29</lev>
 	<add>29</add>
-	<costTools>[[109,57]]</costTools>
+	<costTools>[[109,57],[10901,58]]</costTools>
 	<costCoin>43000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2966,7 +2966,7 @@
 	<type>204</type>
 	<lev>30</lev>
 	<add>30</add>
-	<costTools>[[109,60],[10903,5]]</costTools>
+	<costTools>[[109,60],[10901,60]]</costTools>
 	<costCoin>45000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -2975,7 +2975,7 @@
 	<type>204</type>
 	<lev>31</lev>
 	<add>31</add>
-	<costTools>[[109,64]]</costTools>
+	<costTools>[[109,64],[10901,62]]</costTools>
 	<costCoin>47000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2984,7 +2984,7 @@
 	<type>204</type>
 	<lev>32</lev>
 	<add>32</add>
-	<costTools>[[109,68]]</costTools>
+	<costTools>[[109,68],[10901,64]]</costTools>
 	<costCoin>49000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -2993,7 +2993,7 @@
 	<type>204</type>
 	<lev>33</lev>
 	<add>33</add>
-	<costTools>[[109,72]]</costTools>
+	<costTools>[[109,72],[10901,66]]</costTools>
 	<costCoin>51000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3002,7 +3002,7 @@
 	<type>204</type>
 	<lev>34</lev>
 	<add>34</add>
-	<costTools>[[109,76]]</costTools>
+	<costTools>[[109,76],[10901,68]]</costTools>
 	<costCoin>53000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3011,7 +3011,7 @@
 	<type>204</type>
 	<lev>35</lev>
 	<add>35</add>
-	<costTools>[[109,80]]</costTools>
+	<costTools>[[109,80],[10901,70]]</costTools>
 	<costCoin>55000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3020,7 +3020,7 @@
 	<type>204</type>
 	<lev>36</lev>
 	<add>36</add>
-	<costTools>[[109,84]]</costTools>
+	<costTools>[[109,84],[10901,72]]</costTools>
 	<costCoin>57000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3029,7 +3029,7 @@
 	<type>204</type>
 	<lev>37</lev>
 	<add>37</add>
-	<costTools>[[109,88]]</costTools>
+	<costTools>[[109,88],[10901,74]]</costTools>
 	<costCoin>59000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3038,7 +3038,7 @@
 	<type>204</type>
 	<lev>38</lev>
 	<add>38</add>
-	<costTools>[[109,92]]</costTools>
+	<costTools>[[109,92],[10901,76]]</costTools>
 	<costCoin>61000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3047,7 +3047,7 @@
 	<type>204</type>
 	<lev>39</lev>
 	<add>39</add>
-	<costTools>[[109,96]]</costTools>
+	<costTools>[[109,96],[10901,78]]</costTools>
 	<costCoin>63000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3056,7 +3056,7 @@
 	<type>204</type>
 	<lev>40</lev>
 	<add>40</add>
-	<costTools>[[109,100],[10904,7]]</costTools>
+	<costTools>[[109,100],[10901,80]]</costTools>
 	<costCoin>65000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3065,7 +3065,7 @@
 	<type>204</type>
 	<lev>41</lev>
 	<add>41</add>
-	<costTools>[[109,105]]</costTools>
+	<costTools>[[109,105],[10901,82]]</costTools>
 	<costCoin>67000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3074,7 +3074,7 @@
 	<type>204</type>
 	<lev>42</lev>
 	<add>42</add>
-	<costTools>[[109,110]]</costTools>
+	<costTools>[[109,110],[10901,84]]</costTools>
 	<costCoin>69000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3083,7 +3083,7 @@
 	<type>204</type>
 	<lev>43</lev>
 	<add>43</add>
-	<costTools>[[109,115]]</costTools>
+	<costTools>[[109,115],[10901,86]]</costTools>
 	<costCoin>71000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3092,7 +3092,7 @@
 	<type>204</type>
 	<lev>44</lev>
 	<add>44</add>
-	<costTools>[[109,120]]</costTools>
+	<costTools>[[109,120],[10901,88]]</costTools>
 	<costCoin>73000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3101,7 +3101,7 @@
 	<type>204</type>
 	<lev>45</lev>
 	<add>45</add>
-	<costTools>[[109,125]]</costTools>
+	<costTools>[[109,125],[10901,90]]</costTools>
 	<costCoin>75000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3110,7 +3110,7 @@
 	<type>204</type>
 	<lev>46</lev>
 	<add>46</add>
-	<costTools>[[109,130]]</costTools>
+	<costTools>[[109,130],[10901,92]]</costTools>
 	<costCoin>77000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3119,7 +3119,7 @@
 	<type>204</type>
 	<lev>47</lev>
 	<add>47</add>
-	<costTools>[[109,135]]</costTools>
+	<costTools>[[109,135],[10901,94]]</costTools>
 	<costCoin>79000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3128,7 +3128,7 @@
 	<type>204</type>
 	<lev>48</lev>
 	<add>48</add>
-	<costTools>[[109,140]]</costTools>
+	<costTools>[[109,140],[10901,96]]</costTools>
 	<costCoin>81000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3137,7 +3137,7 @@
 	<type>204</type>
 	<lev>49</lev>
 	<add>49</add>
-	<costTools>[[109,145]]</costTools>
+	<costTools>[[109,145],[10901,98]]</costTools>
 	<costCoin>83000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3146,7 +3146,7 @@
 	<type>204</type>
 	<lev>50</lev>
 	<add>50</add>
-	<costTools>[[109,150],[10905,9]]</costTools>
+	<costTools>[[109,150],[10901,100]]</costTools>
 	<costCoin>85000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3155,7 +3155,7 @@
 	<type>204</type>
 	<lev>51</lev>
 	<add>51</add>
-	<costTools>[[109,156]]</costTools>
+	<costTools>[[109,156],[10901,102]]</costTools>
 	<costCoin>87000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3164,7 +3164,7 @@
 	<type>204</type>
 	<lev>52</lev>
 	<add>52</add>
-	<costTools>[[109,162]]</costTools>
+	<costTools>[[109,162],[10901,104]]</costTools>
 	<costCoin>89000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3173,7 +3173,7 @@
 	<type>204</type>
 	<lev>53</lev>
 	<add>53</add>
-	<costTools>[[109,168]]</costTools>
+	<costTools>[[109,168],[10901,106]]</costTools>
 	<costCoin>91000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3182,7 +3182,7 @@
 	<type>204</type>
 	<lev>54</lev>
 	<add>54</add>
-	<costTools>[[109,174]]</costTools>
+	<costTools>[[109,174],[10901,108]]</costTools>
 	<costCoin>93000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3191,7 +3191,7 @@
 	<type>204</type>
 	<lev>55</lev>
 	<add>55</add>
-	<costTools>[[109,180]]</costTools>
+	<costTools>[[109,180],[10901,110]]</costTools>
 	<costCoin>95000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3200,7 +3200,7 @@
 	<type>204</type>
 	<lev>56</lev>
 	<add>56</add>
-	<costTools>[[109,186]]</costTools>
+	<costTools>[[109,186],[10901,112]]</costTools>
 	<costCoin>97000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3209,7 +3209,7 @@
 	<type>204</type>
 	<lev>57</lev>
 	<add>57</add>
-	<costTools>[[109,192]]</costTools>
+	<costTools>[[109,192],[10901,114]]</costTools>
 	<costCoin>99000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3218,7 +3218,7 @@
 	<type>204</type>
 	<lev>58</lev>
 	<add>58</add>
-	<costTools>[[109,198]]</costTools>
+	<costTools>[[109,198],[10901,116]]</costTools>
 	<costCoin>101000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3227,7 +3227,7 @@
 	<type>204</type>
 	<lev>59</lev>
 	<add>59</add>
-	<costTools>[[109,204]]</costTools>
+	<costTools>[[109,204],[10901,118]]</costTools>
 	<costCoin>103000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3236,7 +3236,7 @@
 	<type>204</type>
 	<lev>60</lev>
 	<add>60</add>
-	<costTools>[[109,210],[10906,11]]</costTools>
+	<costTools>[[109,210],[10901,120]]</costTools>
 	<costCoin>105000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3245,7 +3245,7 @@
 	<type>204</type>
 	<lev>61</lev>
 	<add>61</add>
-	<costTools>[[109,217]]</costTools>
+	<costTools>[[109,217],[10901,122]]</costTools>
 	<costCoin>107000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3254,7 +3254,7 @@
 	<type>204</type>
 	<lev>62</lev>
 	<add>62</add>
-	<costTools>[[109,224]]</costTools>
+	<costTools>[[109,224],[10901,124]]</costTools>
 	<costCoin>109000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3263,7 +3263,7 @@
 	<type>204</type>
 	<lev>63</lev>
 	<add>63</add>
-	<costTools>[[109,231]]</costTools>
+	<costTools>[[109,231],[10901,126]]</costTools>
 	<costCoin>111000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3272,7 +3272,7 @@
 	<type>204</type>
 	<lev>64</lev>
 	<add>64</add>
-	<costTools>[[109,238]]</costTools>
+	<costTools>[[109,238],[10901,128]]</costTools>
 	<costCoin>113000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3281,7 +3281,7 @@
 	<type>204</type>
 	<lev>65</lev>
 	<add>65</add>
-	<costTools>[[109,245]]</costTools>
+	<costTools>[[109,245],[10901,130]]</costTools>
 	<costCoin>115000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3290,7 +3290,7 @@
 	<type>204</type>
 	<lev>66</lev>
 	<add>66</add>
-	<costTools>[[109,252]]</costTools>
+	<costTools>[[109,252],[10901,132]]</costTools>
 	<costCoin>117000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3299,7 +3299,7 @@
 	<type>204</type>
 	<lev>67</lev>
 	<add>67</add>
-	<costTools>[[109,259]]</costTools>
+	<costTools>[[109,259],[10901,134]]</costTools>
 	<costCoin>119000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3308,7 +3308,7 @@
 	<type>204</type>
 	<lev>68</lev>
 	<add>68</add>
-	<costTools>[[109,266]]</costTools>
+	<costTools>[[109,266],[10901,136]]</costTools>
 	<costCoin>121000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3317,7 +3317,7 @@
 	<type>204</type>
 	<lev>69</lev>
 	<add>69</add>
-	<costTools>[[109,273]]</costTools>
+	<costTools>[[109,273],[10901,138]]</costTools>
 	<costCoin>123000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3326,7 +3326,7 @@
 	<type>204</type>
 	<lev>70</lev>
 	<add>70</add>
-	<costTools>[[109,280],[10907,13]]</costTools>
+	<costTools>[[109,280],[10901,140]]</costTools>
 	<costCoin>125000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -3335,7 +3335,7 @@
 	<type>204</type>
 	<lev>71</lev>
 	<add>71</add>
-	<costTools>[[109,288]]</costTools>
+	<costTools>[[109,288],[10901,142]]</costTools>
 	<costCoin>127000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3344,7 +3344,7 @@
 	<type>204</type>
 	<lev>72</lev>
 	<add>72</add>
-	<costTools>[[109,296]]</costTools>
+	<costTools>[[109,296],[10901,144]]</costTools>
 	<costCoin>129000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3353,7 +3353,7 @@
 	<type>204</type>
 	<lev>73</lev>
 	<add>73</add>
-	<costTools>[[109,304]]</costTools>
+	<costTools>[[109,304],[10901,146]]</costTools>
 	<costCoin>131000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3362,7 +3362,7 @@
 	<type>204</type>
 	<lev>74</lev>
 	<add>74</add>
-	<costTools>[[109,312]]</costTools>
+	<costTools>[[109,312],[10901,148]]</costTools>
 	<costCoin>133000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3371,7 +3371,7 @@
 	<type>204</type>
 	<lev>75</lev>
 	<add>75</add>
-	<costTools>[[109,320]]</costTools>
+	<costTools>[[109,320],[10901,150]]</costTools>
 	<costCoin>135000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3380,7 +3380,7 @@
 	<type>204</type>
 	<lev>76</lev>
 	<add>76</add>
-	<costTools>[[109,328]]</costTools>
+	<costTools>[[109,328],[10901,152]]</costTools>
 	<costCoin>137000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3389,7 +3389,7 @@
 	<type>204</type>
 	<lev>77</lev>
 	<add>77</add>
-	<costTools>[[109,336]]</costTools>
+	<costTools>[[109,336],[10901,154]]</costTools>
 	<costCoin>139000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3398,7 +3398,7 @@
 	<type>204</type>
 	<lev>78</lev>
 	<add>78</add>
-	<costTools>[[109,344]]</costTools>
+	<costTools>[[109,344],[10901,156]]</costTools>
 	<costCoin>141000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3407,7 +3407,7 @@
 	<type>204</type>
 	<lev>79</lev>
 	<add>79</add>
-	<costTools>[[109,352]]</costTools>
+	<costTools>[[109,352],[10901,158]]</costTools>
 	<costCoin>143000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3416,7 +3416,7 @@
 	<type>204</type>
 	<lev>80</lev>
 	<add>80</add>
-	<costTools>[[109,360],[10908,15]]</costTools>
+	<costTools>[[109,360],[10901,160]]</costTools>
 	<costCoin>145000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3425,7 +3425,7 @@
 	<type>204</type>
 	<lev>81</lev>
 	<add>81</add>
-	<costTools>[[109,369]]</costTools>
+	<costTools>[[109,369],[10901,162]]</costTools>
 	<costCoin>147000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3434,7 +3434,7 @@
 	<type>204</type>
 	<lev>82</lev>
 	<add>82</add>
-	<costTools>[[109,378]]</costTools>
+	<costTools>[[109,378],[10901,164]]</costTools>
 	<costCoin>149000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3443,7 +3443,7 @@
 	<type>204</type>
 	<lev>83</lev>
 	<add>83</add>
-	<costTools>[[109,387]]</costTools>
+	<costTools>[[109,387],[10901,166]]</costTools>
 	<costCoin>151000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3452,7 +3452,7 @@
 	<type>204</type>
 	<lev>84</lev>
 	<add>84</add>
-	<costTools>[[109,396]]</costTools>
+	<costTools>[[109,396],[10901,168]]</costTools>
 	<costCoin>153000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3461,7 +3461,7 @@
 	<type>204</type>
 	<lev>85</lev>
 	<add>85</add>
-	<costTools>[[109,405]]</costTools>
+	<costTools>[[109,405],[10901,170]]</costTools>
 	<costCoin>155000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3470,7 +3470,7 @@
 	<type>204</type>
 	<lev>86</lev>
 	<add>86</add>
-	<costTools>[[109,414]]</costTools>
+	<costTools>[[109,414],[10901,172]]</costTools>
 	<costCoin>157000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3479,7 +3479,7 @@
 	<type>204</type>
 	<lev>87</lev>
 	<add>87</add>
-	<costTools>[[109,423]]</costTools>
+	<costTools>[[109,423],[10901,174]]</costTools>
 	<costCoin>159000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3488,7 +3488,7 @@
 	<type>204</type>
 	<lev>88</lev>
 	<add>88</add>
-	<costTools>[[109,432]]</costTools>
+	<costTools>[[109,432],[10901,176]]</costTools>
 	<costCoin>161000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3497,7 +3497,7 @@
 	<type>204</type>
 	<lev>89</lev>
 	<add>89</add>
-	<costTools>[[109,441]]</costTools>
+	<costTools>[[109,441],[10901,178]]</costTools>
 	<costCoin>163000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3506,7 +3506,7 @@
 	<type>204</type>
 	<lev>90</lev>
 	<add>90</add>
-	<costTools>[[109,450],[10909,17]]</costTools>
+	<costTools>[[109,450],[10901,180]]</costTools>
 	<costCoin>165000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3515,7 +3515,7 @@
 	<type>204</type>
 	<lev>91</lev>
 	<add>91</add>
-	<costTools>[[109,460]]</costTools>
+	<costTools>[[109,460],[10901,182]]</costTools>
 	<costCoin>167000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3524,7 +3524,7 @@
 	<type>204</type>
 	<lev>92</lev>
 	<add>92</add>
-	<costTools>[[109,470]]</costTools>
+	<costTools>[[109,470],[10901,184]]</costTools>
 	<costCoin>169000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3533,7 +3533,7 @@
 	<type>204</type>
 	<lev>93</lev>
 	<add>93</add>
-	<costTools>[[109,480]]</costTools>
+	<costTools>[[109,480],[10901,186]]</costTools>
 	<costCoin>171000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3542,7 +3542,7 @@
 	<type>204</type>
 	<lev>94</lev>
 	<add>94</add>
-	<costTools>[[109,490]]</costTools>
+	<costTools>[[109,490],[10901,188]]</costTools>
 	<costCoin>173000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3551,7 +3551,7 @@
 	<type>204</type>
 	<lev>95</lev>
 	<add>95</add>
-	<costTools>[[109,500]]</costTools>
+	<costTools>[[109,500],[10901,190]]</costTools>
 	<costCoin>175000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3560,7 +3560,7 @@
 	<type>204</type>
 	<lev>96</lev>
 	<add>96</add>
-	<costTools>[[109,510]]</costTools>
+	<costTools>[[109,510],[10901,192]]</costTools>
 	<costCoin>177000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3569,7 +3569,7 @@
 	<type>204</type>
 	<lev>97</lev>
 	<add>97</add>
-	<costTools>[[109,520]]</costTools>
+	<costTools>[[109,520],[10901,194]]</costTools>
 	<costCoin>179000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3578,7 +3578,7 @@
 	<type>204</type>
 	<lev>98</lev>
 	<add>98</add>
-	<costTools>[[109,530]]</costTools>
+	<costTools>[[109,530],[10901,196]]</costTools>
 	<costCoin>181000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3587,7 +3587,7 @@
 	<type>204</type>
 	<lev>99</lev>
 	<add>99</add>
-	<costTools>[[109,540]]</costTools>
+	<costTools>[[109,540],[10901,198]]</costTools>
 	<costCoin>183000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3596,7 +3596,7 @@
 	<type>204</type>
 	<lev>100</lev>
 	<add>100</add>
-	<costTools>[[109,550]]</costTools>
+	<costTools>[[109,550],[10901,200]]</costTools>
 	<costCoin>185000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -3605,7 +3605,7 @@
 	<type>205</type>
 	<lev>1</lev>
 	<add>1</add>
-	<costTools>[[109,1]]</costTools>
+	<costTools>[[109,1],[10901,2]]</costTools>
 	<costCoin>100</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -3614,7 +3614,7 @@
 	<type>205</type>
 	<lev>2</lev>
 	<add>2</add>
-	<costTools>[[109,2]]</costTools>
+	<costTools>[[109,2],[10901,4]]</costTools>
 	<costCoin>200</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -3623,7 +3623,7 @@
 	<type>205</type>
 	<lev>3</lev>
 	<add>3</add>
-	<costTools>[[109,3]]</costTools>
+	<costTools>[[109,3],[10901,6]]</costTools>
 	<costCoin>300</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -3632,7 +3632,7 @@
 	<type>205</type>
 	<lev>4</lev>
 	<add>4</add>
-	<costTools>[[109,4]]</costTools>
+	<costTools>[[109,4],[10901,8]]</costTools>
 	<costCoin>500</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -3641,7 +3641,7 @@
 	<type>205</type>
 	<lev>5</lev>
 	<add>5</add>
-	<costTools>[[109,5]]</costTools>
+	<costTools>[[109,5],[10901,10]]</costTools>
 	<costCoin>700</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -3650,7 +3650,7 @@
 	<type>205</type>
 	<lev>6</lev>
 	<add>6</add>
-	<costTools>[[109,6]]</costTools>
+	<costTools>[[109,6],[10901,12]]</costTools>
 	<costCoin>1000</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -3659,7 +3659,7 @@
 	<type>205</type>
 	<lev>7</lev>
 	<add>7</add>
-	<costTools>[[109,7]]</costTools>
+	<costTools>[[109,7],[10901,14]]</costTools>
 	<costCoin>1500</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -3668,7 +3668,7 @@
 	<type>205</type>
 	<lev>8</lev>
 	<add>8</add>
-	<costTools>[[109,8]]</costTools>
+	<costTools>[[109,8],[10901,16]]</costTools>
 	<costCoin>2000</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -3677,7 +3677,7 @@
 	<type>205</type>
 	<lev>9</lev>
 	<add>9</add>
-	<costTools>[[109,9]]</costTools>
+	<costTools>[[109,9],[10901,18]]</costTools>
 	<costCoin>3000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -3686,7 +3686,7 @@
 	<type>205</type>
 	<lev>10</lev>
 	<add>10</add>
-	<costTools>[[109,10],[10901,2]]</costTools>
+	<costTools>[[109,10],[10901,20]]</costTools>
 	<costCoin>5000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -3695,7 +3695,7 @@
 	<type>205</type>
 	<lev>11</lev>
 	<add>11</add>
-	<costTools>[[109,12]]</costTools>
+	<costTools>[[109,12],[10901,22]]</costTools>
 	<costCoin>7000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -3704,7 +3704,7 @@
 	<type>205</type>
 	<lev>12</lev>
 	<add>12</add>
-	<costTools>[[109,14]]</costTools>
+	<costTools>[[109,14],[10901,24]]</costTools>
 	<costCoin>9000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -3713,7 +3713,7 @@
 	<type>205</type>
 	<lev>13</lev>
 	<add>13</add>
-	<costTools>[[109,16]]</costTools>
+	<costTools>[[109,16],[10901,26]]</costTools>
 	<costCoin>11000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -3722,7 +3722,7 @@
 	<type>205</type>
 	<lev>14</lev>
 	<add>14</add>
-	<costTools>[[109,18]]</costTools>
+	<costTools>[[109,18],[10901,28]]</costTools>
 	<costCoin>13000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -3731,7 +3731,7 @@
 	<type>205</type>
 	<lev>15</lev>
 	<add>15</add>
-	<costTools>[[109,20]]</costTools>
+	<costTools>[[109,20],[10901,30]]</costTools>
 	<costCoin>15000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -3740,7 +3740,7 @@
 	<type>205</type>
 	<lev>16</lev>
 	<add>16</add>
-	<costTools>[[109,22]]</costTools>
+	<costTools>[[109,22],[10901,32]]</costTools>
 	<costCoin>17000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -3749,7 +3749,7 @@
 	<type>205</type>
 	<lev>17</lev>
 	<add>17</add>
-	<costTools>[[109,24]]</costTools>
+	<costTools>[[109,24],[10901,34]]</costTools>
 	<costCoin>19000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -3758,7 +3758,7 @@
 	<type>205</type>
 	<lev>18</lev>
 	<add>18</add>
-	<costTools>[[109,26]]</costTools>
+	<costTools>[[109,26],[10901,36]]</costTools>
 	<costCoin>21000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -3767,7 +3767,7 @@
 	<type>205</type>
 	<lev>19</lev>
 	<add>19</add>
-	<costTools>[[109,28]]</costTools>
+	<costTools>[[109,28],[10901,38]]</costTools>
 	<costCoin>23000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -3776,7 +3776,7 @@
 	<type>205</type>
 	<lev>20</lev>
 	<add>20</add>
-	<costTools>[[109,30],[10902,3]]</costTools>
+	<costTools>[[109,30],[10901,40]]</costTools>
 	<costCoin>25000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -3785,7 +3785,7 @@
 	<type>205</type>
 	<lev>21</lev>
 	<add>21</add>
-	<costTools>[[109,33]]</costTools>
+	<costTools>[[109,33],[10901,42]]</costTools>
 	<costCoin>27000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3794,7 +3794,7 @@
 	<type>205</type>
 	<lev>22</lev>
 	<add>22</add>
-	<costTools>[[109,36]]</costTools>
+	<costTools>[[109,36],[10901,44]]</costTools>
 	<costCoin>29000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3803,7 +3803,7 @@
 	<type>205</type>
 	<lev>23</lev>
 	<add>23</add>
-	<costTools>[[109,39]]</costTools>
+	<costTools>[[109,39],[10901,46]]</costTools>
 	<costCoin>31000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3812,7 +3812,7 @@
 	<type>205</type>
 	<lev>24</lev>
 	<add>24</add>
-	<costTools>[[109,42]]</costTools>
+	<costTools>[[109,42],[10901,48]]</costTools>
 	<costCoin>33000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3821,7 +3821,7 @@
 	<type>205</type>
 	<lev>25</lev>
 	<add>25</add>
-	<costTools>[[109,45]]</costTools>
+	<costTools>[[109,45],[10901,50]]</costTools>
 	<costCoin>35000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3830,7 +3830,7 @@
 	<type>205</type>
 	<lev>26</lev>
 	<add>26</add>
-	<costTools>[[109,48]]</costTools>
+	<costTools>[[109,48],[10901,52]]</costTools>
 	<costCoin>37000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3839,7 +3839,7 @@
 	<type>205</type>
 	<lev>27</lev>
 	<add>27</add>
-	<costTools>[[109,51]]</costTools>
+	<costTools>[[109,51],[10901,54]]</costTools>
 	<costCoin>39000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3848,7 +3848,7 @@
 	<type>205</type>
 	<lev>28</lev>
 	<add>28</add>
-	<costTools>[[109,54]]</costTools>
+	<costTools>[[109,54],[10901,56]]</costTools>
 	<costCoin>41000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3857,7 +3857,7 @@
 	<type>205</type>
 	<lev>29</lev>
 	<add>29</add>
-	<costTools>[[109,57]]</costTools>
+	<costTools>[[109,57],[10901,58]]</costTools>
 	<costCoin>43000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3866,7 +3866,7 @@
 	<type>205</type>
 	<lev>30</lev>
 	<add>30</add>
-	<costTools>[[109,60],[10903,5]]</costTools>
+	<costTools>[[109,60],[10901,60]]</costTools>
 	<costCoin>45000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -3875,7 +3875,7 @@
 	<type>205</type>
 	<lev>31</lev>
 	<add>31</add>
-	<costTools>[[109,64]]</costTools>
+	<costTools>[[109,64],[10901,62]]</costTools>
 	<costCoin>47000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3884,7 +3884,7 @@
 	<type>205</type>
 	<lev>32</lev>
 	<add>32</add>
-	<costTools>[[109,68]]</costTools>
+	<costTools>[[109,68],[10901,64]]</costTools>
 	<costCoin>49000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3893,7 +3893,7 @@
 	<type>205</type>
 	<lev>33</lev>
 	<add>33</add>
-	<costTools>[[109,72]]</costTools>
+	<costTools>[[109,72],[10901,66]]</costTools>
 	<costCoin>51000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3902,7 +3902,7 @@
 	<type>205</type>
 	<lev>34</lev>
 	<add>34</add>
-	<costTools>[[109,76]]</costTools>
+	<costTools>[[109,76],[10901,68]]</costTools>
 	<costCoin>53000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3911,7 +3911,7 @@
 	<type>205</type>
 	<lev>35</lev>
 	<add>35</add>
-	<costTools>[[109,80]]</costTools>
+	<costTools>[[109,80],[10901,70]]</costTools>
 	<costCoin>55000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3920,7 +3920,7 @@
 	<type>205</type>
 	<lev>36</lev>
 	<add>36</add>
-	<costTools>[[109,84]]</costTools>
+	<costTools>[[109,84],[10901,72]]</costTools>
 	<costCoin>57000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3929,7 +3929,7 @@
 	<type>205</type>
 	<lev>37</lev>
 	<add>37</add>
-	<costTools>[[109,88]]</costTools>
+	<costTools>[[109,88],[10901,74]]</costTools>
 	<costCoin>59000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3938,7 +3938,7 @@
 	<type>205</type>
 	<lev>38</lev>
 	<add>38</add>
-	<costTools>[[109,92]]</costTools>
+	<costTools>[[109,92],[10901,76]]</costTools>
 	<costCoin>61000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3947,7 +3947,7 @@
 	<type>205</type>
 	<lev>39</lev>
 	<add>39</add>
-	<costTools>[[109,96]]</costTools>
+	<costTools>[[109,96],[10901,78]]</costTools>
 	<costCoin>63000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3956,7 +3956,7 @@
 	<type>205</type>
 	<lev>40</lev>
 	<add>40</add>
-	<costTools>[[109,100],[10904,7]]</costTools>
+	<costTools>[[109,100],[10901,80]]</costTools>
 	<costCoin>65000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3965,7 +3965,7 @@
 	<type>205</type>
 	<lev>41</lev>
 	<add>41</add>
-	<costTools>[[109,105]]</costTools>
+	<costTools>[[109,105],[10901,82]]</costTools>
 	<costCoin>67000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3974,7 +3974,7 @@
 	<type>205</type>
 	<lev>42</lev>
 	<add>42</add>
-	<costTools>[[109,110]]</costTools>
+	<costTools>[[109,110],[10901,84]]</costTools>
 	<costCoin>69000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3983,7 +3983,7 @@
 	<type>205</type>
 	<lev>43</lev>
 	<add>43</add>
-	<costTools>[[109,115]]</costTools>
+	<costTools>[[109,115],[10901,86]]</costTools>
 	<costCoin>71000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -3992,7 +3992,7 @@
 	<type>205</type>
 	<lev>44</lev>
 	<add>44</add>
-	<costTools>[[109,120]]</costTools>
+	<costTools>[[109,120],[10901,88]]</costTools>
 	<costCoin>73000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4001,7 +4001,7 @@
 	<type>205</type>
 	<lev>45</lev>
 	<add>45</add>
-	<costTools>[[109,125]]</costTools>
+	<costTools>[[109,125],[10901,90]]</costTools>
 	<costCoin>75000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4010,7 +4010,7 @@
 	<type>205</type>
 	<lev>46</lev>
 	<add>46</add>
-	<costTools>[[109,130]]</costTools>
+	<costTools>[[109,130],[10901,92]]</costTools>
 	<costCoin>77000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4019,7 +4019,7 @@
 	<type>205</type>
 	<lev>47</lev>
 	<add>47</add>
-	<costTools>[[109,135]]</costTools>
+	<costTools>[[109,135],[10901,94]]</costTools>
 	<costCoin>79000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4028,7 +4028,7 @@
 	<type>205</type>
 	<lev>48</lev>
 	<add>48</add>
-	<costTools>[[109,140]]</costTools>
+	<costTools>[[109,140],[10901,96]]</costTools>
 	<costCoin>81000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4037,7 +4037,7 @@
 	<type>205</type>
 	<lev>49</lev>
 	<add>49</add>
-	<costTools>[[109,145]]</costTools>
+	<costTools>[[109,145],[10901,98]]</costTools>
 	<costCoin>83000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4046,7 +4046,7 @@
 	<type>205</type>
 	<lev>50</lev>
 	<add>50</add>
-	<costTools>[[109,150],[10905,9]]</costTools>
+	<costTools>[[109,150],[10901,100]]</costTools>
 	<costCoin>85000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4055,7 +4055,7 @@
 	<type>205</type>
 	<lev>51</lev>
 	<add>51</add>
-	<costTools>[[109,156]]</costTools>
+	<costTools>[[109,156],[10901,102]]</costTools>
 	<costCoin>87000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4064,7 +4064,7 @@
 	<type>205</type>
 	<lev>52</lev>
 	<add>52</add>
-	<costTools>[[109,162]]</costTools>
+	<costTools>[[109,162],[10901,104]]</costTools>
 	<costCoin>89000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4073,7 +4073,7 @@
 	<type>205</type>
 	<lev>53</lev>
 	<add>53</add>
-	<costTools>[[109,168]]</costTools>
+	<costTools>[[109,168],[10901,106]]</costTools>
 	<costCoin>91000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4082,7 +4082,7 @@
 	<type>205</type>
 	<lev>54</lev>
 	<add>54</add>
-	<costTools>[[109,174]]</costTools>
+	<costTools>[[109,174],[10901,108]]</costTools>
 	<costCoin>93000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4091,7 +4091,7 @@
 	<type>205</type>
 	<lev>55</lev>
 	<add>55</add>
-	<costTools>[[109,180]]</costTools>
+	<costTools>[[109,180],[10901,110]]</costTools>
 	<costCoin>95000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4100,7 +4100,7 @@
 	<type>205</type>
 	<lev>56</lev>
 	<add>56</add>
-	<costTools>[[109,186]]</costTools>
+	<costTools>[[109,186],[10901,112]]</costTools>
 	<costCoin>97000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4109,7 +4109,7 @@
 	<type>205</type>
 	<lev>57</lev>
 	<add>57</add>
-	<costTools>[[109,192]]</costTools>
+	<costTools>[[109,192],[10901,114]]</costTools>
 	<costCoin>99000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4118,7 +4118,7 @@
 	<type>205</type>
 	<lev>58</lev>
 	<add>58</add>
-	<costTools>[[109,198]]</costTools>
+	<costTools>[[109,198],[10901,116]]</costTools>
 	<costCoin>101000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4127,7 +4127,7 @@
 	<type>205</type>
 	<lev>59</lev>
 	<add>59</add>
-	<costTools>[[109,204]]</costTools>
+	<costTools>[[109,204],[10901,118]]</costTools>
 	<costCoin>103000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4136,7 +4136,7 @@
 	<type>205</type>
 	<lev>60</lev>
 	<add>60</add>
-	<costTools>[[109,210],[10906,11]]</costTools>
+	<costTools>[[109,210],[10901,120]]</costTools>
 	<costCoin>105000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4145,7 +4145,7 @@
 	<type>205</type>
 	<lev>61</lev>
 	<add>61</add>
-	<costTools>[[109,217]]</costTools>
+	<costTools>[[109,217],[10901,122]]</costTools>
 	<costCoin>107000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4154,7 +4154,7 @@
 	<type>205</type>
 	<lev>62</lev>
 	<add>62</add>
-	<costTools>[[109,224]]</costTools>
+	<costTools>[[109,224],[10901,124]]</costTools>
 	<costCoin>109000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4163,7 +4163,7 @@
 	<type>205</type>
 	<lev>63</lev>
 	<add>63</add>
-	<costTools>[[109,231]]</costTools>
+	<costTools>[[109,231],[10901,126]]</costTools>
 	<costCoin>111000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4172,7 +4172,7 @@
 	<type>205</type>
 	<lev>64</lev>
 	<add>64</add>
-	<costTools>[[109,238]]</costTools>
+	<costTools>[[109,238],[10901,128]]</costTools>
 	<costCoin>113000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4181,7 +4181,7 @@
 	<type>205</type>
 	<lev>65</lev>
 	<add>65</add>
-	<costTools>[[109,245]]</costTools>
+	<costTools>[[109,245],[10901,130]]</costTools>
 	<costCoin>115000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4190,7 +4190,7 @@
 	<type>205</type>
 	<lev>66</lev>
 	<add>66</add>
-	<costTools>[[109,252]]</costTools>
+	<costTools>[[109,252],[10901,132]]</costTools>
 	<costCoin>117000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4199,7 +4199,7 @@
 	<type>205</type>
 	<lev>67</lev>
 	<add>67</add>
-	<costTools>[[109,259]]</costTools>
+	<costTools>[[109,259],[10901,134]]</costTools>
 	<costCoin>119000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4208,7 +4208,7 @@
 	<type>205</type>
 	<lev>68</lev>
 	<add>68</add>
-	<costTools>[[109,266]]</costTools>
+	<costTools>[[109,266],[10901,136]]</costTools>
 	<costCoin>121000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4217,7 +4217,7 @@
 	<type>205</type>
 	<lev>69</lev>
 	<add>69</add>
-	<costTools>[[109,273]]</costTools>
+	<costTools>[[109,273],[10901,138]]</costTools>
 	<costCoin>123000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4226,7 +4226,7 @@
 	<type>205</type>
 	<lev>70</lev>
 	<add>70</add>
-	<costTools>[[109,280],[10907,13]]</costTools>
+	<costTools>[[109,280],[10901,140]]</costTools>
 	<costCoin>125000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4235,7 +4235,7 @@
 	<type>205</type>
 	<lev>71</lev>
 	<add>71</add>
-	<costTools>[[109,288]]</costTools>
+	<costTools>[[109,288],[10901,142]]</costTools>
 	<costCoin>127000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4244,7 +4244,7 @@
 	<type>205</type>
 	<lev>72</lev>
 	<add>72</add>
-	<costTools>[[109,296]]</costTools>
+	<costTools>[[109,296],[10901,144]]</costTools>
 	<costCoin>129000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4253,7 +4253,7 @@
 	<type>205</type>
 	<lev>73</lev>
 	<add>73</add>
-	<costTools>[[109,304]]</costTools>
+	<costTools>[[109,304],[10901,146]]</costTools>
 	<costCoin>131000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4262,7 +4262,7 @@
 	<type>205</type>
 	<lev>74</lev>
 	<add>74</add>
-	<costTools>[[109,312]]</costTools>
+	<costTools>[[109,312],[10901,148]]</costTools>
 	<costCoin>133000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4271,7 +4271,7 @@
 	<type>205</type>
 	<lev>75</lev>
 	<add>75</add>
-	<costTools>[[109,320]]</costTools>
+	<costTools>[[109,320],[10901,150]]</costTools>
 	<costCoin>135000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4280,7 +4280,7 @@
 	<type>205</type>
 	<lev>76</lev>
 	<add>76</add>
-	<costTools>[[109,328]]</costTools>
+	<costTools>[[109,328],[10901,152]]</costTools>
 	<costCoin>137000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4289,7 +4289,7 @@
 	<type>205</type>
 	<lev>77</lev>
 	<add>77</add>
-	<costTools>[[109,336]]</costTools>
+	<costTools>[[109,336],[10901,154]]</costTools>
 	<costCoin>139000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4298,7 +4298,7 @@
 	<type>205</type>
 	<lev>78</lev>
 	<add>78</add>
-	<costTools>[[109,344]]</costTools>
+	<costTools>[[109,344],[10901,156]]</costTools>
 	<costCoin>141000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4307,7 +4307,7 @@
 	<type>205</type>
 	<lev>79</lev>
 	<add>79</add>
-	<costTools>[[109,352]]</costTools>
+	<costTools>[[109,352],[10901,158]]</costTools>
 	<costCoin>143000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4316,7 +4316,7 @@
 	<type>205</type>
 	<lev>80</lev>
 	<add>80</add>
-	<costTools>[[109,360],[10908,15]]</costTools>
+	<costTools>[[109,360],[10901,160]]</costTools>
 	<costCoin>145000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4325,7 +4325,7 @@
 	<type>205</type>
 	<lev>81</lev>
 	<add>81</add>
-	<costTools>[[109,369]]</costTools>
+	<costTools>[[109,369],[10901,162]]</costTools>
 	<costCoin>147000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4334,7 +4334,7 @@
 	<type>205</type>
 	<lev>82</lev>
 	<add>82</add>
-	<costTools>[[109,378]]</costTools>
+	<costTools>[[109,378],[10901,164]]</costTools>
 	<costCoin>149000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4343,7 +4343,7 @@
 	<type>205</type>
 	<lev>83</lev>
 	<add>83</add>
-	<costTools>[[109,387]]</costTools>
+	<costTools>[[109,387],[10901,166]]</costTools>
 	<costCoin>151000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4352,7 +4352,7 @@
 	<type>205</type>
 	<lev>84</lev>
 	<add>84</add>
-	<costTools>[[109,396]]</costTools>
+	<costTools>[[109,396],[10901,168]]</costTools>
 	<costCoin>153000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4361,7 +4361,7 @@
 	<type>205</type>
 	<lev>85</lev>
 	<add>85</add>
-	<costTools>[[109,405]]</costTools>
+	<costTools>[[109,405],[10901,170]]</costTools>
 	<costCoin>155000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4370,7 +4370,7 @@
 	<type>205</type>
 	<lev>86</lev>
 	<add>86</add>
-	<costTools>[[109,414]]</costTools>
+	<costTools>[[109,414],[10901,172]]</costTools>
 	<costCoin>157000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4379,7 +4379,7 @@
 	<type>205</type>
 	<lev>87</lev>
 	<add>87</add>
-	<costTools>[[109,423]]</costTools>
+	<costTools>[[109,423],[10901,174]]</costTools>
 	<costCoin>159000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4388,7 +4388,7 @@
 	<type>205</type>
 	<lev>88</lev>
 	<add>88</add>
-	<costTools>[[109,432]]</costTools>
+	<costTools>[[109,432],[10901,176]]</costTools>
 	<costCoin>161000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4397,7 +4397,7 @@
 	<type>205</type>
 	<lev>89</lev>
 	<add>89</add>
-	<costTools>[[109,441]]</costTools>
+	<costTools>[[109,441],[10901,178]]</costTools>
 	<costCoin>163000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4406,7 +4406,7 @@
 	<type>205</type>
 	<lev>90</lev>
 	<add>90</add>
-	<costTools>[[109,450],[10909,17]]</costTools>
+	<costTools>[[109,450],[10901,180]]</costTools>
 	<costCoin>165000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4415,7 +4415,7 @@
 	<type>205</type>
 	<lev>91</lev>
 	<add>91</add>
-	<costTools>[[109,460]]</costTools>
+	<costTools>[[109,460],[10901,182]]</costTools>
 	<costCoin>167000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4424,7 +4424,7 @@
 	<type>205</type>
 	<lev>92</lev>
 	<add>92</add>
-	<costTools>[[109,470]]</costTools>
+	<costTools>[[109,470],[10901,184]]</costTools>
 	<costCoin>169000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4433,7 +4433,7 @@
 	<type>205</type>
 	<lev>93</lev>
 	<add>93</add>
-	<costTools>[[109,480]]</costTools>
+	<costTools>[[109,480],[10901,186]]</costTools>
 	<costCoin>171000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4442,7 +4442,7 @@
 	<type>205</type>
 	<lev>94</lev>
 	<add>94</add>
-	<costTools>[[109,490]]</costTools>
+	<costTools>[[109,490],[10901,188]]</costTools>
 	<costCoin>173000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4451,7 +4451,7 @@
 	<type>205</type>
 	<lev>95</lev>
 	<add>95</add>
-	<costTools>[[109,500]]</costTools>
+	<costTools>[[109,500],[10901,190]]</costTools>
 	<costCoin>175000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4460,7 +4460,7 @@
 	<type>205</type>
 	<lev>96</lev>
 	<add>96</add>
-	<costTools>[[109,510]]</costTools>
+	<costTools>[[109,510],[10901,192]]</costTools>
 	<costCoin>177000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4469,7 +4469,7 @@
 	<type>205</type>
 	<lev>97</lev>
 	<add>97</add>
-	<costTools>[[109,520]]</costTools>
+	<costTools>[[109,520],[10901,194]]</costTools>
 	<costCoin>179000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4478,7 +4478,7 @@
 	<type>205</type>
 	<lev>98</lev>
 	<add>98</add>
-	<costTools>[[109,530]]</costTools>
+	<costTools>[[109,530],[10901,196]]</costTools>
 	<costCoin>181000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4487,7 +4487,7 @@
 	<type>205</type>
 	<lev>99</lev>
 	<add>99</add>
-	<costTools>[[109,540]]</costTools>
+	<costTools>[[109,540],[10901,198]]</costTools>
 	<costCoin>183000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4496,7 +4496,7 @@
 	<type>205</type>
 	<lev>100</lev>
 	<add>100</add>
-	<costTools>[[109,550]]</costTools>
+	<costTools>[[109,550],[10901,200]]</costTools>
 	<costCoin>185000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -4505,7 +4505,7 @@
 	<type>206</type>
 	<lev>1</lev>
 	<add>1</add>
-	<costTools>[[109,1]]</costTools>
+	<costTools>[[109,1],[10901,2]]</costTools>
 	<costCoin>100</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -4514,7 +4514,7 @@
 	<type>206</type>
 	<lev>2</lev>
 	<add>2</add>
-	<costTools>[[109,2]]</costTools>
+	<costTools>[[109,2],[10901,4]]</costTools>
 	<costCoin>200</costCoin>
 	<successRate>100</successRate>
 </config>
@@ -4523,7 +4523,7 @@
 	<type>206</type>
 	<lev>3</lev>
 	<add>3</add>
-	<costTools>[[109,3]]</costTools>
+	<costTools>[[109,3],[10901,6]]</costTools>
 	<costCoin>300</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -4532,7 +4532,7 @@
 	<type>206</type>
 	<lev>4</lev>
 	<add>4</add>
-	<costTools>[[109,4]]</costTools>
+	<costTools>[[109,4],[10901,8]]</costTools>
 	<costCoin>500</costCoin>
 	<successRate>90</successRate>
 </config>
@@ -4541,7 +4541,7 @@
 	<type>206</type>
 	<lev>5</lev>
 	<add>5</add>
-	<costTools>[[109,5]]</costTools>
+	<costTools>[[109,5],[10901,10]]</costTools>
 	<costCoin>700</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -4550,7 +4550,7 @@
 	<type>206</type>
 	<lev>6</lev>
 	<add>6</add>
-	<costTools>[[109,6]]</costTools>
+	<costTools>[[109,6],[10901,12]]</costTools>
 	<costCoin>1000</costCoin>
 	<successRate>80</successRate>
 </config>
@@ -4559,7 +4559,7 @@
 	<type>206</type>
 	<lev>7</lev>
 	<add>7</add>
-	<costTools>[[109,7]]</costTools>
+	<costTools>[[109,7],[10901,14]]</costTools>
 	<costCoin>1500</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -4568,7 +4568,7 @@
 	<type>206</type>
 	<lev>8</lev>
 	<add>8</add>
-	<costTools>[[109,8]]</costTools>
+	<costTools>[[109,8],[10901,16]]</costTools>
 	<costCoin>2000</costCoin>
 	<successRate>70</successRate>
 </config>
@@ -4577,7 +4577,7 @@
 	<type>206</type>
 	<lev>9</lev>
 	<add>9</add>
-	<costTools>[[109,9]]</costTools>
+	<costTools>[[109,9],[10901,18]]</costTools>
 	<costCoin>3000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -4586,7 +4586,7 @@
 	<type>206</type>
 	<lev>10</lev>
 	<add>10</add>
-	<costTools>[[109,10],[10901,2]]</costTools>
+	<costTools>[[109,10],[10901,20]]</costTools>
 	<costCoin>5000</costCoin>
 	<successRate>60</successRate>
 </config>
@@ -4595,7 +4595,7 @@
 	<type>206</type>
 	<lev>11</lev>
 	<add>11</add>
-	<costTools>[[109,12]]</costTools>
+	<costTools>[[109,12],[10901,22]]</costTools>
 	<costCoin>7000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -4604,7 +4604,7 @@
 	<type>206</type>
 	<lev>12</lev>
 	<add>12</add>
-	<costTools>[[109,14]]</costTools>
+	<costTools>[[109,14],[10901,24]]</costTools>
 	<costCoin>9000</costCoin>
 	<successRate>50</successRate>
 </config>
@@ -4613,7 +4613,7 @@
 	<type>206</type>
 	<lev>13</lev>
 	<add>13</add>
-	<costTools>[[109,16]]</costTools>
+	<costTools>[[109,16],[10901,26]]</costTools>
 	<costCoin>11000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -4622,7 +4622,7 @@
 	<type>206</type>
 	<lev>14</lev>
 	<add>14</add>
-	<costTools>[[109,18]]</costTools>
+	<costTools>[[109,18],[10901,28]]</costTools>
 	<costCoin>13000</costCoin>
 	<successRate>40</successRate>
 </config>
@@ -4631,7 +4631,7 @@
 	<type>206</type>
 	<lev>15</lev>
 	<add>15</add>
-	<costTools>[[109,20]]</costTools>
+	<costTools>[[109,20],[10901,30]]</costTools>
 	<costCoin>15000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -4640,7 +4640,7 @@
 	<type>206</type>
 	<lev>16</lev>
 	<add>16</add>
-	<costTools>[[109,22]]</costTools>
+	<costTools>[[109,22],[10901,32]]</costTools>
 	<costCoin>17000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -4649,7 +4649,7 @@
 	<type>206</type>
 	<lev>17</lev>
 	<add>17</add>
-	<costTools>[[109,24]]</costTools>
+	<costTools>[[109,24],[10901,34]]</costTools>
 	<costCoin>19000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -4658,7 +4658,7 @@
 	<type>206</type>
 	<lev>18</lev>
 	<add>18</add>
-	<costTools>[[109,26]]</costTools>
+	<costTools>[[109,26],[10901,36]]</costTools>
 	<costCoin>21000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -4667,7 +4667,7 @@
 	<type>206</type>
 	<lev>19</lev>
 	<add>19</add>
-	<costTools>[[109,28]]</costTools>
+	<costTools>[[109,28],[10901,38]]</costTools>
 	<costCoin>23000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -4676,7 +4676,7 @@
 	<type>206</type>
 	<lev>20</lev>
 	<add>20</add>
-	<costTools>[[109,30],[10902,3]]</costTools>
+	<costTools>[[109,30],[10901,40]]</costTools>
 	<costCoin>25000</costCoin>
 	<successRate>30</successRate>
 </config>
@@ -4685,7 +4685,7 @@
 	<type>206</type>
 	<lev>21</lev>
 	<add>21</add>
-	<costTools>[[109,33]]</costTools>
+	<costTools>[[109,33],[10901,42]]</costTools>
 	<costCoin>27000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4694,7 +4694,7 @@
 	<type>206</type>
 	<lev>22</lev>
 	<add>22</add>
-	<costTools>[[109,36]]</costTools>
+	<costTools>[[109,36],[10901,44]]</costTools>
 	<costCoin>29000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4703,7 +4703,7 @@
 	<type>206</type>
 	<lev>23</lev>
 	<add>23</add>
-	<costTools>[[109,39]]</costTools>
+	<costTools>[[109,39],[10901,46]]</costTools>
 	<costCoin>31000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4712,7 +4712,7 @@
 	<type>206</type>
 	<lev>24</lev>
 	<add>24</add>
-	<costTools>[[109,42]]</costTools>
+	<costTools>[[109,42],[10901,48]]</costTools>
 	<costCoin>33000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4721,7 +4721,7 @@
 	<type>206</type>
 	<lev>25</lev>
 	<add>25</add>
-	<costTools>[[109,45]]</costTools>
+	<costTools>[[109,45],[10901,50]]</costTools>
 	<costCoin>35000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4730,7 +4730,7 @@
 	<type>206</type>
 	<lev>26</lev>
 	<add>26</add>
-	<costTools>[[109,48]]</costTools>
+	<costTools>[[109,48],[10901,52]]</costTools>
 	<costCoin>37000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4739,7 +4739,7 @@
 	<type>206</type>
 	<lev>27</lev>
 	<add>27</add>
-	<costTools>[[109,51]]</costTools>
+	<costTools>[[109,51],[10901,54]]</costTools>
 	<costCoin>39000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4748,7 +4748,7 @@
 	<type>206</type>
 	<lev>28</lev>
 	<add>28</add>
-	<costTools>[[109,54]]</costTools>
+	<costTools>[[109,54],[10901,56]]</costTools>
 	<costCoin>41000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4757,7 +4757,7 @@
 	<type>206</type>
 	<lev>29</lev>
 	<add>29</add>
-	<costTools>[[109,57]]</costTools>
+	<costTools>[[109,57],[10901,58]]</costTools>
 	<costCoin>43000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4766,7 +4766,7 @@
 	<type>206</type>
 	<lev>30</lev>
 	<add>30</add>
-	<costTools>[[109,60],[10903,5]]</costTools>
+	<costTools>[[109,60],[10901,60]]</costTools>
 	<costCoin>45000</costCoin>
 	<successRate>25</successRate>
 </config>
@@ -4775,7 +4775,7 @@
 	<type>206</type>
 	<lev>31</lev>
 	<add>31</add>
-	<costTools>[[109,64]]</costTools>
+	<costTools>[[109,64],[10901,62]]</costTools>
 	<costCoin>47000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4784,7 +4784,7 @@
 	<type>206</type>
 	<lev>32</lev>
 	<add>32</add>
-	<costTools>[[109,68]]</costTools>
+	<costTools>[[109,68],[10901,64]]</costTools>
 	<costCoin>49000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4793,7 +4793,7 @@
 	<type>206</type>
 	<lev>33</lev>
 	<add>33</add>
-	<costTools>[[109,72]]</costTools>
+	<costTools>[[109,72],[10901,66]]</costTools>
 	<costCoin>51000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4802,7 +4802,7 @@
 	<type>206</type>
 	<lev>34</lev>
 	<add>34</add>
-	<costTools>[[109,76]]</costTools>
+	<costTools>[[109,76],[10901,68]]</costTools>
 	<costCoin>53000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4811,7 +4811,7 @@
 	<type>206</type>
 	<lev>35</lev>
 	<add>35</add>
-	<costTools>[[109,80]]</costTools>
+	<costTools>[[109,80],[10901,70]]</costTools>
 	<costCoin>55000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4820,7 +4820,7 @@
 	<type>206</type>
 	<lev>36</lev>
 	<add>36</add>
-	<costTools>[[109,84]]</costTools>
+	<costTools>[[109,84],[10901,72]]</costTools>
 	<costCoin>57000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4829,7 +4829,7 @@
 	<type>206</type>
 	<lev>37</lev>
 	<add>37</add>
-	<costTools>[[109,88]]</costTools>
+	<costTools>[[109,88],[10901,74]]</costTools>
 	<costCoin>59000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4838,7 +4838,7 @@
 	<type>206</type>
 	<lev>38</lev>
 	<add>38</add>
-	<costTools>[[109,92]]</costTools>
+	<costTools>[[109,92],[10901,76]]</costTools>
 	<costCoin>61000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4847,7 +4847,7 @@
 	<type>206</type>
 	<lev>39</lev>
 	<add>39</add>
-	<costTools>[[109,96]]</costTools>
+	<costTools>[[109,96],[10901,78]]</costTools>
 	<costCoin>63000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4856,7 +4856,7 @@
 	<type>206</type>
 	<lev>40</lev>
 	<add>40</add>
-	<costTools>[[109,100],[10904,7]]</costTools>
+	<costTools>[[109,100],[10901,80]]</costTools>
 	<costCoin>65000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4865,7 +4865,7 @@
 	<type>206</type>
 	<lev>41</lev>
 	<add>41</add>
-	<costTools>[[109,105]]</costTools>
+	<costTools>[[109,105],[10901,82]]</costTools>
 	<costCoin>67000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4874,7 +4874,7 @@
 	<type>206</type>
 	<lev>42</lev>
 	<add>42</add>
-	<costTools>[[109,110]]</costTools>
+	<costTools>[[109,110],[10901,84]]</costTools>
 	<costCoin>69000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4883,7 +4883,7 @@
 	<type>206</type>
 	<lev>43</lev>
 	<add>43</add>
-	<costTools>[[109,115]]</costTools>
+	<costTools>[[109,115],[10901,86]]</costTools>
 	<costCoin>71000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4892,7 +4892,7 @@
 	<type>206</type>
 	<lev>44</lev>
 	<add>44</add>
-	<costTools>[[109,120]]</costTools>
+	<costTools>[[109,120],[10901,88]]</costTools>
 	<costCoin>73000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4901,7 +4901,7 @@
 	<type>206</type>
 	<lev>45</lev>
 	<add>45</add>
-	<costTools>[[109,125]]</costTools>
+	<costTools>[[109,125],[10901,90]]</costTools>
 	<costCoin>75000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4910,7 +4910,7 @@
 	<type>206</type>
 	<lev>46</lev>
 	<add>46</add>
-	<costTools>[[109,130]]</costTools>
+	<costTools>[[109,130],[10901,92]]</costTools>
 	<costCoin>77000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4919,7 +4919,7 @@
 	<type>206</type>
 	<lev>47</lev>
 	<add>47</add>
-	<costTools>[[109,135]]</costTools>
+	<costTools>[[109,135],[10901,94]]</costTools>
 	<costCoin>79000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4928,7 +4928,7 @@
 	<type>206</type>
 	<lev>48</lev>
 	<add>48</add>
-	<costTools>[[109,140]]</costTools>
+	<costTools>[[109,140],[10901,96]]</costTools>
 	<costCoin>81000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4937,7 +4937,7 @@
 	<type>206</type>
 	<lev>49</lev>
 	<add>49</add>
-	<costTools>[[109,145]]</costTools>
+	<costTools>[[109,145],[10901,98]]</costTools>
 	<costCoin>83000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4946,7 +4946,7 @@
 	<type>206</type>
 	<lev>50</lev>
 	<add>50</add>
-	<costTools>[[109,150],[10905,9]]</costTools>
+	<costTools>[[109,150],[10901,100]]</costTools>
 	<costCoin>85000</costCoin>
 	<successRate>20</successRate>
 </config>
@@ -4955,7 +4955,7 @@
 	<type>206</type>
 	<lev>51</lev>
 	<add>51</add>
-	<costTools>[[109,156]]</costTools>
+	<costTools>[[109,156],[10901,102]]</costTools>
 	<costCoin>87000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4964,7 +4964,7 @@
 	<type>206</type>
 	<lev>52</lev>
 	<add>52</add>
-	<costTools>[[109,162]]</costTools>
+	<costTools>[[109,162],[10901,104]]</costTools>
 	<costCoin>89000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4973,7 +4973,7 @@
 	<type>206</type>
 	<lev>53</lev>
 	<add>53</add>
-	<costTools>[[109,168]]</costTools>
+	<costTools>[[109,168],[10901,106]]</costTools>
 	<costCoin>91000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4982,7 +4982,7 @@
 	<type>206</type>
 	<lev>54</lev>
 	<add>54</add>
-	<costTools>[[109,174]]</costTools>
+	<costTools>[[109,174],[10901,108]]</costTools>
 	<costCoin>93000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -4991,7 +4991,7 @@
 	<type>206</type>
 	<lev>55</lev>
 	<add>55</add>
-	<costTools>[[109,180]]</costTools>
+	<costTools>[[109,180],[10901,110]]</costTools>
 	<costCoin>95000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5000,7 +5000,7 @@
 	<type>206</type>
 	<lev>56</lev>
 	<add>56</add>
-	<costTools>[[109,186]]</costTools>
+	<costTools>[[109,186],[10901,112]]</costTools>
 	<costCoin>97000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5009,7 +5009,7 @@
 	<type>206</type>
 	<lev>57</lev>
 	<add>57</add>
-	<costTools>[[109,192]]</costTools>
+	<costTools>[[109,192],[10901,114]]</costTools>
 	<costCoin>99000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5018,7 +5018,7 @@
 	<type>206</type>
 	<lev>58</lev>
 	<add>58</add>
-	<costTools>[[109,198]]</costTools>
+	<costTools>[[109,198],[10901,116]]</costTools>
 	<costCoin>101000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5027,7 +5027,7 @@
 	<type>206</type>
 	<lev>59</lev>
 	<add>59</add>
-	<costTools>[[109,204]]</costTools>
+	<costTools>[[109,204],[10901,118]]</costTools>
 	<costCoin>103000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5036,7 +5036,7 @@
 	<type>206</type>
 	<lev>60</lev>
 	<add>60</add>
-	<costTools>[[109,210],[10906,11]]</costTools>
+	<costTools>[[109,210],[10901,120]]</costTools>
 	<costCoin>105000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5045,7 +5045,7 @@
 	<type>206</type>
 	<lev>61</lev>
 	<add>61</add>
-	<costTools>[[109,217]]</costTools>
+	<costTools>[[109,217],[10901,122]]</costTools>
 	<costCoin>107000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5054,7 +5054,7 @@
 	<type>206</type>
 	<lev>62</lev>
 	<add>62</add>
-	<costTools>[[109,224]]</costTools>
+	<costTools>[[109,224],[10901,124]]</costTools>
 	<costCoin>109000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5063,7 +5063,7 @@
 	<type>206</type>
 	<lev>63</lev>
 	<add>63</add>
-	<costTools>[[109,231]]</costTools>
+	<costTools>[[109,231],[10901,126]]</costTools>
 	<costCoin>111000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5072,7 +5072,7 @@
 	<type>206</type>
 	<lev>64</lev>
 	<add>64</add>
-	<costTools>[[109,238]]</costTools>
+	<costTools>[[109,238],[10901,128]]</costTools>
 	<costCoin>113000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5081,7 +5081,7 @@
 	<type>206</type>
 	<lev>65</lev>
 	<add>65</add>
-	<costTools>[[109,245]]</costTools>
+	<costTools>[[109,245],[10901,130]]</costTools>
 	<costCoin>115000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5090,7 +5090,7 @@
 	<type>206</type>
 	<lev>66</lev>
 	<add>66</add>
-	<costTools>[[109,252]]</costTools>
+	<costTools>[[109,252],[10901,132]]</costTools>
 	<costCoin>117000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5099,7 +5099,7 @@
 	<type>206</type>
 	<lev>67</lev>
 	<add>67</add>
-	<costTools>[[109,259]]</costTools>
+	<costTools>[[109,259],[10901,134]]</costTools>
 	<costCoin>119000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5108,7 +5108,7 @@
 	<type>206</type>
 	<lev>68</lev>
 	<add>68</add>
-	<costTools>[[109,266]]</costTools>
+	<costTools>[[109,266],[10901,136]]</costTools>
 	<costCoin>121000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5117,7 +5117,7 @@
 	<type>206</type>
 	<lev>69</lev>
 	<add>69</add>
-	<costTools>[[109,273]]</costTools>
+	<costTools>[[109,273],[10901,138]]</costTools>
 	<costCoin>123000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5126,7 +5126,7 @@
 	<type>206</type>
 	<lev>70</lev>
 	<add>70</add>
-	<costTools>[[109,280],[10907,13]]</costTools>
+	<costTools>[[109,280],[10901,140]]</costTools>
 	<costCoin>125000</costCoin>
 	<successRate>15</successRate>
 </config>
@@ -5135,7 +5135,7 @@
 	<type>206</type>
 	<lev>71</lev>
 	<add>71</add>
-	<costTools>[[109,288]]</costTools>
+	<costTools>[[109,288],[10901,142]]</costTools>
 	<costCoin>127000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5144,7 +5144,7 @@
 	<type>206</type>
 	<lev>72</lev>
 	<add>72</add>
-	<costTools>[[109,296]]</costTools>
+	<costTools>[[109,296],[10901,144]]</costTools>
 	<costCoin>129000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5153,7 +5153,7 @@
 	<type>206</type>
 	<lev>73</lev>
 	<add>73</add>
-	<costTools>[[109,304]]</costTools>
+	<costTools>[[109,304],[10901,146]]</costTools>
 	<costCoin>131000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5162,7 +5162,7 @@
 	<type>206</type>
 	<lev>74</lev>
 	<add>74</add>
-	<costTools>[[109,312]]</costTools>
+	<costTools>[[109,312],[10901,148]]</costTools>
 	<costCoin>133000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5171,7 +5171,7 @@
 	<type>206</type>
 	<lev>75</lev>
 	<add>75</add>
-	<costTools>[[109,320]]</costTools>
+	<costTools>[[109,320],[10901,150]]</costTools>
 	<costCoin>135000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5180,7 +5180,7 @@
 	<type>206</type>
 	<lev>76</lev>
 	<add>76</add>
-	<costTools>[[109,328]]</costTools>
+	<costTools>[[109,328],[10901,152]]</costTools>
 	<costCoin>137000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5189,7 +5189,7 @@
 	<type>206</type>
 	<lev>77</lev>
 	<add>77</add>
-	<costTools>[[109,336]]</costTools>
+	<costTools>[[109,336],[10901,154]]</costTools>
 	<costCoin>139000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5198,7 +5198,7 @@
 	<type>206</type>
 	<lev>78</lev>
 	<add>78</add>
-	<costTools>[[109,344]]</costTools>
+	<costTools>[[109,344],[10901,156]]</costTools>
 	<costCoin>141000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5207,7 +5207,7 @@
 	<type>206</type>
 	<lev>79</lev>
 	<add>79</add>
-	<costTools>[[109,352]]</costTools>
+	<costTools>[[109,352],[10901,158]]</costTools>
 	<costCoin>143000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5216,7 +5216,7 @@
 	<type>206</type>
 	<lev>80</lev>
 	<add>80</add>
-	<costTools>[[109,360],[10908,15]]</costTools>
+	<costTools>[[109,360],[10901,160]]</costTools>
 	<costCoin>145000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5225,7 +5225,7 @@
 	<type>206</type>
 	<lev>81</lev>
 	<add>81</add>
-	<costTools>[[109,369]]</costTools>
+	<costTools>[[109,369],[10901,162]]</costTools>
 	<costCoin>147000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5234,7 +5234,7 @@
 	<type>206</type>
 	<lev>82</lev>
 	<add>82</add>
-	<costTools>[[109,378]]</costTools>
+	<costTools>[[109,378],[10901,164]]</costTools>
 	<costCoin>149000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5243,7 +5243,7 @@
 	<type>206</type>
 	<lev>83</lev>
 	<add>83</add>
-	<costTools>[[109,387]]</costTools>
+	<costTools>[[109,387],[10901,166]]</costTools>
 	<costCoin>151000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5252,7 +5252,7 @@
 	<type>206</type>
 	<lev>84</lev>
 	<add>84</add>
-	<costTools>[[109,396]]</costTools>
+	<costTools>[[109,396],[10901,168]]</costTools>
 	<costCoin>153000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5261,7 +5261,7 @@
 	<type>206</type>
 	<lev>85</lev>
 	<add>85</add>
-	<costTools>[[109,405]]</costTools>
+	<costTools>[[109,405],[10901,170]]</costTools>
 	<costCoin>155000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5270,7 +5270,7 @@
 	<type>206</type>
 	<lev>86</lev>
 	<add>86</add>
-	<costTools>[[109,414]]</costTools>
+	<costTools>[[109,414],[10901,172]]</costTools>
 	<costCoin>157000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5279,7 +5279,7 @@
 	<type>206</type>
 	<lev>87</lev>
 	<add>87</add>
-	<costTools>[[109,423]]</costTools>
+	<costTools>[[109,423],[10901,174]]</costTools>
 	<costCoin>159000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5288,7 +5288,7 @@
 	<type>206</type>
 	<lev>88</lev>
 	<add>88</add>
-	<costTools>[[109,432]]</costTools>
+	<costTools>[[109,432],[10901,176]]</costTools>
 	<costCoin>161000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5297,7 +5297,7 @@
 	<type>206</type>
 	<lev>89</lev>
 	<add>89</add>
-	<costTools>[[109,441]]</costTools>
+	<costTools>[[109,441],[10901,178]]</costTools>
 	<costCoin>163000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5306,7 +5306,7 @@
 	<type>206</type>
 	<lev>90</lev>
 	<add>90</add>
-	<costTools>[[109,450],[10909,17]]</costTools>
+	<costTools>[[109,450],[10901,180]]</costTools>
 	<costCoin>165000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5315,7 +5315,7 @@
 	<type>206</type>
 	<lev>91</lev>
 	<add>91</add>
-	<costTools>[[109,460]]</costTools>
+	<costTools>[[109,460],[10901,182]]</costTools>
 	<costCoin>167000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5324,7 +5324,7 @@
 	<type>206</type>
 	<lev>92</lev>
 	<add>92</add>
-	<costTools>[[109,470]]</costTools>
+	<costTools>[[109,470],[10901,184]]</costTools>
 	<costCoin>169000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5333,7 +5333,7 @@
 	<type>206</type>
 	<lev>93</lev>
 	<add>93</add>
-	<costTools>[[109,480]]</costTools>
+	<costTools>[[109,480],[10901,186]]</costTools>
 	<costCoin>171000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5342,7 +5342,7 @@
 	<type>206</type>
 	<lev>94</lev>
 	<add>94</add>
-	<costTools>[[109,490]]</costTools>
+	<costTools>[[109,490],[10901,188]]</costTools>
 	<costCoin>173000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5351,7 +5351,7 @@
 	<type>206</type>
 	<lev>95</lev>
 	<add>95</add>
-	<costTools>[[109,500]]</costTools>
+	<costTools>[[109,500],[10901,190]]</costTools>
 	<costCoin>175000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5360,7 +5360,7 @@
 	<type>206</type>
 	<lev>96</lev>
 	<add>96</add>
-	<costTools>[[109,510]]</costTools>
+	<costTools>[[109,510],[10901,192]]</costTools>
 	<costCoin>177000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5369,7 +5369,7 @@
 	<type>206</type>
 	<lev>97</lev>
 	<add>97</add>
-	<costTools>[[109,520]]</costTools>
+	<costTools>[[109,520],[10901,194]]</costTools>
 	<costCoin>179000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5378,7 +5378,7 @@
 	<type>206</type>
 	<lev>98</lev>
 	<add>98</add>
-	<costTools>[[109,530]]</costTools>
+	<costTools>[[109,530],[10901,196]]</costTools>
 	<costCoin>181000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5387,7 +5387,7 @@
 	<type>206</type>
 	<lev>99</lev>
 	<add>99</add>
-	<costTools>[[109,540]]</costTools>
+	<costTools>[[109,540],[10901,198]]</costTools>
 	<costCoin>183000</costCoin>
 	<successRate>10</successRate>
 </config>
@@ -5396,7 +5396,7 @@
 	<type>206</type>
 	<lev>100</lev>
 	<add>100</add>
-	<costTools>[[109,550]]</costTools>
+	<costTools>[[109,550],[10901,200]]</costTools>
 	<costCoin>185000</costCoin>
 	<successRate>10</successRate>
 </config>

@@ -21,8 +21,8 @@ public class FameExtension {
 		return service.getInfo(playerId);
 	}
 
-	@Command(3502)
-	public Object activityCamp(int playerId,IntParam param){
-		return service.activityAcmp(playerId,param.param);
-	}
+//	@Command(3502)
+//	public Object activityCamp(int playerId,IntParam param){
+//		return service.activityAcmp(playerId,param.param);
+//	}
 }

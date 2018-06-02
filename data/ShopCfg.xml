@@ -1069,8 +1069,8 @@
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyType>133</moneyType>
+	<moneyCount>180</moneyCount>
 	<specIcon></specIcon>
 	<order>1</order>
 	<refreshRate>100</refreshRate>
@@ -1084,20 +1084,20 @@
 <config>
 	<id>52</id>
 	<shopType>10</shopType>
-	<name>眩晕卡D</name>
-	<goodsId>50101</goodsId>
+	<name>中毒卡C</name>
+	<goodsId>50402</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyType>133</moneyType>
+	<moneyCount>180</moneyCount>
 	<specIcon></specIcon>
 	<order>2</order>
-	<refreshRate>50</refreshRate>
-	<refreshAdd>10</refreshAdd>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
@@ -1107,20 +1107,20 @@
 <config>
 	<id>53</id>
 	<shopType>10</shopType>
-	<name>中毒卡C</name>
-	<goodsId>50402</goodsId>
+	<name>防御卡D</name>
+	<goodsId>50811</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyType>133</moneyType>
+	<moneyCount>900</moneyCount>
 	<specIcon></specIcon>
 	<order>3</order>
-	<refreshRate>50</refreshRate>
-	<refreshAdd>0</refreshAdd>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
@@ -1130,41 +1130,18 @@
 <config>
 	<id>54</id>
 	<shopType>10</shopType>
-	<name>眩晕卡C</name>
-	<goodsId>50102</goodsId>
+	<name>防御卡C</name>
+	<goodsId>50812</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyType>133</moneyType>
+	<moneyCount>900</moneyCount>
 	<specIcon></specIcon>
 	<order>4</order>
-	<refreshRate>50</refreshRate>
-	<refreshAdd>0</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-	<rechargeId>0</rechargeId>
-</config>
-<config>
-	<id>59</id>
-	<shopType>10</shopType>
-	<name>装备材料</name>
-	<goodsId>108</goodsId>
-	<count>10</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>0</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>500</moneyCount>
-	<specIcon></specIcon>
-	<order>9</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
@@ -1174,20 +1151,20 @@
 	<rechargeId>0</rechargeId>
 </config>
 <config>
-	<id>60</id>
+	<id>55</id>
 	<shopType>10</shopType>
-	<name>强化材料</name>
-	<goodsId>109</goodsId>
-	<count>5</count>
+	<name>经验卡</name>
+	<goodsId>59901</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyType>133</moneyType>
+	<moneyCount>200</moneyCount>
 	<specIcon></specIcon>
-	<order>10</order>
+	<order>5</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
@@ -1197,7 +1174,53 @@
 	<rechargeId>0</rechargeId>
 </config>
 <config>
-	<id>61</id>
+	<id>56</id>
+	<shopType>10</shopType>
+	<name>强化券</name>
+	<goodsId>302001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>0</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>500</moneyCount>
+	<specIcon></specIcon>
+	<order>6</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit></fameLevLimit>
+	<rechargeId>0</rechargeId>
+</config>
+<config>
+	<id>57</id>
+	<shopType>10</shopType>
+	<name>觉醒石</name>
+	<goodsId>18001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>0</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>133</moneyType>
+	<moneyCount>1000</moneyCount>
+	<specIcon></specIcon>
+	<order>7</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>0</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>3</fameLevLimit>
+	<rechargeId>0</rechargeId>
+</config>
+<config>
+	<id>58</id>
 	<shopType>10</shopType>
 	<name>时装券</name>
 	<goodsId>20006</goodsId>
@@ -1207,39 +1230,16 @@
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
+	<moneyType>133</moneyType>
 	<moneyCount>1500</moneyCount>
 	<specIcon></specIcon>
-	<order>11</order>
+	<order>8</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>1</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-	<rechargeId>0</rechargeId>
-</config>
-<config>
-	<id>62</id>
-	<shopType>10</shopType>
-	<name>小蘑菇碎片</name>
-	<goodsId>65041</goodsId>
-	<count>5</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>0</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>134</moneyType>
-	<moneyCount>500</moneyCount>
-	<specIcon></specIcon>
-	<order>12</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>0</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
+	<fameLevLimit>4</fameLevLimit>
 	<rechargeId>0</rechargeId>
 </config>
 <config>
@@ -1437,8 +1437,8 @@
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyType>135</moneyType>
+	<moneyCount>180</moneyCount>
 	<specIcon></specIcon>
 	<order>1</order>
 	<refreshRate>100</refreshRate>
@@ -1452,16 +1452,16 @@
 <config>
 	<id>76</id>
 	<shopType>12</shopType>
-	<name>灼烧卡D</name>
-	<goodsId>50501</goodsId>
+	<name>流血卡C</name>
+	<goodsId>50602</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyType>135</moneyType>
+	<moneyCount>180</moneyCount>
 	<specIcon></specIcon>
 	<order>2</order>
 	<refreshRate>50</refreshRate>
@@ -1475,16 +1475,16 @@
 <config>
 	<id>77</id>
 	<shopType>12</shopType>
-	<name>流血卡C</name>
-	<goodsId>50602</goodsId>
+	<name>异常增益D</name>
+	<goodsId>50841</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyType>135</moneyType>
+	<moneyCount>900</moneyCount>
 	<specIcon></specIcon>
 	<order>3</order>
 	<refreshRate>50</refreshRate>
@@ -1498,16 +1498,16 @@
 <config>
 	<id>78</id>
 	<shopType>12</shopType>
-	<name>灼烧卡C</name>
-	<goodsId>50502</goodsId>
+	<name>异常增益C</name>
+	<goodsId>50842</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyType>135</moneyType>
+	<moneyCount>900</moneyCount>
 	<specIcon></specIcon>
 	<order>4</order>
 	<refreshRate>50</refreshRate>
@@ -1521,16 +1521,16 @@
 <config>
 	<id>83</id>
 	<shopType>12</shopType>
-	<name>装备材料</name>
-	<goodsId>108</goodsId>
-	<count>10</count>
+	<name>经验卡</name>
+	<goodsId>59901</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyType>135</moneyType>
+	<moneyCount>200</moneyCount>
 	<specIcon></specIcon>
 	<order>9</order>
 	<refreshRate>100</refreshRate>
@@ -1544,15 +1544,15 @@
 <config>
 	<id>84</id>
 	<shopType>12</shopType>
-	<name>强化材料</name>
-	<goodsId>109</goodsId>
-	<count>5</count>
+	<name>强化券</name>
+	<goodsId>302001</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
+	<moneyType>135</moneyType>
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>10</order>
@@ -1567,16 +1567,16 @@
 <config>
 	<id>85</id>
 	<shopType>12</shopType>
-	<name>时装券</name>
-	<goodsId>20008</goodsId>
-	<count>10</count>
+	<name>觉醒石</name>
+	<goodsId>18001</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>1500</moneyCount>
+	<moneyType>135</moneyType>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -1584,22 +1584,22 @@
 	<isFixed>1</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
+	<fameLevLimit>3</fameLevLimit>
 	<rechargeId>0</rechargeId>
 </config>
 <config>
 	<id>86</id>
 	<shopType>12</shopType>
-	<name>小树桩碎片</name>
-	<goodsId>65031</goodsId>
-	<count>5</count>
+	<name>时装券</name>
+	<goodsId>20006</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>136</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyType>135</moneyType>
+	<moneyCount>1500</moneyCount>
 	<specIcon></specIcon>
 	<order>12</order>
 	<refreshRate>100</refreshRate>
@@ -1607,7 +1607,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
+	<fameLevLimit>4</fameLevLimit>
 	<rechargeId>0</rechargeId>
 </config>
 <config>
@@ -1797,8 +1797,8 @@
 <config>
 	<id>99</id>
 	<shopType>13</shopType>
-	<name>流血卡D</name>
-	<goodsId>50601</goodsId>
+	<name>灼烧卡D</name>
+	<goodsId>50501</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
@@ -1806,7 +1806,7 @@
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>137</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyCount>180</moneyCount>
 	<specIcon></specIcon>
 	<order>1</order>
 	<refreshRate>100</refreshRate>
@@ -1820,8 +1820,8 @@
 <config>
 	<id>100</id>
 	<shopType>13</shopType>
-	<name>灼烧卡D</name>
-	<goodsId>50501</goodsId>
+	<name>灼烧卡C</name>
+	<goodsId>50502</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
@@ -1829,7 +1829,7 @@
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>137</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyCount>180</moneyCount>
 	<specIcon></specIcon>
 	<order>2</order>
 	<refreshRate>50</refreshRate>
@@ -1843,8 +1843,8 @@
 <config>
 	<id>101</id>
 	<shopType>13</shopType>
-	<name>流血卡C</name>
-	<goodsId>50602</goodsId>
+	<name>暴击卡D</name>
+	<goodsId>50851</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
@@ -1852,7 +1852,7 @@
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>137</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyCount>900</moneyCount>
 	<specIcon></specIcon>
 	<order>3</order>
 	<refreshRate>50</refreshRate>
@@ -1866,8 +1866,8 @@
 <config>
 	<id>102</id>
 	<shopType>13</shopType>
-	<name>灼烧卡C</name>
-	<goodsId>50502</goodsId>
+	<name>暴击卡C</name>
+	<goodsId>50852</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
@@ -1875,7 +1875,7 @@
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>137</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyCount>900</moneyCount>
 	<specIcon></specIcon>
 	<order>4</order>
 	<refreshRate>50</refreshRate>
@@ -1889,16 +1889,16 @@
 <config>
 	<id>107</id>
 	<shopType>13</shopType>
-	<name>装备材料</name>
-	<goodsId>108</goodsId>
-	<count>10</count>
+	<name>经验卡</name>
+	<goodsId>59901</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>137</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyCount>200</moneyCount>
 	<specIcon></specIcon>
 	<order>9</order>
 	<refreshRate>100</refreshRate>
@@ -1912,9 +1912,9 @@
 <config>
 	<id>108</id>
 	<shopType>13</shopType>
-	<name>强化材料</name>
-	<goodsId>109</goodsId>
-	<count>5</count>
+	<name>强化券</name>
+	<goodsId>302001</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
@@ -1935,8 +1935,31 @@
 <config>
 	<id>109</id>
 	<shopType>13</shopType>
+	<name>觉醒石</name>
+	<goodsId>18001</goodsId>
+	<count>1</count>
+	<tab>1</tab>
+	<vip>0</vip>
+	<limitType>2</limitType>
+	<limitCount>0</limitCount>
+	<vipDiscount></vipDiscount>
+	<moneyType>137</moneyType>
+	<moneyCount>1000</moneyCount>
+	<specIcon></specIcon>
+	<order>11</order>
+	<refreshRate>100</refreshRate>
+	<refreshAdd>1</refreshAdd>
+	<isFixed>1</isFixed>
+	<isCanAddBuy>0</isCanAddBuy>
+	<tabLayoutType>1</tabLayoutType>
+	<fameLevLimit>3</fameLevLimit>
+	<rechargeId>0</rechargeId>
+</config>
+<config>
+	<id>110</id>
+	<shopType>13</shopType>
 	<name>时装券</name>
-	<goodsId>20003</goodsId>
+	<goodsId>20006</goodsId>
 	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
@@ -1946,36 +1969,13 @@
 	<moneyType>137</moneyType>
 	<moneyCount>1500</moneyCount>
 	<specIcon></specIcon>
-	<order>11</order>
-	<refreshRate>100</refreshRate>
-	<refreshAdd>1</refreshAdd>
-	<isFixed>1</isFixed>
-	<isCanAddBuy>0</isCanAddBuy>
-	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
-	<rechargeId>0</rechargeId>
-</config>
-<config>
-	<id>110</id>
-	<shopType>13</shopType>
-	<name>小木乃伊碎片</name>
-	<goodsId>65011</goodsId>
-	<count>5</count>
-	<tab>1</tab>
-	<vip>0</vip>
-	<limitType>2</limitType>
-	<limitCount>0</limitCount>
-	<vipDiscount></vipDiscount>
-	<moneyType>137</moneyType>
-	<moneyCount>500</moneyCount>
-	<specIcon></specIcon>
 	<order>12</order>
 	<refreshRate>100</refreshRate>
 	<refreshAdd>1</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
+	<fameLevLimit>4</fameLevLimit>
 	<rechargeId>0</rechargeId>
 </config>
 <config>
@@ -2349,16 +2349,16 @@
 <config>
 	<id>135</id>
 	<shopType>8</shopType>
-	<name>反伤卡D</name>
-	<goodsId>51701</goodsId>
+	<name>威力卡D</name>
+	<goodsId>50801</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>132</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyType>131</moneyType>
+	<moneyCount>180</moneyCount>
 	<specIcon></specIcon>
 	<order>1</order>
 	<refreshRate>100</refreshRate>
@@ -2372,16 +2372,16 @@
 <config>
 	<id>136</id>
 	<shopType>8</shopType>
-	<name>冰冻卡D</name>
-	<goodsId>50201</goodsId>
+	<name>威力卡C</name>
+	<goodsId>50802</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>132</moneyType>
-	<moneyCount>600</moneyCount>
+	<moneyType>131</moneyType>
+	<moneyCount>180</moneyCount>
 	<specIcon></specIcon>
 	<order>2</order>
 	<refreshRate>50</refreshRate>
@@ -2395,16 +2395,16 @@
 <config>
 	<id>137</id>
 	<shopType>8</shopType>
-	<name>反伤卡C</name>
-	<goodsId>51702</goodsId>
+	<name>生命卡D</name>
+	<goodsId>50821</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>132</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyType>131</moneyType>
+	<moneyCount>900</moneyCount>
 	<specIcon></specIcon>
 	<order>3</order>
 	<refreshRate>50</refreshRate>
@@ -2418,16 +2418,16 @@
 <config>
 	<id>138</id>
 	<shopType>8</shopType>
-	<name>冰冻卡C</name>
-	<goodsId>50201</goodsId>
+	<name>生命卡C</name>
+	<goodsId>50822</goodsId>
 	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>132</moneyType>
-	<moneyCount>1800</moneyCount>
+	<moneyType>131</moneyType>
+	<moneyCount>900</moneyCount>
 	<specIcon></specIcon>
 	<order>4</order>
 	<refreshRate>50</refreshRate>
@@ -2441,16 +2441,16 @@
 <config>
 	<id>143</id>
 	<shopType>8</shopType>
-	<name>装备材料</name>
-	<goodsId>108</goodsId>
-	<count>10</count>
+	<name>经验卡</name>
+	<goodsId>59901</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>132</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyType>131</moneyType>
+	<moneyCount>200</moneyCount>
 	<specIcon></specIcon>
 	<order>9</order>
 	<refreshRate>100</refreshRate>
@@ -2464,15 +2464,15 @@
 <config>
 	<id>144</id>
 	<shopType>8</shopType>
-	<name>强化材料</name>
-	<goodsId>109</goodsId>
-	<count>5</count>
+	<name>强化券</name>
+	<goodsId>302001</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>132</moneyType>
+	<moneyType>131</moneyType>
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>10</order>
@@ -2487,16 +2487,16 @@
 <config>
 	<id>145</id>
 	<shopType>8</shopType>
-	<name>时装券</name>
-	<goodsId>20002</goodsId>
-	<count>10</count>
+	<name>觉醒石</name>
+	<goodsId>18001</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>132</moneyType>
-	<moneyCount>1500</moneyCount>
+	<moneyType>131</moneyType>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>11</order>
 	<refreshRate>100</refreshRate>
@@ -2504,22 +2504,22 @@
 	<isFixed>1</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
+	<fameLevLimit>3</fameLevLimit>
 	<rechargeId>0</rechargeId>
 </config>
 <config>
 	<id>146</id>
 	<shopType>8</shopType>
-	<name>小僵尸碎片</name>
-	<goodsId>65051</goodsId>
-	<count>5</count>
+	<name>时装券</name>
+	<goodsId>20006</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip>0</vip>
 	<limitType>2</limitType>
 	<limitCount>0</limitCount>
 	<vipDiscount></vipDiscount>
-	<moneyType>132</moneyType>
-	<moneyCount>500</moneyCount>
+	<moneyType>131</moneyType>
+	<moneyCount>1500</moneyCount>
 	<specIcon></specIcon>
 	<order>12</order>
 	<refreshRate>100</refreshRate>
@@ -2527,7 +2527,7 @@
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
 	<tabLayoutType>1</tabLayoutType>
-	<fameLevLimit></fameLevLimit>
+	<fameLevLimit>4</fameLevLimit>
 	<rechargeId>0</rechargeId>
 </config>
 <config>

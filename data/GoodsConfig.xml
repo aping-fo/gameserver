@@ -705,7 +705,7 @@
 <config>
 	<id>132</id>
 	<atlas>Goods</atlas>
-	<name>精绝遗迹声望点</name>
+	<name></name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -732,7 +732,7 @@
 <config>
 	<id>133</id>
 	<atlas>Goods</atlas>
-	<name>兜率宫声望点</name>
+	<name>丢雷魔云窟声望点</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -759,7 +759,7 @@
 <config>
 	<id>134</id>
 	<atlas>Goods</atlas>
-	<name>丢雷云魔窟声望点</name>
+	<name></name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -786,7 +786,7 @@
 <config>
 	<id>135</id>
 	<atlas>Goods</atlas>
-	<name>光之守护者声望点</name>
+	<name>风谷之地声望点</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -813,7 +813,7 @@
 <config>
 	<id>136</id>
 	<atlas>Goods</atlas>
-	<name>暗之守护者声望点</name>
+	<name></name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -840,7 +840,7 @@
 <config>
 	<id>137</id>
 	<atlas>Goods</atlas>
-	<name>神权之鹰声望点</name>
+	<name>沙漠王朝声望点</name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -867,7 +867,7 @@
 <config>
 	<id>138</id>
 	<atlas>Goods</atlas>
-	<name>亡灵审判声望点</name>
+	<name></name>
 	<decompose></decompose>
 	<copys></copys>
 	<buyPrice></buyPrice>
@@ -1859,33 +1859,6 @@
 	<fu></fu>
 	<param1>[800115]</param1>
 	<param2>[[1,1,1,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,5,6,14,15,16,17,18,19,20]]</param2>
-	<rare></rare>
-	<tipsType>2</tipsType>
-	<openId></openId>
-</config>
-<config>
-	<id>109601</id>
-	<atlas>Spaceinstrument</atlas>
-	<name>不进攻就吔屎</name>
-	<decompose></decompose>
-	<copys></copys>
-	<buyPrice></buyPrice>
-	<sellPrice>100</sellPrice>
-	<type>109</type>
-	<level>20</level>
-	<vocation>0</vocation>
-	<color>2</color>
-	<maxStack></maxStack>
-	<contentsRates></contentsRates>
-	<contents></contents>
-	<hp></hp>
-	<attack></attack>
-	<defense></defense>
-	<symptom></symptom>
-	<crit></crit>
-	<fu></fu>
-	<param1>[800116]</param1>
-	<param2>[[1,1],[21,22]]</param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
 	<openId></openId>

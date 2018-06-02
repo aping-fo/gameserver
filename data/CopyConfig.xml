@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <config>
+	<id>110000</id>
+	<cityId>1</cityId>
+	<chapterId>0</chapterId>
+	<chapterName>预览单机关卡</chapterName>
+	<group>1</group>
+	<name>新手关卡</name>
+	<nameType></nameType>
+	<desc></desc>
+	<preId></preId>
+	<scenes>[1100001,1100002,1100003]</scenes>
+	<type>1</type>
+	<difficulty>1</difficulty>
+	<passType>1</passType>
+	<camp>0</camp>
+	<groupName></groupName>
+	<timeLimit>3000</timeLimit>
+	<needEnergy>6</needEnergy>
+	<recommendFight>800</recommendFight>
+	<lev>1</lev>
+	<count>0</count>
+	<firstReward></firstReward>
+	<rewards></rewards>
+	<reviveCost></reviveCost>
+	<starRewards></starRewards>
+	<randomRates></randomRates>
+	<randomRewards></randomRewards>
+	<getstarbytime>80</getstarbytime>
+	<getstarbyhit>100</getstarbyhit>
+	<isStopTimeWhenPause></isStopTimeWhenPause>
+	<monsterId>110027</monsterId>
+	<monsterIcon>100010_2</monsterIcon>
+	<qualities>[1001]</qualities>
+	<weakness>[2002,2005]</weakness>
+	<isWinTimeOver>0</isWinTimeOver>
+	<isIgnoreSkillClick>0</isIgnoreSkillClick>
+	<isClearMonsterWhenOver>0</isClearMonsterWhenOver>
+	<trickTask></trickTask>
+	<copySettlementLayout>[1,0,0,0,0,0,0,0,0]</copySettlementLayout>
+	<settlementVictoryType>[2,3]</settlementVictoryType>
+	<settlementFailType>1</settlementFailType>
+	<settlementDelay>0</settlementDelay>
+	<finishType>1</finishType>
+	<isCanAutoFight>0</isCanAutoFight>
+	<bossHpNum>0</bossHpNum>
+</config>
+<config>
 	<id>110001</id>
 	<cityId>1</cityId>
 	<chapterId>0</chapterId>
@@ -41,7 +87,7 @@
 	<copySettlementLayout>[1,0,0,0,0,0,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>0</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -67,8 +113,8 @@
 	<recommendFight>800</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,30],[20112001,1],[20122001,1],[20132001,1],[109,20],[301200,1]]</firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,150],[20112001,1],[20122001,1],[20132001,1],[109,20],[301200,1]]</firstReward>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[0,0,0,0,0,0,25,25,25]</randomRates>
@@ -87,7 +133,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -113,8 +159,8 @@
 	<recommendFight>1290</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,48],[20212001,1],[20222001,1],[20232001,1]]</firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,240],[20212001,1],[20222001,1],[20232001,1]]</firstReward>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[0,0,0,0,0,0,25,25,25]</randomRates>
@@ -133,7 +179,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -159,8 +205,8 @@
 	<recommendFight>1570</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,66],[20312001,1],[20322001,1],[20332001,1]]</firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,330],[20312001,1],[20322001,1],[20332001,1]]</firstReward>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -179,7 +225,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -205,8 +251,8 @@
 	<recommendFight>1820</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,84],[20412001,1],[20422001,1],[20432001,1]]</firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,420],[20412001,1],[20422001,1],[20432001,1]]</firstReward>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -225,7 +271,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -251,8 +297,8 @@
 	<recommendFight>2060</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,102],[20512001,1],[20522001,1],[20532001,1]]</firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,510],[20512001,1],[20522001,1],[20532001,1]]</firstReward>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -271,7 +317,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -297,8 +343,8 @@
 	<recommendFight>2310</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,120],[20612001,1],[20622001,1],[20632001,1],[900001,100]]</firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,600],[20612001,1],[20622001,1],[20632001,1],[900001,100]]</firstReward>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -317,7 +363,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -343,7 +389,7 @@
 	<recommendFight>2560</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,138],[20112001,1],[20122001,1],[20132001,1]]</firstReward>
+	<firstReward>[[101,690],[20112001,1],[20122001,1],[20132001,1]]</firstReward>
 	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -363,7 +409,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -389,7 +435,7 @@
 	<recommendFight>2810</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,156],[20212001,1],[20222001,1],[20232001,1]]</firstReward>
+	<firstReward>[[101,780],[20212001,1],[20222001,1],[20232001,1]]</firstReward>
 	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -409,7 +455,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -435,7 +481,7 @@
 	<recommendFight>3060</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,174],[20312001,1],[20322001,1],[20332001,1]]</firstReward>
+	<firstReward>[[101,870],[20312001,1],[20322001,1],[20332001,1]]</firstReward>
 	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -455,7 +501,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -481,7 +527,7 @@
 	<recommendFight>3300</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,192],[20412001,1],[20422001,1],[20432001,1]]</firstReward>
+	<firstReward>[[101,960],[20412001,1],[20422001,1],[20432001,1]]</firstReward>
 	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -501,7 +547,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -527,7 +573,7 @@
 	<recommendFight>3550</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,210],[20512001,1],[20522001,1],[20532001,1]]</firstReward>
+	<firstReward>[[101,1050],[20512001,1],[20522001,1],[20532001,1]]</firstReward>
 	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -547,7 +593,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -573,7 +619,7 @@
 	<recommendFight>3800</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,228],[109101,1],[20612001,1],[20622001,1],[20632001,1],[18000,1]]</firstReward>
+	<firstReward>[[101,1140],[109101,1],[20612001,1],[20622001,1],[20632001,1],[18000,1]]</firstReward>
 	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -593,7 +639,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -619,8 +665,8 @@
 	<recommendFight>4050</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,246],[20112010,1],[20122010,1],[20132010,1]]</firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1230],[20112010,1],[20122010,1],[20132010,1]]</firstReward>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -639,7 +685,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -665,8 +711,8 @@
 	<recommendFight>4300</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,264],[20212010,1],[20222010,1],[20232010,1]]</firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1320],[20212010,1],[20222010,1],[20232010,1]]</firstReward>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -685,7 +731,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -711,8 +757,8 @@
 	<recommendFight>4540</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,282],[20312010,1],[20322010,1],[20332010,1]]</firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1410],[20312010,1],[20322010,1],[20332010,1]]</firstReward>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -731,7 +777,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -757,8 +803,8 @@
 	<recommendFight>4790</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,300],[20412010,1],[20422010,1],[20432010,1]]</firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1500],[20412010,1],[20422010,1],[20432010,1]]</firstReward>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -777,7 +823,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -803,8 +849,8 @@
 	<recommendFight>5040</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,318],[20512010,1],[20522010,1],[20532010,1]]</firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1590],[20512010,1],[20522010,1],[20532010,1]]</firstReward>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -823,7 +869,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -849,8 +895,8 @@
 	<recommendFight>5290</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,336],[20612010,1],[20622010,1],[20632010,1]]</firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1680],[20612010,1],[20622010,1],[20632010,1]]</firstReward>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -869,7 +915,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -895,8 +941,8 @@
 	<recommendFight>6490</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,354]]</firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1770]]</firstReward>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -915,7 +961,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -941,8 +987,8 @@
 	<recommendFight>6780</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,372]]</firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1860]]</firstReward>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -961,7 +1007,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -987,8 +1033,8 @@
 	<recommendFight>7080</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,390]]</firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,1950]]</firstReward>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -1007,7 +1053,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1033,8 +1079,8 @@
 	<recommendFight>7380</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,408]]</firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,2040]]</firstReward>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -1053,7 +1099,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1079,8 +1125,8 @@
 	<recommendFight>7670</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,426]]</firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,2130]]</firstReward>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -1099,7 +1145,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1125,8 +1171,8 @@
 	<recommendFight>7970</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,444]]</firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<firstReward>[[101,2220]]</firstReward>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -1145,7 +1191,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1171,7 +1217,7 @@
 	<recommendFight>8260</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,462]]</firstReward>
+	<firstReward>[[101,2310]]</firstReward>
 	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1191,7 +1237,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1217,7 +1263,7 @@
 	<recommendFight>8560</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,480]]</firstReward>
+	<firstReward>[[101,2400]]</firstReward>
 	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1237,7 +1283,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1263,7 +1309,7 @@
 	<recommendFight>8860</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,498]]</firstReward>
+	<firstReward>[[101,2490]]</firstReward>
 	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1283,7 +1329,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1309,7 +1355,7 @@
 	<recommendFight>9150</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,516]]</firstReward>
+	<firstReward>[[101,2580]]</firstReward>
 	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1329,7 +1375,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1355,7 +1401,7 @@
 	<recommendFight>9450</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,534]]</firstReward>
+	<firstReward>[[101,2670]]</firstReward>
 	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1375,7 +1421,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1401,7 +1447,7 @@
 	<recommendFight>9740</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,552]]</firstReward>
+	<firstReward>[[101,2760]]</firstReward>
 	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1421,7 +1467,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1447,7 +1493,7 @@
 	<recommendFight>10040</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,570]]</firstReward>
+	<firstReward>[[101,2850]]</firstReward>
 	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1467,7 +1513,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1493,7 +1539,7 @@
 	<recommendFight>10340</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,588]]</firstReward>
+	<firstReward>[[101,2940]]</firstReward>
 	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1513,7 +1559,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1539,7 +1585,7 @@
 	<recommendFight>10630</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,606]]</firstReward>
+	<firstReward>[[101,3030]]</firstReward>
 	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1559,7 +1605,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1585,7 +1631,7 @@
 	<recommendFight>10930</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,624]]</firstReward>
+	<firstReward>[[101,3120]]</firstReward>
 	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1605,7 +1651,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1631,7 +1677,7 @@
 	<recommendFight>11220</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,642]]</firstReward>
+	<firstReward>[[101,3210]]</firstReward>
 	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1651,7 +1697,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1677,7 +1723,7 @@
 	<recommendFight>11520</recommendFight>
 	<lev>1</lev>
 	<count>0</count>
-	<firstReward>[[101,660]]</firstReward>
+	<firstReward>[[101,3300]]</firstReward>
 	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
@@ -1697,7 +1743,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1743,7 +1789,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1789,7 +1835,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1835,7 +1881,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1881,7 +1927,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1927,7 +1973,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -1973,7 +2019,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2000,7 +2046,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2019,7 +2065,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2046,7 +2092,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2065,7 +2111,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2092,7 +2138,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2111,7 +2157,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2138,7 +2184,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2157,7 +2203,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2184,7 +2230,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2203,7 +2249,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2230,7 +2276,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2249,7 +2295,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2276,7 +2322,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2295,7 +2341,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2322,7 +2368,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2341,7 +2387,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2368,7 +2414,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2387,7 +2433,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2414,7 +2460,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2433,7 +2479,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2460,7 +2506,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2479,7 +2525,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2506,7 +2552,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2525,7 +2571,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2571,7 +2617,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2617,7 +2663,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2663,7 +2709,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2709,7 +2755,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2755,7 +2801,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2801,7 +2847,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2828,7 +2874,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2847,7 +2893,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2874,7 +2920,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2893,7 +2939,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2920,7 +2966,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2939,7 +2985,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -2966,7 +3012,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -2985,7 +3031,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3012,7 +3058,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -3031,7 +3077,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3058,7 +3104,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -3077,7 +3123,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3104,7 +3150,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -3123,7 +3169,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3150,7 +3196,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -3169,7 +3215,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3196,7 +3242,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -3215,7 +3261,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3242,7 +3288,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -3261,7 +3307,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3288,7 +3334,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -3307,7 +3353,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3334,7 +3380,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -3353,7 +3399,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3399,7 +3445,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3445,7 +3491,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3491,7 +3537,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3537,7 +3583,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3583,7 +3629,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3629,7 +3675,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3675,7 +3721,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3721,7 +3767,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3767,7 +3813,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3813,7 +3859,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3859,7 +3905,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3905,7 +3951,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3951,7 +3997,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -3997,7 +4043,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4043,7 +4089,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4089,7 +4135,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4135,7 +4181,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4181,7 +4227,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4208,7 +4254,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -4227,7 +4273,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4254,7 +4300,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -4273,7 +4319,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4300,7 +4346,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -4319,7 +4365,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4346,7 +4392,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -4365,7 +4411,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4392,7 +4438,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -4411,7 +4457,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4438,7 +4484,7 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,60,60,60,30,30,30]</randomRates>
@@ -4457,7 +4503,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4484,7 +4530,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -4503,7 +4549,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4530,7 +4576,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -4549,7 +4595,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4576,7 +4622,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -4595,7 +4641,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4622,7 +4668,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -4641,7 +4687,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4668,7 +4714,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -4687,7 +4733,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4714,7 +4760,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -4733,7 +4779,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4779,7 +4825,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4825,7 +4871,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4871,7 +4917,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4917,7 +4963,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -4963,7 +5009,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5009,7 +5055,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5036,7 +5082,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5055,7 +5101,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5082,7 +5128,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5101,7 +5147,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5128,7 +5174,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5147,7 +5193,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5174,7 +5220,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5193,7 +5239,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5220,7 +5266,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5239,7 +5285,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5266,7 +5312,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5285,7 +5331,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5312,7 +5358,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5331,7 +5377,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5358,7 +5404,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5377,7 +5423,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5404,7 +5450,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5423,7 +5469,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5450,7 +5496,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5469,7 +5515,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5496,7 +5542,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5515,7 +5561,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5542,7 +5588,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -5561,7 +5607,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5607,7 +5653,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5653,7 +5699,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5699,7 +5745,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5745,7 +5791,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5791,7 +5837,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5837,7 +5883,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5883,7 +5929,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5929,7 +5975,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -5975,7 +6021,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6021,7 +6067,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6067,7 +6113,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6113,7 +6159,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6159,7 +6205,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6205,7 +6251,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6251,7 +6297,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6297,7 +6343,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6343,7 +6389,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6389,7 +6435,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6416,7 +6462,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6435,7 +6481,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6462,7 +6508,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6481,7 +6527,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6508,7 +6554,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6527,7 +6573,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6554,7 +6600,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6573,7 +6619,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6600,7 +6646,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6619,7 +6665,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6646,7 +6692,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6665,7 +6711,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6692,7 +6738,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6711,7 +6757,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6738,7 +6784,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6757,7 +6803,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6784,7 +6830,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6803,7 +6849,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6830,7 +6876,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6849,7 +6895,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6876,7 +6922,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6895,7 +6941,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6922,7 +6968,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -6941,7 +6987,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -6987,7 +7033,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7033,7 +7079,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7079,7 +7125,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7125,7 +7171,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7171,7 +7217,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7217,7 +7263,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7244,7 +7290,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7263,7 +7309,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7290,7 +7336,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7309,7 +7355,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7336,7 +7382,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7355,7 +7401,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7382,7 +7428,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7401,7 +7447,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7428,7 +7474,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7447,7 +7493,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7474,7 +7520,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7493,7 +7539,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7520,7 +7566,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7539,7 +7585,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7566,7 +7612,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7585,7 +7631,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7612,7 +7658,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7631,7 +7677,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7658,7 +7704,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7677,7 +7723,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7704,7 +7750,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7723,7 +7769,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7750,7 +7796,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -7769,7 +7815,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7815,7 +7861,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7861,7 +7907,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7907,7 +7953,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7953,7 +7999,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -7999,7 +8045,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8045,7 +8091,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8091,7 +8137,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8137,7 +8183,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8183,7 +8229,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8229,7 +8275,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8275,7 +8321,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8321,7 +8367,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8367,7 +8413,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8413,7 +8459,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8459,7 +8505,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8505,7 +8551,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8551,7 +8597,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8597,7 +8643,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8624,7 +8670,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -8643,7 +8689,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8670,7 +8716,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -8689,7 +8735,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8716,7 +8762,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -8735,7 +8781,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8762,7 +8808,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -8781,7 +8827,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8808,7 +8854,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -8827,7 +8873,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8854,7 +8900,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -8873,7 +8919,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8900,7 +8946,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -8919,7 +8965,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8946,7 +8992,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -8965,7 +9011,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -8992,7 +9038,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9011,7 +9057,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9038,7 +9084,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9057,7 +9103,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9084,7 +9130,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9103,7 +9149,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9130,7 +9176,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9149,7 +9195,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9195,7 +9241,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9241,7 +9287,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9287,7 +9333,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9333,7 +9379,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9379,7 +9425,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9425,7 +9471,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9452,7 +9498,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9471,7 +9517,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9498,7 +9544,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9517,7 +9563,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9544,7 +9590,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9563,7 +9609,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9590,7 +9636,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9609,7 +9655,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9636,7 +9682,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9655,7 +9701,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9682,7 +9728,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9701,7 +9747,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9728,7 +9774,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9747,7 +9793,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9774,7 +9820,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9793,7 +9839,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9820,7 +9866,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9839,7 +9885,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9866,7 +9912,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9885,7 +9931,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9912,7 +9958,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9931,7 +9977,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -9958,7 +10004,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -9977,7 +10023,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10023,7 +10069,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10069,7 +10115,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10115,7 +10161,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10161,7 +10207,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10207,7 +10253,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10253,7 +10299,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10299,7 +10345,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10345,7 +10391,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10391,7 +10437,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10437,7 +10483,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10483,7 +10529,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10529,7 +10575,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10575,7 +10621,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10621,7 +10667,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10667,7 +10713,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10713,7 +10759,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10759,7 +10805,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10805,7 +10851,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10832,7 +10878,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -10851,7 +10897,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10878,7 +10924,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -10897,7 +10943,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10924,7 +10970,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -10943,7 +10989,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -10970,7 +11016,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -10989,7 +11035,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11016,7 +11062,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11035,7 +11081,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11062,7 +11108,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11081,7 +11127,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11108,7 +11154,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11127,7 +11173,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11154,7 +11200,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11173,7 +11219,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11200,7 +11246,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11219,7 +11265,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11246,7 +11292,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11265,7 +11311,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11292,7 +11338,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11311,7 +11357,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11338,7 +11384,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[138,60],[101,90],[103,300]]</rewards>
+	<rewards>[[137,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11357,7 +11403,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11403,7 +11449,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11449,7 +11495,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11495,7 +11541,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11541,7 +11587,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11587,7 +11633,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11633,7 +11679,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11660,7 +11706,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11679,7 +11725,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11706,7 +11752,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11725,7 +11771,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11752,7 +11798,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11771,7 +11817,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11798,7 +11844,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11817,7 +11863,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11844,7 +11890,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11863,7 +11909,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11890,7 +11936,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[132,60],[101,90],[103,300]]</rewards>
+	<rewards>[[131,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11909,7 +11955,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11936,7 +11982,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -11955,7 +12001,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -11982,7 +12028,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -12001,7 +12047,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12028,7 +12074,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -12047,7 +12093,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12074,7 +12120,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -12093,7 +12139,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12120,7 +12166,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -12139,7 +12185,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12166,7 +12212,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[134,60],[101,90],[103,300]]</rewards>
+	<rewards>[[133,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -12185,7 +12231,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12231,7 +12277,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12277,7 +12323,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12323,7 +12369,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12369,7 +12415,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12415,7 +12461,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12461,7 +12507,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12507,7 +12553,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12553,7 +12599,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12599,7 +12645,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12645,7 +12691,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12691,7 +12737,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12737,7 +12783,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12783,7 +12829,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12829,7 +12875,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12875,7 +12921,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12921,7 +12967,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -12967,7 +13013,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13013,7 +13059,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13040,7 +13086,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -13059,7 +13105,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13086,7 +13132,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -13105,7 +13151,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13132,7 +13178,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -13151,7 +13197,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13178,7 +13224,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -13197,7 +13243,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13224,7 +13270,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -13243,7 +13289,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13270,7 +13316,7 @@
 	<lev>1</lev>
 	<count>3</count>
 	<firstReward></firstReward>
-	<rewards>[[136,60],[101,90],[103,300]]</rewards>
+	<rewards>[[135,60],[101,90],[103,300]]</rewards>
 	<reviveCost>[[102,100]]</reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,60,60,25,25,25]</randomRates>
@@ -13289,7 +13335,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13408,11 +13454,11 @@
 	<lev>20</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[302002,10]]</rewards>
+	<rewards></rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
-	<randomRates>[5,10,5,50,50,50,50,50,50,50,50]</randomRates>
-	<randomRewards>[[302001,1],[12600,1],[125,1],[400001,50],[500001,50],[600001,50],[700001,50],[800001,50],[900001,50],[1000001,50],[1100001,50]]</randomRewards>
+	<randomRates>[1,1,1,1,1,1,1,1]</randomRates>
+	<randomRewards>[[400001,50],[500001,50],[600001,50],[700001,50],[800001,50],[900001,50],[1000001,50],[1100001,50]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause>1</isStopTimeWhenPause>
@@ -13454,11 +13500,11 @@
 	<lev>30</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[302002,15]]</rewards>
+	<rewards></rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
-	<randomRates>[5,10,5,50,50,50,50,50,50,50,50]</randomRates>
-	<randomRewards>[[302001,1],[12600,1],[125,1],[400001,100],[500001,100],[600001,100],[700001,100],[800001,100],[900001,100],[1000001,100],[1100001,100]]</randomRewards>
+	<randomRates>[1,1,1,1,1,1,1,1]</randomRates>
+	<randomRewards>[[400001,100],[500001,100],[600001,100],[700001,100],[800001,100],[900001,100],[1000001,100],[1100001,100]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause>1</isStopTimeWhenPause>
@@ -13500,11 +13546,11 @@
 	<lev>40</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[302002,20]]</rewards>
+	<rewards></rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
-	<randomRates>[5,10,5,50,50,50,50,50,50,50,50]</randomRates>
-	<randomRewards>[,[302001,1],[12600,1],[125,1],[400001,150],[500001,150],[600001,150],[700001,150],[800001,150],[900001,150],[1000001,150],[1100001,150]]</randomRewards>
+	<randomRates>[1,1,1,1,1,1,1,1]</randomRates>
+	<randomRewards>[[400001,150],[500001,150],[600001,150],[700001,150],[800001,150],[900001,150],[1000001,150],[1100001,150]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause>1</isStopTimeWhenPause>
@@ -13546,11 +13592,11 @@
 	<lev>50</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[302002,25]]</rewards>
+	<rewards></rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
-	<randomRates>[5,10,5,50,50,50,50,50,50,50,50]</randomRates>
-	<randomRewards>[[302001,1],[12600,1],[125,1],[400001,200],[500001,200],[600001,200],[700001,200],[800001,200],[900001,200],[1000001,200],[1100001,200]]</randomRewards>
+	<randomRates>[1,1,1,1,1,1,1,1]</randomRates>
+	<randomRewards>[[400001,200],[500001,200],[600001,200],[700001,200],[800001,200],[900001,200],[1000001,200],[1100001,200]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause>1</isStopTimeWhenPause>
@@ -13611,7 +13657,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[0]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>1</bossHpNum>
@@ -13657,7 +13703,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[0]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>1</bossHpNum>
@@ -13703,7 +13749,7 @@
 	<copySettlementLayout>[1,1,1,0,1,1,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[0]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>1</bossHpNum>
@@ -13749,7 +13795,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[1]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>1</bossHpNum>
@@ -13795,7 +13841,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[1]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>1</bossHpNum>
@@ -13841,7 +13887,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,0,0]</copySettlementLayout>
 	<settlementVictoryType>[1]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>1</bossHpNum>
@@ -13868,11 +13914,11 @@
 	<lev>1</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[59901,2]]</rewards>
+	<rewards>[[59901,3]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
-	<randomRates>[1,1,1,1,1,1,1,1,1,1,1,1,1,1]</randomRates>
-	<randomRewards>[[50301,1],[50401,1],[50501,1],[50601,1],[50801,1],[50811,1],[50821,1],[50831,1],[50841,1],[51301,1],[51701,1],[50881,1],[51901,1],[51601,1]]</randomRewards>
+	<randomRates></randomRates>
+	<randomRewards></randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause>1</isStopTimeWhenPause>
@@ -13887,7 +13933,7 @@
 	<copySettlementLayout>[1,0,0,0,0,1,-50,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>0</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13914,11 +13960,11 @@
 	<lev>20</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[59901,3]]</rewards>
+	<rewards>[[59901,6]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
-	<randomRates>[1,1,1,1,1,1,1,1,1,1,1,1,1,2]</randomRates>
-	<randomRewards>[[50301,2],[50401,2],[50501,2],[50601,2],[50801,2],[50811,2],[50821,2],[50831,2],[50841,2],[51301,2],[51701,2],[50881,2],[51901,2],[51601,2]]</randomRewards>
+	<randomRates></randomRates>
+	<randomRewards></randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause>1</isStopTimeWhenPause>
@@ -13933,7 +13979,7 @@
 	<copySettlementLayout>[1,0,0,0,0,1,-50,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>0</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -13960,11 +14006,11 @@
 	<lev>30</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[59901,4]]</rewards>
+	<rewards>[[59901,9]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
-	<randomRates>[1,1,1,1,1,1,1,1,1,1,1,1,1,3]</randomRates>
-	<randomRewards>[[50302,1],[50402,1],[50502,1],[50602,1],[50802,1],[50812,1],[50822,1],[50832,1],[50842,1],[51302,1],[51702,1],[50882,1],[51902,1],[51602,1]]</randomRewards>
+	<randomRates></randomRates>
+	<randomRewards></randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -13979,7 +14025,7 @@
 	<copySettlementLayout>[1,0,0,0,0,1,-50,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>0</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14006,11 +14052,11 @@
 	<lev>40</lev>
 	<count>0</count>
 	<firstReward></firstReward>
-	<rewards>[[59901,5]]</rewards>
+	<rewards>[[59901,12]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
-	<randomRates>[1,1,1,1,1,1,1,1,1,1,1,1,1,4]</randomRates>
-	<randomRewards>[[50302,2],[50402,2],[50502,2],[50602,2],[50802,2],[50812,2],[50822,2],[50832,2],[50842,2],[51302,2],[51702,2],[50882,2],[51902,2],[51602,2]]</randomRewards>
+	<randomRates></randomRates>
+	<randomRewards></randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -14025,7 +14071,7 @@
 	<copySettlementLayout>[1,0,0,0,0,1,-50,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[2,3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>0</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14071,7 +14117,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14117,7 +14163,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14163,7 +14209,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14209,7 +14255,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14255,145 +14301,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
-	<finishType>1</finishType>
-	<isCanAutoFight>1</isCanAutoFight>
-	<bossHpNum>0</bossHpNum>
-</config>
-<config>
-	<id>800116</id>
-	<cityId>1</cityId>
-	<chapterId>-1</chapterId>
-	<chapterName>特性副本-吔屎</chapterName>
-	<group>1</group>
-	<name>特性副本</name>
-	<nameType></nameType>
-	<desc></desc>
-	<preId></preId>
-	<scenes>[8001112]</scenes>
-	<type>8</type>
-	<difficulty>1</difficulty>
-	<passType>1</passType>
-	<camp>0</camp>
-	<groupName></groupName>
-	<timeLimit></timeLimit>
-	<needEnergy>10</needEnergy>
-	<recommendFight></recommendFight>
-	<lev>20</lev>
-	<count>0</count>
-	<firstReward></firstReward>
-	<rewards></rewards>
-	<reviveCost></reviveCost>
-	<starRewards></starRewards>
-	<randomRates></randomRates>
-	<randomRewards></randomRewards>
-	<getstarbytime></getstarbytime>
-	<getstarbyhit></getstarbyhit>
-	<isStopTimeWhenPause></isStopTimeWhenPause>
-	<monsterId></monsterId>
-	<monsterIcon></monsterIcon>
-	<qualities></qualities>
-	<weakness></weakness>
-	<isWinTimeOver></isWinTimeOver>
-	<isIgnoreSkillClick></isIgnoreSkillClick>
-	<isClearMonsterWhenOver>0</isClearMonsterWhenOver>
-	<trickTask></trickTask>
-	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
-	<settlementVictoryType>[3]</settlementVictoryType>
-	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
-	<finishType>1</finishType>
-	<isCanAutoFight>1</isCanAutoFight>
-	<bossHpNum>0</bossHpNum>
-</config>
-<config>
-	<id>800117</id>
-	<cityId>1</cityId>
-	<chapterId>-1</chapterId>
-	<chapterName>特性副本</chapterName>
-	<group>1</group>
-	<name>特性副本</name>
-	<nameType></nameType>
-	<desc></desc>
-	<preId></preId>
-	<scenes>[8001113]</scenes>
-	<type>8</type>
-	<difficulty>1</difficulty>
-	<passType>1</passType>
-	<camp>0</camp>
-	<groupName></groupName>
-	<timeLimit></timeLimit>
-	<needEnergy>20</needEnergy>
-	<recommendFight>20000</recommendFight>
-	<lev>1</lev>
-	<count>0</count>
-	<firstReward></firstReward>
-	<rewards></rewards>
-	<reviveCost></reviveCost>
-	<starRewards></starRewards>
-	<randomRates></randomRates>
-	<randomRewards></randomRewards>
-	<getstarbytime></getstarbytime>
-	<getstarbyhit></getstarbyhit>
-	<isStopTimeWhenPause></isStopTimeWhenPause>
-	<monsterId></monsterId>
-	<monsterIcon></monsterIcon>
-	<qualities></qualities>
-	<weakness></weakness>
-	<isWinTimeOver></isWinTimeOver>
-	<isIgnoreSkillClick></isIgnoreSkillClick>
-	<isClearMonsterWhenOver>0</isClearMonsterWhenOver>
-	<trickTask></trickTask>
-	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
-	<settlementVictoryType>[3]</settlementVictoryType>
-	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
-	<finishType>1</finishType>
-	<isCanAutoFight>1</isCanAutoFight>
-	<bossHpNum>0</bossHpNum>
-</config>
-<config>
-	<id>800118</id>
-	<cityId>1</cityId>
-	<chapterId>-1</chapterId>
-	<chapterName>特性副本</chapterName>
-	<group>1</group>
-	<name>特性副本</name>
-	<nameType></nameType>
-	<desc></desc>
-	<preId></preId>
-	<scenes>[8001114]</scenes>
-	<type>8</type>
-	<difficulty>1</difficulty>
-	<passType>1</passType>
-	<camp>0</camp>
-	<groupName></groupName>
-	<timeLimit></timeLimit>
-	<needEnergy>20</needEnergy>
-	<recommendFight>20000</recommendFight>
-	<lev>1</lev>
-	<count>0</count>
-	<firstReward></firstReward>
-	<rewards></rewards>
-	<reviveCost></reviveCost>
-	<starRewards></starRewards>
-	<randomRates></randomRates>
-	<randomRewards></randomRewards>
-	<getstarbytime></getstarbytime>
-	<getstarbyhit></getstarbyhit>
-	<isStopTimeWhenPause></isStopTimeWhenPause>
-	<monsterId></monsterId>
-	<monsterIcon></monsterIcon>
-	<qualities></qualities>
-	<weakness></weakness>
-	<isWinTimeOver></isWinTimeOver>
-	<isIgnoreSkillClick></isIgnoreSkillClick>
-	<isClearMonsterWhenOver>0</isClearMonsterWhenOver>
-	<trickTask></trickTask>
-	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
-	<settlementVictoryType>[3]</settlementVictoryType>
-	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14439,7 +14347,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14485,7 +14393,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14531,7 +14439,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>2</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14577,7 +14485,7 @@
 	<copySettlementLayout>[0,0,0,1,0,0,-80,0,0]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14623,7 +14531,7 @@
 	<copySettlementLayout>[0,0,0,1,0,0,-80,0,0]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14669,7 +14577,7 @@
 	<copySettlementLayout>[0,0,0,1,0,0,-80,0,0]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14715,7 +14623,7 @@
 	<copySettlementLayout>[0,0,0,1,0,0,-80,0,0]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14761,7 +14669,7 @@
 	<copySettlementLayout>[0,0,0,1,0,0,-80,0,0]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14807,7 +14715,7 @@
 	<copySettlementLayout>[0,0,0,1,0,0,-80,0,0]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14853,7 +14761,7 @@
 	<copySettlementLayout>[0,0,0,1,0,0,-80,0,0]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14899,7 +14807,7 @@
 	<copySettlementLayout>[0,0,0,1,0,0,-80,0,0]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14945,7 +14853,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -14991,7 +14899,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15037,7 +14945,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15083,7 +14991,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15129,7 +15037,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>1</settlementFailType>
-	<settlementDelay>4</settlementDelay>
+	<settlementDelay>2</settlementDelay>
 	<finishType>1</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15150,7 +15058,7 @@
 	<passType>1</passType>
 	<camp>0</camp>
 	<groupName>PVP副本</groupName>
-	<timeLimit>900</timeLimit>
+	<timeLimit>90</timeLimit>
 	<needEnergy></needEnergy>
 	<recommendFight></recommendFight>
 	<lev></lev>
@@ -15221,7 +15129,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>2</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15267,7 +15175,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>2</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15313,7 +15221,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>2</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15359,7 +15267,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>2</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15405,7 +15313,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>2</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15451,7 +15359,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>2</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15497,7 +15405,7 @@
 	<copySettlementLayout>[1,0,1,0,0,0,0,100,0,8]</copySettlementLayout>
 	<settlementVictoryType>[3]</settlementVictoryType>
 	<settlementFailType>0</settlementFailType>
-	<settlementDelay>1</settlementDelay>
+	<settlementDelay>0</settlementDelay>
 	<finishType>2</finishType>
 	<isCanAutoFight>1</isCanAutoFight>
 	<bossHpNum>0</bossHpNum>
@@ -15524,11 +15432,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,10]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[50,50]</randomRates>
-	<randomRewards>[[109,10],[10901,1]]</randomRewards>
+	<randomRewards>[[109,10],[10901,5]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15570,11 +15478,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,20]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,40]</randomRates>
-	<randomRewards>[[109,20],[10902,1]]</randomRewards>
+	<randomRewards>[[109,20],[10901,10]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15616,11 +15524,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,30]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[70,30]</randomRates>
-	<randomRewards>[[109,30],[10903,1]]</randomRewards>
+	<randomRewards>[[109,30],[10901,15]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15662,11 +15570,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,40]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[80,20]</randomRates>
-	<randomRewards>[[109,40],[10904,1]]</randomRewards>
+	<randomRewards>[[109,40],[10901,20]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15708,11 +15616,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,10]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[50,50]</randomRates>
-	<randomRewards>[[109,10],[10901,1]]</randomRewards>
+	<randomRewards>[[109,10],[10901,5]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15754,11 +15662,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,20]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,40]</randomRates>
-	<randomRewards>[[109,20],[10902,1]]</randomRewards>
+	<randomRewards>[[109,20],[10901,10]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15800,11 +15708,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,30]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[70,30]</randomRates>
-	<randomRewards>[[109,30],[10903,1]]</randomRewards>
+	<randomRewards>[[109,30],[10901,15]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15846,11 +15754,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,40]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[80,20]</randomRates>
-	<randomRewards>[[109,40],[10904,1]]</randomRewards>
+	<randomRewards>[[109,40],[10901,20]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15892,11 +15800,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,10]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[50,50]</randomRates>
-	<randomRewards>[[109,10],[10901,1]]</randomRewards>
+	<randomRewards>[[109,10],[10901,5]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15938,11 +15846,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,20]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,40]</randomRates>
-	<randomRewards>[[109,20],[10902,1]]</randomRewards>
+	<randomRewards>[[109,20],[10901,10]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -15984,11 +15892,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,30]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[70,30]</randomRates>
-	<randomRewards>[[109,30],[10903,1]]</randomRewards>
+	<randomRewards>[[109,30],[10901,15]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16030,11 +15938,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,40]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[80,20]</randomRates>
-	<randomRewards>[[109,40],[10904,1]]</randomRewards>
+	<randomRewards>[[109,40],[10901,20]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16076,11 +15984,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,10]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[50,50]</randomRates>
-	<randomRewards>[[109,10],[10901,1]]</randomRewards>
+	<randomRewards>[[109,10],[10901,5]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16122,11 +16030,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,20]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,40]</randomRates>
-	<randomRewards>[[109,20],[10902,1]]</randomRewards>
+	<randomRewards>[[109,20],[10901,10]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16168,11 +16076,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,30]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[70,30]</randomRates>
-	<randomRewards>[[109,30],[10903,1]]</randomRewards>
+	<randomRewards>[[109,30],[10901,15]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16214,11 +16122,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,40]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[80,20]</randomRates>
-	<randomRewards>[[109,40],[10904,1]]</randomRewards>
+	<randomRewards>[[109,40],[10901,20]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16260,11 +16168,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,10]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[50,50]</randomRates>
-	<randomRewards>[[109,10],[10901,1]]</randomRewards>
+	<randomRewards>[[109,10],[10901,5]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16306,11 +16214,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,20]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[60,40]</randomRates>
-	<randomRewards>[[109,20],[10902,1]]</randomRewards>
+	<randomRewards>[[109,20],[10901,10]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16352,11 +16260,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,30]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[70,30]</randomRates>
-	<randomRewards>[[109,30],[10903,1]]</randomRewards>
+	<randomRewards>[[109,30],[10901,15]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>
@@ -16398,11 +16306,11 @@
 	<lev></lev>
 	<count></count>
 	<firstReward></firstReward>
-	<rewards></rewards>
+	<rewards>[[109,40]]</rewards>
 	<reviveCost></reviveCost>
 	<starRewards></starRewards>
 	<randomRates>[80,20]</randomRates>
-	<randomRewards>[[109,40],[10904,1]]</randomRewards>
+	<randomRewards>[[109,40],[10901,20]]</randomRewards>
 	<getstarbytime></getstarbytime>
 	<getstarbyhit></getstarbyhit>
 	<isStopTimeWhenPause></isStopTimeWhenPause>

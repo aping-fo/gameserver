@@ -120,7 +120,6 @@ public class GlobalConfig {
 	public float[] mainCityCameraInfo;//主城相机朝向(上下左右)
 	public float[] attackMinThreshold;//远程技能最小攻击范围
 	public float[] attackSafeThreshold;//远程技能安全攻击范围
-	public float fameAddRate;//声望代表加成百分比
 	public float MultiHitMaxInterval;//连击最大间隔时长
 	public float BeHitMaxInterval;//受击叠加伤害间隔时长
 	public int[] groupCopyOpenTime;//团队副本活动时间
@@ -166,4 +165,6 @@ public class GlobalConfig {
 	public float killedTimesFactor;//死亡次数因子
 	public float[] RobotParas;//机器人属性参数
 	public Map<Integer,Integer> buyMainCopyPrice;//主线副本次数购买价格
+	public float ladderAiRate;//竞技场AI属性系数
+	public int[] standaloneRoleIds;//预览单机副本角色顺序(角色信息表里的ID)
 }

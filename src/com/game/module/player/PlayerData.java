@@ -78,7 +78,7 @@ public class PlayerData {
 
 	//声望
 	private ConcurrentHashMap<Integer, Upgrade> fames = new ConcurrentHashMap<Integer, Upgrade>();
-	private int activityCamp = 0; //声望激活阵营代表
+	//private int activityCamp = 0; //声望激活阵营代表
 	//神器
 	private ConcurrentHashMap<Integer, int[]> artifacts = new ConcurrentHashMap<Integer, int[]>();
 	//神器升阶
@@ -919,13 +919,13 @@ public class PlayerData {
 		this.artifactsLevelUp = artifactsLevelUp;
 	}
 
-	public int getActivityCamp() {
-		return activityCamp;
-	}
-
-	public void setActivityCamp(int activityCamp) {
-		this.activityCamp = activityCamp;
-	}
+//	public int getActivityCamp() {
+//		return activityCamp;
+//	}
+//
+//	public void setActivityCamp(int activityCamp) {
+//		this.activityCamp = activityCamp;
+//	}
 
 	public int getDramaOrder() { return this.dramaOrder; }
 

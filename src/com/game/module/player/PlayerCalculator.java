@@ -15,15 +15,16 @@ import com.game.module.team.TeamService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
 import com.game.params.goods.AttrItem;
+import com.game.params.player.PlayerVo;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
+import com.google.common.collect.Lists;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
-import java.util.Set;
 
 @Service
 public class PlayerCalculator {
@@ -110,11 +111,23 @@ public class PlayerCalculator {
         addPet(player);
         //觉醒技能加成
         addAwakeningSkill(player);
+
+        //PlayerVo vo = playerService.toSLoginVo(player.getPlayerId());
+
+        List<Integer> attrList = Lists.newArrayList();
+        attrList.add(player.getHp());
+        attrList.add(player.getAttack());
+        attrList.add(player.getDefense());
+        attrList.add(player.getFu());
+        attrList.add(player.getSymptom());
+        attrList.add(player.getCrit());
         //百分比保持最后
-        addPercent(player);
+        addPercent(player,attrList);
+        player.setAttrList(attrList);
 
         // 更新战斗力
         float[] fightParams = ConfigData.globalParam().fightParams;
+
         float fight = player.getHp() * fightParams[0] + player.getAttack() * fightParams[1] + player.getDefense() * fightParams[2] + player.getFu() * fightParams[3] + player.getSymptom() * fightParams[4] +
                 player.getCrit() * fightParams[5];
         player.setFight((int) fight);
@@ -458,7 +471,7 @@ public class PlayerCalculator {
     }
 
     //百分比的（要统一放在这里处理，先累加所有的百分比，再计算原始值+原始值%)
-    public void addPercent(PlayerAddition player) {
+    public void addPercent(PlayerAddition player,List array) {
         //装备的特殊属性
         HashMap<Integer, Integer> percentAttrs = new HashMap<Integer, Integer>();
         PlayerBag bag = goodsService.getPlayerBag(player.getPlayerId());
@@ -527,9 +540,14 @@ public class PlayerCalculator {
             }
         }
 
+        for (int i = 0;i<6;i++){
+             array.add(0);
+        }
         for (Entry<Integer, Integer> attr : percentAttrs.entrySet()) {
             addAttrValuePercent(player, attr.getKey(), attr.getValue());
+            array.set(5+attr.getKey(),attr.getValue());
         }
+
     }
 
     private void addSuitPercent(Map<Integer, Integer> percentAttrs, Map<Integer, int[]> map) {

@@ -435,11 +435,11 @@ public class CopyService {
 
         //声望加成
         PlayerData data = playerService.getPlayerData(playerId);
-        if (data.getActivityCamp() != 0) {
-            int itemId = ConfigData.FameMap.get(data.getActivityCamp());
-            GoodsEntry g = new GoodsEntry(itemId, (int) ConfigData.globalParam().fameAddRate);
-            items.add(g);
-        }
+//        if (data.getActivityCamp() != 0) {
+//            int itemId = ConfigData.FameMap.get(data.getActivityCamp());
+//            GoodsEntry g = new GoodsEntry(itemId, (int) ConfigData.globalParam().fameAddRate);
+//            items.add(g);
+//        }
 
         //公会科技加成
         if (player.getGangId() > 0) {

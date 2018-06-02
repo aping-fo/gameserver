@@ -21,6 +21,7 @@ public class MonsterConfig {
 	public int physicDefense;//坚韧
 	public int crit;//精准
 	public int symptom;//症状
+	public int fight;//战力
 	public Map<Integer,float[]> resistanceProps;//抵御抗性
 	public float logicBaseSpeed;//基础逻辑速度
 	public int[] dropGoods;//掉落包
