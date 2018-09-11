@@ -26,11 +26,11 @@
 	<id>10002</id>
 	<singleId>10008</singleId>
 	<multiId>10007</multiId>
-	<singlePrice>[102,150]</singlePrice>
-	<multiPrice>[102,1350]</multiPrice>
+	<singlePrice>[102,100]</singlePrice>
+	<multiPrice>[102,900]</multiPrice>
 	<limit>999</limit>
-	<freePeriod>48</freePeriod>
+	<freePeriod>24</freePeriod>
 	<freeLimit>1</freeLimit>
-	<vipLimit>3</vipLimit>
+	<vipLimit>0</vipLimit>
 </config>
 </root>

@@ -1,13 +1,11 @@
 package com.game.module.rank;
 
 import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import com.game.module.rank.vo.EndlessRankEntity;
 import com.game.util.BeanManager;
 import com.game.util.CompressUtil;
 import com.game.util.DelayUpdater;
@@ -50,6 +48,7 @@ public class RankingList<T extends IRankCA> {
 
 	public void putAll(Map<Integer, T> keys){
 		//this.keys.putAll(keys);
+		Set<Integer> set =  new HashSet<>();
 		for(Map.Entry<Integer, T> entry : keys.entrySet()){
 			putEntity(entry.getKey(), entry.getValue());
 			//RankEntity rEntity = new RankEntity(type, entry.getKey(), entry.getValue());
@@ -200,4 +199,29 @@ public class RankingList<T extends IRankCA> {
 	public boolean isDirty(){
 		return updater.dirty();
 	}
+
+    public void remove(int playerId) {
+        T key = keys.get(playerId);
+        if (key == null) {
+            return;
+        }
+        RankEntity rEntity = entities.get(key);
+        if (rEntity == null) {
+            return;
+        }
+        entities.remove(key);
+        keys.remove(playerId);
+        orderList = null;
+    }
+
+    public int getMaxCapacity()
+    {
+        return this.maxCapacity;
+    }
+
+    public int getSize()
+    {
+        return keys.size();
+    }
+
 }

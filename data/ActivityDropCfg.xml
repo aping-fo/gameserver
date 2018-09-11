@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<type>[1]</type>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-07-31 00:00:00</BeginTime>
+	<EndTime>2018-08-31 23:59:59</EndTime>
+	<lev>[20,100]</lev>
+	<VipLev>0</VipLev>
+	<count>45</count>
+	<randomRewards>[[15001,0],[15001,1],[15001,2],[15001,3],[15001,4]]</randomRewards>
+	<randomRates>[1,1,1,1,1]</randomRates>
+</config>
+<config>
+	<id>2</id>
+	<type>[7,11,12,14]</type>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-07-31 00:00:00</BeginTime>
+	<EndTime>2018-08-31 23:59:59</EndTime>
+	<lev>[20,100]</lev>
+	<VipLev>0</VipLev>
+	<count>45</count>
+	<randomRewards>[[15002,0],[15002,3],[15002,4],[15002,5],[15002,6]]</randomRewards>
+	<randomRates>[1,4,3,2,1]</randomRates>
+</config>
+<config>
+	<id>3</id>
+	<type>[4,5,15,16]</type>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-07-31 00:00:00</BeginTime>
+	<EndTime>2018-08-31 23:59:59</EndTime>
+	<lev>[20,100]</lev>
+	<VipLev>0</VipLev>
+	<count>45</count>
+	<randomRewards>[[15003,0],[15003,3],[15003,4],[15003,5],[15003,6]]</randomRewards>
+	<randomRates>[1,4,3,2,1]</randomRates>
+</config>
+<config>
+	<id>101</id>
+	<type>[1]</type>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-07-31 00:00:00</BeginTime>
+	<EndTime>2028-08-31 23:59:59</EndTime>
+	<lev>[1,100]</lev>
+	<VipLev>0</VipLev>
+	<count>16</count>
+	<randomRewards>[[20002,0],[20002,3],[20003,3],[20004,3],[20009,3]]</randomRewards>
+	<randomRates>[6,1,1,1,1]</randomRates>
+</config>
+</root>

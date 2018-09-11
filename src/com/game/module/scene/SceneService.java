@@ -4,6 +4,7 @@ import com.game.SysConfig;
 import com.game.data.AwakeningSkillCfg;
 import com.game.data.SceneConfig;
 import com.game.event.InitHandler;
+import com.game.module.awakeningskill.AwakeningSkillService;
 import com.game.module.copy.CopyInstance;
 import com.game.module.copy.CopyService;
 import com.game.module.gang.GangDungeonService;
@@ -15,6 +16,7 @@ import com.game.module.multi.MultiService;
 import com.game.module.pet.Pet;
 import com.game.module.pet.PetService;
 import com.game.module.player.Player;
+import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.team.TeamService;
 import com.game.module.worldboss.WorldBossService;
@@ -23,7 +25,9 @@ import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.scene.*;
 import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -32,16 +36,13 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class SceneService implements InitHandler {
     private static final Logger logger = Logger.getLogger(SceneService.class);
-
+    private static final int LINE_MAX = 9;
     @Autowired
     private PlayerService playerService;
     @Autowired
@@ -64,10 +65,16 @@ public class SceneService implements InitHandler {
     private PetService petService;
     @Autowired
     private EquipService equipService;
+    @Autowired
+    private AwakeningSkillService awakeningSkillService;
 
     private Map<Integer, Scene> scenes = new ConcurrentHashMap<Integer, Scene>();
 
     private Map<String, Integer> useSkills = new ConcurrentHashMap<String, Integer>();
+
+    private Map<Integer, Set<Integer>> lineMap = new ConcurrentHashMap<>();
+
+    // private ExecutorService executors = Executors.newSingleThreadExecutor();
 
     @Override
     public void handleInit() {
@@ -161,29 +168,98 @@ public class SceneService implements InitHandler {
             gangDungeonService.onLogout(playerId);
         }
 
-		/*if(lastCfg.sceneSubType == Scene.MULTI_GROUP
-                || lastCfg.sceneSubType == Scene.MULTI_GROUP_ROOM) {
-			//清理下数据
-			groupService.memberExit(playerId);
-		}*/
+        ////主城分线处理
+        if (lastCfg.sceneSubType == Scene.MULTI_MAIN_CITY || lastCfg.sceneSubType == Scene.MULTI_CITY) {
+            Set<Integer> set = lineMap.get(lastCfg.sceneSubType);
+            if (set != null) {
+                set.remove(player.getPlayerId());
+            }
+            removeMe(player, sceneId);
+        } else {
+            SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
 
-        SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
+            Int2Param param = new Int2Param();
+            param.param1 = sceneId;
+            param.param2 = playerId;
 
-        Int2Param param = new Int2Param();
-        param.param1 = sceneId;
-        param.param2 = playerId;
-
-        Channel channel = SessionManager.getInstance().getChannel(
-                player.getPlayerId());
-        brocastToSceneCurLine(player, SceneExtension.EXIT_SCENE, param, channel);
+            Channel channel = SessionManager.getInstance().getChannel(
+                    player.getPlayerId());
+            brocastToSceneCurLine(player, SceneExtension.EXIT_SCENE, param, channel);
+        }
 
         lastScene.exitSubLine(player.getSubLine());
         player.setSubLine(0);
-
-
         ServerLogger.info("...exit", playerId, player.getSceneId());
     }
 
+    public void removeMe(Player player, int sceneId) {
+        Int2Param param = new Int2Param();
+        param.param1 = sceneId;
+        param.param2 = player.getPlayerId();
+
+        for (int pid : player.seeMeSet) {
+            Player otherPlayer = playerService.getPlayer(pid);
+            otherPlayer.seeMeSet.remove(player.getPlayerId());
+            SessionManager.getInstance().sendMsg(SceneExtension.EXIT_SCENE, param, pid);
+            ServerLogger.info("line,to exit = " + pid);
+        }
+        player.seeMeSet.clear();
+    }
+
+    private void canSeeMe(Player player, int sceneType) {
+        player.seeMeSet.clear();
+        Set<Integer> set = lineMap.get(sceneType);
+        if (set == null) {
+            return;
+        }
+        PlayerData data = playerService.getPlayerData(player.getPlayerId());
+        for (int playerId : set) {
+            if (player.seeMeSet.size() >= LINE_MAX) {
+                break;
+            }
+            if (playerId == player.getPlayerId()) {
+                continue;
+            }
+            if (!data.getFriends().containsKey(playerId)) {
+                continue;
+            }
+
+            Player otherPlayer = playerService.getPlayer(playerId);
+            if (otherPlayer.seeMeSet.size() >= LINE_MAX) {
+                continue;
+            }
+            player.seeMeSet.add(playerId);
+            otherPlayer.seeMeSet.add(player.getPlayerId());
+            ServerLogger.info("line,to add = " + playerId);
+        }
+
+        //好友筛选不够
+        if (player.seeMeSet.size() < LINE_MAX) {
+            for (int playerId : set) {
+                if (player.seeMeSet.size() >= LINE_MAX) {
+                    break;
+                }
+                if (playerId == player.getPlayerId()) {
+                    continue;
+                }
+                Player otherPlayer = playerService.getPlayer(playerId);
+                if (otherPlayer.seeMeSet.size() >= LINE_MAX) {
+                    continue;
+                }
+                if (data.getFriends().containsKey(playerId)) {
+                    continue;
+                }
+                player.seeMeSet.add(playerId);
+                otherPlayer.seeMeSet.add(player.getPlayerId());
+                ServerLogger.info("line,to add = " + playerId);
+            }
+        }
+
+        for (int playerId : player.seeMeSet) {
+            SessionManager.getInstance().sendMsg(SceneExtension.ENTER_SCENE, toVo(player), playerId);
+            ServerLogger.info("line,to enter = " + playerId);
+        }
+    }
 
     // 进入场景
     public void enterScene(Player player, int sceneId, float x, float z) {
@@ -220,26 +296,35 @@ public class SceneService implements InitHandler {
         player.sethMoveDir(0);
         player.setvMoveDir(0);
 
-        int subLine = scene.getNewSubLine();
-        scene.enterSubLine(subLine);
-        player.setSubLine(subLine);
+        //主城分线处理
+        if (cfg.sceneSubType == Scene.MULTI_MAIN_CITY || cfg.sceneSubType == Scene.MULTI_CITY) {
+            Set<Integer> set = lineMap.get(cfg.sceneSubType);
+            if (set == null) {
+                set = Sets.newConcurrentHashSet();
+                lineMap.put(cfg.sceneSubType, set);
+            }
+            set.add(player.getPlayerId());
+            canSeeMe(player, cfg.sceneSubType);
+            player.setSubLine(9999);
+        } else {
+            int subLine = scene.getNewSubLine();
+            scene.enterSubLine(subLine);
+            player.setSubLine(subLine);
 
-        String key = getGroupKey(player);
-        Channel channel = SessionManager.getInstance().getChannel(player.getPlayerId());
-        SessionManager.getInstance().addToGroup(key, channel);
-        ServerLogger.info("line ==========" + key);
-        if (cfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
-            worldBossService.addPlayer(player.getPlayerId());
-        } else if (cfg.sceneSubType == Scene.MULTI_GROUP
-                || cfg.sceneSubType == Scene.MULTI_PVE
-                || cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
-            multiService.onEnter(player.getPlayerId());
+            String key = getGroupKey(player);
+            Channel channel = SessionManager.getInstance().getChannel(player.getPlayerId());
+            SessionManager.getInstance().addToGroup(key, channel);
+            ServerLogger.info("line ==========" + key);
+            if (cfg.sceneSubType == Scene.WORLD_BOSS_PVE) {
+                worldBossService.addPlayer(player.getPlayerId());
+            } else if (cfg.sceneSubType == Scene.MULTI_GROUP
+                    || cfg.sceneSubType == Scene.MULTI_PVE
+                    || cfg.sceneSubType == Scene.MULTI_GANG_BOSS) {
+                multiService.onEnter(player.getPlayerId());
+            }
+            // 广播消息
+            brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player), channel);
         }
-        /*else if(lastCfg.sceneSubType == Scene.MULTI_PVE) { //TODO 其他多人本TVE
-            multiService.onEnter(player.gedtPlayerId());
-		}*/
-        // 广播消息
-        brocastToSceneCurLine(player, SceneExtension.ENTER_SCENE, toVo(player), channel);
     }
 
     // 转成vo
@@ -283,19 +368,10 @@ public class SceneService implements InitHandler {
         }
         List<Integer> list = equipService.getBufferList(player.getPlayerId());
         vo.buffList = Lists.newArrayList(list);
-
-        //觉醒技能
-        Map<Integer, Integer> awakeningSkillMap = playerService.getPlayerData(player.getPlayerId()).getAwakeningSkillMap();
-        if (awakeningSkillMap != null) {
-            vo.awakenSkillList = new ArrayList<>();
-            for (int key : awakeningSkillMap.keySet()) {
-                AwakeningSkillCfg config = ConfigData.getConfig(AwakeningSkillCfg.class, key);
-                if (config != null && (config.type == 1 || config.type == 3) && awakeningSkillMap.get(key) >= 1) {
-                    vo.awakenSkillList.add(key);
-                }
-            }
+        List<Int2Param> awakeningSkillList = awakeningSkillService.getAwakeningSkillList(player.getPlayerId());
+        if (awakeningSkillList != null && awakeningSkillList.size() > 0) {
+            vo.awakenSkillList = awakeningSkillList;
         }
-
         return vo;
     }
 
@@ -322,20 +398,27 @@ public class SceneService implements InitHandler {
             return sceneInfo;
         }
 
-        String key = getGroupKey(player);
-
-        Collection<Channel> channels = SessionManager.getInstance().getGroupChannels(key);
-
-        //List<Integer> ids = new ArrayList<Integer>(10);
-        for (Channel channel : channels) {
-            int playerId = SessionManager.getInstance().getPlayerId(channel);
-            if (playerId == 0 || playerId == player.getPlayerId()) {
-                continue;
+        if (cfg.sceneSubType == Scene.MULTI_MAIN_CITY || cfg.sceneSubType == Scene.MULTI_CITY) {
+            for (int playerId : player.seeMeSet) {
+                Player p = playerService.getPlayer(playerId);
+                if (p != null) {
+                    sceneInfo.players.add(toVo(p));
+                }
             }
-            Player p = playerService.getPlayer(playerId);
-
-            sceneInfo.players.add(toVo(p));
-            //ids.add(playerId);
+            ServerLogger.info("line players = " + JsonUtils.object2String(player.seeMeSet));
+        } else {
+            String key = getGroupKey(player);
+            Collection<Channel> channels = SessionManager.getInstance().getGroupChannels(key);
+            //List<Integer> ids = new ArrayList<Integer>(10);
+            for (Channel channel : channels) {
+                int playerId = SessionManager.getInstance().getPlayerId(channel);
+                if (playerId == 0 || playerId == player.getPlayerId()) {
+                    continue;
+                }
+                Player p = playerService.getPlayer(playerId);
+                sceneInfo.players.add(toVo(p));
+                //ids.add(playerId);
+            }
         }
 
         return sceneInfo;
@@ -389,8 +472,17 @@ public class SceneService implements InitHandler {
         player.sethMoveDir(vo.hMoveDir);
         player.setX(vo.x);
         player.setZ(vo.z);
-        Channel me = SessionManager.getInstance().getChannel(playerId);
-        brocastToSceneCurLine(player, SceneExtension.WALK_SCENE, vo, me);
+
+        int curScene = player.getSceneId();
+        SceneConfig cfg = GameData.getConfig(SceneConfig.class, curScene);
+        if (cfg.sceneSubType == Scene.MULTI_MAIN_CITY || cfg.sceneSubType == Scene.MULTI_CITY) {
+            for (int pid : player.seeMeSet) {
+                SessionManager.getInstance().sendMsg(SceneExtension.WALK_SCENE, vo, pid);
+            }
+        } else {
+            Channel me = SessionManager.getInstance().getChannel(playerId);
+            brocastToSceneCurLine(player, SceneExtension.WALK_SCENE, vo, me);
+        }
     }
 
     // 场景停止移动
@@ -402,8 +494,17 @@ public class SceneService implements InitHandler {
             player.setX(vo.x);
             player.setZ(vo.z);
         }
-        Channel me = SessionManager.getInstance().getChannel(playerId);
-        brocastToSceneCurLine(player, SceneExtension.STOP_WALK_SCENE, vo, me);
+
+        int curScene = player.getSceneId();
+        SceneConfig cfg = GameData.getConfig(SceneConfig.class, curScene);
+        if (cfg.sceneSubType == Scene.MULTI_MAIN_CITY || cfg.sceneSubType == Scene.MULTI_CITY) {
+            for (int pid : player.seeMeSet) {
+                SessionManager.getInstance().sendMsg(SceneExtension.STOP_WALK_SCENE, vo, pid);
+            }
+        } else {
+            Channel me = SessionManager.getInstance().getChannel(playerId);
+            brocastToSceneCurLine(player, SceneExtension.STOP_WALK_SCENE, vo, me);
+        }
     }
 
     // 怪物移动

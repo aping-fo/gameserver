@@ -3,6 +3,7 @@ package com.game.module.copy;
 import com.game.SysConfig;
 import com.game.data.*;
 import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.admin.MessageService;
 import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.endless.EndlessAttach;
@@ -35,6 +36,7 @@ import com.game.params.*;
 import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
 import com.game.params.copy.CopyVo;
+import com.game.params.copy.SEnterCopy;
 import com.game.params.scene.CMonster;
 import com.game.params.scene.SMonsterVo;
 import com.game.util.ConfigData;
@@ -47,11 +49,10 @@ import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import sun.security.krb5.Config;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDateTime;
+import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -91,6 +92,9 @@ public class CopyService {
     private TitleService titleService;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private ActivityService activityService;
+
     private AtomicInteger uniId = new AtomicInteger(100);
     private int LEARN_ID = 110001;
     private Map<Integer, CopyInstance> instances = new ConcurrentHashMap<>();
@@ -303,7 +307,11 @@ public class CopyService {
             int multiple = (attach.getCurrLayer() / eCfg.sectionLayer + 1) * eCfg.sectionMultiple;
 
             for (GoodsEntry g : items) {
-                g.count *= multiple;
+                GoodsConfig config = ConfigData.getConfig(GoodsConfig.class, g.id);
+                //活动材料不翻倍
+                if (config != null && config.type != Goods.ACTIVITY_MATERIAL) {
+                    g.count *= multiple;
+                }
             }
             //无尽漩涡称号
             titleService.complete(playerId, TitleConsts.WJXW_LAYER, attach.getMaxLayer(), ActivityConsts.UpdateType.T_VALUE);
@@ -384,7 +392,15 @@ public class CopyService {
                 id = itemArr[0];
                 count = itemArr[1];
             } else {
-                int index = RandomUtil.getRandomIndex(cfg.randomRates);
+                //避免概率和奖励配错的情况
+                int length = cfg.randomRates.length;
+                if (cfg.randomRates.length != cfg.randomRewards.length) {
+                    ServerLogger.err(null, "randomRates and randomRewards unequal" + copyId);
+                    if (length > cfg.randomRewards.length)
+                        length = cfg.randomRewards.length;
+                }
+
+                int index = RandomUtil.getRandomIndex(cfg.randomRates, length);
                 id = cfg.randomRewards[index][0];
                 count = cfg.randomRewards[index][1];
             }
@@ -430,6 +446,16 @@ public class CopyService {
 					}*/
                     items.add(new GoodsEntry(item[0], item[1]));
                 }
+
+                //时空仪增加首充掉落
+                if (cfg.type == CopyInstance.TYPE_TRAVERSING) {
+                    if (copyVo == null) {
+                        copyVo = new Copy();
+                        data.getCopys().putIfAbsent(copyId, copyVo);
+                    } else {
+                        copyVo.setState(1);
+                    }
+                }
             }
         }
 
@@ -470,6 +496,12 @@ public class CopyService {
                     }
                 }
             }
+        }
+
+        //活动奖励
+        Reward activityReward = activityReward(playerId, cfg.type);
+        if (activityReward != null) {
+            items.add(new GoodsEntry(activityReward.id, activityReward.count));
         }
         return items;
     }
@@ -640,6 +672,8 @@ public class CopyService {
                     if (monsterCfg == null) {
                         ServerLogger.warn("Err MonsterRefresh:" + m.id);
                     }
+                    GlobalConfig globalConfig = ConfigData.globalParam();
+                    float[] robotParas = globalConfig.RobotParas;
                     if (cfg.type == CopyInstance.TYPE_ENDLESS) {
                         EndlessCfg eCfg = endlessLogic.getConfig();
                         EndlessAttach attach = endlessLogic.getAttach(playerId);
@@ -652,12 +686,12 @@ public class CopyService {
                         vo.symptom = Math.round(fight * 0.1f);
                         vo.fu = Math.round(fight * 0.1f);
                     } else if (cfg.type == CopyInstance.TYPE_TRAIN) {
-                        vo.curHp = vo.hp = Math.round(player.getFight() * 3.32f);
-                        vo.attack = Math.round(player.getFight() * 0.18f);
-                        vo.crit = Math.round(player.getFight() * 0.13f);
-                        vo.defense = Math.round(player.getFight() * 0.05f);
-                        vo.symptom = Math.round(player.getFight() * 0.1f);
-                        vo.fu = Math.round(player.getFight() * 0.1f);
+                        vo.curHp = vo.hp = Math.round(player.getFight() * robotParas[0]);
+                        vo.attack = Math.round(player.getFight() * robotParas[1]);
+                        vo.crit = Math.round(player.getFight() * robotParas[5]);
+                        vo.defense = Math.round(player.getFight() * robotParas[2]);
+                        vo.symptom = Math.round(player.getFight() * robotParas[3]);
+                        vo.fu = Math.round(player.getFight() * robotParas[4]);
                     } else {
                         vo.curHp = vo.hp = monsterCfg.hp;
                         vo.attack = monsterCfg.physicAttack;
@@ -749,11 +783,22 @@ public class CopyService {
         if (monster == null) {
             return dropReward;
         }
+
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在" + playerId);
+        }
+        //防作弊
+        if (m.hp < monster.hp * 0.8 || m.hurt < monster.hp * 0.8) {
+            ServerLogger.warn("作弊玩家=" + playerId + " 副本=" + copy.getCopyId());
+        }
+        playerData.setHurt(playerData.getHurt() + monster.hp);
+
         MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, monster.monsterId);
         Map<Integer, int[]> condParams = Maps.newHashMap();
         condParams.put(Task.FINISH_KILL, new int[]{monsterCfg.type, monster.monsterId, 1});
         condParams.put(Task.TYPE_KILL, new int[]{monsterCfg.type, 1});
-        condParams.put(Task.TYPE_KILL, new int[]{0, 1});
+//        condParams.put(Task.TYPE_KILL, new int[]{0, 1});
         taskService.doTask(playerId, condParams);
 
         if (m.reward == 0) {// 不需要奖励
@@ -785,7 +830,6 @@ public class CopyService {
         }
 
         int copyId = copy.getCopyId();
-        PlayerData playerData = playerService.getPlayerData(playerId);
         Copy myCopy = playerData.getCopys().get(copyId);
         if (myCopy == null) {
             myCopy = new Copy();
@@ -799,6 +843,14 @@ public class CopyService {
         if (SysConfig.debug) {
             return true;
         }
+
+        CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copy.getCopyId());
+        if ((cfg.type == CopyInstance.TYPE_COMMON ||
+                cfg.type == CopyInstance.TYPE_ENDLESS) && !copy.isOver()) {
+            ServerLogger.warn("Error Copy Fight, TYPE_ENDLESS is not over:", playerId, cfg.name, cfg.id);
+            return false;
+        }
+
         long now = System.currentTimeMillis();
         long pass = (now - copy.getCreateTime()) / TimeUtil.ONE_SECOND;
         if (pass <= 1) {
@@ -806,7 +858,79 @@ public class CopyService {
                     copy.getCopyId());
             return false;
         }
+
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在" + playerId);
+            return false;
+        }
+
+        if (cfg.type == CopyInstance.TYPE_COMMON ||
+                cfg.type == CopyInstance.TYPE_ENDLESS) {
+            if (result.toltalHurt < playerData.getHurt() * 0.8) {
+                ServerLogger.warn("作弊玩家=" + playerId + " 统计伤害值=" + playerData.getHurt() + "上报伤害=" + result.toltalHurt);
+                return false;
+            }
+        }
+
         result.time = (int) pass;
+
+        //更新自己最快记录
+        Map<Integer, Integer> fastestRecordMap = playerData.getFastestRecordMap();
+        if (fastestRecordMap == null) {
+            fastestRecordMap = new ConcurrentHashMap<>();
+        }
+        if (fastestRecordMap.get(result.id) == null || result.time < fastestRecordMap.get(result.id)) {
+            fastestRecordMap.put(result.id, result.time);
+        }
+        result.selfRecord = fastestRecordMap.get(result.id);
+
+        //更新全服最快记录
+        SerialData data = serialDataService.getData();
+        if (data == null) {
+            ServerLogger.warn("全服最快记录");
+            return false;
+        }
+        Map<Integer, Int2Param> copyPassFastestTimeMap = data.getCopyPassFastestTimeMap();
+        if (copyPassFastestTimeMap == null) {
+            copyPassFastestTimeMap = new ConcurrentHashMap<>();
+        }
+        if (copyPassFastestTimeMap.get(result.id) == null || copyPassFastestTimeMap.get(result.id) == null || result.time < copyPassFastestTimeMap.get(result.id).param2 || result.selfRecord < copyPassFastestTimeMap.get(result.id).param2) {
+            Int2Param int2Param = new Int2Param();
+            int2Param.param1 = playerId;
+            int2Param.param2 = result.time;
+            if (result.selfRecord < result.time) {
+                int2Param.param2 = result.selfRecord;
+            }
+            copyPassFastestTimeMap.put(result.id, int2Param);
+            ServerLogger.warn("最快记录" + playerId);
+        }
+
+        //每次获取最新值保持数据同步
+        Int2Param int2Param1 = copyPassFastestTimeMap.get(result.id);
+        if (int2Param1 == null) {
+            ServerLogger.warn("数据同步");
+            return false;
+        }
+        Player player = playerService.getPlayer(int2Param1.param1);
+        if (player == null) {
+            ServerLogger.warn("没有玩家=" + int2Param1.param1 + " result=" + result.id);
+            int2Param1.param1 = playerId;
+            int2Param1.param2 = result.time;
+            player = playerService.getPlayer(playerId);
+            copyPassFastestTimeMap.put(result.id, int2Param1);
+        }
+        RecordHolder recordHolder = new RecordHolder();
+        recordHolder.id = player.getPlayerId();
+        recordHolder.name = player.getName();
+        recordHolder.record = int2Param1.param2;
+        recordHolder.vocation = player.getVocation();
+        recordHolder.lv = player.getLev();
+        recordHolder.vip = player.getVip();
+
+        result.recordHolder = new ArrayList<>();
+        result.recordHolder.add(recordHolder);
+
         //检查一下战力
         /*
         Player player = playerService.getPlayer(playerId);
@@ -896,11 +1020,18 @@ public class CopyService {
             updateCopyTimes(copyId, playerData, cfg, times);
         }
         Map<Integer, GoodsEntry> map = Maps.newHashMap();
-        for (int i = 0; i < times; i++) {
-            RewardList list = new RewardList();
-            list.rewards = swipeCopyInner(playerId, copyId, map);
-            result.reward.add(list);
+//        for (int i = 0; i < times; i++) {
+//            RewardList list = new RewardList();
+//            list.rewards = swipeCopyInner(playerId, copyId, map);
+//            result.reward.add(list);
+//        }
+        List<RewardList> rewardLists = swipeCopyInner(playerId, copyId, times, map);
+        if (rewardLists != null) {
+            for (int i = 0; i < rewardLists.size(); ++i) {
+                result.reward.add(rewardLists.get(i));
+            }
         }
+
         goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
         Map<Integer, int[]> condParams = Maps.newHashMapWithExpectedSize(2);
         if (cfg.type == CopyInstance.TYPE_LEADAWAY
@@ -915,44 +1046,85 @@ public class CopyService {
         condParams.put(Task.TYPE_SWIPE_COPY, new int[]{copyId, times});
         taskService.doTask(playerId, condParams);
         refreshCopyInfo(playerId, copyId, playerData);
+
+        //杀怪任务
+        if (cfg.type == CopyInstance.TYPE_COMMON) {
+            List<Map<Integer, int[]>> monsterMapList = Lists.newArrayList();
+            for (int i = 0; i < cfg.scenes.length; i++) {
+                Map<Integer, MonsterRefreshConfig> sceneMonster = ConfigData.getSceneMonster(cfg.id, i + 1);
+                if (sceneMonster == null) {
+                    ServerLogger.warn("未发现怪物，副本id=" + cfg.id);
+                    continue;
+                }
+                for (MonsterRefreshConfig vo : sceneMonster.values()) {
+                    MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, vo.monsterId);
+                    if (monsterCfg == null) {
+                        ServerLogger.warn("未发现怪物，怪物id=" + vo.monsterId);
+                        continue;
+                    }
+                    Map<Integer, int[]> monsterMap = Maps.newHashMap();
+                    monsterMap.put(Task.FINISH_KILL, new int[]{monsterCfg.type, vo.monsterId, times});
+                    monsterMap.put(Task.TYPE_KILL, new int[]{monsterCfg.type, times});
+
+                    monsterMapList.add(monsterMap);
+                }
+            }
+            taskService.doTaskList(playerId, monsterMapList);
+        }
+
         return result;
     }
 
 
     // 扫荡副本
-    public List<Reward> swipeCopyInner(int playerId, int copyId, Map<Integer, GoodsEntry> map) {
-        createCopyInstance(playerId, copyId, copyId);
-        int star = 1;
-        Copy copy = playerService.getPlayerData(playerId).getCopys().get(copyId);
-        CopyConfig cfg = GameData.getConfig(CopyConfig.class, copyId);
-        if (copy != null) {
-            star = copy.getState();
-        } else if (cfg.type != CopyInstance.TYPE_TREASURE && cfg.type != CopyInstance.TYPE_EXPERIENCE
-                && cfg.type != CopyInstance.TYPE_LEADAWAY) {
-            return null;
-        }
-        List<GoodsEntry> copyRewards = calculateCopyReward(playerId, copyId, star);
-        for (GoodsEntry goodsEntry : copyRewards) {
-            GoodsEntry goodsEntryTmp = map.get(goodsEntry.id);
-            if (goodsEntryTmp == null) {
-                map.put(goodsEntry.id, goodsEntry);
-            } else {
-                goodsEntryTmp.count = goodsEntryTmp.count + goodsEntry.count;
+    public List<RewardList> swipeCopyInner(int playerId, int copyId, Map<Integer, GoodsEntry> map) {
+        return swipeCopyInner(playerId, copyId, 1, map);
+    }
+    public List<RewardList> swipeCopyInner(int playerId, int copyId, int count, Map<Integer, GoodsEntry> map) {
+
+        Map<Integer, int[]> condParams = Maps.newHashMapWithExpectedSize(1);
+
+        List<RewardList> rewardLists = Lists.newArrayList();
+        for (int i = 0; i < count; ++i) {
+            createCopyInstance(playerId, copyId, copyId);
+            int star = 1;
+            Copy copy = playerService.getPlayerData(playerId).getCopys().get(copyId);
+            CopyConfig cfg = GameData.getConfig(CopyConfig.class, copyId);
+            if (copy != null) {
+                star = copy.getState();
+            } else if (cfg.type != CopyInstance.TYPE_TREASURE && cfg.type != CopyInstance.TYPE_EXPERIENCE
+                    && cfg.type != CopyInstance.TYPE_LEADAWAY) {
+                return null;
             }
+            List<GoodsEntry> copyRewards = calculateCopyReward(playerId, copyId, star);
+            for (GoodsEntry goodsEntry : copyRewards) {
+                GoodsEntry goodsEntryTmp = map.get(goodsEntry.id);
+                if (goodsEntryTmp == null) {
+                    map.put(goodsEntry.id, goodsEntry);
+                } else {
+                    goodsEntryTmp.count = goodsEntryTmp.count + goodsEntry.count;
+                }
+            }
+
+            //goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
+            List<Reward> rewards = new ArrayList<>(copyRewards.size());
+            for (GoodsEntry item : copyRewards) {
+                Reward r = new Reward();
+                r.id = item.id;
+                r.count = item.count;
+                rewards.add(r);
+            }
+
+            RewardList list = new RewardList();
+            list.rewards = rewards;
+            rewardLists.add(list);
+
+            condParams.put(Task.FINISH_TRANSIT, new int[] {copyId, cfg.type, star, 1});
+            removeCopy(playerId);
         }
 
-        //goodsService.addRewards(playerId, copyRewards, LogConsume.COPY_REWARD, copyId);
-
-        List<Reward> rewards = new ArrayList<>(copyRewards.size());
-        for (GoodsEntry item : copyRewards) {
-            Reward r = new Reward();
-            r.id = item.id;
-            r.count = item.count;
-            rewards.add(r);
-        }
-        taskService.doTask(playerId, Task.FINISH_TRANSIT, copyId, cfg.type, star, 1);
-        removeCopy(playerId);
-        return rewards;
+        taskService.doTask(playerId, condParams);
+        return rewardLists;
     }
 
     // 重置副本
@@ -1004,6 +1176,7 @@ public class CopyService {
 
     /**
      * 购买主线副本次数
+     *
      * @param playerId
      * @param copyId
      */
@@ -1031,5 +1204,151 @@ public class CopyService {
         data.getCopyBuyTimes().put(copyId, count + 1);
 
         refreshCopyInfo(playerId, copyId, data);
+
+        //购买副本活动
+//        PlayerData playerData = playerService.getPlayerData(playerId);
+//        if (playerData == null) {
+//            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+//            return;
+//        }
+//        CopyConfig copyConfig = ConfigData.getConfig(CopyConfig.class, copyId);
+//        if (copyConfig == null) {
+//            ServerLogger.warn("副本不存在，副本id=" + copyId);
+//            return;
+//        }
+//
+//        if (copyConfig.difficulty == CopyInstance.HARD && activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_DIFFICULT_COPY_PURCHASE)) {
+//            activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DIFFICULT_COPY_PURCHASE, 1, ActivityConsts.UpdateType.T_ADD, true);
+//        }
+    }
+
+    /**
+     * 更新世界记录和自身记录
+     */
+    public void updateRecord(int playerId, SEnterCopy result) {
+        //获取全服记录
+        SerialData data = serialDataService.getData();
+        if (data == null) {
+            return;
+        }
+        Map<Integer, Int2Param> copyPassFastestTimeMap = data.getCopyPassFastestTimeMap();
+        if (copyPassFastestTimeMap == null || copyPassFastestTimeMap.get(result.copyId) == null) {
+            return;
+        }
+        Int2Param int2Param = copyPassFastestTimeMap.get(result.copyId);
+        if (int2Param == null) {
+            return;
+        }
+
+        //每次获取最新值保持数据同步
+        Player player = playerService.getPlayer(int2Param.param1);
+        if (player == null) {
+            return;
+        }
+        RecordHolder recordHolder = new RecordHolder();
+        recordHolder.id = player.getPlayerId();
+        recordHolder.name = player.getName();
+        recordHolder.record = int2Param.param2;
+        recordHolder.vocation = player.getVocation();
+        recordHolder.lv = player.getLev();
+        recordHolder.vip = player.getVip();
+
+        result.recordHolder = new ArrayList<>();
+        result.recordHolder.add(recordHolder);
+
+        //获取自身记录
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            return;
+        }
+        Map<Integer, Integer> fastestRecordMap = playerData.getFastestRecordMap();
+        if (fastestRecordMap == null || fastestRecordMap.get(result.copyId) == null) {
+            return;
+        }
+        result.selfRecord = fastestRecordMap.get(result.copyId);
+    }
+
+    //活动奖励
+    public Reward activityReward(int playerId, int copyType) {
+        Collection<Object> activityDropCfgs = ConfigData.getConfigs(ActivityDropCfg.class);
+        Reward reward = new Reward();
+        if (activityDropCfgs != null && !activityDropCfgs.isEmpty()) {
+            for (Object object : activityDropCfgs) {
+                ActivityDropCfg activityDropCfg = (ActivityDropCfg) object;
+                //副本类型
+                if (activityDropCfg.type == null) {
+                    continue;
+                }
+                boolean isExistence = false;
+                for (int i : activityDropCfg.type) {
+                    if (copyType == i) {
+                        isExistence = true;
+                        break;
+                    }
+                }
+                if (!isExistence) {
+                    continue;
+                }
+                Player player = playerService.getPlayer(playerId);
+                if (player == null) {
+                    break;
+                }
+                if (player.getVip() < activityDropCfg.VipLev) {
+                    break;
+                }
+                if (player.getLev() < activityDropCfg.lev[0] || player.getLev() > activityDropCfg.lev[1]) {
+                    break;
+                }
+                LocalDateTime nowDate = LocalDateTime.now();
+                //指定时间开启
+                if (activityDropCfg.TimeType == ActivityConsts.ActivityDropTimeCondType.T_APPOINT_TIME) {
+                    if (activityDropCfg.BeginTime != null && !"".equals(activityDropCfg.BeginTime)) {
+                        LocalDateTime beginDate = LocalDateTime.parse(activityDropCfg.BeginTime, TimeUtil.formatter);
+                        if (nowDate.isBefore(beginDate)) { //还未开启
+                            continue;
+                        }
+                    }
+                    if (activityDropCfg.EndTime != null && !"".equals(activityDropCfg.EndTime)) {
+                        LocalDateTime beginDate = LocalDateTime.parse(activityDropCfg.EndTime, TimeUtil.formatter);
+                        if (nowDate.isAfter(beginDate)) { //活动结束
+                            continue;
+                        }
+                    }
+                }
+                PlayerData playerData = playerService.getPlayerData(playerId);
+                if (playerData == null) {
+                    break;
+                }
+                //构造奖励
+                int length = activityDropCfg.randomRates.length;
+                if (activityDropCfg.randomRates.length != activityDropCfg.randomRewards.length) {
+                    ServerLogger.err(null, "randomRates and randomRewards unequal" + copyType);
+                    if (length > activityDropCfg.randomRewards.length)
+                        length = activityDropCfg.randomRewards.length;
+                }
+                int index = RandomUtil.getRandomIndex(activityDropCfg.randomRates, length);
+                reward.id = activityDropCfg.randomRewards[index][0];
+                reward.count = activityDropCfg.randomRewards[index][1];
+                if (reward.count == 0) {
+                    break;
+                }
+                //获取奖励次数
+                Map<Integer, Integer> activityDropTimeMap = playerData.getActivityDropTimeMap();
+                if (activityDropTimeMap == null) {
+                    activityDropTimeMap = new ConcurrentHashMap<>();
+                }
+                if (activityDropTimeMap.get(activityDropCfg.id) == null) {
+                    activityDropTimeMap.put(activityDropCfg.id, 1);
+                } else {
+                    activityDropTimeMap.put(activityDropCfg.id, activityDropTimeMap.get(activityDropCfg.id) + 1);
+                }
+                //超过次数
+                if (activityDropTimeMap.get(activityDropCfg.id) > activityDropCfg.count) {
+                    break;
+                }
+                return reward;
+            }
+        }
+        return null;
     }
 }

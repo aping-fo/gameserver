@@ -6,6 +6,7 @@ package com.game.data;
 public class TitleConfig {
 	public int id;//id
 	public String name;//称号名称
+	public String name_en;//英文称号名称
 	public int titleType;//称号分类
 	public String icon;//图标
 	public String atlas;//图集
@@ -19,4 +20,5 @@ public class TitleConfig {
 	public int symptom;//异常
 	public int fu;//抗性
 	public String gainPath;//获取途径
+	public String gainPath_en;//英文获取途径
 }

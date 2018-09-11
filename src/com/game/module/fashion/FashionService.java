@@ -1,7 +1,6 @@
 package com.game.module.fashion;
 
-import com.game.data.FashionCfg;
-import com.game.data.Response;
+import com.game.data.*;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
@@ -13,9 +12,7 @@ import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
-import com.game.params.FashionInfo;
-import com.game.params.FashionVO;
-import com.game.params.TakeFashionVO;
+import com.game.params.*;
 import com.game.util.ConfigData;
 import com.game.util.TimeUtil;
 import com.server.SessionManager;
@@ -23,9 +20,8 @@ import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 时装管理类
@@ -37,6 +33,7 @@ public class FashionService {
     private static final int TYPE_HEAD = 1;
     private static final int TYPE_CLOTH = 2;
     private static final int TYPE_WEAPON = 3;
+    private static final int minLev = 0;//时装初始阶级
 
     @Autowired
     private PlayerService playerService;
@@ -48,6 +45,10 @@ public class FashionService {
     private PlayerCalculator calculator;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private PlayerCalculator playerCalculator;
+    @Autowired
+    private GoodsService goodsService;
 
     // 获得时装接口
     public void addFashion(int playerId, int fashionId, int limitTime) {
@@ -85,14 +86,45 @@ public class FashionService {
         info.fashions = new ArrayList<>();
 
         PlayerData data = playerService.getPlayerData(playerId);
+
+        //获取时装阶级数据
+        Set<Integer> fashionRankSet = data.getFashionRankSet();
+        if (fashionRankSet == null) {
+            fashionRankSet = new HashSet<>();
+        }
+        Collection<Object> configs = ConfigData.getConfigs(FashionUpCfg.class);
+
         for (Fashion fashion : data.getFashionMap().values()) {
             FashionVO vo = new FashionVO();
             vo.createTime = fashion.getCreateTime();
             vo.id = fashion.getId();
             vo.period = fashion.getPeriod();
 
+            //是否已有
+            boolean isExisting = false;
+            for (Integer id : fashionRankSet) {
+                FashionUpCfg config = ConfigData.getConfig(FashionUpCfg.class, id);
+                if (config != null && config.FashionID == fashion.getId()) {
+                    isExisting = true;
+                    vo.stage = config.lev;
+                    break;
+                }
+            }
+
+            //初始化阶级
+            if (!isExisting) {
+                for (Object object : configs) {
+                    FashionUpCfg fashionUpCfg = (FashionUpCfg) object;
+                    if (fashionUpCfg.FashionID == fashion.getId() && fashionUpCfg.lev == minLev) {
+                        fashionRankSet.add(fashionUpCfg.id);
+                        break;
+                    }
+                }
+            }
+
             info.fashions.add(vo);
         }
+
         Player player = playerService.getPlayer(playerId);
         info.cloth = player.getFashionId();
         info.weapon = player.getWeaponId();
@@ -261,5 +293,59 @@ public class FashionService {
             FashionCfg cfg = (FashionCfg) o;
             addFashion(playerId, cfg.id, cfg.timeLimit);
         }
+    }
+
+    /**
+     * 时装升阶
+     *
+     * @param playerId  玩家id
+     * @param fashionId 时装id
+     * @return 错误码
+     */
+    public IntParam upgradeRank(int playerId, int fashionId) {
+        IntParam param = new IntParam();
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            param.param = Response.ERR_PARAM;
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+            return param;
+        }
+
+        Set<Integer> fashionRankSet = playerData.getFashionRankSet();
+        if (fashionRankSet == null || fashionRankSet.isEmpty()) {
+            param.param = Response.ERR_PARAM;
+            ServerLogger.warn("时装信息错误，玩家id=" + playerId);
+            return param;
+        }
+
+        for (Integer id : fashionRankSet) {
+            FashionUpCfg config = ConfigData.getConfig(FashionUpCfg.class, id);
+
+            if (fashionId != config.FashionID) {
+                continue;
+            }
+
+            if (config.nextID == 0) {
+                param.param = Response.MAX_LEV;
+                return param;
+            }
+
+            //扣除材料
+            if (goodsService.decConsume(playerId, config.cost, LogConsume.FASHION_UPGRADE, config.id) != Response.SUCCESS) {
+                param.param = Response.NO_MATERIAL;
+                return param;
+            }
+
+            //时装升阶
+            fashionRankSet.add(config.nextID);
+            fashionRankSet.remove(config.id);
+            //推送前端
+            SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
+            //更新属性
+            playerCalculator.calculate(playerId);
+            param.param = Response.SUCCESS;
+            break;
+        }
+        return param;
     }
 }

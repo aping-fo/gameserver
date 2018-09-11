@@ -549,7 +549,11 @@ public class TaskService implements Dispose {
                 if (config.taskType == Task.TYPE_GANG) {
                     if (gang != null) {
                         GMember gMember = gang.getMembers().get(playerId);
-                        gMember.alterTaskContribution(1);
+                        if (gMember != null) {
+                            gMember.alterTaskContribution(1);
+                        }else{
+                            ServerLogger.warn("member is not existent,gang=" + gang + ",playerId=" + playerId);
+                        }
                         if (task.getState() == Task.STATE_FINISHED) {
                             gangService.sendTaskReward(player.getGangId(), config);
                             task.setState(Task.STATE_SUBMITED);
@@ -589,7 +593,16 @@ public class TaskService implements Dispose {
     }
 
     public void doTask(int playerId, Map<Integer, int[]> condParams) {
-        if (condParams.isEmpty()) {
+        if (condParams == null || condParams.isEmpty()) {
+            return;
+        }
+        List<Map<Integer, int[]>> list = Lists.newArrayList();
+        list.add(condParams);
+        doTaskList(playerId, list);
+    }
+
+    public void doTaskList(int playerId, List<Map<Integer, int[]>> condParamsList) {
+        if (condParamsList == null || condParamsList.isEmpty()) {
             return;
         }
         if (!SessionManager.getInstance().getAllSessions().containsKey(playerId)) {
@@ -614,20 +627,23 @@ public class TaskService implements Dispose {
         }
 
         List<Task> updateTasks = Lists.newArrayList();
-        for (Task task : tasks) {
-            TaskConfig config = getConfig(task.getTaskId());
-            if (task.getState() == Task.STATE_FINISHED ||
-                    task.getState() == Task.STATE_SUBMITED) {
-                continue;
-            }
-            int[] params = condParams.get(config.finishType);
-            if (params == null) {
-                continue;
-            }
 
-            boolean result = doTasks(playerId, config.finishType, task, params);
-            if (result) {
-                updateTasks.add(task);
+        for (Map<Integer, int[]> condParams : condParamsList) {
+            for (Task task : tasks) {
+                TaskConfig config = getConfig(task.getTaskId());
+                if (task.getState() == Task.STATE_FINISHED ||
+                        task.getState() == Task.STATE_SUBMITED) {
+                    continue;
+                }
+                int[] params = condParams.get(config.finishType);
+                if (params == null) {
+                    continue;
+                }
+
+                boolean result = doTasks(playerId, config.finishType, task, params);
+                if (result) {
+                    updateTasks.add(task);
+                }
             }
         }
         updateTaskToClient(playerId, updateTasks);

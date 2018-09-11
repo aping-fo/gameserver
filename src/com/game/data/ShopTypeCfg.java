@@ -15,4 +15,6 @@ public class ShopTypeCfg {
 	public int[] refreshPrice;//商店刷新价格表
 	public int[] currencyInfo;//货币信息
 	public int tips;//tips
+	public float[] illustratedPos;//illustratedPos
+	public float[] illustratedSize;//illustratedSize
 }

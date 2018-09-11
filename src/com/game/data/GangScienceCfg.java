@@ -7,7 +7,9 @@ public class GangScienceCfg {
 	public int id;//ID
 	public String icon;//图标
 	public String name;//名称
+	public String name_en;//名称
 	public String desc;//描述
+	public String desc_en;//描述
 	public int lv;//等级
 	public int type;//科技类型
 	public int param;//参数

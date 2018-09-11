@@ -1,6 +1,9 @@
 package com.game.module.goods;
 
 import com.game.data.*;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
+import com.game.module.activity.ActivityTask;
 import com.game.module.log.LogConsume;
 import com.game.module.player.*;
 import com.game.module.task.Task;
@@ -8,6 +11,7 @@ import com.game.module.task.TaskService;
 import com.game.params.GainGoodNotify;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
+import com.game.params.ListParam;
 import com.game.params.goods.AttrItem;
 import com.game.params.goods.EquipInfo;
 import com.game.params.goods.SGoodsVo;
@@ -24,6 +28,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class EquipService {
@@ -36,6 +41,8 @@ public class EquipService {
     private PlayerCalculator playerCalculator;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private ActivityService activityService;
 
     // 穿装备
     public int wear(int playerId, long id) {
@@ -100,6 +107,9 @@ public class EquipService {
         vo.add(goodsService.toVO(goods));
         goodsService.refreshGoodsToClient(playerId, vo);
         //taskService.doTask(playerId, Task.FINISH_WEAR, config.color);
+
+        //装备投资
+        equipmentInvestment(playerId, data);
         return Response.SUCCESS;
     }
 
@@ -144,8 +154,9 @@ public class EquipService {
         boolean bUpdate = false;
         PlayerData data = playerService.getPlayerData(playerId);
         List<GoodsEntry> list = Lists.newArrayList();
+        List<Goods> goodList = Lists.newArrayList();
         for (long id : ids) {
-            list.clear();
+//            list.clear();
             int equipMaterials = 0;
             Goods goods = goodsService.getGoods(playerId, id);
             if (goods == null) {
@@ -175,9 +186,12 @@ public class EquipService {
                 }
             }
             count += equipMaterials;
+
+            goodList.add(goods);
+
             //扣除物品
-            goodsService.decSpecGoods(goods, goods.getStackNum(), LogConsume.DECOMPOSE_DEC);
-            goodsService.addRewards(playerId, list, LogConsume.DECOMPOSE_DEC);
+//            goodsService.decSpecGoods(goods, goods.getStackNum(), LogConsume.DECOMPOSE_DEC);
+//            goodsService.addRewards(playerId, list, LogConsume.DECOMPOSE_DEC);
             if (goods.getStoreType() == Goods.EQUIP) { //goods.setStoreType(Goods.EQUIP);
                 bUpdate = true;
             }
@@ -190,6 +204,12 @@ public class EquipService {
                 }
             }
         }
+
+        if (goodList.size() > 0) {
+            goodsService.removeBatchGoods(playerId, goodList, LogConsume.DECOMPOSE_DEC);
+            goodsService.addRewards(playerId, list, LogConsume.DECOMPOSE_DEC);
+        }
+
         if (bUpdate) {
             playerCalculator.calculate(playerId);
         }
@@ -208,6 +228,7 @@ public class EquipService {
         Goods goods = goodsService.getGoods(playerId, id);
         if (goods == null) {
             ServerLogger.warn("EquipService#upStar id = " + id);
+            return Response.OPERATION_TOO_FAST;
         }
         GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
         int nextStar = goods.getStar() + 1;
@@ -526,5 +547,42 @@ public class EquipService {
             }
         }
         return bufferList;
+    }
+
+    //统计装备物品品质和数量
+    public Map<Integer, Integer> getTypeNumberMap(int playerId) {
+        Map<Integer, Integer> goodsMap = new ConcurrentHashMap<>();
+        Collection<Goods> collection = goodsService.getPlayerBag(playerId).getAllGoods().values();
+        if (collection.isEmpty()) {
+            return goodsMap;
+        }
+        for (Goods goods : collection) {
+            //是否穿戴在身上
+            if (goods.getStoreType() != 1) {
+                continue;
+            }
+            GoodsConfig goodsConfig = goodsService.getGoodsConfig(goods.getGoodsId());
+            if (goodsConfig != null && goodsConfig.color >= 1) {
+                for (int i = 1; i <= goodsConfig.color; i++) {
+                    //高级品质装备也算低级品质的数量
+                    if (goodsMap.get(i) == null) {
+                        goodsMap.put(i, 1);
+                    } else {
+                        goodsMap.put(i, goodsMap.get(i) + 1);
+                    }
+                }
+            }
+        }
+        return goodsMap;
+    }
+
+    //装备投资
+    public void equipmentInvestment(int playerId, PlayerData data) {
+        if (activityService.checkIsOpen(data, ActivityConsts.ActivityTaskCondType.T_EQUIPMENT_INVESTMENT)) {
+            Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId);
+            if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
+                activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_EQUIPMENT_INVESTMENT, true, typeNumberMap,true);
+            }
+        }
     }
 }

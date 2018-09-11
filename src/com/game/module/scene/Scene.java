@@ -32,6 +32,9 @@ public class Scene {
 	}
 
 	public void exitSubLine(int line) {
+		if(line == 9999){
+			return;
+		}
 		subLine.exitSubLine(line);
 	}
 

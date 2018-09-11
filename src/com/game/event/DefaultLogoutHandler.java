@@ -77,6 +77,7 @@ public class DefaultLogoutHandler implements LogoutHandler {
             if (player == null) {
                 return;
             }
+            int teamId = player.getTeamId();
             PlayerData playerData = playerService.getPlayerData(playerId);
             if (player.onlineTime != 0) {
                 int passTime = (int) ((System.currentTimeMillis() - player.onlineTime) / 1000);
@@ -90,7 +91,7 @@ public class DefaultLogoutHandler implements LogoutHandler {
             copyService.removeCopy(playerId);
             // 退出场景
             sceneService.exitScene(player);
-            teamService.quit(playerId);
+            teamService.quit(playerId, teamId);
             // 退出副本场景
             SceneConfig scene = ConfigData.getConfig(SceneConfig.class, player.getSceneId());
             if (player.getLastSceneId() > 0 && scene.type != Scene.CITY) {
@@ -101,6 +102,12 @@ public class DefaultLogoutHandler implements LogoutHandler {
                 player.setZ(pos[2]);
             }
 
+            /*
+            先执行一次保存，防止切换角色是获取的数据是旧的
+            （执行下面updateTask更新任务数据时，写数据库有可能造成线程阻塞，令1001协议线程先执行）
+             */
+            playerService.update(player);
+            ServerLogger.info("更新角色信息完毕" + player.getPlayerId());
             taskService.updateTask(playerId);
             goodsService.updateBag(playerId);
             petService.onLogout(playerId);
@@ -114,6 +121,7 @@ public class DefaultLogoutHandler implements LogoutHandler {
             // 保证以下的代码在最后
             // 清除session
             playerService.update(player);
+            ServerLogger.info("更新角色信息" + player.getPlayerId());
             playerService.updatePlayerData(playerId);
             //report logout log
             ratingService.reportRoleLogout(player, playerData.getRoleId());

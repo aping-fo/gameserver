@@ -1,7 +1,10 @@
 package com.game.module.rank;
 
+import com.game.data.EndlessCfg;
 import com.game.data.Response;
 import com.game.event.InitHandler;
+import com.game.module.attach.endless.EndlessAttach;
+import com.game.module.attach.endless.EndlessLogic;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.GangService;
 import com.game.module.ladder.LadderService;
@@ -18,14 +21,15 @@ import com.game.params.rank.LadderRankVO;
 import com.game.params.rank.StateRankVO;
 import com.game.util.CompressUtil;
 import com.game.util.JsonUtils;
+import com.game.util.RandomUtil;
 import com.game.util.TimeUtil;
+import com.google.common.collect.Lists;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Service
@@ -53,8 +57,11 @@ public class RankService implements InitHandler {
 	private PlayerService playerService;
 	@Autowired
 	private GangService gangService;
+	@Autowired
+	private EndlessLogic endlessLogic;
 
 	private final Map<Integer, RankingList<? extends IRankCA>> rankings = new ConcurrentHashMap<Integer, RankingList<? extends IRankCA>>();
+	private ListParam<StateRankVO> listParam = new ListParam<>();//5点排行第一
 
 	@Override
 	public void handleInit() {
@@ -80,9 +87,86 @@ public class RankService implements InitHandler {
 			}
 		}
 	}
+
+	public void removeInvalidEndlessRank()
+	{
+		RankingList<EndlessRankEntity> ranking = getRankingList(TYPE_ENDLESS);
+        int lev=2060;
+        int passTime=30;
+        float fightFactor = 1.5f;
+		List<Integer> invalidPlayerId = new ArrayList<>();
+		boolean foundInvalid = false;
+        EndlessCfg eCfg = endlessLogic.getConfig();
+
+		for (int i = 0; i < ranking.getSize(); ++i)
+		{
+			RankEntity entity = ranking.getRankEntity(i);
+			if (entity == null)
+				continue;
+
+			EndlessRankEntity rankEntity = (EndlessRankEntity)entity.getCa();
+			if (rankEntity == null)
+				continue;
+
+            EndlessAttach attach = endlessLogic.getAttach(entity.getPlayerId());
+            int fight = Math.round(eCfg.baseData + (eCfg.baseData * (attach.getMaxLayer() - 1) * eCfg.growRatio
+                    + eCfg.baseData * (attach.getMaxLayer() / eCfg.sectionLayer) * eCfg.sectionMultiple * eCfg.scetionRatio));
+
+            Player p = playerService.getPlayer(entity.getPlayerId());
+            boolean isInvalid = false;
+            if (p != null)
+            {
+                if (p.getFight() * fightFactor < fight)
+                {
+                    isInvalid =true;
+                }
+            }
+			if (!isInvalid && (rankEntity.getLayer() > lev)) {
+                isInvalid = true;
+			}
+
+			if (isInvalid)
+            {
+                foundInvalid = true;
+                invalidPlayerId.add(entity.getPlayerId());
+            }
+		}
+
+		if (!foundInvalid)
+		    return;
+
+		for (int i = 0; i < invalidPlayerId.size(); ++i)
+		{
+			ranking.remove(invalidPlayerId.get(i));
+		}
+		ranking.saveDb();
+
+		List<Player> allPlayer = playerService.getAllPlayer();
+        for(Player player:allPlayer){
+			EndlessAttach attach = endlessLogic.getAttach(player.getPlayerId());
+            if (attach == null) {
+                ServerLogger.warn("无尽漩涡记录不存在="+player.getPlayerId());
+                continue;
+            }
+            attach.setPassTime(RandomUtil.randInt(60,85));
+
+            int fight = Math.round(eCfg.baseData + (eCfg.baseData * (attach.getMaxLayer() - 1) * eCfg.growRatio
+                    + eCfg.baseData * (attach.getMaxLayer() / eCfg.sectionLayer) * eCfg.sectionMultiple * eCfg.scetionRatio));
+
+            if(player.getFight() * fightFactor < fight || attach.getMaxLayer()>lev||attach.getCurrLayer()>lev){
+				attach.setMaxLayer(0);
+				attach.setCurrLayer(1);
+                attach.saveDb();
+			}
+			
+            ranking.updateEntity(player.getPlayerId(), new EndlessRankEntity(attach.getCurrLayer(),attach.getPassTime()));
+        }
+        ranking.saveDb();
+        ServerLogger.warn("无尽漩涡错误数据修复成功");
+    }
 	
 	@SuppressWarnings("unchecked")
-	public <T extends IRankCA> RankingList<T> getRankingList(int type){
+  	public <T extends IRankCA> RankingList<T> getRankingList(int type){
 		return (RankingList<T>) rankings.get(type);
 	}
 	
@@ -134,8 +218,24 @@ public class RankService implements InitHandler {
 			}
 			achievementList.putAll(achievementEntities);
 		}
-
 		ladderService.ladderSort();
+
+		//获取5点的排行第一
+        Calendar c = Calendar.getInstance();
+        int hour = c.get(Calendar.HOUR_OF_DAY);
+        if(hour == 5){
+            stateRank();
+        }
+	}
+
+	// 排行第一模型
+	public ListParam<StateRankVO> getStateRank( ) {
+		ListParam<StateRankVO> listParam=new ListParam<>();
+		listParam.params=new ArrayList<>();
+		for(StateRank rank : serialDataService.getData().getStateRanks()){
+			listParam.params.add(rank.toProto());
+		}
+        return listParam;
 	}
 
 	// 排行第一模型
@@ -143,50 +243,53 @@ public class RankService implements InitHandler {
 		ListParam<StateRankVO> listParam=new ListParam<>();
 		listParam.params=new ArrayList<>();
 
+		List<StateRank> stateRanks = Lists.newArrayList();
 		//战力第一
 		RankingList<IRankCA> ranking = getRankingList(TYPE_FIGHTING);
 		List<RankEntity> list = ranking.getOrderList();
 		if(list!=null&&list.size()>0){
-			listParam.params.add(getStateRankVO(list.get(0).getPlayerId()));
+			stateRanks.add(getStateRankVO(list.get(0).getPlayerId(),1));
 		}
 
 		//等级第一
 		ranking = getRankingList(TYPE_LEVEL);
 		list = ranking.getOrderList();
 		if(list!=null&&list.size()>0){
-			listParam.params.add(getStateRankVO(list.get(0).getPlayerId()));
+			stateRanks.add(getStateRankVO(list.get(0).getPlayerId(),2));
 		}
-
 		//排位赛第一
 		ListParam<LadderRankVO> ladderRank = ladderService.getLadderRank();
 		List<LadderRankVO> params = ladderRank.params;
-		if(list!=null&&list.size()>0){
-			listParam.params.add(getStateRankVO(params.get(0).playerId));
+		if(params!=null&&params.size()>0){
+			stateRanks.add(getStateRankVO(params.get(0).playerId,3));
 		}
-
+		serialDataService.getData().setStateRanks(stateRanks);
 		listParam.code= Response.SUCCESS;
 
 		return 	listParam;
     }
 
     //获取排行第一
-	private StateRankVO getStateRankVO(int playerId) {
+	private StateRank getStateRankVO(int playerId,int rankType) {
 		Player player = playerService.getPlayer(playerId);
-		StateRankVO stateRankVO=new StateRankVO();
-		stateRankVO.name=player.getName();
-		stateRankVO.vocation=player.getVocation();
-		stateRankVO.playerId=playerId;
+		StateRank stateRankVO=new StateRank();
+		stateRankVO.setName(player.getName());
+		stateRankVO.setVocation(player.getVocation());
+		stateRankVO.setPlayerId(playerId);
 		FashionInfo fashionInfo = fashionService.getFashionInfo(playerId);
-		stateRankVO.head=fashionInfo.head;
-		stateRankVO.fashionId=fashionInfo.cloth;
-		stateRankVO.weapon=fashionInfo.weapon;
-		stateRankVO.level=player.getLev();
+		stateRankVO.setHead(fashionInfo.head);
+		stateRankVO.setFashionId(fashionInfo.cloth);
+		stateRankVO.setWeapon(fashionInfo.weapon);
+		stateRankVO.setLevel(player.getLev());
 		if(player.getGangId() > 0){
-			stateRankVO.gang = gangService.getGang(player.getGangId()).getName();
+            if (gangService.getGang(player.getGangId()) != null && gangService.getGang(player.getGangId()).getName() != null) {
+                stateRankVO.setGang(gangService.getGang(player.getGangId()).getName());
+            }
 		}
-		stateRankVO.fightingValue=player.getFight();
-		stateRankVO.vip=player.getVip();
-		stateRankVO.title=player.getTitle();
+		stateRankVO.setFightingValue(player.getFight());
+		stateRankVO.setVip(player.getVip());
+		stateRankVO.setTitle(player.getTitle());
+		stateRankVO.setRankType(rankType);
 		return stateRankVO;
 	}
 

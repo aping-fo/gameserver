@@ -4,6 +4,7 @@ import com.game.data.*;
 import com.game.module.RandomReward.RandomRewardService;
 import com.game.module.artifact.ArtifactService;
 import com.game.module.attach.training.trainingLogic;
+import com.game.module.copy.CopyService;
 import com.game.module.fame.FameService;
 import com.game.module.fashion.FashionService;
 import com.game.module.log.LogConsume;
@@ -271,80 +272,107 @@ public class GoodsService {
         return decConsume(playerId, decs, log, params);
     }
 
-    /**
-     * 增加物品
-     *
-     * @param playerId
-     * @param goodsId
-     * @param count
-     * @param log      日志类型
-     * @param params   日志参数（可选）
-     * @return 加入是否成功（背包是否已满)
-     */
     public boolean addGoodsToBag(int playerId, int goodsId, int count, LogConsume log, Object... params) {
+        return addGoodsToBag(playerId, new int[] {goodsId}, new int[] {count}, log, params);
+    }
+        /**
+         * 增加物品
+         *
+         * @param playerId
+         * @param goodsIds
+         * @param counts
+         * @param log      日志类型
+         * @param params   日志参数（可选）
+         * @return 加入是否成功（背包是否已满)
+         */
+    public boolean addGoodsToBag(int playerId, int[] goodsIds, int[] counts, LogConsume log, Object... params) {
+
+        if (goodsIds == null || goodsIds.length == 0 || counts == null || counts.length < goodsIds.length)
+            return false;
+
         PlayerBag bag = getPlayerBag(playerId);
         Player player = playerService.getPlayer(playerId);
 
         List<SGoodsVo> goodsUpdates = new ArrayList<SGoodsVo>();
-        GoodsConfig config = getGoodsConfig(goodsId);
-        synchronized (bag) {
 
-            if (count <= 0 || config == null) {
-                return false;
-            }
-            // 验证职业
-            /*if (config.vocation > 0 && player.getVocation() != config.vocation) {
-                return false;
-			}*/
+        for (int i = 0; i < goodsIds.length; ++i) {
+            int goodsId = goodsIds[i];
+            int count = counts[i];
 
-            if (!checkCanAdd(playerId, goodsId, count)) {
-                return false;
-            }
-            // 特殊物品不要调用
-            if (goodsId < 10000) {
-                throw new RuntimeException("Invalid GoodsId:" + goodsId);
-            }
+            GoodsConfig config = getGoodsConfig(goodsId);
+            synchronized (bag) {
 
-            List<Goods> exists = getExistBagGoods(playerId, goodsId);
-            for (Goods g : exists) {
-                int left = config.maxStack - g.getStackNum();
-                if (left == 0) {
-                    continue;
+                if (count <= 0 || config == null) {
+                    return false;
                 }
-                int addCount = Math.min(count, left);
-                g.setStackNum(g.getStackNum() + addCount);
 
-                count -= addCount;
-                goodsUpdates.add(toVO(g));
-                if (count <= 0) {
-                    break;
+                // 活动奖励验证职业
+                if (log == LogConsume.ACTIVITY_REWARD || log == LogConsume.ACTIVITY_RE_REWARD) {
+                    if (config.vocation > 0 && player.getVocation() != config.vocation) {
+                        continue;
+                    }
                 }
-            }
-            while (count > 0) {
-                int addCount = Math.min(count, config.maxStack);
-                Goods newGoods = addNewGoods(playerId, goodsId, addCount, Goods.BAG);
-                addGoods(playerId, newGoods);
-                goodsUpdates.add(toVO(newGoods));
-                count -= addCount;
-            }
-            playerGoods.put(playerId, bag);
 
+                if (!checkCanAdd(playerId, goodsId, count)) {
+                    return false;
+                }
+                // 特殊物品不要调用
+                if (goodsId < 10000) {
+                    throw new RuntimeException("Invalid GoodsId:" + goodsId);
+                }
+
+                List<Goods> exists = getExistBagGoods(playerId, goodsId);
+                for (Goods g : exists) {
+                    int left = config.maxStack - g.getStackNum();
+                    if (left == 0) {
+                        continue;
+                    }
+                    int addCount = Math.min(count, left);
+                    g.setStackNum(g.getStackNum() + addCount);
+
+                    count -= addCount;
+                    goodsUpdates.add(toVO(g));
+                    if (count <= 0) {
+                        break;
+                    }
+                }
+                while (count > 0) {
+                    int addCount = Math.min(count, config.maxStack);
+                    Goods newGoods = addNewGoods(playerId, goodsId, addCount, Goods.BAG);
+                    addGoods(playerId, newGoods);
+                    goodsUpdates.add(toVO(newGoods));
+                    count -= addCount;
+                }
+                playerGoods.put(playerId, bag);
+
+            }
         }
         // 更新数据到前端
         refreshGoodsToClient(playerId, goodsUpdates);
-        // 记录日志
 
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true,
-                count, log, goodsId, Goods.GOOODS, params);
-        //特殊的物品
-        if (config.type == Goods.ARTIFACT_COMPONENT) {
-            artifactService.checkActive(playerId);
+        Map<Integer, int[]> condParams = Maps.newHashMapWithExpectedSize(1);
+        // 记录日志
+        for (int i = 0; i < goodsIds.length; ++i) {
+            int goodsId = goodsIds[i];
+            int count = counts[i];
+
+            GoodsConfig config = getGoodsConfig(goodsId);
+
+            Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true,
+                    count, log, goodsId, Goods.GOOODS, params);
+            //特殊的物品
+            if (config.type == Goods.ARTIFACT_COMPONENT) {
+                artifactService.checkActive(playerId);
+            }
+            if (CommonUtil.contain(
+                    ConfigData.globalParam().equipTypes,
+                    config.type)) {
+                condParams.put(Task.FINISH_WEAR, new int[] {config.color, 1 });
+//                taskService.doTask(playerId, Task.FINISH_WEAR, config.color, 1);
+            }
         }
-        if (CommonUtil.contain(
-                ConfigData.globalParam().equipTypes,
-                config.type)) {
-            taskService.doTask(playerId, Task.FINISH_WEAR, config.color,1);
-        }
+        if (condParams.size() > 0)
+            taskService.doTask(playerId, condParams);
 
         return true;
     }
@@ -435,55 +463,68 @@ public class GoodsService {
     /**
      * 验证一堆物品能否加到背包
      */
+
     public boolean checkCanAddToBag(int playerId, List<GoodsEntry> addedGoods) {
-
-        addedGoods = filter(addedGoods);
-        int leftCounts[] = getBlankGridCounts(playerId);
-
-        for (GoodsEntry entry : addedGoods) {
-            int goodsId = entry.id;
-            int count = entry.count;
-            if (goodsId < 10000) {// 特殊物品，直接加在身上
-                continue;
-            }
-            GoodsConfig config = getGoodsConfig(goodsId);
-            if (config == null) {
-                ServerLogger.warn("check add goods 物品: " + goodsId + "不存在");
-                return false;
-            }
-
-            if (config.type == Goods.PET || config.type == Goods.PET_MATERIAL
-                    || config.type == Goods.FASHION
-                    || config.type == Goods.SKILL_CARD) {
-                continue;
-            }
-
-            List<Goods> existed = getExistBagGoods(playerId, goodsId);
-            for (Goods g : existed) {// 已经存在的，看能否堆叠
-                int left = config.maxStack - g.getStackNum();
-                count -= left;
-            }
-            if (count <= 0) {
-                continue;
-            }
-
-            int bagType = getBagType(config.type);
-            int getBlankGrid = leftCounts[bagType];
-
-            if (config.maxStack == 0) {
-                config.maxStack = 99999;
-            }
-            int needBlank = count / config.maxStack;// 插入空格
-            if (count % config.maxStack > 0) {
-                needBlank++;
-            }
-            if (needBlank > getBlankGrid) {
-                ServerLogger.info("背包剩下的格子放不下物品：" + goodsId);
-                return false;
-            }
-            leftCounts[bagType] -= needBlank;
+        if (addedGoods == null) {
+            return false;
         }
-        return true;
+        List< List<GoodsEntry> > addedGoodsList = Lists.newArrayList();
+        addedGoodsList.add(addedGoods);
+        return checkCanAddListToBag(playerId, addedGoodsList) == 1;
+    }
+
+    public int checkCanAddListToBag(int playerId, List< List<GoodsEntry> > addedGoodsList) {
+        int countValue = 0;
+        int leftCounts[] = getBlankGridCounts(playerId);
+        for (int i = 0; i < addedGoodsList.size(); ++i) {
+            List<GoodsEntry> addedGoods = addedGoodsList.get(i);
+            addedGoods = filter(addedGoods);
+            for (GoodsEntry entry : addedGoods) {
+                int goodsId = entry.id;
+                int count = entry.count;
+                if (goodsId < 10000) {// 特殊物品，直接加在身上
+                    continue;
+                }
+                GoodsConfig config = getGoodsConfig(goodsId);
+                if (config == null) {
+                    ServerLogger.warn("check add goods 物品: " + goodsId + "不存在");
+                    return countValue;
+                }
+
+                if (config.type == Goods.PET || config.type == Goods.PET_MATERIAL
+                        || config.type == Goods.FASHION
+                        || config.type == Goods.SKILL_CARD) {
+                    continue;
+                }
+
+                List<Goods> existed = getExistBagGoods(playerId, goodsId);
+                for (Goods g : existed) {// 已经存在的，看能否堆叠
+                    int left = config.maxStack - g.getStackNum();
+                    count -= left;
+                }
+                if (count <= 0) {
+                    continue;
+                }
+
+                int bagType = getBagType(config.type);
+                int getBlankGrid = leftCounts[bagType];
+
+                if (config.maxStack == 0) {
+                    config.maxStack = 99999;
+                }
+                int needBlank = count / config.maxStack;// 插入空格
+                if (count % config.maxStack > 0) {
+                    needBlank++;
+                }
+                if (needBlank > getBlankGrid) {
+                    ServerLogger.info("背包剩下的格子放不下物品：" + goodsId);
+                    return countValue;
+                }
+                leftCounts[bagType] -= needBlank;
+            }
+            countValue = (i + 1);
+        }
+        return countValue;
     }
 
     // 过滤一下相同的
@@ -614,8 +655,10 @@ public class GoodsService {
         addRewards(playerId, _rewards, type, params);
     }
 
-    // 发送奖励api，背包已满自动发送邮件
     public void addRewards(int playerId, List<GoodsEntry> rewards, LogConsume type, Object... params) {
+        if (rewards == null || rewards.size() == 0) {
+            return;
+        }
         if (!checkCanAddToBag(playerId, rewards)) {
             // 发送邮件
             String title = ConfigData.getConfig(ErrCode.class, Response.FULL_BAG_TITLE).tips;
@@ -636,59 +679,97 @@ public class GoodsService {
                 count += reward.count;
                 map.put(reward.id, count);
             }
-            for (Entry<Integer, Integer> item : map.entrySet()) {
-                addRewrad(playerId, item.getKey(), item.getValue(), type, params);
+
+            if (map.size() > 0) {
+                int[] ids = new int[map.size()];
+                int[] counts = new int[map.size()];
+                int idx = 0;
+                for (Entry<Integer, Integer> item : map.entrySet()) {
+//                    addRewrad(playerId, item.getKey(), item.getValue(), type, params);
+                    ids[idx] = item.getKey();
+                    counts[idx] = item.getValue();
+                    ++idx;
+                }
+                addRewrads(playerId, ids, counts, type, params);
             }
         }
     }
 
     // 增加单个奖励，内部使用
     public void addRewrad(int playerId, int id, int count, LogConsume type, Object... params) {
-        Player player = playerService.getPlayer(playerId);
-        // 普通物品
-        GoodsConfig goods = getGoodsConfig(id);
-        if (id > 10000) {
-            if (goods.type == Goods.BOTTLE) {
-                return;
+        addRewrads(playerId, new int[]{id}, new int[]{count}, type, params);
+    }
+
+    public void addRewrads(int playerId, int[] ids, int[] counts, LogConsume type, Object... params) {
+
+        if (ids == null || ids.length == 0 || counts == null || counts.length < ids.length) {
+            return;
+        }
+
+        List<Integer> normalGoods = new ArrayList<>();
+        for (int i = 0; i < ids.length; ++i) {
+            int id = ids[i];
+            int count = counts[i];
+//        Player player = playerService.getPlayer(playerId);
+            // 普通物品
+            GoodsConfig goods = getGoodsConfig(id);
+            if (goods == null) {
+                continue;
             }
+            if (id > 10000) {
+                if (goods.type == Goods.BOTTLE) {
+                    continue;
+                }
             /*if (goods.vocation != 0 && goods.vocation != player.getVocation()) {
 				return;
 			}*/
-            //技能卡
-            if (goods.type == Goods.SKILL_CARD) {
-                playerService.addSkillCard(playerId, goods.param1[0], count);
-                taskService.doTask(playerId, Task.FINISH_CARD_COMPOSE, goods.color, 0);
-            } else if (goods.type == Goods.SPECIAL_MAP) {
-                traversingService.addMap(playerId, goods, count);
-            } else if (goods.type == Goods.FASHION) {
-                fashionService.addFashion(playerId, goods.param1[0], goods.param1[1]);
-            } else if (goods.type == Goods.PET) {
-                petService.addPet(playerId, id);
-            } else if (goods.type == Goods.PET_MATERIAL) {
-                petService.addPetMaterial(playerId, id, count, true);
+                //技能卡
+                if (goods.type == Goods.SKILL_CARD) {
+                    playerService.addSkillCard(playerId, goods.param1[0], count);
+                    taskService.doTask(playerId, Task.FINISH_CARD_COMPOSE, goods.color, 0);
+                } else if (goods.type == Goods.SPECIAL_MAP) {
+                    traversingService.addMap(playerId, goods, count);
+                } else if (goods.type == Goods.FASHION) {
+                    fashionService.addFashion(playerId, goods.param1[0], goods.param1[1]);
+                } else if (goods.type == Goods.PET) {
+                    petService.addPet(playerId, id);
+                } else if (goods.type == Goods.PET_MATERIAL) {
+                    petService.addPetMaterial(playerId, id, count, true);
+                } else {
+                    normalGoods.add(i);
+                }
             } else {
-                addGoodsToBag(playerId, id, count, type, params);
+                if (id == Goods.COIN) {// 金币
+                    playerService.addCoin(playerId, count, type, params);
+                } else if (id == Goods.DIAMOND) {// 钻石
+                    playerService.addDiamond(playerId, count, type, params);
+                } else if (id == Goods.EXP) {// 经验
+                    playerService.addExp(playerId, count, type, params);
+                } else if (id == Goods.ACHIEVEMENT) {
+                    playerService.addAchievement(playerId, count, type, params);
+                } else if (id == Goods.ENERGY) {// 体力
+                    playerService.addEnergy(playerId, count, type, params);
+                } else if (id == Goods.VIP_EXP) {// vip经验值
+                    playerService.addVipExp(playerId, count);
+                } else if (id == Goods.EXPERIENCE_HP) {// 英雄试练HP
+                    trainingLogic.addHP(playerId, count);
+                } else if (goods.type == Goods.FAME) {//声望卡
+                    fameService.addFame(playerId, goods.param1[0], count);
+                } else if (goods.type == Goods.CURRENCY) {
+                    playerService.addCurrency(playerId, id, count, type, params);
+                }
             }
-        } else {
-            if (id == Goods.COIN) {// 金币
-                playerService.addCoin(playerId, count, type, params);
-            } else if (id == Goods.DIAMOND) {// 钻石
-                playerService.addDiamond(playerId, count, type, params);
-            } else if (id == Goods.EXP) {// 经验
-                playerService.addExp(playerId, count, type, params);
-            } else if (id == Goods.ACHIEVEMENT) {
-                playerService.addAchievement(playerId, count, type, params);
-            } else if (id == Goods.ENERGY) {// 体力
-                playerService.addEnergy(playerId, count, type, params);
-            } else if (id == Goods.VIP_EXP) {// vip经验值
-                playerService.addVipExp(playerId, count);
-            } else if (id == Goods.EXPERIENCE_HP) {// 英雄试练HP
-                trainingLogic.addHP(playerId, count);
-            } else if (goods.type == Goods.FAME) {//声望卡
-                fameService.addFame(playerId, goods.param1[0], count);
-            } else if (goods.type == Goods.CURRENCY) {
-                playerService.addCurrency(playerId, id, count, type, params);
+        }
+
+        if (normalGoods.size() > 0) {
+            int[] goodsIds = new int[normalGoods.size()];
+            int[] goodsCount = new int[normalGoods.size()];
+            for (int i = 0; i < normalGoods.size(); ++i) {
+                int idx = normalGoods.get(i);
+                goodsIds[i] = ids[idx];
+                goodsCount[i] = counts[idx];
             }
+            addGoodsToBag(playerId, goodsIds, goodsCount, type, params);
         }
     }
 
@@ -759,8 +840,10 @@ public class GoodsService {
         decSpecGoods(goods, count, LogConsume.USE_TOOL);
         int groupId = cfg.contents[0][0];
         Map<Integer, Reward> map = Maps.newHashMap();
+        List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
         for (int i = 0; i < count; i++) {
-            List<Reward> list = randomRewardService.getRewards(playerId, groupId, LogConsume.OPEN_BOX);
+//            List<Reward> list = randomRewardService.getRewards(playerId, groupId, LogConsume.OPEN_BOX);
+            List<Reward> list = randomRewardService.getRewards(0, groupId, LogConsume.OPEN_BOX);
             for (Reward reward : list) {
                 Reward rw = map.get(reward.id);
                 if (rw != null) {
@@ -770,6 +853,14 @@ public class GoodsService {
                 }
             }
         }
+
+        if (map.size() > 0) {
+            for (Reward reward : map.values()) {
+                rewards.add(new GoodsEntry(reward.id, reward.count));
+            }
+            addRewards(playerId, rewards, LogConsume.OPEN_BOX, groupId, count);
+        }
+
         result.params.addAll(map.values());
         return result;
     }

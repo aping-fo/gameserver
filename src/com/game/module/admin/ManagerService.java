@@ -1,17 +1,16 @@
 package com.game.module.admin;
 
+import com.game.SysConfig;
 import com.game.data.ErrCode;
 import com.game.data.GoodsConfig;
 import com.game.data.Response;
 import com.game.event.InitHandler;
 import com.game.module.chat.ChatExtension;
 import com.game.module.log.LogConsume;
-import com.game.module.mail.Mail;
 import com.game.module.mail.MailService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerDao;
 import com.game.module.player.PlayerService;
-import com.game.module.serial.SerialDataService;
 import com.game.module.vip.VipService;
 import com.game.params.StringParam;
 import com.game.params.player.PlayerVo;
@@ -104,8 +103,9 @@ public class ManagerService implements InitHandler{
 			ServerLogger.warn("Err Charge id:",playerId,id,chargeCount);
 			return RETURN_FAILED;
 		}
+		ServerLogger.info("后台充值 玩家id:"+playerId+" rechargeId:"+id+" 充值金额:"+chargeCount);
 		//记录日志
-		vipsService.addCharge(playerId, id,1,"ALIPAY","CNY",System.currentTimeMillis()+"");
+		vipsService.addCharge(playerId, id,1,"test",SysConfig.currency,System.currentTimeMillis()+"",SysConfig.serverId);
 		return RETURN_SUCCESS;
 	}
 	
@@ -142,18 +142,19 @@ public class ManagerService implements InitHandler{
 				}
 			}
 		}
+
 		//拼sql
 		StringBuffer sql = new StringBuffer("SELECT playerId FROM player WHERE 1=1 ");
-		if(userIds!=null){
+		if(userIds!=null&&!userIds.trim().equals("")&&!userIds.equals("null")){
 			sql.append(" and playerId in (").append(userIds).append(") ");
 		}
-		if(minLev!=null){
+		if(minLev!=null&&!minLev.trim().equals("")&&!minLev.equals("null")){
 			sql.append(" and lev>=").append(minLev);
 		}
-		if(maxLev!=null){
+		if(maxLev!=null&&!maxLev.trim().equals("")&&!maxLev.equals("null")){
 			sql.append(" and lev<=").append(maxLev);
 		}
-		if(vocation!=null){
+		if(vocation!=null&&!vocation.trim().equals("")&&!vocation.equals("0")){
 			sql.append(" and vocation=").append(vocation);
 		}
 		List<Map<String, Object>> list = Context.getLoggerService().getDb().queryForList(sql.toString());
@@ -334,6 +335,8 @@ public class ManagerService implements InitHandler{
 	}
 
 	//=====================================================
+
+
 
 	/**
 	 * 帐号信息

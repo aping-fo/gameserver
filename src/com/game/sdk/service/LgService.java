@@ -1,5 +1,6 @@
 package com.game.sdk.service;
 
+import com.game.SysConfig;
 import com.game.data.ChargeConfig;
 import com.game.module.vip.VipService;
 import com.game.sdk.erating.consts.ERatingType;
@@ -77,17 +78,23 @@ public class LgService implements SdkService {
             int id = Integer.parseInt(arr[1]); //充值配置ID
             int cpId = Integer.parseInt(arr[2]);
             String paymentType = arr[3];
-            String currentType = arr[4];
+//            String currentType = arr[4];
+            int serverId=SysConfig.serverId;
+            if(arr.length==5){
+                serverId = Integer.parseInt(arr[5]);
+            }
             ChargeConfig charge = ConfigData.getConfig(ChargeConfig.class, id);
             int amount = data.getAmount() / 10;
+            //金额判断
             if (charge.rmb != amount) {
                 result.setResultCode(ERatingType.ErrorCode.S_SUCCESS);
                 ServerLogger.warn("error,resp xml data =>" + result.toProto());
                 resp.getWriter().write(result.toProto());
                 return;
             }
-            //金额判断
-            vipService.addCharge(playerId, id, cpId, paymentType, currentType, data.getDetail_id() + "");
+
+            vipService.addCharge(playerId, id, cpId, paymentType, SysConfig.currency, data.getDetail_id() + "",serverId);
+
             result.setResultCode(1);
             orders.add(String.valueOf(data.getDetail_id()));
             ServerLogger.warn("resp xml data =>" + result.toProto());

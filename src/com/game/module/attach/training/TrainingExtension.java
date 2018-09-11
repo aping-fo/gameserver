@@ -4,15 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.game.module.copy.CopyInstance;
+import com.game.module.copy.CopyService;
 import com.game.module.goods.EquipService;
+import com.game.module.goods.GoodsEntry;
+import com.game.module.goods.GoodsService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.params.Reward;
 import com.game.params.ladder.TrainingResultVO;
 import com.game.params.training.TrainingFighterVO;
 import com.game.util.JsonUtils;
 import com.google.common.collect.Lists;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.Response;
@@ -40,6 +45,11 @@ public class TrainingExtension {
     private TaskService taskService;
     @Autowired
     private EquipService equipService;
+    @Autowired
+    private CopyService copyService;
+    @Autowired
+    private GoodsService goodsService;
+
     //获取相关信息
     @Command(3901)
     public TrainingVO getInfo(int playerId, Object param) {
@@ -56,6 +66,10 @@ public class TrainingExtension {
             if (id == playerId) continue;
             TrainOpponent opponent = logic.getOpponent(id);
             TrainOpponentVO opp = new TrainOpponentVO();
+            if (opponent == null) {
+                ServerLogger.warn("不存在的id=" + id);
+                continue;
+            }
             opp.playerId = opponent.getPlayerId();
             opp.name = opponent.getName();
             opp.level = opponent.getLevel();
@@ -137,6 +151,20 @@ public class TrainingExtension {
             attach.getTreasureBox().remove(index);
             int groupId = ConfigData.globalParam().exprienceRewards[index];
             result.rewards = rewardService.getRewards(playerId, groupId, LogConsume.EXPRIENCE_REWARD);
+
+            //活动奖励
+            Reward activityReward = copyService.activityReward(playerId, CopyInstance.TYPE_TRAINING);
+            if (activityReward != null) {
+                Reward reward = new Reward();
+                reward.id = activityReward.id;
+                reward.count = activityReward.count;
+                result.rewards.add(reward);
+                // 发送奖励到背包
+                List<GoodsEntry> rewards = new ArrayList<>();
+                rewards.add(new GoodsEntry(activityReward.id, activityReward.count));
+                goodsService.addRewards(playerId, rewards, LogConsume.EXPRIENCE_REWARD, reward.count);
+            }
+
             attach.commitSync();
         }
         result.index = index;

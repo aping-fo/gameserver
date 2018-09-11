@@ -6,13 +6,16 @@ import java.util.Map;
 public class SuitConfig {
 	public int id;//key
 	public String name;//名称
+	public String name_en;//名称
 	public int[] equips;//装备
 	public Map<Integer,int[]> twoAdd;//2件套
 	public String twoDesc;//描述2
+	public String twoDesc_en;//描述3
 	public Map<Integer,int[]> threeAdd;//3件套
 	public String threeDesc;//描述3
 	public Map<Integer,int[]> fourAdd;//4件套
 	public String fourDesc;//描述4
+	public String fourDesc_en;//描述5
 	public Map<Integer,int[]> fiveAdd;//5件套
 	public String fiveDesc;//描述5
 	public Map<Integer,int[]> sixAdd;//6件套

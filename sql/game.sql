@@ -210,3 +210,11 @@ CREATE TABLE `wb_data` (
   `data` longblob COMMENT '世界BOSS记录',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+CREATE TABLE `t_marry_rank` (
+  `openId` varchar(50) NOT NULL COMMENT 'openID',
+  `nickName` varchar(255) DEFAULT NULL COMMENT '昵称',
+  `avatarUrl` varchar(255) DEFAULT NULL COMMENT '头像地址',
+  `score` int(11) DEFAULT '0',
+  PRIMARY KEY (`openId`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -22,6 +22,8 @@ public class CRegVo implements IProtocol {
 	public String serverId;//服ID
 	public String serverName;//区服名
 	public int userId;//平台唯一ID
+	public String thirdChannel;//合作运营方用第三方登录时登录渠道
+	public String thirdUserId;//合作运营方用第三方登录时登录用户ID
 
 
 	public void decode(BufferBuilder bb) {
@@ -43,6 +45,8 @@ public class CRegVo implements IProtocol {
 		this.serverId = bb.getString();
 		this.serverName = bb.getString();
 		this.userId = bb.getInt();
+		this.thirdChannel = bb.getString();
+		this.thirdUserId = bb.getString();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -64,5 +68,7 @@ public class CRegVo implements IProtocol {
 		bb.putString(this.serverId);
 		bb.putString(this.serverName);
 		bb.putInt(this.userId);
+		bb.putString(this.thirdChannel);
+		bb.putString(this.thirdUserId);
 	}
 }

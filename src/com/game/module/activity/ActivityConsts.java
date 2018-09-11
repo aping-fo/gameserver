@@ -17,6 +17,16 @@ public class ActivityConsts {
         public static final int T_FIRST_RECHARGE = 9; //累计充值
         public static final int T_TIMED_BAG = 10; //限时礼包
         public static final int T_SPECIAL_BAG = 11; //特价礼包
+        public static final int T_DAILY_RECHARGE = 15; //每日充值
+
+        public static final int T_FACEBOOK_SHARE = 16; //facebook分享
+        public static final int T_FACEBOOK_INVITE = 17; //facebook邀请
+        public static final int T_GIFT_BOX = 18; //超值礼盒
+        public static final int T_PET_INVESTMENT = 21; //宠物投资
+        public static final int T_EQUIPMENT_INVESTMENT = 22; //装备投资
+        public static final int T_CARD_INVESTMENT = 23; //卡片投资
+        public static final int T_ZERO_GIFTBAG = 25; //0元礼包
+        public static final int T_TWO_DAYS = 27; //2日登录
     }
 
     /**
@@ -31,6 +41,17 @@ public class ActivityConsts {
         public static final int T_TIMED_BAG = 9; //限时礼包
         public static final int T_TIMED_ONCE = 10; //单笔充值
         public static final int T_TIMED_MONEY = 11; //只要充了钱就算
+        public static final int T_DAILY_RECHARGE = 12; //每日充值
+        public static final int T_FACEBOOK_SHARE = 13; //facebook分享
+        public static final int T_FACEBOOK_INVITE = 14; //facebook邀请
+        public static final int T_BUY_DIAMOND = 15; //facebook邀请
+        public static final int T_PET_INVESTMENT = 16; //宠物投资
+        public static final int T_EQUIPMENT_INVESTMENT = 17; //装备投资
+        public static final int T_CARD_INVESTMENT = 18; //卡片投资
+        public static final int T_DAILY_RECHARGE_DIAMONDS = 19; //每日充值钻石
+        public static final int T_TIMED_MONEY_DIAMONDS = 20; //累计充值钻石
+        public static final int T_FULL_SERVICE_ATTENDANCE = 21; //全服登录人数
+        public static final int T_TWO_DAYS = 22; //2日登录
     }
 
     /**
@@ -83,5 +104,13 @@ public class ActivityConsts {
     public static class WelfareCardType {
         public static final int T_WEEKLY = 1; //周卡
         public static final int T_MONTHLY = 2; //月卡
+    }
+
+    /**
+     * 活动开启时间类型
+     */
+    public static class ActivityDropTimeCondType {
+        public static final int T_APPOINT_TIME = 1; //指定时间开启
+        public static final int T_OPEN_SERVICE_TIME = 2; //开服时间开启
     }
 }

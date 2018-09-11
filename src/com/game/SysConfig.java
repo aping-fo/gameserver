@@ -55,7 +55,20 @@ public class SysConfig {
     public static int sdkPort;
     public static String gatewayCode;
     public static String gatewayPwd;
+    public static String currency;//币种
+    public static boolean report;//开启上报
 
+    public static String oauthkey;
+    public static String host;
+    public static String registerurl;
+    public static String registerkey;
+    public static String oauthsecret;
+    public static String registersecret;
+    public static String checktokenurl;
+
+    public static String ingcleLogin;
+    public static String channel;
+    public static String gameKey;
 
     public static void init() throws Exception {
         Properties properties = new Properties();
@@ -87,9 +100,7 @@ public class SysConfig {
             System.setProperty("logpath", logpath);
             dataPath = properties.getProperty("dataPath");
             System.setProperty("dataPath", dataPath);
-
             startUpDate = properties.getProperty("startUpDate");
-
 
             mangerService = Boolean.parseBoolean(properties.getProperty("mangerService"));
             maxCon = Integer.parseInt(properties.getProperty("maxCon"));
@@ -111,6 +122,22 @@ public class SysConfig {
             eratingHost = properties.getProperty("sdk_host");
             gatewayCode = properties.getProperty("gateway_code");
             gatewayPwd = properties.getProperty("gateway_pwd");
+
+            currency = properties.getProperty("currency");
+            report = Boolean.parseBoolean(properties.getProperty("report"));
+
+            oauthkey = properties.getProperty("oauthkey");
+            host = properties.getProperty("host");
+            registerurl = properties.getProperty("registerurl");
+            registerkey = properties.getProperty("registerkey");
+            registersecret = properties.getProperty("registersecret");
+            oauthsecret = properties.getProperty("oauthsecret");
+            checktokenurl = properties.getProperty("checktokenurl");
+
+            ingcleLogin = properties.getProperty("checktokenurl");
+            channel = properties.getProperty("channel");
+            gameKey = properties.getProperty("game_key");
+
 
             Profile.setOpen(Boolean.parseBoolean(properties.getProperty("profile")));
 

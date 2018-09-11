@@ -10,4 +10,5 @@ public class MessageConsts {
     public static final int MSG_WORLD_BOSS_DIE = 5; //世界BOSS死亡消息
     public static final int MSG_LOTTERY = 6; //抽奖
     public static final int MSG_AREA = 7; //竞技场消息广播
+    public static final int MSG_AREA_REVENGE = 8; //竞技场复仇消息广播
 }

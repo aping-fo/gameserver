@@ -72,10 +72,16 @@ public class TeamService implements InitHandler {
 
     public void quit(int playerId) {
         Player player = playerService.getPlayer(playerId);
-        if (player.getTeamId() > 0) {
-            Team team = teams.get(player.getTeamId());
+        if (player != null) {
+            quit(playerId, player.getTeamId());
+        }
+    }
 
-            if (team.getMembers().size() > 1) {
+    public void quit(int playerId, int teamId) {
+        if (teamId > 0) {
+            Team team = teams.get(teamId);
+
+            if (!team.isbRobot() && team.getMembers().size() > 1) {
                 kick(team, playerId);
             } else {
                 dissolve(team);
@@ -83,9 +89,11 @@ public class TeamService implements InitHandler {
 
             this.checkAndSendLost(team);
         }
+        ServerLogger.info("...quit team:", playerId, teamId);
     }
 
     public void kick(Team team, int playerId) {
+        if(playerId == Integer.MAX_VALUE)return;
         Player player = playerService.getPlayer(playerId);
         String key = sceneService.getGroupKey(player);
         SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
@@ -203,7 +211,6 @@ public class TeamService implements InitHandler {
                 }
             }
 
-
             if (member.getCurHp() <= 0) {
                 this.checkAndSendLost(team);
             }
@@ -239,6 +246,7 @@ public class TeamService implements InitHandler {
                     condParams.put(Task.TYPE_LEADER_PASS, new int[]{copy.getCopyId()});
                     taskService.doTask(team.getLeader(), condParams);
                     for (TMember tm : team.getMembers().values()) {
+                        if(tm.getPlayerId() == Integer.MAX_VALUE) continue;
                         CopyResult result = new CopyResult();
                         copyService.getRewards(tm.getPlayerId(), copy.getCopyId(), result);
                         SessionManager.getInstance().sendMsg(CopyExtension.TAKE_COPY_REWARDS, result, tm.getPlayerId());

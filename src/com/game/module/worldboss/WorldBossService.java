@@ -6,6 +6,7 @@ import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
 import com.game.module.copy.CopyExtension;
 import com.game.module.copy.CopyInstance;
+import com.game.module.copy.CopyService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
@@ -35,6 +36,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -74,6 +77,8 @@ public class WorldBossService implements InitHandler {
     private WorldBossDao worldBossDao;
     @Autowired
     private SerialDataService serialDataService;
+    @Autowired
+    private CopyService copyService;
 
     private final static int WB_ID = 8888;
     private final static int SIZE = 10;
@@ -164,6 +169,10 @@ public class WorldBossService implements InitHandler {
     public boolean checkOpen() {
         int[] timeArr = ConfigData.globalParam().worldBossOpenTime;
         Calendar c = Calendar.getInstance();
+        // 北京时区
+        TimeZone tz = TimeZone.getTimeZone("Asia/Shanghai");
+        // 时区转换
+        c.setTimeZone(tz);
         int hour = c.get(Calendar.HOUR_OF_DAY);
         boolean ret = false;
         int len = timeArr.length;
@@ -301,7 +310,18 @@ public class WorldBossService implements InitHandler {
                 @Override
                 public void run() {
                     try {
-                        hurtRank();
+                        List<HurtRecord> list = hurtRank();
+                        //伤害兑换金币
+                        String rankTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_RANK_TITLE).tips;
+                        String rankContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_RANK_CONTENT).tips;
+                        for (HurtRecord hurtRecord : list) {
+                            int num = Math.round(hurtRecord.getCurHurt() / (boss.getHp() * 1.0f) * 100) * ConfigData.globalParam().worldBossHurtReward;
+                            if (num != 0) {
+                                List<GoodsEntry> rewards = new ArrayList<>();
+                                rewards.add(new GoodsEntry(Goods.COIN, num));
+                                mailService.sendSysMail(rankTitle, rankContent, rewards, hurtRecord.getPlayerId(), LogConsume.WORLD_BOSS_REWARD);
+                            }
+                        }
                     } catch (Exception e) {
                         ServerLogger.err(e, "handle hurt rank err!");
                     }
@@ -329,6 +349,10 @@ public class WorldBossService implements InitHandler {
             return;
         }
         Calendar c = Calendar.getInstance();
+        // 北京时区
+        TimeZone tz = TimeZone.getTimeZone("Asia/Shanghai");
+        // 时区转换
+        c.setTimeZone(tz);
         int hour = c.get(Calendar.HOUR_OF_DAY);
 
         for (int i = 0; i < l; i += 2) {
@@ -353,9 +377,12 @@ public class WorldBossService implements InitHandler {
      */
     private void checkWorldBoss(int openHour, int endHour) {
         Calendar c = Calendar.getInstance();
+        // 北京时区
+        TimeZone tz = TimeZone.getTimeZone("Asia/Shanghai");
+        // 时区转换
+        c.setTimeZone(tz);
         int hour = c.get(Calendar.HOUR_OF_DAY);
         int min = c.get(Calendar.MINUTE);
-
         if (openHour - hour == 1) { //先不考虑0点
             if (60 - min == 10) {//10分钟公告
                 messageService.sendSysMsg(MessageConsts.MSG_WORLD_BOSS_PRE, 10);
@@ -381,7 +408,7 @@ public class WorldBossService implements InitHandler {
                 worldBossData.setDay(c.get(Calendar.DAY_OF_YEAR));
                 worldBossData.setStartTime(System.currentTimeMillis());
                 players.clear();
-                ServerLogger.info("open new world boss activity...");
+                ServerLogger.warn("open new world boss activity...");
 
                 int[] copyArr = ConfigData.globalParam().worldBossCopy;
                 int len = copyArr.length;
@@ -506,22 +533,19 @@ public class WorldBossService implements InitHandler {
                         break;
                     }
                 }
-                //伤害兑换金币
-                int num = Math.round(hr.getHurt() / (worldBossData.getTotalHp() * 1.0f)) * ConfigData.globalParam().worldBossHurtReward;
-                if (num != 0) {
-                    rewards.add(new GoodsEntry(Goods.COIN, num));
-
-                    Reward reward = new Reward();
-                    reward.count = Goods.COIN;
-                    reward.id = num;
-                    rewardCli.hurtReward.add(reward);
-                }
 
                 String killTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_TITLE).tips;
                 String killContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_KILL_CONTENT).tips;
 
                 String rankTitle = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_RANK_TITLE).tips;
                 String rankContent = ConfigData.getConfig(ErrCode.class, Response.WORLD_BOSS_RANK_CONTENT).tips;
+
+                //活动奖励
+                Reward activityReward = copyService.activityReward(hr.getPlayerId(), CopyInstance.TYPE_WORLD_BOSS);
+                if (activityReward != null) {
+                    rewardCli.rankReward.add(activityReward);
+                    rewards.add(new GoodsEntry(activityReward.id, activityReward.count));
+                }
 
                 //发送排名奖励邮件
                 mailService.sendSysMail(rankTitle, rankContent, rewards, hr.getPlayerId(), LogConsume.WORLD_BOSS_REWARD);

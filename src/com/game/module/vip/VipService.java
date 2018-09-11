@@ -9,6 +9,8 @@ import com.game.module.activity.ActivityService;
 import com.game.module.activity.WelfareCardService;
 import com.game.module.attach.charge.ChargeActivityLogic;
 import com.game.module.daily.DailyService;
+import com.game.module.gang.GangService;
+import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -16,10 +18,7 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.shop.ShopService;
-import com.game.params.Int2Param;
-import com.game.params.IntParam;
-import com.game.params.ListParam;
-import com.game.params.RechargeRespVO;
+import com.game.params.*;
 import com.game.sdk.talkdata.TalkDataService;
 import com.game.util.ConfigData;
 import com.game.util.Context;
@@ -36,8 +35,8 @@ import java.util.List;
 public class VipService {
 
     public static final int TYPE_MONTH = 1;// 月卡
-    public static final int TYPE_WEEKLY = 6;// 周卡
     public static final int TYPE_NEW = 5;// 新手礼包
+    public static final int TYPE_WEEKLY = 6;// 周卡
     public static final int TYPE_SPEC = 2;// 特殊的
     public static final int TYPE_TIMED = 7;// 限时礼包
     public static final int TYPE_SPECIAL = 9;// 特价礼包
@@ -66,6 +65,8 @@ public class VipService {
     private WelfareCardService welfareCardService;
     @Autowired
     private ShopService shopService;
+    @Autowired
+    private  GangService gangService;
 
     // 获取vip奖励
     public int getVipReward(int playerId, int vipLev) {
@@ -178,10 +179,16 @@ public class VipService {
     }
 
     // 充值
-    public void addCharge(int playerId, int id, int cpId, String paymentType, String currentType, String orderId) {
+    public void addCharge(int playerId, int id, long cpId, String paymentType, String currentType, String orderId,int serverId) {
         ChargeConfig charge = ConfigData.getConfig(ChargeConfig.class, id);
+        if (charge == null) {
+            return;
+        }
         int type = charge.type;
         PlayerData data = playerService.getPlayerData(playerId);
+        if (data == null) {
+            return;
+        }
         if (type == TYPE_SPEC) {
             if (data.getCharges().contains(id)) {
                 ServerLogger.warn("Err charge id:" + id, playerId);
@@ -192,7 +199,7 @@ public class VipService {
             data.setFundActive(1);
         }
 
-        cpId = cpId ^ KEY; //解密
+        //cpId = cpId ^ KEY; //解密
         if (!SysConfig.gm) {
             if (!data.getCpIdSet().contains(cpId)) { //不包含此订单
                 ServerLogger.warn("Err charge cpId:" + cpId, playerId);
@@ -205,50 +212,83 @@ public class VipService {
             }
         }
 
-        Context.getThreadService().execute(new Runnable() {
-            @Override
-            public void run() {
-                talkDataService.talkGameRecharge(playerId, orderId, charge.rmb, charge.total + charge.add, "CNY");
-            }
-        });
-
+        if(SysConfig.report){
+            Context.getThreadService().execute(new Runnable() {
+                @Override
+                public void run() {
+                    float f = 0f;
+                    if(currentType.equals("CNY")){
+                        f = charge.rmb;
+                    }else{
+                        f = charge.us;
+                    }
+                    talkDataService.talkGameRecharge(playerId, orderId, f, charge.total + charge.add, currentType,serverId,id);
+                }
+            });
+        }
 
         playerService.addVipExp(playerId, charge.total);
         playerService.addDiamond(playerId, charge.total, LogConsume.CHARGE);
         playerService.addDiamond(playerId, charge.add, LogConsume.CHARGE_ADD);
-        data.getDealCpIdSet().add(cpId);
-        data.getCpIdSet().remove(cpId);
+//        data.getDealCpIdSet().add(cpId);
+//        data.getCpIdSet().remove(cpId);
+//        data.setRechargeCount(data.getRechargeCount()+1);//充值次数
+//        data.setRechargeTreasure(data.getRechargeTreasure()+charge.total + charge.add);//充值元宝
+//        data.setLastRechargeTime(new Date());//最后充值时间
         chargeActivityLogic.updateCharge(playerId, charge.total);
         // 每日数据更新
         dailyService.refreshDailyVo(playerId);
         // 通知前端
         RechargeRespVO result = new RechargeRespVO();
-        result.amount = (int) charge.rmb;
+        float f = 0f;
+        if(currentType.equals("CNY")){
+            f = charge.rmb;
+        }else{
+            f = charge.us;
+        }
+        result.amount = f;
         result.totalAmout = charge.total + charge.add;
         result.paymentType = "alipay";
-        result.currentType = "CNY";
+        result.currentType = currentType;
         result.orderId = orderId;
+        result.rechargeCfgId = id;
         SessionManager.getInstance().sendMsg(VipExtension.CHARGE, result, playerId);
 
         welfareCardService.buyWelfareCard(playerId, charge.type, id);
-        if (!data.isFirstRechargeFlag() && charge.type == TYPE_NEW) {
+        if (!data.isFirstRechargeFlag()) {
             data.setFirstRechargeFlag(true);
-
+//            data.setFirstRechargeTime(new Date());
         }
 
         if(type!=TYPE_TIMED&&type!=TYPE_SPECIAL){//限时礼包和特价礼包不计入累计充值
             activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//累充礼包
         }
+
+        //购买月卡开启理财
+        if (type == TYPE_MONTH) {
+            activityService.openActivity(playerId, ActivityConsts.ActivityType.T_GROW_FUND);
+        }
+
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//充了钱就算礼包
-        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_ONCE, (int) charge.rmb, ActivityConsts.UpdateType.T_VALUE, true);//单笔充值满足(取最大那个)
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.total, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
+        //activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_ONCE, (int) charge.rmb, ActivityConsts.UpdateType.T_VALUE, true);//单笔充值满足(取最大那个)
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
-        //activityService.onceRecharge(playerId,(int) charge.rmb);//单笔充值满足(取最大那个)
-        //activityService.getAwardsByRechargeId(playerId, id);//限时礼包和特价礼包
+        activityService.onceRecharge(playerId,charge.rmb);//单笔充值满足(取最大那个)
+        activityService.dailyRecharge(playerId,charge.rmb);//每日充值(7日充值)
 
         if (charge.shopGoodsId != 0) {
             shopService.buy(playerId, charge.shopGoodsId, 1);
         }
-        ServerLogger.warn("success,rechargeId = " + id + " encode order = " + cpId + " , order = " + (cpId ^ KEY));
+        ServerLogger.warn("活动钻石:" + charge.total + " 额外钻石:" + charge.add+" 人民币:"+charge.rmb+" 美元:"+charge.us+" 玩家id:"+playerId+" rechargeId:"+id+ " encodeOrder:" + cpId + " order:" + (cpId ^ KEY));
+
+        Player player = playerService.getPlayer(playerId);
+        Context.getLoggerService().logCharge(playerId, player.getName(), id, currentType, f, player.getServerId(),paymentType);
+//        Player player = playerService.getPlayer(playerId);
+//        String gangeName = "";
+//        if (player.getGangId() != 0) {
+//            gangeName = gangService.getGang(player.getGangId()).getName();
+//        }
+//        Context.getLoggerService().playerOrder(orderId,data.getCpId(),player.getServerId(),playerId,playerId,charge.shopGoodsId,charge.rmb,charge.rmb,charge.total+charge.add,charge.type,player.getLev(),player.getDiamond(),player.getName(),charge.name);
     }
 
     /**
@@ -277,19 +317,23 @@ public class VipService {
 
         List<GoodsEntry> goods = new ArrayList<>();
         VIPConfig config = ConfigData.getConfig(VIPConfig.class, vipLevel);
+
         if (config == null) {
             param.param = Response.ERR_PARAM;
             ServerLogger.warn("vip gift config not found, viplevel =" + vipLevel);
             return param;
         }
 
-        for (int i = 0; i < config.rewards.length; i++) {
-            int[] item = config.rewards[i];
-            goods.add(new GoodsEntry(item[0], item[1]));
+        //扣除钻石
+        param.param = goodsService.decConsume(playerId, new int[][]{{Goods.DIAMOND, config.price}}, LogConsume.VIP_BAG_COST);
+        if (param.param == Response.SUCCESS) {
+            for (int i = 0; i < config.rewards.length; i++) {
+                int[] item = config.rewards[i];
+                goods.add(new GoodsEntry(item[0], item[1]));
+            }
+            goodsService.addRewards(playerId, goods, LogConsume.TASK_REWARD, vipLevel);
         }
 
-        goodsService.addRewards(playerId, goods, LogConsume.TASK_REWARD, vipLevel);
-        param.param = Response.SUCCESS;
         return param;
     }
 
@@ -318,16 +362,16 @@ public class VipService {
      * @param playerId
      * @return
      */
-    public Int2Param getCpId(int playerId, int rechargeId) {
+    public Long2Param getCpId(int playerId, int rechargeId) {
         PlayerData data = playerService.getPlayerData(playerId);
-        int orderID = data.getCpId();
-        orderID += (RandomUtil.randInt(20) + 1); //随机ID
-        data.setCpId(orderID);
+//        int orderID = data.getCpId();
+//        orderID += (RandomUtil.randInt(20) + 1); //随机ID
+        long orderID = System.nanoTime();
         data.getCpIdSet().add(orderID);
-        Int2Param param = new Int2Param();
-        param.param1 = orderID ^ KEY;
+        Long2Param param = new Long2Param();
+        param.param1 = orderID;
         param.param2 = rechargeId;
-        ServerLogger.warn("rechargeId = " + rechargeId + " order = " + orderID + " ,encode order = " + (orderID ^ KEY));
+        ServerLogger.warn("rechargeId = " + rechargeId + " order = " + orderID);
         return param;
     }
 }

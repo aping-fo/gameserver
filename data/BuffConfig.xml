@@ -260,7 +260,28 @@
 	<buffSubType>0</buffSubType>
 	<name>主角共用觉醒技能保护</name>
 	<description>霸体1级</description>
-	<duration>1.5</duration>
+	<duration>2.2999999999999998</duration>
+	<takeEffectParam>[1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>0</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam>[[500],[15],[255,0,0,255,255,0],[10]]</extraEffectParam>
+</config>
+<config>
+	<id>1502</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>24</buffType>
+	<buffSubType>0</buffSubType>
+	<name>主角共用觉醒技能保护较长版</name>
+	<description>霸体1级</description>
+	<duration>3.4</duration>
 	<takeEffectParam>[1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
@@ -430,6 +451,27 @@
 	<description>增益A</description>
 	<duration>0</duration>
 	<takeEffectParam>[0,100]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7100013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>3105</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>10</buffType>
+	<buffSubType></buffSubType>
+	<name>新手关卡专用超级CD</name>
+	<description>增益A</description>
+	<duration>0</duration>
+	<takeEffectParam>[100]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon></icon>
 	<attachEffect>7100013</attachEffect>
@@ -1316,6 +1358,216 @@
 	<icon>2024</icon>
 	<attachEffect></attachEffect>
 	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>70001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>13</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—速度</name>
+	<description>觉醒被动技能—速度</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.05]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7100013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>70002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>13</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—速度</name>
+	<description>觉醒被动技能—速度</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.1]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7100013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>70003</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>13</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—速度</name>
+	<description>觉醒被动技能—速度</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.15]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7100013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>70004</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>13</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—速度</name>
+	<description>觉醒被动技能—速度</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.2]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7100013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>70005</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>13</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—速度</name>
+	<description>觉醒被动技能—速度</description>
+	<duration>0</duration>
+	<takeEffectParam>[0.25]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7100013</attachEffect>
+	<overlayType>1</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>71001</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—暴伤</name>
+	<description>觉醒被动技能—暴伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[5,0.39]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>4</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>71002</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—暴伤</name>
+	<description>觉醒被动技能—暴伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[5,0.41]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>4</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>71003</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—暴伤</name>
+	<description>觉醒被动技能—暴伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[5,0.43]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>4</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>71004</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—暴伤</name>
+	<description>觉醒被动技能—暴伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[5,0.45]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>4</overlayType>
+	<addMaxCount>0</addMaxCount>
+	<addTimeParas></addTimeParas>
+	<addEfectParas></addEfectParas>
+	<conflictType></conflictType>
+	<addEfectIndex></addEfectIndex>
+	<extraEffectParam></extraEffectParam>
+</config>
+<config>
+	<id>71005</id>
+	<buffConflict>0</buffConflict>
+	<buffTick>1</buffTick>
+	<buffType>4</buffType>
+	<buffSubType></buffSubType>
+	<name>觉醒被动技能—暴伤</name>
+	<description>觉醒被动技能—暴伤</description>
+	<duration>0</duration>
+	<takeEffectParam>[5,0.47]</takeEffectParam>
+	<showTips>0</showTips>
+	<icon></icon>
+	<attachEffect>7000013</attachEffect>
+	<overlayType>4</overlayType>
 	<addMaxCount>0</addMaxCount>
 	<addTimeParas></addTimeParas>
 	<addEfectParas></addEfectParas>
@@ -77750,7 +78002,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤1级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.06]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77771,7 +78023,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤2级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.07]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77792,7 +78044,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤3级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.08]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77813,7 +78065,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤4级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.08]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77834,7 +78086,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤5级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.09]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77855,7 +78107,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤6级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77876,7 +78128,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤7级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.11]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77897,7 +78149,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤8级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.12]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77918,7 +78170,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤9级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.13]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77939,7 +78191,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤10级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.14]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77960,7 +78212,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤11级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.14]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -77981,7 +78233,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤12级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78002,7 +78254,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤13级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.16]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78023,7 +78275,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤14级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.17]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78044,7 +78296,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤15级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.18]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78065,7 +78317,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤16级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.19]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78086,7 +78338,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤17级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.19]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78107,7 +78359,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤18级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78128,7 +78380,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤19级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.21]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78149,7 +78401,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤20级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.22]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78170,7 +78422,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤21级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.23]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78191,7 +78443,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤22级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.24]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78212,7 +78464,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤23级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.25]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78233,7 +78485,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤24级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.25]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78254,7 +78506,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤25级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.26]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78275,7 +78527,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤26级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.27]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78296,7 +78548,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤27级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.28]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78317,7 +78569,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤28级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.29]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78338,7 +78590,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤29级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.3]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78359,7 +78611,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤30级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.31]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78380,7 +78632,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤31级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.31]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78401,7 +78653,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤32级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.32]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78422,7 +78674,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤33级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.33]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78443,7 +78695,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤34级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.34]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78464,7 +78716,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤35级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.35]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78485,7 +78737,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤36级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.36]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78506,7 +78758,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤37级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.36]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78527,7 +78779,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤38级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.37]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78548,7 +78800,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤39级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.38]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78569,7 +78821,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤40级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.39]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78590,7 +78842,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤41级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78611,7 +78863,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤42级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.41]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78632,7 +78884,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤43级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.42]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78653,7 +78905,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤44级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.42]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78674,7 +78926,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤45级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.43]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78695,7 +78947,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤46级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.44]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78716,7 +78968,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤47级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.45]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78737,7 +78989,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤48级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.46]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78758,7 +79010,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤49级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.47]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78779,7 +79031,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤D级</name>
 	<description>重伤50级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.48]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78800,7 +79052,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤1级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.06]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78821,7 +79073,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤2级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.07]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78842,7 +79094,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤3级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.09]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78863,7 +79115,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤4级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78884,7 +79136,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤5级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.11]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78905,7 +79157,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤6级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.12]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78926,7 +79178,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤7级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.13]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78947,7 +79199,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤8级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.15]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78968,7 +79220,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤9级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.16]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -78989,7 +79241,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤10级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.17]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79010,7 +79262,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤11级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.18]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79031,7 +79283,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤12级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.19]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79052,7 +79304,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤13级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79073,7 +79325,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤14级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.22]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79094,7 +79346,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤15级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.23]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79115,7 +79367,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤16级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.24]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79136,7 +79388,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤17级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.25]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79157,7 +79409,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤18级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.26]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79178,7 +79430,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤19级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.28]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79199,7 +79451,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤20级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.29]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79220,7 +79472,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤21级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.3]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79241,7 +79493,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤22级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.31]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79262,7 +79514,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤23级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.32]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79283,7 +79535,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤24级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.34]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79304,7 +79556,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤25级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.35]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79325,7 +79577,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤26级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.36]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79346,7 +79598,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤27级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.37]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79367,7 +79619,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤28级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.38]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79388,7 +79640,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤29级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79409,7 +79661,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤30级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.41]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79430,7 +79682,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤31级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.42]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79451,7 +79703,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤32级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.43]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79472,7 +79724,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤33级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.44]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79493,7 +79745,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤34级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.45]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79514,7 +79766,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤35级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.47]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79535,7 +79787,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤36级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.48]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79556,7 +79808,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤37级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.49]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79577,7 +79829,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤38级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79598,7 +79850,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤39级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.51]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79619,7 +79871,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤40级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.53]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79640,7 +79892,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤41级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.54]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79661,7 +79913,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤42级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.55]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79682,7 +79934,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤43级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.56]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79703,7 +79955,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤44级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.57]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79724,7 +79976,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤45级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.59]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79745,7 +79997,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤46级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.6]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79766,7 +80018,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤47级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.61]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79787,7 +80039,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤48级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.62]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79808,7 +80060,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤49级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.63]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79829,7 +80081,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤C级</name>
 	<description>重伤50级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79850,7 +80102,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤1级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.07]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79871,7 +80123,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤2级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.08]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79892,7 +80144,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤3级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.1]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79913,7 +80165,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤4级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.11]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79934,7 +80186,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤5级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.13]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79955,7 +80207,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤6级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.14]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79976,7 +80228,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤7级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.16]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -79997,7 +80249,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤8级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.17]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80018,7 +80270,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤9级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.19]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80039,7 +80291,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤10级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80060,7 +80312,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤11级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.22]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80081,7 +80333,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤12级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.23]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80102,7 +80354,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤13级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.25]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80123,7 +80375,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤14级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.26]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80144,7 +80396,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤15级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.28]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80165,7 +80417,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤16级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.29]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80186,7 +80438,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤17级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.31]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80207,7 +80459,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤18级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.33]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80228,7 +80480,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤19级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.34]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80249,7 +80501,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤20级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.36]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80270,7 +80522,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤21级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.37]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80291,7 +80543,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤22级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.39]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80312,7 +80564,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤23级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.4]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80333,7 +80585,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤24级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.42]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80354,7 +80606,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤25级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.43]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80375,7 +80627,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤26级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.45]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80396,7 +80648,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤27级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.46]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80417,7 +80669,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤28级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.48]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80438,7 +80690,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤29级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.49]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80459,7 +80711,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤30级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.51]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80480,7 +80732,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤31级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.52]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80501,7 +80753,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤32级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.54]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80522,7 +80774,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤33级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.55]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80543,7 +80795,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤34级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.57]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80564,7 +80816,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤35级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.59]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80585,7 +80837,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤36级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.6]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80606,7 +80858,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤37级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.62]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80627,7 +80879,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤38级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.63]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80648,7 +80900,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤39级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80669,7 +80921,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤40级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.66]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80690,7 +80942,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤41级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.68]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80711,7 +80963,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤42级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.69]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80732,7 +80984,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤43级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.71]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80753,7 +81005,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤44级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.72]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80774,7 +81026,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤45级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.74]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80795,7 +81047,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤46级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.75]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80816,7 +81068,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤47级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.77]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80837,7 +81089,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤48级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.78]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80858,7 +81110,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤49级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.8]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80879,7 +81131,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤B级</name>
 	<description>重伤50级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.82]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80900,7 +81152,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤1级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.07]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80921,7 +81173,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤2级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.09]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80942,7 +81194,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤3级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.11]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80963,7 +81215,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤4级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.12]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -80984,7 +81236,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤5级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.14]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81005,7 +81257,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤6级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.16]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81026,7 +81278,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤7级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.18]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81047,7 +81299,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤8级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81068,7 +81320,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤9级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.22]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81089,7 +81341,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤10级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.24]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81110,7 +81362,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤11级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.26]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81131,7 +81383,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤12级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.27]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81152,7 +81404,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤13级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.29]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81173,7 +81425,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤14级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.31]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81194,7 +81446,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤15级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.33]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81215,7 +81467,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤16级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.35]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81236,7 +81488,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤17级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.37]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81257,7 +81509,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤18级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.39]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81278,7 +81530,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤19级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.41]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81299,7 +81551,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤20级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.42]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81320,7 +81572,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤21级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.44]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81341,7 +81593,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤22级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.46]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81362,7 +81614,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤23级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.48]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81383,7 +81635,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤24级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81404,7 +81656,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤25级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.52]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81425,7 +81677,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤26级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.54]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81446,7 +81698,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤27级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.55]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81467,7 +81719,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤28级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.57]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81488,7 +81740,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤29级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.59]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81509,7 +81761,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤30级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.61]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81530,7 +81782,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤31级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.63]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81551,7 +81803,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤32级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81572,7 +81824,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤33级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.67]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81593,7 +81845,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤34级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.69]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81614,7 +81866,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤35级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.7]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81635,7 +81887,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤36级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.72]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81656,7 +81908,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤37级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.74]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81677,7 +81929,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤38级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.76]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81698,7 +81950,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤39级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.78]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81719,7 +81971,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤40级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.8]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81740,7 +81992,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤41级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.82]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81761,7 +82013,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤42级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.84]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81782,7 +82034,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤43级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.85]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81803,7 +82055,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤44级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.87]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81824,7 +82076,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤45级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.89]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81845,7 +82097,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤46级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.91]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81866,7 +82118,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤47级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.93]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81887,7 +82139,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤48级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.95]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81908,7 +82160,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤49级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.97]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81929,7 +82181,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤A级</name>
 	<description>重伤50级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.99]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81950,7 +82202,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤1级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.07]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81971,7 +82223,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤2级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.09]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -81992,7 +82244,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤3级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.11]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82013,7 +82265,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤4级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.12]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82034,7 +82286,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤5级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.14]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82055,7 +82307,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤6级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.16]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82076,7 +82328,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤7级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.18]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82097,7 +82349,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤8级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.2]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82118,7 +82370,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤9级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.22]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82139,7 +82391,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤10级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.24]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82160,7 +82412,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤11级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.26]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82181,7 +82433,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤12级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.27]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82202,7 +82454,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤13级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.29]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82223,7 +82475,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤14级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.31]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82244,7 +82496,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤15级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.33]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82265,7 +82517,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤16级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.35]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82286,7 +82538,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤17级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.37]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82307,7 +82559,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤18级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.39]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82328,7 +82580,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤19级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.41]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82349,7 +82601,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤20级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.42]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82370,7 +82622,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤21级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.44]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82391,7 +82643,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤22级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.46]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82412,7 +82664,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤23级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.48]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82433,7 +82685,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤24级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.5]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82454,7 +82706,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤25级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.52]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82475,7 +82727,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤26级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.54]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82496,7 +82748,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤27级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.55]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82517,7 +82769,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤28级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.57]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82538,7 +82790,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤29级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.59]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82559,7 +82811,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤30级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.61]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82580,7 +82832,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤31级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.63]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82601,7 +82853,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤32级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.65]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82622,7 +82874,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤33级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.67]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82643,7 +82895,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤34级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.69]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82664,7 +82916,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤35级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.7]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82685,7 +82937,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤36级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.72]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82706,7 +82958,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤37级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.74]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82727,7 +82979,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤38级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.76]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82748,7 +83000,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤39级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.78]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82769,7 +83021,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤40级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.8]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82790,7 +83042,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤41级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.82]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82811,7 +83063,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤42级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.84]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82832,7 +83084,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤43级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.85]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82853,7 +83105,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤44级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.87]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82874,7 +83126,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤45级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.89]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82895,7 +83147,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤46级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.91]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82916,7 +83168,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤47级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.93]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82937,7 +83189,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤48级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.95]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82958,7 +83210,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤49级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.97]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>
@@ -82979,7 +83231,7 @@
 	<buffSubType></buffSubType>
 	<name>重伤S级</name>
 	<description>重伤50级</description>
-	<duration>8</duration>
+	<duration>10</duration>
 	<takeEffectParam>[0.99]</takeEffectParam>
 	<showTips>0</showTips>
 	<icon>2015</icon>

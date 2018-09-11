@@ -3,6 +3,13 @@ package com.game.module.traversing;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.game.module.copy.CopyExtension;
+import com.game.module.team.TMember;
+import com.game.params.scene.SScenePlayerVo;
+import com.game.util.RandomUtil;
+import com.google.common.collect.Lists;
+import com.server.SessionManager;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.CopyConfig;
@@ -35,7 +42,7 @@ public class TraversingExtension {
 	TeamService teamService;
 	@Autowired
 	TeamExtension teamExtension;
-	
+
 	@Command(4001)
 	public Object getInfo(int playerId, Object param){
 		ListParam<TraverseMapVO> result = new ListParam<TraverseMapVO>();
@@ -54,49 +61,79 @@ public class TraversingExtension {
 			}
 			list.add(mapVO);
 		}
-		
+
 		result.params = list;
+        data.setSingleAndMulti(0);
 		return result;
 	}
-	
-	@Command(4002)
-	public Object singleChellenge(int playerId, IntParam param){
-		/**
-		Player player = playerService.getPlayer(playerId);
-		PlayerData playerData = playerService.getPlayerData(playerId);
-		TraverseMap map = playerData.getTraverseMaps().get(param.param);
-		SEnterCopy result = new SEnterCopy();
-		if(map == null){
-			result.code = Response.ERR_PARAM;
-			return result;
-		}
-		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, map.getCopyId());
-		if(!playerService.verifyCurrency(playerId, Goods.TRAVERSING_ENERGY, cfg.needEnergy)){
-			result.code = Response.NO_TRAVERSING_ENERGY;
-			return result;
-		}
-		result.code = copyService.enter(playerId, map.getCopyId());
-		if(result.code == Response.SUCCESS){
-			int copyInstanceId = player.getCopyId();
-			CopyInstance instance = copyService.getCopyInstance(copyInstanceId);
-			instance.setTraverseMap(map);
-			result.sceneId = cfg.scenes[0];// 第一个场景id
-			result.copyId = instance.getCopyId();
-			result.passId = instance.getPassId();
-		}
-		SessionManager.getInstance().sendMsg(CopyExtension.ENTER_COPY, result, playerId);*/
-		Int2Param result = multiChellenge(playerId, param);
-		if(result.param1 > 0){
-			IntParam intParam = new IntParam();
-			intParam.param = result.param1;
-			return intParam;
-		}
-		teamExtension.enterCopy(playerId, null);
-		return null;
-	}
-	
-	
-	@Command(4003)
+
+    @Command(4002)
+    public Object singleChellenge(int playerId, IntParam param) {
+        Int2Param result = multiChellenge(playerId, param);
+        if (result.param1 > 0) {
+            IntParam intParam = new IntParam();
+            intParam.param = result.param1;
+            return intParam;
+        }
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在=" + playerId);
+        } else {
+            playerData.setSingleAndMulti(0);
+        }
+
+
+        Player player = playerService.getPlayer(playerId);
+        int gender = player.getSex();
+        SScenePlayerVo robot = new SScenePlayerVo();
+        List<String> firstNames = ConfigData.FirstNameList.get(gender);
+        List<String> secondNames = ConfigData.SecondNameList.get(gender);
+
+        String name = firstNames.get(RandomUtil.randInt(firstNames.size()));
+        name += secondNames.get(RandomUtil.randInt(secondNames.size()));
+        robot.lev = player.getLev();
+        float rate = ConfigData.globalParam().ladderAiRate;
+        robot.attack = (int) (player.getAttack() * rate);
+        robot.defense = (int) (player.getDefense() * rate);
+        robot.crit = (int) (player.getCrit() * rate);
+        robot.symptom = (int) (player.getSymptom() * rate);
+        robot.fu = (int) (player.getFu() * rate);
+        robot.hp = (int) (player.getHp() * rate);
+        robot.curCards = playerData.getCurrCardIds();
+        robot.curSkills = Lists.newArrayList();
+        int voction = RandomUtil.randInt(3) + 1;
+        int[] skills = ConfigData.globalParam().playerDefaultSkill[voction - 1];
+        for (int skill : skills) {
+            robot.curSkills.add(skill);
+        }
+        robot.name = name;
+        robot.vocation = voction;
+        robot.playerId = Integer.MAX_VALUE;
+
+        int head = ConfigData.headList.get(voction).get(RandomUtil.randInt(ConfigData.headList.size()));
+        int cloth = ConfigData.clothList.get(voction).get(RandomUtil.randInt(ConfigData.clothList.size()));
+        int weapon = ConfigData.weaponList.get(voction).get(RandomUtil.randInt(ConfigData.weaponList.size()));
+        robot.head = head;
+        robot.fashionId = cloth;
+        robot.weapon = weapon;
+
+        SessionManager.getInstance().sendMsg(4002, robot, playerId);
+        teamExtension.enterCopy(playerId, null);
+
+        Team team = teamService.getTeam(player.getTeamId());
+        if (team != null) { //加入机器人
+            TMember member = new TMember();
+            member.setPlayerId(robot.playerId);
+            member.setTotalHp(robot.hp);
+            member.setCurHp(robot.hp);
+            member.setReady(true);
+            team.addMember(member);
+        }
+        return null;
+    }
+
+
+    @Command(4003)
 	public Int2Param multiChellenge(int playerId, IntParam param){
 		PlayerData playerData = playerService.getPlayerData(playerId);
 		TraverseMap map = playerData.getTraverseMaps().get(param.param);
@@ -113,6 +150,7 @@ public class TraversingExtension {
 			Team team = teamService.createTeam(playerId, Team.TYPE_TRAVERSING, player.getName(), map.getCopyId());
 			team.setMapId(param.param);
 			result.param2 = team.getId();
+            playerData.setSingleAndMulti(1);
 		}
 		return result;
 	}

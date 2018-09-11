@@ -3,7 +3,6 @@ package com.game.module.shop;
 import com.game.data.*;
 import com.game.module.copy.CopyInstance;
 import com.game.module.fame.FameService;
-import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -50,9 +49,10 @@ public class ShopService {
     public static final int FAME_12 = 12;
     public static final int FAME_13 = 13;
     public static final int FAME_14 = 14;
+    public static final int FAME_15 = 15;
     public static final int CQ = 16;
 
-    private static final int[] SHOP_TYPES = {COMMON, ENDLESS, GANG, TRAINING, AI_ARENA, FAME_7, FAME_8, FAME_9, FAME_10, FAME_11, FAME_12, FAME_13, FAME_14,CQ};
+    private static final int[] SHOP_TYPES = {COMMON, ENDLESS, GANG, TRAINING, AI_ARENA, FAME_7, FAME_8, FAME_9, FAME_10, FAME_11, FAME_12, FAME_13, FAME_14, FAME_15, CQ};
     public static final int LIMIT_DAILY = 1;
     public static final int LIMIT_REFRESH = 2;
 
@@ -80,7 +80,7 @@ public class ShopService {
         ShopInfo shop = new ShopInfo();
         shop.type = type;
 
-        if(ConfigData.RefreshIds.containsKey(type)) {
+        if (ConfigData.RefreshIds.containsKey(type)) {
             // 刷新商品
             ConcurrentHashMap<Integer, List<Integer>> refreshes = serial.getData().getPlayerRefreshShops().get(type);
             if (refreshes == null) {
@@ -139,8 +139,7 @@ public class ShopService {
         int n = 6;
         if (type == COMMON) {
             n = 10;
-        }else if(type == FAME_7 || type == FAME_8 || type == FAME_9 || type == FAME_10 || type == FAME_11 || type == FAME_12 || type == FAME_13 || type == FAME_14)
-        {
+        } else if (type == FAME_7 || type == FAME_8 || type == FAME_9 || type == FAME_10 || type == FAME_11 || type == FAME_12 || type == FAME_13 || type == FAME_14) {
             n = 8;
         }
 
@@ -253,7 +252,7 @@ public class ShopService {
         //int lkPrice = cfg.moneyCount;
         //int lkDiscountPrice = price;
 
-        if(cfg.moneyType != -1) {
+        if (cfg.moneyType != -1) {
             price *= count;
             // 扣钱
             int code = goodsService.decConsume(playerId, Arrays.asList(new GoodsEntry(cfg.moneyType, price)),
@@ -274,16 +273,16 @@ public class ShopService {
         }
         goodsService.addRewrad(playerId, cfg.goodsId, cfg.count * count, LogConsume.SHOP_BUY_ADD, id);
 
-       // int subjectId = cfg.goodsId == Goods.DIAMOND ? 5 : 4;
+        // int subjectId = cfg.goodsId == Goods.DIAMOND ? 5 : 4;
         data.setBuyCount(data.getBuyCount() + 1);
         taskService.doTask(playerId, Task.TYPE_SHOP_BUY_COUNT, data.getBuyCount());
         vo.errCode = Response.SUCCESS;
         vo.id = id;
         vo.count = count;
 
-        if(cfg.moneyType == -1) {
-            ShopInfo shopInfo = getInfo(playerId,COMMON);
-            SessionManager.getInstance().sendMsg(1701,shopInfo,playerId);
+        if (cfg.moneyType == -1) {
+            ShopInfo shopInfo = getInfo(playerId, COMMON);
+            SessionManager.getInstance().sendMsg(1701, shopInfo, playerId);
         }
         return vo;
     }
@@ -464,7 +463,10 @@ public class ShopService {
             index = ConfigData.globalParam().coinPrice.length - 1;
         }
         int price = ConfigData.globalParam().coinPrice[index];
-        boolean ret = playerService.decDiamond(playerId, price, LogConsume.BUY_COIN);
+        boolean ret = true;
+        if (price > 0) {
+            ret = playerService.decDiamond(playerId, price, LogConsume.BUY_COIN);
+        }
         if (!ret) {
             cli.param1 = Response.NO_DIAMOND;
             return cli;

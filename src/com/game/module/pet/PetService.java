@@ -1,15 +1,17 @@
 package com.game.module.pet;
 
-import com.game.data.PetActivityConfig;
-import com.game.data.PetConfig;
-import com.game.data.PetSkillConfig;
-import com.game.data.Response;
+import com.game.data.*;
 import com.game.module.RandomReward.RandomRewardService;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
+import com.game.module.activity.ActivityTask;
+import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerCalculator;
+import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
 import com.game.module.task.Task;
@@ -27,6 +29,7 @@ import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import sun.security.krb5.Config;
 
 import java.nio.charset.Charset;
 import java.util.*;
@@ -57,6 +60,8 @@ public class PetService {
     private RandomRewardService randomRewardService;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private ActivityService activityService;
 
     private Map<Integer, PetBag> petBags = new ConcurrentHashMap<>();
 
@@ -170,6 +175,9 @@ public class PetService {
 
         int count = getQualityCount(newPetConfig.quality, bag.getPetMap());
         taskService.doTask(playerId, Task.TYPE_PET, newPetConfig.quality, count);
+
+        //宠物投资
+        petInvestment(playerId);
     }
 
     private int getQualityCount(int quality, Map<Integer, Pet> map) {
@@ -564,6 +572,9 @@ public class PetService {
             cli.param2 = petId;
         }
 
+        //宠物投资
+        petInvestment(playerId);
+
         SessionManager.getInstance().sendMsg(CMD_IMPROVE, cli, playerId);
         return null;
     }
@@ -584,19 +595,24 @@ public class PetService {
         }
         Player player = playerService.getPlayer(playerId);
         bag.setFightPetId(petId);
-        if (bag.getShowPetId() == 0) {
-            bag.setShowPetId(petId);
-            PetChangeVO vo = new PetChangeVO();
-            vo.playerId = playerId;
-            Int2Param cli1 = new Int2Param();
-            cli1.param1 = petId;
-            if (toFightPet != null) {
+
+        if (bag.getShowPetId() == 0 && toFightPet != null) {
+            PetConfig config = ConfigData.getConfig(PetConfig.class, toFightPet.getConfigId());
+
+            if (config.canShow) {
+                bag.setShowPetId(petId);
+                PetChangeVO vo = new PetChangeVO();
+                vo.playerId = playerId;
+                Int2Param cli1 = new Int2Param();
+                cli1.param1 = petId;
+
                 vo.name = toFightPet.getName();
                 vo.petId = toFightPet.getShowConfigID();
                 cli1.param2 = toFightPet.getShowConfigID();
+
+                SessionManager.getInstance().sendMsg(CMD_SHOW, cli1, playerId);
+                sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
             }
-            SessionManager.getInstance().sendMsg(CMD_SHOW, cli1, playerId);
-            sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
         }
         calculator.calculate(player);
         bag.updateFlag = true;
@@ -619,6 +635,14 @@ public class PetService {
         if (petId != 0 && toShowPet == null) {
             cli.param1 = Response.PET_NOT_EXIST;
             return cli;
+        }
+
+        if (toShowPet != null) {
+            PetConfig config = ConfigData.getConfig(PetConfig.class, toShowPet.getConfigId());
+            if (!config.canShow) {
+                cli.param1 = Response.PET_SHOW_NOT_ENOUGH;
+                return cli;
+            }
         }
 
         bag.setShowPetId(petId);
@@ -693,13 +717,16 @@ public class PetService {
         List<Pet> addPets = Lists.newArrayList(pet);
         pushUpdateBag(playerId, addPets, Collections.EMPTY_LIST);
 
-        PetChangeVO vo = new PetChangeVO();
-        vo.playerId = playerId;
-        vo.petId = petId;
-        pet.setShowConfigID(pet.getShowConfigID());
-        vo.name = pet.getName();
-        Player player = playerService.getPlayer(playerId);
-        sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
+        PetConfig config = ConfigData.getConfig(PetConfig.class, pet.getConfigId());
+        if (config.canShow) {
+            PetChangeVO vo = new PetChangeVO();
+            vo.playerId = playerId;
+            vo.petId = petId;
+            pet.setShowConfigID(pet.getShowConfigID());
+            vo.name = pet.getName();
+            Player player = playerService.getPlayer(playerId);
+            sceneService.brocastToSceneCurLine(player, CMD_CHANGE, vo);
+        }
     }
 
     public void addAllPet(int playerId) {
@@ -988,5 +1015,43 @@ public class PetService {
         PetBag bag = getPetBag(playerId);
         PetActivityData petActivityData = bag.getPetActivityData(type);
         petActivityData.setTotalCount(petActivityData.getTotalCount() + count);
+    }
+
+    //统计宠物品质和数量
+    public Map<Integer, Integer> getTypeNumberMap(int playerId) {
+        Map<Integer, Integer> petsMap = new ConcurrentHashMap<>();
+        PetBag bag = petBags.get(playerId);
+        if (bag == null) {
+            return petsMap;
+        }
+        Map<Integer, Pet> petMap = bag.getPetMap();
+        if (petMap == null || petMap.isEmpty()) {
+            return petsMap;
+        }
+        for (Pet pet : petMap.values()) {
+            PetConfig petConfigTemp = ConfigData.getConfig(PetConfig.class, pet.getConfigId());
+            if (petConfigTemp != null && petConfigTemp.quality >= 1) {
+                for (int i = 1; i <= petConfigTemp.quality; i++) {
+                    //高级品质装备也算低级品质的数量
+                    if (petsMap.get(i) == null) {
+                        petsMap.put(i, 1);
+                    } else {
+                        petsMap.put(i, petsMap.get(i) + 1);
+                    }
+                }
+            }
+        }
+        return petsMap;
+    }
+
+    //宠物投资
+    public void petInvestment(int playerId) {
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData != null && activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_PET_INVESTMENT)) {
+            Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId);
+            if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
+                activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_PET_INVESTMENT, true, typeNumberMap,true);
+            }
+        }
     }
 }

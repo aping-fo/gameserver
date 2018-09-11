@@ -1,20 +1,25 @@
 package com.game.module.activity;
 
-import com.game.data.ActivityCfg;
-import com.game.data.ActivityTaskCfg;
-import com.game.data.Response;
+import com.game.data.*;
 import com.game.event.InitHandler;
+import com.game.module.goods.EquipService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
+import com.game.module.mail.MailService;
+import com.game.module.pet.PetService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.serial.SerialData;
+import com.game.module.serial.SerialDataService;
+import com.game.module.skill.SkillService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
 import com.game.params.IntParam;
+import com.game.params.Int2Param;
 import com.game.params.ListParam;
 import com.game.params.activity.ActivityInfo;
 import com.game.util.ConfigData;
@@ -22,7 +27,6 @@ import com.game.util.TimeUtil;
 import com.game.util.TimerService;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.google.common.collect.Table;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
@@ -31,10 +35,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 @Service
@@ -59,6 +61,16 @@ public class ActivityService implements InitHandler {
     private TitleService titleService;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private EquipService equipService;
+    @Autowired
+    private SerialDataService serialDataService;
+    @Autowired
+    private MailService mailService;
+    @Autowired
+    private SkillService skillService;
+    @Autowired
+    private PetService petService;
 
     @Override
     public void handleInit() {
@@ -195,9 +207,17 @@ public class ActivityService implements InitHandler {
         boolean bUpdate = false;
         if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_ENERGY) { //体力活动时间区间类型单独处理
             ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
-            int beginHour = cfg.Conds[0][1];
-            int endHour = cfg.Conds[0][2];
-            int hour = LocalDateTime.now().getHour();
+            float beginHour = cfg.Conds[0][1];
+            float endHour = cfg.Conds[0][2];
+
+            //int hour = LocalDateTime.now().getHour();
+            Calendar c = Calendar.getInstance();
+            // 北京时区
+            TimeZone tz = TimeZone.getTimeZone("Asia/Shanghai");
+            // 时区转换
+            c.setTimeZone(tz);
+            int hour = c.get(Calendar.HOUR_OF_DAY);
+
             if (beginHour <= hour && endHour > hour) {
                 if (at.getState() == ActivityConsts.ActivityState.T_UN_FINISH) {
                     at.setState(ActivityConsts.ActivityState.T_FINISH);
@@ -242,6 +262,9 @@ public class ActivityService implements InitHandler {
             } else if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_SEVEN_DAYS) { //7天登录
                 at.getCond().setValue(data.getSevenDays());
                 bUpdate = false;
+            } else if (at.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TWO_DAYS) { //2天登录
+                at.getCond().setValue(data.getTwoDays());
+                bUpdate = false;
             }
             if (at.getCond().checkComplete()) {
                 at.setState(ActivityConsts.ActivityState.T_FINISH);
@@ -258,9 +281,9 @@ public class ActivityService implements InitHandler {
      * @return
      */
     private ActivityTask createActivityTask(ActivityTaskCfg taskCfg) {
-        int taskType = taskCfg.Conds[0][0];
-        int targetCount = taskCfg.Conds[0][1];
-        return new ActivityTask(taskCfg.id, taskCfg.ActivityId, targetCount, taskType);
+        float taskType = taskCfg.Conds[0][0];
+        float targetCount = taskCfg.Conds[0][1];
+        return new ActivityTask(taskCfg.id, taskCfg.ActivityId, targetCount, (int) taskType);
     }
 
     private void closeActivity(int id, List<Integer> closeActivitys) {
@@ -268,34 +291,6 @@ public class ActivityService implements InitHandler {
         if (cfg != null) {
             closeActivitys.add(id);
         }
-    }
-
-
-    /**
-     * 活动完成接口，一次完成多个,暂时不用
-     *
-     * @param playerId
-     * @param paramTable <Integer,Integer,Integer> 活动类型，值，更新类型
-     * @param toCli
-     */
-    public List<ActivityTask> completeActivityTask(int playerId, Table<Integer, Integer, Integer> paramTable, boolean toCli) {
-        List<ActivityTask> tasks = Lists.newArrayList();
-        Set<Table.Cell<Integer, Integer, Integer>> cells = paramTable.cellSet();
-        for (Table.Cell<Integer, Integer, Integer> cell : cells) {
-            int taskCondType = cell.getRowKey();
-            int value = cell.getColumnKey();
-            int updateType = cell.getValue();
-
-            List<ActivityTask> tasksTmp = completeActivityTask(playerId, taskCondType, value, updateType, false);
-            if (!tasksTmp.isEmpty()) {
-                tasks.addAll(tasksTmp);
-            }
-        }
-
-        if (toCli) {
-            pushActivityUpdate(playerId, tasks);
-        }
-        return tasks;
     }
 
     /**
@@ -306,11 +301,15 @@ public class ActivityService implements InitHandler {
      * @param value
      * @param updateType
      */
-    public List<ActivityTask> completeActivityTask(int playerId, int taskCondType, int value, int updateType, boolean toCli) {
+    public List<ActivityTask> completeActivityTask(int playerId, int taskCondType, float value, int updateType, boolean toCli) {
         PlayerData data = playerService.getPlayerData(playerId);
         List<ActivityTask> tasks = Lists.newArrayList();
         for (ActivityTask at : data.getActivityTasks().values()) {
             if (at.getState() != ActivityConsts.ActivityState.T_UN_FINISH) {
+                //全服登录人数特殊处理
+                if (taskCondType == ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE) {
+                    at.getCond().setValue(value);
+                }
                 continue;
             }
             int condType = at.getCond().getCondType();
@@ -320,21 +319,33 @@ public class ActivityService implements InitHandler {
                 } else if (updateType == ActivityConsts.UpdateType.T_VALUE) {
                     at.getCond().setValue(value);
                 }
+
                 //条件读表
                 ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
                 if (taskCfg != null) {
                     at.getCond().setTargetValue(taskCfg.Conds[0][1]);
 
                     if (at.getCond().checkComplete()) {
-                        at.setState(ActivityConsts.ActivityState.T_FINISH);
-                        //活动称号
-                        titleService.complete(playerId, TitleConsts.ACTIVITY, at.getActivityId(), ActivityConsts.UpdateType.T_VALUE);
-
-                        //自动领奖
-                        if (taskCfg.AutoReward == 1) {
-                            at.setState(ActivityConsts.ActivityState.T_AWARD);
-                            goodsService.addRewards(playerId, taskCfg.Rewards, LogConsume.ACTIVITY_REWARD);
-                            at.setRewardFlag(true);
+                        if (completeAndSendReward(playerId, tasks, at, taskCfg, true)) {
+                            //当今日充值达到300钻时连锁追加累计充值一次
+                            GlobalConfig globalParam = ConfigData.globalParam();
+                            if (globalParam != null && taskCondType == ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS && at.getCond().getTargetValue() == globalParam.Dailyrecharge) {
+                                //增加累计充值次数
+                                data.setAddUpRechargeDiamondsTimes(data.getAddUpRechargeDiamondsTimes() + 1);
+                                Map<Integer, Integer> typeNumberMap = new HashMap<>();
+                                for (ActivityTask activityTask : data.getActivityTasks().values()) {
+                                    if (activityTask.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY_DIAMONDS) {
+                                        ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, activityTask.getId());
+                                        if (activityTaskCfg != null) {
+                                            activityTask.setFinishNum(activityTask.getFinishNum() + 1);
+                                            typeNumberMap.put((int) activityTaskCfg.Conds[0][2], data.getAddUpRechargeDiamondsTimes() * globalParam.Dailyrecharge);
+                                        }
+                                    }
+                                }
+                                completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY_DIAMONDS, true, typeNumberMap, false);
+                            }
+                        } else {
+                            continue;
                         }
                     }
                     tasks.add(at);
@@ -426,22 +437,32 @@ public class ActivityService implements InitHandler {
     public void dailyRest(int playerId) {
         PlayerData data = playerService.getPlayerData(playerId);
         data.setOnlineTime(0);
+        data.setDailyRecharge(1);//重置每日充值
         List<ActivityTask> list = Lists.newArrayList();
         for (ActivityTask at : data.getActivityTasks().values()) {
             ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+            ActivityCfg cfg2 = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
             if (cfg != null) {
                 if (cfg.ResetType == ActivityConsts.ActivityTaskResetType.T_DAILY) {
                     at.cleanup();
                     list.add(at);
+                    if (cfg2.ActivityType == ActivityConsts.ActivityType.T_GIFT_BOX) {
+                        at.setFinishNum(0);
+                    }
                 }
             }
         }
         //检测登录活动
-        List<ActivityTask> sevenTasks = completeActivityTask(playerId,
-                ActivityConsts.ActivityTaskCondType.T_SEVEN_DAYS, data.getSevenDays(), ActivityConsts.UpdateType.T_VALUE, false);
+        List<ActivityTask> sevenTasks = completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_SEVEN_DAYS, data.getSevenDays(), ActivityConsts.UpdateType.T_VALUE, false);
         if (!sevenTasks.isEmpty()) {
             list.addAll(sevenTasks);
         }
+
+        List<ActivityTask> twoTasks = completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TWO_DAYS, data.getTwoDays(), ActivityConsts.UpdateType.T_VALUE, false);
+        if (!twoTasks.isEmpty()) {
+            list.addAll(twoTasks);
+        }
+
         pushActivityUpdate(playerId, list);
     }
 
@@ -459,12 +480,16 @@ public class ActivityService implements InitHandler {
                 if (data.getSevenDays() > cfg.Param0) {
                     continue;
                 }
+            } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_TWO_DAYS) { //2天登录){
+                if (data.getTwoDays() > cfg.Param0) {
+                    continue;
+                }
             } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_NEW_ROLE   //新手礼包
                     || cfg.ActivityType == ActivityConsts.ActivityType.T_LEVEL_UP   //冲级活动
                     || cfg.ActivityType == ActivityConsts.ActivityType.T_GROW_FUND  //成长基金
                     || cfg.ActivityType == ActivityConsts.ActivityType.T_FIRST_RECHARGE //首充
                     || cfg.ActivityType == ActivityConsts.ActivityType.T_TIMED_BAG //限时礼包
-                    || cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG) { //特价礼包
+                    || cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG) {//特价礼包
                 List<ActivityTaskCfg> list = ConfigData.ActivityTasks.get(cfg.id);
                 boolean bClose = true;
                 for (ActivityTaskCfg taskCfg : list) {
@@ -494,8 +519,19 @@ public class ActivityService implements InitHandler {
             if (result.id.contains(at.getActivityId())) {
                 ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
                 if (taskCfg != null) {
-                    at.getCond().setCondType(taskCfg.Conds[0][0]);
+                    at.getCond().setCondType((int) taskCfg.Conds[0][0]);
                     at.getCond().setTargetValue(taskCfg.Conds[0][1]);
+
+                    //更新全服登录人数
+                    if (taskCfg.Conds[0][1] == ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE) {
+                        SerialData serialData = serialDataService.getData();
+                        if (serialData == null) {
+                            ServerLogger.warn("序列化数据不存在");
+                            continue;
+                        }
+                        completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE, serialData.getFullServiceAttendance().get(), ActivityConsts.UpdateType.T_VALUE, true);
+                    }
+
                     result.tasks.add(at.toProto());
                 }
             }
@@ -510,15 +546,19 @@ public class ActivityService implements InitHandler {
      * @param taskId
      * @return
      */
-    public IntParam getActivityAwards(int playerId, int taskId) {
+    public Int2Param getActivityAwards(int playerId, int taskId) {
         PlayerData data = playerService.getPlayerData(playerId);
         Player player = playerService.getPlayer(playerId);
         ActivityTask task = data.getActivityTasks().get(taskId);
-        IntParam result = new IntParam();
+        Int2Param result = new Int2Param();
+        if (task == null) {
+            result.param1 = Response.ERR_PARAM;
+            result.param2 = taskId;
+            return result;
+        }
         ActivityTaskCfg config = ConfigData.getConfig(ActivityTaskCfg.class, taskId);
         ActivityCfg activityCfg = ConfigData.getConfig(ActivityCfg.class, config.ActivityId);
         task.getCond().setTargetValue(config.Conds[0][1]); //条件读取配置
-
         if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_ONLINE_TIME) { //在线活动奖励领取，状态设置
             long loginTime = player.onlineTime;
             int passTime = (int) ((System.currentTimeMillis() - loginTime) / 1000);
@@ -529,7 +569,8 @@ public class ActivityService implements InitHandler {
         }
 
         if (task.getState() != ActivityConsts.ActivityState.T_FINISH) {
-            result.param = Response.ERR_PARAM;
+            result.param1 = Response.ERR_PARAM;
+            result.param2 = taskId;
             return result;
         }
 
@@ -560,17 +601,44 @@ public class ActivityService implements InitHandler {
             data.setSevenDays(data.getSevenDays() + 1);
         }
 
+        if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_TWO_DAYS) {
+            data.setTwoDays(data.getTwoDays() + 1);
+        }
+
         if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) {
             data.setEnergyCount(data.getEnergyCount() + 1);
             taskService.doTask(playerId, Task.TYPE_ENERGY, data.getEnergyCount());
         }
 
         ActivityCfg cfg = ConfigData.getConfig(ActivityCfg.class, task.getActivityId());
+
+        // 0元礼包
+        if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_ZERO_GIFTBAG) {
+            if (cfg != null) {
+                Map<Integer, Map<Integer, Long>> laterDayRewardMap = serialDataService.getData().getLaterDayRewardMap();
+                if (laterDayRewardMap == null) {
+                    laterDayRewardMap = new ConcurrentHashMap<>();
+                }
+                Map<Integer, Long> integerLongMap = laterDayRewardMap.get(task.getId());
+                if (integerLongMap == null) {
+                    integerLongMap = new ConcurrentHashMap<>();
+                }
+                integerLongMap.put(playerId, TimeUtil.getTodayBeginTime());
+                laterDayRewardMap.put(task.getId(), integerLongMap);
+
+                //清除之前存的数据
+                if (laterDayRewardMap.get(cfg.id) != null) {
+                    laterDayRewardMap.remove(cfg.id);
+                }
+            }
+        }
+
         if (cfg.ActivityType == ActivityConsts.ActivityType.T_NEW_ROLE) {
             pushActivityClose(Lists.newArrayList(task.getActivityId()), playerId);
         }
         pushActivityUpdate(playerId, Lists.newArrayList(task));
-        result.param = Response.SUCCESS;
+        result.param1 = Response.SUCCESS;
+        result.param2 = taskId;
         return result;
     }
 
@@ -616,10 +684,10 @@ public class ActivityService implements InitHandler {
      * @param activityId
      * @return
      */
-    public IntParam openActivity(int playerId, int activityId) {
+    public Int2Param openActivity(int playerId, int activityId) {
         PlayerData data = playerService.getPlayerData(playerId);
         ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, activityId);
-        IntParam result = new IntParam();
+        Int2Param result = new Int2Param();
         Player player = playerService.getPlayer(playerId);
         boolean flag = true;
         List<GoodsEntry> items = Lists.newArrayList();
@@ -634,13 +702,13 @@ public class ActivityService implements InitHandler {
         }
 
         if (!flag) {
-            result.param = Response.ERR_PARAM;
+            result.param1 = Response.ERR_PARAM;
             return result;
         }
         if (!items.isEmpty()) {
             int ret = goodsService.decConsume(playerId, items, LogConsume.ACTIVITY_OPEN);
             if (Response.SUCCESS != ret) {
-                result.param = ret;
+                result.param1 = ret;
                 return result;
             }
         }
@@ -651,7 +719,7 @@ public class ActivityService implements InitHandler {
         List<ActivityTaskCfg> taskCfgs = ConfigData.ActivityTasks.get(activityId);
         if (taskCfgs == null) {
             logger.error("活动配置有错误~~~~~~ 活动ID = " + activityId);
-            result.param = Response.ERR_PARAM;
+            result.param1 = Response.ERR_PARAM;
             return result;
         }
 
@@ -665,10 +733,20 @@ public class ActivityService implements InitHandler {
         }
 
         pushActivityOpen(playerId, openActivity, openActivityTasks);
-        result.param = Response.SUCCESS;
+        result.param1 = Response.SUCCESS;
+        result.param2 = activityId;
+
+        //装备投资
+        equipService.equipmentInvestment(playerId, data);
+
+        //卡片投资
+        skillService.cardInvestment(playerId);
+
+        //宠物投资
+        petService.petInvestment(playerId);
+
         return result;
     }
-
 
     /**
      * 推送状态更新
@@ -787,44 +865,18 @@ public class ActivityService implements InitHandler {
     }
 
     /**
-     * 根据充值id获取奖励
-     *
-     * @param playerId 玩家id
-     * @param id       充值id
-     */
-    public void getAwardsByRechargeId(int playerId, int id) {
-        //获取玩家信息
-        PlayerData playerData = playerService.getPlayerData(playerId);
-        if (playerData == null) {
-            return;
-        }
-        //活动表
-        for (ActivityTask task : playerData.getActivityTasks().values()) {
-            //验证是否完成
-            if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_BAG && task.getCond().getTargetValue() == id && !task.isRewardFlag()) {
-                ActivityTaskCfg config = ConfigData.getConfig(ActivityTaskCfg.class, task.getId());
-                task.setState(ActivityConsts.ActivityState.T_AWARD);
-                goodsService.addRewards(playerId, config.Rewards, LogConsume.ACTIVITY_REWARD);
-                task.setRewardFlag(true);
-                pushActivityUpdate(playerId, Lists.newArrayList(task));
-                break;
-            }
-        }
-    }
-
-    /**
      * 根据一次充值金额获取奖励
      *
      * @param playerId 玩家id
      * @param rmb      充值金额
      */
-    public void onceRecharge(int playerId, int rmb) {
+    public void onceRecharge(int playerId, float rmb) {
         //获取玩家信息
         PlayerData playerData = playerService.getPlayerData(playerId);
         if (playerData == null) {
             return;
         }
-        //活动表
+        //活动任务表
         ActivityTask temp = null;
         for (ActivityTask task : playerData.getActivityTasks().values()) {
             if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_ONCE && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && task.getCond().getTargetValue() <= rmb) {
@@ -840,4 +892,226 @@ public class ActivityService implements InitHandler {
         }
     }
 
+    /**
+     * 每日充值
+     *
+     * @param playerId 玩家id
+     * @param rmb      充值金额
+     */
+    public void dailyRecharge(int playerId, float rmb) {
+        //获取玩家信息
+        PlayerData data = playerService.getPlayerData(playerId);
+        if (data == null) {
+            return;
+        }
+        if (data.getDailyRecharge() == ActivityConsts.ActivityState.T_UN_FINISH) {
+            for (ActivityTask task : data.getActivityTasks().values()) {
+                if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH) {
+                    task.setState(ActivityConsts.ActivityState.T_FINISH);
+                    pushActivityUpdate(playerId, Lists.newArrayList(task));
+                    break;
+                }
+            }
+            data.setDailyRecharge(ActivityConsts.ActivityState.T_FINISH);
+        }
+    }
+
+    /**
+     * 购买活动任务(用钻石购买特惠礼包)
+     *
+     * @param playerId 玩家id
+     * @param taskId   任务id
+     */
+    public Int2Param buyActivityTask(int playerId, int taskId) {
+        Int2Param result = new Int2Param();
+        result.param1 = Response.ACTIVITY_DONT_FINISH;
+        PlayerData data = playerService.getPlayerData(playerId);
+        ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, taskId);
+        List<ActivityTask> tasks = Lists.newArrayList();
+        for (ActivityTask task : data.getActivityTasks().values()) {
+            if (task.getId() == taskId && task.getFinishNum() < taskCfg.Param1) {
+                if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_BUY_DIAMOND) {//消耗物品
+                    List<GoodsEntry> items = Lists.newArrayList();
+                    for (int i = 2; i < taskCfg.Conds[0].length; i = i + 2) {
+                        GoodsEntry item = new GoodsEntry((int) taskCfg.Conds[0][i - 1], (int) taskCfg.Conds[0][i]);
+                        items.add(item);
+                    }
+                    if (!items.isEmpty()) {
+                        int ret = goodsService.decConsume(playerId, items, LogConsume.ACTIVITY_CONSUME);
+                        if (Response.SUCCESS != ret) {
+                            result.param1 = ret;
+                            return result;
+                        }
+                    }
+                }
+                goodsService.addRewards(playerId, taskCfg.Rewards, LogConsume.ACTIVITY_REWARD);
+                task.setFinishNum(task.getFinishNum() + 1);//完成次数+1
+                tasks.add(task);
+                pushActivityUpdate(playerId, tasks);//推送更新
+                result.param1 = Response.SUCCESS;
+                break;
+            }
+        }
+        result.param2 = taskId;
+        return result;
+    }
+
+    /**
+     * 完成多个条件的活动
+     *
+     * @param playerId      玩家Id
+     * @param taskCondType  活动任务完成条件类型
+     * @param toCli         是否推送到客户端
+     * @param typeNumberMap 类型数量的集合
+     * @param addTime       是否增加完成次数
+     */
+    public List<ActivityTask> completeActivityTask(int playerId, int taskCondType, boolean toCli, Map<Integer, Integer> typeNumberMap, boolean addTime) {
+        PlayerData data = playerService.getPlayerData(playerId);
+        List<ActivityTask> tasks = Lists.newArrayList();
+        for (ActivityTask at : data.getActivityTasks().values()) {
+            if (at.getState() != ActivityConsts.ActivityState.T_UN_FINISH) {
+                continue;
+            }
+            int condType = at.getCond().getCondType();
+            if (condType == taskCondType && at.getState() == ActivityConsts.ActivityState.T_UN_FINISH) {
+                ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+                if (taskCfg != null) {
+                    if (taskCfg.Conds[0].length >= 3) {
+                        //某种品质达到某个数量
+                        if (typeNumberMap.get((int) taskCfg.Conds[0][2]) != null && typeNumberMap.get((int) taskCfg.Conds[0][2]) >= taskCfg.Conds[0][1]) {
+                            if (!completeAndSendReward(playerId, tasks, at, taskCfg, addTime)) continue;
+                        }
+                    }
+                }
+                tasks.add(at);
+            }
+        }
+        if (toCli) {
+            pushActivityUpdate(playerId, tasks);
+        }
+        return tasks;
+    }
+
+    //完成活动并获取奖励
+    private boolean completeAndSendReward(int playerId, List<ActivityTask> tasks, ActivityTask at, ActivityTaskCfg taskCfg, boolean addTime) {
+        //完成次数+1
+        if (addTime) {
+            at.setFinishNum(at.getFinishNum() + 1);
+        }
+        if (taskCfg.Param1 > 0 && at.getFinishNum() < taskCfg.Param1) {
+            goodsService.addRewards(playerId, taskCfg.Rewards, LogConsume.ACTIVITY_REWARD);
+            tasks.add(at);
+            return false;
+        }
+        at.setState(ActivityConsts.ActivityState.T_FINISH);
+
+        //活动称号
+        ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
+        //0元礼包是达到等级就完成,但并没有充值
+        if (config.ActivityType != ActivityConsts.ActivityType.T_ZERO_GIFTBAG) {
+            titleService.complete(playerId, TitleConsts.ACTIVITY, at.getActivityId(), ActivityConsts.UpdateType.T_VALUE);
+        }
+
+        //自动领奖
+        if (taskCfg.AutoReward == 1) {
+            at.setState(ActivityConsts.ActivityState.T_AWARD);
+            goodsService.addRewards(playerId, taskCfg.Rewards, LogConsume.ACTIVITY_REWARD);
+            at.setRewardFlag(true);
+        }
+        return true;
+    }
+
+    /**
+     * 检查活动是否开启
+     *
+     * @param playerData           玩家数据
+     * @param activityTaskCondType 活动类型
+     * @return 是否开启
+     */
+    public boolean checkIsOpen(PlayerData playerData, int activityTaskCondType) {
+        Map<Integer, ActivityTask> activityTasks = playerData.getActivityTasks();
+        boolean isOpen = false;
+        if (activityTasks != null && !activityTasks.isEmpty()) {
+            for (ActivityTask activityTask : activityTasks.values()) {
+                if (activityTask.getState() != ActivityConsts.ActivityState.T_UN_FINISH) {
+                    continue;
+                }
+                ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, activityTask.getId());
+                if (activityTaskCfg != null && activityTaskCondType == activityTaskCfg.Conds[0][0]) {
+                    isOpen = true;
+                    break;
+                }
+            }
+        }
+        return isOpen;
+    }
+
+    /**
+     * 定时发送间隔自然日的奖励
+     */
+    public void doScheduleCheckActivityTask() {
+        Map<Integer, Map<Integer, Long>> laterDayRewardMap = serialDataService.getData().getLaterDayRewardMap();
+        if (laterDayRewardMap == null || laterDayRewardMap.isEmpty()) {
+            return;
+        }
+        List<Integer> deleteList = new ArrayList<>();//已经发奖需要删除的玩家id集合
+        //延时活动激活
+        for (Map.Entry<Integer, Map<Integer, Long>> activityMap : laterDayRewardMap.entrySet()) {
+            ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, activityMap.getKey());
+            if (activityTaskCfg == null) {
+                continue;
+            }
+            Map<Integer, Long> playerMap = activityMap.getValue();
+            if (playerMap == null || playerMap.isEmpty()) {
+                continue;
+            }
+            //购买了0元礼包的活动玩家
+            for (Map.Entry<Integer, Long> map : playerMap.entrySet()) {
+                double passTime = Math.ceil((double) ((System.currentTimeMillis() - map.getValue()) / (1000 * 60 * 60 * 24)));//已经过去的自然日
+                //以登录天数作为延后天数进行比较
+                if (activityTaskCfg.Conds.length >= 2 && activityTaskCfg.Conds[1][0] == ActivityConsts.ActivityTaskCondType.T_SEVEN_DAYS && (passTime >= activityTaskCfg.Conds[1][1] || passTime < 0)) {
+                    List<RewardMailCfg> cfgs = ConfigData.rewardMails.get(MailService.ZERO_GIFTBAG);
+                    if (cfgs == null || cfgs.isEmpty()) {
+                        return;
+                    }
+                    //邮件奖励表获取模板
+                    for (RewardMailCfg rewardMailCfg : cfgs) {
+                        if (activityTaskCfg.Conds[0][0] == rewardMailCfg.rank[0] && activityTaskCfg.Conds[0][1] == rewardMailCfg.rank[1]) {
+                            //构造奖励
+                            List<GoodsEntry> rewards = new ArrayList<>();
+                            GoodsEntry goodsEntry = new GoodsEntry(102, activityTaskCfg.Param0);
+                            rewards.add(goodsEntry);
+                            //发送奖励
+                            mailService.sendSysMail(rewardMailCfg.title, rewardMailCfg.content, rewards, map.getKey(), LogConsume.ZERO_GIFTBAG);
+                            deleteList.add(map.getKey());
+                            break;
+                        }
+                    }
+                }
+            }
+            //删除已经发过奖励的玩家id
+            if (!deleteList.isEmpty()) {
+                for (Integer playerId : deleteList) {
+                    playerMap.remove(playerId);
+                }
+            }
+        }
+    }
+
+    /**
+     * 日常数据重置
+     */
+    public void resetDailyData() {
+        //重置每日登录人数
+        SerialData serialData = serialDataService.getData();
+        if (serialData == null) {
+            ServerLogger.warn("序列化数据不存在");
+            return;
+        }
+        if (serialData.getFullServiceAttendance() == null) {
+            ServerLogger.warn("全服登录人数不存在");
+            return;
+        }
+        serialData.getFullServiceAttendance().set(0);
+    }
 }

@@ -7,4 +7,5 @@ public class SysNotice {
 	public int id;//key
 	public int type;//类型
 	public String msg;//消息
+	public String msg_en;//消息
 }

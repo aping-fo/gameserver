@@ -88,13 +88,12 @@ public class HttpClient {
             }
             // 增加时间戳
             nameValuePairs.add(new BasicNameValuePair("time", System.currentTimeMillis() + ""));
-            String sign = buildSign(nameValuePairs);
-            nameValuePairs.add(new BasicNameValuePair(SIGN, sign));
+//            String sign = buildSign(nameValuePairs);
+//            nameValuePairs.add(new BasicNameValuePair(SIGN, sign));
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs, Charset.forName("utf-8")));
             response = httpclient.execute(httpPost);
             HttpEntity httpEntity = response.getEntity();
             String json = EntityUtils.toString(httpEntity);
-            System.out.println(json);
             EntityUtils.consume(httpEntity);
             return json;
         } finally {
@@ -141,7 +140,7 @@ public class HttpClient {
      * @param params
      * @return
      */
-    public static void sendGetRequest(String url, Map<String, String> params, IHttpHandler handler) throws Exception {
+    public static String sendGetRequest(String url, Map<String, String> params) throws Exception {
         // CloseableHttpClient httpclient = HttpClients.createDefault();
         CloseableHttpClient httpclient = HttpClients.custom().setDefaultRequestConfig(requestConfig).build();
         CloseableHttpResponse response = null;
@@ -156,16 +155,39 @@ public class HttpClient {
                 nameValuePairs.add(new BasicNameValuePair(s.getKey(), s.getValue()));
                 sb.append("&").append(s.getKey()).append("=").append(s.getValue());
             }
-            String sign = buildSign(nameValuePairs);
-            sb.append("&").append(SIGN).append("=").append(sign);
+//            String sign = buildSign(nameValuePairs);
+//            sb.append("&").append(SIGN).append("=").append(sign);
 
             HttpGet httpget = new HttpGet(sb.toString());
             response = httpclient.execute(httpget);
             HttpEntity httpEntity = response.getEntity();
             String json = EntityUtils.toString(httpEntity);
-            if (handler != null)
-                handler.handlerHttpRequest(json);
+//            if (handler != null)
+//                handler.handlerHttpRequest(json);
             EntityUtils.consume(httpEntity);
+            return json;
+        } finally {
+            if (response != null)
+                response.close();
+            httpclient.close();
+        }
+    }
+
+    /**
+     * 发送GET 请求,可以进行异步回调
+     * @return
+     */
+    public static String sendGetRequest(String url) throws Exception {
+        CloseableHttpClient httpclient = HttpClients.custom().setDefaultRequestConfig(requestConfig).build();
+        CloseableHttpResponse response = null;
+        try {
+            StringBuilder sb = new StringBuilder(url);
+            HttpGet httpget = new HttpGet(sb.toString());
+            response = httpclient.execute(httpget);
+            HttpEntity httpEntity = response.getEntity();
+            String json = EntityUtils.toString(httpEntity);
+            EntityUtils.consume(httpEntity);
+            return json;
         } finally {
             if (response != null)
                 response.close();

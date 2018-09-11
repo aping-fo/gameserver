@@ -7,17 +7,20 @@ public class ArenaReportVO implements IProtocol {
 	public int id;//挑战类型ID
 	public String name;//对手名字
 	public int rank;//挑战后的排名
+	public int uniqueId;//对手Id
 
 
 	public void decode(BufferBuilder bb) {
 		this.id = bb.getInt();
 		this.name = bb.getString();
 		this.rank = bb.getInt();
+		this.uniqueId = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
 		bb.putInt(this.id);
 		bb.putString(this.name);
 		bb.putInt(this.rank);
+		bb.putInt(this.uniqueId);
 	}
 }

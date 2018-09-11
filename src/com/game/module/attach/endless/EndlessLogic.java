@@ -1,6 +1,7 @@
 package com.game.module.attach.endless;
 
 import com.game.data.EndlessCfg;
+import com.game.data.GoodsConfig;
 import com.game.data.MonsterRefreshConfig;
 import com.game.data.Response;
 import com.game.module.activity.ActivityConsts;
@@ -184,6 +185,10 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
             layer = Math.min(max + 1, attach.getCurrLayer() + layer);
         }
         result.params = new ArrayList<>();
+
+        List<GoodsEntry> layerItems = new ArrayList<>();
+        int[] layerMultiples = new int[layer];
+        int[] layerCopyIds = new int[layer];
         for (int i = attach.getCurrLayer(); i < layer; i++) {
             // 掉落
             int copyId = ConfigData.endlessCopys[i % cfg.sectionLayer == 0 ? 1 : 0];
@@ -191,8 +196,11 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
             List<GoodsEntry> items = copyService.calculateCopyReward(playerId, copyId, 1);
             // 构造奖励
             int multiple = (int) ((i / cfg.sectionLayer + 1) * cfg.sectionMultiple);
+            layerMultiples[i] = multiple;
+            layerCopyIds[i] = copyId;
             for (GoodsEntry g : items) {
                 g.count *= multiple;
+                layerItems.add(g);
             }
             for (GoodsEntry g : items) {
                 Reward reward = new Reward();
@@ -200,9 +208,10 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
                 reward.count = g.count;
                 result.params.add(reward);
             }
-            goodsService.addRewards(playerId, items, LogConsume.COPY_REWARD, copyId, multiple);
-
+//            goodsService.addRewards(playerId, items, LogConsume.COPY_REWARD, copyId, multiple);
         }
+        goodsService.addRewards(playerId, layerItems, LogConsume.COPY_REWARD, layerCopyIds, layerMultiples);
+
         attach.setClearTime(0L);
         attach.setCurrLayer(layer);
         //无尽漩涡称号
@@ -230,6 +239,7 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
             attach.setMaxLayer(attach.getCurrLayer());
             taskService.doTask(playerId, Task.FINISH_ENDLESS, 1);
         }
+        attach.setPassTime(result.time);
         attach.setCurrLayer(attach.getCurrLayer() + 1);
         attach.commitSync();
     }

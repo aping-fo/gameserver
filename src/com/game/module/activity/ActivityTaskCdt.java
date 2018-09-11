@@ -4,11 +4,11 @@ package com.game.module.activity;
  * Created by lucky on 2017/11/17.
  */
 public class ActivityTaskCdt {
-    private int value;
-    private int targetValue;
+    private float value;
+    private float targetValue;
     private int condType;
 
-    public ActivityTaskCdt(int targetValue, int condType) {
+    public ActivityTaskCdt(float targetValue, int condType) {
         this.value = 0;
         this.targetValue = targetValue;
         this.condType = condType;
@@ -17,19 +17,19 @@ public class ActivityTaskCdt {
     public ActivityTaskCdt() {
     }
 
-    public int getValue() {
+    public float getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(float value) {
         this.value = value;
     }
 
-    public int getTargetValue() {
+    public float getTargetValue() {
         return targetValue;
     }
 
-    public void setTargetValue(int targetValue) {
+    public void setTargetValue(float targetValue) {
         this.targetValue = targetValue;
     }
 

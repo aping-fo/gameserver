@@ -1,11 +1,13 @@
 package com.game.module.attach.experience;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import com.game.module.goods.GoodsEntry;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.params.IntParam;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,20 +59,26 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 		attach.commitSync();
 	}
 	
-	public int buyChallengeTime(int playerId){
+	public int buyChallengeTime(int playerId, IntParam param){
 		Player player = playerService.getPlayer(playerId);
 		ExperienceAttach attach = getAttach(playerId);
+		int buyCount = param.param;
 		VIPConfig vip = ConfigData.getConfig(VIPConfig.class, player.getVip());
-		if(attach.getBuyTime() >= vip.buyExtremeEvasionCopy){
+		if(attach.getBuyTime() + buyCount > vip.buyExtremeEvasionCopy){
 			return Response.NO_TODAY_TIMES;
 		}
+
 		// 扣钱
-		int code = goodsService.decConsume(playerId, ConfigData.globalParam().buyExtremeEvasionPrice,LogConsume.BUY_EXPRIENCE_TIME);
+		Map<Integer, Integer> price = ConfigData.globalParam().buyExtremeEvasionPrice;
+		for(int key:price.keySet()){
+			price.replace(key, price.get(key) * buyCount);
+		}
+		int code = goodsService.decConsume(playerId, price, LogConsume.BUY_EXPRIENCE_TIME);
 		if (code != Response.SUCCESS) {
 			return code;
 		}
-		attach.alterChallenge(1);
-		attach.addBuyTime();
+		attach.alterChallenge(buyCount);
+		attach.addBuyTime(buyCount);
 		attach.commitSync();
 		return Response.SUCCESS;
 	}
@@ -116,11 +124,14 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 		if (cfg.needEnergy>0) {
 			playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId);
 		}
-		
-		RewardList list = new RewardList();
+
 		Map<Integer,GoodsEntry> map = Maps.newHashMap();
-		list.rewards = copyService.swipeCopyInner(playerId, copyId,map);
-		result.reward.add(list);
+		List<RewardList> rewardLists = copyService.swipeCopyInner(playerId, copyId,map);
+		if (rewardLists != null) {
+			for (int i = 0; i < rewardLists.size(); ++i) {
+				result.reward.add(rewardLists.get(i));
+			}
+		}
 		goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
 		attach.alterChallenge(-1);
 		attach.commitSync();

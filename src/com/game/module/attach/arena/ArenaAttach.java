@@ -14,6 +14,7 @@ public class ArenaAttach extends Attach {
 	private int challenge;// 剩余挑战次数
 	private int buyCount;// 购买次数
 	private int record;// 战绩，大于0表示连胜，小于0表示连败
+	private boolean isRevenge; //是否复仇
 	@JsonIgnore
 	private List<ArenaReportVO> report = new ArrayList<ArenaReportVO>();// 战报
 	@JsonIgnore
@@ -59,7 +60,7 @@ public class ArenaAttach extends Attach {
 	
 	public void alterBuyCount(int value)
 	{
-		this.buyCount++;
+		this.buyCount += value;
 	}
 	public int getRecord() {
 		return record;
@@ -89,4 +90,11 @@ public class ArenaAttach extends Attach {
 		return page;
 	}
 
+	public boolean getIsRevenge() {
+		return isRevenge;
+	}
+
+	public void setIsRevenge(boolean isRevenge) {
+		this.isRevenge = isRevenge;
+	}
 }

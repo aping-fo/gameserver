@@ -44,3 +44,15 @@ CREATE TABLE `players_diamond_logs_copy` (
   `count` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9834 DEFAULT CHARSET=utf8 COMMENT='钻石日志';
+DROP TABLE IF EXISTS `item_log`;
+CREATE TABLE `item_log` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `playerId` int(11) DEFAULT NULL COMMENT '玩家ID',
+  `op` int(11) DEFAULT NULL,
+  `count` int(11) DEFAULT NULL COMMENT '数量',
+  `type` int(11) DEFAULT NULL COMMENT '类型',
+  `goodsId` int(11) DEFAULT NULL COMMENT '道具ID',
+  `goodsType` int(11) DEFAULT NULL,
+  `createTime` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=27 DEFAULT CHARSET=utf8 COMMENT='物品日志';

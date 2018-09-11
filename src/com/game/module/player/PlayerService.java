@@ -19,6 +19,7 @@ import com.game.module.mail.MailService;
 import com.game.module.pet.PetService;
 import com.game.module.scene.Scene;
 import com.game.module.serial.PlayerView;
+import com.game.module.serial.SerialData;
 import com.game.module.serial.SerialDataService;
 import com.game.module.skill.SkillCard;
 import com.game.module.skill.SkillService;
@@ -40,6 +41,7 @@ import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import com.server.validate.AntiCheatService;
+import com.sun.org.apache.bcel.internal.generic.FADD;
 import io.netty.channel.Channel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -205,7 +207,7 @@ public class PlayerService implements InitHandler {
     }
 
     // 增加新用户
-    public Player addNewPlayer(String name, int sex, int vocation, String accName, String channel, String serverId, String serverName, int sdkUserId) {
+    public Player addNewPlayer(String name, int sex, int vocation, String accName, String channel, String serverId, String serverName, int sdkUserId, String thirdChannel, String thirdUserId) {
         // 初始属性
         final int playerId = getNextPlayerId();
         final Player player = new Player();
@@ -239,6 +241,8 @@ public class PlayerService implements InitHandler {
         //PlayerData playerData = initPlayerData(playerId, false);
         PlayerData playerData = new PlayerData();
         playerData.setPlayerId(playerId);
+        playerData.setThirdChannel(thirdChannel);
+        playerData.setThirdUserId(thirdUserId);
         playerDatas.put(playerId, playerData);
 
         // 初始化时装和武器
@@ -249,7 +253,6 @@ public class PlayerService implements InitHandler {
         int weaponId = globalParam.weaponId[player.getVocation() - 1];
         player.setWeaponId(weaponId);
         playerData.getFashions().add(weaponId);
-
         //头部
         int headId = globalParam.headId[player.getVocation() - 1];
         playerData.setCurHead(headId);
@@ -299,6 +302,16 @@ public class PlayerService implements InitHandler {
 
         //剧情进度
         playerData.setDramaOrder(0);
+
+        //第三方Facebook数据绑定
+        if (thirdChannel.equals("facebook")) {
+            Set<Integer> playerIds = serialDataService.getData().getFacebookBindIds().getOrDefault(thirdUserId, null);
+            if (playerIds == null) {
+                playerIds = new HashSet();
+                serialDataService.getData().getFacebookBindIds().put(thirdUserId, playerIds);
+            }
+            playerIds.add(playerId);
+        }
 
         // 保存数据,优化下
         Context.getThreadService().execute(new Runnable() {
@@ -407,7 +420,8 @@ public class PlayerService implements InitHandler {
 
         if (!dailyService.isSameDate(data.getDailyTime())) {
             dailyService.resetDailyData(data);
-            titleService.onLogin(playerId);
+            titleService.onLogin(playerId, false);
+            addLoginCount(playerId);//增加登录人数
         }
 
         if (!dailyService.isSameWeek(data.getWeeklyTime())) {
@@ -593,7 +607,7 @@ public class PlayerService implements InitHandler {
         }
         PlayerData data = getPlayerData(playerId);
         int subjectId = 6;
-        if(actionType == LogConsume.CHARGE) {
+        if (actionType == LogConsume.CHARGE) {
             subjectId = 5;
         }
         eRatingService.reportAddMoney(player, data.getRoleId(), subjectId, add, actionType.desc);
@@ -788,6 +802,7 @@ public class PlayerService implements InitHandler {
 
         player.setExp(player.getExp() + exp);
 
+        long spendTime = 0;
         // 判断是否要升级或修改其它属性，同时判断是否会触发其它系统的任务或事件
         if (checkUpgrade(player)) {
             playerCalculator.calculate(player);
@@ -966,8 +981,8 @@ public class PlayerService implements InitHandler {
             }
             long now = System.currentTimeMillis();
             long passTime = now - player.getEnergyTime();
-            if (passTime >= 5 * TimeUtil.ONE_MIN) {
-                int count = (int) (passTime / (5 * TimeUtil.ONE_MIN));
+            if (passTime >= ConfigData.globalParam().energyRestoreTime * TimeUtil.ONE_MIN) {
+                int count = (int) (passTime / (ConfigData.globalParam().energyRestoreTime * TimeUtil.ONE_MIN));
                 int newEnergy = player.getEnergy() + count * ConfigData.globalParam().restoreEnergy;
                 if (newEnergy > maxEnergy) {
                     newEnergy = maxEnergy;
@@ -1218,5 +1233,29 @@ public class PlayerService implements InitHandler {
         result.iList = Lists.newArrayList();
         result.iList.addAll(data.getActionModules());
         return result;
+    }
+
+    /**
+     * 增加登录人数
+     *
+     * @param playerId 玩家id
+     */
+    public void addLoginCount(int playerId) {
+        activityService.onLogin(playerId);
+        //增加每日登录人数
+        SerialData serialData = serialDataService.getData();
+        if (serialData == null) {
+            ServerLogger.warn("序列化数据不存在");
+            return;
+        }
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE, serialData.getFullServiceAttendance().incrementAndGet(), ActivityConsts.UpdateType.T_VALUE, true);
+    }
+
+    public List<Player> getAllPlayer() {
+        return playerDao.selectAllPlayer();
+    }
+
+    public List<Player> selectPlayersAndRobots() {
+        return playerDao.selectPlayersAndRobots();
     }
 }

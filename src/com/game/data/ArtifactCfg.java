@@ -6,6 +6,7 @@ package com.game.data;
 public class ArtifactCfg {
 	public int id;//key
 	public String name;//名称
+	public String name_en;//名称
 	public int[] clip;//碎片
 	public int[][] attrs;//激活属性
 	public int[][] attrsInfo;//激活属性信息
@@ -13,6 +14,7 @@ public class ArtifactCfg {
 	public int[][] decompose;//解密
 	public String[] partIcon;//神器部位Icon
 	public String desc;//描述
+	public String desc_en;//描述
 	public int model;//模型
 	public String renderer;//渲染体
 	public String effectPath;//特效位置

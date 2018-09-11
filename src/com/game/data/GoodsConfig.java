@@ -7,6 +7,7 @@ public class GoodsConfig {
 	public int id;//物品id
 	public String atlas;//图集
 	public String name;//名称
+	public String name_en;//名称
 	public int[][] decompose;//分解获得
 	public int[] copys;//产出副本ID
 	public int buyPrice;//购买价格

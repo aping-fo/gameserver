@@ -1,11 +1,14 @@
 package com.game.module.attach.catchgold;
 
+import java.util.Map;
+
 import com.game.data.CopyConfig;
 import com.game.data.Response;
 import com.game.data.VIPConfig;
 import com.game.module.attach.AttachLogic;
 import com.game.module.attach.AttachType;
 import com.game.module.copy.CopyInstance;
+import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -14,6 +17,7 @@ import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.params.CopyReward;
+import com.game.params.IntParam;
 import com.game.params.Reward;
 import com.game.params.RewardList;
 import com.game.params.copy.CopyResult;
@@ -36,6 +40,8 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
     private GoodsService goodsService;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private CopyService copyService;
 
     @Override
     public byte getType() {
@@ -56,20 +62,25 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
         attach.commitSync();
     }
 
-    public int buyChallengeTime(int playerId) {
+    public int buyChallengeTime(int playerId, IntParam param) {
         Player player = playerService.getPlayer(playerId);
         CatchGoldAttach attach = getAttach(playerId);
+        int buyCount = param.param;
         VIPConfig vip = ConfigData.getConfig(VIPConfig.class, player.getVip());
-        if (attach.getBuyTime() >= vip.buyLeadawayCopy) {
+        if (attach.getBuyTime() + buyCount > vip.buyLeadawayCopy) {
             return Response.NO_TODAY_TIMES;
         }
         // 扣钱
-        int code = goodsService.decConsume(playerId, ConfigData.globalParam().catchGoldPrice, LogConsume.BUY_LEADAWAY_TIME);
+        Map<Integer, Integer> price = ConfigData.globalParam().catchGoldPrice;
+        for(int key:price.keySet()){
+            price.replace(key, price.get(key) * buyCount);
+        }
+        int code = goodsService.decConsume(playerId, price, LogConsume.BUY_LEADAWAY_TIME);
         if (code != Response.SUCCESS) {
             return code;
         }
-        attach.alterChallenge(1);
-        attach.addBuyTime();
+        attach.alterChallenge(buyCount);
+        attach.addBuyTime(buyCount);
         attach.commitSync();
         return Response.SUCCESS;
     }
@@ -126,6 +137,14 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
             list.rewards.add(reward);
             copyRewards.add(new GoodsEntry(award[0], award[1]));
         }
+
+        //活动奖励
+        Reward activityReward = copyService.activityReward(playerId, CopyInstance.TYPE_GOLD);
+        if (activityReward != null) {
+            copyRewards.add(new GoodsEntry(activityReward.id, activityReward.count));
+            list.rewards.add(activityReward);
+        }
+
         result.reward.add(list);
 
         attach.alterChallenge(-1);

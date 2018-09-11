@@ -7,11 +7,12 @@ public class RewardItemCfg {
 	public int id;//key
 	public int group;//奖励组
 	public int type;//物品类型
-	public int itemId;//物品
+	public int itemId;//F
 	public int count;//数量
 	public int weight;//权重
 	public int level;//等级
 	public int vip;//vip
 	public int day;//开服天数
 	public int vocation;//职业
+	public int[] randomNum;//随机数量
 }

@@ -1,12 +1,12 @@
 package com.game.module.ladder;
 
-import com.game.data.CopyConfig;
-import com.game.data.ErrCode;
-import com.game.data.LadderCfg;
-import com.game.data.Response;
+import com.game.data.*;
 import com.game.event.InitHandler;
 import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.copy.CopyExtension;
+import com.game.module.copy.CopyInstance;
+import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -87,6 +87,10 @@ public class LadderService implements InitHandler {
     private TitleService titleService;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private CopyService copyService;
+    @Autowired
+    private ActivityService activityService;
 
     //玩家ID -- rank
     private final Map<Integer, Integer> ladderRank = new ConcurrentHashMap<>();
@@ -126,7 +130,7 @@ public class LadderService implements InitHandler {
                     ServerLogger.err(e, "排位赛匹配异常");
                 }
             }
-        }, 10, 6, TimeUnit.SECONDS);
+        }, 10, 5, TimeUnit.SECONDS);
 
         //1S定时
         timerService.scheduleAtFixedRate(new Runnable() {
@@ -518,7 +522,7 @@ public class LadderService implements InitHandler {
     public IntParam startMatching(int playerId) {
         IntParam param = new IntParam();
         if (!checkOpen()) {
-            param.param = Response.TEAM_TIME_OVER;
+            param.param = Response.PET_ACTIVITY_NOT_OPEN;
             return param;
         }
         Ladder ladder = serialDataService.getData().getLadderMap().get(playerId);
@@ -740,26 +744,49 @@ public class LadderService implements InitHandler {
      * @param victory
      */
     private void buildLadderAward(RoomPlayer player, LadderCfg conf, boolean victory, boolean sendAward) {
+        //限制获取奖励的次数
+        PlayerData playerData = playerService.getPlayerData(player.getPlayerId());
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + player.getPlayerId());
+            return;
+        }
+
         CopyResult ladderAward = new CopyResult();
         ladderAward.rewards = new ArrayList<>();
         List<GoodsEntry> items = new ArrayList<>();
         ladderAward.victory = victory;
-        float rate = 1f;
-        if (!victory) {
-            rate = 0.5f;
-        }
-        for (int i = 0; i < conf.PkReward.length; i += 2) {
-            Reward reward = new Reward();
-            int id = conf.PkReward[i];
-            int count = Math.round(conf.PkReward[i + 1] * rate);
-            reward.id = id;
-            reward.count = count;
-            ladderAward.rewards.add(reward);
 
-            items.add(new GoodsEntry(id, count));
+        //超过次数不获取奖励
+        if (playerData.getLadderRecordsTime() <= 10) {
+            float rate = 1f;
+            if (!victory) {
+                rate = 0.5f;
+            }
+            for (int i = 0; i < conf.PkReward.length; i += 2) {
+                Reward reward = new Reward();
+                int id = conf.PkReward[i];
+                int count = Math.round(conf.PkReward[i + 1] * rate);
+                reward.id = id;
+                reward.count = count;
+                ladderAward.rewards.add(reward);
+
+                items.add(new GoodsEntry(id, count));
+            }
+
+            //设置获取每日奖励次数
+            playerData.setLadderRecordsTime(playerData.getLadderRecordsTime() + 1);
         }
+
         Player player1 = playerService.getPlayer(player.getPlayerId());
         ladderAward.id = player1.getCopyId();
+
+        //活动奖励
+        Reward activityReward = copyService.activityReward(player.getPlayerId(), CopyInstance.TYPE_LADDER);
+        if (activityReward != null) {
+            items.add(new GoodsEntry(activityReward.id, activityReward.count));
+            ladderAward.rewards.add(activityReward);
+        }
+
         goodsService.addRewards(player.getPlayerId(), items, LogConsume.LADDER_AWARD);
         if (sendAward) {
             SessionManager.getInstance().sendMsg(CopyExtension.TAKE_COPY_REWARDS, ladderAward, player.getPlayerId());
@@ -785,6 +812,9 @@ public class LadderService implements InitHandler {
             }
             newLevel += 1;
             totalScore -= cfg.score;
+
+            //获取新段位称号
+            titleService.complete(player.getPlayerId(), TitleConsts.LADDER, ConfigData.getConfig(LadderCfg.class, i + 1).grading, ActivityConsts.UpdateType.T_VALUE);
         }
 
         if (newLevel != level) {
@@ -804,6 +834,17 @@ public class LadderService implements InitHandler {
             }
         } else if (newLevel > level) {
             record.setType(TYPE_3);
+
+//            //段位提升活动
+//            int playerId = player.getPlayerId();
+//            PlayerData playerData = playerService.getPlayerData(playerId);
+//            if (playerData != null) {
+//                if (activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_QUALIFYING_STAGE)) {
+//                    activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_QUALIFYING_STAGE, 1, ActivityConsts.UpdateType.T_ADD, true);
+//                }
+//            } else {
+//                ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+//            }
         } else if (newLevel < level) {
             record.setType(TYPE_4);
         }
@@ -886,7 +927,7 @@ public class LadderService implements InitHandler {
                 LadderRankVO vo = new LadderRankVO();
                 vo.playerId = ladder.getPlayerId();
                 vo.name = player.getName();
-                vo.level = ladder.getLevel();
+                vo.level = player.getLev();
                 vo.vocation = player.getVocation();
                 vo.score = ladder.getScore();
                 vo.levNum = ladder.getLevel();
@@ -1008,8 +1049,10 @@ public class LadderService implements InitHandler {
                     }
                 }
                 rewards.clear();
-                for (int i = 0; i < cfg.FinalReward.length; i += 2) {
-                    rewards.add(new GoodsEntry(cfg.FinalReward[i], cfg.FinalReward[i + 1]));
+                for (int i = 0; i < cfg.FinalReward.length; i++) {
+                    for (int j = 0; j < cfg.FinalReward[i].length; j += 2) {
+                        rewards.add(new GoodsEntry(cfg.FinalReward[i][j], cfg.FinalReward[i][j + 1]));
+                    }
                 }
                 String content = String.format(awardContent, cfg.name);
 
@@ -1022,7 +1065,6 @@ public class LadderService implements InitHandler {
                 ladder.getRecords().clear();
                 k++;
                 if (k < MAX_RANK) {
-                    titleService.complete(ladder.getPlayerId(), TitleConsts.LADDER, k, ActivityConsts.UpdateType.T_VALUE);
                     ladderRank.put(ladder.getPlayerId(), k);
                 }
                 mailService.sendSysMail(awardTitle, content, rewards, ladder.getPlayerId(), LogConsume.LADDER_AWARD);
@@ -1091,6 +1133,9 @@ public class LadderService implements InitHandler {
             }
             newLevel += 1;
             totalScore -= cfg.score;
+
+            //获取新段位称号
+            titleService.complete(playerId, TitleConsts.LADDER, ConfigData.getConfig(LadderCfg.class, i + 1).grading, ActivityConsts.UpdateType.T_VALUE);
         }
 
         ladderInfo.setLevel(newLevel);

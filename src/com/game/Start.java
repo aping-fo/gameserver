@@ -1,6 +1,8 @@
 package com.game;
 
+import com.game.module.rank.RankService;
 import com.game.sdk.SdkServer;
+import com.game.sdk.utils.LuckySdkUtil;
 import io.netty.util.ResourceLeakDetector;
 import io.netty.util.ResourceLeakDetector.Level;
 
@@ -53,13 +55,17 @@ public class Start {
 			
 			//延迟一些
 			Thread.sleep(3000l);
-			
+			if(!SysConfig.debug) {
+				//SDK注册服务器信息
+				LuckySdkUtil.register();
+			}
 			new Server(SysConfig.port, LogicHandler.class).init();//启动SocketServer
 			
 			//管理后台的webservice 
 			ManagerServer.start();
 			SdkServer.start();
 			ServerLogger.warn("server init successfully...port:" + SysConfig.port);
+//            BeanManager.getBean(RankService.class).removeInvalidEndlessRank();
 		} catch (Exception e) {
 			ServerLogger.err(e, "start server err!");
 			System.exit(-1);

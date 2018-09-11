@@ -6,7 +6,9 @@ package com.game.data;
 public class AwakeningSkillCfg {
 	public int id;//key
 	public String name;//名字
+	public String name_en;//名字
 	public String describe;//描述
+	public String describe_en;//描述
 	public int vocation;//职业
 	public int type;//类型
 	public int locklv;//解锁等级

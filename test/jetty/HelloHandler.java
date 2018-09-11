@@ -1,14 +1,16 @@
 package jetty;
 
+import com.game.sdk.erating.domain.RechargeInfo;
 import com.game.sdk.utils.XmlParser;
-import com.game.sdk.erating.domain.RechargeData;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -23,7 +25,7 @@ public class HelloHandler extends AbstractHandler {
             throws IOException, ServletException {
 
         Map map = new ConcurrentHashMap();
-        map.putIfAbsent(1,1);
+        map.putIfAbsent(1, 1);
         /**
          * <pre>
          * 从 URL 里面得到传递过来的参数：
@@ -38,8 +40,8 @@ public class HelloHandler extends AbstractHandler {
         BufferedReader reader = new BufferedReader(new InputStreamReader(request.getInputStream()));
         String content = reader.readLine();
         System.out.println(request.getParameterMap());
-        RechargeData data = new RechargeData();
-        XmlParser.xmlParser(content,data);
+        RechargeInfo data = new RechargeInfo();
+        XmlParser.xmlParser(content, data);
     }
 
     /**

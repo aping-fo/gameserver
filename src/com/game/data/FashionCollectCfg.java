@@ -4,7 +4,8 @@ package com.game.data;
 * s时装收集表.xlsx(自动生成，请勿编辑！)
 */
 public class FashionCollectCfg {
-	public int id;//件数
+	public int id;//ID
+	public int value;//件数
 	public int hp;//生命
 	public int attack;//威力
 	public int defense;//防御

@@ -87,7 +87,11 @@ public enum LogConsume {
 	ACTIVATIONCODE_GIFTBAG(1079, "激活码礼包"),
 	SKILL_CARD_MAKE(1080, "技能卡合成"),
 	AWAKENING_SKILL(1081, "觉醒技能升级"),
-	BUY_COPY_TIMES(1082, "购买主线副本")
+	BUY_COPY_TIMES(1082, "购买主线副本"),
+	FACEBOOK_INVITE(1083, "facebook邀请"),
+	ACTIVITY_CONSUME(1084, "活动任务消耗"),
+	ZERO_GIFTBAG(1085, "0元礼包赠送"),
+	FASHION_UPGRADE(1086, "时装升阶"),
 	;
 	public int actionId;// id
 	public String desc;

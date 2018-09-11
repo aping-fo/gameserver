@@ -4,7 +4,9 @@
 	<id>1</id>
 	<type>800101</type>
 	<msg>威力</msg>
-	<desc>怪物攻击提升150%</desc>
+	<msg_en></msg_en>
+	<desc>怪物攻击提升50%</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -15,7 +17,9 @@
 	<id>2</id>
 	<type>800201</type>
 	<msg>防御</msg>
-	<desc>怪物防御提升150%</desc>
+	<msg_en></msg_en>
+	<desc>怪物防御提升50%</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -26,7 +30,9 @@
 	<id>3</id>
 	<type>800301</type>
 	<msg>急速</msg>
-	<desc>怪物移动速度提升120%</desc>
+	<msg_en></msg_en>
+	<desc>怪物移动速度提升20%</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex>4</mutex>
 	<target>2</target>
@@ -37,7 +43,9 @@
 	<id>4</id>
 	<type>800401</type>
 	<msg>霸体</msg>
+	<msg_en></msg_en>
 	<desc>怪物处于霸体状态</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex>3</mutex>
 	<target>2</target>
@@ -48,7 +56,9 @@
 	<id>5</id>
 	<type>800501</type>
 	<msg>血量</msg>
+	<msg_en></msg_en>
 	<desc>怪物血量上限提升100%</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -59,7 +69,9 @@
 	<id>6</id>
 	<type>800601</type>
 	<msg>回血</msg>
+	<msg_en></msg_en>
 	<desc>怪物每秒回血1%</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -70,7 +82,9 @@
 	<id>7</id>
 	<type>800701</type>
 	<msg>弱攻</msg>
-	<desc>人物攻击衰减至50%</desc>
+	<msg_en></msg_en>
+	<desc>主角攻击减少50%</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>1</target>
@@ -81,7 +95,9 @@
 	<id>8</id>
 	<type>800801</type>
 	<msg>破甲</msg>
-	<desc>人物防御衰减至50%</desc>
+	<msg_en></msg_en>
+	<desc>主角防御减少50%</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>1</target>
@@ -92,7 +108,9 @@
 	<id>9</id>
 	<type>800901</type>
 	<msg>迟滞</msg>
-	<desc>人物移动速度衰减至70%</desc>
+	<msg_en></msg_en>
+	<desc>主角移动速度减少30%</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>1</target>
@@ -103,7 +121,9 @@
 	<id>14</id>
 	<type>801401</type>
 	<msg>灼烧</msg>
-	<desc>攻击有30%附带灼烧效果</desc>
+	<msg_en></msg_en>
+	<desc>BOSS攻击有30%附带灼烧效果</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -114,7 +134,9 @@
 	<id>15</id>
 	<type>801501</type>
 	<msg>流血</msg>
-	<desc>攻击有30%附带流血效果</desc>
+	<msg_en></msg_en>
+	<desc>BOSS攻击有30%附带流血效果</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -125,7 +147,9 @@
 	<id>16</id>
 	<type>801601</type>
 	<msg>霸体</msg>
-	<desc>免疫冰冻石化眩晕</desc>
+	<msg_en></msg_en>
+	<desc>BOSS免疫冰冻石化眩晕</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>2</target>
@@ -136,7 +160,9 @@
 	<id>17</id>
 	<type>801701</type>
 	<msg>眩晕</msg>
-	<desc>攻击有30%附带眩晕效果</desc>
+	<msg_en></msg_en>
+	<desc>BOSS攻击有30%附带眩晕效果</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex>[18,19,20]</mutex>
 	<target>2</target>
@@ -147,7 +173,9 @@
 	<id>18</id>
 	<type>801801</type>
 	<msg>冰冻</msg>
-	<desc>攻击有30%附带冰冻效果</desc>
+	<msg_en></msg_en>
+	<desc>BOSS攻击有30%附带冰冻效果</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex>[17,19,20]</mutex>
 	<target>2</target>
@@ -158,7 +186,9 @@
 	<id>19</id>
 	<type>801901</type>
 	<msg>石化</msg>
-	<desc>攻击有30%附带石化效果</desc>
+	<msg_en></msg_en>
+	<desc>BOSS攻击有30%附带石化效果</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex>[17,18,20]</mutex>
 	<target>2</target>
@@ -169,7 +199,9 @@
 	<id>20</id>
 	<type>802001</type>
 	<msg>中毒</msg>
-	<desc>攻击有30%附带中毒效果</desc>
+	<msg_en></msg_en>
+	<desc>BOSS攻击有30%附带中毒效果</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex>[18,19,17,21]</mutex>
 	<target>2</target>
@@ -180,7 +212,9 @@
 	<id>21</id>
 	<type>802101</type>
 	<msg>猛毒</msg>
-	<desc>攻击有100%附带中毒效果</desc>
+	<msg_en></msg_en>
+	<desc>BOSS攻击有100%附带中毒效果</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex>20</mutex>
 	<target>2</target>
@@ -191,7 +225,9 @@
 	<id>22</id>
 	<type>802201</type>
 	<msg>吸血</msg>
-	<desc>攻击有100%附带吸血效果</desc>
+	<msg_en></msg_en>
+	<desc>BOSS攻击有100%附带吸血效果</desc>
+	<desc_en></desc_en>
 	<reward>10002</reward>
 	<mutex></mutex>
 	<target>1</target>

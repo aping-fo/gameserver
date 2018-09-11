@@ -4,11 +4,13 @@
 	<id>1000</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>需要公会1级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>1</type>
 	<param>10</param>
-	<Price>50000</Price>
+	<Price>10000</Price>
 	<NeedLevel>1</NeedLevel>
 	<NextID>1001</NextID>
 </config>
@@ -16,7 +18,9 @@
 	<id>1001</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>1</type>
 	<param>40</param>
@@ -28,7 +32,9 @@
 	<id>1002</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>1</type>
 	<param>80</param>
@@ -40,7 +46,9 @@
 	<id>1003</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>1</type>
 	<param>120</param>
@@ -52,7 +60,9 @@
 	<id>1004</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>1</type>
 	<param>160</param>
@@ -64,7 +74,9 @@
 	<id>1005</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>1</type>
 	<param>200</param>
@@ -76,11 +88,13 @@
 	<id>1100</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>需要公会1级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>2</type>
 	<param>10</param>
-	<Price>50000</Price>
+	<Price>10000</Price>
 	<NeedLevel>1</NeedLevel>
 	<NextID>1101</NextID>
 </config>
@@ -88,7 +102,9 @@
 	<id>1101</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>2</type>
 	<param>30</param>
@@ -100,7 +116,9 @@
 	<id>1102</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>2</type>
 	<param>60</param>
@@ -112,7 +130,9 @@
 	<id>1103</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>2</type>
 	<param>90</param>
@@ -124,7 +144,9 @@
 	<id>1104</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>2</type>
 	<param>120</param>
@@ -136,7 +158,9 @@
 	<id>1105</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>2</type>
 	<param>150</param>
@@ -148,7 +172,9 @@
 	<id>1200</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>需要公会2级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>3</type>
 	<param>10</param>
@@ -160,7 +186,9 @@
 	<id>1201</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>3</type>
 	<param>1000</param>
@@ -172,7 +200,9 @@
 	<id>1202</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>3</type>
 	<param>2000</param>
@@ -184,7 +214,9 @@
 	<id>1203</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>3</type>
 	<param>3000</param>
@@ -196,7 +228,9 @@
 	<id>1204</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>3</type>
 	<param>4000</param>
@@ -208,7 +242,9 @@
 	<id>1205</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>3</type>
 	<param>5000</param>
@@ -220,7 +256,9 @@
 	<id>1300</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>需要公会3级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>4</type>
 	<param>10</param>
@@ -232,7 +270,9 @@
 	<id>1301</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>4</type>
 	<param>10</param>
@@ -244,7 +284,9 @@
 	<id>1302</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>4</type>
 	<param>20</param>
@@ -256,7 +298,9 @@
 	<id>1303</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>4</type>
 	<param>30</param>
@@ -268,7 +312,9 @@
 	<id>1304</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>4</type>
 	<param>40</param>
@@ -280,7 +326,9 @@
 	<id>1305</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>4</type>
 	<param>50</param>
@@ -292,7 +340,9 @@
 	<id>1400</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>需要公会3级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>5</type>
 	<param>10</param>
@@ -304,7 +354,9 @@
 	<id>1401</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>5</type>
 	<param>20</param>
@@ -316,7 +368,9 @@
 	<id>1402</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>5</type>
 	<param>40</param>
@@ -328,7 +382,9 @@
 	<id>1403</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>5</type>
 	<param>60</param>
@@ -340,7 +396,9 @@
 	<id>1404</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>5</type>
 	<param>80</param>
@@ -352,7 +410,9 @@
 	<id>1405</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>5</type>
 	<param>100</param>
@@ -364,7 +424,9 @@
 	<id>1500</id>
 	<icon>funeng</icon>
 	<name>抗性</name>
+	<name_en></name_en>
 	<desc>需要公会4级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>6</type>
 	<param>10</param>
@@ -376,7 +438,9 @@
 	<id>1501</id>
 	<icon>funeng</icon>
 	<name>抗性</name>
+	<name_en></name_en>
 	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>6</type>
 	<param>20</param>
@@ -388,7 +452,9 @@
 	<id>1502</id>
 	<icon>funeng</icon>
 	<name>抗性</name>
+	<name_en></name_en>
 	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>6</type>
 	<param>40</param>
@@ -400,7 +466,9 @@
 	<id>1503</id>
 	<icon>funeng</icon>
 	<name>抗性</name>
+	<name_en></name_en>
 	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>6</type>
 	<param>60</param>
@@ -412,7 +480,9 @@
 	<id>1504</id>
 	<icon>funeng</icon>
 	<name>抗性</name>
+	<name_en></name_en>
 	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>6</type>
 	<param>80</param>
@@ -424,7 +494,9 @@
 	<id>1505</id>
 	<icon>funeng</icon>
 	<name>抗性</name>
+	<name_en></name_en>
 	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>6</type>
 	<param>100</param>
@@ -436,7 +508,9 @@
 	<id>1600</id>
 	<icon>coin</icon>
 	<name>金币</name>
+	<name_en></name_en>
 	<desc>需要公会5级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>7</type>
 	<param>1</param>
@@ -448,7 +522,9 @@
 	<id>1601</id>
 	<icon>coin</icon>
 	<name>金币</name>
+	<name_en></name_en>
 	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>7</type>
 	<param>2</param>
@@ -460,7 +536,9 @@
 	<id>1602</id>
 	<icon>coin</icon>
 	<name>金币</name>
+	<name_en></name_en>
 	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>7</type>
 	<param>4</param>
@@ -472,7 +550,9 @@
 	<id>1603</id>
 	<icon>coin</icon>
 	<name>金币</name>
+	<name_en></name_en>
 	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>7</type>
 	<param>6</param>
@@ -484,7 +564,9 @@
 	<id>1604</id>
 	<icon>coin</icon>
 	<name>金币</name>
+	<name_en></name_en>
 	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>7</type>
 	<param>8</param>
@@ -496,7 +578,9 @@
 	<id>1605</id>
 	<icon>coin</icon>
 	<name>金币</name>
+	<name_en></name_en>
 	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>7</type>
 	<param>10</param>
@@ -508,7 +592,9 @@
 	<id>1700</id>
 	<icon>exp</icon>
 	<name>经验</name>
+	<name_en></name_en>
 	<desc>需要公会5级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>8</type>
 	<param>1</param>
@@ -520,7 +606,9 @@
 	<id>1701</id>
 	<icon>exp</icon>
 	<name>经验</name>
+	<name_en></name_en>
 	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>8</type>
 	<param>2</param>
@@ -532,7 +620,9 @@
 	<id>1702</id>
 	<icon>exp</icon>
 	<name>经验</name>
+	<name_en></name_en>
 	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>8</type>
 	<param>4</param>
@@ -544,7 +634,9 @@
 	<id>1703</id>
 	<icon>exp</icon>
 	<name>经验</name>
+	<name_en></name_en>
 	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>8</type>
 	<param>6</param>
@@ -556,7 +648,9 @@
 	<id>1704</id>
 	<icon>exp</icon>
 	<name>经验</name>
+	<name_en></name_en>
 	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>8</type>
 	<param>8</param>
@@ -568,7 +662,9 @@
 	<id>1705</id>
 	<icon>exp</icon>
 	<name>经验</name>
+	<name_en></name_en>
 	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>8</type>
 	<param>10</param>
@@ -580,7 +676,9 @@
 	<id>1800</id>
 	<icon>shengwang</icon>
 	<name>声望</name>
+	<name_en></name_en>
 	<desc>需要公会6级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>9</type>
 	<param>1</param>
@@ -592,7 +690,9 @@
 	<id>1801</id>
 	<icon>shengwang</icon>
 	<name>声望</name>
+	<name_en></name_en>
 	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>9</type>
 	<param>2</param>
@@ -604,7 +704,9 @@
 	<id>1802</id>
 	<icon>shengwang</icon>
 	<name>声望</name>
+	<name_en></name_en>
 	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>9</type>
 	<param>4</param>
@@ -616,7 +718,9 @@
 	<id>1803</id>
 	<icon>shengwang</icon>
 	<name>声望</name>
+	<name_en></name_en>
 	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>9</type>
 	<param>6</param>
@@ -628,7 +732,9 @@
 	<id>1804</id>
 	<icon>shengwang</icon>
 	<name>声望</name>
+	<name_en></name_en>
 	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>9</type>
 	<param>8</param>
@@ -640,7 +746,9 @@
 	<id>1805</id>
 	<icon>shengwang</icon>
 	<name>声望</name>
+	<name_en></name_en>
 	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>9</type>
 	<param>10</param>
@@ -652,7 +760,9 @@
 	<id>1900</id>
 	<icon>tili</icon>
 	<name>体力</name>
+	<name_en></name_en>
 	<desc>需要公会7级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>10</type>
 	<param>1</param>
@@ -664,7 +774,9 @@
 	<id>1901</id>
 	<icon>tili</icon>
 	<name>体力</name>
+	<name_en></name_en>
 	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>10</type>
 	<param>6</param>
@@ -676,7 +788,9 @@
 	<id>1902</id>
 	<icon>tili</icon>
 	<name>体力</name>
+	<name_en></name_en>
 	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>10</type>
 	<param>12</param>
@@ -688,7 +802,9 @@
 	<id>1903</id>
 	<icon>tili</icon>
 	<name>体力</name>
+	<name_en></name_en>
 	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>10</type>
 	<param>18</param>
@@ -700,7 +816,9 @@
 	<id>1904</id>
 	<icon>tili</icon>
 	<name>体力</name>
+	<name_en></name_en>
 	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>10</type>
 	<param>24</param>
@@ -712,7 +830,9 @@
 	<id>1905</id>
 	<icon>tili</icon>
 	<name>体力</name>
+	<name_en></name_en>
 	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>10</type>
 	<param>30</param>
@@ -724,7 +844,9 @@
 	<id>2000</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>需要公会7级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>1</type>
 	<param>10</param>
@@ -736,7 +858,9 @@
 	<id>2001</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>1</type>
 	<param>40</param>
@@ -748,7 +872,9 @@
 	<id>2002</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>1</type>
 	<param>80</param>
@@ -760,7 +886,9 @@
 	<id>2003</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>1</type>
 	<param>120</param>
@@ -772,7 +900,9 @@
 	<id>2004</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>1</type>
 	<param>160</param>
@@ -784,7 +914,9 @@
 	<id>2005</id>
 	<icon>gongji</icon>
 	<name>威力</name>
+	<name_en></name_en>
 	<desc>威力值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>1</type>
 	<param>200</param>
@@ -796,7 +928,9 @@
 	<id>2100</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>需要公会8级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>2</type>
 	<param>10</param>
@@ -808,7 +942,9 @@
 	<id>2101</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>2</type>
 	<param>30</param>
@@ -820,7 +956,9 @@
 	<id>2102</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>2</type>
 	<param>60</param>
@@ -832,7 +970,9 @@
 	<id>2103</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>2</type>
 	<param>90</param>
@@ -844,7 +984,9 @@
 	<id>2104</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>2</type>
 	<param>120</param>
@@ -856,7 +998,9 @@
 	<id>2105</id>
 	<icon>fangyu</icon>
 	<name>防御</name>
+	<name_en></name_en>
 	<desc>防御值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>2</type>
 	<param>150</param>
@@ -868,7 +1012,9 @@
 	<id>2200</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>需要公会9级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>3</type>
 	<param>10</param>
@@ -880,7 +1026,9 @@
 	<id>2201</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>3</type>
 	<param>1000</param>
@@ -892,7 +1040,9 @@
 	<id>2202</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>3</type>
 	<param>2000</param>
@@ -904,7 +1054,9 @@
 	<id>2203</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>3</type>
 	<param>3000</param>
@@ -916,7 +1068,9 @@
 	<id>2204</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>3</type>
 	<param>4000</param>
@@ -928,7 +1082,9 @@
 	<id>2205</id>
 	<icon>shengming</icon>
 	<name>生命</name>
+	<name_en></name_en>
 	<desc>生命增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>3</type>
 	<param>5000</param>
@@ -940,7 +1096,9 @@
 	<id>2300</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>需要公会9级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>4</type>
 	<param>10</param>
@@ -952,7 +1110,9 @@
 	<id>2301</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>4</type>
 	<param>10</param>
@@ -964,7 +1124,9 @@
 	<id>2302</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>4</type>
 	<param>20</param>
@@ -976,7 +1138,9 @@
 	<id>2303</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>4</type>
 	<param>30</param>
@@ -988,7 +1152,9 @@
 	<id>2304</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>4</type>
 	<param>40</param>
@@ -1000,7 +1166,9 @@
 	<id>2305</id>
 	<icon>jingzhun</icon>
 	<name>暴击</name>
+	<name_en></name_en>
 	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>4</type>
 	<param>50</param>
@@ -1012,7 +1180,9 @@
 	<id>2400</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>需要公会10级</desc>
+	<desc_en></desc_en>
 	<lv>0</lv>
 	<type>5</type>
 	<param>10</param>
@@ -1024,7 +1194,9 @@
 	<id>2401</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>1</lv>
 	<type>5</type>
 	<param>10</param>
@@ -1036,7 +1208,9 @@
 	<id>2402</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>2</lv>
 	<type>5</type>
 	<param>20</param>
@@ -1048,7 +1222,9 @@
 	<id>2403</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>3</lv>
 	<type>5</type>
 	<param>30</param>
@@ -1060,7 +1236,9 @@
 	<id>2404</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>4</lv>
 	<type>5</type>
 	<param>40</param>
@@ -1072,7 +1250,9 @@
 	<id>2405</id>
 	<icon>yichang</icon>
 	<name>异常</name>
+	<name_en></name_en>
 	<desc>异常值增加</desc>
+	<desc_en></desc_en>
 	<lv>5</lv>
 	<type>5</type>
 	<param>50</param>

@@ -1,7 +1,9 @@
 package com.game.module.gm;
 
+import com.game.SysConfig;
 import com.game.data.CopyConfig;
 import com.game.data.GangTrainingCfg;
+import com.game.data.ModuleOpenCfg;
 import com.game.module.activity.ActivityService;
 import com.game.module.activity.WelfareCardService;
 import com.game.module.admin.MessageService;
@@ -33,6 +35,7 @@ import com.game.module.pet.PetService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.rank.RankService;
 import com.game.module.serial.SerialDataService;
 import com.game.module.shop.ShopService;
 import com.game.module.skill.SkillService;
@@ -106,6 +109,8 @@ public class GmService {
     private WorldBossService worldBossService;
     @Autowired
     private LadderService ladderService;
+    @Autowired
+    private CopyExtension copyExtension;
 
     public void handle(int playerId, String gm) {
         try {
@@ -235,7 +240,7 @@ public class GmService {
         PlayerData data = playerService.getPlayerData(playerId);
         for (Object o : ConfigData.getConfigs(CopyConfig.class)) {
             CopyConfig cfg = (CopyConfig) o;
-            if (cfg.type == CopyInstance.TYPE_COMMON) {
+            if (cfg.type == CopyInstance.TYPE_COMMON || cfg.type == CopyInstance.TYPE_EXPERIENCE) {
                 Copy copy = new Copy();
                 copy.setState(3);
                 data.getCopys().put(cfg.id, copy);
@@ -244,14 +249,38 @@ public class GmService {
         CopyInfo info = copyService.getCopyInfo(playerId);
         SessionManager.getInstance().sendMsg(CopyExtension.CMD_REFRESH, info, playerId);
         playerService.addExp(playerId, 100000, LogConsume.GM);
+        //开启所有功能
+        for (Object object : ConfigData.getConfigs(ModuleOpenCfg.class)) {
+            ModuleOpenCfg cfg = (ModuleOpenCfg) object;
+            if (!data.getModules().contains(cfg.id)) {
+                data.getModules().add(cfg.id);
+            }
+            data.getHitModulesState().put(cfg.id, 1);
+        }
+    }
+
+    //通关指定副本
+    public void strongId(int playerId, String... param) {
+        PlayerData data = playerService.getPlayerData(playerId);
+        int idStart = Integer.parseInt(param[0]);
+        int idEnd = Integer.parseInt(param[1]);
+        for (int i = idStart; i <= idEnd; i++) {
+            Copy copy = new Copy();
+            copy.setState(3);
+            data.getCopys().put(i, copy);
+        }
+        CopyInfo info = copyService.getCopyInfo(playerId);
+        SessionManager.getInstance().sendMsg(CopyExtension.CMD_REFRESH, info, playerId);
     }
 
     //重置每日数据
     public void resetDaily(int playerId, String... params) {
         PlayerData data = playerService.getPlayerData(playerId);
         dailyService.resetDailyData(data);
+        dailyService.resetWeekly();
         dailyService.refreshDailyVo(playerId);
         playerService.addEnergy(playerId, 120, LogConsume.BUY_ENERGY);
+        activityService.resetDailyData();
     }
 
     // 重启更新服务器
@@ -283,8 +312,9 @@ public class GmService {
             param.param = Integer.parseInt(params[1]);
             arenaExtension.getOpponentList(playerId, param);
         } else if (params[0].equals("challenge")) {
-            IntParam param = new IntParam();
-            param.param = Integer.parseInt(params[1]);
+            Int2Param param = new Int2Param();
+            param.param1 = Integer.parseInt(params[1]);
+            param.param2 = 1;
             arenaExtension.challenge(playerId, param);
         } else if (params[0].equals("result")) {
             IntParam param = new IntParam();
@@ -408,9 +438,6 @@ public class GmService {
             taskExtension.acceptJoint(playerId, toInt2Param(params[1], params[2]));
         }
     }
-
-    @Autowired
-    private CopyExtension copyExtension;
 
     public void trsing(int playerId, String... params) {
         String cmd = params[0];
@@ -701,7 +728,7 @@ public class GmService {
     public void vip(int playerId, String... params) {
         int id = Integer.valueOf(params[0]);
         int count = Integer.valueOf(params[1]);
-        vipService.addCharge(playerId, id, 1, "aliapy", "CNY", System.currentTimeMillis() + "");
+        vipService.addCharge(playerId, id, 1, "test", "CNY", System.currentTimeMillis() + "", SysConfig.serverId);
     }
 
     public void taskRank(int playerId, String... params) {
@@ -732,5 +759,29 @@ public class GmService {
 
     public void getAllFashion(int playerId, String... params) {
         fashionService.getAllFashion(playerId);
+    }
+
+    @Autowired
+    RankService rankService;
+
+    public void stateRank(int playerId, String... params) {
+        rankService.stateRank();
+    }
+
+    public void addContribute(int playerId, String... params) {
+        gangService.addContribute(playerId, Integer.valueOf(params[0]));
+    }
+
+    public void fastPass(int playerId, String... params) {
+        CopyResult result = new CopyResult();
+        result.id = Integer.valueOf(params[0]);
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+            return;
+        }
+        playerData.setGm(true);
+        copyExtension.getRewards(playerId, result);
+        SessionManager.getInstance().sendMsg(CopyExtension.TAKE_COPY_REWARDS, result, playerId);
     }
 }

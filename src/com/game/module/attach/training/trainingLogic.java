@@ -79,7 +79,9 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
                 opponent.setVip(player.getVip());
                 opponent.setVipExp(player.getChargeDiamond());
                 if (player.getGangId() > 0) {
-                    opponent.setGang(gangService.getGang(player.getGangId()).getName());
+                    if (gangService.getGang(player.getGangId()) != null && gangService.getGang(player.getGangId()).getName() != null) {
+                        opponent.setGang(gangService.getGang(player.getGangId()).getName());
+                    }
                 }
                 opponent.setVocation(player.getVocation());
                 opponent.setFashionId(player.getFashionId());

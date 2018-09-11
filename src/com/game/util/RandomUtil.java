@@ -37,6 +37,8 @@ public class RandomUtil {
 	 * @return
 	 */
 	public static int getRandomIndex(final int rates[]) {
+
+	    /*
 		int sum = 0;
 		for (int rate : rates) {
 			sum += rate;
@@ -51,7 +53,31 @@ public class RandomUtil {
 			}
 		}
 		return -1;// 不可能发生了
+		*/
+	    return getRandomIndex(rates, -1);
 	}
+
+    public static int getRandomIndex(final int rates[], int length) {
+
+        if (length <= 0 || length > rates.length)
+            length = rates.length;
+
+	    int sum = 0;
+        for (int i = 0; i < length; i++)
+        {
+            sum += rates[i];
+        }
+
+        int random = ThreadLocalRandom.current().nextInt(sum);
+        sum = 0;
+        for (int i = 0; i < length; i++) {
+            sum += rates[i];
+            if (random < sum) {
+                return i;
+            }
+        }
+        return -1;// 不可能发生了
+    }
 	
 	/**
 	 * 返回随机概率的某个下标

@@ -129,7 +129,7 @@ public class LotteryExtension {
 				ServerLogger.warn("goods don't exist id = " + reward.id);
 				continue;
 			}
-			if(conf.type == Goods.SKILL_CARD && (conf.color == Goods.QUALITY_VIOLET || conf.color == Goods.QUALITY_ORANGE)) { //消息广播
+			if((conf.id!=59901&&!conf.name.equals("经验卡")&&(conf.type == Goods.SKILL_CARD && (conf.color == Goods.QUALITY_VIOLET || conf.color == Goods.QUALITY_ORANGE)))) { //消息广播
 				messageService.sendSysMsg(MessageConsts.MSG_LOTTERY,player.getName(),conf.name);
 			}
 			Integer count = qualityCount.get(conf.color);

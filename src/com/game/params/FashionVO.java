@@ -6,17 +6,20 @@ public class FashionVO implements IProtocol {
 	public int id;//时装ID
 	public long createTime;//获取时间
 	public int period;//有效时长，单位秒
+	public int stage;//阶级
 
 
 	public void decode(BufferBuilder bb) {
 		this.id = bb.getInt();
 		this.createTime = bb.getLong();
 		this.period = bb.getInt();
+		this.stage = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
 		bb.putInt(this.id);
 		bb.putLong(this.createTime);
 		bb.putInt(this.period);
+		bb.putInt(this.stage);
 	}
 }

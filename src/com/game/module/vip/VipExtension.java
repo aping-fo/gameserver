@@ -58,7 +58,7 @@ public class VipExtension {
             return null;
         }
         ChargeConfig cfg = ConfigData.getConfig(ChargeConfig.class, charge.param);
-        vipService.addCharge(playerId, charge.param, 1, "alipay", "CNY", "" + System.currentTimeMillis());
+        vipService.addCharge(playerId, charge.param, 1, "test", "CNY", "" + System.currentTimeMillis(),SysConfig.serverId);
         return null;
     }
 

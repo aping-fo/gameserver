@@ -15,6 +15,7 @@ public class StateRankVO implements IProtocol {
 	public int fightingValue;//战力
 	public int vip;//vip
 	public int title;//称号
+	public int rankType;//排行榜类型1、战力，2、等级，3、排位赛
 
 
 	public void decode(BufferBuilder bb) {
@@ -29,6 +30,7 @@ public class StateRankVO implements IProtocol {
 		this.fightingValue = bb.getInt();
 		this.vip = bb.getInt();
 		this.title = bb.getInt();
+		this.rankType = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -43,5 +45,6 @@ public class StateRankVO implements IProtocol {
 		bb.putInt(this.fightingValue);
 		bb.putInt(this.vip);
 		bb.putInt(this.title);
+		bb.putInt(this.rankType);
 	}
 }

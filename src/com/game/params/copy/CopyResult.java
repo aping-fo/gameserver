@@ -19,6 +19,9 @@ public class CopyResult implements IProtocol {
 	public int score;//得分
 	public boolean showMystery;//是否触发了神秘商店
 	public boolean victory;//是否胜利
+	public List<RecordHolder> recordHolder;//记录保持者
+	public int selfRecord;//自己的记录
+	public long toltalHurt;//总输出伤害
 
 
 	public void decode(BufferBuilder bb) {
@@ -59,6 +62,33 @@ public class CopyResult implements IProtocol {
 		this.score = bb.getInt();
 		this.showMystery = bb.getBoolean();
 		this.victory = bb.getBoolean();
+		
+        if (bb.getNullFlag())
+            this.recordHolder = null;
+        else {
+            int length = bb.getInt();
+            this.recordHolder = new ArrayList<RecordHolder>();
+            for (int i = 0; i < length; i++)
+            {
+                //如果元素不够先创建一个，Java泛型创建对象，性能？
+                boolean isNull = bb.getNullFlag();
+
+                //如果不是null就解析
+                if(isNull)
+                {
+                    this.recordHolder.add(null);
+                }
+                else
+                {
+                    RecordHolder instance = new RecordHolder();
+                    instance.decode(bb);
+                    this.recordHolder.add(instance);
+                }
+
+            }
+        }
+		this.selfRecord = bb.getInt();
+		this.toltalHurt = bb.getLong();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -75,5 +105,8 @@ public class CopyResult implements IProtocol {
 		bb.putInt(this.score);
 		bb.putBoolean(this.showMystery);
 		bb.putBoolean(this.victory);
+		bb.putProtocolVoList(this.recordHolder);
+		bb.putInt(this.selfRecord);
+		bb.putLong(this.toltalHurt);
 	}
 }

@@ -8,8 +8,10 @@ public class CopyConfig {
 	public int cityId;//主城
 	public int chapterId;//章节
 	public String chapterName;//章节名称
+	public String chapterName_en;//章节名称
 	public int group;//关卡序号
 	public String name;//名称
+	public String name_en;//名称
 	public int nameType;//关卡名字显示类型
 	public String desc;//关卡描述
 	public int preId;//前置副本

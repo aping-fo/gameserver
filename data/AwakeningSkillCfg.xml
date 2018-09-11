@@ -3,7 +3,9 @@
 <config>
 	<id>1001</id>
 	<name>咣当斩</name>
+	<name_en></name_en>
 	<describe>以身为力,以刃开道,召唤雷霆重击敌人。</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>1</type>
 	<locklv>10</locklv>
@@ -15,7 +17,9 @@
 <config>
 	<id>1002</id>
 	<name>勇冠</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供威力值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -27,7 +31,9 @@
 <config>
 	<id>1003</id>
 	<name>护佑</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供防御值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -39,7 +45,9 @@
 <config>
 	<id>1004</id>
 	<name>战魂</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供生命值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -51,7 +59,9 @@
 <config>
 	<id>1005</id>
 	<name>破军</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供异常值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -62,68 +72,80 @@
 </config>
 <config>
 	<id>1006</id>
-	<name>战士二觉醒主动技能</name>
-	<describe>造成伤害</describe>
+	<name>能量灌注</name>
+	<name_en></name_en>
+	<describe>于剑合二为一,聚集狂暴能量,贯穿前方所有的敌人。</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>3</type>
 	<locklv>50</locklv>
 	<lockID>1026</lockID>
-	<Icon>105</Icon>
+	<Icon>106</Icon>
 	<skillID>11100601</skillID>
-	<effectID></effectID>
+	<effectID>111005012</effectID>
 </config>
 <config>
 	<id>1007</id>
-	<name>战士二觉醒被动技能1</name>
-	<describe>增加生命</describe>
+	<name>终极冲击 改</name>
+	<name_en></name_en>
+	<describe>提升主动技能 终极冲击 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>4</type>
 	<locklv>60</locklv>
 	<lockID>1031</lockID>
-	<Icon>105</Icon>
+	<Icon>102</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>1008</id>
-	<name>战士二觉醒被动技能2</name>
-	<describe>增加生命</describe>
+	<name>崩山击 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 动崩山击 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>4</type>
 	<locklv>70</locklv>
 	<lockID>1036</lockID>
-	<Icon>105</Icon>
+	<Icon>101</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>1009</id>
-	<name>战士二觉醒被动技能3</name>
-	<describe>增加生命</describe>
+	<name>幻影剑舞 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 幻影剑舞 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>4</type>
 	<locklv>80</locklv>
 	<lockID>1041</lockID>
-	<Icon>105</Icon>
+	<Icon>103</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>1010</id>
-	<name>战士二觉醒被动技能4</name>
-	<describe>增加异常</describe>
+	<name>拔刀斩 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 拔刀斩 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>1</vocation>
 	<type>4</type>
 	<locklv>85</locklv>
 	<lockID>1046</lockID>
-	<Icon>105</Icon>
+	<Icon>104</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>2001</id>
 	<name>魍魉之刺</name>
+	<name_en></name_en>
 	<describe>暗影之刺,藏我隐伤,试刃锋芒,攻击近身敌人。</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>1</type>
 	<locklv>10</locklv>
@@ -135,7 +157,9 @@
 <config>
 	<id>2002</id>
 	<name>夜弑</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供暴击值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -147,7 +171,9 @@
 <config>
 	<id>2003</id>
 	<name>致命</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供暴击伤害值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -159,7 +185,9 @@
 <config>
 	<id>2004</id>
 	<name>鬼步</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供战斗中能移动速度的提升</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -171,7 +199,9 @@
 <config>
 	<id>2005</id>
 	<name>猎守本能</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供防御值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -182,68 +212,80 @@
 </config>
 <config>
 	<id>2006</id>
-	<name>刺客二觉醒主动技能</name>
-	<describe>造成伤害</describe>
+	<name>乱舞旋风</name>
+	<name_en></name_en>
+	<describe>召唤出所有的匕首,围绕自己形成旋风之力,对周围的敌人造成大量伤害。</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>3</type>
 	<locklv>50</locklv>
 	<lockID>2026</lockID>
-	<Icon>205</Icon>
+	<Icon>306</Icon>
 	<skillID>12100601</skillID>
-	<effectID></effectID>
+	<effectID>121005012</effectID>
 </config>
 <config>
 	<id>2007</id>
-	<name>刺客二觉醒被动技能1</name>
-	<describe>增加生命</describe>
+	<name>飞燕击 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 飞燕击 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>4</type>
 	<locklv>60</locklv>
 	<lockID>2031</lockID>
-	<Icon>205</Icon>
+	<Icon>302</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>2008</id>
-	<name>刺客二觉醒被动技能2</name>
-	<describe>增加生命</describe>
+	<name>狂舞 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 狂舞 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>4</type>
 	<locklv>70</locklv>
 	<lockID>2036</lockID>
-	<Icon>205</Icon>
+	<Icon>303</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>2009</id>
-	<name>刺客二觉醒被动技能3</name>
-	<describe>增加生命</describe>
+	<name>放逐之刃 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 放逐之刃 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>4</type>
 	<locklv>80</locklv>
 	<lockID>2041</lockID>
-	<Icon>205</Icon>
+	<Icon>301</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>2010</id>
-	<name>刺客二觉醒被动技能4</name>
-	<describe>增加异常</describe>
+	<name>乱影 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 乱影 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>2</vocation>
 	<type>4</type>
 	<locklv>85</locklv>
 	<lockID>2046</lockID>
-	<Icon>205</Icon>
+	<Icon>304</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>3001</id>
 	<name>萝比之怒</name>
+	<name_en></name_en>
 	<describe>召唤邪恶疯兔,疯兔萝比带着地狱烈焰咆哮而出,灼烧附近的敌人,肆意破坏。</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>1</type>
 	<locklv>10</locklv>
@@ -255,7 +297,9 @@
 <config>
 	<id>3002</id>
 	<name>时间发条</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供战斗中技能CD缩短效果</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -267,7 +311,9 @@
 <config>
 	<id>3003</id>
 	<name>迸发</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供威力值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -279,7 +325,9 @@
 <config>
 	<id>3004</id>
 	<name>告诫</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供异常值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -291,7 +339,9 @@
 <config>
 	<id>3005</id>
 	<name>庇护</name>
+	<name_en></name_en>
 	<describe>觉醒后可为玩家提供防御值属性的提升</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>2</type>
 	<locklv>10</locklv>
@@ -302,61 +352,71 @@
 </config>
 <config>
 	<id>3006</id>
-	<name>法师二觉醒主动技能</name>
-	<describe>造成伤害</describe>
+	<name>萝比之锤</name>
+	<name_en></name_en>
+	<describe>萝比召唤出它的大锤,对敌人释放出它的愤怒。</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>3</type>
 	<locklv>50</locklv>
 	<lockID>3026</lockID>
-	<Icon>305</Icon>
+	<Icon>206</Icon>
 	<skillID>13100601</skillID>
-	<effectID></effectID>
+	<effectID>131005012</effectID>
 </config>
 <config>
 	<id>3007</id>
-	<name>法师二觉醒被动技能1</name>
-	<describe>增加生命</describe>
+	<name>灵魂一击 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 灵魂一击 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>4</type>
 	<locklv>60</locklv>
 	<lockID>3031</lockID>
-	<Icon>305</Icon>
+	<Icon>202</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>3008</id>
-	<name>法师二觉醒被动技能2</name>
-	<describe>增加生命</describe>
+	<name>奥义之光 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 奥义之光 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>4</type>
 	<locklv>70</locklv>
 	<lockID>3036</lockID>
-	<Icon>305</Icon>
+	<Icon>203</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>3009</id>
-	<name>法师二觉醒被动技能3</name>
-	<describe>增加生命</describe>
+	<name>星雨降临 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 星雨降临 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>4</type>
 	<locklv>80</locklv>
 	<lockID>3041</lockID>
-	<Icon>305</Icon>
+	<Icon>201</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>
 <config>
 	<id>3010</id>
-	<name>法师二觉醒被动技能4</name>
-	<describe>增加异常</describe>
+	<name>暗蚀之球 改</name>
+	<name_en></name_en>
+	<describe>提升主提技能 暗蚀之球 的等级上限</describe>
+	<describe_en></describe_en>
 	<vocation>3</vocation>
 	<type>4</type>
 	<locklv>85</locklv>
 	<lockID>3046</lockID>
-	<Icon>305</Icon>
+	<Icon>204</Icon>
 	<skillID></skillID>
 	<effectID></effectID>
 </config>

@@ -6,4 +6,5 @@ package com.game.data;
 public class ErrCode {
 	public int id;//key
 	public String tips;//提示语
+	public String tips_en;//提示语
 }

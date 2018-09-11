@@ -35,9 +35,13 @@ public class ERatingService implements InitHandler {
     private PlayerService playerService;
     private final ExecutorService executor = new ThreadPoolExecutor(2, 4, 0, TimeUnit.SECONDS, new LinkedBlockingQueue<>(120000), new DiscardPolicy());
 
+    private boolean flag = false;
 
     @Override
     public void handleInit() {
+        if(flag) {
+            return;
+        }
         GatewayReqInfos gwDatas = new GatewayReqInfos(ERatingType.CMD_GW_DATA_REPORT);
         GatewayInfo data = new GatewayInfo(ERatingType.ER_SERVER_START, 0);
         gwDatas.getGwData().add(data);
@@ -60,6 +64,9 @@ public class ERatingService implements InitHandler {
 
 
     private void sendReport(final Report report, int playerId) {
+        if(flag) {
+            return;
+        }
         executor.submit(new Runnable() {
             @Override
             public void run() {
@@ -92,6 +99,9 @@ public class ERatingService implements InitHandler {
     }
 
     private void sendReport(final Report report, String user, Channel channel) {
+        if(flag) {
+            return;
+        }
         executor.submit(new Runnable() {
             @Override
             public void run() {

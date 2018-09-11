@@ -6,9 +6,11 @@ package com.game.data;
 public class FameConfig {
 	public int id;//ID
 	public String name;//名称
+	public String name_en;//名称
 	public String icon;//图标
 	public int shopType;//商店类型
 	public String camp;//阵营
+	public String camp_en;//阵营
 	public String describe;//描述
 	public int lev;//等级
 	public int exp;//经验

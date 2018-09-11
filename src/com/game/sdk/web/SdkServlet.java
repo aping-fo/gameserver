@@ -26,4 +26,11 @@ public class SdkServlet extends HttpServlet {
             ServerLogger.err(e, "充值异常，" + url);
         }
     }
+
+    protected void render(HttpServletResponse resp, String message) throws Exception {
+        resp.addHeader("Pragma", "no-cache");
+        resp.addHeader("Accept", "*/*");
+        resp.getWriter().write(message);
+        resp.getWriter().flush();
+    }
 }

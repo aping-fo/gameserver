@@ -1,6 +1,7 @@
 package com.game.params.arena;
 
 import java.util.List;
+import java.util.ArrayList;
 import com.game.params.*;
 
 //竞技场玩家对象(工具自动生成，请勿手动修改！）
@@ -19,6 +20,8 @@ public class ArenaFighterVO implements IProtocol {
 	public String name;//玩家名称
 	public int vocation;//职业
 	public List<Integer> bufferList;//套装buffer列表
+	public ArenaPlayerVO playerInfo;//玩家基础信息
+	public List<Int2Param> awakenSkillList;//觉醒技能列表
 
 
 	public void decode(BufferBuilder bb) {
@@ -36,6 +39,39 @@ public class ArenaFighterVO implements IProtocol {
 		this.name = bb.getString();
 		this.vocation = bb.getInt();
 		this.bufferList = bb.getIntList();
+		
+        if(bb.getNullFlag())
+            this.playerInfo = null;
+        else
+        {
+            this.playerInfo = new ArenaPlayerVO();
+            this.playerInfo.decode(bb);
+        }
+		
+        if (bb.getNullFlag())
+            this.awakenSkillList = null;
+        else {
+            int length = bb.getInt();
+            this.awakenSkillList = new ArrayList<Int2Param>();
+            for (int i = 0; i < length; i++)
+            {
+                //如果元素不够先创建一个，Java泛型创建对象，性能？
+                boolean isNull = bb.getNullFlag();
+
+                //如果不是null就解析
+                if(isNull)
+                {
+                    this.awakenSkillList.add(null);
+                }
+                else
+                {
+                    Int2Param instance = new Int2Param();
+                    instance.decode(bb);
+                    this.awakenSkillList.add(instance);
+                }
+
+            }
+        }
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -53,5 +89,7 @@ public class ArenaFighterVO implements IProtocol {
 		bb.putString(this.name);
 		bb.putInt(this.vocation);
 		bb.putIntList(this.bufferList);
+		bb.putProtocolVo(this.playerInfo);
+		bb.putProtocolVoList(this.awakenSkillList);
 	}
 }

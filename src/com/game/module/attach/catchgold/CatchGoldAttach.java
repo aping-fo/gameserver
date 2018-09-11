@@ -38,8 +38,8 @@ public class CatchGoldAttach extends Attach {
 		this.buyTime = buyTime;
 	}
 	
-	public void addBuyTime(){
-		this.buyTime++;
+	public void addBuyTime(int value){
+		this.buyTime += value;
 	}
 
 	public long getLastChallengeTime() {

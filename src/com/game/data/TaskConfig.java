@@ -8,6 +8,7 @@ public class TaskConfig {
 	public int group;//任务组
 	public int taskType;//任务类型
 	public String taskName;//任务名称
+	public String taskName_en;//任务名称
 	public int level;//触发等级
 	public int finishType;//完成方式
 	public int[] finishParam;//完成条件

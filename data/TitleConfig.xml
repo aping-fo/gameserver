@@ -3,6 +3,7 @@
 <config>
 	<id>1</id>
 	<name>千军破</name>
+	<name_en></name_en>
 	<titleType>2</titleType>
 	<icon>101</icon>
 	<atlas>Honor</atlas>
@@ -10,16 +11,18 @@
 	<cond>[1,51,200]</cond>
 	<period>0</period>
 	<hp>0</hp>
-	<attack>60</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>18</crit>
-	<symptom>0</symptom>
+	<symptom>30</symptom>
 	<fu>0</fu>
 	<gainPath>竞技场第51-200名获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>2</id>
 	<name>不服SALA</name>
+	<name_en></name_en>
 	<titleType>2</titleType>
 	<icon>102</icon>
 	<atlas>Honor</atlas>
@@ -27,16 +30,18 @@
 	<cond>[1,4,50]</cond>
 	<period>0</period>
 	<hp>0</hp>
-	<attack>70</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>21</crit>
-	<symptom>0</symptom>
+	<symptom>35</symptom>
 	<fu>0</fu>
 	<gainPath>竞技场第4-50名获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>3</id>
 	<name>还有谁</name>
+	<name_en></name_en>
 	<titleType>2</titleType>
 	<icon>103</icon>
 	<atlas>Honor</atlas>
@@ -44,16 +49,18 @@
 	<cond>[1,3,3]</cond>
 	<period>0</period>
 	<hp>0</hp>
-	<attack>80</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>24</crit>
-	<symptom>0</symptom>
+	<symptom>40</symptom>
 	<fu>0</fu>
 	<gainPath>竞技场第3名获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>4</id>
 	<name>竞技绞肉机</name>
+	<name_en></name_en>
 	<titleType>2</titleType>
 	<icon>104</icon>
 	<atlas>Honor</atlas>
@@ -61,16 +68,18 @@
 	<cond>[1,2,2]</cond>
 	<period>0</period>
 	<hp>0</hp>
-	<attack>90</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>27</crit>
-	<symptom>0</symptom>
+	<symptom>45</symptom>
 	<fu>0</fu>
 	<gainPath>竞技场第2名获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>5</id>
 	<name>竞技之王</name>
+	<name_en></name_en>
 	<titleType>2</titleType>
 	<icon>105</icon>
 	<atlas>Honor</atlas>
@@ -78,288 +87,322 @@
 	<cond>[1,1,1]</cond>
 	<period>0</period>
 	<hp>0</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<crit>30</crit>
+	<symptom>50</symptom>
+	<fu>0</fu>
+	<gainPath>竞技场第1名获得</gainPath>
+	<gainPath_en></gainPath_en>
+</config>
+<config>
+	<id>6</id>
+	<name>土著黄铜</name>
+	<name_en></name_en>
+	<titleType>2</titleType>
+	<icon>201</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,12,13]</cond>
+	<period>1</period>
+	<hp>0</hp>
+	<attack>60</attack>
+	<defense>0</defense>
+	<crit>18</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛达到青铜2段获得</gainPath>
+	<gainPath_en></gainPath_en>
+</config>
+<config>
+	<id>7</id>
+	<name>无畏白银</name>
+	<name_en></name_en>
+	<titleType>2</titleType>
+	<icon>202</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,21,23]</cond>
+	<period>1</period>
+	<hp>0</hp>
+	<attack>70</attack>
+	<defense>0</defense>
+	<crit>21</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛达到白银段位获得</gainPath>
+	<gainPath_en></gainPath_en>
+</config>
+<config>
+	<id>8</id>
+	<name>暴走黄金</name>
+	<name_en></name_en>
+	<titleType>2</titleType>
+	<icon>203</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,31,33]</cond>
+	<period>1</period>
+	<hp>0</hp>
+	<attack>80</attack>
+	<defense>0</defense>
+	<crit>24</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛达到黄金段位获得</gainPath>
+	<gainPath_en></gainPath_en>
+</config>
+<config>
+	<id>9</id>
+	<name>傲气铂金</name>
+	<name_en></name_en>
+	<titleType>2</titleType>
+	<icon>204</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,41,43]</cond>
+	<period>1</period>
+	<hp>0</hp>
+	<attack>90</attack>
+	<defense>0</defense>
+	<crit>27</crit>
+	<symptom>0</symptom>
+	<fu>0</fu>
+	<gainPath>排位赛达到铂金段位获得</gainPath>
+	<gainPath_en></gainPath_en>
+</config>
+<config>
+	<id>10</id>
+	<name>至尊钻石</name>
+	<name_en></name_en>
+	<titleType>2</titleType>
+	<icon>205</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>2</titleSubType>
+	<cond>[2,51,53]</cond>
+	<period>1</period>
+	<hp>0</hp>
 	<attack>100</attack>
 	<defense>0</defense>
 	<crit>30</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>竞技场第1名获得</gainPath>
-</config>
-<config>
-	<id>6</id>
-	<name>土著黄铜</name>
-	<titleType>2</titleType>
-	<icon>201</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,201,500]</cond>
-	<period>7</period>
-	<hp>0</hp>
-	<attack>50</attack>
-	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>25</symptom>
-	<fu>0</fu>
-	<gainPath>排位赛第201-500名获得</gainPath>
-</config>
-<config>
-	<id>7</id>
-	<name>无畏白银</name>
-	<titleType>2</titleType>
-	<icon>202</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,51,200]</cond>
-	<period>7</period>
-	<hp>0</hp>
-	<attack>60</attack>
-	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>30</symptom>
-	<fu>0</fu>
-	<gainPath>排位赛第51-200名获得</gainPath>
-</config>
-<config>
-	<id>8</id>
-	<name>暴走黄金</name>
-	<titleType>2</titleType>
-	<icon>203</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,4,50]</cond>
-	<period>7</period>
-	<hp>0</hp>
-	<attack>70</attack>
-	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>35</symptom>
-	<fu>0</fu>
-	<gainPath>排位赛第4-50名获得</gainPath>
-</config>
-<config>
-	<id>9</id>
-	<name>傲气铂金</name>
-	<titleType>2</titleType>
-	<icon>204</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,3,3]</cond>
-	<period>7</period>
-	<hp>0</hp>
-	<attack>80</attack>
-	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>40</symptom>
-	<fu>0</fu>
-	<gainPath>排位赛第3名获得</gainPath>
-</config>
-<config>
-	<id>10</id>
-	<name>至尊钻石</name>
-	<titleType>2</titleType>
-	<icon>205</icon>
-	<atlas>Honor</atlas>
-	<titleSubType>2</titleSubType>
-	<cond>[2,2,2]</cond>
-	<period>7</period>
-	<hp>0</hp>
-	<attack>90</attack>
-	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>45</symptom>
-	<fu>0</fu>
-	<gainPath>排位赛第2名获得</gainPath>
+	<gainPath>排位赛达到钻石段位获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>11</id>
 	<name>传奇王者</name>
+	<name_en></name_en>
 	<titleType>2</titleType>
 	<icon>206</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>2</titleSubType>
-	<cond>[2,1,1]</cond>
-	<period>7</period>
+	<cond>[2,60,60]</cond>
+	<period>1</period>
 	<hp>0</hp>
-	<attack>100</attack>
+	<attack>110</attack>
 	<defense>0</defense>
-	<crit>0</crit>
-	<symptom>50</symptom>
+	<crit>33</crit>
+	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>排位赛第1名获得</gainPath>
+	<gainPath>排位赛达到王者段位获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>12</id>
 	<name>颤抖吧少年</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>301</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
 	<cond>[3,10000]</cond>
 	<period>0</period>
-	<hp>0</hp>
+	<hp>1500</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<crit>18</crit>
+	<crit>0</crit>
 	<symptom>30</symptom>
 	<fu>0</fu>
 	<gainPath>战力达到10000获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>13</id>
 	<name>放学别走</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>302</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
-	<cond>[3,20000]</cond>
+	<cond>[3,50000]</cond>
 	<period>0</period>
-	<hp>0</hp>
+	<hp>1673</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<crit>21</crit>
+	<crit>0</crit>
 	<symptom>35</symptom>
 	<fu>0</fu>
-	<gainPath>战力达到20000获得</gainPath>
+	<gainPath>战力达到50000获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>14</id>
 	<name>圣斗士战力</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>303</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
-	<cond>[3,50000]</cond>
+	<cond>[3,80000]</cond>
 	<period>0</period>
-	<hp>0</hp>
+	<hp>1912</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<crit>24</crit>
+	<crit>0</crit>
 	<symptom>40</symptom>
 	<fu>0</fu>
-	<gainPath>战力达到50000获得</gainPath>
+	<gainPath>战力达到80000获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>15</id>
 	<name>上面有人罩</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>304</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
-	<cond>[3,100000]</cond>
+	<cond>[3,150000]</cond>
 	<period>0</period>
-	<hp>0</hp>
+	<hp>2151</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<crit>27</crit>
+	<crit>0</crit>
 	<symptom>45</symptom>
 	<fu>0</fu>
-	<gainPath>战力达到100000获得</gainPath>
+	<gainPath>战力达到150000获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>16</id>
 	<name>少年求侮辱</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>305</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>3</titleSubType>
-	<cond>[3,200000]</cond>
+	<cond>[3,300000]</cond>
 	<period>0</period>
-	<hp>0</hp>
+	<hp>2390</hp>
 	<attack>0</attack>
 	<defense>0</defense>
-	<crit>30</crit>
+	<crit>0</crit>
 	<symptom>50</symptom>
 	<fu>0</fu>
-	<gainPath>战力达到200000获得</gainPath>
+	<gainPath>战力达到300000获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>17</id>
 	<name>小萌新</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>401</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>4</titleSubType>
-	<cond>[4,10]</cond>
+	<cond>[4,5]</cond>
 	<period>0</period>
 	<hp>1434</hp>
-	<attack>60</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>0</symptom>
-	<fu>0</fu>
-	<gainPath>等级达到10级获得</gainPath>
+	<fu>30</fu>
+	<gainPath>等级达到5级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>18</id>
 	<name>守护先锋</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>402</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>4</titleSubType>
-	<cond>[4,20]</cond>
+	<cond>[4,40]</cond>
 	<period>0</period>
 	<hp>1673</hp>
-	<attack>70</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>0</symptom>
-	<fu>0</fu>
-	<gainPath>等级达到20级获得</gainPath>
+	<fu>35</fu>
+	<gainPath>等级达到40级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>19</id>
 	<name>鸿渐之翼</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>403</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>4</titleSubType>
-	<cond>[4,30]</cond>
+	<cond>[4,60]</cond>
 	<period>0</period>
 	<hp>1912</hp>
-	<attack>80</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>0</symptom>
-	<fu>0</fu>
-	<gainPath>等级达到30级获得</gainPath>
+	<fu>40</fu>
+	<gainPath>等级达到60级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>20</id>
 	<name>冲级王</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>404</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>4</titleSubType>
-	<cond>[4,40]</cond>
+	<cond>[4,80]</cond>
 	<period>0</period>
 	<hp>2151</hp>
-	<attack>90</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>0</symptom>
-	<fu>0</fu>
-	<gainPath>等级达到40级获得</gainPath>
+	<fu>45</fu>
+	<gainPath>等级达到80级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>21</id>
 	<name>绝对统领</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>405</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>4</titleSubType>
-	<cond>[4,50]</cond>
+	<cond>[4,100]</cond>
 	<period>0</period>
 	<hp>2390</hp>
-	<attack>100</attack>
+	<attack>0</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>0</symptom>
-	<fu>0</fu>
-	<gainPath>等级达到50级获得</gainPath>
+	<fu>50</fu>
+	<gainPath>等级达到100级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>22</id>
 	<name>无尽小学生</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>501</icon>
 	<atlas>Honor</atlas>
@@ -373,15 +416,17 @@
 	<symptom>0</symptom>
 	<fu>0</fu>
 	<gainPath>无尽漩涡通关10层获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>23</id>
 	<name>无尽守护者</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>502</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,19]</cond>
+	<cond>[5,29]</cond>
 	<period>0</period>
 	<hp>1673</hp>
 	<attack>0</attack>
@@ -389,16 +434,18 @@
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>无尽漩涡通关20层获得</gainPath>
+	<gainPath>无尽漩涡通关30层获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>24</id>
 	<name>无尽公敌</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>503</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,29]</cond>
+	<cond>[5,49]</cond>
 	<period>0</period>
 	<hp>1912</hp>
 	<attack>0</attack>
@@ -406,16 +453,18 @@
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>无尽漩涡通关30层获得</gainPath>
+	<gainPath>无尽漩涡通关50层获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>25</id>
 	<name>无尽大师</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>504</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,39]</cond>
+	<cond>[5,99]</cond>
 	<period>0</period>
 	<hp>2151</hp>
 	<attack>0</attack>
@@ -423,16 +472,18 @@
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>无尽漩涡通关40层获得</gainPath>
+	<gainPath>无尽漩涡通关100层获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>26</id>
 	<name>无尽之主</name>
+	<name_en></name_en>
 	<titleType>1</titleType>
 	<icon>505</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>5</titleSubType>
-	<cond>[5,49]</cond>
+	<cond>[5,149]</cond>
 	<period>0</period>
 	<hp>2390</hp>
 	<attack>0</attack>
@@ -440,193 +491,216 @@
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
-	<gainPath>无尽漩涡通关50层获得</gainPath>
+	<gainPath>无尽漩涡通关150层获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>27</id>
 	<name>有钱人</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>605</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>6</titleSubType>
 	<cond>[6,1]</cond>
 	<period>0</period>
-	<hp>1434</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>60</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>30</symptom>
 	<fu>0</fu>
 	<gainPath>VIP1级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>28</id>
 	<name>高端定制</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>604</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>6</titleSubType>
 	<cond>[6,4]</cond>
 	<period>0</period>
-	<hp>1673</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>70</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>35</symptom>
 	<fu>0</fu>
 	<gainPath>VIP4级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>29</id>
 	<name>挥金如土</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>603</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>6</titleSubType>
 	<cond>[6,7]</cond>
 	<period>0</period>
-	<hp>1912</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>80</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>40</symptom>
 	<fu>0</fu>
 	<gainPath>VIP7级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>30</id>
 	<name>壕气冲天</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>602</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>6</titleSubType>
 	<cond>[6,10]</cond>
 	<period>0</period>
-	<hp>2151</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>90</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>45</symptom>
 	<fu>0</fu>
 	<gainPath>VIP10级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>31</id>
 	<name>至尊权贵</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>601</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>6</titleSubType>
 	<cond>[6,15]</cond>
 	<period>0</period>
-	<hp>2390</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>100</attack>
 	<defense>0</defense>
 	<crit>0</crit>
 	<symptom>50</symptom>
 	<fu>0</fu>
 	<gainPath>VIP15级获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>32</id>
 	<name>到此一游</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>701</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>9</titleSubType>
 	<cond>[9,2]</cond>
 	<period>0</period>
-	<hp>1434</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>50</attack>
 	<defense>0</defense>
 	<crit>0</crit>
-	<symptom>0</symptom>
-	<fu>30</fu>
+	<symptom>25</symptom>
+	<fu>0</fu>
 	<gainPath>签到2天获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>33</id>
 	<name>轻车熟路</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>702</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>9</titleSubType>
 	<cond>[9,5]</cond>
 	<period>0</period>
-	<hp>1673</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>60</attack>
 	<defense>0</defense>
 	<crit>0</crit>
-	<symptom>0</symptom>
-	<fu>35</fu>
+	<symptom>30</symptom>
+	<fu>0</fu>
 	<gainPath>签到5天获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>34</id>
 	<name>签到小能手</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>703</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>9</titleSubType>
 	<cond>[9,7]</cond>
 	<period>0</period>
-	<hp>1912</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>70</attack>
 	<defense>0</defense>
 	<crit>0</crit>
-	<symptom>0</symptom>
-	<fu>40</fu>
+	<symptom>35</symptom>
+	<fu>0</fu>
 	<gainPath>签到7天获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>35</id>
 	<name>时光见证者</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>704</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>9</titleSubType>
 	<cond>[9,10]</cond>
 	<period>0</period>
-	<hp>2151</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>80</attack>
 	<defense>0</defense>
 	<crit>0</crit>
-	<symptom>0</symptom>
-	<fu>45</fu>
+	<symptom>40</symptom>
+	<fu>0</fu>
 	<gainPath>签到10天获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>36</id>
 	<name>忠诚守护者</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>705</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>9</titleSubType>
 	<cond>[9,20]</cond>
 	<period>0</period>
-	<hp>2390</hp>
-	<attack>0</attack>
+	<hp>0</hp>
+	<attack>90</attack>
 	<defense>0</defense>
 	<crit>0</crit>
-	<symptom>0</symptom>
-	<fu>50</fu>
+	<symptom>45</symptom>
+	<fu>0</fu>
 	<gainPath>签到20天获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 <config>
 	<id>37</id>
 	<name>以你之名</name>
+	<name_en></name_en>
 	<titleType>3</titleType>
 	<icon>801</icon>
 	<atlas>Honor</atlas>
 	<titleSubType>10</titleSubType>
 	<cond>[10,9]</cond>
 	<period>0</period>
-	<hp>1000</hp>
+	<hp>666</hp>
 	<attack>0</attack>
-	<defense>100</defense>
+	<defense>66</defense>
 	<crit>0</crit>
 	<symptom>0</symptom>
 	<fu>0</fu>
 	<gainPath>首充奖励获得</gainPath>
+	<gainPath_en></gainPath_en>
 </config>
 </root>

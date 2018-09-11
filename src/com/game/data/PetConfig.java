@@ -8,6 +8,7 @@ public class PetConfig {
 	public int type;//类型
 	public int quality;//品质
 	public String name;//名字
+	public String name_en;//英文名字
 	public int property;//属性
 	public int monsterId;//怪物ID
 	public int petId;//对应宠物ID
@@ -31,4 +32,5 @@ public class PetConfig {
 	public int fuFix;//抗性固定加成
 	public float scale;//缩放比例
 	public float rotate;//旋转角度
+	public boolean canShow;//是否可展示
 }

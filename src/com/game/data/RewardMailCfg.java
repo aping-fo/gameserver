@@ -8,7 +8,9 @@ public class RewardMailCfg {
 	public int group;//邮件组
 	public String title;//标题
 	public String content;//内容
+	public String content_en;//内容
 	public int[] rank;//排名
 	public Map<Integer,Integer> reward;//奖励
 	public String desc;//描述
+	public String title_en;//标题
 }

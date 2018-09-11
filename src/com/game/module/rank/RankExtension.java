@@ -144,6 +144,7 @@ public class RankExtension {
 	@Command(3705)
 	public ListParam<AIArenaRankVO> getAIArenaRankList(int playerId,
 			Object param) {
+//        arenaLogic.repair();
 		ListParam<AIArenaRankVO> result = new ListParam<AIArenaRankVO>();
 		List<AIArenaRankVO> list = new ArrayList<>();
 		for(int i = 1; i <= 50; i++){
@@ -202,6 +203,6 @@ public class RankExtension {
 	// 排位第一模型
 	@Command(3708)
 	public ListParam<StateRankVO> stateRank(int playerId, Object param) {
-		return rankService.stateRank();
+		return rankService.getStateRank();
 	}
 }

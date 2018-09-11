@@ -189,6 +189,7 @@ public class Response {
 	public static final int GROUP_LEADER_HAS_NOT_FIGHT=4160;//需要等待团长出战
 	public static final int GROUP_ALREADY_START=4161;//副本已经开始，无法加入
 	//宠物
+	public static final int PET_SHOW_NOT_ENOUGH=4199;//C级宠物才可跟随玩家在主城显示
 	public static final int PET_HAS_SAME_TYPE=4200;//拥有同类型宠物
 	public static final int PET_MATERIAL_NOT_ENOUGH=4201;//宠物碎片不够
 	public static final int PET_NOT_EXIST=4202;//宠物不存在
@@ -216,5 +217,11 @@ public class Response {
 	public static final int LOCALBULLETSCREEN_ALL_ACCESS=4362;//本地弹幕已全部获取
 	//任务提交
 	public static final int OPERATION_TOO_FAST=4370;//您操作太频繁了
+	//Facebook
+	public static final int FACEBOOK_NO_PLAYER=4400;//玩家不存在
+	public static final int FACEBOOK_INVITOR_NO_FACEBOOK=4401;//邀请者非Facebook账号登陆
+	public static final int FACEBOOK_NO_FACEBOOK=4402;//非Facebook账号登陆
+	public static final int FACEBOOK_NOT_INVITOR=4403;//非邀请玩家
+	public static final int FACEBOOK_EMAIL_INVITE_TITLE=4410;//Facebook玩家邀请奖励
 
 }

@@ -4,6 +4,7 @@ import com.game.module.attach.catchgold.CatchGoldAttach;
 import com.game.module.attach.catchgold.CatchGoldLogic;
 import com.game.module.attach.leadaway.LeadAwayAttach;
 import com.game.module.attach.leadaway.LeadAwayLogic;
+import com.game.module.player.PlayerData;
 import com.game.params.copy.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -33,6 +34,11 @@ import com.game.util.ConfigData;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
 import com.server.util.ServerLogger;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Extension
 public class CopyExtension {
@@ -100,6 +106,19 @@ public class CopyExtension {
             returnResult.copyId = instance.getCopyId();
             returnResult.passId = instance.getPassId();
         }
+
+        copyService.updateRecord(playerId, returnResult);//更新世界记录和自身记录
+
+        //置空统计伤害
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在=" + playerId);
+        } else {
+            playerData.setHurt(0);
+            returnResult.customPara = playerData.getSingleAndMulti();
+            playerData.setSingleAndMulti(0);
+        }
+
         return returnResult;
     }
 
@@ -112,13 +131,24 @@ public class CopyExtension {
         int copyInstanceId = player.getCopyId();
         if (copyInstanceId == 0) {
             ServerLogger.info("Err CopyId:", copyInstanceId);
-            return null;
+            result.victory = false;
+            return result;
         }
         CopyInstance instance = copyService.getCopyInstance(copyInstanceId);
         int copyId = instance.getCopyId();
+
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+            result.victory = false;
+            return result;
+        }
+
         // 验证副本结果
-        if (!copyService.checkCopyResult(playerId, instance, result)) {
-            return null;
+        if (!playerData.isGm() && !copyService.checkCopyResult(playerId, instance, result)) {
+            ServerLogger.warn("验证副本失败");
+            result.victory = false;
+            return result;
         }
         copyService.getRewards(playerId, copyId, result);
         // 更新次数,星级
@@ -128,7 +158,6 @@ public class CopyExtension {
         copyService.removeCopy(playerId);
         //触发神秘商店
         result.showMystery = shopService.triggerMysteryShop(playerId, copyId, 1, result);
-
         return result;
     }
 
@@ -215,9 +244,9 @@ public class CopyExtension {
 
     //购买金币副本挑战次数
     @Command(1916)
-    public IntParam buyTreasureChallenge(int playerId, Object param) {
+    public IntParam buyTreasureChallenge(int playerId, IntParam param) {
         IntParam result = new IntParam();
-        result.param = treasureLogic.buyChallengeTime(playerId);
+        result.param = treasureLogic.buyChallengeTime(playerId, param);
         return result;
     }
 
@@ -240,9 +269,9 @@ public class CopyExtension {
 
     //购买经验副本挑战次数
     @Command(1919)
-    public IntParam buyExperienceChallenge(int playerId, Object param) {
+    public IntParam buyExperienceChallenge(int playerId, IntParam param) {
         IntParam result = new IntParam();
-        result.param = experienceLogic.buyChallengeTime(playerId);
+        result.param = experienceLogic.buyChallengeTime(playerId, param);
         return result;
     }
 
@@ -263,9 +292,9 @@ public class CopyExtension {
 
     //购买娃娃机副本挑战次数
     @Command(1922)
-    public IntParam buyLeadawayChallenge(int playerId, Object param) {
+    public IntParam buyLeadawayChallenge(int playerId, IntParam param) {
         IntParam result = new IntParam();
-        result.param = leadAwayLogic.buyChallengeTime(playerId);
+        result.param = leadAwayLogic.buyChallengeTime(playerId, param);
         return result;
     }
 
@@ -288,9 +317,9 @@ public class CopyExtension {
 
     //购买金币副本挑战次数
     @Command(1925)
-    public IntParam buyCatchGoldChallenge(int playerId, Object param) {
+    public IntParam buyCatchGoldChallenge(int playerId, IntParam param) {
         IntParam result = new IntParam();
-        result.param = catchGoldLogic.buyChallengeTime(playerId);
+        result.param = catchGoldLogic.buyChallengeTime(playerId, param);
         return result;
     }
 

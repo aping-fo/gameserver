@@ -27,7 +27,7 @@ public class FightClient implements NodeCacheListener {
         ZKConnection connection = new ZKConnection("localhost:2181");
         connection.start();
 
-        masterNode = new NodeCache(connection.getCuratorFramework(), "/servers/1");
+        masterNode = new NodeCache(connection.getCuratorFramework(), "/servers3",false);
         ExecutorService masterChangeExec = Executors.newSingleThreadExecutor();
         masterNode.getListenable().addListener(this, masterChangeExec);
         masterNode.start(false);
@@ -83,6 +83,7 @@ public class FightClient implements NodeCacheListener {
     @Override
     public void nodeChanged() throws Exception {
         ChildData data = masterNode.getCurrentData();
+        System.out.println(data);
         if (data != null)
             System.out.println("master change =>" + new String(data.getData()));
     }

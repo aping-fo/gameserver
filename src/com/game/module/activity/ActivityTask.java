@@ -14,14 +14,16 @@ public class ActivityTask {
     private int state;
     private ActivityTaskCdt cond;
     private long timedBag;//限时礼包时间
+    private int finishNum;//完成次数或者购买次数
 
     public ActivityTask() {
     }
 
-    public ActivityTask(int id, int activityId, int targetValue, int condType) {
+    public ActivityTask(int id, int activityId, float targetValue, int condType) {
         this.id = id;
         this.activityId = activityId;
         this.state = ActivityConsts.ActivityState.T_UN_FINISH;
+        this.finishNum = 0;
         cond = new ActivityTaskCdt(targetValue, condType);
         timedBag = System.currentTimeMillis();
     }
@@ -41,6 +43,9 @@ public class ActivityTask {
     public void setState(int state) {
         this.state = state;
     }
+
+    public int getFinishNum(){return finishNum;}
+    public void setFinishNum(int finishNum){this.finishNum=finishNum;}
 
     public int getActivityId() {
         return activityId;
@@ -87,6 +92,7 @@ public class ActivityTask {
         vo.targetValue = cond.getTargetValue();
         vo.value = cond.getValue();
         vo.state = state;
+        vo.finishNum=finishNum;
 
         //剩余时间
         ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, activityId);

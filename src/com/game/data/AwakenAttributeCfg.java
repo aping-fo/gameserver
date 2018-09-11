@@ -5,9 +5,10 @@ package com.game.data;
 */
 public class AwakenAttributeCfg {
 	public int id;//key
-	public int Attribute;//增益属性
+	public int Attribute;//增益属性类型
 	public int value;//增益值
 	public int[][] material;//消耗材料
 	public int lv;//等级
 	public int nextID;//下一级ID
+	public String desValue;//描述值
 }

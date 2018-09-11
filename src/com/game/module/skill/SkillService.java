@@ -1,8 +1,11 @@
 package com.game.module.skill;
 
+import com.game.data.AwakenAttributeCfg;
 import com.game.data.Response;
 import com.game.data.SkillCardConfig;
 import com.game.data.SkillConfig;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
@@ -21,9 +24,13 @@ import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 技能系统
@@ -37,6 +44,8 @@ public class SkillService {
     private TaskService taskService;
     @Autowired
     private GoodsService goodsService;
+    @Autowired
+    private ActivityService activityService;
 
     //获取技能信息
     public SkillInfo getInfo(int playerId) {
@@ -59,6 +68,12 @@ public class SkillService {
         return info;
     }
 
+    /**
+     * @param playerId
+     * @param skillId
+     * @param onKey    -1二觉被动免费提升等级
+     * @return
+     */
     //升级技能
     public int upgradeSkill(int playerId, int skillId, int onKey) {
         //是否已经满级
@@ -70,23 +85,41 @@ public class SkillService {
         int coin = player.getCoin();
         int consume = 0;
         int nextId = skillId;
+
+        //2觉被动技能等级上限
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        Map<Integer, Integer> awakeningSkillMap = playerData.getAwakeningSkillMap();
+        int maxLevel = player.getLev();
+        cfg = ConfigData.getConfig(SkillConfig.class, nextId);
+        for (Map.Entry<Integer, Integer> entry : awakeningSkillMap.entrySet()) {
+            AwakenAttributeCfg awakenAttributeCfg = ConfigData.getConfig(AwakenAttributeCfg.class, entry.getValue());
+            if (awakenAttributeCfg != null && awakenAttributeCfg.value == cfg.skillType) {
+                maxLevel += awakenAttributeCfg.lv;
+                break;
+            }
+        }
+
         do {
-            if (coin < cfg.coin) {
+            if (onKey != -1 && coin < cfg.coin) {
                 break;
             }
             consume += cfg.coin;
             coin -= cfg.coin;
             nextId = cfg.nextId;
             cfg = ConfigData.getConfig(SkillConfig.class, nextId);
-            if (onKey == 0) { //一次升级一次
+            if (onKey == 0 || onKey == -1) { //一次升级一次
                 break;
             }
-        } while (cfg.nextId != 0 && coin > 0 && player.getLev() > cfg.lev);
+        } while (cfg.nextId != 0 && coin > 0 && maxLevel > cfg.lev);
 
         if (nextId == skillId) {
             return Response.NO_COIN;
         }
-        playerService.decCoin(playerId, consume, LogConsume.SKILL_UPGRADE);
+
+        //是否2觉被动免费提升
+        if (onKey != -1) {
+            playerService.decCoin(playerId, consume, LogConsume.SKILL_UPGRADE);
+        }
         //扣除金币
         /*if(!playerService.decCoin(playerId, cfg.coin, LogConsume.SKILL_UPGRADE)){
 			return Response.NO_COIN;
@@ -112,6 +145,8 @@ public class SkillService {
 
     //更新技能信息
     public void updateSkill2Client(int playerId) {
+        //开启了卡片投资才进行判断
+        cardInvestment(playerId);
         SessionManager.getInstance().sendMsg(SkillExtension.UPDATE_SKILL, getInfo(playerId), playerId);
     }
 
@@ -130,28 +165,34 @@ public class SkillService {
         }
         //逐个经验添加
         boolean full = false;
-        for (int i = 1; i < ids.size(); i++) {
-            SkillCard del = data.getSkillCards().get(ids.get(i));
-            SkillCardConfig delCfg = ConfigData.getConfig(SkillCardConfig.class, del.getCardId());
-            card.setExp(card.getExp() + delCfg.decompose + del.getExp());
-            //判断升级
-            while (card.getExp() >= cfg.exp) {
-                card.setLev(cfg.lv + 1);
-                card.setExp(card.getExp() - cfg.exp);
-                card.setCardId(cfg.nextCard);
 
-                cfg = ConfigData.getConfig(SkillCardConfig.class, card.getCardId());
-                if (cfg.nextCard == 0) {
-                    full = true;
-                    break;
-                }
+        ConcurrentHashMap<Integer, SkillCard> skillCards = data.getSkillCards();
+        if (skillCards == null) {
+            ServerLogger.warn("卡片不存在" + id);
+            return Response.ERR_PARAM;
+        }
+        List<Integer> deleyeList = new ArrayList<>();
+
+        //使用同类材料卡升级
+        for (Entry<Integer, SkillCard> entry : skillCards.entrySet()) {
+            SkillCardConfig skillCardConfig = ConfigData.getConfig(SkillCardConfig.class, entry.getValue().getCardId());
+            if (skillCardConfig == null) {
+                continue;
             }
-            //扣除
-            data.getSkillCards().remove(ids.get(i));
-            for (List<Integer> group : data.getSkillCardSets()) {
-                for (int j = 0; j < 4; j++) {
-                    if (group.get(j) == ids.get(i)) {
-                        group.set(j, 0);
+            if (skillCardConfig.cfgType == cfg.cfgType && skillCardConfig.subType == SkillConsts.SubType.T_MATERIAL_CARD) {
+                //判断升级
+                deleyeList.add(entry.getKey());//要移除的卡片
+                card.setExp(card.getExp() + skillCardConfig.decompose + entry.getValue().getExp());
+                while (card.getExp() >= cfg.exp) {
+                    card.setLev(cfg.lv + 1);
+                    card.setExp(card.getExp() - cfg.exp);
+                    card.setCardId(cfg.nextCard);
+
+                    //是否满级
+                    cfg = ConfigData.getConfig(SkillCardConfig.class, card.getCardId());
+                    if (cfg.nextCard == 0) {
+                        full = true;
+                        break;
                     }
                 }
             }
@@ -159,6 +200,14 @@ public class SkillService {
                 break;
             }
         }
+
+        //删除材料卡
+        if (!deleyeList.isEmpty()) {
+            for (Integer cardId : deleyeList) {
+                skillCards.remove(cardId);
+            }
+        }
+
         taskService.doTask(playerId, Task.FINISH_CARD_UPGRADE, cfg.lv);
         //更新前端
         updateSkill2Client(playerId);
@@ -196,7 +245,7 @@ public class SkillService {
         List<GoodsEntry> goodsEntries = Lists.newArrayList();
         goodsEntries.add(new GoodsEntry(arr[0], arr[1]));
         int ret = goodsService.decConsume(playerId, goodsEntries, LogConsume.SKILL_CARD_MAKE);
-        if(ret != Response.SUCCESS){
+        if (ret != Response.SUCCESS) {
             return ret;
         }
 
@@ -259,5 +308,43 @@ public class SkillService {
     public void gmAddSkillCard(int playerId, int cardId) {
         playerService.addSkillCard(playerId, cardId);
         updateSkill2Client(playerId);
+    }
+
+    //统计卡片等级和数量
+    public Map<Integer, Integer> getTypeNumberMap(int playerId) {
+        Map<Integer, Integer> skillCardMap = new ConcurrentHashMap<>();
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            return skillCardMap;
+        }
+        ConcurrentHashMap<Integer, SkillCard> skillCards = playerData.getSkillCards();
+        if (skillCards == null || skillCards.isEmpty()) {
+            return skillCardMap;
+        }
+        for (SkillCard skillCard : skillCards.values()) {
+            SkillCardConfig skillCardConfig = ConfigData.getConfig(SkillCardConfig.class, skillCard.getCardId());
+            if (skillCardConfig != null && skillCardConfig.id != 59901 && !skillCardConfig.name.equals("经验卡") && skillCardConfig.lv >= 1) {
+                for (int i = 1; i <= skillCardConfig.lv; i++) {
+                    //高级品质装备也算低级品质的数量
+                    if (skillCardMap.get(i) == null) {
+                        skillCardMap.put(i, 1);
+                    } else {
+                        skillCardMap.put(i, skillCardMap.get(i) + 1);
+                    }
+                }
+            }
+        }
+        return skillCardMap;
+    }
+
+    //卡片投资
+    public void cardInvestment(int playerId) {
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData != null && activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_CARD_INVESTMENT)) {
+            Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId);
+            if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
+                activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_CARD_INVESTMENT, true, typeNumberMap, true);
+            }
+        }
     }
 }

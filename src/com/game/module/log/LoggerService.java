@@ -32,6 +32,7 @@ public class LoggerService implements InitHandler {
 
     public static final String INS_DIAMOND_LOG = "insert into players_diamond_logs(player_id,item_id,op_type,param,count,create_time) values(?,?,?,?,?,now())";
     public static final String ITEM_LOG = "insert into item_log(playerId,op,count,type,goodsId,goodsType,createTime) values(?,?,?,?,?,?,now())";
+    public static final String CHARGE_LOG = "insert into charge_log(role_id,role_name,charge_id,charge_type,amount,channel_id,create_time,paymentType) values(?,?,?,?,?,?,now(),?)";//充值日志
 
 
     private SimpleJdbcTemplate loggerTemplate;//日志库
@@ -327,4 +328,8 @@ public class LoggerService implements InitHandler {
     /*public void addDbEvent(AbstractDb log) {
         eventLoggers.add(log);
     }*/
+
+    public void logCharge(int roleId, String roleName, int chargeId, String chargerType, float amount, int channelId,String paymentType) {
+        addDbLogger(CHARGE_LOG, roleId, roleName, chargeId, chargerType, amount, channelId,paymentType);
+    }
 }

@@ -1,18 +1,20 @@
 package com.game.module.serial;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.ConcurrentHashMap;
-
 import com.game.module.attach.arena.ArenaPlayer;
 import com.game.module.attach.training.TrainOpponent;
 import com.game.module.copy.CopyRank;
 import com.game.module.gang.GangDungeon;
 import com.game.module.ladder.Ladder;
-import com.game.module.mail.Mail;
-import com.google.common.collect.Maps;
+import com.game.module.rank.StateRank;
+import com.game.params.Int2Param;
+import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 全局的序列化数据
@@ -41,21 +43,54 @@ public class SerialData {
 
     //玩家相关数据最高排名缓存
     private Map<Integer, PlayerView> playerViews = new ConcurrentHashMap<>();
-    //全局邮件
-    private Map<Long, Mail> globalMail = new ConcurrentHashMap<>();
     private Map<Integer, Integer> bossKillTimes = new ConcurrentHashMap<>();
     private Set<Integer> cdkSet = Sets.newHashSet();
+    private List<StateRank> stateRanks = Lists.newArrayList();
+
+    //facebook绑定id， <facebookId, <绑定角色id>>
+    Map<String, Set<Integer>> facebookBindIds = new ConcurrentHashMap<>();
+    //facebook邀请id,  <被邀请FacebookId,<邀请人角色id>>
+    Map<String, Set<Integer>> facebookInviteIds = new ConcurrentHashMap<>();
+    //facebook邀请成功的玩家id
+    Map<Integer, Set<Integer>> facebookInviteSuccessIds = new ConcurrentHashMap<>();
+    private Map<Integer, Int2Param> copyPassFastestTimeMap = new ConcurrentHashMap<>();//副本最快通关时间
+    private Map<Integer, Map<Integer, Long>> laterDayRewardMap = new ConcurrentHashMap<>();//延时自然日发送奖励的活动
+    private AtomicInteger fullServiceAttendance = new AtomicInteger(0);//全服登录人数
 
     public SerialData() {
 
     }
 
-    public Map<Long, Mail> getGlobalMail() {
-        return globalMail;
+    public AtomicInteger getFullServiceAttendance() {
+        return fullServiceAttendance;
     }
 
-    public void setGlobalMail(Map<Long, Mail> globalMail) {
-        this.globalMail = globalMail;
+    public void setFullServiceAttendance(AtomicInteger fullServiceAttendance) {
+        this.fullServiceAttendance = fullServiceAttendance;
+    }
+
+    public Map<Integer, Map<Integer, Long>> getLaterDayRewardMap() {
+        return laterDayRewardMap;
+    }
+
+    public void setLaterDayRewardMap(Map<Integer, Map<Integer, Long>> laterDayRewardMap) {
+        this.laterDayRewardMap = laterDayRewardMap;
+    }
+
+    public Map<Integer, Int2Param> getCopyPassFastestTimeMap() {
+        return copyPassFastestTimeMap;
+    }
+
+    public void setCopyPassFastestTimeMap(Map<Integer, Int2Param> copyPassFastestTimeMap) {
+        this.copyPassFastestTimeMap = copyPassFastestTimeMap;
+    }
+
+    public List<StateRank> getStateRanks() {
+        return stateRanks;
+    }
+
+    public void setStateRanks(List<StateRank> stateRanks) {
+        this.stateRanks = stateRanks;
     }
 
     public Set<Integer> getCdkSet() {
@@ -202,5 +237,29 @@ public class SerialData {
 
     public void setLadderMap(Map<Integer, Ladder> ladderMap) {
         this.ladderMap = ladderMap;
+    }
+
+    public Map<String, Set<Integer>> getFacebookBindIds() {
+        return facebookBindIds;
+    }
+
+    public void setFacebookBindIds(Map<String, Set<Integer>> facebookBindIds) {
+        this.facebookBindIds = facebookBindIds;
+    }
+
+    public Map<String, Set<Integer>> getFacebookInviteIds() {
+        return facebookInviteIds;
+    }
+
+    public void setFacebookInviteIds(Map<String, Set<Integer>> facebookInviteIds) {
+        this.facebookInviteIds = facebookInviteIds;
+    }
+
+    public Map<Integer, Set<Integer>> getFacebookInviteSuccessIds() {
+        return facebookInviteSuccessIds;
+    }
+
+    public void setFacebookInviteSuccessIds(Map<Integer, Set<Integer>> facebookInviteSuccessIds) {
+        this.facebookInviteSuccessIds = facebookInviteSuccessIds;
     }
 }

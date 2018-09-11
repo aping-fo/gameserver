@@ -6,10 +6,12 @@ package com.game.data;
 public class SkillConfig {
 	public int id;//技能ID
 	public String name;//技能名称
+	public String name_en;//技能名称
 	public String icon;//图标
 	public int vocation;//职业
 	public int lev;//等级
 	public String desc;//技能描述
+	public String desc_en;//技能描述
 	public String logicDataFile;//技能逻辑文件
 	public int logicId;//技能逻辑ID
 	public int[] attachedBuff;//增加到自身的buff

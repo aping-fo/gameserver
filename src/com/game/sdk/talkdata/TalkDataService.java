@@ -5,6 +5,7 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.util.JsonUtils;
 import com.google.common.collect.Lists;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +23,7 @@ public class TalkDataService {
     @Autowired
     private PlayerService playerService;
 
-    public String talkGameRecharge(int playerId, String orderId, double currencyAmount, double virtualCurrencyAmount, String currentType) {
+    public String talkGameRecharge(int playerId, String orderId, float currencyAmount, double virtualCurrencyAmount, String currentType,int serverId,int itemId) {
         Player player = playerService.getPlayer(playerId);
         RechargeInfo info = new RechargeInfo();
         info.setMsgID(System.nanoTime() + "");
@@ -30,30 +31,35 @@ public class TalkDataService {
         String os = player.clientType == 1 ? "ios" : "android";
         info.setOS(os);
         info.setAccountID(playerId + "");
-        info.setOrderID(SysConfig.serverId + "-" + orderId);
+        info.setOrderID(serverId + "-" + orderId);
         info.setCurrencyAmount(currencyAmount);
         info.setCurrencyType(currentType);
         info.setVirtualCurrencyAmount(virtualCurrencyAmount);
         info.setChargeTime(System.currentTimeMillis() / 1000);
-        info.setGameServer(SysConfig.serverId + "");
+        info.setGameServer(serverId + "");
         info.setLevel(player.getLev());
-        info.setPartner("");
+        if(SysConfig.currency.equals("CNY")){
+            info.setPartner("TapTap");
+        }else{
+            info.setPartner("GooglePlay--Singapore Malaysia");
+        }
         info.setGameVersion("1.0");
         info.setMission("recharge");
         byte[] dataByte = gzip(JsonUtils.object2String(Lists.newArrayList(info)));
         String result = "";
         try {
+            ServerLogger.warn("talkingdata report:rechargeId="+itemId+" 金额="+currencyAmount);
             HttpClient client = new HttpClient("api.talkinggame.com", "80", "/api/charge/CCD1697D3DE34B499BC53EBE92844B1E");
             result = client.doPost(dataByte);
         } catch (Exception e) {
-
+            e.printStackTrace();
         }
         return result;
     }
 
     public static void main(String[] args) {
         TalkDataService talkDataService = new TalkDataService();
-        talkDataService.talkGameRecharge(1, "1232", 100, 100, "CNY");
+        talkDataService.talkGameRecharge(1, "1232", 100, 100, "CNY",SysConfig.serverId,1);
     }
 
     /**

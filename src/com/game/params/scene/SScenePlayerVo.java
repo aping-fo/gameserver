@@ -1,6 +1,7 @@
 package com.game.params.scene;
 
 import java.util.List;
+import java.util.ArrayList;
 import com.game.params.*;
 
 //场景玩家信息(工具自动生成，请勿手动修改！）
@@ -29,12 +30,14 @@ public class SScenePlayerVo implements IProtocol {
 	public String fightPetName;//出战宠物名字
 	public String showPetName;//展示宠物名字
 	public List<Integer> buffList;//套装bufffer列表
-	public List<Integer> awakenSkillList;//觉醒技能列表
+	public List<Int2Param> awakenSkillList;//觉醒技能列表
 	public int attack;//攻击
 	public int defense;//防守
 	public int crit;//暴击
 	public int symptom;//症状
 	public int fu;//符能
+	public List<Integer> curSkills;//当前装载的技能[技能id,技能id,技能id,技能id]技能id为0表示该位置没有技能
+	public List<Integer> curCards;//当前装载的技能卡[技能卡配置表id,技能id,技能id,技能id]技能id为0表示该位置没有技能卡
 
 
 	public void decode(BufferBuilder bb) {
@@ -62,12 +65,38 @@ public class SScenePlayerVo implements IProtocol {
 		this.fightPetName = bb.getString();
 		this.showPetName = bb.getString();
 		this.buffList = bb.getIntList();
-		this.awakenSkillList = bb.getIntList();
+		
+        if (bb.getNullFlag())
+            this.awakenSkillList = null;
+        else {
+            int length = bb.getInt();
+            this.awakenSkillList = new ArrayList<Int2Param>();
+            for (int i = 0; i < length; i++)
+            {
+                //如果元素不够先创建一个，Java泛型创建对象，性能？
+                boolean isNull = bb.getNullFlag();
+
+                //如果不是null就解析
+                if(isNull)
+                {
+                    this.awakenSkillList.add(null);
+                }
+                else
+                {
+                    Int2Param instance = new Int2Param();
+                    instance.decode(bb);
+                    this.awakenSkillList.add(instance);
+                }
+
+            }
+        }
 		this.attack = bb.getInt();
 		this.defense = bb.getInt();
 		this.crit = bb.getInt();
 		this.symptom = bb.getInt();
 		this.fu = bb.getInt();
+		this.curSkills = bb.getIntList();
+		this.curCards = bb.getIntList();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -95,11 +124,13 @@ public class SScenePlayerVo implements IProtocol {
 		bb.putString(this.fightPetName);
 		bb.putString(this.showPetName);
 		bb.putIntList(this.buffList);
-		bb.putIntList(this.awakenSkillList);
+		bb.putProtocolVoList(this.awakenSkillList);
 		bb.putInt(this.attack);
 		bb.putInt(this.defense);
 		bb.putInt(this.crit);
 		bb.putInt(this.symptom);
 		bb.putInt(this.fu);
+		bb.putIntList(this.curSkills);
+		bb.putIntList(this.curCards);
 	}
 }

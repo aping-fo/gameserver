@@ -4,11 +4,14 @@ import com.game.SysConfig;
 import com.game.data.Response;
 import com.game.event.DefaultLogoutHandler;
 import com.game.event.LoginHandler;
+import com.game.module.activity.ActivityConsts;
 import com.game.module.admin.ManagerService;
 import com.game.module.admin.UserManager;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
+import com.game.module.serial.SerialData;
+import com.game.module.serial.SerialDataService;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
@@ -46,6 +49,8 @@ public class PlayerExtension {
     private FashionService fashionService;
     @Autowired
     private ERatingService ratingService;
+    @Autowired
+    private PlayerCalculator playerCalculator;
 
     private static final AttributeKey<String> CHANNEL = AttributeKey.valueOf("channel");
 
@@ -60,6 +65,7 @@ public class PlayerExtension {
         }
 
         List<Player> roleList = playerService.getPlayersByAccName(param.userId);
+        ServerLogger.info("获取角色列表");
         channel.attr(CHANNEL).set(param.userId);
 
         ListParam<SRoleVo> vo = new ListParam<SRoleVo>();
@@ -141,7 +147,7 @@ public class PlayerExtension {
             result.code = Response.TOO_MANY_ROLE;
             return result;
         }
-        Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName, param.channel, param.serverId, param.serverName, param.userId);
+        Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName, param.channel, param.serverId, param.serverName, param.userId, param.thirdChannel, param.thirdUserId);
         if (player == null) {
             result.code = Response.SAME_NAME;
             return result;
@@ -172,7 +178,8 @@ public class PlayerExtension {
         String[] arr = host.split(":");
         player.clientPort = Integer.parseInt(arr[1]);
         String[] hostArr = arr[0].substring(1).split("\\.");
-        player.clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
+//        player.clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
+        player.clientIp = (int) (Math.pow(Integer.parseInt(hostArr[0]) * 256, 3) + Math.pow(Integer.parseInt(hostArr[1]) * 256, 2) + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]));
         //player.userId = param.userId;
 
 
@@ -184,7 +191,7 @@ public class PlayerExtension {
         //report create log
         ratingService.reportCreateRole(player);
         player.bCrateRole = true;
-        return null;
+        return result;
     }
 
     @UnLogin
@@ -244,6 +251,7 @@ public class PlayerExtension {
         // 第一次登录
         if (player.getLastLoginTime() == null) {
             playerService.handleFirstLogin(playerId);
+            playerService.addLoginCount(playerId);//增加每日登录人数
         }
         player.setLastLoginTime(new Date());
         player.setLastLogoutTime(new Date());
@@ -254,6 +262,9 @@ public class PlayerExtension {
         playerService.handleLogin(playerId);
         //其它子系统的登录处理
         loginHandler.playerLogin(playerId);
+
+        //刷新属性
+        playerCalculator.calculate(playerId);
 
         result = playerService.toSLoginVo(playerId);
         if (ban != null && ban.getBanChat() > 0) {
@@ -281,7 +292,8 @@ public class PlayerExtension {
             String[] arr = host.split(":");
             player.clientPort = Integer.parseInt(arr[1]);
             String[] hostArr = arr[0].substring(1).split("\\.");
-            player.clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
+//            player.clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
+            player.clientIp = (int) (Math.pow(Integer.parseInt(hostArr[0]) * 256, 3) + Math.pow(Integer.parseInt(hostArr[1]) * 256, 2) + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]));
         } catch (Exception e) {
             ServerLogger.err(e, "ip 解析失败");
         }
@@ -291,7 +303,7 @@ public class PlayerExtension {
         }
         // 设置session等级
         SessionManager.getInstance().setPlayerLev(playerId, player.getLev());
-
+        ServerLogger.info("user login:" + playerId + " 设备mac:" + param.clientMac);
         //System.out.println("=============" + playerService.getPlayers().size());
         return result;
     }
@@ -364,12 +376,13 @@ public class PlayerExtension {
             if (!ConfigData.accountSet.contains(hostIp)) { //非白名单
                 ServerLogger.warn("client ip ---------- " + hostIp);
                 IntParam param1 = new IntParam();
-                param1.param = -1;
+                param1.param = -5;
                 return param1;
             }
         }
         String[] hostArr = hostIp.split("\\.");
-        int clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
+//        int clientIp = Integer.parseInt(hostArr[0]) * 2563 + Integer.parseInt(hostArr[1]) * 2562 + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]);
+        int clientIp = (int) (Math.pow(Integer.parseInt(hostArr[0]) * 256, 3) + Math.pow(Integer.parseInt(hostArr[1]) * 256, 2) + Integer.parseInt(hostArr[2]) * 256 + Integer.parseInt(hostArr[3]));
         ratingService.reportAuthen(param.un, param.token, clientIp, clientPort, param.clientMac, param.clientType, param.modelVersion, channel);
         return null;
     }

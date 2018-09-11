@@ -12,6 +12,7 @@ public class MonsterConfig {
 	public int AppointAI;//托管ai
 	public String icon;//图标
 	public String name;//名称
+	public String name_en;//名称
 	public String desc;//描述
 	public float scale;//放大倍数
 	public int lev;//等级

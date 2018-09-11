@@ -234,7 +234,11 @@ public class RandomRewardService implements InitHandler {
             } else {
                 Reward r = new Reward();
                 r.id = itemCfg.itemId;
-                r.count = itemCfg.count * n;
+                if(itemCfg.randomNum!=null){
+                    r.count = RandomUtil.randInt(itemCfg.randomNum[0],itemCfg.randomNum[1]) * n;
+                }else {
+                    r.count = itemCfg.count * n;
+                }
                 result.add(r);
                 rewards.add(new GoodsEntry(r.id, r.count));
             }

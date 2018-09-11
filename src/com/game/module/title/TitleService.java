@@ -39,6 +39,7 @@ import java.util.Map;
 public class TitleService {
     private static final int CMD_ADD = 9002; //新增称号
     private static final int CMD_BROADCAST_EQUIP = 9005; // 称号状态广播
+    private static final int CMD_UNLOAD = 9008; // 卸下称号
     @Autowired
     private PlayerService playerService;
     @Autowired
@@ -70,7 +71,7 @@ public class TitleService {
         }
     }
 
-    public void updateWeekly(int playerId) {
+    public void updateWeekly(int playerId,boolean isWeekly) {
         PlayerData data = playerService.getPlayerData(playerId);
         List<Integer> deleteList = Lists.newArrayList();
         for (int id : data.getTitles()) {
@@ -79,8 +80,22 @@ public class TitleService {
             if (map != null) {
                 Title title = map.get(cfg.id);
                 if (cfg.period != 0) {
-                    if (System.currentTimeMillis() - title.getRecvTime() > cfg.period * TimeUtil.ONE_DAY) {
+                    if ((System.currentTimeMillis() - title.getRecvTime() > cfg.period * TimeUtil.ONE_DAY) && cfg.titleSubType != TitleConsts.LADDER) {
                         deleteList.add(id);
+                    }
+                    if (isWeekly) {
+                        //按赛季进行清空排行榜称号
+                        if (cfg.titleSubType == TitleConsts.LADDER) {
+                            deleteList.add(id);
+                            Player player = playerService.getPlayer(playerId);
+                            if (player != null && player.getTitle() != 0 && player.getTitle() == id) {
+                                IntParam intParam = new IntParam();
+                                intParam.param = id;
+                                player.setTitle(0);
+                                calculator.calculate(player);
+                                SessionManager.getInstance().sendMsg(CMD_UNLOAD, intParam, playerId);
+                            }
+                        }
                     }
                 }
             }
@@ -91,9 +106,9 @@ public class TitleService {
         }
     }
 
-    public void onLogin(int playerId) {
+    public void onLogin(int playerId,boolean isWeekly) {
         doInit(playerId);
-        updateWeekly(playerId);
+        updateWeekly(playerId,isWeekly);
         int ladderLevel = ladderService.getRank(playerId);
         if (ladderLevel != 0) { //排位赛
             checkTitle(playerId, TitleConsts.LADDER, ladderLevel, ActivityConsts.UpdateType.T_VALUE, null);

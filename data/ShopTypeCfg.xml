@@ -12,6 +12,8 @@
 	<refreshPrice>[102,0,0,100,200,300]</refreshPrice>
 	<currencyInfo>[102,103,107]</currencyInfo>
 	<tips>0</tips>
+	<illustratedPos></illustratedPos>
+	<illustratedSize></illustratedSize>
 </config>
 <config>
 	<id>2</id>
@@ -25,6 +27,8 @@
 	<refreshPrice>[102,0,0,10,20,50,100,200]</refreshPrice>
 	<currencyInfo>[102,103,107]</currencyInfo>
 	<tips>3</tips>
+	<illustratedPos>[-355,2,0]</illustratedPos>
+	<illustratedSize>[530,676]</illustratedSize>
 </config>
 <config>
 	<id>3</id>
@@ -38,6 +42,8 @@
 	<refreshPrice>[110,10,20]</refreshPrice>
 	<currencyInfo>[110]</currencyInfo>
 	<tips>4</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>4</id>
@@ -51,6 +57,8 @@
 	<refreshPrice>[104,10,20]</refreshPrice>
 	<currencyInfo>[104]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-409,-34,0]</illustratedPos>
+	<illustratedSize>[452,605]</illustratedSize>
 </config>
 <config>
 	<id>5</id>
@@ -64,6 +72,8 @@
 	<refreshPrice>[121,10,20]</refreshPrice>
 	<currencyInfo>[121]</currencyInfo>
 	<tips>21</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>6</id>
@@ -77,6 +87,8 @@
 	<refreshPrice>[111,10,20]</refreshPrice>
 	<currencyInfo>[111]</currencyInfo>
 	<tips>22</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>7</id>
@@ -90,6 +102,8 @@
 	<refreshPrice>[131,10,20]</refreshPrice>
 	<currencyInfo>[131]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>8</id>
@@ -103,6 +117,8 @@
 	<refreshPrice>[132,10,20]</refreshPrice>
 	<currencyInfo>[132]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>9</id>
@@ -116,6 +132,8 @@
 	<refreshPrice>[133,10,20]</refreshPrice>
 	<currencyInfo>[133]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>10</id>
@@ -129,6 +147,8 @@
 	<refreshPrice>[134,10,20]</refreshPrice>
 	<currencyInfo>[134]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>11</id>
@@ -142,6 +162,8 @@
 	<refreshPrice>[135,10,20]</refreshPrice>
 	<currencyInfo>[135]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>12</id>
@@ -155,6 +177,8 @@
 	<refreshPrice>[136,10,20]</refreshPrice>
 	<currencyInfo>[136]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>13</id>
@@ -168,6 +192,8 @@
 	<refreshPrice>[137,10,20]</refreshPrice>
 	<currencyInfo>[137]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>14</id>
@@ -181,6 +207,8 @@
 	<refreshPrice>[138,10,20]</refreshPrice>
 	<currencyInfo>[138]</currencyInfo>
 	<tips>20</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>15</id>
@@ -194,11 +222,13 @@
 	<refreshPrice>[112,10,20]</refreshPrice>
 	<currencyInfo>[112]</currencyInfo>
 	<tips>27</tips>
+	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>16</id>
 	<layoutType>3</layoutType>
-	<tabs>[40,50,60,70]</tabs>
+	<tabs>[40,50,60,70,80,90,100]</tabs>
 	<titleIcon>chuanqi</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated></illustrated>
@@ -207,5 +237,7 @@
 	<refreshPrice></refreshPrice>
 	<currencyInfo>[17000,17001]</currencyInfo>
 	<tips>41</tips>
+	<illustratedPos></illustratedPos>
+	<illustratedSize></illustratedSize>
 </config>
 </root>

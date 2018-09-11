@@ -2,6 +2,7 @@ package com.game.module.player;
 
 import com.game.data.*;
 import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsService;
 import com.game.module.goods.PlayerBag;
@@ -33,7 +34,6 @@ public class PlayerCalculator {
     private PlayerService playerService;
     @Autowired
     private GoodsService goodsService;
-
     @Autowired
     private GroupService groupService;
     @Autowired
@@ -44,6 +44,8 @@ public class PlayerCalculator {
     private TitleService titleService;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private ActivityService activityService;
 
     // 重新计算人物属性
     public void calculate(int playerId) {
@@ -122,7 +124,7 @@ public class PlayerCalculator {
         attrList.add(player.getSymptom());
         attrList.add(player.getCrit());
         //百分比保持最后
-        addPercent(player,attrList);
+        addPercent(player, attrList);
         player.setAttrList(attrList);
 
         // 更新战斗力
@@ -135,6 +137,10 @@ public class PlayerCalculator {
         if (fight > oldFight) {
             titleService.complete(player.getPlayerId(), TitleConsts.FIGHTING, (int) fight, ActivityConsts.UpdateType.T_VALUE);
             taskService.doTask(player.getPlayerId(), Task.TYPE_FIGHT, (int) fight);
+
+            //战力活动
+//            int playerId = player.getPlayerId();
+//            activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_COMBAT_EFFECTIVENESS, (int) fight);
         }
         groupService.updateAttr(player.getPlayerId());
         teamService.updateAttr(player.getPlayerId());
@@ -369,18 +375,60 @@ public class PlayerCalculator {
     //加时装战力，非百分比的部分
     private void AddFashion(PlayerAddition player) {
         PlayerData data = playerService.getPlayerData(player.getPlayerId());
-        Player p = (Player) player;
-        int count = data.getFashionMap().size();
-        FashionCollectCfg cfg = ConfigData.getConfig(FashionCollectCfg.class, count);
-        if (cfg == null) {
+
+        //更新魅力值
+        Set<Integer> fashionRankSet = data.getFashionRankSet();
+        if (fashionRankSet == null || fashionRankSet.isEmpty()) {
             return;
         }
-        player.addAttack(cfg.srvAttack);
-        player.addCrit(cfg.srvCrit);
-        player.addDefense(cfg.srvDefense);
-        player.addFu(cfg.srvFu);
-        player.addSymptom(cfg.srvSymptom);
-        player.addHp(cfg.srvHp);
+        int glamour = 0;
+        for (Integer id : fashionRankSet) {
+            FashionUpCfg config = ConfigData.getConfig(FashionUpCfg.class, id);
+            if (config == null) {
+                ServerLogger.warn("时装找不到，时装收集表id=" + id);
+                continue;
+            }
+            glamour += config.charm;
+        }
+        data.setGlamour(glamour);
+
+        Collection<Object> configs = ConfigData.getConfigs(FashionCollectCfg.class);
+        if (configs == null || configs.isEmpty()) {
+            ServerLogger.warn("时装收集表不存在");
+            return;
+        }
+
+        Player p = (Player) player;
+
+        List<FashionCollectCfg> list = new ArrayList<>();
+        for (Object object : configs) {
+            list.add((FashionCollectCfg) object);
+        }
+
+        for (int i = 0; i < list.size(); i++) {
+            FashionCollectCfg cfg = (FashionCollectCfg) list.get(i);
+            boolean find = false;
+            if (glamour >= cfg.value) {
+                if (i != list.size() - 1) {//最后一个
+                    FashionCollectCfg cfgNext = (FashionCollectCfg) list.get(i + 1);
+                    if (glamour >= cfg.value && glamour < cfgNext.value) {
+                        find = true;
+                    }
+                } else {
+                    find = true;
+                }
+            }
+
+            if (find) {
+                player.addAttack(cfg.srvAttack);
+                player.addCrit(cfg.srvCrit);
+                player.addDefense(cfg.srvDefense);
+                player.addFu(cfg.srvFu);
+                player.addSymptom(cfg.srvSymptom);
+                player.addHp(cfg.srvHp);
+                break;
+            }
+        }
 
         addFashionAttr(player, p.getFashionId());
         addFashionAttr(player, p.getWeaponId());
@@ -392,12 +440,35 @@ public class PlayerCalculator {
         if (fashionCfg == null) {
             return;
         }
-        player.addAttack(fashionCfg.attack);
-        player.addCrit(fashionCfg.crit);
-        player.addDefense(fashionCfg.defense);
-        player.addFu(fashionCfg.fu);
-        player.addSymptom(fashionCfg.symptom);
-        player.addHp(fashionCfg.hp);
+
+        //附加阶级属性
+        PlayerData playerData = playerService.getPlayerData(player.getPlayerId());
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据找不到，玩家id=" + player.getPlayerId());
+            return;
+        }
+
+        Set<Integer> fashionRankSet = playerData.getFashionRankSet();
+        if (fashionRankSet == null || fashionRankSet.isEmpty()) {
+            ServerLogger.warn("时装信息错误，玩家id=" + player.getPlayerId());
+            return;
+        }
+        for (Integer cfgId : fashionRankSet) {
+            FashionUpCfg fashionUpCfg = ConfigData.getConfig(FashionUpCfg.class, cfgId);
+            if (fashionUpCfg == null) {
+                ServerLogger.warn("时装阶级属性错误");
+                continue;
+            }
+            if (fashionUpCfg.FashionID == id) {
+                player.addAttack(fashionCfg.attack + fashionUpCfg.attack);
+                player.addCrit(fashionCfg.crit + fashionUpCfg.crit);
+                player.addDefense(fashionCfg.defense + fashionUpCfg.defense);
+                player.addFu(fashionCfg.fu + fashionUpCfg.fu);
+                player.addSymptom(fashionCfg.symptom + fashionUpCfg.symptom);
+                player.addHp(fashionCfg.hp + fashionUpCfg.hp);
+                break;
+            }
+        }
     }
 
     //处理神器
@@ -471,7 +542,7 @@ public class PlayerCalculator {
     }
 
     //百分比的（要统一放在这里处理，先累加所有的百分比，再计算原始值+原始值%)
-    public void addPercent(PlayerAddition player,List array) {
+    public void addPercent(PlayerAddition player, List array) {
         //装备的特殊属性
         HashMap<Integer, Integer> percentAttrs = new HashMap<Integer, Integer>();
         PlayerBag bag = goodsService.getPlayerBag(player.getPlayerId());
@@ -540,12 +611,12 @@ public class PlayerCalculator {
             }
         }
 
-        for (int i = 0;i<6;i++){
-             array.add(0);
+        for (int i = 0; i < 6; i++) {
+            array.add(0);
         }
         for (Entry<Integer, Integer> attr : percentAttrs.entrySet()) {
             addAttrValuePercent(player, attr.getKey(), attr.getValue());
-            array.set(5+attr.getKey(),attr.getValue());
+            array.set(5 + attr.getKey(), attr.getValue());
         }
 
     }

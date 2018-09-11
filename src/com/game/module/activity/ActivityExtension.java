@@ -36,4 +36,9 @@ public class ActivityExtension {
     public Object getWelfareCardInfo(int playerId, Object param) {
         return welfareCardService.getWelfareCardInfo(playerId);
     }
+
+    @Command(8009)
+    public Object buyActivityTask(int playerId, IntParam param) {
+        return activityService.buyActivityTask(playerId,param.param);
+    }
 }

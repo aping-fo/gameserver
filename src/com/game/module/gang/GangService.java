@@ -938,6 +938,9 @@ public class GangService implements InitHandler {
     private void checkUpdateOwner(Gang g) {
         // 判断会长两周以上未登录d
         Player owner = playerService.getPlayer(g.getOwnerId());
+        if (owner == null) {
+            return;
+        }
         long passTime = (System.currentTimeMillis() - owner.getLastLoginTime()
                 .getTime()) / (TimeUtil.ONE_HOUR * 24);
         if (passTime < 14) {
@@ -1168,6 +1171,10 @@ public class GangService implements InitHandler {
             return result;
         }
         GMember member = gang.getMembers().get(playerId);
+        if (member == null) {
+            result.code = Response.ERR_PARAM;
+            return result;
+        }
         result.params = new ArrayList<Int2Param>();
         for (Map.Entry<Integer, Integer> entry : member.getDonationRecord().entrySet()) {
             Int2Param param = new Int2Param();

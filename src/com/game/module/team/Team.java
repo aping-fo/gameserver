@@ -35,6 +35,22 @@ public class Team {
 		return id;
 	}
 
+	/**
+	 * 是否机器人参战
+	 * TODO，指定ID，有robot标记更清晰
+	 * @return
+	 */
+	public boolean isbRobot() {
+		for(TMember m : members.values()) {
+			if(m.getPlayerId() == Integer.MAX_VALUE){ //
+				return true;
+			}
+		}
+		return false;
+	}
+
+
+
 	public void setId(int id) {
 		this.id = id;
 	}

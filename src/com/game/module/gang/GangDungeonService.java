@@ -2,6 +2,7 @@ package com.game.module.gang;
 
 import com.game.data.*;
 import com.game.module.copy.CopyInstance;
+import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
@@ -15,6 +16,7 @@ import com.game.module.task.TaskService;
 import com.game.module.worldboss.WorldBossExtension;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
+import com.game.params.Reward;
 import com.game.params.gang.*;
 import com.game.params.scene.SkillHurtVO;
 import com.game.params.worldboss.MonsterHurtVO;
@@ -56,6 +58,8 @@ public class GangDungeonService {
     private TaskService taskService;
     @Autowired
     private SceneService sceneService;
+    @Autowired
+    private CopyService copyService;
 
     /**
      * 获取公会副本信息
@@ -75,6 +79,10 @@ public class GangDungeonService {
             return vo;
         }
         GMember member = gang.getMembers().get(playerId);
+        if (member == null) {
+            vo.errCode = Response.GUILD_NOT_EXIST;
+            return vo;
+        }
         vo.remainTimes = member.getChallengeTimes();
 
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
@@ -376,6 +384,13 @@ public class GangDungeonService {
                     String title = ConfigData.getConfig(ErrCode.class, Response.GUILD_COPY_MAIL_TITLE).tips;
                     String content = ConfigData.getConfig(ErrCode.class, Response.GUILD_COPY_MAIL_CONTENT).tips;
                     for (int pid : gang.getMembers().keySet()) {
+
+                        //活动奖励
+                        Reward activityReward = copyService.activityReward(pid, CopyInstance.TYPE_GANG_COPY);
+                        if (activityReward != null) {
+                            rewards.add(new GoodsEntry(activityReward.id, activityReward.count));
+                        }
+
                         mailService.sendSysMail(title, content, rewards, pid, LogConsume.GUILD_COPY_REWARD);
                     }
                 }

@@ -10,10 +10,13 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerCalculator;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.skill.SkillService;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
+import com.game.params.arena.ArenaFighterVO;
 import com.game.util.ConfigData;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +33,8 @@ public class AwakeningSkillService {
     private GoodsService goodsService;
     @Autowired
     private PlayerCalculator playerCalculator;
+    @Autowired
+    private SkillService skillService;
 
     /**
      * 获取觉醒技能信息
@@ -160,7 +165,7 @@ public class AwakeningSkillService {
 
         //扣除材料
         int[][] material = awakenAttributeCfg.material;
-        if(goodsService.decConsume(playerId, material, LogConsume.STRENGTH_COST)!=Response.SUCCESS){
+        if (goodsService.decConsume(playerId, material, LogConsume.STRENGTH_COST) != Response.SUCCESS) {
             param.param = Response.ERR_PARAM;
             return param;
         }
@@ -173,9 +178,42 @@ public class AwakeningSkillService {
         }
         awakeningSkillMap.put(id, skillLevel);
 
+        //2觉被动提升普通技能等级
+        if (config.type == 4 && awakenAttributeCfg.Attribute == 20) {
+            List<Integer> skillList = playerData.getSkills();
+            Integer skillId = skillList.get(awakenAttributeCfg.value % 4);
+            skillService.upgradeSkill(playerId, skillId, -1);
+        }
+
         //更新属性
         playerCalculator.calculate(playerId);
 
         return param;
+    }
+
+    /**
+     * 获取觉醒技能列表
+     *
+     * @param playerId 玩家id
+     * @return 觉醒技能列表
+     */
+    public List<Int2Param> getAwakeningSkillList(int playerId) {
+        //觉醒技能
+        List<Int2Param> list = new ArrayList<>();
+        Map<Integer, Integer> awakeningSkillMap = playerService.getPlayerData(playerId).getAwakeningSkillMap();
+        if (awakeningSkillMap == null || awakeningSkillMap.isEmpty()) {
+            return list;
+        }
+        for (int key : awakeningSkillMap.keySet()) {
+            AwakeningSkillCfg config = ConfigData.getConfig(AwakeningSkillCfg.class, key);
+            if (config == null || awakeningSkillMap.get(key) < 1) {
+                continue;
+            }
+            Int2Param int2Param = new Int2Param();
+            int2Param.param1 = key;
+            int2Param.param2 = awakeningSkillMap.get((key));
+            list.add(int2Param);
+        }
+        return list;
     }
 }

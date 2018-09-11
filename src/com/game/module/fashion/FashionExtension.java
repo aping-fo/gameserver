@@ -45,4 +45,10 @@ public class FashionExtension {
 		intParam.param = fashionService.updateToForever(playerId, id.param);
 		return intParam;
 	}
+
+	//升阶
+	@Command(4705)
+	public Object upgradeRank(int playerId,IntParam id){
+        return fashionService.upgradeRank(playerId, id.param);
+	}
 }

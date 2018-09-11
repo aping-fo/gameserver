@@ -18,18 +18,18 @@ public class WorldRecord {
     /**
      * 玩家id - 伤害
      */
-    private Map<Integer, HurtRecord> hurtMap = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Integer, HurtRecord> hurtMap = new ConcurrentHashMap<>();
     /**
      * 最后一击,bossId -- 玩家ID
      * 也表示该boss死亡
      */
-    private Map<Integer, Integer> killMap = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Integer, Integer> killMap = new ConcurrentHashMap<>();
 
-    private Map<Integer, WorldBoss> worldBossMap = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Integer, WorldBoss> worldBossMap = new ConcurrentHashMap<>();
     //玩家死亡时间，CD用
-    private Map<Integer, Long> playerDeadTime = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Integer, Long> playerDeadTime = new ConcurrentHashMap<>();
     //攻击购买次数
-    private Map<Integer, Integer> buyTimes = new ConcurrentHashMap<>();
+    private ConcurrentHashMap<Integer, Integer> buyTimes = new ConcurrentHashMap<>();
     private long startTime; //开始时间
     private int day;
     //本次活动开始时间
@@ -159,7 +159,7 @@ public class WorldRecord {
         return playerDeadTime;
     }
 
-    public void setPlayerDeadTime(Map<Integer, Long> playerDeadTime) {
+    public void setPlayerDeadTime(ConcurrentHashMap<Integer, Long> playerDeadTime) {
         this.playerDeadTime = playerDeadTime;
     }
 
@@ -167,7 +167,7 @@ public class WorldRecord {
         return buyTimes;
     }
 
-    public void setBuyTimes(Map<Integer, Integer> buyTimes) {
+    public void setBuyTimes(ConcurrentHashMap<Integer, Integer> buyTimes) {
         this.buyTimes = buyTimes;
     }
 
@@ -191,7 +191,7 @@ public class WorldRecord {
         return worldBossMap;
     }
 
-    public void setWorldBossMap(Map<Integer, WorldBoss> worldBossMap) {
+    public void setWorldBossMap(ConcurrentHashMap<Integer, WorldBoss> worldBossMap) {
         this.worldBossMap = worldBossMap;
     }
 
@@ -215,7 +215,7 @@ public class WorldRecord {
         return hurtMap;
     }
 
-    public void setHurtMap(Map<Integer, HurtRecord> hurtMap) {
+    public void setHurtMap(ConcurrentHashMap<Integer, HurtRecord> hurtMap) {
         this.hurtMap = hurtMap;
     }
 
@@ -223,7 +223,7 @@ public class WorldRecord {
         return killMap;
     }
 
-    public void setKillMap(Map<Integer, Integer> killMap) {
+    public void setKillMap(ConcurrentHashMap<Integer, Integer> killMap) {
         this.killMap = killMap;
     }
 

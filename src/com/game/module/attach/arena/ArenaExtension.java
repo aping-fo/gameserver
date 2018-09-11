@@ -1,11 +1,10 @@
 package com.game.module.attach.arena;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.data.AwakeningSkillCfg;
+import com.game.module.awakeningskill.AwakeningSkillService;
 import com.game.module.goods.EquipService;
 import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +18,7 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.params.IntParam;
+import com.game.params.Int2Param;
 import com.game.params.ListParam;
 import com.game.params.arena.ArenaFighterVO;
 import com.game.params.arena.ArenaPlayerVO;
@@ -44,6 +44,8 @@ public class ArenaExtension {
     private GoodsService goodsService;
     @Autowired
     private EquipService equipService;
+    @Autowired
+    private AwakeningSkillService awakeningSkillService;
 
     @Command(3801)
     public ArenaVO getInfo(int playerId, Object param) {
@@ -65,6 +67,7 @@ public class ArenaExtension {
 
     @Command(3802)
     public ListParam<ArenaPlayerVO> getOpponentList(int playerId, IntParam param) {
+//        logic.repair();
         ArenaAttach attach = logic.getAttach(playerId);
         ArenaPlayer me = logic.getArenaPlayerByUniqueId(attach.getUniqueId());
         if (me == null) {
@@ -90,9 +93,9 @@ public class ArenaExtension {
             }
 
             if (meRank != minRank) { //随机比自己低的排名角色
-                min = Math.min(meRank + delta,minRank);
+                min = Math.min(meRank + delta, minRank);
                 max = meRank + 1;
-                int rank = RandomUtil.randInt(max,min);
+                int rank = RandomUtil.randInt(max, min);
                 ranks.add(rank);
             }
 
@@ -140,10 +143,11 @@ public class ArenaExtension {
     }
 
     @Command(3803)
-    public ArenaFighterVO challenge(int playerId, IntParam param) {
+    public ArenaFighterVO challenge(int playerId, Int2Param param) {
         ArenaFighterVO vo = new ArenaFighterVO();
+        ArenaPlayerVO playerVo = new ArenaPlayerVO();
         ArenaAttach attach = logic.getAttach(playerId);
-        if (param.param == attach.getUniqueId()) {
+        if (param.param1 == attach.getUniqueId()) {
             vo.code = Response.ERR_PARAM;
             return vo;
         }
@@ -158,17 +162,31 @@ public class ArenaExtension {
             return vo;
         }
 
-        ArenaPlayer opponent = logic.getArenaPlayerByUniqueId(param.param);
+        ArenaPlayer opponent = logic.getArenaPlayerByUniqueId(param.param1);
         if (opponent == null) {
             vo.code = Response.ERR_PARAM;
             return vo;
         }
+
         attach.alterChallenge(-1);
         attach.setOpponent(opponent.getUniqueId());
+        attach.setIsRevenge(param.param2 > 0);
         attach.commitSync();
         Player player = playerService.getPlayer(opponent.getPlayerId());
         PlayerData playerData = playerService.getPlayerData(opponent.getPlayerId());
-        vo.uniqueId = param.param;
+
+        playerVo.rank = opponent.getRank();
+        playerVo.uniqueId = opponent.getUniqueId();
+        playerVo.name = player.getName();
+        playerVo.level = player.getLev();
+        playerVo.fightingValue = player.getFight();
+        playerVo.vocation = player.getVocation();
+        playerVo.fashionId = player.getFashionId();
+        playerVo.weapon = player.getWeaponId();
+        playerVo.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
+        playerVo.id = player.getPlayerId();
+
+        vo.uniqueId = param.param1;
         vo.attack = player.getAttack();
         vo.defense = player.getDefense();
         vo.crit = player.getCrit();
@@ -182,6 +200,11 @@ public class ArenaExtension {
         vo.vocation = player.getVocation();
         List<Integer> bufferList = equipService.getBufferList(playerId);
         vo.bufferList = Lists.newArrayList(bufferList);
+        vo.playerInfo = playerVo;
+        List<Int2Param> awakeningSkillList = awakeningSkillService.getAwakeningSkillList(opponent.getPlayerId());
+        if (awakeningSkillList != null && awakeningSkillList.size() > 0) {
+            vo.awakenSkillList = awakeningSkillList;
+        }
         return vo;
     }
 
@@ -192,27 +215,33 @@ public class ArenaExtension {
 
     //购买挑战次数
     @Command(3805)
-    public IntParam buyChallenge(int playerId, Object param) {
+    public IntParam buyChallenge(int playerId, IntParam param) {
         ArenaAttach attach = logic.getAttach(playerId);
         Player player = playerService.getPlayer(playerId);
         VIPConfig vip = GameData.getConfig(VIPConfig.class, player.getVip());
         IntParam result = new IntParam();
         int count = attach.getBuyCount();
-        if (count >= vip.arenaChallenge) {
+        int buyCount = param.param;
+        if (count + buyCount > vip.arenaChallenge) {
             result.param = Response.ARENA_NO_BUY;
             return result;
         }
-        count++;
         int price = 0;
         for (int[] arr : ConfigData.globalParam().arenaBuyChallenge) {
-            if (count >= arr[0] && count <= arr[1]) {
-                price = arr[2];
+            if(buyCount < arr[1]){
+                int _buyCount = 0;
+                _buyCount = Math.min(buyCount, arr[1] - count);
+
+                price += _buyCount * arr[2];
+                buyCount -= _buyCount;
+                count += _buyCount;
             }
         }
+
         result.param = goodsService.decConsume(playerId, new int[][]{{Goods.DIAMOND, price}}, LogConsume.BUY_ARENA_CHALLENGE);
         if (result.param == Response.SUCCESS) {
-            attach.alterChallenge(1);
-            attach.alterBuyCount(1);
+            attach.alterChallenge(param.param);
+            attach.alterBuyCount(param.param);
             attach.commitSync();
         }
         return result;

@@ -69,7 +69,7 @@
 	<totalWeight>0</totalWeight>
 	<count>1</count>
 	<repeat>1</repeat>
-	<desc>限定抽奖保底组</desc>
+	<desc>宠物保底组</desc>
 	<items></items>
 </config>
 <config>
@@ -78,7 +78,7 @@
 	<totalWeight>0</totalWeight>
 	<count>1</count>
 	<repeat>1</repeat>
-	<desc>限定抽奖组</desc>
+	<desc>宠物组</desc>
 	<items></items>
 </config>
 <config>
@@ -280,6 +280,15 @@
 	<items></items>
 </config>
 <config>
+	<id>32004</id>
+	<type>0</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>70橙色套装</desc>
+	<items></items>
+</config>
+<config>
 	<id>33000</id>
 	<type>1</type>
 	<totalWeight>0</totalWeight>
@@ -447,7 +456,7 @@
 	<totalWeight>0</totalWeight>
 	<count>1</count>
 	<repeat>1</repeat>
-	<desc>技能卡C级随机</desc>
+	<desc>技能卡D级随机</desc>
 	<items></items>
 </config>
 <config>
@@ -456,7 +465,7 @@
 	<totalWeight>0</totalWeight>
 	<count>1</count>
 	<repeat>1</repeat>
-	<desc>技能卡D级随机</desc>
+	<desc>技能卡C级随机</desc>
 	<items></items>
 </config>
 <config>
@@ -691,6 +700,114 @@
 	<count>1</count>
 	<repeat>1</repeat>
 	<desc>v13</desc>
+	<items></items>
+</config>
+<config>
+	<id>60101</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>商城材料礼包</desc>
+	<items></items>
+</config>
+<config>
+	<id>60102</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>商城宠物礼包</desc>
+	<items></items>
+</config>
+<config>
+	<id>60103</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>商城时装礼包1</desc>
+	<items></items>
+</config>
+<config>
+	<id>60104</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>商城时装礼包2</desc>
+	<items></items>
+</config>
+<config>
+	<id>60105</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>商城时装礼包3</desc>
+	<items></items>
+</config>
+<config>
+	<id>70101</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>测试下随机礼包</desc>
+	<items></items>
+</config>
+<config>
+	<id>80101</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>材料礼盒</desc>
+	<items></items>
+</config>
+<config>
+	<id>80102</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>时装礼盒</desc>
+	<items></items>
+</config>
+<config>
+	<id>80103</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>卡片礼盒</desc>
+	<items></items>
+</config>
+<config>
+	<id>80104</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>宠物礼盒1树</desc>
+	<items></items>
+</config>
+<config>
+	<id>80105</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>宠物礼盒2羊驼</desc>
+	<items></items>
+</config>
+<config>
+	<id>80106</id>
+	<type>1</type>
+	<totalWeight>0</totalWeight>
+	<count>1</count>
+	<repeat>1</repeat>
+	<desc>宠物礼盒3咕咕</desc>
 	<items></items>
 </config>
 </root>

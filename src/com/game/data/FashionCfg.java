@@ -6,8 +6,11 @@ package com.game.data;
 public class FashionCfg {
 	public int id;//key
 	public String desc;//描述
+	public String desc_en;//描述
 	public String name;//时装名称
+	public String name_en;//时装名称
 	public String source;//时装来源
+	public String source_en;//时装来源
 	public int vocation;//职业
 	public String icon;//时装图标
 	public String atlas;//图集

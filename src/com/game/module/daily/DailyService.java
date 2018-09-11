@@ -32,6 +32,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class DailyService implements InitHandler {
@@ -152,7 +153,7 @@ public class DailyService implements InitHandler {
 	// 重置
 	public void resetWeekly() {
 		for (int id:SessionManager.getInstance().getAllSessions().keySet()) {
-			titleService.updateWeekly(id);
+			titleService.updateWeekly(id,true);
 			PlayerData data = playerService.getPlayerData(id);
 			resetDailyData(data);
 			// 通知前端更新副本
@@ -211,6 +212,12 @@ public class DailyService implements InitHandler {
 		activityService.dailyRest(playerId);
 		welfareCardService.daily(playerId);
 		skillCardTrainService.dailyRest(playerId);
+
+		//重置排位赛每日奖励次数
+		data.setLadderRecordsTime(0);
+
+		//重置活动掉落次数
+		data.setActivityDropTimeMap(new ConcurrentHashMap<>());
 	}
 
 	public void resetWeeklyData(PlayerData data){

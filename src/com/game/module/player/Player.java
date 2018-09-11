@@ -1,10 +1,12 @@
 package com.game.module.player;
 
 import com.game.SysConfig;
+import com.google.common.collect.Sets;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 
 public class Player implements PlayerAddition {
@@ -38,6 +40,9 @@ public class Player implements PlayerAddition {
     public int userId = 0;
     public long onlineTime;
     public boolean bCrateRole;
+    public boolean bTraversing;
+    //who can see me
+    public final Set<Integer> seeMeSet = Sets.newConcurrentHashSet();
 
     private int playerId;
     private String name;

@@ -5,6 +5,7 @@
 	<type>1</type>
 	<quality>1</quality>
 	<name>小木乃伊</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50101</monsterId>
 	<petId></petId>
@@ -14,171 +15,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6001101</passiveSkillId>
-	<hp></hp>
-	<hpFix>1076</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4304</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60012</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小木乃伊</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50101</monsterId>
 	<petId></petId>
 	<materialId>65011</materialId>
 	<nextQualityId>60013</nextQualityId>
 	<upgradeCost>[[65011,50],[103,11]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6001201</passiveSkillId>
-	<hp></hp>
-	<hpFix>1195</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4780</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60013</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小木乃伊</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50101</monsterId>
 	<petId></petId>
 	<materialId>65011</materialId>
 	<nextQualityId>60014</nextQualityId>
 	<upgradeCost>[[65011,50],[103,12]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6001301</passiveSkillId>
-	<hp></hp>
-	<hpFix>1315</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5260</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60014</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小木乃伊</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50101</monsterId>
 	<petId></petId>
 	<materialId>65011</materialId>
 	<nextQualityId>60015</nextQualityId>
 	<upgradeCost>[[65011,50],[103,13]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6001401</passiveSkillId>
-	<hp></hp>
-	<hpFix>1434</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5736</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60015</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小木乃伊</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50101</monsterId>
 	<petId></petId>
 	<materialId>65011</materialId>
 	<nextQualityId>60016</nextQualityId>
 	<upgradeCost>[[65011,50],[103,14]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6001501</passiveSkillId>
-	<hp></hp>
-	<hpFix>1554</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6216</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60016</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>木木</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50102</monsterId>
 	<petId></petId>
 	<materialId>65011</materialId>
 	<nextQualityId>60017</nextQualityId>
 	<upgradeCost>[[65011,50],[103,15]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6001601</passiveSkillId>
-	<hp></hp>
-	<hpFix>1673</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6692</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.9</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60017</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>木木</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50102</monsterId>
 	<petId></petId>
@@ -188,26 +201,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6001701</passiveSkillId>
-	<hp></hp>
-	<hpFix>1793</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>7172</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.9</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60021</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>蛇宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50104</monsterId>
 	<petId></petId>
@@ -217,171 +232,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6002101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>45</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>180</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60022</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>蛇宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50104</monsterId>
 	<petId></petId>
 	<materialId>65021</materialId>
 	<nextQualityId>60023</nextQualityId>
 	<upgradeCost>[[65021,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6002201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>50</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>200</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60023</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>蛇宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50104</monsterId>
 	<petId></petId>
 	<materialId>65021</materialId>
 	<nextQualityId>60024</nextQualityId>
 	<upgradeCost>[[65021,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6002301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>55</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>220</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60024</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>蛇宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50104</monsterId>
 	<petId></petId>
 	<materialId>65021</materialId>
 	<nextQualityId>60025</nextQualityId>
 	<upgradeCost>[[65021,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6002401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>60</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>240</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60025</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>蛇宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50104</monsterId>
 	<petId></petId>
 	<materialId>65021</materialId>
 	<nextQualityId>60026</nextQualityId>
 	<upgradeCost>[[65021,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6002501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>65</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>260</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.04</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60026</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>大蛇丸</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50103</monsterId>
 	<petId></petId>
 	<materialId>65021</materialId>
 	<nextQualityId>60027</nextQualityId>
 	<upgradeCost>[[65021,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6002601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>70</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>280</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60027</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>大蛇丸</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50103</monsterId>
 	<petId></petId>
@@ -391,26 +418,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6002701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>75</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>300</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60031</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>萌萌树</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50106</monsterId>
 	<petId></petId>
@@ -420,171 +449,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6003101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>75</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>300</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60032</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>萌萌树</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50106</monsterId>
 	<petId></petId>
 	<materialId>65031</materialId>
 	<nextQualityId>60033</nextQualityId>
 	<upgradeCost>[[65031,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6003201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>83</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>332</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60033</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>萌萌树</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50106</monsterId>
 	<petId></petId>
 	<materialId>65031</materialId>
 	<nextQualityId>60034</nextQualityId>
 	<upgradeCost>[[65031,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6003301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>91</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>364</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60034</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>萌萌树</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50106</monsterId>
 	<petId></petId>
 	<materialId>65031</materialId>
 	<nextQualityId>60035</nextQualityId>
 	<upgradeCost>[[65031,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6003401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>100</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>400</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60035</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>萌萌树</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50106</monsterId>
 	<petId></petId>
 	<materialId>65031</materialId>
 	<nextQualityId>60036</nextQualityId>
 	<upgradeCost>[[65031,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6003501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>108</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>432</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60036</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>忧郁树</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50105</monsterId>
 	<petId></petId>
 	<materialId>65031</materialId>
 	<nextQualityId>60037</nextQualityId>
 	<upgradeCost>[[65031,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6003601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>116</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>464</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60037</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>忧郁树</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50105</monsterId>
 	<petId></petId>
@@ -594,26 +635,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6003701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>125</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>500</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60041</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>鱼骨菇</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50108</monsterId>
 	<petId></petId>
@@ -623,171 +666,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6004101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>25</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>100</fuFix>
 	<scale>0.9</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60042</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>鱼骨菇</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50108</monsterId>
 	<petId></petId>
 	<materialId>65041</materialId>
 	<nextQualityId>60043</nextQualityId>
 	<upgradeCost>[[65041,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6004201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>28</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>112</fuFix>
 	<scale>0.9</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60043</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>鱼骨菇</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50108</monsterId>
 	<petId></petId>
 	<materialId>65041</materialId>
 	<nextQualityId>60044</nextQualityId>
 	<upgradeCost>[[65041,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6004301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>31</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>124</fuFix>
 	<scale>0.9</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60044</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>鱼骨菇</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50108</monsterId>
 	<petId></petId>
 	<materialId>65041</materialId>
 	<nextQualityId>60045</nextQualityId>
 	<upgradeCost>[[65041,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6004401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>34</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>136</fuFix>
 	<scale>0.9</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60045</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>鱼骨菇</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50108</monsterId>
 	<petId></petId>
 	<materialId>65041</materialId>
 	<nextQualityId>60046</nextQualityId>
 	<upgradeCost>[[65041,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6004501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>36</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>144</fuFix>
 	<scale>0.9</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60046</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>大魔菇</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50107</monsterId>
 	<petId></petId>
 	<materialId>65041</materialId>
 	<nextQualityId>60047</nextQualityId>
 	<upgradeCost>[[65041,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6004601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>39</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>156</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60047</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>大魔菇</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50107</monsterId>
 	<petId></petId>
@@ -797,26 +852,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6004701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>42</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>168</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60051</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>僵尸宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50110</monsterId>
 	<petId></petId>
@@ -826,171 +883,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6005101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>15</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>60</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.97</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60052</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>僵尸宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50110</monsterId>
 	<petId></petId>
 	<materialId>65051</materialId>
 	<nextQualityId>60053</nextQualityId>
 	<upgradeCost>[[65051,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6005201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>17</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>68</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.97</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60053</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>僵尸宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50110</monsterId>
 	<petId></petId>
 	<materialId>65051</materialId>
 	<nextQualityId>60054</nextQualityId>
 	<upgradeCost>[[65051,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6005301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>19</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>76</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.97</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60054</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>僵尸宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50110</monsterId>
 	<petId></petId>
 	<materialId>65051</materialId>
 	<nextQualityId>60055</nextQualityId>
 	<upgradeCost>[[65051,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6005401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>20</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>80</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.97</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60055</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>僵尸宝宝</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50110</monsterId>
 	<petId></petId>
 	<materialId>65051</materialId>
 	<nextQualityId>60056</nextQualityId>
 	<upgradeCost>[[65051,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6005501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>22</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>88</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.97</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60056</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>僵尸道长</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50109</monsterId>
 	<petId></petId>
 	<materialId>65051</materialId>
 	<nextQualityId>60057</nextQualityId>
 	<upgradeCost>[[65051,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6005601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>24</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>96</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60057</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>僵尸道长</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50109</monsterId>
 	<petId></petId>
@@ -1000,26 +1069,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6005701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>26</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>104</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60061</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>灯兔子</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50112</monsterId>
 	<petId></petId>
@@ -1029,171 +1100,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6006101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>12</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>48</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.34</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60062</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>灯兔子</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50112</monsterId>
 	<petId></petId>
 	<materialId>65061</materialId>
 	<nextQualityId>60063</nextQualityId>
 	<upgradeCost>[[65061,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6006201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>13</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>52</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.34</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60063</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>灯兔子</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50112</monsterId>
 	<petId></petId>
 	<materialId>65061</materialId>
 	<nextQualityId>60064</nextQualityId>
 	<upgradeCost>[[65061,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6006301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>14</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>56</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.34</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60064</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>灯兔子</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50112</monsterId>
 	<petId></petId>
 	<materialId>65061</materialId>
 	<nextQualityId>60065</nextQualityId>
 	<upgradeCost>[[65061,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6006401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>16</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>64</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.34</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60065</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>灯兔子</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50112</monsterId>
 	<petId></petId>
 	<materialId>65061</materialId>
 	<nextQualityId>60066</nextQualityId>
 	<upgradeCost>[[65061,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6006501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>17</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>68</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.34</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60066</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>万圣兔</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50111</monsterId>
 	<petId></petId>
 	<materialId>65061</materialId>
 	<nextQualityId>60067</nextQualityId>
 	<upgradeCost>[[65061,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6006601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>18</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>72</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.1000000000000001</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60067</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>万圣兔</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50111</monsterId>
 	<petId></petId>
@@ -1203,26 +1286,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6006701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>20</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>80</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.1000000000000001</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60071</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小狐喵</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50113</monsterId>
 	<petId></petId>
@@ -1232,171 +1317,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6007101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>42</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>168</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.95</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60072</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小狐喵</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50113</monsterId>
 	<petId></petId>
 	<materialId>65071</materialId>
 	<nextQualityId>60073</nextQualityId>
 	<upgradeCost>[[65071,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6007201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>47</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>188</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.95</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60073</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小狐喵</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50113</monsterId>
 	<petId></petId>
 	<materialId>65071</materialId>
 	<nextQualityId>60074</nextQualityId>
 	<upgradeCost>[[65071,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6007301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>52</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>208</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.95</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60074</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小狐喵</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50113</monsterId>
 	<petId></petId>
 	<materialId>65071</materialId>
 	<nextQualityId>60075</nextQualityId>
 	<upgradeCost>[[65071,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6007401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>56</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>224</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.95</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60075</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小狐喵</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50113</monsterId>
 	<petId></petId>
 	<materialId>65071</materialId>
 	<nextQualityId>60076</nextQualityId>
 	<upgradeCost>[[65071,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6007501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>61</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>244</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>0.95</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60076</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>喵太仙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50114</monsterId>
 	<petId></petId>
 	<materialId>65071</materialId>
 	<nextQualityId>60077</nextQualityId>
 	<upgradeCost>[[65071,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6007601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>66</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>264</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60077</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>喵太仙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50114</monsterId>
 	<petId></petId>
@@ -1406,26 +1503,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6007701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>71</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>284</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60081</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小龟兔</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50116</monsterId>
 	<petId></petId>
@@ -1435,171 +1534,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6008101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>15</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>60</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60082</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小龟兔</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50116</monsterId>
 	<petId></petId>
 	<materialId>65081</materialId>
 	<nextQualityId>60083</nextQualityId>
 	<upgradeCost>[[65081,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6008201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>17</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>68</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60083</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小龟兔</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50116</monsterId>
 	<petId></petId>
 	<materialId>65081</materialId>
 	<nextQualityId>60084</nextQualityId>
 	<upgradeCost>[[65081,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6008301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>19</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>76</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60084</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小龟兔</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50116</monsterId>
 	<petId></petId>
 	<materialId>65081</materialId>
 	<nextQualityId>60085</nextQualityId>
 	<upgradeCost>[[65081,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6008401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>20</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>80</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60085</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小龟兔</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50116</monsterId>
 	<petId></petId>
 	<materialId>65081</materialId>
 	<nextQualityId>60086</nextQualityId>
 	<upgradeCost>[[65081,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6008501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>22</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>88</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60086</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>赛跑冤家</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50115</monsterId>
 	<petId></petId>
 	<materialId>65081</materialId>
 	<nextQualityId>60087</nextQualityId>
 	<upgradeCost>[[65081,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6008601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>24</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>96</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60087</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>赛跑冤家</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50115</monsterId>
 	<petId></petId>
@@ -1609,28 +1720,30 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6008701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix>26</critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>104</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60091</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小蛤蟆</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50117</monsterId>
+	<monsterId>50118</monsterId>
 	<petId></petId>
 	<materialId>65091</materialId>
 	<nextQualityId>60092</nextQualityId>
@@ -1638,171 +1751,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6009101</passiveSkillId>
-	<hp></hp>
-	<hpFix>1076</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4304</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60092</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小蛤蟆</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50117</monsterId>
+	<monsterId>50118</monsterId>
 	<petId></petId>
 	<materialId>65091</materialId>
 	<nextQualityId>60093</nextQualityId>
 	<upgradeCost>[[65091,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6009201</passiveSkillId>
-	<hp></hp>
-	<hpFix>1195</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4780</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60093</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小蛤蟆</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50117</monsterId>
+	<monsterId>50118</monsterId>
 	<petId></petId>
 	<materialId>65091</materialId>
 	<nextQualityId>60094</nextQualityId>
 	<upgradeCost>[[65091,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6009301</passiveSkillId>
-	<hp></hp>
-	<hpFix>1315</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5260</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60094</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小蛤蟆</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50117</monsterId>
+	<monsterId>50118</monsterId>
 	<petId></petId>
 	<materialId>65091</materialId>
 	<nextQualityId>60095</nextQualityId>
 	<upgradeCost>[[65091,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6009401</passiveSkillId>
-	<hp></hp>
-	<hpFix>1434</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5736</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60095</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小蛤蟆</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50117</monsterId>
+	<monsterId>50118</monsterId>
 	<petId></petId>
 	<materialId>65091</materialId>
 	<nextQualityId>60096</nextQualityId>
 	<upgradeCost>[[65091,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6009501</passiveSkillId>
-	<hp></hp>
-	<hpFix>1554</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6216</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60096</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>蛤太师</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50117</monsterId>
 	<petId></petId>
 	<materialId>65091</materialId>
 	<nextQualityId>60097</nextQualityId>
 	<upgradeCost>[[65091,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6009601</passiveSkillId>
-	<hp></hp>
-	<hpFix>1673</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6692</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60097</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>蛤太师</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50117</monsterId>
 	<petId></petId>
@@ -1812,28 +1937,30 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6009701</passiveSkillId>
-	<hp></hp>
-	<hpFix>1793</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>7172</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60101</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>干脆面</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50119</monsterId>
+	<monsterId>50120</monsterId>
 	<petId></petId>
 	<materialId>65101</materialId>
 	<nextQualityId>60102</nextQualityId>
@@ -1841,171 +1968,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6010101</passiveSkillId>
-	<hp></hp>
-	<hpFix>1076</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4304</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60102</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>干脆面</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50119</monsterId>
+	<monsterId>50120</monsterId>
 	<petId></petId>
 	<materialId>65101</materialId>
 	<nextQualityId>60103</nextQualityId>
 	<upgradeCost>[[65101,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6010201</passiveSkillId>
-	<hp></hp>
-	<hpFix>1195</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4780</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60103</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>干脆面</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50119</monsterId>
+	<monsterId>50120</monsterId>
 	<petId></petId>
 	<materialId>65101</materialId>
 	<nextQualityId>60104</nextQualityId>
 	<upgradeCost>[[65101,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6010301</passiveSkillId>
-	<hp></hp>
-	<hpFix>1315</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5260</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60104</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>干脆面</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50119</monsterId>
+	<monsterId>50120</monsterId>
 	<petId></petId>
 	<materialId>65101</materialId>
 	<nextQualityId>60105</nextQualityId>
 	<upgradeCost>[[65101,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6010401</passiveSkillId>
-	<hp></hp>
-	<hpFix>1434</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5736</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60105</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>干脆面</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50119</monsterId>
+	<monsterId>50120</monsterId>
 	<petId></petId>
 	<materialId>65101</materialId>
 	<nextQualityId>60106</nextQualityId>
 	<upgradeCost>[[65101,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6010501</passiveSkillId>
-	<hp></hp>
-	<hpFix>1554</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6216</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60106</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>功夫浣熊</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50119</monsterId>
 	<petId></petId>
 	<materialId>65101</materialId>
 	<nextQualityId>60107</nextQualityId>
 	<upgradeCost>[[65101,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6010601</passiveSkillId>
-	<hp></hp>
-	<hpFix>1673</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6692</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60107</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>功夫浣熊</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50119</monsterId>
 	<petId></petId>
@@ -2015,28 +2154,30 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6010701</passiveSkillId>
-	<hp></hp>
-	<hpFix>1793</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>7172</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60111</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小火狮</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50121</monsterId>
+	<monsterId>50122</monsterId>
 	<petId></petId>
 	<materialId>65111</materialId>
 	<nextQualityId>60112</nextQualityId>
@@ -2044,171 +2185,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6011101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>15</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>60</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60112</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小火狮</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50121</monsterId>
+	<monsterId>50122</monsterId>
 	<petId></petId>
 	<materialId>65111</materialId>
 	<nextQualityId>60113</nextQualityId>
 	<upgradeCost>[[65111,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6011201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>17</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>68</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60113</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小火狮</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50121</monsterId>
+	<monsterId>50122</monsterId>
 	<petId></petId>
 	<materialId>65111</materialId>
 	<nextQualityId>60114</nextQualityId>
 	<upgradeCost>[[65111,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6011301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>19</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>76</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60114</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小火狮</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50121</monsterId>
+	<monsterId>50122</monsterId>
 	<petId></petId>
 	<materialId>65111</materialId>
 	<nextQualityId>60115</nextQualityId>
 	<upgradeCost>[[65111,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6011401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>20</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>80</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60115</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小火狮</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50121</monsterId>
+	<monsterId>50122</monsterId>
 	<petId></petId>
 	<materialId>65111</materialId>
 	<nextQualityId>60116</nextQualityId>
 	<upgradeCost>[[65111,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6011501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>22</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>88</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60116</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>舞狮子</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50121</monsterId>
 	<petId></petId>
 	<materialId>65111</materialId>
 	<nextQualityId>60117</nextQualityId>
 	<upgradeCost>[[65111,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6011601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>24</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>96</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60117</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>舞狮子</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50121</monsterId>
 	<petId></petId>
@@ -2218,26 +2371,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6011701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>26</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>104</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60121</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小羊驼</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50123</monsterId>
 	<petId></petId>
@@ -2247,173 +2402,185 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6012101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>75</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>300</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60122</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小羊驼</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50123</monsterId>
 	<petId></petId>
 	<materialId>65121</materialId>
 	<nextQualityId>60123</nextQualityId>
 	<upgradeCost>[[65121,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6012201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>83</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>332</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60123</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小羊驼</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50123</monsterId>
 	<petId></petId>
 	<materialId>65121</materialId>
 	<nextQualityId>60124</nextQualityId>
 	<upgradeCost>[[65121,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6012301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>91</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>364</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60124</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小羊驼</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50123</monsterId>
 	<petId></petId>
 	<materialId>65121</materialId>
 	<nextQualityId>60125</nextQualityId>
 	<upgradeCost>[[65121,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6012401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>100</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>400</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60125</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小羊驼</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50123</monsterId>
 	<petId></petId>
 	<materialId>65121</materialId>
 	<nextQualityId>60126</nextQualityId>
 	<upgradeCost>[[65121,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6012501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>108</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>432</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60126</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>敲里么</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50123</monsterId>
+	<monsterId>50124</monsterId>
 	<petId></petId>
 	<materialId>65121</materialId>
 	<nextQualityId>60127</nextQualityId>
 	<upgradeCost>[[65121,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6012601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>116</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>464</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60127</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>敲里么</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50123</monsterId>
+	<monsterId>50124</monsterId>
 	<petId></petId>
 	<materialId>65121</materialId>
 	<nextQualityId></nextQualityId>
@@ -2421,28 +2588,30 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6012701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>125</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>500</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60131</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小火狐</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50125</monsterId>
+	<monsterId>50126</monsterId>
 	<petId></petId>
 	<materialId>65131</materialId>
 	<nextQualityId>60132</nextQualityId>
@@ -2450,171 +2619,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6013101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>60</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>240</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60132</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小火狐</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50125</monsterId>
+	<monsterId>50126</monsterId>
 	<petId></petId>
 	<materialId>65131</materialId>
 	<nextQualityId>60133</nextQualityId>
 	<upgradeCost>[[65131,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6013201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>67</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>268</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60133</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小火狐</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50125</monsterId>
+	<monsterId>50126</monsterId>
 	<petId></petId>
 	<materialId>65131</materialId>
 	<nextQualityId>60134</nextQualityId>
 	<upgradeCost>[[65131,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6013301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>74</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>296</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60134</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小火狐</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50125</monsterId>
+	<monsterId>50126</monsterId>
 	<petId></petId>
 	<materialId>65131</materialId>
 	<nextQualityId>60135</nextQualityId>
 	<upgradeCost>[[65131,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6013401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>80</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>320</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60135</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小火狐</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50125</monsterId>
+	<monsterId>50126</monsterId>
 	<petId></petId>
 	<materialId>65131</materialId>
 	<nextQualityId>60136</nextQualityId>
 	<upgradeCost>[[65131,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6013501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>98</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>392</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60136</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>天山火狐</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50125</monsterId>
 	<petId></petId>
 	<materialId>65131</materialId>
 	<nextQualityId>60137</nextQualityId>
 	<upgradeCost>[[65131,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6013601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>94</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>376</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60137</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>天山火狐</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50125</monsterId>
 	<petId></petId>
@@ -2624,28 +2805,30 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6013701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>101</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>404</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60161</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小屠夫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50131</monsterId>
+	<monsterId>50132</monsterId>
 	<petId></petId>
 	<materialId>65161</materialId>
 	<nextQualityId>60162</nextQualityId>
@@ -2653,171 +2836,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6016101</passiveSkillId>
-	<hp></hp>
-	<hpFix>1076</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4304</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60162</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小屠夫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50131</monsterId>
+	<monsterId>50132</monsterId>
 	<petId></petId>
 	<materialId>65161</materialId>
 	<nextQualityId>60163</nextQualityId>
 	<upgradeCost>[[65161,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6016201</passiveSkillId>
-	<hp></hp>
-	<hpFix>1195</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4780</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60163</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小屠夫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50131</monsterId>
+	<monsterId>50132</monsterId>
 	<petId></petId>
 	<materialId>65161</materialId>
 	<nextQualityId>60164</nextQualityId>
 	<upgradeCost>[[65161,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6016301</passiveSkillId>
-	<hp></hp>
-	<hpFix>1315</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5260</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60164</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小屠夫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50131</monsterId>
+	<monsterId>50132</monsterId>
 	<petId></petId>
 	<materialId>65161</materialId>
 	<nextQualityId>60165</nextQualityId>
 	<upgradeCost>[[65161,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6016401</passiveSkillId>
-	<hp></hp>
-	<hpFix>1434</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5736</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60165</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小屠夫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50131</monsterId>
+	<monsterId>50132</monsterId>
 	<petId></petId>
 	<materialId>65161</materialId>
 	<nextQualityId>60166</nextQualityId>
 	<upgradeCost>[[65161,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6016501</passiveSkillId>
-	<hp></hp>
-	<hpFix>1554</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6216</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60166</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>屠夫</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50131</monsterId>
 	<petId></petId>
 	<materialId>65161</materialId>
 	<nextQualityId>60167</nextQualityId>
 	<upgradeCost>[[65161,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6016601</passiveSkillId>
-	<hp></hp>
-	<hpFix>1673</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6692</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60167</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>屠夫</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50131</monsterId>
 	<petId></petId>
@@ -2827,28 +3022,30 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6016701</passiveSkillId>
-	<hp></hp>
-	<hpFix>1793</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>7172</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60171</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小咕咕</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50133</monsterId>
+	<monsterId>50134</monsterId>
 	<petId></petId>
 	<materialId>65171</materialId>
 	<nextQualityId>60172</nextQualityId>
@@ -2856,171 +3053,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6017101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>75</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>300</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60172</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小咕咕</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50133</monsterId>
+	<monsterId>50134</monsterId>
 	<petId></petId>
 	<materialId>65171</materialId>
 	<nextQualityId>60173</nextQualityId>
 	<upgradeCost>[[65171,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6017201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>83</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>332</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60173</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小咕咕</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50133</monsterId>
+	<monsterId>50134</monsterId>
 	<petId></petId>
 	<materialId>65171</materialId>
 	<nextQualityId>60174</nextQualityId>
 	<upgradeCost>[[65171,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6017301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>91</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>364</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60174</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小咕咕</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50133</monsterId>
+	<monsterId>50134</monsterId>
 	<petId></petId>
 	<materialId>65171</materialId>
 	<nextQualityId>60175</nextQualityId>
 	<upgradeCost>[[65171,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6017401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>100</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>400</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60175</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小咕咕</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50133</monsterId>
+	<monsterId>50134</monsterId>
 	<petId></petId>
 	<materialId>65171</materialId>
 	<nextQualityId>60176</nextQualityId>
 	<upgradeCost>[[65171,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6017501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>108</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>432</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60176</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>咕咕猫头鹰</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50133</monsterId>
 	<petId></petId>
 	<materialId>65171</materialId>
 	<nextQualityId>60177</nextQualityId>
 	<upgradeCost>[[65171,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6017601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>116</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>464</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60177</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>咕咕猫头鹰</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50133</monsterId>
 	<petId></petId>
@@ -3030,28 +3239,30 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6017701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>125</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>500</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60181</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小狮鹫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50135</monsterId>
+	<monsterId>50136</monsterId>
 	<petId></petId>
 	<materialId>65181</materialId>
 	<nextQualityId>60182</nextQualityId>
@@ -3059,171 +3270,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6018101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>45</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>180</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60182</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小狮鹫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50135</monsterId>
+	<monsterId>50136</monsterId>
 	<petId></petId>
 	<materialId>65181</materialId>
 	<nextQualityId>60183</nextQualityId>
 	<upgradeCost>[[65181,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6018201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>50</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>200</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60183</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小狮鹫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50135</monsterId>
+	<monsterId>50136</monsterId>
 	<petId></petId>
 	<materialId>65181</materialId>
 	<nextQualityId>60184</nextQualityId>
 	<upgradeCost>[[65181,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6018301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>55</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>220</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60184</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小狮鹫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50135</monsterId>
+	<monsterId>50136</monsterId>
 	<petId></petId>
 	<materialId>65181</materialId>
 	<nextQualityId>60185</nextQualityId>
 	<upgradeCost>[[65181,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6018401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>60</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>240</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60185</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小狮鹫</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50135</monsterId>
+	<monsterId>50136</monsterId>
 	<petId></petId>
 	<materialId>65181</materialId>
 	<nextQualityId>60186</nextQualityId>
 	<upgradeCost>[[65181,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6018501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>65</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>260</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60186</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>狮鹫</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50135</monsterId>
 	<petId></petId>
 	<materialId>65181</materialId>
 	<nextQualityId>60187</nextQualityId>
 	<upgradeCost>[[65181,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6018601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>70</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>280</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60187</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>狮鹫</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50135</monsterId>
 	<petId></petId>
@@ -3233,26 +3456,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6018701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix>75</attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>300</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60191</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小雪人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50137</monsterId>
 	<petId></petId>
@@ -3262,171 +3487,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6019101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>32</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>128</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60192</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小雪人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50137</monsterId>
 	<petId></petId>
 	<materialId>65191</materialId>
 	<nextQualityId>60193</nextQualityId>
 	<upgradeCost>[[65191,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6019201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>35</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>140</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60193</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小雪人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50137</monsterId>
 	<petId></petId>
 	<materialId>65191</materialId>
 	<nextQualityId>60194</nextQualityId>
 	<upgradeCost>[[65191,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6019301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>39</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>156</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60194</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小雪人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50137</monsterId>
 	<petId></petId>
 	<materialId>65191</materialId>
 	<nextQualityId>60195</nextQualityId>
 	<upgradeCost>[[65191,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6019401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>42</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>168</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60195</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小雪人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50137</monsterId>
 	<petId></petId>
 	<materialId>65191</materialId>
 	<nextQualityId>60196</nextQualityId>
 	<upgradeCost>[[65191,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6019501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>46</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>184</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60196</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>大雪人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50138</monsterId>
 	<petId></petId>
 	<materialId>65191</materialId>
 	<nextQualityId>60197</nextQualityId>
 	<upgradeCost>[[65191,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6019601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>49</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>196</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60197</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>大雪人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50138</monsterId>
 	<petId></petId>
@@ -3436,26 +3673,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6019701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>53</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>212</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60201</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小仙人掌</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50139</monsterId>
 	<petId></petId>
@@ -3465,171 +3704,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6020101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>15</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>60</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60202</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小仙人掌</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50139</monsterId>
 	<petId></petId>
 	<materialId>65201</materialId>
 	<nextQualityId>60203</nextQualityId>
 	<upgradeCost>[[65201,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6020201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>17</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>68</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60203</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小仙人掌</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50139</monsterId>
 	<petId></petId>
 	<materialId>65201</materialId>
 	<nextQualityId>60204</nextQualityId>
 	<upgradeCost>[[65201,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6020301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>19</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>76</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60204</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小仙人掌</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50139</monsterId>
 	<petId></petId>
 	<materialId>65201</materialId>
 	<nextQualityId>60205</nextQualityId>
 	<upgradeCost>[[65201,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6020401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>20</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>80</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60205</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小仙人掌</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50139</monsterId>
 	<petId></petId>
 	<materialId>65201</materialId>
 	<nextQualityId>60206</nextQualityId>
 	<upgradeCost>[[65201,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6020501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>22</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>88</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60206</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>大仙人掌</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50140</monsterId>
 	<petId></petId>
 	<materialId>65201</materialId>
 	<nextQualityId>60207</nextQualityId>
 	<upgradeCost>[[65201,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6020601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>24</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>96</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60207</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>大仙人掌</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50140</monsterId>
 	<petId></petId>
@@ -3639,26 +3890,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6020701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix>26</symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>104</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60211</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小变色龙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50141</monsterId>
 	<petId></petId>
@@ -3668,171 +3921,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6021101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>33</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>132</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60212</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小变色龙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50141</monsterId>
 	<petId></petId>
 	<materialId>65211</materialId>
 	<nextQualityId>60213</nextQualityId>
 	<upgradeCost>[[65211,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6021201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>37</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>148</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60213</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小变色龙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50141</monsterId>
 	<petId></petId>
 	<materialId>65211</materialId>
 	<nextQualityId>60214</nextQualityId>
 	<upgradeCost>[[65211,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6021301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>41</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>164</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60214</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小变色龙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50141</monsterId>
 	<petId></petId>
 	<materialId>65211</materialId>
 	<nextQualityId>60215</nextQualityId>
 	<upgradeCost>[[65211,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6021401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>44</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>176</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60215</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小变色龙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50141</monsterId>
 	<petId></petId>
 	<materialId>65211</materialId>
 	<nextQualityId>60216</nextQualityId>
 	<upgradeCost>[[65211,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6021501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>48</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>192</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60216</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>变色龙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50142</monsterId>
 	<petId></petId>
 	<materialId>65211</materialId>
 	<nextQualityId>60217</nextQualityId>
 	<upgradeCost>[[65211,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6021601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>52</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>208</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60217</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>变色龙</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50142</monsterId>
 	<petId></petId>
@@ -3842,26 +4107,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6021701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix>56</fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>224</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60221</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小野人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50143</monsterId>
 	<petId></petId>
@@ -3871,171 +4138,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6022101</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>32</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>128</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60222</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小野人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50143</monsterId>
 	<petId></petId>
 	<materialId>65221</materialId>
 	<nextQualityId>60223</nextQualityId>
 	<upgradeCost>[[65221,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6022201</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>35</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>140</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60223</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小野人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50143</monsterId>
 	<petId></petId>
 	<materialId>65221</materialId>
 	<nextQualityId>60224</nextQualityId>
 	<upgradeCost>[[65221,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6022301</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>39</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>156</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60224</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小野人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50143</monsterId>
 	<petId></petId>
 	<materialId>65221</materialId>
 	<nextQualityId>60225</nextQualityId>
 	<upgradeCost>[[65221,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6022401</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>42</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>168</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60225</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小野人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50143</monsterId>
 	<petId></petId>
 	<materialId>65221</materialId>
 	<nextQualityId>60226</nextQualityId>
 	<upgradeCost>[[65221,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6022501</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>46</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>184</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60226</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>大野人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50144</monsterId>
 	<petId></petId>
 	<materialId>65221</materialId>
 	<nextQualityId>60227</nextQualityId>
 	<upgradeCost>[[65221,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6022601</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>49</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>196</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60227</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>大野人</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50144</monsterId>
 	<petId></petId>
@@ -4045,26 +4324,28 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6022701</passiveSkillId>
-	<hp></hp>
-	<hpFix></hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix>53</defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>212</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60231</id>
 	<type>1</type>
 	<quality>1</quality>
 	<name>小猩猩</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50145</monsterId>
 	<petId></petId>
@@ -4074,171 +4355,183 @@
 	<upgradeRate>100</upgradeRate>
 	<gainNeedMaterialCount>30</gainNeedMaterialCount>
 	<passiveSkillId>6023101</passiveSkillId>
-	<hp></hp>
-	<hpFix>1076</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4304</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>0</canShow>
 </config>
 <config>
 	<id>60232</id>
 	<type>1</type>
 	<quality>2</quality>
 	<name>小猩猩</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50145</monsterId>
 	<petId></petId>
 	<materialId>65231</materialId>
 	<nextQualityId>60233</nextQualityId>
 	<upgradeCost>[[65231,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>90</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6023201</passiveSkillId>
-	<hp></hp>
-	<hpFix>1195</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>4780</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60233</id>
 	<type>1</type>
 	<quality>3</quality>
 	<name>小猩猩</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50145</monsterId>
 	<petId></petId>
 	<materialId>65231</materialId>
 	<nextQualityId>60234</nextQualityId>
 	<upgradeCost>[[65231,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>80</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6023301</passiveSkillId>
-	<hp></hp>
-	<hpFix>1315</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5260</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60234</id>
 	<type>1</type>
 	<quality>4</quality>
 	<name>小猩猩</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50145</monsterId>
 	<petId></petId>
 	<materialId>65231</materialId>
 	<nextQualityId>60235</nextQualityId>
 	<upgradeCost>[[65231,50],[103,10]]</upgradeCost>
-	<upgradeRate>100</upgradeRate>
+	<upgradeRate>70</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6023401</passiveSkillId>
-	<hp></hp>
-	<hpFix>1434</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>5736</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60235</id>
 	<type>1</type>
 	<quality>5</quality>
 	<name>小猩猩</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50145</monsterId>
 	<petId></petId>
 	<materialId>65231</materialId>
 	<nextQualityId>60236</nextQualityId>
 	<upgradeCost>[[65231,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>60</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6023501</passiveSkillId>
-	<hp></hp>
-	<hpFix>1554</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6216</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60236</id>
 	<type>1</type>
 	<quality>6</quality>
 	<name>大猩猩</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50146</monsterId>
 	<petId></petId>
 	<materialId>65231</materialId>
 	<nextQualityId>60237</nextQualityId>
 	<upgradeCost>[[65231,50],[103,10]]</upgradeCost>
-	<upgradeRate>40</upgradeRate>
+	<upgradeRate>50</upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6023601</passiveSkillId>
-	<hp></hp>
-	<hpFix>1673</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>6692</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>60237</id>
 	<type>1</type>
 	<quality>7</quality>
 	<name>大猩猩</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50146</monsterId>
 	<petId></petId>
@@ -4248,26 +4541,245 @@
 	<upgradeRate></upgradeRate>
 	<gainNeedMaterialCount></gainNeedMaterialCount>
 	<passiveSkillId>6023701</passiveSkillId>
-	<hp></hp>
-	<hpFix>1793</hpFix>
-	<attack></attack>
-	<attackFix></attackFix>
-	<defense></defense>
-	<defenseFix></defenseFix>
-	<crit></crit>
-	<critFix></critFix>
-	<symptom></symptom>
-	<symptomFix></symptomFix>
-	<fu></fu>
-	<fuFix></fuFix>
+	<hp>0</hp>
+	<hpFix>7172</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>0</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow>1</canShow>
+</config>
+<config>
+	<id>60241</id>
+	<type>1</type>
+	<quality>1</quality>
+	<name>地狱双头犬</name>
+	<name_en></name_en>
+	<property>3</property>
+	<monsterId>50147</monsterId>
+	<petId></petId>
+	<materialId>65241</materialId>
+	<nextQualityId>60242</nextQualityId>
+	<upgradeCost>[[65241,50],[103,10]]</upgradeCost>
+	<upgradeRate>100</upgradeRate>
+	<gainNeedMaterialCount>30</gainNeedMaterialCount>
+	<passiveSkillId>6024101</passiveSkillId>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>128</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
+	<scale>1.24</scale>
+	<rotate>10</rotate>
+	<canShow>0</canShow>
+</config>
+<config>
+	<id>60242</id>
+	<type>1</type>
+	<quality>2</quality>
+	<name>地狱双头犬</name>
+	<name_en></name_en>
+	<property>3</property>
+	<monsterId>50147</monsterId>
+	<petId></petId>
+	<materialId>65241</materialId>
+	<nextQualityId>60243</nextQualityId>
+	<upgradeCost>[[65241,50],[103,10]]</upgradeCost>
+	<upgradeRate>90</upgradeRate>
+	<gainNeedMaterialCount></gainNeedMaterialCount>
+	<passiveSkillId>6024201</passiveSkillId>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>140</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
+	<scale>1.24</scale>
+	<rotate>10</rotate>
+	<canShow>1</canShow>
+</config>
+<config>
+	<id>60243</id>
+	<type>1</type>
+	<quality>3</quality>
+	<name>地狱双头犬</name>
+	<name_en></name_en>
+	<property>3</property>
+	<monsterId>50147</monsterId>
+	<petId></petId>
+	<materialId>65241</materialId>
+	<nextQualityId>60244</nextQualityId>
+	<upgradeCost>[[65241,50],[103,10]]</upgradeCost>
+	<upgradeRate>80</upgradeRate>
+	<gainNeedMaterialCount></gainNeedMaterialCount>
+	<passiveSkillId>6024301</passiveSkillId>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>156</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
+	<scale>1.24</scale>
+	<rotate>10</rotate>
+	<canShow>1</canShow>
+</config>
+<config>
+	<id>60244</id>
+	<type>1</type>
+	<quality>4</quality>
+	<name>地狱双头犬</name>
+	<name_en></name_en>
+	<property>3</property>
+	<monsterId>50147</monsterId>
+	<petId></petId>
+	<materialId>65241</materialId>
+	<nextQualityId>60245</nextQualityId>
+	<upgradeCost>[[65241,50],[103,10]]</upgradeCost>
+	<upgradeRate>70</upgradeRate>
+	<gainNeedMaterialCount></gainNeedMaterialCount>
+	<passiveSkillId>6024401</passiveSkillId>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>168</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
+	<scale>1.24</scale>
+	<rotate>10</rotate>
+	<canShow>1</canShow>
+</config>
+<config>
+	<id>60245</id>
+	<type>1</type>
+	<quality>5</quality>
+	<name>地狱双头犬</name>
+	<name_en></name_en>
+	<property>3</property>
+	<monsterId>50147</monsterId>
+	<petId></petId>
+	<materialId>65241</materialId>
+	<nextQualityId>60246</nextQualityId>
+	<upgradeCost>[[65241,50],[103,10]]</upgradeCost>
+	<upgradeRate>60</upgradeRate>
+	<gainNeedMaterialCount></gainNeedMaterialCount>
+	<passiveSkillId>6024501</passiveSkillId>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>184</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
+	<scale>1.24</scale>
+	<rotate>10</rotate>
+	<canShow>1</canShow>
+</config>
+<config>
+	<id>60246</id>
+	<type>1</type>
+	<quality>6</quality>
+	<name>地狱三头犬</name>
+	<name_en></name_en>
+	<property>3</property>
+	<monsterId>50148</monsterId>
+	<petId></petId>
+	<materialId>65241</materialId>
+	<nextQualityId>60247</nextQualityId>
+	<upgradeCost>[[65241,50],[103,10]]</upgradeCost>
+	<upgradeRate>50</upgradeRate>
+	<gainNeedMaterialCount></gainNeedMaterialCount>
+	<passiveSkillId>6024601</passiveSkillId>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>196</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
+	<scale>1.24</scale>
+	<rotate>10</rotate>
+	<canShow>1</canShow>
+</config>
+<config>
+	<id>60247</id>
+	<type>1</type>
+	<quality>7</quality>
+	<name>地狱三头犬</name>
+	<name_en></name_en>
+	<property>3</property>
+	<monsterId>50148</monsterId>
+	<petId></petId>
+	<materialId>65241</materialId>
+	<nextQualityId></nextQualityId>
+	<upgradeCost></upgradeCost>
+	<upgradeRate></upgradeRate>
+	<gainNeedMaterialCount></gainNeedMaterialCount>
+	<passiveSkillId>6024701</passiveSkillId>
+	<hp>0</hp>
+	<hpFix>0</hpFix>
+	<attack>0</attack>
+	<attackFix>0</attackFix>
+	<defense>0</defense>
+	<defenseFix>212</defenseFix>
+	<crit>0</crit>
+	<critFix>0</critFix>
+	<symptom>0</symptom>
+	<symptomFix>0</symptomFix>
+	<fu>0</fu>
+	<fuFix>0</fuFix>
+	<scale>1.24</scale>
+	<rotate>10</rotate>
+	<canShow>1</canShow>
 </config>
 <config>
 	<id>65011</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小木乃伊碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50101</monsterId>
 	<petId>60011</petId>
@@ -4291,12 +4803,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65021</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>蛇宝宝碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50104</monsterId>
 	<petId>60021</petId>
@@ -4320,12 +4834,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65031</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>萌萌树碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50106</monsterId>
 	<petId>60031</petId>
@@ -4349,12 +4865,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65041</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>鱼骨菇碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50108</monsterId>
 	<petId>60041</petId>
@@ -4378,12 +4896,14 @@
 	<fuFix></fuFix>
 	<scale>1.1000000000000001</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65051</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>僵尸宝宝碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50110</monsterId>
 	<petId>60051</petId>
@@ -4407,12 +4927,14 @@
 	<fuFix></fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65061</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>灯兔子碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50112</monsterId>
 	<petId>60061</petId>
@@ -4436,12 +4958,14 @@
 	<fuFix></fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65071</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小狐喵碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50113</monsterId>
 	<petId>60071</petId>
@@ -4465,12 +4989,14 @@
 	<fuFix></fuFix>
 	<scale>1.1000000000000001</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65081</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小龟兔碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50116</monsterId>
 	<petId>60081</petId>
@@ -4494,14 +5020,16 @@
 	<fuFix></fuFix>
 	<scale>1.1000000000000001</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65091</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小蛤蟆碎片</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50117</monsterId>
+	<monsterId>50118</monsterId>
 	<petId>60091</petId>
 	<materialId></materialId>
 	<nextQualityId></nextQualityId>
@@ -4523,14 +5051,16 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65101</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>干脆面碎片</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50119</monsterId>
+	<monsterId>50120</monsterId>
 	<petId>60101</petId>
 	<materialId></materialId>
 	<nextQualityId></nextQualityId>
@@ -4552,14 +5082,16 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65111</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小火狮碎片</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50121</monsterId>
+	<monsterId>50122</monsterId>
 	<petId>60111</petId>
 	<materialId></materialId>
 	<nextQualityId></nextQualityId>
@@ -4581,12 +5113,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65121</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小羊驼碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50123</monsterId>
 	<petId>60121</petId>
@@ -4610,14 +5144,16 @@
 	<fuFix></fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65131</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小火狐碎片</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50125</monsterId>
+	<monsterId>50126</monsterId>
 	<petId>60131</petId>
 	<materialId></materialId>
 	<nextQualityId></nextQualityId>
@@ -4639,14 +5175,16 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65161</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小屠夫碎片</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50131</monsterId>
+	<monsterId>50132</monsterId>
 	<petId>60161</petId>
 	<materialId></materialId>
 	<nextQualityId></nextQualityId>
@@ -4668,14 +5206,16 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65171</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小咕咕碎片</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50133</monsterId>
+	<monsterId>50134</monsterId>
 	<petId>60171</petId>
 	<materialId></materialId>
 	<nextQualityId></nextQualityId>
@@ -4697,14 +5237,16 @@
 	<fuFix></fuFix>
 	<scale>1.17</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65181</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小狮鹫碎片</name>
+	<name_en></name_en>
 	<property>3</property>
-	<monsterId>50135</monsterId>
+	<monsterId>50136</monsterId>
 	<petId>60181</petId>
 	<materialId></materialId>
 	<nextQualityId></nextQualityId>
@@ -4726,12 +5268,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65191</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小雪人碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50137</monsterId>
 	<petId>60191</petId>
@@ -4755,12 +5299,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65201</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小仙人掌碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50139</monsterId>
 	<petId>60201</petId>
@@ -4784,12 +5330,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65211</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小变色龙碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50141</monsterId>
 	<petId>60211</petId>
@@ -4813,12 +5361,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65221</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小野人碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50143</monsterId>
 	<petId>60221</petId>
@@ -4842,12 +5392,14 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 <config>
 	<id>65231</id>
 	<type>2</type>
 	<quality>1</quality>
 	<name>小猩猩碎片</name>
+	<name_en></name_en>
 	<property>3</property>
 	<monsterId>50145</monsterId>
 	<petId>60231</petId>
@@ -4871,5 +5423,37 @@
 	<fuFix></fuFix>
 	<scale>1.24</scale>
 	<rotate>10</rotate>
+	<canShow></canShow>
+</config>
+<config>
+	<id>65241</id>
+	<type>2</type>
+	<quality>1</quality>
+	<name>地狱双头犬碎片</name>
+	<name_en></name_en>
+	<property>3</property>
+	<monsterId>50147</monsterId>
+	<petId>60241</petId>
+	<materialId></materialId>
+	<nextQualityId></nextQualityId>
+	<upgradeCost></upgradeCost>
+	<upgradeRate></upgradeRate>
+	<gainNeedMaterialCount>30</gainNeedMaterialCount>
+	<passiveSkillId></passiveSkillId>
+	<hp></hp>
+	<hpFix></hpFix>
+	<attack></attack>
+	<attackFix></attackFix>
+	<defense></defense>
+	<defenseFix></defenseFix>
+	<crit></crit>
+	<critFix></critFix>
+	<symptom></symptom>
+	<symptomFix></symptomFix>
+	<fu></fu>
+	<fuFix></fuFix>
+	<scale>1.24</scale>
+	<rotate>10</rotate>
+	<canShow></canShow>
 </config>
 </root>

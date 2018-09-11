@@ -6,6 +6,7 @@ package com.game.data;
 public class PetSkillConfig {
 	public int id;//key
 	public String name;//名字
+	public String name_en;//名字
 	public int quality;//品质
 	public int nextQualityId;//下一品质技能id
 	public int skillId;//技能表id

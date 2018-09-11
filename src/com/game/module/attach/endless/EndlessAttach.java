@@ -9,14 +9,23 @@ public class EndlessAttach extends Attach {
 	private int challenge;// 可挑战次数
 	private int refresh;// 可刷新次数
 	private long clearTime;// 扫荡时间
-//	private List<Integer> 
+	private int passTime;// 通关时间
+//	private List<Integer>
 
 	public EndlessAttach(){}
 	
 	public EndlessAttach(int playerId, byte type){
 		super(playerId, type);
 	}
-	
+
+	public int getPassTime() {
+		return passTime;
+	}
+
+	public void setPassTime(int passTime) {
+		this.passTime = passTime;
+	}
+
 	public int getCurrLayer() {
 		return currLayer;
 	}

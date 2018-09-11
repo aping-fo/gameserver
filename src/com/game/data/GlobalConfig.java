@@ -144,7 +144,9 @@ public class GlobalConfig {
 	public int PKTimeLimit;//赛季时间类型
 	public int[] PKTime;//开放时间段
 	public String PKBeginDate;//开放日期
+	public String PKBeginDate_en;//开放日期
 	public String PKEndDate;//结束日期
+	public String PKEndDate_en;//结束日期
 	public int[] robotFight;//机器人战斗力
 	public int[] QualifyingRankReward;//排位赛段位奖励
 	public int QualifyingMatchingPredictTime;//排位赛匹配预计时间(秒)
@@ -166,5 +168,14 @@ public class GlobalConfig {
 	public float[] RobotParas;//机器人属性参数
 	public Map<Integer,Integer> buyMainCopyPrice;//主线副本次数购买价格
 	public float ladderAiRate;//竞技场AI属性系数
-	public int[] standaloneRoleIds;//预览单机副本角色顺序(角色信息表里的ID)
+	public int[] standaloneRoleIds;//预览单机副本登录前角色顺序(角色信息表里的ID)
+	public int[] standaloneRoleIds1;//预览单机副本登录后选择战士的角色顺序(角色信息表里的ID)
+	public int[] standaloneRoleIds2;//预览单机副本登录后选择刺客的角色顺序(角色信息表里的ID)
+	public int[] standaloneRoleIds3;//预览单机副本登录后选择法师的角色顺序(角色信息表里的ID)
+	public int standaloneType;//预览单机副本出现类型,0:不出现 1：登录前 2：登录后
+	public int[][] facebookInviteSuccessReward;//facebook邀请双方奖励
+	public int Dailyrecharge;//每日充值倍数
+	public int[][] AiRateOTReward;//竞技场一次性排名奖励
+	public int[][] AiRateOTRewardRank;//竞技场一次性排名区间
+	public int energyRestoreTime;//体力恢复时间间隔（分钟）
 }
