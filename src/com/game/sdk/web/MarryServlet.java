@@ -43,7 +43,7 @@ public class MarryServlet extends SdkServlet {
             }
 
             MarryService marryService = BeanManager.getBean(MarryService.class);
-            marryService.saveOrUpdateScore(openId, nickName, avatarUrl, score);
+            marryService.saveOrUpdateScore(openId.trim(), nickName, avatarUrl, score);
 
         } catch (Exception e) {
             ServerLogger.err(e, "");

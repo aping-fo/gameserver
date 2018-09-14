@@ -139,8 +139,8 @@ public class PlayerCalculator {
             taskService.doTask(player.getPlayerId(), Task.TYPE_FIGHT, (int) fight);
 
             //战力活动
-//            int playerId = player.getPlayerId();
-//            activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_COMBAT_EFFECTIVENESS, (int) fight);
+            int playerId = player.getPlayerId();
+            activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_COMBAT_EFFECTIVENESS, (int) fight);
         }
         groupService.updateAttr(player.getPlayerId());
         teamService.updateAttr(player.getPlayerId());

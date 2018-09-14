@@ -188,6 +188,15 @@ public class PlayerData {
     private Set<Integer> fashionRankSet = new HashSet<>();//时装阶级
     private int glamour; // 魅力值
     private boolean gm;//是否gm
+    private Set<Integer> delFriends = new HashSet<>();// 删除过的好友
+
+    public Set<Integer> getDelFriends() {
+        return delFriends;
+    }
+
+    public void setDelFriends(Set<Integer> delFriends) {
+        this.delFriends = delFriends;
+    }
 
     @JsonIgnore
     public boolean isGm() {

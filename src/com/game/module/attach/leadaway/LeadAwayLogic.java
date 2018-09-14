@@ -6,6 +6,8 @@ import com.game.data.CopyConfig;
 import com.game.data.DropGoods;
 import com.game.data.Response;
 import com.game.data.VIPConfig;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.attach.AttachLogic;
 import com.game.module.attach.AttachType;
 import com.game.module.copy.CopyInstance;
@@ -14,6 +16,7 @@ import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
+import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
@@ -24,6 +27,7 @@ import com.game.params.RewardList;
 import com.game.params.copy.CopyResult;
 import com.game.util.ConfigData;
 import com.game.util.RandomUtil;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -44,6 +48,8 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
     private TaskService taskService;
     @Autowired
     private CopyService copyService;
+    @Autowired
+    private ActivityService activityService;
 
     @Override
     public byte getType() {
@@ -68,6 +74,11 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
         Player player = playerService.getPlayer(playerId);
         LeadAwayAttach attach = getAttach(playerId);
         int buyCount = param.param;
+
+        if (buyCount <= 0) {
+            return Response.ERR_PARAM;
+        }
+
         VIPConfig vip = ConfigData.getConfig(VIPConfig.class, player.getVip());
         if (attach.getBuyTime() + buyCount > vip.buyLeadawayCopy) {
             return Response.NO_TODAY_TIMES;
@@ -84,6 +95,10 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
         attach.alterChallenge(buyCount);
         attach.addBuyTime(buyCount);
         attach.commitSync();
+
+        //顺手牵羊活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
+
         return Response.SUCCESS;
     }
 

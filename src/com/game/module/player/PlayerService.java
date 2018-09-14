@@ -638,6 +638,10 @@ public class PlayerService implements InitHandler {
         taskService.doTask(playerId, Task.FINISH_CONSUME, Goods.DIAMOND, dec);
         PlayerData data = getPlayerData(playerId);
         eRatingService.reportMoneyCost(player, data.getRoleId(), actionType.desc, 1, dec, dec, 6, dec);
+
+        //累计消耗钻石
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_CUMULATIVE_CONSUMPTION_DIAMONDS, dec, ActivityConsts.UpdateType.T_ADD, true);
+
         return true;
     }
 
@@ -773,6 +777,9 @@ public class PlayerService implements InitHandler {
                     //VIP称号
                     titleService.complete(playerId, TitleConsts.VIP, newVIP, ActivityConsts.UpdateType.T_VALUE);
                     taskService.doTask(playerId, Task.ACHIEVEMENT_VIP, newVIP);
+
+                    //VIP活动
+                    activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_PRIVILEGE_LEVEL, newVIP);
                 }
                 break;
             }
@@ -1251,11 +1258,31 @@ public class PlayerService implements InitHandler {
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE, serialData.getFullServiceAttendance().incrementAndGet(), ActivityConsts.UpdateType.T_VALUE, true);
     }
 
+    /**
+     * 获取所有玩家
+     *
+     * @return 所有玩家列表
+     */
     public List<Player> getAllPlayer() {
         return playerDao.selectAllPlayer();
     }
 
+    /**
+     * 获取所有玩家和机器人
+     *
+     * @return 所有玩家和机器人列表
+     */
     public List<Player> selectPlayersAndRobots() {
         return playerDao.selectPlayersAndRobots();
+    }
+
+    /**
+     * 修改玩家名称
+     *
+     * @param playerId 玩家id
+     * @param name     玩家新名称
+     */
+    public void updatePlayerName(int playerId, String name) {
+        playerDao.updatePlayerName(playerId, name);
     }
 }

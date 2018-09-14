@@ -6,9 +6,12 @@ import java.util.List;
 import java.util.Map;
 
 import com.game.data.GoodsConfig;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
 import com.game.module.goods.Goods;
+import com.game.module.player.PlayerData;
 import com.game.util.ConfigData;
 import com.google.common.collect.Maps;
 import com.server.util.ServerLogger;
@@ -37,116 +40,130 @@ import com.server.util.GameData;
 @Extension
 public class LotteryExtension {
 
-	@Autowired
-	private LotteryLogic lotteryLogic;
-	@Autowired
-	private GoodsService goodsService;
-	@Autowired
-	private RandomRewardService rewardService;
-	@Autowired
-	private PlayerService playerService;
-	@Autowired
-	private TaskService taskService;
-	@Autowired
-	private MessageService messageService;
-	@Command(2601)
-	public Object getInfo(int playerId, Object param){
-		ListParam<LotteryVO> result = new ListParam<LotteryVO>();
-		LotteryAttach attach = lotteryLogic.getAttach(playerId);
-		Map<Integer, LotteryVO> map = attach.getRecords();
-		if(!map.isEmpty()){
-			result.params = new ArrayList<>(map.values());
-		}
-		return result;
-	}
-	
-	@Command(2602)
-	public Object takeReward(int playerId, Int2Param param){
-		LotteryResultVO result = new LotteryResultVO();
-		LotteryCfg cfg = GameData.getConfig(LotteryCfg.class, param.param1);
-		if(cfg == null){
-			result.code = Response.ERR_PARAM;
-			return result;
-		}
-		Player player = playerService.getPlayer(playerId);
-		if(cfg.vipLimit > player.getVip()){
-			result.code = Response.NO_VIP;
-			return result;
-		}
-		LotteryAttach attach = lotteryLogic.getAttach(playerId);
-		Map<Integer, LotteryVO> map = attach.getRecords();
-		LotteryVO record = map.get(cfg.id);
-		if(record == null){
-			record = new LotteryVO();
-			record.id = cfg.id;
-			map.put(cfg.id, record);
-		}
-		int time = param.param2 == 1 ? 1 : 10;
-		if(record.count + time > cfg.limit){
-			result.code = Response.NO_TODAY_TIMES;
-			return result;
-		}
-		result.id = param.param1;
-		if(time == 1 && cfg.freeLimit > record.freeCount && System.currentTimeMillis() - record.lastFree >= cfg.freePeriod * TimeUtil.ONE_HOUR){
-			record.freeCount++;
-			record.lastFree = System.currentTimeMillis();
-		}else{
-			List<GoodsEntry> req = null;
-			if(time == 1){
-				req = Arrays.asList(new GoodsEntry(cfg.singlePrice[0], cfg.singlePrice[1]));
-			}else{
-				req = Arrays.asList(new GoodsEntry(cfg.multiPrice[0], cfg.multiPrice[1]));
-			}
-			result.code = goodsService.decConsume(playerId, req, LogConsume.LOTTERY_REQUEST, cfg.id, time);
-			if(result.code > 0){
-				return result;
-			}
-		}
-		if(record.curCount /10 < (record.curCount + time) / 10){
-			if(time == 1){
-				result.rewards = rewardService.getRewards(playerId, cfg.multiId, 1, LogConsume.LOTTERY_REWARD);	
-			}else{
-				int n = 10 - record.curCount % 10 - 1;
-				if(n > 0){
-					result.rewards = rewardService.getRewards(playerId, cfg.singleId, n, LogConsume.LOTTERY_REWARD);
-				}else{
-					result.rewards = new ArrayList<Reward>();
-				}
-				result.rewards.addAll(rewardService.getRewards(playerId, cfg.multiId, 1, LogConsume.LOTTERY_REWARD));
-				int m = 10 - n - 1;
-				if(m > 0){
-					result.rewards.addAll(rewardService.getRewards(playerId, cfg.singleId, m, LogConsume.LOTTERY_REWARD));
-				}
-			}
-		}else{
-			result.rewards = rewardService.getRewards(playerId, cfg.singleId, 1, LogConsume.LOTTERY_REWARD);			
-		}
+    @Autowired
+    private LotteryLogic lotteryLogic;
+    @Autowired
+    private GoodsService goodsService;
+    @Autowired
+    private RandomRewardService rewardService;
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private TaskService taskService;
+    @Autowired
+    private MessageService messageService;
+    @Autowired
+    private ActivityService activityService;
 
-		Map<Integer,Integer> qualityCount = Maps.newHashMap();
-		for(Reward reward : result.rewards) {
-			GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class,reward.id);
-			if(conf == null) {
-				ServerLogger.warn("goods don't exist id = " + reward.id);
-				continue;
-			}
-			if((conf.id!=59901&&!conf.name.equals("经验卡")&&(conf.type == Goods.SKILL_CARD && (conf.color == Goods.QUALITY_VIOLET || conf.color == Goods.QUALITY_ORANGE)))) { //消息广播
-				messageService.sendSysMsg(MessageConsts.MSG_LOTTERY,player.getName(),conf.name);
-			}
-			Integer count = qualityCount.get(conf.color);
-			if(count == null){
-				count = 0;
-			}
-			qualityCount.put(conf.color,count + 1);
-		}
+    @Command(2601)
+    public Object getInfo(int playerId, Object param) {
+        ListParam<LotteryVO> result = new ListParam<LotteryVO>();
+        LotteryAttach attach = lotteryLogic.getAttach(playerId);
+        Map<Integer, LotteryVO> map = attach.getRecords();
+        if (!map.isEmpty()) {
+            result.params = new ArrayList<>(map.values());
+        }
+        return result;
+    }
 
-		for(Map.Entry<Integer,Integer> s : qualityCount.entrySet()) {
-			taskService.doTask(playerId, Task.TYPE_LOTTERY_COUNT,s.getKey(), s.getValue());
-		}
+    @Command(2602)
+    public Object takeReward(int playerId, Int2Param param) {
+        LotteryResultVO result = new LotteryResultVO();
+        LotteryCfg cfg = GameData.getConfig(LotteryCfg.class, param.param1);
+        if (cfg == null) {
+            result.code = Response.ERR_PARAM;
+            return result;
+        }
+        Player player = playerService.getPlayer(playerId);
+        if (cfg.vipLimit > player.getVip()) {
+            result.code = Response.NO_VIP;
+            return result;
+        }
+        LotteryAttach attach = lotteryLogic.getAttach(playerId);
+        Map<Integer, LotteryVO> map = attach.getRecords();
+        LotteryVO record = map.get(cfg.id);
+        if (record == null) {
+            record = new LotteryVO();
+            record.id = cfg.id;
+            map.put(cfg.id, record);
+        }
+        int time = param.param2 == 1 ? 1 : 10;
+        if (record.count + time > cfg.limit) {
+            result.code = Response.NO_TODAY_TIMES;
+            return result;
+        }
+        result.id = param.param1;
+        if (time == 1 && cfg.freeLimit > record.freeCount && System.currentTimeMillis() - record.lastFree >= cfg.freePeriod * TimeUtil.ONE_HOUR) {
+            record.freeCount++;
+            record.lastFree = System.currentTimeMillis();
+        } else {
+            List<GoodsEntry> req = null;
+            if (time == 1) {
+                req = Arrays.asList(new GoodsEntry(cfg.singlePrice[0], cfg.singlePrice[1]));
+            } else {
+                req = Arrays.asList(new GoodsEntry(cfg.multiPrice[0], cfg.multiPrice[1]));
+            }
+            result.code = goodsService.decConsume(playerId, req, LogConsume.LOTTERY_REQUEST, cfg.id, time);
+            if (result.code > 0) {
+                return result;
+            }
+        }
+        if (record.curCount / 10 < (record.curCount + time) / 10) {
+            if (time == 1) {
+                result.rewards = rewardService.getRewards(playerId, cfg.multiId, 1, LogConsume.LOTTERY_REWARD);
+            } else {
+                int n = 10 - record.curCount % 10 - 1;
+                if (n > 0) {
+                    result.rewards = rewardService.getRewards(playerId, cfg.singleId, n, LogConsume.LOTTERY_REWARD);
+                } else {
+                    result.rewards = new ArrayList<Reward>();
+                }
+                result.rewards.addAll(rewardService.getRewards(playerId, cfg.multiId, 1, LogConsume.LOTTERY_REWARD));
+                int m = 10 - n - 1;
+                if (m > 0) {
+                    result.rewards.addAll(rewardService.getRewards(playerId, cfg.singleId, m, LogConsume.LOTTERY_REWARD));
+                }
+            }
+        } else {
+            result.rewards = rewardService.getRewards(playerId, cfg.singleId, 1, LogConsume.LOTTERY_REWARD);
+        }
 
-		record.count += time;
-		record.curCount += time;
-		attach.commitSync();
-		taskService.doTask(playerId, Task.FINISH_LOTTERY, time);
-		return result;
-	}
+        Map<Integer, Integer> qualityCount = Maps.newHashMap();
+        for (Reward reward : result.rewards) {
+            GoodsConfig conf = ConfigData.getConfig(GoodsConfig.class, reward.id);
+            if (conf == null) {
+                ServerLogger.warn("goods don't exist id = " + reward.id);
+                continue;
+            }
+            if ((conf.id != 59901 && !conf.name.equals("经验卡") && (conf.type == Goods.SKILL_CARD && (conf.color == Goods.QUALITY_VIOLET || conf.color == Goods.QUALITY_ORANGE)))) { //消息广播
+                messageService.sendSysMsg(MessageConsts.MSG_LOTTERY, player.getName(), conf.name);
+            }
+            Integer count = qualityCount.get(conf.color);
+            if (count == null) {
+                count = 0;
+            }
+            qualityCount.put(conf.color, count + 1);
+
+            //召唤活动
+            int type = -1;
+            if (param.param1 == LotteryConsts.LotteryType.T_CARD) {
+                type = ActivityConsts.ActivityTaskCondType.T_CARD_SUPPLY;
+            } else if (param.param1 == LotteryConsts.LotteryType.T_EQUIPMENT) {
+                type = ActivityConsts.ActivityTaskCondType.T_EQUIPMENT_SUPPLY;
+            } else if (param.param1 == LotteryConsts.LotteryType.T_VIP) {
+                type = ActivityConsts.ActivityTaskCondType.T_VIP_SUPPLY;
+            }
+            activityService.tour(playerId, type);
+        }
+
+        for (Map.Entry<Integer, Integer> s : qualityCount.entrySet()) {
+            taskService.doTask(playerId, Task.TYPE_LOTTERY_COUNT, s.getKey(), s.getValue());
+        }
+
+        record.count += time;
+        record.curCount += time;
+        attach.commitSync();
+        taskService.doTask(playerId, Task.FINISH_LOTTERY, time);
+        return result;
+    }
 }

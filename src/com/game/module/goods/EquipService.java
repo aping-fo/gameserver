@@ -8,15 +8,13 @@ import com.game.module.log.LogConsume;
 import com.game.module.player.*;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
-import com.game.params.GainGoodNotify;
-import com.game.params.Int2Param;
-import com.game.params.IntParam;
-import com.game.params.ListParam;
+import com.game.params.*;
 import com.game.params.goods.AttrItem;
 import com.game.params.goods.EquipInfo;
 import com.game.params.goods.SGoodsVo;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
+import com.game.util.JsonUtils;
 import com.game.util.RandomUtil;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -32,6 +30,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Service
 public class EquipService {
+    private static final int[] EquipType = new int[]{201, 202, 204, 203, 205, 206};//强化装备的类型顺序
 
     @Autowired
     private PlayerService playerService;
@@ -45,68 +44,74 @@ public class EquipService {
     private ActivityService activityService;
 
     // 穿装备
-    public int wear(int playerId, long id) {
+    public int wear(int playerId, List<Long> ids) {
         Player player = playerService.getPlayer(playerId);
         PlayerData data = playerService.getPlayerData(playerId);
         PlayerBag bag = goodsService.getPlayerBag(playerId);
-        Goods goods = goodsService.getGoods(playerId, id);
-        if (goods == null) {
-            return Response.ERR_GOODS_TYPE;
-        }
-        GoodsConfig config = goodsService.getGoodsConfig(goods.getGoodsId());
-        // 类型不符
-        int[] canWear = ConfigData.globalParam().equipTypes;
-        if (!CommonUtil.contain(canWear, config.type)) {
-            return Response.ERR_GOODS_TYPE;
-        }
-        if (config.vocation > 0 && player.getVocation() != config.vocation) {
-            return Response.NO_VOCATION;
-        }
-        if (config.level > 0 && player.getLev() < config.level) {
-            return Response.NO_LEV;
-        }
-        List<SGoodsVo> vo = new ArrayList<SGoodsVo>();
 
-        // 找到身上穿的
-        Goods curEquip = null;
-        for (Goods g : bag.getAllGoods().values()) {
-            if (g.getId() != id && !g.isInBag()) {
-                GoodsConfig curCfg = goodsService.getGoodsConfig(g.getGoodsId());
-                if (curCfg.type == config.type) {
-                    curEquip = g;
-                    break;
+        for (long id : ids) { //前置判断
+            Goods goods = goodsService.getGoods(playerId, id);
+            if (goods == null) {
+                return Response.ERR_GOODS_TYPE;
+            }
+
+            GoodsConfig config = goodsService.getGoodsConfig(goods.getGoodsId());
+            System.out.println("==" + config.id);
+            // 类型不符
+            int[] canWear = ConfigData.globalParam().equipTypes;
+            if (!CommonUtil.contain(canWear, config.type)) {
+                return Response.ERR_GOODS_TYPE;
+            }
+            if (config.vocation > 0 && player.getVocation() != config.vocation) {
+                return Response.NO_VOCATION;
+            }
+            if (config.level > 0 && player.getLev() < config.level) {
+                return Response.NO_LEV;
+            }
+        }
+
+        List<SGoodsVo> vo = new ArrayList<>();
+        for (long id : ids) {
+            Goods goods = goodsService.getGoods(playerId, id);
+            GoodsConfig config = goodsService.getGoodsConfig(goods.getGoodsId());
+            // 找到身上穿的
+            Goods curEquip = null;
+            for (Goods g : bag.getAllGoods().values()) {
+                if (g.getId() != id && !g.isInBag()) {
+                    GoodsConfig curCfg = goodsService.getGoodsConfig(g.getGoodsId());
+                    if (curCfg.type == config.type) {
+                        curEquip = g;
+                        break;
+                    }
                 }
             }
-        }
 
-        if (curEquip != null) {
-            curEquip.setStoreType(Goods.BAG);
-            vo.add(goodsService.toVO(curEquip));
-
-            Integer suitId2 = ConfigData.SuitMap.get(curEquip.getGoodsId());
-            if (suitId2 != null) {
-                Set<Integer> suit = data.getSuitMap().get(suitId2);
-                if (suit != null) {
-                    suit.remove(curEquip.getGoodsId());
+            if (curEquip != null) {
+                curEquip.setStoreType(Goods.BAG);
+                vo.add(goodsService.toVO(curEquip));
+                Integer suitId2 = ConfigData.SuitMap.get(curEquip.getGoodsId());
+                if (suitId2 != null) {
+                    Set<Integer> suit = data.getSuitMap().get(suitId2);
+                    if (suit != null) {
+                        suit.remove(curEquip.getGoodsId());
+                    }
                 }
             }
-        }
-        goods.setStoreType(Goods.EQUIP);
-
-        Integer suitId = ConfigData.SuitMap.get(goods.getGoodsId());
-        if (suitId != null) {
-            Set<Integer> suit = data.getSuitMap().get(suitId);
-            if (suit == null) {
-                suit = Sets.newHashSet();
-                data.getSuitMap().put(suitId, suit);
+            goods.setStoreType(Goods.EQUIP);
+            Integer suitId = ConfigData.SuitMap.get(goods.getGoodsId());
+            if (suitId != null) {
+                Set<Integer> suit = data.getSuitMap().get(suitId);
+                if (suit == null) {
+                    suit = Sets.newHashSet();
+                    data.getSuitMap().put(suitId, suit);
+                }
+                suit.add(goods.getGoodsId());
             }
-            suit.add(goods.getGoodsId());
+            vo.add(goodsService.toVO(goods));
         }
+
         playerCalculator.calculate(player);
-
-        vo.add(goodsService.toVO(goods));
         goodsService.refreshGoodsToClient(playerId, vo);
-        //taskService.doTask(playerId, Task.FINISH_WEAR, config.color);
 
         //装备投资
         equipmentInvestment(playerId, data);
@@ -222,109 +227,233 @@ public class EquipService {
         return notify;
     }
 
-    //升星
-    public int upStar(int playerId, long id) {
-        //已经到满星
+    //升阶
+    public int upStar(int playerId, Long2Param long2Param) {
+        Long id = long2Param.param1;
+        PlayerCurrency currency = playerService.getPlayerData(playerId).getCurrency();
+        if (currency == null) {
+            return Response.ERR_PARAM;
+        }
+
         Goods goods = goodsService.getGoods(playerId, id);
         if (goods == null) {
             ServerLogger.warn("EquipService#upStar id = " + id);
             return Response.OPERATION_TOO_FAST;
         }
         GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
-        int nextStar = goods.getStar() + 1;
-        EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type * 100000 + cfg.level * 100 + nextStar);
-        if (nextCfg == null) {
-            return Response.MAX_STAR;
+
+        long value = currency.get(Goods.EQUIP_TOOL);
+        int cost = 0;
+        int count = 0;
+        int nextStar = goods.getStar();
+
+        while (value >= 0) {
+            nextStar++;
+            EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type * 100000 + cfg.level * 100 + nextStar);
+            //已经到满星
+            if (nextCfg == null) {
+                nextStar--;
+                break;
+            }
+
+            value -= nextCfg.cost;
+            if (value >= 0) {
+                cost += nextCfg.cost;
+                count++;
+                //一次升阶
+                if (long2Param.param2 == 0) {
+                    break;
+                }
+            } else {
+                break;
+            }
         }
+
         //扣除材料
-        if (!playerService.decCurrency(playerId, Goods.EQUIP_TOOL, nextCfg.cost, LogConsume.UP_STAR_COST, cfg.id)) {
+        if (!playerService.decCurrency(playerId, Goods.EQUIP_TOOL, cost, LogConsume.UP_STAR_COST, cfg.id)) {
             return Response.NO_MATERIAL;
         }
-        //更新星级
+
         goods.setStar(nextStar);
+
+        taskService.doTask(playerId, Task.FINISH_STAR, nextStar, count);
         //更新物品
         goodsService.refreshGoodsToClient(playerId, goodsService.toVO(goods));
         //属性更新
         if (!goods.isInBag()) {
             playerCalculator.calculate(playerId);
         }
-        taskService.doTask(playerId, Task.FINISH_STAR, nextStar, 1);
+
+        //已经到满星
+//        Goods goods = goodsService.getGoods(playerId, id);
+//        if (goods == null) {
+//            ServerLogger.warn("EquipService#upStar id = " + id);
+//            return Response.OPERATION_TOO_FAST;
+//        }
+//        GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
+//        int nextStar = goods.getStar() + 1;
+//        EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type * 100000 + cfg.level * 100 + nextStar);
+//        if (nextCfg == null) {
+//            return Response.MAX_STAR;
+//        }
+//        //扣除材料
+//        if (!playerService.decCurrency(playerId, Goods.EQUIP_TOOL, nextCfg.cost, LogConsume.UP_STAR_COST, cfg.id)) {
+//            return Response.NO_MATERIAL;
+//        }
+//        //更新星级
+//        goods.setStar(nextStar);
+//        //更新物品
+//        goodsService.refreshGoodsToClient(playerId, goodsService.toVO(goods));
+//        //属性更新
+//        if (!goods.isInBag()) {
+//            playerCalculator.calculate(playerId);
+//        }
+//        taskService.doTask(playerId, Task.FINISH_STAR, nextStar, 1);
         return Response.SUCCESS;
     }
 
+
     //强化
-    public int strength(int playerId, int type, boolean useTicket) {
-        //类型错误
-        if (!CommonUtil.contain(ConfigData.globalParam().equipTypes, type)) {
-            return Response.ERR_PARAM;
-        }
+    public int strength(int playerId, int type, boolean useTicket, int oneKey) {
         //已经到最高级
         PlayerData data = playerService.getPlayerData(playerId);
-        Integer curStrength = data.getStrengths().get(type);
-        if (curStrength == null) {
-            curStrength = 0;
-        }
         Player player = playerService.getPlayer(playerId);
-        if (curStrength >= player.getLev()) {
-            return Response.EXCEED_LEV;
+        List<Integer> types = Lists.newArrayList(type);
+        if (oneKey == 1) {
+            types = Lists.newArrayList(201, 202, 204, 203, 205, 206);
         }
-        int next = curStrength + 1;
-        EquipStrengthCfg nextCfg = ConfigData.getConfig(EquipStrengthCfg.class, type * 1000 + next);
-        if (nextCfg == null) {
-            return Response.MAX_STRENGTH;
-        }
-        //检查金币
 
-        if (player.getCoin() < nextCfg.costCoin) {
-            return Response.NO_COIN;
-        }
-        //扣除物品
+        int consumeCoin = 0;
+        int consumeTicket = 0;
+        List<GoodsEntry> goods = new ArrayList<>();
+        boolean hasTicket = true;
 
+        EquipStrengthCfg cfg = ConfigData.getConfig(EquipStrengthCfg.class, type * 1000 + 1);
+        List<Integer> ids = Lists.newArrayList();
+        for (int i = 0; i < cfg.costTools.length; i++) {
+            ids.add(cfg.costTools[i][0]);
+        }
 
-        List<GoodsEntry> goods = new ArrayList<GoodsEntry>(6);
-        if (nextCfg.costTools != null) {
-            for (int i = 0; i < nextCfg.costTools.length; i++) {
-                goods.add(new GoodsEntry(nextCfg.costTools[i][0], nextCfg.costTools[i][1]));
+        //总资源
+        Map<Integer, Integer> map = goodsService.getGoods(playerId, ids);
+
+        Map<Integer, Integer> type2level = Maps.newHashMap();
+        Map<Integer, Integer> type2task = Maps.newHashMap();
+        Map<Integer, Integer> type2cost = Maps.newHashMap();
+        out:
+        for (int t : types) {
+            int taskCount = 0;
+            //类型错误
+            if (!CommonUtil.contain(ConfigData.globalParam().equipTypes, t)) {
+                return Response.ERR_PARAM;
             }
-            if (goodsService.checkHasEnough(playerId, goods) != Response.SUCCESS) {
-                return Response.NO_MATERIAL;
+            int curStrength = data.getStrengths().getOrDefault(t,0);
+            out2:
+            while (true) {
+                if (curStrength >= player.getLev()) {
+                    break out2;
+                }
+
+                int next = curStrength + 1;
+                EquipStrengthCfg nextCfg = ConfigData.getConfig(EquipStrengthCfg.class, type * 1000 + next);
+                if (nextCfg == null) {
+                    break out2;
+                }
+
+                if (player.getCoin() < consumeCoin + nextCfg.costCoin) {
+                    ServerLogger.info("consumeCoin = " + consumeCoin + ",getCoin = " + player.getCoin());
+                    break out2;
+                }
+                consumeCoin += nextCfg.costCoin;
+                if (nextCfg.costTools != null) {
+                    for (int i = 0; i < nextCfg.costTools.length; i++) {
+                        int count = map.get(nextCfg.costTools[i][0]);
+                        if (count < nextCfg.costTools[i][1]) {
+                            break out2;
+                        }
+                    }
+                    for (int i = 0; i < nextCfg.costTools.length; i++) {
+                        int id = nextCfg.costTools[i][0];
+                        int costCount = nextCfg.costTools[i][1];
+                        //
+                        int count = map.get(id);
+                        map.put(id, count - costCount);
+
+                        int cost = type2cost.getOrDefault(id, 0);
+                        type2cost.put(id, cost + costCount);
+                    }
+                }
+
+                int rate = nextCfg.successRate;
+                if (useTicket) {
+                    if (hasTicket) {
+                        //TODO 优化
+                        if (goodsService.decGoodsFromBag(playerId, ConfigData.globalParam().strengthTicket, 1, LogConsume.STRENGTH_COST, type)) {
+                            rate += ConfigData.globalParam().strengthTicketAdd;
+                            consumeTicket += 1;
+                        } else {
+                            hasTicket = false;
+                        }
+                    }
+                }
+
+                boolean success = RandomUtil.randomHitPercent(rate);
+                if (success) {
+                    curStrength += 1;
+                } else {
+                    //材料减半
+                    if (goods.size() > 0) {
+                        for (GoodsEntry ge : goods) {
+                            for (int i = 0; i < nextCfg.costTools.length; i++) {
+                                if (ge.id == nextCfg.costTools[i][0]) {
+                                    ge.count -= nextCfg.costTools[i][1] >> 1;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    //返还金币
+                    consumeCoin -= nextCfg.costCoin >> 1;
+                }
+                type2level.put(t, curStrength);
+                taskCount += 1;
+                type2task.put(t, taskCount);
+                if (oneKey == 0) {
+                    break out;
+                }
             }
         }
-        //扣除金币
-        if (!playerService.decCoin(playerId, nextCfg.costCoin, LogConsume.STRENGTH_COST, type)) {
-            return Response.NO_COIN;
-        }
-        //是否消耗强化券
-        int rate = nextCfg.successRate;
-        if (useTicket) {
-            if (goodsService.decGoodsFromBag(playerId, ConfigData.globalParam().strengthTicket, 1, LogConsume.STRENGTH_COST, type)) {
-                rate += ConfigData.globalParam().strengthTicketAdd;
+        //goodsService.decGoodsFromBag(playerId, ConfigData.globalParam().strengthTicket, consumeTicket, LogConsume.STRENGTH_COST, types);
+        if (!type2cost.isEmpty()) {
+            for (Map.Entry<Integer, Integer> e : type2cost.entrySet()) {
+                GoodsEntry ge = new GoodsEntry(e.getKey(), e.getValue());
+                goods.add(ge);
             }
-        }
-        int result = Response.SUCCESS;
-        //计算概率
-        boolean success = RandomUtil.randomHitPercent(rate);
-        if (success) {
-            data.getStrengths().put(type, next);
+
+            //扣除金币
+            playerService.decCoin(playerId, consumeCoin, LogConsume.STRENGTH_COST, types);
+            //扣除材料
+            goodsService.decConsume(playerId, goods, LogConsume.STRENGTH_COST, types);
+            //设置强化等级
+            data.getStrengths().putAll(type2level);
             //更新装备位属性
             playerCalculator.calculate(playerId);
             //更新前端数据
             updateEquip2Client(playerId);
-        } else {
-            //材料减半
-            if (goods.size() > 0) {
-                for (GoodsEntry ge : goods) {
-                    ge.count >>= 1;
-                }
-            }
-            //返还金币
-            playerService.addCoin(playerId, nextCfg.costCoin >> 1, LogConsume.STRENGTH_COST, type);
-            result = Response.STRENGTH_FAIL;
+
         }
-        goodsService.decConsume(playerId, goods, LogConsume.STRENGTH_COST, type);
-        taskService.doTask(playerId, Task.FINISH_STRONG, success ? next : curStrength, type, 1);
+        if (!type2task.isEmpty()) {
+            //强化任务
+            Map<Integer, int[]> condParams = Maps.newHashMap();
+            for (Map.Entry<Integer, Integer> e : type2task.entrySet()) {
+                condParams.put(Task.FINISH_STRONG, new int[]{type2level.get(e.getKey()), e.getKey(), e.getValue()});
+                taskService.doTask(playerId, condParams);
+            }
+        }
+        int result = Response.SUCCESS;
         return result;
     }
+
 
     //升级宝石
     public int upJewel(int playerId, int type) {
@@ -581,8 +710,29 @@ public class EquipService {
         if (activityService.checkIsOpen(data, ActivityConsts.ActivityTaskCondType.T_EQUIPMENT_INVESTMENT)) {
             Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId);
             if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
-                activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_EQUIPMENT_INVESTMENT, true, typeNumberMap,true);
+                activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_EQUIPMENT_INVESTMENT, true, typeNumberMap, true);
             }
         }
+    }
+
+    /**
+     * 寻找下一个可强化的部位
+     *
+     * @param type 装备部位类型
+     * @return 下一个可强化的部位类型
+     */
+    public int findNextType(int type) {
+        int nextType = -1;
+        for (int i = 0; i < EquipType.length; i++) {
+            if (type == EquipType[i]) {
+                if (i == EquipType.length - 1) {
+                    nextType = EquipType[0];
+                } else {
+                    nextType = EquipType[i + 1];
+                }
+                break;
+            }
+        }
+        return nextType;
     }
 }

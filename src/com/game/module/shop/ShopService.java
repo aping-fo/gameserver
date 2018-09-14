@@ -1,6 +1,8 @@
 package com.game.module.shop;
 
 import com.game.data.*;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.copy.CopyInstance;
 import com.game.module.fame.FameService;
 import com.game.module.goods.GoodsEntry;
@@ -36,9 +38,9 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ShopService {
 
     public static final int COMMON = 1;
-    public static final int MYSTERY = 2;
+    public static final int MYSTERY = 2;//黑市商店
     public static final int ENDLESS = 3;
-    public static final int GANG = 4;
+    public static final int GANG = 4;//公会商店
     public static final int TRAINING = 5;
     public static final int AI_ARENA = 6;
     public static final int FAME_7 = 7;
@@ -51,6 +53,8 @@ public class ShopService {
     public static final int FAME_14 = 14;
     public static final int FAME_15 = 15;
     public static final int CQ = 16;
+    public static final int TIME_LIMIT = 17;//限时商城
+    public static final int PRIVILEGE = 18;//特权商城
 
     private static final int[] SHOP_TYPES = {COMMON, ENDLESS, GANG, TRAINING, AI_ARENA, FAME_7, FAME_8, FAME_9, FAME_10, FAME_11, FAME_12, FAME_13, FAME_14, FAME_15, CQ};
     public static final int LIMIT_DAILY = 1;
@@ -68,6 +72,8 @@ public class ShopService {
     private FameService fameService;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private ActivityService activityService;
 
     // 获取商城信息
     public ShopInfo getInfo(int playerId, int type) {
@@ -284,6 +290,31 @@ public class ShopService {
             ShopInfo shopInfo = getInfo(playerId, COMMON);
             SessionManager.getInstance().sendMsg(1701, shopInfo, playerId);
         }
+
+        //商店购买活动
+        if (cfg.shopType == COMMON || cfg.shopType == GANG || cfg.shopType == MYSTERY) {
+            PlayerData playerData = playerService.getPlayerData(playerId);
+            if (playerData != null) {
+                if (activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_STORE_PURCHASE)) {
+                    int type = cfg.shopType;
+                    //普通商店进行特殊处理
+                    if (cfg.shopType == COMMON) {
+                        if (cfg.tabLayoutType == 1) {
+                            type = TIME_LIMIT;
+                        } else if (cfg.tabLayoutType == 3) {
+                            type = PRIVILEGE;
+                        }
+                    }
+                    Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId, type);
+                    if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
+                        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_STORE_PURCHASE, true, typeNumberMap, true);
+                    }
+                }
+            } else {
+                ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+            }
+        }
+
         return vo;
     }
 
@@ -439,6 +470,10 @@ public class ShopService {
         playerService.addEnergy(playerId, ConfigData.globalParam().addEnergyPerTime, LogConsume.BUY_ENERGY);
         cli.param1 = Response.SUCCESS;
         cli.param2 = data.getBuyEnergyTimes();
+
+        //购买体力活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_BUYING_STRENGTH);
+
         return cli;
     }
 
@@ -476,6 +511,10 @@ public class ShopService {
         playerService.addCoin(playerId, ConfigData.globalParam().coinBuy, LogConsume.BUY_COIN);
         cli.param1 = Response.SUCCESS;
         cli.param2 = data.getBuyCoinTimes();
+
+        //购买金币活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_BUYING_ALCHEMY);
+
         return cli;
     }
 
@@ -491,5 +530,45 @@ public class ShopService {
         PlayerData data = playerService.getPlayerData(playerId);
         cli.param = data.getBuyCoinTimes();
         return cli;
+    }
+
+    private Map<Integer, Integer> getTypeNumberMap(int playerId, int type) {
+        Map<Integer, Integer> typeNumberMap = new ConcurrentHashMap<>();
+
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在,玩家id=" + playerId);
+            return typeNumberMap;
+        }
+
+        //商店已有物品
+        ConcurrentHashMap<Integer, List<Integer>> integerListConcurrentHashMap = serial.getData().getPlayerRefreshShops().get(type);
+        if (integerListConcurrentHashMap == null || integerListConcurrentHashMap.isEmpty()) {
+            ServerLogger.warn("未购买任何物品");
+            return typeNumberMap;
+        }
+
+        //玩家购买物品
+        ConcurrentHashMap<Integer, Integer> shopBuyRecords = playerData.getShopBuyRecords();
+        if (shopBuyRecords == null || shopBuyRecords.isEmpty()) {
+            ServerLogger.warn("玩家未购买任何商品");
+            return typeNumberMap;
+        }
+
+        //购买物品次数
+        int count = 0;
+        for (Integer itemId : integerListConcurrentHashMap.keySet()) {
+            if (shopBuyRecords.contains(itemId)) {
+                count++;
+            }
+        }
+
+        if (typeNumberMap.containsKey(type)) {
+            typeNumberMap.put(type, count);
+        } else {
+            typeNumberMap.put(type, 1);
+        }
+
+        return typeNumberMap;
     }
 }

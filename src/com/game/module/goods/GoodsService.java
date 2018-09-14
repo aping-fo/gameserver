@@ -10,10 +10,7 @@ import com.game.module.fashion.FashionService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
 import com.game.module.pet.PetService;
-import com.game.module.player.Player;
-import com.game.module.player.PlayerData;
-import com.game.module.player.PlayerService;
-import com.game.module.player.Upgrade;
+import com.game.module.player.*;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.module.traversing.TraversingService;
@@ -135,6 +132,7 @@ public class GoodsService {
         return exists;
     }
 
+
     // 获取物品配置
     public GoodsConfig getGoodsConfig(int goodsId) {
         return GameData.getConfig(GoodsConfig.class, goodsId);
@@ -193,6 +191,33 @@ public class GoodsService {
         }
         return Response.SUCCESS;
     }
+
+    public Map<Integer, Integer> getGoods(int playerId, List<Integer> goodsList) {
+        Map<Integer, Integer> map = Maps.newHashMap();
+        PlayerData data = playerService.getPlayerData(playerId);
+        PlayerCurrency currency = data.getCurrency();
+        for (int id : goodsList) { //TODO 后期做多资源支持
+            GoodsConfig cfg = GameData.getConfig(GoodsConfig.class, id);
+            int total = 0;
+            if (cfg.type == Goods.CURRENCY) {
+                total = (int) currency.get(id);
+            }
+            if (id == Goods.COIN) {
+
+            } else if (id == Goods.DIAMOND) {
+
+            } else {
+                List<Goods> exists = getExistBagGoods(playerId, id);
+                for (Goods g : exists) {
+                    total += g.getStackNum();
+                }
+            }
+
+            map.put(id, total);
+        }
+        return map;
+    }
+
 
     /**
      * 扣除消耗
@@ -843,7 +868,7 @@ public class GoodsService {
         List<GoodsEntry> rewards = new ArrayList<GoodsEntry>();
         for (int i = 0; i < count; i++) {
 //            List<Reward> list = randomRewardService.getRewards(playerId, groupId, LogConsume.OPEN_BOX);
-            List<Reward> list = randomRewardService.getRewards(0, groupId, LogConsume.OPEN_BOX);
+            List<Reward> list = randomRewardService.getRewards(playerId, groupId, LogConsume.OPEN_BOX, false);
             for (Reward reward : list) {
                 Reward rw = map.get(reward.id);
                 if (rw != null) {

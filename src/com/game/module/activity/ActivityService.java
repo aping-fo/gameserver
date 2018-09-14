@@ -32,12 +32,14 @@ import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
+import java.util.function.Predicate;
 
 @Service
 public class ActivityService implements InitHandler {
@@ -307,7 +309,8 @@ public class ActivityService implements InitHandler {
         for (ActivityTask at : data.getActivityTasks().values()) {
             if (at.getState() != ActivityConsts.ActivityState.T_UN_FINISH) {
                 //全服登录人数特殊处理
-                if (taskCondType == ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE) {
+                ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+                if (taskCfg != null && taskCfg.Conds[0][0] == ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE) {
                     at.getCond().setValue(value);
                 }
                 continue;
@@ -344,6 +347,7 @@ public class ActivityService implements InitHandler {
                                 }
                                 completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY_DIAMONDS, true, typeNumberMap, false);
                             }
+                            integral(playerId, at);//巡礼活动
                         } else {
                             continue;
                         }
@@ -358,7 +362,6 @@ public class ActivityService implements InitHandler {
 
         return tasks;
     }
-
 
     /**
      * 登录检测是否有新的活动开启
@@ -523,7 +526,7 @@ public class ActivityService implements InitHandler {
                     at.getCond().setTargetValue(taskCfg.Conds[0][1]);
 
                     //更新全服登录人数
-                    if (taskCfg.Conds[0][1] == ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE) {
+                    if (taskCfg.Conds[0][0] == ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE) {
                         SerialData serialData = serialDataService.getData();
                         if (serialData == null) {
                             ServerLogger.warn("序列化数据不存在");
@@ -978,8 +981,16 @@ public class ActivityService implements InitHandler {
                 if (taskCfg != null) {
                     if (taskCfg.Conds[0].length >= 3) {
                         //某种品质达到某个数量
-                        if (typeNumberMap.get((int) taskCfg.Conds[0][2]) != null && typeNumberMap.get((int) taskCfg.Conds[0][2]) >= taskCfg.Conds[0][1]) {
-                            if (!completeAndSendReward(playerId, tasks, at, taskCfg, addTime)) continue;
+                        Integer value = typeNumberMap.get((int) taskCfg.Conds[0][2]);
+                        if (value != null) {
+                            at.getCond().setValue(value);
+                            if (typeNumberMap.get((int) taskCfg.Conds[0][2]) >= taskCfg.Conds[0][1]) {
+                                if (completeAndSendReward(playerId, tasks, at, taskCfg, addTime)) {
+                                    integral(playerId, at);//巡礼活动
+                                } else {
+                                    continue;
+                                }
+                            }
                         }
                     }
                 }
@@ -998,17 +1009,18 @@ public class ActivityService implements InitHandler {
         if (addTime) {
             at.setFinishNum(at.getFinishNum() + 1);
         }
+        tasks.add(at);
         if (taskCfg.Param1 > 0 && at.getFinishNum() < taskCfg.Param1) {
             goodsService.addRewards(playerId, taskCfg.Rewards, LogConsume.ACTIVITY_REWARD);
-            tasks.add(at);
             return false;
         }
         at.setState(ActivityConsts.ActivityState.T_FINISH);
 
         //活动称号
         ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
-        //0元礼包是达到等级就完成,但并没有充值
-        if (config.ActivityType != ActivityConsts.ActivityType.T_ZERO_GIFTBAG) {
+
+        //完成首充才获取首充称号
+        if (config.ActivityType == ActivityConsts.ActivityType.T_FIRST_RECHARGE) {
             titleService.complete(playerId, TitleConsts.ACTIVITY, at.getActivityId(), ActivityConsts.UpdateType.T_VALUE);
         }
 
@@ -1113,5 +1125,69 @@ public class ActivityService implements InitHandler {
             return;
         }
         serialData.getFullServiceAttendance().set(0);
+    }
+
+    /**
+     * 累计活动的检测与完成
+     *
+     * @param playerId 玩家id
+     * @param type     活动任务类型
+     */
+    public void completionCumulative(int playerId, int type) {
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData != null) {
+            if (checkIsOpen(playerData, type)) {
+                completeActivityTask(playerId, type, 1, ActivityConsts.UpdateType.T_ADD, true);
+            }
+        } else {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+        }
+    }
+
+    /**
+     * 绝对值活动的检测与完成
+     *
+     * @param playerId 玩家id
+     * @param type     活动任务类型
+     * @param value    最终值
+     */
+    public void absoluteValue(int playerId, int type, int value) {
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData != null) {
+            if (checkIsOpen(playerData, type)) {
+                completeActivityTask(playerId, type, value, ActivityConsts.UpdateType.T_VALUE, true);
+            }
+        } else {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+        }
+    }
+
+    /**
+     * 巡礼活动
+     *
+     * @param playerId 玩家id
+     * @param type     活动类型
+     * @param value    绝对值
+     */
+    public void tour(int playerId, int type, int... value) {
+        if (value.length == 0) {
+            completionCumulative(playerId, type);
+        } else if (value.length == 1) {
+            absoluteValue(playerId, type, value[0]);
+        }
+    }
+
+    /**
+     * 巡礼活动
+     *
+     * @param playerId 玩家id
+     * @param at       任务
+     */
+    public void integral(int playerId, ActivityTask at) {
+        //巡礼活动计算积分
+        ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
+        if (config != null && config.ActivityType == ActivityConsts.ActivityType.T_TOUR) {
+            completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_INTEGRAL);
+        }
     }
 }

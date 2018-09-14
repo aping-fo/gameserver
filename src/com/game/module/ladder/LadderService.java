@@ -835,16 +835,9 @@ public class LadderService implements InitHandler {
         } else if (newLevel > level) {
             record.setType(TYPE_3);
 
-//            //段位提升活动
-//            int playerId = player.getPlayerId();
-//            PlayerData playerData = playerService.getPlayerData(playerId);
-//            if (playerData != null) {
-//                if (activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_QUALIFYING_STAGE)) {
-//                    activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_QUALIFYING_STAGE, 1, ActivityConsts.UpdateType.T_ADD, true);
-//                }
-//            } else {
-//                ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
-//            }
+            //段位提升活动
+            int playerId = player.getPlayerId();
+            activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_QUALIFYING_STAGE);
         } else if (newLevel < level) {
             record.setType(TYPE_4);
         }

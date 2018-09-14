@@ -1,13 +1,18 @@
 package com.game.module.fame;
 
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.concurrent.ConcurrentHashMap;
 
 import com.game.data.ShopCfg;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.params.FameListVO;
 import com.game.params.IntParam;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,6 +35,8 @@ public class FameService {
     private PlayerService playerService;
     @Autowired
     private TaskService taskService;
+    @Autowired
+    private ActivityService activityService;
 
     // 获取声望数据
     public FameListVO getInfo(int playerId) {
@@ -71,7 +78,7 @@ public class FameService {
         fameData.setExp(fameData.getExp() + fame);
         fameData.setCurExp(fameData.getCurExp() + fame);
 
-        taskService.doTask(playerId, Task.TYPE_FAME,fameData.getExp());
+        taskService.doTask(playerId, Task.TYPE_FAME, fameData.getExp());
         while (true) {
             FameConfig cfg = ConfigData.getConfig(FameConfig.class, camp * 1000 + fameData.getLev());
             if (cfg.exp > fameData.getExp()) {
@@ -85,6 +92,20 @@ public class FameService {
             fameData.setLev(fameData.getLev() + 1);
             fameData.setExp(fameData.getExp() - cfg.exp);
         }
+
+        //声望活动
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData != null) {
+            if (activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_CAMP_PRESTIGE)) {
+                Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId, camp);
+                if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
+                    activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_CAMP_PRESTIGE, true, typeNumberMap, true);
+                }
+            }
+        } else {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+        }
+
         refresh(playerId);
     }
 
@@ -117,5 +138,28 @@ public class FameService {
         }
         Upgrade fameData = data.getFames().get(camp);
         return fameData.getLev() >= lv;
+    }
+
+    /**
+     * 阵营声望
+     *
+     * @param playerId 玩家id
+     * @return 阵营和声望
+     */
+    public Map<Integer, Integer> getTypeNumberMap(int playerId, int type) {
+        Map<Integer, Integer> map = new ConcurrentHashMap<>();
+        PlayerData data = playerService.getPlayerData(playerId);
+        if (data == null) {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+            return map;
+        }
+        Upgrade upgrade = data.getFames().get(type);
+        if (upgrade == null) {
+            ServerLogger.info("声望数据错误，阵营类型=" + type);
+            return map;
+        }
+        map.put(type, upgrade.getExp());
+
+        return map;
     }
 }

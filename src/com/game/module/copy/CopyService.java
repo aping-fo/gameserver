@@ -1206,20 +1206,15 @@ public class CopyService {
         refreshCopyInfo(playerId, copyId, data);
 
         //购买副本活动
-//        PlayerData playerData = playerService.getPlayerData(playerId);
-//        if (playerData == null) {
-//            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
-//            return;
-//        }
-//        CopyConfig copyConfig = ConfigData.getConfig(CopyConfig.class, copyId);
-//        if (copyConfig == null) {
-//            ServerLogger.warn("副本不存在，副本id=" + copyId);
-//            return;
-//        }
-//
-//        if (copyConfig.difficulty == CopyInstance.HARD && activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_DIFFICULT_COPY_PURCHASE)) {
-//            activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DIFFICULT_COPY_PURCHASE, 1, ActivityConsts.UpdateType.T_ADD, true);
-//        }
+        CopyConfig copyConfig = ConfigData.getConfig(CopyConfig.class, copyId);
+        if (copyConfig == null) {
+            ServerLogger.warn("副本不存在，副本id=" + copyId);
+            return;
+        }
+
+        if (copyConfig.difficulty == CopyInstance.HARD) {
+            activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_DIFFICULT_COPY_PURCHASE);
+        }
     }
 
     /**

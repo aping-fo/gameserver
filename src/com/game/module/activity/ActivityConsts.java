@@ -26,7 +26,10 @@ public class ActivityConsts {
         public static final int T_EQUIPMENT_INVESTMENT = 22; //装备投资
         public static final int T_CARD_INVESTMENT = 23; //卡片投资
         public static final int T_ZERO_GIFTBAG = 25; //0元礼包
+        public static final int T_FULL_SERVICE_ATTENDANCE = 26; //全服登录人数
         public static final int T_TWO_DAYS = 27; //2日登录
+        public static final int T_TOUR = 30; //巡礼活动
+        public static final int T_INTEGRAL = 31; //积分活动
     }
 
     /**
@@ -52,6 +55,33 @@ public class ActivityConsts {
         public static final int T_TIMED_MONEY_DIAMONDS = 20; //累计充值钻石
         public static final int T_FULL_SERVICE_ATTENDANCE = 21; //全服登录人数
         public static final int T_TWO_DAYS = 22; //2日登录
+        public static final int T_GUILD_DONATION = 30; //公会捐献
+        public static final int T_RESOURCE_PURCHASE = 31; //资源副本购买
+        public static final int T_NUMBER_FRIENDS = 32; //好友数量
+        public static final int T_DAILY_ACTIVITY = 33; //日常任务
+        public static final int T_COOPERATIVE_TASK = 34; //合作任务
+        public static final int T_STORE_PURCHASE = 35; //商店购买
+        public static final int T_GUILD_COPY = 36; //公会副本
+        public static final int T_DIFFICULT_COPY_PURCHASE = 37; //困难副本购买
+        public static final int T_ARENA_VICTORY = 38; //竞技场胜利
+        public static final int T_GUILD_TECHNOLOGY = 39; //公会科技
+        public static final int T_ARENA_CHALLENGE = 40; //竞技场挑战
+        public static final int T_CAMP_PRESTIGE = 41; //阵营声望
+        public static final int T_GUILD_BANQUET = 42; //公会宴会
+        public static final int T_CARD_SUPPLY = 43; //召唤卡片补给
+        public static final int T_EQUIPMENT_SUPPLY = 44; //召唤装备补给
+        public static final int T_VIP_SUPPLY = 45; //召唤VIP补给
+        public static final int T_TRAVERSING = 46; //时空仪组队
+        public static final int T_GUILD_TASK = 47; //公会任务
+        public static final int T_BUYING_ALCHEMY = 48; //购买炼金
+        public static final int T_BUYING_STRENGTH = 49; //购买体力
+        public static final int T_QUALIFYING_STAGE = 50; //排位赛段位
+        public static final int T_GUILD_GRADE = 51; //公会等级
+        public static final int T_PRIVILEGE_LEVEL = 52; //特权等级
+        public static final int T_COMBAT_EFFECTIVENESS = 53; //战力
+        public static final int T_INTEGRAL = 70; //积分
+        public static final int T_CUMULATIVE_CONSUMPTION_DIAMONDS = 71; //累计消耗钻石
+        public static final int T_ADVENTURE_BOX = 80; //奇遇宝箱
     }
 
     /**

@@ -35,7 +35,7 @@ public class ERatingService implements InitHandler {
     private PlayerService playerService;
     private final ExecutorService executor = new ThreadPoolExecutor(2, 4, 0, TimeUnit.SECONDS, new LinkedBlockingQueue<>(120000), new DiscardPolicy());
 
-    private boolean flag = false;
+    private boolean flag = true;
 
     @Override
     public void handleInit() {

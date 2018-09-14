@@ -3,6 +3,8 @@ package com.game.module.gang;
 import com.game.SysConfig;
 import com.game.data.*;
 import com.game.event.InitHandler;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.admin.ManagerService;
 import com.game.module.chat.ChatExtension;
 import com.game.module.chat.ChatService;
@@ -70,6 +72,8 @@ public class GangService implements InitHandler {
     private TimerService timerService;
     @Autowired
     private SceneService sceneService;
+    @Autowired
+    private ActivityService activityService;
 
     private Map<Integer, Gang> gangs = new ConcurrentHashMap<>();
     private Map<String, Integer> gangNames = new ConcurrentHashMap<>();
@@ -177,15 +181,16 @@ public class GangService implements InitHandler {
         return gangs.get(id);
     }
 
-    public GangInfo getSpecialGang(int playerId,int id) {
+    public GangInfo getSpecialGang(int playerId, int id) {
         Gang gang = gangs.get(id);
-        if(gang!= null) {
+        if (gang != null) {
             GangInfo info = toGangVo(gang);
             info.apply = gang.getApplys().containsKey(playerId);
             return info;
         }
         return null;
     }
+
     // 获取一个新的帮派id
     private synchronized int getNextGangId() {
         maxGangId++;
@@ -265,6 +270,10 @@ public class GangService implements InitHandler {
         String str = JsonUtils.object2String(gang);
         byte[] dbData = str.getBytes(Charset.forName("utf-8"));
         gangDao.insert(gang.getId(), CompressUtil.compressBytes(dbData));
+
+        //公会等级活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_GUILD_GRADE, gang.getLev());
+
         return Response.SUCCESS;
     }
 
@@ -466,7 +475,7 @@ public class GangService implements InitHandler {
             ListParam<GangApply> applys = new ListParam<GangApply>();
             applys.params = getApplys(gang.getOwnerId());
             for (GMember member : gang.getMembers().values()) {
-                if(member.getPosition() == Gang.ADMIN) {
+                if (member.getPosition() == Gang.ADMIN) {
                     SessionManager.getInstance().sendMsg(2517, applys, member.getPlayerId());
                 }
             }
@@ -562,6 +571,19 @@ public class GangService implements InitHandler {
         }
         gang.setUpdated(true);
         taskService.doTask(applyId, condParam);
+
+        //公会等级活动
+        activityService.tour(applyId, ActivityConsts.ActivityTaskCondType.T_GUILD_GRADE, gang.getLev());
+
+        //公会任务活动
+        int count = 0;
+        for (Task task : gang.getTasks().values()) {
+            if (task.getState() == Task.STATE_SUBMITED) {
+                count++;
+            }
+        }
+        activityService.tour(applyId, ActivityConsts.ActivityTaskCondType.T_GUILD_TASK, count);
+
         return Response.SUCCESS;
     }
 
@@ -599,10 +621,10 @@ public class GangService implements InitHandler {
             gang.getAdmins().remove(kickId);
         }
         synchronized (kicker) {
-            if (kicker.getGangId() == gangId) {           
+            if (kicker.getGangId() == gangId) {
                 String key = sceneService.getGroupKey(player);
                 SessionManager.getInstance().removeFromGroup(key, player.getPlayerId());
-				kicker.setGangId(0);
+                kicker.setGangId(0);
                 playerService.update(player);
             }
         }
@@ -848,10 +870,12 @@ public class GangService implements InitHandler {
 
         taskService.doTask(playerId, Task.FINISH_DONATE, index, 1);
 
-        SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
-                getMyGang(playerId), playerId);
+        SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG, getMyGang(playerId), playerId);
 
         SessionManager.getInstance().sendMsg(GangExtension.REFRESH_DONATION_INFO, getDonationInfo(playerId), playerId);
+
+        //公会捐献活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_GUILD_DONATION);
 
         return Response.SUCCESS;
     }
@@ -930,7 +954,11 @@ public class GangService implements InitHandler {
 
                 taskService.doTask(receiveId, condParam);
             }
+
+            //公会等级活动
+            activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_GUILD_GRADE, gang.getLev());
         }
+
         gang.setUpdated(true);
     }
 
@@ -1252,6 +1280,10 @@ public class GangService implements InitHandler {
             room.addMax();
         }
         gang.setUpdated(true);
+
+        //公会宴会活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_GUILD_BANQUET);
+
         return Response.SUCCESS;
     }
 
@@ -1523,6 +1555,20 @@ public class GangService implements InitHandler {
         ret.param = Response.SUCCESS;
 
         gang.setUpdated(true);
+
+        //公会科技活动
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData != null) {
+            if (activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_GUILD_TECHNOLOGY)) {
+                Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId);
+                if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
+                    activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_GUILD_TECHNOLOGY, true, typeNumberMap, true);
+                }
+            }
+        } else {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+        }
+
         return ret;
     }
 
@@ -1556,5 +1602,41 @@ public class GangService implements InitHandler {
         gang.setLev(10);
         SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
                 getMyGang(playerId), playerId);
+    }
+
+    /**
+     * 公会科技等级次数
+     *
+     * @param playerId 玩家id
+     * @return 公会科技等级次数
+     */
+    private Map<Integer, Integer> getTypeNumberMap(int playerId) {
+        Map<Integer, Integer> technologyMap = new ConcurrentHashMap<>();
+        PlayerData data = playerService.getPlayerData(playerId);
+        if (data == null) {
+            ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
+            return technologyMap;
+        }
+
+        Set<Integer> technologys = data.getTechnologys();
+        if (technologys.isEmpty()) {
+            ServerLogger.info("未解锁任何公会科技");
+            return technologyMap;
+        }
+
+        for (Integer id : technologys) {
+            GangScienceCfg gangScienceCfg = ConfigData.getConfig(GangScienceCfg.class, id);
+            if (gangScienceCfg != null && gangScienceCfg.lv >= 1) {
+                for (int i = 1; i <= gangScienceCfg.lv; i++) {
+                    if (technologyMap.get(i) == null) {
+                        technologyMap.put(i, 1);
+                    } else {
+                        technologyMap.put(i, technologyMap.get(i) + 1);
+                    }
+                }
+            }
+        }
+
+        return technologyMap;
     }
 }

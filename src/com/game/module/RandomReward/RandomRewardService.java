@@ -80,7 +80,11 @@ public class RandomRewardService implements InitHandler {
      * @param consume
      * @return
      */
-    public List<Reward> getRandomRewards(int playerId, int groupId, int count, Map<Integer, Integer> extra, LogConsume consume) {
+//    public List<Reward> getRandomRewards(int playerId, int groupId, int count, Map<Integer, Integer> extra, LogConsume consume) {
+//        return getRandomRewards(playerId, groupId, count, extra, consume, true);
+//    }
+    public List<Reward> getRandomRewards(int playerId, int groupId, int count, Map<Integer, Integer> extra, LogConsume consume, boolean needAddRewards) {
+
         RewardGroupCfg groupCfg = groups.get(groupId);
         if (groupCfg == null) {
             return null;
@@ -149,7 +153,7 @@ public class RandomRewardService implements InitHandler {
             }
         }
 
-        if (playerId != 0) {
+        if (playerId != 0 && needAddRewards) {
             // 加奖励
             goodsService.addRewards(playerId, rewards, consume, groupId, count);
         }
@@ -167,14 +171,17 @@ public class RandomRewardService implements InitHandler {
      * @return
      */
     public List<Reward> getRewards(int playerId, int groupId, int count, Map<Integer, Integer> extra, LogConsume consume) {
+        return getRewards(playerId, groupId, count, extra, consume, true);
+    }
+    public List<Reward> getRewards(int playerId, int groupId, int count, Map<Integer, Integer> extra, LogConsume consume, boolean needAddRewards) {
         RewardGroupCfg groupCfg = groups.get(groupId);
         if (groupCfg == null) {
             return null;
         }
         if (groupCfg.type == 0) {
-            return getRandomRewards(playerId, groupId, count, extra, consume);
+            return getRandomRewards(playerId, groupId, count, extra, consume, needAddRewards);
         } else {
-            return getFixedRewards(playerId, groupId, count, extra, consume);
+            return getFixedRewards(playerId, groupId, count, extra, consume, needAddRewards);
         }
     }
 
@@ -187,7 +194,10 @@ public class RandomRewardService implements InitHandler {
      * @return
      */
     public List<Reward> getRewards(int playerId, int groupId, LogConsume consume) {
-        return getRewards(playerId, groupId, 1, null, consume);
+        return getRewards(playerId, groupId, consume, true);
+    }
+    public List<Reward> getRewards(int playerId, int groupId, LogConsume consume, boolean needAddRewards) {
+        return getRewards(playerId, groupId, 1, null, consume, needAddRewards);
     }
 
     /**
@@ -202,6 +212,10 @@ public class RandomRewardService implements InitHandler {
         return getRewards(playerId, groupId, count, null, consume);
     }
 
+    public List<Reward> getRewards(int playerId, int groupId, int count, LogConsume consume, boolean needAddRewards) {
+        return getRewards(playerId, groupId, count, null, consume, needAddRewards);
+    }
+
     /**
      * 获取固定奖励，将奖励组中的所有奖励项添加给玩家
      *
@@ -210,7 +224,10 @@ public class RandomRewardService implements InitHandler {
      * @param consume
      * @return
      */
-    private List<Reward> getFixedRewards(int playerId, int groupId, int count, Map<Integer, Integer> extra, LogConsume consume) {
+//    private List<Reward> getFixedRewards(int playerId, int groupId, int count, Map<Integer, Integer> extra, LogConsume consume) {
+//        return getFixedRewards(playerId, groupId, count, extra, consume, true);
+//    }
+    private List<Reward> getFixedRewards(int playerId, int groupId, int count, Map<Integer, Integer> extra, LogConsume consume, boolean needAddRewards) {
         RewardGroupCfg groupCfg = groups.get(groupId);
         if (groupCfg == null) {
             return null;
@@ -244,7 +261,7 @@ public class RandomRewardService implements InitHandler {
             }
 
         }
-        if (playerId != 0) {
+        if (playerId != 0 && needAddRewards) {
             // 加奖励
             goodsService.addRewards(playerId, rewards, consume, groupId, count);
         }

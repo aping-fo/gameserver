@@ -115,8 +115,8 @@
 	<rewardRate>[[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15]]</rewardRate>
 	<mainCityPlayerInfo>1:[[12.54,-8.8,15.5],[0,292,6.5],[3.6,3.6,3.6]];2:[[12.54,-8.8,15.5],[0,292,6.5],[3.6,3.6,3.6]];3:[[12.54,-8.8,15.5],[0,292,6.5],[3.6,3.6,3.6]]</mainCityPlayerInfo>
 	<mainCityCameraInfo>[-0.01,0.06,-0.2,0.11]</mainCityCameraInfo>
-	<attackMinThreshold>[4,4,0.5,0.5]</attackMinThreshold>
-	<attackSafeThreshold>[7,7,0.5,0.5]</attackSafeThreshold>
+	<attackMinThreshold>[4.5,4.5,2,2]</attackMinThreshold>
+	<attackSafeThreshold>[10,10,2,2]</attackSafeThreshold>
 	<MultiHitMaxInterval>4</MultiHitMaxInterval>
 	<BeHitMaxInterval>1</BeHitMaxInterval>
 	<groupCopyOpenTime>[9,10,11,12,13,14]</groupCopyOpenTime>

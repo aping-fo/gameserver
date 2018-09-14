@@ -281,6 +281,7 @@ public class GmService {
         dailyService.refreshDailyVo(playerId);
         playerService.addEnergy(playerId, 120, LogConsume.BUY_ENERGY);
         activityService.resetDailyData();
+        gangService.daily();
     }
 
     // 重启更新服务器

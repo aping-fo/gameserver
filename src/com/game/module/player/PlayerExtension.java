@@ -393,4 +393,19 @@ public class PlayerExtension {
         result.param = Response.SUCCESS;
         return result;
     }
+
+    @Command(1016)
+    public Object updateName(int playerId, StringParam stringParam) {
+        IntParam result = new IntParam();
+        String name = stringParam.param;
+        // 同名
+        if (playerService.getPlayerIdByName(name) > 0) {
+            result.param = Response.SAME_NAME;
+            return result;
+        }
+
+        playerService.updatePlayerName(playerId, name);
+
+        return result;
+    }
 }

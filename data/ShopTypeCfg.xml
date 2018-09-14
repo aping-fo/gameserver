@@ -6,20 +6,20 @@
 	<tabs></tabs>
 	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
-	<illustrated></illustrated>
+	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
 	<refreshTime>5:00</refreshTime>
 	<refreshPrice>[102,0,0,100,200,300]</refreshPrice>
 	<currencyInfo>[102,103,107]</currencyInfo>
-	<tips>0</tips>
-	<illustratedPos></illustratedPos>
-	<illustratedSize></illustratedSize>
+	<tips>2</tips>
+	<illustratedPos>[-244,2,0]</illustratedPos>
+	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>2</id>
 	<layoutType>2</layoutType>
 	<tabs></tabs>
-	<titleIcon>mysteryshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/lucie.png</illustrated>
 	<existTime>30</existTime>
@@ -27,29 +27,29 @@
 	<refreshPrice>[102,0,0,10,20,50,100,200]</refreshPrice>
 	<currencyInfo>[102,103,107]</currencyInfo>
 	<tips>3</tips>
-	<illustratedPos>[-355,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[530,676]</illustratedSize>
 </config>
 <config>
 	<id>3</id>
 	<layoutType>2</layoutType>
 	<tabs></tabs>
-	<titleIcon>vortexshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
-	<illustrated>Assets/UI/Texture/Shop_Illustrated/mystery.png</illustrated>
+	<illustrated>Assets/UI/Texture/Shop_Illustrated/lucie.png</illustrated>
 	<existTime>0</existTime>
 	<refreshTime>5:00</refreshTime>
 	<refreshPrice>[110,10,20]</refreshPrice>
 	<currencyInfo>[110]</currencyInfo>
 	<tips>4</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>4</id>
 	<layoutType>2</layoutType>
 	<tabs></tabs>
-	<titleIcon>guildshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/guild.png</illustrated>
 	<existTime>0</existTime>
@@ -64,37 +64,37 @@
 	<id>5</id>
 	<layoutType>2</layoutType>
 	<tabs></tabs>
-	<titleIcon>trainshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
-	<illustrated>Assets/UI/Texture/Shop_Illustrated/mystery.png</illustrated>
+	<illustrated>Assets/UI/Texture/Shop_Illustrated/lucie.png</illustrated>
 	<existTime>0</existTime>
 	<refreshTime>5:00</refreshTime>
 	<refreshPrice>[121,10,20]</refreshPrice>
 	<currencyInfo>[121]</currencyInfo>
 	<tips>21</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>6</id>
 	<layoutType>2</layoutType>
 	<tabs></tabs>
-	<titleIcon>arenashop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
-	<illustrated>Assets/UI/Texture/Shop_Illustrated/mystery.png</illustrated>
+	<illustrated>Assets/UI/Texture/Shop_Illustrated/lucie.png</illustrated>
 	<existTime>0</existTime>
 	<refreshTime>5:00</refreshTime>
 	<refreshPrice>[111,10,20]</refreshPrice>
 	<currencyInfo>[111]</currencyInfo>
 	<tips>22</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>7</id>
 	<layoutType>0</layoutType>
 	<tabs></tabs>
-	<titleIcon>fameshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
@@ -102,14 +102,14 @@
 	<refreshPrice>[131,10,20]</refreshPrice>
 	<currencyInfo>[131]</currencyInfo>
 	<tips>20</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>8</id>
 	<layoutType>0</layoutType>
 	<tabs></tabs>
-	<titleIcon>fameshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
@@ -117,14 +117,14 @@
 	<refreshPrice>[132,10,20]</refreshPrice>
 	<currencyInfo>[132]</currencyInfo>
 	<tips>20</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>9</id>
 	<layoutType>0</layoutType>
 	<tabs></tabs>
-	<titleIcon>fameshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
@@ -132,14 +132,14 @@
 	<refreshPrice>[133,10,20]</refreshPrice>
 	<currencyInfo>[133]</currencyInfo>
 	<tips>20</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>10</id>
 	<layoutType>0</layoutType>
 	<tabs></tabs>
-	<titleIcon>fameshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
@@ -147,14 +147,14 @@
 	<refreshPrice>[134,10,20]</refreshPrice>
 	<currencyInfo>[134]</currencyInfo>
 	<tips>20</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>11</id>
 	<layoutType>0</layoutType>
 	<tabs></tabs>
-	<titleIcon>fameshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
@@ -162,14 +162,14 @@
 	<refreshPrice>[135,10,20]</refreshPrice>
 	<currencyInfo>[135]</currencyInfo>
 	<tips>20</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>12</id>
 	<layoutType>0</layoutType>
 	<tabs></tabs>
-	<titleIcon>fameshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
@@ -177,14 +177,14 @@
 	<refreshPrice>[136,10,20]</refreshPrice>
 	<currencyInfo>[136]</currencyInfo>
 	<tips>20</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>13</id>
 	<layoutType>0</layoutType>
 	<tabs></tabs>
-	<titleIcon>fameshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
@@ -192,14 +192,14 @@
 	<refreshPrice>[137,10,20]</refreshPrice>
 	<currencyInfo>[137]</currencyInfo>
 	<tips>20</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>14</id>
 	<layoutType>0</layoutType>
 	<tabs></tabs>
-	<titleIcon>fameshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
 	<illustrated>Assets/UI/Texture/Shop_Illustrated/fame.png</illustrated>
 	<existTime>0</existTime>
@@ -207,22 +207,22 @@
 	<refreshPrice>[138,10,20]</refreshPrice>
 	<currencyInfo>[138]</currencyInfo>
 	<tips>20</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>
 	<id>15</id>
 	<layoutType>2</layoutType>
 	<tabs></tabs>
-	<titleIcon>qualifyingshop</titleIcon>
+	<titleIcon>shop</titleIcon>
 	<bgIcon>Skill_Bg</bgIcon>
-	<illustrated>Assets/UI/Texture/Shop_Illustrated/mystery.png</illustrated>
+	<illustrated>Assets/UI/Texture/Shop_Illustrated/lucie.png</illustrated>
 	<existTime>0</existTime>
 	<refreshTime>5:00</refreshTime>
 	<refreshPrice>[112,10,20]</refreshPrice>
 	<currencyInfo>[112]</currencyInfo>
 	<tips>27</tips>
-	<illustratedPos>[-385,2,0]</illustratedPos>
+	<illustratedPos>[-244,2,0]</illustratedPos>
 	<illustratedSize>[452,676]</illustratedSize>
 </config>
 <config>

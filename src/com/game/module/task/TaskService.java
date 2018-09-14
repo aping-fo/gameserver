@@ -3,6 +3,7 @@ package com.game.module.task;
 import com.game.data.*;
 import com.game.event.Dispose;
 import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.attach.arena.ArenaLogic;
 import com.game.module.attach.arena.ArenaPlayer;
 import com.game.module.gang.GMember;
@@ -70,6 +71,9 @@ public class TaskService implements Dispose {
     private SerialDataService serialDataService;
     @Autowired
     private LadderService ladderService;
+    @Autowired
+    private ActivityService activityService;
+
     private Map<Integer, PlayerTask> tasks = new ConcurrentHashMap<Integer, PlayerTask>();
 
     @Override
@@ -395,55 +399,57 @@ public class TaskService implements Dispose {
                     task.setCount(curCount);
                 }
             } else if (config.finishType == Task.FINISH_STRONG) {
-                if (count == 1) {
-                    task.alterCount(params[params.length - 1]);
-                } else {
-                    int reqLev = targets[0];
-                    int reqPos = targets[1];
-                    if (/*params[0] < reqLev || */(reqPos > 0 && reqPos != params[1])) {
-                        return false;
-                    }
-                    Map<Integer, Integer> strengths = playerService
-                            .getPlayerData(playerId).getStrengths();
-                    int curCount = 0;
-                    if (reqPos == 0) {
-                        for (int str : strengths.values()) {
-                            if (str >= reqLev) {
-                                curCount++;
-                            }
-                        }
-                    } else if (strengths.getOrDefault(reqPos, 0) >= reqLev) {
-                        curCount = 1;
-                    }
-                    task.setCount(curCount);
-                }
+                task.alterCount(params[1]);
+//                if (count == 1) {
+//                    task.alterCount(params[params.length - 1]);
+//                } else {
+//                    int reqLev = targets[0];
+//                    int reqPos = targets[1];
+//                    if (/*params[0] < reqLev || */(reqPos > 0 && reqPos != params[1])) {
+//                        return false;
+//                    }
+//                    Map<Integer, Integer> strengths = playerService
+//                            .getPlayerData(playerId).getStrengths();
+//                    int curCount = 0;
+//                    if (reqPos == 0) {
+//                        for (int str : strengths.values()) {
+//                            if (str >= reqLev) {
+//                                curCount++;
+//                            }
+//                        }
+//                    } else if (strengths.getOrDefault(reqPos, 0) >= reqLev) {
+//                        curCount = 1;
+//                    }
+//                    task.setCount(curCount);
+//                }
             } else if (config.finishType == Task.FINISH_STAR) {
-                if (count == 1) {
-                    task.alterCount(params[params.length - 1]);
-                } else {
-                    int request = targets[0];
-                    if (params[0] < request) {
-                        return false;
-                    }
-                    Collection<Goods> goods = goodsService.getPlayerBag(playerId)
-                            .getAllGoods().values();
-                    int curCount = 0;
-                    for (Goods g : goods) {
-                        if (!g.isInBag()) {
-                            GoodsConfig goodsCfg = ConfigData.getConfig(
-                                    GoodsConfig.class, g.getGoodsId());
-                            if (!CommonUtil.contain(
-                                    ConfigData.globalParam().equipTypes,
-                                    goodsCfg.type)) {
-                                continue;
-                            }
-                            if (goodsCfg.color >= request) {
-                                curCount++;
-                            }
-                        }
-                    }
-                    task.setCount(curCount);
-                }
+                task.alterCount(params[1]);
+//                if (count == 1) {
+//                    task.alterCount(params[params.length - 1]);
+//                } else {
+//                    int request = targets[0];
+//                    if (params[0] < request) {
+//                        return false;
+//                    }
+//                    Collection<Goods> goods = goodsService.getPlayerBag(playerId)
+//                            .getAllGoods().values();
+//                    int curCount = 0;
+//                    for (Goods g : goods) {
+//                        if (!g.isInBag()) {
+//                            GoodsConfig goodsCfg = ConfigData.getConfig(
+//                                    GoodsConfig.class, g.getGoodsId());
+//                            if (!CommonUtil.contain(
+//                                    ConfigData.globalParam().equipTypes,
+//                                    goodsCfg.type)) {
+//                                continue;
+//                            }
+//                            if (goodsCfg.color >= request) {
+//                                curCount++;
+//                            }
+//                        }
+//                    }
+//                    task.setCount(curCount);
+//                }
             } else if (config.finishType == Task.FINISH_SKILL) {
                 List<Integer> skills = data.getCurSkills();
                 List<Integer> curCards = data.getCurrCard();
@@ -557,6 +563,9 @@ public class TaskService implements Dispose {
                         if (task.getState() == Task.STATE_FINISHED) {
                             gangService.sendTaskReward(player.getGangId(), config);
                             task.setState(Task.STATE_SUBMITED);
+
+                            //公会任务活动
+                            activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_GUILD_TASK);
                         }
                     }
                 }

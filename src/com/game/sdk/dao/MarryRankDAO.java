@@ -15,6 +15,6 @@ public interface MarryRankDAO {
     public List<MarryRank> queryMarryRank(@SQLParam("beginIndex") int beginIndex, @SQLParam("endIndex") int endIndex);
 
 
-    @SQL("REPLACE into t_marry_rank values (:openId,:nickName,:avatarUrl,:score)")
+    @SQL("REPLACE INTO t_marry_rank VALUES (:openId,:nickName,:avatarUrl,:score)")
     public void insertMarry(@SQLParam("openId") String openId, @SQLParam("nickName") String nickName, @SQLParam("avatarUrl") String avatarUrl, @SQLParam("score") int score);
 }

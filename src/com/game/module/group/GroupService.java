@@ -763,8 +763,8 @@ public class GroupService {
                 //副本失败
                 sceneService.brocastToSceneCurLine(player, CopyExtension.COPY_FAIL, null);
                 group.removeCopyState(team.getId());
-                team.setbFight(false);
-                team.clearReady();
+//                team.setbFight(false);
+//                team.clearReady();
                 broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
                 broadcastGroup(group);
             }
@@ -806,8 +806,9 @@ public class GroupService {
                     group.removeCopyState(team.getId());
                     group.addPassCopy(copy.getCopyId());
 
-                    team.setbFight(false);
-                    team.clearReady();
+                    //统一在onExitBattle设置，因为提早设置，会导致团长可以调整队伍，导致队伍的fightSize有问题。
+//                    team.setbFight(false);
+//                    team.clearReady();
                     //副本胜利
                     CopyResult result = new CopyResult();
                     GroupCopyCfg cfg = ConfigData.getConfig(GroupCopyCfg.class, group.groupCopyId);
@@ -943,6 +944,7 @@ public class GroupService {
             int size = groupTeam.fightSize.decrementAndGet();
             if (size == 0) {
                 groupTeam.setbFight(false);
+                groupTeam.clearReady();
                 group.removeCopyState(groupTeam.getId());
                 broadcastGroup(group);
                 broadcastGroup(group, CMD_STAGE_INFO, group.toStageCopyProto());
@@ -1014,5 +1016,9 @@ public class GroupService {
         member.setFight(player.getFight());
         member.setLev(player.getLev());
         broadcastGroup(group);
+    }
+
+    public Group getGroup(int groupId){
+        return groupMap.get(groupId);
     }
 }

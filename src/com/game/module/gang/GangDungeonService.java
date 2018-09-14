@@ -1,12 +1,15 @@
 package com.game.module.gang;
 
 import com.game.data.*;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.copy.CopyInstance;
 import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
 import com.game.module.player.Player;
+import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
 import com.game.module.serial.PlayerView;
@@ -60,6 +63,8 @@ public class GangDungeonService {
     private SceneService sceneService;
     @Autowired
     private CopyService copyService;
+    @Autowired
+    private ActivityService activityService;
 
     /**
      * 获取公会副本信息
@@ -231,7 +236,12 @@ public class GangDungeonService {
             vo.monsters.add(svo);
         }
         broadcastState(playerId, gang);
+
         taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, CopyInstance.TYPE_GANG_COPY, 1);
+
+        //公会副本活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_GUILD_COPY);
+
         return vo;
     }
 

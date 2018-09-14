@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
@@ -40,6 +42,9 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 	private CopyService copyService;
 	@Autowired
 	private TaskService taskService;
+	@Autowired
+    private ActivityService activityService;
+
 	@Override
 	public byte getType() {
 		return AttachType.EXPERIENCE;
@@ -63,6 +68,11 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 		Player player = playerService.getPlayer(playerId);
 		ExperienceAttach attach = getAttach(playerId);
 		int buyCount = param.param;
+
+        if (buyCount <= 0) {
+            return Response.ERR_PARAM;
+        }
+
 		VIPConfig vip = ConfigData.getConfig(VIPConfig.class, player.getVip());
 		if(attach.getBuyTime() + buyCount > vip.buyExtremeEvasionCopy){
 			return Response.NO_TODAY_TIMES;
@@ -80,7 +90,11 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 		attach.alterChallenge(buyCount);
 		attach.addBuyTime(buyCount);
 		attach.commitSync();
-		return Response.SUCCESS;
+
+		//极限躲避活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
+
+        return Response.SUCCESS;
 	}
 	
 	public CopyReward sweep(int playerId, int copyId){

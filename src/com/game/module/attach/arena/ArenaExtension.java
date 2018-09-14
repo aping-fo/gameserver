@@ -4,6 +4,8 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.game.data.AwakeningSkillCfg;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.awakeningskill.AwakeningSkillService;
 import com.game.module.goods.EquipService;
 import com.google.common.collect.Lists;
@@ -46,6 +48,8 @@ public class ArenaExtension {
     private EquipService equipService;
     @Autowired
     private AwakeningSkillService awakeningSkillService;
+    @Autowired
+    private ActivityService activityService;
 
     @Command(3801)
     public ArenaVO getInfo(int playerId, Object param) {
@@ -243,6 +247,9 @@ public class ArenaExtension {
             attach.alterChallenge(param.param);
             attach.alterBuyCount(param.param);
             attach.commitSync();
+
+            //好友活动
+            activityService.completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_ARENA_CHALLENGE);
         }
         return result;
     }

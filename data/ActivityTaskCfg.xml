@@ -6,7 +6,7 @@
 	<name_en></name_en>
 	<ActivityId>1</ActivityId>
 	<ResetType>1</ResetType>
-	<Conds>[[1,12,13]]</Conds>
+	<Conds>[[1,12,14]]</Conds>
 	<Rewards>[[107,30]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0>20</Param0>
@@ -20,7 +20,7 @@
 	<name_en></name_en>
 	<ActivityId>1</ActivityId>
 	<ResetType>1</ResetType>
-	<Conds>[[1,18,19]]</Conds>
+	<Conds>[[1,18,20]]</Conds>
 	<Rewards>[[107,30]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0>20</Param0>
@@ -34,7 +34,7 @@
 	<name_en></name_en>
 	<ActivityId>1</ActivityId>
 	<ResetType>1</ResetType>
-	<Conds>[[1,21,22]]</Conds>
+	<Conds>[[1,21,23]]</Conds>
 	<Rewards>[[107,30]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0>20</Param0>
@@ -939,6 +939,90 @@
 	<Param1>0</Param1>
 </config>
 <config>
+	<id>250</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>90</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,10]]</Conds>
+	<Rewards>[[102,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石10</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>251</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>90</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,20]]</Conds>
+	<Rewards>[[102,20]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石20</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>252</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>90</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,30]]</Conds>
+	<Rewards>[[102,30]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石30</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>253</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>90</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,40]]</Conds>
+	<Rewards>[[102,40]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石40</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>254</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>90</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,50]]</Conds>
+	<Rewards>[[102,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石50</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>255</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>90</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,60]]</Conds>
+	<Rewards>[[102,60]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石60</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
 	<id>301</id>
 	<name>每日充值</name>
 	<name_en></name_en>
@@ -1771,7 +1855,7 @@
 	<ActivityId>29</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[20,1200,4]]</Conds>
-	<Rewards>[[60111,210]]</Rewards>
+	<Rewards>[[65111,210]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -1966,7 +2050,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[30,1]]</Conds>
+	<Conds>[[30,10]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -1980,7 +2064,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[30,2]]</Conds>
+	<Conds>[[30,20]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -1994,7 +2078,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[30,3]]</Conds>
+	<Conds>[[30,30]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2008,7 +2092,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[30,4]]</Conds>
+	<Conds>[[30,50]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2022,7 +2106,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[30,5]]</Conds>
+	<Conds>[[30,70]]</Conds>
 	<Rewards>[[102,14]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2036,7 +2120,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[31,1]]</Conds>
+	<Conds>[[31,12]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2050,7 +2134,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[31,2]]</Conds>
+	<Conds>[[31,24]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2064,7 +2148,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[31,3]]</Conds>
+	<Conds>[[31,36]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2078,7 +2162,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[31,4]]</Conds>
+	<Conds>[[31,48]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2092,7 +2176,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[31,5]]</Conds>
+	<Conds>[[31,72]]</Conds>
 	<Rewards>[[102,14]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2106,7 +2190,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[32,1]]</Conds>
+	<Conds>[[32,10]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2120,7 +2204,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[32,2]]</Conds>
+	<Conds>[[32,20]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2134,7 +2218,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[32,3]]</Conds>
+	<Conds>[[32,30]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2148,7 +2232,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[32,4]]</Conds>
+	<Conds>[[32,40]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2162,7 +2246,7 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[32,5]]</Conds>
+	<Conds>[[32,50]]</Conds>
 	<Rewards>[[102,14]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2274,7 +2358,7 @@
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,2]]</Conds>
+	<Conds>[[34,3]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2288,7 +2372,7 @@
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,3]]</Conds>
+	<Conds>[[34,6]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2302,7 +2386,7 @@
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,4]]</Conds>
+	<Conds>[[34,12]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2316,7 +2400,7 @@
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,5]]</Conds>
+	<Conds>[[34,18]]</Conds>
 	<Rewards>[[102,14]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2414,7 +2498,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,1]]</Conds>
+	<Conds>[[36,3]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2428,7 +2512,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,2]]</Conds>
+	<Conds>[[36,6]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2442,7 +2526,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,3]]</Conds>
+	<Conds>[[36,9]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2456,7 +2540,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,4]]</Conds>
+	<Conds>[[36,15]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2470,7 +2554,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,5]]</Conds>
+	<Conds>[[36,21]]</Conds>
 	<Rewards>[[102,14]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2484,7 +2568,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,1]]</Conds>
+	<Conds>[[37,10]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2498,7 +2582,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,2]]</Conds>
+	<Conds>[[37,25]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2512,7 +2596,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,3]]</Conds>
+	<Conds>[[37,50]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2526,7 +2610,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,4]]</Conds>
+	<Conds>[[37,75]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2540,7 +2624,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,5]]</Conds>
+	<Conds>[[37,90]]</Conds>
 	<Rewards>[[102,14]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2554,7 +2638,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[38,1]]</Conds>
+	<Conds>[[38,15]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2568,7 +2652,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[38,2]]</Conds>
+	<Conds>[[38,20]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2582,7 +2666,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[38,3]]</Conds>
+	<Conds>[[38,25]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2596,7 +2680,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[38,4]]</Conds>
+	<Conds>[[38,35]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2610,7 +2694,7 @@
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[38,5]]</Conds>
+	<Conds>[[38,50]]</Conds>
 	<Rewards>[[102,14]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2638,7 +2722,7 @@
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[39,1,2]]</Conds>
+	<Conds>[[39,1,5]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2652,7 +2736,7 @@
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[39,1,2]]</Conds>
+	<Conds>[[39,2,5]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2666,7 +2750,7 @@
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[39,1,2]]</Conds>
+	<Conds>[[39,3,5]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2680,7 +2764,7 @@
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[40,1]]</Conds>
+	<Conds>[[40,10]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2694,7 +2778,7 @@
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[40,2]]</Conds>
+	<Conds>[[40,15]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2708,7 +2792,7 @@
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[40,3]]</Conds>
+	<Conds>[[40,20]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2722,7 +2806,7 @@
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[40,4]]</Conds>
+	<Conds>[[40,30]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2862,7 +2946,7 @@
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[42,1]]</Conds>
+	<Conds>[[42,5]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2876,7 +2960,7 @@
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[42,2]]</Conds>
+	<Conds>[[42,10]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -2890,7 +2974,7 @@
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[42,3]]</Conds>
+	<Conds>[[42,15]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3026,11 +3110,11 @@
 </config>
 <config>
 	<id>8401</id>
-	<name>累计参与时空仪1次</name>
+	<name>累计参与时空仪10次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[46,1]]</Conds>
+	<Conds>[[46,10]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3040,11 +3124,11 @@
 </config>
 <config>
 	<id>8402</id>
-	<name>累计参与时空仪2次</name>
+	<name>累计参与时空仪15次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[46,2]]</Conds>
+	<Conds>[[46,15]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3054,11 +3138,11 @@
 </config>
 <config>
 	<id>8403</id>
-	<name>累计参与时空仪3次</name>
+	<name>累计参与时空仪20次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[46,3]]</Conds>
+	<Conds>[[46,20]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3100,7 +3184,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[47,2]]</Conds>
+	<Conds>[[47,3]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3114,7 +3198,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[47,3]]</Conds>
+	<Conds>[[47,5]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3128,7 +3212,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[47,4]]</Conds>
+	<Conds>[[47,10]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3142,7 +3226,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[48,1]]</Conds>
+	<Conds>[[48,10]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3156,7 +3240,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[48,2]]</Conds>
+	<Conds>[[48,30]]</Conds>
 	<Rewards>[[102,11]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3170,7 +3254,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[48,3]]</Conds>
+	<Conds>[[48,50]]</Conds>
 	<Rewards>[[102,12]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3184,7 +3268,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[49,1]]</Conds>
+	<Conds>[[49,5]]</Conds>
 	<Rewards>[[102,13]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3198,7 +3282,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[49,2]]</Conds>
+	<Conds>[[49,10]]</Conds>
 	<Rewards>[[102,14]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3212,7 +3296,7 @@
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[49,3]]</Conds>
+	<Conds>[[49,20]]</Conds>
 	<Rewards>[[102,15]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -3579,6 +3663,230 @@
 	<Conds>[[70,50]]</Conds>
 	<Rewards>[[102,10]]</Rewards>
 	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>11001</id>
+	<name>奇遇宝箱A</name>
+	<name_en></name_en>
+	<ActivityId>80</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,100]]</Conds>
+	<Rewards>[[103,10],[102,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>11002</id>
+	<name>奇遇宝箱B</name>
+	<name_en></name_en>
+	<ActivityId>80</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,100]]</Conds>
+	<Rewards>[[103,10],[102,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>11003</id>
+	<name>奇遇宝箱C</name>
+	<name_en></name_en>
+	<ActivityId>80</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,100]]</Conds>
+	<Rewards>[[103,10],[102,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>11004</id>
+	<name>奇遇宝箱D</name>
+	<name_en></name_en>
+	<ActivityId>80</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,100]]</Conds>
+	<Rewards>[[103,10],[102,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>12001</id>
+	<name>卓越宝箱A</name>
+	<name_en></name_en>
+	<ActivityId>80</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,200]]</Conds>
+	<Rewards>[[103,10],[102,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>12002</id>
+	<name>卓越宝箱B</name>
+	<name_en></name_en>
+	<ActivityId>80</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,200]]</Conds>
+	<Rewards>[[103,10],[102,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>12003</id>
+	<name>卓越宝箱C</name>
+	<name_en></name_en>
+	<ActivityId>80</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,200]]</Conds>
+	<Rewards>[[103,10],[102,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>12004</id>
+	<name>卓越宝箱D</name>
+	<name_en></name_en>
+	<ActivityId>80</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,200]]</Conds>
+	<Rewards>[[103,10],[102,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>13001</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<ActivityId>91</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,10]]</Conds>
+	<Rewards>[[20001]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>13002</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<ActivityId>91</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,20]]</Conds>
+	<Rewards>[[20002]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>13003</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<ActivityId>91</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,30]]</Conds>
+	<Rewards>[[20003]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>13004</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<ActivityId>91</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,40]]</Conds>
+	<Rewards>[[20004]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>13005</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<ActivityId>91</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,50]]</Conds>
+	<Rewards>[[20005]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>13006</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<ActivityId>91</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,60]]</Conds>
+	<Rewards>[[20006]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>13007</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<ActivityId>91</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,70]]</Conds>
+	<Rewards>[[20007]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>13008</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<ActivityId>91</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,80]]</Conds>
+	<Rewards>[[20008]]</Rewards>
+	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
 	<des_en></des_en>

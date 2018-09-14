@@ -5,6 +5,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.admin.MessageConsts;
 import com.game.module.admin.MessageService;
 import com.game.module.copy.CopyExtension;
@@ -66,6 +67,8 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
     private TitleService titleService;
     @Autowired
     private CopyService copyService;
+    @Autowired
+    private ActivityService activityService;
 
     private SerialData serialData;
     private ConcurrentHashMap<Integer, ArenaPlayer> ranks;
@@ -237,6 +240,9 @@ public class ArenaLogic extends AttachLogic<ArenaAttach> {
             } else {
                 sendReport(playerId, ARENA_WIN, oppPlayer.getName(), 0, oppPlayer.getPlayerId());
             }
+
+            //竞技场胜利活动
+            activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_ARENA_VICTORY);
         } else {
             data.setArenaWins(0);
             //lost

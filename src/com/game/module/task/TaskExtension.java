@@ -3,7 +3,11 @@ package com.game.module.task;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
+import com.game.module.player.PlayerData;
 import com.game.params.AchievementSyncVo;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.data.Response;
@@ -23,141 +27,156 @@ import com.server.util.GameData;
 @Extension
 public class TaskExtension {
 
-	@Autowired
-	private TaskService taskService;
-	@Autowired
-	private GoodsService goodsService;
-	@Autowired
-	private PlayerService playerService;
+    @Autowired
+    private TaskService taskService;
+    @Autowired
+    private GoodsService goodsService;
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private ActivityService activityService;
 
-	public static final int TASK_LIST_INFO = 1301;
-	@Command(1301)
-	public TaskListInfo getTask(int playerId, Object param) {
-		return taskService.getCurTasks(playerId);
-	}
+    public static final int TASK_LIST_INFO = 1301;
 
-	public static final int TASK_UPDATE = 1302;
+    @Command(1301)
+    public TaskListInfo getTask(int playerId, Object param) {
+        return taskService.getCurTasks(playerId);
+    }
 
-	// 提交任务
-	@Command(1303)
-	public Object submit(int playerId, Int2Param param) {
-		int taskId = param.param1;
-		Int2Param result = new Int2Param();
-		result.param2 = taskId;
-		// 验证是否完成
-		PlayerTask playerTask = taskService.getPlayerTask(playerId);
-		Task task = param.param2 == 0 ?playerTask.getTasks().get(taskId) : playerTask.getCurrJointedTask();
-		if (task == null || task.getState() != Task.STATE_FINISHED) {
-			if(task != null && Task.STATE_SUBMITED==task.getState()){
-				result.param1 = Response.OPERATION_TOO_FAST;
-			}else{
-				result.param1 = Response.ERR_PARAM;
-			}
-			return result;
-		}
+    public static final int TASK_UPDATE = 1302;
 
-		// 设置状态
-		task.setState(Task.STATE_SUBMITED);
-		TaskConfig taskCfg = taskService.getConfig(taskId); // 奖励物品
-		goodsService.addRewards(playerId, taskCfg.rewards,
-				LogConsume.TASK_REWARD, taskId);
-		
-		if(taskCfg.taskType == Task.TYPE_TASK){
-			if(taskCfg.nextTaskId > 0){
-				List<Task> updateList = new ArrayList<>();
-				TaskConfig newTaskCfg = GameData.getConfig(TaskConfig.class, taskCfg.nextTaskId);
-				if(newTaskCfg != null){
-					Task newTask = taskService.addNewTask(playerId, taskCfg.nextTaskId, false);
-					if(taskCfg.group == newTaskCfg.group){
-						newTask.setCount(task.getCount());
-						taskService.checkFinished(newTask,playerId);
-						updateList.add(newTask);
-					}else{
-						taskService.doTask(playerId, taskCfg.finishType, newTask,taskCfg.finishParam);
-					}
-				}
-				taskService.updateTaskToClient(playerId, updateList);
-			}
-		}else if (taskCfg.taskType == Task.TYPE_JOINT) {
-			JointTask myJointedTask = playerTask.getCurrJointedTask();
-			if (myJointedTask == task) {
-				playerTask.setCurrJointedTask(null);
-				//playerTask.alterJointedCount(1);
-			}
-		}
-		if(taskCfg.liveness > 0){
-			playerTask.alterLiveness(taskCfg.liveness);
-			playerService.updateAttrsToClient(playerId, Player.LIVENESS, playerTask.getLiveness());
-		}
-		return result;
-	}
+    // 提交任务
+    @Command(1303)
+    public Object submit(int playerId, Int2Param param) {
+        int taskId = param.param1;
+        Int2Param result = new Int2Param();
+        result.param2 = taskId;
+        // 验证是否完成
+        PlayerTask playerTask = taskService.getPlayerTask(playerId);
+        Task task = param.param2 == 0 ? playerTask.getTasks().get(taskId) : playerTask.getCurrJointedTask();
+        if (task == null || task.getState() != Task.STATE_FINISHED) {
+            if (task != null && Task.STATE_SUBMITED == task.getState()) {
+                result.param1 = Response.OPERATION_TOO_FAST;
+            } else {
+                result.param1 = Response.ERR_PARAM;
+            }
+            return result;
+        }
 
-	// 邀请任务
-	@Command(1304)
-	public Object inviteJoint(int playerId, Int2Param param) {
-		int taskId = param.param1;
-		Int2Param result = new Int2Param();
-		result.param1 = taskService.inviteJointTask(playerId, taskId,
-				param.param2);
-		result.param2 = taskId;
-		return result;
-	}
+        // 设置状态
+        task.setState(Task.STATE_SUBMITED);
+        TaskConfig taskCfg = taskService.getConfig(taskId); // 奖励物品
+        goodsService.addRewards(playerId, taskCfg.rewards,
+                LogConsume.TASK_REWARD, taskId);
 
-	// 拒绝任务
-	@Command(1305)
-	public Object refuseJoint(int playerId, Int2Param param) {
-		int taskId = param.param1;
-		Int2Param result = new Int2Param();
-		result.param1 = taskService.refuseJoint(playerId, taskId,
-				param.param2);
-		result.param2 = taskId;
-		return result;
-	}
+        if (taskCfg.taskType == Task.TYPE_TASK) {
+            if (taskCfg.nextTaskId > 0) {
+                List<Task> updateList = new ArrayList<>();
+                TaskConfig newTaskCfg = GameData.getConfig(TaskConfig.class, taskCfg.nextTaskId);
+                if (newTaskCfg != null) {
+                    Task newTask = taskService.addNewTask(playerId, taskCfg.nextTaskId, false);
+                    if (taskCfg.group == newTaskCfg.group) {
+                        newTask.setCount(task.getCount());
+                        taskService.checkFinished(newTask, playerId);
+                        updateList.add(newTask);
+                    } else {
+                        taskService.doTask(playerId, taskCfg.finishType, newTask, taskCfg.finishParam);
+                    }
+                }
+                taskService.updateTaskToClient(playerId, updateList);
+            }
+        } else if (taskCfg.taskType == Task.TYPE_JOINT) {
+            JointTask myJointedTask = playerTask.getCurrJointedTask();
+            if (myJointedTask == task) {
+                playerTask.setCurrJointedTask(null);
+                //playerTask.alterJointedCount(1);
+            }
+        }
 
-	// 接受任务
-	@Command(1306)
-	public Object acceptJoint(int playerId, Int2Param param) {
-		int taskId = param.param1;
-		Int2Param result = new Int2Param();
-		result.param1 = taskService.acceptJoint(playerId, taskId, param.param2);
-		result.param2 = taskId;
-		return result;
-	}
-	
-	//领取活跃度奖励
-	@Command(1307)
-	public Object takeLivenessReward(int playerId, IntParam param){
-		PlayerTask playerTask = taskService.getPlayerTask(playerId);
-		Int2Param result = new Int2Param();
-		if(playerTask.getLiveness() < param.param){
-			result.param1 = Response.ERR_PARAM;
-			return result;
-		}
-		if(playerTask.getLiveBox().contains(param.param)){
-			result.param1 = Response.ERR_PARAM;
-			return result;
-		}
-		int[][] rewards = ConfigData.globalParam().taskLivenessReward.get(param.param);
-		if(rewards == null){
-			result.param1 = Response.ERR_PARAM;
-			return result;
-		}
-		result.param2 = param.param;
-		goodsService.addRewards(playerId, rewards, LogConsume.TASK_LIVENESS_REWARD, param.param);
-		playerTask.getLiveBox().add(param.param);
-		return result;
-	}
-	
-	//有玩家接受了已方的任务
-	public static final int ACCEPTED_JOINT = 1308;//
+        //任务活动
+        if (taskCfg.taskType == Task.TYPE_JOINT || taskCfg.taskType == Task.TYPE_DAILY) {
+            int type = -1;
+            if (taskCfg.taskType == Task.TYPE_JOINT) {
+                type = ActivityConsts.ActivityTaskCondType.T_COOPERATIVE_TASK;
+            } else if (taskCfg.taskType == Task.TYPE_DAILY) {
+                type = ActivityConsts.ActivityTaskCondType.T_DAILY_ACTIVITY;
+            }
+            activityService.tour(playerId, type);
+        }
 
-	@Command(10001)
-	public Object achievementTask(int playerId, AchievementSyncVo param){
-		return taskService.achievementTask(playerId,param);
-	}
+        if (taskCfg.liveness > 0) {
+            playerTask.alterLiveness(taskCfg.liveness);
+            playerService.updateAttrsToClient(playerId, Player.LIVENESS, playerTask.getLiveness());
+        }
+        return result;
+    }
 
-	@Command(10002)
-	public Object getAllReward (int playerId, Object param){
-		return taskService.getAllReward(playerId);
-	}
+    // 邀请任务
+    @Command(1304)
+    public Object inviteJoint(int playerId, Int2Param param) {
+        int taskId = param.param1;
+        Int2Param result = new Int2Param();
+        result.param1 = taskService.inviteJointTask(playerId, taskId,
+                param.param2);
+        result.param2 = taskId;
+        return result;
+    }
+
+    // 拒绝任务
+    @Command(1305)
+    public Object refuseJoint(int playerId, Int2Param param) {
+        int taskId = param.param1;
+        Int2Param result = new Int2Param();
+        result.param1 = taskService.refuseJoint(playerId, taskId,
+                param.param2);
+        result.param2 = taskId;
+        return result;
+    }
+
+    // 接受任务
+    @Command(1306)
+    public Object acceptJoint(int playerId, Int2Param param) {
+        int taskId = param.param1;
+        Int2Param result = new Int2Param();
+        result.param1 = taskService.acceptJoint(playerId, taskId, param.param2);
+        result.param2 = taskId;
+        return result;
+    }
+
+    //领取活跃度奖励
+    @Command(1307)
+    public Object takeLivenessReward(int playerId, IntParam param) {
+        PlayerTask playerTask = taskService.getPlayerTask(playerId);
+        Int2Param result = new Int2Param();
+        if (playerTask.getLiveness() < param.param) {
+            result.param1 = Response.ERR_PARAM;
+            return result;
+        }
+        if (playerTask.getLiveBox().contains(param.param)) {
+            result.param1 = Response.ERR_PARAM;
+            return result;
+        }
+        int[][] rewards = ConfigData.globalParam().taskLivenessReward.get(param.param);
+        if (rewards == null) {
+            result.param1 = Response.ERR_PARAM;
+            return result;
+        }
+        result.param2 = param.param;
+        goodsService.addRewards(playerId, rewards, LogConsume.TASK_LIVENESS_REWARD, param.param);
+        playerTask.getLiveBox().add(param.param);
+        return result;
+    }
+
+    //有玩家接受了已方的任务
+    public static final int ACCEPTED_JOINT = 1308;//
+
+    @Command(10001)
+    public Object achievementTask(int playerId, AchievementSyncVo param) {
+        return taskService.achievementTask(playerId, param);
+    }
+
+    @Command(10002)
+    public Object getAllReward(int playerId, Object param) {
+        return taskService.getAllReward(playerId);
+    }
 }

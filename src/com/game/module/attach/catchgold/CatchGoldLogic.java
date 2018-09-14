@@ -5,6 +5,8 @@ import java.util.Map;
 import com.game.data.CopyConfig;
 import com.game.data.Response;
 import com.game.data.VIPConfig;
+import com.game.module.activity.ActivityConsts;
+import com.game.module.activity.ActivityService;
 import com.game.module.attach.AttachLogic;
 import com.game.module.attach.AttachType;
 import com.game.module.copy.CopyInstance;
@@ -13,6 +15,7 @@ import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
+import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
@@ -22,6 +25,7 @@ import com.game.params.Reward;
 import com.game.params.RewardList;
 import com.game.params.copy.CopyResult;
 import com.game.util.ConfigData;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -42,6 +46,8 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
     private TaskService taskService;
     @Autowired
     private CopyService copyService;
+    @Autowired
+    private ActivityService activityService;
 
     @Override
     public byte getType() {
@@ -66,13 +72,18 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
         Player player = playerService.getPlayer(playerId);
         CatchGoldAttach attach = getAttach(playerId);
         int buyCount = param.param;
+
+        if (buyCount <= 0) {
+            return Response.ERR_PARAM;
+        }
+
         VIPConfig vip = ConfigData.getConfig(VIPConfig.class, player.getVip());
         if (attach.getBuyTime() + buyCount > vip.buyLeadawayCopy) {
             return Response.NO_TODAY_TIMES;
         }
         // 扣钱
         Map<Integer, Integer> price = ConfigData.globalParam().catchGoldPrice;
-        for(int key:price.keySet()){
+        for (int key : price.keySet()) {
             price.replace(key, price.get(key) * buyCount);
         }
         int code = goodsService.decConsume(playerId, price, LogConsume.BUY_LEADAWAY_TIME);
@@ -82,6 +93,10 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
         attach.alterChallenge(buyCount);
         attach.addBuyTime(buyCount);
         attach.commitSync();
+
+        //金币副本活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
+
         return Response.SUCCESS;
     }
 
