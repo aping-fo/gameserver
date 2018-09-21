@@ -846,9 +846,9 @@ public class GangService implements InitHandler {
 
         // 检验次数
         int time = member.getDonationRecord().getOrDefault(index, 0);
-        if (time >= param[3]) {
+        /*if (time >= param[3]) {
             return Response.NO_TODAY_TIMES;
-        }
+        }*/
         // 计算价值
         if (goodsService.decConsume(playerId,
                 new int[][]{Arrays.copyOfRange(param, 0, 2)},

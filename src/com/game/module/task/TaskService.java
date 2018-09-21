@@ -907,9 +907,9 @@ public class TaskService implements Dispose {
         }
         List<String> jointedTasks = playerTask.getJointedTasks();
         String key = String.format("%d_%d", taskId, partnerId);
-        if (!jointedTasks.contains(key)) {
-            return Response.ERR_PARAM;
-        }
+//        if (!jointedTasks.contains(key)) {
+//            return Response.ERR_PARAM;
+//        }
                                                                                                                                                                                                                       JointTask myCurrJointedTask = playerTask.getCurrJointedTask();
         if (myCurrJointedTask != null) {
             return Response.TASK_JOINTED;

@@ -19,6 +19,7 @@ import com.game.params.skill.SkillCardVo;
 import com.game.params.skill.SkillInfo;
 import com.game.util.ConfigData;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -76,68 +77,78 @@ public class SkillService {
      */
     //升级技能
     public int upgradeSkill(int playerId, int skillId, int onKey) {
-        //是否已经满级
-        SkillConfig cfg = ConfigData.getConfig(SkillConfig.class, skillId);
-        if (cfg.nextId == 0) {
-            return Response.MAX_LEV;
-        }
-        Player player = playerService.getPlayer(playerId);
-        int coin = player.getCoin();
-        int consume = 0;
-        int nextId = skillId;
-
-        //2觉被动技能等级上限
         PlayerData playerData = playerService.getPlayerData(playerId);
-        Map<Integer, Integer> awakeningSkillMap = playerData.getAwakeningSkillMap();
-        int maxLevel = player.getLev();
-        cfg = ConfigData.getConfig(SkillConfig.class, nextId);
-        for (Map.Entry<Integer, Integer> entry : awakeningSkillMap.entrySet()) {
-            AwakenAttributeCfg awakenAttributeCfg = ConfigData.getConfig(AwakenAttributeCfg.class, entry.getValue());
-            if (awakenAttributeCfg != null && awakenAttributeCfg.value == cfg.skillType) {
-                maxLevel += awakenAttributeCfg.lv;
-                break;
-            }
+        Player player = playerService.getPlayer(playerId);
+
+        List<Integer> skills = Lists.newArrayList(skillId);
+        if (onKey == 1) { //
+            skills = Lists.newArrayList(playerData.getSkills());
         }
 
-        do {
-            if (onKey != -1 && coin < cfg.coin) {
-                break;
+        int consume = 0;
+        Map<Integer, Integer> id2skill = Maps.newHashMap();
+        Map<Integer, Integer> id2lv = Maps.newHashMap();
+        for (int sid : skills) {
+            Map<Integer, Integer> awakeningSkillMap = playerData.getAwakeningSkillMap();
+            int maxLevel = player.getLev();
+            //是否已经满级
+            SkillConfig cfg = ConfigData.getConfig(SkillConfig.class, sid);
+            if (cfg.nextId == 0) {
+                continue;
             }
-            consume += cfg.coin;
-            coin -= cfg.coin;
-            nextId = cfg.nextId;
-            cfg = ConfigData.getConfig(SkillConfig.class, nextId);
-            if (onKey == 0 || onKey == -1) { //一次升级一次
-                break;
+            cfg = ConfigData.getConfig(SkillConfig.class, sid);
+            for (Map.Entry<Integer, Integer> entry : awakeningSkillMap.entrySet()) {
+                AwakenAttributeCfg awakenAttributeCfg = ConfigData.getConfig(AwakenAttributeCfg.class, entry.getValue());
+                if (awakenAttributeCfg != null && awakenAttributeCfg.value == cfg.skillType) {
+                    maxLevel += awakenAttributeCfg.lv;
+                    break;
+                }
             }
-        } while (cfg.nextId != 0 && coin > 0 && maxLevel > cfg.lev);
+            int nextId = sid;
+            do {
+                if (onKey != -1) { //是否2觉被动免费提升
+                    if (consume + cfg.coin > player.getCoin()) {
+                        ServerLogger.info("coin not enough," + consume + ",," + player.getCoin());
+                        break;
+                    }
+                    consume += cfg.coin;
+                }
 
-        if (nextId == skillId) {
-            return Response.NO_COIN;
+                cfg = ConfigData.getConfig(SkillConfig.class, nextId);
+                nextId = cfg.nextId;
+                id2skill.put(sid, nextId);
+                id2lv.put(cfg.skillType, cfg.lev);
+            } while (onKey == 1 && maxLevel > cfg.lev);
         }
 
-        //是否2觉被动免费提升
-        if (onKey != -1) {
+        if (consume > 0) {
             playerService.decCoin(playerId, consume, LogConsume.SKILL_UPGRADE);
         }
-        //扣除金币
-        /*if(!playerService.decCoin(playerId, cfg.coin, LogConsume.SKILL_UPGRADE)){
-			return Response.NO_COIN;
-		}*/
-        //设置id
-        PlayerData data = playerService.getPlayerData(playerId);
-        int index = data.getSkills().indexOf(skillId);
-        if (index == -1) {
-            ServerLogger.warn("skill not found ,skillId ==>" + skillId);
-            return Response.ERR_PARAM;
+
+        for (Map.Entry<Integer, Integer> e : id2skill.entrySet()) {
+            int sid = e.getKey();
+            int targetId = e.getValue();
+            int index = playerData.getSkills().indexOf(sid);
+            if (index == -1) {
+                ServerLogger.warn("skill not found ,skillId ==>" + sid);
+                return Response.ERR_PARAM;
+            }
+            playerData.getSkills().set(index, targetId);
+            index = playerData.getCurSkills().indexOf(sid);
+            if (index >= 0) {
+                playerData.getCurSkills().set(index, targetId);
+            }
         }
-        data.getSkills().set(index, nextId);
-        index = data.getCurSkills().indexOf(skillId);
-        if (index >= 0) {
-            data.getCurSkills().set(index, nextId);
-        }
+
         taskService.doTask(playerId, Task.FINISH_SKILL);
-        taskService.doTask(playerId, Task.TYPE_SKILL_LEVEL, cfg.skillType, cfg.lev);
+        if (!id2lv.isEmpty()) {
+            Map<Integer, int[]> condParams = Maps.newHashMap();
+            for (Map.Entry<Integer, Integer> e : id2lv.entrySet()) {
+                condParams.put(Task.TYPE_SKILL_LEVEL, new int[]{e.getKey(), e.getValue()});
+            }
+            taskService.doTask(playerId, condParams);
+        }
+        // taskService.doTask(playerId, Task.TYPE_SKILL_LEVEL, cfg.skillType, cfg.lev);
 
         updateSkill2Client(playerId);
         return Response.SUCCESS;

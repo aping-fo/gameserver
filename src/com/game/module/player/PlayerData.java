@@ -126,6 +126,7 @@ public class PlayerData {
 
     private Set<Integer> guideSteps = new HashSet<>();
 
+    //<taskId,>
     private Map<Integer, ActivityTask> activityTasks = Maps.newConcurrentMap();
 
     //首充标识
@@ -167,7 +168,7 @@ public class PlayerData {
 
     //是否领取激活码礼包
     private boolean receiveGiftBag;
-    private Set<Integer> giftBagSet = new HashSet<>();
+    private Set<String> giftBagSet = new HashSet<>();
 
     private Set<Long> globalMailIDSet = new HashSet<>();
 
@@ -189,6 +190,33 @@ public class PlayerData {
     private int glamour; // 魅力值
     private boolean gm;//是否gm
     private Set<Integer> delFriends = new HashSet<>();// 删除过的好友
+    private int refreshDestinyCardTimes;//命运卡牌刷新次数
+    private Set<Integer> cardRewardIdxSet = new HashSet<>(); //卡牌奖励
+    private List<int[]> cardRewards = new ArrayList<>();
+
+    public List<int[]> getCardRewards() {
+        return cardRewards;
+    }
+
+    public void setCardRewards(List<int[]> cardRewards) {
+        this.cardRewards = cardRewards;
+    }
+
+    public Set<Integer> getCardRewardIdxSet() {
+        return cardRewardIdxSet;
+    }
+
+    public void setCardRewardIdxSet(Set<Integer> cardRewardIdxSet) {
+        this.cardRewardIdxSet = cardRewardIdxSet;
+    }
+
+    public int getRefreshDestinyCardTimes() {
+        return refreshDestinyCardTimes;
+    }
+
+    public void setRefreshDestinyCardTimes(int refreshDestinyCardTimes) {
+        this.refreshDestinyCardTimes = refreshDestinyCardTimes;
+    }
 
     public Set<Integer> getDelFriends() {
         return delFriends;
@@ -364,11 +392,11 @@ public class PlayerData {
         this.awakeningSkillMap = awakeningSkillMap;
     }
 
-    public Set<Integer> getGiftBagSet() {
+    public Set<String> getGiftBagSet() {
         return giftBagSet;
     }
 
-    public void setGiftBagSet(Set<Integer> giftBagSet) {
+    public void setGiftBagSet(Set<String> giftBagSet) {
         this.giftBagSet = giftBagSet;
     }
 
@@ -556,9 +584,31 @@ public class PlayerData {
     public Map<Integer, ActivityTask> getActivityTasks() {
         return activityTasks;
     }
-
     public void setActivityTasks(Map<Integer, ActivityTask> activityTasks) {
         this.activityTasks = activityTasks;
+    }
+
+    @JsonIgnore
+    public Collection<ActivityTask> getAllActivityTasks() {
+        return activityTasks.values();
+    }
+
+    @JsonIgnore
+    public ActivityTask getActivityTask(int taskId) {
+        return activityTasks.get(taskId);
+    }
+
+    @JsonIgnore
+    public boolean hasActivityTask(int taskId) {
+        return activityTasks.containsKey(taskId);
+    }
+
+    @JsonIgnore
+    public void addActivityTask(int taskId, ActivityTask activityTask) {
+        if (activityTask == null)
+            return;
+
+        activityTasks.put(taskId, activityTask);
     }
 
     public int getNewHandleStep() {

@@ -630,7 +630,7 @@
 	<type>9</type>
 	<group>0</group>
 	<limit>1</limit>
-	<rmb>60</rmb>
+	<rmb>30</rmb>
 	<us>9.99</us>
 	<total>0</total>
 	<add>0</add>
@@ -655,7 +655,7 @@
 	<type>9</type>
 	<group>0</group>
 	<limit>1</limit>
-	<rmb>60</rmb>
+	<rmb>98</rmb>
 	<us>9.99</us>
 	<total>0</total>
 	<add>0</add>
@@ -680,7 +680,7 @@
 	<type>9</type>
 	<group>0</group>
 	<limit>1</limit>
-	<rmb>60</rmb>
+	<rmb>198</rmb>
 	<us>9.99</us>
 	<total>0</total>
 	<add>0</add>
@@ -697,6 +697,81 @@
 	<isShow>0</isShow>
 	<platform>0</platform>
 	<chsId>20003</chsId>
+	<google_chsId>com.lk.got.us_tj</google_chsId>
+	<google_engId>com.lk.shsj.en_tj03</google_engId>
+</config>
+<config>
+	<id>20004</id>
+	<type>9</type>
+	<group>0</group>
+	<limit>1</limit>
+	<rmb>30</rmb>
+	<us>9.99</us>
+	<total>0</total>
+	<add>0</add>
+	<weekMonthCard></weekMonthCard>
+	<platformType></platformType>
+	<platformId></platformId>
+	<funds></funds>
+	<atlas></atlas>
+	<icon></icon>
+	<name>特价礼包1</name>
+	<name_en></name_en>
+	<rewards></rewards>
+	<shopGoodsId>0</shopGoodsId>
+	<isShow>0</isShow>
+	<platform>0</platform>
+	<chsId>20004</chsId>
+	<google_chsId>com.lk.got.us_tj</google_chsId>
+	<google_engId>com.lk.shsj.en_tj01</google_engId>
+</config>
+<config>
+	<id>20005</id>
+	<type>9</type>
+	<group>0</group>
+	<limit>1</limit>
+	<rmb>98</rmb>
+	<us>9.99</us>
+	<total>0</total>
+	<add>0</add>
+	<weekMonthCard></weekMonthCard>
+	<platformType></platformType>
+	<platformId></platformId>
+	<funds></funds>
+	<atlas></atlas>
+	<icon></icon>
+	<name>特价礼包2</name>
+	<name_en></name_en>
+	<rewards></rewards>
+	<shopGoodsId>0</shopGoodsId>
+	<isShow>0</isShow>
+	<platform>0</platform>
+	<chsId>20005</chsId>
+	<google_chsId>com.lk.got.us_tj</google_chsId>
+	<google_engId>com.lk.shsj.en_tj02</google_engId>
+</config>
+<config>
+	<id>20006</id>
+	<type>9</type>
+	<group>0</group>
+	<limit>1</limit>
+	<rmb>198</rmb>
+	<us>9.99</us>
+	<total>0</total>
+	<add>0</add>
+	<weekMonthCard></weekMonthCard>
+	<platformType></platformType>
+	<platformId></platformId>
+	<funds></funds>
+	<atlas></atlas>
+	<icon></icon>
+	<name>特价礼包3</name>
+	<name_en></name_en>
+	<rewards></rewards>
+	<shopGoodsId>0</shopGoodsId>
+	<isShow>0</isShow>
+	<platform>0</platform>
+	<chsId>20006</chsId>
 	<google_chsId>com.lk.got.us_tj</google_chsId>
 	<google_engId>com.lk.shsj.en_tj03</google_engId>
 </config>

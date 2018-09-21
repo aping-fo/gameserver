@@ -1,8 +1,12 @@
 package com.game.module.activity;
 
 import com.game.data.ActivityCfg;
+import com.game.params.Reward;
 import com.game.params.activity.ActivityTaskVO;
 import com.game.util.ConfigData;
+import com.google.common.collect.Lists;
+
+import java.util.List;
 
 /**
  * Created by lucky on 2017/11/17.
@@ -15,6 +19,8 @@ public class ActivityTask {
     private ActivityTaskCdt cond;
     private long timedBag;//限时礼包时间
     private int finishNum;//完成次数或者购买次数
+    private int param0;//额外参数
+    private List<Reward> rewards;
 
     public ActivityTask() {
     }
@@ -24,8 +30,25 @@ public class ActivityTask {
         this.activityId = activityId;
         this.state = ActivityConsts.ActivityState.T_UN_FINISH;
         this.finishNum = 0;
+        this.param0 = 0;
         cond = new ActivityTaskCdt(targetValue, condType);
         timedBag = System.currentTimeMillis();
+    }
+
+    public List<Reward> getRewards() {
+        return rewards;
+    }
+
+    public void setRewards(List<Reward> rewards) {
+        this.rewards = rewards;
+    }
+
+    public int getParam0() {
+        return param0;
+    }
+
+    public void setParam0(int param0) {
+        this.param0 = param0;
     }
 
     public long getTimedBag() {
@@ -44,8 +67,13 @@ public class ActivityTask {
         this.state = state;
     }
 
-    public int getFinishNum(){return finishNum;}
-    public void setFinishNum(int finishNum){this.finishNum=finishNum;}
+    public int getFinishNum() {
+        return finishNum;
+    }
+
+    public void setFinishNum(int finishNum) {
+        this.finishNum = finishNum;
+    }
 
     public int getActivityId() {
         return activityId;
@@ -92,16 +120,22 @@ public class ActivityTask {
         vo.targetValue = cond.getTargetValue();
         vo.value = cond.getValue();
         vo.state = state;
-        vo.finishNum=finishNum;
+        vo.finishNum = finishNum;
+        vo.param0 = param0;
+
+        vo.cardRewards = Lists.newArrayList();
+        if (rewards != null && !rewards.isEmpty()) {
+            vo.cardRewards = rewards;
+        }
 
         //剩余时间
         ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, activityId);
-        if(config!=null&&config.ActivityType==ActivityConsts.ActivityType.T_TIMED_BAG){
+        if (config != null && config.ActivityType == ActivityConsts.ActivityType.T_TIMED_BAG) {
             long l = config.Param0 * 60 - (System.currentTimeMillis() - timedBag) / 1000;//剩余时间（秒）
-            if(l<0){
-                l=0;
+            if (l < 0) {
+                l = 0;
             }
-            vo.remainingTime= (int) l;
+            vo.remainingTime = (int) l;
         }
         return vo;
     }

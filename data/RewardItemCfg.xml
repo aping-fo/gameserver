@@ -16878,21 +16878,8 @@
 	<id>1299</id>
 	<group>40132</group>
 	<type>1</type>
-	<itemId>40133</itemId>
+	<itemId>40134</itemId>
 	<count>12</count>
-	<weight>1</weight>
-	<level></level>
-	<vip></vip>
-	<day></day>
-	<vocation></vocation>
-	<randomNum></randomNum>
-</config>
-<config>
-	<id>1300</id>
-	<group>40133</group>
-	<type>0</type>
-	<itemId>102</itemId>
-	<count>80</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>
@@ -16904,7 +16891,7 @@
 	<id>1301</id>
 	<group>40133</group>
 	<type>1</type>
-	<itemId>40133</itemId>
+	<itemId>40134</itemId>
 	<count>40</count>
 	<weight>1</weight>
 	<level></level>
@@ -19103,6 +19090,32 @@
 	<type>0</type>
 	<itemId>108</itemId>
 	<count>100</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+	<vocation></vocation>
+	<randomNum></randomNum>
+</config>
+<config>
+	<id>1471</id>
+	<group>10009</group>
+	<type>0</type>
+	<itemId>103</itemId>
+	<count>10000</count>
+	<weight>1</weight>
+	<level></level>
+	<vip></vip>
+	<day></day>
+	<vocation></vocation>
+	<randomNum></randomNum>
+</config>
+<config>
+	<id>1472</id>
+	<group>10010</group>
+	<type>0</type>
+	<itemId>107</itemId>
+	<count>50</count>
 	<weight>1</weight>
 	<level></level>
 	<vip></vip>

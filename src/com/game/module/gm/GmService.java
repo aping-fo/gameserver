@@ -642,7 +642,7 @@ public class GmService {
     private ActivityService activityService;
 
     public void getOpenActivitys(int playerId, String... params) {
-        activityService.getPlayerActivitys(playerId);
+        activityService.getPlayerActivitys(playerId, null);
     }
 
     public void getActivityAwards(int playerId, String... params) {

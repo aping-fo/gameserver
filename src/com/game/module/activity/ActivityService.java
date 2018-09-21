@@ -2,6 +2,7 @@ package com.game.module.activity;
 
 import com.game.data.*;
 import com.game.event.InitHandler;
+import com.game.module.RandomReward.RandomRewardService;
 import com.game.module.goods.EquipService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
@@ -18,11 +19,14 @@ import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
-import com.game.params.IntParam;
 import com.game.params.Int2Param;
+import com.game.params.IntParam;
 import com.game.params.ListParam;
+import com.game.params.Reward;
 import com.game.params.activity.ActivityInfo;
+import com.game.params.pet.PetGetRewardVO;
 import com.game.util.ConfigData;
+import com.game.util.RandomUtil;
 import com.game.util.TimeUtil;
 import com.game.util.TimerService;
 import com.google.common.collect.Lists;
@@ -32,14 +36,12 @@ import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
-import java.util.function.Predicate;
 
 @Service
 public class ActivityService implements InitHandler {
@@ -73,6 +75,8 @@ public class ActivityService implements InitHandler {
     private SkillService skillService;
     @Autowired
     private PetService petService;
+    @Autowired
+    private RandomRewardService randomRewardService;
 
     @Override
     public void handleInit() {
@@ -117,7 +121,7 @@ public class ActivityService implements InitHandler {
         List<ActivityTask> updateActivityList = Lists.newArrayList();
         for (PlayerData data : players) {
             updateActivityList.clear();
-            for (ActivityTask at : data.getActivityTasks().values()) {
+            for (ActivityTask at : data.getAllActivityTasks()) {
                 if (checkTimeActivityUpdate(at)) {
                     updateActivityList.add(at);
                 }
@@ -306,7 +310,7 @@ public class ActivityService implements InitHandler {
     public List<ActivityTask> completeActivityTask(int playerId, int taskCondType, float value, int updateType, boolean toCli) {
         PlayerData data = playerService.getPlayerData(playerId);
         List<ActivityTask> tasks = Lists.newArrayList();
-        for (ActivityTask at : data.getActivityTasks().values()) {
+        for (ActivityTask at : data.getAllActivityTasks()) {
             if (at.getState() != ActivityConsts.ActivityState.T_UN_FINISH) {
                 //全服登录人数特殊处理
                 ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
@@ -336,7 +340,7 @@ public class ActivityService implements InitHandler {
                                 //增加累计充值次数
                                 data.setAddUpRechargeDiamondsTimes(data.getAddUpRechargeDiamondsTimes() + 1);
                                 Map<Integer, Integer> typeNumberMap = new HashMap<>();
-                                for (ActivityTask activityTask : data.getActivityTasks().values()) {
+                                for (ActivityTask activityTask : data.getAllActivityTasks()) {
                                     if (activityTask.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY_DIAMONDS) {
                                         ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, activityTask.getId());
                                         if (activityTaskCfg != null) {
@@ -408,17 +412,17 @@ public class ActivityService implements InitHandler {
             List<ActivityTaskCfg> list = ConfigData.ActivityTasks.get(cfg.id);
             for (ActivityTaskCfg taskCfg : list) {
                 if (cfg.ActivityType == ActivityConsts.ActivityType.T_ENERGY) { //体力活动，登录检测
-                    ActivityTask at = data.getActivityTasks().get(taskCfg.id);
+                    ActivityTask at = data.getActivityTask(taskCfg.id);
                     if (at != null) {
                         checkActivityTaskUpdate(data, at);
                     }
                 }
-                if (!data.getActivityTasks().containsKey(taskCfg.id)) {
+                if (!data.hasActivityTask(taskCfg.id)) {
                     ActivityTask at = createActivityTask(taskCfg);
                     if (at.getCond().checkComplete()) {//默认是否完成
                         at.setState(ActivityConsts.ActivityState.T_FINISH);
                     }
-                    data.getActivityTasks().put(at.getId(), at);
+                    data.addActivityTask(at.getId(), at);
                     checkActivityTaskUpdate(data, at);
                     if (openActivityTasks != null) {
                         openActivityTasks.add(at);
@@ -442,14 +446,15 @@ public class ActivityService implements InitHandler {
         data.setOnlineTime(0);
         data.setDailyRecharge(1);//重置每日充值
         List<ActivityTask> list = Lists.newArrayList();
-        for (ActivityTask at : data.getActivityTasks().values()) {
+        for (ActivityTask at : data.getAllActivityTasks()) {
             ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
             ActivityCfg cfg2 = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
             if (cfg != null) {
                 if (cfg.ResetType == ActivityConsts.ActivityTaskResetType.T_DAILY) {
                     at.cleanup();
                     list.add(at);
-                    if (cfg2.ActivityType == ActivityConsts.ActivityType.T_GIFT_BOX) {
+                    if (cfg2.ActivityType == ActivityConsts.ActivityType.T_GIFT_BOX
+                            || cfg2.ActivityType == ActivityConsts.ActivityType.T_CARD) {
                         at.setFinishNum(0);
                     }
                 }
@@ -472,13 +477,25 @@ public class ActivityService implements InitHandler {
     /**
      * 获取活动任务列表
      */
-    public ActivityInfo getPlayerActivitys(int playerId) {
+    public ActivityInfo getPlayerActivitys(int playerId, List<Integer> idList) {
         ActivityInfo result = new ActivityInfo();
         result.id = Lists.newArrayList();
         result.tasks = Lists.newArrayList();
         PlayerData data = playerService.getPlayerData(playerId);
         Player player = playerService.getPlayer(playerId);
-        for (ActivityCfg cfg : OpenActivitys.values()) {
+
+        Collection<ActivityCfg> activityCfgs = Lists.newArrayList();
+        if (idList != null && idList.size() > 0) {
+            for (int id : idList) {
+                if (OpenActivitys.containsKey(id)) {
+                    activityCfgs.add(OpenActivitys.get(id));
+                }
+            }
+        } else {
+            activityCfgs = OpenActivitys.values();
+        }
+
+        for (ActivityCfg cfg : activityCfgs) {
             if (cfg.ActivityType == ActivityConsts.ActivityType.T_SEVEN_DAYS) { //7天登录
                 if (data.getSevenDays() > cfg.Param0) {
                     continue;
@@ -496,15 +513,15 @@ public class ActivityService implements InitHandler {
                 List<ActivityTaskCfg> list = ConfigData.ActivityTasks.get(cfg.id);
                 boolean bClose = true;
                 for (ActivityTaskCfg taskCfg : list) {
-                    ActivityTask task = data.getActivityTasks().get(taskCfg.id);
+                    ActivityTask task = data.getActivityTask(taskCfg.id);
                     if (cfg.ActivityType == ActivityConsts.ActivityType.T_TIMED_BAG) {//限时礼包
                         if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && (System.currentTimeMillis() - task.getTimedBag()) / 1000 / 60 <= cfg.Param0) {
                             bClose = false;
                         }
-                    } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG) {//特价礼包
-                        if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && player.getLev() >= cfg.Conds[0][1] && player.getLev() < cfg.Conds[0][2]) {
-                            bClose = false;
-                        }
+//                    } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG) {//特价礼包
+//                        if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && player.getLev() >= cfg.Conds[0][1] && player.getLev() < cfg.Conds[0][2]) {
+//                            bClose = false;
+//                        }
                     } else {
                         //检测是否有未领取奖励的或者未领取任务的活动(task == null)
                         bClose = task != null && bClose && task.getState() == ActivityConsts.ActivityState.T_AWARD;
@@ -518,7 +535,7 @@ public class ActivityService implements InitHandler {
             result.id.add(cfg.id);
         }
 
-        for (ActivityTask at : data.getActivityTasks().values()) {
+        for (ActivityTask at : data.getAllActivityTasks()) {
             if (result.id.contains(at.getActivityId())) {
                 ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
                 if (taskCfg != null) {
@@ -534,6 +551,9 @@ public class ActivityService implements InitHandler {
                         }
                         completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE, serialData.getFullServiceAttendance().get(), ActivityConsts.UpdateType.T_VALUE, true);
                     }
+
+                    //更新奇遇宝箱购买次数
+                    updateAdventureBoxNumber(at);
 
                     result.tasks.add(at.toProto());
                 }
@@ -552,7 +572,7 @@ public class ActivityService implements InitHandler {
     public Int2Param getActivityAwards(int playerId, int taskId) {
         PlayerData data = playerService.getPlayerData(playerId);
         Player player = playerService.getPlayer(playerId);
-        ActivityTask task = data.getActivityTasks().get(taskId);
+        ActivityTask task = data.getActivityTask(taskId);
         Int2Param result = new Int2Param();
         if (task == null) {
             result.param1 = Response.ERR_PARAM;
@@ -655,7 +675,7 @@ public class ActivityService implements InitHandler {
      */
     public IntParam fixedActivityAwards(int playerId, int taskId) {
         PlayerData data = playerService.getPlayerData(playerId);
-        ActivityTask task = data.getActivityTasks().get(taskId);
+        ActivityTask task = data.getActivityTask(taskId);
         IntParam result = new IntParam();
         if (task.getState() != ActivityConsts.ActivityState.T_AGAIN_AWARD) {
             result.param = Response.ERR_PARAM;
@@ -701,6 +721,8 @@ public class ActivityService implements InitHandler {
             } else if (type == ActivityConsts.ActivityCondType.T_ITEM) {
                 GoodsEntry item = new GoodsEntry(cond[1], cond[2]);
                 items.add(item);
+            } else if (type ==  ActivityConsts.ActivityCondType.T_BUY_CARD) {
+
             }
         }
 
@@ -727,10 +749,10 @@ public class ActivityService implements InitHandler {
         }
 
         for (ActivityTaskCfg taskCfg : taskCfgs) {
-            if (!data.getActivityTasks().containsKey(taskCfg.id)) {
+            if (!data.hasActivityTask(taskCfg.id)) {
                 ActivityTask at = createActivityTask(taskCfg);
                 checkActivityTaskUpdate(data, at);
-                data.getActivityTasks().put(at.getId(), at);
+                data.addActivityTask(at.getId(), at);
                 openActivityTasks.add(at);
             }
         }
@@ -851,13 +873,13 @@ public class ActivityService implements InitHandler {
                 for (ActivityTaskCfg cfg : taskCfgs) {
                     //检查等级条件，开启等级相关礼包
                     if (player.getLev() >= activityCfg.Conds[0][1]) {
-                        ActivityTask activityTask = playerData.getActivityTasks().get(cfg.id);
+                        ActivityTask activityTask = playerData.getActivityTask(cfg.id);
                         if (activityTask != null) {
                             continue;
                         }
                         activityTask = createActivityTask(cfg);
                         tasks.add(activityTask);
-                        playerData.getActivityTasks().put(cfg.id, activityTask);
+                        playerData.addActivityTask(cfg.id, activityTask);
                         openActivity.add(activityCfg.id);
                     }
                 }
@@ -881,7 +903,7 @@ public class ActivityService implements InitHandler {
         }
         //活动任务表
         ActivityTask temp = null;
-        for (ActivityTask task : playerData.getActivityTasks().values()) {
+        for (ActivityTask task : playerData.getAllActivityTasks()) {
             if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_ONCE && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && task.getCond().getTargetValue() <= rmb) {
                 if (temp == null || temp.getCond().getTargetValue() < task.getCond().getTargetValue()) {
                     temp = task;
@@ -908,7 +930,7 @@ public class ActivityService implements InitHandler {
             return;
         }
         if (data.getDailyRecharge() == ActivityConsts.ActivityState.T_UN_FINISH) {
-            for (ActivityTask task : data.getActivityTasks().values()) {
+            for (ActivityTask task : data.getAllActivityTasks()) {
                 if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH) {
                     task.setState(ActivityConsts.ActivityState.T_FINISH);
                     pushActivityUpdate(playerId, Lists.newArrayList(task));
@@ -931,7 +953,7 @@ public class ActivityService implements InitHandler {
         PlayerData data = playerService.getPlayerData(playerId);
         ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, taskId);
         List<ActivityTask> tasks = Lists.newArrayList();
-        for (ActivityTask task : data.getActivityTasks().values()) {
+        for (ActivityTask task : data.getAllActivityTasks()) {
             if (task.getId() == taskId && task.getFinishNum() < taskCfg.Param1) {
                 if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_BUY_DIAMOND) {//消耗物品
                     List<GoodsEntry> items = Lists.newArrayList();
@@ -949,6 +971,10 @@ public class ActivityService implements InitHandler {
                 }
                 goodsService.addRewards(playerId, taskCfg.Rewards, LogConsume.ACTIVITY_REWARD);
                 task.setFinishNum(task.getFinishNum() + 1);//完成次数+1
+
+                //奇遇宝箱
+                buyAdventureBoxNumber(task);
+
                 tasks.add(task);
                 pushActivityUpdate(playerId, tasks);//推送更新
                 result.param1 = Response.SUCCESS;
@@ -971,7 +997,7 @@ public class ActivityService implements InitHandler {
     public List<ActivityTask> completeActivityTask(int playerId, int taskCondType, boolean toCli, Map<Integer, Integer> typeNumberMap, boolean addTime) {
         PlayerData data = playerService.getPlayerData(playerId);
         List<ActivityTask> tasks = Lists.newArrayList();
-        for (ActivityTask at : data.getActivityTasks().values()) {
+        for (ActivityTask at : data.getAllActivityTasks()) {
             if (at.getState() != ActivityConsts.ActivityState.T_UN_FINISH) {
                 continue;
             }
@@ -1041,10 +1067,11 @@ public class ActivityService implements InitHandler {
      * @return 是否开启
      */
     public boolean checkIsOpen(PlayerData playerData, int activityTaskCondType) {
-        Map<Integer, ActivityTask> activityTasks = playerData.getActivityTasks();
+//        Map<Integer, ActivityTask> activityTasks = playerData.getActivityTasks();
         boolean isOpen = false;
+        Collection<ActivityTask> activityTasks = playerData.getAllActivityTasks();
         if (activityTasks != null && !activityTasks.isEmpty()) {
-            for (ActivityTask activityTask : activityTasks.values()) {
+            for (ActivityTask activityTask : activityTasks) {
                 if (activityTask.getState() != ActivityConsts.ActivityState.T_UN_FINISH) {
                     continue;
                 }
@@ -1189,5 +1216,225 @@ public class ActivityService implements InitHandler {
         if (config != null && config.ActivityType == ActivityConsts.ActivityType.T_TOUR) {
             completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_INTEGRAL);
         }
+    }
+
+    /**
+     * 更新奇遇宝箱购买次数
+     *
+     * @param at 活动任务表
+     */
+    public void updateAdventureBoxNumber(ActivityTask at) {
+        ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
+        int id = at.getId();
+        if (config == null) {
+            ServerLogger.warn("活动不存在，活动Id=" + id);
+            return;
+        }
+        if (config.ActivityType != ActivityConsts.ActivityType.T_ADVENTURE_BOX) {
+            return;
+        }
+        SerialData serialData = serialDataService.getData();
+        if (serialData == null) {
+            ServerLogger.warn("序列化数据不存在");
+            return;
+        }
+        Map<Integer, Integer> adventureBoxNumber = serialData.getAdventureBoxNumber();
+        if (adventureBoxNumber == null) {
+            ServerLogger.warn("奇遇宝箱数据错误");
+        }
+        adventureBoxNumber.put(id, adventureBoxNumber.getOrDefault(id, 0));
+        int count = adventureBoxNumber.get(id);
+        at.setParam0(count);
+    }
+
+    /**
+     * 购买奇遇宝箱
+     *
+     * @param at 活动任务表
+     */
+    public void buyAdventureBoxNumber(ActivityTask at) {
+        ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
+        int id = at.getId();
+        if (config == null) {
+            ServerLogger.warn("活动不存在，活动Id=" + id);
+            return;
+        }
+        if (config.ActivityType != ActivityConsts.ActivityType.T_ADVENTURE_BOX) {
+            return;
+        }
+        SerialData serialData = serialDataService.getData();
+        if (serialData == null) {
+            ServerLogger.warn("序列化数据不存在");
+            return;
+        }
+        Map<Integer, Integer> adventureBoxNumber = serialData.getAdventureBoxNumber();
+        if (adventureBoxNumber == null || adventureBoxNumber.isEmpty()) {
+            ServerLogger.warn("奇遇宝箱数据出错");
+            return;
+        }
+        if (adventureBoxNumber.containsKey(id)) {
+            adventureBoxNumber.put(id, adventureBoxNumber.get(id) + 1);
+            ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+            if (activityTaskCfg.AutoReward == ActivityConsts.AutoReward.T_AUTO) {
+                at.setState(ActivityConsts.ActivityState.T_AWARD);
+            }
+        }
+    }
+
+    /**
+     * 购买命运卡牌
+     *
+     * @param playerId 玩家id
+     * @param id       活动任务id
+     * @return 物品
+     */
+    public Object buyDestinyCard(int playerId, int id) {
+        PetGetRewardVO petGetRewardVO = new PetGetRewardVO();
+
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家ID=" + playerId);
+            petGetRewardVO.errCode = Response.ERR_PARAM;
+            return petGetRewardVO;
+        }
+
+        ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, id);
+        if (activityTaskCfg == null) {
+            ServerLogger.warn("活动任务不存在，任务ID=" + id);
+            petGetRewardVO.errCode = Response.ERR_PARAM;
+            return petGetRewardVO;
+        }
+        //设置状态
+        for (ActivityTask at : playerData.getActivityTasks().values()) {
+            if (id == at.getId() && at.getState() == ActivityConsts.ActivityState.T_AWARD) {
+                ServerLogger.warn("已經領獎，任务ID=" + id);
+                petGetRewardVO.errCode = Response.HAS_TAKE_REWARD;
+                return petGetRewardVO;
+            }
+        }
+        if(!playerData.getCardRewardIdxSet().isEmpty() && playerData.getCardRewards().size() == 0) {
+            ServerLogger.warn("无次数");
+            petGetRewardVO.errCode = Response.ERR_PARAM;
+            return petGetRewardVO;
+        }
+        //检查物品
+        List<GoodsEntry> goodsList = new ArrayList<>();
+        int[] cost = ConfigData.globalParam().DestinyTurnCard[playerData.getCardRewardIdxSet().size()];
+        goodsList.add(new GoodsEntry(cost[0], cost[1]));
+        if (goodsService.decConsume(playerId, goodsList,LogConsume.DestinyCard) != Response.SUCCESS) {
+            ServerLogger.warn("物品不足");
+            petGetRewardVO.errCode = Response.ERR_GOODS_COUNT;
+            return petGetRewardVO;
+        }
+
+        //扣除物品
+        //goodsService.decConsume(playerId, goodsList, LogConsume.DestinyCard);
+
+        //构造奖励
+        if(playerData.getCardRewardIdxSet().isEmpty()) {
+            for(int[] arr : activityTaskCfg.Rewards) {
+                playerData.getCardRewards().add(arr);
+            }
+        }
+
+        int idx = RandomUtil.randInt(playerData.getCardRewards().size());
+        playerData.getCardRewardIdxSet().add(idx);
+        int[] rewardArr = playerData.getCardRewards().get(idx);
+        playerData.getCardRewards().remove(idx);
+
+        List<GoodsEntry> goodsEntries = Lists.newArrayList();
+        List<Reward> rewardArrayList = Lists.newArrayList();
+        for (int i = 0; i < rewardArr.length; i += 2) {
+            goodsEntries.add(new GoodsEntry(rewardArr[i], rewardArr[i + 1]));
+            Reward reward = new Reward();
+            reward.id = rewardArr[i];
+            reward.count = rewardArr[i + 1] + ConfigData.globalParam().DestinyTurnCardAdd * (playerData.getCardRewardIdxSet().size() - 1);
+            rewardArrayList.add(reward);
+        }
+        goodsService.addRewards(playerId, goodsEntries, LogConsume.DestinyCard);
+        List<ActivityTask> updateTasks = Lists.newArrayList();
+        //设置状态
+        for (ActivityTask at : playerData.getActivityTasks().values()) {
+            if (id == at.getId()) {
+                at.setState(ActivityConsts.ActivityState.T_AWARD);
+                at.setRewards(rewardArrayList);
+
+                updateTasks.add(at);
+                break;
+            }
+        }
+
+        petGetRewardVO.rewards = rewardArrayList;
+        petGetRewardVO.errCode = Response.SUCCESS;
+
+        pushActivityUpdate(playerId,updateTasks);
+        return petGetRewardVO;
+    }
+
+    /**
+     * 刷新命运卡牌
+     *
+     * @param playerId 玩家id
+     * @param id       活动id
+     * @return
+     */
+    public Object refreshDestinyCard(int playerId, int id) {
+        IntParam intParam = new IntParam();
+
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家ID=" + playerId);
+            intParam.param = Response.ERR_PARAM;
+            return intParam;
+        }
+
+        //检查次数
+        ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, id);
+        int refreshDestinyCardTimes = playerData.getRefreshDestinyCardTimes();
+        if (refreshDestinyCardTimes > config.Param0) {
+            ServerLogger.warn("命运卡牌刷新次数已用完" + playerId);
+            intParam.param = Response.ARENA_NO_BUY;
+            return intParam;
+        }
+
+        //检查物品
+        GlobalConfig global = ConfigData.globalParam();
+        if (global == null) {
+            ServerLogger.warn("全局表不存在");
+            intParam.param = Response.ERR_PARAM;
+            return intParam;
+        }
+        List<GoodsEntry> goodsList = new ArrayList<>();
+        goodsList.add(new GoodsEntry(global.DestinyCard[0], global.DestinyCard[1]));
+        if (goodsService.checkHasEnough(playerId, goodsList) != Response.SUCCESS) {
+            ServerLogger.warn("物品不足");
+            intParam.param = Response.ERR_GOODS_COUNT;
+            return intParam;
+        }
+
+        //扣除物品
+        goodsService.decConsume(playerId, goodsList, LogConsume.DestinyCard);
+        refreshDestinyCardTimes++;
+
+        playerData.getCardRewardIdxSet().clear();
+        playerData.getCardRewards().clear();
+
+        //设置完成次数
+        playerData.setRefreshDestinyCardTimes(refreshDestinyCardTimes);
+        List<ActivityTask> tasks = new ArrayList<>();
+        for (ActivityTask activityTask : playerData.getActivityTasks().values()) {
+            if (id == activityTask.getActivityId()) {
+                ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, activityTask.getId());
+                if (activityTaskCfg == null) {
+                    ServerLogger.warn("活动不存在，活动ID=" + activityTask.getId());
+                    continue;
+                }
+                activityTask.setFinishNum(refreshDestinyCardTimes);
+                activityTask.setState(ActivityConsts.ActivityState.T_UN_FINISH);
+                tasks.add(activityTask);
+            }
+        }
+        pushActivityUpdate(playerId, tasks);
+        return intParam;
     }
 }

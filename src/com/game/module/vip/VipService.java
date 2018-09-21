@@ -265,7 +265,7 @@ public class VipService {
         }
 
         //购买月卡开启理财
-        if (type == TYPE_MONTH) {
+        if (type == TYPE_WEEKLY) {
             activityService.openActivity(playerId, ActivityConsts.ActivityType.T_GROW_FUND);
         }
 

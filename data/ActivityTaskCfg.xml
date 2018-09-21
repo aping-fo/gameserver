@@ -679,7 +679,7 @@
 	<ActivityId>13</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20001]]</Conds>
-	<Rewards>[[301101,1],[301101,1]]</Rewards>
+	<Rewards>[[302002,50],[20005,30],[12600,5]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -693,7 +693,7 @@
 	<ActivityId>20</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20002]]</Conds>
-	<Rewards>[[301102,1],[301102,1]]</Rewards>
+	<Rewards>[[50203,5],[109,30],[10901,30]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -707,7 +707,49 @@
 	<ActivityId>21</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20003]]</Conds>
-	<Rewards>[[301105,1],[301105,1]]</Rewards>
+	<Rewards>[[301100,1],[16000,50],[301332,5]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>84</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<ActivityId>22</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[9,20004]]</Conds>
+	<Rewards>[[302002,50],[20005,30],[12600,5]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>85</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<ActivityId>111</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[9,20005]]</Conds>
+	<Rewards>[[50833,5],[109,30],[10901,30]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0></Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>86</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<ActivityId>112</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[9,20006]]</Conds>
+	<Rewards>[[301101,1],[16000,50],[301332,5]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -804,11 +846,11 @@
 	<name_en></name_en>
 	<ActivityId>15</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[11,50]]</Conds>
-	<Rewards>[[50804,10]]</Rewards>
+	<Conds>[[11,30]]</Conds>
+	<Rewards>[[50101,20],[103,100000],[301002,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>累计充值50元</des>
+	<des>累计充值30元</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -818,11 +860,11 @@
 	<name_en></name_en>
 	<ActivityId>15</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[11,100]]</Conds>
-	<Rewards>[[65051,100]]</Rewards>
+	<Conds>[[11,98]]</Conds>
+	<Rewards>[[20001,30],[50102,15],[108,100]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>累计充值100元</des>
+	<des>累计充值98元</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -832,11 +874,11 @@
 	<name_en></name_en>
 	<ActivityId>15</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[11,300]]</Conds>
-	<Rewards>[[301100,1],[108,200]]</Rewards>
+	<Conds>[[11,198]]</Conds>
+	<Rewards>[[20001,30],[50802,30],[109,100]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>累计充值300元</des>
+	<des>累计充值198元</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -846,11 +888,11 @@
 	<name_en></name_en>
 	<ActivityId>15</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[11,500]]</Conds>
-	<Rewards>[[10901,200],[109,200]]</Rewards>
+	<Conds>[[11,328]]</Conds>
+	<Rewards>[[20001,30],[65031,50],[301333,100]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>累计充值500元</des>
+	<des>累计充值328元</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -860,11 +902,25 @@
 	<name_en></name_en>
 	<ActivityId>15</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[11,1000]]</Conds>
-	<Rewards>[[65051,150],[50804,50]]</Rewards>
+	<Conds>[[11,648]]</Conds>
+	<Rewards>[[301103,1],[109,200],[10901,200]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>累计充值1000元</des>
+	<des>累计充值648元</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>106</id>
+	<name>累计充值</name>
+	<name_en></name_en>
+	<ActivityId>15</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[11,1288]]</Conds>
+	<Rewards>[[17001,50],[301333,50],[16000,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计充值1288元</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -944,11 +1000,11 @@
 	<name_en></name_en>
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[71,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[71,300]]</Conds>
+	<Rewards>[[65181,5],[108,20],[302002,20]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>消耗钻石10</des>
+	<des>消耗钻石300</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -958,11 +1014,11 @@
 	<name_en></name_en>
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[71,20]]</Conds>
-	<Rewards>[[102,20]]</Rewards>
+	<Conds>[[71,990]]</Conds>
+	<Rewards>[[65181,10],[303001,200],[304001,200]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>消耗钻石20</des>
+	<des>消耗钻石990</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -972,11 +1028,11 @@
 	<name_en></name_en>
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[71,30]]</Conds>
-	<Rewards>[[102,30]]</Rewards>
+	<Conds>[[71,1990]]</Conds>
+	<Rewards>[[65181,15],[109,50],[10901,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>消耗钻石30</des>
+	<des>消耗钻石1990</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -986,11 +1042,11 @@
 	<name_en></name_en>
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[71,40]]</Conds>
-	<Rewards>[[102,40]]</Rewards>
+	<Conds>[[71,3990]]</Conds>
+	<Rewards>[[65181,30],[17000,5],[17001,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>消耗钻石40</des>
+	<des>消耗钻石3990</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -1000,11 +1056,11 @@
 	<name_en></name_en>
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[71,50]]</Conds>
-	<Rewards>[[102,50]]</Rewards>
+	<Conds>[[71,6990]]</Conds>
+	<Rewards>[[65181,50],[17000,10],[17001,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>消耗钻石50</des>
+	<des>消耗钻石6990</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -1012,13 +1068,139 @@
 	<id>255</id>
 	<name>累计消耗</name>
 	<name_en></name_en>
-	<ActivityId>90</ActivityId>
+	<ActivityId>92</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[71,60]]</Conds>
-	<Rewards>[[102,60]]</Rewards>
+	<Conds>[[71,300]]</Conds>
+	<Rewards>[[50102,5],[301322,5],[301332,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
-	<des>消耗钻石60</des>
+	<des>消耗钻石300</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>256</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>92</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,990]]</Conds>
+	<Rewards>[[50102,10],[301322,5],[301332,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石990</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>257</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>92</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,1990]]</Conds>
+	<Rewards>[[50103,5],[301322,10],[301332,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石1990</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>258</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>92</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,3990]]</Conds>
+	<Rewards>[[50103,10],[301322,15],[301332,15]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石3990</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>259</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>92</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,6990]]</Conds>
+	<Rewards>[[50104,5],[301322,15],[301332,15]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石6990</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>260</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>93</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,300]]</Conds>
+	<Rewards>[[20007,5],[301322,5],[301332,5]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石300</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>261</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>93</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,990]]</Conds>
+	<Rewards>[[20007,10],[301322,10],[301332,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石990</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>262</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>93</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,1990]]</Conds>
+	<Rewards>[[20007,15],[16000,25],[108,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石1990</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>263</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>93</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,3990]]</Conds>
+	<Rewards>[[20007,30],[17000,15],[109,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石3990</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>264</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<ActivityId>93</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[71,6990]]</Conds>
+	<Rewards>[[20007,40],[17001,15],[10901,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>消耗钻石6990</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
@@ -1589,7 +1771,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,2,2]]</Conds>
-	<Rewards>[[50402,2]]</Rewards>
+	<Rewards>[[50402,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备2件C级装备</des>
@@ -1603,7 +1785,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,4,2]]</Conds>
-	<Rewards>[[50402,3]]</Rewards>
+	<Rewards>[[50402,15]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备4件C级装备</des>
@@ -1617,7 +1799,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,6,2]]</Conds>
-	<Rewards>[[50103,1]]</Rewards>
+	<Rewards>[[50103,3]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备6件C级装备</des>
@@ -1631,7 +1813,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,2,3]]</Conds>
-	<Rewards>[[50502,4]]</Rewards>
+	<Rewards>[[50502,15]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备2件B级装备</des>
@@ -1645,7 +1827,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,4,3]]</Conds>
-	<Rewards>[[50502,6]]</Rewards>
+	<Rewards>[[50502,20]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备4件B级装备</des>
@@ -1659,7 +1841,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,6,2]]</Conds>
-	<Rewards>[[50103,2]]</Rewards>
+	<Rewards>[[50203,4]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备6件B级装备</des>
@@ -1673,7 +1855,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,2,4]]</Conds>
-	<Rewards>[[50602,5]]</Rewards>
+	<Rewards>[[50602,20]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备2件A级装备</des>
@@ -1687,7 +1869,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,4,4]]</Conds>
-	<Rewards>[[50602,7]]</Rewards>
+	<Rewards>[[50602,25]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备4件A级装备</des>
@@ -1701,7 +1883,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,6,4]]</Conds>
-	<Rewards>[[50103,3]]</Rewards>
+	<Rewards>[[50303,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备6件A级装备</des>
@@ -1715,7 +1897,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,2,5]]</Conds>
-	<Rewards>[[51302,6]]</Rewards>
+	<Rewards>[[51302,25]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备2件S级装备</des>
@@ -1729,7 +1911,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,4,5]]</Conds>
-	<Rewards>[[51302,8]]</Rewards>
+	<Rewards>[[51302,30]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备4件S级装备</des>
@@ -1743,7 +1925,7 @@
 	<ActivityId>27</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[17,6,5]]</Conds>
-	<Rewards>[[51003,3]]</Rewards>
+	<Rewards>[[51003,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>装备6件S级装备</des>
@@ -2036,220 +2218,220 @@
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,50],[104,10],[102,10]]</Rewards>
+	<Conds>[[15,102,1000]]</Conds>
+	<Rewards>[[103,100000],[108,100],[17000,10]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
 </config>
 <config>
 	<id>7001</id>
-	<name>公会捐献</name>
+	<name>公会捐献10次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[30,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Rewards>[[104,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7002</id>
-	<name>公会捐献</name>
+	<name>公会捐献20次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[30,20]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Rewards>[[104,400]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7003</id>
-	<name>公会捐献</name>
+	<name>公会捐献30次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[30,30]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Rewards>[[104,600]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7004</id>
-	<name>公会捐献</name>
+	<name>公会捐献50次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[30,50]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Rewards>[[104,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7005</id>
-	<name>公会捐献</name>
+	<name>公会捐献70次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[30,70]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Rewards>[[104,2000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7101</id>
-	<name>累计资源本购买</name>
+	<name>累计资源本购买4次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[31,12]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[31,4]]</Conds>
+	<Rewards>[[102,40]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7102</id>
-	<name>累计资源本购买</name>
+	<name>累计资源本购买12次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[31,24]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[31,12]]</Conds>
+	<Rewards>[[102,80]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7103</id>
-	<name>累计资源本购买</name>
+	<name>累计资源本购买24次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[31,36]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[31,24]]</Conds>
+	<Rewards>[[102,120]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7104</id>
-	<name>累计资源本购买</name>
+	<name>累计资源本购买48次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[31,48]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Rewards>[[102,240]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7105</id>
-	<name>累计资源本购买</name>
+	<name>累计资源本购买72次</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[31,72]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Rewards>[[102,300]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7201</id>
-	<name>累计好友数量</name>
+	<name>累计10位好友</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[32,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Rewards>[[17000,3]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7202</id>
-	<name>累计好友数量</name>
+	<name>累计20位好友</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[32,20]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Rewards>[[17000,6]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7203</id>
-	<name>累计好友数量</name>
+	<name>累计30位好友</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[32,30]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Rewards>[[17000,9]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7204</id>
-	<name>累计好友数量</name>
+	<name>累计40位好友</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[32,40]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Rewards>[[17000,12]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7205</id>
-	<name>累计好友数量</name>
+	<name>累计50位好友</name>
 	<name_en></name_en>
 	<ActivityId>70</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[32,50]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Rewards>[[17000,15]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -2260,374 +2442,374 @@
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,50],[104,10],[102,10]]</Rewards>
+	<Conds>[[15,102,1000]]</Conds>
+	<Rewards>[[103,100000],[109,100],[10901,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
 </config>
 <config>
 	<id>7301</id>
-	<name>累计完成日常任务</name>
+	<name>累计完成日常5个任务</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[33,1]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[33,5]]</Conds>
+	<Rewards>[[10901,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7302</id>
-	<name>累计完成日常任务</name>
+	<name>累计完成日常10个任务</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[33,2]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[33,10]]</Conds>
+	<Rewards>[[10901,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7303</id>
-	<name>累计完成日常任务</name>
+	<name>累计完成日常20个任务</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[33,3]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[33,20]]</Conds>
+	<Rewards>[[10901,300]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7304</id>
-	<name>累计完成日常任务</name>
+	<name>累计完成日常40个任务</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[33,4]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[33,40]]</Conds>
+	<Rewards>[[10901,400]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7305</id>
-	<name>累计完成日常任务</name>
+	<name>累计完成日常80个任务</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[33,5]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[33,80]]</Conds>
+	<Rewards>[[10901,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7401</id>
-	<name>累计完成合作任务</name>
+	<name>个人战力达到10000</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,1]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[53,10000]]</Conds>
+	<Rewards>[[109,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7402</id>
-	<name>累计完成合作任务</name>
+	<name>个人战力达到20000</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,3]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[53,20000]]</Conds>
+	<Rewards>[[109,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7403</id>
-	<name>累计完成合作任务</name>
+	<name>个人战力达到50000</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,6]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[53,50000]]</Conds>
+	<Rewards>[[109,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7404</id>
-	<name>累计完成合作任务</name>
+	<name>个人战力达到80000</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,12]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[53,80000]]</Conds>
+	<Rewards>[[109,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7405</id>
-	<name>累计完成合作任务</name>
+	<name>个人战力达到100000</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[34,18]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[53,100000]]</Conds>
+	<Rewards>[[109,1500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7501</id>
-	<name>公会商店购买商品1次</name>
+	<name>个人战力达到120000</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[35,1,4]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[53,120000]]</Conds>
+	<Rewards>[[109,2000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7502</id>
-	<name>公会商店商品一次性全部购买1次</name>
+	<name>公会商店购买商品1次</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[35,6,4]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[35,1,4]]</Conds>
+	<Rewards>[[104,50]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7503</id>
-	<name>限时商城商品一次性全部购买1次</name>
+	<name>公会商店商品一次性全部购买1次</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[35,6,17]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[35,6,4]]</Conds>
+	<Rewards>[[104,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7504</id>
-	<name>特价商城商品一次性全部购买1次</name>
+	<name>限时商城商品一次性全部购买1次</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[35,6,18]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[35,6,17]]</Conds>
+	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7505</id>
-	<name>黑市商人商品一次性全部购买1次</name>
+	<name>特价商城商品一次性全部购买1次</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[35,6,2]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[35,6,18]]</Conds>
+	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7600</id>
-	<name>第三天抢购</name>
+	<name>黑市商人商品一次性全部购买1次</name>
 	<name_en></name_en>
-	<ActivityId>72</ActivityId>
+	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,50],[104,10],[102,10]]</Rewards>
+	<Conds>[[35,6,2]]</Conds>
+	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
 </config>
 <config>
 	<id>7601</id>
-	<name>累计参与公会副本3次</name>
+	<name>第三天抢购</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,3]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[15,102,1000]]</Conds>
+	<Rewards>[[103,100000],[16000,10],[108,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7602</id>
-	<name>累计参与公会副本6次</name>
+	<name>累计参与公会副本3次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,6]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[36,3]]</Conds>
+	<Rewards>[[104,300]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7603</id>
-	<name>累计参与公会副本9次</name>
+	<name>累计参与公会副本6次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,9]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[36,6]]</Conds>
+	<Rewards>[[104,400]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7604</id>
-	<name>累计参与公会副本15次</name>
+	<name>累计参与公会副本9次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,15]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[36,9]]</Conds>
+	<Rewards>[[104,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7605</id>
-	<name>累计参与公会副本21次</name>
+	<name>累计参与公会副本15次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[36,21]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[36,15]]</Conds>
+	<Rewards>[[104,600]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7701</id>
-	<name>累计购买困难副本挑战次数10次</name>
+	<name>累计参与公会副本21次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[36,21]]</Conds>
+	<Rewards>[[104,700]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7702</id>
-	<name>累计购买困难副本挑战次数25次</name>
+	<name>累计购买竞技场挑战次数10次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,25]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[40,10]]</Conds>
+	<Rewards>[[102,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7703</id>
-	<name>累计购买困难副本挑战次数50次</name>
+	<name>累计购买竞技场挑战次数15次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,50]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[40,15]]</Conds>
+	<Rewards>[[102,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7704</id>
-	<name>累计购买困难副本挑战次数75次</name>
+	<name>累计购买竞技场挑战次数20次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,75]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[40,20]]</Conds>
+	<Rewards>[[102,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7705</id>
-	<name>累计购买困难副本挑战次数90次</name>
+	<name>累计购买竞技场挑战次数30次</name>
 	<name_en></name_en>
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[37,90]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[40,30]]</Conds>
+	<Rewards>[[102,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -2639,9 +2821,9 @@
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[38,15]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Rewards>[[111,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -2653,9 +2835,9 @@
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[38,20]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Rewards>[[111,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -2667,9 +2849,9 @@
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[38,25]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Rewards>[[111,300]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -2681,9 +2863,9 @@
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[38,35]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Rewards>[[111,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -2695,9 +2877,9 @@
 	<ActivityId>72</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[38,50]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Rewards>[[111,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -2708,10 +2890,10 @@
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,50],[104,10],[102,10]]</Rewards>
+	<Conds>[[15,102,1000]]</Conds>
+	<Rewards>[[302001,5],[109,100],[10901,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -2723,681 +2905,681 @@
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[39,1,5]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Rewards>[[104,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7902</id>
-	<name>任意2项公会科技达到5级</name>
+	<name>任意3项公会科技达到5级</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[39,2,5]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[39,3,5]]</Conds>
+	<Rewards>[[104,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>7903</id>
-	<name>任意3项公会科技达到5级</name>
+	<name>任意5项公会科技达到5级</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[39,3,5]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[39,5,5]]</Conds>
+	<Rewards>[[104,1500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8001</id>
-	<name>累计购买竞技场挑战次数10次</name>
+	<name>累计购买困难副本挑战次数10次</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[40,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[37,10]]</Conds>
+	<Rewards>[[102,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8002</id>
-	<name>累计购买竞技场挑战次数15次</name>
+	<name>累计购买困难副本挑战次数25次</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[40,15]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[37,25]]</Conds>
+	<Rewards>[[102,150]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8003</id>
-	<name>累计购买竞技场挑战次数20次</name>
+	<name>累计购买困难副本挑战次数50次</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[40,20]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[37,50]]</Conds>
+	<Rewards>[[102,250]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8004</id>
-	<name>累计购买竞技场挑战次数30次</name>
+	<name>累计购买困难副本挑战次数75次</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[40,30]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[37,75]]</Conds>
+	<Rewards>[[102,250]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8101</id>
-	<name>丢雷魔云窟声望达成尊敬</name>
+	<name>累计购买困难副本挑战次数90次</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[41,15000,3]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[37,90]]</Conds>
+	<Rewards>[[102,300]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8102</id>
-	<name>沙漠王朝声望达成尊敬</name>
+	<name>丢雷魔云窟声望达成尊敬</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[41,15000,5]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[41,15000,3]]</Conds>
+	<Rewards>[[133,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8103</id>
-	<name>鬼面盗墓者声望达成尊敬</name>
+	<name>沙漠王朝声望达成尊敬</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[41,15000,1]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[41,15000,5]]</Conds>
+	<Rewards>[[137,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8104</id>
-	<name>风谷之地声望达成尊敬</name>
+	<name>鬼面盗墓者声望达成尊敬</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[41,15000,7]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[41,15000,1]]</Conds>
+	<Rewards>[[131,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8105</id>
-	<name>丢雷魔云窟声望达成崇敬</name>
+	<name>风谷之地声望达成尊敬</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[41,30000,3]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[41,15000,7]]</Conds>
+	<Rewards>[[135,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8106</id>
-	<name>沙漠王朝声望达成崇敬</name>
+	<name>丢雷魔云窟声望达成崇敬</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[41,30000,5]]</Conds>
-	<Rewards>[[102,15]]</Rewards>
+	<Conds>[[41,30000,3]]</Conds>
+	<Rewards>[[133,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8107</id>
-	<name>鬼面盗墓者声望达成崇敬</name>
+	<name>沙漠王朝声望达成崇敬</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[41,30000,1]]</Conds>
-	<Rewards>[[102,16]]</Rewards>
+	<Conds>[[41,30000,5]]</Conds>
+	<Rewards>[[137,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8108</id>
-	<name>风谷之地声望达成崇敬</name>
+	<name>鬼面盗墓者声望达成崇敬</name>
 	<name_en></name_en>
 	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[41,30000,7]]</Conds>
-	<Rewards>[[102,17]]</Rewards>
+	<Conds>[[41,30000,1]]</Conds>
+	<Rewards>[[131,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8200</id>
-	<name>第五天抢购</name>
+	<name>风谷之地声望达成崇敬</name>
 	<name_en></name_en>
-	<ActivityId>74</ActivityId>
+	<ActivityId>73</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,50],[104,10],[102,10]]</Rewards>
+	<Conds>[[41,30000,7]]</Conds>
+	<Rewards>[[135,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
 </config>
 <config>
 	<id>8201</id>
-	<name>累计参与公会宴会5次</name>
+	<name>第五天抢购</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[42,5]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[15,102,1000]]</Conds>
+	<Rewards>[[900001,100],[700001,100],[600001,100],[1000001,100],[1100001,100],[400001,100],[500001,100],[800001,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8202</id>
-	<name>累计参与公会宴会10次</name>
+	<name>累计参与公会宴会1次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[42,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[42,1]]</Conds>
+	<Rewards>[[103,100000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8203</id>
-	<name>累计参与公会宴会15次</name>
+	<name>累计参与公会宴会3次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[42,15]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[42,3]]</Conds>
+	<Rewards>[[103,200000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8301</id>
-	<name>累计召唤卡片补给箱10次</name>
+	<name>累计参与公会宴会5次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[43,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[42,5]]</Conds>
+	<Rewards>[[103,400000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8302</id>
-	<name>累计召唤卡片补给箱20次</name>
+	<name>累计召唤卡片补给箱10次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[43,20]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[43,10]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8303</id>
-	<name>累计召唤卡片补给箱50次</name>
+	<name>累计召唤卡片补给箱20次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[43,50]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[43,20]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8311</id>
-	<name>累计召唤装备补给箱10次</name>
+	<name>累计召唤卡片补给箱50次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[44,10]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[43,50]]</Conds>
+	<Rewards>[[102,2000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8312</id>
-	<name>累计召唤装备补给箱20次</name>
+	<name>累计召唤装备补给箱10次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[44,20]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[44,10]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8313</id>
-	<name>累计召唤装备补给箱50次</name>
+	<name>累计召唤装备补给箱20次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[44,50]]</Conds>
-	<Rewards>[[102,15]]</Rewards>
+	<Conds>[[44,20]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8321</id>
-	<name>累计召唤宠物补给箱10次</name>
+	<name>累计召唤装备补给箱50次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[45,10]]</Conds>
-	<Rewards>[[102,16]]</Rewards>
+	<Conds>[[44,50]]</Conds>
+	<Rewards>[[102,2000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8322</id>
-	<name>累计召唤宠物补给箱20次</name>
+	<name>累计召唤宠物补给箱10次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[45,20]]</Conds>
-	<Rewards>[[102,17]]</Rewards>
+	<Conds>[[45,10]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8323</id>
-	<name>累计召唤宠物补给箱50次</name>
+	<name>累计召唤宠物补给箱20次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[45,50]]</Conds>
-	<Rewards>[[102,18]]</Rewards>
+	<Conds>[[45,20]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8401</id>
-	<name>累计参与时空仪10次</name>
+	<name>累计召唤宠物补给箱50次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[46,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[45,50]]</Conds>
+	<Rewards>[[102,2000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8402</id>
-	<name>累计参与时空仪15次</name>
+	<name>累计参与时空仪10次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[46,15]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[46,10]]</Conds>
+	<Rewards>[[17001,10]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8403</id>
-	<name>累计参与时空仪20次</name>
+	<name>累计参与时空仪15次</name>
 	<name_en></name_en>
 	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[46,20]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[46,15]]</Conds>
+	<Rewards>[[17001,10]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8500</id>
-	<name>第六天抢购</name>
+	<name>累计参与时空仪20次</name>
 	<name_en></name_en>
-	<ActivityId>75</ActivityId>
+	<ActivityId>74</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,50],[104,10],[102,10]]</Rewards>
+	<Conds>[[46,20]]</Conds>
+	<Rewards>[[17001,10]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
 </config>
 <config>
 	<id>8501</id>
-	<name>累计完成公会任务1个</name>
+	<name>第六天抢购</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[47,1]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[15,102,1000]]</Conds>
+	<Rewards>[[303001,100],[304001,100],[305001,100],[306001,100],[307001,100],[308001,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8502</id>
-	<name>累计完成公会任务3个</name>
+	<name>累计完成公会任务1个</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[47,3]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[47,1]]</Conds>
+	<Rewards>[[104,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8503</id>
-	<name>累计完成公会任务5次</name>
+	<name>累计完成公会任务3个</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[47,5]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[47,3]]</Conds>
+	<Rewards>[[104,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8504</id>
-	<name>累计完成公会任务10次</name>
+	<name>累计完成公会任务5次</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[47,10]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[47,5]]</Conds>
+	<Rewards>[[104,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8601</id>
-	<name>累计购买炼金10次</name>
+	<name>累计完成公会任务10次</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[48,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[47,10]]</Conds>
+	<Rewards>[[104,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8602</id>
-	<name>累计购买炼金30次</name>
+	<name>累计购买炼金10次</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[48,30]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[48,10]]</Conds>
+	<Rewards>[[102,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8603</id>
-	<name>累计购买炼金50次</name>
+	<name>累计购买炼金30次</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[48,50]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[48,30]]</Conds>
+	<Rewards>[[102,300]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8611</id>
-	<name>累计购买体力5次</name>
+	<name>累计购买炼金50次</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[49,5]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[48,50]]</Conds>
+	<Rewards>[[102,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8612</id>
-	<name>累计购买体力10次</name>
+	<name>累计购买体力5次</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[49,10]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[49,5]]</Conds>
+	<Rewards>[[102,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8613</id>
-	<name>累计购买体力20次</name>
+	<name>累计购买体力10次</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[49,20]]</Conds>
-	<Rewards>[[102,15]]</Rewards>
+	<Conds>[[49,10]]</Conds>
+	<Rewards>[[102,400]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8701</id>
-	<name>排位赛段位达到白银</name>
+	<name>累计购买体力20次</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[50,2]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[49,20]]</Conds>
+	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8702</id>
-	<name>排位赛段位达到黄金</name>
+	<name>排位赛段位达到白银</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[50,3]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[50,2]]</Conds>
+	<Rewards>[[121,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8703</id>
-	<name>排位赛段位达到铂金</name>
+	<name>排位赛段位达到黄金</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[50,4]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[50,3]]</Conds>
+	<Rewards>[[121,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8704</id>
-	<name>排位赛段位达到钻石</name>
+	<name>排位赛段位达到铂金</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[50,5]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[50,4]]</Conds>
+	<Rewards>[[121,300]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8705</id>
-	<name>排位赛段位达到王者</name>
+	<name>排位赛段位达到钻石</name>
 	<name_en></name_en>
 	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[50,6]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[50,5]]</Conds>
+	<Rewards>[[121,400]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8800</id>
-	<name>第七天抢购</name>
+	<name>排位赛段位达到王者</name>
 	<name_en></name_en>
-	<ActivityId>76</ActivityId>
+	<ActivityId>75</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,50],[104,10],[102,10]]</Rewards>
+	<Conds>[[50,6]]</Conds>
+	<Rewards>[[121,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
 </config>
 <config>
 	<id>8801</id>
-	<name>公会等级达到1级</name>
+	<name>第七天抢购</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[51,1]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[15,102,1000]]</Conds>
+	<Rewards>[[110,200],[111,200],[112,200],[121,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -3409,9 +3591,9 @@
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[51,2]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Rewards>[[104,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -3423,177 +3605,177 @@
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[51,3]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Rewards>[[104,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8901</id>
-	<name>特权等级达到VIP1</name>
+	<name>公会等级达到4级</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[52,1]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[51,4]]</Conds>
+	<Rewards>[[104,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>1</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8902</id>
-	<name>特权等级达到VIP3</name>
+	<name>特权等级达到VIP1</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[52,3]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[52,1]]</Conds>
+	<Rewards>[[102,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8903</id>
-	<name>特权等级达到VIP5</name>
+	<name>特权等级达到VIP3</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[52,5]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[52,3]]</Conds>
+	<Rewards>[[102,500]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8904</id>
-	<name>特权等级达到VIP9</name>
+	<name>特权等级达到VIP5</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[52,9]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[52,5]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8905</id>
-	<name>特权等级达到VIP13</name>
+	<name>特权等级达到VIP9</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[52,13]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[52,9]]</Conds>
+	<Rewards>[[102,5000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>8906</id>
-	<name>特权等级达到VIP15</name>
+	<name>特权等级达到VIP13</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[52,15]]</Conds>
-	<Rewards>[[102,15]]</Rewards>
+	<Conds>[[52,13]]</Conds>
+	<Rewards>[[102,20000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>9001</id>
-	<name>个人战力达到10000</name>
+	<name>特权等级达到VIP15</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[53,10000]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[52,15]]</Conds>
+	<Rewards>[[102,50000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>9002</id>
-	<name>个人战力达到20000</name>
+	<name>累计完成合作1次任务</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[53,20000]]</Conds>
-	<Rewards>[[102,11]]</Rewards>
+	<Conds>[[34,1]]</Conds>
+	<Rewards>[[102,100]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>9003</id>
-	<name>个人战力达到30000</name>
+	<name>累计完成合作2次任务</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[53,30000]]</Conds>
-	<Rewards>[[102,12]]</Rewards>
+	<Conds>[[34,2]]</Conds>
+	<Rewards>[[102,200]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>9004</id>
-	<name>个人战力达到40000</name>
+	<name>累计完成合作3次任务</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[53,40000]]</Conds>
-	<Rewards>[[102,13]]</Rewards>
+	<Conds>[[34,3]]</Conds>
+	<Rewards>[[102,300]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>9005</id>
-	<name>个人战力达到50000</name>
+	<name>累计完成合作6次任务</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[53,50000]]</Conds>
-	<Rewards>[[102,14]]</Rewards>
+	<Conds>[[34,6]]</Conds>
+	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>
 <config>
 	<id>9006</id>
-	<name>个人战力达到60000</name>
+	<name>累计完成合作10次任务</name>
 	<name_en></name_en>
 	<ActivityId>76</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[53,60000]]</Conds>
-	<Rewards>[[102,15]]</Rewards>
+	<Conds>[[34,10]]</Conds>
+	<Rewards>[[102,1000]]</Rewards>
 	<AutoReward>0</AutoReward>
-	<Param0></Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>0</Param1>
@@ -3605,7 +3787,7 @@
 	<ActivityId>77</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[70,10]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Rewards>[[17000,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3614,12 +3796,12 @@
 </config>
 <config>
 	<id>10002</id>
-	<name>达到20积分奖励</name>
+	<name>达到30积分奖励</name>
 	<name_en></name_en>
 	<ActivityId>77</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[70,20]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[70,30]]</Conds>
+	<Rewards>[[50305,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3628,12 +3810,12 @@
 </config>
 <config>
 	<id>10003</id>
-	<name>达到30积分奖励</name>
+	<name>达到50积分奖励</name>
 	<name_en></name_en>
 	<ActivityId>77</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[70,30]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[70,50]]</Conds>
+	<Rewards>[[65181,80]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3642,12 +3824,12 @@
 </config>
 <config>
 	<id>10004</id>
-	<name>达到40积分奖励</name>
+	<name>达到70积分奖励</name>
 	<name_en></name_en>
 	<ActivityId>77</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[70,40]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[70,70]]</Conds>
+	<Rewards>[[20007,30]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3656,12 +3838,12 @@
 </config>
 <config>
 	<id>10005</id>
-	<name>达到50积分奖励</name>
+	<name>达到90积分奖励</name>
 	<name_en></name_en>
 	<ActivityId>77</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[70,50]]</Conds>
-	<Rewards>[[102,10]]</Rewards>
+	<Conds>[[70,90]]</Conds>
+	<Rewards>[[301348,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3674,8 +3856,8 @@
 	<name_en></name_en>
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,10],[102,10]]</Rewards>
+	<Conds>[[15,102,98]]</Conds>
+	<Rewards>[[108,30],[103,10000]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0>5</Param0>
 	<des></des>
@@ -3684,12 +3866,12 @@
 </config>
 <config>
 	<id>11002</id>
-	<name>奇遇宝箱B</name>
+	<name>奇遇宝箱C</name>
 	<name_en></name_en>
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,10],[102,10]]</Rewards>
+	<Conds>[[15,102,680]]</Conds>
+	<Rewards>[[301333,50],[103,50000]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0>5</Param0>
 	<des></des>
@@ -3698,26 +3880,12 @@
 </config>
 <config>
 	<id>11003</id>
-	<name>奇遇宝箱C</name>
-	<name_en></name_en>
-	<ActivityId>80</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,10],[102,10]]</Rewards>
-	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
-	<des></des>
-	<des_en></des_en>
-	<Param1>1</Param1>
-</config>
-<config>
-	<id>11004</id>
 	<name>奇遇宝箱D</name>
 	<name_en></name_en>
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,100]]</Conds>
-	<Rewards>[[103,10],[102,10]]</Rewards>
+	<Conds>[[15,102,980]]</Conds>
+	<Rewards>[[65201,30],[301323,3],[103,100000]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0>5</Param0>
 	<des></des>
@@ -3730,8 +3898,8 @@
 	<name_en></name_en>
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,200]]</Conds>
-	<Rewards>[[103,10],[102,10]]</Rewards>
+	<Conds>[[15,102,1980]]</Conds>
+	<Rewards>[[109,80],[10901,50],[301333,20]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0>5</Param0>
 	<des></des>
@@ -3744,8 +3912,8 @@
 	<name_en></name_en>
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,200]]</Conds>
-	<Rewards>[[103,10],[102,10]]</Rewards>
+	<Conds>[[15,102,3280]]</Conds>
+	<Rewards>[[51004,1],[17000,15],[16000,10]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0>5</Param0>
 	<des></des>
@@ -3758,22 +3926,8 @@
 	<name_en></name_en>
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[15,102,200]]</Conds>
-	<Rewards>[[103,10],[102,10]]</Rewards>
-	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
-	<des></des>
-	<des_en></des_en>
-	<Param1>1</Param1>
-</config>
-<config>
-	<id>12004</id>
-	<name>卓越宝箱D</name>
-	<name_en></name_en>
-	<ActivityId>80</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,200]]</Conds>
-	<Rewards>[[103,10],[102,10]]</Rewards>
+	<Conds>[[15,102,6480]]</Conds>
+	<Rewards>[[20013,180],[17001,10],[301323,10]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0>5</Param0>
 	<des></des>
@@ -3785,9 +3939,9 @@
 	<name>命运卡牌</name>
 	<name_en></name_en>
 	<ActivityId>91</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,10]]</Conds>
-	<Rewards>[[20001]]</Rewards>
+	<ResetType>1</ResetType>
+	<Conds>[[15,102,0]]</Conds>
+	<Rewards>[[302002,30],[301362,60],[301361,30],[108,5],[109,3],[10901,1],[301360,3],[20001,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3799,9 +3953,9 @@
 	<name>命运卡牌</name>
 	<name_en></name_en>
 	<ActivityId>91</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,20]]</Conds>
-	<Rewards>[[20002]]</Rewards>
+	<ResetType>1</ResetType>
+	<Conds>[[15,102,30]]</Conds>
+	<Rewards>[[302002,30],[301362,60],[301361,30],[108,5],[109,3],[10901,1],[301360,3],[20001,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3813,9 +3967,9 @@
 	<name>命运卡牌</name>
 	<name_en></name_en>
 	<ActivityId>91</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,30]]</Conds>
-	<Rewards>[[20003]]</Rewards>
+	<ResetType>1</ResetType>
+	<Conds>[[15,102,60]]</Conds>
+	<Rewards>[[302002,30],[301362,60],[301361,30],[108,5],[109,3],[10901,1],[301360,3],[20001,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3827,9 +3981,9 @@
 	<name>命运卡牌</name>
 	<name_en></name_en>
 	<ActivityId>91</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,40]]</Conds>
-	<Rewards>[[20004]]</Rewards>
+	<ResetType>1</ResetType>
+	<Conds>[[15,102,90]]</Conds>
+	<Rewards>[[302002,30],[301362,60],[301361,30],[108,5],[109,3],[10901,1],[301360,3],[20001,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3841,9 +3995,9 @@
 	<name>命运卡牌</name>
 	<name_en></name_en>
 	<ActivityId>91</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,50]]</Conds>
-	<Rewards>[[20005]]</Rewards>
+	<ResetType>1</ResetType>
+	<Conds>[[15,102,120]]</Conds>
+	<Rewards>[[302002,30],[301362,60],[301361,30],[108,5],[109,3],[10901,1],[301360,3],[20001,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3855,9 +4009,9 @@
 	<name>命运卡牌</name>
 	<name_en></name_en>
 	<ActivityId>91</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,60]]</Conds>
-	<Rewards>[[20006]]</Rewards>
+	<ResetType>1</ResetType>
+	<Conds>[[15,102,150]]</Conds>
+	<Rewards>[[302002,30],[301362,60],[301361,30],[108,5],[109,3],[10901,1],[301360,3],[20001,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3869,9 +4023,9 @@
 	<name>命运卡牌</name>
 	<name_en></name_en>
 	<ActivityId>91</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,70]]</Conds>
-	<Rewards>[[20007]]</Rewards>
+	<ResetType>1</ResetType>
+	<Conds>[[15,102,180]]</Conds>
+	<Rewards>[[302002,30],[301362,60],[301361,30],[108,5],[109,3],[10901,1],[301360,3],[20001,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -3883,12 +4037,376 @@
 	<name>命运卡牌</name>
 	<name_en></name_en>
 	<ActivityId>91</ActivityId>
-	<ResetType>0</ResetType>
-	<Conds>[[15,102,80]]</Conds>
-	<Rewards>[[20008]]</Rewards>
+	<ResetType>1</ResetType>
+	<Conds>[[15,102,200]]</Conds>
+	<Rewards>[[302002,30],[301362,60],[301361,30],[108,5],[109,3],[10901,1],[301360,3],[20001,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>11011</id>
+	<name>奇遇宝箱A</name>
+	<name_en></name_en>
+	<ActivityId>94</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,98]]</Conds>
+	<Rewards>[[108,30],[103,10000]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>11012</id>
+	<name>奇遇宝箱C</name>
+	<name_en></name_en>
+	<ActivityId>94</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,680]]</Conds>
+	<Rewards>[[301333,50],[103,50000]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>11013</id>
+	<name>奇遇宝箱D</name>
+	<name_en></name_en>
+	<ActivityId>94</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,980]]</Conds>
+	<Rewards>[[65201,30],[301323,3],[103,100000]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>12011</id>
+	<name>卓越宝箱A</name>
+	<name_en></name_en>
+	<ActivityId>94</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,1980]]</Conds>
+	<Rewards>[[109,80],[10901,50],[301333,20]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>12012</id>
+	<name>卓越宝箱B</name>
+	<name_en></name_en>
+	<ActivityId>94</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,3280]]</Conds>
+	<Rewards>[[50904,1],[17000,15],[16000,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>12013</id>
+	<name>卓越宝箱C</name>
+	<name_en></name_en>
+	<ActivityId>94</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[15,102,6480]]</Conds>
+	<Rewards>[[20013,180],[17001,10],[301323,10]]</Rewards>
+	<AutoReward>1</AutoReward>
+	<Param0>5</Param0>
+	<des></des>
+	<des_en></des_en>
+	<Param1>1</Param1>
+</config>
+<config>
+	<id>14001</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>100</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,10]]</Conds>
+	<Rewards>[[50502,5],[65031,5],[20014,5]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖10次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14002</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>100</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,20]]</Conds>
+	<Rewards>[[50502,10],[65031,10],[20014,10]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖20次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14003</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>100</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,40]]</Conds>
+	<Rewards>[[50503,5],[65031,15],[20014,15]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖40次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14004</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>100</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,80]]</Conds>
+	<Rewards>[[50503,10],[65031,20],[20014,30]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖80次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14005</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>100</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,100]]</Conds>
+	<Rewards>[[50504,5],[65031,50],[20014,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖120次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14011</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>101</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,10]]</Conds>
+	<Rewards>[[20007,5],[302001,3],[302002,20]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖10次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14012</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>101</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,20]]</Conds>
+	<Rewards>[[20007,10],[16000,10],[302002,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖20次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14013</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>101</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,40]]</Conds>
+	<Rewards>[[20007,15],[16000,25],[108,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖40次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14014</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>101</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,80]]</Conds>
+	<Rewards>[[20007,30],[17000,15],[109,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖80次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14015</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>101</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,100]]</Conds>
+	<Rewards>[[20007,40],[17001,15],[10901,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖120次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14021</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>102</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,10]]</Conds>
+	<Rewards>[[65131,5],[108,20],[302002,20]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖10次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14022</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>102</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,20]]</Conds>
+	<Rewards>[[65131,10],[301333,5],[302001,3]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖20次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14023</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>102</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,40]]</Conds>
+	<Rewards>[[65131,15],[109,50],[10901,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖40次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14024</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>102</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,80]]</Conds>
+	<Rewards>[[65131,30],[17000,15],[108,80]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖80次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14025</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>102</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,100]]</Conds>
+	<Rewards>[[65131,50],[17001,15],[16000,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖120次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14031</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>103</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,10]]</Conds>
+	<Rewards>[[50802,5],[302001,3],[302002,20]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖10次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14032</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>103</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,20]]</Conds>
+	<Rewards>[[50802,10],[16000,10],[302002,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖20次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14033</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>103</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,40]]</Conds>
+	<Rewards>[[50803,5],[16000,25],[108,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖40次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14034</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>103</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,80]]</Conds>
+	<Rewards>[[50803,10],[17000,15],[109,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖80次</des>
+	<des_en></des_en>
+	<Param1>0</Param1>
+</config>
+<config>
+	<id>14035</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<ActivityId>103</ActivityId>
+	<ResetType>0</ResetType>
+	<Conds>[[81,100]]</Conds>
+	<Rewards>[[50804,5],[17001,15],[10901,50]]</Rewards>
+	<AutoReward>0</AutoReward>
+	<Param0></Param0>
+	<des>累计抽奖120次</des>
 	<des_en></des_en>
 	<Param1>0</Param1>
 </config>

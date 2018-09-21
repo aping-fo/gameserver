@@ -321,6 +321,8 @@ public class EquipService {
         List<Integer> types = Lists.newArrayList(type);
         if (oneKey == 1) {
             types = Lists.newArrayList(201, 202, 204, 203, 205, 206);
+            types.remove(Integer.valueOf(type));
+            types.add(0, type);
         }
 
         int consumeCoin = 0;
@@ -347,9 +349,9 @@ public class EquipService {
             if (!CommonUtil.contain(ConfigData.globalParam().equipTypes, t)) {
                 return Response.ERR_PARAM;
             }
-            int curStrength = data.getStrengths().getOrDefault(t,0);
+            int curStrength = data.getStrengths().getOrDefault(t, 0);
             out2:
-            while (true) {
+            do {
                 if (curStrength >= player.getLev()) {
                     break out2;
                 }
@@ -385,7 +387,7 @@ public class EquipService {
                 }
 
                 int rate = nextCfg.successRate;
-                if (useTicket) {
+                if (useTicket && rate != 100) { //勾选了强化卷 同时 概率不等于 100
                     if (hasTicket) {
                         //TODO 优化
                         if (goodsService.decGoodsFromBag(playerId, ConfigData.globalParam().strengthTicket, 1, LogConsume.STRENGTH_COST, type)) {
@@ -418,10 +420,10 @@ public class EquipService {
                 type2level.put(t, curStrength);
                 taskCount += 1;
                 type2task.put(t, taskCount);
-                if (oneKey == 0) {
+                /*if (oneKey == 0) {
                     break out;
-                }
-            }
+                }*/
+            } while (oneKey != 0);
         }
         //goodsService.decGoodsFromBag(playerId, ConfigData.globalParam().strengthTicket, consumeTicket, LogConsume.STRENGTH_COST, types);
         if (!type2cost.isEmpty()) {
@@ -447,8 +449,8 @@ public class EquipService {
             Map<Integer, int[]> condParams = Maps.newHashMap();
             for (Map.Entry<Integer, Integer> e : type2task.entrySet()) {
                 condParams.put(Task.FINISH_STRONG, new int[]{type2level.get(e.getKey()), e.getKey(), e.getValue()});
-                taskService.doTask(playerId, condParams);
             }
+            taskService.doTask(playerId, condParams);
         }
         int result = Response.SUCCESS;
         return result;

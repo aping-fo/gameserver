@@ -30,6 +30,8 @@ public class ActivityConsts {
         public static final int T_TWO_DAYS = 27; //2日登录
         public static final int T_TOUR = 30; //巡礼活动
         public static final int T_INTEGRAL = 31; //积分活动
+        public static final int T_ADVENTURE_BOX = 32; //奇遇宝箱
+        public static final int T_CARD= 34; //卡牌
     }
 
     /**
@@ -81,7 +83,8 @@ public class ActivityConsts {
         public static final int T_COMBAT_EFFECTIVENESS = 53; //战力
         public static final int T_INTEGRAL = 70; //积分
         public static final int T_CUMULATIVE_CONSUMPTION_DIAMONDS = 71; //累计消耗钻石
-        public static final int T_ADVENTURE_BOX = 80; //奇遇宝箱
+        public static final int T_CALL_REWARD = 81; //累计召喚
+
     }
 
     /**
@@ -101,6 +104,7 @@ public class ActivityConsts {
         public static final int T_VIP = 1; //vip等级
         public static final int T_ITEM = 2; //道具消耗
         public static final int T_LEVEL = 3; //开启等级
+        public static final int T_BUY_CARD = 4; //购买卡牌
     }
 
     /**
@@ -142,5 +146,13 @@ public class ActivityConsts {
     public static class ActivityDropTimeCondType {
         public static final int T_APPOINT_TIME = 1; //指定时间开启
         public static final int T_OPEN_SERVICE_TIME = 2; //开服时间开启
+    }
+
+    /**
+     * 领奖类型
+     */
+    public static class AutoReward{
+        public static final int T_AUTO = 1; //自动领取
+        public static final int T_HANDLE = 0; //手动领取
     }
 }

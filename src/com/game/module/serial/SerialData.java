@@ -56,9 +56,18 @@ public class SerialData {
     private Map<Integer, Int2Param> copyPassFastestTimeMap = new ConcurrentHashMap<>();//副本最快通关时间
     private Map<Integer, Map<Integer, Long>> laterDayRewardMap = new ConcurrentHashMap<>();//延时自然日发送奖励的活动
     private AtomicInteger fullServiceAttendance = new AtomicInteger(0);//全服登录人数
+    private Map<Integer, Integer> AdventureBoxNumber = new ConcurrentHashMap<>();//奇遇宝箱全服购买次数
 
     public SerialData() {
 
+    }
+
+    public Map<Integer, Integer> getAdventureBoxNumber() {
+        return AdventureBoxNumber;
+    }
+
+    public void setAdventureBoxNumber(Map<Integer, Integer> adventureBoxNumber) {
+        AdventureBoxNumber = adventureBoxNumber;
     }
 
     public AtomicInteger getFullServiceAttendance() {

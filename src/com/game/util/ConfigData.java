@@ -1,12 +1,15 @@
 package com.game.util;
 
+import com.game.SysConfig;
 import com.game.data.*;
 import com.game.module.copy.CopyInstance;
+import com.game.module.giftbag.ActivationCode;
 import com.game.module.shop.ShopService;
 import com.game.module.task.Task;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.server.util.GameData;
+import com.server.util.ServerLogger;
 import io.netty.util.internal.ConcurrentSet;
 
 import java.util.*;
@@ -78,7 +81,7 @@ public class ConfigData {
     }
 
     //礼包
-    public static Map<String, CdkeyConfig> giftBagMap = new HashMap<>();
+    public static Map<String, ActivationCode> giftBagMap = new HashMap<>();
 
     public static Map<Integer, List<String>> FirstNameList = Maps.newHashMap();
     public static Map<Integer, List<String>> SecondNameList = Maps.newHashMap();
@@ -384,13 +387,16 @@ public class ConfigData {
         }
         DonateCfg = donateCfgTmp;
 
-        //加载礼包激活码
-        Map<String, CdkeyConfig> giftBagMapTmp = new HashMap<>();
-        for (Object cfg : GameData.getConfigs(CdkeyConfig.class)) {
-            CdkeyConfig conf = (CdkeyConfig) cfg;
-            giftBagMapTmp.put(conf.cdkey, conf);
-        }
-        giftBagMap = giftBagMapTmp;
+//        //加载礼包激活码
+//        Map<String, CdkeyConfig> giftBagMapTmp = new HashMap<>();
+//        for (Object cfg : GameData.getConfigs(CdkeyConfig.class)) {
+//            CdkeyConfig conf = (CdkeyConfig) cfg;
+//            giftBagMapTmp.put(conf.cdkey, conf);
+//        }
+//        giftBagMap = giftBagMapTmp;
+
+        //从后台服务器获取激活码
+        getActivationCode();
 
         Map<Integer, List<String>> firstNameListTemp = Maps.newHashMap();
         List<String> manFirst = Lists.newArrayList();
@@ -452,5 +458,20 @@ public class ConfigData {
         headList = headListTmp;
         clothList = clothListTmp;
         weaponList = weaponListTmp;
+    }
+
+    //从后台服务器获取激活码
+    public static void getActivationCode() {
+        String s = HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/activationCode", "serverId=" + SysConfig.serverId);
+        ActivationCode[] activationCodes = JsonUtils.string2Array(s, ActivationCode.class);
+        if (activationCodes == null || activationCodes.length <= 0) {
+            ServerLogger.warn("激活码不存在");
+            return;
+        }
+        Map<String, ActivationCode> giftBagMapTmp = new HashMap<>();
+        for (int i = 0; i < activationCodes.length; i++) {
+            giftBagMapTmp.put(activationCodes[i].getName(), activationCodes[i]);
+        }
+        giftBagMap = giftBagMapTmp;
     }
 }

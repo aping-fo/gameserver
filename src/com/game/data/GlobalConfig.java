@@ -178,4 +178,7 @@ public class GlobalConfig {
 	public int[][] AiRateOTReward;//竞技场一次性排名奖励
 	public int[][] AiRateOTRewardRank;//竞技场一次性排名区间
 	public int energyRestoreTime;//体力恢复时间间隔（分钟）
+	public int[] DestinyCard;//命运卡牌刷新消耗
+	public int[][] DestinyTurnCard;//命运卡牌翻卡消耗
+	public int DestinyTurnCardAdd;//命运卡牌翻卡递增倍数
 }

@@ -70,6 +70,8 @@ public class SysConfig {
     public static String channel;
     public static String gameKey;
 
+    public static String gmServerUrl;
+
     public static void init() throws Exception {
         Properties properties = new Properties();
         try (FileInputStream fis = new FileInputStream(new File("config/sys.properties"))) {
@@ -137,6 +139,8 @@ public class SysConfig {
             ingcleLogin = properties.getProperty("checktokenurl");
             channel = properties.getProperty("channel");
             gameKey = properties.getProperty("game_key");
+
+            gmServerUrl = properties.getProperty("gm_server_url");
 
 
             Profile.setOpen(Boolean.parseBoolean(properties.getProperty("profile")));

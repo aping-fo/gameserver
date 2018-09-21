@@ -175,5 +175,8 @@
 	<AiRateOTReward>[[102,300],[102,200],[102,100],[102,50],[102,20],[102,10],[102,5],[102,2],[102,1]]</AiRateOTReward>
 	<AiRateOTRewardRank>[[1,1],[2,2],[3,3],[4,5],[6,10],[11,50],[51,100],[101,300],[301,1000]]</AiRateOTRewardRank>
 	<energyRestoreTime>8</energyRestoreTime>
+	<DestinyCard>[102,400]</DestinyCard>
+	<DestinyTurnCard>[[102,0],[102,30],[102,60],[102,90],[102,120],[102,150],[102,180],[102,200]]</DestinyTurnCard>
+	<DestinyTurnCardAdd>7</DestinyTurnCardAdd>
 </config>
 </root>

@@ -92,6 +92,8 @@ public enum LogConsume {
 	ACTIVITY_CONSUME(1084, "活动任务消耗"),
 	ZERO_GIFTBAG(1085, "0元礼包赠送"),
 	FASHION_UPGRADE(1086, "时装升阶"),
+	DestinyCard(1087, "命运卡牌"),
+	RecoveryGoods(1088, "物品回收"),
 	;
 	public int actionId;// id
 	public String desc;
