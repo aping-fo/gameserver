@@ -47,6 +47,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
@@ -92,6 +93,8 @@ public class PlayerService implements InitHandler {
     private TimerService timerService;
     @Autowired
     private ERatingService eRatingService;
+    @Autowired
+    private DefaultLogoutHandler defaultLogoutHandler;
 
     private static volatile int maxPlayerId = 0;
 
@@ -110,8 +113,11 @@ public class PlayerService implements InitHandler {
         }
         maxPlayerId = (curMaxPlayerId / 1000);
 
+        LocalDateTime dateTime = LocalDateTime.now();
+        int second = dateTime.getSecond();
+        int minute = dateTime.getMinute() % 5;
 
-        timerService.scheduleAtFixedRate(new Runnable() { //每分钟检测一次，活动开关
+        timerService.scheduleAtFixedRate(new Runnable() { //每5分钟检测一次，活动开关
             @Override
             public void run() {
                 try {
@@ -120,7 +126,7 @@ public class PlayerService implements InitHandler {
                     ServerLogger.err(e, "内存检测异常");
                 }
             }
-        }, 300, 5 * 60, TimeUnit.SECONDS);
+        }, (4 - minute) * 60 + (60 - second), 5 * 60, TimeUnit.SECONDS);
     }
 
     private void doCheckTimeOut() {
@@ -146,6 +152,8 @@ public class PlayerService implements InitHandler {
                 ServerLogger.err(e, "检查异常");
             }
         }
+
+        HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/onlinePlayer", "serverId=" + SysConfig.serverId + "&maxRoleCount=" + SessionManager.getInstance().getOnlineCount());
     }
 
     // 获取一个新的UserId
@@ -333,6 +341,21 @@ public class PlayerService implements InitHandler {
         return player;
     }
 
+    public void saveCharge(String acc, int playerId, String nickName, int totalCharge, int loginDays) {
+        // 保存数据,优化下
+        Context.getThreadService().execute(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    playerDao.insertChargerecord(acc, playerId, nickName, totalCharge, loginDays);
+                } catch (Throwable e) {
+                    ServerLogger.err(e, "入库失败，再来一次.....");
+                    playerDao.insertChargerecord(acc, playerId, nickName, totalCharge, loginDays);
+                }
+            }
+        });
+    }
+
     public boolean checkVersion(int version) {
         if (SysConfig.checkVersion) {
             return (version == ConfigData.globalParam().version);
@@ -422,6 +445,36 @@ public class PlayerService implements InitHandler {
             dailyService.resetDailyData(data);
             titleService.onLogin(playerId, false);
             addLoginCount(playerId);//增加登录人数
+
+
+            //连续登陆记录
+            Date logoutDate = player.getLastLogoutTime();
+            if (logoutDate == null) {
+                Calendar c3 = Calendar.getInstance();
+                c3.setTime(new Date());
+                c3.set(Calendar.DAY_OF_YEAR, -1);//设置为昨天
+                logoutDate = c3.getTime();
+            }
+
+            Calendar c1 = Calendar.getInstance();
+            c1.setTime(logoutDate);
+
+            Calendar c2 = Calendar.getInstance();
+            c2.setTime(new Date());
+
+            if (c2.get(Calendar.DAY_OF_YEAR) - c1.get(Calendar.DAY_OF_YEAR) == 1) {
+                data.setLoginContinueDays(data.getLoginContinueDays() + 1);
+            } else {
+                data.setLoginContinueDays(1);
+            }
+            if (data.getLoginContinueDays() > data.getMaxLoginContinueDays()) {
+                data.setMaxLoginContinueDays(data.getLoginContinueDays());
+            }
+            if (data.getMaxLoginContinueDays() == 0) {
+                data.setMaxLoginContinueDays(1);
+                data.setLoginContinueDays(1);
+            }
+            saveCharge(player.getAccName(), playerId, player.getName(), Math.round(data.getTotalCharge()), data.getMaxLoginContinueDays());
         }
 
         if (!dailyService.isSameWeek(data.getWeeklyTime())) {

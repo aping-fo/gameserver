@@ -194,6 +194,44 @@ public class PlayerData {
     private Set<Integer> cardRewardIdxSet = new HashSet<>(); //卡牌奖励
     private List<int[]> cardRewards = new ArrayList<>();
 
+    //累计充值
+    private float totalCharge;
+    private int loginContinueDays; //连续登陆
+    private int maxLoginContinueDays; //连续登陆
+    private Map<Integer, Integer> shopBuyAllMap = new ConcurrentHashMap<>();//商店全部购买
+
+    public Map<Integer, Integer> getShopBuyAllMap() {
+        return shopBuyAllMap;
+    }
+
+    public void setShopBuyAllMap(Map<Integer, Integer> shopBuyAllMap) {
+        this.shopBuyAllMap = shopBuyAllMap;
+    }
+
+    public int getMaxLoginContinueDays() {
+        return maxLoginContinueDays;
+    }
+
+    public void setMaxLoginContinueDays(int maxLoginContinueDays) {
+        this.maxLoginContinueDays = maxLoginContinueDays;
+    }
+
+    public float getTotalCharge() {
+        return totalCharge;
+    }
+
+    public void setTotalCharge(float totalCharge) {
+        this.totalCharge = totalCharge;
+    }
+
+    public int getLoginContinueDays() {
+        return loginContinueDays;
+    }
+
+    public void setLoginContinueDays(int loginContinueDays) {
+        this.loginContinueDays = loginContinueDays;
+    }
+
     public List<int[]> getCardRewards() {
         return cardRewards;
     }
@@ -584,6 +622,7 @@ public class PlayerData {
     public Map<Integer, ActivityTask> getActivityTasks() {
         return activityTasks;
     }
+
     public void setActivityTasks(Map<Integer, ActivityTask> activityTasks) {
         this.activityTasks = activityTasks;
     }

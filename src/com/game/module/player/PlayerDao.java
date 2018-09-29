@@ -60,4 +60,7 @@ public interface PlayerDao {
     //改名
     @SQL("update player set name = :name where playerId = :playerId")
     public void updatePlayerName(@SQLParam("playerId") int playerId, @SQLParam("name") String name);
+
+    @SQL("REPLACE INTO t_charge_record VALUES (:accountName,:playerId,:nickName,:totalCharge,:loginDays)")
+    public void insertChargerecord(@SQLParam("accountName") String accountName, @SQLParam("playerId") int playerId,@SQLParam("nickName") String nickName, @SQLParam("totalCharge") int totalCharge, @SQLParam("loginDays") int loginDays);
 }

@@ -27,6 +27,7 @@ import com.game.params.RewardList;
 import com.game.params.copy.CopyResult;
 import com.game.util.ConfigData;
 import com.game.util.RandomUtil;
+import com.google.common.collect.Maps;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -84,7 +85,7 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
             return Response.NO_TODAY_TIMES;
         }
         // 扣钱
-        Map<Integer, Integer> price = ConfigData.globalParam().buyLeadawayPrice;
+        Map<Integer, Integer> price = Maps.newHashMap(ConfigData.globalParam().buyLeadawayPrice);
         for(int key:price.keySet()){
             price.replace(key, price.get(key) * buyCount);
         }
@@ -97,7 +98,7 @@ public class LeadAwayLogic extends AttachLogic<LeadAwayAttach> {
         attach.commitSync();
 
         //顺手牵羊活动
-        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
+        activityService.completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
 
         return Response.SUCCESS;
     }

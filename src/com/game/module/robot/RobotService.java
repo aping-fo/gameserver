@@ -49,16 +49,16 @@ public class RobotService implements InitHandler {
 
             int minFight = ConfigData.globalParam().robotFight[0];
             int maxFight = ConfigData.globalParam().robotFight[1];
-            int tempMaxFight=(maxFight-minFight)/total;//递减最大值
+            int tempMaxFight = (maxFight - minFight) / total;//递减最大值
 
             for (int i = 0; i < total; i++) {
-                robots.add(addRobot(maxFight,"sys", names.get(i % total), RandomUtil.randInt(1, 3), RandomUtil.randInt(20, 50)));
+                robots.add(addRobot(maxFight, "sys", names.get(i % total), RandomUtil.randInt(1, 3), RandomUtil.randInt(20, 50)));
 
                 //战力递减
-                maxFight=maxFight-RandomUtil.randInt(1,tempMaxFight);
+                maxFight = maxFight - RandomUtil.randInt(1, tempMaxFight);
                 System.out.println(maxFight);
-                if(maxFight<minFight){
-                    maxFight=minFight;
+                if (maxFight < minFight) {
+                    maxFight = minFight;
                 }
             }
             serialDataService.getData().setInitRobot(true);
@@ -68,7 +68,7 @@ public class RobotService implements InitHandler {
     }
     // 增加机器人
 
-    private int addRobot(int fightRate,String accName, String name, int vocation, int lev) {
+    private int addRobot(int fightRate, String accName, String name, int vocation, int lev) {
         // 基本属性
         int playerId = playerService.getNextPlayerId();
         Player player = new Player();
@@ -97,12 +97,12 @@ public class RobotService implements InitHandler {
         //int minFight = ConfigData.globalParam().robotFight[0];
         //int maxFight = ConfigData.globalParam().robotFight[1];
         //int fightRate = RandomUtil.randInt(minFight, maxFight);
-        player.setHp(Math.round(fightRate * ConfigData.globalParam().RobotParas[0]));
-        player.setAttack(Math.round(fightRate * ConfigData.globalParam().RobotParas[1]));
-        player.setDefense(Math.round(fightRate * ConfigData.globalParam().RobotParas[2]));
-        player.setSymptom(Math.round(fightRate * ConfigData.globalParam().RobotParas[3]));
-        player.setFu(Math.round(fightRate * ConfigData.globalParam().RobotParas[4]));
-        player.setCrit(Math.round(fightRate * ConfigData.globalParam().RobotParas[5]));
+        player.setHp(Math.round(fightRate * ConfigData.globalParam().RobotValue[0]));
+        player.setAttack(Math.round(fightRate * ConfigData.globalParam().RobotValue[1]));
+        player.setDefense(Math.round(fightRate * ConfigData.globalParam().RobotValue[2]));
+        player.setSymptom(Math.round(fightRate * ConfigData.globalParam().RobotValue[3]));
+        player.setFu(Math.round(fightRate * ConfigData.globalParam().RobotValue[4]));
+        player.setCrit(Math.round(fightRate * ConfigData.globalParam().RobotValue[5]));
         player.setFight(fightRate);
 
         // 初始化用户数据

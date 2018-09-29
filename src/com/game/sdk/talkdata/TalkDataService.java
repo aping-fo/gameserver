@@ -39,7 +39,7 @@ public class TalkDataService {
         info.setGameServer(serverId + "");
         info.setLevel(player.getLev());
         if(SysConfig.currency.equals("CNY")){
-            info.setPartner("TapTap");
+            info.setPartner("Ingcle");
         }else{
             info.setPartner("GooglePlay--Singapore Malaysia");
         }

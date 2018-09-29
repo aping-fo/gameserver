@@ -429,19 +429,23 @@ public class GangService implements InitHandler {
     }
 
     // 申请入帮
-    public int apply(int playerId, int gangId) {
+    public Int2Param apply(int playerId, int gangId) {
+        Int2Param int2Param = new Int2Param();
         // 自己已经有帮派
         Player player = playerService.getPlayer(playerId);
         if (player.getGangId() > 0) {
-            return Response.HAS_GANG;
+            int2Param.param1 = Response.HAS_GANG;
+            return int2Param;
         }
         Gang gang = gangs.get(gangId);
         if (gang.getMaxNum() <= gang.getMembers().size()) {
-            return Response.GANG_FULL;
+            int2Param.param1 = Response.GANG_FULL;
+            return int2Param;
         }
         // 重复申请
         if (gang.getApplys().containsKey(playerId)) {
-            return Response.GANG_HAS_APPLY;
+            int2Param.param1 = Response.GANG_HAS_APPLY;
+            return int2Param;
         }
         GlobalConfig global = ConfigData.globalParam();
         // 验证申请次数
@@ -452,18 +456,21 @@ public class GangService implements InitHandler {
         // 退出时间
         PlayerData data = playerService.getPlayerData(playerId);
         if (!data.getModules().contains(1041)) { //公会功能未开启
-            return Response.GUILD_DONT_OPEN;
+            int2Param.param1 = Response.GUILD_DONT_OPEN;
+            return int2Param;
         }
         if (data.getLastQuitGang() > 0) {
-            if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR
-                    * global.quitPunish) {
-                return Response.QUIT_GANG_LAST;
+            if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR * global.quitPunish) {
+                int2Param.param1 = Response.QUIT_GANG_LAST;
+                int2Param.param2 = (int) ((System.currentTimeMillis() - data.getLastQuitGang()) / TimeUtil.ONE_HOUR);
+                return int2Param;
             }
         }
         // 条件不足(等级,战斗力)
         if ((gang.isLimitFight() && gang.getFightLimit() > player.getFight())
                 || (gang.isLimitLev() && gang.getLevLimit() > player.getLev())) {
-            return Response.GANG_APPLY_LIMIT;// 战斗力或等级不足
+            int2Param.param1 = Response.GANG_APPLY_LIMIT;// 战斗力或等级不足
+            return int2Param;
         }
 
         // 自动加入
@@ -479,13 +486,13 @@ public class GangService implements InitHandler {
                     SessionManager.getInstance().sendMsg(2517, applys, member.getPlayerId());
                 }
             }
-            return Response.JOIN_SUCESS_TITLE;
+            int2Param.param1 = Response.JOIN_SUCESS_TITLE;
+            return int2Param;
         }
         gang.setUpdated(true);
         dailyService.alterCount(playerId, DailyService.APPLY_GANG, 1);
-
-
-        return Response.SUCCESS;
+        int2Param.param1 = Response.SUCCESS;
+        return int2Param;
     }
 
     // 批准

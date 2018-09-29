@@ -79,7 +79,7 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 		}
 
 		// 扣钱
-		Map<Integer, Integer> price = ConfigData.globalParam().buyExtremeEvasionPrice;
+		Map<Integer, Integer> price = Maps.newHashMap(ConfigData.globalParam().buyExtremeEvasionPrice);
 		for(int key:price.keySet()){
 			price.replace(key, price.get(key) * buyCount);
 		}
@@ -92,7 +92,7 @@ public class ExperienceLogic extends AttachLogic<ExperienceAttach> {
 		attach.commitSync();
 
 		//极限躲避活动
-        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
+        activityService.completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
 
         return Response.SUCCESS;
 	}

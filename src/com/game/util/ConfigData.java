@@ -11,6 +11,7 @@ import com.google.common.collect.Maps;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import io.netty.util.internal.ConcurrentSet;
+import org.apache.commons.lang.StringUtils;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -463,9 +464,13 @@ public class ConfigData {
     //从后台服务器获取激活码
     public static void getActivationCode() {
         String s = HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/activationCode", "serverId=" + SysConfig.serverId);
+        if(StringUtils.isBlank(s)){
+            ServerLogger.warn("激活码不存在");
+            return;
+        }
         ActivationCode[] activationCodes = JsonUtils.string2Array(s, ActivationCode.class);
         if (activationCodes == null || activationCodes.length <= 0) {
-            ServerLogger.warn("激活码不存在");
+            ServerLogger.warn("激活码为空");
             return;
         }
         Map<String, ActivationCode> giftBagMapTmp = new HashMap<>();

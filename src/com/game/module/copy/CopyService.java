@@ -49,7 +49,6 @@ import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import sun.security.krb5.Config;
 
 import java.time.LocalDateTime;
 import java.util.*;
@@ -1119,7 +1118,7 @@ public class CopyService {
             list.rewards = rewards;
             rewardLists.add(list);
 
-            condParams.put(Task.FINISH_TRANSIT, new int[] {copyId, cfg.type, star, 1});
+            condParams.put(Task.FINISH_TRANSIT, new int[]{copyId, cfg.type, star, count});
             removeCopy(playerId);
         }
 

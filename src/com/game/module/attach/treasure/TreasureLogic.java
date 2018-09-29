@@ -37,130 +37,130 @@ import com.game.util.ConfigData;
 @Service
 public class TreasureLogic extends AttachLogic<TreasureAttach> {
 
-	@Autowired
-	private PlayerService playerService;
-	@Autowired
-	private GoodsService goodsService;
-	@Autowired
-	private CopyService copyService;
-	@Autowired
-	private TaskService taskService;
-	@Autowired
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private GoodsService goodsService;
+    @Autowired
+    private CopyService copyService;
+    @Autowired
+    private TaskService taskService;
+    @Autowired
     private ActivityService activityService;
 
-	@Override
-	public byte getType() {
-		return AttachType.TREASURE;
-	}
+    @Override
+    public byte getType() {
+        return AttachType.TREASURE;
+    }
 
-	@Override
-	public TreasureAttach generalNewAttach(int playerId) {
-		TreasureAttach attach = new TreasureAttach(playerId, getType());
-		attach.setChallenge(ConfigData.globalParam().crazyChestChallengeCount);
-		return attach;
-	}
+    @Override
+    public TreasureAttach generalNewAttach(int playerId) {
+        TreasureAttach attach = new TreasureAttach(playerId, getType());
+        attach.setChallenge(ConfigData.globalParam().crazyChestChallengeCount);
+        return attach;
+    }
 
-	public void updateCopy(int playerId, CopyResult result){
-		TreasureAttach attach = getAttach(playerId);
-		attach.alterChallenge(-1);
-		attach.setLastChallengeTime(System.currentTimeMillis());
-		attach.commitSync();
-	}
-	
-	public int buyChallengeTime(int playerId, IntParam param){
-		Player player = playerService.getPlayer(playerId);
-		TreasureAttach attach = getAttach(playerId);
-		VIPConfig vip = ConfigData.getConfig(VIPConfig.class, player.getVip());
-		int buyCount = param.param;
+    public void updateCopy(int playerId, CopyResult result) {
+        TreasureAttach attach = getAttach(playerId);
+        attach.alterChallenge(-1);
+        attach.setLastChallengeTime(System.currentTimeMillis());
+        attach.commitSync();
+    }
+
+    public int buyChallengeTime(int playerId, IntParam param) {
+        Player player = playerService.getPlayer(playerId);
+        TreasureAttach attach = getAttach(playerId);
+        VIPConfig vip = ConfigData.getConfig(VIPConfig.class, player.getVip());
+        int buyCount = param.param;
 
         if (buyCount <= 0) {
             return Response.ERR_PARAM;
         }
 
-		if(attach.getBuyTime() + buyCount > vip.buyTreasureCopy){
-			return Response.NO_TODAY_TIMES;
-		}
+        if (attach.getBuyTime() + buyCount > vip.buyTreasureCopy) {
+            return Response.NO_TODAY_TIMES;
+        }
 
-		// 扣钱
-		Map<Integer, Integer> price = ConfigData.globalParam().buyTreasurePrice;
-		for (int key : price.keySet()) {
-			price.replace(key, price.get(key) * buyCount);
-		}
-		int code = goodsService.decConsume(playerId, price,LogConsume.BUY_TREASURE_TIME);
-		if (code != Response.SUCCESS) {
-			return code;
-		}
-		attach.alterChallenge(buyCount);
-		attach.addBuyTime(buyCount);
-		attach.commitSync();
+        // 扣钱
+        Map<Integer, Integer> price = Maps.newHashMap(ConfigData.globalParam().buyTreasurePrice);
+        for (int key : price.keySet()) {
+            price.replace(key, price.get(key) * buyCount);
+        }
+        int code = goodsService.decConsume(playerId, price, LogConsume.BUY_TREASURE_TIME);
+        if (code != Response.SUCCESS) {
+            return code;
+        }
+        attach.alterChallenge(buyCount);
+        attach.addBuyTime(buyCount);
+        attach.commitSync();
 
         //精绝宝藏活动
-		activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
+        activityService.completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
 
-		return Response.SUCCESS;
-	}
-	
-	public CopyReward sweep(int playerId, int copyId){
-		CopyReward result = new CopyReward();
-		result.reward = new ArrayList<RewardList>();
-		CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
-		Player player = playerService.getPlayer(playerId);
-		TreasureAttach attach = getAttach(playerId);
+        return Response.SUCCESS;
+    }
 
-		if (cfg == null || cfg.type != CopyInstance.TYPE_TREASURE) {
-			result.code = Response.ERR_PARAM;
-			return result;
-		}
+    public CopyReward sweep(int playerId, int copyId) {
+        CopyReward result = new CopyReward();
+        result.reward = new ArrayList<RewardList>();
+        CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copyId);
+        Player player = playerService.getPlayer(playerId);
+        TreasureAttach attach = getAttach(playerId);
 
-		// 检查等级
-		if (player.getLev() < cfg.lev) {
-			result.code = Response.NO_LEV;
-			return result;
-		}
-		
-		if(attach.getChallenge() <= 0){
-			result.code = Response.NO_TODAY_TIMES;
-			return result;
-		}
-		
-		// 活动副本扣除体力
-		if (cfg.needEnergy>0) {
-			if (player.getEnergy() < cfg.needEnergy) {
-				result.code = Response.NO_ENERGY;
-				return result;
-			}
-		}
-					
-		// 扣钱
-		int code = goodsService.decConsume(playerId, ConfigData.globalParam().quickTreasureCopy,LogConsume.QUICK_TREASURE,copyId);
-		if (code != Response.SUCCESS) {
-			result.code = code;
-			return result;
-		}
-		
-		if (cfg.needEnergy>0) {
-			playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId);
-		}
+        if (cfg == null || cfg.type != CopyInstance.TYPE_TREASURE) {
+            result.code = Response.ERR_PARAM;
+            return result;
+        }
 
-		Map<Integer,GoodsEntry> map = Maps.newHashMap();
-		List<RewardList> rewardLists = copyService.swipeCopyInner(playerId, copyId,map);
-		if (rewardLists != null) {
-			for (int i = 0; i < rewardLists.size(); ++i) {
-				result.reward.add(rewardLists.get(i));
-			}
-		}
-		goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
-		attach.alterChallenge(-1);
-		attach.commitSync();
+        // 检查等级
+        if (player.getLev() < cfg.lev) {
+            result.code = Response.NO_LEV;
+            return result;
+        }
 
-		taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY,cfg.type,1);
-		return result;
-	}
-	
-	public void dailyReset(int playerId){
-		TreasureAttach attach = getAttach(playerId);
-		attach.setChallenge(ConfigData.globalParam().crazyChestChallengeCount);
-		attach.setBuyTime(0);
-		attach.commitSync();
-	}
+        if (attach.getChallenge() <= 0) {
+            result.code = Response.NO_TODAY_TIMES;
+            return result;
+        }
+
+        // 活动副本扣除体力
+        if (cfg.needEnergy > 0) {
+            if (player.getEnergy() < cfg.needEnergy) {
+                result.code = Response.NO_ENERGY;
+                return result;
+            }
+        }
+
+        // 扣钱
+        int code = goodsService.decConsume(playerId, ConfigData.globalParam().quickTreasureCopy, LogConsume.QUICK_TREASURE, copyId);
+        if (code != Response.SUCCESS) {
+            result.code = code;
+            return result;
+        }
+
+        if (cfg.needEnergy > 0) {
+            playerService.decEnergy(playerId, cfg.needEnergy, LogConsume.COPY_ENERGY, copyId);
+        }
+
+        Map<Integer, GoodsEntry> map = Maps.newHashMap();
+        List<RewardList> rewardLists = copyService.swipeCopyInner(playerId, copyId, map);
+        if (rewardLists != null) {
+            for (int i = 0; i < rewardLists.size(); ++i) {
+                result.reward.add(rewardLists.get(i));
+            }
+        }
+        goodsService.addRewards(playerId, Lists.newArrayList(map.values()), LogConsume.COPY_REWARD, copyId);
+        attach.alterChallenge(-1);
+        attach.commitSync();
+
+        taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, cfg.type, 1);
+        return result;
+    }
+
+    public void dailyReset(int playerId) {
+        TreasureAttach attach = getAttach(playerId);
+        attach.setChallenge(ConfigData.globalParam().crazyChestChallengeCount);
+        attach.setBuyTime(0);
+        attach.commitSync();
+    }
 }

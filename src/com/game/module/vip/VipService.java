@@ -66,7 +66,7 @@ public class VipService {
     @Autowired
     private ShopService shopService;
     @Autowired
-    private  GangService gangService;
+    private GangService gangService;
 
     // 获取vip奖励
     public int getVipReward(int playerId, int vipLev) {
@@ -179,7 +179,7 @@ public class VipService {
     }
 
     // 充值
-    public void addCharge(int playerId, int id, long cpId, String paymentType, String currentType, String orderId,int serverId) {
+    public void addCharge(int playerId, int id, long cpId, String paymentType, String currentType, String orderId, int serverId) {
         ChargeConfig charge = ConfigData.getConfig(ChargeConfig.class, id);
         if (charge == null) {
             return;
@@ -212,17 +212,17 @@ public class VipService {
             }
         }
 
-        if(SysConfig.report){
+        if (SysConfig.report) {
             Context.getThreadService().execute(new Runnable() {
                 @Override
                 public void run() {
                     float f = 0f;
-                    if(currentType.equals("CNY")){
+                    if (currentType.equals("CNY")) {
                         f = charge.rmb;
-                    }else{
+                    } else {
                         f = charge.us;
                     }
-                    talkDataService.talkGameRecharge(playerId, orderId, f, charge.total + charge.add, currentType,serverId,id);
+                    talkDataService.talkGameRecharge(playerId, orderId, f, charge.total + charge.add, currentType, serverId, id);
                 }
             });
         }
@@ -241,9 +241,9 @@ public class VipService {
         // 通知前端
         RechargeRespVO result = new RechargeRespVO();
         float f = 0f;
-        if(currentType.equals("CNY")){
+        if (currentType.equals("CNY")) {
             f = charge.rmb;
-        }else{
+        } else {
             f = charge.us;
         }
         result.amount = f;
@@ -260,7 +260,7 @@ public class VipService {
 //            data.setFirstRechargeTime(new Date());
         }
 
-        if(type!=TYPE_TIMED&&type!=TYPE_SPECIAL){//限时礼包和特价礼包不计入累计充值
+        if (type != TYPE_TIMED && type != TYPE_SPECIAL) {//限时礼包和特价礼包不计入累计充值
             activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//累充礼包
         }
 
@@ -273,17 +273,21 @@ public class VipService {
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.total, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
         //activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_ONCE, (int) charge.rmb, ActivityConsts.UpdateType.T_VALUE, true);//单笔充值满足(取最大那个)
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
-        activityService.onceRecharge(playerId,charge.rmb);//单笔充值满足(取最大那个)
-        activityService.dailyRecharge(playerId,charge.rmb);//每日充值(7日充值)
+        activityService.onceRecharge(playerId, charge.rmb);//单笔充值满足(取最大那个)
+        activityService.dailyRecharge(playerId, charge.rmb);//每日充值(7日充值)
+
 
         if (charge.shopGoodsId != 0) {
             shopService.buy(playerId, charge.shopGoodsId, 1);
         }
-        ServerLogger.warn("活动钻石:" + charge.total + " 额外钻石:" + charge.add+" 人民币:"+charge.rmb+" 美元:"+charge.us+" 玩家id:"+playerId+" rechargeId:"+id+ " encodeOrder:" + cpId + " order:" + (cpId ^ KEY));
+        ServerLogger.warn("活动钻石:" + charge.total + " 额外钻石:" + charge.add + " 人民币:" + charge.rmb + " 美元:" + charge.us + " 玩家id:" + playerId + " rechargeId:" + id + " encodeOrder:" + cpId + " order:" + (cpId ^ KEY));
 
         Player player = playerService.getPlayer(playerId);
-        Context.getLoggerService().logCharge(playerId, player.getName(), id, currentType, f, player.getServerId(),paymentType);
-//        Player player = playerService.getPlayer(playerId);
+        Context.getLoggerService().logCharge(playerId, player.getName(), id, currentType, f, player.getServerId(), paymentType);
+
+        data.setTotalCharge(data.getTotalCharge() + charge.rmb);
+        playerService.saveCharge(player.getAccName(), playerId, player.getName(), Math.round(data.getTotalCharge()), data.getMaxLoginContinueDays());
+        //        Player player = playerService.getPlayer(playerId);
 //        String gangeName = "";
 //        if (player.getGangId() != 0) {
 //            gangeName = gangService.getGang(player.getGangId()).getName();

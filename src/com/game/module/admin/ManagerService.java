@@ -6,14 +6,15 @@ import com.game.data.GoodsConfig;
 import com.game.data.Response;
 import com.game.event.InitHandler;
 import com.game.module.chat.ChatExtension;
+import com.game.module.friend.FriendService;
+import com.game.module.gang.GangService;
 import com.game.module.giftbag.ActivationCode;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
-import com.game.module.player.Player;
-import com.game.module.player.PlayerDao;
-import com.game.module.player.PlayerService;
+import com.game.module.player.*;
 import com.game.module.vip.VipService;
+import com.game.params.IntParam;
 import com.game.params.StringParam;
 import com.game.params.player.PlayerVo;
 import com.game.util.*;
@@ -58,6 +59,10 @@ public class ManagerService implements InitHandler {
     private PlayerDao playerDao;
     @Autowired
     private GoodsService goodsService;
+    @Autowired
+    private GangService gangService;
+    @Autowired
+    private FriendService friendService;
 
     private Map<Integer, UserManager> bans;
 
@@ -138,7 +143,6 @@ public class ManagerService implements InitHandler {
         if (title == null || content == null) {
             return RETURN_PARAM_ERROR;
         }
-        //检查奖励id
         if (rewards != null) {
             Map<Integer, Integer> reward = StringUtil.str2map(rewards, ";", ":");
             for (int goodsId : reward.keySet()) {
@@ -146,6 +150,7 @@ public class ManagerService implements InitHandler {
                     return RETURN_PARAM_ERROR;
                 }
             }
+        //检查奖励id
         }
 
         //拼sql
@@ -272,6 +277,79 @@ public class ManagerService implements InitHandler {
             return GOOD_NOT_EXISTENCE;
         }
         return player.getName();
+    }
+
+    //查询人物信息
+    public String handle_getInfoByPlayerId(Map<String, String> params) {
+        PlayerVo vo = playerService.toSLoginVo(Integer.valueOf(params.get("playerId")));
+        return JsonUtils.object2String(vo);
+    }
+
+    //踢人下线
+    public String handle_kickPlayer(Map<String, String> params) {
+        IntParam param = new IntParam();
+        param.param = Response.SUCCESS;
+        SessionManager.getInstance().sendMsg(PlayerExtension.FORCE_LOGOUT, param, Integer.valueOf(params.get("id")));
+        return RETURN_SUCCESS;
+    }
+
+    //角色转出
+    public String handle_role_transfer_out(Map<String, String> params) {
+        int playerId = Integer.parseInt(params.get("playerId"));
+        int serverUrl = Integer.parseInt(params.get("serverUrl"));
+
+        Player player = playerService.getPlayer(playerId);
+        if (player == null) {
+            return PLAYERID_NOT_EXISTENCE;
+        }
+
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            return PLAYERID_NOT_EXISTENCE;
+        }
+
+//        //退出公会
+//        gangService.quit(playerId);
+//
+//        //删除好友
+//        ConcurrentHashMap<Integer, Boolean> friends = playerData.getFriends();
+//        for (Integer id : friends.keySet()) {
+//            //我删除朋友
+//            friendService.del(playerId, id);
+//
+//            //朋友删除我
+//            PlayerData friendPlayerData = playerService.getPlayerData(id);
+//            friendPlayerData.getFriends().remove(playerId);
+//        }
+        StringBuffer param = new StringBuffer("player=" + JsonUtils.object2String(player));
+        param.append("&playerData=" + playerData);
+        HttpRequestUtil.sendPost(serverUrl + "/role_transfer_in", param.toString());
+
+        return RETURN_SUCCESS;
+    }
+
+    //角色转入
+    public String handle_role_transfer_in(Map<String, String> params) {
+        String playerString = params.get("player");
+        Player player = JsonUtils.string2Object(playerString, Player.class);
+        if (player == null) {
+            return PLAYERID_NOT_EXISTENCE;
+        }
+
+        String playerDataString = params.get("playerData");
+        PlayerData playerData = JsonUtils.string2Object(playerDataString, PlayerData.class);
+        if (playerData == null) {
+            return PLAYERID_NOT_EXISTENCE;
+        }
+
+        // 同名
+        if (playerService.getPlayerIdByName(player.getName()) > 0) {
+            return Response.SAME_NAME + "";
+        }
+
+        playerService.addNewPlayer(player.getName(), player.getSex(), player.getVocation(), player.getAccName(), player.getChannel(), SysConfig.serverId + "", playerData.getServerName(), player.userId, playerData.getThirdChannel(), playerData.getThirdUserId());
+
+        return RETURN_SUCCESS;
     }
 
     //批量发系统邮件接口

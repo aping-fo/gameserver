@@ -80,7 +80,7 @@ public class IngclePaymentService implements SdkService {
                 return;
             }
             //金额判断
-            vipService.addCharge(playerId, Integer.parseInt(productId), Long.parseLong(cpOrderId), agent, "", orderId, SysConfig.serverId);
+            vipService.addCharge(playerId, Integer.parseInt(productId), Long.parseLong(cpOrderId), agent, SysConfig.currency, orderId, SysConfig.serverId);
             render(resp, "SUCCESS");
         } catch (Exception e) {
             render(resp, "error");

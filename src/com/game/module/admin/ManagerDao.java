@@ -15,6 +15,9 @@ public interface ManagerDao {
 	@SQL("update manager set banChat=:u.banChat,banLogin=:u.banLogin,banChatEnd=:u.banChatEnd,banLoginEnd=:u.banLoginEnd where playerId =:u.playerId")
 	public void update(@SQLParam("u")UserManager u);
 	
-	@SQL("insert manager(playerId,banChat,banLogin,banChatEnd,banLoginEnd) values(:u.playerId,:u.banChat,:u.banLogin,:u.banChatEnd,:u.banLoginEnd)")
+	//@SQL("insert manager(playerId,banChat,banLogin,banChatEnd,banLoginEnd) values(:u.playerId,:u.banChat,:u.banLogin,:u.banChatEnd,:u.banLoginEnd)")
+	//public void insert(@SQLParam("u")UserManager u);
+
+	@SQL("REPLACE INTO  manager VALUES(:u.playerId,:u.banChat,:u.banLogin,:u.banChatEnd,:u.banLoginEnd)")
 	public void insert(@SQLParam("u")UserManager u);
 }

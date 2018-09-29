@@ -53,8 +53,6 @@ public class ShopService {
     public static final int FAME_14 = 14;
     public static final int FAME_15 = 15;
     public static final int CQ = 16;
-    public static final int TIME_LIMIT = 17;//限时商城
-    public static final int PRIVILEGE = 18;//特权商城
 
     private static final int[] SHOP_TYPES = {COMMON, ENDLESS, GANG, TRAINING, AI_ARENA, FAME_7, FAME_8, FAME_9, FAME_10, FAME_11, FAME_12, FAME_13, FAME_14, FAME_15, CQ};
     public static final int LIMIT_DAILY = 1;
@@ -296,16 +294,7 @@ public class ShopService {
             PlayerData playerData = playerService.getPlayerData(playerId);
             if (playerData != null) {
                 if (activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_STORE_PURCHASE)) {
-                    int type = cfg.shopType;
-                    //普通商店进行特殊处理
-                    if (cfg.shopType == COMMON) {
-                        if (cfg.tabLayoutType == 1) {
-                            type = TIME_LIMIT;
-                        } else if (cfg.tabLayoutType == 3) {
-                            type = PRIVILEGE;
-                        }
-                    }
-                    Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId, type);
+                    Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId, cfg.shopType);
                     if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
                         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_STORE_PURCHASE, true, typeNumberMap, true);
                     }
@@ -548,6 +537,13 @@ public class ShopService {
             return typeNumberMap;
         }
 
+        //商店已有物品列表
+        List<Integer> list = integerListConcurrentHashMap.get(playerId);
+        if (list == null || list.isEmpty()) {
+            ServerLogger.warn("商店物品为空");
+            return typeNumberMap;
+        }
+
         //玩家购买物品
         ConcurrentHashMap<Integer, Integer> shopBuyRecords = playerData.getShopBuyRecords();
         if (shopBuyRecords == null || shopBuyRecords.isEmpty()) {
@@ -555,19 +551,36 @@ public class ShopService {
             return typeNumberMap;
         }
 
+        //全部购买的次数
+        Map<Integer, Integer> shopBuyAllMap = playerData.getShopBuyAllMap();
+        if (shopBuyAllMap == null) {
+            ServerLogger.warn("商店物品全部购买数据错误");
+            return typeNumberMap;
+        }
+
         //购买物品次数
         int count = 0;
-        for (Integer itemId : integerListConcurrentHashMap.keySet()) {
-            if (shopBuyRecords.contains(itemId)) {
+        for (Integer itemId : list) {
+            if (shopBuyRecords.containsKey(itemId)) {
                 count++;
             }
         }
 
-        if (typeNumberMap.containsKey(type)) {
-            typeNumberMap.put(type, count);
-        } else {
-            typeNumberMap.put(type, 1);
+        //叠加之前全部购买次数
+        Integer value = shopBuyAllMap.get(type);
+        if (count >= 6) {
+            if (value != null) {
+                shopBuyAllMap.put(type, value + 1);
+            } else {
+                shopBuyAllMap.put(type, 1);
+            }
         }
+
+        if (value != null) {
+            count += value * 6;
+        }
+
+        typeNumberMap.put(type, count);
 
         return typeNumberMap;
     }

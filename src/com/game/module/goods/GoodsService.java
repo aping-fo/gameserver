@@ -196,16 +196,10 @@ public class GoodsService {
         Map<Integer, Integer> map = Maps.newHashMap();
         PlayerData data = playerService.getPlayerData(playerId);
         PlayerCurrency currency = data.getCurrency();
-        for (int id : goodsList) { //TODO 后期做多资源支持
-            GoodsConfig cfg = GameData.getConfig(GoodsConfig.class, id);
+        for (int id : goodsList) {
             int total = 0;
-            if (cfg.type == Goods.CURRENCY) {
+            if (id == 109) {
                 total = (int) currency.get(id);
-            }
-            if (id == Goods.COIN) {
-
-            } else if (id == Goods.DIAMOND) {
-
             } else {
                 List<Goods> exists = getExistBagGoods(playerId, id);
                 for (Goods g : exists) {
@@ -298,18 +292,19 @@ public class GoodsService {
     }
 
     public boolean addGoodsToBag(int playerId, int goodsId, int count, LogConsume log, Object... params) {
-        return addGoodsToBag(playerId, new int[] {goodsId}, new int[] {count}, log, params);
+        return addGoodsToBag(playerId, new int[]{goodsId}, new int[]{count}, log, params);
     }
-        /**
-         * 增加物品
-         *
-         * @param playerId
-         * @param goodsIds
-         * @param counts
-         * @param log      日志类型
-         * @param params   日志参数（可选）
-         * @return 加入是否成功（背包是否已满)
-         */
+
+    /**
+     * 增加物品
+     *
+     * @param playerId
+     * @param goodsIds
+     * @param counts
+     * @param log      日志类型
+     * @param params   日志参数（可选）
+     * @return 加入是否成功（背包是否已满)
+     */
     public boolean addGoodsToBag(int playerId, int[] goodsIds, int[] counts, LogConsume log, Object... params) {
 
         if (goodsIds == null || goodsIds.length == 0 || counts == null || counts.length < goodsIds.length)
@@ -392,7 +387,7 @@ public class GoodsService {
             if (CommonUtil.contain(
                     ConfigData.globalParam().equipTypes,
                     config.type)) {
-                condParams.put(Task.FINISH_WEAR, new int[] {config.color, 1 });
+                condParams.put(Task.FINISH_WEAR, new int[]{config.color, 1});
 //                taskService.doTask(playerId, Task.FINISH_WEAR, config.color, 1);
             }
         }
@@ -493,12 +488,12 @@ public class GoodsService {
         if (addedGoods == null) {
             return false;
         }
-        List< List<GoodsEntry> > addedGoodsList = Lists.newArrayList();
+        List<List<GoodsEntry>> addedGoodsList = Lists.newArrayList();
         addedGoodsList.add(addedGoods);
         return checkCanAddListToBag(playerId, addedGoodsList) == 1;
     }
 
-    public int checkCanAddListToBag(int playerId, List< List<GoodsEntry> > addedGoodsList) {
+    public int checkCanAddListToBag(int playerId, List<List<GoodsEntry>> addedGoodsList) {
         int countValue = 0;
         int leftCounts[] = getBlankGridCounts(playerId);
         for (int i = 0; i < addedGoodsList.size(); ++i) {
@@ -803,6 +798,10 @@ public class GoodsService {
      */
     public void resetBag(int playerId) {
         Player player = playerService.getPlayer(playerId);
+        if (player == null) {
+            ServerLogger.warn("玩家不存在，玩家ID=" + playerId);
+            return;
+        }
         PlayerBag bag = null;
         synchronized (player) {
             bag = getPlayerBag(playerId);
@@ -1142,6 +1141,11 @@ public class GoodsService {
     public Int2Param compound(int playerId, int bagId) {
         Int2Param ret = new Int2Param();
         Goods goods = getGoods(playerId, bagId);
+        if (goods == null) {
+            ServerLogger.warn("物品不存在,物品id=" + bagId);
+            ret.param1 = Response.ERR_PARAM;
+            return ret;
+        }
         GoodsConfig config = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
         if (!checkCanAdd(playerId, config.param2[0][0], 1)) {
             ret.param1 = Response.BAG_FULL;

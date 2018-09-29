@@ -16,7 +16,7 @@ public class ActivationCode {
 
     private String overdueTime;
 
-    private Integer remarks;
+    private String remarks;
 
     private Integer universal;
 
@@ -66,11 +66,11 @@ public class ActivationCode {
         this.overdueTime = overdueTime == null ? null : overdueTime.trim();
     }
 
-    public Integer getRemarks() {
+    public String getRemarks() {
         return remarks;
     }
 
-    public void setRemarks(Integer remarks) {
+    public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
 

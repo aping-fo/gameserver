@@ -20,6 +20,7 @@ import com.game.params.player.*;
 import com.game.sdk.erating.ERatingService;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
+import com.game.util.HttpRequestUtil;
 import com.server.SessionManager;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
@@ -57,7 +58,7 @@ public class PlayerExtension {
     @UnLogin
     @Command(1001)
     public Object getRoleList(int playerId, CRegRoleListVo param, Channel channel) {
-        if (playerService.getPlayers().size() > SysConfig.maxCon) {
+        if (SessionManager.getInstance().getOnlineCount() > SysConfig.maxCon) {
             IntParam result = new IntParam();
             SessionManager.sendDataInner(channel, 1010, result);
             channel.close();
@@ -103,6 +104,14 @@ public class PlayerExtension {
             role.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
             vo.params.add(role);
         }
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/accountLog", "serverId=" + SysConfig.serverId + "&accountName=" + param.userId);
+            }
+        }).start();
+
         return vo;
     }
 
@@ -408,4 +417,7 @@ public class PlayerExtension {
 
         return result;
     }
+
+    //踢人下线
+    public static final int FORCE_LOGOUT = 1017;
 }

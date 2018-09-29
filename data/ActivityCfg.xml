@@ -224,8 +224,8 @@
 	<ActivityType>11</ActivityType>
 	<OpenType>2</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-27 00:00:00</BeginTime>
-	<EndTime>2018-09-27 23:55:00</EndTime>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
+	<EndTime>2018-09-26 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
@@ -260,7 +260,7 @@
 	<ActivityType>13</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-18 00:00:00</BeginTime>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
 	<EndTime>2019-09-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -350,7 +350,7 @@
 	<ActivityType>11</ActivityType>
 	<OpenType>2</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-19 00:00:00</BeginTime>
+	<BeginTime>2018-09-27 00:00:00</BeginTime>
 	<EndTime>2018-09-27 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -368,8 +368,8 @@
 	<ActivityType>11</ActivityType>
 	<OpenType>2</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-19 00:00:00</BeginTime>
-	<EndTime>2018-09-27 23:55:00</EndTime>
+	<BeginTime>2018-09-28 00:00:00</BeginTime>
+	<EndTime>2018-09-28 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
@@ -386,7 +386,7 @@
 	<ActivityType>11</ActivityType>
 	<OpenType>2</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-19 00:00:00</BeginTime>
+	<BeginTime>2018-09-29 00:00:00</BeginTime>
 	<EndTime>2018-09-29 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -404,8 +404,8 @@
 	<ActivityType>18</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-18 00:00:00</BeginTime>
-	<EndTime>2019-10-02 23:55:00</EndTime>
+	<BeginTime>2017-09-26 00:00:00</BeginTime>
+	<EndTime>2017-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
@@ -440,7 +440,7 @@
 	<ActivityType>20</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-18 00:00:00</BeginTime>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
 	<EndTime>2018-09-28 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -654,14 +654,14 @@
 	<name_en></name_en>
 	<Conds></Conds>
 	<ActivityType>26</ActivityType>
-	<OpenType>1</OpenType>
+	<OpenType>2</OpenType>
 	<TimeType>1</TimeType>
 	<BeginTime></BeginTime>
 	<EndTime></EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
-	<sort>20</sort>
+	<sort></sort>
 	<des></des>
 	<des_en></des_en>
 	<viewname>LoginPlayerNumReward</viewname>
@@ -674,7 +674,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-18 00:00:00</BeginTime>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -692,7 +692,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-19 00:00:00</BeginTime>
+	<BeginTime>2018-09-27 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -710,7 +710,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-20 00:00:00</BeginTime>
+	<BeginTime>2018-09-28 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -728,7 +728,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-21 00:00:00</BeginTime>
+	<BeginTime>2018-09-29 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -746,7 +746,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-22 00:00:00</BeginTime>
+	<BeginTime>2018-09-30 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -764,7 +764,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-23 00:00:00</BeginTime>
+	<BeginTime>2018-10-01 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -782,7 +782,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-24 00:00:00</BeginTime>
+	<BeginTime>2018-10-02 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -800,7 +800,7 @@
 	<ActivityType>31</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-18 00:00:00</BeginTime>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -818,8 +818,8 @@
 	<ActivityType>32</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-19 00:00:00</BeginTime>
-	<EndTime>2018-09-19 23:55:00</EndTime>
+	<BeginTime>2018-09-28 00:00:00</BeginTime>
+	<EndTime>2018-09-28 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
@@ -836,7 +836,7 @@
 	<ActivityType>33</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-20 00:00:00</BeginTime>
+	<BeginTime>2018-09-27 00:00:00</BeginTime>
 	<EndTime>2018-09-27 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -872,7 +872,7 @@
 	<ActivityType>33</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-21 00:00:00</BeginTime>
+	<BeginTime>2018-09-29 00:00:00</BeginTime>
 	<EndTime>2018-09-29 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -890,7 +890,7 @@
 	<ActivityType>33</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-22 00:00:00</BeginTime>
+	<BeginTime>2018-10-01 00:00:00</BeginTime>
 	<EndTime>2018-10-01 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -908,8 +908,8 @@
 	<ActivityType>32</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-20 00:00:00</BeginTime>
-	<EndTime>2018-09-20 23:55:00</EndTime>
+	<BeginTime>2018-09-30 00:00:00</BeginTime>
+	<EndTime>2018-09-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
@@ -926,7 +926,7 @@
 	<ActivityType>35</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-18 00:00:00</BeginTime>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
 	<EndTime>2018-09-26 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -944,7 +944,7 @@
 	<ActivityType>35</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-20 00:00:00</BeginTime>
+	<BeginTime>2018-09-28 00:00:00</BeginTime>
 	<EndTime>2018-09-28 23:55:01</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -962,7 +962,7 @@
 	<ActivityType>35</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-22 00:00:00</BeginTime>
+	<BeginTime>2018-09-30 00:00:00</BeginTime>
 	<EndTime>2018-09-30 23:55:02</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -980,7 +980,7 @@
 	<ActivityType>35</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-24 00:00:00</BeginTime>
+	<BeginTime>2018-10-02 00:00:00</BeginTime>
 	<EndTime>2018-10-02 23:55:03</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -998,8 +998,8 @@
 	<ActivityType>11</ActivityType>
 	<OpenType>2</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-19 00:00:00</BeginTime>
-	<EndTime>2018-09-29 23:55:00</EndTime>
+	<BeginTime>2018-09-30 00:00:00</BeginTime>
+	<EndTime>2018-09-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
@@ -1016,8 +1016,8 @@
 	<ActivityType>11</ActivityType>
 	<OpenType>2</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-09-19 00:00:00</BeginTime>
-	<EndTime>2018-09-29 23:55:00</EndTime>
+	<BeginTime>2018-10-01 00:00:00</BeginTime>
+	<EndTime>2018-10-01 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>

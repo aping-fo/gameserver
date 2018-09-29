@@ -7,8 +7,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.game.module.goods.Goods;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
+import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -64,8 +66,14 @@ public class MailService {
 //		}
 		
 		List<GoodsEntry> rewards = new ArrayList<GoodsEntry>(mail.getRewardsMap().size());
+		int expReward = 0;
 		for (Entry<Integer, Integer> reward : mail.getRewardsMap().entrySet()) {
-			rewards.add(new GoodsEntry(reward.getKey(), reward.getValue()));
+			int key = reward.getKey();
+			int count = reward.getValue();
+			if (key == Goods.EXP) {
+				expReward += count;
+			}
+			rewards.add(new GoodsEntry(key, count));
 		}
 		if (!goodsService.checkCanAddToBag(playerId, rewards)) {
 			result.code = Response.BAG_FULL;
@@ -78,6 +86,9 @@ public class MailService {
 			log = LogConsume.getLog(mail.getType());
 		}
 		goodsService.addRewards(playerId, rewards, log);
+		if (expReward > 0) {
+			ServerLogger.info("Mail Get ExpReward: playerId="+playerId+" mailid="+id+" exp="+expReward+" mailType="+mail.getType()+" LogConsume="+(log == null ? "null": log.toString()));
+		}
 		
 		result.rewards = mail.getRewards();
 		return result;
@@ -209,9 +220,10 @@ public class MailService {
 		SMailReward result = new SMailReward();
 		StringBuilder rewardStr = new StringBuilder();
 
-		List<Long> mailIds = Lists.newArrayList();
 		Map<Integer, List<List<GoodsEntry>>> allRewards = Maps.newHashMap();
+		Map<Integer, List<Long>> mailIds = Maps.newHashMap();
 
+		int allExpReward = 0;
 		for (Mail mail : mails) {
 			rewards.clear();
 
@@ -224,43 +236,52 @@ public class MailService {
 			int mailType = mail.getType();
 			if (!allRewards.containsKey(mailType)) {
 				allRewards.put(mailType, Lists.newArrayList());
+				mailIds.put(mailType, Lists.newArrayList());
 			}
 
 			if (mail.getHasReward() == 1 && !mail.getRewardsMap().isEmpty()) {
+				int expReward = 0;
 				for (Entry<Integer, Integer> entry : mail.getRewardsMap().entrySet()) {
-					rewards.add(new GoodsEntry(entry.getKey(), entry.getValue()));
+					int key = entry.getKey();
+					int count = entry.getValue();
+					if (key == Goods.EXP) {
+						expReward += count;
+					}
+					rewards.add(new GoodsEntry(key, count));
 				}
-//				//检查背包
-//				if (!goodsService.checkCanAddToBag(playerId, rewards)) {
-//					result.rewards = rewardStr.toString();
-//					result.code = Response.BAG_FULL;
-//					/*return result;*/
-//					continue;
-//				}
+				if (expReward > 0) {
+					ServerLogger.info("Mail Take All ExpReward: playerId="+playerId+" mailid="+mail.getId()+" exp="+expReward+" mailType="+mail.getType());
+				}
+				allExpReward += expReward;
+
+				//检查背包
+				if (!goodsService.checkCanAddToBag(playerId, rewards)) {
+					result.rewards = rewardStr.toString();
+					result.code = Response.BAG_FULL;
+					/*return result;*/
+					continue;
+				}
 //				mailDao.updateReward(mail.getId());
 //				goodsService.addRewards(playerId, rewards, log);
 //				for(GoodsEntry g:rewards){
 //					rewardStr.append(log.toString()).append(":").append(g.id).append(":").append(g.count).append(";");
 //				}
 
-				mailIds.add(mail.getId());
+				mailIds.get(mailType).add(mail.getId());
 				allRewards.get(mailType).add(rewards);
 				rewards = new ArrayList<>();
 			}
 		}
-
-		int count;
 		for (int mailType : allRewards.keySet()) {
 			rewards.clear();
-			count = goodsService.checkCanAddListToBag(playerId, allRewards.get(mailType));
-
+			int count = allRewards.get(mailType).size(); //goodsService.checkCanAddListToBag(playerId, allRewards.get(mailType));
 			for (int i = 0; i < count; ++i) {
 				for (GoodsEntry g : allRewards.get(mailType).get(i))
 				{
 					rewards.add(g);
 					rewardStr.append(mailType).append(":").append(g.id).append(":").append(g.count).append(";");
 				}
-				mailDao.updateReward(mailIds.get(i));
+				mailDao.updateReward(mailIds.get(mailType).get(i));
 			}
 
 			LogConsume log = LogConsume.GM;
@@ -268,6 +289,10 @@ public class MailService {
 				log = LogConsume.getLog(mailType);
 			}
 			goodsService.addRewards(playerId, rewards, log);
+		}
+
+		if (allExpReward > 0) {
+			ServerLogger.info("Mail Take All ExpReward End: playerId="+playerId+" allExpReward="+allExpReward);
 		}
 
 		//mailDao.takenAllRewards(playerId);

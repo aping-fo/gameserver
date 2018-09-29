@@ -36,6 +36,7 @@ import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
@@ -446,6 +447,7 @@ public class ActivityService implements InitHandler {
         data.setOnlineTime(0);
         data.setDailyRecharge(1);//重置每日充值
         List<ActivityTask> list = Lists.newArrayList();
+        boolean foundCardActivity = false;
         for (ActivityTask at : data.getAllActivityTasks()) {
             ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
             ActivityCfg cfg2 = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
@@ -453,13 +455,22 @@ public class ActivityService implements InitHandler {
                 if (cfg.ResetType == ActivityConsts.ActivityTaskResetType.T_DAILY) {
                     at.cleanup();
                     list.add(at);
+                    boolean isCarActivity = cfg2.ActivityType == ActivityConsts.ActivityType.T_CARD;
                     if (cfg2.ActivityType == ActivityConsts.ActivityType.T_GIFT_BOX
-                            || cfg2.ActivityType == ActivityConsts.ActivityType.T_CARD) {
+                            || isCarActivity) {
                         at.setFinishNum(0);
+                        if (isCarActivity) {
+                            foundCardActivity = isCarActivity;
+                        }
                     }
                 }
             }
         }
+
+        if (foundCardActivity) {
+            refreshDestinyCard(playerId);
+        }
+
         //检测登录活动
         List<ActivityTask> sevenTasks = completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_SEVEN_DAYS, data.getSevenDays(), ActivityConsts.UpdateType.T_VALUE, false);
         if (!sevenTasks.isEmpty()) {
@@ -496,6 +507,12 @@ public class ActivityService implements InitHandler {
         }
 
         for (ActivityCfg cfg : activityCfgs) {
+
+            //暂时关闭多余的2个宠物福利活动
+            if (cfg.id == 33 || cfg.id == 34) {
+                continue;
+            }
+
             if (cfg.ActivityType == ActivityConsts.ActivityType.T_SEVEN_DAYS) { //7天登录
                 if (data.getSevenDays() > cfg.Param0) {
                     continue;
@@ -721,7 +738,7 @@ public class ActivityService implements InitHandler {
             } else if (type == ActivityConsts.ActivityCondType.T_ITEM) {
                 GoodsEntry item = new GoodsEntry(cond[1], cond[2]);
                 items.add(item);
-            } else if (type ==  ActivityConsts.ActivityCondType.T_BUY_CARD) {
+            } else if (type == ActivityConsts.ActivityCondType.T_BUY_CARD) {
 
             }
         }
@@ -1160,11 +1177,11 @@ public class ActivityService implements InitHandler {
      * @param playerId 玩家id
      * @param type     活动任务类型
      */
-    public void completionCumulative(int playerId, int type) {
+    public void completionCumulative(int playerId, int type, int value) {
         PlayerData playerData = playerService.getPlayerData(playerId);
         if (playerData != null) {
             if (checkIsOpen(playerData, type)) {
-                completeActivityTask(playerId, type, 1, ActivityConsts.UpdateType.T_ADD, true);
+                completeActivityTask(playerId, type, value, ActivityConsts.UpdateType.T_ADD, true);
             }
         } else {
             ServerLogger.warn("玩家数据不存在，玩家id=" + playerId);
@@ -1198,7 +1215,7 @@ public class ActivityService implements InitHandler {
      */
     public void tour(int playerId, int type, int... value) {
         if (value.length == 0) {
-            completionCumulative(playerId, type);
+            completionCumulative(playerId, type, 1);
         } else if (value.length == 1) {
             absoluteValue(playerId, type, value[0]);
         }
@@ -1214,7 +1231,7 @@ public class ActivityService implements InitHandler {
         //巡礼活动计算积分
         ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
         if (config != null && config.ActivityType == ActivityConsts.ActivityType.T_TOUR) {
-            completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_INTEGRAL);
+            completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_INTEGRAL,1);
         }
     }
 
@@ -1312,7 +1329,7 @@ public class ActivityService implements InitHandler {
                 return petGetRewardVO;
             }
         }
-        if(!playerData.getCardRewardIdxSet().isEmpty() && playerData.getCardRewards().size() == 0) {
+        if (!playerData.getCardRewardIdxSet().isEmpty() && playerData.getCardRewards().size() == 0) {
             ServerLogger.warn("无次数");
             petGetRewardVO.errCode = Response.ERR_PARAM;
             return petGetRewardVO;
@@ -1321,7 +1338,7 @@ public class ActivityService implements InitHandler {
         List<GoodsEntry> goodsList = new ArrayList<>();
         int[] cost = ConfigData.globalParam().DestinyTurnCard[playerData.getCardRewardIdxSet().size()];
         goodsList.add(new GoodsEntry(cost[0], cost[1]));
-        if (goodsService.decConsume(playerId, goodsList,LogConsume.DestinyCard) != Response.SUCCESS) {
+        if (goodsService.decConsume(playerId, goodsList, LogConsume.DestinyCard) != Response.SUCCESS) {
             ServerLogger.warn("物品不足");
             petGetRewardVO.errCode = Response.ERR_GOODS_COUNT;
             return petGetRewardVO;
@@ -1331,8 +1348,8 @@ public class ActivityService implements InitHandler {
         //goodsService.decConsume(playerId, goodsList, LogConsume.DestinyCard);
 
         //构造奖励
-        if(playerData.getCardRewardIdxSet().isEmpty()) {
-            for(int[] arr : activityTaskCfg.Rewards) {
+        if (playerData.getCardRewardIdxSet().isEmpty()) {
+            for (int[] arr : activityTaskCfg.Rewards) {
                 playerData.getCardRewards().add(arr);
             }
         }
@@ -1345,11 +1362,11 @@ public class ActivityService implements InitHandler {
         List<GoodsEntry> goodsEntries = Lists.newArrayList();
         List<Reward> rewardArrayList = Lists.newArrayList();
         for (int i = 0; i < rewardArr.length; i += 2) {
-            goodsEntries.add(new GoodsEntry(rewardArr[i], rewardArr[i + 1]));
             Reward reward = new Reward();
             reward.id = rewardArr[i];
             reward.count = rewardArr[i + 1] + ConfigData.globalParam().DestinyTurnCardAdd * (playerData.getCardRewardIdxSet().size() - 1);
             rewardArrayList.add(reward);
+            goodsEntries.add(new GoodsEntry(reward.id, reward.count));
         }
         goodsService.addRewards(playerId, goodsEntries, LogConsume.DestinyCard);
         List<ActivityTask> updateTasks = Lists.newArrayList();
@@ -1367,7 +1384,7 @@ public class ActivityService implements InitHandler {
         petGetRewardVO.rewards = rewardArrayList;
         petGetRewardVO.errCode = Response.SUCCESS;
 
-        pushActivityUpdate(playerId,updateTasks);
+        pushActivityUpdate(playerId, updateTasks);
         return petGetRewardVO;
     }
 
@@ -1436,5 +1453,19 @@ public class ActivityService implements InitHandler {
         }
         pushActivityUpdate(playerId, tasks);
         return intParam;
+    }
+
+    private void refreshDestinyCard(int playerId)
+    {
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家ID=" + playerId);
+            return;
+        }
+
+        //检查次数
+        playerData.getCardRewardIdxSet().clear();
+        playerData.getCardRewards().clear();
+        playerData.setRefreshDestinyCardTimes(0);
     }
 }

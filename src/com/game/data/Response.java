@@ -36,6 +36,7 @@ public class Response {
 	public static final int WELCOME_MAIL_TITLE=100;//欢迎您来到《我守护的世界》
 	public static final int WELCOME_MAIL_CONTENT=101;//尊敬的玩家，感谢您对游戏的支持！有问题可以随时联系我们
 	public static final int RE_LOGIN=102;//重复登录
+	public static final int Max_Number=103;//服务器达到最大人数
 	//角色系统
 	public static final int SAME_NAME=1001;//该名字已被使用
 	public static final int NO_USER=1002;//不存在的角色
@@ -106,7 +107,7 @@ public class Response {
 	public static final int GANG_APPLY_MEMBER_MAX=2551;//该公会申请人数已满，请稍后再试
 	public static final int GANG_TRANSFER_TITLE=2552;//帮主转让通知
 	public static final int GANG_TRANSFER_CONTENT=2553;//%s已经成为新一任的帮主,带领大家踏上征途！
-	public static final int QUIT_GANG_LAST=2554;//退出公会12小时内无法加入新公会，请稍后再试
+	public static final int QUIT_GANG_LAST=2554;//退出公会24小时内无法加入新公会，请稍后再试
 	public static final int HAS_TAKE_REWARD=2555;//已经领取过奖励了
 	public static final int NO_CURRENCY=2556;//货币不足，无法使用该功能
 	public static final int GANG_TASK_TITLE=2561;//完成公会任务

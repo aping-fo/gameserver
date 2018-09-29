@@ -25,6 +25,7 @@ import com.game.params.Reward;
 import com.game.params.RewardList;
 import com.game.params.copy.CopyResult;
 import com.game.util.ConfigData;
+import com.google.common.collect.Maps;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -82,7 +83,7 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
             return Response.NO_TODAY_TIMES;
         }
         // 扣钱
-        Map<Integer, Integer> price = ConfigData.globalParam().catchGoldPrice;
+        Map<Integer, Integer> price = Maps.newHashMap(ConfigData.globalParam().catchGoldPrice);
         for (int key : price.keySet()) {
             price.replace(key, price.get(key) * buyCount);
         }
@@ -95,7 +96,7 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
         attach.commitSync();
 
         //金币副本活动
-        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
+        activityService.completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_RESOURCE_PURCHASE, buyCount);
 
         return Response.SUCCESS;
     }
@@ -132,7 +133,7 @@ public class CatchGoldLogic extends AttachLogic<CatchGoldAttach> {
         }
 
         // 扣钱
-        int code = goodsService.decConsume(playerId, ConfigData.globalParam().catchGoldPrice, LogConsume.QUICK_GOLD, difficulty);
+        int code = goodsService.decConsume(playerId, ConfigData.globalParam().quickCatchGoldCopy, LogConsume.QUICK_GOLD, difficulty);
         if (code != Response.SUCCESS) {
             result.code = code;
             return result;

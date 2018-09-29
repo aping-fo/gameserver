@@ -251,10 +251,6 @@ public class EndlessLogic extends AttachLogic<EndlessAttach> {
         int rank = 1;
 
         for (RankEntity entity : list) {
-            //TODO  临时代码，去除排行榜
-            if (entity.getPlayerId() == 7825020 || entity.getPlayerId() == 4796020) {
-                continue;
-            }
             mailService.sendRewardMail(entity.getPlayerId(), MailService.ENDLESS_RANK, rank, LogConsume.ENDLESS_RANK_REWARD, rank);
             rank++;
         }

@@ -76,9 +76,7 @@ public class GangExtension {
     // 申请帮派
     @Command(2504)
     public Object apply(int playerId, IntParam param) {
-        IntParam result = new IntParam();
-        result.param = gangService.apply(playerId, param.param);
-        return result;
+        return gangService.apply(playerId, param.param);
     }
 
     public static final int JOIN_GANG_SUCESS = 2505;

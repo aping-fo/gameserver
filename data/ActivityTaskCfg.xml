@@ -679,7 +679,7 @@
 	<ActivityId>13</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20001]]</Conds>
-	<Rewards>[[302002,50],[20005,30],[12600,5]]</Rewards>
+	<Rewards>[[50203,10],[20005,30],[301363,5]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -693,7 +693,7 @@
 	<ActivityId>20</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20002]]</Conds>
-	<Rewards>[[50203,5],[109,30],[10901,30]]</Rewards>
+	<Rewards>[[50833,10],[20005,30],[103,300000]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -707,7 +707,7 @@
 	<ActivityId>21</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20003]]</Conds>
-	<Rewards>[[301100,1],[16000,50],[301332,5]]</Rewards>
+	<Rewards>[[50883,10],[20005,30],[301364,5]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -721,7 +721,7 @@
 	<ActivityId>22</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20004]]</Conds>
-	<Rewards>[[302002,50],[20005,30],[12600,5]]</Rewards>
+	<Rewards>[[50503,10],[20005,30],[301363,5]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -735,7 +735,7 @@
 	<ActivityId>111</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20005]]</Conds>
-	<Rewards>[[50833,5],[109,30],[10901,30]]</Rewards>
+	<Rewards>[[51303,10],[20005,30],[103,300000]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -749,7 +749,7 @@
 	<ActivityId>112</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20006]]</Conds>
-	<Rewards>[[301101,1],[16000,50],[301332,5]]</Rewards>
+	<Rewards>[[50103,10],[20005,30],[301364,5]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -2638,7 +2638,7 @@
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[35,6,17]]</Conds>
+	<Conds>[[35,6,1]]</Conds>
 	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0>2</Param0>
@@ -2648,11 +2648,11 @@
 </config>
 <config>
 	<id>7505</id>
-	<name>特价商城商品一次性全部购买1次</name>
+	<name>限时商城商品一次性全部购买2次</name>
 	<name_en></name_en>
 	<ActivityId>71</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[35,6,18]]</Conds>
+	<Conds>[[35,12,1]]</Conds>
 	<Rewards>[[102,600]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0>2</Param0>
@@ -2672,7 +2672,7 @@
 	<Param0>2</Param0>
 	<des></des>
 	<des_en></des_en>
-	<Param1>1</Param1>
+	<Param1>0</Param1>
 </config>
 <config>
 	<id>7601</id>
@@ -2686,7 +2686,7 @@
 	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
-	<Param1>0</Param1>
+	<Param1>1</Param1>
 </config>
 <config>
 	<id>7602</id>
@@ -3120,7 +3120,7 @@
 	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
-	<Param1>1</Param1>
+	<Param1>0</Param1>
 </config>
 <config>
 	<id>8201</id>
@@ -3134,7 +3134,7 @@
 	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
-	<Param1>0</Param1>
+	<Param1>1</Param1>
 </config>
 <config>
 	<id>8202</id>
@@ -3344,7 +3344,7 @@
 	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
-	<Param1>1</Param1>
+	<Param1>0</Param1>
 </config>
 <config>
 	<id>8501</id>
@@ -3358,7 +3358,7 @@
 	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
-	<Param1>0</Param1>
+	<Param1>1</Param1>
 </config>
 <config>
 	<id>8502</id>
@@ -3568,7 +3568,7 @@
 	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
-	<Param1>1</Param1>
+	<Param1>0</Param1>
 </config>
 <config>
 	<id>8801</id>
@@ -3582,7 +3582,7 @@
 	<Param0>4</Param0>
 	<des></des>
 	<des_en></des_en>
-	<Param1>0</Param1>
+	<Param1>1</Param1>
 </config>
 <config>
 	<id>8802</id>
@@ -3859,7 +3859,7 @@
 	<Conds>[[15,102,98]]</Conds>
 	<Rewards>[[108,30],[103,10000]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>100</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3873,7 +3873,7 @@
 	<Conds>[[15,102,680]]</Conds>
 	<Rewards>[[301333,50],[103,50000]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>100</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3887,7 +3887,7 @@
 	<Conds>[[15,102,980]]</Conds>
 	<Rewards>[[65201,30],[301323,3],[103,100000]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>100</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3901,7 +3901,7 @@
 	<Conds>[[15,102,1980]]</Conds>
 	<Rewards>[[109,80],[10901,50],[301333,20]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>200</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3915,7 +3915,7 @@
 	<Conds>[[15,102,3280]]</Conds>
 	<Rewards>[[51004,1],[17000,15],[16000,10]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>200</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3929,7 +3929,7 @@
 	<Conds>[[15,102,6480]]</Conds>
 	<Rewards>[[20013,180],[17001,10],[301323,10]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>200</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -4055,7 +4055,7 @@
 	<Conds>[[15,102,98]]</Conds>
 	<Rewards>[[108,30],[103,10000]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>100</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -4069,7 +4069,7 @@
 	<Conds>[[15,102,680]]</Conds>
 	<Rewards>[[301333,50],[103,50000]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>100</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -4083,7 +4083,7 @@
 	<Conds>[[15,102,980]]</Conds>
 	<Rewards>[[65201,30],[301323,3],[103,100000]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>100</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -4097,7 +4097,7 @@
 	<Conds>[[15,102,1980]]</Conds>
 	<Rewards>[[109,80],[10901,50],[301333,20]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>200</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -4111,7 +4111,7 @@
 	<Conds>[[15,102,3280]]</Conds>
 	<Rewards>[[50904,1],[17000,15],[16000,10]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>200</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -4125,7 +4125,7 @@
 	<Conds>[[15,102,6480]]</Conds>
 	<Rewards>[[20013,180],[17001,10],[301323,10]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>5</Param0>
+	<Param0>200</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -4192,7 +4192,7 @@
 	<name_en></name_en>
 	<ActivityId>100</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[81,100]]</Conds>
+	<Conds>[[81,120]]</Conds>
 	<Rewards>[[50504,5],[65031,50],[20014,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -4262,7 +4262,7 @@
 	<name_en></name_en>
 	<ActivityId>101</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[81,100]]</Conds>
+	<Conds>[[81,120]]</Conds>
 	<Rewards>[[20007,40],[17001,15],[10901,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -4332,7 +4332,7 @@
 	<name_en></name_en>
 	<ActivityId>102</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[81,100]]</Conds>
+	<Conds>[[81,120]]</Conds>
 	<Rewards>[[65131,50],[17001,15],[16000,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -4402,7 +4402,7 @@
 	<name_en></name_en>
 	<ActivityId>103</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[81,100]]</Conds>
+	<Conds>[[81,120]]</Conds>
 	<Rewards>[[50804,5],[17001,15],[10901,50]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>

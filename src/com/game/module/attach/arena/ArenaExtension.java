@@ -232,7 +232,7 @@ public class ArenaExtension {
         }
         int price = 0;
         for (int[] arr : ConfigData.globalParam().arenaBuyChallenge) {
-            if(buyCount < arr[1]){
+            if (buyCount < arr[1]) {
                 int _buyCount = 0;
                 _buyCount = Math.min(buyCount, arr[1] - count);
 
@@ -249,7 +249,7 @@ public class ArenaExtension {
             attach.commitSync();
 
             //好友活动
-            activityService.completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_ARENA_CHALLENGE);
+            activityService.completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_ARENA_CHALLENGE, 1);
         }
         return result;
     }

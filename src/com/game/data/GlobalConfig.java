@@ -165,7 +165,8 @@ public class GlobalConfig {
 	public float[] mainCityMapParas;//主城功能地图移动参数(移动速度/左边X限制/右边X限制)
 	public Map<Integer,Integer> petMutateItemRate;//宠物变异概率加成物品及加成概率
 	public float killedTimesFactor;//死亡次数因子
-	public float[] RobotParas;//机器人属性参数
+	public float[] RobotParas;//怪物属性参数
+	public float[] RobotValue;//竞技场机器人生成属性参数
 	public Map<Integer,Integer> buyMainCopyPrice;//主线副本次数购买价格
 	public float ladderAiRate;//竞技场AI属性系数
 	public int[] standaloneRoleIds;//预览单机副本登录前角色顺序(角色信息表里的ID)

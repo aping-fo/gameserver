@@ -112,7 +112,13 @@ public class GiftBagService {
         }
 
         //是否领取过该礼包
-        if(playerData.getGiftBagSet().contains(activationCode.substring(5, 8))){
+        if (activationCode.length() < 8) {
+            ServerLogger.warn("激活码=" + activationCodeParam.param);
+            param.errCode = Response.ACTIVATION_CODE_INVALID;
+            return param;
+        }
+
+        if (playerData.getGiftBagSet().contains(activationCode.substring(5, 8))) {
             param.errCode = Response.HAS_RECEIVE_GIFTBAG;
             return param;
         }
