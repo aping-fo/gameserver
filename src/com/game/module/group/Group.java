@@ -4,6 +4,7 @@ import com.game.data.Response;
 import com.game.params.Int2Param;
 import com.game.params.group.GroupStageVO;
 import com.game.params.group.GroupVO;
+import com.server.util.ServerLogger;
 
 import java.util.*;
 import java.util.concurrent.locks.ReentrantLock;
@@ -41,7 +42,7 @@ public class Group {
         this.leader = leader;
         this.level = level;
         this.openFlag = false;
-        this.isStart  = false;
+        this.isStart = false;
         this.groupCopyId = groupCopyId;
         this.beginStageId = beginStageId;
 
@@ -124,6 +125,10 @@ public class Group {
         try {
             lock.lock();
             GroupTeam team = teamMap.get(teamId);
+            if (team == null) {
+                ServerLogger.warn("队伍不存在");
+                return 0;
+            }
             team.remove(playerId);
             if (leader == playerId) {
                 for (Map.Entry<Integer, GroupTeam> s : teamMap.entrySet()) {

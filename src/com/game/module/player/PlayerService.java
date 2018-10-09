@@ -153,7 +153,7 @@ public class PlayerService implements InitHandler {
             }
         }
 
-        HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/onlinePlayer", "serverId=" + SysConfig.serverId + "&maxRoleCount=" + SessionManager.getInstance().getOnlineCount());
+        HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/onlinePlayer", "serverId=" + SysConfig.serverId + "&maxRoleCount=" + SessionManager.getInstance().getAllSessions().size());
     }
 
     // 获取一个新的UserId
@@ -595,6 +595,7 @@ public class PlayerService implements InitHandler {
         vo.head = data.getCurHead();
         vo.signDay = data.getSign();
         vo.signFlag = data.getSignFlag();
+        vo.online = player.online;
 
         if (player.getGangId() > 0) {
             Gang gang = gangService.getGang(player.getGangId());

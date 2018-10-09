@@ -56,7 +56,7 @@ public class PlayerVo implements IProtocol {
 	public String serverName;//区服名
 	public int onlineTime;//在线时长(秒)
 	public int gatewayId;//gatewayId
-
+	public boolean online;//是否在线
 
 	public void decode(BufferBuilder bb) {
 		this.code = bb.getInt();
@@ -110,6 +110,7 @@ public class PlayerVo implements IProtocol {
 		this.serverName = bb.getString();
 		this.onlineTime = bb.getInt();
 		this.gatewayId = bb.getInt();
+		this.online = bb.getBoolean();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -164,5 +165,6 @@ public class PlayerVo implements IProtocol {
 		bb.putString(this.serverName);
 		bb.putInt(this.onlineTime);
 		bb.putInt(this.gatewayId);
+		bb.putBoolean(this.online);
 	}
 }

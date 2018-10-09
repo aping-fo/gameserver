@@ -855,6 +855,11 @@ public class GoodsService {
         }
         GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
 
+        if (cfg == null) {
+            ServerLogger.warn("物品不存在，物品ID=" + goods.getGoodsId());
+            return result;
+        }
+
         if (player.getLev() < cfg.level) {
             return result;
         }
