@@ -20,6 +20,7 @@ import com.game.params.player.PlayerVo;
 import com.game.util.*;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
+import com.sun.net.httpserver.Authenticator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -44,8 +45,14 @@ public class ManagerService implements InitHandler {
     public static final String BAN = "ban";
     public static final String FAIL = "fail";
 
-    public static final int BAN_LOGIN = 1;//禁止登录
-    public static final int BAN_CHAT = 2;//禁止聊天
+    public static final int BAN_CHAT = 1;//禁言
+    public static final int BAN_LOGIN = 2;//封号
+    public static final int BAN_IP = 3;//禁ip
+    public static final int BAN_IMEI = 4;//禁IMEI
+    public static final int KICK_LINE = 5;//踢下线
+
+    public static final int BAN_PROHIBITION = 1;//封禁
+    public static final int BAN_UNSEAL = 2;//解封
 
     @Autowired
     private PlayerService playerService;
@@ -64,13 +71,16 @@ public class ManagerService implements InitHandler {
     @Autowired
     private FriendService friendService;
 
-    private Map<Integer, UserManager> bans;
+    private Map<String, ProhibitionEntity> bans;
 
     @Override
     public void handleInit() {
         bans = new ConcurrentHashMap<>();
-        for (UserManager u : managerDao.all()) {
-            bans.put(u.getPlayerId(), u);
+        List<ProhibitionEntity> prohibitionEntityList = Context.getLoggerService().allProhibition();
+        if (prohibitionEntityList != null && !prohibitionEntityList.isEmpty()) {
+            for (ProhibitionEntity o : prohibitionEntityList) {
+                bans.put(o.getClosureAccount(), o);
+            }
         }
     }
 
@@ -177,34 +187,40 @@ public class ManagerService implements InitHandler {
             playerIds.add(playerId);
         }
 
-
         //发邮件
         sendMail(title, content, rewards, playerIds);
         return RETURN_SUCCESS;
     }
 
-    /**
-     * 封禁
-     */
+    //封禁/解封
     public String handle_ban(Map<String, String> params) {
         int ban = Integer.parseInt(params.get("ban"));
-        int playerId = Integer.parseInt(params.get("id"));
         int type = Integer.parseInt(params.get("type"));
-        int time = Integer.parseInt(params.get("hour"));
-        if (type == BAN_LOGIN) {//登陆
-            if (ban == 0) {//解封
-                removeBan(BAN_LOGIN, playerId);
-            } else {
-                banLogin(playerId, time);
+        Long hour = Long.parseLong(params.get("hour"));
+        String closureAccount = params.get("closureAccount");
+
+        ProhibitionEntity prohibition = new ProhibitionEntity();
+        prohibition.setClosureType(ban);
+        prohibition.setClosureWay(type);
+        prohibition.setClosureAccount(closureAccount);
+        prohibition.setClosureTime(hour);
+        Date time = new Date();
+        time.setTime(time.getTime() + TimeUtil.ONE_SECOND * hour);
+        prohibition.setEndTime(time);
+
+        ProhibitionEntity p = bans.get(closureAccount);
+        if (p == null) {
+            if (ban == BAN_PROHIBITION) {
+                bans.put(closureAccount, prohibition);
             }
-        } else {//禁言
-            if (ban == 0) {
-                removeBan(BAN_CHAT, playerId);
-                SessionManager.getInstance().kick(playerId);
-            } else {
-                banChat(playerId, time);
+        } else {
+            if (ban == BAN_PROHIBITION) {
+                bans.put(closureAccount, prohibition);
+            } else if (ban == BAN_UNSEAL) {
+                bans.remove(closureAccount);
             }
         }
+
         return RETURN_SUCCESS;
     }
 
@@ -347,7 +363,7 @@ public class ManagerService implements InitHandler {
             return Response.SAME_NAME + "";
         }
 
-        playerService.addNewPlayer(player.getName(), player.getSex(), player.getVocation(), player.getAccName(), player.getChannel(), SysConfig.serverId + "", playerData.getServerName(), player.userId, playerData.getThirdChannel(), playerData.getThirdUserId());
+        playerService.addNewPlayer(player.getName(), player.getSex(), player.getVocation(), player.getAccName(), player.getChannel(), SysConfig.serverId + "", playerData.getServerName(), player.userId, playerData.getThirdChannel(), playerData.getThirdUserId(), player.getClientMac());
 
         return RETURN_SUCCESS;
     }
@@ -379,78 +395,24 @@ public class ManagerService implements InitHandler {
         sendMail(title, content, attach.toString(), ids);
     }
 
-    public UserManager getBanInfo(int playerId) {
-        return bans.get(playerId);
-    }
-
-    //获取封禁信息
-    public UserManager checkBanInfo(int playerId) {
-        UserManager u = bans.get(playerId);
-        if (u != null && (u.getBanChat() > 0 || u.getBanLogin() > 0)) {
-            Date now = new Date();
-            if (u.getBanChat() > 0) {
-                if (now.getTime() > u.getBanChatEnd().getTime()) {
-                    u.setBanChat(0);
-                    managerDao.update(u);
-                }
-            }
-            if (u.getBanLogin() > 0) {
-                if (now.getTime() > u.getBanLoginEnd().getTime()) {
-                    u.setBanLogin(0);
-                    managerDao.update(u);
-                }
-            }
+    //封禁检测
+    public Boolean checkBan(String closureAccount, int type) {
+        ProhibitionEntity prohibition = bans.get(closureAccount);
+        if (prohibition == null) {
+            return false;
         }
-        return u;
-    }
 
-    //解除封禁
-    private void removeBan(int type, int playerId) {
-        UserManager u = bans.get(playerId);
-        if (type == BAN_LOGIN) {
-            u.setBanLogin(0);
-        } else if (type == BAN_CHAT) {
-            u.setBanChat(0);
+        if (prohibition.getClosureWay() != type) {
+            return false;
         }
-        managerDao.update(u);
-        bans.put(playerId, u);
-    }
 
-    //禁止登录
-    public void banLogin(int playerId, int hour) {
-        UserManager u = bans.get(playerId);
-        if (u == null) {
-            u = new UserManager();
-            u.setPlayerId(playerId);
-            managerDao.insert(u);
+        //封禁结束
+        if (prohibition.getEndTime().getTime() < new Date().getTime()) {
+            bans.remove(closureAccount);
+            return false;
         }
-        u.setBanLogin(hour);
-        Date time = new Date();
-        time.setTime(time.getTime() + TimeUtil.ONE_HOUR * hour);
-        u.setBanLoginEnd(time);
-        managerDao.update(u);
 
-        bans.put(playerId, u);
-
-        SessionManager.getInstance().kick(playerId);
-    }
-
-    //禁止聊天
-    private void banChat(int playerId, int hour) {
-        UserManager u = bans.get(playerId);
-        if (u == null) {
-            u = new UserManager();
-            u.setPlayerId(playerId);
-            managerDao.insert(u);
-        }
-        u.setBanChat(hour);
-        Date time = new Date();
-        time.setTime(time.getTime() + TimeUtil.ONE_HOUR * hour);
-        u.setBanChatEnd(time);
-        managerDao.update(u);
-
-        bans.put(playerId, u);
-        SessionManager.getInstance().kick(playerId);
+        return true;
     }
 
     //=====================================================

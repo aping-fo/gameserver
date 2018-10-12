@@ -58,6 +58,7 @@ public class PlayerVo implements IProtocol {
 	public int gatewayId;//gatewayId
 	public boolean online;//是否在线
 
+
 	public void decode(BufferBuilder bb) {
 		this.code = bb.getInt();
 		this.playerId = bb.getInt();

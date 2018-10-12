@@ -64,6 +64,7 @@ public class PlayerData {
 
     private int equipMaterial;//装备分解活动的材料
     private ConcurrentHashMap<Integer, Integer> strengths = new ConcurrentHashMap<Integer, Integer>();//装备位强化等级
+    private ConcurrentHashMap<Integer, Integer> stars = new ConcurrentHashMap<Integer, Integer>();//装备位星等级
 
     private Map<Integer, Jewel> jewels = new ConcurrentHashMap<Integer, Jewel>();//装备位强化等级
 
@@ -199,6 +200,14 @@ public class PlayerData {
     private int loginContinueDays; //连续登陆
     private int maxLoginContinueDays; //连续登陆
     private Map<Integer, Integer> shopBuyAllMap = new ConcurrentHashMap<>();//商店全部购买
+
+    public ConcurrentHashMap<Integer, Integer> getStars() {
+        return stars;
+    }
+
+    public void setStars(ConcurrentHashMap<Integer, Integer> stars) {
+        this.stars = stars;
+    }
 
     public Map<Integer, Integer> getShopBuyAllMap() {
         return shopBuyAllMap;

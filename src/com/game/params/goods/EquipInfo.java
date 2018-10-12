@@ -8,6 +8,7 @@ import com.game.params.*;
 public class EquipInfo implements IProtocol {
 	public List<AttrItem> strengths;//部位强化信息[{部位,强化等级}}
 	public List<Jewel> jewels;//宝石信息
+	public List<AttrItem> stars;//部位升星信息[{部位,强化等级}}
 
 
 	public void decode(BufferBuilder bb) {
@@ -61,10 +62,36 @@ public class EquipInfo implements IProtocol {
 
             }
         }
+		
+        if (bb.getNullFlag())
+            this.stars = null;
+        else {
+            int length = bb.getInt();
+            this.stars = new ArrayList<AttrItem>();
+            for (int i = 0; i < length; i++)
+            {
+                //如果元素不够先创建一个，Java泛型创建对象，性能？
+                boolean isNull = bb.getNullFlag();
+
+                //如果不是null就解析
+                if(isNull)
+                {
+                    this.stars.add(null);
+                }
+                else
+                {
+                    AttrItem instance = new AttrItem();
+                    instance.decode(bb);
+                    this.stars.add(instance);
+                }
+
+            }
+        }
 	}
 
 	public void encode(BufferBuilder bb) {
 		bb.putProtocolVoList(this.strengths);
 		bb.putProtocolVoList(this.jewels);
+		bb.putProtocolVoList(this.stars);
 	}
 }

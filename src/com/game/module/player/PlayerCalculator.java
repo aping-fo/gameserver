@@ -201,10 +201,8 @@ public class PlayerCalculator {
                 fu += star.fu;
                 symptom += star.symptom;
             }
-            Integer strengthLev = data.getStrengths().get(cfg.type);
-            if (strengthLev == null) {
-                strengthLev = 0;
-            }
+
+            int strengthLev = data.getStrengths().getOrDefault(cfg.type,0);
             EquipStrengthCfg strength = ConfigData.getConfig(EquipStrengthCfg.class, cfg.type * 1000 + strengthLev);
             if (strength != null) {
                 hp += (int) (hp * strength.add * 0.01f);
@@ -214,6 +212,18 @@ public class PlayerCalculator {
                 fu += (int) (fu * strength.add * 0.01f);
                 symptom += (int) (symptom * strength.add * 0.01f);
             }
+
+            int starLev = data.getStars().getOrDefault(cfg.type,0);
+            EquipUpCfg upCfg = ConfigData.getConfig(EquipUpCfg.class, cfg.type * 1000 + starLev);
+            if (upCfg != null) {
+                hp += upCfg.hp;
+                attack += upCfg.attack;
+                defense += upCfg.defense;
+                crit += upCfg.crit;
+                fu += upCfg.fu;
+                symptom += upCfg.symptom;
+            }
+
             player.addAttack(attack);
             player.addCrit(crit);
             player.addDefense(defense);
@@ -406,11 +416,11 @@ public class PlayerCalculator {
         }
 
         for (int i = 0; i < list.size(); i++) {
-            FashionCollectCfg cfg = (FashionCollectCfg) list.get(i);
+            FashionCollectCfg cfg = list.get(i);
             boolean find = false;
             if (glamour >= cfg.value) {
                 if (i != list.size() - 1) {//最后一个
-                    FashionCollectCfg cfgNext = (FashionCollectCfg) list.get(i + 1);
+                    FashionCollectCfg cfgNext =  list.get(i + 1);
                     if (glamour >= cfg.value && glamour < cfgNext.value) {
                         find = true;
                     }
@@ -430,9 +440,13 @@ public class PlayerCalculator {
             }
         }
 
-        addFashionAttr(player, p.getFashionId());
-        addFashionAttr(player, p.getWeaponId());
-        addFashionAttr(player, data.getCurHead());
+        //时装属性加成
+        for(int fashionId : data.getFashionMap().keySet()){
+            addFashionAttr(player, fashionId);
+        }
+        //addFashionAttr(player, p.getFashionId());
+        //addFashionAttr(player, p.getWeaponId());
+        //addFashionAttr(player, data.getCurHead());
     }
 
     private void addFashionAttr(PlayerAddition player, int id) {

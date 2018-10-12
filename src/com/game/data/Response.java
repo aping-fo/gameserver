@@ -12,8 +12,6 @@ public class Response {
 	public static final int NO_ENERGY=5;//体力不足
 	public static final int ERR_PARAM=6;//参数错误,非法请求
 	public static final int NO_VIP=7;//VIP等级不足
-	public static final int BAN_LOGIN=8;//角色处于封禁中,请 联系客服
-	public static final int BAN_CHAT=9;//您的账号处于禁言中
 	public static final int NO_LEV=10;//等级不足
 	public static final int SYS_NUM_ERR=11;//系统检测到异常行为1，即将断开连接，请联系客服
 	public static final int SYS_KEY_ERR=12;//系统检测到异常行为2，即将断开连接，请联系客服
@@ -224,5 +222,10 @@ public class Response {
 	public static final int FACEBOOK_NO_FACEBOOK=4402;//非Facebook账号登陆
 	public static final int FACEBOOK_NOT_INVITOR=4403;//非邀请玩家
 	public static final int FACEBOOK_EMAIL_INVITE_TITLE=4410;//Facebook玩家邀请奖励
+	//封禁提示
+	public static final int BAN_LOGIN=4501;//账户处于封禁中，请联系客服
+	public static final int BAN_IP=4502;//IP处于封禁中，请联系客服
+	public static final int BAN_IMEI=4503;//设备处于封禁中，请联系客服
+	public static final int BAN_CHAT=4504;//角色处于禁言中，请联系客服
 
 }

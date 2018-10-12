@@ -131,4 +131,14 @@ public class BagExtension {
     public Object getOtherEquips(int playerId, IntParam param) {
         return goodsService.getOtherEquips(playerId, param.param);
     }
+
+    //强化
+    @Command(1217)
+    public Object star(int playerId, Int3Param int3Param) {
+        IntParam result = new IntParam();
+        int type = int3Param.param1;
+        int code = equipService.strengthStar(playerId, type, int3Param.param2 == 1,int3Param.param3);
+        result.param = code;
+        return result;
+    }
 }

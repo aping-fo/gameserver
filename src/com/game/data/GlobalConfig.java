@@ -52,6 +52,7 @@ public class GlobalConfig {
 	public int restoreEnergy;//体力恢复
 	public int strengthTicket;//强化券id
 	public int strengthTicketAdd;//强化券增加概率
+	public int EquipUpAdd;//升星券增加概率
 	public Map<Integer,int[]> jewelCost;//宝石升级消耗道具类型
 	public Map<Integer,int[]> jewelOpenLev;//宝石孔开启等级
 	public int clearCostCoin;//洗练单次消耗洗练石id16000
@@ -182,4 +183,5 @@ public class GlobalConfig {
 	public int[] DestinyCard;//命运卡牌刷新消耗
 	public int[][] DestinyTurnCard;//命运卡牌翻卡消耗
 	public int DestinyTurnCardAdd;//命运卡牌翻卡递增倍数
+	public int[] equipLimit;//装备品质升星上限
 }

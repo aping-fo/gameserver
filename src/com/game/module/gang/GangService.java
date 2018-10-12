@@ -367,6 +367,10 @@ public class GangService implements InitHandler {
 
         vo.technology = new ArrayList<>();
         vo.technology.addAll(myGang.getTechnologys());
+
+        //公会等级活动
+        activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_GUILD_GRADE, myGang.getLev());
+
         return vo;
     }
 

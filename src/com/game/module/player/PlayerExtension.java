@@ -4,17 +4,12 @@ import com.game.SysConfig;
 import com.game.data.Response;
 import com.game.event.DefaultLogoutHandler;
 import com.game.event.LoginHandler;
-import com.game.module.activity.ActivityConsts;
 import com.game.module.admin.ManagerService;
-import com.game.module.admin.UserManager;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
-import com.game.module.serial.SerialData;
-import com.game.module.serial.SerialDataService;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
-import com.game.params.ListParam;
 import com.game.params.StringParam;
 import com.game.params.player.*;
 import com.game.sdk.erating.ERatingService;
@@ -69,8 +64,26 @@ public class PlayerExtension {
         ServerLogger.info("获取角色列表");
         channel.attr(CHANNEL).set(param.userId);
 
-        ListParam<SRoleVo> vo = new ListParam<SRoleVo>();
-        vo.params = new ArrayList<SRoleVo>(roleList.size());
+        RoleInfoList roleInfoList=new RoleInfoList();
+        roleInfoList.roleInfoVoList = new ArrayList<SRoleVo>(roleList.size());
+
+        //账户封禁检测
+        if (managerService.checkBan(param.userId,ManagerService.BAN_LOGIN)) {
+            roleInfoList.errorCode = Response.BAN_LOGIN;
+            return roleInfoList;
+        }
+
+        //IP封禁检测
+        if (managerService.checkBan(param.ipAddress,ManagerService.BAN_IP)) {
+            roleInfoList.errorCode = Response.BAN_IP;
+            return roleInfoList;
+        }
+
+        //设备封禁检测
+        if (managerService.checkBan(param.deviceId,ManagerService.BAN_IMEI)) {
+            roleInfoList.errorCode = Response.BAN_IMEI;
+            return roleInfoList;
+        }
 
         for (Player player : roleList) {
             fashionService.checkRemoveTimeoutFashions(player.getPlayerId(), false);
@@ -102,7 +115,7 @@ public class PlayerExtension {
                 }
             }
             role.head = playerService.getPlayerData(player.getPlayerId()).getCurHead();
-            vo.params.add(role);
+            roleInfoList.roleInfoVoList.add(role);
         }
 
         new Thread(new Runnable() {
@@ -112,7 +125,7 @@ public class PlayerExtension {
             }
         }).start();
 
-        return vo;
+        return roleInfoList;
     }
 
     @UnLogin
@@ -156,7 +169,7 @@ public class PlayerExtension {
             result.code = Response.TOO_MANY_ROLE;
             return result;
         }
-        Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName, param.channel, param.serverId, param.serverName, param.userId, param.thirdChannel, param.thirdUserId);
+        Player player = playerService.addNewPlayer(param.name, param.sex, param.vocation, param.accName, param.channel, param.serverId, param.serverName, param.userId, param.thirdChannel, param.thirdUserId, param.clientMac);
         if (player == null) {
             result.code = Response.SAME_NAME;
             return result;
@@ -223,11 +236,7 @@ public class PlayerExtension {
             result.code = Response.TOO_MANY_CON;
             return result;
         }
-        UserManager ban = managerService.checkBanInfo(param.playerId);
-        if (ban != null && ban.getBanLogin() > 0) {
-            result.code = Response.BAN_LOGIN;
-            return result;
-        }
+
         // 登录验证
         int auth = playerService.auth();
         if (auth != 0) {
@@ -276,9 +285,7 @@ public class PlayerExtension {
         playerCalculator.calculate(playerId);
 
         result = playerService.toSLoginVo(playerId);
-        if (ban != null && ban.getBanChat() > 0) {
-            result.banChat = true;
-        }
+
         PlayerData data = playerService.getPlayerData(playerId);
         result.userName = accName;
         result.serverName = data.getServerName();

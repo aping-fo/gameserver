@@ -5,12 +5,14 @@ import com.game.module.attach.training.trainingLogic;
 import com.game.module.gang.GangService;
 import com.game.module.robot.RobotService;
 import com.game.util.BeanManager;
+import com.game.util.Context;
 import com.game.util.ServerTimer;
 
 
 public class StartHandler {
 
 	public static void dispose() {
+		Context.getLoggerService().serverChange(0);//设置服务器关闭
 	}
 
 	/**

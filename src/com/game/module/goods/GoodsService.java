@@ -195,11 +195,16 @@ public class GoodsService {
     public Map<Integer, Integer> getGoods(int playerId, List<Integer> goodsList) {
         Map<Integer, Integer> map = Maps.newHashMap();
         PlayerData data = playerService.getPlayerData(playerId);
+        Player player = playerService.getPlayer(playerId);
         PlayerCurrency currency = data.getCurrency();
         for (int id : goodsList) {
             int total = 0;
-            if (id == 109) {
+            if (id == 109 || id == Goods.EQUIP_TOOL) {
                 total = (int) currency.get(id);
+            } else if (id == Goods.DIAMOND) {
+                total = player.getDiamond();
+            } else if (id == Goods.COIN) {
+                total = player.getCoin();
             } else {
                 List<Goods> exists = getExistBagGoods(playerId, id);
                 for (Goods g : exists) {
@@ -741,7 +746,7 @@ public class GoodsService {
                     continue;
                 }
             /*if (goods.vocation != 0 && goods.vocation != player.getVocation()) {
-				return;
+                return;
 			}*/
                 //技能卡
                 if (goods.type == Goods.SKILL_CARD) {

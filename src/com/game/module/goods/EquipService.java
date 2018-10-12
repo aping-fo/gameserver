@@ -246,12 +246,17 @@ public class EquipService {
         int cost = 0;
         int count = 0;
         int nextStar = goods.getStar();
+        int maxStar = ConfigData.globalParam().equipLimit[cfg.color];
+
+        if(nextStar >= maxStar) {
+            return Response.MAX_STAR;
+        }
 
         while (value >= 0) {
             nextStar++;
             EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type * 100000 + cfg.level * 100 + nextStar);
             //已经到满星
-            if (nextCfg == null) {
+            if (nextCfg == null || nextStar > maxStar) {
                 nextStar--;
                 break;
             }
@@ -284,31 +289,6 @@ public class EquipService {
             playerCalculator.calculate(playerId);
         }
 
-        //已经到满星
-//        Goods goods = goodsService.getGoods(playerId, id);
-//        if (goods == null) {
-//            ServerLogger.warn("EquipService#upStar id = " + id);
-//            return Response.OPERATION_TOO_FAST;
-//        }
-//        GoodsConfig cfg = ConfigData.getConfig(GoodsConfig.class, goods.getGoodsId());
-//        int nextStar = goods.getStar() + 1;
-//        EquipStarCfg nextCfg = ConfigData.getConfig(EquipStarCfg.class, cfg.type * 100000 + cfg.level * 100 + nextStar);
-//        if (nextCfg == null) {
-//            return Response.MAX_STAR;
-//        }
-//        //扣除材料
-//        if (!playerService.decCurrency(playerId, Goods.EQUIP_TOOL, nextCfg.cost, LogConsume.UP_STAR_COST, cfg.id)) {
-//            return Response.NO_MATERIAL;
-//        }
-//        //更新星级
-//        goods.setStar(nextStar);
-//        //更新物品
-//        goodsService.refreshGoodsToClient(playerId, goodsService.toVO(goods));
-//        //属性更新
-//        if (!goods.isInBag()) {
-//            playerCalculator.calculate(playerId);
-//        }
-//        taskService.doTask(playerId, Task.FINISH_STAR, nextStar, 1);
         return Response.SUCCESS;
     }
 
@@ -457,6 +437,139 @@ public class EquipService {
     }
 
 
+
+    //升星
+    public int strengthStar(int playerId, int type, boolean useTicket, int oneKey) {
+
+        PlayerData data = playerService.getPlayerData(playerId);
+        Player player = playerService.getPlayer(playerId);
+        List<Integer> types = Lists.newArrayList(type);
+        if (oneKey == 1) {
+            types = Lists.newArrayList(201, 202, 204, 203, 205, 206);
+            types.remove(Integer.valueOf(type));
+            types.add(0, type);
+        }
+
+        int consumeCoin = 0;
+        List<GoodsEntry> goods = new ArrayList<>();
+        boolean hasTicket = true;
+
+        EquipUpCfg cfg = ConfigData.getConfig(EquipUpCfg.class, type * 1000 + 1);
+        List<Integer> ids = Lists.newArrayList();
+        for (int i = 0; i < cfg.costTools.length; i++) {
+            ids.add(cfg.costTools[i][0]);
+        }
+
+        //总资源
+        Map<Integer, Integer> map = goodsService.getGoods(playerId, ids);
+
+        Map<Integer, Integer> type2level = Maps.newHashMap();
+        Map<Integer, Integer> type2task = Maps.newHashMap();
+        Map<Integer, Integer> type2cost = Maps.newHashMap();
+        out:
+        for (int t : types) {
+            int taskCount = 0;
+            //类型错误
+            if (!CommonUtil.contain(ConfigData.globalParam().equipTypes, t)) {
+                return Response.ERR_PARAM;
+            }
+            int curStar = data.getStars().getOrDefault(t, 0);
+            out2:
+            do {
+                if (curStar >= player.getLev()) {
+                    break out2;
+                }
+
+                int next = curStar + 1;
+                EquipUpCfg nextCfg = ConfigData.getConfig(EquipUpCfg.class, type * 1000 + next);
+                if (nextCfg == null) {
+                    break out2;
+                }
+
+                if (player.getCoin() < consumeCoin + nextCfg.costCoin) {
+                    ServerLogger.info("consumeCoin = " + consumeCoin + ",getCoin = " + player.getCoin());
+                    break out2;
+                }
+                consumeCoin += nextCfg.costCoin;
+                if (nextCfg.costTools != null) {
+                    for (int i = 0; i < nextCfg.costTools.length; i++) {
+                        int count = map.get(nextCfg.costTools[i][0]);
+                        if (count < nextCfg.costTools[i][1]) {
+                            break out2;
+                        }
+                    }
+                    for (int i = 0; i < nextCfg.costTools.length; i++) {
+                        int id = nextCfg.costTools[i][0];
+                        int costCount = nextCfg.costTools[i][1];
+                        //
+                        int count = map.get(id);
+                        map.put(id, count - costCount);
+
+                        int cost = type2cost.getOrDefault(id, 0);
+                        type2cost.put(id, cost + costCount);
+                    }
+                }
+
+                int rate = nextCfg.successRate;
+                if (useTicket && rate != 100) { //勾选了强化卷 同时 概率不等于 100
+                    if (hasTicket) {
+                        //TODO 优化
+                        if (goodsService.decGoodsFromBag(playerId, Goods.STAR_ID, 1, LogConsume.STAR_COST, type)) {
+                            rate += ConfigData.globalParam().EquipUpAdd;
+                        } else {
+                            hasTicket = false;
+                        }
+                    }
+                }
+
+                boolean success = RandomUtil.randomHitPercent(rate);
+                if (success) {
+                    curStar += 1;
+                } else {
+                    //材料减半
+                    if (goods.size() > 0) {
+                        for (GoodsEntry ge : goods) {
+                            for (int i = 0; i < nextCfg.costTools.length; i++) {
+                                if (ge.id == nextCfg.costTools[i][0]) {
+                                    ge.count -= nextCfg.costTools[i][1] >> 1;
+                                    break;
+                                }
+                            }
+                        }
+                    }
+                    //返还金币
+                    consumeCoin -= nextCfg.costCoin >> 1;
+                }
+                type2level.put(t, curStar);
+                taskCount += 1;
+                type2task.put(t, taskCount);
+                /*if (oneKey == 0) {
+                    break out;
+                }*/
+            } while (oneKey != 0);
+        }
+        //goodsService.decGoodsFromBag(playerId, ConfigData.globalParam().strengthTicket, consumeTicket, LogConsume.STRENGTH_COST, types);
+        if (!type2cost.isEmpty()) {
+            for (Map.Entry<Integer, Integer> e : type2cost.entrySet()) {
+                GoodsEntry ge = new GoodsEntry(e.getKey(), e.getValue());
+                goods.add(ge);
+            }
+
+            //扣除金币
+            playerService.decCoin(playerId, consumeCoin, LogConsume.STAR_COST, types);
+            //扣除材料
+            goodsService.decConsume(playerId, goods, LogConsume.STAR_COST, types);
+            //设置强化等级
+            data.getStars().putAll(type2level);
+            //更新装备位属性
+            playerCalculator.calculate(playerId);
+            //更新前端数据
+            updateEquip2Client(playerId);
+
+        }
+        int result = Response.SUCCESS;
+        return result;
+    }
     //升级宝石
     public int upJewel(int playerId, int type) {
         //参数验证
@@ -617,14 +730,22 @@ public class EquipService {
         playerCalculator.initJewel(playerId);
         EquipInfo equip = new EquipInfo();
 
-        equip.strengths = new ArrayList<AttrItem>();
+        equip.strengths = new ArrayList<>();
         for (Entry<Integer, Integer> strength : data.getStrengths().entrySet()) {
             AttrItem s = new AttrItem();
             s.type = strength.getKey();
             s.value = strength.getValue();
             equip.strengths.add(s);
         }
-        equip.jewels = new ArrayList<com.game.params.goods.Jewel>();
+        equip.stars = new ArrayList<>();
+        for (Entry<Integer, Integer> strength : data.getStars().entrySet()) {
+            AttrItem s = new AttrItem();
+            s.type = strength.getKey();
+            s.value = strength.getValue();
+            equip.stars.add(s);
+        }
+
+        equip.jewels = new ArrayList<>();
         for (Entry<Integer, Jewel> j : data.getJewels().entrySet()) {
             com.game.params.goods.Jewel jewel = new com.game.params.goods.Jewel();
             jewel.type = j.getKey();

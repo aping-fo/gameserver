@@ -49,6 +49,7 @@
 	<restoreEnergy>1</restoreEnergy>
 	<strengthTicket>302001</strengthTicket>
 	<strengthTicketAdd>30</strengthTicketAdd>
+	<EquipUpAdd>20</EquipUpAdd>
 	<jewelCost>201:[303001];202:[304001];203:[305001];204:[306001];205:[307001];206:[308001]</jewelCost>
 	<jewelOpenLev>201:[1,1,1,1,1,1];202:[1,1,1,1,1,1];203:[1,1,1,1,1,1];204:[1,1,1,1,1,1];205:[1,1,1,1,1,1];206:[1,1,1,1,1,1];</jewelOpenLev>
 	<clearCostCoin>1</clearCostCoin>
@@ -154,7 +155,7 @@
 	<guildCopyTimes>3</guildCopyTimes>
 	<guildRewardRate>2500</guildRewardRate>
 	<energyPrice>[50,100,150,200]</energyPrice>
-	<addEnergyPerTime>50</addEnergyPerTime>
+	<addEnergyPerTime>100</addEnergyPerTime>
 	<coinPrice>[0,20,20,20,20,20,20,20,20,20,25,25,25,25,25,25,25,25,25,25,30,30,30,30,30,30,30,30,30,30,35,35,35,35,35,35,40]</coinPrice>
 	<coinBuy>20000</coinBuy>
 	<buffStrikenEffectPriority>1:6;2:4;3:5;4:1;5:2;6:3</buffStrikenEffectPriority>
@@ -179,5 +180,6 @@
 	<DestinyCard>[102,400]</DestinyCard>
 	<DestinyTurnCard>[[102,0],[102,30],[102,60],[102,90],[102,120],[102,150],[102,180],[102,200]]</DestinyTurnCard>
 	<DestinyTurnCardAdd>0</DestinyTurnCardAdd>
+	<equipLimit>[5,7,10,10,10,10,10]</equipLimit>
 </config>
 </root>

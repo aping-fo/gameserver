@@ -1205,6 +1205,34 @@
 	<openId></openId>
 </config>
 <config>
+	<id>17002</id>
+	<atlas>Goods2</atlas>
+	<name>远古材料</name>
+	<name_en></name_en>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice></buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>108</type>
+	<level></level>
+	<vocation>0</vocation>
+	<color>6</color>
+	<maxStack></maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare>1</rare>
+	<tipsType>2</tipsType>
+	<openId></openId>
+</config>
+<config>
 	<id>18000</id>
 	<atlas>Goods</atlas>
 	<name>觉醒之魂</name>
@@ -3933,6 +3961,34 @@
 	<level></level>
 	<vocation>0</vocation>
 	<color>3</color>
+	<maxStack>9999</maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+	<tipsType>2</tipsType>
+	<openId>[[112,168,1]]</openId>
+</config>
+<config>
+	<id>302003</id>
+	<atlas>Goods</atlas>
+	<name>升星券</name>
+	<name_en></name_en>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice>100</buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>302</type>
+	<level></level>
+	<vocation>0</vocation>
+	<color>4</color>
 	<maxStack>9999</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81100,7 +81156,7 @@
 	<type>201</type>
 	<level>10</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81128,7 +81184,7 @@
 	<type>201</type>
 	<level>20</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81156,7 +81212,7 @@
 	<type>201</type>
 	<level>30</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81184,7 +81240,7 @@
 	<type>201</type>
 	<level>40</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81212,7 +81268,7 @@
 	<type>201</type>
 	<level>50</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81240,7 +81296,7 @@
 	<type>201</type>
 	<level>60</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81268,7 +81324,7 @@
 	<type>201</type>
 	<level>70</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81296,7 +81352,7 @@
 	<type>201</type>
 	<level>80</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81324,7 +81380,7 @@
 	<type>201</type>
 	<level>90</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81352,7 +81408,7 @@
 	<type>201</type>
 	<level>100</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81660,7 +81716,7 @@
 	<type>202</type>
 	<level>10</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81688,7 +81744,7 @@
 	<type>202</type>
 	<level>20</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81716,7 +81772,7 @@
 	<type>202</type>
 	<level>30</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81744,7 +81800,7 @@
 	<type>202</type>
 	<level>40</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81772,7 +81828,7 @@
 	<type>202</type>
 	<level>50</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81800,7 +81856,7 @@
 	<type>202</type>
 	<level>60</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81828,7 +81884,7 @@
 	<type>202</type>
 	<level>70</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81856,7 +81912,7 @@
 	<type>202</type>
 	<level>80</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81884,7 +81940,7 @@
 	<type>202</type>
 	<level>90</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -81912,7 +81968,7 @@
 	<type>202</type>
 	<level>100</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82220,7 +82276,7 @@
 	<type>203</type>
 	<level>10</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82248,7 +82304,7 @@
 	<type>203</type>
 	<level>20</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82276,7 +82332,7 @@
 	<type>203</type>
 	<level>30</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82304,7 +82360,7 @@
 	<type>203</type>
 	<level>40</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82332,7 +82388,7 @@
 	<type>203</type>
 	<level>50</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82360,7 +82416,7 @@
 	<type>203</type>
 	<level>60</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82388,7 +82444,7 @@
 	<type>203</type>
 	<level>70</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82416,7 +82472,7 @@
 	<type>203</type>
 	<level>80</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82444,7 +82500,7 @@
 	<type>203</type>
 	<level>90</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82472,7 +82528,7 @@
 	<type>203</type>
 	<level>100</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82780,7 +82836,7 @@
 	<type>204</type>
 	<level>10</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82808,7 +82864,7 @@
 	<type>204</type>
 	<level>20</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82836,7 +82892,7 @@
 	<type>204</type>
 	<level>30</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82864,7 +82920,7 @@
 	<type>204</type>
 	<level>40</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82892,7 +82948,7 @@
 	<type>204</type>
 	<level>50</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82920,7 +82976,7 @@
 	<type>204</type>
 	<level>60</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82948,7 +83004,7 @@
 	<type>204</type>
 	<level>70</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -82976,7 +83032,7 @@
 	<type>204</type>
 	<level>80</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83004,7 +83060,7 @@
 	<type>204</type>
 	<level>90</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83032,7 +83088,7 @@
 	<type>204</type>
 	<level>100</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83340,7 +83396,7 @@
 	<type>205</type>
 	<level>10</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83368,7 +83424,7 @@
 	<type>205</type>
 	<level>20</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83396,7 +83452,7 @@
 	<type>205</type>
 	<level>30</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83424,7 +83480,7 @@
 	<type>205</type>
 	<level>40</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83452,7 +83508,7 @@
 	<type>205</type>
 	<level>50</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83480,7 +83536,7 @@
 	<type>205</type>
 	<level>60</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83508,7 +83564,7 @@
 	<type>205</type>
 	<level>70</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83536,7 +83592,7 @@
 	<type>205</type>
 	<level>80</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83564,7 +83620,7 @@
 	<type>205</type>
 	<level>90</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83592,7 +83648,7 @@
 	<type>205</type>
 	<level>100</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83900,7 +83956,7 @@
 	<type>206</type>
 	<level>10</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83928,7 +83984,7 @@
 	<type>206</type>
 	<level>20</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83956,7 +84012,7 @@
 	<type>206</type>
 	<level>30</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -83984,7 +84040,7 @@
 	<type>206</type>
 	<level>40</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84012,7 +84068,7 @@
 	<type>206</type>
 	<level>50</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84040,7 +84096,7 @@
 	<type>206</type>
 	<level>60</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84068,7 +84124,7 @@
 	<type>206</type>
 	<level>70</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84096,7 +84152,7 @@
 	<type>206</type>
 	<level>80</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84124,7 +84180,7 @@
 	<type>206</type>
 	<level>90</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84152,7 +84208,7 @@
 	<type>206</type>
 	<level>100</level>
 	<vocation>1</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84460,7 +84516,7 @@
 	<type>201</type>
 	<level>10</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84488,7 +84544,7 @@
 	<type>201</type>
 	<level>20</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84516,7 +84572,7 @@
 	<type>201</type>
 	<level>30</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84544,7 +84600,7 @@
 	<type>201</type>
 	<level>40</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84572,7 +84628,7 @@
 	<type>201</type>
 	<level>50</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84600,7 +84656,7 @@
 	<type>201</type>
 	<level>60</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84628,7 +84684,7 @@
 	<type>201</type>
 	<level>70</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84656,7 +84712,7 @@
 	<type>201</type>
 	<level>80</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84684,7 +84740,7 @@
 	<type>201</type>
 	<level>90</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -84712,7 +84768,7 @@
 	<type>201</type>
 	<level>100</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85020,7 +85076,7 @@
 	<type>202</type>
 	<level>10</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85048,7 +85104,7 @@
 	<type>202</type>
 	<level>20</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85076,7 +85132,7 @@
 	<type>202</type>
 	<level>30</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85104,7 +85160,7 @@
 	<type>202</type>
 	<level>40</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85132,7 +85188,7 @@
 	<type>202</type>
 	<level>50</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85160,7 +85216,7 @@
 	<type>202</type>
 	<level>60</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85188,7 +85244,7 @@
 	<type>202</type>
 	<level>70</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85216,7 +85272,7 @@
 	<type>202</type>
 	<level>80</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85244,7 +85300,7 @@
 	<type>202</type>
 	<level>90</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85272,7 +85328,7 @@
 	<type>202</type>
 	<level>100</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85580,7 +85636,7 @@
 	<type>203</type>
 	<level>10</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85608,7 +85664,7 @@
 	<type>203</type>
 	<level>20</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85636,7 +85692,7 @@
 	<type>203</type>
 	<level>30</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85664,7 +85720,7 @@
 	<type>203</type>
 	<level>40</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85692,7 +85748,7 @@
 	<type>203</type>
 	<level>50</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85720,7 +85776,7 @@
 	<type>203</type>
 	<level>60</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85748,7 +85804,7 @@
 	<type>203</type>
 	<level>70</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85776,7 +85832,7 @@
 	<type>203</type>
 	<level>80</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85804,7 +85860,7 @@
 	<type>203</type>
 	<level>90</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -85832,7 +85888,7 @@
 	<type>203</type>
 	<level>100</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86140,7 +86196,7 @@
 	<type>204</type>
 	<level>10</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86168,7 +86224,7 @@
 	<type>204</type>
 	<level>20</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86196,7 +86252,7 @@
 	<type>204</type>
 	<level>30</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86224,7 +86280,7 @@
 	<type>204</type>
 	<level>40</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86252,7 +86308,7 @@
 	<type>204</type>
 	<level>50</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86280,7 +86336,7 @@
 	<type>204</type>
 	<level>60</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86308,7 +86364,7 @@
 	<type>204</type>
 	<level>70</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86336,7 +86392,7 @@
 	<type>204</type>
 	<level>80</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86364,7 +86420,7 @@
 	<type>204</type>
 	<level>90</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86392,7 +86448,7 @@
 	<type>204</type>
 	<level>100</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86700,7 +86756,7 @@
 	<type>205</type>
 	<level>10</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86728,7 +86784,7 @@
 	<type>205</type>
 	<level>20</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86756,7 +86812,7 @@
 	<type>205</type>
 	<level>30</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86784,7 +86840,7 @@
 	<type>205</type>
 	<level>40</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86812,7 +86868,7 @@
 	<type>205</type>
 	<level>50</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86840,7 +86896,7 @@
 	<type>205</type>
 	<level>60</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86868,7 +86924,7 @@
 	<type>205</type>
 	<level>70</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86896,7 +86952,7 @@
 	<type>205</type>
 	<level>80</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86924,7 +86980,7 @@
 	<type>205</type>
 	<level>90</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -86952,7 +87008,7 @@
 	<type>205</type>
 	<level>100</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87260,7 +87316,7 @@
 	<type>206</type>
 	<level>10</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87288,7 +87344,7 @@
 	<type>206</type>
 	<level>20</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87316,7 +87372,7 @@
 	<type>206</type>
 	<level>30</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87344,7 +87400,7 @@
 	<type>206</type>
 	<level>40</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87372,7 +87428,7 @@
 	<type>206</type>
 	<level>50</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87400,7 +87456,7 @@
 	<type>206</type>
 	<level>60</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87428,7 +87484,7 @@
 	<type>206</type>
 	<level>70</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87456,7 +87512,7 @@
 	<type>206</type>
 	<level>80</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87484,7 +87540,7 @@
 	<type>206</type>
 	<level>90</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87512,7 +87568,7 @@
 	<type>206</type>
 	<level>100</level>
 	<vocation>2</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87820,7 +87876,7 @@
 	<type>201</type>
 	<level>10</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87848,7 +87904,7 @@
 	<type>201</type>
 	<level>20</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87876,7 +87932,7 @@
 	<type>201</type>
 	<level>30</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87904,7 +87960,7 @@
 	<type>201</type>
 	<level>40</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87932,7 +87988,7 @@
 	<type>201</type>
 	<level>50</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87960,7 +88016,7 @@
 	<type>201</type>
 	<level>60</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -87988,7 +88044,7 @@
 	<type>201</type>
 	<level>70</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88016,7 +88072,7 @@
 	<type>201</type>
 	<level>80</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88044,7 +88100,7 @@
 	<type>201</type>
 	<level>90</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88072,7 +88128,7 @@
 	<type>201</type>
 	<level>100</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88380,7 +88436,7 @@
 	<type>202</type>
 	<level>10</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88408,7 +88464,7 @@
 	<type>202</type>
 	<level>20</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88436,7 +88492,7 @@
 	<type>202</type>
 	<level>30</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88464,7 +88520,7 @@
 	<type>202</type>
 	<level>40</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88492,7 +88548,7 @@
 	<type>202</type>
 	<level>50</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88520,7 +88576,7 @@
 	<type>202</type>
 	<level>60</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88548,7 +88604,7 @@
 	<type>202</type>
 	<level>70</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88576,7 +88632,7 @@
 	<type>202</type>
 	<level>80</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88604,7 +88660,7 @@
 	<type>202</type>
 	<level>90</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88632,7 +88688,7 @@
 	<type>202</type>
 	<level>100</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88940,7 +88996,7 @@
 	<type>203</type>
 	<level>10</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88968,7 +89024,7 @@
 	<type>203</type>
 	<level>20</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -88996,7 +89052,7 @@
 	<type>203</type>
 	<level>30</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89024,7 +89080,7 @@
 	<type>203</type>
 	<level>40</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89052,7 +89108,7 @@
 	<type>203</type>
 	<level>50</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89080,7 +89136,7 @@
 	<type>203</type>
 	<level>60</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89108,7 +89164,7 @@
 	<type>203</type>
 	<level>70</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89136,7 +89192,7 @@
 	<type>203</type>
 	<level>80</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89164,7 +89220,7 @@
 	<type>203</type>
 	<level>90</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89192,7 +89248,7 @@
 	<type>203</type>
 	<level>100</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89500,7 +89556,7 @@
 	<type>204</type>
 	<level>10</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89528,7 +89584,7 @@
 	<type>204</type>
 	<level>20</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89556,7 +89612,7 @@
 	<type>204</type>
 	<level>30</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89584,7 +89640,7 @@
 	<type>204</type>
 	<level>40</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89612,7 +89668,7 @@
 	<type>204</type>
 	<level>50</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89640,7 +89696,7 @@
 	<type>204</type>
 	<level>60</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89668,7 +89724,7 @@
 	<type>204</type>
 	<level>70</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89696,7 +89752,7 @@
 	<type>204</type>
 	<level>80</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89724,7 +89780,7 @@
 	<type>204</type>
 	<level>90</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -89752,7 +89808,7 @@
 	<type>204</type>
 	<level>100</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90060,7 +90116,7 @@
 	<type>205</type>
 	<level>10</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90088,7 +90144,7 @@
 	<type>205</type>
 	<level>20</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90116,7 +90172,7 @@
 	<type>205</type>
 	<level>30</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90144,7 +90200,7 @@
 	<type>205</type>
 	<level>40</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90172,7 +90228,7 @@
 	<type>205</type>
 	<level>50</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90200,7 +90256,7 @@
 	<type>205</type>
 	<level>60</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90228,7 +90284,7 @@
 	<type>205</type>
 	<level>70</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90256,7 +90312,7 @@
 	<type>205</type>
 	<level>80</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90284,7 +90340,7 @@
 	<type>205</type>
 	<level>90</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90312,7 +90368,7 @@
 	<type>205</type>
 	<level>100</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90620,7 +90676,7 @@
 	<type>206</type>
 	<level>10</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90648,7 +90704,7 @@
 	<type>206</type>
 	<level>20</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90676,7 +90732,7 @@
 	<type>206</type>
 	<level>30</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90704,7 +90760,7 @@
 	<type>206</type>
 	<level>40</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90732,7 +90788,7 @@
 	<type>206</type>
 	<level>50</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90760,7 +90816,7 @@
 	<type>206</type>
 	<level>60</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90788,7 +90844,7 @@
 	<type>206</type>
 	<level>70</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90816,7 +90872,7 @@
 	<type>206</type>
 	<level>80</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90844,7 +90900,7 @@
 	<type>206</type>
 	<level>90</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>
@@ -90872,7 +90928,7 @@
 	<type>206</type>
 	<level>100</level>
 	<vocation>3</vocation>
-	<color>5</color>
+	<color>6</color>
 	<maxStack>1</maxStack>
 	<contentsRates></contentsRates>
 	<contents></contents>

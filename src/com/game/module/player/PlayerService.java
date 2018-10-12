@@ -215,7 +215,7 @@ public class PlayerService implements InitHandler {
     }
 
     // 增加新用户
-    public Player addNewPlayer(String name, int sex, int vocation, String accName, String channel, String serverId, String serverName, int sdkUserId, String thirdChannel, String thirdUserId) {
+    public Player addNewPlayer(String name, int sex, int vocation, String accName, String channel, String serverId, String serverName, int sdkUserId, String thirdChannel, String thirdUserId, String clientMac) {
         // 初始属性
         final int playerId = getNextPlayerId();
         final Player player = new Player();
@@ -230,7 +230,7 @@ public class PlayerService implements InitHandler {
         player.setEnergyTime(System.currentTimeMillis());
         player.setRefresh(false);
         player.setChannel(channel);
-
+        player.setClientMac(clientMac);
         GlobalConfig globalParam = ConfigData.globalParam();
         player.setEnergy(globalParam.maxEnergy);
 
@@ -595,7 +595,7 @@ public class PlayerService implements InitHandler {
         vo.head = data.getCurHead();
         vo.signDay = data.getSign();
         vo.signFlag = data.getSignFlag();
-        vo.online = player.online;
+       // vo.online = player.online;
 
         if (player.getGangId() > 0) {
             Gang gang = gangService.getGang(player.getGangId());

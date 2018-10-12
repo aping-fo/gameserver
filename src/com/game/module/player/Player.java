@@ -106,6 +106,14 @@ public class Player implements PlayerAddition {
     public int roomTeamId;
     private int totalChargeMoney;//累计充值金额
 
+    public String getClientMac() {
+        return clientMac;
+    }
+
+    public void setClientMac(String clientMac) {
+        this.clientMac = clientMac;
+    }
+
     private List<Integer> attrList = new ArrayList<>(12);
 
     public List<Integer> getAttrList() {
