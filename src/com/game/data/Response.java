@@ -47,6 +47,7 @@ public class Response {
 	public static final int MAX_STRENGTH=1202;//强化等级已满
 	public static final int MAX_LEV=1203;//已经是最高级了
 	public static final int STRENGTH_FAIL=1204;//强化失败，返还50%材料
+	public static final int NO_EQUIPPARTSUP=1205;//升星失败
 	//任务系统
 	public static final int TASK_NOT_FINISHED=1301;//任务尚未完成
 	public static final int TASK_JOINTED=1302;//对方已接取协助任务

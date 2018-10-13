@@ -248,7 +248,7 @@ public class EquipService {
         int nextStar = goods.getStar();
         int maxStar = ConfigData.globalParam().equipLimit[cfg.color];
 
-        if(nextStar >= maxStar) {
+        if (nextStar >= maxStar) {
             return Response.MAX_STAR;
         }
 
@@ -295,6 +295,7 @@ public class EquipService {
 
     //强化
     public int strength(int playerId, int type, boolean useTicket, int oneKey) {
+        int result = 0;
         //已经到最高级
         PlayerData data = playerService.getPlayerData(playerId);
         Player player = playerService.getPlayer(playerId);
@@ -396,6 +397,8 @@ public class EquipService {
                     }
                     //返还金币
                     consumeCoin -= nextCfg.costCoin >> 1;
+
+                    result = Response.STRENGTH_FAIL;
                 }
                 type2level.put(t, curStrength);
                 taskCount += 1;
@@ -432,15 +435,17 @@ public class EquipService {
             }
             taskService.doTask(playerId, condParams);
         }
-        int result = Response.SUCCESS;
+
+        if (oneKey != 0) {
+            result = Response.SUCCESS;
+        }
         return result;
     }
 
 
-
     //升星
     public int strengthStar(int playerId, int type, boolean useTicket, int oneKey) {
-
+        int result = 0;
         PlayerData data = playerService.getPlayerData(playerId);
         Player player = playerService.getPlayer(playerId);
         List<Integer> types = Lists.newArrayList(type);
@@ -539,6 +544,8 @@ public class EquipService {
                     }
                     //返还金币
                     consumeCoin -= nextCfg.costCoin >> 1;
+
+                    result = Response.NO_EQUIPPARTSUP;
                 }
                 type2level.put(t, curStar);
                 taskCount += 1;
@@ -567,9 +574,14 @@ public class EquipService {
             updateEquip2Client(playerId);
 
         }
-        int result = Response.SUCCESS;
+
+        if (oneKey != 0) {
+            result = Response.SUCCESS;
+        }
+
         return result;
     }
+
     //升级宝石
     public int upJewel(int playerId, int type) {
         //参数验证

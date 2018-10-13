@@ -397,6 +397,10 @@ public class ManagerService implements InitHandler {
 
     //封禁检测
     public Boolean checkBan(String closureAccount, int type) {
+        if (bans == null || bans.isEmpty()) {
+            return false;
+        }
+       
         ProhibitionEntity prohibition = bans.get(closureAccount);
         if (prohibition == null) {
             return false;

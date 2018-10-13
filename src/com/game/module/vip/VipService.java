@@ -49,6 +49,8 @@ public class VipService {
     private static final int FUND_ID = 41;// 基金id
     public static final int KEY = 0xef;
 
+    public static final String SIMULATION__RECHARGE = "test";
+
     @Autowired
     private PlayerService playerService;
     @Autowired
@@ -199,8 +201,7 @@ public class VipService {
             data.setFundActive(1);
         }
 
-        //cpId = cpId ^ KEY; //解密
-        if (!SysConfig.gm) {
+        if (!SysConfig.gm && !paymentType.equals(SIMULATION__RECHARGE)) {
             if (!data.getCpIdSet().contains(cpId)) { //不包含此订单
                 ServerLogger.warn("Err charge cpId:" + cpId, playerId);
                 return;
@@ -212,7 +213,7 @@ public class VipService {
             }
         }
 
-        if (SysConfig.report) {
+        if (SysConfig.report && !paymentType.equals(SIMULATION__RECHARGE)) {
             Context.getThreadService().execute(new Runnable() {
                 @Override
                 public void run() {
@@ -230,11 +231,6 @@ public class VipService {
         playerService.addVipExp(playerId, charge.total);
         playerService.addDiamond(playerId, charge.total, LogConsume.CHARGE);
         playerService.addDiamond(playerId, charge.add, LogConsume.CHARGE_ADD);
-//        data.getDealCpIdSet().add(cpId);
-//        data.getCpIdSet().remove(cpId);
-//        data.setRechargeCount(data.getRechargeCount()+1);//充值次数
-//        data.setRechargeTreasure(data.getRechargeTreasure()+charge.total + charge.add);//充值元宝
-//        data.setLastRechargeTime(new Date());//最后充值时间
         chargeActivityLogic.updateCharge(playerId, charge.total);
         // 每日数据更新
         dailyService.refreshDailyVo(playerId);
@@ -257,7 +253,6 @@ public class VipService {
         welfareCardService.buyWelfareCard(playerId, charge.type, id);
         if (!data.isFirstRechargeFlag()) {
             data.setFirstRechargeFlag(true);
-//            data.setFirstRechargeTime(new Date());
         }
 
         if (type != TYPE_TIMED && type != TYPE_SPECIAL) {//限时礼包和特价礼包不计入累计充值
@@ -271,11 +266,9 @@ public class VipService {
 
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//充了钱就算礼包
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.total, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
-        //activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_ONCE, (int) charge.rmb, ActivityConsts.UpdateType.T_VALUE, true);//单笔充值满足(取最大那个)
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
         activityService.onceRecharge(playerId, charge.rmb);//单笔充值满足(取最大那个)
         activityService.dailyRecharge(playerId, charge.rmb);//每日充值(7日充值)
-
 
         if (charge.shopGoodsId != 0) {
             shopService.buy(playerId, charge.shopGoodsId, 1);
@@ -287,12 +280,6 @@ public class VipService {
 
         data.setTotalCharge(data.getTotalCharge() + charge.rmb);
         playerService.saveCharge(player.getAccName(), playerId, player.getName(), Math.round(data.getTotalCharge()), data.getMaxLoginContinueDays());
-        //        Player player = playerService.getPlayer(playerId);
-//        String gangeName = "";
-//        if (player.getGangId() != 0) {
-//            gangeName = gangService.getGang(player.getGangId()).getName();
-//        }
-//        Context.getLoggerService().playerOrder(orderId,data.getCpId(),player.getServerId(),playerId,playerId,charge.shopGoodsId,charge.rmb,charge.rmb,charge.total+charge.add,charge.type,player.getLev(),player.getDiamond(),player.getName(),charge.name);
     }
 
     /**

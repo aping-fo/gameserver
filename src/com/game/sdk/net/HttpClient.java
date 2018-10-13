@@ -225,7 +225,7 @@ public class HttpClient {
         params.put("startTime", System.currentTimeMillis() + 10 + "");
         params.put("endTime", System.currentTimeMillis() + 100 + "");
         params.put("serverId", "1");
-        HttpClient.sendPostRequest("http://192.168.7.200:20010/admin/notice", params); // ,"000000000".getBytes()
+        HttpClient.sendPostRequest("http://192.168.0.200:20010/admin/notice", params); // ,"000000000".getBytes()
         //HttpClient.sendPostRequest("http://113.208.129.53:14820/agip"); // ,"000000000".getBytes()  // ,
         // params,b.build().toByteArray()
     }

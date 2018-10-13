@@ -48,7 +48,7 @@ public class PlayerExtension {
     @Autowired
     private PlayerCalculator playerCalculator;
 
-    private static final AttributeKey<String> CHANNEL = AttributeKey.valueOf("channel");
+    public static final AttributeKey<String> CHANNEL = AttributeKey.valueOf("channel");
 
     @UnLogin
     @Command(1001)
@@ -64,23 +64,23 @@ public class PlayerExtension {
         ServerLogger.info("获取角色列表");
         channel.attr(CHANNEL).set(param.userId);
 
-        RoleInfoList roleInfoList=new RoleInfoList();
+        RoleInfoList roleInfoList = new RoleInfoList();
         roleInfoList.roleInfoVoList = new ArrayList<SRoleVo>(roleList.size());
 
         //账户封禁检测
-        if (managerService.checkBan(param.userId,ManagerService.BAN_LOGIN)) {
+        if (param.userId != null && managerService.checkBan(param.userId, ManagerService.BAN_LOGIN)) {
             roleInfoList.errorCode = Response.BAN_LOGIN;
             return roleInfoList;
         }
 
         //IP封禁检测
-        if (managerService.checkBan(param.ipAddress,ManagerService.BAN_IP)) {
+        if (param.ipAddress != null && managerService.checkBan(param.ipAddress, ManagerService.BAN_IP)) {
             roleInfoList.errorCode = Response.BAN_IP;
             return roleInfoList;
         }
 
         //设备封禁检测
-        if (managerService.checkBan(param.deviceId,ManagerService.BAN_IMEI)) {
+        if (param.deviceId != null && managerService.checkBan(param.deviceId, ManagerService.BAN_IMEI)) {
             roleInfoList.errorCode = Response.BAN_IMEI;
             return roleInfoList;
         }
@@ -260,7 +260,7 @@ public class PlayerExtension {
             param1.param = Response.RE_LOGIN;
             SessionManager.sendDataInner(user.channel, 1015, param1);
             user.channel.close();
-            logoutHandler.logout(user.playerId);
+            logoutHandler.logout(user.playerId, channel);
         }
 
         player.setRefresh(false);

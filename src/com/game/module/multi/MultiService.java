@@ -48,11 +48,13 @@ public class MultiService implements InitHandler {
             @Override
             public void run() {
                 try {
-                    for (Map.Entry<Integer, Long> s : heartBeatMap.asMap().entrySet()) {
-                        if (System.currentTimeMillis() - s.getValue() > 40000) {
-                            ServerLogger.info("heart time out remove playerId ===>" + s.getKey());
-                            onExit(s.getKey());
-                            heartBeatMap.invalidate(s.getKey());
+                    if(heartBeatMap.size() > 0){
+                        for (Map.Entry<Integer, Long> s : heartBeatMap.asMap().entrySet()) {
+                            if (System.currentTimeMillis() - s.getValue() > 40000) {
+                                ServerLogger.info("heart time out remove playerId ===>" + s.getKey());
+                                onExit(s.getKey());
+                                heartBeatMap.invalidate(s.getKey());
+                            }
                         }
                     }
                 } catch (Exception e) {

@@ -164,8 +164,11 @@ public class PlayerService implements InitHandler {
 
     // 获取Player对象
     public Player getPlayer(int playerId) {
+        return getPlayer(playerId, true);
+    }
+    public Player getPlayer(int playerId, boolean autoLoadFromDb) {
         Player player = players.get(playerId);
-        if (player == null) {
+        if (player == null && autoLoadFromDb) {
             player = playerDao.select(playerId);
             if (player != null) {
                 players.put(playerId, player);
@@ -868,10 +871,11 @@ public class PlayerService implements InitHandler {
         if (checkUpgrade(player)) {
             playerCalculator.calculate(player);
             // 升级触发相关事件，比如任务等
-            if (player.getLev() >= 15 && player.getLev() <= 20) {
-                // 广播的消息
-                SessionManager.getInstance().setPlayerLev(playerId, player.getLev());
-            }
+//            if (player.getLev() >= 15 && player.getLev() <= 20) {
+//                // 广播的消息
+//                SessionManager.getInstance().setPlayerLev(playerId, player.getLev());
+//            }
+            SessionManager.getInstance().setPlayerLev(playerId, player.getLev());
             taskService.checkTaskWhenLevUp(playerId);
 
             activityService.completeActivityTask(playerId,
@@ -940,6 +944,20 @@ public class PlayerService implements InitHandler {
     // 更新玩家数据
     public void updatePlayerData(int playerId) {
         PlayerData data = getPlayerData(playerId);
+//        String jsonStr = JsonUtils.object2String(data);
+//        if (jsonStr == null) {
+//            ServerLogger.warn("player data serial err:", playerId);
+//            return;
+//        }
+//        byte[] byteData = jsonStr.getBytes(Charset.forName("utf-8"));
+//        byteData = CompressUtil.compressBytes(byteData);
+//        playerDao.updatePlayerData(playerId, byteData);
+        updatePlayerData(data);
+    }
+
+    public void updatePlayerData(PlayerData data) {
+        int playerId = data.getPlayerId();
+
         String jsonStr = JsonUtils.object2String(data);
         if (jsonStr == null) {
             ServerLogger.warn("player data serial err:", playerId);
@@ -1216,7 +1234,7 @@ public class PlayerService implements InitHandler {
     public void selectRole(int playerId) {
         Player player = players.get(playerId);
         userMap.remove(player.getAccName());
-        logoutHandler.logout(playerId);
+        logoutHandler.logout(playerId, null);
     }
 
     public User getOldAndCache(String name, int playerId, Channel channel) {
