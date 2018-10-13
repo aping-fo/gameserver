@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1001</id>
+	<name>主线副本</name>
+	<name_en></name_en>
+	<icon>head7</icon>
+	<type>11</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得大量经验</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1002</id>
+	<name>金币购买</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>8</type>
+	<viewname>BuyCoinsView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可快速获得金币</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param>[2,1]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1003</id>
+	<name>主线副本</name>
+	<name_en></name_en>
+	<icon>head7</icon>
+	<type>8</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得大量金币</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1004</id>
+	<name>召唤</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>8</type>
+	<viewname>LotteryViewNew</viewname>
+	<openCondition>通关主线副本3-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得大量金币</description>
+	<description_en></description_en>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1005</id>
+	<name>金币副本</name>
+	<name_en></name_en>
+	<icon>head6</icon>
+	<type>8</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>通关主线副本5-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出大量金币</description>
+	<description_en></description_en>
+	<lockID>1375</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1006</id>
+	<name>暗影之神</name>
+	<name_en></name_en>
+	<icon>head10</icon>
+	<type>8</type>
+	<viewname>WorldBossView</viewname>
+	<openCondition>通关主线副本3-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出大量金币</description>
+	<description_en></description_en>
+	<lockID>1361</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1007</id>
+	<name>顺手牵羊</name>
+	<name_en></name_en>
+	<icon>head9</icon>
+	<type>8</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>通关主线副本6-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出大量金币</description>
+	<description_en></description_en>
+	<lockID>1374</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1008</id>
+	<name>主线副本</name>
+	<name_en></name_en>
+	<icon>head7</icon>
+	<type>4</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得大量装备</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1009</id>
+	<name>召唤</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>4</type>
+	<viewname>LotteryViewNew</viewname>
+	<openCondition>通关主线副本3-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得大量装备</description>
+	<description_en></description_en>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1010</id>
+	<name>时空仪</name>
+	<name_en></name_en>
+	<icon>head12</icon>
+	<type>4</type>
+	<viewname>TraversingView</viewname>
+	<openCondition>通关主线副本8-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出稀有装备</description>
+	<description_en></description_en>
+	<lockID>1131</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1011</id>
+	<name>团队副本</name>
+	<name_en></name_en>
+	<icon>head14</icon>
+	<type>4</type>
+	<viewname>GroupInfoView</viewname>
+	<openCondition>通关主线副本8-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出极品装备</description>
+	<description_en></description_en>
+	<lockID>1571</lockID>
+	<param></param>
+	<limit>1</limit>
+</config>
+<config>
+	<id>1012</id>
+	<name>商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>1</type>
+	<viewname>AllShopView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买强化材料</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param>[1,1]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1013</id>
+	<name>召唤</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>1</type>
+	<viewname>LotteryViewNew</viewname>
+	<openCondition>通关主线副本3-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得强化材料</description>
+	<description_en></description_en>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1014</id>
+	<name>试练场</name>
+	<name_en></name_en>
+	<icon>head13</icon>
+	<type>1</type>
+	<viewname>TrialFieldView</viewname>
+	<openCondition>通关主线副本3-2开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出强化材料</description>
+	<description_en></description_en>
+	<lockID>1781</lockID>
+	<param></param>
+	<limit>3</limit>
+</config>
+<config>
+	<id>1015</id>
+	<name>顺手牵羊</name>
+	<name_en></name_en>
+	<icon>head9</icon>
+	<type>1</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>通关主线副本6-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出强化材料</description>
+	<description_en></description_en>
+	<lockID>1374</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1016</id>
+	<name>大漩涡</name>
+	<name_en></name_en>
+	<icon>head13</icon>
+	<type>1</type>
+	<viewname>InfiniteVortexView</viewname>
+	<openCondition>通关主线副本12-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出强化材料</description>
+	<description_en></description_en>
+	<lockID>1211</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1017</id>
+	<name>主线副本</name>
+	<name_en></name_en>
+	<icon>head7</icon>
+	<type>3</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得大量神器碎片</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1018</id>
+	<name>商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>3</type>
+	<viewname>AllShopView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买神器碎片</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param>[1,1]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1019</id>
+	<name>召唤</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>3</type>
+	<viewname>LotteryViewNew</viewname>
+	<openCondition>通关主线副本3-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得神器碎片</description>
+	<description_en></description_en>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1020</id>
+	<name>阵营</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>3</type>
+	<viewname>FameView</viewname>
+	<openCondition>通关主线副本3-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买神器碎片</description>
+	<description_en></description_en>
+	<lockID>1511</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1021</id>
+	<name>竞技商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>12</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本3-5开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买神器碎片</description>
+	<description_en></description_en>
+	<lockID>1011</lockID>
+	<param>[1,6]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1022</id>
+	<name>公会商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>12</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本4-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买神器碎片</description>
+	<description_en></description_en>
+	<lockID>1041</lockID>
+	<param>[1,4]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1023</id>
+	<name>排位商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>12</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本11-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买神器碎片</description>
+	<description_en></description_en>
+	<lockID>1601</lockID>
+	<param>[1,15]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1024</id>
+	<name>精绝宝藏</name>
+	<name_en></name_en>
+	<icon>head11</icon>
+	<type>3</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>通关主线副本7-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出神器碎片</description>
+	<description_en></description_en>
+	<lockID>1373</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1025</id>
+	<name>漩涡商店</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>12</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本12-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买神器碎片</description>
+	<description_en></description_en>
+	<lockID>1211</lockID>
+	<param>[1,3]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1026</id>
+	<name>试炼商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>12</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本3-2开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买神器碎片</description>
+	<description_en></description_en>
+	<lockID>1061</lockID>
+	<param>[1,5]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1027</id>
+	<name>竞技商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>7</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本3-5开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买时装券</description>
+	<description_en></description_en>
+	<lockID>1011</lockID>
+	<param>[1,6]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1028</id>
+	<name>排位商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>7</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本11-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买时装券</description>
+	<description_en></description_en>
+	<lockID>1601</lockID>
+	<param>[1,15]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1029</id>
+	<name>团队副本</name>
+	<name_en></name_en>
+	<icon>head14</icon>
+	<type>7</type>
+	<viewname>GroupInfoView</viewname>
+	<openCondition>通关主线副本8-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以获得时装券</description>
+	<description_en></description_en>
+	<lockID>1571</lockID>
+	<param></param>
+	<limit>1</limit>
+</config>
+<config>
+	<id>1030</id>
+	<name>阵营</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>7</type>
+	<viewname>FameView</viewname>
+	<openCondition>通关主线副本3-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买时装券</description>
+	<description_en></description_en>
+	<lockID>1511</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1031</id>
+	<name>召唤</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>2</type>
+	<viewname>LotteryViewNew</viewname>
+	<openCondition>通关主线副本3-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得技能卡</description>
+	<description_en></description_en>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1032</id>
+	<name>极限躲避</name>
+	<name_en></name_en>
+	<icon>head12</icon>
+	<type>2</type>
+	<viewname>ResourceCopyView</viewname>
+	<openCondition>通关主线副本2-4开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以获得大量经验卡</description>
+	<description_en></description_en>
+	<lockID>1372</lockID>
+	<param></param>
+	<limit>2</limit>
+</config>
+<config>
+	<id>1033</id>
+	<name>竞技商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本3-5开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买技能卡</description>
+	<description_en></description_en>
+	<lockID>1011</lockID>
+	<param>[1,6]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1034</id>
+	<name>排位商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本11-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买技能卡</description>
+	<description_en></description_en>
+	<lockID>1601</lockID>
+	<param>[1,15]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1035</id>
+	<name>阵营</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>FameView</viewname>
+	<openCondition>通关主线副本3-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买技能卡</description>
+	<description_en></description_en>
+	<lockID>1511</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1036</id>
+	<name>漩涡商店</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本12-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买技能卡</description>
+	<description_en></description_en>
+	<lockID>1211</lockID>
+	<param>[1,3]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1037</id>
+	<name>试炼商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>2</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本3-2开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买技能卡</description>
+	<description_en></description_en>
+	<lockID>1061</lockID>
+	<param>[1,5]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1038</id>
+	<name>宠物福利</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>6</type>
+	<viewname>ActivityView</viewname>
+	<openCondition>通关主线副本1-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以获得大量宠物碎片</description>
+	<description_en></description_en>
+	<lockID>1711</lockID>
+	<param>[3,1,25]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1039</id>
+	<name>竞技商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>6</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本3-5开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买宠物碎片</description>
+	<description_en></description_en>
+	<lockID>1011</lockID>
+	<param>[1,6]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1040</id>
+	<name>公会商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>6</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本4-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买宠物碎片</description>
+	<description_en></description_en>
+	<lockID>1041</lockID>
+	<param>[1,4]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1041</id>
+	<name>排位商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>6</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本11-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买宠物碎片</description>
+	<description_en></description_en>
+	<lockID>1601</lockID>
+	<param>[1,15]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1042</id>
+	<name>试炼商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>6</type>
+	<viewname>AllShopView</viewname>
+	<openCondition>通关主线副本3-2开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以购买宠物碎片</description>
+	<description_en></description_en>
+	<lockID>1061</lockID>
+	<param>[1,5]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1043</id>
+	<name>主线副本</name>
+	<name_en></name_en>
+	<icon>head7</icon>
+	<type>9</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出大量声望点</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1044</id>
+	<name>召唤</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>9</type>
+	<viewname>LotteryView</viewname>
+	<openCondition>通关主线副本3-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得声望点</description>
+	<description_en></description_en>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1045</id>
+	<name>三星宝箱</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>10</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition>普通关卡三星宝箱</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以获得觉醒主动材料</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1046</id>
+	<name>三星宝箱</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>10</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition>困难关卡三星宝箱</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以获得觉醒被动材料</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1047</id>
+	<name>三星宝箱</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>10</type>
+	<viewname>MainCopyView</viewname>
+	<openCondition>噩梦关卡三星宝箱</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以获得二次觉醒主动材料</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1048</id>
+	<name>阵营</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>10</type>
+	<viewname>FameView</viewname>
+	<openCondition>通关主线副本3-1开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可以获得二次觉醒被动材料</description>
+	<description_en></description_en>
+	<lockID>1511</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1049</id>
+	<name>传奇商城</name>
+	<name_en></name_en>
+	<icon>head5</icon>
+	<type>5</type>
+	<viewname>AllShopView</viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可购买套装</description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param>[1,16]</param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1050</id>
+	<name>召唤</name>
+	<name_en></name_en>
+	<icon>head1</icon>
+	<type>5</type>
+	<viewname>LotteryViewNew</viewname>
+	<openCondition>通关主线副本3-3开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>可获得套装</description>
+	<description_en></description_en>
+	<lockID>1221</lockID>
+	<param></param>
+	<limit>0</limit>
+</config>
+<config>
+	<id>1051</id>
+	<name>团队副本</name>
+	<name_en></name_en>
+	<icon>head14</icon>
+	<type>5</type>
+	<viewname>GroupInfoView</viewname>
+	<openCondition>通关主线副本8-6开启</openCondition>
+	<openCondition_en></openCondition_en>
+	<description>产出套装</description>
+	<description_en></description_en>
+	<lockID>1571</lockID>
+	<param></param>
+	<limit>1</limit>
+</config>
+<config>
+	<id>2001</id>
+	<name>装备获取</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>0</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2002</id>
+	<name>装备升阶</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>1451</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2003</id>
+	<name>装备强化</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>1453</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2004</id>
+	<name>宝石升阶</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>1454</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2005</id>
+	<name>角色技能</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>1281</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2006</id>
+	<name>卡片佩戴</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>1281</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2007</id>
+	<name>卡片升级</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID></lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2008</id>
+	<name>宠物提升</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>1701</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2009</id>
+	<name>人物觉醒</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>1901</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+<config>
+	<id>2010</id>
+	<name>装备穿戴</name>
+	<name_en></name_en>
+	<icon>1</icon>
+	<type></type>
+	<viewname></viewname>
+	<openCondition></openCondition>
+	<openCondition_en></openCondition_en>
+	<description></description>
+	<description_en></description_en>
+	<lockID>1321</lockID>
+	<param></param>
+	<limit></limit>
+</config>
+</root>

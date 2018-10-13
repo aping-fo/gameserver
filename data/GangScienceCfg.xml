@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1000</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>需要公会1级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>1</type>
+	<param>10</param>
+	<Price>10000</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1001</NextID>
+</config>
+<config>
+	<id>1001</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>1</type>
+	<param>40</param>
+	<Price>100</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1002</NextID>
+</config>
+<config>
+	<id>1002</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>1</type>
+	<param>80</param>
+	<Price>200</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1003</NextID>
+</config>
+<config>
+	<id>1003</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>1</type>
+	<param>120</param>
+	<Price>400</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1004</NextID>
+</config>
+<config>
+	<id>1004</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>1</type>
+	<param>160</param>
+	<Price>800</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1005</NextID>
+</config>
+<config>
+	<id>1005</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>1</type>
+	<param>200</param>
+	<Price>1600</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1100</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>需要公会1级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>2</type>
+	<param>10</param>
+	<Price>10000</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1101</NextID>
+</config>
+<config>
+	<id>1101</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>2</type>
+	<param>30</param>
+	<Price>100</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1102</NextID>
+</config>
+<config>
+	<id>1102</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>2</type>
+	<param>60</param>
+	<Price>200</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1103</NextID>
+</config>
+<config>
+	<id>1103</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>2</type>
+	<param>90</param>
+	<Price>400</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1104</NextID>
+</config>
+<config>
+	<id>1104</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>2</type>
+	<param>120</param>
+	<Price>800</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>1105</NextID>
+</config>
+<config>
+	<id>1105</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>2</type>
+	<param>150</param>
+	<Price>1600</Price>
+	<NeedLevel>1</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1200</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>需要公会2级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>3</type>
+	<param>10</param>
+	<Price>100000</Price>
+	<NeedLevel>2</NeedLevel>
+	<NextID>1201</NextID>
+</config>
+<config>
+	<id>1201</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>3</type>
+	<param>1000</param>
+	<Price>100</Price>
+	<NeedLevel>2</NeedLevel>
+	<NextID>1202</NextID>
+</config>
+<config>
+	<id>1202</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>3</type>
+	<param>2000</param>
+	<Price>200</Price>
+	<NeedLevel>2</NeedLevel>
+	<NextID>1203</NextID>
+</config>
+<config>
+	<id>1203</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>3</type>
+	<param>3000</param>
+	<Price>400</Price>
+	<NeedLevel>2</NeedLevel>
+	<NextID>1204</NextID>
+</config>
+<config>
+	<id>1204</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>3</type>
+	<param>4000</param>
+	<Price>800</Price>
+	<NeedLevel>2</NeedLevel>
+	<NextID>1205</NextID>
+</config>
+<config>
+	<id>1205</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>3</type>
+	<param>5000</param>
+	<Price>1600</Price>
+	<NeedLevel>2</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1300</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>需要公会3级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>4</type>
+	<param>10</param>
+	<Price>100000</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1301</NextID>
+</config>
+<config>
+	<id>1301</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>4</type>
+	<param>10</param>
+	<Price>100</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1302</NextID>
+</config>
+<config>
+	<id>1302</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>4</type>
+	<param>20</param>
+	<Price>200</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1303</NextID>
+</config>
+<config>
+	<id>1303</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>4</type>
+	<param>30</param>
+	<Price>400</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1304</NextID>
+</config>
+<config>
+	<id>1304</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>4</type>
+	<param>40</param>
+	<Price>800</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1305</NextID>
+</config>
+<config>
+	<id>1305</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>4</type>
+	<param>50</param>
+	<Price>1600</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1400</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>需要公会3级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>5</type>
+	<param>10</param>
+	<Price>150000</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1401</NextID>
+</config>
+<config>
+	<id>1401</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>5</type>
+	<param>20</param>
+	<Price>100</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1402</NextID>
+</config>
+<config>
+	<id>1402</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>5</type>
+	<param>40</param>
+	<Price>200</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1403</NextID>
+</config>
+<config>
+	<id>1403</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>5</type>
+	<param>60</param>
+	<Price>400</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1404</NextID>
+</config>
+<config>
+	<id>1404</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>5</type>
+	<param>80</param>
+	<Price>800</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>1405</NextID>
+</config>
+<config>
+	<id>1405</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>5</type>
+	<param>100</param>
+	<Price>1600</Price>
+	<NeedLevel>3</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1500</id>
+	<icon>funeng</icon>
+	<name>抗性</name>
+	<name_en></name_en>
+	<desc>需要公会4级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>6</type>
+	<param>10</param>
+	<Price>150000</Price>
+	<NeedLevel>4</NeedLevel>
+	<NextID>1501</NextID>
+</config>
+<config>
+	<id>1501</id>
+	<icon>funeng</icon>
+	<name>抗性</name>
+	<name_en></name_en>
+	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>6</type>
+	<param>20</param>
+	<Price>100</Price>
+	<NeedLevel>4</NeedLevel>
+	<NextID>1502</NextID>
+</config>
+<config>
+	<id>1502</id>
+	<icon>funeng</icon>
+	<name>抗性</name>
+	<name_en></name_en>
+	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>6</type>
+	<param>40</param>
+	<Price>200</Price>
+	<NeedLevel>4</NeedLevel>
+	<NextID>1503</NextID>
+</config>
+<config>
+	<id>1503</id>
+	<icon>funeng</icon>
+	<name>抗性</name>
+	<name_en></name_en>
+	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>6</type>
+	<param>60</param>
+	<Price>400</Price>
+	<NeedLevel>4</NeedLevel>
+	<NextID>1504</NextID>
+</config>
+<config>
+	<id>1504</id>
+	<icon>funeng</icon>
+	<name>抗性</name>
+	<name_en></name_en>
+	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>6</type>
+	<param>80</param>
+	<Price>800</Price>
+	<NeedLevel>4</NeedLevel>
+	<NextID>1505</NextID>
+</config>
+<config>
+	<id>1505</id>
+	<icon>funeng</icon>
+	<name>抗性</name>
+	<name_en></name_en>
+	<desc>抗性值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>6</type>
+	<param>100</param>
+	<Price>1600</Price>
+	<NeedLevel>4</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1600</id>
+	<icon>coin</icon>
+	<name>金币</name>
+	<name_en></name_en>
+	<desc>需要公会5级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>7</type>
+	<param>1</param>
+	<Price>200000</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1601</NextID>
+</config>
+<config>
+	<id>1601</id>
+	<icon>coin</icon>
+	<name>金币</name>
+	<name_en></name_en>
+	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>7</type>
+	<param>2</param>
+	<Price>100</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1602</NextID>
+</config>
+<config>
+	<id>1602</id>
+	<icon>coin</icon>
+	<name>金币</name>
+	<name_en></name_en>
+	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>7</type>
+	<param>4</param>
+	<Price>200</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1603</NextID>
+</config>
+<config>
+	<id>1603</id>
+	<icon>coin</icon>
+	<name>金币</name>
+	<name_en></name_en>
+	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>7</type>
+	<param>6</param>
+	<Price>400</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1604</NextID>
+</config>
+<config>
+	<id>1604</id>
+	<icon>coin</icon>
+	<name>金币</name>
+	<name_en></name_en>
+	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>7</type>
+	<param>8</param>
+	<Price>800</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1605</NextID>
+</config>
+<config>
+	<id>1605</id>
+	<icon>coin</icon>
+	<name>金币</name>
+	<name_en></name_en>
+	<desc>金币收益增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>7</type>
+	<param>10</param>
+	<Price>1600</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1700</id>
+	<icon>exp</icon>
+	<name>经验</name>
+	<name_en></name_en>
+	<desc>需要公会5级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>8</type>
+	<param>1</param>
+	<Price>200000</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1701</NextID>
+</config>
+<config>
+	<id>1701</id>
+	<icon>exp</icon>
+	<name>经验</name>
+	<name_en></name_en>
+	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>8</type>
+	<param>2</param>
+	<Price>100</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1702</NextID>
+</config>
+<config>
+	<id>1702</id>
+	<icon>exp</icon>
+	<name>经验</name>
+	<name_en></name_en>
+	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>8</type>
+	<param>4</param>
+	<Price>200</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1703</NextID>
+</config>
+<config>
+	<id>1703</id>
+	<icon>exp</icon>
+	<name>经验</name>
+	<name_en></name_en>
+	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>8</type>
+	<param>6</param>
+	<Price>400</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1704</NextID>
+</config>
+<config>
+	<id>1704</id>
+	<icon>exp</icon>
+	<name>经验</name>
+	<name_en></name_en>
+	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>8</type>
+	<param>8</param>
+	<Price>800</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>1705</NextID>
+</config>
+<config>
+	<id>1705</id>
+	<icon>exp</icon>
+	<name>经验</name>
+	<name_en></name_en>
+	<desc>经验收益增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>8</type>
+	<param>10</param>
+	<Price>1600</Price>
+	<NeedLevel>5</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1800</id>
+	<icon>shengwang</icon>
+	<name>声望</name>
+	<name_en></name_en>
+	<desc>需要公会6级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>9</type>
+	<param>1</param>
+	<Price>250000</Price>
+	<NeedLevel>6</NeedLevel>
+	<NextID>1801</NextID>
+</config>
+<config>
+	<id>1801</id>
+	<icon>shengwang</icon>
+	<name>声望</name>
+	<name_en></name_en>
+	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>9</type>
+	<param>2</param>
+	<Price>100</Price>
+	<NeedLevel>6</NeedLevel>
+	<NextID>1802</NextID>
+</config>
+<config>
+	<id>1802</id>
+	<icon>shengwang</icon>
+	<name>声望</name>
+	<name_en></name_en>
+	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>9</type>
+	<param>4</param>
+	<Price>200</Price>
+	<NeedLevel>6</NeedLevel>
+	<NextID>1803</NextID>
+</config>
+<config>
+	<id>1803</id>
+	<icon>shengwang</icon>
+	<name>声望</name>
+	<name_en></name_en>
+	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>9</type>
+	<param>6</param>
+	<Price>400</Price>
+	<NeedLevel>6</NeedLevel>
+	<NextID>1804</NextID>
+</config>
+<config>
+	<id>1804</id>
+	<icon>shengwang</icon>
+	<name>声望</name>
+	<name_en></name_en>
+	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>9</type>
+	<param>8</param>
+	<Price>800</Price>
+	<NeedLevel>6</NeedLevel>
+	<NextID>1805</NextID>
+</config>
+<config>
+	<id>1805</id>
+	<icon>shengwang</icon>
+	<name>声望</name>
+	<name_en></name_en>
+	<desc>声望收益增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>9</type>
+	<param>10</param>
+	<Price>1600</Price>
+	<NeedLevel>6</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>1900</id>
+	<icon>tili</icon>
+	<name>体力</name>
+	<name_en></name_en>
+	<desc>需要公会7级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>10</type>
+	<param>1</param>
+	<Price>250000</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>1901</NextID>
+</config>
+<config>
+	<id>1901</id>
+	<icon>tili</icon>
+	<name>体力</name>
+	<name_en></name_en>
+	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>10</type>
+	<param>6</param>
+	<Price>100</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>1902</NextID>
+</config>
+<config>
+	<id>1902</id>
+	<icon>tili</icon>
+	<name>体力</name>
+	<name_en></name_en>
+	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>10</type>
+	<param>12</param>
+	<Price>200</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>1903</NextID>
+</config>
+<config>
+	<id>1903</id>
+	<icon>tili</icon>
+	<name>体力</name>
+	<name_en></name_en>
+	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>10</type>
+	<param>18</param>
+	<Price>400</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>1904</NextID>
+</config>
+<config>
+	<id>1904</id>
+	<icon>tili</icon>
+	<name>体力</name>
+	<name_en></name_en>
+	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>10</type>
+	<param>24</param>
+	<Price>800</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>1905</NextID>
+</config>
+<config>
+	<id>1905</id>
+	<icon>tili</icon>
+	<name>体力</name>
+	<name_en></name_en>
+	<desc>体力上限增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>10</type>
+	<param>30</param>
+	<Price>1600</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>2000</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>需要公会7级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>1</type>
+	<param>10</param>
+	<Price>300000</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>2001</NextID>
+</config>
+<config>
+	<id>2001</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>1</type>
+	<param>40</param>
+	<Price>100</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>2002</NextID>
+</config>
+<config>
+	<id>2002</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>1</type>
+	<param>80</param>
+	<Price>200</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>2003</NextID>
+</config>
+<config>
+	<id>2003</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>1</type>
+	<param>120</param>
+	<Price>400</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>2004</NextID>
+</config>
+<config>
+	<id>2004</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>1</type>
+	<param>160</param>
+	<Price>800</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>2005</NextID>
+</config>
+<config>
+	<id>2005</id>
+	<icon>gongji</icon>
+	<name>威力</name>
+	<name_en></name_en>
+	<desc>威力值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>1</type>
+	<param>200</param>
+	<Price>1600</Price>
+	<NeedLevel>7</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>2100</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>需要公会8级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>2</type>
+	<param>10</param>
+	<Price>300000</Price>
+	<NeedLevel>8</NeedLevel>
+	<NextID>2101</NextID>
+</config>
+<config>
+	<id>2101</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>2</type>
+	<param>30</param>
+	<Price>100</Price>
+	<NeedLevel>8</NeedLevel>
+	<NextID>2102</NextID>
+</config>
+<config>
+	<id>2102</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>2</type>
+	<param>60</param>
+	<Price>200</Price>
+	<NeedLevel>8</NeedLevel>
+	<NextID>2103</NextID>
+</config>
+<config>
+	<id>2103</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>2</type>
+	<param>90</param>
+	<Price>400</Price>
+	<NeedLevel>8</NeedLevel>
+	<NextID>2104</NextID>
+</config>
+<config>
+	<id>2104</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>2</type>
+	<param>120</param>
+	<Price>800</Price>
+	<NeedLevel>8</NeedLevel>
+	<NextID>2105</NextID>
+</config>
+<config>
+	<id>2105</id>
+	<icon>fangyu</icon>
+	<name>防御</name>
+	<name_en></name_en>
+	<desc>防御值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>2</type>
+	<param>150</param>
+	<Price>1600</Price>
+	<NeedLevel>8</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>2200</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>需要公会9级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>3</type>
+	<param>10</param>
+	<Price>350000</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2201</NextID>
+</config>
+<config>
+	<id>2201</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>3</type>
+	<param>1000</param>
+	<Price>100</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2202</NextID>
+</config>
+<config>
+	<id>2202</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>3</type>
+	<param>2000</param>
+	<Price>200</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2203</NextID>
+</config>
+<config>
+	<id>2203</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>3</type>
+	<param>3000</param>
+	<Price>400</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2204</NextID>
+</config>
+<config>
+	<id>2204</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>3</type>
+	<param>4000</param>
+	<Price>800</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2205</NextID>
+</config>
+<config>
+	<id>2205</id>
+	<icon>shengming</icon>
+	<name>生命</name>
+	<name_en></name_en>
+	<desc>生命增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>3</type>
+	<param>5000</param>
+	<Price>1600</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>2300</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>需要公会9级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>4</type>
+	<param>10</param>
+	<Price>350000</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2301</NextID>
+</config>
+<config>
+	<id>2301</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>4</type>
+	<param>10</param>
+	<Price>100</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2302</NextID>
+</config>
+<config>
+	<id>2302</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>4</type>
+	<param>20</param>
+	<Price>200</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2303</NextID>
+</config>
+<config>
+	<id>2303</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>4</type>
+	<param>30</param>
+	<Price>400</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2304</NextID>
+</config>
+<config>
+	<id>2304</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>4</type>
+	<param>40</param>
+	<Price>800</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>2305</NextID>
+</config>
+<config>
+	<id>2305</id>
+	<icon>jingzhun</icon>
+	<name>暴击</name>
+	<name_en></name_en>
+	<desc>暴击值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>4</type>
+	<param>50</param>
+	<Price>1600</Price>
+	<NeedLevel>9</NeedLevel>
+	<NextID>0</NextID>
+</config>
+<config>
+	<id>2400</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>需要公会10级</desc>
+	<desc_en></desc_en>
+	<lv>0</lv>
+	<type>5</type>
+	<param>10</param>
+	<Price>400000</Price>
+	<NeedLevel>10</NeedLevel>
+	<NextID>2401</NextID>
+</config>
+<config>
+	<id>2401</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>1</lv>
+	<type>5</type>
+	<param>10</param>
+	<Price>100</Price>
+	<NeedLevel>10</NeedLevel>
+	<NextID>2402</NextID>
+</config>
+<config>
+	<id>2402</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>2</lv>
+	<type>5</type>
+	<param>20</param>
+	<Price>200</Price>
+	<NeedLevel>10</NeedLevel>
+	<NextID>2403</NextID>
+</config>
+<config>
+	<id>2403</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>3</lv>
+	<type>5</type>
+	<param>30</param>
+	<Price>400</Price>
+	<NeedLevel>10</NeedLevel>
+	<NextID>2404</NextID>
+</config>
+<config>
+	<id>2404</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>4</lv>
+	<type>5</type>
+	<param>40</param>
+	<Price>800</Price>
+	<NeedLevel>10</NeedLevel>
+	<NextID>2405</NextID>
+</config>
+<config>
+	<id>2405</id>
+	<icon>yichang</icon>
+	<name>异常</name>
+	<name_en></name_en>
+	<desc>异常值增加</desc>
+	<desc_en></desc_en>
+	<lv>5</lv>
+	<type>5</type>
+	<param>50</param>
+	<Price>1600</Price>
+	<NeedLevel>10</NeedLevel>
+	<NextID>0</NextID>
+</config>
+</root>

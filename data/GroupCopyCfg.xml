@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<level>40</level>
+	<name>勇气试炼</name>
+	<name_en></name_en>
+	<icon>Assets/UI/Texture/Image_Boss/yongqi.png</icon>
+	<atlas></atlas>
+	<stageCount>3</stageCount>
+	<stage1Name>第一阶:希望试炼</stage1Name>
+	<stage1Name_en></stage1Name_en>
+	<stage1Copy>[1000111,1000112]</stage1Copy>
+	<stage1Mission>[[2,1000111,1],[3,1000112,1,600]]</stage1Mission>
+	<stage1Reward>[[102,100],[103,10000]]</stage1Reward>
+	<stage2Name>第二阶:坚毅试炼</stage2Name>
+	<stage2Name_en></stage2Name_en>
+	<stage2Copy>[1000113,1000114]</stage2Copy>
+	<stage2Mission>[[2,1000113,1],[3,1000114,1,600]]</stage2Mission>
+	<stage2Reward>[[108,100],[10901,50]]</stage2Reward>
+	<stage3Name>第三阶:勇气试炼</stage3Name>
+	<stage3Name_en></stage3Name_en>
+	<stage3Copy>[1000115]</stage3Copy>
+	<stage3Mission>[[2,1000115,1]]</stage3Mission>
+	<stage3Reward>[[20011,10],[301100,1]]</stage3Reward>
+</config>
+<config>
+	<id>2</id>
+	<level>50</level>
+	<name>地底之城</name>
+	<name_en></name_en>
+	<icon>Assets/UI/Texture/Image_Boss/didi.png</icon>
+	<atlas></atlas>
+	<stageCount>3</stageCount>
+	<stage1Name>第一阶:英雄试炼</stage1Name>
+	<stage1Name_en></stage1Name_en>
+	<stage1Copy>[1000116,1000117]</stage1Copy>
+	<stage1Mission>[[2,1000116,1],[3,1000117,1,600]]</stage1Mission>
+	<stage1Reward>[[102,200],[103,20000]]</stage1Reward>
+	<stage2Name>第二阶:英雄历练</stage2Name>
+	<stage2Name_en></stage2Name_en>
+	<stage2Copy>[1000118,1000119]</stage2Copy>
+	<stage2Mission>[[2,1000118,1],[3,1000119,1,600]]</stage2Mission>
+	<stage2Reward>[[108,200],[10901,100]]</stage2Reward>
+	<stage3Name>第三阶:英雄修仙</stage3Name>
+	<stage3Name_en></stage3Name_en>
+	<stage3Copy>[1000120]</stage3Copy>
+	<stage3Mission>[[2,1000120,1]]</stage3Mission>
+	<stage3Reward>[[20011,10],[301101,1]]</stage3Reward>
+</config>
+<config>
+	<id>3</id>
+	<level>60</level>
+	<name>无尽深渊</name>
+	<name_en></name_en>
+	<icon>Assets/UI/Texture/Image_Boss/wujin.png</icon>
+	<atlas></atlas>
+	<stageCount>3</stageCount>
+	<stage1Name>第一阶:大神试炼</stage1Name>
+	<stage1Name_en></stage1Name_en>
+	<stage1Copy>[1000121,1000122]</stage1Copy>
+	<stage1Mission>[[2,1000121,1],[3,1000122,1,600]]</stage1Mission>
+	<stage1Reward>[[102,300],[103,30000]]</stage1Reward>
+	<stage2Name>第二阶:大神历练</stage2Name>
+	<stage2Name_en></stage2Name_en>
+	<stage2Copy>[1000123,1000124]</stage2Copy>
+	<stage2Mission>[[2,1000123,1],[3,1000124,1,600]]</stage2Mission>
+	<stage2Reward>[[108,300],[10901,150]]</stage2Reward>
+	<stage3Name>第三阶:大神修仙</stage3Name>
+	<stage3Name_en></stage3Name_en>
+	<stage3Copy>[1000125]</stage3Copy>
+	<stage3Mission>[[2,1000125,1]]</stage3Mission>
+	<stage3Reward>[[20011,10],[301102,1]]</stage3Reward>
+</config>
+</root>

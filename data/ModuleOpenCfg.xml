@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1671</id>
+	<uID>167</uID>
+	<name>金币/体力购买</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1011</id>
+	<uID>101</uID>
+	<name>竞技场</name>
+	<name_en></name_en>
+	<type>3</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon>arena</icon>
+	<buildingName>1006107</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-0.75,0.92,0.45],[1.3,1.3,1.3],[75]]</position>
+	<describe>通关简单3-5副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>1006107</path>
+</config>
+<config>
+	<id>1035</id>
+	<uID></uID>
+	<name>多人场景</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>1</openType>
+	<param>1</param>
+	<icon>collectively</icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[23,0,-20]]</position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1041</id>
+	<uID>104</uID>
+	<name>公会</name>
+	<name_en></name_en>
+	<type>3</type>
+	<openType>3</openType>
+	<param>110403</param>
+	<icon>guild</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-0.74,2.7,0],[1.3,1.3,1.3],[75]]</position>
+	<describe>通关简单4-3副本开放</describe>
+	<describe_en></describe_en>
+	<order>10</order>
+	<path>Below/newBtn/guildBtn</path>
+</config>
+<config>
+	<id>1061</id>
+	<uID>106</uID>
+	<name>英雄试炼</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110906</param>
+	<icon>herotrial</icon>
+	<buildingName></buildingName>
+	<effectName>1921</effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[470,7,120]]</position>
+	<describe>通关简单9-6副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>herotrial</path>
+</config>
+<config>
+	<id>1081</id>
+	<uID>108</uID>
+	<name>任务</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon>task2</icon>
+	<buildingName>Right</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Right/newRBtn/taskBtn</path>
+</config>
+<config>
+	<id>1082</id>
+	<uID></uID>
+	<name>挑战任务</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1083</id>
+	<uID></uID>
+	<name>合作任务</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>111301</param>
+	<icon>task2</icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单13-1副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1121</id>
+	<uID>112</uID>
+	<name>商城</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName>Right</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Right/newRBtn/shopBtn</path>
+</config>
+<config>
+	<id>1131</id>
+	<uID>113</uID>
+	<name>时空仪</name>
+	<name_en></name_en>
+	<type>5</type>
+	<openType>3</openType>
+	<param>110803</param>
+	<icon>spaceinstrument</icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[0.93,1.43,1.16]]</position>
+	<describe>通关简单8-3副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1171</id>
+	<uID>117</uID>
+	<name>排行榜</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon>top2</icon>
+	<buildingName>Left</buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position>[[-624,95]]</position>
+	<describe>通关简单3-5副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Left/newLBtn/topBtn</path>
+</config>
+<config>
+	<id>1172</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1173</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1174</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1175</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1176</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1211</id>
+	<uID>121</uID>
+	<name>大漩涡</name>
+	<name_en></name_en>
+	<type>5</type>
+	<openType>3</openType>
+	<param>111201</param>
+	<icon>infinitevortex</icon>
+	<buildingName></buildingName>
+	<effectName>1921</effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[437,193,-20]]</position>
+	<describe>通关简单12-1副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>vortex</path>
+</config>
+<config>
+	<id>1221</id>
+	<uID>122</uID>
+	<name>召唤</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110303</param>
+	<icon>card2</icon>
+	<buildingName>Right</buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position>[[630,-76]]</position>
+	<describe>通关简单3-3副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Right/newRBtn/cardBtn</path>
+</config>
+<config>
+	<id>1241</id>
+	<uID>124</uID>
+	<name>神器</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>300101</param>
+	<icon>fumo</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-132,-308]]</position>
+	<describe>通关精绝宝藏资源副本</describe>
+	<describe_en></describe_en>
+	<order>12</order>
+	<path>Below/newBtn/fumoBtn</path>
+</config>
+<config>
+	<id>1251</id>
+	<uID>125</uID>
+	<name>签到</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1281</id>
+	<uID>128</uID>
+	<name>技能</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110104</param>
+	<icon>skill</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.4</timeSet>
+	<position>[[179,-308]]</position>
+	<describe>通关简单1-4副本开放</describe>
+	<describe_en></describe_en>
+	<order>3</order>
+	<path>Below/newBtn/BackgroundBtn</path>
+</config>
+<config>
+	<id>1321</id>
+	<uID>132</uID>
+	<name>背包</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110101</param>
+	<icon>bag</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.5</timeSet>
+	<position>[[491,-308]]</position>
+	<describe>通关简单1-1副本开放</describe>
+	<describe_en></describe_en>
+	<order>2</order>
+	<path>Below/newBtn/bagBtn</path>
+</config>
+<config>
+	<id>1322</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110101</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1323</id>
+	<uID></uID>
+	<name>称号</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110105</param>
+	<icon>bag</icon>
+	<buildingName></buildingName>
+	<effectName>1321</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单1-5副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1331</id>
+	<uID>133</uID>
+	<name>好友</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName>Left</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Left/newLBtn/friendBtn</path>
+</config>
+<config>
+	<id>1361</id>
+	<uID>136</uID>
+	<name>暗影之神</name>
+	<name_en></name_en>
+	<type>3</type>
+	<openType>3</openType>
+	<param>110306</param>
+	<icon>worldboss</icon>
+	<buildingName>1006108</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-0.4,2.4,0],[2,2,2],[20]]</position>
+	<describe>通关简单3-6副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>1006108/touch</path>
+</config>
+<config>
+	<id>1371</id>
+	<uID>137</uID>
+	<name>资源副本</name>
+	<name_en></name_en>
+	<type>5</type>
+	<openType>3</openType>
+	<param>110204</param>
+	<icon>resourcescopy</icon>
+	<buildingName></buildingName>
+	<effectName>1921</effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-215,145,-20]]</position>
+	<describe>通关简单2-4副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>ziyuan</path>
+</config>
+<config>
+	<id>1372</id>
+	<uID></uID>
+	<name>极限躲避</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110204</param>
+	<icon>duobi</icon>
+	<buildingName>1371</buildingName>
+	<effectName>1921</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单2-4副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1373</id>
+	<uID></uID>
+	<name>精绝宝藏</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110706</param>
+	<icon>baozang</icon>
+	<buildingName>1371</buildingName>
+	<effectName>1921</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单7-6副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1374</id>
+	<uID></uID>
+	<name>顺手牵羊</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110606</param>
+	<icon>qianyang</icon>
+	<buildingName>1371</buildingName>
+	<effectName>1921</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单6-6副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1375</id>
+	<uID></uID>
+	<name>金币副本</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110506</param>
+	<icon>jinbi</icon>
+	<buildingName>1371</buildingName>
+	<effectName>1921</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单5-6副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1391</id>
+	<uID>139</uID>
+	<name>主线副本</name>
+	<name_en></name_en>
+	<type>3</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName>1006105</buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>1006105/Entrance02/effect03/MainButton/MainButton_land/MainButton_0</path>
+</config>
+<config>
+	<id>1401</id>
+	<uID>140</uID>
+	<name>充值</name>
+	<name_en></name_en>
+	<type>2</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1411</id>
+	<uID>141</uID>
+	<name>聊天</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName>Left</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Left/newLBtn/talkBtn</path>
+</config>
+<config>
+	<id>1451</id>
+	<uID>145</uID>
+	<name>强化功能</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110203</param>
+	<icon>shengjie</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.4</timeSet>
+	<position>[[387,-308]]</position>
+	<describe>通关简单2-3副本开放</describe>
+	<describe_en></describe_en>
+	<order>5</order>
+	<path>Below/newBtn/equipBtn</path>
+</config>
+<config>
+	<id>1452</id>
+	<uID></uID>
+	<name>装备洗练</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110906</param>
+	<icon>xilian</icon>
+	<buildingName></buildingName>
+	<effectName>1451</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单9-6副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1453</id>
+	<uID></uID>
+	<name>装备强化</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon>qianghua</icon>
+	<buildingName></buildingName>
+	<effectName>1451</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单3-2副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1454</id>
+	<uID></uID>
+	<name>宝石强化</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>111201</param>
+	<icon>baoshi</icon>
+	<buildingName></buildingName>
+	<effectName>1451</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单12-1副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1455</id>
+	<uID></uID>
+	<name>装备升星</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110401</param>
+	<icon>upgrade</icon>
+	<buildingName></buildingName>
+	<effectName>1451</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单4-1副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1491</id>
+	<uID>149</uID>
+	<name>时装</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110201</param>
+	<icon>fashion</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.4</timeSet>
+	<position>[[283,-308]]</position>
+	<describe>通关简单2-1副本开放</describe>
+	<describe_en></describe_en>
+	<order>4</order>
+	<path>Below/newBtn/fashionBtn</path>
+</config>
+<config>
+	<id>1511</id>
+	<uID>151</uID>
+	<name>阵营</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110301</param>
+	<icon>mingge</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-236,-308]]</position>
+	<describe>通关简单3-1副本开放</describe>
+	<describe_en></describe_en>
+	<order>8</order>
+	<path>Below/newBtn/minggeBtn</path>
+</config>
+<config>
+	<id>1561</id>
+	<uID>156</uID>
+	<name>团队副本</name>
+	<name_en></name_en>
+	<type>5</type>
+	<openType>3</openType>
+	<param>110806</param>
+	<icon>teamcopy</icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[0.78,0.72,0]]</position>
+	<describe>通关简单8-6副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1601</id>
+	<uID>160</uID>
+	<name>排位赛</name>
+	<name_en></name_en>
+	<type>3</type>
+	<openType>3</openType>
+	<param>111101</param>
+	<icon>qualifying</icon>
+	<buildingName>1006106</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-1.16,2.27,0.24],[1.6,1.6,1.6],[80]]</position>
+	<describe>通关简单11-1副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>1006106</path>
+</config>
+<config>
+	<id>1701</id>
+	<uID>170</uID>
+	<name>宠物</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110205</param>
+	<icon>pet</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-28,-308]]</position>
+	<describe>通关简单2-5副本开放</describe>
+	<describe_en></describe_en>
+	<order>6</order>
+	<path>Below/newBtn/petBtn</path>
+</config>
+<config>
+	<id>1711</id>
+	<uID>171</uID>
+	<name>活动</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110106</param>
+	<icon>activity2</icon>
+	<buildingName>Right</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[630,-177]]</position>
+	<describe>通关简单1-6副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Right/newRBtn/activityBtn</path>
+</config>
+<config>
+	<id>1781</id>
+	<uID>178</uID>
+	<name>试炼场</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon>trial</icon>
+	<buildingName></buildingName>
+	<effectName>1921</effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-492,136,0]]</position>
+	<describe>通关简单3-2副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>shilianchang</path>
+</config>
+<config>
+	<id>1782</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1783</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1784</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1785</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1786</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1787</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1788</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1789</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1790</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110302</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1811</id>
+	<uID>181</uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>2</openType>
+	<param>999</param>
+	<icon>resourcescopy</icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1812</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>5</type>
+	<openType>3</openType>
+	<param>110106</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1813</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>5</type>
+	<openType>3</openType>
+	<param>110106</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1814</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>5</type>
+	<openType>3</openType>
+	<param>110106</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1815</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>5</type>
+	<openType>3</openType>
+	<param>110106</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1841</id>
+	<uID>184</uID>
+	<name>成就</name>
+	<name_en></name_en>
+	<type>2</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Right/newRBtn/achievementBtn</path>
+</config>
+<config>
+	<id>1861</id>
+	<uID>186</uID>
+	<name>公告</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon>resourcescopy</icon>
+	<buildingName>Left</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Left/newLBtn/noticeBtn</path>
+</config>
+<config>
+	<id>1891</id>
+	<uID>189</uID>
+	<name></name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>2</openType>
+	<param>999</param>
+	<icon>resourcescopy</icon>
+	<buildingName>Left</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Left/newLBtn/bulletScreenBtn</path>
+</config>
+<config>
+	<id>1901</id>
+	<uID>190</uID>
+	<name>觉醒技能</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110206</param>
+	<icon>awaken</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[-340,-308]]</position>
+	<describe>通关简单2-6副本开放</describe>
+	<describe_en></describe_en>
+	<order>7</order>
+	<path>Below/newBtn/juexingBtn</path>
+</config>
+<config>
+	<id>1902</id>
+	<uID></uID>
+	<name>二次觉醒技能</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>130101</param>
+	<icon>awaken2</icon>
+	<buildingName></buildingName>
+	<effectName>1901</effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关噩梦1-1副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>1921</id>
+	<uID>192</uID>
+	<name>世界</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon>notice</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position>[[606,-308]]</position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order>1</order>
+	<path>Below/worldBtn</path>
+</config>
+<config>
+	<id>10001</id>
+	<uID></uID>
+	<name>技能1</name>
+	<name_en></name_en>
+	<type>4</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>10002</id>
+	<uID></uID>
+	<name>技能2</name>
+	<name_en></name_en>
+	<type>4</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>10003</id>
+	<uID></uID>
+	<name>技能3</name>
+	<name_en></name_en>
+	<type>4</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>10004</id>
+	<uID></uID>
+	<name>技能4</name>
+	<name_en></name_en>
+	<type>4</type>
+	<openType>1</openType>
+	<param></param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>10010</id>
+	<uID></uID>
+	<name></name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110102</param>
+	<icon></icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>20001</id>
+	<uID></uID>
+	<name>困难副本</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>110703</param>
+	<icon>copy</icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe>通关简单7-3副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>20002</id>
+	<uID></uID>
+	<name>噩梦副本</name>
+	<name_en></name_en>
+	<type>0</type>
+	<openType>3</openType>
+	<param>120402</param>
+	<icon>copy</icon>
+	<buildingName></buildingName>
+	<effectName></effectName>
+	<timeSet></timeSet>
+	<position></position>
+	<describe>通关困难4-2副本开放</describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path></path>
+</config>
+<config>
+	<id>2011</id>
+	<uID>201</uID>
+	<name>竞技</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110305</param>
+	<icon>arena2</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单3-5副本开放</describe>
+	<describe_en></describe_en>
+	<order>9</order>
+	<path>Below/newBtn/sportsBtn</path>
+</config>
+<config>
+	<id>2021</id>
+	<uID>202</uID>
+	<name>组队副本</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>3</openType>
+	<param>110803</param>
+	<icon>teamcopy2</icon>
+	<buildingName>Below</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe>通关简单8-3副本开放</describe>
+	<describe_en></describe_en>
+	<order>11</order>
+	<path>Below/newBtn/teamBtn</path>
+</config>
+<config>
+	<id>2071</id>
+	<uID>207</uID>
+	<name>日常</name>
+	<name_en></name_en>
+	<type>1</type>
+	<openType>1</openType>
+	<param></param>
+	<icon>achievement</icon>
+	<buildingName>Right</buildingName>
+	<effectName></effectName>
+	<timeSet>0.3</timeSet>
+	<position></position>
+	<describe></describe>
+	<describe_en></describe_en>
+	<order></order>
+	<path>Right/newRBtn/dailyBtn</path>
+</config>
+</root>

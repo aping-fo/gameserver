@@ -1,0 +1,1353 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1001</id>
+	<Attribute>15</Attribute>
+	<value>11100501</value>
+	<material>[[18000,1]]</material>
+	<lv>1</lv>
+	<nextID>1002</nextID>
+	<desValue>75%,1500</desValue>
+</config>
+<config>
+	<id>1002</id>
+	<Attribute>15</Attribute>
+	<value>11100502</value>
+	<material>[[18000,2]]</material>
+	<lv>2</lv>
+	<nextID>1003</nextID>
+	<desValue>80%,3000</desValue>
+</config>
+<config>
+	<id>1003</id>
+	<Attribute>15</Attribute>
+	<value>11100503</value>
+	<material>[[18000,3]]</material>
+	<lv>3</lv>
+	<nextID>1004</nextID>
+	<desValue>85%,4500</desValue>
+</config>
+<config>
+	<id>1004</id>
+	<Attribute>15</Attribute>
+	<value>11100504</value>
+	<material>[[18000,4]]</material>
+	<lv>4</lv>
+	<nextID>1005</nextID>
+	<desValue>90%,6000</desValue>
+</config>
+<config>
+	<id>1005</id>
+	<Attribute>15</Attribute>
+	<value>11100505</value>
+	<material>[[18000,6]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>95%,7500</desValue>
+</config>
+<config>
+	<id>1006</id>
+	<Attribute>8</Attribute>
+	<value>250</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>1007</nextID>
+	<desValue>250</desValue>
+</config>
+<config>
+	<id>1007</id>
+	<Attribute>8</Attribute>
+	<value>300</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>1008</nextID>
+	<desValue>300</desValue>
+</config>
+<config>
+	<id>1008</id>
+	<Attribute>8</Attribute>
+	<value>350</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>1009</nextID>
+	<desValue>350</desValue>
+</config>
+<config>
+	<id>1009</id>
+	<Attribute>8</Attribute>
+	<value>400</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>1010</nextID>
+	<desValue>400</desValue>
+</config>
+<config>
+	<id>1010</id>
+	<Attribute>8</Attribute>
+	<value>450</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>450</desValue>
+</config>
+<config>
+	<id>1011</id>
+	<Attribute>9</Attribute>
+	<value>250</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>1012</nextID>
+	<desValue>250</desValue>
+</config>
+<config>
+	<id>1012</id>
+	<Attribute>9</Attribute>
+	<value>300</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>1013</nextID>
+	<desValue>300</desValue>
+</config>
+<config>
+	<id>1013</id>
+	<Attribute>9</Attribute>
+	<value>350</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>1014</nextID>
+	<desValue>350</desValue>
+</config>
+<config>
+	<id>1014</id>
+	<Attribute>9</Attribute>
+	<value>400</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>1015</nextID>
+	<desValue>400</desValue>
+</config>
+<config>
+	<id>1015</id>
+	<Attribute>9</Attribute>
+	<value>450</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>450</desValue>
+</config>
+<config>
+	<id>1016</id>
+	<Attribute>7</Attribute>
+	<value>250</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>1017</nextID>
+	<desValue>250</desValue>
+</config>
+<config>
+	<id>1017</id>
+	<Attribute>7</Attribute>
+	<value>300</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>1018</nextID>
+	<desValue>300</desValue>
+</config>
+<config>
+	<id>1018</id>
+	<Attribute>7</Attribute>
+	<value>350</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>1019</nextID>
+	<desValue>350</desValue>
+</config>
+<config>
+	<id>1019</id>
+	<Attribute>7</Attribute>
+	<value>400</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>1020</nextID>
+	<desValue>400</desValue>
+</config>
+<config>
+	<id>1020</id>
+	<Attribute>7</Attribute>
+	<value>450</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>450</desValue>
+</config>
+<config>
+	<id>1021</id>
+	<Attribute>12</Attribute>
+	<value>250</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>1022</nextID>
+	<desValue>250</desValue>
+</config>
+<config>
+	<id>1022</id>
+	<Attribute>12</Attribute>
+	<value>300</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>1023</nextID>
+	<desValue>300</desValue>
+</config>
+<config>
+	<id>1023</id>
+	<Attribute>12</Attribute>
+	<value>350</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>1024</nextID>
+	<desValue>350</desValue>
+</config>
+<config>
+	<id>1024</id>
+	<Attribute>12</Attribute>
+	<value>400</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>1025</nextID>
+	<desValue>400</desValue>
+</config>
+<config>
+	<id>1025</id>
+	<Attribute>12</Attribute>
+	<value>450</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>450</desValue>
+</config>
+<config>
+	<id>1026</id>
+	<Attribute>15</Attribute>
+	<value>11100601</value>
+	<material>[[18002,1]]</material>
+	<lv>1</lv>
+	<nextID>1027</nextID>
+	<desValue>90%,7500</desValue>
+</config>
+<config>
+	<id>1027</id>
+	<Attribute>15</Attribute>
+	<value>11100602</value>
+	<material>[[18002,2]]</material>
+	<lv>2</lv>
+	<nextID>1028</nextID>
+	<desValue>100%,9000</desValue>
+</config>
+<config>
+	<id>1028</id>
+	<Attribute>15</Attribute>
+	<value>11100603</value>
+	<material>[[18002,3]]</material>
+	<lv>3</lv>
+	<nextID>1029</nextID>
+	<desValue>110%,10500</desValue>
+</config>
+<config>
+	<id>1029</id>
+	<Attribute>15</Attribute>
+	<value>11100604</value>
+	<material>[[18002,4]]</material>
+	<lv>4</lv>
+	<nextID>1030</nextID>
+	<desValue>120%,12000</desValue>
+</config>
+<config>
+	<id>1030</id>
+	<Attribute>15</Attribute>
+	<value>11100605</value>
+	<material>[[18002,6]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>130%,13500</desValue>
+</config>
+<config>
+	<id>1031</id>
+	<Attribute>20</Attribute>
+	<value>1</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>1032</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>1032</id>
+	<Attribute>20</Attribute>
+	<value>1</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>1033</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>1033</id>
+	<Attribute>20</Attribute>
+	<value>1</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>1034</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>1034</id>
+	<Attribute>20</Attribute>
+	<value>1</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>1035</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>1035</id>
+	<Attribute>20</Attribute>
+	<value>1</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>1036</id>
+	<Attribute>20</Attribute>
+	<value>2</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>1037</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>1037</id>
+	<Attribute>20</Attribute>
+	<value>2</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>1038</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>1038</id>
+	<Attribute>20</Attribute>
+	<value>2</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>1039</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>1039</id>
+	<Attribute>20</Attribute>
+	<value>2</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>1040</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>1040</id>
+	<Attribute>20</Attribute>
+	<value>2</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>1041</id>
+	<Attribute>20</Attribute>
+	<value>3</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>1042</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>1042</id>
+	<Attribute>20</Attribute>
+	<value>3</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>1043</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>1043</id>
+	<Attribute>20</Attribute>
+	<value>3</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>1044</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>1044</id>
+	<Attribute>20</Attribute>
+	<value>3</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>1045</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>1045</id>
+	<Attribute>20</Attribute>
+	<value>3</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>1046</id>
+	<Attribute>20</Attribute>
+	<value>4</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>1047</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>1047</id>
+	<Attribute>20</Attribute>
+	<value>4</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>1048</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>1048</id>
+	<Attribute>20</Attribute>
+	<value>4</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>1049</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>1049</id>
+	<Attribute>20</Attribute>
+	<value>4</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>1050</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>1050</id>
+	<Attribute>20</Attribute>
+	<value>4</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>2001</id>
+	<Attribute>15</Attribute>
+	<value>12100501</value>
+	<material>[[18000,1]]</material>
+	<lv>1</lv>
+	<nextID>2002</nextID>
+	<desValue>75%,1500</desValue>
+</config>
+<config>
+	<id>2002</id>
+	<Attribute>15</Attribute>
+	<value>12100502</value>
+	<material>[[18000,2]]</material>
+	<lv>2</lv>
+	<nextID>2003</nextID>
+	<desValue>80%,3000</desValue>
+</config>
+<config>
+	<id>2003</id>
+	<Attribute>15</Attribute>
+	<value>12100503</value>
+	<material>[[18000,3]]</material>
+	<lv>3</lv>
+	<nextID>2004</nextID>
+	<desValue>85%,4500</desValue>
+</config>
+<config>
+	<id>2004</id>
+	<Attribute>15</Attribute>
+	<value>12100504</value>
+	<material>[[18000,4]]</material>
+	<lv>4</lv>
+	<nextID>2005</nextID>
+	<desValue>90%,6000</desValue>
+</config>
+<config>
+	<id>2005</id>
+	<Attribute>15</Attribute>
+	<value>12100505</value>
+	<material>[[18000,6]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>95%,7500</desValue>
+</config>
+<config>
+	<id>2006</id>
+	<Attribute>10</Attribute>
+	<value>550</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>2007</nextID>
+	<desValue>550</desValue>
+</config>
+<config>
+	<id>2007</id>
+	<Attribute>10</Attribute>
+	<value>600</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>2008</nextID>
+	<desValue>600</desValue>
+</config>
+<config>
+	<id>2008</id>
+	<Attribute>10</Attribute>
+	<value>650</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>2009</nextID>
+	<desValue>650</desValue>
+</config>
+<config>
+	<id>2009</id>
+	<Attribute>10</Attribute>
+	<value>700</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>2010</nextID>
+	<desValue>700</desValue>
+</config>
+<config>
+	<id>2010</id>
+	<Attribute>10</Attribute>
+	<value>750</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>750</desValue>
+</config>
+<config>
+	<id>2011</id>
+	<Attribute>19</Attribute>
+	<value>71001</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>2012</nextID>
+	<desValue>0.39</desValue>
+</config>
+<config>
+	<id>2012</id>
+	<Attribute>19</Attribute>
+	<value>71002</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>2013</nextID>
+	<desValue>0.41</desValue>
+</config>
+<config>
+	<id>2013</id>
+	<Attribute>19</Attribute>
+	<value>71003</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>2014</nextID>
+	<desValue>0.43</desValue>
+</config>
+<config>
+	<id>2014</id>
+	<Attribute>19</Attribute>
+	<value>71004</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>2015</nextID>
+	<desValue>0.45</desValue>
+</config>
+<config>
+	<id>2015</id>
+	<Attribute>19</Attribute>
+	<value>71005</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>0.47</desValue>
+</config>
+<config>
+	<id>2016</id>
+	<Attribute>13</Attribute>
+	<value>70001</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>2017</nextID>
+	<desValue>5%,</desValue>
+</config>
+<config>
+	<id>2017</id>
+	<Attribute>13</Attribute>
+	<value>70002</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>2018</nextID>
+	<desValue>10%,</desValue>
+</config>
+<config>
+	<id>2018</id>
+	<Attribute>13</Attribute>
+	<value>70003</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>2019</nextID>
+	<desValue>15%,</desValue>
+</config>
+<config>
+	<id>2019</id>
+	<Attribute>13</Attribute>
+	<value>70004</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>2020</nextID>
+	<desValue>20%,</desValue>
+</config>
+<config>
+	<id>2020</id>
+	<Attribute>13</Attribute>
+	<value>70005</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>25%,</desValue>
+</config>
+<config>
+	<id>2021</id>
+	<Attribute>9</Attribute>
+	<value>550</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>2022</nextID>
+	<desValue>550</desValue>
+</config>
+<config>
+	<id>2022</id>
+	<Attribute>9</Attribute>
+	<value>600</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>2023</nextID>
+	<desValue>600</desValue>
+</config>
+<config>
+	<id>2023</id>
+	<Attribute>9</Attribute>
+	<value>650</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>2024</nextID>
+	<desValue>650</desValue>
+</config>
+<config>
+	<id>2024</id>
+	<Attribute>9</Attribute>
+	<value>700</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>2025</nextID>
+	<desValue>700</desValue>
+</config>
+<config>
+	<id>2025</id>
+	<Attribute>9</Attribute>
+	<value>750</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>750</desValue>
+</config>
+<config>
+	<id>2026</id>
+	<Attribute>15</Attribute>
+	<value>12100601</value>
+	<material>[[18002,1]]</material>
+	<lv>1</lv>
+	<nextID>2027</nextID>
+	<desValue>90%,7500</desValue>
+</config>
+<config>
+	<id>2027</id>
+	<Attribute>15</Attribute>
+	<value>12100602</value>
+	<material>[[18002,2]]</material>
+	<lv>2</lv>
+	<nextID>2028</nextID>
+	<desValue>100%,9000</desValue>
+</config>
+<config>
+	<id>2028</id>
+	<Attribute>15</Attribute>
+	<value>12100603</value>
+	<material>[[18002,3]]</material>
+	<lv>3</lv>
+	<nextID>2029</nextID>
+	<desValue>110%,10500</desValue>
+</config>
+<config>
+	<id>2029</id>
+	<Attribute>15</Attribute>
+	<value>12100604</value>
+	<material>[[18002,4]]</material>
+	<lv>4</lv>
+	<nextID>2030</nextID>
+	<desValue>120%,12000</desValue>
+</config>
+<config>
+	<id>2030</id>
+	<Attribute>15</Attribute>
+	<value>12100605</value>
+	<material>[[18002,6]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>130%,13500</desValue>
+</config>
+<config>
+	<id>2031</id>
+	<Attribute>20</Attribute>
+	<value>5</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>2032</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>2032</id>
+	<Attribute>20</Attribute>
+	<value>5</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>2033</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>2033</id>
+	<Attribute>20</Attribute>
+	<value>5</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>2034</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>2034</id>
+	<Attribute>20</Attribute>
+	<value>5</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>2035</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>2035</id>
+	<Attribute>20</Attribute>
+	<value>5</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>2036</id>
+	<Attribute>20</Attribute>
+	<value>6</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>2037</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>2037</id>
+	<Attribute>20</Attribute>
+	<value>6</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>2038</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>2038</id>
+	<Attribute>20</Attribute>
+	<value>6</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>2039</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>2039</id>
+	<Attribute>20</Attribute>
+	<value>6</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>2040</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>2040</id>
+	<Attribute>20</Attribute>
+	<value>6</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>2041</id>
+	<Attribute>20</Attribute>
+	<value>7</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>2042</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>2042</id>
+	<Attribute>20</Attribute>
+	<value>7</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>2043</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>2043</id>
+	<Attribute>20</Attribute>
+	<value>7</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>2044</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>2044</id>
+	<Attribute>20</Attribute>
+	<value>7</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>2045</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>2045</id>
+	<Attribute>20</Attribute>
+	<value>7</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>2046</id>
+	<Attribute>20</Attribute>
+	<value>8</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>2047</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>2047</id>
+	<Attribute>20</Attribute>
+	<value>8</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>2048</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>2048</id>
+	<Attribute>20</Attribute>
+	<value>8</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>2049</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>2049</id>
+	<Attribute>20</Attribute>
+	<value>8</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>2050</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>2050</id>
+	<Attribute>20</Attribute>
+	<value>8</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>3001</id>
+	<Attribute>15</Attribute>
+	<value>13100501</value>
+	<material>[[18000,1]]</material>
+	<lv>1</lv>
+	<nextID>3002</nextID>
+	<desValue>75%,1500</desValue>
+</config>
+<config>
+	<id>3002</id>
+	<Attribute>15</Attribute>
+	<value>13100502</value>
+	<material>[[18000,2]]</material>
+	<lv>2</lv>
+	<nextID>3003</nextID>
+	<desValue>80%,3000</desValue>
+</config>
+<config>
+	<id>3003</id>
+	<Attribute>15</Attribute>
+	<value>13100503</value>
+	<material>[[18000,3]]</material>
+	<lv>3</lv>
+	<nextID>3004</nextID>
+	<desValue>85%,4500</desValue>
+</config>
+<config>
+	<id>3004</id>
+	<Attribute>15</Attribute>
+	<value>13100504</value>
+	<material>[[18000,4]]</material>
+	<lv>4</lv>
+	<nextID>3005</nextID>
+	<desValue>90%,6000</desValue>
+</config>
+<config>
+	<id>3005</id>
+	<Attribute>15</Attribute>
+	<value>13100505</value>
+	<material>[[18000,6]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>95%,7500</desValue>
+</config>
+<config>
+	<id>3006</id>
+	<Attribute>14</Attribute>
+	<value>5</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>3007</nextID>
+	<desValue>0.05</desValue>
+</config>
+<config>
+	<id>3007</id>
+	<Attribute>14</Attribute>
+	<value>10</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>3008</nextID>
+	<desValue>0.1</desValue>
+</config>
+<config>
+	<id>3008</id>
+	<Attribute>14</Attribute>
+	<value>15</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>3009</nextID>
+	<desValue>0.15</desValue>
+</config>
+<config>
+	<id>3009</id>
+	<Attribute>14</Attribute>
+	<value>20</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>3010</nextID>
+	<desValue>0.2</desValue>
+</config>
+<config>
+	<id>3010</id>
+	<Attribute>14</Attribute>
+	<value>25</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>0.25</desValue>
+</config>
+<config>
+	<id>3011</id>
+	<Attribute>8</Attribute>
+	<value>1050</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>3012</nextID>
+	<desValue>1050</desValue>
+</config>
+<config>
+	<id>3012</id>
+	<Attribute>8</Attribute>
+	<value>1100</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>3013</nextID>
+	<desValue>1100</desValue>
+</config>
+<config>
+	<id>3013</id>
+	<Attribute>8</Attribute>
+	<value>1150</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>3014</nextID>
+	<desValue>1150</desValue>
+</config>
+<config>
+	<id>3014</id>
+	<Attribute>8</Attribute>
+	<value>1200</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>3015</nextID>
+	<desValue>1200</desValue>
+</config>
+<config>
+	<id>3015</id>
+	<Attribute>8</Attribute>
+	<value>1250</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>1250</desValue>
+</config>
+<config>
+	<id>3016</id>
+	<Attribute>11</Attribute>
+	<value>50</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>3017</nextID>
+	<desValue>50</desValue>
+</config>
+<config>
+	<id>3017</id>
+	<Attribute>11</Attribute>
+	<value>100</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>3018</nextID>
+	<desValue>100</desValue>
+</config>
+<config>
+	<id>3018</id>
+	<Attribute>11</Attribute>
+	<value>150</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>3019</nextID>
+	<desValue>150</desValue>
+</config>
+<config>
+	<id>3019</id>
+	<Attribute>11</Attribute>
+	<value>200</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>3020</nextID>
+	<desValue>200</desValue>
+</config>
+<config>
+	<id>3020</id>
+	<Attribute>11</Attribute>
+	<value>250</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>250</desValue>
+</config>
+<config>
+	<id>3021</id>
+	<Attribute>9</Attribute>
+	<value>300</value>
+	<material>[[18001,1]]</material>
+	<lv>1</lv>
+	<nextID>3022</nextID>
+	<desValue>300</desValue>
+</config>
+<config>
+	<id>3022</id>
+	<Attribute>9</Attribute>
+	<value>350</value>
+	<material>[[18001,3]]</material>
+	<lv>2</lv>
+	<nextID>3023</nextID>
+	<desValue>350</desValue>
+</config>
+<config>
+	<id>3023</id>
+	<Attribute>9</Attribute>
+	<value>400</value>
+	<material>[[18001,7]]</material>
+	<lv>3</lv>
+	<nextID>3024</nextID>
+	<desValue>400</desValue>
+</config>
+<config>
+	<id>3024</id>
+	<Attribute>9</Attribute>
+	<value>450</value>
+	<material>[[18001,10]]</material>
+	<lv>4</lv>
+	<nextID>3025</nextID>
+	<desValue>450</desValue>
+</config>
+<config>
+	<id>3025</id>
+	<Attribute>9</Attribute>
+	<value>500</value>
+	<material>[[18001,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>500</desValue>
+</config>
+<config>
+	<id>3026</id>
+	<Attribute>15</Attribute>
+	<value>13100601</value>
+	<material>[[18002,1]]</material>
+	<lv>1</lv>
+	<nextID>3027</nextID>
+	<desValue>90%,7500</desValue>
+</config>
+<config>
+	<id>3027</id>
+	<Attribute>15</Attribute>
+	<value>13100602</value>
+	<material>[[18002,2]]</material>
+	<lv>2</lv>
+	<nextID>3028</nextID>
+	<desValue>100%,9000</desValue>
+</config>
+<config>
+	<id>3028</id>
+	<Attribute>15</Attribute>
+	<value>13100603</value>
+	<material>[[18002,3]]</material>
+	<lv>3</lv>
+	<nextID>3029</nextID>
+	<desValue>110%,10500</desValue>
+</config>
+<config>
+	<id>3029</id>
+	<Attribute>15</Attribute>
+	<value>13100604</value>
+	<material>[[18002,4]]</material>
+	<lv>4</lv>
+	<nextID>3030</nextID>
+	<desValue>120%,12000</desValue>
+</config>
+<config>
+	<id>3030</id>
+	<Attribute>15</Attribute>
+	<value>13100605</value>
+	<material>[[18002,6]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>130%,13500</desValue>
+</config>
+<config>
+	<id>3031</id>
+	<Attribute>20</Attribute>
+	<value>9</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>3032</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>3032</id>
+	<Attribute>20</Attribute>
+	<value>9</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>3033</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>3033</id>
+	<Attribute>20</Attribute>
+	<value>9</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>3034</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>3034</id>
+	<Attribute>20</Attribute>
+	<value>9</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>3035</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>3035</id>
+	<Attribute>20</Attribute>
+	<value>9</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>3036</id>
+	<Attribute>20</Attribute>
+	<value>10</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>3037</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>3037</id>
+	<Attribute>20</Attribute>
+	<value>10</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>3038</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>3038</id>
+	<Attribute>20</Attribute>
+	<value>10</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>3039</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>3039</id>
+	<Attribute>20</Attribute>
+	<value>10</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>3040</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>3040</id>
+	<Attribute>20</Attribute>
+	<value>10</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>3041</id>
+	<Attribute>20</Attribute>
+	<value>11</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>3042</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>3042</id>
+	<Attribute>20</Attribute>
+	<value>11</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>3043</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>3043</id>
+	<Attribute>20</Attribute>
+	<value>11</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>3044</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>3044</id>
+	<Attribute>20</Attribute>
+	<value>11</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>3045</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>3045</id>
+	<Attribute>20</Attribute>
+	<value>11</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+<config>
+	<id>3046</id>
+	<Attribute>20</Attribute>
+	<value>12</value>
+	<material>[[18003,1]]</material>
+	<lv>1</lv>
+	<nextID>3047</nextID>
+	<desValue>1级</desValue>
+</config>
+<config>
+	<id>3047</id>
+	<Attribute>20</Attribute>
+	<value>12</value>
+	<material>[[18003,3]]</material>
+	<lv>2</lv>
+	<nextID>3048</nextID>
+	<desValue>2级</desValue>
+</config>
+<config>
+	<id>3048</id>
+	<Attribute>20</Attribute>
+	<value>12</value>
+	<material>[[18003,7]]</material>
+	<lv>3</lv>
+	<nextID>3049</nextID>
+	<desValue>3级</desValue>
+</config>
+<config>
+	<id>3049</id>
+	<Attribute>20</Attribute>
+	<value>12</value>
+	<material>[[18003,10]]</material>
+	<lv>4</lv>
+	<nextID>3050</nextID>
+	<desValue>4级</desValue>
+</config>
+<config>
+	<id>3050</id>
+	<Attribute>20</Attribute>
+	<value>12</value>
+	<material>[[18003,13]]</material>
+	<lv>5</lv>
+	<nextID></nextID>
+	<desValue>5级</desValue>
+</config>
+</root>

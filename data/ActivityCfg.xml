@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<name>乐起食堂</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>1</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>10</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>GettiliView</viewname>
+</config>
+<config>
+	<id>2</id>
+	<name>乐起理财</name>
+	<name_en></name_en>
+	<Conds>[[4,1]]</Conds>
+	<ActivityType>2</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>5</sort>
+	<des>15级之后每升5级,即可领取海量钻石！</des>
+	<des_en></des_en>
+	<viewname>FundView</viewname>
+</config>
+<config>
+	<id>3</id>
+	<name>七天大奖</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>3</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>2</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>7</Param0>
+	<sort>3</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>SevenDaysRewardView</viewname>
+</config>
+<config>
+	<id>4</id>
+	<name>新手礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>4</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>5</id>
+	<name>冲级活动</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>5</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>7</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>LevRewardsView</viewname>
+</config>
+<config>
+	<id>6</id>
+	<name>周卡/月卡</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>6</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>2</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>108</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>WeekMonthCardView</viewname>
+</config>
+<config>
+	<id>7</id>
+	<name>签到</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>8</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>2</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>SignView</viewname>
+</config>
+<config>
+	<id>8</id>
+	<name>在线红包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>7</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des>玩的越久,奖励越多哦！乐起红包！爽！爽！爽！</des>
+	<des_en></des_en>
+	<viewname>OnlineTiemRewardView</viewname>
+</config>
+<config>
+	<id>9</id>
+	<name>首充</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>9</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des>快点首充啊</des>
+	<des_en></des_en>
+	<viewname>RechargeactivityView</viewname>
+</config>
+<config>
+	<id>10</id>
+	<name>限时大礼</name>
+	<name_en></name_en>
+	<Conds>[[3,105,110]]</Conds>
+	<ActivityType>10</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>360</Param0>
+	<sort>102</sort>
+	<des>限时折扣快来买啊</des>
+	<des_en></des_en>
+	<viewname>TimegiftView</viewname>
+</config>
+<config>
+	<id>11</id>
+	<name>限时大礼</name>
+	<name_en></name_en>
+	<Conds>[[3,105,111]]</Conds>
+	<ActivityType>10</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>360</Param0>
+	<sort>103</sort>
+	<des>限时折扣快来买啊</des>
+	<des_en></des_en>
+	<viewname>TimegiftView</viewname>
+</config>
+<config>
+	<id>12</id>
+	<name>限时大礼</name>
+	<name_en></name_en>
+	<Conds>[[3,105,112]]</Conds>
+	<ActivityType>10</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>360</Param0>
+	<sort>104</sort>
+	<des>限时折扣快来买啊</des>
+	<des_en></des_en>
+	<viewname>TimegiftView</viewname>
+</config>
+<config>
+	<id>13</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>11</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
+	<EndTime>2018-09-26 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>110</sort>
+	<des>特价礼包</des>
+	<des_en></des_en>
+	<viewname>BargainPriceView</viewname>
+</config>
+<config>
+	<id>14</id>
+	<name>盛夏礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>12</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des>活动时间:2018.07.02-2018.07.06</des>
+	<des_en></des_en>
+	<viewname>SummergiftView</viewname>
+</config>
+<config>
+	<id>15</id>
+	<name>累计充值</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>13</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
+	<EndTime>2019-09-30 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>106</sort>
+	<des>活动说明:活动期间,累计充值到以下对应金额即可领取一份回馈奖励注:如果累计充值达到以下档次中的最大额度,则可领取所有档次奖励</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>16</id>
+	<name>单笔充值</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>14</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-06-01 11:00:00</BeginTime>
+	<EndTime>2018-06-30 11:00:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des>活动说明:活动期间,累计充值到以下对应金额即可领取一份回馈奖励注:单笔充值的金额进度与其他单笔充值进度不共享</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>17</id>
+	<name>每日充值</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>15</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>DailyrechargeView</viewname>
+</config>
+<config>
+	<id>18</id>
+	<name>Facebook分享礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>16</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>FacebookGiftView</viewname>
+</config>
+<config>
+	<id>19</id>
+	<name>Facebook邀请礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>17</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>FacebookGiftView</viewname>
+</config>
+<config>
+	<id>20</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>11</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-27 00:00:00</BeginTime>
+	<EndTime>2018-09-27 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>110</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>BargainPriceView</viewname>
+</config>
+<config>
+	<id>21</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>11</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-28 00:00:00</BeginTime>
+	<EndTime>2018-09-28 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>110</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>BargainPriceView</viewname>
+</config>
+<config>
+	<id>22</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>11</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-29 00:00:00</BeginTime>
+	<EndTime>2018-09-29 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>110</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>BargainPriceView</viewname>
+</config>
+<config>
+	<id>23</id>
+	<name>超值礼盒</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>18</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2017-09-26 00:00:00</BeginTime>
+	<EndTime>2017-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>120</sort>
+	<des>往这儿看,各种材料道具,统统折扣出售！巨大优惠来袭！你还不赶紧拿走它们,时间有限哦！</des>
+	<des_en></des_en>
+	<viewname>ChaoZhiView</viewname>
+</config>
+<config>
+	<id>24</id>
+	<name>开服特惠</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>19</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-07-02 11:00:00</BeginTime>
+	<EndTime>2019-07-09 23:00:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des>往这儿看,各种材料道具,统统折扣出售！巨大优惠来袭！你还不赶紧拿走它们,时间有限哦！</des>
+	<des_en></des_en>
+	<viewname>ServerwelfareView</viewname>
+</config>
+<config>
+	<id>25</id>
+	<name>宠物福利</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>20</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
+	<EndTime>2018-09-28 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>8</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>PetwelfareView</viewname>
+</config>
+<config>
+	<id>26</id>
+	<name>宠物投资</name>
+	<name_en></name_en>
+	<Conds>[[2,102,380]]</Conds>
+	<ActivityType>21</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des>快来一起培养宠物吧！满足条件时,领取丰厚奖励！</des>
+	<des_en></des_en>
+	<viewname>PetinvestmentView</viewname>
+</config>
+<config>
+	<id>27</id>
+	<name>装备投资</name>
+	<name_en></name_en>
+	<Conds>[[2,102,388]]</Conds>
+	<ActivityType>22</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>6</sort>
+	<des>快来一起培养装备吧！满足条件,领取丰厚奖励！</des>
+	<des_en></des_en>
+	<viewname>PetinvestmentView</viewname>
+</config>
+<config>
+	<id>28</id>
+	<name>卡片投资</name>
+	<name_en></name_en>
+	<Conds>[[2,102,380]]</Conds>
+	<ActivityType>23</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des>快来一起培养卡片吧！满足条件时,领取丰厚奖励！</des>
+	<des_en></des_en>
+	<viewname>PetinvestmentView</viewname>
+</config>
+<config>
+	<id>29</id>
+	<name>每日充值</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>24</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>130</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>DailyrechargeView2</viewname>
+</config>
+<config>
+	<id>30</id>
+	<name>0元礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>25</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>140</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>GiftbagView</viewname>
+</config>
+<config>
+	<id>31</id>
+	<name>宠物福利</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>20</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-29 00:00:00</BeginTime>
+	<EndTime>2018-10-01 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>8</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>PetwelfareView</viewname>
+</config>
+<config>
+	<id>32</id>
+	<name>宠物福利</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>20</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-10-02 00:00:00</BeginTime>
+	<EndTime>2018-10-04 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>8</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>PetwelfareView</viewname>
+</config>
+<config>
+	<id>33</id>
+	<name>宠物福利</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>20</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>8</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>PetwelfareView</viewname>
+</config>
+<config>
+	<id>34</id>
+	<name>宠物福利</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>20</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>8</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>PetwelfareView</viewname>
+</config>
+<config>
+	<id>50</id>
+	<name>两天登录奖励</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>27</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>2</Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>TwoDaysRewardView</viewname>
+</config>
+<config>
+	<id>51</id>
+	<name>卡片福利</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>20</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>2</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>PetwelfareView</viewname>
+</config>
+<config>
+	<id>60</id>
+	<name>全服登录</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>26</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>LoginPlayerNumReward</viewname>
+</config>
+<config>
+	<id>70</id>
+	<name>第一天</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>30</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>71</id>
+	<name>第二天</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>30</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-27 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>72</id>
+	<name>第三天</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>30</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-28 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>73</id>
+	<name>第四天</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>30</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-29 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>74</id>
+	<name>第五天</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>30</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-30 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>75</id>
+	<name>第六天</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>30</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-10-01 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>76</id>
+	<name>第七天</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>30</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-10-02 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>77</id>
+	<name>积分累计奖励</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>31</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>80</id>
+	<name>神秘宝箱</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>32</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-28 00:00:00</BeginTime>
+	<EndTime>2018-09-28 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>90</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>33</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-27 00:00:00</BeginTime>
+	<EndTime>2018-09-27 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>141</sort>
+	<des>活动说明:活动期间,累计消耗钻石领取奖励</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>91</id>
+	<name>命运卡牌</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>34</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime></BeginTime>
+	<EndTime></EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0>1</Param0>
+	<sort>142</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>DestinycardView</viewname>
+</config>
+<config>
+	<id>92</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>33</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-29 00:00:00</BeginTime>
+	<EndTime>2018-09-29 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>141</sort>
+	<des>活动说明:活动期间,累计消耗钻石领取奖励</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>93</id>
+	<name>累计消耗</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>33</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-10-01 00:00:00</BeginTime>
+	<EndTime>2018-10-01 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>141</sort>
+	<des>活动说明:活动期间,累计消耗钻石领取奖励</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>94</id>
+	<name>神秘宝箱</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>32</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-30 00:00:00</BeginTime>
+	<EndTime>2018-09-30 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort></sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname></viewname>
+</config>
+<config>
+	<id>100</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>35</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-26 00:00:00</BeginTime>
+	<EndTime>2018-09-26 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>143</sort>
+	<des>活动说明:活动期间,累计召唤次数领取奖励</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>101</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>35</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-28 00:00:00</BeginTime>
+	<EndTime>2018-09-28 23:55:01</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>143</sort>
+	<des>活动说明:活动期间,累计召唤次数领取奖励</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>102</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>35</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-30 00:00:00</BeginTime>
+	<EndTime>2018-09-30 23:55:02</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>143</sort>
+	<des>活动说明:活动期间,累计召唤次数领取奖励</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>103</id>
+	<name>累计召唤</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>35</ActivityType>
+	<OpenType>1</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-10-02 00:00:00</BeginTime>
+	<EndTime>2018-10-02 23:55:03</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>143</sort>
+	<des>活动说明:活动期间,累计召唤次数领取奖励</des>
+	<des_en></des_en>
+	<viewname>AccumulativeRechargeView</viewname>
+</config>
+<config>
+	<id>111</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>11</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-09-30 00:00:00</BeginTime>
+	<EndTime>2018-09-30 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>110</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>BargainPriceView</viewname>
+</config>
+<config>
+	<id>112</id>
+	<name>特价礼包</name>
+	<name_en></name_en>
+	<Conds></Conds>
+	<ActivityType>11</ActivityType>
+	<OpenType>2</OpenType>
+	<TimeType>1</TimeType>
+	<BeginTime>2018-10-01 00:00:00</BeginTime>
+	<EndTime>2018-10-01 23:55:00</EndTime>
+	<WeekTime></WeekTime>
+	<HourTime></HourTime>
+	<Param0></Param0>
+	<sort>110</sort>
+	<des></des>
+	<des_en></des_en>
+	<viewname>BargainPriceView</viewname>
+</config>
+</root>

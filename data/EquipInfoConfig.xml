@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>111011</id>
+	<name></name>
+	<desc>战士默认头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11101/11101_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111012</id>
+	<name></name>
+	<desc>战士默认身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11101/11101_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111013</id>
+	<name></name>
+	<desc>战士默认武器</desc>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11101/11101_equip.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111021</id>
+	<name></name>
+	<desc>战士第二套头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11102/11102_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111022</id>
+	<name></name>
+	<desc>战士第二套身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11102/11102_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111023</id>
+	<name></name>
+	<desc>战士第二套武器</desc>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11102/11102_equip.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111031</id>
+	<name></name>
+	<desc>战士第二套头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11103/11103_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111032</id>
+	<name></name>
+	<desc>战士第二套身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11103/11103_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111033</id>
+	<name></name>
+	<desc>战士第二套武器</desc>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11103/11103_equip.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111041</id>
+	<name></name>
+	<desc>战士第二套头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11104/11104_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111042</id>
+	<name></name>
+	<desc>战士第二套身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11104/11104_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>111043</id>
+	<name></name>
+	<desc>战士第二套武器</desc>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/11104/11104_equip.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121011</id>
+	<name></name>
+	<desc>刺客默认头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/12101/12101_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121012</id>
+	<name></name>
+	<desc>刺客默认身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/12101/12101_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121013</id>
+	<name></name>
+	<desc>刺客默认武器</desc>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>Weapon01.prefab</modelName>
+	<model2Name>Weapon02.prefab</model2Name>
+	<path>Assets/Actor/Role/12101/12101_Weapon01.prefab</path>
+	<path2>Assets/Actor/Role/12101/12101_Weapon02.prefab</path2>
+</config>
+<config>
+	<id>121021</id>
+	<name></name>
+	<desc>刺客第二套头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/12102/12102_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121022</id>
+	<name></name>
+	<desc>刺客第二套身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/12102/12102_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121023</id>
+	<name></name>
+	<desc>刺客第二套武器</desc>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>Weapon01.prefab</modelName>
+	<model2Name>Weapon02.prefab</model2Name>
+	<path>Assets/Actor/Role/12102/12102_Weapon01.prefab</path>
+	<path2>Assets/Actor/Role/12102/12102_Weapon02.prefab</path2>
+</config>
+<config>
+	<id>121031</id>
+	<name></name>
+	<desc>刺客第三套头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/12103/12103_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121032</id>
+	<name></name>
+	<desc>刺客第三套身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/12103/12103_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121033</id>
+	<name></name>
+	<desc>刺客第三套武器</desc>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>Weapon01.prefab</modelName>
+	<model2Name>Weapon02.prefab</model2Name>
+	<path>Assets/Actor/Role/12103/12103_Weapon01.prefab</path>
+	<path2>Assets/Actor/Role/12103/12103_Weapon02.prefab</path2>
+</config>
+<config>
+	<id>121041</id>
+	<name></name>
+	<desc>刺客第四套头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/12104/12104_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121042</id>
+	<name></name>
+	<desc>刺客第四套身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/12104/12104_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>121043</id>
+	<name></name>
+	<desc>刺客第四套武器</desc>
+	<type>3</type>
+	<bindPos>equip</bindPos>
+	<modelName>Weapon01.prefab</modelName>
+	<model2Name>Weapon02.prefab</model2Name>
+	<path>Assets/Actor/Role/12104/12104_Weapon01.prefab</path>
+	<path2>Assets/Actor/Role/12104/12104_Weapon02.prefab</path2>
+</config>
+<config>
+	<id>131011</id>
+	<name></name>
+	<desc>法师默认头部</desc>
+	<type>1</type>
+	<bindPos></bindPos>
+	<modelName>head.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/13101/13101_head.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>131012</id>
+	<name></name>
+	<desc>法师默认身体</desc>
+	<type>2</type>
+	<bindPos></bindPos>
+	<modelName>body.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/13101/13101_body.prefab</path>
+	<path2></path2>
+</config>
+<config>
+	<id>131013</id>
+	<name></name>
+	<desc>法师默认武器</desc>
+	<type>3</type>
+	<bindPos></bindPos>
+	<modelName>equip.prefab</modelName>
+	<model2Name></model2Name>
+	<path>Assets/Actor/Role/13101/13101_equip.prefab</path>
+	<path2></path2>
+</config>
+</root>

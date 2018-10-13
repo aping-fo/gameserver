@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<config>
+	<id>1</id>
+	<type>1</type>
+	<rewards>[[20111001,1],[20211001,1],[20311001,1],[20411001,1],[20511001,1],[20611001,1],[20121001,1],[20221001,1],[20321001,1],[20421001,1],[20521001,1],[20621001,1],[20131001,1],[20231001,1],[20331001,1],[20431001,1],[20531001,1],[20631001,1]]</rewards>
+	<rate>[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]</rate>
+	<goodsId></goodsId>
+</config>
+<config>
+	<id>2</id>
+	<type>1</type>
+	<rewards>[[20111001,1],[20121001,1],[20131001,1]]</rewards>
+	<rate>[1,1,1]</rate>
+	<goodsId></goodsId>
+</config>
+<config>
+	<id>3</id>
+	<type>1</type>
+	<rewards>[[50330001,1],[50330002,1]]</rewards>
+	<rate>[1,1]</rate>
+	<goodsId></goodsId>
+</config>
+<config>
+	<id>1001</id>
+	<type>1</type>
+	<rewards>[[108,20],[10901,2]]</rewards>
+	<rate>[50,50]</rate>
+	<goodsId></goodsId>
+</config>
+<config>
+	<id>1002</id>
+	<type>1</type>
+	<rewards>[[108,30],[10901,4]]</rewards>
+	<rate>[50,50]</rate>
+	<goodsId></goodsId>
+</config>
+<config>
+	<id>1003</id>
+	<type>1</type>
+	<rewards>[[108,40],[10901,6]]</rewards>
+	<rate>[50,50]</rate>
+	<goodsId></goodsId>
+</config>
+<config>
+	<id>1004</id>
+	<type>1</type>
+	<rewards>[[108,50],[10901,8]]</rewards>
+	<rate>[50,50]</rate>
+	<goodsId></goodsId>
+</config>
+<config>
+	<id>100001</id>
+	<type>1</type>
+	<rewards>[[20115030,1],[20215030,1],[20315030,1],[20415030,1],[20515030,1],[20615030,1],[20125030,1],[20225030,1],[20325030,1],[20425030,1],[20525030,1],[20625030,1],[20135030,1],[20235030,1],[20335030,1],[20435030,1],[20535030,1],[20635030,1]]</rewards>
+	<rate>[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]</rate>
+	<goodsId></goodsId>
+</config>
+</root>
