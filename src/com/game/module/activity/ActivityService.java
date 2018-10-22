@@ -3,13 +3,16 @@ package com.game.module.activity;
 import com.game.data.*;
 import com.game.event.InitHandler;
 import com.game.module.RandomReward.RandomRewardService;
+import com.game.module.fashion.FashionService;
 import com.game.module.goods.EquipService;
+import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
 import com.game.module.pet.PetService;
 import com.game.module.player.Player;
+import com.game.module.player.PlayerCalculator;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.serial.SerialData;
@@ -78,6 +81,10 @@ public class ActivityService implements InitHandler {
     private PetService petService;
     @Autowired
     private RandomRewardService randomRewardService;
+    @Autowired
+    private FashionService fashionService;
+    @Autowired
+    private PlayerCalculator playerCalculator;
 
     @Override
     public void handleInit() {
@@ -528,6 +535,9 @@ public class ActivityService implements InitHandler {
                     || cfg.ActivityType == ActivityConsts.ActivityType.T_TIMED_BAG //限时礼包
                     || cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG) {//特价礼包
                 List<ActivityTaskCfg> list = ConfigData.ActivityTasks.get(cfg.id);
+                if (list == null) {
+                    continue;
+                }
                 boolean bClose = true;
                 for (ActivityTaskCfg taskCfg : list) {
                     ActivityTask task = data.getActivityTask(taskCfg.id);
@@ -535,10 +545,10 @@ public class ActivityService implements InitHandler {
                         if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && (System.currentTimeMillis() - task.getTimedBag()) / 1000 / 60 <= cfg.Param0) {
                             bClose = false;
                         }
-//                    } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG) {//特价礼包
-//                        if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && player.getLev() >= cfg.Conds[0][1] && player.getLev() < cfg.Conds[0][2]) {
-//                            bClose = false;
-//                        }
+                    } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_SPECIAL_BAG) {//特价礼包
+                        if (task != null && task.getState() == ActivityConsts.ActivityState.T_UN_FINISH && player.getLev() >= cfg.Conds[0][1] && player.getLev() < cfg.Conds[0][2]) {
+                            bClose = false;
+                        }
                     } else {
                         //检测是否有未领取奖励的或者未领取任务的活动(task == null)
                         bClose = task != null && bClose && task.getState() == ActivityConsts.ActivityState.T_AWARD;
@@ -623,6 +633,7 @@ public class ActivityService implements InitHandler {
         }
 
         List<GoodsEntry> itemList = Lists.newArrayList();
+        boolean activeFashion = false;
         for (int[] arr : config.Rewards) {
             if (arr.length == 2) {
                 GoodsEntry goodsEntry = new GoodsEntry(arr[0], arr[1]);
@@ -633,9 +644,21 @@ public class ActivityService implements InitHandler {
                     itemList.add(goodsEntry);
                 }
             }
+
+            //时装激活
+            GoodsConfig goodsConfig = ConfigData.getConfig(GoodsConfig.class, arr[0]);
+            if (goodsConfig == null) {
+                ServerLogger.warn("物品不存在，物品ID=" + arr[0]);
+                continue;
+            }
+            if (goodsConfig.type == Goods.FASHION) {
+                activeFashion = true;
+            }
         }
         goodsService.addRewards(playerId, itemList, LogConsume.ACTIVITY_REWARD);
-
+        if (activeFashion) {
+            playerCalculator.calculate(player);
+        }
 
         if (activityCfg.ActivityType == ActivityConsts.ActivityType.T_SEVEN_DAYS) {
             data.setSevenDays(data.getSevenDays() + 1);
@@ -1231,7 +1254,7 @@ public class ActivityService implements InitHandler {
         //巡礼活动计算积分
         ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
         if (config != null && config.ActivityType == ActivityConsts.ActivityType.T_TOUR) {
-            completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_INTEGRAL,1);
+            completionCumulative(playerId, ActivityConsts.ActivityTaskCondType.T_INTEGRAL, 1);
         }
     }
 
@@ -1455,8 +1478,7 @@ public class ActivityService implements InitHandler {
         return intParam;
     }
 
-    private void refreshDestinyCard(int playerId)
-    {
+    private void refreshDestinyCard(int playerId) {
         PlayerData playerData = playerService.getPlayerData(playerId);
         if (playerData == null) {
             ServerLogger.warn("玩家数据不存在，玩家ID=" + playerId);

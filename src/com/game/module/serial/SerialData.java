@@ -2,11 +2,18 @@ package com.game.module.serial;
 
 import com.game.module.attach.arena.ArenaPlayer;
 import com.game.module.attach.training.TrainOpponent;
+import com.game.module.copy.Copy;
 import com.game.module.copy.CopyRank;
+import com.game.module.fashion.Fashion;
 import com.game.module.gang.GangDungeon;
 import com.game.module.ladder.Ladder;
 import com.game.module.rank.StateRank;
+import com.game.module.skill.SkillCard;
 import com.game.params.Int2Param;
+import com.game.params.rank.FashionCopyRankVO;
+import com.game.params.rank.LevelRankVO;
+import com.game.params.rank.NormalCopyRankVO;
+import com.game.params.rank.SkillCardRankVO;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
@@ -14,6 +21,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentSkipListMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -58,8 +66,45 @@ public class SerialData {
     private AtomicInteger fullServiceAttendance = new AtomicInteger(0);//全服登录人数
     private Map<Integer, Integer> AdventureBoxNumber = new ConcurrentHashMap<>();//奇遇宝箱全服购买次数
 
+    private Map<Integer, FashionCopyRankVO> fashionRankingsMap = new ConcurrentSkipListMap<>();//时装排行
+    private Map<Integer, NormalCopyRankVO> copyRankingsMap = new ConcurrentSkipListMap<>();//3星副本排行
+    private Map<Integer, SkillCardRankVO> skillCardRankingsMap = new ConcurrentSkipListMap<>();//技能卡排行
+    private Map<Integer, LevelRankVO> levelRankingsMap = new ConcurrentSkipListMap<>();//充值排行
+
     public SerialData() {
 
+    }
+
+    public Map<Integer, LevelRankVO> getLevelRankingsMap() {
+        return levelRankingsMap;
+    }
+
+    public void setLevelRankingsMap(Map<Integer, LevelRankVO> levelRankingsMap) {
+        this.levelRankingsMap = levelRankingsMap;
+    }
+
+    public Map<Integer, FashionCopyRankVO> getFashionRankingsMap() {
+        return fashionRankingsMap;
+    }
+
+    public void setFashionRankingsMap(Map<Integer, FashionCopyRankVO> fashionRankingsMap) {
+        this.fashionRankingsMap = fashionRankingsMap;
+    }
+
+    public Map<Integer, NormalCopyRankVO> getCopyRankingsMap() {
+        return copyRankingsMap;
+    }
+
+    public void setCopyRankingsMap(Map<Integer, NormalCopyRankVO> copyRankingsMap) {
+        this.copyRankingsMap = copyRankingsMap;
+    }
+
+    public Map<Integer, SkillCardRankVO> getSkillCardRankingsMap() {
+        return skillCardRankingsMap;
+    }
+
+    public void setSkillCardRankingsMap(Map<Integer, SkillCardRankVO> skillCardRankingsMap) {
+        this.skillCardRankingsMap = skillCardRankingsMap;
     }
 
     public Map<Integer, Integer> getAdventureBoxNumber() {

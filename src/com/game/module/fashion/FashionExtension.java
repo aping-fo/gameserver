@@ -28,7 +28,7 @@ public class FashionExtension {
 	@Command(4702)
 	public Object active(int playerId,IntParam id){
 		IntParam result = new IntParam();
-		result.param = fashionService.active(playerId, id.param);
+		result.param = fashionService.active(playerId, id.param,true);
 		return result;
 	}
 	

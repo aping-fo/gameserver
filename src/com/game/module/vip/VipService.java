@@ -17,8 +17,14 @@ import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.serial.SerialData;
+import com.game.module.serial.SerialDataService;
 import com.game.module.shop.ShopService;
+import com.game.module.worldboss.HurtRecord;
 import com.game.params.*;
+import com.game.params.rank.LadderRankVO;
+import com.game.params.rank.LevelRankVO;
+import com.game.params.rank.SkillCardRankVO;
 import com.game.sdk.talkdata.TalkDataService;
 import com.game.util.ConfigData;
 import com.game.util.Context;
@@ -28,8 +34,13 @@ import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentSkipListMap;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 @Service
 public class VipService {
@@ -51,6 +62,11 @@ public class VipService {
 
     public static final String SIMULATION__RECHARGE = "test";
 
+    protected final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+    protected final ReentrantReadWriteLock.ReadLock readLock = lock.readLock();
+    protected final ReentrantReadWriteLock.WriteLock writeLock = lock.writeLock();
+    private static final int RANK_NUMBER = 50;
+
     @Autowired
     private PlayerService playerService;
     @Autowired
@@ -69,6 +85,8 @@ public class VipService {
     private ShopService shopService;
     @Autowired
     private GangService gangService;
+    @Autowired
+    private SerialDataService serialDataService;
 
     // 获取vip奖励
     public int getVipReward(int playerId, int vipLev) {
@@ -278,8 +296,11 @@ public class VipService {
         Player player = playerService.getPlayer(playerId);
         Context.getLoggerService().logCharge(playerId, player.getName(), id, currentType, f, player.getServerId(), paymentType);
 
-        data.setTotalCharge(data.getTotalCharge() + charge.rmb);
+        data.setTotalCharge(data.getTotalCharge() + f);
         playerService.saveCharge(player.getAccName(), playerId, player.getName(), Math.round(data.getTotalCharge()), data.getMaxLoginContinueDays());
+
+        //充值排行
+        updateLevelRankings(playerId, data.getTotalCharge());
     }
 
     /**
@@ -364,5 +385,81 @@ public class VipService {
         param.param2 = rechargeId;
         ServerLogger.warn("rechargeId = " + rechargeId + " order = " + orderID);
         return param;
+    }
+
+    //更新充值排行
+    private void updateLevelRankings(int playerId, float totalCharge) {
+        Player player = playerService.getPlayer(playerId);
+        if (player == null) {
+            ServerLogger.warn("玩家不存在，玩家ID=" + playerId);
+            return;
+        }
+
+        SerialData serialData = serialDataService.getData();
+        if (serialData == null) {
+            ServerLogger.warn("序列化数据不存在");
+            return;
+        }
+
+        LevelRankVO levelRankVO = new LevelRankVO();
+        levelRankVO.name = player.getName();
+        levelRankVO.level = player.getLev();
+        levelRankVO.vocation = player.getVocation();
+        levelRankVO.fightingValue = player.getFight();
+        levelRankVO.playerId = playerId;
+        levelRankVO.coins = totalCharge;
+        Map<Integer, LevelRankVO> levelRankingsMap = serialData.getLevelRankingsMap();
+
+        writeLock.lock();//写锁
+        try {
+            levelRankingsMap.put(playerId, levelRankVO);
+            List<Map.Entry<Integer, LevelRankVO>> levelRankVOArrayList = new ArrayList<>(levelRankingsMap.entrySet());
+            levelRankVOArrayList.sort(new Comparator<Map.Entry<Integer, LevelRankVO>>() {
+                @Override
+                public int compare(Map.Entry<Integer, LevelRankVO> o1, Map.Entry<Integer, LevelRankVO> o2) {
+                    if (o1.getValue().coins == o2.getValue().coins) {
+                        return o2.getValue().level - o1.getValue().level;
+                    }
+                    return (int) (o2.getValue().coins - o1.getValue().coins);
+                }
+            });
+            levelRankingsMap.clear();
+            for (int i = 0; i < levelRankVOArrayList.size(); i++) {
+                if (i >= RANK_NUMBER) {
+                    break;
+                }
+                levelRankingsMap.put(levelRankVOArrayList.get(i).getKey(), levelRankVOArrayList.get(i).getValue());
+            }
+        } finally {
+            writeLock.unlock();
+        }
+    }
+
+    //获取充值排行
+    public List<LevelRankVO> getLevelRankings(int playerId) {
+        Player player = playerService.getPlayer(playerId);
+        if (player == null) {
+            ServerLogger.warn("玩家不存在，玩家ID=" + playerId);
+            return null;
+        }
+
+        SerialData serialData = serialDataService.getData();
+        if (serialData == null) {
+            ServerLogger.warn("序列化数据不存在");
+            return null;
+        }
+
+        Map<Integer, LevelRankVO> levelRankingsMap = serialData.getLevelRankingsMap();
+        if (levelRankingsMap == null) {
+            ServerLogger.warn("充值排行不存在");
+            return null;
+        }
+
+        readLock.lock();//读锁
+        try {
+            return new ArrayList<>(levelRankingsMap.values());//等finally执行后才会返回
+        } finally {
+            readLock.unlock();
+        }
     }
 }

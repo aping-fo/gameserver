@@ -449,6 +449,62 @@
 	<openId>[[137,163,3]]</openId>
 </config>
 <config>
+	<id>10910</id>
+	<atlas>Goods2</atlas>
+	<name>升星石</name>
+	<name_en></name_en>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice></buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>105</type>
+	<level></level>
+	<vocation>0</vocation>
+	<color>4</color>
+	<maxStack></maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+	<tipsType>2</tipsType>
+	<openId></openId>
+</config>
+<config>
+	<id>10911</id>
+	<atlas>Goods2</atlas>
+	<name>远古精华</name>
+	<name_en></name_en>
+	<decompose></decompose>
+	<copys></copys>
+	<buyPrice></buyPrice>
+	<sellPrice>100</sellPrice>
+	<type>105</type>
+	<level></level>
+	<vocation>0</vocation>
+	<color>4</color>
+	<maxStack></maxStack>
+	<contentsRates></contentsRates>
+	<contents></contents>
+	<hp></hp>
+	<attack></attack>
+	<defense></defense>
+	<symptom></symptom>
+	<crit></crit>
+	<fu></fu>
+	<param1></param1>
+	<param2></param2>
+	<rare></rare>
+	<tipsType>2</tipsType>
+	<openId></openId>
+</config>
+<config>
 	<id>110</id>
 	<atlas>Goods</atlas>
 	<name>漩涡币</name>
@@ -3978,7 +4034,7 @@
 </config>
 <config>
 	<id>302003</id>
-	<atlas>Goods</atlas>
+	<atlas>Goods2</atlas>
 	<name>升星券</name>
 	<name_en></name_en>
 	<decompose></decompose>
@@ -4002,7 +4058,7 @@
 	<param2></param2>
 	<rare></rare>
 	<tipsType>2</tipsType>
-	<openId>[[112,168,1]]</openId>
+	<openId></openId>
 </config>
 <config>
 	<id>303001</id>
@@ -33575,7 +33631,7 @@
 <config>
 	<id>50101</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>眩晕卡</name>
+	<name>眩晕卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33603,7 +33659,7 @@
 <config>
 	<id>50102</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>眩晕卡</name>
+	<name>眩晕卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33631,7 +33687,7 @@
 <config>
 	<id>50103</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>眩晕卡</name>
+	<name>眩晕卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33659,7 +33715,7 @@
 <config>
 	<id>50104</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>眩晕卡</name>
+	<name>眩晕卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33687,7 +33743,7 @@
 <config>
 	<id>50105</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>眩晕卡</name>
+	<name>眩晕卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33715,7 +33771,7 @@
 <config>
 	<id>50201</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>冰冻卡</name>
+	<name>冰冻卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33743,7 +33799,7 @@
 <config>
 	<id>50202</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>冰冻卡</name>
+	<name>冰冻卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33771,7 +33827,7 @@
 <config>
 	<id>50203</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>冰冻卡</name>
+	<name>冰冻卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33799,7 +33855,7 @@
 <config>
 	<id>50204</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>冰冻卡</name>
+	<name>冰冻卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33827,7 +33883,7 @@
 <config>
 	<id>50205</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>冰冻卡</name>
+	<name>冰冻卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33855,7 +33911,7 @@
 <config>
 	<id>50301</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>石化卡</name>
+	<name>石化卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33883,7 +33939,7 @@
 <config>
 	<id>50302</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>石化卡</name>
+	<name>石化卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33911,7 +33967,7 @@
 <config>
 	<id>50303</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>石化卡</name>
+	<name>石化卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33939,7 +33995,7 @@
 <config>
 	<id>50304</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>石化卡</name>
+	<name>石化卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33967,7 +34023,7 @@
 <config>
 	<id>50305</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>石化卡</name>
+	<name>石化卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -33995,7 +34051,7 @@
 <config>
 	<id>50401</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>中毒卡</name>
+	<name>中毒卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34023,7 +34079,7 @@
 <config>
 	<id>50402</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>中毒卡</name>
+	<name>中毒卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34051,7 +34107,7 @@
 <config>
 	<id>50403</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>中毒卡</name>
+	<name>中毒卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34079,7 +34135,7 @@
 <config>
 	<id>50404</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>中毒卡</name>
+	<name>中毒卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34107,7 +34163,7 @@
 <config>
 	<id>50405</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>中毒卡</name>
+	<name>中毒卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34135,7 +34191,7 @@
 <config>
 	<id>50501</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>灼烧卡</name>
+	<name>灼烧卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34163,7 +34219,7 @@
 <config>
 	<id>50502</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>灼烧卡</name>
+	<name>灼烧卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34191,7 +34247,7 @@
 <config>
 	<id>50503</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>灼烧卡</name>
+	<name>灼烧卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34219,7 +34275,7 @@
 <config>
 	<id>50504</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>灼烧卡</name>
+	<name>灼烧卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34247,7 +34303,7 @@
 <config>
 	<id>50505</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>灼烧卡</name>
+	<name>灼烧卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34275,7 +34331,7 @@
 <config>
 	<id>50601</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>流血卡</name>
+	<name>流血卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34303,7 +34359,7 @@
 <config>
 	<id>50602</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>流血卡</name>
+	<name>流血卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34331,7 +34387,7 @@
 <config>
 	<id>50603</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>流血卡</name>
+	<name>流血卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34359,7 +34415,7 @@
 <config>
 	<id>50604</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>流血卡</name>
+	<name>流血卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34387,7 +34443,7 @@
 <config>
 	<id>50605</id>
 	<atlas>Skillcardchixui</atlas>
-	<name>流血卡</name>
+	<name>流血卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34415,7 +34471,7 @@
 <config>
 	<id>50801</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>威力增益</name>
+	<name>威力增益1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34443,7 +34499,7 @@
 <config>
 	<id>50802</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>威力增益</name>
+	<name>威力增益2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34471,7 +34527,7 @@
 <config>
 	<id>50803</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>威力增益</name>
+	<name>威力增益3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34499,7 +34555,7 @@
 <config>
 	<id>50804</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>威力增益</name>
+	<name>威力增益4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34527,7 +34583,7 @@
 <config>
 	<id>50805</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>威力增益</name>
+	<name>威力增益5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34555,7 +34611,7 @@
 <config>
 	<id>50811</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>防御增益</name>
+	<name>防御增益1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34583,7 +34639,7 @@
 <config>
 	<id>50812</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>防御增益</name>
+	<name>防御增益2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34611,7 +34667,7 @@
 <config>
 	<id>50813</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>防御增益</name>
+	<name>防御增益3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34639,7 +34695,7 @@
 <config>
 	<id>50814</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>防御增益</name>
+	<name>防御增益4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34667,7 +34723,7 @@
 <config>
 	<id>50815</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>防御增益</name>
+	<name>防御增益5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34695,7 +34751,7 @@
 <config>
 	<id>50821</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>生命增益</name>
+	<name>生命增益1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34723,7 +34779,7 @@
 <config>
 	<id>50822</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>生命增益</name>
+	<name>生命增益2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34751,7 +34807,7 @@
 <config>
 	<id>50823</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>生命增益</name>
+	<name>生命增益3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34779,7 +34835,7 @@
 <config>
 	<id>50824</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>生命增益</name>
+	<name>生命增益4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34807,7 +34863,7 @@
 <config>
 	<id>50825</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>生命增益</name>
+	<name>生命增益5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34835,7 +34891,7 @@
 <config>
 	<id>50831</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴击增益</name>
+	<name>暴击增益1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34863,7 +34919,7 @@
 <config>
 	<id>50832</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴击增益</name>
+	<name>暴击增益2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34891,7 +34947,7 @@
 <config>
 	<id>50833</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴击增益</name>
+	<name>暴击增益3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34919,7 +34975,7 @@
 <config>
 	<id>50834</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴击增益</name>
+	<name>暴击增益4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34947,7 +35003,7 @@
 <config>
 	<id>50835</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴击增益</name>
+	<name>暴击增益5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -34975,7 +35031,7 @@
 <config>
 	<id>50841</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>异常增益</name>
+	<name>异常增益1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35003,7 +35059,7 @@
 <config>
 	<id>50842</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>异常增益</name>
+	<name>异常增益2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35031,7 +35087,7 @@
 <config>
 	<id>50843</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>异常增益</name>
+	<name>异常增益3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35059,7 +35115,7 @@
 <config>
 	<id>50844</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>异常增益</name>
+	<name>异常增益4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35087,7 +35143,7 @@
 <config>
 	<id>50845</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>异常增益</name>
+	<name>异常增益5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35115,7 +35171,7 @@
 <config>
 	<id>50851</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴伤增益</name>
+	<name>暴伤增益1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35143,7 +35199,7 @@
 <config>
 	<id>50852</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴伤增益</name>
+	<name>暴伤增益2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35171,7 +35227,7 @@
 <config>
 	<id>50853</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴伤增益</name>
+	<name>暴伤增益3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35199,7 +35255,7 @@
 <config>
 	<id>50854</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴伤增益</name>
+	<name>暴伤增益4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35227,7 +35283,7 @@
 <config>
 	<id>50855</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>暴伤增益</name>
+	<name>暴伤增益5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35255,7 +35311,7 @@
 <config>
 	<id>51001</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>减CD卡</name>
+	<name>减CD卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35283,7 +35339,7 @@
 <config>
 	<id>51002</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>减CD卡</name>
+	<name>减CD卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35311,7 +35367,7 @@
 <config>
 	<id>51003</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>减CD卡</name>
+	<name>减CD卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35339,7 +35395,7 @@
 <config>
 	<id>51004</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>减CD卡</name>
+	<name>减CD卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35367,7 +35423,7 @@
 <config>
 	<id>51005</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>减CD卡</name>
+	<name>减CD卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35395,7 +35451,7 @@
 <config>
 	<id>51201</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>伤害浮动</name>
+	<name>伤害浮动1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35423,7 +35479,7 @@
 <config>
 	<id>51202</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>伤害浮动</name>
+	<name>伤害浮动2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35451,7 +35507,7 @@
 <config>
 	<id>51203</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>伤害浮动</name>
+	<name>伤害浮动3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35479,7 +35535,7 @@
 <config>
 	<id>51204</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>伤害浮动</name>
+	<name>伤害浮动4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35507,7 +35563,7 @@
 <config>
 	<id>51205</id>
 	<atlas>Skillcardzengyi</atlas>
-	<name>伤害浮动</name>
+	<name>伤害浮动5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35535,7 +35591,7 @@
 <config>
 	<id>50901</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>霸体卡</name>
+	<name>霸体卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35563,7 +35619,7 @@
 <config>
 	<id>50902</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>霸体卡</name>
+	<name>霸体卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35591,7 +35647,7 @@
 <config>
 	<id>50903</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>霸体卡</name>
+	<name>霸体卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35619,7 +35675,7 @@
 <config>
 	<id>50904</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>霸体卡</name>
+	<name>霸体卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35647,7 +35703,7 @@
 <config>
 	<id>50905</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>霸体卡</name>
+	<name>霸体卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35675,7 +35731,7 @@
 <config>
 	<id>51301</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>吸血卡</name>
+	<name>吸血卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35703,7 +35759,7 @@
 <config>
 	<id>51302</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>吸血卡</name>
+	<name>吸血卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35731,7 +35787,7 @@
 <config>
 	<id>51303</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>吸血卡</name>
+	<name>吸血卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35759,7 +35815,7 @@
 <config>
 	<id>51304</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>吸血卡</name>
+	<name>吸血卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35787,7 +35843,7 @@
 <config>
 	<id>51305</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>吸血卡</name>
+	<name>吸血卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35815,7 +35871,7 @@
 <config>
 	<id>51701</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>反伤卡</name>
+	<name>反伤卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35843,7 +35899,7 @@
 <config>
 	<id>51702</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>反伤卡</name>
+	<name>反伤卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35871,7 +35927,7 @@
 <config>
 	<id>51703</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>反伤卡</name>
+	<name>反伤卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35899,7 +35955,7 @@
 <config>
 	<id>51704</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>反伤卡</name>
+	<name>反伤卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35927,7 +35983,7 @@
 <config>
 	<id>51705</id>
 	<atlas>Skillcardgongneng</atlas>
-	<name>反伤卡</name>
+	<name>反伤卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35955,7 +36011,7 @@
 <config>
 	<id>50881</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>治疗卡</name>
+	<name>治疗卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -35983,7 +36039,7 @@
 <config>
 	<id>50882</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>治疗卡</name>
+	<name>治疗卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36011,7 +36067,7 @@
 <config>
 	<id>50883</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>治疗卡</name>
+	<name>治疗卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36039,7 +36095,7 @@
 <config>
 	<id>50884</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>治疗卡</name>
+	<name>治疗卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36067,7 +36123,7 @@
 <config>
 	<id>50885</id>
 	<atlas>Skillcardhuifu</atlas>
-	<name>治疗卡</name>
+	<name>治疗卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36095,7 +36151,7 @@
 <config>
 	<id>51901</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>破甲卡</name>
+	<name>破甲卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36123,7 +36179,7 @@
 <config>
 	<id>51902</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>破甲卡</name>
+	<name>破甲卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36151,7 +36207,7 @@
 <config>
 	<id>51903</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>破甲卡</name>
+	<name>破甲卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36179,7 +36235,7 @@
 <config>
 	<id>51904</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>破甲卡</name>
+	<name>破甲卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36207,7 +36263,7 @@
 <config>
 	<id>51905</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>破甲卡</name>
+	<name>破甲卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36235,7 +36291,7 @@
 <config>
 	<id>51601</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>重伤卡</name>
+	<name>重伤卡1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36263,7 +36319,7 @@
 <config>
 	<id>51602</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>重伤卡</name>
+	<name>重伤卡2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36291,7 +36347,7 @@
 <config>
 	<id>51603</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>重伤卡</name>
+	<name>重伤卡3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36319,7 +36375,7 @@
 <config>
 	<id>51604</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>重伤卡</name>
+	<name>重伤卡4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -36347,7 +36403,7 @@
 <config>
 	<id>51605</id>
 	<atlas>Skillcardjianyi</atlas>
-	<name>重伤卡</name>
+	<name>重伤卡5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37579,7 +37635,7 @@
 <config>
 	<id>60011</id>
 	<atlas>Pet</atlas>
-	<name>小木乃伊</name>
+	<name>小木乃伊1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37607,7 +37663,7 @@
 <config>
 	<id>60012</id>
 	<atlas>Pet</atlas>
-	<name>小木乃伊</name>
+	<name>小木乃伊2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37635,7 +37691,7 @@
 <config>
 	<id>60013</id>
 	<atlas>Pet</atlas>
-	<name>小木乃伊</name>
+	<name>小木乃伊3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37663,7 +37719,7 @@
 <config>
 	<id>60014</id>
 	<atlas>Pet</atlas>
-	<name>小木乃伊</name>
+	<name>小木乃伊4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37691,7 +37747,7 @@
 <config>
 	<id>60015</id>
 	<atlas>Pet</atlas>
-	<name>小木乃伊</name>
+	<name>小木乃伊5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37719,7 +37775,7 @@
 <config>
 	<id>60016</id>
 	<atlas>Pet</atlas>
-	<name>木乃伊（变异）</name>
+	<name>木乃伊（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37747,7 +37803,7 @@
 <config>
 	<id>60017</id>
 	<atlas>Pet</atlas>
-	<name>木乃伊（变异）</name>
+	<name>木乃伊（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37775,7 +37831,7 @@
 <config>
 	<id>60021</id>
 	<atlas>Pet</atlas>
-	<name>小蛇</name>
+	<name>小蛇1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37803,7 +37859,7 @@
 <config>
 	<id>60022</id>
 	<atlas>Pet</atlas>
-	<name>小蛇</name>
+	<name>小蛇2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37831,7 +37887,7 @@
 <config>
 	<id>60023</id>
 	<atlas>Pet</atlas>
-	<name>小蛇</name>
+	<name>小蛇3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37859,7 +37915,7 @@
 <config>
 	<id>60024</id>
 	<atlas>Pet</atlas>
-	<name>小蛇</name>
+	<name>小蛇4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37887,7 +37943,7 @@
 <config>
 	<id>60025</id>
 	<atlas>Pet</atlas>
-	<name>小蛇</name>
+	<name>小蛇5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37915,7 +37971,7 @@
 <config>
 	<id>60026</id>
 	<atlas>Pet</atlas>
-	<name>蛇（变异）</name>
+	<name>蛇（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37943,7 +37999,7 @@
 <config>
 	<id>60027</id>
 	<atlas>Pet</atlas>
-	<name>蛇（变异）</name>
+	<name>蛇（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37971,7 +38027,7 @@
 <config>
 	<id>60031</id>
 	<atlas>Pet</atlas>
-	<name>小树桩</name>
+	<name>小树桩1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -37999,7 +38055,7 @@
 <config>
 	<id>60032</id>
 	<atlas>Pet</atlas>
-	<name>小树桩</name>
+	<name>小树桩2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38027,7 +38083,7 @@
 <config>
 	<id>60033</id>
 	<atlas>Pet</atlas>
-	<name>小树桩</name>
+	<name>小树桩3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38055,7 +38111,7 @@
 <config>
 	<id>60034</id>
 	<atlas>Pet</atlas>
-	<name>小树桩</name>
+	<name>小树桩4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38083,7 +38139,7 @@
 <config>
 	<id>60035</id>
 	<atlas>Pet</atlas>
-	<name>小树桩</name>
+	<name>小树桩5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38111,7 +38167,7 @@
 <config>
 	<id>60036</id>
 	<atlas>Pet</atlas>
-	<name>树桩（变异）</name>
+	<name>树桩（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38139,7 +38195,7 @@
 <config>
 	<id>60037</id>
 	<atlas>Pet</atlas>
-	<name>树桩（变异）</name>
+	<name>树桩（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38167,7 +38223,7 @@
 <config>
 	<id>60041</id>
 	<atlas>Pet</atlas>
-	<name>小蘑菇</name>
+	<name>小蘑菇1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38195,7 +38251,7 @@
 <config>
 	<id>60042</id>
 	<atlas>Pet</atlas>
-	<name>小蘑菇</name>
+	<name>小蘑菇2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38223,7 +38279,7 @@
 <config>
 	<id>60043</id>
 	<atlas>Pet</atlas>
-	<name>小蘑菇</name>
+	<name>小蘑菇3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38251,7 +38307,7 @@
 <config>
 	<id>60044</id>
 	<atlas>Pet</atlas>
-	<name>小蘑菇</name>
+	<name>小蘑菇4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38279,7 +38335,7 @@
 <config>
 	<id>60045</id>
 	<atlas>Pet</atlas>
-	<name>小蘑菇</name>
+	<name>小蘑菇5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38307,7 +38363,7 @@
 <config>
 	<id>60046</id>
 	<atlas>Pet</atlas>
-	<name>蘑菇（变异）</name>
+	<name>蘑菇（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38335,7 +38391,7 @@
 <config>
 	<id>60047</id>
 	<atlas>Pet</atlas>
-	<name>蘑菇（变异）</name>
+	<name>蘑菇（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38363,7 +38419,7 @@
 <config>
 	<id>60051</id>
 	<atlas>Pet</atlas>
-	<name>小僵尸</name>
+	<name>小僵尸1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38391,7 +38447,7 @@
 <config>
 	<id>60052</id>
 	<atlas>Pet</atlas>
-	<name>小僵尸</name>
+	<name>小僵尸2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38419,7 +38475,7 @@
 <config>
 	<id>60053</id>
 	<atlas>Pet</atlas>
-	<name>小僵尸</name>
+	<name>小僵尸3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38447,7 +38503,7 @@
 <config>
 	<id>60054</id>
 	<atlas>Pet</atlas>
-	<name>小僵尸</name>
+	<name>小僵尸4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38475,7 +38531,7 @@
 <config>
 	<id>60055</id>
 	<atlas>Pet</atlas>
-	<name>小僵尸</name>
+	<name>小僵尸5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38503,7 +38559,7 @@
 <config>
 	<id>60056</id>
 	<atlas>Pet</atlas>
-	<name>僵尸（变异）</name>
+	<name>僵尸（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38531,7 +38587,7 @@
 <config>
 	<id>60057</id>
 	<atlas>Pet</atlas>
-	<name>僵尸（变异）</name>
+	<name>僵尸（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38559,7 +38615,7 @@
 <config>
 	<id>60061</id>
 	<atlas>Pet</atlas>
-	<name>小兔子</name>
+	<name>小兔子1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38587,7 +38643,7 @@
 <config>
 	<id>60062</id>
 	<atlas>Pet</atlas>
-	<name>小兔子</name>
+	<name>小兔子2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38615,7 +38671,7 @@
 <config>
 	<id>60063</id>
 	<atlas>Pet</atlas>
-	<name>小兔子</name>
+	<name>小兔子3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38643,7 +38699,7 @@
 <config>
 	<id>60064</id>
 	<atlas>Pet</atlas>
-	<name>小兔子</name>
+	<name>小兔子4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38671,7 +38727,7 @@
 <config>
 	<id>60065</id>
 	<atlas>Pet</atlas>
-	<name>小兔子</name>
+	<name>小兔子5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38699,7 +38755,7 @@
 <config>
 	<id>60066</id>
 	<atlas>Pet</atlas>
-	<name>兔子（变异）</name>
+	<name>兔子（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38727,7 +38783,7 @@
 <config>
 	<id>60067</id>
 	<atlas>Pet</atlas>
-	<name>兔子（变异）</name>
+	<name>兔子（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38755,7 +38811,7 @@
 <config>
 	<id>60071</id>
 	<atlas>Pet</atlas>
-	<name>小猫咪</name>
+	<name>小猫咪1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38783,7 +38839,7 @@
 <config>
 	<id>60072</id>
 	<atlas>Pet</atlas>
-	<name>小猫咪</name>
+	<name>小猫咪2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38811,7 +38867,7 @@
 <config>
 	<id>60073</id>
 	<atlas>Pet</atlas>
-	<name>小猫咪</name>
+	<name>小猫咪3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38839,7 +38895,7 @@
 <config>
 	<id>60074</id>
 	<atlas>Pet</atlas>
-	<name>小猫咪</name>
+	<name>小猫咪4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38867,7 +38923,7 @@
 <config>
 	<id>60075</id>
 	<atlas>Pet</atlas>
-	<name>小猫咪</name>
+	<name>小猫咪5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38895,7 +38951,7 @@
 <config>
 	<id>60076</id>
 	<atlas>Pet</atlas>
-	<name>猫咪（变异）</name>
+	<name>猫咪（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38923,7 +38979,7 @@
 <config>
 	<id>60077</id>
 	<atlas>Pet</atlas>
-	<name>猫咪（变异）</name>
+	<name>猫咪（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38951,7 +39007,7 @@
 <config>
 	<id>60081</id>
 	<atlas>Pet</atlas>
-	<name>小猫兔</name>
+	<name>小猫兔1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -38979,7 +39035,7 @@
 <config>
 	<id>60082</id>
 	<atlas>Pet</atlas>
-	<name>小猫兔</name>
+	<name>小猫兔2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39007,7 +39063,7 @@
 <config>
 	<id>60083</id>
 	<atlas>Pet</atlas>
-	<name>小猫兔</name>
+	<name>小猫兔3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39035,7 +39091,7 @@
 <config>
 	<id>60084</id>
 	<atlas>Pet</atlas>
-	<name>小猫兔</name>
+	<name>小猫兔4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39063,7 +39119,7 @@
 <config>
 	<id>60085</id>
 	<atlas>Pet</atlas>
-	<name>小猫兔</name>
+	<name>小猫兔5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39091,7 +39147,7 @@
 <config>
 	<id>60086</id>
 	<atlas>Pet</atlas>
-	<name>猫兔（变异）</name>
+	<name>猫兔（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39119,7 +39175,7 @@
 <config>
 	<id>60087</id>
 	<atlas>Pet</atlas>
-	<name>猫兔（变异）</name>
+	<name>猫兔（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39147,7 +39203,7 @@
 <config>
 	<id>60091</id>
 	<atlas>Pet</atlas>
-	<name>小蛤蟆</name>
+	<name>小蛤蟆1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39175,7 +39231,7 @@
 <config>
 	<id>60092</id>
 	<atlas>Pet</atlas>
-	<name>小蛤蟆</name>
+	<name>小蛤蟆2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39203,7 +39259,7 @@
 <config>
 	<id>60093</id>
 	<atlas>Pet</atlas>
-	<name>小蛤蟆</name>
+	<name>小蛤蟆3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39231,7 +39287,7 @@
 <config>
 	<id>60094</id>
 	<atlas>Pet</atlas>
-	<name>小蛤蟆</name>
+	<name>小蛤蟆4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39259,7 +39315,7 @@
 <config>
 	<id>60095</id>
 	<atlas>Pet</atlas>
-	<name>小蛤蟆</name>
+	<name>小蛤蟆5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39287,7 +39343,7 @@
 <config>
 	<id>60096</id>
 	<atlas>Pet</atlas>
-	<name>蛤蟆大仙（变异）</name>
+	<name>蛤蟆大仙（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39315,7 +39371,7 @@
 <config>
 	<id>60097</id>
 	<atlas>Pet</atlas>
-	<name>蛤蟆大仙（变异）</name>
+	<name>蛤蟆大仙（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39343,7 +39399,7 @@
 <config>
 	<id>60101</id>
 	<atlas>Pet</atlas>
-	<name>小浣熊</name>
+	<name>小浣熊1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39371,7 +39427,7 @@
 <config>
 	<id>60102</id>
 	<atlas>Pet</atlas>
-	<name>小浣熊</name>
+	<name>小浣熊2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39399,7 +39455,7 @@
 <config>
 	<id>60103</id>
 	<atlas>Pet</atlas>
-	<name>小浣熊</name>
+	<name>小浣熊3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39427,7 +39483,7 @@
 <config>
 	<id>60104</id>
 	<atlas>Pet</atlas>
-	<name>小浣熊</name>
+	<name>小浣熊4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39455,7 +39511,7 @@
 <config>
 	<id>60105</id>
 	<atlas>Pet</atlas>
-	<name>小浣熊</name>
+	<name>小浣熊5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39483,7 +39539,7 @@
 <config>
 	<id>60106</id>
 	<atlas>Pet</atlas>
-	<name>干脆面君（变异）</name>
+	<name>干脆面君（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39511,7 +39567,7 @@
 <config>
 	<id>60107</id>
 	<atlas>Pet</atlas>
-	<name>干脆面君（变异）</name>
+	<name>干脆面君（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39539,7 +39595,7 @@
 <config>
 	<id>60111</id>
 	<atlas>Pet</atlas>
-	<name>小狮子</name>
+	<name>小狮子1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39567,7 +39623,7 @@
 <config>
 	<id>60112</id>
 	<atlas>Pet</atlas>
-	<name>小狮子</name>
+	<name>小狮子2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39595,7 +39651,7 @@
 <config>
 	<id>60113</id>
 	<atlas>Pet</atlas>
-	<name>小狮子</name>
+	<name>小狮子3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39623,7 +39679,7 @@
 <config>
 	<id>60114</id>
 	<atlas>Pet</atlas>
-	<name>小狮子</name>
+	<name>小狮子4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39651,7 +39707,7 @@
 <config>
 	<id>60115</id>
 	<atlas>Pet</atlas>
-	<name>小狮子</name>
+	<name>小狮子5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39679,7 +39735,7 @@
 <config>
 	<id>60116</id>
 	<atlas>Pet</atlas>
-	<name>小火狮（变异）</name>
+	<name>小火狮（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39707,7 +39763,7 @@
 <config>
 	<id>60117</id>
 	<atlas>Pet</atlas>
-	<name>小火狮（变异）</name>
+	<name>小火狮（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39735,7 +39791,7 @@
 <config>
 	<id>60121</id>
 	<atlas>Pet</atlas>
-	<name>小羊驼</name>
+	<name>小羊驼1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39763,7 +39819,7 @@
 <config>
 	<id>60122</id>
 	<atlas>Pet</atlas>
-	<name>小羊驼</name>
+	<name>小羊驼2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39791,7 +39847,7 @@
 <config>
 	<id>60123</id>
 	<atlas>Pet</atlas>
-	<name>小羊驼</name>
+	<name>小羊驼3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39819,7 +39875,7 @@
 <config>
 	<id>60124</id>
 	<atlas>Pet</atlas>
-	<name>小羊驼</name>
+	<name>小羊驼4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39847,7 +39903,7 @@
 <config>
 	<id>60125</id>
 	<atlas>Pet</atlas>
-	<name>小羊驼</name>
+	<name>小羊驼5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39875,7 +39931,7 @@
 <config>
 	<id>60126</id>
 	<atlas>Pet</atlas>
-	<name>巨型变异羊驼（变异）</name>
+	<name>巨型变异羊驼（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39903,7 +39959,7 @@
 <config>
 	<id>60127</id>
 	<atlas>Pet</atlas>
-	<name>巨型变异羊驼（变异）</name>
+	<name>巨型变异羊驼（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39931,7 +39987,7 @@
 <config>
 	<id>60131</id>
 	<atlas>Pet</atlas>
-	<name>小火狐</name>
+	<name>小火狐1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39959,7 +40015,7 @@
 <config>
 	<id>60132</id>
 	<atlas>Pet</atlas>
-	<name>小火狐</name>
+	<name>小火狐2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -39987,7 +40043,7 @@
 <config>
 	<id>60133</id>
 	<atlas>Pet</atlas>
-	<name>小火狐</name>
+	<name>小火狐3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40015,7 +40071,7 @@
 <config>
 	<id>60134</id>
 	<atlas>Pet</atlas>
-	<name>小火狐</name>
+	<name>小火狐4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40043,7 +40099,7 @@
 <config>
 	<id>60135</id>
 	<atlas>Pet</atlas>
-	<name>小火狐</name>
+	<name>小火狐5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40071,7 +40127,7 @@
 <config>
 	<id>60136</id>
 	<atlas>Pet</atlas>
-	<name>狐仙（变异）</name>
+	<name>狐仙（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40099,7 +40155,7 @@
 <config>
 	<id>60137</id>
 	<atlas>Pet</atlas>
-	<name>狐仙（变异）</name>
+	<name>狐仙（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40127,7 +40183,7 @@
 <config>
 	<id>60161</id>
 	<atlas>Pet</atlas>
-	<name>小屠夫</name>
+	<name>小屠夫1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40155,7 +40211,7 @@
 <config>
 	<id>60162</id>
 	<atlas>Pet</atlas>
-	<name>小屠夫</name>
+	<name>小屠夫2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40183,7 +40239,7 @@
 <config>
 	<id>60163</id>
 	<atlas>Pet</atlas>
-	<name>小屠夫</name>
+	<name>小屠夫3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40211,7 +40267,7 @@
 <config>
 	<id>60164</id>
 	<atlas>Pet</atlas>
-	<name>小屠夫</name>
+	<name>小屠夫4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40239,7 +40295,7 @@
 <config>
 	<id>60165</id>
 	<atlas>Pet</atlas>
-	<name>小屠夫</name>
+	<name>小屠夫5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40267,7 +40323,7 @@
 <config>
 	<id>60166</id>
 	<atlas>Pet</atlas>
-	<name>屠夫（变异）</name>
+	<name>屠夫（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40295,7 +40351,7 @@
 <config>
 	<id>60167</id>
 	<atlas>Pet</atlas>
-	<name>屠夫（变异）</name>
+	<name>屠夫（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40323,7 +40379,7 @@
 <config>
 	<id>60171</id>
 	<atlas>Pet</atlas>
-	<name>小咕咕</name>
+	<name>小咕咕1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40351,7 +40407,7 @@
 <config>
 	<id>60172</id>
 	<atlas>Pet</atlas>
-	<name>小咕咕</name>
+	<name>小咕咕2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40379,7 +40435,7 @@
 <config>
 	<id>60173</id>
 	<atlas>Pet</atlas>
-	<name>小咕咕</name>
+	<name>小咕咕3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40407,7 +40463,7 @@
 <config>
 	<id>60174</id>
 	<atlas>Pet</atlas>
-	<name>小咕咕</name>
+	<name>小咕咕4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40435,7 +40491,7 @@
 <config>
 	<id>60175</id>
 	<atlas>Pet</atlas>
-	<name>小咕咕</name>
+	<name>小咕咕5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40463,7 +40519,7 @@
 <config>
 	<id>60176</id>
 	<atlas>Pet</atlas>
-	<name>咕咕猫头鹰（变异）</name>
+	<name>咕咕猫头鹰（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40491,7 +40547,7 @@
 <config>
 	<id>60177</id>
 	<atlas>Pet</atlas>
-	<name>咕咕猫头鹰（变异）</name>
+	<name>咕咕猫头鹰（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40519,7 +40575,7 @@
 <config>
 	<id>60181</id>
 	<atlas>Pet</atlas>
-	<name>小狮鹫</name>
+	<name>小狮鹫1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40547,7 +40603,7 @@
 <config>
 	<id>60182</id>
 	<atlas>Pet</atlas>
-	<name>小狮鹫</name>
+	<name>小狮鹫2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40575,7 +40631,7 @@
 <config>
 	<id>60183</id>
 	<atlas>Pet</atlas>
-	<name>小狮鹫</name>
+	<name>小狮鹫3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40603,7 +40659,7 @@
 <config>
 	<id>60184</id>
 	<atlas>Pet</atlas>
-	<name>小狮鹫</name>
+	<name>小狮鹫4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40631,7 +40687,7 @@
 <config>
 	<id>60185</id>
 	<atlas>Pet</atlas>
-	<name>小狮鹫</name>
+	<name>小狮鹫5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40659,7 +40715,7 @@
 <config>
 	<id>60186</id>
 	<atlas>Pet</atlas>
-	<name>狮鹫（变异）</name>
+	<name>狮鹫（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40687,7 +40743,7 @@
 <config>
 	<id>60187</id>
 	<atlas>Pet</atlas>
-	<name>狮鹫（变异）</name>
+	<name>狮鹫（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40715,7 +40771,7 @@
 <config>
 	<id>60191</id>
 	<atlas>Pet</atlas>
-	<name>小雪人</name>
+	<name>小雪人1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40743,7 +40799,7 @@
 <config>
 	<id>60192</id>
 	<atlas>Pet</atlas>
-	<name>小雪人</name>
+	<name>小雪人2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40771,7 +40827,7 @@
 <config>
 	<id>60193</id>
 	<atlas>Pet</atlas>
-	<name>小雪人</name>
+	<name>小雪人3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40799,7 +40855,7 @@
 <config>
 	<id>60194</id>
 	<atlas>Pet</atlas>
-	<name>小雪人</name>
+	<name>小雪人4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40827,7 +40883,7 @@
 <config>
 	<id>60195</id>
 	<atlas>Pet</atlas>
-	<name>小雪人</name>
+	<name>小雪人5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40855,7 +40911,7 @@
 <config>
 	<id>60196</id>
 	<atlas>Pet</atlas>
-	<name>大雪人（变异）</name>
+	<name>大雪人（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40883,7 +40939,7 @@
 <config>
 	<id>60197</id>
 	<atlas>Pet</atlas>
-	<name>大雪人（变异）</name>
+	<name>大雪人（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40911,7 +40967,7 @@
 <config>
 	<id>60201</id>
 	<atlas>Pet</atlas>
-	<name>小仙人掌</name>
+	<name>小仙人掌1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40939,7 +40995,7 @@
 <config>
 	<id>60202</id>
 	<atlas>Pet</atlas>
-	<name>小仙人掌</name>
+	<name>小仙人掌2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40967,7 +41023,7 @@
 <config>
 	<id>60203</id>
 	<atlas>Pet</atlas>
-	<name>小仙人掌</name>
+	<name>小仙人掌3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -40995,7 +41051,7 @@
 <config>
 	<id>60204</id>
 	<atlas>Pet</atlas>
-	<name>小仙人掌</name>
+	<name>小仙人掌4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41023,7 +41079,7 @@
 <config>
 	<id>60205</id>
 	<atlas>Pet</atlas>
-	<name>小仙人掌</name>
+	<name>小仙人掌5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41051,7 +41107,7 @@
 <config>
 	<id>60206</id>
 	<atlas>Pet</atlas>
-	<name>大仙人掌（变异）</name>
+	<name>大仙人掌（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41079,7 +41135,7 @@
 <config>
 	<id>60207</id>
 	<atlas>Pet</atlas>
-	<name>大仙人掌（变异）</name>
+	<name>大仙人掌（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41107,7 +41163,7 @@
 <config>
 	<id>60211</id>
 	<atlas>Pet</atlas>
-	<name>小变色龙</name>
+	<name>小变色龙1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41135,7 +41191,7 @@
 <config>
 	<id>60212</id>
 	<atlas>Pet</atlas>
-	<name>小变色龙</name>
+	<name>小变色龙2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41163,7 +41219,7 @@
 <config>
 	<id>60213</id>
 	<atlas>Pet</atlas>
-	<name>小变色龙</name>
+	<name>小变色龙3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41191,7 +41247,7 @@
 <config>
 	<id>60214</id>
 	<atlas>Pet</atlas>
-	<name>小变色龙</name>
+	<name>小变色龙4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41219,7 +41275,7 @@
 <config>
 	<id>60215</id>
 	<atlas>Pet</atlas>
-	<name>小变色龙</name>
+	<name>小变色龙5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41247,7 +41303,7 @@
 <config>
 	<id>60216</id>
 	<atlas>Pet</atlas>
-	<name>变色龙（变异）</name>
+	<name>变色龙（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41275,7 +41331,7 @@
 <config>
 	<id>60217</id>
 	<atlas>Pet</atlas>
-	<name>变色龙（变异）</name>
+	<name>变色龙（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41303,7 +41359,7 @@
 <config>
 	<id>60221</id>
 	<atlas>Pet</atlas>
-	<name>小野人</name>
+	<name>小野人1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41331,7 +41387,7 @@
 <config>
 	<id>60222</id>
 	<atlas>Pet</atlas>
-	<name>小野人</name>
+	<name>小野人2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41359,7 +41415,7 @@
 <config>
 	<id>60223</id>
 	<atlas>Pet</atlas>
-	<name>小野人</name>
+	<name>小野人3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41387,7 +41443,7 @@
 <config>
 	<id>60224</id>
 	<atlas>Pet</atlas>
-	<name>小野人</name>
+	<name>小野人4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41415,7 +41471,7 @@
 <config>
 	<id>60225</id>
 	<atlas>Pet</atlas>
-	<name>小野人</name>
+	<name>小野人5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41443,7 +41499,7 @@
 <config>
 	<id>60226</id>
 	<atlas>Pet</atlas>
-	<name>大野人（变异）</name>
+	<name>大野人（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41471,7 +41527,7 @@
 <config>
 	<id>60227</id>
 	<atlas>Pet</atlas>
-	<name>大野人（变异）</name>
+	<name>大野人（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41499,7 +41555,7 @@
 <config>
 	<id>60231</id>
 	<atlas>Pet</atlas>
-	<name>小猩猩</name>
+	<name>小猩猩1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41527,7 +41583,7 @@
 <config>
 	<id>60232</id>
 	<atlas>Pet</atlas>
-	<name>小猩猩</name>
+	<name>小猩猩2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41555,7 +41611,7 @@
 <config>
 	<id>60233</id>
 	<atlas>Pet</atlas>
-	<name>小猩猩</name>
+	<name>小猩猩3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41583,7 +41639,7 @@
 <config>
 	<id>60234</id>
 	<atlas>Pet</atlas>
-	<name>小猩猩</name>
+	<name>小猩猩4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41611,7 +41667,7 @@
 <config>
 	<id>60235</id>
 	<atlas>Pet</atlas>
-	<name>小猩猩</name>
+	<name>小猩猩5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41639,7 +41695,7 @@
 <config>
 	<id>60236</id>
 	<atlas>Pet</atlas>
-	<name>大猩猩（变异）</name>
+	<name>大猩猩（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41667,7 +41723,7 @@
 <config>
 	<id>60237</id>
 	<atlas>Pet</atlas>
-	<name>大猩猩（变异）</name>
+	<name>大猩猩（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41695,7 +41751,7 @@
 <config>
 	<id>60241</id>
 	<atlas>Pet</atlas>
-	<name>地狱双头犬</name>
+	<name>地狱双头犬1</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41723,7 +41779,7 @@
 <config>
 	<id>60242</id>
 	<atlas>Pet</atlas>
-	<name>地狱双头犬</name>
+	<name>地狱双头犬2</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41751,7 +41807,7 @@
 <config>
 	<id>60243</id>
 	<atlas>Pet</atlas>
-	<name>地狱双头犬</name>
+	<name>地狱双头犬3</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41779,7 +41835,7 @@
 <config>
 	<id>60244</id>
 	<atlas>Pet</atlas>
-	<name>地狱双头犬</name>
+	<name>地狱双头犬4</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41807,7 +41863,7 @@
 <config>
 	<id>60245</id>
 	<atlas>Pet</atlas>
-	<name>地狱双头犬</name>
+	<name>地狱双头犬5</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41835,7 +41891,7 @@
 <config>
 	<id>60246</id>
 	<atlas>Pet</atlas>
-	<name>地狱三头犬（变异）</name>
+	<name>地狱三头犬（变异）6</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41863,7 +41919,7 @@
 <config>
 	<id>60247</id>
 	<atlas>Pet</atlas>
-	<name>地狱三头犬（变异）</name>
+	<name>地狱三头犬（变异）7</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41919,7 +41975,7 @@
 <config>
 	<id>65011</id>
 	<atlas>Pet</atlas>
-	<name>小木乃伊碎片</name>
+	<name>小木乃伊碎片（资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41947,7 +42003,7 @@
 <config>
 	<id>65021</id>
 	<atlas>Pet</atlas>
-	<name>小蛇碎片</name>
+	<name>小蛇碎片（资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -41975,7 +42031,7 @@
 <config>
 	<id>65031</id>
 	<atlas>Pet</atlas>
-	<name>小树桩碎片</name>
+	<name>小树桩碎片（资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42003,7 +42059,7 @@
 <config>
 	<id>65041</id>
 	<atlas>Pet</atlas>
-	<name>小蘑菇碎片</name>
+	<name>小蘑菇碎片（资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42031,7 +42087,7 @@
 <config>
 	<id>65051</id>
 	<atlas>Pet</atlas>
-	<name>小僵尸碎片</name>
+	<name>小僵尸碎片（资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42059,7 +42115,7 @@
 <config>
 	<id>65061</id>
 	<atlas>Pet</atlas>
-	<name>小兔子碎片</name>
+	<name>小兔子碎片（资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42087,7 +42143,7 @@
 <config>
 	<id>65071</id>
 	<atlas>Pet</atlas>
-	<name>小猫咪碎片</name>
+	<name>小猫咪碎片（资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42115,7 +42171,7 @@
 <config>
 	<id>65081</id>
 	<atlas>Pet</atlas>
-	<name>小猫兔碎片</name>
+	<name>小猫兔碎片（资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42143,7 +42199,7 @@
 <config>
 	<id>65091</id>
 	<atlas>Pet</atlas>
-	<name>小蛤蟆碎片</name>
+	<name>小蛤蟆碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42171,7 +42227,7 @@
 <config>
 	<id>65101</id>
 	<atlas>Pet</atlas>
-	<name>小浣熊碎片</name>
+	<name>小浣熊碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42199,7 +42255,7 @@
 <config>
 	<id>65111</id>
 	<atlas>Pet</atlas>
-	<name>小狮子碎片</name>
+	<name>小狮子碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42227,7 +42283,7 @@
 <config>
 	<id>65121</id>
 	<atlas>Pet</atlas>
-	<name>小羊驼碎片</name>
+	<name>小羊驼碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42255,7 +42311,7 @@
 <config>
 	<id>65131</id>
 	<atlas>Pet</atlas>
-	<name>小火狐碎片</name>
+	<name>小火狐碎片 （资质A）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42283,7 +42339,7 @@
 <config>
 	<id>65161</id>
 	<atlas>Pet</atlas>
-	<name>小屠夫碎片</name>
+	<name>小屠夫碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42311,7 +42367,7 @@
 <config>
 	<id>65171</id>
 	<atlas>Pet</atlas>
-	<name>小咕咕碎片</name>
+	<name>小咕咕碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42339,7 +42395,7 @@
 <config>
 	<id>65181</id>
 	<atlas>Pet</atlas>
-	<name>小狮鹫碎片</name>
+	<name>小狮鹫碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42367,7 +42423,7 @@
 <config>
 	<id>65191</id>
 	<atlas>Pet</atlas>
-	<name>小雪人碎片</name>
+	<name>小雪人碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42395,7 +42451,7 @@
 <config>
 	<id>65201</id>
 	<atlas>Pet</atlas>
-	<name>小仙人掌碎片</name>
+	<name>小仙人掌碎片 （资质SS）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42423,7 +42479,7 @@
 <config>
 	<id>65211</id>
 	<atlas>Pet</atlas>
-	<name>小变色龙碎片</name>
+	<name>小变色龙碎片 （资质SS）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42451,7 +42507,7 @@
 <config>
 	<id>65221</id>
 	<atlas>Pet</atlas>
-	<name>小野人碎片</name>
+	<name>小野人碎片 （资质S）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42479,7 +42535,7 @@
 <config>
 	<id>65231</id>
 	<atlas>Pet</atlas>
-	<name>小猩猩碎片</name>
+	<name>小猩猩碎片 （资质SS）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -42507,7 +42563,7 @@
 <config>
 	<id>65241</id>
 	<atlas>Pet</atlas>
-	<name>地狱双头犬碎片</name>
+	<name>地狱双头犬碎片（资质SS）</name>
 	<name_en></name_en>
 	<decompose></decompose>
 	<copys></copys>
@@ -90949,7 +91005,7 @@
 	<atlas>Equip_1</atlas>
 	<name>圣殿之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -90977,7 +91033,7 @@
 	<atlas>Equip_1</atlas>
 	<name>月冕之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91005,7 +91061,7 @@
 	<atlas>Equip_1</atlas>
 	<name>西塞之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91033,7 +91089,7 @@
 	<atlas>Equip_1</atlas>
 	<name>死灵之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91061,7 +91117,7 @@
 	<atlas>Equip_1</atlas>
 	<name>潮汐之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91089,7 +91145,7 @@
 	<atlas>Equip_1</atlas>
 	<name>雪怒之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91117,7 +91173,7 @@
 	<atlas>Equip_1</atlas>
 	<name>风暴之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91145,7 +91201,7 @@
 	<atlas>Equip_1</atlas>
 	<name>龙息之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91173,7 +91229,7 @@
 	<atlas>Equip_1</atlas>
 	<name>狂徒之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91201,7 +91257,7 @@
 	<atlas>Equip_1</atlas>
 	<name>海蚀之剑</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91229,7 +91285,7 @@
 	<atlas>Equip_1</atlas>
 	<name>圣殿头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91257,7 +91313,7 @@
 	<atlas>Equip_1</atlas>
 	<name>月冕头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91285,7 +91341,7 @@
 	<atlas>Equip_1</atlas>
 	<name>西塞头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91313,7 +91369,7 @@
 	<atlas>Equip_1</atlas>
 	<name>死灵头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91341,7 +91397,7 @@
 	<atlas>Equip_1</atlas>
 	<name>潮汐头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91369,7 +91425,7 @@
 	<atlas>Equip_1</atlas>
 	<name>雪怒头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91397,7 +91453,7 @@
 	<atlas>Equip_1</atlas>
 	<name>风暴头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91425,7 +91481,7 @@
 	<atlas>Equip_1</atlas>
 	<name>龙息头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91453,7 +91509,7 @@
 	<atlas>Equip_1</atlas>
 	<name>狂徒头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91481,7 +91537,7 @@
 	<atlas>Equip_1</atlas>
 	<name>海蚀头盔</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91509,7 +91565,7 @@
 	<atlas>Equip_1</atlas>
 	<name>圣殿胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91537,7 +91593,7 @@
 	<atlas>Equip_1</atlas>
 	<name>月冕胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91565,7 +91621,7 @@
 	<atlas>Equip_1</atlas>
 	<name>西塞胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91593,7 +91649,7 @@
 	<atlas>Equip_1</atlas>
 	<name>死灵胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91621,7 +91677,7 @@
 	<atlas>Equip_1</atlas>
 	<name>潮汐胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91649,7 +91705,7 @@
 	<atlas>Equip_1</atlas>
 	<name>雪怒胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91677,7 +91733,7 @@
 	<atlas>Equip_1</atlas>
 	<name>风暴胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91705,7 +91761,7 @@
 	<atlas>Equip_1</atlas>
 	<name>龙息胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91733,7 +91789,7 @@
 	<atlas>Equip_1</atlas>
 	<name>狂徒胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91761,7 +91817,7 @@
 	<atlas>Equip_1</atlas>
 	<name>海蚀胸甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91789,7 +91845,7 @@
 	<atlas>Equip_1</atlas>
 	<name>圣殿护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91817,7 +91873,7 @@
 	<atlas>Equip_1</atlas>
 	<name>月冕护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91845,7 +91901,7 @@
 	<atlas>Equip_1</atlas>
 	<name>西塞护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91873,7 +91929,7 @@
 	<atlas>Equip_1</atlas>
 	<name>死灵护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91901,7 +91957,7 @@
 	<atlas>Equip_1</atlas>
 	<name>潮汐护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91929,7 +91985,7 @@
 	<atlas>Equip_1</atlas>
 	<name>雪怒护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91957,7 +92013,7 @@
 	<atlas>Equip_1</atlas>
 	<name>风暴护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -91985,7 +92041,7 @@
 	<atlas>Equip_1</atlas>
 	<name>龙息护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92013,7 +92069,7 @@
 	<atlas>Equip_1</atlas>
 	<name>狂徒护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92041,7 +92097,7 @@
 	<atlas>Equip_1</atlas>
 	<name>海蚀护手</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92069,7 +92125,7 @@
 	<atlas>Equip_1</atlas>
 	<name>圣殿腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92097,7 +92153,7 @@
 	<atlas>Equip_1</atlas>
 	<name>月冕腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92125,7 +92181,7 @@
 	<atlas>Equip_1</atlas>
 	<name>西塞腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92153,7 +92209,7 @@
 	<atlas>Equip_1</atlas>
 	<name>死灵腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92181,7 +92237,7 @@
 	<atlas>Equip_1</atlas>
 	<name>潮汐腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92209,7 +92265,7 @@
 	<atlas>Equip_1</atlas>
 	<name>雪怒腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92237,7 +92293,7 @@
 	<atlas>Equip_1</atlas>
 	<name>风暴腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92265,7 +92321,7 @@
 	<atlas>Equip_1</atlas>
 	<name>龙息腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92293,7 +92349,7 @@
 	<atlas>Equip_1</atlas>
 	<name>狂徒腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92321,7 +92377,7 @@
 	<atlas>Equip_1</atlas>
 	<name>海蚀腿甲</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92349,7 +92405,7 @@
 	<atlas>Equip_1</atlas>
 	<name>圣殿战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92377,7 +92433,7 @@
 	<atlas>Equip_1</atlas>
 	<name>月冕战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92405,7 +92461,7 @@
 	<atlas>Equip_1</atlas>
 	<name>西塞战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92433,7 +92489,7 @@
 	<atlas>Equip_1</atlas>
 	<name>死灵战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92461,7 +92517,7 @@
 	<atlas>Equip_1</atlas>
 	<name>潮汐战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92489,7 +92545,7 @@
 	<atlas>Equip_1</atlas>
 	<name>雪怒战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92517,7 +92573,7 @@
 	<atlas>Equip_1</atlas>
 	<name>风暴战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92545,7 +92601,7 @@
 	<atlas>Equip_1</atlas>
 	<name>龙息战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92573,7 +92629,7 @@
 	<atlas>Equip_1</atlas>
 	<name>狂徒战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92601,7 +92657,7 @@
 	<atlas>Equip_1</atlas>
 	<name>海蚀战靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92629,7 +92685,7 @@
 	<atlas>Equip_2</atlas>
 	<name>圣殿之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92657,7 +92713,7 @@
 	<atlas>Equip_2</atlas>
 	<name>月冕之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92685,7 +92741,7 @@
 	<atlas>Equip_2</atlas>
 	<name>西塞之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92713,7 +92769,7 @@
 	<atlas>Equip_2</atlas>
 	<name>死灵之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92741,7 +92797,7 @@
 	<atlas>Equip_2</atlas>
 	<name>潮汐之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92769,7 +92825,7 @@
 	<atlas>Equip_2</atlas>
 	<name>雪怒之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92797,7 +92853,7 @@
 	<atlas>Equip_2</atlas>
 	<name>风暴之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92825,7 +92881,7 @@
 	<atlas>Equip_2</atlas>
 	<name>龙息之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92853,7 +92909,7 @@
 	<atlas>Equip_2</atlas>
 	<name>狂徒之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92881,7 +92937,7 @@
 	<atlas>Equip_2</atlas>
 	<name>海蚀之刃</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92909,7 +92965,7 @@
 	<atlas>Equip_2</atlas>
 	<name>圣殿兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92937,7 +92993,7 @@
 	<atlas>Equip_2</atlas>
 	<name>月冕兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92965,7 +93021,7 @@
 	<atlas>Equip_2</atlas>
 	<name>西塞兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -92993,7 +93049,7 @@
 	<atlas>Equip_2</atlas>
 	<name>死灵兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93021,7 +93077,7 @@
 	<atlas>Equip_2</atlas>
 	<name>潮汐兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93049,7 +93105,7 @@
 	<atlas>Equip_2</atlas>
 	<name>雪怒兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93077,7 +93133,7 @@
 	<atlas>Equip_2</atlas>
 	<name>风暴兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93105,7 +93161,7 @@
 	<atlas>Equip_2</atlas>
 	<name>龙息兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93133,7 +93189,7 @@
 	<atlas>Equip_2</atlas>
 	<name>狂徒兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93161,7 +93217,7 @@
 	<atlas>Equip_2</atlas>
 	<name>海蚀兜帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93189,7 +93245,7 @@
 	<atlas>Equip_2</atlas>
 	<name>圣殿护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93217,7 +93273,7 @@
 	<atlas>Equip_2</atlas>
 	<name>月冕护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93245,7 +93301,7 @@
 	<atlas>Equip_2</atlas>
 	<name>西塞护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93273,7 +93329,7 @@
 	<atlas>Equip_2</atlas>
 	<name>死灵护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93301,7 +93357,7 @@
 	<atlas>Equip_2</atlas>
 	<name>潮汐护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93329,7 +93385,7 @@
 	<atlas>Equip_2</atlas>
 	<name>雪怒护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93357,7 +93413,7 @@
 	<atlas>Equip_2</atlas>
 	<name>风暴护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93385,7 +93441,7 @@
 	<atlas>Equip_2</atlas>
 	<name>龙息护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93413,7 +93469,7 @@
 	<atlas>Equip_2</atlas>
 	<name>狂徒护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93441,7 +93497,7 @@
 	<atlas>Equip_2</atlas>
 	<name>海蚀护胸</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93469,7 +93525,7 @@
 	<atlas>Equip_2</atlas>
 	<name>圣殿手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93497,7 +93553,7 @@
 	<atlas>Equip_2</atlas>
 	<name>月冕手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93525,7 +93581,7 @@
 	<atlas>Equip_2</atlas>
 	<name>西塞手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93553,7 +93609,7 @@
 	<atlas>Equip_2</atlas>
 	<name>死灵手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93581,7 +93637,7 @@
 	<atlas>Equip_2</atlas>
 	<name>潮汐手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93609,7 +93665,7 @@
 	<atlas>Equip_2</atlas>
 	<name>雪怒手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93637,7 +93693,7 @@
 	<atlas>Equip_2</atlas>
 	<name>风暴手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93665,7 +93721,7 @@
 	<atlas>Equip_2</atlas>
 	<name>龙息手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93693,7 +93749,7 @@
 	<atlas>Equip_2</atlas>
 	<name>狂徒手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93721,7 +93777,7 @@
 	<atlas>Equip_2</atlas>
 	<name>海蚀手套</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93749,7 +93805,7 @@
 	<atlas>Equip_2</atlas>
 	<name>圣殿护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93777,7 +93833,7 @@
 	<atlas>Equip_2</atlas>
 	<name>月冕护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93805,7 +93861,7 @@
 	<atlas>Equip_2</atlas>
 	<name>西塞护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93833,7 +93889,7 @@
 	<atlas>Equip_2</atlas>
 	<name>死灵护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93861,7 +93917,7 @@
 	<atlas>Equip_2</atlas>
 	<name>潮汐护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93889,7 +93945,7 @@
 	<atlas>Equip_2</atlas>
 	<name>雪怒护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93917,7 +93973,7 @@
 	<atlas>Equip_2</atlas>
 	<name>风暴护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93945,7 +94001,7 @@
 	<atlas>Equip_2</atlas>
 	<name>龙息护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -93973,7 +94029,7 @@
 	<atlas>Equip_2</atlas>
 	<name>狂徒护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94001,7 +94057,7 @@
 	<atlas>Equip_2</atlas>
 	<name>海蚀护腿</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94029,7 +94085,7 @@
 	<atlas>Equip_2</atlas>
 	<name>圣殿之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94057,7 +94113,7 @@
 	<atlas>Equip_2</atlas>
 	<name>月冕之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94085,7 +94141,7 @@
 	<atlas>Equip_2</atlas>
 	<name>西塞之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94113,7 +94169,7 @@
 	<atlas>Equip_2</atlas>
 	<name>死灵之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94141,7 +94197,7 @@
 	<atlas>Equip_2</atlas>
 	<name>潮汐之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94169,7 +94225,7 @@
 	<atlas>Equip_2</atlas>
 	<name>雪怒之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94197,7 +94253,7 @@
 	<atlas>Equip_2</atlas>
 	<name>风暴之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94225,7 +94281,7 @@
 	<atlas>Equip_2</atlas>
 	<name>龙息之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94253,7 +94309,7 @@
 	<atlas>Equip_2</atlas>
 	<name>狂徒之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94281,7 +94337,7 @@
 	<atlas>Equip_2</atlas>
 	<name>海蚀之鞋</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94309,7 +94365,7 @@
 	<atlas>Equip_3</atlas>
 	<name>圣殿法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94337,7 +94393,7 @@
 	<atlas>Equip_3</atlas>
 	<name>月冕法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94365,7 +94421,7 @@
 	<atlas>Equip_3</atlas>
 	<name>西塞法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94393,7 +94449,7 @@
 	<atlas>Equip_3</atlas>
 	<name>死灵法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94421,7 +94477,7 @@
 	<atlas>Equip_3</atlas>
 	<name>潮汐法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94449,7 +94505,7 @@
 	<atlas>Equip_3</atlas>
 	<name>雪怒法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94477,7 +94533,7 @@
 	<atlas>Equip_3</atlas>
 	<name>风暴法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94505,7 +94561,7 @@
 	<atlas>Equip_3</atlas>
 	<name>龙息法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94533,7 +94589,7 @@
 	<atlas>Equip_3</atlas>
 	<name>狂徒法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94561,7 +94617,7 @@
 	<atlas>Equip_3</atlas>
 	<name>海蚀法杖</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94589,7 +94645,7 @@
 	<atlas>Equip_3</atlas>
 	<name>圣殿软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94617,7 +94673,7 @@
 	<atlas>Equip_3</atlas>
 	<name>月冕软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94645,7 +94701,7 @@
 	<atlas>Equip_3</atlas>
 	<name>西塞软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94673,7 +94729,7 @@
 	<atlas>Equip_3</atlas>
 	<name>死灵软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94701,7 +94757,7 @@
 	<atlas>Equip_3</atlas>
 	<name>潮汐软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94729,7 +94785,7 @@
 	<atlas>Equip_3</atlas>
 	<name>雪怒软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94757,7 +94813,7 @@
 	<atlas>Equip_3</atlas>
 	<name>风暴软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94785,7 +94841,7 @@
 	<atlas>Equip_3</atlas>
 	<name>龙息软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94813,7 +94869,7 @@
 	<atlas>Equip_3</atlas>
 	<name>狂徒软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94841,7 +94897,7 @@
 	<atlas>Equip_3</atlas>
 	<name>海蚀软帽</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94869,7 +94925,7 @@
 	<atlas>Equip_3</atlas>
 	<name>圣殿法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94897,7 +94953,7 @@
 	<atlas>Equip_3</atlas>
 	<name>月冕法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94925,7 +94981,7 @@
 	<atlas>Equip_3</atlas>
 	<name>西塞法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94953,7 +95009,7 @@
 	<atlas>Equip_3</atlas>
 	<name>死灵法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -94981,7 +95037,7 @@
 	<atlas>Equip_3</atlas>
 	<name>潮汐法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95009,7 +95065,7 @@
 	<atlas>Equip_3</atlas>
 	<name>雪怒法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95037,7 +95093,7 @@
 	<atlas>Equip_3</atlas>
 	<name>风暴法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95065,7 +95121,7 @@
 	<atlas>Equip_3</atlas>
 	<name>龙息法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95093,7 +95149,7 @@
 	<atlas>Equip_3</atlas>
 	<name>狂徒法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95121,7 +95177,7 @@
 	<atlas>Equip_3</atlas>
 	<name>海蚀法袍</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95149,7 +95205,7 @@
 	<atlas>Equip_3</atlas>
 	<name>圣殿之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95177,7 +95233,7 @@
 	<atlas>Equip_3</atlas>
 	<name>月冕之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95205,7 +95261,7 @@
 	<atlas>Equip_3</atlas>
 	<name>西塞之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95233,7 +95289,7 @@
 	<atlas>Equip_3</atlas>
 	<name>死灵之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95261,7 +95317,7 @@
 	<atlas>Equip_3</atlas>
 	<name>潮汐之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95289,7 +95345,7 @@
 	<atlas>Equip_3</atlas>
 	<name>雪怒之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95317,7 +95373,7 @@
 	<atlas>Equip_3</atlas>
 	<name>风暴之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95345,7 +95401,7 @@
 	<atlas>Equip_3</atlas>
 	<name>龙息之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95373,7 +95429,7 @@
 	<atlas>Equip_3</atlas>
 	<name>狂徒之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95401,7 +95457,7 @@
 	<atlas>Equip_3</atlas>
 	<name>海蚀之握</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95429,7 +95485,7 @@
 	<atlas>Equip_3</atlas>
 	<name>圣殿短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95457,7 +95513,7 @@
 	<atlas>Equip_3</atlas>
 	<name>月冕短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95485,7 +95541,7 @@
 	<atlas>Equip_3</atlas>
 	<name>西塞短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95513,7 +95569,7 @@
 	<atlas>Equip_3</atlas>
 	<name>死灵短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95541,7 +95597,7 @@
 	<atlas>Equip_3</atlas>
 	<name>潮汐短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95569,7 +95625,7 @@
 	<atlas>Equip_3</atlas>
 	<name>雪怒短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95597,7 +95653,7 @@
 	<atlas>Equip_3</atlas>
 	<name>风暴短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95625,7 +95681,7 @@
 	<atlas>Equip_3</atlas>
 	<name>龙息短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95653,7 +95709,7 @@
 	<atlas>Equip_3</atlas>
 	<name>狂徒短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95681,7 +95737,7 @@
 	<atlas>Equip_3</atlas>
 	<name>海蚀短裙</name>
 	<name_en></name_en>
-	<decompose>[[17001,11],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95709,7 +95765,7 @@
 	<atlas>Equip_3</atlas>
 	<name>圣殿之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,2],[108,0]]</decompose>
+	<decompose>[[17002,2],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95737,7 +95793,7 @@
 	<atlas>Equip_3</atlas>
 	<name>月冕之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,3],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95765,7 +95821,7 @@
 	<atlas>Equip_3</atlas>
 	<name>西塞之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,4],[108,0]]</decompose>
+	<decompose>[[17002,4],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95793,7 +95849,7 @@
 	<atlas>Equip_3</atlas>
 	<name>死灵之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,5],[108,0]]</decompose>
+	<decompose>[[17002,5],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95821,7 +95877,7 @@
 	<atlas>Equip_3</atlas>
 	<name>潮汐之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,6],[108,0]]</decompose>
+	<decompose>[[17002,6],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95849,7 +95905,7 @@
 	<atlas>Equip_3</atlas>
 	<name>雪怒之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,7],[108,0]]</decompose>
+	<decompose>[[17002,7],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95877,7 +95933,7 @@
 	<atlas>Equip_3</atlas>
 	<name>风暴之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,8],[108,0]]</decompose>
+	<decompose>[[17002,8],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95905,7 +95961,7 @@
 	<atlas>Equip_3</atlas>
 	<name>龙息之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,9],[108,0]]</decompose>
+	<decompose>[[17002,9],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95933,7 +95989,7 @@
 	<atlas>Equip_3</atlas>
 	<name>狂徒之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,10],[108,0]]</decompose>
+	<decompose>[[17002,10],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>
@@ -95961,7 +96017,7 @@
 	<atlas>Equip_3</atlas>
 	<name>海蚀之靴</name>
 	<name_en></name_en>
-	<decompose>[[17001,3],[108,0]]</decompose>
+	<decompose>[[17002,11],[108,0]]</decompose>
 	<copys></copys>
 	<buyPrice>100</buyPrice>
 	<sellPrice>100</sellPrice>

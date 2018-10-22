@@ -11,10 +11,21 @@ import java.util.List;
  */
 @DAO
 public interface MarryRankDAO {
+    @SQL("SELECT COUNT(1) FROM t_marry_rank WHERE openId = :openId")
+    public int checkRecord(@SQLParam("openId") String openId);
+
     @SQL("SELECT openId, nickName, avatarUrl,score FROM t_marry_rank ORDER BY score DESC LIMIT :beginIndex,:endIndex")
     public List<MarryRank> queryMarryRank(@SQLParam("beginIndex") int beginIndex, @SQLParam("endIndex") int endIndex);
 
+    @SQL("REPLACE INTO t_marry_rank(openId,nickName,avatarUrl,score, datas) VALUES (:openId,:nickName,:avatarUrl,:score, :datas)")
+    public void insertMarry(@SQLParam("openId") String openId, @SQLParam("nickName") String nickName, @SQLParam("avatarUrl") String avatarUrl, @SQLParam("score") int score, @SQLParam("datas") String datas);
 
-    @SQL("REPLACE INTO t_marry_rank VALUES (:openId,:nickName,:avatarUrl,:score)")
-    public void insertMarry(@SQLParam("openId") String openId, @SQLParam("nickName") String nickName, @SQLParam("avatarUrl") String avatarUrl, @SQLParam("score") int score);
+    @SQL("UPDATE t_marry_rank SET score = :score WHERE openId = :openId")
+    public void updateMarryScore(@SQLParam("openId") String openId, @SQLParam("score") int score);
+
+    @SQL("SELECT datas FROM t_marry_rank WHERE openId = :openId")
+    public String queryMarryDatas(@SQLParam("openId") String openId);
+
+    @SQL("UPDATE t_marry_rank SET datas = :datas WHERE openId = :openId")
+    public void updateMarryDatas(@SQLParam("openId") String openId, @SQLParam("datas") String datas);
 }

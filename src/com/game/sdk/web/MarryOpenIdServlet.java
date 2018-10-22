@@ -28,8 +28,8 @@ public class MarryOpenIdServlet extends SdkServlet {
             String url = "https://api.weixin.qq.com/sns/jscode2session?appid=wx7004cb8d1a5b3df5&secret=80ab0be6003cec743ea964dedfad101c&grant_type=authorization_code&js_code=" + js_code;
             String json = HttpClient.sendGetRequest(url);
             ServerLogger.info(json);
-            resp.getWriter().write(json);
-            resp.getWriter().flush();
+
+            render(resp, json);
         } catch (Exception e) {
             ServerLogger.err(e, "");
             resp.getWriter().write("request param error");

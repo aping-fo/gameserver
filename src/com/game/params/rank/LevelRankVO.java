@@ -11,6 +11,7 @@ public class LevelRankVO implements IProtocol {
 	public int playerId;//玩家ID
 	public int fightingValue;//战力
 	public int vip;//vip
+	public float coins;//已充值数量
 
 
 	public void decode(BufferBuilder bb) {
@@ -21,6 +22,7 @@ public class LevelRankVO implements IProtocol {
 		this.playerId = bb.getInt();
 		this.fightingValue = bb.getInt();
 		this.vip = bb.getInt();
+		this.coins = bb.getFloat();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -31,5 +33,6 @@ public class LevelRankVO implements IProtocol {
 		bb.putInt(this.playerId);
 		bb.putInt(this.fightingValue);
 		bb.putInt(this.vip);
+		bb.putFloat(this.coins);
 	}
 }

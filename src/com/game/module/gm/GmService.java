@@ -4,6 +4,7 @@ import com.game.SysConfig;
 import com.game.data.CopyConfig;
 import com.game.data.GangTrainingCfg;
 import com.game.data.ModuleOpenCfg;
+import com.game.data.Response;
 import com.game.module.activity.ActivityService;
 import com.game.module.activity.WelfareCardService;
 import com.game.module.admin.MessageService;
@@ -47,6 +48,7 @@ import com.game.module.traversing.TraversingExtension;
 import com.game.module.vip.VipService;
 import com.game.module.worldboss.WorldBossService;
 import com.game.params.*;
+import com.game.params.chat.ChatInfoList;
 import com.game.params.chat.ChatVo;
 import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
@@ -145,9 +147,10 @@ public class GmService {
         vo.content = ok ? "GM Success!Please Login Again." : "GM Error,Check again!";
         vo.sender = "GM";
 
-        ListParam<ChatVo> chats = new ListParam<ChatVo>();
-        chats.params = new ArrayList<ChatVo>();
-        chats.params.add(vo);
+        ChatInfoList chats = new ChatInfoList();
+        chats.chatInfoVoList = new ArrayList<ChatVo>();
+        chats.chatInfoVoList.add(vo);
+        chats.errorCode = Response.SUCCESS;
         SessionManager.getInstance().sendMsg(ChatExtension.CHAT, chats, playerId);
     }
 

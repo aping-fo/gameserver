@@ -10,9 +10,13 @@ import com.game.module.player.Player;
 import com.game.module.player.PlayerCalculator;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.serial.SerialData;
+import com.game.module.serial.SerialDataService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.params.*;
+import com.game.params.rank.FashionCopyRankVO;
+import com.game.params.rank.StateRankVO;
 import com.game.util.ConfigData;
 import com.game.util.TimeUtil;
 import com.server.SessionManager;
@@ -49,6 +53,8 @@ public class FashionService {
     private PlayerCalculator playerCalculator;
     @Autowired
     private GoodsService goodsService;
+    @Autowired
+    private SerialDataService serialDataService;
 
     // 获得时装接口
     public void addFashion(int playerId, int fashionId, int limitTime) {
@@ -134,8 +140,12 @@ public class FashionService {
     }
 
     // 激活时装
-    public int active(int playerId, int fashionId) {
+    public int active(int playerId, int fashionId, boolean isBuy) {
         FashionCfg cfg = ConfigData.getConfig(FashionCfg.class, fashionId);
+        if (cfg == null) {
+            ServerLogger.warn("时装不存在，时装ID=" + fashionId);
+            return Response.ERR_PARAM;
+        }
         // 判断职业
         Player player = playerService.getPlayer(playerId);
         PlayerData data = playerService.getPlayerData(playerId);
@@ -152,15 +162,22 @@ public class FashionService {
         }
 
         // 扣除消耗
-        List<GoodsEntry> costs = Arrays.asList(new GoodsEntry(cfg.price[0], cfg.price[1]));
-        int costResult = goodsServices.decConsume(playerId, costs, LogConsume.ACTIVE_FASHION, fashionId);
-        if (costResult != Response.SUCCESS) {
-            return costResult;
+        if (isBuy) {
+            List<GoodsEntry> costs = Arrays.asList(new GoodsEntry(cfg.price[0], cfg.price[1]));
+            int costResult = goodsServices.decConsume(playerId, costs, LogConsume.ACTIVE_FASHION, fashionId);
+            if (costResult != Response.SUCCESS) {
+                return costResult;
+            }
         }
+
         data.getFashionMap().put(fashionId, new Fashion(fashionId, System.currentTimeMillis(), cfg.timeLimit));
         // 推送前端
         SessionManager.getInstance().sendMsg(FashionExtension.GET_INFO, getFashionInfo(playerId), playerId);
         calculator.calculate(player);
+
+        //更新时装排行
+//        updateFashionRankings(playerId, data.getGlamour());
+
         return Response.SUCCESS;
     }
 
@@ -346,6 +363,61 @@ public class FashionService {
             param.param = Response.SUCCESS;
             break;
         }
+
+        //更新时装排行
+//        updateFashionRankings(playerId, playerData.getGlamour());
+
         return param;
     }
+
+    //时装排行榜
+//    public ListParam<FashionCopyRankVO> getFashionRankings() {
+//        ListParam listParam = new ListParam();
+//
+//        SerialData serialData = serialDataService.getData();
+//        if (serialData == null) {
+//            ServerLogger.warn("序列化数据不存在");
+//            listParam.code = Response.ERR_PARAM;
+//            return listParam;
+//        }
+//
+//        listParam.params = new ArrayList<>(serialDataService.getData().getFashionRankingsMap().values());
+//        Collections.sort(listParam.params, COMPARATOR);
+//        return listParam;
+//    }
+//
+//    //时装排序
+//    private static final Comparator<FashionCopyRankVO> COMPARATOR = new Comparator<FashionCopyRankVO>() {
+//        @Override
+//        public int compare(FashionCopyRankVO o1, FashionCopyRankVO o2) {
+//            if (o1.glamour == o2.glamour) {
+//                return (int) (o2.fightingValue - o1.fightingValue);
+//            }
+//            return o2.glamour - o1.glamour;
+//        }
+//    };
+//
+//    //更新时装排行
+//    private void updateFashionRankings(int playerId, int glamour) {
+//        //时装排行
+//        Player player = playerService.getPlayer(playerId);
+//        if (player == null) {
+//            ServerLogger.warn("玩家不存在，玩家ID=" + playerId);
+//            return;
+//        }
+//
+//        SerialData serialData = serialDataService.getData();
+//        if (serialData == null) {
+//            ServerLogger.warn("序列化数据不存在");
+//            return;
+//        }
+//        FashionCopyRankVO fashionCopyRankVO = new FashionCopyRankVO();
+//        fashionCopyRankVO.name = player.getName();
+//        fashionCopyRankVO.level = player.getLev();
+//        fashionCopyRankVO.vocation = player.getVocation();
+//        fashionCopyRankVO.fightingValue = player.getFight();
+//        fashionCopyRankVO.playerId = playerId;
+//        fashionCopyRankVO.glamour = glamour;
+//        serialDataService.getData().getFashionRankingsMap().put(playerId, fashionCopyRankVO);
+//    }
 }

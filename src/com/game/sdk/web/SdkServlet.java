@@ -30,6 +30,7 @@ public class SdkServlet extends HttpServlet {
     protected void render(HttpServletResponse resp, String message) throws Exception {
         resp.addHeader("Pragma", "no-cache");
         resp.addHeader("Accept", "*/*");
+        resp.addHeader("Access-Control-Allow-Origin", "*");
         resp.getWriter().write(message);
         resp.getWriter().flush();
     }

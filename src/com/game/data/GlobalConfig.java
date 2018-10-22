@@ -184,4 +184,5 @@ public class GlobalConfig {
 	public int[][] DestinyTurnCard;//命运卡牌翻卡消耗
 	public int DestinyTurnCardAdd;//命运卡牌翻卡递增倍数
 	public int[] equipLimit;//装备品质升星上限
+	public int maxStar;//装备位升星最高星级
 }

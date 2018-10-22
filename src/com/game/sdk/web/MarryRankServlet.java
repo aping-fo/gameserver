@@ -29,19 +29,16 @@ public class MarryRankServlet extends SdkServlet {
             int endIndex = Integer.parseInt(req.getParameter("endIndex")); //
 
             ServerLogger.info("request param = ", beginIndex, endIndex);
-            if (beginIndex >= endIndex
-                    || endIndex <= 0
+            if (endIndex <= 0
                     || beginIndex < 0) {
-                resp.getWriter().write("request param error");
-                resp.getWriter().flush();
+                render(resp, "request param error");
                 return;
             }
 
             MarryService marryService = BeanManager.getBean(MarryService.class);
             String json = marryService.queryMarry(beginIndex, endIndex);
             ServerLogger.info(json);
-            resp.getWriter().write(json);
-            resp.getWriter().flush();
+            render(resp, json);
         } catch (Exception e) {
             resp.getWriter().write("request param error");
             resp.getWriter().flush();

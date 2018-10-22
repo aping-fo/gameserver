@@ -171,7 +171,7 @@
 	<standaloneRoleIds1>[21,22,23]</standaloneRoleIds1>
 	<standaloneRoleIds2>[22,23,21]</standaloneRoleIds2>
 	<standaloneRoleIds3>[23,21,22]</standaloneRoleIds3>
-	<standaloneType>1</standaloneType>
+	<standaloneType>0</standaloneType>
 	<facebookInviteSuccessReward>[[102, 100]]</facebookInviteSuccessReward>
 	<Dailyrecharge>300</Dailyrecharge>
 	<AiRateOTReward>[[102,300],[102,200],[102,100],[102,50],[102,20],[102,10],[102,5],[102,2],[102,1]]</AiRateOTReward>
@@ -180,6 +180,7 @@
 	<DestinyCard>[102,400]</DestinyCard>
 	<DestinyTurnCard>[[102,0],[102,30],[102,60],[102,90],[102,120],[102,150],[102,180],[102,200]]</DestinyTurnCard>
 	<DestinyTurnCardAdd>0</DestinyTurnCardAdd>
-	<equipLimit>[5,7,10,10,10,10,10]</equipLimit>
+	<equipLimit>[3,3,5,7,10,10,10]</equipLimit>
+	<maxStar>20</maxStar>
 </config>
 </root>
