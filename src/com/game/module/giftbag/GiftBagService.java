@@ -154,6 +154,9 @@ public class GiftBagService {
                     stringBuffer.append("&usePlayerAccount=" + player.getAccName());
                     stringBuffer.append("&useServerId=" + SysConfig.serverId);
                     stringBuffer.append("&id=" + activationCode1.getId());
+                    stringBuffer.append("&name=" + activationCode1.getName());
+                    stringBuffer.append("&serverId=" + activationCode1.getServerId());
+                    stringBuffer.append("&universal=" + activationCode1.getUniversal());
                     String s = HttpRequestUtil.sendPost(SysConfig.gmServerUrl + "/admin/updateActivationCode", stringBuffer.toString());
                 }
             }

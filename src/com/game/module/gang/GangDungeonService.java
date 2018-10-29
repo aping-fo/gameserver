@@ -88,7 +88,12 @@ public class GangDungeonService {
             vo.errCode = Response.GUILD_NOT_EXIST;
             return vo;
         }
-        vo.remainTimes = member.getChallengeTimes();
+//        vo.remainTimes = member.getChallengeTimes();
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家ID=" + playerId);
+        }
+        vo.remainTimes = playerData.getChallengeTimes();
 
         GangDungeon gangDungeon = serialDataService.getData().getGangMap().get(player.getGangId());
         if (gangDungeon == null) {
@@ -179,9 +184,23 @@ public class GangDungeonService {
             return vo;
         }
 
+
         Gang gang = gangService.getGang(player.getGangId());
         GMember member = gang.getMembers().get(playerId);
-        if (member.getChallengeTimes() < 1) {
+//        if (member.getChallengeTimes() < 1) {
+//            vo.errCode = Response.GUILD_COPY_COUNT_NOT_ENOUGH;
+//            return vo;
+//        }
+
+        PlayerData playerData = playerService.getPlayerData(playerId);
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家ID=" + playerId);
+            vo.errCode = Response.ERR_PARAM;
+            return vo;
+        }
+
+        //副本次数验证
+        if (playerData.getChallengeTimes() < 1) {
             vo.errCode = Response.GUILD_COPY_COUNT_NOT_ENOUGH;
             return vo;
         }
@@ -218,7 +237,8 @@ public class GangDungeonService {
         } finally {
             gangDungeon.getLock().unlock();
         }
-        member.setChallengeTimes(member.getChallengeTimes() - 1);
+//        member.setChallengeTimes(member.getChallengeTimes() - 1);
+        playerData.setChallengeTimes(playerData.getChallengeTimes() - 1);
         member.hp = player.getHp();
         member.totalHp = player.getHp();
         member.hurt = 0;
@@ -362,9 +382,15 @@ public class GangDungeonService {
                     if (gangDungeon.hasOver) {
                         for (Channel c : channels) { //次数返还
                             int playerId = SessionManager.getInstance().getPlayerId(c);
-                            GMember gMember = gang.getMembers().get(playerId);
-                            if (gMember != null) {
-                                gMember.setChallengeTimes(gMember.getChallengeTimes() + 1);
+//                            GMember gMember = gang.getMembers().get(playerId);
+//                            if (gMember != null) {
+//                                gMember.setChallengeTimes(gMember.getChallengeTimes() + 1);
+//                            }
+                            PlayerData playerData = playerService.getPlayerData(playerId);
+                            if (playerData != null) {
+                                playerData.setChallengeTimes(playerData.getChallengeTimes() + 1);
+                            } else {
+                                ServerLogger.warn("玩家数据不存在，玩家ID=" + playerId);
                             }
                         }
                     }
@@ -565,9 +591,9 @@ public class GangDungeonService {
             ServerLogger.info("gang = null || copy = null");
             return;
         }
-        for (GMember member : gang.getMembers().values()) {
-            vo.remainTimes = member.getChallengeTimes();
-            SessionManager.getInstance().sendMsg(CMD_GANG_COPY_INFO, vo, member.getPlayerId());
-        }
+//        for (GMember member : gang.getMembers().values()) {
+//            vo.remainTimes = member.getChallengeTimes();
+//            SessionManager.getInstance().sendMsg(CMD_GANG_COPY_INFO, vo, member.getPlayerId());
+//        }
     }
 }

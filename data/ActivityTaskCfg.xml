@@ -623,7 +623,7 @@
 	<ActivityId>9</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[4,30]]</Conds>
-	<Rewards>[[50884,10],[109,60],[103,100],[501001,1],[501002,1],[501003,1],[501004,1],[501005,1],[501006,1],[501007,1],[501008,1],[501009,1]]</Rewards>
+	<Rewards>[[50884,10],[109,60],[103,100000],[501001,1],[501002,1],[501003,1],[501004,1],[501005,1],[501006,1],[501007,1],[501008,1],[501009,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -676,10 +676,10 @@
 	<id>81</id>
 	<name>特价礼包</name>
 	<name_en></name_en>
-	<ActivityId>13</ActivityId>
+	<ActivityId>20</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20001]]</Conds>
-	<Rewards>[[50203,10],[20005,30],[12600,5]]</Rewards>
+	<Rewards>[[50402,5],[301002,1],[301333,5],[302002,100]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -693,7 +693,7 @@
 	<ActivityId>13</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20002]]</Conds>
-	<Rewards>[[50833,10],[109,30],[10901,30]]</Rewards>
+	<Rewards>[[50402,5],[301002,1],[301333,1],[302002,100]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -704,10 +704,10 @@
 	<id>83</id>
 	<name>特价礼包</name>
 	<name_en></name_en>
-	<ActivityId>13</ActivityId>
+	<ActivityId>20</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20003]]</Conds>
-	<Rewards>[[301103,1],[16000,50],[301332,50]]</Rewards>
+	<Rewards>[[50403,10],[10910,30],[10911,5],[17002,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -718,10 +718,10 @@
 	<id>84</id>
 	<name>特价礼包</name>
 	<name_en></name_en>
-	<ActivityId>13</ActivityId>
+	<ActivityId>20</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20004]]</Conds>
-	<Rewards>[[302001,3],[20005,30],[12600,5]]</Rewards>
+	<Rewards>[[50404,5],[20007,90],[16000,40],[17002,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -735,7 +735,7 @@
 	<ActivityId>13</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20005]]</Conds>
-	<Rewards>[[50833,10],[109,30],[10901,30]]</Rewards>
+	<Rewards>[[50403,10],[10910,30],[10911,5],[17002,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -749,7 +749,7 @@
 	<ActivityId>13</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20006]]</Conds>
-	<Rewards>[[301103,1],[16000,50],[301332,50]]</Rewards>
+	<Rewards>[[50404,5],[20007,90],[16000,40],[17002,3]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -1001,7 +1001,7 @@
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,300]]</Conds>
-	<Rewards>[[65181,5],[108,20],[302002,20]]</Rewards>
+	<Rewards>[[65181,20],[50801,20],[302002,50],[301002,2]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石300</des>
@@ -1015,7 +1015,7 @@
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,990]]</Conds>
-	<Rewards>[[65181,10],[303001,200],[304001,200]]</Rewards>
+	<Rewards>[[65181,30],[50802,10],[10910,15],[301002,4]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石990</des>
@@ -1029,7 +1029,7 @@
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,1990]]</Conds>
-	<Rewards>[[65181,15],[10910,15]]</Rewards>
+	<Rewards>[[65181,50],[10910,15],[50802,50],[10911,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石1990</des>
@@ -1043,7 +1043,7 @@
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,3990]]</Conds>
-	<Rewards>[[65181,30],[10910,20],[10911,1]]</Rewards>
+	<Rewards>[[65181,50],[17000,15],[10910,30],[17002,2]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石3990</des>
@@ -1057,7 +1057,7 @@
 	<ActivityId>90</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,6990]]</Conds>
-	<Rewards>[[65181,50],[17001,5],[17002,5]]</Rewards>
+	<Rewards>[[65181,50],[17001,15],[10911,2],[17002,2]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石6990</des>
@@ -1071,7 +1071,7 @@
 	<ActivityId>92</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,300]]</Conds>
-	<Rewards>[[50102,5],[301322,5],[301332,5]]</Rewards>
+	<Rewards>[[20007,30],[50801,20],[302002,50],[301002,2]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石300</des>
@@ -1085,7 +1085,7 @@
 	<ActivityId>92</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,990]]</Conds>
-	<Rewards>[[50102,10],[301322,5],[301332,10]]</Rewards>
+	<Rewards>[[20007,30],[50802,10],[10910,15],[103,300000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石990</des>
@@ -1099,7 +1099,7 @@
 	<ActivityId>92</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,1990]]</Conds>
-	<Rewards>[[50103,5],[10910,15]]</Rewards>
+	<Rewards>[[20007,60],[50802,20],[10911,4],[302003,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石1990</des>
@@ -1113,7 +1113,7 @@
 	<ActivityId>92</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,3990]]</Conds>
-	<Rewards>[[50103,10],[10910,20],[10911,1]]</Rewards>
+	<Rewards>[[20007,60],[50803,10],[17000,15],[17002,2]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石3990</des>
@@ -1127,7 +1127,7 @@
 	<ActivityId>92</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,6990]]</Conds>
-	<Rewards>[[50104,5],[17001,5],[17002,5]]</Rewards>
+	<Rewards>[[20007,90],[50803,20],[17001,15],[17002,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石6990</des>
@@ -1141,7 +1141,7 @@
 	<ActivityId>93</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,300]]</Conds>
-	<Rewards>[[20007,5],[301322,5],[301332,5]]</Rewards>
+	<Rewards>[[20007,30],[50401,20],[302002,50],[301002,2]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石300</des>
@@ -1155,7 +1155,7 @@
 	<ActivityId>93</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,990]]</Conds>
-	<Rewards>[[20007,10],[301322,10],[301332,10]]</Rewards>
+	<Rewards>[[20007,30],[50402,10],[10910,15],[103,300000]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石990</des>
@@ -1169,7 +1169,7 @@
 	<ActivityId>93</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,1990]]</Conds>
-	<Rewards>[[20007,15],[10910,15]]</Rewards>
+	<Rewards>[[20007,60],[50402,20],[10911,4],[302003,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石1990</des>
@@ -1183,7 +1183,7 @@
 	<ActivityId>93</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,3990]]</Conds>
-	<Rewards>[[20007,30],[10910,20],[10911,1]]</Rewards>
+	<Rewards>[[20007,60],[50403,10],[17000,15],[17002,2]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石3990</des>
@@ -1197,7 +1197,7 @@
 	<ActivityId>93</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[71,6990]]</Conds>
-	<Rewards>[[20007,40],[17001,5],[17002,5]]</Rewards>
+	<Rewards>[[20007,90],[50403,20],[17001,15],[17002,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>消耗钻石6990</des>
@@ -3857,9 +3857,9 @@
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[15,102,98]]</Conds>
-	<Rewards>[[108,20],[50501,5],[302002,10]]</Rewards>
+	<Rewards>[[50501,10],[400001,100],[302002,50],[103,100000]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>100</Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3871,9 +3871,9 @@
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[15,102,680]]</Conds>
-	<Rewards>[[50502,5],[68001,2],[103,200000]]</Rewards>
+	<Rewards>[[50502,10],[500001,200],[600001,200],[700001,200]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>100</Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3885,9 +3885,9 @@
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[15,102,980]]</Conds>
-	<Rewards>[[301322,10],[301332,10]]</Rewards>
+	<Rewards>[[50503,10],[800001,300],[900001,300],[1000001,300]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>100</Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3899,9 +3899,9 @@
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[15,102,1980]]</Conds>
-	<Rewards>[[17000,3],[17001,3],[20013,30]]</Rewards>
+	<Rewards>[[50103,8],[10910,30],[302001,3],[20013,90]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>200</Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3913,9 +3913,9 @@
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[15,102,3280]]</Conds>
-	<Rewards>[[17000,5],[17001,5],[20013,30]]</Rewards>
+	<Rewards>[[50104,3],[17000,15],[10911,2],[302003,3]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>200</Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -3927,9 +3927,9 @@
 	<ActivityId>80</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[15,102,6480]]</Conds>
-	<Rewards>[[17001,5],[17002,5],[16000,30]]</Rewards>
+	<Rewards>[[50104,5],[17000,15],[17002,2],[302003,3]]</Rewards>
 	<AutoReward>1</AutoReward>
-	<Param0>200</Param0>
+	<Param0>3</Param0>
 	<des></des>
 	<des_en></des_en>
 	<Param1>1</Param1>
@@ -4207,7 +4207,7 @@
 	<ActivityId>101</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,10]]</Conds>
-	<Rewards>[[20007,5],[302001,3],[302002,20]]</Rewards>
+	<Rewards>[[20007,30],[51302,20],[302002,100],[301002,2]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖10次</des>
@@ -4221,7 +4221,7 @@
 	<ActivityId>101</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,20]]</Conds>
-	<Rewards>[[20007,10],[16000,10],[302002,50]]</Rewards>
+	<Rewards>[[20007,30],[51303,10],[16000,20],[302001,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖20次</des>
@@ -4235,7 +4235,7 @@
 	<ActivityId>101</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,40]]</Conds>
-	<Rewards>[[20007,15],[10910,25],[10911,1]]</Rewards>
+	<Rewards>[[20007,30],[10910,45],[16000,40],[10911,3]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖40次</des>
@@ -4249,7 +4249,7 @@
 	<ActivityId>101</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,80]]</Conds>
-	<Rewards>[[20007,30],[10910,30],[10911,2]]</Rewards>
+	<Rewards>[[20007,60],[17000,30],[10910,80],[17002,3]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖80次</des>
@@ -4263,7 +4263,7 @@
 	<ActivityId>101</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,120]]</Conds>
-	<Rewards>[[20007,40],[17002,5],[10901,50]]</Rewards>
+	<Rewards>[[20007,60],[17001,30],[17002,5],[10911,5]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖120次</des>
@@ -4277,7 +4277,7 @@
 	<ActivityId>102</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,10]]</Conds>
-	<Rewards>[[65131,5],[108,20],[302002,20]]</Rewards>
+	<Rewards>[[50102,20],[800001,300],[900001,300],[1000001,300]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖10次</des>
@@ -4291,7 +4291,7 @@
 	<ActivityId>102</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,20]]</Conds>
-	<Rewards>[[65131,10],[301333,5],[302001,3]]</Rewards>
+	<Rewards>[[50103,10],[500001,400],[600001,400],[700001,400]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖20次</des>
@@ -4305,7 +4305,7 @@
 	<ActivityId>102</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,40]]</Conds>
-	<Rewards>[[65131,15],[10910,25],[10911,1]]</Rewards>
+	<Rewards>[[50103,10],[16000,30],[10911,4],[10910,15]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖40次</des>
@@ -4319,7 +4319,7 @@
 	<ActivityId>102</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,80]]</Conds>
-	<Rewards>[[65131,30],[10910,50],[10911,2]]</Rewards>
+	<Rewards>[[50103,20],[16000,50],[17002,5],[302003,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖80次</des>
@@ -4333,7 +4333,7 @@
 	<ActivityId>102</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,120]]</Conds>
-	<Rewards>[[65131,50],[17002,5],[16000,50]]</Rewards>
+	<Rewards>[[50104,10],[16000,50],[17002,10],[20007,90]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖120次</des>

@@ -12,8 +12,12 @@ import com.game.module.log.LogConsume;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
+import com.game.module.serial.SerialData;
+import com.game.module.serial.SerialDataService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.params.ListParam;
+import com.game.params.rank.SkillCardRankVO;
 import com.game.params.skill.SkillCardGroupInfo;
 import com.game.params.skill.SkillCardVo;
 import com.game.params.skill.SkillInfo;
@@ -26,10 +30,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -47,6 +48,10 @@ public class SkillService {
     private GoodsService goodsService;
     @Autowired
     private ActivityService activityService;
+    @Autowired
+    private SerialDataService serialDataService;
+
+    private ListParam<SkillCardRankVO> skillCardRankings;
 
     //获取技能信息
     public SkillInfo getInfo(int playerId) {
@@ -222,6 +227,20 @@ public class SkillService {
         taskService.doTask(playerId, Task.FINISH_CARD_UPGRADE, cfg.lv);
         //更新前端
         updateSkill2Client(playerId);
+
+//        //技能卡排行
+//        int totalLevel = 0;
+//        for (Entry<Integer, SkillCard> entry : skillCards.entrySet()) {
+//            SkillCardConfig skillCardConfig = ConfigData.getConfig(SkillCardConfig.class, entry.getValue().getCardId());
+//            if (skillCardConfig == null) {
+//                continue;
+//            }
+//            if (skillCardConfig.subType == SkillConsts.SubType.T_UPGRADE_CARD) {
+//                totalLevel += skillCardConfig.lv;
+//            }
+//        }
+//        updateSkillCardRankings(playerId, totalLevel);
+
         return Response.SUCCESS;
     }
 
@@ -358,4 +377,55 @@ public class SkillService {
             }
         }
     }
+
+//    //技能卡排行榜
+//    public ListParam<SkillCardRankVO> getSkillCardRankings() {
+//        ListParam listParam = new ListParam();
+//
+//        SerialData serialData = serialDataService.getData();
+//        if (serialData == null) {
+//            ServerLogger.warn("序列化数据不存在");
+//            listParam.code = Response.ERR_PARAM;
+//            return listParam;
+//        }
+//
+//        listParam.params = new ArrayList<>(serialDataService.getData().getSkillCardRankingsMap().values());
+//        Collections.sort(listParam.params, COMPARATOR);
+//        return listParam;
+//    }
+//
+//    //技能卡排序
+//    private static final Comparator<SkillCardRankVO> COMPARATOR = new Comparator<SkillCardRankVO>() {
+//        @Override
+//        public int compare(SkillCardRankVO o1, SkillCardRankVO o2) {
+//            if (o1.totalLevel == o2.totalLevel) {
+//                return (int) (o2.fightingValue - o1.fightingValue);
+//            }
+//            return o2.totalLevel - o1.totalLevel;
+//        }
+//    };
+//
+//    //更新技能卡排行
+//    private void updateSkillCardRankings(int playerId, int totalLevel) {
+//        Player player = playerService.getPlayer(playerId);
+//        if (player == null) {
+//            ServerLogger.warn("玩家不存在，玩家ID=" + playerId);
+//            return;
+//        }
+//
+//        SerialData serialData = serialDataService.getData();
+//        if (serialData == null) {
+//            ServerLogger.warn("序列化数据不存在");
+//            return;
+//        }
+//
+//        SkillCardRankVO skillCardRankVO = new SkillCardRankVO();
+//        skillCardRankVO.name = player.getName();
+//        skillCardRankVO.level = player.getLev();
+//        skillCardRankVO.vocation = player.getVocation();
+//        skillCardRankVO.fightingValue = player.getFight();
+//        skillCardRankVO.playerId = playerId;
+//        skillCardRankVO.totalLevel = totalLevel;
+//        serialDataService.getData().getSkillCardRankingsMap().put(playerId, skillCardRankVO);
+//    }
 }

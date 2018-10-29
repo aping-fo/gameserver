@@ -8,6 +8,9 @@ import com.game.module.admin.ManagerService;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
+import com.game.module.group.GroupService;
+import com.game.module.team.Team;
+import com.game.module.team.TeamService;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.StringParam;
@@ -47,6 +50,10 @@ public class PlayerExtension {
     private ERatingService ratingService;
     @Autowired
     private PlayerCalculator playerCalculator;
+    @Autowired
+    private GroupService groupService;
+    @Autowired
+    private TeamService teamService;
 
     public static final AttributeKey<String> CHANNEL = AttributeKey.valueOf("channel");
 
@@ -321,6 +328,7 @@ public class PlayerExtension {
         SessionManager.getInstance().setPlayerLev(playerId, player.getLev());
         ServerLogger.info("user login:" + playerId + " 设备mac:" + param.clientMac);
         //System.out.println("=============" + playerService.getPlayers().size());
+
         return result;
     }
 

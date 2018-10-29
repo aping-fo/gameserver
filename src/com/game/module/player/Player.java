@@ -565,10 +565,14 @@ public class Player implements PlayerAddition {
     }
 
     public boolean checkHurt(int hurt) {
+        return checkHurt(hurt, 1);
+    }
+
+    public boolean checkHurt(int hurt, float factor) {
         if (SysConfig.gm) {
             return true;
         }
-        int maxHurt = (int) (fight * 0.06 * 1.65 * 3 * 2.05 + 4185);
+        int maxHurt = (int) ((fight * 0.06 * 1.65 * 3 * 2.05 + 4185) * factor);
         return hurt <= maxHurt;
     }
 }

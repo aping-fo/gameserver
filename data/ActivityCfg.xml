@@ -220,12 +220,12 @@
 	<id>13</id>
 	<name>特价礼包</name>
 	<name_en></name_en>
-	<Conds>[[3,30,120]]</Conds>
+	<Conds>[[3,150,180]]</Conds>
 	<ActivityType>11</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime></BeginTime>
-	<EndTime></EndTime>
+	<BeginTime>2017-10-20 00:00:00</BeginTime>
+	<EndTime>2017-10-20 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
@@ -346,12 +346,12 @@
 	<id>20</id>
 	<name>特价礼包</name>
 	<name_en></name_en>
-	<Conds></Conds>
+	<Conds>[[3,30,120]]</Conds>
 	<ActivityType>11</ActivityType>
-	<OpenType>2</OpenType>
+	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2017-10-24 00:00:00</BeginTime>
-	<EndTime>2017-10-28 23:55:00</EndTime>
+	<BeginTime>2018-10-28 00:00:00</BeginTime>
+	<EndTime>2018-10-28 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>
@@ -692,7 +692,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-24 00:00:00</BeginTime>
+	<BeginTime>2018-10-25 00:00:00</BeginTime>
 	<EndTime>2018-10-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -710,7 +710,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-24 00:00:00</BeginTime>
+	<BeginTime>2018-10-26 00:00:00</BeginTime>
 	<EndTime>2018-10-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -728,7 +728,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-24 00:00:00</BeginTime>
+	<BeginTime>2018-10-27 00:00:00</BeginTime>
 	<EndTime>2018-10-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -746,7 +746,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-24 00:00:00</BeginTime>
+	<BeginTime>2018-10-28 00:00:00</BeginTime>
 	<EndTime>2018-10-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -764,7 +764,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-24 00:00:00</BeginTime>
+	<BeginTime>2018-10-29 00:00:00</BeginTime>
 	<EndTime>2018-10-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -782,7 +782,7 @@
 	<ActivityType>30</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-24 00:00:00</BeginTime>
+	<BeginTime>2018-10-30 00:00:00</BeginTime>
 	<EndTime>2018-10-30 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
@@ -872,8 +872,8 @@
 	<ActivityType>33</ActivityType>
 	<OpenType>1</OpenType>
 	<TimeType>1</TimeType>
-	<BeginTime>2018-10-27 00:00:00</BeginTime>
-	<EndTime>2018-10-27 23:55:00</EndTime>
+	<BeginTime>2017-10-27 00:00:00</BeginTime>
+	<EndTime>2017-10-27 23:55:00</EndTime>
 	<WeekTime></WeekTime>
 	<HourTime></HourTime>
 	<Param0></Param0>

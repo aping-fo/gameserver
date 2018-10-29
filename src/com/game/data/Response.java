@@ -189,7 +189,7 @@ public class Response {
 	public static final int GROUP_LEADER_HAS_NOT_FIGHT=4160;//需要等待团长出战
 	public static final int GROUP_ALREADY_START=4161;//副本已经开始，无法加入
 	//宠物
-	public static final int PET_SHOW_NOT_ENOUGH=4199;//C级宠物才可跟随玩家在主城显示
+	public static final int PET_SHOW_NOT_ENOUGH=4199;//两星宠物才可跟随玩家在主城显示
 	public static final int PET_HAS_SAME_TYPE=4200;//拥有同类型宠物
 	public static final int PET_MATERIAL_NOT_ENOUGH=4201;//宠物碎片不够
 	public static final int PET_NOT_EXIST=4202;//宠物不存在

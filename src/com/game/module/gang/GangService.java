@@ -463,13 +463,13 @@ public class GangService implements InitHandler {
             int2Param.param1 = Response.GUILD_DONT_OPEN;
             return int2Param;
         }
-        if (data.getLastQuitGang() > 0) {
-            if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR * global.quitPunish) {
-                int2Param.param1 = Response.QUIT_GANG_LAST;
-                int2Param.param2 = (int) ((System.currentTimeMillis() - data.getLastQuitGang()) / TimeUtil.ONE_HOUR);
-                return int2Param;
-            }
-        }
+//        if (data.getLastQuitGang() > 0) {
+//            if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR * global.quitPunish) {
+//                int2Param.param1 = Response.QUIT_GANG_LAST;
+//                int2Param.param2 = (int) ((System.currentTimeMillis() - data.getLastQuitGang()) / TimeUtil.ONE_HOUR);
+//                return int2Param;
+//            }
+//        }
         // 条件不足(等级,战斗力)
         if ((gang.isLimitFight() && gang.getFightLimit() > player.getFight())
                 || (gang.isLimitLev() && gang.getLevLimit() > player.getLev())) {
@@ -516,14 +516,14 @@ public class GangService implements InitHandler {
         }
 
         PlayerData playerData = playerService.getPlayerData(applyId);
-        if (playerData.getLastQuitGang() > 0) {
-            if ((System.currentTimeMillis() - playerData.getLastQuitGang()) <= TimeUtil.ONE_HOUR
-                    * ConfigData.globalParam().quitPunish) {
-                gang.getApplys().remove(applyId);
-                gang.setUpdated(true);
-                return Response.QUIT_GANG_LAST;
-            }
-        }
+//        if (playerData.getLastQuitGang() > 0) {
+//            if ((System.currentTimeMillis() - playerData.getLastQuitGang()) <= TimeUtil.ONE_HOUR
+//                    * ConfigData.globalParam().quitPunish) {
+//                gang.getApplys().remove(applyId);
+//                gang.setUpdated(true);
+//                return Response.QUIT_GANG_LAST;
+//            }
+//        }
 
         synchronized (gang) {
             // 本帮人员已满

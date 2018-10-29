@@ -31,6 +31,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -138,9 +139,8 @@ public class ChatExtension {
             }
             //私聊
         } else {
-            ListParam<ChatVo> result = new ListParam<ChatVo>();
-            result.params = new ArrayList<ChatVo>();
-            result.params.add(vo);
+            chatInfoList.chatInfoVoList= new ArrayList<ChatVo>();
+            chatInfoList.chatInfoVoList.add(vo);
             if (vo.channel == PRIVATE) {
                 int receiveId = vo.receiveId;
                 PlayerData receiverData = playerService.getPlayerData(receiveId);
@@ -154,7 +154,7 @@ public class ChatExtension {
                     vo.time = System.currentTimeMillis();
                     chatService.addOffChat(receiveId, vo);
                 } else {
-                    SessionManager.getInstance().sendMsg(CHAT, result, receiveId);
+                    SessionManager.getInstance().sendMsg(CHAT, chatInfoList, receiveId);
                 }
                 LinkedHashMap<Integer, Boolean> tmp = receiverData.getRecentContacters();
                 if (tmp.get(playerId) == null) {
@@ -174,15 +174,15 @@ public class ChatExtension {
                     Gang gang = gangService.getGang(gangId);
 
                     for (int memberId : gang.getMembers().keySet()) {
-                        SessionManager.getInstance().sendMsg(CHAT, result, memberId);
+                        SessionManager.getInstance().sendMsg(CHAT, chatInfoList, memberId);
                     }
                 }
             } else if (vo.channel == TEAM) {
                 chatType = TEAM;
                 if (sender.getTeamId() > 0) {
-                    sceneService.brocastToSceneCurLine(sender, CHAT, result);
+                    sceneService.brocastToSceneCurLine(sender, CHAT, chatInfoList);
                 } else if (sender.getGroupId() > 0) {
-                    groupService.chat(sender, CHAT, result);
+                    groupService.chat(sender, CHAT, chatInfoList);
                 }
             }
         }

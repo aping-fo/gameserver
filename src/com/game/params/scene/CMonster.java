@@ -11,6 +11,7 @@ public class CMonster implements IProtocol {
 	public int percent;//配置的百分比
 	public int hp;//怪物血量
 	public int hurt;//怪物受到的总伤害
+	public int hightHurt;//怪物受到的单次最大伤害
 
 
 	public void decode(BufferBuilder bb) {
@@ -21,6 +22,7 @@ public class CMonster implements IProtocol {
 		this.percent = bb.getInt();
 		this.hp = bb.getInt();
 		this.hurt = bb.getInt();
+		this.hightHurt = bb.getInt();
 	}
 
 	public void encode(BufferBuilder bb) {
@@ -31,5 +33,6 @@ public class CMonster implements IProtocol {
 		bb.putInt(this.percent);
 		bb.putInt(this.hp);
 		bb.putInt(this.hurt);
+		bb.putInt(this.hightHurt);
 	}
 }

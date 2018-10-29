@@ -185,4 +185,5 @@ public class GlobalConfig {
 	public int DestinyTurnCardAdd;//命运卡牌翻卡递增倍数
 	public int[] equipLimit;//装备品质升星上限
 	public int maxStar;//装备位升星最高星级
+	public int maxDiamond;//单次可获得钻石最高数量
 }

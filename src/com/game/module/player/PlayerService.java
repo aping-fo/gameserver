@@ -43,6 +43,7 @@ import com.server.util.ServerLogger;
 import com.server.validate.AntiCheatService;
 import com.sun.org.apache.bcel.internal.generic.FADD;
 import io.netty.channel.Channel;
+import org.eclipse.jetty.server.Server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -166,6 +167,7 @@ public class PlayerService implements InitHandler {
     public Player getPlayer(int playerId) {
         return getPlayer(playerId, true);
     }
+
     public Player getPlayer(int playerId, boolean autoLoadFromDb) {
         Player player = players.get(playerId);
         if (player == null && autoLoadFromDb) {
@@ -269,6 +271,7 @@ public class PlayerService implements InitHandler {
         playerData.setCurHead(headId);
         playerData.getFashions().add(headId);
         playerData.setGroupTimes(ConfigData.globalParam().groupTimes);
+        playerData.setChallengeTimes(ConfigData.globalParam().guildCopyTimes);
         //初始化技能
         int[] skills = globalParam.playerDefaultSkill[player.getVocation() - 1];
         for (int skill : skills) {
@@ -647,6 +650,10 @@ public class PlayerService implements InitHandler {
 
     // 加钻石
     public boolean addDiamond(int playerId, int add, LogConsume actionType, Object... params) {
+        if (add > ConfigData.globalParam().maxDiamond) {
+            ServerLogger.warn("出现超额钻石发放，事件=" + actionType);
+            return false;
+        }
         if (add <= 0) {
             return false;
         }
@@ -668,7 +675,7 @@ public class PlayerService implements InitHandler {
             subjectId = 5;
         }
         eRatingService.reportAddMoney(player, data.getRoleId(), subjectId, add, actionType.desc);
-        Context.getLoggerService().logDiamond(playerId, add, actionType.actionId, true, params);
+        Context.getLoggerService().logDiamond(playerId, add, actionType.actionId, true, player.getLev(), player.getDiamond() - add, player.getDiamond(), params);
         taskService.doTask(playerId, Task.FINISH_CURRENCY, Goods.DIAMOND, add);
         return true;
     }
@@ -691,7 +698,7 @@ public class PlayerService implements InitHandler {
         if (actionType == null) {
             actionType = LogConsume.GM;
         }
-        Context.getLoggerService().logDiamond(playerId, dec, actionType.actionId, false, params);
+        Context.getLoggerService().logDiamond(playerId, dec, actionType.actionId, false, player.getLev(), player.getDiamond() + dec, player.getDiamond(), params);
         taskService.doTask(playerId, Task.FINISH_CONSUME, Goods.DIAMOND, dec);
         PlayerData data = getPlayerData(playerId);
         eRatingService.reportMoneyCost(player, data.getRoleId(), actionType.desc, 1, dec, dec, 6, dec);
@@ -716,8 +723,7 @@ public class PlayerService implements InitHandler {
         // 通知前端
         updateAttrsToClient(playerId, Player.COIN, player.getCoin());
         // 记录日志
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false, dec, actionType,
-                Goods.COIN, Goods.CURRENCY, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false, dec, actionType, Goods.COIN, Goods.CURRENCY, player.getCoin() + dec, player.getCoin(), params);
         taskService.doTask(playerId, Task.FINISH_CONSUME, Goods.COIN, dec);
         return true;
     }
@@ -734,8 +740,7 @@ public class PlayerService implements InitHandler {
         // 通知前端
         updateAttrsToClient(playerId, Player.ACHIEVEMENT, player.getCoin());
         // 记录日志
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getAchievement(), false, dec, actionType,
-                Goods.ACHIEVEMENT, Goods.ACHIEVEMENT, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getAchievement(), false, dec, actionType, Goods.ACHIEVEMENT, Goods.ACHIEVEMENT, player.getAchievement() + dec, player.getAchievement(), params);
         return true;
     }
 
@@ -751,8 +756,7 @@ public class PlayerService implements InitHandler {
         // 通知前端
         updateAttrsToClient(playerId, Player.ACHIEVEMENT, player.getCoin());
         // 记录日志
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getAchievement(), true, add, actionType,
-                Goods.ACHIEVEMENT, Goods.ACHIEVEMENT, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getAchievement(), true, add, actionType, Goods.ACHIEVEMENT, Goods.ACHIEVEMENT, player.getAchievement() - add, player.getAchievement(), params);
         return true;
     }
 
@@ -770,8 +774,7 @@ public class PlayerService implements InitHandler {
         // 通知前端
         updateAttrsToClient(playerId, Player.COIN, player.getCoin());
         // 记录日志
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, add, actionType,
-                Goods.COIN, Goods.CURRENCY, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, add, actionType, Goods.COIN, Goods.CURRENCY, player.getCoin() - add, player.getCoin(), params);
         taskService.doTask(playerId, Task.FINISH_CURRENCY, Goods.COIN, add);
         return true;
     }
@@ -789,8 +792,7 @@ public class PlayerService implements InitHandler {
         // 通知前端
         refreshPlayerToClient(playerId);
         // 记录日志
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false, dec, actionType,
-                0, Goods.ENERGY, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false, dec, actionType, 0, Goods.ENERGY, player.getEnergy() + dec, player.getEnergy(), params);
         return true;
     }
 
@@ -807,8 +809,7 @@ public class PlayerService implements InitHandler {
         // 通知前端
         updateAttrsToClient(playerId, Player.ENERGY, player.getEnergy());
         // 记录日志
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, add, actionType, 0,
-                Goods.ENERGY, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, add, actionType, 0, Goods.ENERGY, player.getEnergy() - add, player.getEnergy(), params);
         return true;
     }
 
@@ -892,8 +893,7 @@ public class PlayerService implements InitHandler {
         updateAttrsToClient(playerId, Player.EXP, player.getExp(), Player.LEV, player.getLev());
         groupService.updateAttr(playerId);
         teamService.updateAttr(playerId);
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, exp, actionType,
-                0, Goods.EXP, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, exp, actionType, 0, Goods.EXP, player.getExp() - exp, player.getExp(), params);
     }
 
     // 检验是否升级
@@ -1200,8 +1200,7 @@ public class PlayerService implements InitHandler {
             // 通知前端
             updateCurrencyToClient(playerId, type, (int) currency.get(type));
             // 记录日志
-            Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, (int) offset, actionType,
-                    type, Goods.CURRENCY, params);
+            Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, (int) offset, actionType, type, Goods.CURRENCY, (int) (currency.get(type) - offset), (int) currency.get(type), params);
             taskService.doTask(playerId, Task.FINISH_CURRENCY, type, (int) offset);
             return true;
         }
@@ -1215,8 +1214,7 @@ public class PlayerService implements InitHandler {
             // 通知前端
             updateCurrencyToClient(playerId, type, (int) currency.get(type));
             // 记录日志
-            Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, (int) offset, actionType,
-                    type, Goods.CURRENCY, params);
+            Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, (int) offset, actionType, type, Goods.CURRENCY, (int) (currency.get(type) + offset), (int) currency.get(type), params);
             taskService.doTask(playerId, Task.FINISH_CONSUME, type, (int) offset);
             return true;
         }

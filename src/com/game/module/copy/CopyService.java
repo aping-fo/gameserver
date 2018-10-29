@@ -37,6 +37,7 @@ import com.game.params.copy.CopyInfo;
 import com.game.params.copy.CopyResult;
 import com.game.params.copy.CopyVo;
 import com.game.params.copy.SEnterCopy;
+import com.game.params.rank.NormalCopyRankVO;
 import com.game.params.scene.CMonster;
 import com.game.params.scene.SMonsterVo;
 import com.game.util.ConfigData;
@@ -787,10 +788,18 @@ public class CopyService {
         if (playerData == null) {
             ServerLogger.warn("玩家数据不存在" + playerId);
         }
+
+        if (!player.checkHurt(m.hightHurt, 1.5f)) {
+            // 超过1.5倍的最大范围值，肯定是作弊了
+            ServerLogger.info("作弊:单次伤害超过1.5倍最大伤害范围，作弊玩家=" + playerId + " 副本=" + copy.getCopyId() + " harm=" + m.hightHurt);
+            return dropReward;
+        }
+
         //防作弊
         if (m.hp < monster.hp * 0.8 || m.hurt < monster.hp * 0.8) {
             ServerLogger.warn("作弊玩家=" + playerId + " 副本=" + copy.getCopyId());
         }
+
         playerData.setHurt(playerData.getHurt() + monster.hp);
 
         MonsterConfig monsterCfg = GameData.getConfig(MonsterConfig.class, monster.monsterId);
@@ -866,7 +875,7 @@ public class CopyService {
 
         if (cfg.type == CopyInstance.TYPE_COMMON ||
                 cfg.type == CopyInstance.TYPE_ENDLESS) {
-            if (result.toltalHurt < playerData.getHurt() * 0.8) {
+            if ((result.toltalHurt < playerData.getHurt() * 0.8) || (playerData.getHurt() == 0)) {
                 ServerLogger.warn("作弊玩家=" + playerId + " 统计伤害值=" + playerData.getHurt() + "上报伤害=" + result.toltalHurt);
                 return false;
             }
@@ -1345,4 +1354,55 @@ public class CopyService {
         }
         return null;
     }
+
+//    //获取满星副本排行
+//    public ListParam<NormalCopyRankVO> getMaxStarCopyRankings() {
+//        ListParam listParam = new ListParam();
+//
+//        SerialData serialData = serialDataService.getData();
+//        if (serialData == null) {
+//            ServerLogger.warn("序列化数据不存在");
+//            listParam.code = Response.ERR_PARAM;
+//            return listParam;
+//        }
+//
+//        listParam.params = new ArrayList<>(serialDataService.getData().getCopyRankingsMap().values());
+//        Collections.sort(listParam.params, COMPARATOR);
+//        return listParam;
+//    }
+//
+//    //满星副本排序
+//    private static final Comparator<NormalCopyRankVO> COMPARATOR = new Comparator<NormalCopyRankVO>() {
+//        @Override
+//        public int compare(NormalCopyRankVO o1, NormalCopyRankVO o2) {
+//            if (o1.count == o2.count) {
+//                return o2.fightingValue - o1.fightingValue;
+//            }
+//            return o2.count - o1.count;
+//        }
+//    };
+//
+//    //更新满星副本排行
+//    public void updateMaxStarCopyRankings(int playerId, int value) {
+//        Player player = playerService.getPlayer(playerId);
+//        if (player == null) {
+//            ServerLogger.warn("玩家不存在，玩家ID=" + playerId);
+//            return;
+//        }
+//
+//        SerialData serialData = serialDataService.getData();
+//        if (serialData == null) {
+//            ServerLogger.warn("序列化数据不存在");
+//            return;
+//        }
+//
+//        NormalCopyRankVO normalCopyRankVO = new NormalCopyRankVO();
+//        normalCopyRankVO.name = player.getName();
+//        normalCopyRankVO.level = player.getLev();
+//        normalCopyRankVO.vocation = player.getVocation();
+//        normalCopyRankVO.fightingValue = player.getFight();
+//        normalCopyRankVO.playerId = playerId;
+//        normalCopyRankVO.count = value;
+//        serialDataService.getData().getCopyRankingsMap().put(playerId, normalCopyRankVO);
+//    }
 }

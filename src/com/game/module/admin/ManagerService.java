@@ -21,6 +21,7 @@ import com.game.util.*;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import com.sun.net.httpserver.Authenticator;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -264,17 +265,25 @@ public class ManagerService implements InitHandler {
 
     //更新激活码
     public String handle_update_ActivationCode(Map<String, String> params) {
-        String s = HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/activationCode", "serverId=" + SysConfig.serverId);
-        ActivationCode[] activationCodes = JsonUtils.string2Array(s, ActivationCode.class);
-        if (activationCodes == null || activationCodes.length <= 0) {
-            ServerLogger.warn("激活码不存在");
-            return RETURN_FAILED;
+        String name = params.get("name");
+        if (StringUtils.isBlank(name)) {
+            String s = HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/activationCode", "serverId=" + SysConfig.serverId);
+            ActivationCode[] activationCodes = JsonUtils.string2Array(s, ActivationCode.class);
+            if (activationCodes == null || activationCodes.length <= 0) {
+                ServerLogger.warn("激活码不存在");
+                return RETURN_FAILED;
+            }
+            Map<String, ActivationCode> giftBagMapTmp = new HashMap<>();
+            for (int i = 0; i < activationCodes.length; i++) {
+                giftBagMapTmp.put(activationCodes[i].getName(), activationCodes[i]);
+            }
+            ConfigData.giftBagMap = giftBagMapTmp;
+        } else {
+            if (ConfigData.giftBagMap.containsKey(name)) {
+                ConfigData.giftBagMap.remove(name);
+            }
         }
-        Map<String, ActivationCode> giftBagMapTmp = new HashMap<>();
-        for (int i = 0; i < activationCodes.length; i++) {
-            giftBagMapTmp.put(activationCodes[i].getName(), activationCodes[i]);
-        }
-        ConfigData.giftBagMap = giftBagMapTmp;
+
         return RETURN_SUCCESS;
     }
 
@@ -400,7 +409,7 @@ public class ManagerService implements InitHandler {
         if (bans == null || bans.isEmpty()) {
             return false;
         }
-       
+
         ProhibitionEntity prohibition = bans.get(closureAccount);
         if (prohibition == null) {
             return false;

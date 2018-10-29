@@ -25,10 +25,10 @@
     <bean class="com.zaxxer.hikari.HikariDataSource" destroy-method="close" id="logerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="jdbcUrl">
-            <value><![CDATA[jdbc:mysql://127.0.0.1:3306/log1?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
+            <value><![CDATA[jdbc:mysql://120.92.159.151:3306/wmxz?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true]]></value>
         </property>
         <property name="username" value="root"/>
-        <property name="password" value="root"/>
+        <property name="password" value="sy0Iwj4aXi68"/>
         <property name="maximumPoolSize" value="32"/>
         <property name="minimumIdle" value="4"/>
         <property name="connectionTimeout" value="30000"/>

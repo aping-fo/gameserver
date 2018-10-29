@@ -158,6 +158,21 @@ public class CopyExtension {
         copyService.removeCopy(playerId);
         //触发神秘商店
         result.showMystery = shopService.triggerMysteryShop(playerId, copyId, 1, result);
+
+//        //更新3星副本排行
+//        ConcurrentHashMap<Integer, Copy> copys = playerData.getCopys();
+//        if (copys != null) {
+//            int count = 0;
+//            for (Copy copy : copys.values()) {
+//                if (copy.getState() >= 3) {
+//                    count++;
+//                }
+//            }
+//            copyService.updateMaxStarCopyRankings(playerId, count);
+//        } else {
+//            ServerLogger.warn("副本数据错误");
+//        }
+
         return result;
     }
 

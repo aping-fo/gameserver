@@ -63,4 +63,7 @@ public interface PlayerDao {
 
     @SQL("REPLACE INTO t_charge_record VALUES (:accountName,:playerId,:nickName,:totalCharge,:loginDays)")
     public void insertChargerecord(@SQLParam("accountName") String accountName, @SQLParam("playerId") int playerId, @SQLParam("nickName") String nickName, @SQLParam("totalCharge") int totalCharge, @SQLParam("loginDays") int loginDays);
+
+    @SQL("SELECT count(*) from player where accName!='sys' and regTime>=DATE_SUB(curdate(),INTERVAL 1 DAY) and regTime<DATE_SUB(curdate(),INTERVAL 0 DAY)")
+    public int queryNewPlayer();
 }

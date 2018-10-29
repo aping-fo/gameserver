@@ -28,7 +28,7 @@ public class SdkServer {
 
             HttpConfiguration https_config = new HttpConfiguration();
             https_config.setSecureScheme("https");
-            https_config.setSecurePort(8443);
+            https_config.setSecurePort(SysConfig.securePort);
             https_config.setOutputBufferSize(32768);
             https_config.addCustomizer(new SecureRequestCustomizer());
 
@@ -38,9 +38,9 @@ public class SdkServer {
             sslContextFactory.setKeyManagerPassword("1537095695707");
 
             ServerConnector httpsConnector = new ServerConnector(server,
-                    new SslConnectionFactory(sslContextFactory,"http/1.1"),
+                    new SslConnectionFactory(sslContextFactory, "http/1.1"),
                     new HttpConnectionFactory(https_config));
-            httpsConnector.setPort(8443);
+            httpsConnector.setPort(SysConfig.securePort);
             httpsConnector.setIdleTimeout(500000);
             server.addConnector(httpsConnector);
 

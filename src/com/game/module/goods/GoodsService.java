@@ -357,6 +357,8 @@ public class GoodsService {
 
                     count -= addCount;
                     goodsUpdates.add(toVO(g));
+
+                    Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true, count, log, goodsId, Goods.GOOODS, g.getStackNum() - addCount, g.getStackNum(), params);
                     if (count <= 0) {
                         break;
                     }
@@ -369,7 +371,6 @@ public class GoodsService {
                     count -= addCount;
                 }
                 playerGoods.put(playerId, bag);
-
             }
         }
         // 更新数据到前端
@@ -383,8 +384,6 @@ public class GoodsService {
 
             GoodsConfig config = getGoodsConfig(goodsId);
 
-            Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), true,
-                    count, log, goodsId, Goods.GOOODS, params);
             //特殊的物品
             if (config.type == Goods.ARTIFACT_COMPONENT) {
                 artifactService.checkActive(playerId);
@@ -582,6 +581,7 @@ public class GoodsService {
      * @return 是否成功
      */
     public boolean decGoodsFromBag(int playerId, int goodsId, int count, LogConsume log, Object... params) {
+        Player player = playerService.getPlayer(playerId);
         GoodsConfig config = getGoodsConfig(goodsId);
         if (count <= 0 || config == null) {
             return false;
@@ -606,6 +606,9 @@ public class GoodsService {
                     removeGoods(playerId, owned);
                 }
                 count -= decCount;
+
+                // 记录日志
+                Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false, count, log, goodsId, Goods.GOOODS, owned.getStackNum() + decCount, owned.getStackNum(), params);
                 if (count == 0) {
                     break;
                 }
@@ -614,12 +617,6 @@ public class GoodsService {
             // 更新到前端
             refreshGoodsToClient(playerId, goodsUpdate);
         }
-
-        // 记录日志
-        Player player = playerService.getPlayer(playerId);
-
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false,
-                count, log, goodsId, Goods.GOOODS, params);
 
         return true;
     }
@@ -984,8 +981,7 @@ public class GoodsService {
             //ids.add(g.getId());
             g.setStackNum(0);
             goodsUpdate.add(toVO(g));
-            Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(),
-                    false, 1, log, g.getGoodsId(), Goods.GOOODS, params);
+            Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false, 1, log, g.getGoodsId(), Goods.GOOODS, g.getStackNum() + 1, g.getStackNum(), params);
         }
         refreshGoodsToClient(playerId, goodsUpdate);
     }
@@ -1003,8 +999,7 @@ public class GoodsService {
 
         // 记录日志
         Player player = playerService.getPlayer(playerId);
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false,
-                1, log, owned.getGoodsId(), Goods.GOOODS, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false, 1, log, owned.getGoodsId(), Goods.GOOODS, owned.getStackNum() + 1, owned.getStackNum(), params);
     }
 
     // 获得物品所在的背包栏
@@ -1137,8 +1132,7 @@ public class GoodsService {
         }
         // 记录日志
         Player player = playerService.getPlayer(playerId);
-        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false,
-                count, log, goods.getGoodsId(), Goods.GOOODS, params);
+        Context.getLoggerService().logConsume(playerId, player.getLev(), player.getVip(), false, count, log, goods.getGoodsId(), Goods.GOOODS, goods.getStackNum() + count, goods.getStackNum(), params);
         return true;
     }
 

@@ -911,6 +911,20 @@ public class ActivityService implements InitHandler {
                 List<ActivityTaskCfg> taskCfgs = ConfigData.ActivityTasks.get(activityCfg.id);
                 //查找活动任务表
                 for (ActivityTaskCfg cfg : taskCfgs) {
+                    LocalDateTime nowDate = LocalDateTime.now();
+                    if (activityCfg.BeginTime != null && !"".equals(activityCfg.BeginTime)) {
+                        LocalDateTime beginDate = LocalDateTime.parse(activityCfg.BeginTime, TimeUtil.formatter);
+                        if (nowDate.isBefore(beginDate)) { //还未开启
+                            continue;
+                        }
+                    }
+
+                    if (activityCfg.EndTime != null && !"".equals(activityCfg.EndTime)) {
+                        LocalDateTime beginDate = LocalDateTime.parse(activityCfg.EndTime, TimeUtil.formatter);
+                        if (nowDate.isAfter(beginDate)) { //活动结束
+                            continue;
+                        }
+                    }
                     //检查等级条件，开启等级相关礼包
                     if (player.getLev() >= activityCfg.Conds[0][1]) {
                         ActivityTask activityTask = playerData.getActivityTask(cfg.id);
@@ -995,6 +1009,14 @@ public class ActivityService implements InitHandler {
         List<ActivityTask> tasks = Lists.newArrayList();
         for (ActivityTask task : data.getAllActivityTasks()) {
             if (task.getId() == taskId && task.getFinishNum() < taskCfg.Param1) {
+                //奇遇宝箱
+                ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, task.getActivityId());
+                if (config != null && config.ActivityType == ActivityConsts.ActivityType.T_ADVENTURE_BOX) {
+                    if (!buyAdventureBoxNumber(task)) {
+                        continue;
+                    }
+                }
+
                 if (task.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_BUY_DIAMOND) {//消耗物品
                     List<GoodsEntry> items = Lists.newArrayList();
                     for (int i = 2; i < taskCfg.Conds[0].length; i = i + 2) {
@@ -1009,12 +1031,9 @@ public class ActivityService implements InitHandler {
                         }
                     }
                 }
+
                 goodsService.addRewards(playerId, taskCfg.Rewards, LogConsume.ACTIVITY_REWARD);
-                task.setFinishNum(task.getFinishNum() + 1);//完成次数+1
-
-                //奇遇宝箱
-                buyAdventureBoxNumber(task);
-
+                task.setFinishNum(task.getFinishNum() + 1);//完成次数+1`
                 tasks.add(task);
                 pushActivityUpdate(playerId, tasks);//推送更新
                 result.param1 = Response.SUCCESS;
@@ -1292,33 +1311,41 @@ public class ActivityService implements InitHandler {
      *
      * @param at 活动任务表
      */
-    public void buyAdventureBoxNumber(ActivityTask at) {
+    public boolean buyAdventureBoxNumber(ActivityTask at) {
         ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
         int id = at.getId();
         if (config == null) {
             ServerLogger.warn("活动不存在，活动Id=" + id);
-            return;
+            return false;
         }
         if (config.ActivityType != ActivityConsts.ActivityType.T_ADVENTURE_BOX) {
-            return;
+            return false;
         }
         SerialData serialData = serialDataService.getData();
         if (serialData == null) {
             ServerLogger.warn("序列化数据不存在");
-            return;
+            return false;
         }
         Map<Integer, Integer> adventureBoxNumber = serialData.getAdventureBoxNumber();
         if (adventureBoxNumber == null || adventureBoxNumber.isEmpty()) {
             ServerLogger.warn("奇遇宝箱数据出错");
-            return;
+            return false;
         }
         if (adventureBoxNumber.containsKey(id)) {
-            adventureBoxNumber.put(id, adventureBoxNumber.get(id) + 1);
             ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
-            if (activityTaskCfg.AutoReward == ActivityConsts.AutoReward.T_AUTO) {
-                at.setState(ActivityConsts.ActivityState.T_AWARD);
+            if (activityTaskCfg == null) {
+                ServerLogger.warn("活动任务不存在，活动任务ID=" + at.getId());
+                return false;
+            }
+            if (adventureBoxNumber.get(id) < activityTaskCfg.Param0) {
+                adventureBoxNumber.put(id, adventureBoxNumber.get(id) + 1);
+                if (activityTaskCfg.AutoReward == ActivityConsts.AutoReward.T_AUTO) {
+                    at.setState(ActivityConsts.ActivityState.T_AWARD);
+                }
+                return true;
             }
         }
+        return false;
     }
 
     /**

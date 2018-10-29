@@ -200,6 +200,15 @@ public class PlayerData {
     private int loginContinueDays; //连续登陆
     private int maxLoginContinueDays; //连续登陆
     private Map<Integer, Integer> shopBuyAllMap = new ConcurrentHashMap<>();//商店全部购买
+    private int challengeTimes; //公会副本挑战次数
+
+    public int getChallengeTimes() {
+        return challengeTimes;
+    }
+
+    public void setChallengeTimes(int challengeTimes) {
+        this.challengeTimes = challengeTimes;
+    }
 
     public ConcurrentHashMap<Integer, Integer> getStars() {
         return stars;

@@ -80,7 +80,11 @@ public class ServerTimer implements InitHandler {
 		// 延时活动奖励检测
 		timers.add(new TimerObject("0 0 * * * *", "activityService", "doScheduleCheckActivityTask"));
 		// 活动日常数据重置
-		timers.add(new TimerObject("0 5 * * * *", "activityService", "resetDailyData"));
+		timers.add(new TimerObject("0 0 * * * *", "activityService", "resetDailyData"));
+
+		//新增人数和充值数据
+		timers.add(new TimerObject("0 0 * * * *", "loggerService", "updateNewUser"));
+
 		updateTimeStr();
 	}
 	

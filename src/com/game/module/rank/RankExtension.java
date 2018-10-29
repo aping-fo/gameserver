@@ -82,7 +82,7 @@ public class RankExtension {
         return getRankList(playerId, RankService.TYPE_FIGHTING, FightingRankVO.class, fightingParser);
     }
 
-    //等级
+    //充值排行榜
     private IParser<LevelRankVO> levelParser = new IParser<LevelRankVO>() {
         @Override
         public LevelRankVO parse(RankEntity entity) {

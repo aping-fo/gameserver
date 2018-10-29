@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by lucky on 2018/2/28.
  */
-@WebHandler(url = "/ingcle/recharge", description = "蓝港充值回调")
+@WebHandler(url = "c", description = "蓝港充值回调")
 public class IngcleRechargeServlet extends SdkServlet {
 
     @Override

@@ -9,6 +9,7 @@ import com.game.module.activity.ActivityService;
 import com.game.module.activity.WelfareCardService;
 import com.game.module.attach.charge.ChargeActivityLogic;
 import com.game.module.daily.DailyService;
+import com.game.module.gang.Gang;
 import com.game.module.gang.GangService;
 import com.game.module.goods.Goods;
 import com.game.module.goods.GoodsEntry;
@@ -408,6 +409,12 @@ public class VipService {
         levelRankVO.fightingValue = player.getFight();
         levelRankVO.playerId = playerId;
         levelRankVO.coins = totalCharge;
+        levelRankVO.vip = player.getVip();
+        int gangId = player.getGangId();
+        if (gangId > 0) {
+            Gang gang = gangService.getGang(gangId);
+            levelRankVO.gang = gang.getName();
+        }
         Map<Integer, LevelRankVO> levelRankingsMap = serialData.getLevelRankingsMap();
 
         writeLock.lock();//写锁
@@ -455,11 +462,24 @@ public class VipService {
             return null;
         }
 
-        readLock.lock();//读锁
+        writeLock.lock();//读锁
         try {
+            for (LevelRankVO levelRankVO : levelRankingsMap.values()) {
+                Player playerTemp = playerService.getPlayer(levelRankVO.playerId);
+                levelRankVO.level = playerTemp.getLev();
+                levelRankVO.fightingValue = playerTemp.getFight();
+                levelRankVO.vip = playerTemp.getVip();
+                int gangId = playerTemp.getGangId();
+                if (gangId > 0) {
+                    Gang gang = gangService.getGang(gangId);
+                    levelRankVO.gang = gang.getName();
+                } else {
+                    levelRankVO.gang = null;
+                }
+            }
             return new ArrayList<>(levelRankingsMap.values());//等finally执行后才会返回
         } finally {
-            readLock.unlock();
+            writeLock.unlock();
         }
     }
 }

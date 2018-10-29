@@ -72,6 +72,8 @@ public class SysConfig {
 
     public static String gmServerUrl;
 
+    public static int securePort;
+
     public static void init() throws Exception {
         Properties properties = new Properties();
         try (FileInputStream fis = new FileInputStream(new File("config/sys.properties"))) {
@@ -141,6 +143,7 @@ public class SysConfig {
             gameKey = properties.getProperty("game_key");
 
             gmServerUrl = properties.getProperty("gm_server_url");
+            securePort = Integer.parseInt(properties.getProperty("secure_port"));
 
 
             Profile.setOpen(Boolean.parseBoolean(properties.getProperty("profile")));
@@ -154,7 +157,7 @@ public class SysConfig {
             openDate = dataFormat.parse(startUpDate);
 
             updateOpenDays();
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -169,7 +172,7 @@ public class SysConfig {
             MixSupportor.setIncludeSection(properties.getProperty("includeSection"));
             MixSupportor.setExcludeCmd(properties.getProperty("excludeCmd"));
             MixSupportor.setShiftSwitch(Boolean.parseBoolean(properties.getProperty("open")));
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
