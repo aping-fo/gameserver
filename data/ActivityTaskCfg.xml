@@ -608,7 +608,7 @@
 	<name_en></name_en>
 	<ActivityId>9</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[4,6]]</Conds>
+	<Conds>[[4,12]]</Conds>
 	<Rewards>[[40115001,1,1],[40125001,1,2],[40135001,1,3],[103,50000],[108,500]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -622,7 +622,7 @@
 	<name_en></name_en>
 	<ActivityId>9</ActivityId>
 	<ResetType>0</ResetType>
-	<Conds>[[4,30]]</Conds>
+	<Conds>[[4,50]]</Conds>
 	<Rewards>[[50884,10],[109,60],[103,100000],[501001,1],[501002,1],[501003,1],[501004,1],[501005,1],[501006,1],[501007,1],[501008,1],[501009,1]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
@@ -679,7 +679,7 @@
 	<ActivityId>20</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20001]]</Conds>
-	<Rewards>[[50402,5],[301002,1],[301333,5],[302002,100]]</Rewards>
+	<Rewards>[[50402,5],[301002,1],[301342,1],[302002,100]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -693,7 +693,7 @@
 	<ActivityId>13</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20002]]</Conds>
-	<Rewards>[[50402,5],[301002,1],[301333,1],[302002,100]]</Rewards>
+	<Rewards>[[50402,5],[301002,1],[301333,5],[302002,101]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -707,7 +707,7 @@
 	<ActivityId>20</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20003]]</Conds>
-	<Rewards>[[50403,10],[10910,30],[10911,5],[17002,3]]</Rewards>
+	<Rewards>[[301103,1],[109,30],[10901,30],[20008,90]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -721,7 +721,7 @@
 	<ActivityId>20</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[9,20004]]</Conds>
-	<Rewards>[[50404,5],[20007,90],[16000,40],[17002,3]]</Rewards>
+	<Rewards>[[10910,15],[17002,1],[10911,1],[20008,90]]</Rewards>
 	<AutoReward>1</AutoReward>
 	<Param0></Param0>
 	<des></des>
@@ -4347,7 +4347,7 @@
 	<ActivityId>103</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,10]]</Conds>
-	<Rewards>[[50802,5],[302001,3],[302002,20]]</Rewards>
+	<Rewards>[[50102,20],[303001,300],[304001,300],[306001,300]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖10次</des>
@@ -4361,7 +4361,7 @@
 	<ActivityId>103</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,20]]</Conds>
-	<Rewards>[[50802,10],[16000,10],[302002,50]]</Rewards>
+	<Rewards>[[50103,10],[305001,400],[307001,400],[308001,400]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖20次</des>
@@ -4375,7 +4375,7 @@
 	<ActivityId>103</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,40]]</Conds>
-	<Rewards>[[50803,5],[10910,25],[10911,1]]</Rewards>
+	<Rewards>[[50103,10],[16000,30],[10911,4],[10910,15]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖40次</des>
@@ -4389,7 +4389,7 @@
 	<ActivityId>103</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,80]]</Conds>
-	<Rewards>[[50803,10],[10910,50],[10911,2]]</Rewards>
+	<Rewards>[[50103,20],[16000,50],[17002,5],[302003,10]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖80次</des>
@@ -4403,7 +4403,7 @@
 	<ActivityId>103</ActivityId>
 	<ResetType>0</ResetType>
 	<Conds>[[81,120]]</Conds>
-	<Rewards>[[50804,5],[17002,5],[10901,50]]</Rewards>
+	<Rewards>[[50104,10],[16000,50],[17002,10],[20007,90]]</Rewards>
 	<AutoReward>0</AutoReward>
 	<Param0></Param0>
 	<des>累计抽奖120次</des>

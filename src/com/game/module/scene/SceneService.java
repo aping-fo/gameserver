@@ -435,11 +435,11 @@ public class SceneService implements InitHandler {
                             || cfg.sceneSubType == Scene.MULTI_GROUP || cfg.sceneSubType == Scene.MULTI_GANG_BOSS))) {// 普通副本，多人PVE
                 int copyInstance = player.getCopyId();
                 CopyInstance copy = copyService.getCopyInstance(copyInstance);
-                monsters.addAll(copy.getMonsters().get(cfg.id).values());
+                monsters.addAll(copy.getMonsters(cfg.id).values());
 
                 if (cfg.sceneSubType == Scene.MULTI_GANG_BOSS) { //公会副本怪物信息处理
                     monsters.clear();
-                    for (SMonsterVo vo : copy.getMonsters().get(cfg.id).values()) {
+                    for (SMonsterVo vo : copy.getMonsters(cfg.id).values()) {
                         if (!gangDungeonService.checkDeath(player, vo.id)) {
                             monsters.add(vo);
                         }

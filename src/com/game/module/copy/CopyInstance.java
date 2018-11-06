@@ -1,18 +1,22 @@
 package com.game.module.copy;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.game.data.DropGoods;
+import com.game.data.MonsterConfig;
 import com.game.params.scene.SMonsterVo;
+import com.game.util.ConfigData;
 
 /**
  * 副本实例，包含怪物,玩家等信息
  */
 public class CopyInstance {
-	
+
 	public static final int TYPE_COMMON = 1;
 	public static final int TYPE_ENDLESS = 2;
 	public static final int TYPE_TREASURE = 3;
@@ -31,21 +35,21 @@ public class CopyInstance {
 
 	public static final int EASY = 1;
 	public static final int HARD = 2;
-	
+
 	public static final int FIRST_ENDLESS = 500;
 
 	private Map<Integer, Map<Integer, SMonsterVo>> monsters;
 	private Map<Integer,Integer> drops;//掉落[id,数量]
-	
+
 	private Map<String,Integer> decDrops;
 
 	private int copyId;
 	private long createTime;
 	private int passId;//通常情况下passId==copyId。活动副本特殊
 	private volatile boolean over;
-	
+
 	private List<GoodsNotice> specGoods;
-	
+
 	private TraverseMap traverseMap;//特性副本地图ID
 	private AtomicInteger members = new AtomicInteger();
 
@@ -56,7 +60,7 @@ public class CopyInstance {
 		specGoods = new ArrayList<GoodsNotice>(1);
 		decDrops = new ConcurrentHashMap<String, Integer>();
 	}
-	
+
 	public void addDecHpDrop(int id,int percent){
 		String key = String.format("%d_%d", id,percent);
 		Integer count = decDrops.get(key);
@@ -66,7 +70,7 @@ public class CopyInstance {
 		count+=percent;
 		decDrops.put(key, count);
 	}
-	
+
 	public boolean checkDecDrops(int id,int percent){
 		String key = String.format("%d_%d", id,percent);
 		Integer count = decDrops.get(key);
@@ -84,10 +88,25 @@ public class CopyInstance {
 		return monsters;
 	}
 
+	public void addMonsters(int sceneId, Map<Integer, SMonsterVo> monsters)
+	{
+		this.monsters.put(sceneId, monsters);
+	}
+
+	public Map<Integer, SMonsterVo> getMonsters(int sceneId)
+	{
+		return monsters.get(sceneId);
+	}
+
+	public SMonsterVo removeMonster(int sceneId, int monsterId)
+	{
+		return getMonsters(sceneId).remove(monsterId);
+	}
+
 	public int getCopyId() {
 		return copyId;
 	}
-	
+
 	public void setCopyId(int copyId) {
 		this.copyId = copyId;
 	}
@@ -95,16 +114,16 @@ public class CopyInstance {
 	public long getCreateTime() {
 		return createTime;
 	}
-	
+
 	public Map<Integer,Integer> getDrops(){
 		return drops;
 	}
-	
+
 	public List<GoodsNotice> getSpecReward(){
 		return specGoods;
 	}
 
-	
+
 	public TraverseMap getTraverseMap() {
 		return traverseMap;
 	}
@@ -133,12 +152,38 @@ public class CopyInstance {
 		}
 		return true;
 	}
-	
+
 	public void setOver(boolean over){
 		this.over = over;
 	}
-	
+
 	public AtomicInteger getMembers(){
 		return members;
+	}
+
+	public  Map<Integer, Integer> getDropRewardGoods(){
+		Map<Integer, Integer> rewardGoodsCount = new HashMap<Integer, Integer>();
+		for(Map<Integer,SMonsterVo> group:getMonsters().values()){
+			if(group.isEmpty()) {
+				continue;
+			}
+
+			for(SMonsterVo mVO :group.values()) {
+				MonsterConfig config = ConfigData.getConfig(MonsterConfig.class, mVO.monsterId);
+				if (config == null || config.dropGoods == null) {
+					continue;
+				}
+				for (int i = 0; i < config.dropGoods.length; ++i) {
+					DropGoods dropConfig = ConfigData.getConfig(DropGoods.class, config.dropGoods[i]);
+					if (dropConfig.rewards == null || dropConfig.rewards.length == 0) {
+						continue;
+					}
+					for (int j = 0; j < dropConfig.rewards.length; ++j) {
+						rewardGoodsCount.put(dropConfig.rewards[j][0], dropConfig.rewards[j][1]);
+					}
+				}
+			}
+		}
+		return rewardGoodsCount;
 	}
 }

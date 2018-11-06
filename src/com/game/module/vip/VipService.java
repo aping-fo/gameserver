@@ -1,6 +1,7 @@
 package com.game.module.vip;
 
 import com.game.SysConfig;
+import com.game.data.ActivityTaskCfg;
 import com.game.data.ChargeConfig;
 import com.game.data.Response;
 import com.game.data.VIPConfig;
@@ -247,7 +248,8 @@ public class VipService {
             });
         }
 
-        playerService.addVipExp(playerId, charge.total);
+        playerService.addVipExp(playerId, charge.vipExpAdd);
+
         playerService.addDiamond(playerId, charge.total, LogConsume.CHARGE);
         playerService.addDiamond(playerId, charge.add, LogConsume.CHARGE_ADD);
         chargeActivityLogic.updateCharge(playerId, charge.total);
@@ -275,7 +277,7 @@ public class VipService {
         }
 
         if (type != TYPE_TIMED && type != TYPE_SPECIAL) {//限时礼包和特价礼包不计入累计充值
-            activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//累充礼包
+            activityService.completeActivityTaskByCharge(playerId, ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//累充礼包
         }
 
         //购买月卡开启理财
@@ -283,9 +285,9 @@ public class VipService {
             activityService.openActivity(playerId, ActivityConsts.ActivityType.T_GROW_FUND);
         }
 
-        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//充了钱就算礼包
-        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.total, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
-        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
+        activityService.completeActivityTaskByCharge(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//充了钱就算礼包
+        activityService.completeActivityTaskByCharge(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.vipExpAdd, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
+        activityService.completeActivityTaskByCharge(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
         activityService.onceRecharge(playerId, charge.rmb);//单笔充值满足(取最大那个)
         activityService.dailyRecharge(playerId, charge.rmb);//每日充值(7日充值)
 
@@ -376,15 +378,32 @@ public class VipService {
      * @return
      */
     public Long2Param getCpId(int playerId, int rechargeId) {
+        Long2Param param = new Long2Param();
+
         PlayerData data = playerService.getPlayerData(playerId);
-//        int orderID = data.getCpId();
-//        orderID += (RandomUtil.randInt(20) + 1); //随机ID
+        if (data == null) {
+            ServerLogger.warn("玩家数据错误，玩家ID=" + playerId);
+            return param;
+        }
+
         long orderID = System.nanoTime();
         data.getCpIdSet().add(orderID);
-        Long2Param param = new Long2Param();
-        param.param1 = orderID;
-        param.param2 = rechargeId;
-        ServerLogger.warn("rechargeId = " + rechargeId + " order = " + orderID);
+
+        ChargeConfig config = ConfigData.getConfig(ChargeConfig.class, rechargeId);
+        if (config == null) {
+            ServerLogger.warn("充值表出错，错误ID=" + rechargeId);
+            return param;
+        }
+
+        //检测是否重复购买
+        if (activityService.checkFinish(playerId, config.activityId)) {
+            ServerLogger.warn("重复购买，重复ID=" + rechargeId);
+        } else {
+            param.param1 = orderID;
+            param.param2 = rechargeId;
+            ServerLogger.warn("rechargeId = " + rechargeId + " order = " + orderID);
+        }
+
         return param;
     }
 

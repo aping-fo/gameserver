@@ -10,8 +10,8 @@ import java.io.IOException;
 /**
  * Created by lucky on 2018/2/28.
  */
-@WebHandler(url = "/ingcle/recharge", description = "蓝港充值回调")
-public class IngcleRechargeServlet extends SdkServlet {
+@WebHandler(url = "/ingcle/rechargeIOS", description = "蓝港充值回调")
+public class IngcleRechargeIOSServlet extends SdkServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

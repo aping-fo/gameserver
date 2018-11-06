@@ -38,7 +38,7 @@
 	<moneyCount>100</moneyCount>
 	<specIcon></specIcon>
 	<order>2</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>120</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -61,7 +61,7 @@
 	<moneyCount>100</moneyCount>
 	<specIcon></specIcon>
 	<order>3</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>120</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -84,7 +84,7 @@
 	<moneyCount>100</moneyCount>
 	<specIcon></specIcon>
 	<order>4</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>120</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -95,19 +95,19 @@
 <config>
 	<id>5</id>
 	<shopType>1</shopType>
-	<name>宝石材料1</name>
-	<goodsId>303001</goodsId>
-	<count>100</count>
+	<name>洗练材料</name>
+	<goodsId>16000</goodsId>
+	<count>3</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
-	<moneyCount>100</moneyCount>
+	<moneyCount>150</moneyCount>
 	<specIcon></specIcon>
 	<order>5</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>120</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -118,9 +118,9 @@
 <config>
 	<id>6</id>
 	<shopType>1</shopType>
-	<name>宝石材料2</name>
-	<goodsId>304001</goodsId>
-	<count>100</count>
+	<name>史诗材料</name>
+	<goodsId>17000</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
@@ -130,7 +130,7 @@
 	<moneyCount>100</moneyCount>
 	<specIcon></specIcon>
 	<order>6</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>80</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -141,19 +141,19 @@
 <config>
 	<id>7</id>
 	<shopType>1</shopType>
-	<name>宝石材料3</name>
-	<goodsId>305001</goodsId>
-	<count>100</count>
+	<name>传说材料</name>
+	<goodsId>17001</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
-	<moneyCount>100</moneyCount>
+	<moneyCount>400</moneyCount>
 	<specIcon></specIcon>
 	<order>7</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>40</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -164,19 +164,19 @@
 <config>
 	<id>8</id>
 	<shopType>1</shopType>
-	<name>宝石材料4</name>
-	<goodsId>306001</goodsId>
-	<count>100</count>
+	<name>远古材料</name>
+	<goodsId>17002</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
-	<moneyCount>100</moneyCount>
+	<moneyCount>1600</moneyCount>
 	<specIcon></specIcon>
 	<order>8</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>20</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -187,19 +187,19 @@
 <config>
 	<id>9</id>
 	<shopType>1</shopType>
-	<name>宝石材料5</name>
-	<goodsId>307001</goodsId>
-	<count>100</count>
+	<name>升星石</name>
+	<goodsId>10910</goodsId>
+	<count>10</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
-	<moneyCount>100</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>9</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>90</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -210,19 +210,19 @@
 <config>
 	<id>10</id>
 	<shopType>1</shopType>
-	<name>宝石材料6</name>
-	<goodsId>308001</goodsId>
-	<count>100</count>
+	<name>远古精华</name>
+	<goodsId>10911</goodsId>
+	<count>1</count>
 	<tab>1</tab>
 	<vip></vip>
 	<limitType>2</limitType>
 	<limitCount>1</limitCount>
 	<vipDiscount></vipDiscount>
 	<moneyType>102</moneyType>
-	<moneyCount>100</moneyCount>
+	<moneyCount>1000</moneyCount>
 	<specIcon></specIcon>
 	<order>10</order>
-	<refreshRate>100</refreshRate>
+	<refreshRate>40</refreshRate>
 	<refreshAdd>2</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -337,7 +337,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>15</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -360,7 +360,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>16</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -383,7 +383,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>17</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -406,7 +406,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>18</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -429,7 +429,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>19</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -452,7 +452,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>20</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -475,7 +475,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>21</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -498,7 +498,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>22</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -521,7 +521,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>23</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -544,7 +544,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>24</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -567,7 +567,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>25</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>
@@ -590,7 +590,7 @@
 	<moneyCount>500</moneyCount>
 	<specIcon></specIcon>
 	<order>26</order>
-	<refreshRate>10</refreshRate>
+	<refreshRate>0</refreshRate>
 	<refreshAdd>0</refreshAdd>
 	<isFixed>0</isFixed>
 	<isCanAddBuy>0</isCanAddBuy>

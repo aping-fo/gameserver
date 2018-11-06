@@ -16,6 +16,7 @@ import com.game.params.IntParam;
 import com.game.params.StringParam;
 import com.game.params.player.*;
 import com.game.sdk.erating.ERatingService;
+import com.game.sdk.utils.LuckySdkUtil;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
 import com.game.util.HttpRequestUtil;
@@ -56,6 +57,7 @@ public class PlayerExtension {
     private TeamService teamService;
 
     public static final AttributeKey<String> CHANNEL = AttributeKey.valueOf("channel");
+    public static final String IOS = "iOS";
 
     @UnLogin
     @Command(1001)
@@ -64,6 +66,11 @@ public class PlayerExtension {
             IntParam result = new IntParam();
             SessionManager.sendDataInner(channel, 1010, result);
             channel.close();
+            return null;
+        }
+
+        if (IOS.equals(param.platform) && !LuckySdkUtil.checkIosToken(param.token, param.userId)) {
+            ServerLogger.warn("登录验证失败，token=" + param.token + " 玩家id=" + param.userId);
             return null;
         }
 

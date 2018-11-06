@@ -108,4 +108,9 @@ public class LgService implements SdkService {
             ServerLogger.err(e, "充值异常");
         }
     }
+
+    @Override
+    public void rechargeIOS(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+
+    }
 }

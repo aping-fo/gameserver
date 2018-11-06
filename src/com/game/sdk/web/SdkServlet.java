@@ -21,7 +21,11 @@ public class SdkServlet extends HttpServlet {
         String bean = arr[1]; //获取平台关键字
         SdkService sdkService = BeanManager.getBean(bean);
         try {
-            sdkService.recharge(req, resp);
+            if(arr[2].endsWith("IOS")){
+                sdkService.rechargeIOS(req, resp);
+            }else{
+                sdkService.recharge(req, resp);
+            }
         } catch (Throwable e) {
             ServerLogger.err(e, "充值异常，" + url);
         }

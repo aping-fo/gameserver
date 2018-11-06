@@ -189,7 +189,7 @@ public class TeamService implements InitHandler {
         Team team = getTeam(player.getTeamId());
         int sceneId = player.getSceneId();
         CopyInstance copy = copyService.getCopyInstance(player.getCopyId());
-        Map<Integer, SMonsterVo> monsters = copy.getMonsters().get(sceneId);
+        Map<Integer, SMonsterVo> monsters = copy.getMonsters(sceneId);
         if (hurtVO.targetType == 0) {
             TMember member = team.getMembers().get(hurtVO.targetId);
             if (hurtVO.subType == 1) {

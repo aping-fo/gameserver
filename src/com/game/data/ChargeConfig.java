@@ -27,4 +27,7 @@ public class ChargeConfig {
 	public String chsId;//国内版物品id
 	public String google_chsId;//谷歌中文版物品id
 	public String google_engId;//谷歌英文版物品id
+	public String ios_Id;//ios物品id
+	public int activityId;//活动id
+	public int vipExpAdd;//vip经验加成
 }

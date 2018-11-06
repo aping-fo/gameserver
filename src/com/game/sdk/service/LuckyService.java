@@ -84,6 +84,11 @@ public class LuckyService implements SdkService {
         }
     }
 
+    @Override
+    public void rechargeIOS(HttpServletRequest req, HttpServletResponse resp) throws Exception {
+
+    }
+
     public static void main(String[] args) {
         Map<String, Object> resultParams = Maps.newHashMapWithExpectedSize(2);
         resultParams.put("code", 0);

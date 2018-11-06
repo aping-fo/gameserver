@@ -2,14 +2,17 @@ package com.game.sdk.utils;
 
 import com.game.SysConfig;
 import com.game.util.CommonUtil;
+import com.game.util.HttpRequestUtil;
 import com.game.util.JsonUtils;
 import com.server.util.ServerLogger;
+import org.apache.commons.lang.StringUtils;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.*;
+import java.util.concurrent.ConcurrentSkipListMap;
 
 /**
  * 乐起sdk 工具类
@@ -19,6 +22,7 @@ public class LuckySdkUtil {
 
     private static final String OAUTH_SIGNATURE_METHOD = "md5";
     private static final String OAUTH_VERSION = "1.0";
+    private static final String SUCCESS = "1";
 
     /**
      * 向SDK服务器注册游戏逻辑服
@@ -295,5 +299,46 @@ public class LuckySdkUtil {
             map.put(arr2[0], arr2[1]);
         }
         return map;
+    }
+
+    //ios token验证
+    public static boolean checkIosToken(String userToken, String memId) {
+        try {
+            if (StringUtils.isBlank(userToken)) {
+                ServerLogger.warn("tonek为空，tonken=" + userToken);
+            }
+            StringBuffer request = new StringBuffer();
+            request.append("app_id=").append(SysConfig.gameIdIOS + "")
+                    .append("&mem_id=").append(memId)
+                    .append("&user_token=").append(userToken);
+
+            StringBuffer sign = new StringBuffer();
+            sign.append("app_id=").append(SysConfig.gameIdIOS)
+                    .append("&mem_id=").append(memId)
+                    .append("&user_token=").append(userToken)
+                    .append("&app_key=").append(SysConfig.gameKeyIOS);
+
+            String signString = CommonUtil.md5(sign.toString().getBytes("utf-8"));
+
+            request.append("&sign=").append(signString);
+
+            String result = HttpRequestUtil.sendPost(SysConfig.checktokenurlIos, request.toString());
+
+            Map<String, Object> response = JsonUtils.string2Map(result, String.class, Object.class);
+            if (response == null) {
+                ServerLogger.warn("解析验证token返回信息失败");
+                return false;
+            }
+
+            if (SUCCESS.equals(response.get("status"))) {
+                return true;
+            } else {
+                ServerLogger.warn("验证失败:" + response.get("msg"));
+                return false;
+            }
+        } catch (Exception ex) {
+            ServerLogger.err(ex, "验证token失败");
+            return false;
+        }
     }
 }

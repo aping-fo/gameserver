@@ -294,8 +294,50 @@ public class CopyService {
 
         if (cfg.type == CopyInstance.TYPE_LEADAWAY
                 || cfg.type == CopyInstance.TYPE_GOLD) { //顺手牵羊,金币，奖励
+
+            Map<Integer, Integer> rewardGoodsCount = null;
+            if (cfg.type == CopyInstance.TYPE_LEADAWAY) {
+                rewardGoodsCount = copy.getDropRewardGoods();
+            }
+
             for (Reward reward : result.rewards) {
-                items.add(new GoodsEntry(reward.id, reward.count));
+                int count = reward.count;
+                if (count < 0) {
+                    continue;
+                }
+                if (cfg.rewards != null) {
+                    boolean foundReward = false;
+                    for (int[] rewards : cfg.rewards) {
+                        int configCount = rewards[1];
+                        if (rewards[0] == reward.id) {
+                            foundReward = true;
+                            if (configCount < count) {
+                                int factor = count / configCount;
+                                count = configCount / factor;
+
+                                ServerLogger.warn("副本作弊，作弊玩家ID=" + playerId + " 物品ID=" + reward.id + " 作弊物品数量=" + reward.count + " 最终获得数量=" + count);
+                                break;
+                            }
+                        }
+                    }
+                    // 没有找到奖励的物品，有可能是作弊修改了奖励的物品
+                    if (!foundReward) {
+                        continue;
+                    }
+                }
+                else if (cfg.type == CopyInstance.TYPE_LEADAWAY)
+                {
+                    int maxAppearTime = (int)(60 / ConfigData.globalParam().LeadawayGoldAppearTime[0]);
+                    if (rewardGoodsCount == null || !rewardGoodsCount.containsKey(reward.id)) { // 没有找到奖励的物品，有可能是作弊修改了奖励的物品
+                        continue;
+                    }
+                    int configCount = rewardGoodsCount.get(reward.id);
+                    if (count / configCount > maxAppearTime) { // 超过了奖励的次数，作弊了
+                        count = configCount;
+                    }
+                }
+
+                items.add(new GoodsEntry(reward.id, count));
             }
         }
 
@@ -704,7 +746,7 @@ public class CopyService {
                     vo.wave = m.wave;
                     monsters.put(vo.id, vo);
                 }
-                instance.getMonsters().put(sceneId, monsters);
+                instance.addMonsters(sceneId, monsters);
             }
         }
         int instanceId = uniId.incrementAndGet();
@@ -778,7 +820,7 @@ public class CopyService {
         if (copy == null) {
             return dropReward;
         }
-        SMonsterVo monster = copy.getMonsters().get(player.getSceneId()).remove(id);
+        SMonsterVo monster = copy.removeMonster(player.getSceneId(), id);
 
         if (monster == null) {
             return dropReward;
@@ -1088,6 +1130,7 @@ public class CopyService {
     public List<RewardList> swipeCopyInner(int playerId, int copyId, Map<Integer, GoodsEntry> map) {
         return swipeCopyInner(playerId, copyId, 1, map);
     }
+
     public List<RewardList> swipeCopyInner(int playerId, int copyId, int count, Map<Integer, GoodsEntry> map) {
 
         Map<Integer, int[]> condParams = Maps.newHashMapWithExpectedSize(1);

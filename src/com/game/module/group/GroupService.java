@@ -750,7 +750,7 @@ public class GroupService {
         if (player.getCopyId() == 0) {
             return;
         }
-        Map<Integer, SMonsterVo> monsters = copy.getMonsters().get(sceneId);
+        Map<Integer, SMonsterVo> monsters = copy.getMonsters(sceneId);
 
         Group group = groupMap.get(player.getGroupId());
         if (group == null) { //难道是解散队伍了?

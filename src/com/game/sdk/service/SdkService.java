@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public interface SdkService {
     void recharge(HttpServletRequest req, HttpServletResponse resp) throws Exception;
+    void rechargeIOS(HttpServletRequest req, HttpServletResponse resp) throws Exception;
 
     default void render(HttpServletResponse resp, String message) throws Exception{
         resp.addHeader("Pragma", "no-cache");

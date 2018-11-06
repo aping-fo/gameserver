@@ -28,10 +28,7 @@ import com.game.params.ListParam;
 import com.game.params.Reward;
 import com.game.params.activity.ActivityInfo;
 import com.game.params.pet.PetGetRewardVO;
-import com.game.util.ConfigData;
-import com.game.util.RandomUtil;
-import com.game.util.TimeUtil;
-import com.game.util.TimerService;
+import com.game.util.*;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.server.SessionManager;
@@ -339,7 +336,6 @@ public class ActivityService implements InitHandler {
                 ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
                 if (taskCfg != null) {
                     at.getCond().setTargetValue(taskCfg.Conds[0][1]);
-
                     if (at.getCond().checkComplete()) {
                         if (completeAndSendReward(playerId, tasks, at, taskCfg, true)) {
                             //当今日充值达到300钻时连锁追加累计充值一次
@@ -1516,5 +1512,77 @@ public class ActivityService implements InitHandler {
         playerData.getCardRewardIdxSet().clear();
         playerData.getCardRewards().clear();
         playerData.setRefreshDestinyCardTimes(0);
+    }
+
+    //检查活动完成情况
+    public boolean checkFinish(int playerId, int activityId) {
+        boolean finish = false;
+        PlayerData data = playerService.getPlayerData(playerId);
+        Map<Integer, ActivityTask> activityTasks = data.getActivityTasks();
+        if (activityTasks == null || activityTasks.isEmpty()) {
+            ServerLogger.warn("活动数据错误");
+            return false;
+        }
+        ActivityTask activityTask = activityTasks.get(activityId);
+        if (activityTask != null && activityTask.getState() == ActivityConsts.ActivityState.T_AWARD) {
+            finish = true;
+        }
+        return finish;
+    }
+
+    //充值购买礼包
+    public List<ActivityTask> completeActivityTaskByCharge(int playerId, int taskCondType, float value, int updateType, boolean toCli) {
+        PlayerData data = playerService.getPlayerData(playerId);
+        List<ActivityTask> tasks = Lists.newArrayList();
+        for (ActivityTask at : data.getAllActivityTasks()) {
+            //全服登录人数特殊处理
+            ActivityTaskCfg activityTaskCfgTemp = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+            if (activityTaskCfgTemp != null && activityTaskCfgTemp.Conds[0][0] == ActivityConsts.ActivityTaskCondType.T_FULL_SERVICE_ATTENDANCE) {
+                at.getCond().setValue(value);
+            }
+            if (at.getCond().getCondType() == taskCondType) {
+                if (updateType == ActivityConsts.UpdateType.T_ADD) {
+                    at.getCond().setValue(at.getCond().getValue() + value);
+                } else if (updateType == ActivityConsts.UpdateType.T_VALUE) {
+                    at.getCond().setValue(value);
+                }
+
+                //条件读表
+                ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+                if (taskCfg != null) {
+                    at.getCond().setTargetValue(taskCfg.Conds[0][1]);
+                    if (at.getCond().checkComplete()) {
+                        if (completeAndSendReward(playerId, tasks, at, taskCfg, true)) {
+                            //当今日充值达到300钻时连锁追加累计充值一次
+                            GlobalConfig globalParam = ConfigData.globalParam();
+                            if (globalParam != null && taskCondType == ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS && at.getCond().getTargetValue() == globalParam.Dailyrecharge) {
+                                //增加累计充值次数
+                                data.setAddUpRechargeDiamondsTimes(data.getAddUpRechargeDiamondsTimes() + 1);
+                                Map<Integer, Integer> typeNumberMap = new HashMap<>();
+                                for (ActivityTask activityTask : data.getAllActivityTasks()) {
+                                    if (activityTask.getCond().getCondType() == ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY_DIAMONDS) {
+                                        ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, activityTask.getId());
+                                        if (activityTaskCfg != null) {
+                                            activityTask.setFinishNum(activityTask.getFinishNum() + 1);
+                                            typeNumberMap.put((int) activityTaskCfg.Conds[0][2], data.getAddUpRechargeDiamondsTimes() * globalParam.Dailyrecharge);
+                                        }
+                                    }
+                                }
+                                completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY_DIAMONDS, true, typeNumberMap, false);
+                            }
+                            integral(playerId, at);//巡礼活动
+                        } else {
+                            continue;
+                        }
+                    }
+                    tasks.add(at);
+                }
+            }
+        }
+        if (toCli) {
+            pushActivityUpdate(playerId, tasks);
+        }
+
+        return tasks;
     }
 }

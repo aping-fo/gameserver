@@ -43,11 +43,17 @@ public class MarryService {
                     }
                 }
             }
+        }else{
+            marryRankDAO.updateMarry(openId, nickName, avatarUrl);
         }
     }
 
     public void updateScore(String openId, int score) {
         marryRankDAO.updateMarryScore(openId, score);
+    }
+
+    public int queryScore(String openId){
+        return marryRankDAO.queryMarryScore(openId);
     }
 
     public String queryMarry(int beginIndex, int endIndex) {

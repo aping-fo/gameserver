@@ -17,7 +17,7 @@ public interface RankingDao {
 	@SQL("SELECT data FROM rank WHERE type=:type")
 	public byte[] selectRanking(@SQLParam("type")int type);
 	
-	@SQL("SELECT playerId, fight FROM player ORDER BY fight DESC LIMIT 50")
+	@SQL("SELECT playerId, fight FROM player where accName!='sys' ORDER BY fight DESC LIMIT 50")
 	public List<Player> selectFightRanking();
 	
 	@SQL("SELECT playerId, lev, exp FROM player where accName != 'sys' ORDER BY lev DESC, exp DESC LIMIT 50")

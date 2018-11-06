@@ -28,19 +28,21 @@ public class SdkServer {
 
             HttpConfiguration https_config = new HttpConfiguration();
             https_config.setSecureScheme("https");
-            https_config.setSecurePort(SysConfig.securePort);
+            https_config.setSecurePort(SysConfig.sdkServerPort);
+            ServerLogger.warn("=========" + SysConfig.sdkServerPort);
             https_config.setOutputBufferSize(32768);
             https_config.addCustomizer(new SecureRequestCustomizer());
 
             SslContextFactory sslContextFactory = new SslContextFactory();
             sslContextFactory.setKeyStorePath("config/jetty.jks");
-            sslContextFactory.setKeyStorePassword("1537095695707");
-            sslContextFactory.setKeyManagerPassword("1537095695707");
+            sslContextFactory.setKeyStorePassword(SysConfig.gatewayPwd);
+            sslContextFactory.setKeyManagerPassword(SysConfig.gatewayPwd);
 
             ServerConnector httpsConnector = new ServerConnector(server,
                     new SslConnectionFactory(sslContextFactory, "http/1.1"),
                     new HttpConnectionFactory(https_config));
-            httpsConnector.setPort(SysConfig.securePort);
+            httpsConnector.setPort(SysConfig.sdkServerPort);
+            ServerLogger.warn("=========" + SysConfig.sdkServerPort);
             httpsConnector.setIdleTimeout(500000);
             server.addConnector(httpsConnector);
 

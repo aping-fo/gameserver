@@ -15,6 +15,7 @@ public class CopyConfig {
 	public int nameType;//关卡名字显示类型
 	public String desc;//关卡描述
 	public int preId;//前置副本
+	public int next;//下一关
 	public int[] scenes;//关卡场景id
 	public int type;//副本类型
 	public int difficulty;//难度

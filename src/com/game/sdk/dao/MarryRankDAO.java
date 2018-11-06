@@ -20,8 +20,14 @@ public interface MarryRankDAO {
     @SQL("REPLACE INTO t_marry_rank(openId,nickName,avatarUrl,score, datas) VALUES (:openId,:nickName,:avatarUrl,:score, :datas)")
     public void insertMarry(@SQLParam("openId") String openId, @SQLParam("nickName") String nickName, @SQLParam("avatarUrl") String avatarUrl, @SQLParam("score") int score, @SQLParam("datas") String datas);
 
-    @SQL("UPDATE t_marry_rank SET score = :score WHERE openId = :openId")
+    @SQL("UPDATE t_marry_rank SET nickName = :nickName, avatarUrl = :avatarUrl WHERE openId = :openId")
+    public void updateMarry(@SQLParam("openId") String openId, @SQLParam("nickName") String nickName, @SQLParam("avatarUrl") String avatarUrl);
+
+    @SQL("UPDATE t_marry_rank SET score = :score WHERE openId = :openId AND score < :score")
     public void updateMarryScore(@SQLParam("openId") String openId, @SQLParam("score") int score);
+
+    @SQL("SELECT score FROM t_marry_rank WHERE openId = :openId")
+    public int queryMarryScore(@SQLParam("openId") String openId);
 
     @SQL("SELECT datas FROM t_marry_rank WHERE openId = :openId")
     public String queryMarryDatas(@SQLParam("openId") String openId);

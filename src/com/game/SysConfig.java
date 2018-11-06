@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import com.game.util.TimeUtil;
 import com.server.util.Profile;
+import com.server.util.ServerLogger;
 import com.server.validate.AntiCheatService;
 import com.server.validate.MixSupportor;
 
@@ -36,7 +37,6 @@ public class SysConfig {
     public static int scheduledThread;// 定时器线程
     public static boolean mangerService;// 后台管理service
     public static int maxCon;// 最大连接数
-
     public static String platform;// 平台名称
     public static String statlogpath;// 统计日志目录
     public static boolean debug;// 是否debug版本
@@ -50,8 +50,10 @@ public class SysConfig {
     public static int cacheCount;//缓存的数量
 
     public static int gameId;
+    public static int gameIdIOS;
     public static String eratingHost;
     public static int gatewayId;
+
     public static int sdkPort;
     public static String gatewayCode;
     public static String gatewayPwd;
@@ -65,14 +67,17 @@ public class SysConfig {
     public static String oauthsecret;
     public static String registersecret;
     public static String checktokenurl;
+    public static String checktokenurlIos;
 
     public static String ingcleLogin;
     public static String channel;
     public static String gameKey;
+    public static String gameKeyIOS;
 
     public static String gmServerUrl;
 
     public static int securePort;
+    public static int sdkServerPort;
 
     public static void init() throws Exception {
         Properties properties = new Properties();
@@ -121,6 +126,7 @@ public class SysConfig {
             cacheCount = Integer.parseInt(properties.getProperty("cacheCount"));
 
             gameId = Integer.parseInt(properties.getProperty("game_id"));
+            gameIdIOS = Integer.parseInt(properties.getProperty("game_id_ios"));
             gatewayId = Integer.parseInt(properties.getProperty("game_way_id"));
             sdkPort = Integer.parseInt(properties.getProperty("sdk_port"));
             eratingHost = properties.getProperty("sdk_host");
@@ -137,13 +143,16 @@ public class SysConfig {
             registersecret = properties.getProperty("registersecret");
             oauthsecret = properties.getProperty("oauthsecret");
             checktokenurl = properties.getProperty("checktokenurl");
+            checktokenurlIos = properties.getProperty("checktokenurl_ios");
 
             ingcleLogin = properties.getProperty("checktokenurl");
             channel = properties.getProperty("channel");
             gameKey = properties.getProperty("game_key");
+            gameKeyIOS = properties.getProperty("game_key_ios");
 
             gmServerUrl = properties.getProperty("gm_server_url");
-            securePort = Integer.parseInt(properties.getProperty("secure_port"));
+
+            sdkServerPort = Integer.parseInt(properties.getProperty("sdkServerPort"));
 
 
             Profile.setOpen(Boolean.parseBoolean(properties.getProperty("profile")));
@@ -184,6 +193,7 @@ public class SysConfig {
 
     public static void updateOpenDays() {
         Calendar open = Calendar.getInstance();
+        ServerLogger.warn("========" + openDate);
         open.setTime(openDate);
         open.set(Calendar.HOUR_OF_DAY, 0);
         open.set(Calendar.MINUTE, 0);
