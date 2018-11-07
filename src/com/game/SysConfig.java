@@ -76,8 +76,9 @@ public class SysConfig {
 
     public static String gmServerUrl;
 
-    public static int securePort;
     public static int sdkServerPort;
+
+    public static boolean rebate;// 充值返利
 
     public static void init() throws Exception {
         Properties properties = new Properties();
@@ -126,7 +127,7 @@ public class SysConfig {
             cacheCount = Integer.parseInt(properties.getProperty("cacheCount"));
 
             gameId = Integer.parseInt(properties.getProperty("game_id"));
-            gameIdIOS = Integer.parseInt(properties.getProperty("game_id_ios"));
+            //gameIdIOS = Integer.parseInt(properties.getProperty("game_id_ios"));
             gatewayId = Integer.parseInt(properties.getProperty("game_way_id"));
             sdkPort = Integer.parseInt(properties.getProperty("sdk_port"));
             eratingHost = properties.getProperty("sdk_host");
@@ -165,6 +166,7 @@ public class SysConfig {
             SimpleDateFormat dataFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             openDate = dataFormat.parse(startUpDate);
 
+            rebate = Boolean.parseBoolean(properties.getProperty("rebate"));
             updateOpenDays();
         } catch (Exception e) {
             e.printStackTrace();

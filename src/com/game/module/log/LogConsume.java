@@ -94,7 +94,8 @@ public enum LogConsume {
 	FASHION_UPGRADE(1086, "时装升阶"),
 	DestinyCard(1087, "命运卡牌"),
 	RecoveryGoods(1088, "物品回收"),
-	STAR_COST(1089,"升星消耗")
+	STAR_COST(1089,"升星消耗"),
+	REBATE(1090,"返利钻石")
 	;
 	public int actionId;// id
 	public String desc;

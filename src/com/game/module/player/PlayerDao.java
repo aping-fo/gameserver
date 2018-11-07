@@ -48,8 +48,11 @@ public interface PlayerDao {
     @SQL("select playerId from player where accName='sys'")
     public List<Integer> selectRobots();
 
-    @SQL("select playerId from player where playerId not in (:exclude) and fight <= :max order by fight desc limit :limit")
-    public List<Integer> selectByFightingPower(@SQLParam("exclude") List<Integer> exclude, @SQLParam("max") int max, @SQLParam("limit") int limit);
+    @SQL("select playerId from player where accName='sys'  and fight <= :max order by fight desc limit :limit")
+    public List<Integer> selectByFightingPower(@SQLParam("max") int max, @SQLParam("limit") int limit);
+
+    @SQL("select playerId from player where accName!='sys' and fight <= :max order by fight desc limit :limit")
+    public List<Integer> selectByFightingPlayer(@SQLParam("max") int max, @SQLParam("limit") int limit);
 
     @SQL("select * from player where accName!='sys'")
     public List<Player> selectAllPlayer();

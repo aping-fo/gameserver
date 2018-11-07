@@ -61,6 +61,10 @@ public class TrainingExtension {
         List<TrainOpponentVO> list = new ArrayList<TrainOpponentVO>();
         //List<Integer> ids = attach.getOpponents();
         List<Integer> ids = logic.getOpponents(playerId);
+
+        float[] exprienceFightRatio = ConfigData.globalParam().exprienceFightRatio;
+
+        int j = 0;
         for (int i = ids.size() - 1; i >= 0; i--) {
             int id = ids.get(i);
             if (id == playerId) continue;
@@ -83,7 +87,8 @@ public class TrainingExtension {
             opp.curCards = opponent.getCurCards();
             opp.curSkills = opponent.getCurSkills();
             opp.chenghao = opponent.getTitle();
-            opp.zhanli = opponent.getFight();
+            opp.zhanli = (int) (opponent.getFight() * exprienceFightRatio[j]);
+            j++;
             list.add(opp);
             if (list.size() >= 10) break;
         }
@@ -100,19 +105,21 @@ public class TrainingExtension {
             result.code = Response.ERR_PARAM;
         }
         Player player = playerService.getPlayer(param.param2);
+        float[] exprienceFightRatio = ConfigData.globalParam().exprienceFightRatio;
+        float v = exprienceFightRatio[attach.getIndex()];
         result.index = attach.getIndex();
-        result.attack = player.getAttack();
-        result.defense = player.getDefense();
-        result.crit = player.getCrit();
-        result.symptom = player.getSymptom();
-        result.fu = player.getFu();
-        result.hp = player.getHp();
+        result.attack = (int) (player.getAttack() * v);
+        result.defense = (int) (player.getDefense() * v);
+        result.crit = (int) (player.getCrit() * v);
+        result.symptom = (int) (player.getSymptom() * v);
+        result.fu = (int) (player.getFu() * v);
+        result.hp = (int) (player.getHp() * v);
         result.name = player.getName();
         result.level = player.getLev();
         result.vocation = player.getVocation();
         List<Integer> bufferList = equipService.getBufferList(playerId);
         result.bufferList = Lists.newArrayList(bufferList);
-        taskService.doTask(playerId, Task.TYPE_TRAIN_TIMES,1);
+        taskService.doTask(playerId, Task.TYPE_TRAIN_TIMES, 1);
         taskService.doTask(playerId, Task.TYPE_PASS_TYPE_COPY, 5, 1); //竞技场
         return result;
 
@@ -123,7 +130,7 @@ public class TrainingExtension {
     public IntParam challengeWin(int playerId, TrainingResultVO param) {
         IntParam result = new IntParam();
         TrainAttach attach = logic.getAttach(playerId);
-        taskService.doTask(playerId, Task.TYPE_TRAIN_WIN_TIMES,1);
+        taskService.doTask(playerId, Task.TYPE_TRAIN_WIN_TIMES, 1);
         if (param.index >= logic.getMaxLevel() || param.index != attach.getIndex()/* || attach.getHp() < param.hp*/) {
             result.param = Response.ERR_PARAM;
         } else {
@@ -131,7 +138,7 @@ public class TrainingExtension {
             if (param.victory) {
                 attach.setIndex(param.index + 1);
                 attach.getTreasureBox().add(param.index);
-            }else{
+            } else {
                 attach.setHp(0);
             }
             attach.commitSync();

@@ -56,9 +56,9 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
         opponents = serialData.getOpponents();
         sectionOpponents = serialData.getSectionOpponents();
         total = ConfigData.globalParam().exprienceFightRatio.length;
-        if (serialData.getTrainingReset() >= DailyService.FIVE_CLOCK) {
-            return;
-        }
+//        if (serialData.getTrainingReset() >= DailyService.FIVE_CLOCK) {
+//            return;
+//        }
 
         serialData.setTrainingReset(DailyService.FIVE_CLOCK);
         int[] fightSection = ConfigData.globalParam().experienceFightSection;
@@ -66,8 +66,19 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
         opponents.clear();
 
         for (int i = 0; i < size; i++) {
-            List<Integer> ex = sectionOpponents.getOrDefault(i, NULL);
-            List<Integer> ids = playerDao.selectByFightingPower(ex, fightSection[i], total + 1);
+            //先设置玩家
+            List<Integer> ids = playerDao.selectByFightingPlayer(fightSection[i], total + 1);
+
+            //玩家不够，再设置机器人
+            if (ids.size() < total + 1) {
+                ids.addAll(playerDao.selectByFightingPower(fightSection[i], total + 1 - ids.size()));
+            }
+
+            //人数还是不够
+            if (ids.size() < total + 1) {
+                continue;
+            }
+
             sectionOpponents.put(i, ids);
             for (int id : ids) {
                 Player player = playerService.getPlayer(id);
@@ -87,7 +98,7 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
                 opponent.setFashionId(player.getFashionId());
                 opponent.setWeaponId(player.getWeaponId());
                 PlayerData playerData = playerService.getPlayerData(id);
-                if(playerData == null) {
+                if (playerData == null) {
                     ServerLogger.warn("player data is null ? playerId = " + id);
                     continue;
                 }
@@ -145,8 +156,7 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
                 }
             }
         }
-        int size = targets.size() > 12 ? 12 : targets.size();
-        return targets.subList(0, size - 1);
+        return targets;
     }
 
     public TrainOpponent getOpponent(int playerId) {

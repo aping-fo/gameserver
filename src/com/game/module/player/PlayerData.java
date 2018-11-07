@@ -9,6 +9,7 @@ import com.game.module.fashion.Fashion;
 import com.game.module.sct.Train;
 import com.game.module.skill.SkillCard;
 import com.game.module.title.Title;
+import com.game.params.training.TrainOpponentVO;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
@@ -201,6 +202,15 @@ public class PlayerData {
     private int maxLoginContinueDays; //连续登陆
     private Map<Integer, Integer> shopBuyAllMap = new ConcurrentHashMap<>();//商店全部购买
     private int challengeTimes; //公会副本挑战次数
+    private float highestFighting; //最高战力，用于计算英雄试炼
+
+    public float getHighestFighting() {
+        return highestFighting;
+    }
+
+    public void setHighestFighting(float highestFighting) {
+        this.highestFighting = highestFighting;
+    }
 
     public int getChallengeTimes() {
         return challengeTimes;

@@ -1,8 +1,8 @@
 package com.game.module.vip;
 
 import com.game.SysConfig;
-import com.game.data.ActivityTaskCfg;
 import com.game.data.ChargeConfig;
+import com.game.data.RechargeRecordCfg;
 import com.game.data.Response;
 import com.game.data.VIPConfig;
 import com.game.module.activity.ActivityConsts;
@@ -22,27 +22,24 @@ import com.game.module.player.PlayerService;
 import com.game.module.serial.SerialData;
 import com.game.module.serial.SerialDataService;
 import com.game.module.shop.ShopService;
-import com.game.module.worldboss.HurtRecord;
-import com.game.params.*;
-import com.game.params.rank.LadderRankVO;
+import com.game.params.IntParam;
+import com.game.params.ListParam;
+import com.game.params.Long2Param;
+import com.game.params.RechargeRespVO;
 import com.game.params.rank.LevelRankVO;
-import com.game.params.rank.SkillCardRankVO;
 import com.game.sdk.talkdata.TalkDataService;
 import com.game.util.ConfigData;
 import com.game.util.Context;
-import com.game.util.RandomUtil;
 import com.server.SessionManager;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
-import java.util.concurrent.ConcurrentSkipListMap;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 @Service
 public class VipService {
@@ -274,6 +271,24 @@ public class VipService {
         welfareCardService.buyWelfareCard(playerId, charge.type, id);
         if (!data.isFirstRechargeFlag()) {
             data.setFirstRechargeFlag(true);
+
+
+            if (SysConfig.rebate) { //是否首冲返利服
+                Player player = playerService.getPlayer(playerId);
+                try{
+                    RechargeRecordCfg cfg = ConfigData.getConfig(RechargeRecordCfg.class,Integer.parseInt(player.getAccName()));
+                    int rmb = cfg.totalRecharge;
+                    int rebateDiamond;
+                    if (rmb <= 500) {
+                        rebateDiamond = (int) (rmb * 10 * 1.6);
+                    } else {
+                        rebateDiamond = rmb * 10 * 3;
+                    }
+                    playerService.addDiamond(playerId, rebateDiamond, LogConsume.REBATE);
+                }catch (Exception e){
+
+                }
+            }
         }
 
         if (type != TYPE_TIMED && type != TYPE_SPECIAL) {//限时礼包和特价礼包不计入累计充值

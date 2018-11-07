@@ -142,9 +142,20 @@ public class PlayerCalculator {
             int playerId = player.getPlayerId();
             activityService.tour(playerId, ActivityConsts.ActivityTaskCondType.T_COMBAT_EFFECTIVENESS, (int) fight);
         }
+
         groupService.updateAttr(player.getPlayerId());
         teamService.updateAttr(player.getPlayerId());
         //playerService.refreshPlayerToClient(player.getPlayerId());
+
+        //记录最高战力
+        PlayerData playerData = playerService.getPlayerData(player.getPlayerId());
+        if (playerData == null) {
+            ServerLogger.warn("玩家数据不存在，玩家ID=" + player.getPlayerId());
+            return;
+        }
+        if (fight > playerData.getHighestFighting()) {
+            playerData.setHighestFighting(fight);
+        }
     }
 
     /**

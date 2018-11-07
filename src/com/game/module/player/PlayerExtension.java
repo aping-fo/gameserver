@@ -286,12 +286,12 @@ public class PlayerExtension {
             playerService.addLoginCount(playerId);//增加每日登录人数
         }
         player.setLastLoginTime(new Date());
-        player.setLastLogoutTime(new Date());
         player.onlineTime = System.currentTimeMillis();
 
         player.setIp(CommonUtil.getIp(channel.remoteAddress()));
         // 处理登录
         playerService.handleLogin(playerId);
+        player.setLastLogoutTime(new Date());
         //其它子系统的登录处理
         loginHandler.playerLogin(playerId);
 

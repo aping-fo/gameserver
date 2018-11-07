@@ -2,6 +2,7 @@ package com.game.module.robot;
 
 import java.util.*;
 
+import com.google.common.collect.Lists;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -48,23 +49,25 @@ public class RobotService implements InitHandler {
             int total = names.size();
 
             int minFight = ConfigData.globalParam().robotFight[0];
-            int maxFight = ConfigData.globalParam().robotFight[1];
-            int tempMaxFight = (maxFight - minFight) / total;//递减最大值
 
             for (int i = 0; i < total; i++) {
-                robots.add(addRobot(maxFight, "sys", names.get(i % total), RandomUtil.randInt(1, 3), RandomUtil.randInt(20, 50)));
+                robots.add(addRobot(minFight, "sys", names.get(i % total), RandomUtil.randInt(1, 3), RandomUtil.randInt(20, 50)));
 
-                //战力递减
-                maxFight = maxFight - RandomUtil.randInt(1, tempMaxFight);
-                System.out.println(maxFight);
-                if (maxFight < minFight) {
-                    maxFight = minFight;
-                }
+                //战力递加
+                minFight += RandomUtil.randInt(10, 50);
             }
             serialDataService.getData().setInitRobot(true);
         } else {
             robots.addAll(playerDao.selectRobots());
         }
+
+        //排序
+        Collections.sort(robots, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
     }
     // 增加机器人
 
