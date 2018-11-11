@@ -70,9 +70,17 @@ public class SerialData {
     private Map<Integer, NormalCopyRankVO> copyRankingsMap = new ConcurrentSkipListMap<>();//3星副本排行
     private Map<Integer, SkillCardRankVO> skillCardRankingsMap = new ConcurrentSkipListMap<>();//技能卡排行
     private Map<Integer, LevelRankVO> levelRankingsMap = new ConcurrentSkipListMap<>();//充值排行
-
+    private ConcurrentHashMap<String, String> rebetaMap = new ConcurrentHashMap<>();
     public SerialData() {
 
+    }
+
+    public ConcurrentHashMap<String, String> getRebetaMap() {
+        return rebetaMap;
+    }
+
+    public void setRebetaMap(ConcurrentHashMap<String, String> rebetaMap) {
+        this.rebetaMap = rebetaMap;
     }
 
     public Map<Integer, LevelRankVO> getLevelRankingsMap() {

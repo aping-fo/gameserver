@@ -69,4 +69,13 @@ public interface PlayerDao {
 
     @SQL("SELECT count(*) from player where accName!='sys' and regTime>=DATE_SUB(curdate(),INTERVAL 1 DAY) and regTime<DATE_SUB(curdate(),INTERVAL 0 DAY)")
     public int queryNewPlayer();
+
+    //合服改名
+    @SQL("update player set name = :newName where name = :name")
+    public void updatePlayerName(@SQLParam("name") String name, @SQLParam("newName") String newName);
+
+    //充值记录
+    @SQL("REPLACE INTO t_charge_record VALUES (:chargeRecord.accountName,:chargeRecord.playerId,:chargeRecord.nickName,:chargeRecord.totalCharge,:chargeRecord.loginDays)")
+    public void insertChargeRecord(@SQLParam("accountName") ChargeRecord chargeRecord);
+
 }

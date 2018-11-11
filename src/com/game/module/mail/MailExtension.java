@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.game.util.Context;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.game.module.player.Player;
@@ -86,7 +87,8 @@ public class MailExtension {
 		}
 		mail.setSendTime(new Date());
 		mailDao.insert(mail);
-		
+		Context.getLoggerService().logMail(mail.getSenderId(), mail.getSenderName(), mail.getReceiveId(), mail.getTitle(), mail.getContent(), mail.getState(), mail.getRewards(), mail.getHasReward(), mail.getType());
+
 		SessionManager.getInstance().sendMsg(NEW_MAIL,  null,param.receiverId);
 		
 		return new IntParam();

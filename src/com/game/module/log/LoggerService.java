@@ -3,6 +3,8 @@ package com.game.module.log;
 import com.game.SysConfig;
 import com.game.event.InitHandler;
 import com.game.module.admin.ProhibitionEntity;
+import com.game.module.giftbag.ActivationCode;
+import com.game.module.player.Player;
 import com.game.module.player.PlayerDao;
 import com.game.module.player.PlayerService;
 import com.server.util.MyTheadFactory;
@@ -39,6 +41,8 @@ public class LoggerService implements InitHandler {
     public static final String CHARGE_LOG = "insert into charge_log(role_id,role_name,charge_id,charge_type,amount,channel_id,payment_type,server_id,create_time) values(?,?,?,?,?,?,?,?,now())";//充值日志
     public static final String SERVER_CHANGE = "UPDATE server set open=? where server_id=?";//改变服务器状态
     public static final String NEW_USER = "insert into new_user(new_user_count,income,arpu,server_id,create_time,update_time) values(?,?,?,?,DATE_SUB(curdate(),INTERVAL 1 DAY),DATE_SUB(curdate(),INTERVAL 1 DAY))";//改变服务器状态
+    //邮件日志
+    public static final String MAIL_LOG = "insert into mail_log_new(sender_id,sender_name,receive_id,title,content,state,rewards,has_reward,type,server_id,send_time) values(?,?,?,?,?,?,?,?,?,?,now())";
 
     private static SimpleJdbcTemplate loggerTemplate;//日志库
     private SimpleJdbcTemplate mainTemplate;//主库
@@ -301,10 +305,39 @@ public class LoggerService implements InitHandler {
         sql.append(SysConfig.serverId);
         int income = getGmDb().queryForInt(sql.toString());
         int newUserCount = playerDao.queryNewPlayer();
-        double arpu=0;
-        if(newUserCount!=0){
+        double arpu = 0;
+        if (newUserCount != 0) {
             arpu = income / newUserCount;
         }
         addDbLogger(NEW_USER, newUserCount, income, arpu, SysConfig.serverId);
+    }
+
+    //邮件日志
+    public void logMail(int senderId, String senderName, int receiveId, String title, String content, int state, String rewards, int hasReward, int type) {
+        addDbLogger(MAIL_LOG, senderId, senderName, receiveId, title, content, state, rewards, hasReward, type, SysConfig.serverId);
+    }
+
+    //激活码验证
+    public ActivationCode activationCodeVerification(String name, Player player) {
+        StringBuffer sql = new StringBuffer("SELECT * from activation_code where");
+        sql.append(" name = '" + name + "'");
+        sql.append(" and (server_id = " + SysConfig.serverId);
+        sql.append(" or server_id = 0 ) and DATE_FORMAT(now(),'%Y%M%D')<=DATE_FORMAT(overdue_time,'%Y%M%D') and DATE_FORMAT(now(),'%Y%M%D')>=DATE_FORMAT(invalid_time,'%Y%M%D') and (use_player_id is null or universal=1)");
+        ActivationCode activationCode = getGmDb().queryForObject(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ActivationCode.class));
+
+        if (activationCode != null) {
+            //保存使用者
+            sql = new StringBuffer("update activation_code set");
+            sql.append(" use_time = now()");
+            sql.append(" ,use_player_id = " + player.getPlayerId());
+            sql.append(" ,use_player_name = '" + player.getName() + "'");
+            sql.append(" ,use_player_account = '" + player.getAccName() + "'");
+            sql.append(" ,use_server_id = " + SysConfig.serverId);
+            sql.append(" where id = " + activationCode.getId());
+            getGmDb().update(sql.toString());
+            return activationCode;
+        } else {
+            return null;
+        }
     }
 }

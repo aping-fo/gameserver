@@ -41,10 +41,11 @@ import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import com.server.validate.AntiCheatService;
-import com.sun.org.apache.bcel.internal.generic.FADD;
 import io.netty.channel.Channel;
-import org.eclipse.jetty.server.Server;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DuplicateKeyException;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
@@ -415,16 +416,53 @@ public class PlayerService implements InitHandler {
                         newbieRewards.add(new GoodsEntry(newbieMailReward[i][0], newbieMailReward[i][1]));
                     }
                 }
-                /*Context.getTimerService().scheduleDelay(new Runnable() {
-                    @Override
-					public void run() {*/
-                //goodsService.addRewards(playerId, newbieRewards, LogConsume.GM);
                 String mailTitle = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_TITLE).tips;
                 String mailContent = ConfigData.getConfig(ErrCode.class, Response.WELCOME_MAIL_CONTENT).tips;
                 mailService.sendSysMail(mailTitle, mailContent, newbieRewards, playerId, LogConsume.GM);
-                    /*}
-                }, 10, TimeUnit.SECONDS);*/
 
+                if (SysConfig.rebate) { //是否首冲返利服
+                    try {
+                        //只给第一个角色
+                        List<Player> roleList = getPlayersByAccName(player.getAccName());
+                        if (roleList.size() > 1) {
+                            return;
+                        }
+
+                        //请求后台是否已经领取
+                        String s = HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/checkReceiveRebate", "accountName=" + player.getAccName());
+
+                        if (s.equals("true")) {
+                            return;
+                        }
+
+                        RechargeRecordCfg cfg = ConfigData.getConfig(RechargeRecordCfg.class, Integer.parseInt(player.getAccName()));
+                        if (cfg != null && !serialDataService.getData().getRebetaMap().containsKey(player.getAccName())) { // 内测付费玩家
+                            serialDataService.getData().getRebetaMap().put(player.getAccName(), player.getAccName());
+                            int rmb = cfg.totalRecharge;
+                            int rebateDiamond;
+
+                            // 新手邮件
+                            List<GoodsEntry> newbieRewards1 = new ArrayList<>();
+
+                            if (rmb <= 500) {
+                                rebateDiamond = rmb * 10 * 2;
+                            } else {
+                                rebateDiamond = rmb * 10 * 3;
+                                newbieRewards1.add(new GoodsEntry(65241, 30));//宠物碎片
+                            }
+                            newbieRewards1.add(new GoodsEntry(Goods.DIAMOND, rebateDiamond));//返利钻石
+                            addVipExp(playerId, cfg.totalRecharge * 10);//vip
+                            mailService.sendSysMail("内测返还", "返还内测期间所充值钻石、VIP等级，并额外赠送绝版内测称号：", newbieRewards1, playerId, LogConsume.REBATE);
+                        }
+
+                        TestUserCfg testUserCfg = ConfigData.getConfig(TestUserCfg.class, Integer.parseInt(player.getAccName()));
+                        if (testUserCfg != null) {
+                            titleService.complete(playerId, TitleConsts.ACTIVITY, 0, ActivityConsts.UpdateType.T_VALUE);
+                        }
+                    } catch (Exception e) {
+                        //ignore
+                    }
+                }
             }
         });
     }
@@ -601,7 +639,7 @@ public class PlayerService implements InitHandler {
         vo.head = data.getCurHead();
         vo.signDay = data.getSign();
         vo.signFlag = data.getSignFlag();
-       // vo.online = player.online;
+        // vo.online = player.online;
 
         if (player.getGangId() > 0) {
             Gang gang = gangService.getGang(player.getGangId());
@@ -1354,5 +1392,57 @@ public class PlayerService implements InitHandler {
      */
     public void updatePlayerName(int playerId, String name) {
         playerDao.updatePlayerName(playerId, name);
+    }
+
+    //复制玩家表
+    public void copyPlayer(String mergeServerIdStr, SimpleJdbcTemplate mergeDb) {
+        StringBuffer sql = new StringBuffer("SELECT * FROM player where accName!='sys'");
+        List<Player> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Player.class));
+        ServerLogger.warn("玩家表开始复制，复制数据=" + list.size());
+        for (Player object : list) {
+            try {
+                playerDao.insert(object);
+            } catch (DuplicateKeyException e) {
+                ServerLogger.warn("玩家名称修改，玩家名称=" + object.getName());
+
+                //原服务器
+                String newServerIdStr = SysConfig.serverId + "";
+                newServerIdStr = newServerIdStr.substring(2, newServerIdStr.length());
+                int serverId = Integer.valueOf(newServerIdStr);
+
+                //修改原服玩家名称
+                playerDao.updatePlayerName(object.getName(), object.getName() + "_S" + serverId);
+
+                //合服
+                mergeServerIdStr = mergeServerIdStr.substring(2, mergeServerIdStr.length());
+                int mergeServerId = Integer.valueOf(mergeServerIdStr);
+                //修改合服玩家名称
+                object.setName(object.getName() + "_S" + mergeServerId);
+                playerDao.insert(object);
+            }
+        }
+        ServerLogger.warn("玩家表完成复制");
+    }
+
+    //复制玩家数据表
+    public void copyPlayerData(SimpleJdbcTemplate mergeDb) {
+        StringBuffer sql = new StringBuffer("SELECT * FROM player_data");
+        List<PlayerData> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(PlayerData.class));
+        ServerLogger.warn("玩家数据表开始复制，复制数据=" + list.size());
+        for (PlayerData object : list) {
+            savePlayerData(object);
+        }
+        ServerLogger.warn("玩家表完成复制");
+    }
+
+    //复制充值记录表
+    public void copyChargeRecord(SimpleJdbcTemplate mergeDb) {
+        StringBuffer sql = new StringBuffer("SELECT * FROM t_charge_record");
+        List<ChargeRecord> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ChargeRecord.class));
+        ServerLogger.warn("充值记录表开始复制，复制数据=" + list.size());
+        for (ChargeRecord object : list) {
+            playerDao.insertChargeRecord(object);
+        }
+        ServerLogger.warn("充值记录表完成复制");
     }
 }

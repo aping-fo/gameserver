@@ -703,4 +703,23 @@
 	<gainPath>首充奖励获得</gainPath>
 	<gainPath_en></gainPath_en>
 </config>
+<config>
+	<id>38</id>
+	<name>内测之星</name>
+	<name_en></name_en>
+	<titleType>3</titleType>
+	<icon>802</icon>
+	<atlas>Honor</atlas>
+	<titleSubType>10</titleSubType>
+	<cond>[10,0]</cond>
+	<period>0</period>
+	<hp>1434</hp>
+	<attack>0</attack>
+	<defense>0</defense>
+	<crit>0</crit>
+	<symptom>30</symptom>
+	<fu>0</fu>
+	<gainPath>内测纪念称号</gainPath>
+	<gainPath_en></gainPath_en>
+</config>
 </root>

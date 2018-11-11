@@ -56,9 +56,9 @@ public class trainingLogic extends AttachLogic<TrainAttach> {
         opponents = serialData.getOpponents();
         sectionOpponents = serialData.getSectionOpponents();
         total = ConfigData.globalParam().exprienceFightRatio.length;
-//        if (serialData.getTrainingReset() >= DailyService.FIVE_CLOCK) {
-//            return;
-//        }
+        if (serialData.getTrainingReset() >= DailyService.FIVE_CLOCK) {
+            return;
+        }
 
         serialData.setTrainingReset(DailyService.FIVE_CLOCK);
         int[] fightSection = ConfigData.globalParam().experienceFightSection;

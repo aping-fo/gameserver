@@ -388,17 +388,6 @@ public class ConfigData {
         }
         DonateCfg = donateCfgTmp;
 
-//        //加载礼包激活码
-//        Map<String, CdkeyConfig> giftBagMapTmp = new HashMap<>();
-//        for (Object cfg : GameData.getConfigs(CdkeyConfig.class)) {
-//            CdkeyConfig conf = (CdkeyConfig) cfg;
-//            giftBagMapTmp.put(conf.cdkey, conf);
-//        }
-//        giftBagMap = giftBagMapTmp;
-
-        //从后台服务器获取激活码
-        getActivationCode();
-
         Map<Integer, List<String>> firstNameListTemp = Maps.newHashMap();
         List<String> manFirst = Lists.newArrayList();
         List<String> femaleFirst = Lists.newArrayList();
@@ -463,7 +452,7 @@ public class ConfigData {
 
     //从后台服务器获取激活码
     public static void getActivationCode() {
-        String s = HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/activationCode", "serverId=" + SysConfig.serverId);
+        String s = ""; //HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/activationCode", "serverId=" + SysConfig.serverId);
         if(StringUtils.isBlank(s)){
             ServerLogger.warn("激活码不存在");
             return;

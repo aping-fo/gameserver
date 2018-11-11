@@ -582,6 +582,9 @@ public class ActivityService implements InitHandler {
                 }
             }
         }
+
+        // ---
+//        result.id.add(900); // 加入礼品兑换界面活动
         return result;
     }
 

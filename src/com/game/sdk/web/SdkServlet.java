@@ -35,6 +35,7 @@ public class SdkServlet extends HttpServlet {
         resp.addHeader("Pragma", "no-cache");
         resp.addHeader("Accept", "*/*");
         resp.addHeader("Access-Control-Allow-Origin", "*");
+        resp.addHeader("Content-type", "text/html;charset=UTF-8");
         resp.getWriter().write(message);
         resp.getWriter().flush();
     }

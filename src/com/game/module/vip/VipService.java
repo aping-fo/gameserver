@@ -1,10 +1,7 @@
 package com.game.module.vip;
 
 import com.game.SysConfig;
-import com.game.data.ChargeConfig;
-import com.game.data.RechargeRecordCfg;
-import com.game.data.Response;
-import com.game.data.VIPConfig;
+import com.game.data.*;
 import com.game.module.activity.ActivityConsts;
 import com.game.module.activity.ActivityService;
 import com.game.module.activity.WelfareCardService;
@@ -271,28 +268,10 @@ public class VipService {
         welfareCardService.buyWelfareCard(playerId, charge.type, id);
         if (!data.isFirstRechargeFlag()) {
             data.setFirstRechargeFlag(true);
-
-
-            if (SysConfig.rebate) { //是否首冲返利服
-                Player player = playerService.getPlayer(playerId);
-                try{
-                    RechargeRecordCfg cfg = ConfigData.getConfig(RechargeRecordCfg.class,Integer.parseInt(player.getAccName()));
-                    int rmb = cfg.totalRecharge;
-                    int rebateDiamond;
-                    if (rmb <= 500) {
-                        rebateDiamond = (int) (rmb * 10 * 1.6);
-                    } else {
-                        rebateDiamond = rmb * 10 * 3;
-                    }
-                    playerService.addDiamond(playerId, rebateDiamond, LogConsume.REBATE);
-                }catch (Exception e){
-
-                }
-            }
         }
 
         if (type != TYPE_TIMED && type != TYPE_SPECIAL) {//限时礼包和特价礼包不计入累计充值
-            activityService.completeActivityTaskByCharge(playerId, ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//累充礼包
+            activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_FIRST_RECHARGE, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//累充礼包
         }
 
         //购买月卡开启理财
@@ -300,9 +279,9 @@ public class VipService {
             activityService.openActivity(playerId, ActivityConsts.ActivityType.T_GROW_FUND);
         }
 
-        activityService.completeActivityTaskByCharge(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//充了钱就算礼包
-        activityService.completeActivityTaskByCharge(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.vipExpAdd, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
-        activityService.completeActivityTaskByCharge(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//充了钱就算礼包
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.total, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
         activityService.onceRecharge(playerId, charge.rmb);//单笔充值满足(取最大那个)
         activityService.dailyRecharge(playerId, charge.rmb);//每日充值(7日充值)
 
@@ -410,6 +389,16 @@ public class VipService {
             return param;
         }
 
+        if(config.activityId!=0){
+            ActivityTaskCfg activityTaskCfg = ConfigData.getConfig(ActivityTaskCfg.class, config.activityId);
+            if (activityTaskCfg == null) {
+                ServerLogger.warn("活动任务表储存，活动任务ID=" + config.activityId);
+                return param;
+            }
+
+//            activityTaskCfg.Param0
+        }
+
         //检测是否重复购买
         if (activityService.checkFinish(playerId, config.activityId)) {
             ServerLogger.warn("重复购买，重复ID=" + rechargeId);
@@ -454,25 +443,30 @@ public class VipService {
         writeLock.lock();//写锁
         try {
             levelRankingsMap.put(playerId, levelRankVO);
-            List<Map.Entry<Integer, LevelRankVO>> levelRankVOArrayList = new ArrayList<>(levelRankingsMap.entrySet());
-            levelRankVOArrayList.sort(new Comparator<Map.Entry<Integer, LevelRankVO>>() {
-                @Override
-                public int compare(Map.Entry<Integer, LevelRankVO> o1, Map.Entry<Integer, LevelRankVO> o2) {
-                    if (o1.getValue().coins == o2.getValue().coins) {
-                        return o2.getValue().level - o1.getValue().level;
-                    }
-                    return (int) (o2.getValue().coins - o1.getValue().coins);
-                }
-            });
-            levelRankingsMap.clear();
-            for (int i = 0; i < levelRankVOArrayList.size(); i++) {
-                if (i >= RANK_NUMBER) {
-                    break;
-                }
-                levelRankingsMap.put(levelRankVOArrayList.get(i).getKey(), levelRankVOArrayList.get(i).getValue());
-            }
+            updateRechargeRank(levelRankingsMap);
         } finally {
             writeLock.unlock();
+        }
+    }
+
+    //刷新充值排行
+    public void updateRechargeRank(Map<Integer, LevelRankVO> levelRankingsMap) {
+        List<Map.Entry<Integer, LevelRankVO>> levelRankVOArrayList = new ArrayList<>(levelRankingsMap.entrySet());
+        levelRankVOArrayList.sort(new Comparator<Map.Entry<Integer, LevelRankVO>>() {
+            @Override
+            public int compare(Map.Entry<Integer, LevelRankVO> o1, Map.Entry<Integer, LevelRankVO> o2) {
+                if (o1.getValue().coins == o2.getValue().coins) {
+                    return o2.getValue().level - o1.getValue().level;
+                }
+                return (int) (o2.getValue().coins - o1.getValue().coins);
+            }
+        });
+        levelRankingsMap.clear();
+        for (int i = 0; i < levelRankVOArrayList.size(); i++) {
+            if (i >= RANK_NUMBER) {
+                break;
+            }
+            levelRankingsMap.put(levelRankVOArrayList.get(i).getKey(), levelRankVOArrayList.get(i).getValue());
         }
     }
 

@@ -18,33 +18,37 @@ public class MarryService {
     @Autowired
     private MarryRankDAO marryRankDAO;
 
-    public void login(String openId, String nickName, String avatarUrl, String invitor){
+    public void login(String openId, String nickName, String avatarUrl, String invitor, String unlockToolId){
         int hasRecord = marryRankDAO.checkRecord(openId);
 
-        if(hasRecord == 0){
-            marryRankDAO.insertMarry(openId, nickName, avatarUrl, 3, "1,1,1,1,1,0");
-            if(invitor != null && !invitor.isEmpty()){
-                //如果有邀请者，则增加邀请者道具
-                String datas = marryRankDAO.queryMarryDatas(invitor);
-                if(datas != null && !datas.isEmpty()){
-                    String[] array = datas.split(",");
-                    if(array.length >= 6){
-                        int inviteCount = Integer.parseInt(array[5]) + 1;
-                        array[5] = String.valueOf(inviteCount);
-                        //道具4，邀请1个增加1个
-                        array[3] = String.valueOf(Integer.parseInt(array[3]) + 1);
-                        //道具5，邀请2个增加1个
-                        if(inviteCount % 2 == 0) {
-                            array[4] = String.valueOf(Integer.parseInt(array[4]) + 1);
-                        }
-                        String result = StringUtils.join(array, ",");
-
-                        marryRankDAO.updateMarryDatas(invitor, result);
-                    }
-                }
-            }
+        if(hasRecord == 0) {
+            marryRankDAO.insertMarry(openId, nickName, avatarUrl, 3, "-1,-1,-1,-1,-1,0");
         }else{
             marryRankDAO.updateMarry(openId, nickName, avatarUrl);
+        }
+
+        if(invitor != null && !invitor.isEmpty()){
+            //如果有邀请者，则增加邀请者道具
+            String datas = marryRankDAO.queryMarryDatas(invitor);
+            if(datas != null && !datas.isEmpty()){
+                String[] array = datas.split(",");
+                if(array.length >= 6){
+//                    int inviteCount = Integer.parseInt(array[5]) + 1;
+//                    array[5] = String.valueOf(inviteCount);
+
+                    if(unlockToolId != null && !unlockToolId.isEmpty()){
+                        //id道具解锁
+                        int toolIndex = Integer.parseInt(unlockToolId);
+                        if(toolIndex >= 0 && toolIndex <= 4 && array[toolIndex].equals("-1")){
+                            array[toolIndex] = "1";
+                        }
+                    }
+
+                    String result = StringUtils.join(array, ",");
+
+                    marryRankDAO.updateMarryDatas(invitor, result);
+                }
+            }
         }
     }
 
