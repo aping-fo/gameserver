@@ -12,6 +12,8 @@ public class Pet {
     private int passiveSkillId;
     private boolean playFlag;
     private String name;
+    private byte[] data;
+    private int playerId;
 
     public Pet() {
     }
@@ -23,6 +25,22 @@ public class Pet {
         this.playFlag = false;
         this.name = name;
         this.showConfigID = configId;
+    }
+
+    public int getPlayerId() {
+        return playerId;
+    }
+
+    public void setPlayerId(int playerId) {
+        this.playerId = playerId;
+    }
+
+    public byte[] getData() {
+        return data;
+    }
+
+    public void setData(byte[] data) {
+        this.data = data;
     }
 
     public int getShowConfigID() {

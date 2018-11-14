@@ -33,6 +33,8 @@ import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
@@ -1425,7 +1427,6 @@ public class GangService implements InitHandler {
         return null;
     }
 
-
     public static class CloseTask implements Runnable {
 
         private Gang gang;
@@ -1649,5 +1650,43 @@ public class GangService implements InitHandler {
         }
 
         return technologyMap;
+    }
+
+    //复制公会表
+    public void copyGang(String mergeServerIdStr, SimpleJdbcTemplate mergeDb) {
+        StringBuffer sql = new StringBuffer("SELECT * FROM gang");
+
+        List<Gang> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Gang.class));
+        ServerLogger.warn("公会表开始复制，复制数据=" + list.size());
+        for (Gang objectTemp : list) {
+            byte[] g = CompressUtil.decompressBytes(objectTemp.getData());
+            Gang object = JsonUtils.string2Object(new String(g, Charset.forName("utf-8")), Gang.class);
+            String name = object.getName();
+            if (gangNames.containsKey(name)) {
+                //原服务器
+                String newServerIdStr = SysConfig.serverId + "";
+                newServerIdStr = newServerIdStr.substring(2, newServerIdStr.length());
+                int serverId = Integer.valueOf(newServerIdStr);
+                Integer id = gangNames.get(name);
+                Gang gang = gangDao.selectGang(id);
+                gang.setName(name + "_S" + serverId);
+                gangDao.insert(id, CompressUtil.compressBytes(gang.getData()));
+
+                //合服
+                mergeServerIdStr = mergeServerIdStr.substring(2, mergeServerIdStr.length());
+                int mergeServerId = Integer.valueOf(mergeServerIdStr);
+                //修改合服玩家名称
+                object.setName(name + "_S" + mergeServerId);
+                gangDao.update(id, CompressUtil.compressBytes(gang.getData()));
+            } else {
+                gangDao.insert(object.getId(), CompressUtil.compressBytes(objectTemp.getData()));
+            }
+
+            gangs.put(object.getId(), object);
+            gangNames.put(object.getName(), object.getId());
+            orderGangs.add(object);
+        }
+        sort(true);
+        ServerLogger.warn("公会表完成复制");
     }
 }

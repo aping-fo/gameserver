@@ -14,10 +14,7 @@ import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.ladder.LadderService;
 import com.game.module.log.LogConsume;
-import com.game.module.player.Jewel;
-import com.game.module.player.Player;
-import com.game.module.player.PlayerData;
-import com.game.module.player.PlayerService;
+import com.game.module.player.*;
 import com.game.module.rank.RankEntity;
 import com.game.module.rank.RankService;
 import com.game.module.rank.RankingList;
@@ -42,6 +39,8 @@ import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
@@ -557,7 +556,7 @@ public class TaskService implements Dispose {
                         GMember gMember = gang.getMembers().get(playerId);
                         if (gMember != null) {
                             gMember.alterTaskContribution(1);
-                        }else{
+                        } else {
                             ServerLogger.warn("member is not existent,gang=" + gang + ",playerId=" + playerId);
                         }
                         if (task.getState() == Task.STATE_FINISHED) {
@@ -910,7 +909,7 @@ public class TaskService implements Dispose {
 //        if (!jointedTasks.contains(key)) {
 //            return Response.ERR_PARAM;
 //        }
-                                                                                                                                                                                                                      JointTask myCurrJointedTask = playerTask.getCurrJointedTask();
+        JointTask myCurrJointedTask = playerTask.getCurrJointedTask();
         if (myCurrJointedTask != null) {
             return Response.TASK_JOINTED;
         }
@@ -1022,5 +1021,16 @@ public class TaskService implements Dispose {
         IntParam param = new IntParam();
         param.param = Response.SUCCESS;
         return param;
+    }
+
+    //复制任务表
+    public void copyTask(SimpleJdbcTemplate mergeDb) {
+        StringBuffer sql = new StringBuffer("SELECT * FROM task");
+        List<Task> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Task.class));
+        ServerLogger.warn("任务表开始复制，复制数据=" + list.size());
+        for (Task object : list) {
+            taskDao.insertTask(object.getPlayerId(), object.getData());
+        }
+        ServerLogger.warn("任务表完成复制");
     }
 }

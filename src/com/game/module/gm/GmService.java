@@ -116,7 +116,7 @@ public class GmService {
 
     public void handle(int playerId, String gm) {
         try {
-            String[] params = gm.substring(1).split(" ");
+            String[] params = gm.substring(1).split("　");//注意这里用的是全角空格
             String methodName = params[0].replace("_", "").toLowerCase();
             Method[] methods = this.getClass().getDeclaredMethods();
             boolean find = false;

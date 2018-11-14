@@ -25,4 +25,10 @@ public interface GangDao {
 	
 	@SQL("select id from gang order by totalFight desc")
 	public List<Integer> selectRanks();
+
+    @SQL("select * from gang where id = :id")
+    public Gang selectGang(@SQLParam("id")int id);
+
+    @SQL("update gang set data = :data where id = :id")
+    public void update(@SQLParam("id")int id,@SQLParam("data")byte[] data);
 }

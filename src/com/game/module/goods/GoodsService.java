@@ -7,6 +7,7 @@ import com.game.module.attach.training.trainingLogic;
 import com.game.module.copy.CopyService;
 import com.game.module.fame.FameService;
 import com.game.module.fashion.FashionService;
+import com.game.module.gang.Gang;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
 import com.game.module.pet.PetService;
@@ -26,6 +27,8 @@ import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
@@ -1193,5 +1196,16 @@ public class GoodsService {
             }
         }
         return result;
+    }
+
+    //复制物品表
+    public void copyGoods(SimpleJdbcTemplate mergeDb) {
+        StringBuffer sql = new StringBuffer("SELECT * FROM goods");
+        List<Goods> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Goods.class));
+        ServerLogger.warn("物品表开始复制，复制数据=" + list.size());
+        for (Goods object : list) {
+            goodsDao.insertGoods(object.getPlayerId(), object.getData());
+        }
+        ServerLogger.warn("物品表完成复制");
     }
 }

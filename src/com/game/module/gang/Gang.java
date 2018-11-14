@@ -68,6 +68,16 @@ public class Gang {
 		this.createDate = Calendar.getInstance();
 	}
 
+	private byte[] data;
+
+	public byte[] getData() {
+		return data;
+	}
+
+	public void setData(byte[] data) {
+		this.data = data;
+	}
+
 	public Set<Integer> getTechnologys() {
 		return technologys;
 	}

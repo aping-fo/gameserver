@@ -88,11 +88,12 @@ public class Task{
 	public static final int STATE_FINISHED = 2;//完成
 	public static final int STATE_SUBMITED = 3;//已提交
 
-
+	private int playerId;
 	private int taskId;
 	private volatile int state;
 	private volatile int count;
 	private volatile int type;
+	private byte[] data;
 
 	public Task(){}
 	
@@ -105,6 +106,22 @@ public class Task{
 		if(type == TYPE_HIT) {
 			count = Integer.MAX_VALUE;
 		}
+	}
+
+	public byte[] getData() {
+		return data;
+	}
+
+	public void setData(byte[] data) {
+		this.data = data;
+	}
+
+	public int getPlayerId() {
+		return playerId;
+	}
+
+	public void setPlayerId(int playerId) {
+		this.playerId = playerId;
 	}
 
 	public int getType() {

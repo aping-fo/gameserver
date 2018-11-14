@@ -132,13 +132,6 @@ public class PlayerExtension {
             roleInfoList.roleInfoVoList.add(role);
         }
 
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/accountLog", "serverId=" + SysConfig.serverId + "&accountName=" + param.userId);
-            }
-        }).start();
-
         return roleInfoList;
     }
 

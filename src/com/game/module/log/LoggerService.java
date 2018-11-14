@@ -40,7 +40,8 @@ public class LoggerService implements InitHandler {
     public static final String ITEM_LOG = "insert into item_log(player_id,op,count,type,goods_id,goods_type,server_id,lev,prev,next,create_time) values(?,?,?,?,?,?,?,?,?,?,now())";
     public static final String CHARGE_LOG = "insert into charge_log(role_id,role_name,charge_id,charge_type,amount,channel_id,payment_type,server_id,create_time) values(?,?,?,?,?,?,?,?,now())";//充值日志
     public static final String SERVER_CHANGE = "UPDATE server set open=? where server_id=?";//改变服务器状态
-    public static final String NEW_USER = "insert into new_user(new_user_count,income,arpu,server_id,create_time,update_time) values(?,?,?,?,DATE_SUB(curdate(),INTERVAL 1 DAY),DATE_SUB(curdate(),INTERVAL 1 DAY))";//改变服务器状态
+    //数据统计
+    public static final String NEW_USER = "insert into new_user(new_user_count,charge_user_count,login_user_count,income,arpu,server_id,create_time,update_time) values(?,?,?,?,?,?,DATE_SUB(curdate(),INTERVAL 1 DAY),DATE_SUB(curdate(),INTERVAL 1 DAY))";
     //邮件日志
     public static final String MAIL_LOG = "insert into mail_log_new(sender_id,sender_name,receive_id,title,content,state,rewards,has_reward,type,server_id,send_time) values(?,?,?,?,?,?,?,?,?,?,now())";
 
@@ -299,17 +300,26 @@ public class LoggerService implements InitHandler {
         return getGmDb().query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ProhibitionEntity.class));
     }
 
-    //更改服务器状态
+    //数据统计
     public void updateNewUser() {
         StringBuffer sql = new StringBuffer("SELECT sum(amount) FROM charge_log where payment_type!='test' and create_time>DATE_SUB(curdate(),INTERVAL 1 DAY) and create_time<DATE_SUB(curdate(),INTERVAL 0 DAY) and server_id=");
         sql.append(SysConfig.serverId);
-        int income = getGmDb().queryForInt(sql.toString());
-        int newUserCount = playerDao.queryNewPlayer();
-        double arpu = 0;
-        if (newUserCount != 0) {
-            arpu = income / newUserCount;
+        int income = getGmDb().queryForInt(sql.toString());//收入
+        int newUserCount = playerDao.queryNewPlayer();//新增人数
+
+        //充值人数
+        sql = new StringBuffer("SELECT count(DISTINCT role_id) FROM charge_log where payment_type!='test' and create_time>DATE_SUB(curdate(),INTERVAL 1 DAY) and create_time<DATE_SUB(curdate(),INTERVAL 0 DAY) and server_id=");
+        sql.append(SysConfig.serverId);
+        int chargeCount = getGmDb().queryForInt(sql.toString());
+
+        //登录人数
+        int loginCount = playerDao.queryLoginPlayer();
+
+        double arpu = 0.00;
+        if (chargeCount != 0) {
+            arpu = income / chargeCount;
         }
-        addDbLogger(NEW_USER, newUserCount, income, arpu, SysConfig.serverId);
+        addDbLogger(NEW_USER, newUserCount, chargeCount, loginCount, income, arpu, SysConfig.serverId);
     }
 
     //邮件日志
@@ -322,7 +332,7 @@ public class LoggerService implements InitHandler {
         StringBuffer sql = new StringBuffer("SELECT * from activation_code where");
         sql.append(" name = '" + name + "'");
         sql.append(" and (server_id = " + SysConfig.serverId);
-        sql.append(" or server_id = 0 ) and DATE_FORMAT(now(),'%Y%M%D')<=DATE_FORMAT(overdue_time,'%Y%M%D') and DATE_FORMAT(now(),'%Y%M%D')>=DATE_FORMAT(invalid_time,'%Y%M%D') and (use_player_id is null or universal=1)");
+        sql.append(" or server_id = 0 ) and DATE_FORMAT(now(),'%Y%m%d')<=DATE_FORMAT(overdue_time,'%Y%m%d') and DATE_FORMAT(now(),'%Y%m%d')>=DATE_FORMAT(invalid_time,'%Y%m%d') and (use_player_id is null or universal=1)");
         ActivationCode activationCode = getGmDb().queryForObject(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ActivationCode.class));
 
         if (activationCode != null) {

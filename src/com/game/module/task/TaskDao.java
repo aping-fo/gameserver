@@ -15,6 +15,7 @@ public interface TaskDao {
 	
 	@SQL("update task set data=:data where playerId=:playerId")
 	public void update(@SQLParam("playerId")int playerId,@SQLParam("data")byte[]data);
-	
 
+	@SQL("insert into task(playerId,data) values(:playerId,:data)")
+	public void insertTask(@SQLParam("playerId")int playerId,@SQLParam("data")byte[]data);
 }

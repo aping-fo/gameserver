@@ -67,7 +67,9 @@ public class Goods {
 
 	private List<AttrItem> addAttrList;//附加属性
 	private List<AttrItem> lastAttrs;//上次洗练出来的
-	
+
+	private byte[] data;
+
 	public Goods(int playerId,int goodsId,int stackNum,int storeType){
 		this.playerId = playerId;
 		this.goodsId = goodsId;
@@ -78,7 +80,15 @@ public class Goods {
 		addAttrList = new ArrayList<AttrItem>(2);
 		lastAttrs = new ArrayList<AttrItem>(2);
 	}
-	
+
+	public byte[] getData() {
+		return data;
+	}
+
+	public void setData(byte[] data) {
+		this.data = data;
+	}
+
 	public Goods(){}
 
 	public boolean isLock() {

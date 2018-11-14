@@ -67,6 +67,7 @@ public interface PlayerDao {
     @SQL("REPLACE INTO t_charge_record VALUES (:accountName,:playerId,:nickName,:totalCharge,:loginDays)")
     public void insertChargerecord(@SQLParam("accountName") String accountName, @SQLParam("playerId") int playerId, @SQLParam("nickName") String nickName, @SQLParam("totalCharge") int totalCharge, @SQLParam("loginDays") int loginDays);
 
+    //昨日新增人数
     @SQL("SELECT count(*) from player where accName!='sys' and regTime>=DATE_SUB(curdate(),INTERVAL 1 DAY) and regTime<DATE_SUB(curdate(),INTERVAL 0 DAY)")
     public int queryNewPlayer();
 
@@ -76,6 +77,13 @@ public interface PlayerDao {
 
     //充值记录
     @SQL("REPLACE INTO t_charge_record VALUES (:chargeRecord.accountName,:chargeRecord.playerId,:chargeRecord.nickName,:chargeRecord.totalCharge,:chargeRecord.loginDays)")
-    public void insertChargeRecord(@SQLParam("accountName") ChargeRecord chargeRecord);
+    public void insertChargeRecord(@SQLParam("chargeRecord") ChargeRecord chargeRecord);
 
+
+    @SQL("insert into player values(:player.playerId,:player.accName,:player.name,:player.sex,:player.vocation,:player.exp,:player.coin,:player.diamond,:player.chargeDiamond,:player.vip,:player.energy,:player.serverId,:player.regTime,:player.lastLoginTime,:player.lastLogoutTime,:player.ip,:player.sceneId,:player.x,:player.y,:player.lastSceneId,:player.lev,:player.crit,:player.hp,:player.symptom,:player.fu,:player.fight,:player.z,:player.fashionId,:player.gangId,:player.totalCoin,:player.weaponId,:player.energyTime,:player.totalDiamond,:player.channel,:player.attack,:player.defense,:player.title,:player.achievement,:player.clientMac)")
+    public void insertPlayer(@SQLParam("player") Player player);
+
+    //昨日登录
+    @SQL("SELECT count(*) from player where accName!='sys' and lastLoginTime>=DATE_SUB(curdate(),INTERVAL 1 DAY) and lastLoginTime<DATE_SUB(curdate(),INTERVAL 0 DAY)")
+    public int queryLoginPlayer();
 }

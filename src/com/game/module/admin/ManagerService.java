@@ -12,6 +12,7 @@ import com.game.module.giftbag.ActivationCode;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
+import com.game.module.merge.MergeService;
 import com.game.module.player.*;
 import com.game.module.vip.VipService;
 import com.game.params.IntParam;
@@ -68,9 +69,7 @@ public class ManagerService implements InitHandler {
     @Autowired
     private GoodsService goodsService;
     @Autowired
-    private GangService gangService;
-    @Autowired
-    private FriendService friendService;
+    private MergeService mergeService;
 
     private Map<String, ProhibitionEntity> bans;
 
@@ -318,63 +317,11 @@ public class ManagerService implements InitHandler {
         return RETURN_SUCCESS;
     }
 
-    //角色转出
-    public String handle_role_transfer_out(Map<String, String> params) {
-        int playerId = Integer.parseInt(params.get("playerId"));
-        int serverUrl = Integer.parseInt(params.get("serverUrl"));
-
-        Player player = playerService.getPlayer(playerId);
-        if (player == null) {
-            return PLAYERID_NOT_EXISTENCE;
-        }
-
-        PlayerData playerData = playerService.getPlayerData(playerId);
-        if (playerData == null) {
-            return PLAYERID_NOT_EXISTENCE;
-        }
-
-//        //退出公会
-//        gangService.quit(playerId);
-//
-//        //删除好友
-//        ConcurrentHashMap<Integer, Boolean> friends = playerData.getFriends();
-//        for (Integer id : friends.keySet()) {
-//            //我删除朋友
-//            friendService.del(playerId, id);
-//
-//            //朋友删除我
-//            PlayerData friendPlayerData = playerService.getPlayerData(id);
-//            friendPlayerData.getFriends().remove(playerId);
-//        }
-        StringBuffer param = new StringBuffer("player=" + JsonUtils.object2String(player));
-        param.append("&playerData=" + playerData);
-        HttpRequestUtil.sendPost(serverUrl + "/role_transfer_in", param.toString());
-
-        return RETURN_SUCCESS;
-    }
-
-    //角色转入
-    public String handle_role_transfer_in(Map<String, String> params) {
-        String playerString = params.get("player");
-        Player player = JsonUtils.string2Object(playerString, Player.class);
-        if (player == null) {
-            return PLAYERID_NOT_EXISTENCE;
-        }
-
-        String playerDataString = params.get("playerData");
-        PlayerData playerData = JsonUtils.string2Object(playerDataString, PlayerData.class);
-        if (playerData == null) {
-            return PLAYERID_NOT_EXISTENCE;
-        }
-
-        // 同名
-        if (playerService.getPlayerIdByName(player.getName()) > 0) {
-            return Response.SAME_NAME + "";
-        }
-
-        playerService.addNewPlayer(player.getName(), player.getSex(), player.getVocation(), player.getAccName(), player.getChannel(), SysConfig.serverId + "", playerData.getServerName(), player.userId, playerData.getThirdChannel(), playerData.getThirdUserId(), player.getClientMac());
-
-        return RETURN_SUCCESS;
+    //合服
+    public String handle_mergeServer(Map<String, String> params) {
+        String ip = params.get("fromIp");
+        String serverId = params.get("fromServer");
+        return mergeService.mergeServer(ip, serverId) + "";
     }
 
     //批量发系统邮件接口

@@ -154,8 +154,6 @@ public class PlayerService implements InitHandler {
                 ServerLogger.err(e, "检查异常");
             }
         }
-
-        HttpRequestUtil.sendGet(SysConfig.gmServerUrl + "/admin/onlinePlayer", "serverId=" + SysConfig.serverId + "&maxRoleCount=" + SessionManager.getInstance().getAllSessions().size());
     }
 
     // 获取一个新的UserId
@@ -1400,25 +1398,24 @@ public class PlayerService implements InitHandler {
         List<Player> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Player.class));
         ServerLogger.warn("玩家表开始复制，复制数据=" + list.size());
         for (Player object : list) {
-            try {
-                playerDao.insert(object);
-            } catch (DuplicateKeyException e) {
-                ServerLogger.warn("玩家名称修改，玩家名称=" + object.getName());
-
+            String name = object.getName();
+            if (getPlayerIdByName(name) > 0) {
                 //原服务器
                 String newServerIdStr = SysConfig.serverId + "";
                 newServerIdStr = newServerIdStr.substring(2, newServerIdStr.length());
                 int serverId = Integer.valueOf(newServerIdStr);
-
                 //修改原服玩家名称
-                playerDao.updatePlayerName(object.getName(), object.getName() + "_S" + serverId);
+                playerDao.updatePlayerName(name, name + "_S" + serverId);
 
                 //合服
                 mergeServerIdStr = mergeServerIdStr.substring(2, mergeServerIdStr.length());
                 int mergeServerId = Integer.valueOf(mergeServerIdStr);
                 //修改合服玩家名称
-                object.setName(object.getName() + "_S" + mergeServerId);
-                playerDao.insert(object);
+                object.setName(name + "_S" + mergeServerId);
+                playerDao.insertPlayer(object);
+                ServerLogger.warn("玩家名称修改，玩家名称=" + name);
+            } else {
+                playerDao.insertPlayer(object);
             }
         }
         ServerLogger.warn("玩家表完成复制");
@@ -1426,11 +1423,11 @@ public class PlayerService implements InitHandler {
 
     //复制玩家数据表
     public void copyPlayerData(SimpleJdbcTemplate mergeDb) {
-        StringBuffer sql = new StringBuffer("SELECT * FROM player_data");
+        StringBuffer sql = new StringBuffer("SELECT * FROM player_data where playerId not in(SELECT playerId FROM player where accName='sys')");
         List<PlayerData> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(PlayerData.class));
         ServerLogger.warn("玩家数据表开始复制，复制数据=" + list.size());
         for (PlayerData object : list) {
-            savePlayerData(object);
+            playerDao.insertPlayerData(object.getPlayerId(), object.getData());
         }
         ServerLogger.warn("玩家表完成复制");
     }

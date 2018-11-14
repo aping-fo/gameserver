@@ -9,6 +9,7 @@ import com.game.module.fashion.Fashion;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.GangService;
 import com.game.module.ladder.LadderService;
+import com.game.module.pet.Pet;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.rank.vo.EndlessRankEntity;
@@ -31,6 +32,8 @@ import com.google.common.collect.Lists;
 import com.server.util.ServerLogger;
 import com.test.Data;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
@@ -294,5 +297,18 @@ public class RankService implements InitHandler {
         stateRankVO.setTitle(player.getTitle());
         stateRankVO.setRankType(rankType);
         return stateRankVO;
+    }
+
+    //复制排行表
+    public void copyRank(SimpleJdbcTemplate mergeDb) {
+        StringBuffer sql = new StringBuffer("SELECT * FROM pet");
+        List<Pet> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Pet.class));
+        ServerLogger.warn("宠物表开始复制，复制数据=" + list.size());
+        for (Pet object : list) {
+            String str = JsonUtils.object2String(object);
+            byte[] dbData = str.getBytes(Charset.forName("utf-8"));
+//            petDao.insertPet(object.getId(), CompressUtil.compressBytes(dbData));
+        }
+        ServerLogger.warn("宠物表完成复制");
     }
 }

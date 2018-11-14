@@ -28,6 +28,8 @@ import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.stereotype.Service;
 import sun.security.krb5.Config;
 
@@ -1050,8 +1052,25 @@ public class PetService {
         if (playerData != null && activityService.checkIsOpen(playerData, ActivityConsts.ActivityTaskCondType.T_PET_INVESTMENT)) {
             Map<Integer, Integer> typeNumberMap = getTypeNumberMap(playerId);
             if (typeNumberMap != null && !typeNumberMap.isEmpty()) {
-                activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_PET_INVESTMENT, true, typeNumberMap,true);
+                activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_PET_INVESTMENT, true, typeNumberMap, true);
             }
         }
+    }
+
+    //复制宠物表
+    public void copyPet(SimpleJdbcTemplate mergeDb) {
+        StringBuffer sql = new StringBuffer("SELECT * FROM pet");
+        List<Pet> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Pet.class));
+        ServerLogger.warn("宠物表开始复制，复制数据=" + list.size());
+        for (Pet object : list) {
+            if (object.getData() != null) {
+                petDao.insertPet(object.getPlayerId(), CompressUtil.compressBytes(object.getData()));
+            } else {
+                petDao.insert(object.getPlayerId());
+            }
+            PetBag bag = new PetBag();
+            petBags.putIfAbsent(object.getPlayerId(), bag);
+        }
+        ServerLogger.warn("宠物表完成复制");
     }
 }
