@@ -8,11 +8,13 @@ import com.game.module.copy.CopyExtension;
 import com.game.module.copy.CopyInstance;
 import com.game.module.copy.CopyService;
 import com.game.module.goods.Goods;
+import com.game.module.player.CheatReventionService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.module.worldboss.WorldBossService;
 import com.game.params.IntParam;
 import com.game.params.copy.CopyResult;
 import com.game.params.scene.SMonsterVo;
@@ -217,9 +219,15 @@ public class TeamService implements InitHandler {
         } else {
             if (!player.checkHurt(hurtVO.hurtValue)) {
                 SessionManager.getInstance().kick(player.getPlayerId());
-                ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
+                ServerLogger.warn("TeamService ==================== 作弊玩家 Id = " + player.getPlayerId());
                 return;
             }
+
+            if (!CheatReventionService.isValidSkillHurt(hurtVO.attackId, hurtVO.skillId, player.getVocation())) {
+                ServerLogger.info("TeamService isValidSkillHurt 作弊玩家 Id = " + player.getPlayerId() + " hurt="+hurtVO.hurtValue + " skillId=" + hurtVO.skillId);
+                return;
+            }
+
             SMonsterVo monster = monsters.get(hurtVO.targetId);
             monster.curHp -= hurtVO.hurtValue;
             MonsterHurtVO ret = new MonsterHurtVO();

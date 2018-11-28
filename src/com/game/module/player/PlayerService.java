@@ -685,8 +685,8 @@ public class PlayerService implements InitHandler {
     }
 
     // 加钻石
-    public boolean addDiamond(int playerId, int add, LogConsume actionType, Object... params) {
-        if (add > ConfigData.globalParam().maxDiamond) {
+    public boolean addDiamond(int playerId, int add, LogConsume actionType, boolean ignoreMaxLimit, Object... params) {
+        if (!ignoreMaxLimit && add > ConfigData.globalParam().maxDiamond) {
             ServerLogger.warn("出现超额钻石发放，事件=" + actionType);
             return false;
         }
@@ -1125,6 +1125,13 @@ public class PlayerService implements InitHandler {
                 return;
             }
             long passTime = now - data.getTraversingEnergyResetTime();
+            if (passTime < 0)
+            {
+                passTime = 0;
+                data.setTraversingEnergyResetTime(now);
+            }
+//            passTime += 14400000; //测试代码
+
             int[] params = ConfigData.globalParam().restoreTraversingEnergy;
             if (passTime >= params[0] * TimeUtil.ONE_MIN) {
                 int count = (int) (passTime / (params[0] * TimeUtil.ONE_MIN));

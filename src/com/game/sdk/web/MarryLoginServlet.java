@@ -33,10 +33,7 @@ public class MarryLoginServlet extends SdkServlet {
             String unlockToolId = req.getParameter("unlockToolId");
 
             ServerLogger.info("request param = ", openId, nickName, avatarUrl);
-            if (StringUtils.isEmpty(openId)
-                    || StringUtils.isEmpty(nickName)
-                    || StringUtils.isEmpty(avatarUrl)
-                    ) {
+            if (StringUtils.isEmpty(openId)) {
                 render(resp, "request param error");
                 return;
             }

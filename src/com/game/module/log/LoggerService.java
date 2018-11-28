@@ -6,12 +6,10 @@ import com.game.module.admin.ProhibitionEntity;
 import com.game.module.giftbag.ActivationCode;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerDao;
-import com.game.module.player.PlayerService;
 import com.server.util.MyTheadFactory;
 import com.server.util.ServerLogger;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.stereotype.Service;
@@ -22,8 +20,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.Map.Entry;
@@ -39,26 +35,26 @@ public class LoggerService implements InitHandler {
     public static final String INS_DIAMOND_LOG = "insert into players_diamond_logs(player_id,item_id,op_type,param,count,server_id,lev,prev,next,create_time) values(?,?,?,?,?,?,?,?,?,now())";
     public static final String ITEM_LOG = "insert into item_log(player_id,op,count,type,goods_id,goods_type,server_id,lev,prev,next,create_time) values(?,?,?,?,?,?,?,?,?,?,now())";
     public static final String CHARGE_LOG = "insert into charge_log(role_id,role_name,charge_id,charge_type,amount,channel_id,payment_type,server_id,create_time) values(?,?,?,?,?,?,?,?,now())";//充值日志
-    public static final String SERVER_CHANGE = "UPDATE server set open=? where server_id=?";//改变服务器状态
-    //数据统计
-    public static final String NEW_USER = "insert into new_user(new_user_count,charge_user_count,login_user_count,income,arpu,server_id,create_time,update_time) values(?,?,?,?,?,?,DATE_SUB(curdate(),INTERVAL 1 DAY),DATE_SUB(curdate(),INTERVAL 1 DAY))";
     //邮件日志
     public static final String MAIL_LOG = "insert into mail_log_new(sender_id,sender_name,receive_id,title,content,state,rewards,has_reward,type,server_id,send_time) values(?,?,?,?,?,?,?,?,?,?,now())";
 
     private static SimpleJdbcTemplate loggerTemplate;//日志库
     private SimpleJdbcTemplate mainTemplate;//主库
+    private SimpleJdbcTemplate backstageTemplate;//后台数据库
 
     @Autowired
-    private PlayerService playerService;
-    @Autowired
     private PlayerDao playerDao;
+
+    public SimpleJdbcTemplate getLoggerDb() {
+        return loggerTemplate;
+    }
 
     public SimpleJdbcTemplate getDb() {
         return mainTemplate;
     }
 
-    public SimpleJdbcTemplate getGmDb() {
-        return loggerTemplate;
+    public SimpleJdbcTemplate getBackstageDb() {
+        return backstageTemplate;
     }
 
     @Resource(name = "logerDataSource")
@@ -69,6 +65,11 @@ public class LoggerService implements InitHandler {
     @Resource(name = "dataSource")
     public void setDataSource(DataSource dataSource) {
         this.mainTemplate = new SimpleJdbcTemplate(dataSource);
+    }
+
+    @Resource(name = "backstageDataSource")
+    public void setBackstageSource(DataSource dataSource) {
+        this.backstageTemplate = new SimpleJdbcTemplate(dataSource);
     }
 
     private static final ScheduledExecutorService dbLogScheduExec = Executors.newScheduledThreadPool(SysConfig.loggerThread, new MyTheadFactory("LogerDb"));
@@ -139,6 +140,7 @@ public class LoggerService implements InitHandler {
                 }
             }
         }, 1, 5, TimeUnit.SECONDS);
+        updateNewUser();
     }
 
     public void logDiamond(int playerId, int count, int logId, boolean add, int lev, int prev, int next, Object... params) {
@@ -288,7 +290,11 @@ public class LoggerService implements InitHandler {
 
     //更改服务器状态
     public void serverChange(int open) {
-        addDbLogger(SERVER_CHANGE, open, SysConfig.serverId);
+        StringBuffer sql = new StringBuffer("UPDATE server set open=");
+        sql.append(open);
+        sql.append(" where server_id=");
+        sql.append(SysConfig.serverId);
+        getBackstageDb().update(sql.toString());
     }
 
     //获取封禁信息
@@ -297,20 +303,20 @@ public class LoggerService implements InitHandler {
         sql.append(" and server_id=")
                 .append(SysConfig.serverId)
                 .append(" and closure_type=1");
-        return getGmDb().query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ProhibitionEntity.class));
+        return getBackstageDb().query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ProhibitionEntity.class));
     }
 
     //数据统计
     public void updateNewUser() {
         StringBuffer sql = new StringBuffer("SELECT sum(amount) FROM charge_log where payment_type!='test' and create_time>DATE_SUB(curdate(),INTERVAL 1 DAY) and create_time<DATE_SUB(curdate(),INTERVAL 0 DAY) and server_id=");
         sql.append(SysConfig.serverId);
-        int income = getGmDb().queryForInt(sql.toString());//收入
+        int income = getBackstageDb().queryForInt(sql.toString());//收入
         int newUserCount = playerDao.queryNewPlayer();//新增人数
 
         //充值人数
         sql = new StringBuffer("SELECT count(DISTINCT role_id) FROM charge_log where payment_type!='test' and create_time>DATE_SUB(curdate(),INTERVAL 1 DAY) and create_time<DATE_SUB(curdate(),INTERVAL 0 DAY) and server_id=");
         sql.append(SysConfig.serverId);
-        int chargeCount = getGmDb().queryForInt(sql.toString());
+        int chargeCount = getBackstageDb().queryForInt(sql.toString());
 
         //登录人数
         int loginCount = playerDao.queryLoginPlayer();
@@ -319,7 +325,15 @@ public class LoggerService implements InitHandler {
         if (chargeCount != 0) {
             arpu = income / chargeCount;
         }
-        addDbLogger(NEW_USER, newUserCount, chargeCount, loginCount, income, arpu, SysConfig.serverId);
+        sql = new StringBuffer("insert into new_user(new_user_count,charge_user_count,login_user_count,income,arpu,server_id,create_time,update_time) values(");
+        sql.append(newUserCount)
+                .append("," + chargeCount)
+                .append("," + loginCount)
+                .append("," + income)
+                .append("," + arpu)
+                .append("," + SysConfig.serverId)
+                .append(",DATE_SUB(curdate(),INTERVAL 1 DAY),DATE_SUB(curdate(),INTERVAL 1 DAY))");
+        getBackstageDb().update(sql.toString());
     }
 
     //邮件日志
@@ -333,7 +347,7 @@ public class LoggerService implements InitHandler {
         sql.append(" name = '" + name + "'");
         sql.append(" and (server_id = " + SysConfig.serverId);
         sql.append(" or server_id = 0 ) and DATE_FORMAT(now(),'%Y%m%d')<=DATE_FORMAT(overdue_time,'%Y%m%d') and DATE_FORMAT(now(),'%Y%m%d')>=DATE_FORMAT(invalid_time,'%Y%m%d') and (use_player_id is null or universal=1)");
-        ActivationCode activationCode = getGmDb().queryForObject(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ActivationCode.class));
+        ActivationCode activationCode = getBackstageDb().queryForObject(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ActivationCode.class));
 
         if (activationCode != null) {
             //保存使用者
@@ -344,10 +358,94 @@ public class LoggerService implements InitHandler {
             sql.append(" ,use_player_account = '" + player.getAccName() + "'");
             sql.append(" ,use_server_id = " + SysConfig.serverId);
             sql.append(" where id = " + activationCode.getId());
-            getGmDb().update(sql.toString());
+            getBackstageDb().update(sql.toString());
             return activationCode;
         } else {
             return null;
         }
+    }
+
+    //钻石日志查询
+    public List<DiamondsLog> diamondsLogList(int playerId, String startDate, String endDate, int pageNumber, int pageSize) {
+        StringBuffer sizeSql = new StringBuffer("SELECT count(*) from players_diamond_logs where player_id=");
+        StringBuffer sql = new StringBuffer("SELECT * from players_diamond_logs where player_id=");
+        sizeSql.append(playerId);
+        sql.append(playerId);
+        if (StringUtils.isNotBlank(startDate) && !startDate.equals("null")) {
+            sizeSql.append(" and DATE_FORMAT(create_time,'%Y-%m-%d') >= '").append(startDate).append("'");
+            sql.append(" and DATE_FORMAT(create_time,'%Y-%m-%d') >= '").append(startDate).append("'");
+        }
+        if (StringUtils.isNotBlank(endDate) && !endDate.equals("null")) {
+            sizeSql.append(" and DATE_FORMAT(create_time,'%Y-%m-%d') <= '").append(endDate).append("'");
+            sql.append(" and DATE_FORMAT(create_time,'%Y-%m-%d') <= '").append(endDate).append("'");
+        }
+        sql.append(" order by create_time desc")
+                .append(" limit ").append((pageNumber - 1) * pageSize)
+                .append(",").append(pageSize);
+
+        List<DiamondsLog> list = getLoggerDb().query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(DiamondsLog.class));
+
+        if (list != null && list.size() > 0) {
+            int size = getLoggerDb().queryForInt(sizeSql.toString());
+            list.get(0).setSize(size);
+        }
+
+        return list;
+    }
+
+    //物品日志查询
+    public List<ItemLog> itemLogList(int playerId, String startDate, String endDate, int pageNumber, int pageSize) {
+        StringBuffer sizeSql = new StringBuffer("SELECT count(*) from item_log where player_id=");
+        StringBuffer sql = new StringBuffer("SELECT * from item_log where player_id=");
+        sizeSql.append(playerId);
+        sql.append(playerId);
+        if (StringUtils.isNotBlank(startDate) && !startDate.equals("null")) {
+            sizeSql.append(" and DATE_FORMAT(create_time,'%Y-%m-%d') >= '").append(startDate).append("'");
+            sql.append(" and DATE_FORMAT(create_time,'%Y-%m-%d') >= '").append(startDate).append("'");
+        }
+        if (StringUtils.isNotBlank(endDate) && !endDate.equals("null")) {
+            sizeSql.append(" and DATE_FORMAT(create_time,'%Y-%m-%d') <= '").append(endDate).append("'");
+            sql.append(" and DATE_FORMAT(create_time,'%Y-%m-%d') <= '").append(endDate).append("'");
+        }
+        sql.append(" order by create_time desc")
+                .append(" limit ").append((pageNumber - 1) * pageSize)
+                .append(",").append(pageSize);
+
+        List<ItemLog> list = getLoggerDb().query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(ItemLog.class));
+
+        if (list != null && list.size() > 0) {
+            int size = getLoggerDb().queryForInt(sizeSql.toString());
+            list.get(0).setSize(size);
+        }
+
+        return list;
+    }
+
+    //邮件日志查询
+    public List<MailLog> mailLogList(int playerId, String startDate, String endDate, int pageNumber, int pageSize) {
+        StringBuffer sizeSql = new StringBuffer("SELECT count(*) from mail_log_new where receive_id=");
+        StringBuffer sql = new StringBuffer("SELECT * from mail_log_new where receive_id=");
+        sizeSql.append(playerId);
+        sql.append(playerId);
+        if (StringUtils.isNotBlank(startDate) && !startDate.equals("null")) {
+            sizeSql.append(" and DATE_FORMAT(send_time,'%Y-%m-%d') >= '").append(startDate).append("'");
+            sql.append(" and DATE_FORMAT(send_time,'%Y-%m-%d') >= '").append(startDate).append("'");
+        }
+        if (StringUtils.isNotBlank(endDate) && !endDate.equals("null")) {
+            sizeSql.append(" and DATE_FORMAT(send_time,'%Y-%m-%d') <= '").append(endDate).append("'");
+            sql.append(" and DATE_FORMAT(send_time,'%Y-%m-%d') <= '").append(endDate).append("'");
+        }
+        sql.append(" order by send_time desc")
+                .append(" limit ").append((pageNumber - 1) * pageSize)
+                .append(",").append(pageSize);
+
+        List<MailLog> list = getLoggerDb().query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(MailLog.class));
+
+        if (list != null && list.size() > 0) {
+            int size = getLoggerDb().queryForInt(sizeSql.toString());
+            list.get(0).setSize(size);
+        }
+
+        return list;
     }
 }

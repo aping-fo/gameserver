@@ -32,6 +32,7 @@ public class ActivityConsts {
         public static final int T_INTEGRAL = 31; //积分活动
         public static final int T_ADVENTURE_BOX = 32; //奇遇宝箱
         public static final int T_CARD= 34; //卡牌
+        public static final int T_CALL= 35; //累计召唤
     }
 
     /**

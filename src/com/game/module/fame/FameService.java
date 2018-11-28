@@ -158,7 +158,16 @@ public class FameService {
             ServerLogger.info("声望数据错误，阵营类型=" + type);
             return map;
         }
-        map.put(type, upgrade.getExp());
+
+        int exp = upgrade.getExp();
+        if (upgrade.getLev() > 1) {
+            for (int i = 1; i < upgrade.getLev(); i++) {
+                FameConfig cfg = ConfigData.getConfig(FameConfig.class, type * 1000 + i);
+                exp += cfg.exp;
+            }
+        }
+
+        map.put(type, exp);
 
         return map;
     }

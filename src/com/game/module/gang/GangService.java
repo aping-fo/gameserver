@@ -201,7 +201,7 @@ public class GangService implements InitHandler {
 
     public boolean isAdmin(int playerId, Gang gang) {
         return playerId == gang.getOwnerId()
-                || gang.getAdmins().contains(playerId);
+                || gang.isViceAdmin(playerId);
     }
 
     // 创建帮派
@@ -466,7 +466,8 @@ public class GangService implements InitHandler {
             return int2Param;
         }
 //        if (data.getLastQuitGang() > 0) {
-//            if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR * global.quitPunish) {
+////            if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR * global.quitPunish) {
+//            if ((System.currentTimeMillis() - data.getLastQuitGang()) <= TimeUtil.ONE_HOUR * 6) {
 //                int2Param.param1 = Response.QUIT_GANG_LAST;
 //                int2Param.param2 = (int) ((System.currentTimeMillis() - data.getLastQuitGang()) / TimeUtil.ONE_HOUR);
 //                return int2Param;
@@ -631,7 +632,7 @@ public class GangService implements InitHandler {
         // 更新玩家信息
         synchronized (gang) {
             gang.getMembers().remove(kickId);
-            gang.getAdmins().remove(kickId);
+            gang.removeViceAdmin(kickId);
         }
         synchronized (kicker) {
             if (kicker.getGangId() == gangId) {
@@ -675,7 +676,7 @@ public class GangService implements InitHandler {
         //sendTrainingReward(playerId);
         synchronized (gang) {
             gang.getMembers().remove(playerId);
-            gang.getAdmins().remove(playerId);
+            gang.removeViceAdmin(playerId);
         }
 
         synchronized (player) {
@@ -713,9 +714,12 @@ public class GangService implements InitHandler {
         // 更新帮派的数据
         synchronized (gang) {
             gang.getMembers().get(playerId).setPosition(Gang.MEMBER);
-            ServerLogger.info("#transfer change leader,leader id = " + newOwnerId);
-            gang.setOwnerId(newOwnerId);
             gang.getMembers().get(newOwnerId).setPosition(Gang.ADMIN);
+            gang.setOwnerId(newOwnerId);
+            gang.removeViceAdmin(playerId);
+            gang.removeViceAdmin(newOwnerId);
+            gang.setUpdated(true);
+            ServerLogger.info("#transfer change leader,leader id = " + newOwnerId);
         }
 
         Player newOwner = playerService.getPlayer(newOwnerId);
@@ -737,8 +741,6 @@ public class GangService implements InitHandler {
         managerService.sendMail(title, content, null, new ArrayList<Integer>(
                 gang.getMembers().keySet()));
 
-        gang.getAdmins().remove(playerId);
-        gang.setUpdated(true);
         return Response.SUCCESS;
     }
 
@@ -756,7 +758,7 @@ public class GangService implements InitHandler {
             return Response.ERR_PARAM;
         }
         member.setPosition(Gang.MEMBER);
-        gang.getAdmins().remove(viceId);
+        gang.removeViceAdmin(viceId);
         gang.setUpdated(true);
 
         SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
@@ -783,11 +785,30 @@ public class GangService implements InitHandler {
         }
         GangBuildCfg nextBuild = ConfigData.getConfig(GangBuildCfg.class,
                 Gang.MAIN_BUILD * 100 + gang.getLev());
-        if (gang.getAdmins().size() >= nextBuild.viceCount) {
-            return Response.VICE_MAX;
+        if (gang.getViceAdmins().size() >= nextBuild.viceCount) {
+            List<Integer> invalidViceId = null;
+            for (int pId : gang.getViceAdmins()) {
+                GMember m = gang.getMember(pId);
+                if (m == null || m.getPosition() != Gang.VICE_ADMIN) {
+                    if (invalidViceId == null) {
+                        invalidViceId = new ArrayList();
+                    }
+                    invalidViceId.add(pId);
+                }
+            }
+
+            if (invalidViceId != null) {
+                for (int pId : invalidViceId) {
+                    gang.removeViceAdmin(pId);
+                }
+            }
+
+            if (gang.getViceAdmins().size() >= nextBuild.viceCount) {
+                return Response.VICE_MAX;
+            }
         }
         // 设置副会长
-        gang.getAdmins().add(viceId);
+        gang.addViceAdmin(viceId);
         member.setPosition(Gang.VICE_ADMIN);
         // 发送邮件
         String mail = ConfigData.getConfig(ErrCode.class, Response.YOU_BE_VICE).tips;
@@ -913,7 +934,7 @@ public class GangService implements InitHandler {
         // 推送给会长和管理员
         SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
                 getMyGang(gang.getOwnerId()), gang.getOwnerId());
-        for (int vice : gang.getAdmins()) {
+        for (int vice : gang.getViceAdmins()) {
             SessionManager.getInstance().sendMsg(GangExtension.REFRESH_GANG,
                     getMyGang(vice), vice);
         }
@@ -1026,7 +1047,7 @@ public class GangService implements InitHandler {
      * @return
      */
     private int selectLeader(Gang g, boolean bAdmin) {
-        Collection<Integer> ids = g.getAdmins();
+        Collection<Integer> ids = g.getViceAdmins();
         if (!bAdmin) {
             ids = g.getMembers().keySet();
         }
@@ -1655,38 +1676,41 @@ public class GangService implements InitHandler {
     //复制公会表
     public void copyGang(String mergeServerIdStr, SimpleJdbcTemplate mergeDb) {
         StringBuffer sql = new StringBuffer("SELECT * FROM gang");
+        try {
+            List<Gang> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Gang.class));
+            ServerLogger.warn("公会表开始复制，复制数据=" + list.size());
+            for (Gang objectTemp : list) {
+                byte[] g = CompressUtil.decompressBytes(objectTemp.getData());
+                Gang object = JsonUtils.string2Object(new String(g, Charset.forName("utf-8")), Gang.class);
+                String name = object.getName();
+                if (gangNames.containsKey(name)) {
+                    //原服务器
+                    String newServerIdStr = SysConfig.serverId + "";
+                    newServerIdStr = newServerIdStr.substring(2, newServerIdStr.length());
+                    int serverId = Integer.valueOf(newServerIdStr);
+                    Integer id = gangNames.get(name);
+                    Gang gang = gangDao.selectGang(id);
+                    gang.setName(name + "_S" + serverId);
+                    gangDao.insert(id, CompressUtil.compressBytes(gang.getData()));
 
-        List<Gang> list = mergeDb.query(sql.toString(), ParameterizedBeanPropertyRowMapper.newInstance(Gang.class));
-        ServerLogger.warn("公会表开始复制，复制数据=" + list.size());
-        for (Gang objectTemp : list) {
-            byte[] g = CompressUtil.decompressBytes(objectTemp.getData());
-            Gang object = JsonUtils.string2Object(new String(g, Charset.forName("utf-8")), Gang.class);
-            String name = object.getName();
-            if (gangNames.containsKey(name)) {
-                //原服务器
-                String newServerIdStr = SysConfig.serverId + "";
-                newServerIdStr = newServerIdStr.substring(2, newServerIdStr.length());
-                int serverId = Integer.valueOf(newServerIdStr);
-                Integer id = gangNames.get(name);
-                Gang gang = gangDao.selectGang(id);
-                gang.setName(name + "_S" + serverId);
-                gangDao.insert(id, CompressUtil.compressBytes(gang.getData()));
+                    //合服
+                    mergeServerIdStr = mergeServerIdStr.substring(2, mergeServerIdStr.length());
+                    int mergeServerId = Integer.valueOf(mergeServerIdStr);
+                    //修改合服玩家名称
+                    object.setName(name + "_S" + mergeServerId);
+                    gangDao.update(id, CompressUtil.compressBytes(gang.getData()));
+                } else {
+                    gangDao.insert(object.getId(), CompressUtil.compressBytes(objectTemp.getData()));
+                }
 
-                //合服
-                mergeServerIdStr = mergeServerIdStr.substring(2, mergeServerIdStr.length());
-                int mergeServerId = Integer.valueOf(mergeServerIdStr);
-                //修改合服玩家名称
-                object.setName(name + "_S" + mergeServerId);
-                gangDao.update(id, CompressUtil.compressBytes(gang.getData()));
-            } else {
-                gangDao.insert(object.getId(), CompressUtil.compressBytes(objectTemp.getData()));
+                gangs.put(object.getId(), object);
+                gangNames.put(object.getName(), object.getId());
+                orderGangs.add(object);
             }
-
-            gangs.put(object.getId(), object);
-            gangNames.put(object.getName(), object.getId());
-            orderGangs.add(object);
+            sort(true);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        sort(true);
         ServerLogger.warn("公会表完成复制");
     }
 }

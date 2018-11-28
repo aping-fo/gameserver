@@ -8,6 +8,7 @@ public class CRegRoleListVo implements IProtocol {
 	public String accName;//账号名称
 	public String deviceId;//设备ID
 	public String ipAddress;//IP地址
+	public String crcCode;//防作弊校验码
 	public String token;//token
 	public String platform;//平台
 
@@ -17,6 +18,7 @@ public class CRegRoleListVo implements IProtocol {
 		this.accName = bb.getString();
 		this.deviceId = bb.getString();
 		this.ipAddress = bb.getString();
+		this.crcCode = bb.getString();
 		this.token = bb.getString();
 		this.platform = bb.getString();
 	}
@@ -26,6 +28,7 @@ public class CRegRoleListVo implements IProtocol {
 		bb.putString(this.accName);
 		bb.putString(this.deviceId);
 		bb.putString(this.ipAddress);
+		bb.putString(this.crcCode);
 		bb.putString(this.token);
 		bb.putString(this.platform);
 	}

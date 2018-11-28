@@ -36,6 +36,7 @@ public class PlayerVo implements IProtocol {
 	public int gangId;//所在公会id
 	public int weapon;//武器
 	public boolean banChat;//禁言中
+	public String crcCode;//防作弊校验码
 	public List<Integer> curSkills;//当前装载的技能[技能id,技能id,技能id,技能id]技能id为0表示该位置没有技能
 	public List<Integer> curCards;//当前装载的技能卡[技能卡配置表id,技能id,技能id,技能id]技能id为0表示该位置没有技能卡
 	public List<Integer> fashions;//人物拥有的时装
@@ -91,6 +92,7 @@ public class PlayerVo implements IProtocol {
 		this.gangId = bb.getInt();
 		this.weapon = bb.getInt();
 		this.banChat = bb.getBoolean();
+		this.crcCode = bb.getString();
 		this.curSkills = bb.getIntList();
 		this.curCards = bb.getIntList();
 		this.fashions = bb.getIntList();
@@ -146,6 +148,7 @@ public class PlayerVo implements IProtocol {
 		bb.putInt(this.gangId);
 		bb.putInt(this.weapon);
 		bb.putBoolean(this.banChat);
+		bb.putString(this.crcCode);
 		bb.putIntList(this.curSkills);
 		bb.putIntList(this.curCards);
 		bb.putIntList(this.fashions);

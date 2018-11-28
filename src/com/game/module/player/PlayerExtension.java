@@ -4,6 +4,7 @@ import com.game.SysConfig;
 import com.game.data.Response;
 import com.game.event.DefaultLogoutHandler;
 import com.game.event.LoginHandler;
+import com.game.module.activity.ActivityService;
 import com.game.module.admin.ManagerService;
 import com.game.module.fashion.FashionService;
 import com.game.module.gang.Gang;
@@ -11,15 +12,21 @@ import com.game.module.gang.GangService;
 import com.game.module.group.GroupService;
 import com.game.module.team.Team;
 import com.game.module.team.TeamService;
+import com.game.module.worldboss.WorldBossService;
+import com.game.params.DllversionVO;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
 import com.game.params.StringParam;
 import com.game.params.player.*;
+import com.game.params.scene.SkillHurtVO;
+import com.game.params.scene.StartSkillVO;
 import com.game.sdk.erating.ERatingService;
+import com.game.sdk.net.HttpClient;
 import com.game.sdk.utils.LuckySdkUtil;
 import com.game.util.CommonUtil;
 import com.game.util.ConfigData;
 import com.game.util.HttpRequestUtil;
+import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.anotation.Command;
 import com.server.anotation.Extension;
@@ -32,6 +39,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Extension
 public class PlayerExtension {
@@ -55,6 +63,8 @@ public class PlayerExtension {
     private GroupService groupService;
     @Autowired
     private TeamService teamService;
+    @Autowired
+    private ActivityService activityService;
 
     public static final AttributeKey<String> CHANNEL = AttributeKey.valueOf("channel");
     public static final String IOS = "iOS";
@@ -329,7 +339,73 @@ public class PlayerExtension {
         ServerLogger.info("user login:" + playerId + " 设备mac:" + param.clientMac);
         //System.out.println("=============" + playerService.getPlayers().size());
 
+        //重置活动
+        activityService.ResetActivityTask(playerId);
+
         return result;
+    }
+
+    @UnLogin
+    @Command(10801)
+    public Object CheckDllMd5Version(int playerId, DllversionVO param, Channel channel)
+    {
+        String cs = "Assembly-CSharp.dll";
+        String cs_first = "Assembly-CSharp-firstpass.dll";
+        // 只有android才会发 10801
+        if (!dllMd5Map.containsKey(param.group) || !dllMd5Map.get(param.group).containsKey(param.version))
+        {
+            String url =String.format("http://got.cdn-down.kokoyou.com/game2/ingcle/%s/android_res/%s/resfiles/dll_apk/dllsversion", param.group, param.version);
+            try {
+                String content = HttpClient.sendGetRequest(url);
+
+                if (content == null || content.isEmpty()) {
+                    return  null;
+                }
+
+                if (content.contains("404 Not Found")) {
+                    ServerLogger.info("CheckDllMd5Version: 404 Not Found :" + playerId + " url:" + url);
+                    IntParam result = new IntParam();
+                    result.param = 0;
+                    return result;
+                }
+
+                String[] lines = content.split("\\r?\\n");
+                if (lines.length == 2) {
+
+                    Map<String, String> md5s = Maps.newConcurrentMap();
+                    for (int i = 0; i < lines.length; ++i) {
+                        String[] parts = lines[i].split(",");
+                        if (parts.length >= 3) {
+                            md5s.put(parts[0], parts[2]);
+                        }
+                    }
+                    if (md5s.containsKey(cs) && md5s.containsKey(cs_first)) {
+                        if (!dllMd5Map.containsKey(param.group)) {
+                            dllMd5Map.put(param.group, Maps.newConcurrentMap());
+                        }
+
+                        dllMd5Map.get(param.group).put(param.version, md5s);
+                    }
+                }
+            } catch (Exception e) {
+                ServerLogger.err(e, "url=" + url);
+                return  null;
+            }
+        }
+
+        String file1 = dllMd5Map.get(param.group).get(param.version).get(cs);
+        String file2 = dllMd5Map.get(param.group).get(param.version).get(cs_first);
+        if (file1.equals(param.file1) && file2.equals(param.file2))
+        {
+            return  null;
+        }
+        else
+        {
+            ServerLogger.info("CheckDllMd5Version: 不匹配dll版本，有可能作弊 :" + playerId + ",param.group=" + param.group + ",param.version=" + param.version + ",Client: Assembly-CSharp.dll:" + param.file1 + " Assembly-CSharp-firstpass.dll:" + param.file2 + " Server: Assembly-CSharp.dll:" + file1 + " Assembly-CSharp-firstpass.dll:" + file2);
+            IntParam result = new IntParam();
+            result.param = 0;
+            return result;
+        }
     }
 
     // 更新玩家属性
@@ -340,6 +416,9 @@ public class PlayerExtension {
 
     //更新货币
     public static final int UPDATE_CURRENCY = 1006;
+
+    // <group, version, <file, md5>
+    private static Map<String, Map<String, Map<String, String>>> dllMd5Map = Maps.newConcurrentMap();
 
     @Command(1007)
     public Object getOtherPlayer(int playerId, IntParam param) {
@@ -431,6 +510,32 @@ public class PlayerExtension {
         playerService.updatePlayerName(playerId, name);
 
         return result;
+    }
+
+    @Command(10802)
+    public Object CheckStartSkill(int playerId, StartSkillVO param)
+    {
+        Player player = playerService.getPlayer(playerId);
+        if (!CheatReventionService.isValidSkillHurt(playerId, param.skillId, player.getVocation())) {
+            ServerLogger.info("CheckStartSkill isValidSkillHurt 作弊玩家 Id = " + player.getPlayerId() + " skillId=" + param.skillId + " skillCD=" + param.skillCD);
+            SessionManager.getInstance().kick(playerId);
+        }
+        return null;
+    }
+
+    @Command(10803)
+    public Object CheckSkillHurt(int playerId, SkillHurtVO param)
+    {
+        Player player = playerService.getPlayer(playerId);
+        if (!player.checkHurt(param.hurtValue, 2)) {
+            // 超过1.5倍的最大范围值，肯定是作弊了
+            ServerLogger.info("CheckSkillHurt 作弊:单次伤害超过2倍最大伤害范围，作弊玩家=" + playerId + " harm=" + param.hurtValue);
+            SessionManager.getInstance().kick(playerId);
+        }
+        else {
+            CheatReventionService.addPlayerHurtRecord(playerId);
+        }
+        return null;
     }
 
     //踢人下线

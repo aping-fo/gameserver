@@ -18,6 +18,7 @@ import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.group.GroupService;
 import com.game.module.log.LogConsume;
+import com.game.module.player.CheatReventionService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -167,6 +168,19 @@ public class CopyService {
             Copy copy = playerData.getCopys().get(cfg.preId);
             if (copy == null || copy.getState() == 0) {
                 return Response.COPY_NO_PRE;
+            }
+
+            // 困难和噩梦副本增加上一副本通关判断
+            if (cfg.difficulty != CopyInstance.EASY && cfg.chapterId > 1)
+            {
+                int preCopyId = copyId - 100;
+                CopyConfig preCopyCfg = ConfigData.getConfig(CopyConfig.class, preCopyId);
+                if (preCopyCfg != null) {
+                    Copy preCopy = playerData.getCopys().get(preCopyId);
+                    if (preCopy == null || preCopy.getState() == 0) {
+                        return Response.COPY_NO_PRE;
+                    }
+                }
             }
         }
 
@@ -810,9 +824,9 @@ public class CopyService {
         DropReward dropReward = new DropReward();
         dropReward.id = id;
         dropReward.rewards = new ArrayList<Reward>();
+        dropReward.keyCode = RandomUtil.randInt(2, 100);
         dropReward.x = m.x;
         dropReward.z = m.z;
-
 
         Player player = playerService.getPlayer(playerId);
 
@@ -837,9 +851,27 @@ public class CopyService {
             return dropReward;
         }
 
+//        CopyConfig config  = ConfigData.getConfig(CopyConfig.class, copy.getCopyId());
+
         //防作弊
+//        if (config.type == CopyInstance.TYPE_COMMON ||
+//                config.type == CopyInstance.TYPE_ENDLESS)
+        {
+//            if (m.hp < monster.hp || monster.hp < m.hp * 1.5f) {
+//            if (m.hp < monster.hp ||  monster.hp * 1.5f < m.hp) {
+            if (m.hp < monster.hp) {
+                // 两边血量不相等，作弊了
+                ServerLogger.info("作弊:前后端血量不相等，作弊玩家=" + playerId + " 副本=" + copy.getCopyId() + " 服务器.hp=" + monster.hp + " 客户端.hp=" + m.hp);
+                return  null;
+            }
+            else if (m.hightHurt <= 0 || m.hurt <= 0) {
+                ServerLogger.info("作弊:伤害值记录为0，作弊玩家=" + playerId + " 副本=" + copy.getCopyId() + " hurt=" + m.hurt + " hightHurt=" + m.hightHurt);
+                return  null;
+            }
+        }
+
         if (m.hp < monster.hp * 0.8 || m.hurt < monster.hp * 0.8) {
-            ServerLogger.warn("作弊玩家=" + playerId + " 副本=" + copy.getCopyId());
+            ServerLogger.info("killMonster: 作弊玩家=" + playerId + " 副本=" + copy.getCopyId() + " 怪物id="+m.id + " m.hp=" + m.hp + " monster.hp=" +monster.hp + " m.hurt=" + m.hurt);
         }
 
         playerData.setHurt(playerData.getHurt() + monster.hp);
@@ -890,10 +922,11 @@ public class CopyService {
 
     // 检查副本结果,简单防一下时间
     public boolean checkCopyResult(int playerId, CopyInstance copy, CopyResult result) {
-        if (SysConfig.debug) {
-            return true;
-        }
+//        if (SysConfig.debug) {
+//            return true;
+//        }
 
+        int copyId = copy.getCopyId();
         CopyConfig cfg = ConfigData.getConfig(CopyConfig.class, copy.getCopyId());
         if ((cfg.type == CopyInstance.TYPE_COMMON ||
                 cfg.type == CopyInstance.TYPE_ENDLESS) && !copy.isOver()) {
@@ -915,14 +948,28 @@ public class CopyService {
             return false;
         }
 
-        if (cfg.type == CopyInstance.TYPE_COMMON ||
-                cfg.type == CopyInstance.TYPE_ENDLESS) {
-            if ((result.toltalHurt < playerData.getHurt() * 0.8) || (playerData.getHurt() == 0)) {
-                ServerLogger.warn("作弊玩家=" + playerId + " 统计伤害值=" + playerData.getHurt() + "上报伤害=" + result.toltalHurt);
+        if (cfg.type != CopyInstance.TYPE_LEADAWAY &&
+                cfg.type != CopyInstance.TYPE_GOLD &&
+                cfg.type != CopyInstance.TYPE_EXPERIENCE &&
+                cfg.type != CopyInstance.TYPE_TREASURE) { //不需要检测伤害
+            if (playerData.getHurt() <= 0 || result.toltalHurt <= 0) {
+                ServerLogger.info("伤害值记录小于等于0：作弊玩家=" + playerId + " copyId=" + copyId + " 统计伤害值=" + playerData.getHurt() + "上报伤害=" + result.toltalHurt + " 类型=" + cfg.type);
+                return false;
+            }
+
+            if (!CheatReventionService.hasPlayerHurtRecord(playerId)) {
+                ServerLogger.info("没有找到玩家伤害上报记录：作弊玩家=" + playerId + " copyId=" + copyId + " 统计伤害值=" + playerData.getHurt() + "上报伤害=" + result.toltalHurt + " 类型=" + cfg.type);
                 return false;
             }
         }
 
+        if (cfg.type == CopyInstance.TYPE_COMMON ||
+                cfg.type == CopyInstance.TYPE_ENDLESS) {
+            if ((result.toltalHurt < playerData.getHurt() * 0.8) || (playerData.getHurt() <= 0)) {
+                ServerLogger.info("伤害值记录低于血量：作弊玩家=" + playerId + " copyId=" + copyId + " 统计伤害值=" + playerData.getHurt() + "上报伤害=" + result.toltalHurt + " 类型=" + cfg.type);
+                return false;
+            }
+        }
         result.time = (int) pass;
 
         //更新自己最快记录
@@ -938,7 +985,7 @@ public class CopyService {
         //更新全服最快记录
         SerialData data = serialDataService.getData();
         if (data == null) {
-            ServerLogger.warn("全服最快记录");
+            ServerLogger.warn("全服最快记录 data == null");
             return false;
         }
         Map<Integer, Int2Param> copyPassFastestTimeMap = data.getCopyPassFastestTimeMap();
@@ -953,7 +1000,7 @@ public class CopyService {
                 int2Param.param2 = result.selfRecord;
             }
             copyPassFastestTimeMap.put(result.id, int2Param);
-            ServerLogger.warn("最快记录" + playerId);
+            ServerLogger.warn("最快记录 playerId=" + playerId + ",result.time=" + result.time + ",cfg.type=" + cfg.type + ",cfg.id=" + cfg.id);
         }
 
         //每次获取最新值保持数据同步

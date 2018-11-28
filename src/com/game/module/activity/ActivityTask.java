@@ -1,11 +1,14 @@
 package com.game.module.activity;
 
 import com.game.data.ActivityCfg;
+import com.game.data.ActivityTaskCfg;
+import com.game.params.Int2Param;
 import com.game.params.Reward;
 import com.game.params.activity.ActivityTaskVO;
 import com.game.util.ConfigData;
 import com.google.common.collect.Lists;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -21,6 +24,7 @@ public class ActivityTask {
     private int finishNum;//完成次数或者购买次数
     private int param0;//额外参数
     private List<Reward> rewards;
+    private String endTime;
 
     public ActivityTask() {
     }
@@ -33,6 +37,14 @@ public class ActivityTask {
         this.param0 = 0;
         cond = new ActivityTaskCdt(targetValue, condType);
         timedBag = System.currentTimeMillis();
+    }
+
+    public String getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
     }
 
     public List<Reward> getRewards() {
@@ -113,7 +125,7 @@ public class ActivityTask {
         this.cond = cond;
     }
 
-    public ActivityTaskVO toProto() {
+    public ActivityTaskVO toProto(boolean addTaskRewards) {
         ActivityTaskVO vo = new ActivityTaskVO();
         vo.activityId = activityId;
         vo.id = id;
@@ -137,6 +149,24 @@ public class ActivityTask {
             }
             vo.remainingTime = (int) l;
         }
+
+        //同步任务奖励
+        if (addTaskRewards)
+        {
+            vo.rewards = Lists.newArrayList();
+            ActivityTaskCfg taskConfig = ConfigData.getConfig(ActivityTaskCfg.class, id);
+            if (taskConfig != null && taskConfig.Rewards.length > 0)
+            {
+                for (int i = 0; i < taskConfig.Rewards.length; ++i)
+                {
+                    Int2Param p = new Int2Param();
+                    p.param1 = taskConfig.Rewards[i][0];
+                    p.param2 = taskConfig.Rewards[i][1];
+                    vo.rewards.add(p);
+                }
+            }
+        }
+
         return vo;
     }
 }

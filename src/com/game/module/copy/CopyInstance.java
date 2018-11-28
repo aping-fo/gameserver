@@ -19,11 +19,11 @@ public class CopyInstance {
 
 	public static final int TYPE_COMMON = 1;
 	public static final int TYPE_ENDLESS = 2;
-	public static final int TYPE_TREASURE = 3;
+	public static final int TYPE_TREASURE = 3; //精绝宝藏
 	public static final int TYPE_AI_ARENA = 4;//AI竞技场
 	public static final int TYPE_TRAINING = 5;//英雄试炼
 	public static final int TYPE_GANG = 6; //
-	public static final int TYPE_EXPERIENCE = 7;
+	public static final int TYPE_EXPERIENCE = 7; //极限躲避
 	public static final int TYPE_TRAVERSING = 8; //时空仪：组队副本
 	public static final int TYPE_WORLD_BOSS = 9; //世界BOSS玩法
 	public static final int TYPE_GROUP = 10; //团队副本玩法

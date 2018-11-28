@@ -27,6 +27,7 @@ public class MarryService {
             marryRankDAO.updateMarry(openId, nickName, avatarUrl);
         }
 
+        /**
         if(invitor != null && !invitor.isEmpty()){
             //如果有邀请者，则增加邀请者道具
             String datas = marryRankDAO.queryMarryDatas(invitor);
@@ -50,6 +51,7 @@ public class MarryService {
                 }
             }
         }
+         **/
     }
 
     public void updateScore(String openId, int score) {

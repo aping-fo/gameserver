@@ -56,12 +56,12 @@ public class MergeService {
         SimpleJdbcTemplate mergeDb = getMergeDb();
         boolean result = true;
         try {
+            playerService.copyPlayer(mergeServerIdStr, mergeDb);//复制玩家表
+            playerService.copyPlayerData(mergeDb); //复制玩家数据表
             attachService.copyAttach(mergeDb); //复制副本表
             gangService.copyGang(mergeServerIdStr, mergeDb);//复制公会表
             goodsService.copyGoods(mergeDb);//复制物品表
             petService.copyPet(mergeDb);//复制宠物表
-            playerService.copyPlayer(mergeServerIdStr, mergeDb);//复制玩家表
-            playerService.copyPlayerData(mergeDb); //复制玩家数据表
             serialDataService.copySerialData(mergeDb);//复制全局表
             playerService.copyChargeRecord(mergeDb);//复制充值记录表
             taskService.copyTask(mergeDb);//复制任务表
@@ -75,8 +75,8 @@ public class MergeService {
     }
 
     //合服
-    public boolean mergeServer(String ip, String serverId) {
-        basicDataSource.setUrl("jdbc:mysql://" + ip + ":3306/game?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true");
+    public boolean mergeServer(String ip, String serverId, String dbName) {
+        basicDataSource.setUrl("jdbc:mysql://" + ip + ":3306/" + dbName + "?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true");
         return updateNewUser(serverId);
     }
 }

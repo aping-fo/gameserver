@@ -193,6 +193,23 @@ public class SysConfig {
         return openDays;
     }
 
+    //开服多少天
+    public static int getOpenDay() {
+        Calendar open = Calendar.getInstance();
+        open.setTime(openDate);
+        open.set(Calendar.HOUR_OF_DAY, 0);
+        open.set(Calendar.MINUTE, 0);
+        open.set(Calendar.SECOND, 0);
+
+        Calendar now = Calendar.getInstance();
+        now.set(Calendar.HOUR_OF_DAY, 0);
+        now.set(Calendar.MINUTE, 0);
+        now.set(Calendar.SECOND, 0);
+
+        long diff = (now.getTimeInMillis() - open.getTimeInMillis()) / 1000;
+        return (int) (diff / (TimeUtil.ONE_HOUR * 24 / 1000)) + 1;
+    }
+
     public static void updateOpenDays() {
         Calendar open = Calendar.getInstance();
         ServerLogger.warn("========" + openDate);

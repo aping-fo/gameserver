@@ -8,6 +8,7 @@ import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
+import com.game.module.player.CheatReventionService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -17,6 +18,7 @@ import com.game.module.serial.SerialDataService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.module.worldboss.WorldBossExtension;
+import com.game.module.worldboss.WorldBossService;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.Reward;
@@ -32,10 +34,7 @@ import io.netty.channel.Channel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by lucky on 2017/10/10.
@@ -319,7 +318,12 @@ public class GangDungeonService {
         } else { //怪物
             if (!player.checkHurt(hurtVO.hurtValue)) {
                 SessionManager.getInstance().kick(player.getPlayerId());
-                ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
+                ServerLogger.warn("GangDungeonService ==================== 作弊玩家 Id = " + player.getPlayerId());
+                return;
+            }
+
+            if (!CheatReventionService.isValidSkillHurt(hurtVO.attackId, hurtVO.skillId, player.getVocation())) {
+                ServerLogger.info("GangDungeonService isValidSkillHurt 作弊玩家 Id = " + player.getPlayerId() + " hurt=" + hurtVO.hurtValue + " skillId=" + hurtVO.skillId);
                 return;
             }
 
@@ -420,6 +424,18 @@ public class GangDungeonService {
                     String title = ConfigData.getConfig(ErrCode.class, Response.GUILD_COPY_MAIL_TITLE).tips;
                     String content = ConfigData.getConfig(ErrCode.class, Response.GUILD_COPY_MAIL_CONTENT).tips;
                     for (int pid : gang.getMembers().keySet()) {
+                        //同阶段奖励只能领取一次
+                        PlayerData playerData = playerService.getPlayerData(pid);
+                        if (playerData != null) {
+                            Set<Integer> guildAwardsSet = playerData.getGuildAwardsSet();
+                            if (guildAwardsSet != null) {
+                                if (guildAwardsSet.contains(cfg.copyId * 10 + step)) {
+                                    continue;
+                                } else {
+                                    guildAwardsSet.add(cfg.copyId * 10 + step);
+                                }
+                            }
+                        }
 
                         //活动奖励
                         Reward activityReward = copyService.activityReward(pid, CopyInstance.TYPE_GANG_COPY);

@@ -9,12 +9,14 @@ import com.game.module.copy.CopyService;
 import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
+import com.game.module.player.CheatReventionService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.SceneService;
 import com.game.module.task.Task;
 import com.game.module.task.TaskService;
+import com.game.module.worldboss.WorldBossService;
 import com.game.params.IProtocol;
 import com.game.params.Int2Param;
 import com.game.params.IntParam;
@@ -756,6 +758,11 @@ public class GroupService {
         if (group == null) { //难道是解散队伍了?
             return;
         }
+
+        if (player.getPlayerId() != hurtVO.attackId) {
+            return;
+        }
+
         GroupTeam team = group.getGroupTeam(player.getGroupTeamId());
         if (hurtVO.targetType == 0) {
             team.decHp(hurtVO.targetId, hurtVO.hurtValue);
@@ -771,9 +778,15 @@ public class GroupService {
         } else {
             if (!player.checkHurt(hurtVO.hurtValue)) {
                 SessionManager.getInstance().kick(player.getPlayerId());
-                ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
+                ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId() + " hurtVO.hurtValue="+hurtVO.hurtValue);
                 return;
             }
+
+            if (!CheatReventionService.isValidSkillHurt(hurtVO.attackId, hurtVO.skillId, player.getVocation())) {
+                ServerLogger.info("GroupService isValidSkillHurt 作弊玩家 Id = " + player.getPlayerId() + " hurt="+hurtVO.hurtValue + " skillId=" + hurtVO.skillId);
+                return;
+            }
+
             SMonsterVo monster = monsters.get(hurtVO.targetId);
             try {
                 group.getLock().lock();

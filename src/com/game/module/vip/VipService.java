@@ -188,7 +188,7 @@ public class VipService {
         // 设置已经领取
         data.getFunds().add(lev);
         // 加钻石
-        playerService.addDiamond(playerId, diamond, LogConsume.VIP_FUN);
+        playerService.addDiamond(playerId, diamond, LogConsume.VIP_FUN, false);
         // 更新每日数据
         dailyService.refreshDailyVo(playerId);
         return Response.SUCCESS;
@@ -244,8 +244,8 @@ public class VipService {
 
         playerService.addVipExp(playerId, charge.vipExpAdd);
 
-        playerService.addDiamond(playerId, charge.total, LogConsume.CHARGE);
-        playerService.addDiamond(playerId, charge.add, LogConsume.CHARGE_ADD);
+        playerService.addDiamond(playerId, charge.total, LogConsume.CHARGE, false);
+        playerService.addDiamond(playerId, charge.add, LogConsume.CHARGE_ADD, false);
         chargeActivityLogic.updateCharge(playerId, charge.total);
         // 每日数据更新
         dailyService.refreshDailyVo(playerId);
@@ -280,7 +280,7 @@ public class VipService {
         }
 
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_MONEY, (int) charge.rmb, ActivityConsts.UpdateType.T_ADD, true);//充了钱就算礼包
-        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.total, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
+        activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_DAILY_RECHARGE_DIAMONDS, charge.vipExpAdd, ActivityConsts.UpdateType.T_ADD, true);//每日充值钻石
         activityService.completeActivityTask(playerId, ActivityConsts.ActivityTaskCondType.T_TIMED_BAG, id, ActivityConsts.UpdateType.T_VALUE, true);//限时礼包和特价礼包
         activityService.onceRecharge(playerId, charge.rmb);//单笔充值满足(取最大那个)
         activityService.dailyRecharge(playerId, charge.rmb);//每日充值(7日充值)

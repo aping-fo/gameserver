@@ -11,6 +11,7 @@ import com.game.module.goods.GoodsEntry;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
+import com.game.module.player.CheatReventionService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -19,6 +20,7 @@ import com.game.module.task.Task;
 import com.game.module.task.TaskService;
 import com.game.module.title.TitleConsts;
 import com.game.module.title.TitleService;
+import com.game.module.worldboss.WorldBossService;
 import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.Reward;
@@ -966,6 +968,18 @@ public class LadderService implements InitHandler {
     public void handleSkillHurt(Player player, SkillHurtVO hurtVO) {
         Room room = allRooms.get(player.getRoomId());
         if (room != null && hurtVO.targetType == 0) {
+
+            if (!player.checkHurt(hurtVO.hurtValue)) {
+//                SessionManager.getInstance().kick(player.getPlayerId());
+                ServerLogger.warn("LadderService ==================== 作弊玩家 Id = " + player.getPlayerId() + " hurtVO.hurtValue="+hurtVO.hurtValue);
+                return;
+            }
+
+            if (!CheatReventionService.isValidSkillHurt(hurtVO.attackId, hurtVO.skillId, player.getVocation())) {
+                ServerLogger.info("LadderService isValidSkillHurt 作弊玩家 Id = " + player.getPlayerId() + " hurt="+hurtVO.hurtValue + " skillId=" + hurtVO.skillId);
+                return;
+            }
+
             RoomPlayer roomPlayer = room.getRoomPlayer(hurtVO.targetId);
             if (hurtVO.subType == 1) {
                 roomPlayer.setTotalHp(roomPlayer.getTotalHp() - hurtVO.hurtValue);

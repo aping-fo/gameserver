@@ -25,7 +25,7 @@ public class Gang {
 	private int id;// id
 	private String name;// 名称
 	private int ownerId;// 帮主id
-	private Set<Integer> admins = new HashSet<Integer>();
+	private Set<Integer> admins = new HashSet<Integer>(); // 副会长
 	
 
 	private String notice;// 公告
@@ -216,16 +216,41 @@ public class Gang {
 		this.updated = updated;
 	}
 
+	// 其实是副会长列表，由于数据已经是序列化保存所以不能改名字
 	public Set<Integer> getAdmins() {
 		return admins;
 	}
 
-	public void setAdmins(Set<Integer> admins) {
-		this.admins = admins;
+	// 其实是副会长列表，由于数据已经是序列化保存所以不能改名字
+	public void setAdmins(Set<Integer> viceAdmins) {
+		this.admins = viceAdmins;
+	}
+
+	public Set<Integer> getViceAdmins() {
+		return admins;
+	}
+
+	public void addViceAdmin(int playerId) {
+		if (!admins.contains(playerId))
+		{
+			admins.add(playerId);
+		}
+	}
+
+	public boolean isViceAdmin(int playerId) {
+		return admins.contains(playerId);
+	}
+
+	public void removeViceAdmin(int playerId) {
+		admins.remove(playerId);
 	}
 
 	public Map<Integer, GMember> getMembers() {
 		return members;
+	}
+
+	public GMember getMember(int playerId) {
+		return members.get(playerId);
 	}
 
 	public void setMembers(Map<Integer, GMember> members) {

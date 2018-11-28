@@ -66,6 +66,7 @@ public class Start {
 
             Context.getLoggerService().serverChange(1);//设置服务器开启
         } catch (Exception e) {
+            e.printStackTrace();
             Context.getLoggerService().serverChange(0);//设置服务器关闭
             ServerLogger.err(e, "start server err!");
             System.exit(-1);

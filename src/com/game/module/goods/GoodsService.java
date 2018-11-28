@@ -696,13 +696,27 @@ public class GoodsService {
         } else {
             // 汇总到一个map
             HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+
+            boolean diamondNumOutLimit = false;
             for (GoodsEntry reward : rewards) {
                 Integer count = map.get(reward.id);
                 if (count == null) {
                     count = 0;
                 }
+
+                if (reward.id == Goods.DIAMOND) {
+                    if (reward.count > ConfigData.globalParam().maxDiamond) { // 对钻石数量做检测
+                        diamondNumOutLimit = true;
+                        continue;
+                    }
+                }
                 count += reward.count;
                 map.put(reward.id, count);
+            }
+
+            if (diamondNumOutLimit)
+            {
+                map.remove(Goods.DIAMOND);
             }
 
             if (map.size() > 0) {
@@ -767,7 +781,7 @@ public class GoodsService {
                 if (id == Goods.COIN) {// 金币
                     playerService.addCoin(playerId, count, type, params);
                 } else if (id == Goods.DIAMOND) {// 钻石
-                    playerService.addDiamond(playerId, count, type, params);
+                    playerService.addDiamond(playerId, count, type,true, params);
                 } else if (id == Goods.EXP) {// 经验
                     playerService.addExp(playerId, count, type, params);
                 } else if (id == Goods.ACHIEVEMENT) {

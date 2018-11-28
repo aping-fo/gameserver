@@ -31,8 +31,14 @@ public class MarryNoticeServlet extends SdkServlet {
             }
 
             Map<String, Object> map = Maps.newHashMapWithExpectedSize(2);
-            map.put("content", "暂无公告");
-            map.put("time", "2018.9.10");
+            map.put("content", "游戏冲榜活动：\n" +
+                    "\n" +
+                    "活动时间：11月19日~11月30日晚十点\n" +
+                    "\n" +
+                    "活动规则：世界排行榜第1名获得1010元现金，第2~5名各获得101元现金奖励，前100名获得10.1元现金奖励。\n" +
+                    "\n" +
+                    "获奖者请添加微信号：dpc201706，领取现金红包。");
+            map.put("time", "2018.11.19");
 
             String json = JsonUtils.map2String(map);
 

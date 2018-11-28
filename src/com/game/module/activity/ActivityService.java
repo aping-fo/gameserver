@@ -1,5 +1,6 @@
 package com.game.module.activity;
 
+import com.game.SysConfig;
 import com.game.data.*;
 import com.game.event.InitHandler;
 import com.game.module.RandomReward.RandomRewardService;
@@ -27,6 +28,7 @@ import com.game.params.IntParam;
 import com.game.params.ListParam;
 import com.game.params.Reward;
 import com.game.params.activity.ActivityInfo;
+import com.game.params.activity.ActivityVO;
 import com.game.params.pet.PetGetRewardVO;
 import com.game.util.*;
 import com.google.common.collect.Lists;
@@ -34,11 +36,13 @@ import com.google.common.collect.Maps;
 import com.server.SessionManager;
 import com.server.util.GameData;
 import com.server.util.ServerLogger;
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -56,6 +60,7 @@ public class ActivityService implements InitHandler {
     private static final int CMD_ACTIVITY_CLOSE = 8005; //关闭
     private static final int ACTIVITY_TIME_BAG_ID = Integer.MAX_VALUE; //关闭
 
+    private static final boolean IS_INT_LIST = false;
     @Autowired
     private TimerService timerService;
     @Autowired
@@ -194,8 +199,16 @@ public class ActivityService implements InitHandler {
             }
 
             if (!OpenActivitys.containsKey(cfg.id)) {
-                OpenActivitys.put(cfg.id, cfg);
-                openActivitys.add(cfg);
+                //7日巡礼
+                if (cfg.ActivityType == ActivityConsts.ActivityType.T_TOUR) {
+                    if (SysConfig.getOpenDay() >= cfg.Param0) {
+                        OpenActivitys.put(cfg.id, cfg);
+                        openActivitys.add(cfg);
+                    }
+                } else {
+                    OpenActivitys.put(cfg.id, cfg);
+                    openActivitys.add(cfg);
+                }
             }
         }
 
@@ -438,6 +451,12 @@ public class ActivityService implements InitHandler {
         if (openActivity != null && openActivityTasks != null) {
             pushActivityOpen(playerId, openActivity, openActivityTasks);
         }
+
+        //VIP活动
+        Player player = playerService.getPlayer(playerId);
+        if (player != null) {
+            tour(playerId, ActivityConsts.ActivityTaskCondType.T_PRIVILEGE_LEVEL, player.getVip());
+        }
     }
 
     /**
@@ -488,6 +507,51 @@ public class ActivityService implements InitHandler {
         pushActivityUpdate(playerId, list);
     }
 
+    //重置新的活动
+    public void ResetActivityTask(int playerId) {
+        PlayerData data = playerService.getPlayerData(playerId);
+        List<ActivityTask> list = Lists.newArrayList();
+        for (ActivityTask at : data.getAllActivityTasks()) {
+            ActivityTaskCfg cfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
+            ActivityCfg cfg2 = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
+            if (cfg != null) {
+                boolean reset = false;
+                if (StringUtils.isNotBlank(cfg2.EndTime)) {
+                    if (StringUtils.isBlank(at.getEndTime())) {
+                        reset = true;
+                        at.setEndTime(cfg2.EndTime);
+                    } else if (!at.getEndTime().equals(cfg2.EndTime)) {
+                        reset = true;
+                        at.setEndTime(cfg2.EndTime);
+                    }
+                }
+
+                if (reset) {
+                    at.cleanup();
+                    list.add(at);
+                }
+            }
+        }
+        pushActivityUpdate(playerId, list);
+    }
+
+    public ActivityVO toProto(ActivityCfg cfg) {
+
+        if (cfg == null) {
+            return null;
+        }
+//        ConfigData.getConfig(ActivityCfg.class, activityId);
+        ActivityVO vo = new ActivityVO();
+        vo.id = cfg.id;
+        vo.beginTime = cfg.BeginTime;
+        vo.endTime = cfg.EndTime;
+        return vo;
+    }
+
+    public ActivityVO toProto(int activityId) {
+        return toProto(ConfigData.getConfig(ActivityCfg.class, activityId));
+    }
+
     /**
      * 获取活动任务列表
      */
@@ -497,6 +561,12 @@ public class ActivityService implements InitHandler {
         result.tasks = Lists.newArrayList();
         PlayerData data = playerService.getPlayerData(playerId);
         Player player = playerService.getPlayer(playerId);
+
+        boolean isIntList = IS_INT_LIST;
+
+        List<Integer> actIds = null;
+        if (!isIntList)
+            actIds = Lists.newArrayList();
 
         Collection<ActivityCfg> activityCfgs = Lists.newArrayList();
         if (idList != null && idList.size() > 0) {
@@ -554,12 +624,29 @@ public class ActivityService implements InitHandler {
                 if (bClose) {
                     continue;
                 }
+            } else if (cfg.ActivityType == ActivityConsts.ActivityType.T_TOUR) {//7日巡礼
+                if (SysConfig.getOpenDay() >= cfg.Param0) {
+                    actIds.add(cfg.id);
+                    result.id.add(toProto((cfg)));
+                }
             }
-            result.id.add(cfg.id);
+
+            if (isIntList) {
+//                result.id.add(cfg.id);
+            } else {
+                actIds.add(cfg.id);
+                result.id.add(toProto((cfg)));
+            }
         }
 
         for (ActivityTask at : data.getAllActivityTasks()) {
-            if (result.id.contains(at.getActivityId())) {
+            boolean containActId = false;
+            if (isIntList) {
+                containActId = result.id.contains(at.getActivityId());
+            } else {
+                containActId = actIds.contains(at.getActivityId());
+            }
+            if (containActId) {
                 ActivityTaskCfg taskCfg = ConfigData.getConfig(ActivityTaskCfg.class, at.getId());
                 if (taskCfg != null) {
                     at.getCond().setCondType((int) taskCfg.Conds[0][0]);
@@ -578,13 +665,35 @@ public class ActivityService implements InitHandler {
                     //更新奇遇宝箱购买次数
                     updateAdventureBoxNumber(at);
 
-                    result.tasks.add(at.toProto());
+                    ActivityCfg config = ConfigData.getConfig(ActivityCfg.class, at.getActivityId());
+
+                    if (config != null && config.ActivityType == ActivityConsts.ActivityType.T_TOUR) {//7日巡礼
+                        if (SysConfig.getOpenDay() >= config.Param0) {
+                            result.tasks.add(at.toProto(true));
+                        }
+                    } else {
+                        result.tasks.add(at.toProto(true));
+                    }
+
+                    //临时清楚累计召唤的领取状态
+//                    if (config != null && config.ActivityType == ActivityConsts.ActivityType.T_CALL) {
+//                        if (at.getParam0() != ActivityConsts.ActivityState.T_FINISH && at.getState() == ActivityConsts.ActivityState.T_AWARD) {
+//                            at.setState(ActivityConsts.ActivityState.T_FINISH);
+//                            at.setParam0(ActivityConsts.ActivityState.T_FINISH);
+//                        }
+//                    }
                 }
             }
         }
 
         // ---
-//        result.id.add(900); // 加入礼品兑换界面活动
+        // 加入礼品兑换界面活动
+//        if (isIntList) {
+//            result.id.add(900);
+//        }
+//        else {
+//            result.id.add(toProto(900));
+//        }
         return result;
     }
 
@@ -825,7 +934,7 @@ public class ActivityService implements InitHandler {
         ListParam listParam = new ListParam();
         listParam.params = Lists.newArrayList();
         for (ActivityTask at : tasks) {
-            listParam.params.add(at.toProto());
+            listParam.params.add(at.toProto(true));
         }
         SessionManager.getInstance().sendMsg(CMD_ACTIVITY_TASK_UPDATE, listParam, playerId);
     }
@@ -869,11 +978,18 @@ public class ActivityService implements InitHandler {
         ActivityInfo vo = new ActivityInfo();
         vo.id = Lists.newArrayList();
         vo.tasks = Lists.newArrayList();
+
+        boolean isIntList = IS_INT_LIST;
+
         for (int id : openActivity) {
-            vo.id.add(id);
+            if (isIntList) {
+//                vo.id.add(id);
+            } else {
+                vo.id.add(toProto(id));
+            }
         }
         for (ActivityTask at : tasks) {
-            vo.tasks.add(at.toProto());
+            vo.tasks.add(at.toProto(true));
         }
 
         if (playerId == 0) {
@@ -881,6 +997,7 @@ public class ActivityService implements InitHandler {
         } else {
             SessionManager.getInstance().sendMsg(CMD_ACTIVITY_OPEN, vo, playerId);
         }
+
     }
 
     /**

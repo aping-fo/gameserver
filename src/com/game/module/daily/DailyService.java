@@ -225,6 +225,9 @@ public class DailyService implements InitHandler {
         //int playerId = data.getPlayerId();
         //taskService.updateWeeklyTasks(playerId);
 
+        //重置副本奖励
+        data.getGuildAwardsSet().clear();
+
         //更新重置时间，放最后一行
         data.setWeeklyTime(MONDAY_FIVE_CLOCK);
     }

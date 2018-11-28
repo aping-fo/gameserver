@@ -204,6 +204,15 @@ public class PlayerData {
     private int challengeTimes; //公会副本挑战次数
     private float highestFighting; //最高战力，用于计算英雄试炼
     private byte[] data;
+    private Set<Integer> guildAwardsSet = new HashSet<>();//公会奖励
+
+    public Set<Integer> getGuildAwardsSet() {
+        return guildAwardsSet;
+    }
+
+    public void setGuildAwardsSet(Set<Integer> guildAwardsSet) {
+        this.guildAwardsSet = guildAwardsSet;
+    }
 
     public byte[] getData() {
         return data;

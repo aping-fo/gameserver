@@ -1,19 +1,24 @@
 package com.game.module.admin;
 
+import com.game.Start;
 import com.game.SysConfig;
 import com.game.data.ErrCode;
 import com.game.data.GoodsConfig;
 import com.game.data.Response;
 import com.game.event.InitHandler;
+import com.game.module.activity.ActivityConsts;
 import com.game.module.chat.ChatExtension;
 import com.game.module.friend.FriendService;
 import com.game.module.gang.GangService;
 import com.game.module.giftbag.ActivationCode;
 import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
+import com.game.module.mail.Mail;
 import com.game.module.mail.MailService;
 import com.game.module.merge.MergeService;
 import com.game.module.player.*;
+import com.game.module.title.TitleConsts;
+import com.game.module.title.TitleService;
 import com.game.module.vip.VipService;
 import com.game.params.IntParam;
 import com.game.params.StringParam;
@@ -26,6 +31,8 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
@@ -70,6 +77,8 @@ public class ManagerService implements InitHandler {
     private GoodsService goodsService;
     @Autowired
     private MergeService mergeService;
+    @Autowired
+    private TitleService titleService;
 
     private Map<String, ProhibitionEntity> bans;
 
@@ -189,6 +198,31 @@ public class ManagerService implements InitHandler {
 
         //发邮件
         sendMail(title, content, rewards, playerIds);
+
+        //邮件日志
+        for (Integer playerId : playerIds) {
+            Context.getThreadService().execute(new Runnable() {
+                @Override
+                public void run() {
+                    String sender = ConfigData.getConfig(ErrCode.class, Response.SYS).tips;
+                    final Mail mail = new Mail();
+                    mail.setSenderId(0);
+                    mail.setSenderName(sender);
+
+                    mail.setTitle(title);
+                    mail.setContent(content);
+                    mail.setRewards(rewards);
+                    if (rewards != null && !rewards.isEmpty()) {
+                        mail.setHasReward(1);
+                    }
+                    mail.setReceiveId(playerId);
+                    mail.setSendTime(new Date());
+                    mail.setType(LogConsume.GM.actionId);
+                    Context.getLoggerService().logMail(mail.getSenderId(), mail.getSenderName(), mail.getReceiveId(), mail.getTitle(), mail.getContent(), mail.getState(), mail.getRewards(), mail.getHasReward(), mail.getType());
+                }
+            });
+        }
+
         return RETURN_SUCCESS;
     }
 
@@ -304,9 +338,29 @@ public class ManagerService implements InitHandler {
     }
 
     //查询人物信息
-    public String handle_getInfoByPlayerId(Map<String, String> params) {
-        PlayerVo vo = playerService.toSLoginVo(Integer.valueOf(params.get("playerId")));
-        return JsonUtils.object2String(vo);
+    public String handle_getPlayerByPlayerId(Map<String, String> params) {
+        String name = params.get("playerId");
+        Integer playerId = null;
+        if (name != null) {
+            playerId = playerDao.selectIdByName(name);
+            if (playerId == null) {
+                Player p = null;
+                try {
+                    p = playerService.getPlayer(Integer.parseInt(name));
+                } catch (Exception ex) {
+
+                }
+                if (p == null) {
+                    return RETURN_PARAM_ERROR;
+                }
+                playerId = p.getPlayerId();
+            }
+        }
+        if (playerId == null) {
+            return RETURN_PARAM_ERROR;
+        }
+        Player player = playerService.getPlayer(playerId);
+        return JsonUtils.object2String(player);
     }
 
     //踢人下线
@@ -321,7 +375,32 @@ public class ManagerService implements InitHandler {
     public String handle_mergeServer(Map<String, String> params) {
         String ip = params.get("fromIp");
         String serverId = params.get("fromServer");
-        return mergeService.mergeServer(ip, serverId) + "";
+        String dbName = params.get("dbName");
+        return mergeService.mergeServer(ip, serverId, dbName) + "";
+    }
+
+    //钻石日志
+    public String handle_diamondsLog(Map<String, String> params) {
+        return JsonUtils.list2String(Context.getLoggerService().diamondsLogList(Integer.valueOf(params.get("playerId")), params.get("startDate"), params.get("endDate"), Integer.valueOf(params.get("pageNumber")), Integer.valueOf(params.get("pageSize"))));
+    }
+
+    //物品日志
+    public String handle_itemLog(Map<String, String> params) {
+        return JsonUtils.list2String(Context.getLoggerService().itemLogList(Integer.valueOf(params.get("playerId")), params.get("startDate"), params.get("endDate"), Integer.valueOf(params.get("pageNumber")), Integer.valueOf(params.get("pageSize"))));
+    }
+
+    //邮件日志
+    public String handle_mailLog(Map<String, String> params) {
+        return JsonUtils.list2String(Context.getLoggerService().mailLogList(Integer.valueOf(params.get("playerId")), params.get("startDate"), params.get("endDate"), Integer.valueOf(params.get("pageNumber")), Integer.valueOf(params.get("pageSize"))));
+    }
+
+    //激活称号
+    public String handle_activationTitle(Map<String, String> params) {
+        int playerId = Integer.valueOf(params.get("playerId"));
+        int type = Integer.valueOf(params.get("type"));
+        int value = Integer.valueOf(params.get("value"));
+        titleService.complete(playerId, type, value, ActivityConsts.UpdateType.T_VALUE);
+        return RETURN_SUCCESS;
     }
 
     //批量发系统邮件接口

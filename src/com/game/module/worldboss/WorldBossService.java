@@ -13,6 +13,7 @@ import com.game.module.goods.GoodsService;
 import com.game.module.log.LogConsume;
 import com.game.module.mail.MailService;
 import com.game.module.multi.MultiService;
+import com.game.module.player.CheatReventionService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerService;
 import com.game.module.scene.Scene;
@@ -234,7 +235,7 @@ public class WorldBossService implements InitHandler {
      * @param playerId
      * @param hurt
      */
-    private synchronized void onBossHurt(int playerId, int hurt, int bossId, boolean isCrit) {
+    private synchronized void onBossHurt(int playerId, int skillId, int hurt, int bossId, boolean isCrit) {
         WorldBoss boss = worldBossData.getWorldBossMap().get(bossId);
         if (boss == null || boss.getCurHp() <= 0) {
             ServerLogger.warn("world boss can not found bossId", bossId);
@@ -245,6 +246,11 @@ public class WorldBossService implements InitHandler {
         if (!player.checkHurt(hurt)) {
             SessionManager.getInstance().kick(player.getPlayerId());
             ServerLogger.warn("==================== 作弊玩家 Id = " + player.getPlayerId());
+            return;
+        }
+
+        if (!CheatReventionService.isValidSkillHurt(playerId, skillId, player.getVocation())) {
+            ServerLogger.info("onBossHurt isValidSkillHurt 作弊玩家 Id = " + player.getPlayerId() + " hurt="+hurt + " skillId=" + skillId);
             return;
         }
 
@@ -839,8 +845,8 @@ public class WorldBossService implements InitHandler {
      */
     public void handleSkillHurt(Player player, SkillHurtVO hurtVO) {
         //broadcast(SceneExtension.SKILL_HURT, hurtVO);
-        if (hurtVO.targetType == 1) {
-            onBossHurt(player.getPlayerId(), hurtVO.hurtValue, hurtVO.targetId, hurtVO.isCrit);
+        if (hurtVO.targetType == 1 && player.getPlayerId() == hurtVO.attackId) {
+            onBossHurt(player.getPlayerId(), hurtVO.skillId, hurtVO.hurtValue, hurtVO.targetId, hurtVO.isCrit);
         }
     }
 

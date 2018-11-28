@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public class DropReward implements IProtocol {
 	public List<Reward> rewards;//奖励
 	public int id;//唯一怪物id
+	public int keyCode;//服务器校验码
 	public float x;//x
 	public float y;//y
 	public float z;//z
@@ -39,6 +40,7 @@ public class DropReward implements IProtocol {
             }
         }
 		this.id = bb.getInt();
+		this.keyCode = bb.getInt();
 		this.x = bb.getFloat();
 		this.y = bb.getFloat();
 		this.z = bb.getFloat();
@@ -47,6 +49,7 @@ public class DropReward implements IProtocol {
 	public void encode(BufferBuilder bb) {
 		bb.putProtocolVoList(this.rewards);
 		bb.putInt(this.id);
+		bb.putInt(this.keyCode);
 		bb.putFloat(this.x);
 		bb.putFloat(this.y);
 		bb.putFloat(this.z);

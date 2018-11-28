@@ -15,6 +15,7 @@ import com.game.module.ladder.LadderService;
 import com.game.module.multi.MultiService;
 import com.game.module.pet.Pet;
 import com.game.module.pet.PetService;
+import com.game.module.player.CheatReventionService;
 import com.game.module.player.Player;
 import com.game.module.player.PlayerData;
 import com.game.module.player.PlayerService;
@@ -190,6 +191,8 @@ public class SceneService implements InitHandler {
         lastScene.exitSubLine(player.getSubLine());
         player.setSubLine(0);
         ServerLogger.info("...exit", playerId, player.getSceneId());
+
+        CheatReventionService.resetRecords(playerId);
     }
 
     public void removeMe(Player player, int sceneId) {
